@@ -13,7 +13,6 @@ relationer:
     typ: "före detta kollega, nu förrädare"
   - namn: "Arvorns Hammare"
     typ: "kommendör"
-bild: "/assets/images/npcs/aldrich.png"
 ---
 
 # KOMMENDÖR ALDRICH JÄRNKORS

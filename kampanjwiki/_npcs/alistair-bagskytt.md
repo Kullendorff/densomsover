@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Tirakgraven"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Långbågsskytt och scout"
-bild: "/assets/images/npcs/alistair.png"
 ---
 
 # ALISTAIR BÅGSKYTT ⚔️

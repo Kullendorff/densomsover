@@ -13,7 +13,6 @@ relationer:
     typ: "släppte in i stugan"
   - namn: "Zentri"
     typ: "vägrade släppa in (kände demonen)"
-bild: "/assets/images/npcs/adisa.png"
 ---
 
 # ADISA

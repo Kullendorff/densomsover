@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Före detta Stålsvärds Kavalerister"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Signalist"
-bild: "/assets/images/npcs/alaric.png"
 ---
 
 # ALARIC

@@ -13,7 +13,6 @@ relationer:
     typ: "före detta page"
   - namn: "Gruppen"
     typ: "gav passage"
-bild: "/assets/images/npcs/alvakungen.png"
 ---
 
 # PRINS YELGOTHA AV DET FÖRSTA HOVET
