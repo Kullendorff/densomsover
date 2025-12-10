@@ -13,7 +13,6 @@ relationer:
     typ: "före detta befälhavare"
   - namn: "Sanari-alverna"
     typ: "förrädda av, nu återförenad?"
-bild: "/assets/images/npcs/serafina.png"
 ---
 
 # SERAFINA ELDSTAV

@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Resan Hem - Scenario 3"
 fraktion: "Desertörer"
 roll: "Okänd"
-bild: "/assets/images/npcs/silvermask.png"
 ---
 
 # SILVERMASK

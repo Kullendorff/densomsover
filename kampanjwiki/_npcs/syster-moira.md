@@ -15,7 +15,6 @@ relationer:
     typ: "jagtoffer"
   - namn: "Gruppen"
     typ: "observerar"
-bild: "/assets/images/npcs/moira.png"
 ---
 
 # SYSTER MOIRA

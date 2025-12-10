@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Före detta Stålsvärds Kavalerister"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Vaktmästare och brandbekämpare"
-bild: "/assets/images/npcs/sylas.png"
 ---
 
 # SYLAS "ELDVAKTEN"
