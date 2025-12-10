@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravens Arv Wiki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #f8f9fa;
+            color: #202122;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .wiki-container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            max-width: 1400px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: #fff;
+            border-right: 1px solid #a2a9b1;
+            padding: 1.5rem 1rem;
+        }
+
+        .sidebar h2 {
+            font-size: 0.9rem;
+            color: #54595d;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .sidebar li {
+            padding: 0.4rem 0;
+        }
+
+        .sidebar a {
+            color: #0645ad;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar a.active {
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* Main Content */
+        .main-content {
+            background: #fff;
+            padding: 2rem 3rem;
+        }
+
+        /* Page title */
+        .page-title {
+            font-size: 2.2rem;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Linux Libertine', Georgia, Times, serif;
+        }
+
+        /* Infobox */
+        .infobox {
+            float: right;
+            width: 300px;
+            border: 1px solid #a2a9b1;
+            background: #f8f9fa;
+            margin: 0 0 1rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        .infobox-title {
+            background: #eaecf0;
+            padding: 0.5rem;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 1px solid #a2a9b1;
+        }
+
+        .infobox-row {
+            display: flex;
+            border-bottom: 1px solid #eaecf0;
+        }
+
+        .infobox-label {
+            width: 40%;
+            padding: 0.5rem;
+            background: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .infobox-value {
+            width: 60%;
+            padding: 0.5rem;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background: #fee;
+            border: 1px solid #fcc;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 4px solid #d33;
+        }
+
+        .warning-box strong {
+            color: #d33;
+        }
+
+        /* Notice box */
+        .notice-box {
+            background: #fef6e7;
+            border: 1px solid #fc3;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 4px solid #fc3;
+        }
+
+        /* Content */
+        .content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .content h2 {
+            font-size: 1.6rem;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.3rem;
+        }
+
+        .content h3 {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .content ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content li {
+            margin-bottom: 0.3rem;
+        }
+
+        /* Links */
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #0b0080;
+        }
+
+        /* Tags */
+        .category-tags {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #a2a9b1;
+            font-size: 0.9rem;
+            color: #54595d;
+        }
+
+        .category-tags strong {
+            margin-right: 0.5rem;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: #eaecf0;
+            padding: 0.2rem 0.6rem;
+            margin-right: 0.5rem;
+            border-radius: 3px;
+        }
+
+        /* Section content */
+        .section-content {
+            display: none;
+        }
+
+        .section-content.active {
+            display: block;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th {
+            background: #eaecf0;
+            padding: 0.5rem;
+            text-align: left;
+            border: 1px solid #a2a9b1;
+        }
+
+        td {
+            padding: 0.5rem;
+            border: 1px solid #a2a9b1;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="wiki-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#" class="nav-link active" data-section="home">Huvudsida</a></li>
+                <li><a href="#" class="nav-link" data-section="current">Nuvarande uppdrag</a></li>
+            </ul>
+
+            <h2>Kampanj</h2>
+            <ul>
+                <li><a href="#" class="nav-link" data-section="timeline">Tidslinje</a></li>
+                <li><a href="#" class="nav-link" data-section="chapter11">Kapitel 11</a></li>
+            </ul>
+
+            <h2>Karaktärer</h2>
+            <ul>
+                <li><a href="#" class="nav-link" data-section="players">Spelare</a></li>
+                <li><a href="#" class="nav-link" data-section="npcs">NPCs</a></li>
+            </ul>
+
+            <h2>Värld</h2>
+            <ul>
+                <li><a href="#" class="nav-link" data-section="locations">Platser</a></li>
+                <li><a href="#" class="nav-link" data-section="factions">Fraktioner</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home -->
+            <article id="home" class="section-content active">
+                <h1 class="page-title">Gravens Arv</h1>
+
+                <div class="notice-box">
+                    <strong>Nuvarande uppdrag:</strong> Kapitel 11 - Rädda Zentri från Skugglandet
+                </div>
+
+                <p><strong>Gravens Arv</strong> är en pågående EON-rollspelskampanj som började med upptäckten av Tirakgraven och har utvecklats till en episk berättelse om hjältar, demoner och moraliska val.</p>
+
+                <h2>Översikt</h2>
+                <p>Kampanjen började när legosoldatkompaniet "Stålsvärds Kavalerister" kontrakterades för att bevaka en arkeologisk utgrävning vid gränsen mellan Cermira och Mithera. Utgrävningen visade sig vara Tirakgraven - ett urgammalt fängelse för demonen Urkhath.</p>
+
+                <p>Efter elva kapitel befinner sig gruppen nu i Skugglandet, en dimension där skuld manifesteras bokstavligt, på uppdrag att rädda sin kamrat Zentri Bredarsson.</p>
+
+                <h2>Spelgruppen</h2>
+                <table>
+                    <tr>
+                        <th>Karaktär</th>
+                        <th>Spelare</th>
+                        <th>Roll</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Gordon</td>
+                        <td>Calle</td>
+                        <td>Ledare</td>
+                        <td>Aktiv</td>
+                    </tr>
+                    <tr>
+                        <td>Thrakka Järnhanden</td>
+                        <td>Andreas</td>
+                        <td>Tirak-krigare</td>
+                        <td>Aktiv</td>
+                    </tr>
+                    <tr>
+                        <td>Umnatak</td>
+                        <td>Christofer</td>
+                        <td>Schaman</td>
+                        <td>Aktiv</td>
+                    </tr>
+                    <tr>
+                        <td>Kazrik Klan-Ghor</td>
+                        <td>Jonas</td>
+                        <td>Dvärg</td>
+                        <td>Aktiv</td>
+                    </tr>
+                    <tr>
+                        <td>Corvus Askhår</td>
+                        <td>Daniel</td>
+                        <td>Före detta kommendör</td>
+                        <td>Aktiv (Förföljd)</td>
+                    </tr>
+                    <tr style="background: #fee;">
+                        <td>Zentri Bredarsson</td>
+                        <td>-</td>
+                        <td>Asharier</td>
+                        <td><strong>FÅNGEN</strong></td>
+                    </tr>
+                </table>
+
+                <div class="category-tags">
+                    <strong>Kategorier:</strong>
+                    <span class="category-tag">Kampanj</span>
+                    <span class="category-tag">EON</span>
+                    <span class="category-tag">Pågående</span>
+                </div>
+            </article>
+
+            <!-- Current Mission -->
+            <article id="current" class="section-content">
+                <h1 class="page-title">Nuvarande Uppdrag</h1>
+
+                <div class="warning-box">
+                    <strong>PÅGÅENDE HÄNDELSER:</strong> Detta är den aktuella kampanjsituationen (Kapitel 11)
+                </div>
+
+                <div class="infobox">
+                    <div class="infobox-title">Kapitel 11: Skugglandet</div>
+                    <div class="infobox-row">
+                        <div class="infobox-label">Status</div>
+                        <div class="infobox-value">PÅGÅENDE</div>
+                    </div>
+                    <div class="infobox-row">
+                        <div class="infobox-label">Plats</div>
+                        <div class="infobox-value">Skugglandet</div>
+                    </div>
+                    <div class="infobox-row">
+                        <div class="infobox-label">Uppdrag</div>
+                        <div class="infobox-value">Rädda Zentri</div>
+                    </div>
+                    <div class="infobox-row">
+                        <div class="infobox-label">Antagonist</div>
+                        <div class="infobox-value">Demonen Urkhath</div>
+                    </div>
+                </div>
+
+                <h2>Beskrivning</h2>
+                <p>Gruppen har rest genom Älvakungens rike i Mithera för att nå Skugglandet - en dimension där skuld manifesteras bokstavligt och tiden flyter annorlunda. Deras uppdrag är att rädda <a href="#">Zentri Bredarsson</a>, som hålls fången av <a href="#">demonen Urkhath</a>.</p>
+
+                <h2>Bakgrund</h2>
+                <p>Zentri stal en silverring med demonens essens från Tirakgraven i Kapitel 1, utan att berätta för sina kamrater. Ringen började ge honom drömmar och visioner från andra dimensioner. Nu har Urkhath tagit honom till Skugglandet som gisslan.</p>
+
+                <h2>Utmaningar</h2>
+                <p>Skugglandet är en farlig dimension där:</p>
+                <ul>
+                    <li>Skuld manifesteras bokstavligt som fysiska entiteter</li>
+                    <li>Tiden flyter annorlunda än i Mundana</li>
+                    <li>Inre demoner blir yttre hot</li>
+                </ul>
+
+                <p>Särskilt farligt är det för <a href="#">Corvus Askhår</a>, som bär skulden för 23 års "rening" i Arvorns Hammares tjänst. Hans offer kan manifesteras som verkliga andar i Skugglandet.</p>
+
+                <div class="category-tags">
+                    <strong>Kategorier:</strong>
+                    <span class="category-tag">Kapitel 11</span>
+                    <span class="category-tag">Skugglandet</span>
+                    <span class="category-tag">Pågående uppdrag</span>
+                </div>
+            </article>
+
+            <!-- Timeline -->
+            <article id="timeline" class="section-content">
+                <h1 class="page-title">Kampanjtidslinje</h1>
+
+                <p>En kronologisk översikt av kampanjens elva kapitel, från Tirakgraven till Skugglandet.</p>
+
+                <h2>Kapitel 1: Tirakgraven och Demonens Väckande</h2>
+                <p><strong>Plats:</strong> Gränstrakterna mellan Cermira och Mithera</p>
+                <p>Upptäckten av demonens fängelse. Zentri stjäl silverringen i hemlighet. Ibran Anderyttare "dör" men överför sin själ till Tamron. Serafina Eldstav sviker gruppen och tar artefakterna för Sanari-alverna. Demonens partiella frigörelse sänder magiska chockvågor genom Mundana.</p>
+
+                <h2>Kapitel 2-7: Jakten</h2>
+                <p><strong>Platser:</strong> Muhad, Tarkas, Järgien, Vargnäset, Vitterdal</p>
+                <p>Gruppen jagar Tamron/Ibran genom städer och öknar. Nya allianser med handelshus. Mysterier djupnar.</p>
+
+                <h2>Kapitel 8: Vargnäset - Vändpunkten</h2>
+                <p><strong>Plats:</strong> Vargnäset</p>
+                <p>Arvorns Hammare ockuperar byn. Kommendör Corvus Askhår leder förhören. Den 12-åriga Sankt Astrid ljög för att skydda gruppen. Corvus korsfäste henne enligt ordensdoktrin, men hennes blod vägrade frysa och hennes sista ord var förlåtelse. I det ögonblicket fick Corvus en uppenbarelse från Daak. Han vände sig mot sina egna och räddade gruppen.</p>
+
+                <h2>Kapitel 9: Evakueringen</h2>
+                <p><strong>Plats:</strong> Genom Drunok</p>
+                <p>Corvus använder alias "Arcadius" och ordnar falska dokument. Flykt med korrupta flodkaptener.</p>
+
+                <h2>Kapitel 10: Genom Mithera</h2>
+                <p><strong>Plats:</strong> Mithera (Den magiska skogen)</p>
+                <p>Sanari-alvernas rike. Åderbjörkslunden med de fem stenarna. Corvus aktiverar "Den femte bär skulden". Möte med Älvakungen Yelgotha som ger passage till Skugglandet mot ett offer. Vandrarnas Märke erhållet.</p>
+
+                <h2>Kapitel 11: Skugglandet (PÅGÅENDE)</h2>
+                <p><strong>Plats:</strong> Skugglandet</p>
+                <p>Dimension där skuld blir verklig. Zentri hålls fången av Urkhath. Räddningsuppdrag pågår.</p>
+
+                <div class="category-tags">
+                    <strong>Kategorier:</strong>
+                    <span class="category-tag">Tidslinje</span>
+                    <span class="category-tag">Kampanjhistoria</span>
+                </div>
+            </article>
+
+            <!-- Players -->
+            <article id="players" class="section-content">
+                <h1 class="page-title">Spelarkaraktärer</h1>
+
+                <h2>Aktiva Karaktärer</h2>
+
+                <h3>Gordon</h3>
+                <p><strong>Spelare:</strong> Calle | <strong>Ras:</strong> Människa</p>
+                <p>Den pragmatiska ledaren som håller gruppen samman genom prövningar och kaos. Gruppens sammanhållande kraft och moraliska kompass.</p>
+
+                <h3>Corvus Askhår / "Arcadius"</h3>
+                <p><strong>Spelare:</strong> Daniel | <strong>Ras:</strong> Människa | <strong>Ålder:</strong> 31 år</p>
+                <p>Före detta kommendör i <a href="#">Arvorns Hammare</a>. Kidnappades som 8-åring när hans adelsfamilj dödades. Uppfostrades av Arvorns Hammare som "Den Rykande Hammaren". Efter 23 år fick han en uppenbarelse från Daak när han korsfäste <a href="#">Sankt Astrid</a> i Vargnäset. Vände sig mot sin orden och hjälper nu gruppen. Bär enorm skuld. Använder alias "Arcadius" under flykten. Förföljd av <a href="#">Kommendör Aldrich Järnkors</a>.</p>
+
+                <h3>Thrakka Järnhanden</h3>
+                <p><strong>Spelare:</strong> Andreas | <strong>Ras:</strong> Tirak</p>
+                <p>Krigare med magisk järnhand. Stark, lojal och representerar tirakernas stolta krigarkultur.</p>
+
+                <h3>Umnatak</h3>
+                <p><strong>Spelare:</strong> Christofer | <strong>Ras:</strong> Tirak</p>
+                <p>Schaman med djup koppling till andevärlden. Ger gruppen andlig vägledning och magisk kraft.</p>
+
+                <h3>Kazrik Klan-Ghor</h3>
+                <p><strong>Spelare:</strong> Jonas | <strong>Ras:</strong> Dvärg</p>
+                <p>Skicklig hantverkare med djup kunskap om undervärldarna och forntida hemligheter.</p>
+
+                <h2>Tidigare Spelarkaraktär</h2>
+
+                <h3>Zentri Bredarsson</h3>
+                <div class="warning-box">
+                    <strong>STATUS: FÅNGEN I SKUGGLANDET</strong>
+                </div>
+                <p><strong>Ras:</strong> Asharier</p>
+                <p>Stal silverringen med demonens essens från Tirakgraven utan att berätta för gruppen. Började få drömmar och visioner från andra dimensioner. Är nu fången i Skugglandet av demonen Urkhath - föremålet för gruppens nuvarande räddningsuppdrag.</p>
+
+                <div class="category-tags">
+                    <strong>Kategorier:</strong>
+                    <span class="category-tag">Spelarkaraktärer</span>
+                    <span class="category-tag">Hjältar</span>
+                </div>
+            </article>
+
+            <!-- NPCs -->
+            <article id="npcs" class="section-content">
+                <h1 class="page-title">Viktiga NPCs</h1>
+
+                <h2>Antagonister</h2>
+
+                <h3>Demonen Urkhath</h3>
+                <div class="warning-box">
+                    <strong>HUVUDANTAGONIST</strong>
+                </div>
+                <p>Urgammal demon från tiden före tiden. Fängslad i Tirakgraven av förgångna epokers magiker. Partiellt frigjord när Zentri stal silverringen. Håller nu Zentri fången i Skugglandet.</p>
+
+                <h3>Kommendör Aldrich Järnkors</h3>
+                <p><strong>Fraktion:</strong> Arvorns Hammare</p>
+                <p>Leder jakten på Corvus med 7 tempelriddare. Tror att Corvus är kidnappad och kontrollerad av kättare. Obeveklig förföljare.</p>
+
+                <h2>Allierade & Neutrala</h2>
+
+                <h3>Sankt Astrid</h3>
+                <p><strong>Ålder:</strong> 12 år (död) | <strong>Från:</strong> Vargnäset</p>
+                <p>Modig flicka som ljög för att skydda gruppen. Korsfästes av Corvus. Hennes blod vägrade frysa - ett mirakel. Hennes sista ord var förlåtelse. Hennes död gav Corvus uppenbarelse från Daak och förändrade kampanjens riktning.</p>
+
+                <h3>Älvakungen Yelgotha</h3>
+                <p><strong>Titel:</strong> Fursten av Mithera | <strong>Fraktion:</strong> Sanari-alverna</p>
+                <p>Härskare över Sanari-alvernas rike. Gav gruppen passage till Skugglandet mot ett blodigt offer. Kände Corvus dubbla identitet men valde att inte avslöja den.</p>
+
+                <h3>Vitfläck</h3>
+                <p><strong>Typ:</strong> Gåtfull älva | <strong>Plats:</strong> Mithera</p>
+                <p>Märklig väktare i Mithera. Kommenterade Corvus: "Två namn, två själar, två skulder. Du måste smaka FASCINERANDE."</p>
+
+                <h2>Svikare</h2>
+
+                <h3>Serafina Eldstav</h3>
+                <p><strong>Fraktion:</strong> Sanari-alverna</p>
+                <p>Sveek gruppen vid Tirakgraven och tog artefakterna för Sanari-alvernas räkning. Nuvarande vistelseort okänd.</p>
+
+                <div class="category-tags">
+                    <strong>Kategorier:</strong>
+                    <span class="category-tag">NPCs</span>
+                    <span class="category-tag">Karaktärer</span>
+                </div>
+            </article>
+
+            <!-- Locations -->
+            <article id="locations" class="section-content">
+                <h1 class="page-title">Platser</h1>
+
+                <h2>Huvudplatser</h2>
+
+                <h3>Tirakgraven</h3>
+                <p><strong>Region:</strong> Gränstrakterna mellan Cermira och Mithera</p>
+                <p>Urgammalt fängelse för demonen Urkhath. Bevakat av Tirakstammen i generationer. Migor Trollkunnigs utgrävning väckte det som skulle ha förblivit sovande. Kampanjens startpunkt.</p>
+
+                <h3>Vargnäset</h3>
+                <p><strong>Region:</strong> Nordliga byarna</p>
+                <p>Liten by som blev skådeplats för Corvus Askhårs transformation. Här korsfäste han Sankt Astrid och fick sin uppenbarelse från Daak. Kampanjens vändpunkt.</p>
+
+                <h3>Mithera</h3>
+                <p><strong>Region:</strong> Magiska skogen</p>
+                <p>Sanari-alvernas rike. En skog där verkligheten böjs av alvisk magi. Här finns Åderbjörkslunden med de fem stenarna. I hjärtat härskar Älvakungen Yelgotha från sin sal av levande trä.</p>
+
+                <h3>Skugglandet</h3>
+                <div class="warning-box">
+                    <strong>NUVARANDE PLATS</strong>
+                </div>
+                <p><strong>Region:</strong> Dimension bortom verkligheten</p>
+                <p>En dimension där skuld manifesteras bokstavligt och tiden flyter annorlunda. Här håller demonen Urkhath Zentri Bredarsson fången. Ett ställe där hjältarnas största prövning väntar.</p>
+
+                <div class="category-tags">
+                    <strong>Kategorier:</strong>
+                    <span class="category-tag">Platser</span>
+                    <span class="category-tag">Geografi</span>
+                </div>
+            </article>
+
+            <!-- Factions -->
+            <article id="factions" class="section-content">
+                <h1 class="page-title">Fraktioner</h1>
+
+                <h2>Antagonistiska</h2>
+
+                <h3>Arvorns Hammare</h3>
+                <p>Fanatisk religiös orden dedicerad till Daak. Jagar kättare och "rengör" världen med järn och eld. Corvus tidigare orden. Leds nu av Kommendör Aldrich Järnkors som jagar gruppen.</p>
+
+                <h2>Allierade</h2>
+
+                <h3>Sanari-alverna</h3>
+                <p>Alvisk nation i Mithera. Serafina Eldstav arbetade för dem. Deras kung, Yelgotha, gav gruppen passage till Skugglandet mot ett offer.</p>
+
+                <h3>Stålsvärds Kavalerister</h3>
+                <p>Legosoldatkompani där rollpersonerna tjänstgjorde i kampanjens början. Leddes av Kapten Kaelar Stålsvärd.</p>
+
+                <h2>Neutrala</h2>
+
+                <h3>Tirakstammen</h3>
+                <p>Ursprungliga väktare av Tirakgraven. Ledda av shamanen Ibran Anderyttare. Vaktat hemligheten om demonens fängelse i generationer.</p>
+
+                <div class="category-tags">
+                    <strong>Kategorier:</strong>
+                    <span class="category-tag">Fraktioner</span>
+                    <span class="category-tag">Organisationer</span>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <script>
+        // Navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                const sectionId = link.dataset.section;
+
+                // Remove active from all links
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+
+                // Hide all sections
+                document.querySelectorAll('.section-content').forEach(s => s.classList.remove('active'));
+
+                // Show selected section
+                document.getElementById(sectionId).classList.add('active');
+
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
