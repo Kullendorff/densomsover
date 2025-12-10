@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Zayed-familjen"
 roll: "Handelsman eller informant"
-bild: "/assets/images/npcs/amira.png"
+bild: "/assets/images/npcs/Amira_bint-Zayed.png"
 ---
 
 # AMIRA BINT-ZAYED

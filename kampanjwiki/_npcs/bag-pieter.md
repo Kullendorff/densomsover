@@ -7,7 +7,6 @@ forsta_fas: null
 plats: "Lundnäs"
 fraktion: "Oberoende"
 roll: "Jägare"
-bild: "/assets/images/npcs/bag_pieter.png"
 ---
 
 # BÅG-PIETER

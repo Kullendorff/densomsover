@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Resan Hem - Scenario 3"
 fraktion: "Arvorns Hammare"
 roll: "Representant"
-bild: "/assets/images/npcs/arvorns.png"
 ---
 
 # ARVORNS HAMMARE-REPRESENTANT
