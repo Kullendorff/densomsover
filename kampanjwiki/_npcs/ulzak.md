@@ -13,7 +13,6 @@ relationer:
     typ: "elev - tränade under evakueringen"
   - namn: "Ibran Anderyttare"
     typ: "kollega (andra tirak-schaman)"
-bild: "/assets/images/npcs/ulzak.png"
 ---
 
 # ULZAK

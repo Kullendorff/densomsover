@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Före detta Stålsvärds Kavalerister"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Banerbärare och moralansvarig"
-bild: "/assets/images/npcs/valthor.png"
 ---
 
 # VALTHOR BANERBÄRARE

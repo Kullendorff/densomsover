@@ -7,7 +7,7 @@ forsta_fas: null
 plats: "Lundnäs"
 fraktion: "Oberoende"
 roll: "Gästgivare"
-bild: "/assets/images/npcs/turam.png"
+bild: "/assets/images/npcs/Turam.png"
 ---
 
 # TURAM

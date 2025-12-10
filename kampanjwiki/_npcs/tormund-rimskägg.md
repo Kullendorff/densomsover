@@ -13,7 +13,6 @@ relationer:
     typ: "tragedi - försvann när kartor ljög"
   - namn: "Gruppen"
     typ: "varnade och försåg"
-bild: "/assets/images/npcs/tormund.png"
 ---
 
 # TORMUND RIMSKÄGG
