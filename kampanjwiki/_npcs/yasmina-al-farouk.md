@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Farouk-familjen"
 roll: "Obestämd"
-bild: "/assets/images/npcs/yasmina.png"
+bild: "/assets/images/npcs/Yasmina_al-Farouk.png"
 ---
 
 # YASMINA AL-FAROUK

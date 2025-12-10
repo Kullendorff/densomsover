@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Vargnäset"
 fraktion: "Desertörer"
 roll: "Desertörledare"
-bild: "/assets/images/npcs/valyra_nattöga.png"
 ---
 
 # VALYRA NATTÖGA

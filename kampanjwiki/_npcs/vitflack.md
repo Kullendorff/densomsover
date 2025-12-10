@@ -13,7 +13,6 @@ relationer:
     typ: "tjänare"
   - namn: "Gruppen"
     typ: "observatör"
-bild: "/assets/images/npcs/vitflack.png"
 ---
 
 # VITFLÄCK

@@ -7,7 +7,7 @@ forsta_fas: 7
 plats: "Raunfloden-området"
 fraktion: "Okänd"
 roll: "Okänd"
-bild: "/assets/images/npcs/ylva.png"
+bild: "/assets/images/npcs/sylva.png"
 alternativa_bilder:
   - "/assets/images/npcs/ylva1.png"
   - "/assets/images/npcs/ylva2.png"
