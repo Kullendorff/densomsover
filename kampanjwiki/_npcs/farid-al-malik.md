@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Jen, Muhad"
 fraktion: "Malik-familjen"
 roll: "Handelsman/Slavhandlare"
-bild: "/assets/images/npcs/farid.png"
+bild: "/assets/images/npcs/Farid al-Malik.png"
 ---
 
 # FARID AL-MALIK

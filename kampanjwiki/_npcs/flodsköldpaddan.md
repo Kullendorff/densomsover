@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Raunfloden"
 fraktion: "Okänd"
 roll: "Varelse"
-bild: "/assets/images/npcs/flodsköldpaddan.png"
 ---
 
 # FLODSKÖLDPADDAN

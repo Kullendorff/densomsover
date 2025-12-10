@@ -7,7 +7,6 @@ forsta_fas: 3
 plats: "Jarla"
 fraktion: "Oberoende"
 roll: "Örthandlare"
-bild: "/assets/images/npcs/fhe_ehdsim.png"
 ---
 
 # FHE EHDSIM

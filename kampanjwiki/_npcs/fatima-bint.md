@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Oberoende"
 roll: "Obestämd"
-bild: "/assets/images/npcs/fatima.png"
+bild: "/assets/images/npcs/fatima_bint.png"
 ---
 
 # FATIMA BINT

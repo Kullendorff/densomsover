@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Khouri-familjen"
 roll: "Handelsman"
-bild: "/assets/images/npcs/fahad.png"
+bild: "/assets/images/npcs/Fahad_al-Khouri.png"
 ---
 
 # FAHAD AL-KHOURI
