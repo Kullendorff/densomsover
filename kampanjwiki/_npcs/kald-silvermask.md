@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Vargnäset"
 fraktion: "Desertörer"
 roll: "Desertörledare"
-bild: "/assets/images/npcs/kaldsilvermask.png"
 ---
 
 # KALD SILVERMASK

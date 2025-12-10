@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Vargnäset"
 fraktion: "Vargnäsets invånare"
 roll: "Bågskytt"
-bild: "/assets/images/npcs/jossan.png"
 ---
 
 # JOSSAN

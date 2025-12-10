@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Oberoende"
 roll: "Berättare, informationskälla"
-bild: "/assets/images/npcs/karim.png"
+bild: "/assets/images/npcs/Karim_berättaren .png"
 ---
 
 # KARIM BERÄTTAREN

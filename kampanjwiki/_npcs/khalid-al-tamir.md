@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Tamir-familjen"
 roll: "Obestämd"
-bild: "/assets/images/npcs/khalid.png"
+bild: "/assets/images/npcs/Khalid_al-Tamir.png"
 ---
 
 # KHALID AL-TAMIR
