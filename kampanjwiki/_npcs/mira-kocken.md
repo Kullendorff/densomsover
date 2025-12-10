@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Oberoende"
 roll: "Kock, matlagare"
-bild: "/assets/images/npcs/mira.png"
+bild: "/assets/images/npcs/Amira_bint-Zayed.png"
 ---
 
 # MIRA

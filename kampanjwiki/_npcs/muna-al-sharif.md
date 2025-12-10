@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Sharif-familjen"
 roll: "Obestämd"
-bild: "/assets/images/npcs/muna.png"
+bild: "/assets/images/npcs/Muna_al-Sharif.png"
 ---
 
 # MUNA AL-SHARIF
