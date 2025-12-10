@@ -324,11 +324,12 @@ const wikiData = {
       "bild": "darina.png",
       "ras": "Människa",
       "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
+      "status": "död",
+      "plats": "Jen, Muhad",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# DARINA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# DARINA\n**Guide i Jen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Jen, Muhad\n- **Roll:** Guide\n- **Status:** Död\n\n## I KAMPANJEN\nDarina var spelarnas trevliga guide i Jen. Dog när Systrarna försökte bryta sig in på hjältarnas värdshus. Spelarna hittade honom med avskuren hals i sitt rum. Exakt vad som hände är oklart.",
+      "roll": "Guide"
     },
     {
       "namn": "Demonen Urkhath",
@@ -387,7 +388,7 @@ const wikiData = {
     },
     {
       "namn": "Dr. Yusuf al-Mansur",
-      "bild": null,
+      "bild": "dr.yusuf.png",
       "ras": "Mûhadier",
       "titel": "Doktor",
       "status": "levande",
@@ -395,17 +396,6 @@ const wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# DR. YUSUF AL-MANSUR\n**Läkare och helare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Titel:** Doktor\n- **Yrke:** Läkare och helare\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nDr. Yusuf al-Mansur är en vis och omtänksam läkare. Han är mycket erfaren och kunnig inom medicin.\n\n## KUNSKAPER & FÄRDIGHETER\nDr. Yusuf är expert på:\n- Medicinsk vård\n- Healing av sårade\n- Kunskap om legender\n- Örter och mediciner\n- Elixir och tinktur\n\n## ARBETSUPPGIFTER\nSom läkare:\n- Vårdar sårade\n- Ger medicinsk behandling\n- Förbereder mediciner och elixir\n- Delar kunskap om legender\n- Helar sjukdomar\n\n## VIKTIGA HÄNDELSER\nUnder karavanresan:\n- Gav Laila al-Jen en elixir\n- Vårdade sårade efter rövarattacken\n- Deltog i Laila al-Jens karavanresa\n\n## KARAKTÄR\n- Vis och erfaren\n- Omtänksam\n- Kunnig läkare\n- Respekterad\n\n## KOPPLINGAR\n- **Yrke:** Läkare och helare\n- **Arbetsgivare:** Laila al-Jen (under karavanresan)\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
-    },
-    {
-      "namn": "Dr. Yusuf",
-      "bild": "dr.yusuf.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# DR. YUSUF\n\n**Läkare och alkemist i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Läkare, möjligen alkemist\n\n## BAKGRUND\nDr. Yusuf är en lärd man i Muhad med kunskap om medicin och möjligen alkemi. Han behandlar sjuka och skadade.\n\n## I KAMPANJEN\n- Fas 3: Möttes i Muhad\n- Potentiellt hjälpte vid Hagges befrielse eller kände till alkemiska processer\n\n## SL-ANTECKNINGAR\n- Kunskap om alkemi (relevant för Laila/Hagge-situationen)\n- Kan användas för healing eller information\n- Diskret och professionell"
     },
     {
       "namn": "Eira Holm",
