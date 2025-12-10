@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Före detta Stålsvärds Kavalerister"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Scout och överlevnadsexpert"
-bild: "/assets/images/npcs/beric.png"
 ---
 
 # BERIC BRORSON

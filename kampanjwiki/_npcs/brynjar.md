@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Vargnäset"
 fraktion: "Vargnäsets invånare"
 roll: "Smed"
-bild: "/assets/images/npcs/brynjar.png"
 ---
 
 # BRYNJAR

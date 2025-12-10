@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Tirakgraven"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Antimagispecialist"
-bild: "/assets/images/npcs/daela.png"
 ---
 
 # DAELA HÄXMÄSTARE ⚔️
