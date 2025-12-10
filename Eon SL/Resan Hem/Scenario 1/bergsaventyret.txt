@@ -1,0 +1,350 @@
+# BERGSÄVENTYRET: RÅDSLINGAN OCH DE GLÖMDA NAMNEN
+
+## INLEDNING: FÖRBANNELSENS NATUR
+
+För länge sedan skedde en katastrof i denna gruva. En dvärgisk klan begick ett allvarligt svek – oavsett om det var genom girighet, maktspel eller rädsla. Flera dvärgar förråddes och dog inne i berget, deras namn medvetet utplånade från dvärgisk historia. I dvärgarnas tradition är detta en av de värsta handlingar som kan göras – att ta ifrån någon deras minne och plats i världen.
+
+För att dölja skammen förseglades gruvan, och platsen glömdes avsiktligt bort. När Griknar öppnade den igen släppte han lös det som gömts: **Rådslingan**, en gestalt av de namnlösa dvärgarnas samlade skuggor och vrede.
+
+Så länge namnen förblir glömda, och så länge inget erkännande sker, kommer förbannelsen att hålla Rådslingan vid liv. Den kan dödas – men den återvänder, eftersom dess kraft är bunden till glömskan.
+
+**Hur bryts förbannelsen?**
+1. Hitta de bortglömda namnen
+2. Utföra ceremonin på bergets topp
+3. Erkänna sveket inför andarna
+
+## DEL 1: BÖRJAN AV KLÄTTRINGEN - TECKEN OCH VARNINGAR
+
+### För Umnatak: Första Andeförnimmelsen
+
+När de når bergets fot:
+
+> "När ni börjar klättringen känner Umnatak genast en särskild resonans från berget. Med din Andeförnimmelse registrerar du flera närvaron bundna till berget - de känns förvirrade, arga, och märkligt sammanbundna."
+
+**Mekanik:** Låt Umnatak slå för Andeförnimmelse (Ob3T6) för att känna andarnas närvaro.
+- **Lyckat resultat:** Han förnimmer sju distinkta närvaron, sammanvävda till en enhet
+- **Utmärkt resultat:** Han känner även att berget liknar "Andarnas berg" från hans hemtrakter - en naturlig knutpunkt mellan världarna
+- **Misslyckat resultat:** Han känner bara en diffus obehagskänsla
+
+### För Kazrik: Dvärgiska Spår
+
+Tidigt i klättringen:
+
+> "Längs klippväggen upptäcker Kazrik nästan utraderade dvärgiska runor. De är gamla och medvetet skadade, men fragment återstår."
+
+**Mekanik:** Låt Kazrik slå för Stenkunskap eller Skriftspråk Rukh (Ob3T6) för att tyda fragmenten.
+- **Lyckat resultat:** Han kan tyda orden "råd", "glömska" och "försegla"
+- **Utmärkt resultat:** Han identifierar även ett fragment av ett namn: "Thur-"
+- **Misslyckat resultat:** Runorna är för skadade för att tydas
+
+### För Gordon: Den Militära Stigen
+
+När gruppen står inför en brant sektion:
+
+> "När ni söker ett sätt att ta er upp för en särskilt svår passage märks nötta märken i berget som skulle kunna vara rester av en stig."
+
+**Mekanik:** Gordon kan slå för Krigsföring eller Stridsvana (Ob3T6) för att identifiera ett mönster.
+- **Lyckat resultat:** Han upptäcker en gammal vaktstig som gör klättringen säkrare (+Ob1T6 bonus på nästa klätterslag)
+- **Utmärkt resultat:** Han ser även taktiska positioner längs stigen - detta var en militär väg
+- **Misslyckat resultat:** Han anar att något finns där men kan inte tydligt urskilja stigen
+
+### För Zentri: Magiska Störningar
+
+Under den första timmen av klättring:
+
+> "Luften omkring er känns tyngre, laddad. För någon med magisk känslighet finns märkbara störningar i de magiska energifälten runt berget."
+
+**Mekanik:** Zentri kan slå för Alstra och/eller Magiteori (Ob3T6) för att känna av krafterna.
+- **Lyckat resultat:** Han uppfattar att energierna är onormalt förvrängda, som om flera krafter tvingats samman
+- **Utmärkt resultat:** Han kan även känna att det rör sig om sju separata energier som bundits samman
+- **Misslyckat resultat:** Han känner bara en allmän magisk störning
+
+## DEL 2: UPPTÄCKTER UNDER STIGNINGEN
+
+### Den Sviktande Avsatsen (Gruppsamarbete)
+
+Ungefär en tredjedel upp:
+
+> "När gruppen når en skenbart stabil avsats börjar stenar plötsligt lossna under era fötter. Hela avsatsen börjar svikta med ett olycksbådande knak."
+
+**Mekanik:** Alla måste agera snabbt.
+- Kazrik kan slå för Stenkunskap (Ob3T6) för att identifiera säkra delar att stå på
+- Gordon kan slå för Hoppa (Ob3T6) för att snabbt nå säker mark
+- Zentri kan använda en lämplig besvärjelse om han har någon
+- Umnatak kan slå för Klättra eller Hoppa (Ob3T6)
+
+Varje misslyckat slag resulterar i 1T6 poäng trauma när stenen ger vika.
+
+### Griknars Läger (Viktigt Fynd)
+
+Halvvägs upp berget:
+
+> "I en skyddad klyfta upptäcker ni resterna av ett litet läger - verktyg, utrustning och en delvis nedbränd anteckningsbok."
+
+**Fynd att undersöka:**
+- **Anteckningsboken:** Innehåller fragment av namnen "Thurgrind", "Balkaz" och några delvis läsbara ord om att "De var sju" och "Namnen är nyckeln"
+- **Verktygen:** Gruvarbetarverktyg och några ritualistiska föremål
+- **Inristningar:** Griknar har ristat noter på bergväggen, delvis utsuddade
+
+**Mekanik för att undersöka:**
+- Kazrik kan slå för Letande (Ob3T6) för att hitta ytterligare fragment med namnet "-mir"
+- Umnatak kan slå för Andeförnimmelse (Ob3T6) för att känna en efterlämnad närvaro från Griknar
+- Gordon kan slå för Värdera (Ob3T6) för att uppskatta hur länge lägret varit övergivet
+- Zentri kan slå för Alstra (Ob3T6) för att känna subtil magisk påverkan på föremålen
+
+### Rådslingans Första Manifestation
+
+Två tredjedelar upp för berget:
+
+> "En onaturlig kyla sprider sig plötsligt. Er andedräkt kondenserar i tjock dimma, och i den tycker ni er se en skugglik silhuett av en ansiktslös dvärg som observerar er innan den upplöses."
+
+**Mekanik för reaktioner:**
+- Umnatak kan slå för Andeförnimmelse (Ob4T6) för att känna Rådslingans sammansatta natur
+- Kazrik kan slå för Stenkunskap eller Historia (Ob3T6) för att känna igen en skuggbild av traditionell dvärgisk rättsskipning
+- Zentri kan använda Alstra (Ob3T6) för att försöka "läsa" energierna i manifestationen
+- Gordon kan slå för Krigsvana (Ob3T6) för att bedöma om skepnaden är ett direkt hot och hur man bäst förflyttar sig förbi
+
+### Den Öppnade Gruvingången
+
+Nära toppen:
+
+> "Ni upptäcker en delvis raserad ingång i bergsidan - en liten, men tydligt artificiell öppning som verkar ha varit förseglad men brutits upp nyligen."
+
+**Mekanik för utforskning:**
+- Kazrik kan slå för Dvärgkunskap (Ob3T6) för att identifiera det som en nödutgång från en gruva
+- Umnatak kan slå för Andeförnimmelse (Ob4T6) för att känna starka emotioner från ingången
+- Gordon kan slå för Speja (Ob3T6) för att söka tecken på fällor eller faror
+- Zentri kan slå för en lämplig magisk färdighet (Ob3T6) för att känna om förbannelsen är starkare här
+
+## DEL 3: UMNATAKS VÄCKELSE TILL SCHAMANISM
+
+### Berget som Andeberg
+
+När gruppen närmar sig toppen:
+
+> "Umnatak, när du blickar ut över landskapet slås du av bergets silhuett mot himlen - den påminner starkt om Andarnas berg från din hemtrakt. Vinden virvlar här på ett sätt som känns bekant från fullmåneritualerna."
+
+**Mekanik:** Låt Umnatak slå för Andeförnimmelse (Ob3T6).
+- **Lyckat resultat:** Han förnimmer att detta berg är en naturlig knutpunkt till andeplanet
+- **Utmärkt resultat:** Han känner instinktivt att ausiska schamaner skulle ha använt denna plats för sina viktigaste ceremonier
+- **Misslyckat resultat:** Känslan är stark men diffus
+
+### Thogas Eko
+
+Under en paus i klättringen:
+
+> "När vinden vänder kommer plötsligt en svag doft av Ashamirgräs och röd ockra - dofter förknippade med ausiska ceremonier. En känsla av igenkänning vibrerar genom din Andeförnimmelse."
+
+**Mekanik:** Detta är ett naturligt tillfälle för Umnatak att minnas Thoga. Om spelaren nappar på detta, låt honom slå för Andeförnimmelse (Ob3T6).
+- **Lyckat resultat:** Han känner att starka känslor, särskilt kärlek, skapar ekon på andeplanet, särskilt på platser som detta berg
+- **Utmärkt resultat:** Han förnimmer att Thogas minne följt med honom - inte som ett spöke utan som ett känsloavtryck på andeplanet
+- **Misslyckat resultat:** Känslan är flyktig men behaglig
+
+### Den Första Trancen
+
+Vid ett kritiskt ögonblick nära toppen:
+
+> "När krafterna från Rådslingan blir starkare känner du hur berget nästan vibrerar under dina händer. Din Andeförnimmelse intensifieras på ett sätt du aldrig upplevt förut."
+
+**Mekanik:** Detta är tillfället då Umnatak kan försöka sin första trance. Låt honom slå med en grundchans på 4-6 för Schamanism (Ob3T6).
+- **Lyckat resultat:** Han hamnar i en ytlig trance och kan för en kort stund förnimma andeplanet "inifrån"
+- **Utmärkt resultat:** Han ser tydligt de sju dvärgsjälarna fångade i Rådslingan
+- **Misslyckat resultat:** Han känner en stark dragning mot andeplanet men kan inte nå det
+
+## DEL 4: SPECIALISERADE BIDRAG FRÅN VARJE SPELARE
+
+### Kazriks Dvärgiska Expertis
+
+På vägen till toppen:
+
+> "Kazrik, olika fragment av dvärgiska runor börjar bilda ett mönster. Dessa är inte slumpmässiga - de följer ett traditionsformat för dvärgiska domar."
+
+**Alternativ för Kazrik:**
+1. **Tyda Runorna:** Slå för Skriftspråk Rukh eller Stenkunskap (Ob3T6) för att sammanlänka fragmenten. Lyckat resultat ger ett till två namn.
+2. **Förstå Ritualen:** Slå för Historia eller Religion (Ob3T6) för att förstå exakt vilken typ av dvärgisk domstol som genomfördes här. Lyckat resultat ger förståelse för ceremonin som behövs.
+3. **Identifiera Dvärgklanen:** Slå för Dvärgkunskap (Ob3T6) för att fastställa vilken klan de dömda tillhörde. Lyckat resultat avslöjar vilket dvärghål de kom från, vilket kan kopplas till senare äventyr.
+
+### Zentris Magiska Kontroll
+
+Under mötet med Rådslingan eller vid ceremonin:
+
+> "När förbannelsens krafter bygger upp känner Zentri hur de magiska energifälten kring berget blir alltmer kaotiska och intensiva."
+
+**Magiska alternativ för Zentri:**
+1. **Stabilisera Energierna:** Slå för Alstra eller valfri magisk färdighet (Ob3T6) för att stabilisera de vilda energierna. Lyckat resultat hjälper alla andra slag under ceremonin (+Ob1T6 bonus).
+2. **Temporärt Skydd:** Om han har lämpliga besvärjelser kan han skapa en tillfällig barriär mot Rådslingans skuggor (kräver relevant slag mot Ob3T6-Ob4T6). Lyckat resultat ger gruppen tid att slutföra nödvändiga förberedelser.
+3. **Visualisera Namnen:** Genom att kanalisera sin magi kan han försöka göra de fragmentariska namnen synliga i luften (slå för relevant magisk färdighet mot Ob4T6). Lyckat resultat visar de delvis återställda namnen som ljusformationer.
+4. **Avläsa Historien:** Genom pyromantisk eller cirkomorphisk magi kan han försöka "se" skuggbilder av vad som hände (slag mot Ob4T6). Lyckat resultat ger ytterligare ledtrådar eller ett av de saknade namnen.
+
+### Gordons Militära Bidrag
+
+Under den sista uppstigningen eller vid toppen:
+
+> "Gordon, cirefaliska militärsymboler och kvarlämningar blir allt tydligare. Det 14:e Snölejonet verkar ha spelat en roll i det som hände med dvärgarna."
+
+**Alternativ för Gordon:**
+1. **Militärhistoria:** Slå för Historia, Krigsföring eller lämplig Kunskap (Ob3T6) för att tolka vad de cirefaliska symbolerna berättar. Lyckat resultat avslöjar soldaternas roll i att föra dvärgarna till toppen.
+2. **Cirefalisk Hederscermoni:** Slå för Etikett, Krigsföring eller liknande (Ob3T6) för att minnas den traditionella hedersbetygelse som cirefaliska soldater ger de fallna. Lyckat resultat ger ett viktigt element till ceremonin.
+3. **Cirefalisk Sång:** Om Gordon använder Sång eller liknande kan han framföra en traditionell cirefalisk hederssång (Ob3T6). Lyckat resultat skapar resonans med berget, vilket ger en bonus till ceremonin.
+4. **Strategisk Position:** Slå för Krigsföring eller Stridsvana (Ob3T6) för att identifiera den bästa platsen för att genomföra ceremonin. Lyckat resultat ger optimal position som underlättar för alla.
+
+## DEL 5: TOPPEN AV BERGET - CEREMONIN
+
+### Stencirkeln Upptäcks
+
+På toppen finner gruppen:
+
+> "Bergstoppen utgörs av en liten platå med sju resta stenar i en cirkel. I mitten står ett gammalt, väderbetat stenaltare. På altaret och stenarna finns dvärgiska runor, delvis utraderade av tiden."
+
+**Utrustning och föremål:**
+- Altaret beskriver en ceremoni där sju dvärgar dömdes till glömska
+- De sju stenarna representerar var och en en medlem i rådet som dömde de anklagade
+- En viss punkt på altaret verkar särskilt lämplig för att rista nya namn
+
+### Att Sammanlänka Namnfragmenten
+
+Gruppens uppgift är att samla de fragment av namn de upptäckt:
+- "Thurgrind" (från Griknars anteckningar)
+- "Balkaz" (från Griknars anteckningar)
+- "Bron-" (från dörren)
+- "-mir" (från lägret)
+- "-grim" (från dörren)
+- "Durgin-Khaz" (från den överlevande)
+
+Det saknade sjunde namnet kan upptäckas genom:
+- Kazriks tyda av runorna (slå för Stenkunskap, Ob4T6)
+- Umnataks användning av Andeförnimmelse på toppen (Ob4T6)
+- Zentris magiska avläsning (relevant magisk färdighet, Ob4T6)
+- Gordons upptäckt av en cirefalisk soldat som antecknat det (slå för Letande, Ob4T6)
+
+### Ceremonins Genomförande
+
+För att bryta förbannelsen behöver gruppen:
+1. Rista de sju namnen på altaret (Kazrik primärt ansvarig)
+2. Utföra en lämplig ritual som erkänner sveket (alla kan bidra)
+3. Läsa namnen högt (Kazrik optimalt, men alla kan hjälpa)
+
+**Rådslingans Reaktion:**
+> "När ni börjar ceremonin förtätas skuggorna runt bergstoppen. Rådslingan manifesterar sig tydligare än någonsin, sju skugggestalter sammansmälta till en massiv, ansiktslös dvärg."
+
+**Mekanik för ceremonin:**
+- Huvudhandling: Rista namnen (Ob3T6 för Hantverk eller liknande)
+- Stödjande bidrag från varje spelare (valfri lämplig färdighet, Ob3T6)
+- Varje lyckat slag ger +Ob1T6 till det slutliga ceremonislaget
+
+**Umnataks Schamanistiska Bidrag:**
+När ceremonin når sin höjdpunkt:
+> "Medan namnen uttalas känner Umnatak hur bergets andliga kraft intensifieras. Gränsen mellan den fysiska världen och andeplanet är tunnare här än någon annanstans han upplevt. Detta är ögonblicket då han kan ta sitt första medvetna steg mot schamanistisk förmåga."
+
+Umnatak kan slå för sin första nivå i Schamanism (grundchans 4-6) mot Ob3T6. På grund av platsens speciella karaktär och ögonblickets intensitet får han +Ob1T6 bonus på detta slag.
+
+### Ceremonins Fullbordan
+
+Om ceremonin lyckas:
+
+> "När det sista namnet uttalas börjar Rådslingan skälva och upplösas. De sju skuggorna separeras från varandra till distinkta silhuetter som nu har ansikten - åldrade, skäggiga ansikten med ögon fyllda av både smärta och lättnad. De bugar djupt mot er innan de långsamt bleknar bort."
+
+**Effekter:**
+- Förbannelsen hävs
+- Dvärgarnas själar finner fred
+- Berget känns lättare, friare
+- Framtida expeditioner till gruvan kommer inte att hotas
+
+## BELÖNINGAR OCH KONSEKVENSER
+
+### Umnataks Belöning: Schamanism
+- Förvärvar grundläggande Schamanism-färdighet (4-6)
+- Uppnår en djupare förståelse för andeplanet
+- Får en tydligare kontakt med ausiska andertraditioner
+- Känner en starkare koppling till Thogas minne genom andeplanet
+
+### Kazriks Belöning: Dvärgisk Prestige
+- Äran att ha återupprättat de förlorade namnen
+- Dvärgisk kunskap om det förlorade gruvkomplexet
+- Möjligt erkännande från andra dvärgar som hör talas om detta
+
+### Zentris Belöning: Magisk Insikt
+- Djupare förståelse för hur förbannelser fungerar
+- Särskild kunskap om kopplingen mellan minnen och magi
+- Eventuell magisk artefakt gömd i altaret
+
+### Gordons Belöning: Militärhistorisk Upptäckt
+- Avslöjat mysteriet med den försvunna garnisonen
+- Cirefaliskt hedersemblem gömt vid altaret
+- Värdefull historisk kunskap att dela med andra legosoldater
+
+### Gemensamma Belöningar
+- En karta till det större övergivna dvärghålet
+- En mindre mängd värdeföremål från Griknars läger
+- Tacksamhet från lokalbefolkningen när förbannelsen hävs
+- Rykte som "De som talar med berg"
+
+## SAMMANFATTNING AV NYCKELELEMENT
+
+1. **Umnataks Shamanresa:**
+   - Upptäcker berget som ett andeberg, likt Andarnas berg i hans hemtrakter
+   - Känner Thogas närvaro genom andeplanet
+   - Upplever sin första trance
+   - Förvärvar Schamanism-färdigheten genom ceremonin
+
+2. **Rådslingan och Förbannelsens Natur:**
+   - Sju dvärgar dömdes till glömska
+   - Deras själar smälte samman till Rådslingan
+   - Förbannelsen bryts genom att återupprätta namnen
+   - Ceremonin måste ske på bergstoppen
+
+3. **Varje Spelares Unika Bidrag:**
+   - Kazrik: Dvärgisk kunskap, tolka runor, leda ceremonin
+   - Umnatak: Andeförnimmelse, kontakt med andeplanet
+   - Zentri: Magisk analys, kontroll över energier, avläsning av förbannelsen
+   - Gordon: Militärhistoria, upptäcka den gamla stigen, cirefaliska ceremonier
+
+## VIKTIGA PERSONER I UMNATAKS BAKGRUND
+
+- **Thoga** - Hans förbjudna kärlek, hövdingens dotter
+- **Karak** - Stammens hövding, Thogas far
+- **Monon** - Hövdingsonen från grannstammen som Thoga var trolovad till
+- **Chio'iwana** - Stammens åldrade schaman, lärde Umnatak Andeförnimmelse
+- **Teton** - Den unge schamanens lärling, avslöjade förhållandet
+- **Tahmowai** - Umnataks far, dog i strid
+- **Catawba** - Umnataks mor, känd för sin kunskap om örter
+- **Zh'bo** - Umnataks barndomsvän som hjälpte honom fly
+
+Tillägg till Bergsäventyret
+Rådslingans ökade hot – specifika händelser:
+Manifestation 1 – Skuggstormen (strax före halva berget):
+Plötsligt sveper en onaturlig vind ner längs sluttningen. Luften blir tjock av mörka skuggflimmer och frostig dimma.
+
+Effekt: Spelarna måste snabbt agera för att skydda Kazrik och stenplattan.
+Kazrik: Riskerar att tappa plattan (Ob4T6 för att hålla den kvar).
+Övriga: Måste blockera vinden (sköldar, magi eller fysisk barriär).
+Konsekvens vid misslyckande: Plattan skadas och ett av namnen suddas ut – de tvingas återfinna fragmentet innan ceremonin.
+Manifestation 2 – Skuggornas förföljelse (efter snöstormen):
+När snöstormen bedarrar syns långsträckta skuggor som kryper fram över snön bakom gruppen.
+
+De viskar namn de inte minns, smyger nära och försöker frysa själarna hos dem som lyssnar för länge.
+Umnatak kan känna dem extra tydligt och behöver genomföra en andekontakt (Ob3T6) för att mota bort dem tillfälligt.
+Miljöbeskrivningar och hinder:
+Vid basen av berget:
+Dimma rullar in, och snön blir bländande vit i ljuset från bleka solstrålar. Bergets topp skymtar knappt som en mörk silhuett ovanför molnen.
+
+Halvvägs – stormens hjärta:
+Snö och is piskar i ansiktet. Sikten sjunker till bara några meter.
+
+Gruppen når en överhängande klipphylla där de måste ta skydd i en urholkad grotta.
+Här hörs dova ekon av rop som ingen av dem uttalat.
+Under stormens sex timmar faller temperaturen kraftigt. (Ob3T6 för att hålla kroppsvärme och skydda utrustningen från frostskador.)
+Sista stigningen – ispasset:
+Smala stigar slingrar sig längs en bergskam där snön ligger djup.
+
+En gammal dvärgrustning sticker upp ur snön, halvt begravd, med frostbitna runor som avslöjar en del av sanningen bakom sveket.
+Lavinfara: Gruppen hör ett djupt knakande i snön ovanför sig. Ett högt ljud eller för kraftiga rörelser kan utlösa ett snöras som spärrar stigen bakom dem.
+Ceremoniplatsen – Bergets topp:
+En bred, plan yta formad som en naturlig amfiteater med sju resta stenar i cirkel, snötäckta och delvis raserade av tiden.
+
+Vinden ylar här uppe konstant. Snön piskar horisontellt.
+Rådslingans skuggor kretsar kring stenarna, precis utom synfältets gräns.
+När namnen läses upp bryter skuggorna in i full kraft:
+
+Final manifestation: En vägg av mörker reser sig och försöker kväva elden innan namnen ristats färdigt.
+Gruppen måste hålla elden vid liv och skydda Kazrik medan han fullbordar inskriptionen (samordnade Ob4T6-slag och kreativt agerande).

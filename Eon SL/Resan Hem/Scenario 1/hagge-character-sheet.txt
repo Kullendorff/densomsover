@@ -1,0 +1,85 @@
+## HAGGE (HADRIAN AV VITTERDAL)
+Adlig från Cermira, tidigare slav, nu återvändande till sin familj
+
+## GRUNDATTRIBUT
+STY: 13    TÅL: 14    RÖR: 13    PER: 15
+PSY: 13    VIL: 14    BIL: 15    SYN: 12    HÖR: 12
+
+## HÄRLEDDA ATTRIBUT
+VINIT: 12
+Förflyttning: 8 meter/runda
+Chockvärde: 14
+Grundskada: 7
+Kroppspoäng: 28
+
+## KARAKTÄRSDRAG
+Heder: 16
+Lojalitet (Familj): 14
+Tro (Daak, Sabrisk variant): 10
+Generositet: 12
+Mod: 14
+
+## STRIDSFÄRDIGHETER
+Stridsvana: 14
+Svärd: 16
+Sköld: 14
+Dolk: 10
+Rida: 16
+Armborst: 12
+Ducka: 13
+Undvika: 12
+
+## KUNSKAPSFÄRDIGHETER
+Etikett: 16
+Diplomati: 14
+Heraldik: 15
+Historia: 12
+Krigsföring (Taktik): 15
+Ledarskap: 16
+Språk (Jargiska): 12
+Språk (Muhadin): 14
+Skriftspråk (Jargiska): 10
+Skriftspråk (Ashariska): 12
+Skriftspråk (Muhadin): 6
+
+## RÖRELSEFÄRDIGHETER
+Hoppa: 12
+Klättra: 10
+Lönndom: 8
+Simma: 12
+Smyga: 10
+
+## SOCIALA FÄRDIGHETER
+Berättarkonst: 12
+Charm: 14
+Förhöra: 10
+Genomskåda: 12
+Personbedömning: 14
+Övertala: 15
+
+## VILDMARKSFÄRDIGHETER
+Jakt: 15
+Orientering: 12
+Överlevnad: 12
+Spåra: 12
+Fällor: 10
+
+## UTRUSTNING
+- Dräkt av god kvalitet (passande en adlig men inte överdriven)
+- Ett familjesvärd (kvalitet 4, BRYT 14, +Ob1T6 skada)
+- En rundad medelsköld (pansarvärde 10, BRYT 12)
+- En signetring med familjevapnet
+- En finare kniv/dolk
+- En läderpung med 20 silver och 2 guldmynt (dolda i kläderna)
+
+## BAKGRUND & SPECIELLA KUNSKAPER
+- Adlig från Cermira, son till Soffia av Vitterdal
+- Bror till den sjuke Talarra, förväntas ta över ledarskapet
+- Tillfångatagen och såld som slav av piratkaptenen Lera Skuggskeppare
+- Har arbetat som hushållsslav, jakthantlangare och guide i Jen
+- God kännedom om Mûhadinsk kultur och slavhandelns nätverk
+- Återkommande mardrömmar från tiden som slav
+- Känner igen alla viktiga adelssläkter i Cermira
+- Detaljerad kunskap om Viterdals militära resurser
+- Talar med lätt cermirisk accent
+- Bär på ett djupt hat mot Lera Skuggskeppare och Malik Al-Zahir

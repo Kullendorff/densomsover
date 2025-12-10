@@ -1,0 +1,514 @@
+# STRIDEN OM VARGNÄSET
+*Spelledarguide med kompletta SLP-stats - Stål och Ära*
+
+## ÖVERGRIPANDE TIDSLINJE
+
+### Tidig kväll
+- Vaktposter rapporterar rörelse i skogsbrynet
+- Byinvånarna intar försvarspositioner
+- Spänning bygger upp när alla väntar
+
+### Första våg: Kald Silvermask (5 desertörer)
+- Främst bågskyttar, fokuserar på nordvästra palissaden
+- Taktik: Avleda och starta bränder
+- Svaghet: Återvänder till skogen om de möter betydande motstånd
+
+### Andra våg: Valyra Nattöga (8 desertörer)
+- Skogslöpare från öst och väst
+- Taktik: Infiltrera över svaga punkter i palissaden
+- Svaghet: Oorganiserade i närstrid, föredrar smygattacker
+
+### Tredje våg: Halrik Kord (7 desertörer)
+- Disciplinerad stridsstyrka med Halrik själv
+- Taktik: Koordinerad framryckning under skydd av kaos
+- Specialenheter: Två "spårhundar" söker specifikt Zentri
+
+## DRAMATISKA VÄNDPUNKTER (ANVÄND NÄR DET PASSAR)
+
+### Förrädarna inifrån
+- **Avslöjande:** Dagne och Karn öppnar en bakport
+- **Motiv:** Familjemedlemmar hålls som gisslan
+- **Spelarval:** Stoppa dem? Förhandla? Utnyttja situationen?
+
+### Zentris prövning
+- **Utlösare:** "Spårhundarna" närmar sig med silvernät
+- **Ringens reaktion:** Erbjuder kraft mot kontroll
+- **Roll för Umnatak:** Kan potentiellt "ankra" Zentri via andeplanet
+
+### Halriks avslöjande
+- **Timing:** Under direkt konfrontation
+- **Information:** Anlitad av "kvinnorna med silverringar"
+- **Fokus:** Fånga Zentri och ringen
+
+## STRIDSZONER & DETALJER
+
+### 1) Yttre palissaden (Gordons zon)
+- **Styrkor:** 5-7 bybor inklusive Tomas Järnhjälm
+- **Hot:** Silvermaskes bågskyttar, brandpilar
+- **Taktiska alternativ:**
+  * Moteld från egna bågskyttar
+  * Vattenkedjor för att släcka bränder
+  * Fallgropar och spetsade pålar sänker anfallstempot
+
+### 2) Taken och höjderna (Zentris zon)
+- **Styrkor:** 3-4 bågskyttar inklusive Jossan
+- **Hot:** Nattögas infiltratörer
+- **Taktiska alternativ:**
+  * Förberedda dämpade eldar kan tändas för siktfördel
+  * Lösa takpannor kan kastas som projektiler
+  * Markerade reträttvägar mellan byggnaderna
+
+### 3) Torget och centrum (Kazriks/Umnataks zon)
+- **Styrkor:** Resterande försvarare inklusive Brynjar och Hagge
+- **Hot:** Kords elitgrupp om de bryter igenom
+- **Taktiska alternativ:**
+  * Brunnen ger vattenkälla för brandbekämpning
+  * Barrikader skapar skyddade zoner
+  * Improviserade vapen från smedjan
+
+## VIKTIGA NPC-AKTIONER
+
+### Fientliga ledare
+- **Kald Silvermask:** Förblir på avstånd, skjuter brinnande pilar, drar sig tillbaka vid direkt konfrontation
+- **Valyra Nattöga:** Leder grupper över palissaden på olika punkter, föredrar plötsliga attacker
+- **Halrik Kord:** Väntar tills kaos utbrutit innan han leder huvudanfallet, fokuserad och metodisk
+
+### Allierade nyckelpersoner
+- **Brynjar:** Fördelar ut förstärkta vapen, stridsmässigt värdefull i närstrid
+- **Jossan:** Utmärkt bågskytt, kan identifiera ledarna
+- **Tomas och Jonna:** Håller norra palissaden till varje pris
+- **Eira:** Koordinerar försvararna, fattar beslut om resursallokering
+- **Ingvild:** Leder akutvård, har sjukstuga i värdshuset
+
+### "Spårhundarna"
+- Två specialdesertörer med silverarmband
+- Fokuserade enbart på att lokalisera och fånga Zentri
+- Rör sig separat från huvudstyrkan, söker öppningar
+
+## SPECIELLA SCENER ATT INTEGRERA
+
+### Bränder
+- 2-3 byggnader fattar eld under stridens gång
+- Vattenkedjor och resursprioriteringar krävs
+- Risk för spridning om de lämnas obevakade
+
+### Hagges ledarskap
+- Låt Hagge briljera genom att leda en motattack
+- Hans militära träning visar sig i kritiska ögonblick
+- Eira minns hans familjs taktiska begåvning
+
+### Umnataks andevarning
+- Hans schamanförmågor ger förvarning om flankeringsförsök
+- Kan känna "spårhundarnas" närvaro innan de syns
+- Möjlighet att upprätta andligt skydd för viktiga personer
+
+### Kazriks ingenjörskonst
+- De förstärkta vapnen visar sin kraft i strid
+- Improviserande fällor aktiveras mot anfallare
+- Möjlighet att förstärka sviktande försvarslinjer med snabba konstruktioner
+
+### Zentris upptäckt
+- Under striden noterar han att symbolerna på kapellet liknar ringens
+- "Spårhundarna" bär silvernät som reagerar på magi
+- Ringen pulserar starkare ju närmare striden kommer
+
+## MÖJLIGA UTFALL & KONSEKVENSER
+
+### Fullständig seger
+- Halrik tillfångatas levande
+- Alla anfallare besegras eller flyr
+- Minimala skador på byn
+- **Belöning:** Karta till Kords gömställe med skatter + information om Systrarna
+
+### Delvis seger
+- Halrik flyr men hans styrka är krossad
+- Några byggnader skadade men reparerbara
+- **Belöning:** Bevis på samröre mellan Systrarna och Arvorns Hammare
+
+### Pyrrhisk seger
+- Desertörerna besegras men med stora förluster
+- Avsevärd skada på byn
+- **Följder:** Arvorns Hammare anländer dagen efter för att "undersöka" situationen
+
+## EFTERSPEL & AVSLÖJANDEN
+
+### Fångarna
+- Överlevande desertörer kan avslöja delar av planen
+- En döende "spårhund" kan varna om fortsatta försök
+- Möjlighet till förhör som avslöjar nästa steg
+
+### Bevis och ledtrådar
+- Orden från Systrarna bland Halriks tillhörigheter
+- Silveramuletter med symboler lika ringens
+- Karta över planerade möten vid gränsen
+
+### Byns framtid
+- Reparationsarbete där rollpersonernas hjälp värdesätts
+- Erbjudande om permanent plats i byns gemenskap
+- Varningar om Arvorns Hammares ökande närvaro
+
+## MINNESVÄRD AVSLUTNING
+
+Låt avslutningen innehålla:
+- En gemensam minnesstund för eventuella förluster
+- Tacksamma bybor som visar sin uppskattning
+- Lämna ledtrådar om att Systrarna och Arvorns Hammare förmodligen kommer återvända
+- Hagge uttrycker förnyad kraft och motivation att återvända till Cermira
+- Bybornas ritual där de namnger en del av palissaden efter hjältarna
+
+---
+
+# SLP-STATISTIKBLOCK
+
+## FIENTLIGA LEDARE
+
+### Halrik Kord (Veteranbefäl)
+**STY:** 15  **TÅL:** 16  **RÖR:** 13  **PER:** 14  **PSY:** 13  **VIL:** 15  **BIL:** 12  
+**SYN:** 13  **HÖR:** 13
+   
+**VINIT:** 14  **Förflyttning:** 8m/runda  
+**Chockvärde:** 16  
+**Kroppspoäng:** 31  
+**Utmattningskolumner:** K = 4    P = 4    M = 4   
+
+**Stridsfärdigheter:**  
+- **Svärd:** 16
+- **Sköldbärare:** 15  
+- **Stridsvana:** 17
+- **Undvika:** 14
+- **Krigsföring:** 15
+
+**Andra viktiga färdigheter:**  
+- **Ledarskap:** 16
+- **Speja:** 13
+- **Förhöra:** 14
+- **Överlevnad:** 13
+- **Personbedömning:** 14
+
+**Utrustning:**  
+- Förstklassigt långsvärd (+Ob1T6 skada, BRYT 14)
+- Medelstor metallsköld (Pv 11, BRYT 15)
+- Ringbrynja (H:7, K:9, S:5, BRYT 13)
+- Hjälm (PV:9, BRYT 12)
+- Silverring med mystisk symbol (kopplad till Systrarna)
+- Kommandovissla
+- Karta över området med markeringar
+- 45 silver och 2 guldmynt
+
+**Taktik:** Halrik är en erfaren befälhavare som prioriterar överlevnad framför heder. Han leder sina trupper metodiskt och håller sig oftast bakom frontlinjen. Han går bara in i strid om framgången verkar säker och har alltid en reträttväg planerad. Han värderar information högt och siktar på att fånga Zentri levande.
+
+### Kald Silvermask (Bågakapten)
+**STY:** 13  **TÅL:** 12  **RÖR:** 16  **PER:** 14  **PSY:** 12  **VIL:** 13  **BIL:** 10  
+**SYN:** 17  **HÖR:** 12
+
+**VINIT:** 15  **Förflyttning:** 9m/runda  
+**Chockvärde:** 12  
+**Kroppspoäng:** 25
+**Utmattningskolumner:** K = 3    P = 3    M = 3   
+
+**Stridsfärdigheter:**  
+- **Båge:** 17
+- **Kortspjut:** 13
+- **Dolk:** 14
+- **Undvika:** 15
+- **Ducka:** 13
+
+**Andra viktiga färdigheter:**  
+- **Smyga:** 16
+- **Speja:** 15
+- **Överlevnad:** 14
+- **Jakt:** 15
+- **Lönndom:** 13
+
+**Utrustning:**  
+- Kvalitetslångbåge (BRYT 9)
+- Specialpilar - 5 brandpilar (antänder målet vid träff)
+- Silverbelagd mask (ger +Ob1T6 mot sociala manövrer baserade på fruktan)
+- Läderrustning (H:3, K:4, S:2, BRYT 9)
+- Kortspjut
+- Dolk
+- Flintstål för att tända brandpilar
+- 25 silver
+
+**Taktik:** Kald håller sig alltid på avstånd och prioriterar att skapa kaos med brandpilar. Han följer en enkel taktik: antänd byggnader, splittra försvaret, skapa öppningar. Vid direkta konfrontationer flyr han och omgrupperar. Hans silverbelagda mask ger honom ett rykte som håller hans soldater lojala genom rädsla.
+
+### Valyra Nattöga (Infiltratör)
+**STY:** 12  **TÅL:** 13  **RÖR:** 17  **PER:** 16  **PSY:** 14  **VIL:** 13  **BIL:** 11  
+**SYN:** 16  **HÖR:** 15
+
+**VINIT:** 17  **Förflyttning:** 10m/runda  
+**Chockvärde:** 13  
+**Kroppspoäng:** 25  
+**Utmattningskolumner:** K = 3    P = 4    M = 3   
+
+**Stridsfärdigheter:**  
+- **Kortsvärd:** 15
+- **Dolk:** 16
+- **Kastkniv:** 14
+- **Undvika:** 16
+- **Lönndom:** 17
+
+**Andra viktiga färdigheter:**  
+- **Smyga:** 18
+- **Klättra:** 16
+- **Akrobatik:** 15
+- **Låsdyrkning:** 14
+- **Gömma:** 16
+
+**Utrustning:**  
+- Två högkvalitativa dolkar (BRYT 10)
+- Lätt läderrustning (H:2, K:3, S:2, BRYT 8) - mörkfärgad
+- 6 kastdolkar
+- Krok med rep (20m)
+- Tjuvverktyg
+- Mörkgrön, grågrön ansiktsfärg
+- Starkt sömnmedel (för 3 doser)
+- 30 silver
+
+**Taktik:** Valyra leder infiltreringsoperationer och använder byns kaos för att hitta svaga punkter i försvaret. Hon skickar små grupper på 2-3 desertörer till olika punkter för att splittra försvaret. Själv söker hon efter värdefulla föremål och försöker hitta vägar för "spårhundarna" att nå Zentri. Hon föredrar att undvika direkta konfrontationer.
+
+## "SPÅRHUNDARNA"
+
+### Mörka Ragnir & Tysta Lenn (Magijägare)
+**STY:** 14  **TÅL:** 15  **RÖR:** 15  **PER:** 16  **PSY:** 14  **VIL:** 16  **BIL:** 10  
+**SYN:** 15  **HÖR:** 16
+
+**VINIT:** 16  **Förflyttning:** 9m/runda  
+**Chockvärde:** 15  
+**Kroppspoäng:** 29  
+**Utmattningskolumner:** K = 4    P = 4    M = 3   
+
+**Stridsfärdigheter:**  
+- **Stångvapen (med silvernät):** 15
+- **Kortsvärd:** 14
+- **Undvika:** 15
+- **Stridsvana:** 13
+- **Grepp/bryt:** 16
+
+**Andra viktiga färdigheter:**  
+- **Spåra:** 17
+- **Magikännedom:** 12
+- **Smyga:** 15
+- **Speja:** 16
+- **Personbedömning:** 14
+
+**Utrustning:**  
+- Silverbelagda silvernät (Särskild effekt: +Ob2T6 mot magianvändare)
+- Silverarmband med dämpande effekt (begränsar magianvändning i närheten)
+- Kortsvärd
+- Läderrustning förstärkt med metallplattor (H:5, K:6, S:4, BRYT 11)
+- Spårhundsvisslor (hög ton som stör magiker)
+- Magikänsliga amulett (lyser svagt blått när magienergier används)
+- 15 silver var
+
+**Taktik:** Dessa två arbetar alltid som par. Medan en distraherar med ett frontalt angrepp försöker den andra flankera. Deras mål är att fånga Zentri levande, inte döda honom. De använder silvernäten för att immobilisera och silverarmbanden för att störa magianvändning. Om en av dem faller fortsätter den andra sitt uppdrag med ännu större intensitet.
+
+## DESERTÖRER (STANDARDTRUPPER)
+
+### Silvermaskes Bågskyttar (5 st)
+**STY:** 12  **TÅL:** 11  **RÖR:** 14  **PER:** 13  **PSY:** 10  **VIL:** 10  **BIL:** 8  
+
+**VINIT:** 13  **Chockvärde:** 11  
+**Kroppspoäng:** 23  
+**Utmattningskolumner:** K = 3    P = 2    M = 2   
+
+**Stridsfärdigheter:**  
+- **Båge:** 14
+- **Dolk:** 11
+- **Undvika:** 12
+
+**Utrustning:**  
+- Långbåge
+- Dolk
+- Lätt läderrustning (H:2, K:3, S:2)
+- 3 brandpilar per person
+- 5-10 silver per person
+
+### Nattögas Infiltratörer (8 st)
+**STY:** 13  **TÅL:** 12  **RÖR:** 15  **PER:** 14  **PSY:** 10  **VIL:** 11  **BIL:** 8  
+
+**VINIT:** 14  **Chockvärde:** 12  
+**Kroppspoäng:** 25  
+**Utmattningskolumner:** K = 3    P = 3    M = 2   
+
+**Stridsfärdigheter:**  
+- **Kortsvärd/Yxa:** 13
+- **Dolk:** 12
+- **Undvika:** 14
+- **Smyga:** 15
+- **Klättra:** 14
+
+**Utrustning:**  
+- Kortsvärd eller enhandsyxa
+- Dolk
+- Lätt läderrustning (H:2, K:3, S:2)
+- Rep med änterhake
+- 8-15 silver per person
+
+### Kords Veteraner (7 st)
+**STY:** 14  **TÅL:** 14  **RÖR:** 12  **PER:** 12  **PSY:** 10  **VIL:** 13  **BIL:** 9  
+
+**VINIT:** 12  **Chockvärde:** 14  
+**Kroppspoäng:** 28  
+**Utmattningskolumner:** K = 3    P = 3    M = 3   
+
+**Stridsfärdigheter:**  
+- **Svärd/Yxa:** 15
+- **Sköld:** 14
+- **Undvika:** 13
+- **Stridsvana:** 13
+
+**Utrustning:**  
+- Enhandsvapen (svärd eller yxa)
+- Rundad sköld (Pv:8, BRYT:10)
+- Förstärkt läderrustning (H:4, K:5, S:3)
+- 15-25 silver per person
+
+## ALLIERADE NYCKELPERSONER
+
+### Brynjar Jorundsson (Smeden)
+**STY:** 17  **TÅL:** 15  **RÖR:** 10  **PER:** 12  **PSY:** 11  **VIL:** 14  **BIL:** 9
+
+**VINIT:** 10  **Chockvärde:** 15  
+**Kroppspoäng:** 32  
+**Utmattningskolumner:** K = 4    P = 3    M = 3   
+
+**Stridsfärdigheter:**  
+- **Hammare/Klubba:** 16
+- **Stridsvana:** 12
+- **Undvika:** 11
+
+**Andra viktiga färdigheter:**  
+- **Hantverk: Smide:** 18
+- **Hantverk: Vapenmakare:** 16
+- **Styrkedemonstration:** 17
+- **Värdera:** 14
+
+**Utrustning:**  
+- Tung smideshammare (K+Ob2T6, BRYT 14)
+- Läderförkläde (räknas som lätt skydd)
+- 3 improviserade metallvapen att dela ut
+- Smidesverktyg
+- 35 silver
+
+**Speciellt:** Brynjar kan improvisera vapen och rustningsförstärkningar under striden. Han kan också förstärka 1-2 vapen per stridsrunda med +Ob1T6 skada för en begränsad tid genom att snabbslipa dem.
+
+### Jossan (Jägaren)
+**STY:** 12  **TÅL:** 13  **RÖR:** 16  **PER:** 15  **PSY:** 13  **VIL:** 12  **BIL:** 10
+
+**VINIT:** 16  **Chockvärde:** 13  
+**Kroppspoäng:** 25  
+**Utmattningskolumner:** K = 3    P = 3    M = 3   
+
+**Stridsfärdigheter:**  
+- **Båge:** 18
+- **Dolk:** 14
+- **Spjut:** 13
+- **Undvika:** 15
+
+**Andra viktiga färdigheter:**  
+- **Speja:** 17
+- **Spåra:** 16
+- **Jakt:** 17
+- **Överlevnad:** 15
+- **Smyga:** 16
+
+**Utrustning:**  
+- Kvalitetslångbåge (BRYT 10) 
+- 30 pilar (10 av dem särskilt effektiva, +Ob1T6 skada)
+- Jaktdolk
+- Lätt läderrustning (H:2, K:3, S:2)
+- Spårningskit
+- Fältkikare (primitiv)
+- 18 silver
+
+**Speciellt:** Jossan känner till alla höga positioner i byn och kan använda dem för att få ut maximal effekt av sin bågskytte. Hon kan också identifiera ledare bland fienden och vet vilka som ska prioriteras.
+
+### Eira Holm (Byns Ledare)
+**STY:** 11  **TÅL:** 12  **RÖR:** 13  **PER:** 16  **PSY:** 15  **VIL:** 16  **BIL:** 14
+
+**VINIT:** 13  **Chockvärde:** 12  
+**Kroppspoäng:** 23  
+**Utmattningskolumner:** K = 3    P = 4    M = 4   
+
+**Stridsfärdigheter:**  
+- **Svärd:** 12
+- **Undvika:** 13
+- **Stridsvana:** 12
+
+**Andra viktiga färdigheter:**  
+- **Ledarskap:** 17
+- **Krigsföring:** 13
+- **Överlevnad:** 15
+- **Läkekonst:** 14
+- **Personbedömning:** 16
+- **Speja:** 14
+
+**Utrustning:**  
+- Kortsvärd
+- Lätt läderrustning (H:2, K:3, S:2)
+- Kommandostav (symbolisk)
+- Byns sigill
+- Karta över området
+- 40 silver
+
+**Speciellt:** Eira kan koordinera byns försvar effektivt. En gång per stridsrunda kan hon ge en allierad +Ob1T6 bonus på ett valfritt slag genom att ropa taktiska instruktioner. Hon kan också förutse fiendens rörelser baserat på sin erfarenhet.
+
+### Tomas Järnhjälm (Veteransoldat)
+**STY:** 15  **TÅL:** 15  **RÖR:** 12  **PER:** 13  **PSY:** 11  **VIL:** 14  **BIL:** 9
+
+**VINIT:** 12  **Chockvärde:** 15  
+**Kroppspoäng:** 30  
+**Utmattningskolumner:** K = 4    P = 3    M = 3   
+
+**Stridsfärdigheter:**  
+- **Yxa:** 15
+- **Sköld:** 14
+- **Undvika:** 13
+- **Stridsvana:** 15
+
+**Andra viktiga färdigheter:**  
+- **Krigsföring:** 13
+- **Härda ut:** 15
+- **Speja:** 12
+- **Hantverk: Träarbete:** 14
+
+**Utrustning:**  
+- Stridsyxa (H+Ob2T6)
+- Medelsköld (Pv:9, BRYT:12)
+- Ringbrynja (H:6, K:8, S:4, BRYT 11)
+- Järnhjälm (Pv:8, BRYT:14) - namngivare till hans tillnamn
+- 25 silver
+
+**Speciellt:** Tomas leder norra palissadens försvar. Han är extremt uthållig och kan fortsätta strida effektivt även när han är trött eller skadad. För varje fullständig utmattningskolumn han fyllt får han endast -Ob1T6 istället för -Ob2T6 i svårighetsökning.
+
+---
+
+## VÄGLEDNING FÖR STRIDEN
+
+### Stridsrundan steg för steg
+1. **Initiativfas:** Slå VINIT för att bestämma handlingsordning
+2. **Handlingsfas:** Alla agerar i tur och ordning
+3. **Förflyttningsfas:** Justeringar av positioner
+4. **Effektfas:** Applicera effekter (bränder sprider sig, etc.)
+
+### Byns försvarskapacitet
+- **Totalt antal försvarare:** 18-20 stridsdugliga bybor
+- **Bågskyttar:** 6 (inklusive Jossan)
+- **Närstridskämpar:** 12-14 (inklusive Brynjar och Tomas)
+- **Icke-stridande:** ~30 (äldre, barn, skadade)
+
+### Tumregler för striden
+- Hantera massorna med grupptärningsslag (slå en gång för flera SLP:er)
+- Låt ledarna agera individuellt för att göra dem minnesvärdare
+- För poäng över utmattning och skador i grupperingar (t.ex. "Norra palissadens försvarare" har tagit 12 skadepoäng totalt)
+- Låt oväntade händelser inträffa med jämna mellanrum för att hålla spänningen uppe
+
+### Balansering under spelets gång
+- Om spelarna lyckas för lätt: Låt förstärkningar anlända till desertörerna
+- Om spelarna har det för svårt: Låt fler bybor visa oväntat mod eller upptäcka fiendernas svaga punkter
+- Kom ihåg att skifta fokus mellan olika stridszoner för att ge alla spelare utrymme att agera
+
+---
+
+*Använd denna guide flexibelt - låt spelarna påverka hur striden utvecklas och anpassa konsekvenserna efter deras handlingar och tärningsslag. Det viktiga är inte att följa mallen exakt, utan att skapa en minnesvärd och meningsfull upplevelse.*
