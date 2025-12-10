@@ -15,7 +15,6 @@ relationer:
     typ: "son (död)"
   - namn: "Gordon och gruppen"
     typ: "ursprunglig uppdragsgivare"
-bild: "/assets/images/npcs/soffia.png"
 ---
 
 # LADY SOFFIA AV VITTERDAL

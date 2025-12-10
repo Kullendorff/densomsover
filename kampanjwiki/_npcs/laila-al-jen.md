@@ -13,7 +13,7 @@ relationer:
     typ: "barnets far"
   - namn: "Malik"
     typ: "före detta arbetsgivare?"
-bild: "/assets/images/npcs/laila.png"
+bild: "/assets/images/npcs/Laila_al-Jen.png"
 ---
 
 # LAILA AL-JEN
