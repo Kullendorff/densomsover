@@ -7,7 +7,6 @@ forsta_fas: 3
 plats: "Jarla"
 fraktion: "Handelshuset Nejas"
 roll: "Köpman och rådman"
-bild: "/assets/images/npcs/jeskia_av_nejas.png"
 ---
 
 # JESKIA AV NEJAS

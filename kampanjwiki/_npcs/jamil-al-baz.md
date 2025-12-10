@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Baz-familjen"
 roll: "Obestämd"
-bild: "/assets/images/npcs/jamil.png"
+bild: "/assets/images/npcs/Jamil_al-Baz.png"
 ---
 
 # JAMIL AL-BAZ

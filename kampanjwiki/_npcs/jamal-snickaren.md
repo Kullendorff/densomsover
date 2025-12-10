@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Oberoende"
 roll: "Snickare, hantverkare"
-bild: "/assets/images/npcs/jamal.png"
+bild: "/assets/images/npcs/jamal_snickaren.png"
 ---
 
 # JAMAL

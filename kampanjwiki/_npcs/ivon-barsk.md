@@ -7,7 +7,7 @@ forsta_fas: null
 plats: "Lundnäs"
 fraktion: "Oberoende"
 roll: "Okänd"
-bild: "/assets/images/npcs/ivon_barsk.png"
+bild: "/assets/images/npcs/Ivon_barsk.png"
 ---
 
 # IVON BARSK

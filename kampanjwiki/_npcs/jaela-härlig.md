@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Tirakgraven"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Stridande"
-bild: "/assets/images/npcs/jaela.png"
 ---
 
 # JAELA HÄRLIG ⚔️
