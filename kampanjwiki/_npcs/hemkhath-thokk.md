@@ -7,7 +7,6 @@ forsta_fas: 3
 plats: "Jarla"
 fraktion: "Todor Felkes palatsgarde"
 roll: "Kapten för palatsgarde"
-bild: "/assets/images/npcs/hemkhath_thokk.png"
 ---
 
 # HEMKHATH THOKK

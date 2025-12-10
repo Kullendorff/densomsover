@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Före detta Stålsvärds Kavalerister"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Taktisk vädermagiker"
-bild: "/assets/images/npcs/harald.png"
 ---
 
 # HARALD VÄDERMÄSTARE

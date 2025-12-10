@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Vargnäset"
 fraktion: "Desertörer (anlitad av Systrarna)"
 roll: "Desertörledare"
-bild: "/assets/images/npcs/halrik.png"
 ---
 
 # HALRIK KORD

@@ -17,7 +17,7 @@ relationer:
     typ: "komplicerad - barnets mor"
   - namn: "Gordon"
     typ: "allierad - Kapten av Vitterdals Hederskompani"
-bild: "/assets/images/npcs/hagge.png"
+bild: "/assets/images/npcs/hagge2.png"
 ---
 
 # HADRIAN "HAGGE" AV VITTERDAL

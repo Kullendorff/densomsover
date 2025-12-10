@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Vargnäset"
 fraktion: "Vargnäsets invånare"
 roll: "Jägare"
-bild: "/assets/images/npcs/hunter.png"
 ---
 
 # HUNTER
