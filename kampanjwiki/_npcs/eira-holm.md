@@ -13,7 +13,6 @@ relationer:
     typ: "räddare"
   - namn: "50 flyktingar"
     typ: "folk hon leder"
-bild: "/assets/images/npcs/eira.png"
 ---
 
 # EIRA HOLM

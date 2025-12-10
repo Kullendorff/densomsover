@@ -15,7 +15,6 @@ relationer:
     typ: "tidigare väktare"
   - namn: "Tirakstammen"
     typ: "tidigare fångvaktare"
-bild: "/assets/images/npcs/demon.png"
 ---
 
 # DEMONEN URKHATH

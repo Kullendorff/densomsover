@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Oberoende"
 roll: "Läkare, alkemist"
-bild: "/assets/images/npcs/yusuf.png"
+bild: "/assets/images/npcs/dr.yusuf.png"
 ---
 
 # DR. YUSUF

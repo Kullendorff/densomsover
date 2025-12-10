@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Vargnäset"
 fraktion: "Vargnäsets invånare"
 roll: "Bykoordinator"
-bild: "/assets/images/npcs/eira.png"
 ---
 
 # EIRA
