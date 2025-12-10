@@ -41,3 +41,10 @@ Thumbs.db
 node_modules/
 package-lock.json
 yarn.lock
+
+# ============================================
+# Stora filer och hemsidan
+# ============================================
+Eon SL/hemsidan/
+*.rtf
+*.exe
