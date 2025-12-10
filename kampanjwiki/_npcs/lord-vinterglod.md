@@ -15,7 +15,6 @@ relationer:
     typ: "före detta herre (var hans page)"
   - namn: "Systern (död)"
     typ: "dog i de varma källorna"
-bild: "/assets/images/npcs/vinterglod.png"
 ---
 
 # LORD VINTERGLÖD

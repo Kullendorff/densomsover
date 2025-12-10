@@ -7,7 +7,7 @@ forsta_fas: 5
 plats: "Tuzan Rim"
 fraktion: "Oberoende"
 roll: "Obestämd"
-bild: "/assets/images/npcs/merek.png"
+bild: "/assets/images/npcs/Merek.png"
 ---
 
 # MEREK

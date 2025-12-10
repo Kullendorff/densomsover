@@ -13,7 +13,7 @@ relationer:
     typ: "anlitade hans kompani"
   - namn: "Demonen Urkhath"
     typ: "oavsiktligt befriade"
-bild: "/assets/images/npcs/migor.png"
+bild: "/assets/images/npcs/MigorTrollkunnare.png"
 ---
 
 # MIGOR TROLLKUNNIG

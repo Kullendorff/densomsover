@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Före detta Stålsvärds Kavalerister"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Stridande"
-bild: "/assets/images/npcs/megir.png"
 ---
 
 # MEGIR STEGSSON
