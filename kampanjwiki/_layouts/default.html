@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f1ea;
+            color: #2c1810;
+        }
+        header {
+            background-color: #4a3426;
+            color: #f4f1ea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #6b4e3d;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: #f4f1ea;
+            text-decoration: none;
+            padding: 5px 15px;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            background-color: #8b6f5c;
+            border-radius: 3px;
+        }
+        .content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 { color: #4a3426; }
+        a { color: #8b4513; }
+        a:hover { color: #a0522d; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gravens Arv - Kampanjwiki</h1>
+        <p>EON Rollspelskampanj</p>
+    </header>
+
+    <nav>
+        <a href="{{ site.baseurl }}/">Hem</a>
+        <a href="{{ site.baseurl }}/npcs/">NPCs</a>
+        <a href="{{ site.baseurl }}/platser/">Platser</a>
+        <a href="{{ site.baseurl }}/fraktioner/">Fraktioner</a>
+        <a href="{{ site.baseurl }}/kapitel/">Kapitel</a>
+        <a href="{{ site.baseurl }}/spelarkaraktarer/">Spelarkaraktärer</a>
+    </nav>
+
+    <div class="content">
+        {{ content }}
+    </div>
+</body>
+</html>

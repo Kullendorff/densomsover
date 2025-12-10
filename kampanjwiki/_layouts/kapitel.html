@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<article class="kapitel">
+    <header>
+        <h1>Kapitel {{ page.nummer }}: {{ page.titel }}</h1>
+    </header>
+
+    <div class="metadata" style="background: #f9f6f0; padding: 15px; border-left: 4px solid #b8860b; margin: 20px 0;">
+        <h3>Kapitelinfo</h3>
+        <ul style="list-style: none; padding: 0;">
+            {% if page.nummer %}<li><strong>Kapitel:</strong> {{ page.nummer }}</li>{% endif %}
+            {% if page.plats %}<li><strong>Plats:</strong> {{ page.plats }}</li>{% endif %}
+            {% if page.status %}<li><strong>Status:</strong> {{ page.status }}</li>{% endif %}
+            {% if page.datum %}<li><strong>Datum:</strong> {{ page.datum }}</li>{% endif %}
+        </ul>
+    </div>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+    {% if page.npcs %}
+    <div class="npcs-list" style="margin-top: 30px; padding: 20px; background: #faf8f3; border-radius: 5px;">
+        <h3>Viktiga NPCs i detta kapitel</h3>
+        <ul>
+        {% for npc in page.npcs %}
+            <li>{{ npc }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    {% if page.platser %}
+    <div class="platser-list" style="margin-top: 20px; padding: 20px; background: #faf8f3; border-radius: 5px;">
+        <h3>Platser i detta kapitel</h3>
+        <ul>
+        {% for plats in page.platser %}
+            <li>{{ plats }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <footer style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0d7c7;">
+        <p><a href="{{ site.baseurl }}/kapitel/">← Tillbaka till Kapitel</a></p>
+    </footer>
+</article>

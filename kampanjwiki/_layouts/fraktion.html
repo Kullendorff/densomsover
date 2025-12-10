@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<article class="fraktion">
+    <header>
+        <h1>{{ page.namn }}</h1>
+        {% if page.typ %}
+        <p class="typ" style="font-size: 1.2em; color: #8b4513; font-style: italic;">{{ page.typ }}</p>
+        {% endif %}
+    </header>
+
+    <div class="metadata" style="background: #f9f6f0; padding: 15px; border-left: 4px solid #8b0000; margin: 20px 0;">
+        <h3>Fraktionsinfo</h3>
+        <ul style="list-style: none; padding: 0;">
+            {% if page.typ %}<li><strong>Typ:</strong> {{ page.typ }}</li>{% endif %}
+            {% if page.region %}<li><strong>Region:</strong> {{ page.region }}</li>{% endif %}
+            {% if page.ras %}<li><strong>Ras:</strong> {{ page.ras }}</li>{% endif %}
+            {% if page.status %}<li><strong>Status:</strong> {{ page.status }}</li>{% endif %}
+            {% if page.ledare %}<li><strong>Ledare:</strong> {{ page.ledare }}</li>{% endif %}
+            {% if page.specialisering %}<li><strong>Specialisering:</strong> {{ page.specialisering }}</li>{% endif %}
+        </ul>
+    </div>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+    {% if page.medlemmar %}
+    <div class="medlemmar-list" style="margin-top: 30px; padding: 20px; background: #faf8f3; border-radius: 5px;">
+        <h3>Kända medlemmar</h3>
+        <ul>
+        {% for medlem in page.medlemmar %}
+            <li>{{ medlem }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <footer style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0d7c7;">
+        <p><a href="{{ site.baseurl }}/fraktioner/">← Tillbaka till Fraktioner</a></p>
+    </footer>
+</article>

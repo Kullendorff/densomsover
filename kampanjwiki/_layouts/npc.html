@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<article class="npc">
+    <header>
+        {% if page.bild %}
+        <img src="{{ page.bild }}" alt="{{ page.namn }}" style="max-width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 5px;">
+        {% endif %}
+
+        <h1>{{ page.namn }}</h1>
+        {% if page.titel %}
+        <p class="titel" style="font-size: 1.2em; color: #8b4513; font-style: italic;">{{ page.titel }}</p>
+        {% endif %}
+    </header>
+
+    <div class="metadata" style="background: #f9f6f0; padding: 15px; border-left: 4px solid #8b4513; margin: 20px 0;">
+        <h3>Grundinfo</h3>
+        <ul style="list-style: none; padding: 0;">
+            {% if page.ras %}<li><strong>Ras:</strong> {{ page.ras }}</li>{% endif %}
+            {% if page.kon %}<li><strong>Kön:</strong> {{ page.kon }}</li>{% endif %}
+            {% if page.yrke %}<li><strong>Yrke:</strong> {{ page.yrke }}</li>{% endif %}
+            {% if page.plats %}<li><strong>Plats:</strong> {{ page.plats }}</li>{% endif %}
+            {% if page.status %}<li><strong>Status:</strong> {{ page.status }}</li>{% endif %}
+            {% if page.forsta_fas %}<li><strong>Första omnämnande:</strong> Fas {{ page.forsta_fas }}</li>{% endif %}
+            {% if page.fraktion %}<li><strong>Fraktion:</strong> {{ page.fraktion }}</li>{% endif %}
+        </ul>
+    </div>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <footer style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0d7c7;">
+        <p><a href="{{ site.baseurl }}/npcs/">← Tillbaka till NPCs</a></p>
+    </footer>
+</article>

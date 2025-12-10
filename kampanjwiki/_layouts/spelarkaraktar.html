@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="spelarkaraktar">
+    <header>
+        {% if page.bild %}
+        <img src="{{ page.bild }}" alt="{{ page.namn }}" style="max-width: 300px; float: right; margin: 0 0 20px 20px; border-radius: 5px;">
+        {% endif %}
+
+        <h1>{{ page.namn }}</h1>
+        {% if page.spelare %}
+        <p class="spelare" style="font-size: 1.2em; color: #8b4513; font-style: italic;">Spelas av: {{ page.spelare }}</p>
+        {% endif %}
+    </header>
+
+    <div class="metadata" style="background: #f9f6f0; padding: 15px; border-left: 4px solid #4169e1; margin: 20px 0;">
+        <h3>Karaktärsinfo</h3>
+        <ul style="list-style: none; padding: 0;">
+            {% if page.ras %}<li><strong>Ras:</strong> {{ page.ras }}</li>{% endif %}
+            {% if page.alder %}<li><strong>Ålder:</strong> {{ page.alder }}</li>{% endif %}
+            {% if page.status %}<li><strong>Status:</strong> {{ page.status }}</li>{% endif %}
+            {% if page.nuvarande_plats %}<li><strong>Nuvarande plats:</strong> {{ page.nuvarande_plats }}</li>{% endif %}
+        </ul>
+    </div>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <footer style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0d7c7;">
+        <p><a href="{{ site.baseurl }}/spelarkaraktarer/">← Tillbaka till Spelarkaraktärer</a></p>
+    </footer>
+</article>

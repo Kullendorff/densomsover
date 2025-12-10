@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="plats">
+    <header>
+        <h1>{{ page.namn }}</h1>
+        {% if page.typ %}
+        <p class="typ" style="font-size: 1.2em; color: #8b4513; font-style: italic;">{{ page.typ }}</p>
+        {% endif %}
+    </header>
+
+    <div class="metadata" style="background: #f9f6f0; padding: 15px; border-left: 4px solid #2e8b57; margin: 20px 0;">
+        <h3>Platsinfo</h3>
+        <ul style="list-style: none; padding: 0;">
+            {% if page.typ %}<li><strong>Typ:</strong> {{ page.typ }}</li>{% endif %}
+            {% if page.region %}<li><strong>Region:</strong> {{ page.region }}</li>{% endif %}
+            {% if page.population %}<li><strong>Population:</strong> {{ page.population }}</li>{% endif %}
+            {% if page.forsta_fas %}<li><strong>Första omnämnande:</strong> Fas {{ page.forsta_fas }}</li>{% endif %}
+            {% if page.kapten %}<li><strong>Kapten:</strong> {{ page.kapten }}</li>{% endif %}
+            {% if page.agare %}<li><strong>Ägare:</strong> {{ page.agare | join: ", " }}</li>{% endif %}
+        </ul>
+    </div>
+
+    <div class="content">
+        {{ content }}
+    </div>
+
+    <footer style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e0d7c7;">
+        <p><a href="{{ site.baseurl }}/platser/">← Tillbaka till Platser</a></p>
+    </footer>
+</article>
