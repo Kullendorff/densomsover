@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Före detta Stålsvärds Kavalerister"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Sångerska, underhållare och scout"
-bild: "/assets/images/npcs/elira.png"
 ---
 
 # ELIRA "SIRENEN"
