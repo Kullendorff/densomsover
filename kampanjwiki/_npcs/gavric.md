@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Tirakgraven"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Tungt bepansrad stridande"
-bild: "/assets/images/npcs/gavric.png"
 ---
 
 # GAVRIC ⚔️

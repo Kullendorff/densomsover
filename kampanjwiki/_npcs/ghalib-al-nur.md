@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Nur-familjen"
 roll: "Obestämd"
-bild: "/assets/images/npcs/ghalib.png"
+bild: "/assets/images/npcs/Ghalib_al-Nur.png"
 ---
 
 # GHALIB AL-NUR

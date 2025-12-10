@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Tirakgraven"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Flerspråkig stridande"
-bild: "/assets/images/npcs/gazroz.png"
 ---
 
 # GAZROZ TZERION ⚔️

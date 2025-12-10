@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Raunfloden-området"
 fraktion: "Okänd"
 roll: "Okänd"
-bild: "/assets/images/npcs/garsten.png"
 ---
 
 # GARSTEN

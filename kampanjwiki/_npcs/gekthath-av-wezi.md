@@ -7,7 +7,6 @@ forsta_fas: 3
 plats: "Jarla"
 fraktion: "Handelshuset Wezi"
 roll: "Köpman och rådman"
-bild: "/assets/images/npcs/gekthath_av_wezi.png"
 ---
 
 # GEKTHATH AV WEZI
