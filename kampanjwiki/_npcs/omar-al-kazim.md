@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Kazim-familjen"
 roll: "Obestämd"
-bild: "/assets/images/npcs/omar.png"
+bild: "/assets/images/npcs/Omar_al-Kazim.png"
 ---
 
 # OMAR AL-KAZIM

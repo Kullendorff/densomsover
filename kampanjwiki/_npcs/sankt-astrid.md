@@ -13,7 +13,6 @@ relationer:
     typ: "hennes död förändrade honom"
   - namn: "Vargnäsets bybor"
     typ: "en av dem"
-bild: "/assets/images/npcs/astrid.png"
 ---
 
 # SANKT ASTRID

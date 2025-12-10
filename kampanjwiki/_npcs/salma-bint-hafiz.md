@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Hafiz-familjen"
 roll: "Obestämd"
-bild: "/assets/images/npcs/salma.png"
+bild: "/assets/images/npcs/Salma_bint-Hafiz.png"
 ---
 
 # SALMA BINT-HAFIZ

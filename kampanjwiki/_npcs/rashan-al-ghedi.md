@@ -8,7 +8,7 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Ghedi-familjen"
 roll: "Obestämd"
-bild: "/assets/images/npcs/rashan.png"
+bild: "/assets/images/npcs/Rashan_al-Ghedi.png"
 ---
 
 # RASHAN AL-GHEDI

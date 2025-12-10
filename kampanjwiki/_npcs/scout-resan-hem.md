@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Resan Hem - Scenario 3"
 fraktion: "Okänd"
 roll: "Scout"
-bild: "/assets/images/npcs/scout.png"
 ---
 
 # SCOUT
