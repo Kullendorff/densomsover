@@ -1,0 +1,43 @@
+# ============================================
+# KRITISKT: Copyrightskyddade PDF:er
+# ============================================
+# Ladda ALDRIG upp regelböcker eller äventyr
+*.pdf
+**/*.pdf
+
+# ============================================
+# Google Drive filer
+# ============================================
+*.gdoc
+*.gsheet
+*.gslides
+**/*.gdoc
+**/*.gsheet
+**/*.gslides
+
+# ============================================
+# Jekyll
+# ============================================
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# ============================================
+# OS & Editor
+# ============================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# ============================================
+# Node (om vi använder npm/yarn)
+# ============================================
+node_modules/
+package-lock.json
+yarn.lock
