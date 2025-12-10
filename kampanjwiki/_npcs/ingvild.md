@@ -7,7 +7,6 @@ forsta_fas: 7
 plats: "Vargnäset"
 fraktion: "Vargnäsets invånare"
 roll: "Läkare"
-bild: "/assets/images/npcs/ingvild.png"
 ---
 
 # INGVILD

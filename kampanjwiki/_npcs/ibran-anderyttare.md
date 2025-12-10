@@ -15,7 +15,6 @@ relationer:
     typ: "schaman"
   - namn: "Tamron"
     typ: "värdkropp"
-bild: "/assets/images/npcs/ibran.png"
 ---
 
 # IBRAN ANDERYTTARE

@@ -8,7 +8,6 @@ forsta_fas: null
 plats: "Skogen väster om Lundnäs"
 fraktion: "Oberoende"
 roll: "Häxa"
-bild: "/assets/images/npcs/fredricca.png"
 ---
 
 # HÄXAN FREDRICCA

@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Tirakgraven"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Eldmagiker"
-bild: "/assets/images/npcs/isolde.png"
 ---
 
 # ISOLDE ELDKONSTNÄR ⚔️
