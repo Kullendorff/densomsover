@@ -7,7 +7,7 @@ forsta_fas: 1
 plats: "Före detta Stålsvärds Kavalerister"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Scout, expert på spaning"
-bild: "/assets/images/npcs/thalia.png"
+bild: "/assets/images/npcs/Lia.png"
 ---
 
 # THALIA SKOGSLÖPARE

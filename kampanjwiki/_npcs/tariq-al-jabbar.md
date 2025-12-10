@@ -8,7 +8,6 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Jabbar-familjen"
 roll: "Obestämd"
-bild: "/assets/images/npcs/tariq_jabbar.png"
 ---
 
 # TARIQ AL-JABBAR

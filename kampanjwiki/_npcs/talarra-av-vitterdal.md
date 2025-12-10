@@ -13,7 +13,6 @@ relationer:
     typ: "bror (förvisade på falska grunder)"
   - namn: "Lady Soffia"
     typ: "mor"
-bild: "/assets/images/npcs/talarra.png"
 ---
 
 # TALARRA AV VITTERDAL

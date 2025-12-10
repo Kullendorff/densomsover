@@ -7,7 +7,6 @@ forsta_fas: 1
 plats: "Före detta Stålsvärds Kavalerister"
 fraktion: "Stålsvärds Kavalerister"
 roll: "Banerkrigare"
-bild: "/assets/images/npcs/thalorin.png"
 ---
 
 # THALORIN SIGRD

@@ -8,7 +8,6 @@ forsta_fas: 3
 plats: "Muhad"
 fraktion: "Fahim-familjen"
 roll: "Karavanledare eller handelsman"
-bild: "/assets/images/npcs/tariq_fahim.png"
 ---
 
 # TARIQ IBN-FAHIM
