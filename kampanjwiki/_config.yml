@@ -1,0 +1,62 @@
+# Site settings
+title: "Gravens Arv - EON Kampanjwiki"
+description: "Spelledarens kampanjwiki för EON-kampanjen Gravens Arv"
+baseurl: "" # När du kör lokalt, lämna tom. Ändra till "/gravensarv" för GitHub Pages
+url: "https://kullendorff.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Collections
+collections:
+  npcs:
+    output: true
+    permalink: /npcs/:name/
+  platser:
+    output: true
+    permalink: /platser/:name/
+  kapitel:
+    output: true
+    permalink: /kapitel/:name/
+  fraktioner:
+    output: true
+    permalink: /fraktioner/:name/
+  spelarkaraktarer:
+    output: true
+    permalink: /spelarkaraktarer/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "npcs"
+    values:
+      layout: "npc"
+  - scope:
+      path: ""
+      type: "platser"
+    values:
+      layout: "plats"
+  - scope:
+      path: ""
+      type: "kapitel"
+    values:
+      layout: "kapitel"
+  - scope:
+      path: ""
+      type: "fraktioner"
+    values:
+      layout: "fraktion"
+  - scope:
+      path: ""
+      type: "spelarkaraktarer"
+    values:
+      layout: "spelarkaraktar"
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
