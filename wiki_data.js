@@ -69,18 +69,7 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# ALISTAIR BÅGSKYTT ⚔️\n**Fallen långbågsskytt**\n\n## GRUNDINFO\n- **Roll:** Långbågsskytt och scout\n- **Specialitet:** Precisionsskott\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
     },
-    {
-      "namn": "Alokhara",
-      "bild": "alokhara.png",
-      "ras": "Okänd",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# ALOKHARA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
-    },
-    {
+        {
       "namn": "Prins Yelgotha av det Första Hovet",
       "bild": null,
       "ras": "Alv",
@@ -104,7 +93,7 @@ var wikiData = {
     },
     {
       "namn": "Amina bint-Khalid",
-      "bild": "amina_muhad.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -115,7 +104,7 @@ var wikiData = {
     },
     {
       "namn": "Amina bint-Rashid",
-      "bild": "amina_muhad.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -126,7 +115,7 @@ var wikiData = {
     },
     {
       "namn": "Amina bint-Salim",
-      "bild": "amina_muhad.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -135,20 +124,9 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# AMINA BINT-SALIM\n**Serverare på Månskärets Gömställe**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Serverare\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nAmina bint-Salim arbetar som serverare på Månskärets Gömställe och är känd för sin förmåga att vara både närvarande och osynlig när situationen kräver det.\n\n## ARBETSUPPGIFTER\nSom serverare:\n- Serverar mat och dryck\n- Upprätthåller diskret service\n- Respekterar gästernas integritet\n- Säkerställer smidig verksamhet\n\n## KARAKTÄR\n- Diskret och observant\n- Professionell\n- Tystlåten\n- Läser av situationer väl\n\n## KOPPLINGAR\n- **Arbetsplats:** Månskärets Gömställe\n- **Arbetsgivare:** Zara al-Min\n- **Kollegor:** Rashid, Hassan, Laila\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
-    {
-      "namn": "Amina",
-      "bild": "amina_muhad.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# AMINA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
-    },
-    {
+        {
       "namn": "Amir ibn-Farouk",
-      "bild": "Amira_bint-Zayed.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": "Huvudadministratör",
       "status": "levande",
@@ -159,7 +137,7 @@ var wikiData = {
     },
     {
       "namn": "Amira bint-Hassan",
-      "bild": "Amira_bint-Zayed.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -190,18 +168,7 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# ANYA VÄV\n**Textilansvarig och berättare**\n\n## GRUNDINFO\n- **Ras:** Människ\n\na\n- **Kön:** Kvinna\n- **Yrke:** Textilansvarig, berättare\n- **Plats:** Frisänkan (by)\n- **Status:** Levande\n\n## BESKRIVNING\nAnya är hjärtat i byns sociala liv genom hennes berättelser och hennes roll i att hålla byns traditioner levande.\n\n## ROLL I BYN\nHennes hus är ofta en samlingspunkt för byns kvinnor och barn, vilket skapar en känsla av gemenskap och tillhörighet.\n\n## KARAKTÄR\n- Hjärtat i byns sociala liv\n- Håller traditioner levande\n- Berättare\n- Skapar gemenskap\n\n## KOPPLINGAR\n- **Position:** Textilansvarig och berättare\n- **Plats:** Frisänkan\n- **Roll:** Social knutpunkt för byns kvinnor och barn"
     },
-    {
-      "namn": "Arvorns Hammare-representant",
-      "bild": "arvorns.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Resan Hem - Scenario 3",
-      "fraktion": "Arvorns Hammare",
-      "kapitel": null,
-      "beskrivning": "# ARVORNS HAMMARE-REPRESENTANT\n**Representant för Arvorns Hammare**\n\n## GRUNDINFO\n- **Fraktion:** Arvorns Hammare\n- **Kontext:** Scenario 3 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 3): Representant för Arvorns Hammare, möjligen relaterat till deras samröre med Systrarna.\n\n## SL-ANTECKNINGAR\nArvorns Hammare nämndes som en fraktion med kopplingar till Systrarna och desertörerna som anföll Vargnäset."
-    },
-    {
+        {
       "namn": "Båg-Pieter",
       "bild": "båg_pieter.png",
       "ras": "Människa",
@@ -220,21 +187,10 @@ var wikiData = {
       "status": "levande",
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# BARTOL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan genom Jargien."
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# BARTOL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
     },
-    {
-      "namn": "Beef",
-      "bild": "beef.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Lundnäs",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# BEEF\n**NPC i Lundnäs**\n\n## GRUNDINFO\n- **Plats:** Lundnäs\n- **Särskilda Drag:** Öknamn \"Beef\" tyder på stor/stark person\n\n## I KAMPANJEN\nRegnsynd-äventyret: NPC i Lundnäs.\n\n## SL-ANTECKNINGAR\nExakt roll okänd. Öknamnet \"Beef\" antyder möjligen en stor, stark person."
-    },
-    {
+        {
       "namn": "Benne Tok",
       "bild": null,
       "ras": "Människa",
@@ -253,8 +209,8 @@ var wikiData = {
       "status": "levande",
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# BERAK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# BERAK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
     },
     {
       "namn": "Beric Brorson",
