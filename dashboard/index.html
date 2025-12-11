@@ -37,7 +37,7 @@
         /* Hero Section */
         .hero {
             height: 400px;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(10,10,10,0.9)), url('hero-bg.png') center/cover;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(10,10,10,0.9)), url('dashboard/hero-bg.png') center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -250,6 +250,7 @@
             padding: 1.5rem;
             transition: all 0.3s;
             cursor: pointer;
+            position: relative;
         }
 
         .card:hover {
@@ -308,6 +309,26 @@
             color: var(--text-secondary);
             font-size: 0.95rem;
             line-height: 1.5;
+        }
+
+        /* Card Image Preview */
+        .card-image-preview {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold);
+            opacity: 0.9;
+            transition: all 0.3s;
+        }
+
+        .card:hover .card-image-preview {
+            opacity: 1;
+            border-color: var(--flame-orange);
+            transform: scale(1.1);
         }
 
         /* Modal */
@@ -503,6 +524,69 @@
             padding: 3rem;
             color: var(--text-secondary);
         }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border: 3px solid var(--gold);
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(255, 165, 0, 0.3);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: var(--bg-card);
+            border: 2px solid var(--gold);
+            color: var(--text-primary);
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .lightbox-close:hover {
+            background: var(--flame-orange);
+            border-color: var(--flame-orange);
+            transform: rotate(90deg);
+        }
+
+        /* Modal Image Clickable */
+        .modal-image-clickable {
+            cursor: zoom-in;
+            transition: all 0.3s;
+        }
+
+        .modal-image-clickable:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
     </style>
 </head>
 <body>
@@ -628,7 +712,13 @@
         </div>
     </div>
 
-    <script src="../wiki_data.js"></script>
+    <!-- Lightbox for full-size images -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
+        <img id="lightbox-image" src="" alt="Full size image">
+    </div>
+
+    <script src="./wiki_data.js"></script>
     <script>
         // Data
         let allNpcs = [];
@@ -736,8 +826,11 @@
                 return;
             }
 
-            container.innerHTML = npcs.map(npc => `
+            container.innerHTML = npcs.map(npc => {
+                const bildUrl = npc.bild ? `./kampanjwiki/assets/images/npcs/${npc.bild}` : null;
+                return `
                 <div class="card" onclick='showNpcModal(${JSON.stringify(npc).replace(/'/g, "&#39;")})'>
+                    ${bildUrl ? `<img src="${bildUrl}" alt="${npc.namn}" class="card-image-preview">` : ''}
                     <h3>${npc.namn}</h3>
                     <div class="card-meta">
                         ${npc.ras ? `<span class="tag purple">${npc.ras}</span>` : ''}
@@ -748,7 +841,8 @@
                         ${npc.fraktion ? `⚔️ ${npc.fraktion}` : 'Ingen fraktion'}
                     </div>
                 </div>
-            `).join('');
+                `;
+            }).join('');
 
             document.getElementById('npc-count').textContent = npcs.length;
         }
@@ -1006,10 +1100,10 @@
             }
 
             // Image path
-            const bildUrl = npc.bild ? `../kampanjwiki/assets/images/npcs/${npc.bild}` : null;
+            const bildUrl = npc.bild ? `./kampanjwiki/assets/images/npcs/${npc.bild}` : null;
 
             body.innerHTML = `
-                ${bildUrl ? `<img src="${bildUrl}" alt="${npc.namn}" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; float: right; margin-left: 1rem; margin-bottom: 1rem; border: 2px solid var(--gold);">` : ''}
+                ${bildUrl ? `<img src="${bildUrl}" alt="${npc.namn}" class="modal-image-clickable" onclick="event.stopPropagation(); showLightbox('${bildUrl}')" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; float: right; margin-left: 1rem; margin-bottom: 1rem; border: 2px solid var(--gold);">` : ''}
                 <h2>${npc.namn}</h2>
                 ${npc.titel ? `<div class="modal-row">
                     <span class="modal-label">Titel:</span>
@@ -1077,6 +1171,18 @@
             document.getElementById('modal').classList.remove('active');
         }
 
+        function showLightbox(imageUrl) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = imageUrl;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+        }
+
         function showSection(sectionId) {
             document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
@@ -1088,6 +1194,25 @@
         // Close modal on outside click
         document.getElementById('modal').addEventListener('click', function(e) {
             if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close lightbox on outside click (handled by onclick in HTML)
+        // Prevent image click from closing lightbox
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightboxImage = document.getElementById('lightbox-image');
+            if (lightboxImage) {
+                lightboxImage.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            }
+        });
+
+        // Close lightbox with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
                 closeModal();
             }
         });
