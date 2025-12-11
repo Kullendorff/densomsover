@@ -1873,6 +1873,28 @@ var wikiData = {
       "beskrivning": "# TOBIN\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
     },
     {
+      "namn": "Tamron",
+      "bild": "timronochtamron.png",
+      "ras": "Människa",
+      "titel": "Lärling till Migor Trollkunnig",
+      "status": "okänd",
+      "plats": "Okänd (kropp övertagen av Ibran Anderyttare)",
+      "fraktion": "Tirakgraven-expeditionen",
+      "kapitel": "Prolog",
+      "beskrivning": "# TAMRON\n**13-årig lärling, kropp övertagen av Ibran Anderyttare**\n\n## GRUNDINFO\n- **Ålder:** 13 år\n- **Ras:** Människa\n- **Roll:** Lärling till Migor Trollkunnig\n- **Status:** Kropp övertagen av urgammal tirak-schaman\n- **Tvillingbror:** Timron (†)\n\n## BAKGRUND\nTamron var en av två tvillingbröder som tjänstgjorde som lärlingar till Migor Trollkunnig under utgrävningen av tirakgraven. Han var en lovande ung man med framtiden framför sig.\n\n## TRAGISK ÖDE\nNär tirakgravens förseglingen bröts och demonen Urkhath delvis befriades, tog den urgamla tirak-schamanen Ibran Anderyttare över Tamrons kropp för att kunna fortsätta sin eviga vakt över demonen. I Ibrans desperata försök att stoppa demonens frigörelse dödade han Tamrons tvillingbror Timron och flydde med bindningsföremålen.\n\n## NUVARANDE SITUATION\nTamrons kropp lever fortfarande, men hans själ är antingen fördriven eller begravd djupt under Ibran Anderyttares urgamla medvetande. En 13-årig pojkes kropp bär nu tusenårig visdom och desperation.\n\n## RELATIONER\n- **Timron:** Tvillingbror (dödad av Ibran/Tamron)\n- **Migor Trollkunnig:** Mästare och mentor\n- **Ibran Anderyttare:** Tirak-schaman som tagit över hans kropp\n\n## BETYDELSE\nTamrons öde representerar kampanjens moraliska komplexitet - är det försvarbart att offra en oskyldig pojke för att stoppa en demon? Ibran/Tamron är både fiende och potentiell allierad.\n\n## SL-ANTECKNINGAR\n- Finns möjlighet att rädda Tamrons själ?\n- Kan användas för moraliska dilemman\n- Representerar oskyldig offer i större konflikt"
+    },
+    {
+      "namn": "Timron",
+      "bild": "timronochtamron.png",
+      "ras": "Människa",
+      "titel": "Lärling till Migor Trollkunnig",
+      "status": "död",
+      "plats": "Tirakgraven",
+      "fraktion": "Tirakgraven-expeditionen",
+      "kapitel": "Prolog",
+      "beskrivning": "# TIMRON (†)\n**13-årig lärling, mördad av sin besatte tvillingbror**\n\n## GRUNDINFO\n- **Ålder:** 13 år (vid död)\n- **Ras:** Människa\n- **Roll:** Lärling till Migor Trollkunnig\n- **Status:** Död\n- **Tvillingbror:** Tamron\n\n## BAKGRUND\nTimron var en av två tvillingbröder som tjänstgjorde som lärlingar till Migor Trollkunnig under utgrävningen av tirakgraven. Tillsammans med sin bror Tamron skulle han lära sig de lärdes vägar.\n\n## TRAGISK DÖD\nNär tirakgravens förseglingen bröts tog den urgamla tirak-schamanen Ibran Anderyttare över Timrons tvillingbror Tamrons kropp. I sin desperation att stoppa demonens frigörelse dödade Ibran/Tamron Timron för att kunna fly med bindningsföremålen.\n\nTimron dog genom sin egen tvillingbrors hand - eller snarare genom den urgamla själ som hade tagit över hans brors kropp.\n\n## BETYDELSE\nTimrons död är en av kampanjens första tragedier - ett oskyldigt barn som dödades i ett årtusenden gammalt krig mellan schaman och demon. Hans död understryker priset för demonens partiella frigörelse och Ibrans desperata metoder.\n\n## RELATIONER\n- **Tamron:** Tvillingbror (vars kropp blev hans baneman)\n- **Migor Trollkunnig:** Mästare och mentor\n- **Ibran Anderyttare:** Tirak-schaman som dödade honom\n\n## SL-ANTECKNINGAR\n- Symbol för oskyldiga offer i större konflikt\n- Hans död kan väga tungt på Ibran/Tamron\n- Representerar den tragiska kostnaden av gamla förbannelser"
+    },
+    {
       "namn": "Tormund Rimskägg",
       "bild": null,
       "ras": "Människa",
@@ -2061,7 +2083,7 @@ var wikiData = {
     },
     {
       "namn": "Yrka Yrko",
-      "bild": null,
+      "bild": "yrkayrko.png",
       "ras": "Människa",
       "titel": "Besättning på Frostnymfen",
       "status": "levande",
