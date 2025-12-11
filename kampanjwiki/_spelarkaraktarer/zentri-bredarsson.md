@@ -46,6 +46,39 @@ Under kampanjens början vid tirakgraven stal Zentri i hemlighet en silverring i
 - Manteln permanent förstörd
 - Demonen stärkte greppet under hans svaghet
 
+### Jargien - 15-dagarsresan (Kapitel 4)
+
+**Skyddsamuletten:**
+- Den blinda spåkvinnan i Ravnovo kände igen Zentri
+- "Jag känner dig, enögde magiker. Du bär ett märke, liksom jag"
+- Gav honom en cirkelformad träamulett med beskyddande symbol
+- "För krigaren från öster. Bär detta över ditt hjärta"
+- "När drömmen kommer åter, låt inte dess röst nå in"
+- Amuletten varm trots kylan, märkligt bekant
+- Symbol på baksidan som Zentri känner igen
+
+**Intensifierade drömmar:**
+- Drömmar blev intensivare för var natt under resan
+- Röst talar: "Släpp in mig, så ska jag ge dig kraften att skydda dem alla"
+- Vaknar ofta kallsvettig
+- Amuletten känns onaturligt varm mot huden
+- Dröm om kvinna som ropar från flammande barriär (förvandlas till okänd kvinna med mörkt hår)
+
+**Klibbsjälarnas bro (Natt 10):**
+- Känner colonisk blodsmagi i bron
+- Umnataks schamanistiska ritual väcker magiska energier
+- Röst viskar: "Låt mig hjälpa dig. Släpp in mig, så ska jag visa dig hur du befriar dem"
+- Zentri vägrar: "Nej" och griper om amuletten
+- Umnatak noterar: "Du bär... något. Något som ville hjälpa oss, men på ett farligt sätt"
+
+**Mötet med Arvorns Hammare (Dag 13):**
+- Något pulserar svagt mot hans hud när Kommendör Revals vagn passerar
+- Magisk närvaro från den fångna kvinnan i vagnen
+- Amuletten ger skydd mot full exponering
+
+**Amulettens betydelse:**
+Skyddet från den blinda spåkvinnan höll demonrösten på avstånd under flera kritiska ögonblick. Utan den hade Zentri möjligen fallit tidigare.
+
 ### Vargnäset - Försvinnandet (Fas 6)
 
 **Händelseförloppet:**

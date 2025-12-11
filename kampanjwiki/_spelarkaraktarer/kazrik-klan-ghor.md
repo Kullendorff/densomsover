@@ -69,6 +69,55 @@ Böckerna har gjort honom känd bland dvärgar och vissa människor som läst ö
 - Dokumenterade allt under överlevnadsperioden
 - Upptäckte sin berömmelse i dvärgfästet
 
+### Jargien - 15-dagarsresan (Kapitel 4)
+
+**Den resande krönikören:**
+- Inrättade mobil arbetsplats i sin vagn bland lasten
+- Dokumenterade resa genom Jargien trots bistra omständigheter
+- Irriterad över att bläcket envisas frysa i kylan
+- Anteckningar: "En dvärgagrav utan grav, förbannelser utan namn, och nu denna omänskliga köld... Sannerligen är historien en skådeplats för det groteska"
+
+**Ravnovo - Dvärgisk hantverksära (Dag 7):**
+
+*Situationen:*
+- Behövde vagndelar från lokal smed
+- Smeden stupfull, firade årsdagen av frudens död
+- Lärlingen desperat försöker hålla verksamheten flytande
+
+*Kazriks ingripande:*
+- Tog kommando trots Dorins protester: "Låt mig se verktygen"
+- Rullade upp ärmarna och gick in i verkstaden
+- Med lärlingen som assistent reparerade vagnens axelfäste på en timme
+- Svetten rann från skägget trots kylan
+
+*Dvärgisk etik:*
+- "En Ghor-dvärg sviker aldrig en hantverkare i nöd, även om hantverkaren råkar vara en berusad människa"
+- Viftade bort betalning från tacksam lärling
+- Råd till lärlingen: "Lär din mästare att hedra minnesdagar utan att förnedra sitt hantverk. Det är betalning nog"
+
+**Klibbsjälarnas bro (Natt 10) - Colonisk lore:**
+
+*Arkeologisk expertis:*
+- Undersökte delvis raserad stenbro vid lägerplatsen
+- Identifierade: "Detta är inte jargisk arkitektur. Det är coloniskt hantverk, minst tusen år gammalt"
+- Noterade för Gordon: "Cirefaliska byggmästare studerar fortfarande colonernas tekniker"
+
+*Kritisk lösning:*
+- Under Umnataks schamanistiska trans förstod Kazrik mekanismen
+- "Han är på rätt spår, men på fel sätt. Colonerna brukade fästa en nyckelsten..."
+- Letade och hittade mindre stenplatta med symboler, gömd under århundradens smuts
+- Med dvärgisk styrka vred loss nyckelstenen från brofästet
+- Timing perfekt - själarna frigörs precis när stenen lossnar
+- Bron kollapsar i vattnet omedelbart därefter
+
+*Kunskap och praktik:*
+Demonstrerade kombinationen av teoretisk kunskap (colonisk arkitektur) och praktisk handling (identifiera och aktivera nyckelsten) som räddar situationen.
+
+**Samarbete med Dorin Kallhammare:**
+- Professionell respekt mellan dvärgar
+- Delade kunskap om handelsleder och kontakter
+- Förstod varandra utan många ord (dvärgisk pragmatism)
+
 ### Vargnäset (Fas 6)
 - Förstärkte palissader och portar med dvärgisk ingenjörskonst
 

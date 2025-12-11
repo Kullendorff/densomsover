@@ -57,6 +57,50 @@ Fungerar som gruppens moraliska kompass och praktiska ledare. Hans militära erf
 - Höll moralen uppe under överlevnadsperioden
 - Ledde gruppen genom ödemarken
 
+### Jargien - 15-dagarsresan (Kapitel 4)
+
+**Ledarskap och diplomati:**
+- Rid ofta framme tillsammans med Dorin Kallhammare
+- Delade historier och sånger med dvärgiska vakterna
+- Byggde förtroende genom kamratskap
+- Anpassade sig pragmatiskt till Jargiens kultur och hierarkier
+
+**Militär expertis:**
+- Höll hillebarden nära till hands (rustiga metallen märkt av Rådslingan)
+- Studerade jargiska befästningar med veterans öga
+- Pekade ut svagheter och styrkor i blockhus och vakttorn för Dorin
+- Analyserade militära posteringar längs handelsvägarna
+
+**Beskyddare av gruppen:**
+
+*Ravnovo (Dag 7):*
+- På vakt när blinda spåkvinnan närmar sig Zentri
+- Handen på svärdet: "Vad menar du med det, gumma?"
+- Drog undan Zentri från marknaden när situation blev farlig
+- Varning: "Var försiktig med vidskepelser, min vän. Daakkyrkans informanter är överallt i Jargien"
+- "En anklagelse om häxeri är en snabb väg till bålet"
+
+*Klibbsjälarnas bro (Natt 10):*
+- När Umnatak går ut på raserad bro: "Umnatak! Kom tillbaka! Det där är ingen säker plats!"
+- Gör sig redo att springa ut på bron för att rädda Umnatak
+- Zentri stoppar honom: "Vänta. Detta är andligt, inte fysiskt"
+- Gordon accepterar rådet men förblir beredd att agera
+
+*Mötet med Arvorns Hammare (Dag 13):*
+- Utbyter snabb blick med Hagge om att ingripa för fången
+- Hagge rör omärkligt på huvudet - tyst råd att INTE ingripa
+- Gordon accepterar bedömningen trots moralisk konflikt
+- Till Kazrik efteråt: "Vad kan vi göra? Vi är på deras territorium, och Arvorns Hammare är beryktad för sin hänsynslöshet"
+
+**Förberedelse för Vargnäset:**
+- Mäter Eira Holm med veteransblick när de anländer
+- Bedömning: "Vi har sett värre motstånd. Men det kommer att kräva samarbete"
+- Omedelbart redo att organisera byns försvar mot Halrik Kords desertörer
+- Instinkt: "Ännu ett slag att vinna, en strategi att utforma, en seger att erövra"
+
+**Gordons pragmatism:**
+Jargien-resan visar Gordons förmåga att balansera moraliskt ledarskap med praktisk realism - veta när man ska agera och när man måste hålla tillbaka.
+
 ### Vargnäset (Fas 6)
 - Tränade byborna i grundläggande försvar
 - Övertygade byborna att Zentris blodsmagi var "fiendens magi"
