@@ -2253,6 +2253,160 @@ const wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 10",
       "beskrivning": "# SJÖDÖDA TITANEN\r\n\r\n**Boss-strid i Skugglandet**\r\n\r\n## Framträdandet\r\n\r\nFrån sjön, hundra meter bort, stiger något upp.\r\n\r\nLångsamt.\r\n\r\nFörst ser de bara siluetten - en pyramid av lemmar och kroppar som reser sig mot den grå himlen. Tre meter. Fyra. Fem.\r\n\r\nVatten forsar från den. Men det är inte bara vatten - det är **MINNEN av vatten**, ekon av drunkning, skrik som fastnat i lungor.\r\n\r\nSex huvuden. Eller kanske bara ett huvud med sex ansikten. Svårt att säga. Alla stirrar åt olika håll utom två - de fixerar gruppen.\r\n\r\nFyra armar. Två tjocka som trädstammar. Två tunna som spindellår. Händerna FEL - någon har tre fingrar, någon åtta.\r\n\r\nDet går. Mot dem. Varje steg skakar marken. Det dryper. Lämnar pölar av... något... som ångar i kylan.\r\n\r\nTrettio meter bort stannar det.\r\n\r\nEtt av ansiktena öppnar munnen. Vatten rinner ut. Sedan orden:\r\n\r\n*\"Varmt. Ni är... varma.\"*\r\n\r\nTjugo meter.\r\n\r\n*\"Jag var kald. Så länge. I vattnet.\"*\r\n\r\nTio meter.\r\n\r\nAlla sex ansikten viskar nu, förskjutet:\r\n\r\n*\"Ge mig er värme.\"*\r\n\r\n## EON-STATS: SJÖDÖDA TITANEN\r\n\r\n### Grundvärden\r\n- **KP:** 120 (massiv)\r\n- **Storlek:** Enorm (5 meter hög)\r\n- **STY:** 22 (övermänsklig)\r\n- **SMI:** 10 (långsam men räckvidd kompenserar)\r\n- **INT:** 8 (rovdjursinstinkt + hat)\r\n- **PSY:** 16 (mentalt motstånd)\r\n\r\n### Skydd\r\n- **Naturligt pansar:** 8 (tjock, vattendränkt massa)\r\n- **Svag punkt:** Ansiktena - 0 pansar om träffade direkt\r\n\r\n### Färdigheter\r\n- **Närstrid:** Ob4T6 (kraftfull men inte snabb)\r\n- **Undvika:** Ob2T6 (stor, långsam)\r\n- **Greppa:** Ob5T6 (fyra armar!)\r\n\r\n### Attacker\r\n\r\n**1. Slagsmål (Tjocka armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 4T6+8 (BRUTALT)\r\n- Räckvidd: 4 meter\r\n- Kan slå TVÅ mål om de står nära varandra\r\n\r\n**2. Spetsiga fingrar (Tunna armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 3T6+4\r\n- Räckvidd: 5 meter\r\n- Penetrerar pansar (räkna som -4 pansar)\r\n\r\n**3. Greppattack**\r\n- Anfallsslag: Ob5T6 (alla fyra armar används)\r\n- Om träff: Offret greppat\r\n- Automatisk skada 2T6+4 per runda (krossning)\r\n- Kräver STY-tävling för att bryta sig loss (Ob5T6 vs Ob5T6)\r\n\r\n**4. Dränkning**\r\n- Om offret greppat i 2+ rundor\r\n- Titanen trycker ansiktet mot offrets mun\r\n- Börjar fylla offret med ruttet vatten\r\n- Kväver på 1T4 rundor om inte befriat\r\n\r\n### Särskilda Förmågor\r\n\r\n**Vattendränkt massa**\r\n- Hugg-/stickvapen: Halv skada (blöt, svampig)\r\n- Kross-/slagvapen: Full skada\r\n- Eld: Dubbel skada\r\n"
+    },
+    {
+      "namn": "Erik Björkgren",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# ERIK BJÖRKGREN\n**13-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 13 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n13-årig pojke från Vargnäset. Son till Nils Björkgren, bror till Astrid och Lilla-Maja. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Lilla-Maja Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Lilla-Maja Björkgren",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# LILLA-MAJA BJÖRKGREN\n**8-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 8 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n8-årig flicka från Vargnäset. Dotter till Nils Björkgren, syster till Astrid och Erik. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Erik Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Margareta Lindkvist",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# MARGARETA LINDKVIST\n**9-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 9 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n9-årig flicka från Vargnäset. Syster till Johan. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Syster:** Johan Lindkvist\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Torkel Falkemo",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# TORKEL FALKEMO\n**11-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 11 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n11-årig pojke från Vargnäset. Son till Gunnar Falkemo, bror till Sigrid. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Sigrid Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Sigrid Falkemo",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# SIGRID FALKEMO\n**6-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 6 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n6-årig flicka från Vargnäset. Dotter till Gunnar Falkemo, syster till Torkel. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Torkel Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Klas Hällström",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# KLAS HÄLLSTRÖM\n**7-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 7 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n7-årig pojke från Vargnäset. Son till Magnus Hällström. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Magnus Hällström\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Gustav Stenmark",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# GUSTAV STENMARK\n**4-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 4 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n4-årig pojke från Vargnäset. Son till Olof Stenmark. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Olof Stenmark\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Erik Björkgren",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# ERIK BJÖRKGREN\n**13-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 13 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n13-årig pojke från Vargnäset. Son till Nils Björkgren, bror till Astrid och Lilla-Maja. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Lilla-Maja Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Lilla-Maja Björkgren",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# LILLA-MAJA BJÖRKGREN\n**8-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 8 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n8-årig flicka från Vargnäset. Dotter till Nils Björkgren, syster till Astrid och Erik. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Erik Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Margareta Lindkvist",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# MARGARETA LINDKVIST\n**9-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 9 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n9-årig flicka från Vargnäset. Syster till Johan. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Syster:** Johan Lindkvist\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Torkel Falkemo",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# TORKEL FALKEMO\n**11-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 11 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n11-årig pojke från Vargnäset. Son till Gunnar Falkemo, bror till Sigrid. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Sigrid Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Sigrid Falkemo",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# SIGRID FALKEMO\n**6-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 6 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n6-årig flicka från Vargnäset. Dotter till Gunnar Falkemo, syster till Torkel. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Torkel Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Klas Hällström",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# KLAS HÄLLSTRÖM\n**7-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 7 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n7-årig pojke från Vargnäset. Son till Magnus Hällström. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Magnus Hällström\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Gustav Stenmark",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# GUSTAV STENMARK\n**4-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 4 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n4-årig pojke från Vargnäset. Son till Olof Stenmark. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Olof Stenmark\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
     }
   ],
   "platser": [
