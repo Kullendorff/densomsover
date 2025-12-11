@@ -1658,22 +1658,11 @@ var wikiData = {
       "bild": "selim.png",
       "ras": "Mûhadier",
       "titel": null,
-      "status": "slav",
+      "status": "död",
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# SELIM IBN-RASHID\n**Slav och bärare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Status:** Slav\n- **Yrke:** Bärare\n- **Ägare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nSelim ibn-Rashid är en ung man i tjugoårsåldern med kort, lockigt hår och en smidig kroppsbyggnad. Han är klädd i enkla, men rena kläder.\n\n## BAKGRUND\nSelim köptes tillsammans med Kasim och arbetar också som bärare. Han är snabbtänkt och anpassar sig lätt till olika uppgifter, vilket gör honom värdefull i hushållet.\n\n## ARBETSUPPGIFTER\nSom bärare:\n- Bär Laila i palankin\n- Anpassar sig till olika uppgifter\n- Fysiskt arbete\n- Flexibla arbetsuppgifter\n\n## KARAKTÄR\n- Ung och smidig\n- Snabbtänkt\n- Anpassningsbar\n- Värdefull i hushållet\n\n## KOPPLINGAR\n- **Ägare:** Laila al-Jen\n- **Arbetsuppgift:** Bärare\n- **Kollega:** Kasim ibn-Farid (medarbetare som bärare)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
-    },
-    {
-      "namn": "Selim",
-      "bild": "selim.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# SELIM\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
       "namn": "Serafina Eldstav",
@@ -1707,17 +1696,6 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# SILVERFOT\n**Vintervargens alfahanne**\n\n## GRUNDINFO\n- **Ras:** Vintervarg (talande varg)\n- **Kön:** Man\n- **Titel:** Alfahanne\n- **Plats:** Djupa Mithera\n- **Status:** Levande\n- **Första omnämnande:** Fas 10\n\n## BESKRIVNING\nSilverfot är alfahannen i en flock vintervargar som patrullerar i Djupa Mithera. Vintervargar är intelligenta, talande varelser som organiserar sig i hierarkiska flockar.\n\n## KARAKTÄR\n- Stolt och värdighetsmedveten\n- Intelligent och strategisk\n- Hård men rättvis\n- Skyddar sitt revir med beslutsamhet\n\n## TERRITORIUM OCH MOTIVATION\nSilverfot och hans flock beskyddar sitt revir från istroll och andra inkräktare. Han är territoriell men kan respektera de som visar styrka och respekt.\n\n- **Revir:** Delar av Djupa Mithera\n- **Fiender:** Istroll som inkräktar på territoriet\n- **Allianser:** Kan bli allierad med de som visar respekt\n\n## KUNSKAP\nSilverfot har djup kunskap om de **gamla stigarna** - de vägar som fanns innan Mitheraskogens geografi började förändras. Denna kunskap kan vara värdefull för resenärer.\n\n## FÖRHANDLING\nFör att vinna Silverfots hjälp krävs:\n- **Respekt** - visa att man förstår flockhierarkin\n- **Kött** - praktisk betalning\n- **Inga hot** - hantera mötet med värdighet\n\nOm rätt hanterad kan Silverfot och hans flock bli värdefulla allierade.\n\n## ROLL I KAMPANJEN\nSilverfot kan erbjuda vägledning genom Djupa Mithera baserat på kunskap om de gamla stigarna. Hans flock kan också ge beskydd mot andra faror.\n\n## KOPPLINGER\n- **Flock:** Leder en vintervargflock i Mithera\n- **Territorium:** Djupa Mithera\n- **Fiender:** Istroll"
-    },
-    {
-      "namn": "Silvermask",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Resan Hem - Scenario 3",
-      "fraktion": "Desertörer",
-      "kapitel": null,
-      "beskrivning": "# SILVERMASK\n**NPC i Scenario 3**\n\n## GRUNDINFO\n- **Namn:** Silvermask (möjligen relaterat till Kald Silvermask)\n- **Kontext:** Scenario 3 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 3): NPC i Scenario 3.\n\n## SL-ANTECKNINGAR\nMöjligen kopplad till Kald Silvermask från anfallet på Vargnäset."
     },
     {
       "namn": "Soraya al-Majid",
@@ -1772,17 +1750,6 @@ var wikiData = {
       "fraktion": "Systrarna (Zorian-orden)",
       "kapitel": null,
       "beskrivning": "# SYSTER MOIRA\n\n**Syster i Zorian-orden, Isadoras partner**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande, aktiv jakt\n- **Första fas:** Fas 6 (Vargnäset)\n- **Roll:** Antagonist, förföljare\n\n## BAKGRUND\n\nSyster Moira arbetar tillsammans med Lady Isadora i Zorian-ordens specialenhet som jagar demonisk aktivitet.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset (Fas 6)\n- Deltog i attacken för att fånga Zentri\n- Såg blodsmagin och Zentris försvinnande\n- Fortsätter jakten\n\n### Efter Zentris försvinnande\n- Observerar gruppen\n- Samlar information om demonaktivitet\n\n## KARAKTÄRSDRAG\n\n- **Lojal partner:** Arbetar nära Isadora\n- **Disciplinerad:** Zorian-ordens träning\n- **Tålmodig jägare:** Väntar på rätt tillfälle\n\n## RELATIONER\n\n### Zorian-orden\n- **Lady Isadora:** Jagtkollega och partner\n- **Systrarna:** Elitorden\n\n### Jagtoffer\n- **Zentri:** Primärt mål\n- **Gruppen:** Observation\n\n## NUVARANDE SITUATION\n\nMoira fortsätter arbeta med Isadora, observerar situation medan gruppen är i Skugglandet.\n\n## SL-ANTECKNINGAR\n\n- Partner till Isadora, fungerar som team\n- Mindre framträdande men lika farlig\n- Del av Systr arnas mer sofistikerade metodik"
-    },
-    {
-      "namn": "Systrarna i Lundnäs",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Lundnäs",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# SYSTRARNA I LUNDNÄS\n**Systrar i Lundnäs**\n\n## GRUNDINFO\n- **Plats:** Lundnäs\n- **Antal:** Flera systrar (bildnamn i plural)\n\n## I KAMPANJEN\nRegnsynd-äventyret: Grupp av systrar i Lundnäs.\n\n## SL-ANTECKNINGAR\nBildnamnet \"systrar.png\" (sisters) antyder att detta representerar flera kvinnliga karaktärer, möjligen släktingar eller medlemmar i en grupp."
     },
     {
       "namn": "Talarra av Vitterdal",
