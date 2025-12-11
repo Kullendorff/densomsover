@@ -1401,15 +1401,15 @@ var wikiData = {
       "beskrivning": "# NAILA BINT-ZAHIR\n**Serveringspersonal på Kamelens Oas**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Serveringspersonal\n- **Arbetsplats:** Kamelens Oas\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nNaila bint-Zahir arbetar som serveringspersonal på Kamelens Oas och tar hand om gästerna med professionalism och vänlighet.\n\n## ARBETSUPPGIFTER\nSom serveringspersonal:\n- Serverar mat och dryck\n- Tar emot beställningar\n- Säkerställer gästernas trivsel\n- Hjälper till i matsalen och innergården\n\n## KOPPLINGAR\n- **Arbetsplats:** Kamelens Oas\n- **Arbetsgivare:** Farid & Leyla al-Malik\n- **Kollegor:** Tariq, Amira, Youssef, Samir\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
-      "namn": "Nilmar",
+      "namn": "Kapten Nilmar \"Isnavigatorn\"",
       "bild": "nilmar1.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Raunfloden-området",
-      "fraktion": "Okänd",
-      "kapitel": null,
-      "beskrivning": "# NILMAR\n**NPC vid Raunfloden**\n\n## GRUNDINFO\n- **Plats:** Raunfloden-området\n- **Kontext:** Scenario 4 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): NPC som spelarna möter vid Raunfloden.\n\n## SL-ANTECKNINGAR\nScenario 4 utspelar sig vid Raunfloden enligt bildnamnen."
+      "ras": "Tirak",
+      "titel": "Kapten på Frostnymfen",
+      "status": "levande",
+      "plats": "Frostnymfen (Raunfloden)",
+      "fraktion": "Lady Soffias nätverk",
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# KAPTEN NILMAR \"ISNAVIGATORN\"\n**Tirakisk flodpråmskapten, lojal till Lady Soffia**\n\n## GRUNDINFO\n- **Ras:** Tirak (stor build)\n- **Titel:** Kapten på Frostnymfen\n- **Smeknamn:** \"Isnavigatorn\"\n- **Fartyg:** Frostnymfen (18-meter flodpråm)\n- **Status:** Levande\n\n## UTSEENDE\n- Imponerande tirakisk man med stor kroppsbyggnad\n- Väderbit ansikte med frostspår i skägget\n- **Vänsteröronen saknas** (gammal förfrysningsskada)\n- Stadig, kommandogivande röst\n\n## EXPERTIS\nNilmar är mästare på att navigera Raunflodens farliga vatten:\n- Nästan övernaturlig känsla för flodens strömmar\n- Navigerar mellan isflak innan de syns\n- Extrem precision i trånga passager\n- Expert på isbrytning\n\n## LOJALITET\nTjänar Lady Soffia, del av hennes motståndsnätverk:\n- Transporterar viktiga personer i hemlighet\n- Betrodd med känsliga uppdrag\n- Arbetar nära Selene \"Silveröga\"\n\n## I KAMPANJEN\n**Fas 8:** Transporterade gruppen mot Vitterdal:\n- Navigerade genom saboterade isbarriärer\n- Undvek Systrarna och kungens patrullers ljussignaler\n- Lämnade gruppen vid forsen, lovade möta dem senare\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Underbefäl:** Selene \"Silveröga\"\n- **Uppdragsgivare:** Lady Soffia av Vitterdal"
     },
     {
       "namn": "Nils 'Järnhand' Gromsson",
@@ -1643,15 +1643,15 @@ var wikiData = {
       "beskrivning": "# SCOUT\n**Scout i Scenario 3**\n\n## GRUNDINFO\n- **Roll:** Scout/Spejare\n- **Kontext:** Scenario 3 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 3): Scout som spelarna möter.\n\n## SL-ANTECKNINGAR\nTroligen en spejare eller spanare som spelarna stöter på under resan hem."
     },
     {
-      "namn": "Selene",
+      "namn": "Selene \"Silveröga\" Kazarov",
       "bild": "selene.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Raunfloden-området",
-      "fraktion": "Okänd",
-      "kapitel": null,
-      "beskrivning": "# SELENE\n**NPC vid Raunfloden**\n\n## GRUNDINFO\n- **Plats:** Raunfloden-området\n- **Kontext:** Scenario 4 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): NPC i Scenario 4."
+      "ras": "Asharier",
+      "titel": "Underbefäl på Frostnymfen",
+      "status": "levande",
+      "plats": "Frostnymfen (Raunfloden)",
+      "fraktion": "Lady Soffias nätverk",
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# SELENE \"SILVERÖGA\" KAZAROV\n**Asharisk spejare och underbefäl, informant till Lady Soffia**\n\n## GRUNDINFO\n- **Ras:** Asharier\n- **Ålder:** 40-årsåldern\n- **Titel:** Underbefäl på Frostnymfen\n- **Smeknamn:** \"Silveröga\"\n- **Status:** Levande\n\n## UTSEENDE\n- **Konstgjort silveröga** (höger öga)\n- Silverögat reflekterar ljus på särskilt sätt\n- Vaksam hållning\n\n## ROLL\n**Den vaksamma spejaren:**\n- Underbefäl till Kapten Nilmar\n- Sköter rekognoscering och säkerhet\n- Iakttar främlingar misstänksamt\n- Extremt lojal mot Nilmar\n\n## HEMLIGA VERKSAMHET\n- Informant åt Lady Soffia i flera år\n- Hemlig medlem i nätverk som hjälper förföljda fly\n- Kontakter längs hela Raunfloden\n- Känner igen Hagge genom beskrivningar\n\n## I KAMPANJEN\n**Fas 8:** Under transporten mot Vitterdal varnade gruppen, rekognoscerade, gav sigill för nätverket.\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Kapten:** Nilmar\n- **Informant till:** Lady Soffia"
     },
     {
       "namn": "Selim ibn-Rashid",
