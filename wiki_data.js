@@ -69,18 +69,7 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# ALISTAIR BÅGSKYTT ⚔️\n**Fallen långbågsskytt**\n\n## GRUNDINFO\n- **Roll:** Långbågsskytt och scout\n- **Specialitet:** Precisionsskott\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
     },
-    {
-      "namn": "Alokhara",
-      "bild": "alokhara.png",
-      "ras": "Okänd",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# ALOKHARA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
-    },
-    {
+        {
       "namn": "Prins Yelgotha av det Första Hovet",
       "bild": null,
       "ras": "Alv",
@@ -104,7 +93,7 @@ var wikiData = {
     },
     {
       "namn": "Amina bint-Khalid",
-      "bild": "amina_muhad.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -115,7 +104,7 @@ var wikiData = {
     },
     {
       "namn": "Amina bint-Rashid",
-      "bild": "amina_muhad.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -126,7 +115,7 @@ var wikiData = {
     },
     {
       "namn": "Amina bint-Salim",
-      "bild": "amina_muhad.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -135,20 +124,9 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# AMINA BINT-SALIM\n**Serverare på Månskärets Gömställe**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Serverare\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nAmina bint-Salim arbetar som serverare på Månskärets Gömställe och är känd för sin förmåga att vara både närvarande och osynlig när situationen kräver det.\n\n## ARBETSUPPGIFTER\nSom serverare:\n- Serverar mat och dryck\n- Upprätthåller diskret service\n- Respekterar gästernas integritet\n- Säkerställer smidig verksamhet\n\n## KARAKTÄR\n- Diskret och observant\n- Professionell\n- Tystlåten\n- Läser av situationer väl\n\n## KOPPLINGAR\n- **Arbetsplats:** Månskärets Gömställe\n- **Arbetsgivare:** Zara al-Min\n- **Kollegor:** Rashid, Hassan, Laila\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
-    {
-      "namn": "Amina",
-      "bild": "amina_muhad.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# AMINA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
-    },
-    {
+        {
       "namn": "Amir ibn-Farouk",
-      "bild": "Amira_bint-Zayed.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": "Huvudadministratör",
       "status": "levande",
@@ -159,7 +137,7 @@ var wikiData = {
     },
     {
       "namn": "Amira bint-Hassan",
-      "bild": "Amira_bint-Zayed.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -190,18 +168,7 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# ANYA VÄV\n**Textilansvarig och berättare**\n\n## GRUNDINFO\n- **Ras:** Människ\n\na\n- **Kön:** Kvinna\n- **Yrke:** Textilansvarig, berättare\n- **Plats:** Frisänkan (by)\n- **Status:** Levande\n\n## BESKRIVNING\nAnya är hjärtat i byns sociala liv genom hennes berättelser och hennes roll i att hålla byns traditioner levande.\n\n## ROLL I BYN\nHennes hus är ofta en samlingspunkt för byns kvinnor och barn, vilket skapar en känsla av gemenskap och tillhörighet.\n\n## KARAKTÄR\n- Hjärtat i byns sociala liv\n- Håller traditioner levande\n- Berättare\n- Skapar gemenskap\n\n## KOPPLINGAR\n- **Position:** Textilansvarig och berättare\n- **Plats:** Frisänkan\n- **Roll:** Social knutpunkt för byns kvinnor och barn"
     },
-    {
-      "namn": "Arvorns Hammare-representant",
-      "bild": "arvorns.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Resan Hem - Scenario 3",
-      "fraktion": "Arvorns Hammare",
-      "kapitel": null,
-      "beskrivning": "# ARVORNS HAMMARE-REPRESENTANT\n**Representant för Arvorns Hammare**\n\n## GRUNDINFO\n- **Fraktion:** Arvorns Hammare\n- **Kontext:** Scenario 3 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 3): Representant för Arvorns Hammare, möjligen relaterat till deras samröre med Systrarna.\n\n## SL-ANTECKNINGAR\nArvorns Hammare nämndes som en fraktion med kopplingar till Systrarna och desertörerna som anföll Vargnäset."
-    },
-    {
+        {
       "namn": "Båg-Pieter",
       "bild": "båg_pieter.png",
       "ras": "Människa",
@@ -220,21 +187,10 @@ var wikiData = {
       "status": "levande",
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# BARTOL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan genom Jargien."
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# BARTOL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
     },
-    {
-      "namn": "Beef",
-      "bild": "beef.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Lundnäs",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# BEEF\n**NPC i Lundnäs**\n\n## GRUNDINFO\n- **Plats:** Lundnäs\n- **Särskilda Drag:** Öknamn \"Beef\" tyder på stor/stark person\n\n## I KAMPANJEN\nRegnsynd-äventyret: NPC i Lundnäs.\n\n## SL-ANTECKNINGAR\nExakt roll okänd. Öknamnet \"Beef\" antyder möjligen en stor, stark person."
-    },
-    {
+        {
       "namn": "Benne Tok",
       "bild": null,
       "ras": "Människa",
@@ -253,8 +209,8 @@ var wikiData = {
       "status": "levande",
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# BERAK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# BERAK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
     },
     {
       "namn": "Beric Brorson",
@@ -269,7 +225,7 @@ var wikiData = {
     },
     {
       "namn": "Berta 'Flodkvinna' Eriksdotter",
-      "bild": null,
+      "bild": "flodkvinna.png",
       "ras": "Människa",
       "titel": "Kapten",
       "status": "levande",
@@ -368,15 +324,15 @@ var wikiData = {
       "beskrivning": "# DHORMEL\n**Grottroll sydväst om Lundnäs**\n\n## GRUNDINFO\n- **Ras:** Grottroll\n- **Hemvist:** Grotta sydväst om Lundnäs\n- **Särskilda Drag:** Stort och farligt\n\n## I KAMPANJEN\nRegnsynd-äventyret: Grottroll som spelarna kan stöta på i området kring Lundnäs.\n\n## SL-ANTECKNINGAR\nEn bit sydväst om byn Lundnäs bor grottrollet Dhormel. Eventuellt hot för resande i området."
     },
     {
-      "namn": "Dorian",
+      "namn": "Dorian Sproll",
       "bild": "dorian.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# DORIAN\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# DORIAN SPROLL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
     },
     {
       "namn": "Dorn Stenbärare",
@@ -411,18 +367,7 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# EIRA HOLM\n\n**Ledare för Vargnäsets 50 överlevande flyktingar**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 9 (Evakueringen)\n- **Roll:** Civil ledare, allierad\n\n## BAKGRUND\n\nEira Holm var en av Vargnäsets bybor som såg både Zentris blodsmagiska attack och Sankt Astrids korsfästelse. Hon steg fram som naturlig ledare när evakueringen började.\n\n## KRITISKA HÄNDELSER\n\n### Evakueringen (Fas 9)\n**Flykt från Vargnäset:**\n- 50 bybor evakuerades\n- Eira koordinerade med Gordon\n- 41 överlevde resan till Grensfortet\n\n### Grensfortet\n- Etablerade flyktinggruppen\n- Lady Soffia skickade förnödenheter\n- Gruppen lämnade dem för att gå till Skugglandet\n\n## KARAKTÄRSDRAG\n\n- **Naturlig ledare:** Steg fram i krisen\n- **Pragmatisk:** Höll moralen uppe\n- **Lojal:** Gentemot gruppen som räddade dem\n\n## RELATIONER\n\n### Räddare\n- **Gordon och gruppen:** Ledde evakueringen\n- **Lady Soffia:** Skickade stöd\n\n### Flyktingar\n- **41 överlevande:** Hennes ansvar\n\n## NUVARANDE SITUATION\n\nEira leder de 41 överlevande i Grensfortet medan gruppen är i Skugglandet. De är ensamma och utsatta.\n\n## SL-ANTECKNINGAR\n\n- Flyktingarna är utsatta utan gruppen\n- Kan bli mål för Arvorns Hammare\n- Eira kan behöva försvara gruppen vid återkomst\n- Moralisk vikt - gruppen är ansvariga för dessa liv"
     },
-    {
-      "namn": "Eira",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Vargnäset",
-      "fraktion": "Vargnäsets invånare",
-      "kapitel": null,
-      "beskrivning": "# EIRA\n**Koordinator för Vargnäsets försvar**\n\n## GRUNDINFO\n- **Roll:** Koordinerar försvararna under anfallet\n- **Ansvar:** Fattar beslut om resursallokering\n- **Relationer:** Känner Hagges familj och deras taktiska begåvning\n- **Ledarskap:** Strategisk och beslutsam\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Koordinerade Vargnäsets försvar mot desertörerna.\n\n## SL-ANTECKNINGAR\nEira är den som håller ihop försvaret och ser till att resurser fördelas effektivt. Hon känner till Hagges familjs militära förmågor och uppskattar hans ledarskap under striden."
-    },
-    {
+        {
       "namn": "Elara can De Mediva",
       "bild": null,
       "ras": "Pyaralv",
@@ -455,15 +400,15 @@ var wikiData = {
       "beskrivning": "# ELOISE\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes under resan i Tuzan Rim."
     },
     {
-      "namn": "Esma",
+      "namn": "Esma Randarrohästare",
       "bild": "esma.png",
       "ras": "Människa",
       "titel": null,
-      "status": "okänd",
-      "plats": "Raunfloden-området",
-      "fraktion": "Okänd",
-      "kapitel": null,
-      "beskrivning": "# ESMA\n**NPC vid Raunfloden**\n\n## GRUNDINFO\n- **Plats:** Raunfloden-området\n- **Kontext:** Scenario 4 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): NPC i Scenario 4."
+      "status": "levande",
+      "plats": "Frostnymfen",
+      "fraktion": "Oberoende",
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# ESMA RANDARROHÄSTARE\n**Hästtränare på Frostnymfen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Hästtränare\n- **Plats:** Frostnymfen (flodpråm)\n- **Status:** Levande\n\n## BESKRIVNING\nEsma är en kraftig kvinna som dirigerar lastningen av hästar med van hand. Hon känner igen Vitterdals sätt att träna hästar.\n\n## I KAMPANJEN\nFas 8 (Evakueringen): Möttes på Frostnymfen. Kände igen Hagge som Lady Soffias son. Erbjöd värdefull information om situationen i Vitterdal och en möjlig förrädare bland Lady Soffias rådgivare. Erbjöd sig att följa med som guide genom genvägar i Vitterdal.\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Relation:** Känner igen Hagge, lojalitet till Lady Soffia\n- **Kunskap:** Genvägar genom Vitterdal"
     },
     {
       "namn": "Esmeralda de Vries",

@@ -2,78 +2,61 @@
 
 ## Datum: 2025-12-11
 
-## ⚠️ KRITISKT PROBLEM - FÖRLORADE ÄNDRINGAR!
+## Status: OK
 
-**Manuell verifiering NPCs 1-28 (Evelina) committades ALDRIG.**
-Batch-agenterna skrev över alla ändringar.
-
-**FÖRLORAT:**
-- Amina-bilder (alla 4-5 har samma bild, bara en ska ha)
-- Beef (borttagen, återkommen)
-- Alokhara (flyttad till platser, återkommen som NPC)
-- Dr. Yusuf dublett
-- Eira dublett
-- Alla status/bild-ändringar NPCs 1-28
-
-**NÄSTA SESSION:**
-1. Fixa Amina-bilder (bara bint-Khalid behåller bild)
-2. Ta bort Beef, Alokhara
-3. Återställ alla NPCs 1-28 ändringar
-4. **COMMITTA efter varje fix!**
+Dashboard live och fungerande.
 
 ---
 
-## ✅ Klart denna session
+## Klart denna session
 
-**DASHBOARD:** Fungerar (`dashboard/index.html`)
-**DATA:** 225 NPCs, 55 platser, 11 kapitel
-**AGENTER:** 4 nya (/eon-data-guardian, lore-checker, doc-extractor, image-curator)
-**GIT:** Pushat - kan jobba från annan dator
+### GitHub Pages
+- `index.html` flyttad till roten (krävs för GitHub Pages)
+- `.nojekyll` tillagd
+- Sökvägar uppdaterade (`./wiki_data.js`, `./kampanjwiki/...`)
 
-**Viktiga tillägg:**
-- Sankt Astrid (martyr, Corvus uppenbarelse)
-- Faster Solveig (teorier om Zentri)
-- Saga (naturmagi)
-- Ragnar (hämnas)
-- Halvdan Kolare (dödade förrädaren)
-- Vargnäset: Komplett ockupations- & evakueringshistoria
+### NPC-korrigeringar
+**Borttagna (felaktiga):**
+- Alokhara (var en plats, inte NPC)
+- Amina (duplikat utan efternamn)
+- Arvorns Hammare-representant
+- Beef
+- Eira (duplikat - behöll Eira Holm)
 
-**Platser:**
-- Jen (fullständig)
-- Rödskäggs Tillflykt
-- Iskvarnsbryggan
-- Spegelmåne
-- Vargnäset uppdaterad
+**Bilder borttagna (felaktiga):**
+- Amina bint-Khalid
+- Amina bint-Rashid
+- Amina bint-Salim
+- Amir ibn-Farouk
+- Amira bint-Hassan
+
+**Korrigerade:**
+- Dorian → Dorian Sproll, Kapitel 2, Tuzan Rim
+- Berak → Kapitel 2, Tuzan Rim
+- Bartol → Kapitel 2, Tuzan Rim
+- Esma → Esma Randarrohästare, Kapitel 8, Frostnymfen
+- Berta Flodkvinna → Lade till bild `flodkvinna.png`
 
 ---
 
-## Arkitektur
+## Nuvarande data
 
-**Dashboard:** `dashboard/index.html` (single-file, 1050+ rader)
-**Databas:** `wiki_data.js` (304 KB, 225 NPCs, 55 platser)
-- Dual-mode: `var wikiData` + `module.exports`
-- ⚠️ ALDRIG `module.exports = {...}` direkt!
-
-**Bilder:** `kampanjwiki/assets/images/` (master)
-- 157 i npcs/, 23 i platser/
-- ~124/225 NPCs har bilder (55%)
+**Dashboard:** `index.html` (roten)
+**Databas:** `wiki_data.js` (224 NPCs, 55 platser, 11 kapitel)
+**Bilder:** `kampanjwiki/assets/images/`
 
 ---
 
 ## Git Status
 
-**Commits:** 98a1e5b, 959e53f
-**Branch:** main
-**Pushat:** ✅ Ja
+**Branch:** claude/investigate-swedish-phrase-0174QYczkp2VrKyhdjJGzfSW
+**Pushat:** Ja
+**Behöver mergas till main för GitHub Pages**
 
 ---
 
-## Nästa session
+## Nästa steg
 
-**PRIO 1:** Fixa förlorade ändringar NPCs 1-28
-**PRIO 2:** Bildmatchning (96 NPCs utan bilder)
-**PRIO 3:** Kontinuitetskontroll med `/eon-lore-checker`
-
-**Backups finns:**
-- wiki_data.js.backup (300K)
-- wiki_data.js.backup_batch4 (293K)
+1. Merga PR till main för att aktivera GitHub Pages
+2. Fortsätt NPC-granskning (fler felaktiga bilder/data?)
+3. Bildmatchning för NPCs utan bilder
