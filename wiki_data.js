@@ -1643,17 +1643,6 @@ var wikiData = {
       "beskrivning": "# SANKT ASTRID\n\n**12-årig martyr från Vargnäset**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Ålder:** 12 år (vid död)\n- **Status:** Död - Martyr\n- **Första fas:** Fas 8 (Vargnäsets andra besök)\n- **Roll:** Katalysator för Corvus vändning\n\n## BAKGRUND\n\nAstrid var en 12-årig flicka från Vargnäset som levde ett vanligt bybarnsliv innan Arvorns Hammare ockuperade byn.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset - Ockupationen (Fas 8)\n**Lögnen:**\n- Arvorns Hammare förhörde byborna om \"magiska händelser\"\n- Astrid ljög för att skydda spelarna\n\n**Korsfästelsen:**\n- Corvus Askhår korsfäste henne enligt ordensdoktrin\n- Hennes blod vägrade frysa trots vinterkölden (gudomligt tecken)\n- Hennes sista ord var förlåtelse\n\n**Uppenbarelsen:**\n- I det ögonblicket fick Corvus gudomlig uppenbarelse från Daak\n- 23 års övertygelse krossades\n- Corvus insåg att han kanske dödat oskyldiga i decennier\n\n## BETYDELSE\n\nAstrids död blev vändpunkten för Corvus Askhår och indirekt räddade gruppen. Hennes förlåtelse och det gudomliga tecknet bevisade att Arvorns Hammares doktrin var felaktig.\n\n## KARAKTÄRSDRAG\n\n- **Modig:** Ljög för att skydda främlingar\n- **Förlåtande:** Hennes sista ord var förlåtelse\n- **Oskyldig:** 12-årig flicka\n\n## RELATIONER\n\n### Påverkade\n- **Corvus Askhår:** Hennes död förändrade honom totalt\n- **Gruppen:** Hon dog för att skydda dem\n\n### Byn\n- **Vargnäsets bybor:** Hennes folk\n\n## EFTERMÄLE\n\nGruppen minns henne som \"Sankt Astrid\" - ett barn vars offer och förlåtelse förändrade allt.\n\n## SL-ANTECKNINGAR\n\n- Symbol för kampanjens moraliska komplexitet\n- Hennes ande kan dyka upp i Skugglandet till Corvus\n- Hennes offer väger tungt på gruppens samvete\n- Representerar oskyldiga offer för fanatism"
     },
     {
-      "namn": "Scout",
-      "bild": "scout.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Resan Hem - Scenario 3",
-      "fraktion": "Okänd",
-      "kapitel": null,
-      "beskrivning": "# SCOUT\n**Scout i Scenario 3**\n\n## GRUNDINFO\n- **Roll:** Scout/Spejare\n- **Kontext:** Scenario 3 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 3): Scout som spelarna möter.\n\n## SL-ANTECKNINGAR\nTroligen en spejare eller spanare som spelarna stöter på under resan hem."
-    },
-    {
       "namn": "Selene \"Silveröga\" Kazarov",
       "bild": "selene.png",
       "ras": "Asharier",
@@ -1918,7 +1907,7 @@ var wikiData = {
     },
     {
       "namn": "Ulzak",
-      "bild": null,
+      "bild": "ulzak.png",
       "ras": "Tirak",
       "titel": null,
       "status": "levande",
@@ -2005,17 +1994,6 @@ var wikiData = {
       "beskrivning": "# VITFLÄCK\n\n**Talande snökatt, Kuberons härold - tre meter från nos till svans**\n\n## GRUNDINFO\n\n- **Ras:** Snökatt (magisk varelse)\n- **Status:** Levande\n- **Första fas:** Fas 10 (Mithera)\n- **Roll:** Mystisk vägvisare och informant\n\n## BESKRIVNING\n\nVitfläck är en enorm snökatt - tre meter från nos till svans, med bärnstensögon och tre rader tänder. Han är en av Kuberons härolder och kan tala.\n\n## KRITISKA HÄNDELSER\n\n### Mithera (Fas 10)\n**Mötet vid De Varma Källorna:**\n\n**Hans bedömning av gruppen:**\n- **Gordon:** *\"Du luktar ansvar för döda barn. Intressant parfym.\"*\n- **Umnatak:** *\"Andevandrare! Din sort smakar konstigt.\"*\n- **Thrakka:** *\"Blod på sand, publiken jublar. Du har dödat för sport.\"*\n- **Kazrik:** *\"Ord, ord, ord. Du luktar pergament och bläck. Tråkigt.\"*\n- **Corvus:** *\"Två namn, två själar, två skulder. Du måste smaka FASCINERANDE.\"*\n\n**Information om Zentri:**\n- *\"Han gick österut med demonen i hasorna. Såg honom gråta silverfärger.\"*\n\n**Hans varning:**\n- *\"Ni kommer dö, vet ni. Inte idag, inte av mig, men snart.\"*\n\n## KARAKTÄRSDRAG\n\n- **Ser sanningar:** Känner personers essens\n- **Mystisk:** Talar i gåtor\n- **Kuberon-bunden:** Tjänare till gudomlig kraft\n- **Nio själar:** *\"Jag har nio själar. Du skulle gå vilse i mig.\"* (till Umnatak)\n\n## RELATIONER\n\n### Gudomliga\n- **Kuberon:** Hans herre\n\n### Gruppen\n- **Observatör:** Bedömde deras essenser\n- **Informant:** Gav information om Zentri\n\n## BETYDELSE\n\nVitfläck gav gruppen avgörande information om Zentri och bekräftade deras respektive essenser genom sina observationer.\n\n## SL-ANTECKNINGAR\n\n- Kan dyka upp igen i Mithera\n- Vet mer än han säger\n- Hans varning om död kan vara profetia\n- Representerar Mitheras magiska natur"
     },
     {
-      "namn": "Vitfläck",
-      "bild": null,
-      "ras": "Snökatt (talande tiger)",
-      "titel": null,
-      "status": "levande",
-      "plats": "Djupa Mithera",
-      "fraktion": null,
-      "kapitel": null,
-      "beskrivning": "# VITFLÄCK\n\n**Talande snökatt, Kuberons härold - tre meter från nos till svans**\n\n## GRUNDINFO\n\n- **Ras:** Snökatt (magisk varelse)\n- **Status:** Levande\n- **Första fas:** Fas 10 (Mithera)\n- **Roll:** Mystisk vägvisare och informant\n\n## BESKRIVNING\n\nVitfläck är en enorm snökatt - tre meter från nos till svans, med bärnstensögon och tre rader tänder. Han är en av Kuberons härolder och kan tala.\n\n## KRITISKA HÄNDELSER\n\n### Mithera (Fas 10)\n**Mötet vid De Varma Källorna:**\n\n**Hans bedömning av gruppen:**\n- **Gordon:** *\"Du luktar ansvar för döda barn. Intressant parfym.\"*\n- **Umnatak:** *\"Andevandrare! Din sort smakar konstigt.\"*\n- **Thrakka:** *\"Blod på sand, publiken jublar. Du har dödat för sport.\"*\n- **Kazrik:** *\"Ord, ord, ord. Du luktar pergament och bläck. Tråkigt.\"*\n- **Corvus:** *\"Två namn, två själar, två skulder. Du måste smaka FASCINERANDE.\"*\n\n**Information om Zentri:**\n- *\"Han gick österut med demonen i hasorna. Såg honom gråta silverfärger.\"*\n\n**Hans varning:**\n- *\"Ni kommer dö, vet ni. Inte idag, inte av mig, men snart.\"*\n\n## KARAKTÄRSDRAG\n\n- **Ser sanningar:** Känner personers essens\n- **Mystisk:** Talar i gåtor\n- **Kuberon-bunden:** Tjänare till gudomlig kraft\n- **Nio själar:** *\"Jag har nio själar. Du skulle gå vilse i mig.\"* (till Umnatak)\n\n## RELATIONER\n\n### Gudomliga\n- **Kuberon:** Hans herre\n\n### Gruppen\n- **Observatör:** Bedömde deras essenser\n- **Informant:** Gav information om Zentri\n\n## BETYDELSE\n\nVitfläck gav gruppen avgörande information om Zentri och bekräftade deras respektive essenser genom sina observationer.\n\n## SL-ANTECKNINGAR\n\n- Kan dyka upp igen i Mithera\n- Vet mer än han säger\n- Hans varning om död kan vara profetia\n- Representerar Mitheras magiska natur"
-    },
-    {
       "namn": "Vomdal",
       "bild": "vomdal1.png",
       "ras": "Människa",
@@ -2064,11 +2042,11 @@ var wikiData = {
       "bild": "ylva.png",
       "ras": "Människa",
       "titel": null,
-      "status": "okänd",
-      "plats": "Raunfloden-området",
-      "fraktion": "Okänd",
-      "kapitel": null,
-      "beskrivning": "# YLVA\n**NPC vid Raunfloden**\n\n## GRUNDINFO\n- **Plats:** Raunfloden-området\n- **Kontext:** Scenario 4 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): NPC i Scenario 4.\n\n## SL-ANTECKNINGAR\nYlva har flera bilder associerade med sig, vilket tyder på att hon är en viktigare NPC i detta scenario."
+      "status": "död",
+      "plats": "Bergstig ovanför Vitterdal",
+      "fraktion": "Anslöt sig till hjältarna",
+      "kapitel": "Kapitel 5",
+      "beskrivning": "# YLVA (†)\n**Ung äventyrssökare från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** Ung flicka\n- **Status:** Död\n- **Dödsplats:** Enslig bergstig ovanför Vitterdal\n\n## BAKGRUND\nYlva var en ung flicka som längtade efter äventyr och spänning. När hjältarna reste från Vargnäset beslutade hon sig för att ansluta sig till dem, driven av drömmar om att se världen och uppleva något mer än bylivet.\n\n## TRAGISK DÖD\nKort efter att ha anslutit sig till hjältarna dog Ylva på en enslig bergstig ovanför Vitterdal. Hennes död var en tidig tragedi som påminde gruppen om farorna i deras resa.\n\n## HAGGES SKULD\nHagge, en av gruppens allierade, anklagar sig själv för Ylvas död. Han bär på skulden och sorgen över att inte ha kunnat skydda den unga flickan som bara ville uppleva världen.\n\n## BETYDELSE\nYlvas död representerar de oskyldiga liv som går förlorade när vanliga människor dras in i hjältarnas farliga värld. Hennes äventyrslust ledde till hennes undergång, och hennes minne väger tungt på de som överlevde.\n\n## RELATIONER\n- **Hagge:** Känner skuld för hennes död\n- **Hjältarna:** Anslöt sig till deras resa från Vargnäset\n\n## SL-ANTECKNINGAR\nYlvas öde påminner spelarna om konsekvenserna av deras handlingar och de liv de påverkar. Hagges skuld kan vara en återkommande tema i kampanjen."
     },
     {
       "namn": "Youssef al-Najjar",
@@ -2085,12 +2063,12 @@ var wikiData = {
       "namn": "Yrka Yrko",
       "bild": null,
       "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Raunfloden-området",
-      "fraktion": "Okänd",
-      "kapitel": null,
-      "beskrivning": "# YRKA YRKO\n**NPC vid Raunfloden**\n\n## GRUNDINFO\n- **Plats:** Raunfloden-området\n- **Kontext:** Scenario 4 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): NPC i Scenario 4."
+      "titel": "Besättning på Frostnymfen",
+      "status": "levande",
+      "plats": "Frostnymfen (Raunfloden)",
+      "fraktion": "Lady Soffias nätverk",
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# YRKA YRKO\n**Tvillingar på Frostnymfen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Relation:** Tvillingar (Yrka och Yrko)\n- **Roll:** Besättningsmedlemmar på Frostnymfen\n- **Fartyg:** Frostnymfen under Kapten Nilmar\n- **Status:** Levande\n\n## BESKRIVNING\nYrka och Yrko är tvillingar som tjänstgör ombord på flodpråmen Frostnymfen. De är del av Lady Soffias nätverk och hjälper till med fartygets dagliga drift under resan uppför Raunfloden mot Vitterdal.\n\n## KARAKTÄR OCH REAKTIONER\nTvillingarna visar tecken på nervositet när faror uppstår. Under Dag 3 av resan, när mystiska ljussignaler från Systrarna sågs längs floden, blev Yrka och Yrko synbart oroliga - ett tecken på deras medvetenhet om de faror som lurar längs Raunfloden.\n\n## RELATIONER\n- **Kapten Nilmar:** Deras kapten\n- **Selene \"Silveröga\":** Underbefäl på fartyget\n- **Övriga besättning:** Burhak, Laszlo, Garsten, Esma, Marvo\n- **Lady Soffia:** Del av hennes nätverk\n\n## I KAMPANJEN\n**Kapitel 8 - Evakueringen:** Var ombord på Frostnymfen under den farliga resan uppför Raunfloden mot Vitterdal. Bidrog till fartygets drift under flera kritiska situationer.\n\n## SL-ANTECKNINGAR\nTvillingarnas nervositet kan användas som indikator när faror närmar sig. De känner floden och dess faror väl."
     },
     {
       "namn": "Zahra bint-Hassan",
@@ -2106,13 +2084,13 @@ var wikiData = {
     {
       "namn": "Zairgaz",
       "bild": "zairgaz.png",
-      "ras": "Okänd (möjligen ork eller tiraker)",
+      "ras": "Demon (frammanad)",
       "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# ZAIRGAZ\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Okänd (möjligen ork eller tiraker)\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "status": "död",
+      "plats": "Öknen utanför Jen",
+      "fraktion": "Demoniska krafter",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# ZAIRGAZ (†)\n**Frammanad demon**\n\n## GRUNDINFO\n- **Typ:** Frammanad demon\n- **Status:** Dräpt av hjältarna\n- **Plats:** Öknen utanför Jen, Muhad\n- **Kapitel:** Kapitel 2\n\n## BESKRIVNING\nZairgaz var en demon som frammanats i ökenområdet utanför Jen. Dess sanna natur och syfte förblir oklart, men demonen utgjorde ett direkt hot mot hjältarna eller deras intressen i regionen.\n\n## KONFRONTATION\nI öknen utanför Jen mötte hjältarna Zairgaz i strid. Trots demonens övernaturliga krafter lyckades gruppen besegra och dräpa varelsen.\n\n## BETYDELSE\nZairgaz var en av de tidiga tecknen på demonisk aktivitet i kampanjen, vilket förebådade de större hot som skulle komma senare. Hjältarnas seger visade deras förmåga att hantera övernaturliga fiender redan i kampanjens tidiga skeden.\n\n## I KAMPANJEN\n**Kapitel 2 - Muhad:** Frammanad och konfronterad i öknen utanför Jen. Dräpt av hjältarna.\n\n## SL-ANTECKNINGAR\nEn tidig demonstration av demonisk närvaro i världen. Kan ha kopplingar till större demoniska planer eller frammanare i regionen."
     },
     {
       "namn": "Zan Fjädertunga",
@@ -2135,17 +2113,6 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# ZARA AL-MIN\n**Ägare av Månskärets Gömställe**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Värdshusägare\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nZara al-Min är en klok och diskret kvinna som driver Månskärets Gömställe, ett värdshus känt för sin mystiska atmosfär och diskreta tjänster.\n\n## VERKSAMHET\nZara driver sitt värdshus med:\n- Fokus på diskretion och privatliv\n- Mystisk och hemlighetsfull stämning\n- Hemliga möten och affärer\n- Professionell och diskret service\n\n## PERSONAL\nZara arbetar med flera anställda:\n- Rashid ibn-Farouk (bartender)\n- Amina bint-Salim (serverare)\n- Hassan al-Rashid (kock)\n- Laila bint-Ali (städare)\n\n## KARAKTÄR\n- Klok och erfaren\n- Extremt diskret\n- Professionell\n- Skapar säker miljö för hemliga möten\n\n## KOPPLINGAR\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
-    },
-    {
-      "namn": "Zara",
-      "bild": "Zara.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# ZARA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
       "namn": "Sjödöda Titanen",
