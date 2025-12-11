@@ -1,43 +1,79 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2025-12-09
+## Datum: 2025-12-11
 
-## Vad vi gör just nu
-Bygger en komplett Jekyll-wiki för EON-kampanjen "Gravens Arv" som ska publiceras på GitHub Pages (https://github.com/Kullendorff/gravensarv).
+## ⚠️ KRITISKT PROBLEM - FÖRLORADE ÄNDRINGAR!
 
-## Status
+**Manuell verifiering NPCs 1-28 (Evelina) committades ALDRIG.**
+Batch-agenterna skrev över alla ändringar.
 
-### ✅ Klart
-- Git repository initierat och kopplat till GitHub
-- `.gitignore` skapad (blockerar PDFer och Google Docs)
-- Jekyll grundstruktur skapad i `kampanjwiki/`
-- Material utforskat och förstått
-- **BATCH 6 TILLAGD:** Vargnäsets ungdomar och äldre (10 NPCs)
+**FÖRLORAT:**
+- Amina-bilder (alla 4-5 har samma bild, bara en ska ha)
+- Beef (borttagen, återkommen)
+- Alokhara (flyttad till platser, återkommen som NPC)
+- Dr. Yusuf dublett
+- Eira dublett
+- Alla status/bild-ändringar NPCs 1-28
 
-### 🔄 Pågående
-- Genererar innehåll till wikin (kapitel, NPCs, platser, fraktioner)
+**NÄSTA SESSION:**
+1. Fixa Amina-bilder (bara bint-Khalid behåller bild)
+2. Ta bort Beef, Alokhara
+3. Återställ alla NPCs 1-28 ändringar
+4. **COMMITTA efter varje fix!**
 
-### ⏳ Nästa steg
-1. Generera fler NPC-batches (resterande ~100 NPCs)
-2. Generera 11 kapitel (om inte redan gjort)
-3. Generera ~30 platser
-4. Generera ~10 fraktioner
-5. Organisera ~200 bilder
+---
 
-## Kampanjöversikt
-- **11 faser**: Tirakgraven → ... → Skugglandet (nuvarande)
-- **5 aktiva spelare** + 1 försvunnen (Zentri)
-- **~120 NPCs** totalt
-- **~200 bilder**
+## ✅ Klart denna session
 
-## Beslut
-- **Detaljeringsnivå**: FULL - allt vi kan hitta
-- **Google Docs**: Skippa (kan inte läsas)
-- **Bilder**: Alla ~200 inkluderas
-- **hemsidan/**: Ignorera helt
+**DASHBOARD:** Fungerar (`dashboard/index.html`)
+**DATA:** 225 NPCs, 55 platser, 11 kapitel
+**AGENTER:** 4 nya (/eon-data-guardian, lore-checker, doc-extractor, image-curator)
+**GIT:** Pushat - kan jobba från annan dator
 
-## Blockerare
-Inga för tillfället.
+**Viktiga tillägg:**
+- Sankt Astrid (martyr, Corvus uppenbarelse)
+- Faster Solveig (teorier om Zentri)
+- Saga (naturmagi)
+- Ragnar (hämnas)
+- Halvdan Kolare (dödade förrädaren)
+- Vargnäset: Komplett ockupations- & evakueringshistoria
+
+**Platser:**
+- Jen (fullständig)
+- Rödskäggs Tillflykt
+- Iskvarnsbryggan
+- Spegelmåne
+- Vargnäset uppdaterad
+
+---
+
+## Arkitektur
+
+**Dashboard:** `dashboard/index.html` (single-file, 1050+ rader)
+**Databas:** `wiki_data.js` (304 KB, 225 NPCs, 55 platser)
+- Dual-mode: `var wikiData` + `module.exports`
+- ⚠️ ALDRIG `module.exports = {...}` direkt!
+
+**Bilder:** `kampanjwiki/assets/images/` (master)
+- 157 i npcs/, 23 i platser/
+- ~124/225 NPCs har bilder (55%)
+
+---
+
+## Git Status
+
+**Commits:** 98a1e5b, 959e53f
+**Branch:** main
+**Pushat:** ✅ Ja
+
+---
 
 ## Nästa session
-Fortsätt med innehållsgenerering tills wikin är komplett.
+
+**PRIO 1:** Fixa förlorade ändringar NPCs 1-28
+**PRIO 2:** Bildmatchning (96 NPCs utan bilder)
+**PRIO 3:** Kontinuitetskontroll med `/eon-lore-checker`
+
+**Backups finns:**
+- wiki_data.js.backup (300K)
+- wiki_data.js.backup_batch4 (293K)
