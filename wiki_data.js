@@ -1072,7 +1072,7 @@ var wikiData = {
     },
     {
       "namn": "Lady Isadora",
-      "bild": "sister2.png",
+      "bild": "syster2.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
