@@ -958,7 +958,7 @@ var wikiData = {
       "plats": "Vargnäset",
       "fraktion": "Vargnäsets invånare",
       "kapitel": null,
-      "beskrivning": "# JOSSAN\n**Utmärkt bågskytt från Vargnäset**\n\n## GRUNDINFO\n- **Specialitet:** Utmärkt bågskytt\n- **Position:** 3-4 bågskyttar på taken och höjderna\n- **Förmåga:** Kan identifiera fiendens ledare\n- **Roll i försvaret:** Del av Zentris zon (taken och höjderna)\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Försvarade Vargnäset från taken, identifierade fientliga ledare.\n\n## SL-ANTECKNINGAR\nJossan är en av byns bästa bågskyttar och har viktigt uppdrag att hålla höjderna under anfallet. Hans förmåga att identifiera ledare gör honom värdefull för koordinerat försvar."
+      "beskrivning": "# JOSSAN\n**Utmärkt bågskytt från Vargnäset**\n\n## GRUNDINFO\n- **Kön:** Kvinna\n- **Specialitet:** Utmärkt bågskytt\n- **Position:** 3-4 bågskyttar på taken och höjderna\n- **Förmåga:** Kan identifiera fiendens ledare\n- **Roll i försvaret:** Del av Zentris zon (taken och höjderna)\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Försvarade Vargnäset från taken, identifierade fientliga ledare.\n\n## SL-ANTECKNINGAR\nJossan är en av byns bästa bågskyttar och har viktigt uppdrag att hålla höjderna under anfallet. Hennes förmåga att identifiera ledare gör henne värdefull för koordinerat försvar."
     },
     {
       "namn": "Kaelar Stålsvärd",
@@ -984,18 +984,18 @@ var wikiData = {
     },
     {
       "namn": "Kald Silvermask",
-      "bild": null,
+      "bild": "silvermask.png",
       "ras": "Människa",
       "titel": null,
-      "status": "okänd",
+      "status": "död",
       "plats": "Vargnäset",
       "fraktion": "Desertörer",
       "kapitel": null,
-      "beskrivning": "# KALD SILVERMASK\n**Desertörledare**\n\n## GRUNDINFO\n- **Roll:** Ledare för första vågen desertörer (5 man)\n- **Specialitet:** Bågskyttar\n- **Taktik:** Avleda och starta bränder, fokuserar på nordvästra palissaden\n- **Svaghet:** Återvänder till skogen vid betydande motstånd\n- **Beteende:** Förblir på avstånd, skjuter brinnande pilar, undviker direkt konfrontation\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ledde första vågen i anfallet på Vargnäset.\n\n## SL-ANTECKNINGAR\nKald är en taktisk ledare som föredrar avståndsstrid. Han använder brandpilar för att skapa kaos och avleda försvaret innan han drar sig tillbaka vid motstånd."
+      "beskrivning": "# KALD SILVERMASK\n**Desertörledare**\n\n## GRUNDINFO\n- **Roll:** Ledare för första vågen desertörer (5 man)\n- **Specialitet:** Bågskyttar\n- **Status:** Död (dog vid anfallet mot Vargnäset)\n- **Taktik:** Avleda och starta bränder, fokuserar på nordvästra palissaden\n- **Svaghet:** Återvänder till skogen vid betydande motstånd\n- **Beteende:** Förblir på avstånd, skjuter brinnande pilar, undviker direkt konfrontation\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ledde första vågen i anfallet på Vargnäset. Dog under anfallet.\n\n## SL-ANTECKNINGAR\nKald var en taktisk ledare som föredrog avståndsstrid. Han använde brandpilar för att skapa kaos och avleda försvaret."
     },
     {
       "namn": "Kapten Eamon",
-      "bild": "Rashid_ibn-Khalid_kapten.png",
+      "bild": null,
       "ras": "Människa",
       "titel": "Kapten (pensionerad)",
       "status": "levande",
@@ -1006,7 +1006,7 @@ var wikiData = {
     },
     {
       "namn": "Kapten Mordicus Helga",
-      "bild": "Rashid_ibn-Khalid_kapten.png",
+      "bild": null,
       "ras": "Människa",
       "titel": "Kapten",
       "status": "levande",
@@ -1017,7 +1017,7 @@ var wikiData = {
     },
     {
       "namn": "Karim al-Jafar",
-      "bild": "Karim_berättaren .png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -1039,14 +1039,14 @@ var wikiData = {
     },
     {
       "namn": "Karim ibn-Hassan",
-      "bild": "Karim_berättaren .png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
-      "beskrivning": "# KARIM IBN-HASSAN\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nKarim ibn-Hassan är en ung man i tjugoårsåldern med kort, lockigt hår och en atletisk kroppsbyggnad. Han är alltid klädd i en prydlig uniform.\n\n## BAKGRUND\nKarim är en relativt ny rekryt, men har snabbt visat sig vara skicklig och pålitlig. Han är snabb och stark.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Hantering av potentiella hot\n- Säkerhetsarbete\n- Snabb reaktionsförmåga\n\n## KARAKTÄR\n- Ung och atletisk\n- Snabb och stark\n- God förmåga att förutse hot\n- Skicklig och pålitlig\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
+      "beskrivning": "# KARIM IBN-HASSAN\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nKarim ibn-Hassan är en ung man i tjugoårsåldern med rakat huvud och en atletisk kroppsbyggnad. Han är alltid klädd i en prydlig uniform.\n\n## BAKGRUND\nKarim är en relativt ny rekryt, men har snabbt visat sig vara skicklig och pålitlig. Han är snabb och stark.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Hantering av potentiella hot\n- Säkerhetsarbete\n- Snabb reaktionsförmåga\n\n## KARAKTÄR\n- Ung och atletisk\n- Rakat huvud\n- Snabb och stark\n- God förmåga att förutse hot\n- Skicklig och pålitlig\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
     },
     {
       "namn": "Kasim ibn-Farid",
@@ -1058,17 +1058,6 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# KASIM IBN-FARID\n**Slav och bärare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Status:** Slav\n- **Yrke:** Bärare\n- **Ägare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nKasim ibn-Farid är en stark man i trettioårsåldern med kort svart hår och muskulös byggnad. Han är klädd i enkla, men prydliga kläder.\n\n## BAKGRUND\nKasim köptes för sin fysiska styrka och används ofta för att bära Laila i en palankin genom stadens gator och torg.\n\n## ARBETSUPPGIFTER\nSom bärare:\n- Bär Laila i palankin\n- Utför tunga lyft\n- Fysiskt krävande arbete\n- Utför uppgifter med precision\n\n## KARAKTÄR\n- Stark och muskulös\n- Lojal och tystlåten\n- Precis i sitt arbete\n- Plikttrogen\n\n## KOPPLINGAR\n- **Ägare:** Laila al-Jen\n- **Arbetsuppgift:** Bärare\n- **Kollega:** Selim ibn-Rashid (medarbetare som bärare)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
-    },
-    {
-      "namn": "Khalid al-Tamir",
-      "bild": "Khalid_al-Tamir.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Tamir-familjen",
-      "kapitel": null,
-      "beskrivning": "# KHALID AL-TAMIR\n**Medlem av Tamir-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
       "namn": "Khalid ibn-Mustafa",
@@ -1083,14 +1072,14 @@ var wikiData = {
     },
     {
       "namn": "Lady Isadora",
-      "bild": null,
+      "bild": "sister2.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jaktar demonspår",
       "fraktion": "Systrarna (Zorian-orden)",
       "kapitel": null,
-      "beskrivning": "# LADY ISADORA\n\n**Syster i Zorian-orden, jagar demonspår**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande, aktiv jakt\n- **Första fas:** Fas 6 (Vargnäset)\n- **Roll:** Antagonist, förföljare\n\n## BAKGRUND\n\nLady Isadora är medlem av \"Systrarna\" - Zorian-ordens specialjägare som spårar demonisk aktivitet.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset (Fas 6)\n**Jakten på Zentri:**\n- Ledde attack för att fånga Zentri\n- Kände demonessensen i ringen\n- Såg Zentris blodsmagiska attack\n- Förlorade jakten när Zentri försvann\n\n### Efter Zentris försvinnande\n- Fortsätter spåra demonaktivitet\n- Observerar gruppen på avstånd\n- Väntar på rätt tillfälle\n\n## KARAKTÄRSDRAG\n\n- **Methodisk:** Spårar tålmodigt\n- **Fanatisk:** Zorian-ordens uppdrag är heligt\n- **Intelligent:** Mer sofistikerad än Arvorns Hammare\n- **Tålmodig:** Väntar på rätt ögonblick\n\n## RELATIONER\n\n### Zorian-orden\n- **Syster Moira:** Jagtkollega\n- **Systrarna:** Elitorden\n\n### Jagtoffer\n- **Zentri:** Primärt mål (nu försvunnen)\n- **Gruppen:** Sekundära mål/observationsobjekt\n\n## NUVARANDE SITUATION\n\nIsadora fortsätter jaga demonspår medan gruppen är i Skugglandet. Hon observerar och samlar information.\n\n## SL-ANTECKNINGAR\n\n- Mer sofistikerad antagonist än Arvorns Hammare\n- Arbetar med finesse, inte brutalitet\n- Kan bli allierad mot demonen eller fortsatt fiende\n- Väntar på att gruppen återvänder med Zentri"
+      "beskrivning": "# LADY ISADORA\n\n**Den mörkhåriga systern i Zorian-orden, jagar demonspår**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Utseende:** Mörkt hår\n- **Särskilt drag:** Den av systrarna som fortfarande kan se\n- **Status:** Levande, aktiv jakt\n- **Första fas:** Fas 6 (Vargnäset)\n- **Roll:** Antagonist, förföljare\n\n## BAKGRUND\n\nLady Isadora är medlem av \"Systrarna\" - Zorian-ordens specialjägare som spårar demonisk aktivitet. Hon är den mörkhåriga systern och till skillnad från sina kollegor har hon fortfarande sin syn intakt.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset (Fas 6)\n**Jakten på Zentri:**\n- Ledde attack för att fånga Zentri\n- Kände demonessensen i ringen\n- Såg Zentris blodsmagiska attack\n- Förlorade jakten när Zentri försvann\n\n### Efter Zentris försvinnande\n- Fortsätter spåra demonaktivitet\n- Observerar gruppen på avstånd\n- Väntar på rätt tillfälle\n\n## KARAKTÄRSDRAG\n\n- **Methodisk:** Spårar tålmodigt\n- **Fanatisk:** Zorian-ordens uppdrag är heligt\n- **Intelligent:** Mer sofistikerad än Arvorns Hammare\n- **Tålmodig:** Väntar på rätt ögonblick\n- **Seende:** Till skillnad från vissa andra systrar kan hon fortfarande se\n\n## RELATIONER\n\n### Zorian-orden\n- **Syster Moira:** Jagtkollega\n- **Systrarna:** Elitorden\n\n### Jagtoffer\n- **Zentri:** Primärt mål (nu försvunnen)\n- **Gruppen:** Sekundära mål/observationsobjekt\n\n## NUVARANDE SITUATION\n\nIsadora fortsätter jaga demonspår medan gruppen är i Skugglandet. Hon observerar och samlar information.\n\n## SL-ANTECKNINGAR\n\n- Mer sofistikerad antagonist än Arvorns Hammare\n- Arbetar med finesse, inte brutalitet\n- Kan bli allierad mot demonen eller fortsatt fiende\n- Väntar på att gruppen återvänder med Zentri\n- Den mörkhåriga systern som fortfarande kan se - viktig distinktion"
     },
     {
       "namn": "Lady Soffia av Vitterdal",
