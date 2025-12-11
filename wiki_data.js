@@ -1325,7 +1325,7 @@ var wikiData = {
     },
     {
       "namn": "Mira",
-      "bild": "Amira_bint-Zayed.png",
+      "bild": null,
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1457,7 +1457,7 @@ var wikiData = {
     },
     {
       "namn": "Omar ibn-Salim",
-      "bild": "omar_oud.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -1479,7 +1479,7 @@ var wikiData = {
     },
     {
       "namn": "Ragnar Fiskare",
-      "bild": "ragnar.png",
+      "bild": null,
       "ras": "Människa",
       "titel": null,
       "status": "okänd",
@@ -1512,7 +1512,7 @@ var wikiData = {
     },
     {
       "namn": "Rashid ibn-Farouk",
-      "bild": "Rashid_ibn-Khalid_kapten.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -1523,7 +1523,7 @@ var wikiData = {
     },
     {
       "namn": "Rashid ibn-Khalid",
-      "bild": "rashid.png",
+      "bild": null,
       "ras": "Människa",
       "titel": null,
       "status": "levande",
