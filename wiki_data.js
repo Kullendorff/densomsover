@@ -452,7 +452,7 @@ var wikiData = {
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# ELOISE\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+      "beskrivning": "# ELOISE\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes under resan i Tuzan Rim."
     },
     {
       "namn": "Esma",
@@ -507,18 +507,7 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
-      "beskrivning": "# FADIL IBN-YUSUF\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nFadil ibn-Yusuf är en medelålders man med kort grått hår och en stadig kroppsbyggnad. Han bär en enkel, men prydlig uniform.\n\n## BAKGRUND\nFadil har en bakgrund som livvakt och har arbetat för flera rika familjer i Jen. Han är mycket erfaren.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Ger känsla av trygghet\n- Säkerhetsarbete\n- Erfaren livvakt\n\n## KARAKTÄR\n- Medelålders och erfaren\n- Lugn och bestämd uppsyn\n- Stadig och pålitlig\n- Ger trygghet till hushållet\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
-    },
-    {
-      "namn": "Fadil",
-      "bild": "fadil.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# FADIL\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# FADIL IBN-YUSUF\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nFadil ibn-Yusuf är en ung, muskulös mûhadisk krigare med mörkt hår. Han bär traditionell vaktdräkt med spjut och sköld, och rör sig med en utbildad soldats precision.\n\n## BAKGRUND\nFadil har tränat som krigare och livvakt från ung ålder. Trots sin ungdom har han redan tjänstgjort för flera rika familjer i Jen och visat sig vara mycket pålitlig.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Patrullerar och bevakar entrén\n- Säkerhetsarbete\n- Tränad livvakt\n\n## KARAKTÄR\n- Ung men erfaren\n- Vaksam och uppmärksam\n- Atletisk och vältränad\n- Pålitlig och trogen sin arbetsgivare\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
     },
     {
       "namn": "Fahad al-Khouri",
@@ -555,7 +544,7 @@ var wikiData = {
     },
     {
       "namn": "Fatima bint-Salim",
-      "bild": "fatima_bint.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -563,17 +552,6 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# FATIMA BINT-SALIM\n**Arkivarie på slavkontoret**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Arkivarie\n- **Arbetsplats:** Huvudkontoret för Slavregistrering och Transaktioner\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nFatima bint-Salim är en äldre kvinna med en vänlig uppsyn och ett noggrant sinne för detaljer. Hon bär alltid prydliga kläder och är mycket organiserad.\n\n## BAKGRUND\nFatima har arbetat som arkivarie i över tjugo år och är känd för sin noggrannhet och sitt organiserade arbete.\n\n## ARBETSUPPGIFTER\nSom arkivarie:\n- Upprätthåller och organiserar historiska register\n- Hanterar förfrågningar om historiska data\n- Säkerställer arkivets ordning\n- Bevarar viktiga dokument\n\n## KARAKTÄR\n- Äldre och mycket erfaren\n- Vänlig uppsyn\n- Noggrant sinne för detaljer\n- Mycket organiserad\n\n## KOPPLINGAR\n- **Arbetsplats:** Huvudkontoret för Slavregistrering, arkivet\n- **Position:** Arkivarie\n- **Chef:** Amir ibn-Farouk\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
-    },
-    {
-      "namn": "Fatima bint",
-      "bild": "fatima_bint.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# FATIMA BINT\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
       "namn": "Fhe Ehdsim",
@@ -587,26 +565,15 @@ var wikiData = {
       "beskrivning": "# FHE EHDSIM\n**Örthandlare i Jarla**\n\n## GRUNDINFO\n- **Verksamhet:** Äger örtabod på Sjömansvägen i Jarla\n- **Specialitet:** Örter, blommor och preparat\n- **Anläggning:** Butik med laboratorium där han tillverkar sina preparat\n- **Särskilda Drag:** Förvarar syraflaskor under disken som försvar\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Har koppling till äventyret \"Maktens skugga\".\n\n## SL-ANTECKNINGAR\nHans örtabod har en bedövande doft av hundratals blandade örter. Inne finns burkar och flaskor med underliga etiketter. Under sängen i sovrummet finns en låst låda med en ledtråd (N) till äventyret Maktens skugga. Hans personliga tillgångar (14 gulden och 12 silverdaler) gömmer han i madrassen."
     },
     {
-      "namn": "Flodsköldpaddan",
-      "bild": null,
-      "ras": "Varelse",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Raunfloden",
-      "fraktion": "Okänd",
-      "kapitel": null,
-      "beskrivning": "# FLODSKÖLDPADDAN\n**Flodsköldpadda i Raunfloden**\n\n## GRUNDINFO\n- **Typ:** Flodsköldpadda (stor varelse)\n- **Habitat:** Raunfloden\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): Varelse som spelarna möter i eller vid Raunfloden.\n\n## SL-ANTECKNINGAR\nEn flodsköldpadda av betydande storlek som förekommer i Scenario 4."
-    },
-    {
-      "namn": "Garsten",
+      "namn": "Garsten \"Soppsleven\" Tretre",
       "bild": "garsten.png",
       "ras": "Människa",
       "titel": null,
-      "status": "okänd",
-      "plats": "Raunfloden-området",
-      "fraktion": "Okänd",
-      "kapitel": null,
-      "beskrivning": "# GARSTEN\n**NPC vid Raunfloden**\n\n## GRUNDINFO\n- **Plats:** Raunfloden-området\n- **Kontext:** Scenario 4 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): NPC i Scenario 4."
+      "status": "levande",
+      "plats": "Frostnymfen (flodpråm)",
+      "fraktion": "Lady Soffias tjänare",
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# GARSTEN \"SOPPSLEVEN\" TRETRE\n**Kock på Frostnymfen**\n\n## GRUNDINFO\n- **Yrke:** Kock\n- **Arbetsplats:** Frostnymfen (tirakisk flodpråm)\n- **Öknamn:** \"Soppsleven\"\n- **Status:** Levande\n- **Arbetsgivare:** Kapten Nilmar / Lady Soffia\n\n## BESKRIVNING\nGarsten är Frostnymfens pratsamme kock och ryktesspridare. Han är känd för att alltid veta de senaste ryktena och sprida skvaller medan han lagar mat.\n\n## KARAKTÄR OCH PERSONLIGHET\n- Mycket pratsam och sällskaplig\n- Ivrig ryktesspridare\n- Delar gärna information vid måltider\n- Blir extra pratsam efter några bägare\n- Färgstark berättare\n\n## ROLL OMBORD\nSom kock på Frostnymfen:\n- Lagar alla måltider åt besättning och passagerare\n- Serverar te och mat under resan\n- Fungerar som informationskälla om händelser längs floden\n- Sprider rykten om Kärlingarnas män, magiska krafter och politiska intriger\n\n## RYKTEN HAN SPRIDER\nGarsten är känd för att delge information om:\n- Kärlingarnas män som patrullerar floden\n- Mystiska händelser i Vitterdal\n- Lady Soffias situation\n- Förädare bland rådgivarna\n- Vintervargarna vid Vitterdals gränser\n\n## I KAMPANJEN\nFas 8 (Evakueringen): Kock och besättningsmedlem på Frostnymfen under resan till Vitterdal. En viktig informationskälla för gruppen.\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Kapten:** Nilmar\n- **Arbetsgivare:** Lady Soffia (indirekt)\n- **Medbesättning:** Selene, Burhak, Laszlo, Esma"
     },
     {
       "namn": "Gavric",
@@ -664,17 +631,6 @@ var wikiData = {
       "beskrivning": "# GHALIB AL-NUR\n**Medlem av Nur-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Obestämd\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.\n\n## SL-ANTECKNINGAR\nKontakt i Muhad."
     },
     {
-      "namn": "Gripvibe",
-      "bild": "gripvibe.png",
-      "ras": "Okänd",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Lundnäs-området",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# GRIPVIBE\n**Varelse i Lundnäs-området**\n\n## GRUNDINFO\n- **Plats:** Lundnäs-området\n- **Namn:** \"Grip-\" antyder möjlig koppling till griparna (griffins) i äventyret\n\n## I KAMPANJEN\nRegnsynd-äventyret: Möjligen kopplad till de galna gripar som dräpte fader Rubiel.\n\n## SL-ANTECKNINGAR\nNamnet antyder koppling till griparna (griffins) som blev galna av pärlorna och dödade fader Rubiel på gravgården."
-    },
-    {
       "namn": "Hadrian \\\"Hagge\\\" av Vitterdal",
       "ras": "Människa",
       "titel": null,
@@ -683,7 +639,7 @@ var wikiData = {
       "fraktion": "Jarladömet Vitterdal",
       "kapitel": null,
       "beskrivning": "# HADRIAN \"HAGGE\" AV VITTERDAL\n\n**Jarl av Vitterdal, gruppens huvudsakliga uppdragsgivare**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande, jarl av Vitterdal\n- **Första fas:** Fas 3 (Muhad)\n- **Roll:** Huvudsaklig uppdragsgivare och allierad\n\n## BAKGRUND\n\nHagge är yngre sonen i huset Vitterdal, aldrig förberedd för ledarskap. Hans äldre bror Talarra skulle ärva jarladömet, men anklagade Hagge för förräderi på falska grunder.\n\n### Förvisning och slaveri\n- Förvisad från Vitterdal av sin bror Talarra\n- Tillfångatagen av pirater\n- Såld som slav i Jen, Muhad\n\n## VIKTIGA HÄNDELSER\n\n### Muhad (Fas 3)\n**Befrielsen:**\n- Gruppen anlitades av Lady Soffia för att hitta och befria honom\n- Laila al-Jen krävde att Hagge gav henne ett barn som pris för frihet\n- Under den alkemiska ritualen skyddade gruppen paret\n\n### Återkomst till Vitterdal (Fas 7)\n- Talarra var redan död när Hagge återvände\n- Lantrådet sammankallat för att bekräfta arvinge\n- Officiellt erkänd som jarl av Vitterdal\n\n### Belöningar till gruppen\nHagge gav omfattande belöningar till sina räddare:\n\n**Titlar och privilegier:**\n- Gordon: \"Kapten av Vitterdals Hederskompani\"\n- Alla: Skattefrihet och hus på Mitrahus mark\n- Option: Äganderätt till Grensfortet (om renoverat)\n\n## KARAKTÄRSDRAG\n\n- **Oväntat ledarskap:** Tvingades växa in i rollen\n- **Tacksam:** Djupt tacksam mot gruppen som räddade honom\n- **Försiktig härskare:** Medveten om sina begränsningar\n\n## RELATIONER\n\n### Familj\n- **Lady Soffia:** Hans mor, tidigare de facto härskare\n- **Talarra:** Äldre bror (död) som förvisade honom\n- **Barnet med Laila:** Efterlämnat i Muhad\n\n### Gruppen\n- **Alla spelarkaraktärer:** Djup tacksamhetsskuld\n\n### Komplicerat\n- **Laila al-Jen:** Barnets mor, slavhandlare i Jen\n\n## NUVARANDE SITUATION\n\nHagge styr nu Vitterdal och är gruppens viktigaste allierade. Hans position är fortfarande utsatt politiskt.\n\n## SL-ANTECKNINGAR\n\n- Kan användas för att ge gruppen uppdrag\n- Hans tacksamhet är genuin men politiken i Vitterdal är komplex\n- Barnet i Muhad kan bli framtida komplikation\n- Grensfortet-alternativet ger gruppen potential bas",
-      "bild": "hagge2.png"
+      "bild": "hagge3.png"
     },
     {
       "namn": "Hakim al-Rashid",
@@ -822,15 +778,15 @@ var wikiData = {
       "bild": "hunter.png",
       "ras": "Människa",
       "titel": null,
-      "status": "okänd",
-      "plats": "Vargnäset",
-      "fraktion": "Vargnäsets invånare",
+      "status": "fiende",
+      "plats": "Okänd",
+      "fraktion": "Magiekrjägare",
       "kapitel": null,
-      "beskrivning": "# HUNTER\n**Jägare från Vargnäset**\n\n## GRUNDINFO\n- **Yrke:** Jägare\n- **Plats:** Vargnäset\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Del av försvaret av Vargnäset.\n\n## SL-ANTECKNINGAR\nSom jägare har Hunter troligen viktig roll i försvaret med spårning och bågskyttefärdigheter."
+      "beskrivning": "# HUNTER\n**Magiekrjägare**\n\n## GRUNDINFO\n- **Yrke:** Magiekrjägare\n- **Status:** Fiende\n- **Fraktion:** Magiekrjägare (troligen Arvorns Hammare eller liknande)\n\n## BESKRIVNING\nBilden visar en av de magiekrjägare som anföll Zentri med silvernät. Dessa jägare är specialiserade på att fånga och eliminera magianvändare.\n\n## UTRUSTNING\n- **Silvernät:** Specialdesignat för att fånga magiker\n- **Vapen:** Utrustade för strid mot magianvändare\n\n## I KAMPANJEN\nDe magiekrjägare som använder silvernät för att fånga magiker som Zentri. Del av de grupper som jagar magianvändare.\n\n## SL-ANTECKNINGAR\nRepresenterar den typ av magiekrjägare som gruppen kan möta. Silvernätet är en specialiserad taktik för att neutralisera magiker."
     },
     {
       "namn": "Fredricca",
-      "bild": null,
+      "bild": "fredricca.png",
       "ras": "Människa",
       "titel": null,
       "status": "okänd",
@@ -852,7 +808,7 @@ var wikiData = {
     },
     {
       "namn": "Ibran Anderyttare",
-      "bild": null,
+      "bild": "ibran.png",
       "ras": "Tirak (i 13-årig pojkkropp)",
       "titel": null,
       "status": "okänd",
@@ -890,9 +846,9 @@ var wikiData = {
       "titel": null,
       "status": "levande",
       "plats": "Tuzan Rim",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# ISLA\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+      "fraktion": "Den Dolda Dolken (värdshus)",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# ISLA\n**Glädjeflicka på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Yrke:** Glädjeflicka\n- **Arbetsplats:** Den Dolda Dolken (värdshus i Tuzan Rim)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BESKRIVNING\nIsla är en karismatisk och insiktsfull glädjeflicka som arbetar på värdshuset \"Den Dolda Dolken\" i Tuzan Rim. Hon har levt ett hårt liv men har utvecklat styrka och oberoende genom åren.\n\n## BAKGRUND\nIsla växte upp under svåra omständigheter och har arbetat som glädjeflicka för att överleva. Under årens lopp har hon lärt sig att navigera genom de komplicerade sociala dynamikerna på värdshuset och utvecklat en förmåga att läsa människor och deras känslor.\n\n## PERSONLIGHETSDRAG\n- **Empatisk och insiktsfull:** Naturlig förmåga att läsa av människor och deras känslor, använder detta för att skydda sig själv och ge tröst\n- **Oberoende och stark:** Behåller stark vilja och självständighet trots utmaningar, inte rädd för att stå upp för sig själv\n- **Charmig och karismatisk:** Använder sin charm för att navigera sociala situationer och få andra att känna sig välkomna\n\n## SÄRSKILDA DRAG\n### Mystiska Tatueringar\nIsla bär intrikata tatueringar längs sina armar som hon beskriver som en karta över hennes liv och erfarenheter. Varje tatuering representerar en viktig händelse eller person som har format henne.\n\n### Sång och Poesi\nUtöver sitt arbete är Isla känd för sin vackra sångröst och förmåga att improvisera poesi. Hon uppträder ibland spontant på värdshuset till stor glädje för gästerna.\n\n### Hemlig Kunskap\nUnder åren på \"Den Dolda Dolken\" har Isla samlat hemligheter och rykten från stadens mörkare hörn. Hon delar sällan denna kunskap, men när hon gör det är det alltid med beräknad effekt.\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim på värdshuset \"Den Dolda Dolken\".\n\n## SL-ANTECKNINGAR\nIsla kan vara en värdefull informationskälla om spelarna vinner hennes förtroende. Hennes kunskap om stadens hemligheter och rykten kan vara avgörande för rätt pris eller tjänst."
     },
     {
       "namn": "Isolde Eldkonstnär",
