@@ -1195,12 +1195,12 @@ var wikiData = {
       "namn": "Lia",
       "bild": "Lia.png",
       "ras": "Människa",
-      "titel": null,
+      "titel": "Serveringspersonal på Den Dolda Dolken",
       "status": "levande",
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# LIA\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# LIA\n**Serveringspersonal på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Serveringspersonal\n- **Arbetsplats:** Den Dolda Dolken (värdshus)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BAKGRUND\nLia växte upp i en familj av skådespelare och lärde sig tidigt att underhålla och fängsla publik. Hennes uppväxt gav henne unika färdigheter som nu tjänar henne väl i värdshusverksamheten.\n\n## KARAKTÄR\nLia är en ung, observant och karismatisk kvinna med stor anpassningsförmåga. Hon är:\n- **Observant:** Kan läsa av människor väl\n- **Karismatisk:** Fängslande personlighet från skådespelarfamiljen\n- **Anpassningsbar:** Hanterar olika typer av gäster med lätthet\n- **Skicklig dansare:** Underhåller ibland på värdshuset\n- **Vänlig och hjälpsam:** Särskilt mot generösa gäster\n\n## ROLL PÅ DEN DOLDA DOLKEN\n- Serveringspersonal\n- Potentiell informationskälla (hör mycket genom sitt arbete)\n- Underhållare vid speciella tillfällen\n\n## I KAMPANJEN\nFas 2 (Kapitel 2): Möttes på Den Dolda Dolken i Tuzan Rim under karavanresan."
     },
     {
       "namn": "Lord Vinterglöd",
@@ -1210,17 +1210,6 @@ var wikiData = {
       "status": "levande",
       "plats": "Det Spegelvända Fortet, Skugglandet",
       "fraktion": "Skugglandets makter",
-      "kapitel": null,
-      "beskrivning": "# LORD VINTERGLÖD\n\n**Halvblod människa/skuggvarelse, Zentris fångvaktare**\n\n## GRUNDINFO\n\n- **Ras:** Halvblod människa/skuggvarelse\n- **Status:** Levande\n- **Första fas:** Fas 10 (omnämnd), Fas 11 (nuvarande antagonist)\n- **Roll:** Huvudantagonist i Skugglandet\n\n## BAKGRUND\n\nLord Vinterglöd var en gång människa - Prins Yelgothas page för hundratals år sedan. Hans syster dog i de varma källorna i Mithera. Han blev till halvblod mellan människa och skuggvarelse.\n\n### Personlig tragedi\n- **Systern:** Dog i de varma källorna (termalchock)\n- **Förvandling:** Blev skuggvarelse av sorg/hämnd?\n\n## KRITISKA HÄNDELSER\n\n### Skugglandet (Fas 11)\n**Det Spegelvända Fortet:**\n- Håller Zentri fången\n- Zentri delad i tre delar (kropp, själ, minne)\n- Arbetar med/för demonen Urkhath?\n\n## KARAKTÄRSDRAG\n\n- **Tragisk:** Förlorade sin syster\n- **Förvandlad:** Inte längre helt människa\n- **Mäktig:** Härskar i Skugglandet\n- **Koppling till det förgångna:** Känner Yelgotha\n\n## RELATIONER\n\n### Förflutna\n- **Prins Yelgotha:** Var hans page\n- **Systern:** Hennes död formade honom\n\n### Nuvarande\n- **Zentri Bredarsson:** Håller fången\n- **Demonen Urkhath:** Potentiell allierad?\n\n### Gruppen\n- **Fiende:** De kommer att konfrontera honom\n\n## NUVARANDE SITUATION\n\nLord Vinterglöd väntar i det Spegelvända Fortet på gruppens ankomst. Han vet att de kommer - Yelgotha sände dem.\n\n## SL-ANTECKNINGAR\n\n- Yelgothas ord: *\"När ni möter Vinterglöd, säg att Yelgotha sände er.\"*\n- Kan vara förhandlingsbar tack vare Yelgotha-kopplingen\n- Hans systers död i källorna skapar personlig koppling\n- Är han skurk eller tragisk figur?\n- Tre utmaningar för Zentris delar"
-    },
-    {
-      "namn": "Lord Vinterglöd",
-      "bild": null,
-      "ras": "Halvblod (människa/skuggvarelse)",
-      "titel": "Härskare över domän i Skugglandet",
-      "status": "levande",
-      "plats": "Skugglandet",
-      "fraktion": null,
       "kapitel": null,
       "beskrivning": "# LORD VINTERGLÖD\n\n**Halvblod människa/skuggvarelse, Zentris fångvaktare**\n\n## GRUNDINFO\n\n- **Ras:** Halvblod människa/skuggvarelse\n- **Status:** Levande\n- **Första fas:** Fas 10 (omnämnd), Fas 11 (nuvarande antagonist)\n- **Roll:** Huvudantagonist i Skugglandet\n\n## BAKGRUND\n\nLord Vinterglöd var en gång människa - Prins Yelgothas page för hundratals år sedan. Hans syster dog i de varma källorna i Mithera. Han blev till halvblod mellan människa och skuggvarelse.\n\n### Personlig tragedi\n- **Systern:** Dog i de varma källorna (termalchock)\n- **Förvandling:** Blev skuggvarelse av sorg/hämnd?\n\n## KRITISKA HÄNDELSER\n\n### Skugglandet (Fas 11)\n**Det Spegelvända Fortet:**\n- Håller Zentri fången\n- Zentri delad i tre delar (kropp, själ, minne)\n- Arbetar med/för demonen Urkhath?\n\n## KARAKTÄRSDRAG\n\n- **Tragisk:** Förlorade sin syster\n- **Förvandlad:** Inte längre helt människa\n- **Mäktig:** Härskar i Skugglandet\n- **Koppling till det förgångna:** Känner Yelgotha\n\n## RELATIONER\n\n### Förflutna\n- **Prins Yelgotha:** Var hans page\n- **Systern:** Hennes död formade honom\n\n### Nuvarande\n- **Zentri Bredarsson:** Håller fången\n- **Demonen Urkhath:** Potentiell allierad?\n\n### Gruppen\n- **Fiende:** De kommer att konfrontera honom\n\n## NUVARANDE SITUATION\n\nLord Vinterglöd väntar i det Spegelvända Fortet på gruppens ankomst. Han vet att de kommer - Yelgotha sände dem.\n\n## SL-ANTECKNINGAR\n\n- Yelgothas ord: *\"När ni möter Vinterglöd, säg att Yelgotha sände er.\"*\n- Kan vara förhandlingsbar tack vare Yelgotha-kopplingen\n- Hans systers död i källorna skapar personlig koppling\n- Är han skurk eller tragisk figur?\n- Tre utmaningar för Zentris delar"
     },
@@ -1258,15 +1247,15 @@ var wikiData = {
       "beskrivning": "# MARGARET NAHRZEZIA\n**Gordons mor**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Kvinna\n- **Plats:** Vambolien (familjegården Nahrzezia)\n- **Status:** Levande\n- **Första omnämnande:** Fas 9\n\n## BESKRIVNING\nMargaret Nahrzezia är Gordons mor som bor kvar på familjegården i Vambolien. Hon är en mor som känner både stolthet och oro över sina söners öden.\n\n## KARAKTÄR\n- Stolt över Gordons bedrifter\n- Djupt orolig för sina söner\n- Längtar efter sin son Gordon\n- Skriver kärleksfulla brev\n\n## BREVET TILL GORDON\n\nMargaret skriver till Gordon i fas 9 (precis innan gruppen begav sig från Vitterdal till Vargnästet):\n\n**Stolthet:**\n*\"Otroliga berättelser når oss ända hit till Vambolien! Handelsresande talar om 'Gordon Nahrzezia och hans kamrater' - hur ni kämpat mot gripar vid havet, besegrade ökendrakar i fjärran länder, och slog ner hundratals kidnappande banditer. Mitt hjärta svälls av stolthet över min son, men också av längtan.\"*\n\n**Oro för Ethan:**\n*\"Ethan lämnade gården för tre veckor sedan. Han sa 'Om Gordon kan slåss mot drakar, kan jag slåss mot människor' och red iväg på natten. Vi fick senare veta att han tagit värvning med Kapten Mordicus Helgas Bronshjälmar.\"*\n\n*\"Efter att ha hört om dina segrar mot monster, skrämmer det mig mer att Ethan ska möta människors ondska.\"*\n\n**Begäran:**\n*\"Kan du ta reda på var Ethan är? Jag vet att du har kontakter överallt nu.\"*\n\n**Längtan:**\n*\"Kom hem, Gordon. Jag saknar dig så.\"*\n\n## FAMILJESITUATION\nMargaret hanterar en komplex familjesituation:\n- Gordon borta på äventyr i många år\n- Ethan nyligen lämnat för att bli soldat\n- Oliver kvar hemma men bitter och överarbetad\n\n## MODERNS DILEMMA\nMargaret balanserar stolthet över Gordons bedrifter med oro för konsekvenserna - Ethans beslut att följa i sin brors fotspår och Olivers bitterhet över att vara den som stannade.\n\n## ROLL I KAMPANJEN\nMargarets brev skapar ett personligt dilemma för Gordon - hans framgång har oavsiktligt drivit hans yngre bror till krig. Moderns begäran om hjälp krockar med Gordons pågående uppdrag att rädda Zentri.\n\n## KOPPLINGAR\n- **Familj:** Nahrzezia-familjen, Vambolien\n- **Söner:** Gordon, Ethan, Oliver\n- **Plats:** Familjegården i Vambolien\n\n---\n\n## BREV TILL GORDON (FAS 9)\n\nDetta brev skickades till Gordon precis innan gruppen begav sig från Vitterdal mot Vargnästet för att spåra upp Zentri:\n\n*Min kära Gordon,*\n\n*Otroliga berättelser når oss ända hit till Vambolien! Handelsresande talar om \"Gordon Nahrzezia och hans kamrater\" - hur ni kämpat mot gripar vid havet, besegrade ökendrakar i fjärran länder, och slog ner hundratals kidnappande banditer. Mitt hjärta svälls av stolthet över min son, men också av längtan. Det har varit så många år sedan vi sågs senast.*\n\n*Men det finns även mörka nyheter som skuggar min glädje. Ethan lämnade gården för tre veckor sedan. Han sa 'Om Gordon kan slåss mot drakar, kan jag slåss mot människor' och red iväg på natten. Vi fick senare veta att han tagit värvning med **Kapten Mordicus Helgas Bronshjälmar**.*\n\n*Rykten säger att de ska österut över havet - till Damarien, där Storfursten rustar för krig. Gordon, efter att ha hört om dina segrar mot monster, skrämmer det mig mer att Ethan ska möta människors ondska.*\n\n*Oliver blev rasande: 'Nu ska lillebror också spela hjälte och lämna oss!' Han arbetar från gryning till skymning som om han försöker bevisa att någon Nahrzezia stannade hemma.*\n\n*Kan du ta reda på var Ethan är? Jag vet att du har kontakter överallt nu.*\n\n*Din stolta men oroliga mor,*\n*Margaret*\n\n*PS. Kom hem, Gordon. Jag saknar dig så.*"
     },
     {
-      "namn": "Marvo",
+      "namn": "Marvo \"Isfingrarna\"",
       "bild": "marvo.png",
       "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Raunfloden-området",
-      "fraktion": "Okänd",
-      "kapitel": null,
-      "beskrivning": "# MARVO\n**NPC vid Raunfloden**\n\n## GRUNDINFO\n- **Plats:** Raunfloden-området\n- **Kontext:** Scenario 4 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): NPC i Scenario 4."
+      "titel": "Isjägare och besättningsman på Frostnymfen",
+      "status": "levande",
+      "plats": "Frostnymfen (Raunfloden)",
+      "fraktion": "Oberoende",
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# MARVO \"ISFINGRARNA\"\n**Gammal isjägare och besättningsman på Frostnymfen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Smeknamn:** \"Isfingrarna\"\n- **Yrke:** Isjägare, besättningsman\n- **Fartyg:** Frostnymfen\n- **Plats:** Raunfloden-området\n- **Status:** Levande\n- **Ålder:** Gammal (tillbringat hela sitt liv vid Raunfloden)\n\n## EXPERTIS\nMarvo är en veteran vid Raunflodens isiga vatten med unik specialkunskap:\n- **Isexpert:** Kan känna igen svaga punkter i is\n- **Erfaren isjägare:** Hela sitt liv vid Raunfloden\n- **Flodkunnig:** Känner flodens alla vägar och faror\n- **Överlevnadsexpert:** Veterankunskap om vinterförhållanden\n\n## KARAKTÄR\nEn gammal, väderbitad man formad av ett liv vid den kalla floden. Hans smeknamn \"Isfingrarna\" kommer från hans nästan övernaturliga förmåga att läsa isens tillstånd.\n\n## ROLL PÅ FROSTNYMFEN\n- Besättningsman\n- Isexpert (värdefull under vinterresor)\n- Rådgivare om isförhållanden och faror\n\n## I KAMPANJEN\nFas 8 (Kapitel 8 - Evakueringen): Besättningsman på Frostnymfen under evakueringsresan genom Drunok."
     },
     {
       "namn": "Megir Stegsson",
@@ -1313,15 +1302,15 @@ var wikiData = {
       "beskrivning": "# MIGOR TROLLKUNNIG\n\n**Arkeolog och forskare, ledde Tirakgravens utgrävning**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Okänd\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Katalysator - startade kampanjen oavsiktligt\n\n## BAKGRUND\n\nMigor Trollkunnig är en arkeolog och forskare som specialiserat sig på urgamla gravar och försvunna kulturer. Han ledde utgrävningen av Tirakgraven.\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n**Utgrävningen:**\n- Anlitade Stålsvärds Kavalerister för bevakning\n- Bröt oavsiktligt demonens försegling\n- Såg katastrofens början\n\n### Efter katastrofen\n- Status okänd\n- Flydde troligen från platsen\n\n## KARAKTÄRSDRAG\n\n- **Vetenskapligt nyfiken:** Drivs av upptäckter\n- **Naiv:** Förstod inte faror med tirakgraven\n- **Ansvarig:** Hans nyfikenhet startade kampanjen\n\n## RELATIONER\n\n### Professionellt\n- **Kaelar Stålsvärd:** Anlitade för bevakning\n\n### Konsekvenser\n- **Demonen Urkhath:** Befriade oavsiktligt\n\n## NUVARANDE SITUATION\n\nMigors plats är okänd. Han kan ha överlevt eller dött i kaoset vid Tirakgraven.\n\n## SL-ANTECKNINGAR\n\n- Potentiell informationskälla om graven\n- Kan dyka upp senare, förföljd av konsekvenser\n- Hans anteckningar kan vara värdefulla\n- Representerar faran med okontrollerad nyfikenhet"
     },
     {
-      "namn": "Mikor",
+      "namn": "Mikor \"den fantastiska\"",
       "bild": "mikor.png",
       "ras": "Människa",
-      "titel": null,
+      "titel": "Magiker, Guide och Charmör",
       "status": "levande",
-      "plats": "Muhad",
+      "plats": "Jen, Muhad",
       "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# MIKOR\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# MIKOR \"DEN FANTASTISKA\"\n**Magiker, Guide och Charmör i Jen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Smeknamn:** \"Den fantastiska\"\n- **Yrken:** Magiker, Guide, Charmör\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n\n## BESKRIVNING\nMikor är en karismatisk och mångsidig man som opererar i Jens livliga gator. Han kallar sig själv \"Mikor den fantastiska\" och arbetar som magiker (uppträdande trollkarl), guide för besökare, och allmän charmör.\n\n## MÅNGA KVALITETER\nMikor är en man med många talanger:\n- **Magiker:** Uppträdande trollkarl med imponerande tricks\n- **Guide:** Känner Jen väl och kan visa besökare runt\n- **Charmör:** Karismatisk och övertygande personlighet\n- **Underhållare:** Fängslar publik med berättelser och trolleri\n- **Opportunist:** Ser alltid möjligheter att tjäna pengar\n\n## KARAKTÄR\nMikor är en charmerande men moraliskt tvivelaktig figur:\n- **Karismatisk:** Kan övertyga och charma de flesta\n- **Opportunistisk:** Utnyttjar situationer för egen vinning\n- **Underhållande:** Rolig och fängslande sällskap\n- **Opålitlig:** Har inga starka moraliska principer\n- **Överlevare:** Anpassar sig efter omständigheterna\n\n## MORALISK KOMPASS\nEn man med många kvaliteter men utan någon större moral. Mikor gör vad som tjänar honom bäst i stunden, oavsett om det är moraliskt rätt eller fel.\n\n## VERKSAMHET I JEN\n- Uppträder som trollkarl på marknadsplatser\n- Erbjuder guidetjänster till besökare\n- Charmar sig till förmåner och pengar\n- Potentiell informationskälla (mot betalning)\n\n## I KAMPANJEN\nFas 2-3 (Kapitel 2): Möttes i Jen/Muhad-området. En färgstark lokal karaktär."
     },
     {
       "namn": "Mira bint-Salim",
