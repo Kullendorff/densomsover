@@ -810,12 +810,12 @@ var wikiData = {
       "namn": "Ivon Barsk",
       "bild": "Ivon_barsk.png",
       "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Lundnäs",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# IVON BARSK\n**NPC i Lundnäs**\n\n## GRUNDINFO\n- **Plats:** Lundnäs\n- **Efternamn:** \"Barsk\" (gruff/harsh) antyder en hård karaktär\n\n## I KAMPANJEN\nRegnsynd-äventyret: NPC i Lundnäs.\n\n## SL-ANTECKNINGAR\nExakt roll okänd. Efternamnet \"Barsk\" tyder på en hård, kanske militär eller vaktroll."
+      "titel": "Piratkapten",
+      "status": "fiende",
+      "plats": "Havet (utanför Lundnäs)",
+      "fraktion": "Pirater",
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# IVON BARSK\n**Piratkapten**\n\n## GRUNDINFO\n- **Titel:** Piratkapten\n- **Status:** Fiende\n- **Fraktion:** Pirater\n- **Plats:** Havet utanför Lundnäs\n\n## BESKRIVNING\nIvon Barsk är kapten över det piratskepp som anföll Spegelmåne utanför Lundnäs. Hans efternamn \"Barsk\" (gruff/harsh) speglar hans hårda karaktär som pirat.\n\n## I KAMPANJEN\nKapitel 3: Anföll fartyget Spegelmåne utanför Lundnäs med sitt piratskepp.\n\n## KOPPLINGAR\n- **Anfallet:** Spegelmåne utanför Lundnäs\n- **Målfartyg:** Spegelmåne (kapten Jeorg Rask)\n- **Plats:** Havet vid Lundnäs\n\n## SL-ANTECKNINGAR\nEn farlig piratkapten som hotade Spegelmåne och dess besättning. Trots att Spegelmåne har rykte om att aldrig ha fallit i piraternas händer, gjorde Ivon Barsk ett försök."
     },
     {
       "namn": "Jaela Härlig",
@@ -838,17 +838,6 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# JAMAL IBN-MUSTAFA\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nJamal ibn-Mustafa är en robust man i fyrtioårsåldern med kort svart hår och en vältränad kroppsbyggnad. Han bär en enkel, men funktionell uniform.\n\n## BAKGRUND\nJamal har tidigare arbetat som soldat och har stor erfarenhet av strid och säkerhetsarbete. Han är mycket erfaren inom militära operationer.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Ser till att ingen obehörig kommer nära\n- Säkerhetsarbete\n- Patrullering\n\n## KARAKTÄR\n- Robust och vältränad\n- Lojal och vaksam\n- Stor erfarenhet av strid\n- Tidigare soldat\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
-    },
-    {
-      "namn": "Jamal",
-      "bild": "jamal_snickaren.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# JAMAL\n**Snickare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Snickare, hantverkare\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Kan reparera skepp eller bygga konstruktioner.\n\n## SL-ANTECKNINGAR\nHantverkare för praktiska behov."
     },
     {
       "namn": "Jamil al-Baz",
@@ -929,7 +918,7 @@ var wikiData = {
     },
     {
       "namn": "Jorn Halgon",
-      "bild": null,
+      "bild": "jorn_halgon.png",
       "ras": "Okänd",
       "titel": "Gammal sjöman",
       "status": "levande",
@@ -2652,7 +2641,7 @@ var wikiData = {
     },
     {
       "namn": "Spegelmåne",
-      "typ": "Fartyg (ombyggd vågridare)",
+      "typ": "Fartyg",
       "region": "Havet",
       "kapitel": "Kapitel 3",
       "bild": null,
