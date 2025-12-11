@@ -6,7 +6,7 @@ var wikiData = {
     {
       "namn": "Adisa",
       "bild": "Adisa.png",
-      "ras": "Människa (häxa)",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Cermiras skogar",
@@ -17,7 +17,7 @@ var wikiData = {
     {
       "namn": "Aisha bint-Najib",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -50,7 +50,7 @@ var wikiData = {
     {
       "namn": "Ali ibn-Yusuf",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -74,7 +74,7 @@ var wikiData = {
       "bild": null,
       "ras": "Alv",
       "titel": null,
-      "status": "frusen i 700 år",
+      "status": "levande",
       "plats": "Älvakungens Sal, Mithera",
       "fraktion": "Det Första Hovet (forntida)",
       "kapitel": null,
@@ -83,7 +83,7 @@ var wikiData = {
     {
       "namn": "Amina bint-Farid",
       "bild": "amina_muhad.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -94,7 +94,7 @@ var wikiData = {
     {
       "namn": "Amina bint-Khalid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -105,7 +105,7 @@ var wikiData = {
     {
       "namn": "Amina bint-Rashid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -116,7 +116,7 @@ var wikiData = {
     {
       "namn": "Amina bint-Salim",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -127,7 +127,7 @@ var wikiData = {
         {
       "namn": "Amir ibn-Farouk",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": "Huvudadministratör",
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -138,7 +138,7 @@ var wikiData = {
     {
       "namn": "Amira bint-Hassan",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -293,9 +293,9 @@ var wikiData = {
     {
       "namn": "Demonen Urkhath",
       "bild": null,
-      "ras": "Demon",
+      "ras": "Intelligent monster",
       "titel": null,
-      "status": "delvis fri",
+      "status": "levande",
       "plats": "Skugglandet/mellan planen",
       "fraktion": "Ingen",
       "kapitel": null,
@@ -304,9 +304,9 @@ var wikiData = {
     {
       "namn": "Den Frusne Fursten",
       "bild": null,
-      "ras": "Alvisk furste (Skuggland)",
+      "ras": "Alv",
       "titel": "Portvakt mellan världarna",
-      "status": "frusen",
+      "status": "levande",
       "plats": "Älvakonungens Sal (Gränslandet)",
       "fraktion": null,
       "kapitel": null,
@@ -315,7 +315,7 @@ var wikiData = {
     {
       "namn": "Dhormel",
       "bild": "dhormel.png",
-      "ras": "Grottroll",
+      "ras": "Troll",
       "titel": null,
       "status": "okänd",
       "plats": "Sydväst om Lundnäs",
@@ -348,7 +348,7 @@ var wikiData = {
     {
       "namn": "Dr. Yusuf al-Mansur",
       "bild": "dr.yusuf.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": "Doktor",
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -370,7 +370,7 @@ var wikiData = {
         {
       "namn": "Elara can De Mediva",
       "bild": null,
-      "ras": "Pyaralv",
+      "ras": "Alv",
       "titel": null,
       "status": "levande",
       "plats": "Före detta Stålsvärds Kavalerister",
@@ -413,7 +413,7 @@ var wikiData = {
     {
       "namn": "Esmeralda de Vries",
       "bild": null,
-      "ras": "Cirefalier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -446,7 +446,7 @@ var wikiData = {
     {
       "namn": "Fadil ibn-Yusuf",
       "bild": "fadil.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -479,7 +479,7 @@ var wikiData = {
     {
       "namn": "Fatima bint-Ali",
       "bild": "fatima_bint.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -490,7 +490,7 @@ var wikiData = {
     {
       "namn": "Fatima bint-Salim",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -534,7 +534,7 @@ var wikiData = {
     {
       "namn": "Gazroz Tzerion",
       "bild": null,
-      "ras": "Cirefalier",
+      "ras": "Människa",
       "titel": null,
       "status": "död",
       "plats": "Tirakgraven",
@@ -589,7 +589,7 @@ var wikiData = {
     {
       "namn": "Hakim al-Rashid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": "Kefal av Jen",
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -666,7 +666,7 @@ var wikiData = {
     {
       "namn": "Harun al-Farid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -677,7 +677,7 @@ var wikiData = {
     {
       "namn": "Hassan al-Rashid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -688,7 +688,7 @@ var wikiData = {
     {
       "namn": "Hassan ibn-Khalid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -699,7 +699,7 @@ var wikiData = {
     {
       "namn": "Hemkhath Thokk",
       "bild": null,
-      "ras": "Tirake",
+      "ras": "Tirak",
       "titel": null,
       "status": "okänd",
       "plats": "Jarla",
@@ -723,7 +723,7 @@ var wikiData = {
       "bild": "hunter.png",
       "ras": "Människa",
       "titel": null,
-      "status": "fiende",
+      "status": "okänd",
       "plats": "Okänd",
       "fraktion": "Magiekrjägare",
       "kapitel": null,
@@ -754,7 +754,7 @@ var wikiData = {
     {
       "namn": "Ibran Anderyttare",
       "bild": "ibran.png",
-      "ras": "Tirak (i 13-årig pojkkropp)",
+      "ras": "Tirak",
       "titel": null,
       "status": "okänd",
       "plats": "Okänd",
@@ -811,7 +811,7 @@ var wikiData = {
       "bild": "Ivon_barsk.png",
       "ras": "Människa",
       "titel": "Piratkapten",
-      "status": "fiende",
+      "status": "okänd",
       "plats": "Havet (utanför Lundnäs)",
       "fraktion": "Pirater",
       "kapitel": "Kapitel 3",
@@ -820,7 +820,7 @@ var wikiData = {
     {
       "namn": "Jaela Härlig",
       "bild": null,
-      "ras": "Vanar",
+      "ras": "Människa",
       "titel": null,
       "status": "död",
       "plats": "Tirakgraven",
@@ -831,7 +831,7 @@ var wikiData = {
     {
       "namn": "Jamal ibn-Mustafa",
       "bild": "jamal_snickaren.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -853,7 +853,7 @@ var wikiData = {
     {
       "namn": "Jeorg Rask",
       "bild": "jeorgrask.png",
-      "ras": "Asharier",
+      "ras": "Människa",
       "titel": "Kapten och ägare",
       "status": "levande",
       "plats": "Spegelmåne",
@@ -875,7 +875,7 @@ var wikiData = {
     {
       "namn": "Brigga Kyllo",
       "bild": "brigga_kyllo.png",
-      "ras": "Asharier",
+      "ras": "Människa",
       "titel": "Jeorgs högra hand",
       "status": "levande",
       "plats": "Spegelmåne",
@@ -974,7 +974,7 @@ var wikiData = {
     {
       "namn": "Kaelthar Klerk",
       "bild": null,
-      "ras": "Cirefalier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Före detta Stålsvärds Kavalerister",
@@ -1018,7 +1018,7 @@ var wikiData = {
     {
       "namn": "Karim al-Jafar",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1040,7 +1040,7 @@ var wikiData = {
     {
       "namn": "Karim ibn-Hassan",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1051,9 +1051,9 @@ var wikiData = {
     {
       "namn": "Kasim ibn-Farid",
       "bild": "kasim.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
-      "status": "slav",
+      "status": "levande",
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
@@ -1062,7 +1062,7 @@ var wikiData = {
     {
       "namn": "Khalid ibn-Mustafa",
       "bild": "Khalid_al-Tamir.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1106,7 +1106,7 @@ var wikiData = {
     {
       "namn": "Laila bint-Ali",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1117,7 +1117,7 @@ var wikiData = {
     {
       "namn": "Laila bint-Farid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1139,7 +1139,7 @@ var wikiData = {
     {
       "namn": "Layla bint-Hassan",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1150,7 +1150,7 @@ var wikiData = {
     {
       "namn": "Layla bint-Hussein",
       "bild": "layla.bint2.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1161,7 +1161,7 @@ var wikiData = {
     {
       "namn": "Layla bint-Karim",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1172,7 +1172,7 @@ var wikiData = {
     {
       "namn": "Lera Skuggskeppare",
       "bild": "lera.png",
-      "ras": "Asharier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Tuzan Rim",
@@ -1183,7 +1183,7 @@ var wikiData = {
     {
       "namn": "Leyla al-Malik",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1205,7 +1205,7 @@ var wikiData = {
     {
       "namn": "Lord Vinterglöd",
       "bild": null,
-      "ras": "Halvblod människa/skuggvarelse",
+      "ras": "Intelligent monster",
       "titel": null,
       "status": "levande",
       "plats": "Det Spegelvända Fortet, Skugglandet",
@@ -1216,7 +1216,7 @@ var wikiData = {
     {
       "namn": "Lubna bint-Malik",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1227,7 +1227,7 @@ var wikiData = {
     {
       "namn": "Malik Al-Zahir",
       "bild": "Farid al-Malik.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1315,7 +1315,7 @@ var wikiData = {
     {
       "namn": "Mira bint-Salim",
       "bild": "Mira_kock.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1392,7 +1392,7 @@ var wikiData = {
     {
       "namn": "Naila bint-Zahir",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1458,7 +1458,7 @@ var wikiData = {
     {
       "namn": "Omar ibn-Salim",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1513,7 +1513,7 @@ var wikiData = {
     {
       "namn": "Rashid ibn-Farid",
       "bild": "rashid.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1524,7 +1524,7 @@ var wikiData = {
     {
       "namn": "Rashid ibn-Farouk",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1546,7 +1546,7 @@ var wikiData = {
     {
       "namn": "Raziq al-Nur",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1579,7 +1579,7 @@ var wikiData = {
     {
       "namn": "Rimklo",
       "bild": null,
-      "ras": "Ursin (isbjörn-varelse)",
+      "ras": "Monster",
       "titel": null,
       "status": "levande",
       "plats": "Mitheraskogens hjärta",
@@ -1623,7 +1623,7 @@ var wikiData = {
     {
       "namn": "Samir ibn-Rashid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1636,7 +1636,7 @@ var wikiData = {
       "bild": null,
       "ras": "Människa",
       "titel": null,
-      "status": "död - martyr",
+      "status": "död",
       "plats": "Vargnäset",
       "fraktion": "Vargnäsets bybor",
       "kapitel": null,
@@ -1645,7 +1645,7 @@ var wikiData = {
     {
       "namn": "Selene \"Silveröga\" Kazarov",
       "bild": "selene.png",
-      "ras": "Asharier",
+      "ras": "Människa",
       "titel": "Underbefäl på Frostnymfen",
       "status": "levande",
       "plats": "Frostnymfen (Raunfloden)",
@@ -1656,7 +1656,7 @@ var wikiData = {
     {
       "namn": "Selim ibn-Rashid",
       "bild": "selim.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "död",
       "plats": "Jen, Muhad",
@@ -1667,7 +1667,7 @@ var wikiData = {
     {
       "namn": "Serafina Eldstav",
       "bild": "seraphina.png",
-      "ras": "Thismalv (Sanari-alv)",
+      "ras": "Alv",
       "titel": null,
       "status": "försvunnen",
       "plats": "Okänd",
@@ -1678,7 +1678,7 @@ var wikiData = {
     {
       "namn": "Sheikh Nabil",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": "Sheikh",
       "status": "levande",
       "plats": "Muhad, ökenoas",
@@ -1689,7 +1689,7 @@ var wikiData = {
     {
       "namn": "Silverfot",
       "bild": null,
-      "ras": "Vintervarg",
+      "ras": "Monster",
       "titel": null,
       "status": "levande",
       "plats": "Djupa Mithera",
@@ -1700,7 +1700,7 @@ var wikiData = {
     {
       "namn": "Soraya al-Majid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1798,7 +1798,7 @@ var wikiData = {
     {
       "namn": "Tariq ibn-Salim",
       "bild": "Tariq_al-Jabbar.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1842,7 +1842,7 @@ var wikiData = {
     {
       "namn": "Thrain av Morgonen",
       "bild": "thrain.png",
-      "ras": "Människa (Samoriman, albino)",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Före detta Stålsvärds Kavalerister",
@@ -1919,7 +1919,7 @@ var wikiData = {
     {
       "namn": "Umar al-Rashid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -1985,7 +1985,7 @@ var wikiData = {
     {
       "namn": "Vitfläck",
       "bild": null,
-      "ras": "Snökatt (magisk varelse)",
+      "ras": "Intelligent monster",
       "titel": null,
       "status": "levande",
       "plats": "Mithera-skogen",
@@ -2007,7 +2007,7 @@ var wikiData = {
     {
       "namn": "Yasir ibn-Farid",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -2051,7 +2051,7 @@ var wikiData = {
     {
       "namn": "Youssef al-Najjar",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -2073,7 +2073,7 @@ var wikiData = {
     {
       "namn": "Zahra bint-Hassan",
       "bild": null,
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -2084,7 +2084,7 @@ var wikiData = {
     {
       "namn": "Zairgaz",
       "bild": "zairgaz.png",
-      "ras": "Demon (frammanad)",
+      "ras": "Intelligent monster",
       "titel": null,
       "status": "död",
       "plats": "Öknen utanför Jen",
@@ -2106,7 +2106,7 @@ var wikiData = {
     {
       "namn": "Zara al-Min",
       "bild": "Zara.png",
-      "ras": "Mûhadier",
+      "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Jen, Muhad",
@@ -2117,7 +2117,7 @@ var wikiData = {
     {
       "namn": "Sjödöda Titanen",
       "bild": "skuggtitan.png",
-      "ras": "Odöd (Skugglandsvarelse)",
+      "ras": "Monster",
       "titel": "Boss i Skugglandet",
       "status": "levande",
       "plats": "Skugglandet (sjö)",
