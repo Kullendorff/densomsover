@@ -12,18 +12,17 @@ Bygger en komplett Jekyll-wiki för EON-kampanjen "Gravens Arv" som ska publicer
 - `.gitignore` skapad (blockerar PDFer och Google Docs)
 - Jekyll grundstruktur skapad i `kampanjwiki/`
 - Material utforskat och förstått
+- **BATCH 6 TILLAGD:** Vargnäsets ungdomar och äldre (10 NPCs)
 
 ### 🔄 Pågående
 - Genererar innehåll till wikin (kapitel, NPCs, platser, fraktioner)
 
 ### ⏳ Nästa steg
-1. Generera 11 kapitel (en åt gången)
-2. Generera 6 spelarkaraktärer
-3. Generera ~20 viktiga NPCs
-4. Generera ~100 NPCs från områden (Muhad, Jarla, etc.)
-5. Generera ~30 platser
-6. Generera ~10 fraktioner
-7. Organisera ~200 bilder
+1. Generera fler NPC-batches (resterande ~100 NPCs)
+2. Generera 11 kapitel (om inte redan gjort)
+3. Generera ~30 platser
+4. Generera ~10 fraktioner
+5. Organisera ~200 bilder
 
 ## Kampanjöversikt
 - **11 faser**: Tirakgraven → ... → Skugglandet (nuvarande)

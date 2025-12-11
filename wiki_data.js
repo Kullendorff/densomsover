@@ -1,4 +1,7 @@
-const wikiData = {
+// Wiki data för EON kampanjwiki
+// Genererad automatiskt från kampanjdokument
+
+var wikiData = {
   "npcs": [
     {
       "namn": "Adisa",
@@ -960,13 +963,79 @@ const wikiData = {
     {
       "namn": "Jeorg Rask",
       "bild": "jeorgrask.png",
-      "ras": "Människa",
-      "titel": "Kapten",
+      "ras": "Asharier",
+      "titel": "Kapten och ägare",
       "status": "levande",
       "plats": "Spegelmåne",
       "fraktion": null,
-      "kapitel": null,
-      "beskrivning": "# JEORG RASK\n**Kapten på Spegelmåne**\n\n## GRUNDINFO\n- **Titel:** Kapten\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Sjökapten\n- **Fartyg:** Spegelmåne\n- **Status:** Levande\n- **Första omnämnande:** Fas 1\n\n## BESKRIVNING\nJeorg Rask är en erfaren sjökapten med omfattande kunskap om handelsrutterna mellan Cermira och Muhad. Han driver sitt fartyg Spegelmåne med professionalism och omsorg för både passagerare och last.\n\n## BETYDELSE FÖR KAMPANJEN\nJeorg Rask var gruppens kapten under den viktiga resan från Cermira till Muhad (Fas 1-3). Hans fartyg Spegelmåne transporterade gruppen säkert över haven till Muhad där de skulle söka efter Hagge av Vitterdal.\n\n## KARAKTÄR\n- Professionell och pålitlig\n- Erfaren sjöfarare\n- Omsorgsfull om passagerare och last\n- Känner handelsrutterna väl\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Passagerare:** Gruppen (Fas 1-3)\n- **Destination:** Muhad\n- **Fas:** 1-3"
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# JEORG RASK\n**Kapten och ägare av Spegelmåne**\n\n## GRUNDINFO\n- **Titel:** Kapten och ägare av Spegelmåne\n- **Ras:** Asharier\n- **Ålder:** 50+ år\n- **Yrke:** Sjökapten\n- **Fartyg:** Spegelmåne (ombyggd vågridare)\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BAKGRUND\nVäderbiten veteran som kan sjön på sina fem fingrar.\n\n**Karriär:**\n- Fd. uppskattad sjöfarare i ashariska sjöförsvaret\n- Fd. lärare på Camards Marinkåristakademi\n- Vid 50 års ålder sadlade om till civil tjänst\n- Tjänstgjorde som styrman i handelshuset Wezi\n- Köpte och rustade upp Spegelmåne (tidigare nästan vrak)\n- Driver nu charterresor runt Mundana, ofta för olika handelshus\n\n## BESKRIVNING\nKapten Rask är känd som en pålitlig och framför allt kompetent man när det gäller försvar av last och besättning. Hans forna tid som marinkårist har satt sina spår, och han väljer alltid kunniga före detta soldater som vakter ombord på resorna.\n\n## SPECIALITET\n**Försvar och säkerhet:**\n- Van vid Korsarkriget (piratverksamhet kring Asharien och Soldarn)\n- Angripen många gånger men har aldrig kapitulerat\n- Hans skepp har aldrig fallit i piraternas händer - vilket retar gallfeber på piraterna\n\n## KARAKTÄR\n- Pålitlig och kompetent\n- Professionell\n- Erfaren och väderbiten\n- Omsorgsfull om passagerare och last\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne (ägare)\n- **Högra hand:** Brigga Kyllo\n- **Styrman:** Malvono Järvik\n- **Besättning:** Dask Ymer (timmerman), Yvan Krell, Rikke Lorm, Jorn Halgon\n- **Fd. arbetsgivare:** Ashariska sjöförsvaret, Camards Marinkåristakademi, Handelshuset Wezi"
+    },
+    {
+      "namn": "Malvono Järvik",
+      "bild": "malvono.png",
+      "ras": "Okänd",
+      "titel": "Styrman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# MALVONO JÄRVIK\n**Styrman på Spegelmåne**\n\n## GRUNDINFO\n- **Titel:** Styrman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nStyrman på den ombyggda vågridaren Spegelmåne under kapten Jeorg Rask.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
+    },
+    {
+      "namn": "Brigga Kyllo",
+      "bild": "brigga_kyllo.png",
+      "ras": "Asharier",
+      "titel": "Jeorgs högra hand",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# BRIGGA KYLLO\n**Jeorgs högra hand på Spegelmåne**\n\n## GRUNDINFO\n- **Position:** Jeorg Rasks högra hand\n- **Ras:** Troligen asharier\n- **Kön:** Kvinna\n- **Ålder:** Ung\n- **Fartyg:** Spegelmåne\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nEn ung mystisk kvinna som tjänstgör som kapten Jeorg Rasks högra hand ombord på Spegelmåne.\n\n## KARAKTÄR\n- Mystisk\n- Ung men pålitlig nog att vara kaptens högra hand\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask (hans högra hand)"
+    },
+    {
+      "namn": "Dask Ymer",
+      "bild": "Dask_Ymer.png",
+      "ras": "Okänd",
+      "titel": "Timmerman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# DASK YMER\n**Timmerman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Timmerman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nTimmerman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
+    },
+    {
+      "namn": "Yvan Krell",
+      "bild": "yvan_krell.png",
+      "ras": "Okänd",
+      "titel": "Sjöman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# YVAN KRELL\n**Sjöman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Sjöman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nSjöman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
+    },
+    {
+      "namn": "Rikke Lorm",
+      "bild": "Rikke_Lorm.png",
+      "ras": "Okänd",
+      "titel": "Sjöman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# RIKKE LORM\n**Sjöman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Sjöman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nSjöman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
+    },
+    {
+      "namn": "Jorn Halgon",
+      "bild": null,
+      "ras": "Okänd",
+      "titel": "Gammal sjöman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# JORN HALGON\n**Gammal sjöman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Sjöman\n- **Beskrivning:** Gammal sjöman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nGammal sjöman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
     },
     {
       "namn": "Jeskia av Nejas",
@@ -2525,6 +2594,14 @@ const wikiData = {
       "beskrivning": "# GRENSFORTET\n**Gränsbefästning där kampanjen började**\n\n## GRUNDINFO\n- **Typ:** Militär befästning\n- **Läge:** Gränsen mellan Cermira och Mithera\n- **Funktion:** Bevakningsfort och utgångspunkt för uppdrag\n- **Betydelse:** Kampanjens startpunkt\n\n## HISTORIA\nGrensfortet är den militära befästning där rollpersonerna först samlades och fick sitt uppdrag att undersöka Tirakgraven.\n\n## VIKTIGA HÄNDELSER\n**Fas 1:**\n- Rollpersonerna träffade Migor Trollkunnig här\n- Fick uppdraget att undersöka Tirakgraven\n- Stålsvärds Kavalerister rekryterades för uppdraget\n\n## KOPPLINGAR\n- **NPCs:** Migor Trollkunnig\n- **Relaterade platser:** Tirakgraven"
     },
     {
+      "namn": "Iskvarnsbryggan",
+      "typ": "Flodbrygga",
+      "region": "Cermira",
+      "kapitel": "Kapitel 8",
+      "bild": null,
+      "beskrivning": "Flodbrygga vid Raunfloden.\n\n**Geografisk situation:** 200m öppen mark från skog till flodkant.\n\n**Betydelse:** Mötesplats för pråmarna under evakueringen. Plats för dramatisk konfrontation - Lady Isadora och Syster Moira (Systrarna) observerade här.\n\n**Händelse:** Gruppen och de 41 flyktingarna från Vargnäset mötte pråmarna här (Rimfrosten, Strömjungfrun, Månljuset)."
+    },
+    {
       "namn": "Jargien",
       "typ": "Kejsardöme/Region",
       "region": "Centrala Mundana",
@@ -2540,7 +2617,9 @@ const wikiData = {
       "namn": "Jen",
       "typ": "Stad",
       "region": "Muhad",
-      "beskrivning": "# JEN\n**Hamnstad i Muhad där Hagge hittades**\n\n## GRUNDINFO\n- **Typ:** Hamnstad\n- **Region:** Muhad\n- **Karaktär:** Livlig handelsstad med asharisk kultur\n- **Betydelse:** Här hittades Hagge av Vitterdal\n\n## HISTORIA\nJen är en hamnstad i Muhad där rollpersonerna spenderade längre tid under sin jakt på Hagge av Vitterdal. Staden är ett viktigt handelsnav med stark koppling till slavhandel genom Laila al-Jen.\n\n## VIKTIGA HÄNDELSER\n**Fas 3-5: Uppdraget att hitta Hagge**\n- Rollpersonerna hittade Hagge här\n- Mötte Laila al-Jen (slavhandlare och Hagges före detta älskarinna)\n- Upptäckte att Hagge har en son med Laila\n- Omfattande interaktion med Muhads handelshus och lokala maktstrukturer\n\n## VIKTIGA NPCS I JEN\n- **Laila al-Jen:** Slavhandlare, moder till Hagges son\n- **33 Muhad-NPCs** inklusive handelsmän, hantverkare och lokala makthavare\n\n## KOPPLINGAR\n- **Relaterade platser:** Muhad (region)\n- **Fraktioner:** Olika handelshus i Muhad"
+      "kapitel": "Kapitel 2",
+      "bild": null,
+      "beskrivning": "Storslagen handelsstad och Muhads huvudstad med strategisk hamn. Enda hamn öppen för utlänningar i ökenriket.\n\n**Områden:**\n- **Hamnområdet** - Livlig handelshamn\n- **Marknadsplatsen** - Inkl. Kryddmarknaden med exotiska kryddor från Xian och Cirha\n- **Slavmarknaden** - Stor öppen plats omgiven av höga vita murar\n- **Huvudkontoret för Slavregistrering och Transaktioner** - Centralt beläget, tre våningar vit ökenarkitektur med mosaiker. Avdelningar: Registrering, Transaktioner, Inspektörernas kontor, Arkiv (klimatkontrollerat)\n- **Handelsdistriktet** - Lyxiga etablissemang som Den Gyldene Dromedaren\n- **Bostadsområden** - Från lyxvillor (Laila al-Jens residens) till slumområden\n- **Tempel och helgedomar**\n- **Fängelset**\n\n**Viktiga NPCs:** Malik Al-Zahir (huvudslavhandlare), Rashan al-Ghedi (stadsvakt kapten), Laila al-Jen (adelskvinna), Hagge (slav hos Laila), många kryddhandlare och värdshusägare."
     },
     {
       "namn": "Kamelens Oas",
@@ -2621,6 +2700,14 @@ const wikiData = {
       "beskrivning": "# RIMFROSTEN\n**Evakueringsfartyg från Vargnäset**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Kapten:** Nils \"Järnhand\" Gromsson\n- **Besättning:** Kapten + 2 besättningsmedlemmar\n- **Passagerare:** 19 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nRimfrosten var ett av de tre fartyg som användes för evakueringen av 41 flyktingar från Vargnäset efter de katastrofala händelserna där. Fartyget leddes av den pålitlige kaptenen Nils \"Järnhand\" Gromsson.\n\n## KAPTEN & BESÄTTNING\n\n### Nils \"Järnhand\" Gromsson\nEn erfaren kapten känd för sin fasta hand och pålitlighet. Hans smeknamn \"Järnhand\" tyder på hans strikta men rättvisa ledarskap.\n\n### Besättning\n2 erfarna besättningsmedlemmar som assisterade kaptenen under den kritiska evakueringen.\n\n## EVAKUERINGEN FRÅN VARGNÄSET\n\n### Passagerare\nRimfrosten tog ombord 19 av de 41 flyktingar som behövde evakueras från Vargnäset efter Zentris försvinnande och de övernaturliga händelserna.\n\n### Destination\nFartyget transporterade flyktingarna till säkerhet, troligen till Grensfortet eller annan säker hamn.\n\n## BETYDELSE FÖR KAMPANJEN\nRimfrosten var en av tre båtar (tillsammans med Strömjungfrun och Månljuset) som räddade livet på 41 människor från Vargnäset. Evakueringen var en viktig humanitär insats efter de tragiska händelserna i Fas 7.\n\n## KOPPLINGAR\n- **Kapten:** Nils \"Järnhand\" Gromsson\n- **Passagerare:** 19 flyktingar från Vargnäset\n- **Relaterade fartyg:** Strömjungfrun, Månljuset\n- **Händelse:** Evakuering från Vargnäset\n- **Fas:** 7"
     },
     {
+      "namn": "Rödskäggs Tillflykt",
+      "typ": "Dolt handelsläger",
+      "region": "Cermira",
+      "kapitel": "Kapitel 8",
+      "bild": null,
+      "beskrivning": "Gömd vik vid inflöde till Raunfloden, 25 km norr om Vargnäset.\n\n**Karaktär:** Temporärt läger för smugglare och korrupta köpmän.\n\n**Befolkning:** 15-20 personer vintertid.\n\n**Lägerchefen:** Gunvald 'Rödskägg' Korshamn - fd. legitim köpman utpressad av korrupta tjänstemän.\n\n**Betydelse:** Mötesplats för att boka pråmar under evakueringen från Vargnäset."
+    },
+    {
       "namn": "Sanari-alvernas Rike",
       "typ": "Alvisk region",
       "region": "Okänd (mystisk)",
@@ -2664,9 +2751,11 @@ const wikiData = {
     },
     {
       "namn": "Spegelmåne",
-      "typ": "Fartyg",
-      "region": "Cermira/Muhad",
-      "beskrivning": "# SPEGELMÅNE\n**Fartyg till Muhad**\n\n## GRUNDINFO\n- **Typ:** Handelsfartyg\n- **Kapten:** Jeorg Rask\n- **Första omnämnande:** Fas 1-3\n- **Rutt:** Cermira â†’ Muhad\n\n## BESKRIVNING\nSpegelmåne var det fartyg som transporterade gruppen från Cermira till Muhad under kampanjens tidiga faser. Ett handelsfartyg under befäl av den erfarne kaptenen Jeorg Rask.\n\n## KAPTEN\n\n### Jeorg Rask\nEn erfaren sjökapten med omfattande kunskap om handelsrutterna mellan Cermira och Muhad. Han drev sitt fartyg med professionalism och såg till att passagerare och last kom fram säkert.\n\n## BETYDELSE FÖR KAMPANJEN\nSpegelmåne var gruppens huvudsakliga transportmedel till Muhad där de skulle försöka hitta Hagge av Vitterdal. Resan var viktig för kampanjens utveckling och öppnade upp nya äventyr i ökenregionen.\n\n## KOPPLINGAR\n- **Kapten:** Jeorg Rask\n- **Passagerare:** Gruppen (Fas 1-3)\n- **Destination:** Muhad\n- **Fas:** 1-3"
+      "typ": "Fartyg (ombyggd vågridare)",
+      "region": "Havet",
+      "kapitel": "Kapitel 3",
+      "bild": null,
+      "beskrivning": "Ombyggd vågridare för last + passagerare.\n\n**Kapten:** Jeorg Rask (asharier, fd. marinkåristakademi-lärare)\n\n**Rykte:** Billigt vrakliknande skepp upprustat med stor händighet. Aldrig fallit i piraternas händer trots många angrepp under Korsarkriget.\n\n**Besättning:** Malvono Järvik (styrman), Brigga Kyllo (Jeorgs högra hand), Dask Ymer (timmerman), Yvan Krell, Rikke Lorm, Jorn Halgon (sjömän).\n\n**Specialitet:** Kapten Rask väljer fd. soldater som vakter, expert på att försvara last och besättning."
     },
     {
       "namn": "Spegelvända Fortet",
@@ -2720,7 +2809,7 @@ const wikiData = {
       "namn": "Vargnäset",
       "typ": "By",
       "region": "Mellan Muhad och Cermira",
-      "beskrivning": "# VARGNÄSET\n**By som försvarades mot desertörer**\n\n## GRUNDINFO\n- **Typ:** By med palissad\n- **Region:** På resan hem från Muhad till Cermira\n- **Försvar:** Träpalissad, organiserat försvarsystem\n- **Karaktär:** Lantlig by som blev slagfält\n\n## HISTORIA\nVargnäset blev platsen för en avgörande strid när desertörer under ledning av Kald Silvermask, Valyra Nattöga och Halrik Kord anföll byn i syfte att fånga Zentri och silverringen.\n\n## VIKTIGA HÄNDELSER\n**Fas 7: Första besöket och försvaret**\n- Rollpersonerna anlände till byn\n- Tre vågor av desertörer anföll:\n  - Första vågen (Kald Silvermask): 5 bågskyttar med brandpilar\n  - Andra vågen (Valyra Nattöga): 8 skogslöpare, infiltration\n  - Tredje vågen (Halrik Kord): 7 disciplinerade krigare + \"spårhundar\" som sökte Zentri\n- Byn försvarades framgångsrikt av rollpersonerna och byinvånare\n- Flera byggnader brann under striden\n\n**Fas 8: Andra besöket**\n- Rollpersonerna återvände till Vargnäset\n\n## FÖRSVARSSTRUKTUR\n**Stridszoner:**\n- Yttre palissaden (Gordons zon)\n- Taken och höjderna (Zentris zon)\n- Torget och centrum (Kazriks/Umnataks zon)\n\n**Nyckelbyggnader:**\n- Värdshuset (Ingvilds sjukstuga)\n- Smedjan (Brynjars verkstad)\n- Brunnen (vattenkälla för brandbekämpning)\n- Kapellet (symboler lika silverringen)\n\n## VIKTIGA NPCS\n**Försvarare:**\n- Brynjar (Smed)\n- Jossan (Bågskytt)\n- Eira (Koordinator)\n- Ingvild (Akutvård)\n- Tomas Järnhjälm (Försvarare)\n- Hunter (Jägare)\n\n**Angripare:**\n- Kald Silvermask (Desertörledare)\n- Valyra Nattöga (Desertörledare)\n- Halrik Kord (Desertörledare, anlitad av Systrarna)\n\n## KOPPLINGAR\n- **Fraktioner:** Systrarna (anlitade Halrik Kord), Arvorns Hammare\n- **Relaterade platser:** På resvägen mellan Muhad och Cermira"
+      "beskrivning": "# VARGNÄSET\n**By som försvarades mot desertörer**\n\n## GRUNDINFO\n- **Typ:** By med palissad\n- **Region:** På resan hem från Muhad till Cermira\n- **Försvar:** Träpalissad, organiserat försvarsystem\n- **Karaktär:** Lantlig by som blev slagfält\n\n## HISTORIA\nVargnäset blev platsen för en avgörande strid när desertörer under ledning av Kald Silvermask, Valyra Nattöga och Halrik Kord anföll byn i syfte att fånga Zentri och silverringen.\n\n## VIKTIGA HÄNDELSER\n**Fas 7: Första besöket och försvaret**\n- Rollpersonerna anlände till byn\n- Tre vågor av desertörer anföll:\n  - Första vågen (Kald Silvermask): 5 bågskyttar med brandpilar\n  - Andra vågen (Valyra Nattöga): 8 skogslöpare, infiltration\n  - Tredje vågen (Halrik Kord): 7 disciplinerade krigare + \"spårhundar\" som sökte Zentri\n- Byn försvarades framgångsrikt av rollpersonerna och byinvånare\n- Flera byggnader brann under striden\n\n**Fas 8: Andra besöket**\n- Rollpersonerna återvände till Vargnäset\n\n**OCKUPATION AV ARVORNS HAMMARE (Kapitel 7):**\n\nByn ockuperades under 'magisk kontaminationsundersökning'. Arvorns Hammare systematiskt utrotade 160+ bybor.\n\n**Sankt Astrid-händelsen:** 12-årig flicka (Ragnars flickvän) korsfästes för att ha ljugit för att skydda gruppen. Hennes martyrskap gav Corvus Askhar en gudomlig uppenbarelse från Daak som krossade hans 23 års religiösa övertygelse.\n\n**EVAKUERINGEN (Kapitel 8):**\n\n- **Evakuerade:** 50 bybor evakuerades\n- **Överlevande:** 41 personer kom fram till säkerhet\n- **Döda under resan:** Gubben Torsten (dag 2), Helena Stenmark 2 år (dag 3), Gammal-Erik 74 år (dag 3), Tant Hildur 66 år (under revolt på Månljuset)\n\n**Ledare:** Eira Holm (fd. spejare, sammanbrott dag 3), Ingvild (värdshusvärdinnan/läkare), Tomas Järnhjälm (försvarsansvarig), Jonna Sköldbärare (fd. gränsvakt).\n\n**Pråmar:** Rimfrosten (Nils Järnhand Gromsson), Strömjungfrun (Berta Flodkvinna), Månljuset (Lars Silkeskägg - förrädarkapten dödad av Halvdan Kolare).\n\n**Viktiga händelser:**\n- Revolten på Månljuset när Halvdan Kolare dödade förrädaren Silkeskägg\n- Mötet vid Iskvarnsbryggan - Systrarna (Lady Isadora, Syster Moira) observerade\n- 41 överlevande anlände Vitterdal\n\n## FÖRSVARSSTRUKTUR\n**Stridszoner:**\n- Yttre palissaden (Gordons zon)\n- Taken och höjderna (Zentris zon)\n- Torget och centrum (Kazriks/Umnataks zon)\n\n**Nyckelbyggnader:**\n- Värdshuset (Ingvilds sjukstuga)\n- Smedjan (Brynjars verkstad)\n- Brunnen (vattenkälla för brandbekämpning)\n- Kapellet (symboler lika silverringen)\n\n## VIKTIGA NPCS\n**Försvarare:**\n- Brynjar (Smed)\n- Jossan (Bågskytt)\n- Eira (Koordinator)\n- Ingvild (Akutvård)\n- Tomas Järnhjälm (Försvarare)\n- Hunter (Jägare)\n\n**Angripare:**\n- Kald Silvermask (Desertörledare)\n- Valyra Nattöga (Desertörledare)\n- Halrik Kord (Desertörledare, anlitad av Systrarna)\n\n## KOPPLINGAR\n- **Fraktioner:** Systrarna (anlitade Halrik Kord), Arvorns Hammare\n- **Relaterade platser:** På resvägen mellan Muhad och Cermira"
     },
     {
       "namn": "Vitterdal",
@@ -2810,6 +2899,7 @@ const wikiData = {
   ]
 };
 
+// Export for Node.js
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = wikiData;
 }

@@ -34,17 +34,6 @@ const wikiData = {
       "beskrivning": "# ALARIC\n**Signalist i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Signalist\n- **Ansvar:** Signaler och kommunikation i strid\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Koordinerade kommunikation vid Tirakgraven."
     },
     {
-      "namn": "Kommendör Aldrich Järnkors",
-      "bild": "kom_aldritch.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "död",
-      "plats": "Raunflodens strand",
-      "fraktion": "Arvorns Hammare",
-      "kapitel": null,
-      "beskrivning": "# KOMMENDÖR ALDRICH JÄRNKORS ⚔️\n\n**Kommendör i Arvorns Hammare, föll i strid vid Raunflodens strand**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Död\n- **Första fas:** Fas 8 (omnämnd)\n- **Roll:** Antagonist, förföljare\n- **Död:** Episk strid vid Raunflodens strand\n\n## BAKGRUND\n\nAldrich Järnkors var kommendör i Arvorns Hammare och tidigare kollega till Corvus Askhår. Han ledde jakten på Corvus med 7 tempelriddare.\n\n## KRITISKA HÄNDELSER\n\n### Efter Corvus vändning (Fas 8)\n- Tilldelad att jaga Corvus\n- 7 tempelriddare under hans kommando\n- Trodde att Corvus var kidnappad/kontrollerad av kättare\n\n### Evakueringen (Fas 9)\n- Jagade gruppen genom Drunok\n- Gruppen undvek honom genom Corvus insiderkunskap\n\n### DÖDEN - Raunflodens strand\n- Mötte gruppen i episk konfrontation vid Raunflodens strand\n- Integritet i strid till slutet\n- Föll när Systrarna ingrep i striden\n- Död av högt pris i kampen\n\n## KARAKTÄRSDRAG\n\n- **Fanatisk:** Tro på ordenens mission\n- **Kompetent:** Vald för uppgiften av en anledning\n- **Felaktig övertygelse:** Trodde Corvus var kontrollerad, inte vänd\n- **Hedersam:** Integritet även i nederlag\n\n## RELATIONER\n\n### Arvorns Hammare\n- **Corvus Askhår:** Före detta kollega, senare motståndare\n- **7 tempelriddare:** Hans styrka\n\n### Gruppen\n- **Huvudmål:** Corvus\n- **Kollateral:** Resten av gruppen som \"kättare\"\n\n## NUVARANDE SITUATION\n\nDöd. Hans kampen mot gruppen avslutas vid Raunflodens strand.\n\n## SL-ANTECKNINGAR\n\n- Respektabel antagonist med egen agenda\n- Föll för sin övertygelse\n- Systrarna ingrep i det kritiska mötet\n- Episk strid markerade en vändpunkt i kampanjen"
-    },
-    {
       "namn": "Ali ibn-Yusuf",
       "bild": null,
       "ras": "Mûhadier",
@@ -78,15 +67,15 @@ const wikiData = {
       "beskrivning": "# ALOKHARA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
-      "namn": "Prins Yelgotha av det Första Hovet",
-      "bild": null,
-      "ras": "Alv",
+      "namn": "Amina",
+      "bild": "amina_muhad.png",
+      "ras": "Människa",
       "titel": null,
-      "status": "frusen i 700 år",
-      "plats": "Älvakungens Sal, Mithera",
-      "fraktion": "Det Första Hovet (forntida)",
+      "status": "levande",
+      "plats": "Muhad",
+      "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# PRINS YELGOTHA AV DET FÖRSTA HOVET\n\n**Den Frusne Fursten, frusen i ispelare i 700 år**\n\n## GRUNDINFO\n\n- **Ras:** Alv (forntida)\n- **Status:** Frusen men medveten\n- **Första fas:** Fas 10 (Mithera)\n- **Roll:** Portalväktare, vägvisare\n\n## BAKGRUND\n\nPrins Yelgotha av det Första Hovet frös i sin ispelare för 700 år sedan tillsammans med sitt hovfolk. Han vaknar periodiskt när de rätta vandrarna kommer.\n\n### Hans hovfolk (också frusna)\n- Riddaren med halvdraget svärd\n- Skalden med evig sång\n- Barnet med utsträckt hand\n- Älskarinnan med diamanttårar\n- Förrädaren, vänd bort i ånger\n\n## KRITISKA HÄNDELSER\n\n### Älvakungens Sal (Fas 10)\n**Väckandet:**\n- *\"Fem kroppar men sex själar. Ni bär den sjätte inom er. I er skuld. I er saknad. I ert misslyckande.\"*\n\n**Sanningens krav:**\n- Tvingade varje person att avslöja sin SANNA anledning till att vara där\n\n**De tre offren:**\n1. **TIDEN:** Ge bort den bästa dagen\n2. **VÄRMEN:** Ge upp känslan av värme\n3. **SÄKERHETEN:** Ge upp vetskapen om återkomst\n\n**De fem varningarna:**\n1. Lord Vinterglöd väntar - var hans page en gång\n2. Zentri är delad: Kropp (styrka), Själ (list), Minne (offer)\n3. Tiden där är inte tid här\n4. Lita på INGENTING utom er skuld\n5. Det finns alltid en utväg - men den är aldrig den ni tror\n\n## KARAKTÄRSDRAG\n\n- **Allvetande:** Ser sanningar andra döljer\n- **Forntida visdom:** 700+ år gammal\n- **Bunden:** Kan inte lämna sin ispelare\n- **Vägvisare:** Hjälper de sex vandrarna\n\n## RELATIONER\n\n### Historiska\n- **Lord Vinterglöd:** *\"Han var min page en gång.\"*\n\n### Gruppen\n- **De sex vandrarna:** Profetian uppfylld\n- Gav dem Vandrarnas Märke\n\n## BETYDELSE\n\nYelgotha var porten till Skugglandet och gav avgörande information om Zentris räddning.\n\n## SL-ANTECKNINGAR\n\n- Kan kontaktas igen genom Vandrarnas Märke?\n- Hans koppling till Vinterglöd kan användas\n- Profetian om sex vandrare central för kampanjen\n- Representerar forntida magi och visdom"
+      "beskrivning": "# AMINA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
       "namn": "Amina bint-Farid",
@@ -131,17 +120,6 @@ const wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# AMINA BINT-SALIM\n**Serverare på Månskärets Gömställe**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Serverare\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nAmina bint-Salim arbetar som serverare på Månskärets Gömställe och är känd för sin förmåga att vara både närvarande och osynlig när situationen kräver det.\n\n## ARBETSUPPGIFTER\nSom serverare:\n- Serverar mat och dryck\n- Upprätthåller diskret service\n- Respekterar gästernas integritet\n- Säkerställer smidig verksamhet\n\n## KARAKTÄR\n- Diskret och observant\n- Professionell\n- Tystlåten\n- Läser av situationer väl\n\n## KOPPLINGAR\n- **Arbetsplats:** Månskärets Gömställe\n- **Arbetsgivare:** Zara al-Min\n- **Kollegor:** Rashid, Hassan, Laila\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
-    },
-    {
-      "namn": "Amina",
-      "bild": "amina_muhad.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# AMINA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
       "namn": "Amir ibn-Farouk",
@@ -197,17 +175,6 @@ const wikiData = {
       "fraktion": "Arvorns Hammare",
       "kapitel": null,
       "beskrivning": "# ARVORNS HAMMARE-REPRESENTANT\n**Representant för Arvorns Hammare**\n\n## GRUNDINFO\n- **Fraktion:** Arvorns Hammare\n- **Kontext:** Scenario 3 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 3): Representant för Arvorns Hammare, möjligen relaterat till deras samröre med Systrarna.\n\n## SL-ANTECKNINGAR\nArvorns Hammare nämndes som en fraktion med kopplingar till Systrarna och desertörerna som anföll Vargnäset."
-    },
-    {
-      "namn": "Båg-Pieter",
-      "bild": "båg_pieter.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Lundnäs",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# BÅG-PIETER\n**Lundnäs främste jägare**\n\n## GRUNDINFO\n- **Yrke:** En av Lundnäs främste jägare\n- **Påverkan:** Har ej påverkats så mycket av pärlorna\n- **Observation:** Har märkt djurens udda beteende under Regnsynd-händelserna\n- **Särskilda Drag:** Lite udda person\n\n## I KAMPANJEN\nRegnsynd-äventyret: Erfaren jägare som kan ge information om djurens konstiga beteende.\n\n## SL-ANTECKNINGAR\nBåg-Pieter är tillräckligt erfaren och märklig för att inte påverkas lika kraftigt av pärlorna som andra, men hans kunskap om djur gör att han observerat deras udda beteende under krisen."
     },
     {
       "namn": "Bartol",
@@ -298,6 +265,17 @@ const wikiData = {
       "beskrivning": "# BRYNJAR\n**Smed och krigare**\n\n## GRUNDINFO\n- **Yrke:** Smed\n- **Roll i strid:** Fördelar ut förstärkta vapen, stridsmässigt värdefull i närstrid\n- **Position:** Torget och centrum (Kazriks/Umnataks zon)\n- **Specialitet:** Vapentillverkning och närstrid\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Försvarade Vargnäset, tillhandahöll förstärkta vapen till försvararna.\n\n## SL-ANTECKNINGAR\nBrynjar är inte bara en skicklig smed utan också en värdefull krigare. Hans förstärkta vapen och närstridskompetens är avgörande för byns försvar."
     },
     {
+      "namn": "Båg-Pieter",
+      "bild": "båg_pieter.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Lundnäs",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "# BÅG-PIETER\n**Lundnäs främste jägare**\n\n## GRUNDINFO\n- **Yrke:** En av Lundnäs främste jägare\n- **Påverkan:** Har ej påverkats så mycket av pärlorna\n- **Observation:** Har märkt djurens udda beteende under Regnsynd-händelserna\n- **Särskilda Drag:** Lite udda person\n\n## I KAMPANJEN\nRegnsynd-äventyret: Erfaren jägare som kan ge information om djurens konstiga beteende.\n\n## SL-ANTECKNINGAR\nBåg-Pieter är tillräckligt erfaren och märklig för att inte påverkas lika kraftigt av pärlorna som andra, men hans kunskap om djur gör att han observerat deras udda beteende under krisen."
+    },
+    {
       "namn": "Daela Häxmästare",
       "bild": null,
       "ras": "Människa",
@@ -318,6 +296,17 @@ const wikiData = {
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
       "beskrivning": "# DARIAN DEN SNABBE\n**Kavalleri i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Tungt kavalleri\n- **Specialitet:** Lanscharge mot fiendestridslinjer\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Kavalleriattacker vid Tirakgraven."
+    },
+    {
+      "namn": "Darim al-Fazul",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Kryddköpman",
+      "status": "levande",
+      "plats": "Jen, Muhad",
+      "fraktion": null,
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# DARIM AL-FAZUL\n**Kryddköpman i Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Yrke:** Kryddköpman\n- **Status:** Levande\n- **Plats:** Jen, Muhad\n- **Första omnämnande:** Kapitel 2\n\n## BESKRIVNING\nDarim al-Fazul är en respekterad köpman med vidsträckta handelsnätverk som sträcker sig över hela den kända världen.\n\n## VERKSAMHET\n**Handelsverksamhet:**\n- Importerar kryddor från hela världen\n- Äger stort lagerhus i Jens handelsdisrikt\n- Omfattande kontaktnätverk bland handlare\n\n## KARAKTÄR\n- Pålitlig affärsman\n- Kvalitetsmedveten i sina produkter\n- Respekterad i handelskretsar\n\n## KOPPLINGAR\n- **Plats:** Jen, Muhad\n- **Verksamhet:** Kryddhandel\n- **Kapitel:** 2"
     },
     {
       "namn": "Darina",
@@ -398,17 +387,6 @@ const wikiData = {
       "beskrivning": "# DR. YUSUF AL-MANSUR\n**Läkare och helare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Titel:** Doktor\n- **Yrke:** Läkare och helare\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nDr. Yusuf al-Mansur är en vis och omtänksam läkare. Han är mycket erfaren och kunnig inom medicin.\n\n## KUNSKAPER & FÄRDIGHETER\nDr. Yusuf är expert på:\n- Medicinsk vård\n- Healing av sårade\n- Kunskap om legender\n- Örter och mediciner\n- Elixir och tinktur\n\n## ARBETSUPPGIFTER\nSom läkare:\n- Vårdar sårade\n- Ger medicinsk behandling\n- Förbereder mediciner och elixir\n- Delar kunskap om legender\n- Helar sjukdomar\n\n## VIKTIGA HÄNDELSER\nUnder karavanresan:\n- Gav Laila al-Jen en elixir\n- Vårdade sårade efter rövarattacken\n- Deltog i Laila al-Jens karavanresa\n\n## KARAKTÄR\n- Vis och erfaren\n- Omtänksam\n- Kunnig läkare\n- Respekterad\n\n## KOPPLINGAR\n- **Yrke:** Läkare och helare\n- **Arbetsgivare:** Laila al-Jen (under karavanresan)\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
-      "namn": "Eira Holm",
-      "bild": "eira.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Grensfortet",
-      "fraktion": "Flyktingar från Vargnäset",
-      "kapitel": null,
-      "beskrivning": "# EIRA HOLM\n\n**Ledare för Vargnäsets 50 överlevande flyktingar**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 9 (Evakueringen)\n- **Roll:** Civil ledare, allierad\n\n## BAKGRUND\n\nEira Holm var en av Vargnäsets bybor som såg både Zentris blodsmagiska attack och Sankt Astrids korsfästelse. Hon steg fram som naturlig ledare när evakueringen började.\n\n## KRITISKA HÄNDELSER\n\n### Evakueringen (Fas 9)\n**Flykt från Vargnäset:**\n- 50 bybor evakuerades\n- Eira koordinerade med Gordon\n- 41 överlevde resan till Grensfortet\n\n### Grensfortet\n- Etablerade flyktinggruppen\n- Lady Soffia skickade förnödenheter\n- Gruppen lämnade dem för att gå till Skugglandet\n\n## KARAKTÄRSDRAG\n\n- **Naturlig ledare:** Steg fram i krisen\n- **Pragmatisk:** Höll moralen uppe\n- **Lojal:** Gentemot gruppen som räddade dem\n\n## RELATIONER\n\n### Räddare\n- **Gordon och gruppen:** Ledde evakueringen\n- **Lady Soffia:** Skickade stöd\n\n### Flyktingar\n- **41 överlevande:** Hennes ansvar\n\n## NUVARANDE SITUATION\n\nEira leder de 41 överlevande i Grensfortet medan gruppen är i Skugglandet. De är ensamma och utsatta.\n\n## SL-ANTECKNINGAR\n\n- Flyktingarna är utsatta utan gruppen\n- Kan bli mål för Arvorns Hammare\n- Eira kan behöva försvara gruppen vid återkomst\n- Moralisk vikt - gruppen är ansvariga för dessa liv"
-    },
-    {
       "namn": "Eira",
       "bild": null,
       "ras": "Människa",
@@ -418,6 +396,17 @@ const wikiData = {
       "fraktion": "Vargnäsets invånare",
       "kapitel": null,
       "beskrivning": "# EIRA\n**Koordinator för Vargnäsets försvar**\n\n## GRUNDINFO\n- **Roll:** Koordinerar försvararna under anfallet\n- **Ansvar:** Fattar beslut om resursallokering\n- **Relationer:** Känner Hagges familj och deras taktiska begåvning\n- **Ledarskap:** Strategisk och beslutsam\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Koordinerade Vargnäsets försvar mot desertörerna.\n\n## SL-ANTECKNINGAR\nEira är den som håller ihop försvaret och ser till att resurser fördelas effektivt. Hon känner till Hagges familjs militära förmågor och uppskattar hans ledarskap under striden."
+    },
+    {
+      "namn": "Eira Holm",
+      "bild": "eira.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Grensfortet",
+      "fraktion": "Flyktingar från Vargnäset",
+      "kapitel": null,
+      "beskrivning": "# EIRA HOLM\n\n**Ledare för Vargnäsets 50 överlevande flyktingar**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 9 (Evakueringen)\n- **Roll:** Civil ledare, allierad\n\n## BAKGRUND\n\nEira Holm var en av Vargnäsets bybor som såg både Zentris blodsmagiska attack och Sankt Astrids korsfästelse. Hon steg fram som naturlig ledare när evakueringen började.\n\n## KRITISKA HÄNDELSER\n\n### Evakueringen (Fas 9)\n**Flykt från Vargnäset:**\n- 50 bybor evakuerades\n- Eira koordinerade med Gordon\n- 41 överlevde resan till Grensfortet\n\n### Grensfortet\n- Etablerade flyktinggruppen\n- Lady Soffia skickade förnödenheter\n- Gruppen lämnade dem för att gå till Skugglandet\n\n## KARAKTÄRSDRAG\n\n- **Naturlig ledare:** Steg fram i krisen\n- **Pragmatisk:** Höll moralen uppe\n- **Lojal:** Gentemot gruppen som räddade dem\n\n## RELATIONER\n\n### Räddare\n- **Gordon och gruppen:** Ledde evakueringen\n- **Lady Soffia:** Skickade stöd\n\n### Flyktingar\n- **41 överlevande:** Hennes ansvar\n\n## NUVARANDE SITUATION\n\nEira leder de 41 överlevande i Grensfortet medan gruppen är i Skugglandet. De är ensamma och utsatta.\n\n## SL-ANTECKNINGAR\n\n- Flyktingarna är utsatta utan gruppen\n- Kan bli mål för Arvorns Hammare\n- Eira kan behöva försvara gruppen vid återkomst\n- Moralisk vikt - gruppen är ansvariga för dessa liv"
     },
     {
       "namn": "Elara can De Mediva",
@@ -496,17 +485,6 @@ const wikiData = {
       "beskrivning": "# EVELINA FÄLTSYSTER\n**Medic i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Medic och sjuksköterska\n- **Ansvar:** Vårdar skadade kamrater\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Vårdade sårade vid Tirakgraven."
     },
     {
-      "namn": "Fadil ibn-Yusuf",
-      "bild": "fadil.png",
-      "ras": "Mûhadier",
-      "titel": null,
-      "status": "levande",
-      "plats": "Jen, Muhad",
-      "fraktion": null,
-      "kapitel": null,
-      "beskrivning": "# FADIL IBN-YUSUF\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nFadil ibn-Yusuf är en medelålders man med kort grått hår och en stadig kroppsbyggnad. Han bär en enkel, men prydlig uniform.\n\n## BAKGRUND\nFadil har en bakgrund som livvakt och har arbetat för flera rika familjer i Jen. Han är mycket erfaren.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Ger känsla av trygghet\n- Säkerhetsarbete\n- Erfaren livvakt\n\n## KARAKTÄR\n- Medelålders och erfaren\n- Lugn och bestämd uppsyn\n- Stadig och pålitlig\n- Ger trygghet till hushållet\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
-    },
-    {
       "namn": "Fadil",
       "bild": "fadil.png",
       "ras": "Människa",
@@ -516,6 +494,17 @@ const wikiData = {
       "fraktion": "Oberoende",
       "kapitel": null,
       "beskrivning": "# FADIL\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+    },
+    {
+      "namn": "Fadil ibn-Yusuf",
+      "bild": "fadil.png",
+      "ras": "Mûhadier",
+      "titel": null,
+      "status": "levande",
+      "plats": "Jen, Muhad",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# FADIL IBN-YUSUF\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nFadil ibn-Yusuf är en medelålders man med kort grått hår och en stadig kroppsbyggnad. Han bär en enkel, men prydlig uniform.\n\n## BAKGRUND\nFadil har en bakgrund som livvakt och har arbetat för flera rika familjer i Jen. Han är mycket erfaren.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Ger känsla av trygghet\n- Säkerhetsarbete\n- Erfaren livvakt\n\n## KARAKTÄR\n- Medelålders och erfaren\n- Lugn och bestämd uppsyn\n- Stadig och pålitlig\n- Ger trygghet till hushållet\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
     },
     {
       "namn": "Fahad al-Khouri",
@@ -540,6 +529,17 @@ const wikiData = {
       "beskrivning": "# FARID AL-MALIK\n\n**Handelsman i Jen, Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Jen, Muhad\n- **Roll:** Handelsman, möjligen kopplad till slavhandel\n\n## BAKGRUND\nFarid al-Malik är kopplad till Malik-familjen i Jen. Under den alkemiska ritualen där Hagge och Laila al-Jen möttes attackerade \"Maliks hejdukar\" - Farid kan vara kopplad till denna attack.\n\n## I KAMPANJEN\n- Fas 3: Attackerade eller hade kontakt under Hagges befrielse\n- Möjlig antagonist eller komplex figur\n\n## SL-ANTECKNINGAR\n- Koppling till slavhandeln i Jen\n- Potentiell framtida antagonist\n- Kan kräva hämnd för händelserna"
     },
     {
+      "namn": "Fatima bint",
+      "bild": "fatima_bint.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Muhad",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "# FATIMA BINT\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+    },
+    {
       "namn": "Fatima bint-Ali",
       "bild": "fatima_bint.png",
       "ras": "Mûhadier",
@@ -562,17 +562,6 @@ const wikiData = {
       "beskrivning": "# FATIMA BINT-SALIM\n**Arkivarie på slavkontoret**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Arkivarie\n- **Arbetsplats:** Huvudkontoret för Slavregistrering och Transaktioner\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nFatima bint-Salim är en äldre kvinna med en vänlig uppsyn och ett noggrant sinne för detaljer. Hon bär alltid prydliga kläder och är mycket organiserad.\n\n## BAKGRUND\nFatima har arbetat som arkivarie i över tjugo år och är känd för sin noggrannhet och sitt organiserade arbete.\n\n## ARBETSUPPGIFTER\nSom arkivarie:\n- Upprätthåller och organiserar historiska register\n- Hanterar förfrågningar om historiska data\n- Säkerställer arkivets ordning\n- Bevarar viktiga dokument\n\n## KARAKTÄR\n- Äldre och mycket erfaren\n- Vänlig uppsyn\n- Noggrant sinne för detaljer\n- Mycket organiserad\n\n## KOPPLINGAR\n- **Arbetsplats:** Huvudkontoret för Slavregistrering, arkivet\n- **Position:** Arkivarie\n- **Chef:** Amir ibn-Farouk\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
-      "namn": "Fatima bint",
-      "bild": "fatima_bint.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# FATIMA BINT\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
-    },
-    {
       "namn": "Fhe Ehdsim",
       "bild": "FheEhdsim.png",
       "ras": "Människa",
@@ -593,6 +582,17 @@ const wikiData = {
       "fraktion": "Okänd",
       "kapitel": null,
       "beskrivning": "# FLODSKÖLDPADDAN\n**Flodsköldpadda i Raunfloden**\n\n## GRUNDINFO\n- **Typ:** Flodsköldpadda (stor varelse)\n- **Habitat:** Raunfloden\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): Varelse som spelarna möter i eller vid Raunfloden.\n\n## SL-ANTECKNINGAR\nEn flodsköldpadda av betydande storlek som förekommer i Scenario 4."
+    },
+    {
+      "namn": "Fredricca",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Skogen väster om Lundnäs",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "# HÄXAN FREDRICCA\n**Godmodig häxa i skogen**\n\n## GRUNDINFO\n- **Hemvist:** Stuga i skogen väster om Lundnäs\n- **Ålder:** Medelålders kvinna\n- **Livsstil:** Lever i harmoni med naturen, undviker människor\n- **Sällskap:** Bor med sina katter\n- **Kunskap:** Duktig på örter och trollkonster\n- **Trädgård:** Örtagård och trädgårdsland (drabbades av regnet)\n- **Pärlpåverkan:** Har inte påverkats så kraftigt, men har känt av dem\n\n## I KAMPANJEN\nRegnsynd-äventyret: Godmodig häxa som kan ge information och hjälp.\n\n## SL-ANTECKNINGAR\nFredricca är en godmodig person trots att hon kallas \"häxa\". Hon tycker om att leva i harmoni med naturen och har djup kunskap om örter och trollkonster. Hennes motstånd mot pärlpåverkan visar hennes styrka. Hon kan vara en värdefull allierad för rollpersonerna."
     },
     {
       "namn": "Garsten",
@@ -652,13 +652,13 @@ const wikiData = {
     {
       "namn": "Ghalib al-Nur",
       "bild": "Ghalib_al-Nur.png",
-      "ras": "Människa",
-      "titel": null,
+      "ras": "Mûhadier",
+      "titel": "Gladiatorägare och slavtränare",
       "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Nur-familjen",
-      "kapitel": null,
-      "beskrivning": "# GHALIB AL-NUR\n**Medlem av Nur-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Obestämd\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.\n\n## SL-ANTECKNINGAR\nKontakt i Muhad."
+      "plats": "Jen, Muhad",
+      "fraktion": null,
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# GHALIB AL-NUR\n**Gladiatorägare och slavtränare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Yrke:** Gladiatorägare och slavtränare\n- **Status:** Levande\n- **Plats:** Jen, Muhad\n- **Första omnämnande:** Kapitel 2\n\n## BESKRIVNING\nGhalib al-Nur är en berömd gladiatorägare med omfattande kontakter inom slavmarknaden. Han är känd för sin förmåga att träna slavar till skickliga gladiatorer.\n\n## VERKSAMHET\n**Gladiatorverksamhet:**\n- Tränar slavar till gladiatorer\n- Kontakter inom slavmarknaden\n- Arrangerar gladiatoruppvisningar\n\n## KARAKTÄR\n- Hård men rättvis mot de som visar skicklighet\n- Belönar lojalitet\n- Affärsmässig inställning till sin verksamhet\n\n## KOPPLINGAR\n- **Plats:** Jen, Muhad\n- **Verksamhet:** Gladiatorträning och slavhandel\n- **Kapitel:** 2"
     },
     {
       "namn": "Gripvibe",
@@ -679,7 +679,7 @@ const wikiData = {
       "plats": "Vitterdal",
       "fraktion": "Jarladömet Vitterdal",
       "kapitel": null,
-      "beskrivning": "# HADRIAN \"HAGGE\" AV VITTERDAL\n\n**Jarl av Vitterdal, gruppens huvudsakliga uppdragsgivare**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande, jarl av Vitterdal\n- **Första fas:** Fas 3 (Muhad)\n- **Roll:** Huvudsaklig uppdragsgivare och allierad\n\n## BAKGRUND\n\nHagge är yngre sonen i huset Vitterdal, aldrig förberedd för ledarskap. Hans äldre bror Talarra skulle ärva jarladömet, men anklagade Hagge för förräderi på falska grunder.\n\n### Förvisning och slaveri\n- Förvisad från Vitterdal av sin bror Talarra\n- Tillfångatagen av pirater\n- Såld som slav i Jen, Muhad\n\n## VIKTIGA HÄNDELSER\n\n### Muhad (Fas 3)\n**Befrielsen:**\n- Gruppen anlitades av Lady Soffia för att hitta och befria honom\n- Laila al-Jen krävde att Hagge gav henne ett barn som pris för frihet\n- Under den alkemiska ritualen skyddade gruppen paret\n\n### Återkomst till Vitterdal (Fas 7)\n- Talarra var redan död när Hagge återvände\n- Lantrådet sammankallat för att bekräfta arvinge\n- Officiellt erkänd som jarl av Vitterdal\n\n### Belöningar till gruppen\nHagge gav omfattande belöningar till sina räddare:\n\n**Titlar och privilegier:**\n- Gordon: \"Kapten av Vitterdals Hederskompani\"\n- Alla: Skattefrihet och hus på Mitrahus mark\n- Option: Äganderätt till Grensfortet (om renoverat)\n\n## KARAKTÄRSDRAG\n\n- **Oväntat ledarskap:** Tvingades växa in i rollen\n- **Tacksam:** Djupt tacksam mot gruppen som räddade honom\n- **Försiktig härskare:** Medveten om sina begränsningar\n\n## RELATIONER\n\n### Familj\n- **Lady Soffia:** Hans mor, tidigare de facto härskare\n- **Talarra:** Äldre bror (död) som förvisade honom\n- **Barnet med Laila:** Efterlämnat i Muhad\n\n### Gruppen\n- **Alla spelarkaraktärer:** Djup tacksamhetsskuld\n\n### Komplicerat\n- **Laila al-Jen:** Barnets mor, slavhandlare i Jen\n\n## NUVARANDE SITUATION\n\nHagge styr nu Vitterdal och är gruppens viktigaste allierade. Hans position är fortfarande utsatt politiskt.\n\n## SL-ANTECKNINGAR\n\n- Kan användas för att ge gruppen uppdrag\n- Hans tacksamhet är genuin men politiken i Vitterdal är komplex\n- Barnet i Muhad kan bli framtida komplikation\n- Grensfortet-alternativet ger gruppen potential bas",
+      "beskrivning": "# HADRIAN \"HAGGE\" AV VITTERDAL\n\n**Jarl av Vitterdal, gruppens huvudsakliga uppdragsgivare**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande, jarl av Vitterdal\n- **Första fas:** Fas 3 (Muhad)\n- **Roll:** Huvudsaklig uppdragsgivare och allierad\n\n## BAKGRUND\n\nHagge är yngre sonen i huset Vitterdal, aldrig förberedd för ledarskap. Hans äldre bror Talarra skulle ärva jarladömet, men anklagade Hagge för förräderi på falska grunder.\n\n### Förvisning och slaveri\n- Förvisad från Vitterdal av sin bror Talarra\n- Tillfångatagen av pirater\n- Såld som slav i Jen, Muhad\n\n## VIKTIGA HÄNDELSER\n\n### Muhad (Fas 3)\n**Befrielsen:**\n- Gruppen anlitades av Lady Soffia för att hitta och befria honom\n- Laila al-Jen krävde att Hagge gav henne ett barn som pris för frihet\n- Under den alkemiska ritualen skyddade gruppen paret\n\n### Återkomst till Vitterdal (Fas 7)\n- Talarra var redan död när Hagge återvände\n- Lantrådet sammankallat för att bekräfta arvinge\n- Officiellt erkänd som jarl av Vitterdal\n\n### Belöningar till gruppen\nHagge gav omfattande belöningar till sina räddare:\n\n**Titlar och privilegier:**\n- Gordon: \"Kapten av Vitterdals Hederskompani\"\n- Alla: Skattefrihet och hus på Mitrahus mark\n- Option: Äganderätt till Grensfortet (om renoverat)\n\n## KARAKTÄRSDRAG\n\n- **Oväntat ledarskap:** Tvingades växa in i rollen\n- **Tacksam:** Djupt tacksam mot gruppen som räddade honom\n- **Försiktig härskare:** Medveten om sina begränsningar\n\n## RELATIONER\n\n### Familj\n- **Lady Soffia:** Hans mor, tidigare de facto härskare\n- **Talarra:** Äldre bror (död) som förvisade honom\n- **Barnet med Laila:** Efterlämnat i Muhad\n\n### Gruppen\n- **Alla spelarkaraktärer:** Djup tacksamhetsskuld\n\n### Komplicerat\n- **Laila al-Jen:** Barnets mor, slavhandlare i Jen\n\n## TID SOM SLAV HOS LAILA AL-JEN (KAPITEL 2)\n\nUnder sin tid som slav hos Laila al-Jen i Jen vann Hagge hennes förtroende genom sin bildning och charm. Han fungerade som exotisk slav och rådgivare i hennes hushåll. Hans adliga bakgrund och utbildning gjorde honom värdefull som samtalspartner i hennes högre kretsar.\n\n## NUVARANDE SITUATION\n\nHagge styr nu Vitterdal och är gruppens viktigaste allierade. Hans position är fortfarande utsatt politiskt.\n\n## SL-ANTECKNINGAR\n\n- Kan användas för att ge gruppen uppdrag\n- Hans tacksamhet är genuin men politiken i Vitterdal är komplex\n- Barnet i Muhad kan bli framtida komplikation\n- Grensfortet-alternativet ger gruppen potential bas",
       "bild": "hagge2.png"
     },
     {
@@ -826,17 +826,6 @@ const wikiData = {
       "beskrivning": "# HUNTER\n**Jägare från Vargnäset**\n\n## GRUNDINFO\n- **Yrke:** Jägare\n- **Plats:** Vargnäset\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Del av försvaret av Vargnäset.\n\n## SL-ANTECKNINGAR\nSom jägare har Hunter troligen viktig roll i försvaret med spårning och bågskyttefärdigheter."
     },
     {
-      "namn": "Fredricca",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Skogen väster om Lundnäs",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# HÄXAN FREDRICCA\n**Godmodig häxa i skogen**\n\n## GRUNDINFO\n- **Hemvist:** Stuga i skogen väster om Lundnäs\n- **Ålder:** Medelålders kvinna\n- **Livsstil:** Lever i harmoni med naturen, undviker människor\n- **Sällskap:** Bor med sina katter\n- **Kunskap:** Duktig på örter och trollkonster\n- **Trädgård:** Örtagård och trädgårdsland (drabbades av regnet)\n- **Pärlpåverkan:** Har inte påverkats så kraftigt, men har känt av dem\n\n## I KAMPANJEN\nRegnsynd-äventyret: Godmodig häxa som kan ge information och hjälp.\n\n## SL-ANTECKNINGAR\nFredricca är en godmodig person trots att hon kallas \"häxa\". Hon tycker om att leva i harmoni med naturen och har djup kunskap om örter och trollkonster. Hennes motstånd mot pärlpåverkan visar hennes styrka. Hon kan vara en värdefull allierad för rollpersonerna."
-    },
-    {
       "namn": "Ibrahim al-Dawood",
       "bild": "Ibrahim_al-Dawood.png",
       "ras": "Människa",
@@ -925,17 +914,6 @@ const wikiData = {
       "beskrivning": "# JAELA HÄRLIG ⚔️\n**Fallen vanar-krigare**\n\n## GRUNDINFO\n- **Ras:** Vanar\n- **Roll:** Stridande\n- **Utrustning:** Stridsklubba, sköld, armborst\n- **Särskilda Drag:** Tjock, rakat på ena sidan\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
     },
     {
-      "namn": "Jamal ibn-Mustafa",
-      "bild": "jamal_snickaren.png",
-      "ras": "Mûhadier",
-      "titel": null,
-      "status": "levande",
-      "plats": "Jen, Muhad",
-      "fraktion": null,
-      "kapitel": null,
-      "beskrivning": "# JAMAL IBN-MUSTAFA\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nJamal ibn-Mustafa är en robust man i fyrtioårsåldern med kort svart hår och en vältränad kroppsbyggnad. Han bär en enkel, men funktionell uniform.\n\n## BAKGRUND\nJamal har tidigare arbetat som soldat och har stor erfarenhet av strid och säkerhetsarbete. Han är mycket erfaren inom militära operationer.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Ser till att ingen obehörig kommer nära\n- Säkerhetsarbete\n- Patrullering\n\n## KARAKTÄR\n- Robust och vältränad\n- Lojal och vaksam\n- Stor erfarenhet av strid\n- Tidigare soldat\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
-    },
-    {
       "namn": "Jamal",
       "bild": "jamal_snickaren.png",
       "ras": "Människa",
@@ -945,6 +923,17 @@ const wikiData = {
       "fraktion": "Oberoende",
       "kapitel": null,
       "beskrivning": "# JAMAL\n**Snickare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Snickare, hantverkare\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Kan reparera skepp eller bygga konstruktioner.\n\n## SL-ANTECKNINGAR\nHantverkare för praktiska behov."
+    },
+    {
+      "namn": "Jamal ibn-Mustafa",
+      "bild": "jamal_snickaren.png",
+      "ras": "Mûhadier",
+      "titel": null,
+      "status": "levande",
+      "plats": "Jen, Muhad",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# JAMAL IBN-MUSTAFA\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nJamal ibn-Mustafa är en robust man i fyrtioårsåldern med kort svart hår och en vältränad kroppsbyggnad. Han bär en enkel, men funktionell uniform.\n\n## BAKGRUND\nJamal har tidigare arbetat som soldat och har stor erfarenhet av strid och säkerhetsarbete. Han är mycket erfaren inom militära operationer.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Ser till att ingen obehörig kommer nära\n- Säkerhetsarbete\n- Patrullering\n\n## KARAKTÄR\n- Robust och vältränad\n- Lojal och vaksam\n- Stor erfarenhet av strid\n- Tidigare soldat\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
     },
     {
       "namn": "Jamil al-Baz",
@@ -1123,6 +1112,17 @@ const wikiData = {
       "beskrivning": "# KHALID IBN-MUSTAFA\n**Transaktionsansvarig på slavkontoret**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Transaktionsansvarig\n- **Arbetsplats:** Huvudkontoret för Slavregistrering och Transaktioner\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nKhalid ibn-Mustafa är en ung man med en vänlig uppsyn och ett noggrant sinne för detaljer. Han bär alltid prydliga kläder och är mycket organiserad.\n\n## BAKGRUND\nKhalid är nyanställd men har snabbt visat sig vara mycket kompetent och pålitlig i sitt arbete.\n\n## ARBETSUPPGIFTER\nSom transaktionsansvarig:\n- Bokför köp och försäljningar\n- Utfärdar slavcertifikat\n- Hanterar transaktionsdokumentation\n- Säkerställer noggrannhet\n\n## KARAKTÄR\n- Ung och ny\n- Vänlig uppsyn\n- Noggrant sinne för detaljer\n- Mycket organiserad\n- Kompetent och pålitlig\n\n## KOPPLINGAR\n- **Arbetsplats:** Huvudkontoret för Slavregistrering\n- **Position:** Transaktionsansvarig\n- **Chef:** Amir ibn-Farouk\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
+      "namn": "Kommendör Aldrich Järnkors",
+      "bild": "kom_aldritch.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "död",
+      "plats": "Raunflodens strand",
+      "fraktion": "Arvorns Hammare",
+      "kapitel": null,
+      "beskrivning": "# KOMMENDÖR ALDRICH JÄRNKORS ⚔️\n\n**Kommendör i Arvorns Hammare, föll i strid vid Raunflodens strand**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Död\n- **Första fas:** Fas 8 (omnämnd)\n- **Roll:** Antagonist, förföljare\n- **Död:** Episk strid vid Raunflodens strand\n\n## BAKGRUND\n\nAldrich Järnkors var kommendör i Arvorns Hammare och tidigare kollega till Corvus Askhår. Han ledde jakten på Corvus med 7 tempelriddare.\n\n## KRITISKA HÄNDELSER\n\n### Efter Corvus vändning (Fas 8)\n- Tilldelad att jaga Corvus\n- 7 tempelriddare under hans kommando\n- Trodde att Corvus var kidnappad/kontrollerad av kättare\n\n### Evakueringen (Fas 9)\n- Jagade gruppen genom Drunok\n- Gruppen undvek honom genom Corvus insiderkunskap\n\n### DÖDEN - Raunflodens strand\n- Mötte gruppen i episk konfrontation vid Raunflodens strand\n- Integritet i strid till slutet\n- Föll när Systrarna ingrep i striden\n- Död av högt pris i kampen\n\n## KARAKTÄRSDRAG\n\n- **Fanatisk:** Tro på ordenens mission\n- **Kompetent:** Vald för uppgiften av en anledning\n- **Felaktig övertygelse:** Trodde Corvus var kontrollerad, inte vänd\n- **Hedersam:** Integritet även i nederlag\n\n## RELATIONER\n\n### Arvorns Hammare\n- **Corvus Askhår:** Före detta kollega, senare motståndare\n- **7 tempelriddare:** Hans styrka\n\n### Gruppen\n- **Huvudmål:** Corvus\n- **Kollateral:** Resten av gruppen som \"kättare\"\n\n## NUVARANDE SITUATION\n\nDöd. Hans kampen mot gruppen avslutas vid Raunflodens strand.\n\n## SL-ANTECKNINGAR\n\n- Respektabel antagonist med egen agenda\n- Föll för sin övertygelse\n- Systrarna ingrep i det kritiska mötet\n- Episk strid markerade en vändpunkt i kampanjen"
+    },
+    {
       "namn": "Lady Isadora",
       "bild": null,
       "ras": "Människa",
@@ -1189,6 +1189,17 @@ const wikiData = {
       "beskrivning": "# LARS \"SILKESKÄGG\" NORDAHL (â€ )\n**Kapten på Månljuset**\n\n## GRUNDINFO\n- **Titel:** Kapten\n- **Smeknamn:** Silkeskägg\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Flodbåtskapten\n- **Fartyg:** Månljuset\n- **Status:** Död\n- **Dödsorsak:** Dödad under muteri\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nLars \"Silkeskägg\" Nordahl var den ursprungliga kaptenen på Månljuset. Han var känd för sitt välansade skägg som gav honom smeknamnet \"Silkeskägg\".\n\n## TRAGEDI UNDER EVAKUERINGEN\nUnder evakueringen från Vargnäset (Fas 7) bröt ett muteri ut ombord på Månljuset. I det kaos som följde dödades kapten Lars. Det exakta förloppet är oklart, men händelsen tvingade Gordon Nahrzezia att ta över befälet på fartyget.\n\n### Muteriet\n- Orsaken till muteriet är oklar\n- Både kapten Lars och Tant Hildur dog under händelserna\n- Gordon tvingades ta kommando i krisen\n- Trots tragedin lyckades 11 flyktingar räddas\n\n## BETYDELSE\nLars död representerar en av kampanjens mörkaste stunder - en räddningsoperation som skulle rädda liv drabbades av internt våld.\n\n## KOPPLINGAR\n- **Fartyg:** Månljuset\n- **Händelse:** Muteri under evakuering från Vargnäset\n- **Efterträdare:** Gordon Nahrzezia (tog över befälet)\n- **Andra offer:** Tant Hildur\n- **Fas:** 7"
     },
     {
+      "namn": "Layla bint",
+      "bild": "layla.bint2.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Muhad",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "# LAYLA BINT\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+    },
+    {
       "namn": "Layla bint-Hassan",
       "bild": "layla.bint1.png",
       "ras": "Mûhadier",
@@ -1220,17 +1231,6 @@ const wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# LAYLA BINT-KARIM\n**Registrator på slavkontoret**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Registrator\n- **Arbetsplats:** Huvudkontoret för Slavregistrering och Transaktioner\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nLayla bint-Karim är en ung kvinna med ett vänligt leende och ett noggrant sinne för detaljer. Hon bär alltid prydliga kläder och är mycket organiserad.\n\n## BAKGRUND\nLayla har studerat administration och har arbetat på kontoret i fem år. Hon är känd för sitt effektiva och noggranna arbete.\n\n## ARBETSUPPGIFTER\nSom registrator:\n- Tar emot nya slavar\n- Registrerar slavars detaljer i det officiella registret\n- Dokumenterar ursprung, ålder, kön och färdigheter\n- Upprätthåller noggrant arkiv\n\n## KARAKTÄR\n- Ung och vänlig\n- Noggrant sinne för detaljer\n- Mycket organiserad\n- Effektiv i sitt arbete\n\n## KOPPLINGAR\n- **Arbetsplats:** Huvudkontoret för Slavregistrering\n- **Position:** Registrator\n- **Chef:** Amir ibn-Farouk\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
-    },
-    {
-      "namn": "Layla bint",
-      "bild": "layla.bint2.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# LAYLA BINT\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
       "namn": "Lera Skuggskeppare",
@@ -1387,17 +1387,6 @@ const wikiData = {
       "beskrivning": "# MIKOR\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
-      "namn": "Mira bint-Salim",
-      "bild": "Mira_kock.png",
-      "ras": "Mûhadier",
-      "titel": null,
-      "status": "levande",
-      "plats": "Jen, Muhad",
-      "fraktion": null,
-      "kapitel": null,
-      "beskrivning": "# MIRA BINT-SALIM\n**Huvudkock hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Huvudkock\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nMira bint-Salim är en medelålders kvinna med ett vänligt leende och en passion för matlagning. Hon bär alltid ett förkläde och har en positiv attityd.\n\n## BAKGRUND\nMira har arbetat som kock i många fina hem och är känd för sina utsökta rätter och sin kreativitet i köket. Hon är mycket erfaren.\n\n## ARBETSUPPGIFTER\nSom huvudkock:\n- Ansvarar för alla måltider i Lailas hem\n- Lagar utsökta rätter\n- Planerar menyer\n- Kreativ matlagning\n\n## KARAKTÄR\n- Medelålders och erfaren\n- Vänligt leende\n- Passion för matlagning\n- Positiv attityd\n- Kreativ\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Huvudkock\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
-    },
-    {
       "namn": "Mira",
       "bild": "Amira_bint-Zayed.png",
       "ras": "Människa",
@@ -1407,6 +1396,17 @@ const wikiData = {
       "fraktion": "Oberoende",
       "kapitel": null,
       "beskrivning": "# MIRA\n\n**Kock i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Kock, driver värdshus eller matstånd\n\n## BAKGRUND\nMira är känd för sin matlagning i Muhad. Hennes värdshus eller matstånd är mötesplats för resande.\n\n## I KAMPANJEN\n- Fas 3: Möttes i Muhad\n- Eventuell källa för rykten och information\n\n## SL-ANTECKNINGAR\n- Människor pratar vid matbordet\n- Vet vad som händer i staden\n- Kan ge information mot mat eller betalning"
+    },
+    {
+      "namn": "Mira bint-Salim",
+      "bild": "Mira_kock.png",
+      "ras": "Mûhadier",
+      "titel": null,
+      "status": "levande",
+      "plats": "Jen, Muhad",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# MIRA BINT-SALIM\n**Huvudkock hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Huvudkock\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nMira bint-Salim är en medelålders kvinna med ett vänligt leende och en passion för matlagning. Hon bär alltid ett förkläde och har en positiv attityd.\n\n## BAKGRUND\nMira har arbetat som kock i många fina hem och är känd för sina utsökta rätter och sin kreativitet i köket. Hon är mycket erfaren.\n\n## ARBETSUPPGIFTER\nSom huvudkock:\n- Ansvarar för alla måltider i Lailas hem\n- Lagar utsökta rätter\n- Planerar menyer\n- Kreativ matlagning\n\n## KARAKTÄR\n- Medelålders och erfaren\n- Vänligt leende\n- Passion för matlagning\n- Positiv attityd\n- Kreativ\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Huvudkock\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
     },
     {
       "namn": "Mirelle",
@@ -1519,6 +1519,17 @@ const wikiData = {
       "beskrivning": "# OLIVER NAHRZEZIA\n**Gordons bror, stannar kvar på gården**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Bonde\n- **Plats:** Vambolien (familjegården Nahrzezia)\n- **Status:** Levande\n- **Första omnämnande:** Fas 9\n\n## BESKRIVNING\nOliver Nahrzezia är Gordons bror som valt att stanna kvar hemma på familjegården i Vambolien. Till skillnad från sina bröder Gordon och Ethan som sökt äventyr, har Oliver tagit ansvar för gården och familjen.\n\n## KARAKTÄR\n- Plikttrogen och ansvarsfull\n- Bitter över att vara den som stannade\n- Arbetar hårt (från gryning till skymning)\n- Rasande på sina bröders val\n\n## REAKTION PÅ ETHANS BESLUT\nNär Ethan lämnade gården för att ta värvning blev Oliver rasande och utbrast: *\"Nu ska lillebror också spela hjälte och lämna oss!\"*\n\nEnligt Margaret arbetar Oliver nu från gryning till skymning *\"som om han försöker bevisa att någon Nahrzezia stannade hemma.\"*\n\n## FAMILJERELATIONER\n- **Gordon Nahrzezia:** Bror som lämnade för äventyr\n- **Ethan Nahrzezia:** Yngre bror som nu också lämnat\n- **Margaret Nahrzezia:** Mor som förlitar sig på Oliver\n\n## KONFLIKT\nOliver bär tydligt på bitterhet och känslor av övergivenhet. Han har offrat sina egna drömmar för att ta hand om gården medan hans bröder söker ära och äventyr. Hans hårda arbete verkar vara både plikt och ett sätt att bevisa sitt värde.\n\n## ROLL I KAMPANJEN\nOliver representerar konsekvenserna av Gordons val - någon måste stanna hemma och ta ansvar. Hans bitterhet och hårda arbete visar priset som familjen betalar för Gordons och Ethans äventyr.\n\n## KOPPLINGAR\n- **Familj:** Nahrzezia-familjen, Vambolien\n- **Plats:** Familjegården i Vambolien\n- **Relation:** Gordons bror"
     },
     {
+      "namn": "Omar",
+      "bild": "Omar_al-Kazim.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Muhad",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "# OMAR\n**Oud-spelare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Musiker, spelar oud\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Underhåller på värdshus eller basarer.\n\n## SL-ANTECKNINGAR\nMusiker hör rykten och berättelser."
+    },
+    {
       "namn": "Omar al-Kazim",
       "bild": "Omar_al-Kazim.png",
       "ras": "Människa",
@@ -1528,6 +1539,17 @@ const wikiData = {
       "fraktion": "Kazim-familjen",
       "kapitel": null,
       "beskrivning": "# OMAR AL-KAZIM\n**Medlem av Kazim-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+    },
+    {
+      "namn": "Omar ibn-Hassan",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": null,
+      "status": "levande",
+      "plats": "Lailas residens, Jen, Muhad",
+      "fraktion": null,
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# OMAR IBN-HASSAN\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt hos Laila al-Jen\n- **Plats:** Lailas residens, Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 2\n\n## BESKRIVNING\nOmar ibn-Hassan är en robust man i 40-årsåldern som arbetar som vakt hos Laila al-Jen.\n\n## KARAKTÄR\n- Robust man i 40-årsåldern\n- Ständigt vaksam\n- Skyddar hemmet och dess invånare\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Lailas residens, Jen, Muhad\n- **Kapitel:** 2"
     },
     {
       "namn": "Omar ibn-Salim",
@@ -1541,15 +1563,15 @@ const wikiData = {
       "beskrivning": "# OMAR IBN-SALIM\n**Registrator på slavkontoret**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Registrator\n- **Arbetsplats:** Huvudkontoret för Slavregistrering och Transaktioner\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nOmar ibn-Salim är en medelålders man med ett seriöst uttryck och en noggrann arbetsstil. Han bär alltid en enkel men prydlig uniform.\n\n## BAKGRUND\nOmar har en bakgrund inom militäradministration och har arbetat som registrator i tio år. Han är mycket detaljerad och korrekt i sitt arbete.\n\n## ARBETSUPPGIFTER\nSom registrator:\n- Registrerar nya slavar\n- Dokumenterar slavars information\n- Upprätthåller noggrant arkiv\n- Säkerställer korrekthet i all dokumentation\n\n## KARAKTÄR\n- Medelålders och erfaren\n- Seriöst uttryck\n- Noggrann arbetsstil\n- Mycket detaljerad och korrekt\n\n## KOPPLINGAR\n- **Arbetsplats:** Huvudkontoret för Slavregistrering\n- **Position:** Registrator\n- **Chef:** Amir ibn-Farouk\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
-      "namn": "Omar",
-      "bild": "Omar_al-Kazim.png",
-      "ras": "Människa",
+      "namn": "Prins Yelgotha av det Första Hovet",
+      "bild": null,
+      "ras": "Alv",
       "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
+      "status": "frusen i 700 år",
+      "plats": "Älvakungens Sal, Mithera",
+      "fraktion": "Det Första Hovet (forntida)",
       "kapitel": null,
-      "beskrivning": "# OMAR\n**Oud-spelare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Musiker, spelar oud\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Underhåller på värdshus eller basarer.\n\n## SL-ANTECKNINGAR\nMusiker hör rykten och berättelser."
+      "beskrivning": "# PRINS YELGOTHA AV DET FÖRSTA HOVET\n\n**Den Frusne Fursten, frusen i ispelare i 700 år**\n\n## GRUNDINFO\n\n- **Ras:** Alv (forntida)\n- **Status:** Frusen men medveten\n- **Första fas:** Fas 10 (Mithera)\n- **Roll:** Portalväktare, vägvisare\n\n## BAKGRUND\n\nPrins Yelgotha av det Första Hovet frös i sin ispelare för 700 år sedan tillsammans med sitt hovfolk. Han vaknar periodiskt när de rätta vandrarna kommer.\n\n### Hans hovfolk (också frusna)\n- Riddaren med halvdraget svärd\n- Skalden med evig sång\n- Barnet med utsträckt hand\n- Älskarinnan med diamanttårar\n- Förrädaren, vänd bort i ånger\n\n## KRITISKA HÄNDELSER\n\n### Älvakungens Sal (Fas 10)\n**Väckandet:**\n- *\"Fem kroppar men sex själar. Ni bär den sjätte inom er. I er skuld. I er saknad. I ert misslyckande.\"*\n\n**Sanningens krav:**\n- Tvingade varje person att avslöja sin SANNA anledning till att vara där\n\n**De tre offren:**\n1. **TIDEN:** Ge bort den bästa dagen\n2. **VÄRMEN:** Ge upp känslan av värme\n3. **SÄKERHETEN:** Ge upp vetskapen om återkomst\n\n**De fem varningarna:**\n1. Lord Vinterglöd väntar - var hans page en gång\n2. Zentri är delad: Kropp (styrka), Själ (list), Minne (offer)\n3. Tiden där är inte tid här\n4. Lita på INGENTING utom er skuld\n5. Det finns alltid en utväg - men den är aldrig den ni tror\n\n## KARAKTÄRSDRAG\n\n- **Allvetande:** Ser sanningar andra döljer\n- **Forntida visdom:** 700+ år gammal\n- **Bunden:** Kan inte lämna sin ispelare\n- **Vägvisare:** Hjälper de sex vandrarna\n\n## RELATIONER\n\n### Historiska\n- **Lord Vinterglöd:** *\"Han var min page en gång.\"*\n\n### Gruppen\n- **De sex vandrarna:** Profetian uppfylld\n- Gav dem Vandrarnas Märke\n\n## BETYDELSE\n\nYelgotha var porten till Skugglandet och gav avgörande information om Zentris räddning.\n\n## SL-ANTECKNINGAR\n\n- Kan kontaktas igen genom Vandrarnas Märke?\n- Hans koppling till Vinterglöd kan användas\n- Profetian om sex vandrare central för kampanjen\n- Representerar forntida magi och visdom"
     },
     {
       "namn": "Ragnar Fiskare",
@@ -1565,13 +1587,13 @@ const wikiData = {
     {
       "namn": "Rashan al-Ghedi",
       "bild": "Rashan_al-Ghedi.png",
-      "ras": "Människa",
-      "titel": null,
+      "ras": "Mûhadier",
+      "titel": "Kapten för stadsvakten",
       "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Ghedi-familjen",
-      "kapitel": null,
-      "beskrivning": "# RASHAN AL-GHEDI\n**Medlem av Ghedi-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "plats": "Jen, Muhad",
+      "fraktion": "Jens stadsvakt",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# RASHAN AL-GHEDI\n**Kapten för stadsvakten i Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Yrke:** Kapten för stadsvakten\n- **Status:** Levande\n- **Plats:** Jen, Muhad\n- **Fraktion:** Jens stadsvakt\n- **Första omnämnande:** Kapitel 2\n\n## BESKRIVNING\nRashan al-Ghedi är ansvarig för säkerheten i Jen. Han leder stadsvakten med järnhand och är känd för sin strikta tillämpning av stadens lagar.\n\n## ANSVARSOMRÅDEN\n**Som kapten för stadsvakten:**\n- Ansvarig för säkerheten i Jen\n- Övervakar slavhandeln enligt stadens lagar\n- Leder stadsvaktens operationer\n- Upprätthåller lag och ordning\n\n## KARAKTÄR\n- Strikt och plikttrogen\n- Rättvis i sin tillämpning av lagen\n- Respekterad av sina underordnade\n\n## KOPPLINGAR\n- **Plats:** Jen, Muhad\n- **Position:** Kapten för stadsvakten\n- **Kapitel:** 2"
     },
     {
       "namn": "Rashid ibn-Farid",
@@ -1675,13 +1697,13 @@ const wikiData = {
     {
       "namn": "Salma bint-Hafiz",
       "bild": "Salma_bint-Hafiz.png",
-      "ras": "Människa",
-      "titel": null,
+      "ras": "Mûhadier",
+      "titel": "Kryddhandlare (täckmantel), hemlig befrielseledare",
       "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Hafiz-familjen",
-      "kapitel": null,
-      "beskrivning": "# SALMA BINT-HAFIZ\n**Medlem av Hafiz-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "plats": "Jen, Muhad",
+      "fraktion": "Hemlig slavbefrielserörelse",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# SALMA BINT-HAFIZ\n**Kryddhandlare och hemlig befrielseledare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Yrke:** Kryddhandlare (täckmantel), hemlig befrielseledare\n- **Status:** Levande\n- **Plats:** Jen, Muhad\n- **Fraktion:** Hemlig slavbefrielserörelse\n- **Första omnämnande:** Kapitel 2\n\n## BESKRIVNING\nSalma bint-Hafiz framstår som en filantropisk kryddhandlare, men är i hemlighet ledare för en befrielserörelse som arbetar för att befria slavar.\n\n## VERKSAMHET\n**Offentligt:**\n- Äger \"Frihetens Kryddor\" - en respekterad kryddhandel\n- Känd som filantrop och välgörare\n\n**I hemlighet:**\n- Leder slavbefrielserörelse\n- Använder kryddhandeln som täckmantel\n- Finansierar befrielseopera tioner genom handeln\n- Organiserar hemliga flyktvägar för slavar\n\n## KARAKTÄR\n- Modig och beslutsam\n- Skicklig på att dölja sin verkliga verksamhet\n- Driven av övertygelse om rättvisa\n- Riskerar sitt liv för andras frihet\n\n## KOPPLINGAR\n- **Affär:** \"Frihetens Kryddor\", Jen\n- **Hemlig roll:** Befrielserörelsens ledare\n- **Kapitel:** 2"
     },
     {
       "namn": "Samir ibn-Rashid",
@@ -1728,17 +1750,6 @@ const wikiData = {
       "beskrivning": "# SELENE\n**NPC vid Raunfloden**\n\n## GRUNDINFO\n- **Plats:** Raunfloden-området\n- **Kontext:** Scenario 4 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): NPC i Scenario 4."
     },
     {
-      "namn": "Selim ibn-Rashid",
-      "bild": "selim.png",
-      "ras": "Mûhadier",
-      "titel": null,
-      "status": "slav",
-      "plats": "Jen, Muhad",
-      "fraktion": null,
-      "kapitel": null,
-      "beskrivning": "# SELIM IBN-RASHID\n**Slav och bärare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Status:** Slav\n- **Yrke:** Bärare\n- **Ägare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nSelim ibn-Rashid är en ung man i tjugoårsåldern med kort, lockigt hår och en smidig kroppsbyggnad. Han är klädd i enkla, men rena kläder.\n\n## BAKGRUND\nSelim köptes tillsammans med Kasim och arbetar också som bärare. Han är snabbtänkt och anpassar sig lätt till olika uppgifter, vilket gör honom värdefull i hushållet.\n\n## ARBETSUPPGIFTER\nSom bärare:\n- Bär Laila i palankin\n- Anpassar sig till olika uppgifter\n- Fysiskt arbete\n- Flexibla arbetsuppgifter\n\n## KARAKTÄR\n- Ung och smidig\n- Snabbtänkt\n- Anpassningsbar\n- Värdefull i hushållet\n\n## KOPPLINGAR\n- **Ägare:** Laila al-Jen\n- **Arbetsuppgift:** Bärare\n- **Kollega:** Kasim ibn-Farid (medarbetare som bärare)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
-    },
-    {
       "namn": "Selim",
       "bild": "selim.png",
       "ras": "Människa",
@@ -1748,6 +1759,17 @@ const wikiData = {
       "fraktion": "Oberoende",
       "kapitel": null,
       "beskrivning": "# SELIM\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+    },
+    {
+      "namn": "Selim ibn-Rashid",
+      "bild": "selim.png",
+      "ras": "Mûhadier",
+      "titel": null,
+      "status": "slav",
+      "plats": "Jen, Muhad",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# SELIM IBN-RASHID\n**Slav och bärare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Status:** Slav\n- **Yrke:** Bärare\n- **Ägare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nSelim ibn-Rashid är en ung man i tjugoårsåldern med kort, lockigt hår och en smidig kroppsbyggnad. Han är klädd i enkla, men rena kläder.\n\n## BAKGRUND\nSelim köptes tillsammans med Kasim och arbetar också som bärare. Han är snabbtänkt och anpassar sig lätt till olika uppgifter, vilket gör honom värdefull i hushållet.\n\n## ARBETSUPPGIFTER\nSom bärare:\n- Bär Laila i palankin\n- Anpassar sig till olika uppgifter\n- Fysiskt arbete\n- Flexibla arbetsuppgifter\n\n## KARAKTÄR\n- Ung och smidig\n- Snabbtänkt\n- Anpassningsbar\n- Värdefull i hushållet\n\n## KOPPLINGAR\n- **Ägare:** Laila al-Jen\n- **Arbetsuppgift:** Bärare\n- **Kollega:** Kasim ibn-Farid (medarbetare som bärare)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
     },
     {
       "namn": "Serafina Eldstav",
@@ -1792,6 +1814,17 @@ const wikiData = {
       "fraktion": "Desertörer",
       "kapitel": null,
       "beskrivning": "# SILVERMASK\n**NPC i Scenario 3**\n\n## GRUNDINFO\n- **Namn:** Silvermask (möjligen relaterat till Kald Silvermask)\n- **Kontext:** Scenario 3 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 3): NPC i Scenario 3.\n\n## SL-ANTECKNINGAR\nMöjligen kopplad till Kald Silvermask från anfallet på Vargnäset."
+    },
+    {
+      "namn": "Sjödöda Titanen",
+      "bild": "skuggtitan.png",
+      "ras": "Odöd (Skugglandsvarelse)",
+      "titel": "Boss i Skugglandet",
+      "status": "levande",
+      "plats": "Skugglandet (sjö)",
+      "fraktion": null,
+      "kapitel": "Kapitel 10",
+      "beskrivning": "# SJÖDÖDA TITANEN\r\n\r\n**Boss-strid i Skugglandet**\r\n\r\n## Framträdandet\r\n\r\nFrån sjön, hundra meter bort, stiger något upp.\r\n\r\nLångsamt.\r\n\r\nFörst ser de bara siluetten - en pyramid av lemmar och kroppar som reser sig mot den grå himlen. Tre meter. Fyra. Fem.\r\n\r\nVatten forsar från den. Men det är inte bara vatten - det är **MINNEN av vatten**, ekon av drunkning, skrik som fastnat i lungor.\r\n\r\nSex huvuden. Eller kanske bara ett huvud med sex ansikten. Svårt att säga. Alla stirrar åt olika håll utom två - de fixerar gruppen.\r\n\r\nFyra armar. Två tjocka som trädstammar. Två tunna som spindellår. Händerna FEL - någon har tre fingrar, någon åtta.\r\n\r\nDet går. Mot dem. Varje steg skakar marken. Det dryper. Lämnar pölar av... något... som ångar i kylan.\r\n\r\nTrettio meter bort stannar det.\r\n\r\nEtt av ansiktena öppnar munnen. Vatten rinner ut. Sedan orden:\r\n\r\n*\"Varmt. Ni är... varma.\"*\r\n\r\nTjugo meter.\r\n\r\n*\"Jag var kald. Så länge. I vattnet.\"*\r\n\r\nTio meter.\r\n\r\nAlla sex ansikten viskar nu, förskjutet:\r\n\r\n*\"Ge mig er värme.\"*\r\n\r\n## EON-STATS: SJÖDÖDA TITANEN\r\n\r\n### Grundvärden\r\n- **KP:** 120 (massiv)\r\n- **Storlek:** Enorm (5 meter hög)\r\n- **STY:** 22 (övermänsklig)\r\n- **SMI:** 10 (långsam men räckvidd kompenserar)\r\n- **INT:** 8 (rovdjursinstinkt + hat)\r\n- **PSY:** 16 (mentalt motstånd)\r\n\r\n### Skydd\r\n- **Naturligt pansar:** 8 (tjock, vattendränkt massa)\r\n- **Svag punkt:** Ansiktena - 0 pansar om träffade direkt\r\n\r\n### Färdigheter\r\n- **Närstrid:** Ob4T6 (kraftfull men inte snabb)\r\n- **Undvika:** Ob2T6 (stor, långsam)\r\n- **Greppa:** Ob5T6 (fyra armar!)\r\n\r\n### Attacker\r\n\r\n**1. Slagsmål (Tjocka armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 4T6+8 (BRUTALT)\r\n- Räckvidd: 4 meter\r\n- Kan slå TVÅ mål om de står nära varandra\r\n\r\n**2. Spetsiga fingrar (Tunna armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 3T6+4\r\n- Räckvidd: 5 meter\r\n- Penetrerar pansar (räkna som -4 pansar)\r\n\r\n**3. Greppattack**\r\n- Anfallsslag: Ob5T6 (alla fyra armar används)\r\n- Om träff: Offret greppat\r\n- Automatisk skada 2T6+4 per runda (krossning)\r\n- Kräver STY-tävling för att bryta sig loss (Ob5T6 vs Ob5T6)\r\n\r\n**4. Dränkning**\r\n- Om offret greppat i 2+ rundor\r\n- Titanen trycker ansiktet mot offrets mun\r\n- Börjar fylla offret med ruttet vatten\r\n- Kväver på 1T4 rundor om inte befriat\r\n\r\n### Särskilda Förmågor\r\n\r\n**Vattendränkt massa**\r\n- Hugg-/stickvapen: Halv skada (blöt, svampig)\r\n- Kross-/slagvapen: Full skada\r\n- Eld: Dubbel skada\r\n"
     },
     {
       "namn": "Soraya al-Majid",
@@ -2222,17 +2255,6 @@ const wikiData = {
       "beskrivning": "# ZAN FJÄDERTUNGA\n**Gatumusikant i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Gatumusikant\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nZan Fjädertunga är en gatumusikant som uppträder på Tuzan Rims gator. Hans smeknamn \"Fjädertunga\" antyder att han har en lätt och skicklig sångröst.\n\n## VERKSAMHET\nSom gatumusikant:\n- Spelar musik på gatorna\n- Underhåller förbipasserande\n- Samlar in mynt från åhörare\n- Sprider nyheter och rykten genom sång\n\n## KARAKTÄR\n- Talangfull musikant\n- Lätt och behaglig röst\n- Känner till mycket som händer i staden\n- Populär bland lokalbefolkningen\n\n## VÄRDE SOM INFORMATIONSKÄLLA\nGatumusikanter som Zan hör mycket av vad som händer i staden och kan vara värdefulla källor till rykten och information.\n\n## KOPPLINGAR\n- **Plats:** Tuzan Rim\n- **Yrke:** Musikant\n- **Fas:** 3"
     },
     {
-      "namn": "Zara al-Min",
-      "bild": "Zara.png",
-      "ras": "Mûhadier",
-      "titel": null,
-      "status": "levande",
-      "plats": "Jen, Muhad",
-      "fraktion": null,
-      "kapitel": null,
-      "beskrivning": "# ZARA AL-MIN\n**Ägare av Månskärets Gömställe**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Värdshusägare\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nZara al-Min är en klok och diskret kvinna som driver Månskärets Gömställe, ett värdshus känt för sin mystiska atmosfär och diskreta tjänster.\n\n## VERKSAMHET\nZara driver sitt värdshus med:\n- Fokus på diskretion och privatliv\n- Mystisk och hemlighetsfull stämning\n- Hemliga möten och affärer\n- Professionell och diskret service\n\n## PERSONAL\nZara arbetar med flera anställda:\n- Rashid ibn-Farouk (bartender)\n- Amina bint-Salim (serverare)\n- Hassan al-Rashid (kock)\n- Laila bint-Ali (städare)\n\n## KARAKTÄR\n- Klok och erfaren\n- Extremt diskret\n- Professionell\n- Skapar säker miljö för hemliga möten\n\n## KOPPLINGAR\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
-    },
-    {
       "namn": "Zara",
       "bild": "Zara.png",
       "ras": "Människa",
@@ -2244,169 +2266,15 @@ const wikiData = {
       "beskrivning": "# ZARA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
-      "namn": "Sjödöda Titanen",
-      "bild": "skuggtitan.png",
-      "ras": "Odöd (Skugglandsvarelse)",
-      "titel": "Boss i Skugglandet",
-      "status": "levande",
-      "plats": "Skugglandet (sjö)",
-      "fraktion": null,
-      "kapitel": "Kapitel 10",
-      "beskrivning": "# SJÖDÖDA TITANEN\r\n\r\n**Boss-strid i Skugglandet**\r\n\r\n## Framträdandet\r\n\r\nFrån sjön, hundra meter bort, stiger något upp.\r\n\r\nLångsamt.\r\n\r\nFörst ser de bara siluetten - en pyramid av lemmar och kroppar som reser sig mot den grå himlen. Tre meter. Fyra. Fem.\r\n\r\nVatten forsar från den. Men det är inte bara vatten - det är **MINNEN av vatten**, ekon av drunkning, skrik som fastnat i lungor.\r\n\r\nSex huvuden. Eller kanske bara ett huvud med sex ansikten. Svårt att säga. Alla stirrar åt olika håll utom två - de fixerar gruppen.\r\n\r\nFyra armar. Två tjocka som trädstammar. Två tunna som spindellår. Händerna FEL - någon har tre fingrar, någon åtta.\r\n\r\nDet går. Mot dem. Varje steg skakar marken. Det dryper. Lämnar pölar av... något... som ångar i kylan.\r\n\r\nTrettio meter bort stannar det.\r\n\r\nEtt av ansiktena öppnar munnen. Vatten rinner ut. Sedan orden:\r\n\r\n*\"Varmt. Ni är... varma.\"*\r\n\r\nTjugo meter.\r\n\r\n*\"Jag var kald. Så länge. I vattnet.\"*\r\n\r\nTio meter.\r\n\r\nAlla sex ansikten viskar nu, förskjutet:\r\n\r\n*\"Ge mig er värme.\"*\r\n\r\n## EON-STATS: SJÖDÖDA TITANEN\r\n\r\n### Grundvärden\r\n- **KP:** 120 (massiv)\r\n- **Storlek:** Enorm (5 meter hög)\r\n- **STY:** 22 (övermänsklig)\r\n- **SMI:** 10 (långsam men räckvidd kompenserar)\r\n- **INT:** 8 (rovdjursinstinkt + hat)\r\n- **PSY:** 16 (mentalt motstånd)\r\n\r\n### Skydd\r\n- **Naturligt pansar:** 8 (tjock, vattendränkt massa)\r\n- **Svag punkt:** Ansiktena - 0 pansar om träffade direkt\r\n\r\n### Färdigheter\r\n- **Närstrid:** Ob4T6 (kraftfull men inte snabb)\r\n- **Undvika:** Ob2T6 (stor, långsam)\r\n- **Greppa:** Ob5T6 (fyra armar!)\r\n\r\n### Attacker\r\n\r\n**1. Slagsmål (Tjocka armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 4T6+8 (BRUTALT)\r\n- Räckvidd: 4 meter\r\n- Kan slå TVÅ mål om de står nära varandra\r\n\r\n**2. Spetsiga fingrar (Tunna armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 3T6+4\r\n- Räckvidd: 5 meter\r\n- Penetrerar pansar (räkna som -4 pansar)\r\n\r\n**3. Greppattack**\r\n- Anfallsslag: Ob5T6 (alla fyra armar används)\r\n- Om träff: Offret greppat\r\n- Automatisk skada 2T6+4 per runda (krossning)\r\n- Kräver STY-tävling för att bryta sig loss (Ob5T6 vs Ob5T6)\r\n\r\n**4. Dränkning**\r\n- Om offret greppat i 2+ rundor\r\n- Titanen trycker ansiktet mot offrets mun\r\n- Börjar fylla offret med ruttet vatten\r\n- Kväver på 1T4 rundor om inte befriat\r\n\r\n### Särskilda Förmågor\r\n\r\n**Vattendränkt massa**\r\n- Hugg-/stickvapen: Halv skada (blöt, svampig)\r\n- Kross-/slagvapen: Full skada\r\n- Eld: Dubbel skada\r\n"
-    },
-    {
-      "namn": "Erik Björkgren",
-      "bild": null,
-      "ras": "Människa",
+      "namn": "Zara al-Min",
+      "bild": "Zara.png",
+      "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
+      "plats": "Jen, Muhad",
       "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# ERIK BJÖRKGREN\n**13-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 13 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n13-årig pojke från Vargnäset. Son till Nils Björkgren, bror till Astrid och Lilla-Maja. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Lilla-Maja Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Lilla-Maja Björkgren",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# LILLA-MAJA BJÖRKGREN\n**8-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 8 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n8-årig flicka från Vargnäset. Dotter till Nils Björkgren, syster till Astrid och Erik. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Erik Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Margareta Lindkvist",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# MARGARETA LINDKVIST\n**9-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 9 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n9-årig flicka från Vargnäset. Syster till Johan. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Syster:** Johan Lindkvist\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Torkel Falkemo",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# TORKEL FALKEMO\n**11-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 11 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n11-årig pojke från Vargnäset. Son till Gunnar Falkemo, bror till Sigrid. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Sigrid Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Sigrid Falkemo",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# SIGRID FALKEMO\n**6-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 6 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n6-årig flicka från Vargnäset. Dotter till Gunnar Falkemo, syster till Torkel. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Torkel Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Klas Hällström",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# KLAS HÄLLSTRÖM\n**7-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 7 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n7-årig pojke från Vargnäset. Son till Magnus Hällström. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Magnus Hällström\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Gustav Stenmark",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# GUSTAV STENMARK\n**4-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 4 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n4-årig pojke från Vargnäset. Son till Olof Stenmark. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Olof Stenmark\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Erik Björkgren",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# ERIK BJÖRKGREN\n**13-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 13 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n13-årig pojke från Vargnäset. Son till Nils Björkgren, bror till Astrid och Lilla-Maja. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Lilla-Maja Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Lilla-Maja Björkgren",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# LILLA-MAJA BJÖRKGREN\n**8-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 8 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n8-årig flicka från Vargnäset. Dotter till Nils Björkgren, syster till Astrid och Erik. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Erik Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Margareta Lindkvist",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# MARGARETA LINDKVIST\n**9-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 9 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n9-årig flicka från Vargnäset. Syster till Johan. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Syster:** Johan Lindkvist\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Torkel Falkemo",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# TORKEL FALKEMO\n**11-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 11 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n11-årig pojke från Vargnäset. Son till Gunnar Falkemo, bror till Sigrid. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Sigrid Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Sigrid Falkemo",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# SIGRID FALKEMO\n**6-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 6 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n6-årig flicka från Vargnäset. Dotter till Gunnar Falkemo, syster till Torkel. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Torkel Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Klas Hällström",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# KLAS HÄLLSTRÖM\n**7-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 7 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n7-årig pojke från Vargnäset. Son till Magnus Hällström. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Magnus Hällström\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Gustav Stenmark",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# GUSTAV STENMARK\n**4-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 4 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n4-årig pojke från Vargnäset. Son till Olof Stenmark. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Olof Stenmark\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+      "kapitel": null,
+      "beskrivning": "# ZARA AL-MIN\n**Ägare av Månskärets Gömställe**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Värdshusägare\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nZara al-Min är en klok och diskret kvinna som driver Månskärets Gömställe, ett värdshus känt för sin mystiska atmosfär och diskreta tjänster.\n\n## VERKSAMHET\nZara driver sitt värdshus med:\n- Fokus på diskretion och privatliv\n- Mystisk och hemlighetsfull stämning\n- Hemliga möten och affärer\n- Professionell och diskret service\n\n## PERSONAL\nZara arbetar med flera anställda:\n- Rashid ibn-Farouk (bartender)\n- Amina bint-Salim (serverare)\n- Hassan al-Rashid (kock)\n- Laila bint-Ali (städare)\n\n## KARAKTÄR\n- Klok och erfaren\n- Extremt diskret\n- Professionell\n- Skapar säker miljö för hemliga möten\n\n## KOPPLINGAR\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     }
   ],
   "platser": [
