@@ -1105,7 +1105,7 @@ var wikiData = {
     },
     {
       "namn": "Laila bint-Ali",
-      "bild": "Laila_al-Jen.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -1116,7 +1116,7 @@ var wikiData = {
     },
     {
       "namn": "Laila bint-Farid",
-      "bild": "Laila_al-Jen.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -1127,7 +1127,7 @@ var wikiData = {
     },
     {
       "namn": "Lars 'Silkeskägg' Nordahl",
-      "bild": null,
+      "bild": "kapten_silkeskegg.png",
       "ras": "Människa",
       "titel": "Kapten",
       "status": "död",
@@ -1138,7 +1138,7 @@ var wikiData = {
     },
     {
       "namn": "Layla bint-Hassan",
-      "bild": "layla.bint1.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -1160,7 +1160,7 @@ var wikiData = {
     },
     {
       "namn": "Layla bint-Karim",
-      "bild": "layla.bint2.png",
+      "bild": null,
       "ras": "Mûhadier",
       "titel": null,
       "status": "levande",
@@ -1168,17 +1168,6 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# LAYLA BINT-KARIM\n**Registrator på slavkontoret**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Registrator\n- **Arbetsplats:** Huvudkontoret för Slavregistrering och Transaktioner\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nLayla bint-Karim är en ung kvinna med ett vänligt leende och ett noggrant sinne för detaljer. Hon bär alltid prydliga kläder och är mycket organiserad.\n\n## BAKGRUND\nLayla har studerat administration och har arbetat på kontoret i fem år. Hon är känd för sitt effektiva och noggranna arbete.\n\n## ARBETSUPPGIFTER\nSom registrator:\n- Tar emot nya slavar\n- Registrerar slavars detaljer i det officiella registret\n- Dokumenterar ursprung, ålder, kön och färdigheter\n- Upprätthåller noggrant arkiv\n\n## KARAKTÄR\n- Ung och vänlig\n- Noggrant sinne för detaljer\n- Mycket organiserad\n- Effektiv i sitt arbete\n\n## KOPPLINGAR\n- **Arbetsplats:** Huvudkontoret för Slavregistrering\n- **Position:** Registrator\n- **Chef:** Amir ibn-Farouk\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
-    },
-    {
-      "namn": "Layla bint",
-      "bild": "layla.bint2.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Muhad",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# LAYLA BINT\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
     },
     {
       "namn": "Lera Skuggskeppare",
