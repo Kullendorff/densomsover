@@ -1489,6 +1489,17 @@ var wikiData = {
       "beskrivning": "# RAGNAR FISKARE\n**Fiskare i Lundnäs**\n\n## GRUNDINFO\n- **Yrke:** Fiskare i Lundnäs\n- **Bakgrund:** Fick upp de mystiska pärlorna i sin fångst en vecka före äventyret Regnsynd\n- **Status vid äventyret:** Bedrövad och lätt förvirrad, dränker sina sorger i billig öl på Lundnäs gästgiveri\n\n## I KAMPANJEN\nRegnsynd-äventyret: Nyckelperson som hittade pärlorna som orsakade problemen i Lundnäs.\n\n## SL-ANTECKNINGAR\nRagnar var fiskaren vars fångst av de förbann added pärlorna satte igång hela Regnsynd-äventyrtet. När pårlorna väl avlägsnades blev han så glad att han gav bort sin brännvin till hjältarna, \"för han behöver det inte längre\"."
     },
     {
+      "namn": "Ragnar",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Strömjungfrun (Evakueringen)",
+      "fraktion": "Oberoende",
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# RAGNAR\n**Ungdom från Vargnäset**\n\n## GRUNDINFO\n- **Ålder:** 16 år\n- **Ras:** Människa\n- **Status:** Levande\n\n## RELATION\n- **Astrid Björkgren:** Ragnars flickvän\n- **Motivation:** Vill hämnas Sankt Astrids död\n\n## POTENTIAL\nFramtida krigare som vågar ta risker.\n\n## I KAMPANJEN\n**Kapitel 8 - Evakueringen:** Var ombord på Strömjungfrun tillsammans med andra ungdomar under flykten genom Drunok.\n\n## SL-ANTECKNINGAR\nUng man med starka känslor kring Sankt Astrids död. Visar mod och beredd att ta risker för att hämnas."
+    },
+    {
       "namn": "Rashan al-Ghedi",
       "bild": "Rashan_al-Ghedi.png",
       "ras": "Människa",
@@ -1591,12 +1602,12 @@ var wikiData = {
       "namn": "Rorik",
       "bild": "rorik.png",
       "ras": "Människa",
-      "titel": null,
+      "titel": "Kock på Den Dolda Dolken",
       "status": "levande",
-      "plats": "Tuzan Rim",
+      "plats": "Den Dolda Dolken, Tuzan Rim",
       "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# RORIK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# RORIK\n**Kock på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Kock\n- **Plats:** Den Dolda Dolken, Tuzan Rim\n- **Anställningstid:** Har jobbat på värdshuset i många år\n\n## UTSEENDE & PERSONLIGHET\n- **Kroppsbyggnad:** Stor som ett hus\n- **Temperament:** Snäll och skygg\n- **Beskyddande:** Blir mycket arg om någon behandlar Lia eller Isla dåligt\n\n## RELATIONER\n- **Sylva:** Arbetsgivare (värdshusägare)\n- **Lia & Isla:** Beskyddar dem starkt\n\n## I KAMPANJEN\n**Kapitel 2 - Muhad:** Träffades på Den Dolda Dolken i Tuzan Rim. Trots sin imponerande storlek är han varsam och vänlig, men visar en annan sida om någon hotar de han bryr sig om.\n\n## SL-ANTECKNINGAR\nLojal anställd och pålitlig beskyddare av värdshuspersonalen. Hans fysiska närvaro och skyddande natur gör honom till en viktig tillgång för Sylva."
     },
     {
       "namn": "Salma bint-Hafiz",
@@ -1733,12 +1744,12 @@ var wikiData = {
       "namn": "Sylva",
       "bild": "sylva.png",
       "ras": "Människa",
-      "titel": null,
+      "titel": "Ägare och värdinna på Den Dolda Dolken",
       "status": "levande",
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# SYLVA\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# SYLVA\n**Ägare och värdinna på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Värdshusvä rdinna och ägare\n- **Värdshus:** \"Den Dolda Dolken\" (ljusskygg del av Tuzan Rim)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BAKGRUND\nSylva kommer från en familj av köpmän i en större handelsstad. Hon lärde sig tidigt konsten att förhandla och bedöma människor. Efter en katastrofal affärsuppgörelse som nästan kostade henne livet, flydde hon och använde sina besparingar för att starta nytt liv. Hon köpte \"Den Dolda Dolken\" där hon kunde tillämpa sina färdigheter i en mindre officiell miljö.\n\n## KARAKTÄR\n- **Beräknande och listig:** Utmärkt på att hålla koll på detaljer och förutse problem\n- **Skyddande:** Ser till sina gästers och anställdas väl, vårdar stark lojalitet\n- **Reserverad:** Privat till sin natur, delar sällan personlig historia\n- **Flerspråkig:** Talar flera språk flytande\n\n## INTRESSANTA DRAG\n- Förkärlek för antikviteter (samlar och visar upp i privata rum)\n- Etablerat förståelse med lokala lagvaktare\n- Underhåller informationsnätverk om potentiella hot\n\n## DEN DOLDA DOLKEN\nVärdshuset ligger gömt i mörk gränd med diskret dolk som markering:\n- Halvmörkt, rökfyllt, tunga draperier\n- Privata bås för diskreta möten\n- Strikt regler (förbud mot öppna strider)\n- Hemligt rum under baren (flyktväg)\n\n## PERSONAL\n- Merek (bartender, före detta sjöman)\n- Lia (serveringspersonal, från skådespelarfamilj)\n- Diskret bevakning och övervakning\n\n## I KAMPANJEN\nFas 2-5 (Kapitel 2): Möttes på Den Dolda Dolken under karavanresan. Perfekt plats för hemliga möten och diskreta affärer."
     },
     {
       "namn": "Syster Moira",
