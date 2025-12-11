@@ -1413,7 +1413,7 @@ var wikiData = {
     },
     {
       "namn": "Nils 'Järnhand' Gromsson",
-      "bild": null,
+      "bild": "ironhand.png",
       "ras": "Människa",
       "titel": "Kapten",
       "status": "levande",
