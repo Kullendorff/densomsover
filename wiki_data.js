@@ -448,7 +448,7 @@ const wikiData = {
       "status": "levande",
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
-      "kapitel": null,
+      "kapitel": "Kapitel 2",
       "beskrivning": "# ELOISE\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
     },
     {

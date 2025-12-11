@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravens Arv - Kampanjdashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Färger från hero-bilden */
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(10,10,10,0.9)), url('hero-bg.png') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 3px solid var(--flame-orange);
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 2px 2px 10px rgba(255, 107, 74, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+        }
+
+        /* Stats Cards */
+        .stats-container {
+            max-width: 1400px;
+            margin: -60px auto 2rem;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--bg-card), var(--bg-darker));
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--flame-orange);
+        }
+
+        .stat-card.purple { border-left-color: var(--mystic-purple); }
+        .stat-card.gold { border-left-color: var(--gold); }
+        .stat-card.red { border-left-color: var(--deep-red); }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-card.purple .stat-value {
+            background: linear-gradient(135deg, var(--mystic-purple), var(--shadow-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-card.gold .stat-value {
+            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-card.red .stat-value {
+            background: linear-gradient(135deg, var(--deep-red), var(--flame-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Navigation */
+        .nav {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            gap: 1rem;
+            border-bottom: 2px solid var(--border);
+            overflow-x: auto;
+        }
+
+        .nav-btn {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+        }
+
+        .nav-btn:hover {
+            color: var(--text-primary);
+            background: var(--bg-hover);
+        }
+
+        .nav-btn.active {
+            color: var(--flame-orange);
+            border-bottom-color: var(--flame-orange);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* Status Box */
+        .status-box {
+            background: linear-gradient(135deg, rgba(212, 83, 77, 0.1), rgba(139, 71, 137, 0.1));
+            border: 1px solid var(--deep-red);
+            border-left: 4px solid var(--deep-red);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .status-box h2 {
+            color: var(--flame-orange);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, var(--flame-orange), var(--mystic-purple));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--bg-card);
+            border: 3px solid var(--gold);
+            border-radius: 50%;
+        }
+
+        .timeline-item.current::before {
+            background: var(--flame-orange);
+            box-shadow: 0 0 20px var(--flame-orange);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .timeline-item h3 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-item .meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            background: var(--bg-hover);
+            border-color: var(--flame-orange);
+            transform: translateY(-2px);
+        }
+
+        .card h3 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(255, 107, 74, 0.2);
+            color: var(--flame-orange);
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255, 107, 74, 0.3);
+        }
+
+        .tag.purple {
+            background: rgba(168, 85, 168, 0.2);
+            color: var(--mystic-purple);
+            border-color: rgba(168, 85, 168, 0.3);
+        }
+
+        .tag.gold {
+            background: rgba(255, 165, 0, 0.2);
+            color: var(--gold);
+            border-color: rgba(255, 165, 0, 0.3);
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            color: var(--text-secondary);
+        }
+
+        .info-value {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+                margin-top: 2rem;
+            }
+
+            .nav {
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Gravens Arv</h1>
+        <p>EON-kampanj · Gordon, Thrakka, Umnatak, Kazrik, Corvus</p>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="stats-container">
+        <div class="stat-card">
+            <div class="stat-label">Kapitel</div>
+            <div class="stat-value">11</div>
+            <div class="stat-label">Totalt</div>
+        </div>
+
+        <div class="stat-card purple">
+            <div class="stat-label">Nuvarande Fas</div>
+            <div class="stat-value">Skugglandet</div>
+            <div class="stat-label">Rädda Zentri</div>
+        </div>
+
+        <div class="stat-card gold">
+            <div class="stat-label">Spelarkaraktärer</div>
+            <div class="stat-value">5</div>
+            <div class="stat-label">Aktiva</div>
+        </div>
+
+        <div class="stat-card red">
+            <div class="stat-label">NPCs</div>
+            <div class="stat-value">60+</div>
+            <div class="stat-label">Katalogiserade</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <button class="nav-btn active" onclick="showSection('timeline')">📜 Tidslinje</button>
+        <button class="nav-btn" onclick="showSection('players')">⚔️ Spelarkaraktärer</button>
+        <button class="nav-btn" onclick="showSection('npcs')">👥 NPCs</button>
+        <button class="nav-btn" onclick="showSection('places')">🏰 Platser</button>
+        <button class="nav-btn" onclick="showSection('factions')">⚜️ Fraktioner</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Timeline Section -->
+        <div id="timeline" class="section active">
+            <div class="status-box">
+                <h2>🔥 Nuvarande Status</h2>
+                <p><strong>Kapitel 11: Skugglandet</strong></p>
+                <p>Gruppen befinner sig i Skugglandet för att rädda Zentri Bredarsson. De har nått Daemorigems torn och står inför avgörande prövningar.</p>
+            </div>
+
+            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Kampanjhistorik</h2>
+
+            <div class="timeline">
+                <div class="timeline-item current">
+                    <h3>Kapitel 11: Skugglandet</h3>
+                    <div class="meta">Status: Pågående | Plats: Daemorigems torn</div>
+                    <p>Gruppen reser till Skugglandet för att rädda Zentri. De möter Daemorigem och ställs inför moraliska prövningar.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Kapitel 10: Mithera</h3>
+                    <div class="meta">Status: Avslutad | Plats: Mithera</div>
+                    <p>Gruppen möter Systrarna av Ashar i Mithera och lär sig sanningen om Zentris försvinnande.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Kapitel 9: Evakueringen av Vargnäset</h3>
+                    <div class="meta">Status: Avslutad | Plats: Vargnäset</div>
+                    <p>Massevakuering från Vargnäset när ondskefulla krafter hotar staden.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Kapitel 8: Vargnäset</h3>
+                    <div class="meta">Status: Avslutad | Plats: Vargnäset</div>
+                    <p>Gruppen anländer till Vargnäset och upptäcker hotfulla krafter som lurar i skuggorna.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Kapitel 7: Återresa genom Tarkas</h3>
+                    <div class="meta">Status: Avslutad | Plats: Tarkas</div>
+                    <p>Gruppen återvänder genom Tarkas på väg mot Vargnäset.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Kapitel 6: Tarkas</h3>
+                    <div class="meta">Status: Avslutad | Plats: Tarkas</div>
+                    <p>Ankomst till Tarkas där gruppen möter nya utmaningar och allierade.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Kapitel 5: Muhad</h3>
+                    <div class="meta">Status: Avslutad | Plats: Muhad</div>
+                    <p>Gruppen utforskar Muhad och dess mysterier.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Kapitel 4: På väg till Muhad</h3>
+                    <div class="meta">Status: Avslutad | Plats: Resan</div>
+                    <p>Resan mot Muhad genom farliga landskap.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Kapitel 3: Återresan från Jarla</h3>
+                    <div class="meta">Status: Avslutad | Plats: Jarla → Rök</div>
+                    <p>Gruppen lämnar Jarla med ny kunskap och nya frågor.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Kapitel 2: Jarla</h3>
+                    <div class="meta">Status: Avslutad | Plats: Jarla</div>
+                    <p>Utforskning av Jarla där första ledtrådarna om större hot börjar framträda.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Prolog: Tirakgraven</h3>
+                    <div class="meta">Status: Avslutad | Plats: Tirakgraven</div>
+                    <p>Allt började i den förbannede demonfursten Tiraks grav. Gruppen vaknade i mörkret, fängslade och utan minnen.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Players Section -->
+        <div id="players" class="section">
+            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Spelarkaraktärer</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Gordon</h3>
+                    <div class="card-meta">
+                        <span class="tag">Calle</span>
+                        <span class="tag purple">Människoriddare</span>
+                        <span class="tag gold">Aktiv</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Ras:</span>
+                        <span class="info-value">Människa</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Klass:</span>
+                        <span class="info-value">Riddare</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value">I Skugglandet</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Thrakka</h3>
+                    <div class="card-meta">
+                        <span class="tag">Andreas</span>
+                        <span class="tag purple">Orch-krigare</span>
+                        <span class="tag gold">Aktiv</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Ras:</span>
+                        <span class="info-value">Orch</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Klass:</span>
+                        <span class="info-value">Krigare</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value">I Skugglandet</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Umnatak</h3>
+                    <div class="card-meta">
+                        <span class="tag">Christofer</span>
+                        <span class="tag purple">Troll-shaman</span>
+                        <span class="tag gold">Aktiv</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Ras:</span>
+                        <span class="info-value">Troll</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Klass:</span>
+                        <span class="info-value">Shaman</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value">I Skugglandet</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Kazrik Stormhammer</h3>
+                    <div class="card-meta">
+                        <span class="tag">Jonas</span>
+                        <span class="tag purple">Dvärg-präst</span>
+                        <span class="tag gold">Aktiv</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Ras:</span>
+                        <span class="info-value">Dvärg</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Klass:</span>
+                        <span class="info-value">Daak-präst</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value">I Skugglandet</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Corvus Askhar</h3>
+                    <div class="card-meta">
+                        <span class="tag">Daniel</span>
+                        <span class="tag purple">Asharier-magiker</span>
+                        <span class="tag gold">Aktiv</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Ras:</span>
+                        <span class="info-value">Asharier</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Ålder:</span>
+                        <span class="info-value">28 år</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value">I Skugglandet</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NPCs Section -->
+        <div id="npcs" class="section">
+            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Viktiga NPCs</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Zentri Bredarsson</h3>
+                    <div class="card-meta">
+                        <span class="tag">Asharier</span>
+                        <span class="tag purple">Försvunnen</span>
+                    </div>
+                    <p>Corvus kamrat som försvann till Skugglandet. Gruppen är nu på uppdrag att rädda honom.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Daemorigem</h3>
+                    <div class="card-meta">
+                        <span class="tag">Demon</span>
+                        <span class="tag purple">Antagonist</span>
+                    </div>
+                    <p>Mäktig demon som håller Zentri fången i Skugglandet.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Systrarna av Ashar</h3>
+                    <div class="card-meta">
+                        <span class="tag">Fraktion</span>
+                        <span class="tag gold">Allierade</span>
+                    </div>
+                    <p>Mystisk orden som hjälpte gruppen att förstå vad som hänt med Zentri.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Places Section -->
+        <div id="places" class="section">
+            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Platser</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Skugglandet</h3>
+                    <div class="card-meta">
+                        <span class="tag">Dimension</span>
+                        <span class="tag purple">Nuvarande</span>
+                    </div>
+                    <p>En mörk dimension där skuld manifesteras som skuggor. Här regerar Daemorigem.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Tirakgraven</h3>
+                    <div class="card-meta">
+                        <span class="tag">Dungeon</span>
+                        <span class="tag gold">Startpunkt</span>
+                    </div>
+                    <p>Den förbannede demonfursten Tiraks grav där allt började.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Mithera</h3>
+                    <div class="card-meta">
+                        <span class="tag">Stad</span>
+                    </div>
+                    <p>Stad där Systrarna av Ashar har sitt högkvarter.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Vargnäset</h3>
+                    <div class="card-meta">
+                        <span class="tag">Stad</span>
+                    </div>
+                    <p>Stad som gruppen evakuerade från när ondskefulla krafter hotade.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Tarkas</h3>
+                    <div class="card-meta">
+                        <span class="tag">Stad</span>
+                    </div>
+                    <p>Handelsnod som gruppen passerat flera gånger på sin resa.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Muhad</h3>
+                    <div class="card-meta">
+                        <span class="tag">Stad</span>
+                    </div>
+                    <p>Mystisk stad med gamla hemligheter.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Jarla</h3>
+                    <div class="card-meta">
+                        <span class="tag">By</span>
+                    </div>
+                    <p>Liten by där gruppen gjorde tidiga upptäckter om det större hotet.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Factions Section -->
+        <div id="factions" class="section">
+            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Fraktioner</h2>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Systrarna av Ashar</h3>
+                    <div class="card-meta">
+                        <span class="tag gold">Allierade</span>
+                        <span class="tag">Religiös Orden</span>
+                    </div>
+                    <p>Mystisk kvinnlig orden som dyrkar Ashar. Hjälpte gruppen att förstå Zentris försvinnande.</p>
+                    <div class="info-row">
+                        <span class="info-label">Bas:</span>
+                        <span class="info-value">Mithera</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Daak-kyrkan</h3>
+                    <div class="card-meta">
+                        <span class="tag">Religiös Orden</span>
+                    </div>
+                    <p>Dvärgarnas kyrka. Kazrik är präst i denna orden.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Handelshus</h3>
+                    <div class="card-meta">
+                        <span class="tag">Ekonomisk Makt</span>
+                    </div>
+                    <p>Olika handelshus som gruppen interagerat med under sin resa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active from all nav buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Set active nav button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -182,7 +182,7 @@ def generate_javascript(data):
     json_str = json.dumps(data, ensure_ascii=False, indent=2)
 
     # Ersätt null med null (redan OK i JSON)
-    js_output = f"const wikiData = {json_str};\n"
+    js_output = f"const wikiData = {json_str};"
 
     return js_output
 
