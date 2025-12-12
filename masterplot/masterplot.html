@@ -508,9 +508,39 @@
             background: var(--flame-orange);
             color: var(--bg-dark);
         }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            z-index: 200;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 12px rgba(255, 107, 74, 0.3);
+        }
+
+        .back-button:hover {
+            background: var(--deep-red);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 107, 74, 0.4);
+        }
     </style>
 </head>
 <body>
+    <a href="../index.html" class="back-button">← Tillbaka till Dashboard</a>
+
     <header class="header">
         <h1>⚔ Gravens Arv ⚔</h1>
         <p class="subtitle">Komplett Masterplot - Demonfurstens Uppvaknande</p>
@@ -554,7 +584,7 @@
         <main class="main-content">
             <!-- Hero Image -->
             <div class="hero-image">
-                <img src="kampanjwiki/assets/images/masterplot/hero_skugglandet_urkhath.png" alt="Skugglandet & Demonfurstens Makt" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="../kampanjwiki/assets/images/masterplot/hero_skugglandet_urkhath.png" alt="Skugglandet & Demonfurstens Makt" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
 
             <!-- Kosmologi Section -->
@@ -590,7 +620,7 @@ AEON (Tidens Väsen - drömmer hela skapelsen)
                 </div>
 
                 <div class="section-image">
-                    <img src="kampanjwiki/assets/images/masterplot/aeon_skapelsen.png" alt="Aeon drömmer skapelsen" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="../kampanjwiki/assets/images/masterplot/aeon_skapelsen.png" alt="Aeon drömmer skapelsen" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
 
                 <h3>Eonerna & Mörkret</h3>
@@ -630,7 +660,7 @@ AEON (Tidens Väsen - drömmer hela skapelsen)
                 <h2>📜 Historisk Tidslinje</h2>
 
                 <div class="section-image">
-                    <img src="kampanjwiki/assets/images/masterplot/tirakernas_krig.png" alt="Tirakernas Krig" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="../kampanjwiki/assets/images/masterplot/tirakernas_krig.png" alt="Tirakernas Krig" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
 
                 <div class="timeline">
@@ -726,7 +756,7 @@ AEON (Tidens Väsen - drömmer hela skapelsen)
                 <h2>💀 Urkhath - Huvudantagonisten</h2>
 
                 <div class="section-image">
-                    <img src="kampanjwiki/assets/images/masterplot/urkhath_demon.png" alt="Urkhath Demonfurste" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="../kampanjwiki/assets/images/masterplot/urkhath_demon.png" alt="Urkhath Demonfurste" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
 
                 <h3>Ursprung och Natur</h3>
@@ -840,7 +870,7 @@ Båda bindningarna bryts → Urkhath fri i båda världarna
                 </div>
 
                 <div class="section-image">
-                    <img src="kampanjwiki/assets/images/masterplot/vinterglod_anger.png" alt="Vinterglöd i ånger" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="../kampanjwiki/assets/images/masterplot/vinterglod_anger.png" alt="Vinterglöd i ånger" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
             </section>
 
@@ -922,7 +952,7 @@ Båda bindningarna bryts → Urkhath fri i båda världarna
                 <h2>🔥 Thrakka & Mahktahkulten</h2>
 
                 <div class="section-image">
-                    <img src="kampanjwiki/assets/images/masterplot/thrakka_bon.png" alt="Thrakka ber till Mahktah" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="../kampanjwiki/assets/images/masterplot/thrakka_bon.png" alt="Thrakka ber till Mahktah" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
 
                 <h3>Mahktahkultens Grundprinciper</h3>
@@ -1126,7 +1156,7 @@ Båda bindningarna bryts → Urkhath fri i båda världarna
                 <h2>🎲 Nästa Session - Mötet med Vinterglöd</h2>
 
                 <div class="section-image">
-                    <img src="kampanjwiki/assets/images/masterplot/spegelv_fort.png" alt="Spegelvända Fortet" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                    <img src="../kampanjwiki/assets/images/masterplot/spegelv_fort.png" alt="Spegelvända Fortet" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
                 </div>
 
                 <h3>Plats: Spegelvända Fortet (Skugglandet)</h3>
