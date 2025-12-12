@@ -1,14 +1,165 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2025-12-12 (KVÄLL)
+## Datum: 2025-12-12 (SENT KVÄLL)
 
-## Status: ✅ EON-STORYTELLER AGENT SKAPAD OCH SAMMANLAGD!
+## Status: ✅ MASTERPLOT SYSTEM KOMPLETT MED MINI-SITE!
 
-**Senaste uppdatering (2025-12-12 kväll):**
-- ✅ Ny subagent: **eon-storyteller** - Skriver narrativa HTML-sidor för kampanjkapitel
-- ✅ Sammanlagt eon-storyteller + eon-kapitel-writer (duplicering eliminerad)
-- ✅ CLAUDE.md uppdaterad med arkitektur-sektion för EON/kapitel/
-- ✅ Klar för att skriva saknade kapitel (4, 5, 6, 7, 8, 10)
+**Senaste uppdatering (2025-12-12 sent kväll):**
+- ✅ **MASTERPLOT SYSTEM KOMPLETT** - Komplett kosmologi, timeline och masterplot mini-site
+- ✅ Integrerat EON-kosmologi från 5024_legenderhemligheter.txt (Aeon, eonerna, Mörkret)
+- ✅ Mahktahkulten-integration (Thrakkas religion, demon-prohibition)
+- ✅ Masterplot mini-site med navigation, timeline, character cards, 7 stämningsbilder
+- ✅ NPC-länkar till masterplot: Yelgotha, Urkhath, Vinterglöd (alla med detaljsida-knappar)
+- ✅ Navigation: Fluff + Masterplot länkar i index.html
+- ✅ Alla ändringar committade och pushade
+
+---
+
+## NYTT: MASTERPLOT SYSTEM (2025-12-12 SENT KVÄLL)
+
+### ✅ Komplett kosmologi integrerad
+
+**Källfiler lästa:**
+- `kampanj_masterplot.md` - Ursprunglig masterplot-skiss
+- `5024_legenderhemligheter.txt` (2228 rader, delad i 3 delar) - EON-kosmologi, Aeon, eonerna
+- `skugglandet_kosmologi_alternativ.md` - Skugglandets natur
+- `070 Mahktahkulten.md` - Thrakkas religion och demon-prohibition
+- `kampanjkrönika.md` (grep för Yelgotha) - Verifiering av händelser
+
+**Upptäckter:**
+- **Aeon** - Bunden, drömmer verkligheten (Mundana, Skugglandet, Akervidderna)
+- **Eonerna** - 10,000-årscykler, nuvarande är 2967 e.D.
+- **Mörkret** - Demon-invasioner vid eonslut (nästa 2999 e.D. = 32 år kvar!)
+- **Tirakernas Krig** - 9000 år sedan, första bindningen av Urkhath
+- **Dual Binding** - Urkhath bunden i både Mundana (stenstoder) och Skugglandet (Intigheten)
+- **Yelgotha** - Prins från Tirakernas Krig-tid, frusen i 700 år, Vinterglöds f.d. herre
+
+### ✅ KOMPLETT_MASTERPLOT.md skapad
+
+**Storlek:** 1717 rader
+**Innehåll:**
+1. **Kosmologisk grund** - Aeon, eonerna, världslagren, Mörkret
+2. **Tirakernas Krig** (~9000 år sedan) - Urkhaths första bindning
+3. **Kampanjens 5 akter:**
+   - Akt 1: Tirakgraven (Kapitel Prolog-1)
+   - Akt 2: Jakten (Kapitel 2-5)
+   - Akt 3: Ockupationen (Kapitel 6-8)
+   - Akt 4: Skugglandet (Kapitel 9-10)
+   - Akt 5: Slutuppgörelsen (Kapitel 11+)
+4. **Huvudkaraktärer:**
+   - Urkhath (primär antagonist, demon)
+   - Kuberon (balansen, uppdelad i Skymning/Vinterglöd/Yelgotha?)
+   - Vinterglöd (tragisk figur, Yelgothas f.d. page)
+   - Yelgotha (portalväktare, frusen prins)
+   - Skymning (Urkhath-korruption)
+5. **Thrakka & Mahktahkulten** - 300+ rader om religionskonflikten:
+   - Fas 1: Rigid troende (total demon-prohibition)
+   - Fas 2: Testad tro (Zentris ring skapar konflikt)
+   - Fas 3: Mogen tro (insikt om att rädda Zentri = bekämpa Urkhath)
+   - Fas 4: Final syn (trohet mot både Mahktah och vänner)
+
+### ✅ Masterplot mini-site skapad
+
+**Fil:** `masterplot/masterplot.html` (flyttad från rot till underkatelog)
+**Storlek:** ~1200 rader HTML med embedded CSS
+**Design:** Samma färgschema som dashboard (flame-orange, mystic-purple, deep-red, gold)
+
+**Features:**
+- ✅ Sticky navigation sidebar (Kosmologi, Historia, NPCs, Fraktioner, Nästa Session)
+- ✅ Smooth scroll till sektioner
+- ✅ Hero banner med Skugglandet/Urkhath-bild
+- ✅ Timeline-visualisering (Tirakernas Krig → Nu → Mörker)
+- ✅ Character cards för Urkhath, Kuberon, Yelgotha, Vinterglöd, Skymning, Thrakka
+- ✅ 7 stämningsbilder placerade strategiskt
+- ✅ Tillbaka-knapp till dashboard (sticky top-right)
+- ✅ Responsive design
+
+**Bilder (7 st i masterplot/):**
+1. `hero_skugglandet_urkhath.png` (8.4 MB) - Hero banner
+2. `aeon_skapelsen.png` (1.6 MB) - Kosmologi
+3. `tirakernas_krig.png` (1.7 MB) - Historia
+4. `urkhath_demon.png` (6.8 MB) - Urkhath card
+5. `vinterglod_anger.png` (1.9 MB) - Vinterglöd card
+6. `thrakka_bon.png` (7.7 MB) - Thrakka card
+7. `spegelv_fort.png` (1.8 MB) - Nästa Session
+
+### ✅ Midjourney prompts genererade
+
+**Fil:** `masterplot_midjourney_prompts.md`
+**Innehåll:** 7 kompletta prompts med alternativ-versioner
+
+**Prompt-detaljer:**
+- Aspect ratios: 16:9 (hero/scenes), 2:3 (porträtt)
+- Stilisering: 180-280 (beroende på typ)
+- Konstnärsstil: Gerald Brom, Frank Frazetta, Jakub Rozalski, Aleksi Briclot
+- Färgpalett: Flame orange, deep red, mystic purple, sickly green, frozen blue
+- Version: Midjourney 6.1
+
+**Prompt-typer:**
+1. Hero Image (epic split-world landscape)
+2. Kosmologi (Aeon dreaming creation)
+3. Historia (Tirakernas Krig battle scene)
+4. Urkhath (demon portrait)
+5. Vinterglöd (tragic fae lord)
+6. Thrakka (shamanistic prayer)
+7. Spegelvända Fortet (twisted architecture)
+
+### ✅ NPC-länkar till masterplot
+
+**wiki_data.js uppdaterad:**
+- ✅ **Prins Yelgotha av det Första Hovet** - Renad beskrivning (borttagen hovfolks-lista), detaljsida + bild
+- ✅ **Demonen Urkhath** - Detaljsida tillagd
+- ✅ **Lord Vinterglöd** - Detaljsida + ny bild (vinterglod.png)
+
+**Alla tre NPCs visar nu:**
+- "Utforska i Masterplot" knapp på modal-kort (samma stil som Jens kort)
+- Länkar direkt till `masterplot/masterplot.html`
+
+**Nya bilder i npcs/:**
+- `yelgotha.png` (1.8 MB) - Ethereal frozen prince
+- `vinterglod.png` (1.9 MB) - Elegant shadow-fae lord
+
+### ✅ Navigation uppdaterad
+
+**index.html nav-bar:**
+```html
+<a href="fluff/fluff.html" class="nav-btn">📖 Fluff</a>
+<a href="masterplot/masterplot.html" class="nav-btn">🎯 Masterplot</a>
+```
+
+**masterplot.html:**
+- Tillbaka-knapp (sticky top-right) → `../index.html`
+- Fixade image paths efter flytt till underkatelog (`src="../kampanjwiki/...`)
+
+### ✅ Bugfix: Jen-sidan centrering
+
+**platser/jen.html:**
+- Subtitle "Ösenstadens Handelsmetropol" centrerad med `text-align: center`
+
+---
+
+## Git Status (2025-12-12 sent kväll)
+
+**Branch:** main
+**Status:** ✅ Clean - alla ändringar committade och pushade!
+
+**Senaste commits (dagens masterplot-arbete):**
+1. `f6222a3` - "Uppdatera Yelgotha, Urkhath och Vinterglöd med masterplot-länkar"
+   - wiki_data.js: Yelgotha renad beskrivning, alla tre NPCs med detaljsida
+   - kampanjwiki/assets/images/npcs/vinterglod.png tillagd
+2. `825fb84` - "Lägg till navigation till Fluff och Masterplot, flytta masterplot.html"
+   - index.html: Navigation länkar
+   - masterplot/masterplot.html: Flyttad + tillbaka-knapp + fixade image paths
+3. `8c2ea63` - "Fixa Jen-sidans subtitle-centrering"
+4. `(flera tidigare)` - Masterplot-bilder, HTML, prompts
+
+**Totala ändringar denna dag:**
+- 10+ filer ändrade
+- ~2500 rader nya dokument (KOMPLETT_MASTERPLOT.md + masterplot.html)
+- 9 nya bilder (7 masterplot + 2 NPCs)
+- 3 NPCs uppdaterade med detaljsida-länkar
+
+---
 
 **Tidigare uppdateringar:**
 - Dashboard (index.html) integrerat med fraktioner_data.js
