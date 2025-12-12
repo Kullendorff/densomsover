@@ -5,6 +5,12 @@
 *.pdf
 **/*.pdf
 
+# Undantag: Eget kampanjmaterial (OK att ladda upp)
+!kampanjmaterial-mitheraskogen.pdf
+!kampanjmaterial-skugglandet.pdf
+!kampanjmaterial-tarkas.pdf
+!landsmodul-cermira.pdf
+
 # ============================================
 # Google Drive filer
 # ============================================
