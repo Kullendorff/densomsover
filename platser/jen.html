@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jen - Ökenstadens Handelsmetropol</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --gold: #ffa500;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a0a0a 100%);
+            color: var(--text-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--flame-orange);
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--bg-card);
+            color: var(--flame-orange);
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid var(--flame-orange);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .back-button:hover {
+            background: var(--flame-orange);
+            color: var(--bg-dark);
+            transform: translateX(-5px);
+        }
+
+        /* Header */
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--bg-card) 0%, rgba(255, 107, 74, 0.1) 100%);
+            border-radius: 12px;
+            border: 2px solid var(--flame-orange);
+        }
+
+        .chapter-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--flame-orange);
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 20px rgba(255, 107, 74, 0.5);
+        }
+
+        .chapter-subtitle {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .chapter-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-label {
+            font-weight: 600;
+            color: var(--mystic-purple);
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--flame-orange);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--flame-orange);
+        }
+
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin: 2rem 0 1rem 0;
+        }
+
+        .subsection-title {
+            font-size: 1.2rem;
+            color: var(--mystic-purple);
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: rgba(168, 85, 168, 0.1);
+            border-left: 4px solid var(--mystic-purple);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            color: var(--mystic-purple);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .info-box ul {
+            list-style-position: inside;
+            color: var(--text-secondary);
+        }
+
+        .info-box li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Quote Boxes */
+        .quote-box {
+            background: rgba(255, 107, 74, 0.1);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            font-style: italic;
+        }
+
+        /* Location Cards */
+        .location-card {
+            background: var(--bg-card);
+            border: 2px solid var(--gold);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .location-card-title {
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .location-detail {
+            margin-bottom: 0.8rem;
+        }
+
+        .location-detail-label {
+            color: var(--mystic-purple);
+            font-weight: 600;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        /* Entity Links (will be auto-linked by JS) */
+        .npc-link {
+            color: var(--flame-orange);
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px dotted var(--flame-orange);
+        }
+
+        .npc-link:hover {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+        }
+
+        .place-link {
+            color: var(--mystic-purple);
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px dotted var(--mystic-purple);
+        }
+
+        .place-link:hover {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+        }
+
+        .faction-link {
+            color: var(--gold);
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px dotted var(--gold);
+        }
+
+        .faction-link:hover {
+            color: var(--flame-orange);
+            border-bottom-color: var(--flame-orange);
+        }
+
+        /* Emphasis */
+        strong {
+            color: var(--flame-orange);
+        }
+
+        em {
+            color: var(--gold);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .chapter-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .chapter-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav-bar">
+            <a href="../index.html" class="back-button">
+                ← Tillbaka till Dashboard
+            </a>
+        </nav>
+
+        <!-- Header -->
+        <header class="chapter-header">
+            <h1 class="chapter-title">JEN</h1>
+            <p class="chapter-subtitle">Ökenstadens Handelsmetropol</p>
+            <div class="chapter-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Typ:</span>
+                    <span>Hamnstad</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Region:</span>
+                    <span>Muhad</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Status:</span>
+                    <span>Besökt (Kapitel 2-4)</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Overview -->
+        <section class="content-section">
+            <h2 class="section-title">Översikt</h2>
+            <p>Jen är en storslagen handelsstad belägen i ökenriket Muhad, känd för sin strategiska hamn som är den enda i området som är öppen för utlänningar. Staden är en livlig metropol där kulturer möts och affärer blomstrar, men den är också en plats fylld av intriger, fara och osäkerhet.</p>
+
+            <p>När ni närmar er Jen från havet möts ni först av den mäktiga stadsmuren som reser sig högt över horisonten. Denna imponerande mur, byggd av ljus sten och förstärkt med magiska runor, omger hela staden och skyddar den från yttre hot. Solens strålar reflekteras på murens yta, vilket får den att glänsa gyllene i morgonljuset.</p>
+
+            <p>Bakom stadsmuren sträcker sig de ändlösa sanddynerna mot horizonten, påminnande om att ni nu befinner er i ett ökenrike. Vinden för med sig små virvlar av sand som ibland gnistrar som guld i solljuset. Den heta luften bär med sig en doft av torr jord och kryddor, en unik blandning som bara finns här i öknens kant.</p>
+
+            <div class="info-box">
+                <div class="info-box-title">Viktiga Händelser i Kampanjen</div>
+                <ul>
+                    <li><strong>Kapitel 2-5:</strong> Rollpersonerna hittade Hagge av Vitterdal här</li>
+                    <li>Mötte Laila al-Jen (slavhandlare och Hagges före detta älskarinna)</li>
+                    <li>Upptäckte att Hagge har en son med Laila</li>
+                    <li>Omfattande interaktion med Muhads handelshus och lokala maktstrukturer</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Stadsstruktur -->
+        <section class="content-section">
+            <h2 class="section-title">Stadsstrukturen</h2>
+
+            <h3 class="section-subtitle">Hamnområdet</h3>
+            <p>Hamnen i Jen är stadens pulsåder, där skepp från alla världens hörn anländer och avgår. Stora skepp från alla världens hörn ligger ankrade vid kajerna, deras master sticker upp som en skog av trä och segel. Sjömän springer fram och tillbaka, lossar varor och ropar instruktioner till varandra. Ni hör ljudet av kranar som lyfter tunga laster och vattnet som kluckar mot skeppsskroven.</p>
+
+            <p>Luften är fylld med en blandning av dofter - sältan från havet blandas med aromerna från kryddor och exotiska varor som lossas från skeppen. Ni kan känna doften av kanel, saffran och kardemumma som kommer från de många stånden längs kajen.</p>
+
+            <h3 class="section-subtitle">Marknadsplatsen</h3>
+            <p>Den centrala marknadsplatsen är hjärtat av stadens kommersiella liv. Här finns stånd som säljer allt från kryddor och tyger till juveler och magiska artefakter. Atmosfären är fylld med dofter, ljud och färger. Marknadsplatsen är packad med folk, och försäljarna försöker överrösta varandra för att locka till sig kunder.</p>
+
+            <h3 class="section-subtitle">Slavmarknaden</h3>
+            <p>En av de mest kontroversiella delarna av Jen är slavmarknaden. Här köps och säljs slavar öppet, vilket skapar en mörk underström i stadens annars livliga atmosfär. Slavmarknaden är strikt reglerad och bevakad av Maliks män.</p>
+
+            <div class="quote-box">
+                När ni närmar er slavmarknaden i Jen, känns det som om ni lämnar en värld och kliver in i en annan. Atmosfären förändras dramatiskt. Den livliga sorlen från stadens gator dämpas, och en tyngd av oro och desperation hänger i luften. Den heta solen står högt på himlen och kastar långa skuggor över marknadsplatsen, där luften är tjock av dofter – en blandning av kryddor, svett och den svaga, söta lukten av rökelse som försöker maskera de obehagliga lukterna.
+            </div>
+
+            <h3 class="section-subtitle">Handelsdistriktet</h3>
+            <p>Handelsdistriktet är där rika köpmän och affärsmän har sina kontor och bostäder. De pråliga byggnaderna och den lyxiga livsstilen här står i skarp kontrast till stadens fattigare delar. Handelsdistriktet är fyllt med eleganta byggnader och välklädda människor som diskuterar affärer.</p>
+
+            <h3 class="section-subtitle">Bostadsområden</h3>
+            <p>Staden är uppdelad i olika bostadsområden som varierar från lyxiga villor till tätt packade slumområden. I de fattigare delarna är livet hårt och brottsligheten hög. Bostadsområdena visar en tydlig skillnad mellan rikedom och fattigdom.</p>
+
+            <h3 class="section-subtitle">Tempel och Helgedomar</h3>
+            <p>Runtom i Jen finns flera tempel och helgedomar dedikerade till olika gudar. Dessa platser är viktiga för stadens andliga liv och fungerar också som platser för samhället att samlas och fira. Tempel och helgedomar är fridfulla platser av dyrkan och andakt.</p>
+
+            <h3 class="section-subtitle">Fängelset</h3>
+            <p>Jens fängelse är känt för sina hårda förhållanden. Här hålls brottslingar och upproriska slavar, och säkerheten är mycket sträng. Fängelset är en mörk och dyster plats, välbevakad och svår att undkomma.</p>
+        </section>
+
+        <!-- Kryddhandeln -->
+        <section class="content-section">
+            <h2 class="section-title">Kryddhandeln</h2>
+
+            <p>Jen är ett centrum för handel i ökenriket, och dess strategiska läge vid havet gör staden till en viktig knutpunkt för internationell handel. Kryddhandeln är en av de mest framstående och lukrativa verksamheterna i staden, vilket bidrar till dess välstånd och betydelse.</p>
+
+            <div class="quote-box">
+                När ni närmar er kryddmarknaden, möts ni av en kaskad av dofter som genast sveper över er – kanel, saffran, kardemumma och många andra exotiska kryddor fyller luften. Doften är så stark att ni nästan kan smaka den. Marknadsplatsen är en explosion av färger. Stånden är fyllda med säckar och korgar av röda chilifrukter, gyllene gurkmeja, gröna kardemummafrön och mörka vaniljstänger.
+            </div>
+
+            <h3 class="section-subtitle">Historisk Bakgrund</h3>
+            <p>Kryddhandeln har en lång historia i Jen och går tillbaka till den tid då de första sjöfararna upptäckte de rika kryddorna från östra länder som Xian och Cirha. Under århundradena har staden etablerat starka handelsförbindelser med dessa regioner, och Jen har blivit känd för sitt utbud av exklusiva och exotiska kryddor.</p>
+
+            <h3 class="section-subtitle">Viktiga Aktörer</h3>
+
+            <div class="location-card">
+                <div class="location-card-title">Lubna bint-Malik</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Roll:</span> Förmögen handelsdam specialiserad på exotiska kryddor
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Affär:</span> "Kryddornas Rike" - en av de största och mest välbesökta butikerna på marknaden
+                </div>
+                <p>Lubna har kontakter med odlarna i de avlägsna regionerna och säkerställer att de bästa kryddorna alltid finns tillgängliga. Hon är känd för sin förmåga att förhandla och sitt skarpa affärssinne.</p>
+            </div>
+
+            <div class="location-card">
+                <div class="location-card-title">Darim al-Fazul</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Roll:</span> Respekterad köpman med vidsträckta handelsnätverk
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Affär:</span> Stort lagerhus för kryddförädling
+                </div>
+                <p>Darim importerar kryddor från alla hörn av världen och har ett omfattande nätverk av handlare och transportörer. Han är känd för sin pålitlighet och kvaliteten på sina varor.</p>
+            </div>
+
+            <div class="location-card">
+                <div class="location-card-title">Salma bint-Hafiz</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Roll:</span> Filantrop och medlem i en hemlig befrielserörelse för slavar
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Affär:</span> "Frihetens Kryddor" - täckmantel för befrielseoperation
+                </div>
+                <p>Salma använder sina intäkter från kryddhandeln för att finansiera sin befrielserörelse. Hon arbetar i hemlighet och använder sin kryddaffär som täckmantel för sina aktiviteter.</p>
+            </div>
+
+            <h3 class="section-subtitle">Handelskedjan</h3>
+            <ol>
+                <li><strong>Odling och Skörd:</strong> Kryddor odlas i bördiga regioner som Xian, Cirha och andra tropiska och subtropiska områden.</li>
+                <li><strong>Transport:</strong> Kryddorna transporteras via karavaner genom öknar och sjövägar till Jen.</li>
+                <li><strong>Försäljning:</strong> Vid ankomsten distribueras kryddorna till olika handlare på kryddmarknaden.</li>
+                <li><strong>Förädling och Packning:</strong> Vissa kryddor förädlas ytterligare genom torkning, malning eller blandning.</li>
+                <li><strong>Distribution:</strong> Slutligen säljs kryddorna vidare till lokala restauranger, hushåll och internationella köpare.</li>
+            </ol>
+        </section>
+
+        <!-- Slavhandeln -->
+        <section class="content-section">
+            <h2 class="section-title">Slavhandeln</h2>
+
+            <p>Slavhandeln i Jen har en lång och komplex historia, rotad i stadens strategiska läge som en handelsknutpunkt. Genom århundradena har staden etablerat sig som en central plats för slavhandel, där slavar från alla hörn av världen köps och säljs.</p>
+
+            <div class="info-box">
+                <div class="info-box-title">Atmosfär på Slavmarknaden</div>
+                <ul>
+                    <li><strong>Synintryck:</strong> Tält och burar, försäljningsstånd, välklädda köpare, beväpnade vakter</li>
+                    <li><strong>Ljud:</strong> Handlares rop, kedjors rassel, låga klagorop</li>
+                    <li><strong>Dofter:</strong> Kryddor och rökelse blandat med svett och smuts</li>
+                </ul>
+            </div>
+
+            <h3 class="section-subtitle">Viktiga Aktörer</h3>
+
+            <div class="location-card">
+                <div class="location-card-title">Malik Al-Zahir</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Roll:</span> Mäktig affärsman och slavhandlare
+                </div>
+                <p>Malik kontrollerar en stor del av slavhandeln i staden och har ett omfattande nätverk av agenter som köper och transporterar slavar från fjärran länder. Han är känd för sin grymhet och effektivitet. Hans slavmarknad är en av de största och mest välorganiserade.</p>
+            </div>
+
+            <div class="location-card">
+                <div class="location-card-title">Ghalib al-Nur</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Roll:</span> Berömd gladiatorägare med kontakter inom slavmarknaden
+                </div>
+                <p>Ghalib tränar slaver till gladiatorer och säljer dem till de rika och mäktiga i Jen. Han är känd för sin hårdhet men också för sin rättvisa i att belöna skicklighet och lojalitet. Hans träningsläger är en hård plats där endast de starkaste överlever.</p>
+            </div>
+
+            <div class="location-card">
+                <div class="location-card-title">Rashan al-Ghedi</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Roll:</span> Kapten för stadsvakten
+                </div>
+                <p>Rashan är strikt och plikttrogen och ser till att slavhandeln går smidigt och enligt stadens lagar. Han har en ambivalent hållning till slavhandeln, men gör sitt jobb noggrant. Hans närvaro är ofta märkbar på slavmarknaden där han övervakar säkerheten.</p>
+            </div>
+
+            <h3 class="section-subtitle">Huvudkontoret för Slavregistrering</h3>
+            <p>Centralt i staden, nära slavmarknaden, ligger det administrativa huvudkontoret som hanterar all slavhandel. Här registreras varje ny slav, alla transaktioner bokförs, och slavcertifikat utfärdas. Byggnaden är en storslagen struktur i traditionell ökenarkitektur med vita väggar, välvda fönster och en central innergård.</p>
+
+            <div class="info-box">
+                <div class="info-box-title">Personal på Huvudkontoret</div>
+                <ul>
+                    <li><strong>Amir ibn-Farouk:</strong> Huvudadministratör - en äldre man med strikt uppsyn och stor pondus</li>
+                    <li><strong>Layla bint-Karim & Omar ibn-Salim:</strong> Registratorer</li>
+                    <li><strong>Amina bint-Rashid & Khalid ibn-Mustafa:</strong> Transaktionsansvariga</li>
+                    <li><strong>Rashid ibn-Farid & Zahra bint-Hassan:</strong> Inspektörer</li>
+                    <li><strong>Fatima bint-Salim & Ali ibn-Yusuf:</strong> Arkivarier</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Värdshus -->
+        <section class="content-section">
+            <h2 class="section-title">Värdshus och Vinstänger</h2>
+
+            <p>Jen erbjuder ett brett utbud av värdshus och vinstänger för resenärer av alla slag, från lyxiga ökenasoaser till rustika krogar.</p>
+
+            <div class="location-card">
+                <div class="location-card-title">Kamelens Oas</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Tema:</span> Fridfullt värdshus med avkopplande atmosfär
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Ägare:</span> Farid och Leyla al-Malik
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Läge:</span> Lugnt bostadsområde nära tempel och helgedomar
+                </div>
+                <p>Ett värdshus känt för sin vackra innergård med fontän och palmer. Farid är en vänlig guide med kunskap om stadens historia, medan Leyla är en mästerkock. Personalen inkluderar Tariq (receptionist), Amira (städare), Youssef (underhållsman), Naila (serveringspersonal) och Samir (kökshjälp).</p>
+            </div>
+
+            <div class="location-card">
+                <div class="location-card-title">Den Gyldene Dromedaren</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Tema:</span> Lyxig ökenoas
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Ägare:</span> Karim al-Jafar
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Specialiteter:</span> Saffransris, lammgrytor, importerat vin
+                </div>
+                <p>Ett exklusivt värdshus i handelsdistriktet med dyrbara mattor, silkestyger och exotiska växter. Atmosfären är avslappnad men exklusiv, ofta fylld med rika köpmän.</p>
+            </div>
+
+            <div class="location-card">
+                <div class="location-card-title">Månskärets Gömställe</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Tema:</span> Exklusivt och mystiskt
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Ägare:</span> Zara al-Min
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Läge:</span> Undangömd gränd i handelsdistriktet
+                </div>
+                <p>Ett mystiskt värdshus med mörka träslag och dimmad belysning. Zara är en gåtfull kvinna med hemliga kontakter och diskret service. Här bor många av stadens äventyrare och mystiker. Personalen inkluderar Rashid (receptionist/bartender), Amina bint-Salim (städare), Hassan al-Rashid (kök/underhåll) och Laila bint-Ali (servering).</p>
+            </div>
+
+            <h3 class="section-subtitle">Andra Värdshus</h3>
+            <ul>
+                <li><strong>Ökendyrets Ro:</strong> Rustik taverna med grillat kött och starkt te (Ägare: Fatima bint-Ali)</li>
+                <li><strong>Den Svävande Fenixen:</strong> Mystisk atmosfär med kryddade likörer (Ägare: Raziq al-Nur)</li>
+                <li><strong>Lejonets Bröl:</strong> Livlig krog med musik och festivitas (Ägare: Umar al-Rashid)</li>
+                <li><strong>Tysta Källan:</strong> Lugn vinstuga nära templen (Ägare: Laila bint-Farid)</li>
+                <li><strong>Den Brinnande Skatten:</strong> Pirat-tema nära hamnen (Ägare: Kapten Eamon)</li>
+                <li><strong>Den Gyllene Gryningen:</strong> Elegant fine dining för stadens elit (Ägare: Esmeralda de Vries)</li>
+                <li><strong>Skuggornas Viloplats:</strong> Mörk och mystisk, idealisk för hemliga möten (Ägare: Nocturne)</li>
+                <li><strong>Sandens Sång:</strong> Traditionell ökentaverna med musik och dans (Ägare: Amina bint-Khalid)</li>
+                <li><strong>Den Klara Källan:</strong> Hälsoinriktad med vegetariska rätter (Ägare: Harun al-Farid)</li>
+            </ul>
+        </section>
+
+        <!-- Viktiga NPCs -->
+        <section class="content-section">
+            <h2 class="section-title">Viktiga NPCs</h2>
+
+            <div class="location-card">
+                <div class="location-card-title">Laila al-Jen</div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Roll:</span> Förmögen slavhandlare och siare
+                </div>
+                <div class="location-detail">
+                    <span class="location-detail-label">Betydelse:</span> Hagges före detta älskarinna, moder till hans son
+                </div>
+                <p>Laila är en av de mest inflytelserika personerna i Jen. Hon bor i en lyxig villa i handelsdistriktet med en stor innergård och fontän. Hennes hushåll inkluderar:</p>
+                <ul>
+                    <li><strong>Hassan ibn-Khalid:</strong> Hushållsförvaltare</li>
+                    <li><strong>Mira bint-Salim:</strong> Huvudkock</li>
+                    <li><strong>Amina bint-Farid:</strong> Hembiträde</li>
+                    <li><strong>Omar ibn-Hassan:</strong> Vakt</li>
+                    <li><strong>Hagge (Hadrian av Vitterdal):</strong> Före detta slav, nu rådgivare</li>
+                    <li><strong>Kasim ibn-Farid & Selim ibn-Rashid:</strong> Palanksbärare</li>
+                    <li><strong>Fatima bint-Ali:</strong> Hembiträde (slav)</li>
+                    <li><strong>Rashid ibn-Khalid:</strong> Vaktkapten</li>
+                    <li><strong>Jamal ibn-Mustafa, Karim ibn-Hassan, Fadil ibn-Yusuf:</strong> Vakter</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">33 Muhad-NPCs</div>
+                <p>Utöver de nämnda karaktärerna finns ett omfattande nätverk av NPCs i Jen, inklusive handelsmän, hantverkare och lokala makthavare. Dessa karaktärer utgör stadens sociala och ekonomiska struktur.</p>
+            </div>
+        </section>
+
+        <!-- Kopplingar -->
+        <section class="content-section">
+            <h2 class="section-title">Kopplingar</h2>
+
+            <div class="info-box">
+                <div class="info-box-title">Relaterade Platser & Fraktioner</div>
+                <ul>
+                    <li><strong>Region:</strong> Muhad (ökenriket)</li>
+                    <li><strong>Handelshus:</strong> Olika handelshus och kommersiella maktstrukturer i Muhad</li>
+                    <li><strong>Vitterdal:</strong> Genom Hagge av Vitterdals koppling till Laila</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer Navigation -->
+        <nav class="nav-bar" style="margin-top: 3rem; border-bottom: none; border-top: 2px solid var(--flame-orange); padding-top: 1rem; padding-bottom: 0;">
+            <a href="../index.html" class="back-button">
+                ← Tillbaka till Dashboard
+            </a>
+        </nav>
+
+    </div>
+
+    <!-- Entity Linking Script (samma som kapitel-sidor) -->
+    <script>
+        // This will be handled by a shared script similar to kapitel-linkify.js
+        // For now, the structure is ready for auto-linking
+    </script>
+</body>
+</html>
