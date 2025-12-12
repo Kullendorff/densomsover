@@ -794,6 +794,52 @@
             renderFraktioner();
             setupFilters();
             setupSearch();
+
+            // Hantera URL-parametrar för att öppna modaler från kapitelsidor
+            handleUrlParams();
+        }
+
+        // Hantera URL-parametrar (?modal=npc&name=Gordon%20Nahrzezia)
+        function handleUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            const modalType = params.get('modal');
+            const name = params.get('name');
+
+            if (!modalType || !name) return;
+
+            // Rensa URL:en utan att ladda om sidan
+            window.history.replaceState({}, document.title, window.location.pathname);
+
+            if (modalType === 'npc') {
+                const npc = allNpcs.find(n => n.namn.toLowerCase() === name.toLowerCase());
+                if (npc) {
+                    // Växla till NPCs-sektionen
+                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                    document.querySelector('[data-section="npcs"]').classList.add('active');
+                    document.getElementById('npcs').classList.add('active');
+                    // Öppna modal
+                    setTimeout(() => showModal(npc), 100);
+                }
+            } else if (modalType === 'plats') {
+                const plats = allPlatser.find(p => p.namn.toLowerCase() === name.toLowerCase());
+                if (plats) {
+                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                    document.querySelector('[data-section="platser"]').classList.add('active');
+                    document.getElementById('platser').classList.add('active');
+                    setTimeout(() => showPlatsModal(plats), 100);
+                }
+            } else if (modalType === 'fraktion') {
+                const fraktion = allFraktioner.find(f => f.namn.toLowerCase() === name.toLowerCase());
+                if (fraktion) {
+                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                    document.querySelector('[data-section="fraktioner"]').classList.add('active');
+                    document.getElementById('fraktioner').classList.add('active');
+                    setTimeout(() => showFraktionModal(fraktion), 100);
+                }
+            }
         }
 
         // Kapitel data
