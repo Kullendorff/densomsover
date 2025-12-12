@@ -30,41 +30,53 @@
             min-height: 100vh;
         }
 
+        /* Navigation - samma som kapitelsidor */
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        /* Footer navigation */
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--flame-orange);
+        }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
-        }
-
-        /* Navigation */
-        .nav-bar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid var(--flame-orange);
-        }
-
-        .back-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: var(--bg-card);
-            color: var(--flame-orange);
-            text-decoration: none;
-            border-radius: 8px;
-            border: 2px solid var(--flame-orange);
-            transition: all 0.3s ease;
-            font-weight: 600;
-        }
-
-        .back-button:hover {
-            background: var(--flame-orange);
-            color: var(--bg-dark);
-            transform: translateX(-5px);
         }
 
         /* Header */
@@ -280,14 +292,13 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="nav-bar">
-            <a href="../index.html" class="back-button">
-                ← Tillbaka till Dashboard
-            </a>
-        </nav>
+    <!-- Navigation - sticky top bar -->
+    <nav class="nav-bar">
+        <div class="nav-title">📍 Gravens Arv - Platser</div>
+        <a href="../index.html" class="back-btn">← Tillbaka till Dashboard</a>
+    </nav>
 
+    <div class="container">
         <!-- Header -->
         <header class="chapter-header">
             <h1 class="chapter-title">JEN</h1>
@@ -583,10 +594,8 @@
         </section>
 
         <!-- Footer Navigation -->
-        <nav class="nav-bar" style="margin-top: 3rem; border-bottom: none; border-top: 2px solid var(--flame-orange); padding-top: 1rem; padding-bottom: 0;">
-            <a href="../index.html" class="back-button">
-                ← Tillbaka till Dashboard
-            </a>
+        <nav class="footer-nav">
+            <a href="../index.html" class="back-btn">← Tillbaka till Dashboard</a>
         </nav>
 
     </div>
