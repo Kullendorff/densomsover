@@ -369,7 +369,7 @@ var wikiData = {
     },
     {
       "namn": "Demonen Urkhath",
-      "bild": null,
+      "bild": "urkhath.png",
       "ras": "Intelligent monster",
       "titel": null,
       "status": "levande",
