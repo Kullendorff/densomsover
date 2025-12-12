@@ -112,6 +112,55 @@ kampanjwiki/
 - `spegelmane.md` - Fartyget (6 NPCs)
 - `frostnymf.md` - Flodpråm (9 NPCs)
 
+### 5. kapitel/ (Narrativa HTML-sidor)
+**Plats:** `EON/kapitel/`
+**Typ:** Fristående HTML-filer med full narrativ prosa
+**Syfte:** Kampanjhistoria som litterär berättelse (ej bara fakta)
+
+**Struktur:**
+```
+EON/kapitel/
+├── prolog-tirakgraven.html      ✅ Finns (520 rader)
+├── kapitel-1-jakten.html        ✅ Finns (502 rader)
+├── kapitel-2-muhad.html         ✅ Finns (542 rader)
+├── kapitel-3-tarkas.html        ✅ Finns (542 rader)
+├── kapitel-4-jargien.html       ❌ SAKNAS
+├── kapitel-5-vargnaset.html     ❌ SAKNAS
+├── kapitel-6-vitterdal.html     ❌ SAKNAS
+├── kapitel-7-vargnaset-2.html   ❌ SAKNAS
+├── kapitel-8-evakueringen.html  ❌ SAKNAS
+├── kapitel-9-mithera.html       ✅ Finns (518 rader)
+├── kapitel-10-skugglandet.html  ❌ SAKNAS
+└── kapitel-linkify.js           # Auto-länkar NPCs/platser
+```
+
+**Innehåll per fil:**
+- Full HTML-struktur (~500 rader)
+- Embedded CSS (samma färgschema som dashboard)
+- Navigation bar med tillbaka-knapp
+- Chapter header med metadata
+- **Narrativ prosa** (ej punktlistor!)
+  - Joe Abercrombie-stil: Cynisk, rå, direkt
+  - Robin Hobb-stil: Emotionell, introspektiv, konsekvenser
+- Entity-länkar (auto-genererade via JS):
+  - NPCs (orange)
+  - Platser (purple)
+  - Fraktioner (gold)
+- Info-boxar för meta-information
+- Quote-boxar för dialog
+
+**Data-källa:**
+- **MASTER:** `kampanjkrönika.md` (eon-chronicler's tidslinje)
+- **Kompletterande:** `wiki_data.js`, Jekyll markdown
+
+**Genereras av:** `eon-storyteller` subagent
+
+**Viktigt:**
+- ALLTID baserat på kampanjkrönika.md
+- ALDRIG uppfunna händelser
+- Storyteller är BERÄTTARE, inte historiker
+- Chronicler validerar fakta
+
 ---
 
 ## Specialiserade Subagents
@@ -223,6 +272,51 @@ Task tool med:
 - Automatisk bildmatchning för NPCs utan bilder
 - Organisera och kategorisera bildarkiv
 - Generera bildstatus-rapporter
+
+### eon-storyteller
+**Fil:** `.claude/subagents/eon-storyteller.md`
+**Syfte:** Skriver narrativa HTML-sidor för kampanjens kapitel
+**Användning:**
+```
+Task tool med:
+  subagent_type: "eon-storyteller"
+  prompt: "Skriv Kapitel 5 (Vargnäset första besöket) baserat på kampanjkrönika.md"
+```
+
+**Output:** Fristående HTML-sidor i `EON/kapitel/kapitel-X-namn.html`
+
+**Skriver:**
+- Full HTML-struktur med embedded CSS (dashboard-stil)
+- Narrativ prosa i **Joe Abercrombie + Robin Hobb**-stil
+- Entity-länkar till NPCs, platser, fraktioner (auto-genererade)
+- Info-boxar för meta-information
+- Quote-boxar för dialog
+- ~500 rader, ~3000 ord per kapitel
+
+**KRITISK REGEL:**
+- **100% baserad på kampanjkrönika.md** (master source of truth)
+- ALDRIG avvika från krönikan
+- ALDRIG uppfinna händelser
+- Vid konflikt: krönika har alltid rätt
+
+**Stil:**
+- **Abercrombie (40%):** Cynisk ton, rå realism, direkt action, mörk humor
+- **Hobb (40%):** Emotionell introspektiv, långsamma konsekvenser, rika relationer
+- **Fokus (20%):** Moraliska gråzoner, personliga kostnader, atmosfär
+
+**Befintliga kapitel:** Prolog, 1, 2, 3, 9
+**Saknas:** Kapitel 4, 5, 6, 7, 8, 10, 11
+
+**När använda:**
+- Skriva nya kapitel-sidor från kampanjkrönika.md
+- Uppdatera befintliga kapitel med ny information
+- Förbättra narrativ kvalitet på befintliga sidor
+- ALLTID efter att chronicler uppdaterat kampanjkrönika.md
+
+**Validering:**
+- Storyteller konsulterar eon-chronicler för faktakontroll
+- Chronicler flaggar avvikelser från master-tidslinjen
+- Storyteller fixar omedelbart vid konflikt
 
 ---
 

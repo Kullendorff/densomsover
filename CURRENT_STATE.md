@@ -1,10 +1,16 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2025-12-13 (MORGON/FÖRMIDDAG)
+## Datum: 2025-12-12 (KVÄLL)
 
-## Status: ✅ DASHBOARD-INTEGRATION KLAR! Fraktioner nu live i dashboard!
+## Status: ✅ EON-STORYTELLER AGENT SKAPAD OCH SAMMANLAGD!
 
-**Senaste uppdatering:**
+**Senaste uppdatering (2025-12-12 kväll):**
+- ✅ Ny subagent: **eon-storyteller** - Skriver narrativa HTML-sidor för kampanjkapitel
+- ✅ Sammanlagt eon-storyteller + eon-kapitel-writer (duplicering eliminerad)
+- ✅ CLAUDE.md uppdaterad med arkitektur-sektion för EON/kapitel/
+- ✅ Klar för att skriva saknade kapitel (4, 5, 6, 7, 8, 10)
+
+**Tidigare uppdateringar:**
 - Dashboard (index.html) integrerat med fraktioner_data.js
 - Alla 45 fraktioner nu sökbara och filtrerbara i dashboard
 - Git commit och push klart (3406da3)
@@ -13,6 +19,77 @@
 - Kapitel 9 (Mithera) utökat med 157 rader detaljrik beskrivning
 - Första kapitel-HTML-sida skapad (proof-of-concept)
 - Fraktioner_data.js kompletterad: 45 fraktioner (32 handelshus)
+
+---
+
+## NYTT: eon-storyteller Subagent (2025-12-12 KVÄLL)
+
+### ✅ Skapad och sammanlagd
+
+**Problem identifierat:**
+- Två duplicerade agenter fanns: `eon-storyteller` (ny) och `eon-kapitel-writer` (befintlig)
+- Båda hade samma syfte: Skriva narrativa HTML-sidor i Abercrombie/Hobb-stil
+
+**Lösning:**
+- Sammanlagt till EN agent: **eon-storyteller**
+- Tog det bästa från båda:
+  - KRITISK REGEL från storyteller: 100% baserad på kampanjkrönika.md (master source)
+  - Karaktärsröster från kapitel-writer (alla 6 SCs med distinkt dialog)
+  - Exempel-öppning från kapitel-writer (Prologens öppning i grimdark-stil)
+  - Validering och chronicler-integration från storyteller
+  - Omfattande stilguide (Abercrombie 40% + Hobb 40% + Fokus 20%)
+
+**Resultat:**
+- `.claude/subagents/eon-storyteller.md` (18.5 KB) - komplett sammanlagd agent
+- `.claude/subagents/eon-kapitel-writer.md` - borttagen (duplicering eliminerad)
+- CLAUDE.md uppdaterad med eon-storyteller-dokumentation
+- CLAUDE.md utökad med sektion 5: "kapitel/ (Narrativa HTML-sidor)"
+
+### Funktioner
+
+**eon-storyteller kan:**
+- Läsa kampanjkrönika.md (master source of truth)
+- Skriva ~500-rad HTML-filer med full narrativ prosa
+- Använda Abercrombie + Hobb-stil (cynisk + emotionell)
+- Generera entity-länkar (NPCs orange, platser purple, fraktioner gold)
+- Skapa info-boxar och quote-boxar
+- Använda karaktärsspecifika röster (Gordon pragmatisk, Kazrik sarkastisk, etc.)
+- Validera mot eon-chronicler för faktakontroll
+- ALDRIG avvika från krönikan (KRITISK regel)
+
+**Output:**
+- Fristående HTML-sidor i `EON/kapitel/kapitel-X-namn.html`
+- Samma färgschema som dashboard (--flame-orange, --mystic-purple, etc.)
+- ~3000 ord narrativ prosa per kapitel
+- Navigation med tillbaka-knapp till dashboard
+
+**Befintliga kapitel:** Prolog, 1, 2, 3, 9 (5 st)
+**Saknas:** Kapitel 4, 5, 6, 7, 8, 10, 11 (7 st)
+
+**Användning:**
+```
+Task tool med:
+  subagent_type: "eon-storyteller"
+  prompt: "Skriv Kapitel 5 (Vargnäset första besöket) baserat på kampanjkrönika.md"
+```
+
+### Hierarki (KRITISK)
+
+```
+kampanjkrönika.md (eon-chronicler's domän - MASTER)
+        ↓ kontrollerar
+eon-storyteller (berättare - ALDRIG historiker)
+        ↓ producerar
+HTML-sidor i EON/kapitel/ (narrativ prosa)
+```
+
+**Regel:** Storyteller får ALDRIG ändra fakta, endast förvandla till litteratur.
+
+### Nästa steg
+
+1. Börja skriva saknade kapitel (4-8, 10)
+2. Förbättra befintliga kapitel om Johan vill
+3. Länka från dashboard när alla är klara
 
 ---
 
