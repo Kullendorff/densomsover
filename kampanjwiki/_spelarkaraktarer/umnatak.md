@@ -71,6 +71,53 @@ Under evakueringsresan fick Umnatak viss träning av den tirakiska shamanen Ulza
 - Ledde jakten på föda och vatten
 - Förhäxad under spaning, gruppen bröt förbannelsen
 
+### Jargien - 15-dagarsresan (Kapitel 4)
+
+**Andeplanet i Jargien:**
+- Känner sig hemma i det jargiska vinterlandskapet (likt Ausernas hemtrakter)
+- Andarnas viskningar tydligare än någonsin
+- Hör dem tala om Thogas minne och vägar framåt höljda i dimma
+- Rider ofta vid karavanens sidor, ögon avsökande efter hot
+
+**Klibbsjälarnas bro (Natt 10) - FÖRSTA STORA SCHAMANISTISKA MANIFESTATIONEN:**
+
+*Upptäckten:*
+- Känner närvaron av bundna själar i det frusna vattnet
+- "Det är själar här... bundna till vattnet. Många av dem"
+- "De dog i vattnet, men blev aldrig fria. Något håller dem kvar. Något i stenarna"
+
+*Schamanistisk trans:*
+- Går ut på den halvt raserade bron i trance-liknande tillstånd
+- Ögonen blir blanka och reflekterande som katters i mörkret
+- Rösten blir dissonant: "De ber om frihet. De offrades för bron. En colonisk ritual. Blodet för stenarna"
+- Noterar: "Anden du bär vet. Fråga den" (till Zentri om demonrösten)
+
+*Ritualen:*
+- Gör märkliga handrörelser och mässar på okänt språk (inte ens ausiska)
+- Kroppen vrider sig i besynnerliga rörelser - halvt dans, halvt konvulsion
+- Når fruktansvärd klimax med vrål på främmande språk
+- Hela bron lyser upp i kallt, blått ljus
+- Skuggliknande former under isen rör sig mot ytan
+
+*Frigörelsen:*
+- Kazrik vrider loss colonisk nyckelsten från brofästet
+- De bundna själarna blir fria
+- Bron kollapsar i vattnet
+- Umnatak återvänder till medvetande: "De är fria nu"
+
+*Efteråt:*
+- "Inte jag. De visste. Andarna"
+- Förståelse att hans gåvor växer - inte bara känsla utan aktiv kommunikation
+- Noterar Zentris farliga koppling: "Du bär... något. Något som ville hjälpa oss, men på ett farligt sätt"
+
+**Observationer:**
+- Dag 13: Upptäcker den grå gestalten i skogen efter mötet med Arvorns Hammare
+- Ville följa men stoppades av Dorin
+- Kommentar vid varje lägereld: känner andras närvaro, "även andarna håller andan här"
+
+**Utveckling:**
+Jargien-resan markerar en avgörande punkt i Umnataks schamanistiska utveckling - från passiv känslighet till aktiv kommunikation och befrielse av andar.
+
 ### Evakueringen (Fas 9)
 - Använde andeförmågor för varning mot förföljare
 - Tränade under Ulzak

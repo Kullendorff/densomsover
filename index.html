@@ -250,6 +250,7 @@
             padding: 1.5rem;
             transition: all 0.3s;
             cursor: pointer;
+            position: relative;
         }
 
         .card:hover {
@@ -308,6 +309,26 @@
             color: var(--text-secondary);
             font-size: 0.95rem;
             line-height: 1.5;
+        }
+
+        /* Card Image Preview */
+        .card-image-preview {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold);
+            opacity: 0.9;
+            transition: all 0.3s;
+        }
+
+        .card:hover .card-image-preview {
+            opacity: 1;
+            border-color: var(--flame-orange);
+            transform: scale(1.1);
         }
 
         /* Modal */
@@ -497,11 +518,91 @@
             margin-bottom: 0.5rem;
         }
 
+        .kapitel-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--deep-red));
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .kapitel-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 107, 74, 0.4);
+        }
+
         /* Loading state */
         .loading {
             text-align: center;
             padding: 3rem;
             color: var(--text-secondary);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border: 3px solid var(--gold);
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(255, 165, 0, 0.3);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: var(--bg-card);
+            border: 2px solid var(--gold);
+            color: var(--text-primary);
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .lightbox-close:hover {
+            background: var(--flame-orange);
+            border-color: var(--flame-orange);
+            transform: rotate(90deg);
+        }
+
+        /* Modal Image Clickable */
+        .modal-image-clickable {
+            cursor: zoom-in;
+            transition: all 0.3s;
+        }
+
+        .modal-image-clickable:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
         }
     </style>
 </head>
@@ -616,6 +717,28 @@
         <!-- Fraktioner Section -->
         <div id="fraktioner" class="section">
             <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Fraktioner</h2>
+
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <input type="text" id="fraktion-search" placeholder="Sök fraktioner...">
+                </div>
+
+                <div class="filter-section">
+                    <h4>Typ</h4>
+                    <div class="filter-tags" id="fraktion-typ-filters"></div>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Ras</h4>
+                    <div class="filter-tags" id="fraktion-ras-filters"></div>
+                </div>
+
+                <div class="filter-section">
+                    <h4>Status</h4>
+                    <div class="filter-tags" id="fraktion-status-filters"></div>
+                </div>
+            </div>
+
             <div class="cards-grid" id="fraktioner-container"></div>
         </div>
     </div>
@@ -628,7 +751,14 @@
         </div>
     </div>
 
+    <!-- Lightbox for full-size images -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
+        <img id="lightbox-image" src="" alt="Full size image">
+    </div>
+
     <script src="./wiki_data.js"></script>
+    <script src="./fraktioner_data.js"></script>
     <script>
         // Data
         let allNpcs = [];
@@ -639,7 +769,10 @@
             region: [],
             status: [],
             ras: [],
-            typ: []
+            typ: [],
+            fraktionTyp: [],
+            fraktionRas: [],
+            fraktionStatus: []
         };
 
         // Load data
@@ -661,6 +794,60 @@
             renderFraktioner();
             setupFilters();
             setupSearch();
+
+            // Hantera URL-parametrar för att öppna modaler från kapitelsidor
+            handleUrlParams();
+        }
+
+        // Hantera URL-parametrar (?modal=npc&name=Gordon%20Nahrzezia)
+        function handleUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            const modalType = params.get('modal');
+            const name = params.get('name');
+
+            if (!modalType || !name) return;
+
+            console.log('handleUrlParams:', modalType, name);
+
+            // Rensa URL:en utan att ladda om sidan
+            window.history.replaceState({}, document.title, window.location.pathname);
+
+            // Vänta lite längre för att säkerställa att allt är renderat
+            setTimeout(() => {
+                if (modalType === 'npc') {
+                    const npc = allNpcs.find(n => n.namn.toLowerCase() === name.toLowerCase());
+                    console.log('Hittad NPC:', npc);
+                    if (npc) {
+                        // Växla till NPCs-sektionen
+                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                        document.querySelector('[data-section="npcs"]').classList.add('active');
+                        document.getElementById('npcs').classList.add('active');
+                        // Öppna modal
+                        showModal(npc);
+                    }
+                } else if (modalType === 'plats') {
+                    const plats = allPlatser.find(p => p.namn.toLowerCase() === name.toLowerCase());
+                    console.log('Hittad plats:', plats);
+                    if (plats) {
+                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                        document.querySelector('[data-section="platser"]').classList.add('active');
+                        document.getElementById('platser').classList.add('active');
+                        showPlatsModal(plats);
+                    }
+                } else if (modalType === 'fraktion') {
+                    const fraktion = allFraktioner.find(f => f.namn.toLowerCase() === name.toLowerCase());
+                    console.log('Hittad fraktion:', fraktion);
+                    if (fraktion) {
+                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                        document.querySelector('[data-section="fraktioner"]').classList.add('active');
+                        document.getElementById('fraktioner').classList.add('active');
+                        showFraktionModal(fraktion);
+                    }
+                }
+            }, 300);
         }
 
         // Kapitel data
@@ -688,25 +875,66 @@
             {namn: "Zentri Bredarsson", spelare: "Andreas (f.d.)", ras: "Asharier", klass: "Köpmansson/Krigarmagiker", status: "Försvunnen", plats: "Skugglandet (fången)"}
         ];
 
-        // Fraktioner data
-        const fraktioner = [
-            {namn: "Arvorns Hammare", status: "Fiende", beskrivning: "Häxjägare som jagar gruppen. Corvus gamla orden."},
-            {namn: "Zorian-orden/Systrarna", status: "Komplex", beskrivning: "Jagar Zentri (demonen). Osäker relation till gruppen."},
-            {namn: "Sanari-alverna", status: "Potentiell allierad", beskrivning: "Har bindningsföremålen mot demonen Urkhath."},
-            {namn: "Dvärgarna (Klan Drezin)", status: "Potentiell allierad", beskrivning: "Har kunskap om demonologi. Kazrik kan vara nyckeln."},
-            {namn: "Vitterdals hov", status: "Allierad", beskrivning: "Hagge och Lady Soffia. Gruppens beskyddare."},
-            {namn: "Stålsvärdskavaleristerna", status: "Bakgrund", beskrivning: "Gruppens tidigare arbetsgivare."}
-        ];
+        // Fraktioner data - loaded from fraktioner_data.js
+        let allFraktioner = [];
+        let filteredFraktioner = [];
+
+        // Flatten fraktioner_data structure
+        if (typeof fraktionerData !== 'undefined') {
+            allFraktioner = [
+                ...fraktionerData.handelshus,
+                ...fraktionerData.magihus,
+                ...fraktionerData.militära,
+                ...fraktionerData.kriminella,
+                ...fraktionerData.övriga
+            ];
+            filteredFraktioner = allFraktioner;
+        }
+
+        // Kapitelsidor som finns (nummer → filnamn)
+        // Stödjer både gammal (1-11) och ny (0-10) numrering
+        const kapitelSidor = {
+            '0': 'prolog-tirakgraven.html',
+            '1': 'kapitel-1-jakten.html',
+            '2': 'kapitel-2-muhad.html',
+            '3': 'kapitel-3-tarkas.html',
+            '4': 'kapitel-4-jargien.html',
+            '9': 'kapitel-9-mithera.html'
+        };
+
+        // Fallback-mappning för titlar (om nummer inte matchar)
+        const kapitelTitelSidor = {
+            'Tirakgraven': 'prolog-tirakgraven.html',
+            'Jakten': 'kapitel-1-jakten.html',
+            'Muhad': 'kapitel-2-muhad.html',
+            'Tarkas': 'kapitel-3-tarkas.html',
+            'Jargien': 'kapitel-4-jargien.html',
+            'Mithera': 'kapitel-9-mithera.html'
+        };
 
         function renderKapitel() {
             const container = document.getElementById('timeline-container');
-            container.innerHTML = kapitel.map((k, i) => `
+            container.innerHTML = kapitel.map((k, i) => {
+                // Försök matcha på nummer först, sedan på titel
+                let harSida = kapitelSidor[k.nummer];
+                if (!harSida) {
+                    // Fallback: kolla om titeln innehåller ett känt kapitelnamn
+                    for (const [nyckel, fil] of Object.entries(kapitelTitelSidor)) {
+                        if (k.titel && k.titel.includes(nyckel)) {
+                            harSida = fil;
+                            break;
+                        }
+                    }
+                }
+                const sidlank = harSida ? `<a href="kapitel/${harSida}" class="kapitel-link">📖 Läs kapitlet</a>` : '';
+                return `
                 <div class="timeline-item ${k.status === 'pågående' ? 'current' : ''}">
-                    <h3>Kapitel ${k.nummer}: ${k.titel}</h3>
+                    <h3>${k.titel}</h3>
                     <div class="meta">${k.plats} | Status: ${k.status}</div>
                     <p>${k.beskrivning}</p>
+                    ${sidlank}
                 </div>
-            `).join('');
+            `}).join('');
         }
 
         function renderPlayers() {
@@ -736,8 +964,11 @@
                 return;
             }
 
-            container.innerHTML = npcs.map(npc => `
+            container.innerHTML = npcs.map(npc => {
+                const bildUrl = npc.bild ? `./kampanjwiki/assets/images/npcs/${npc.bild}` : null;
+                return `
                 <div class="card" onclick='showNpcModal(${JSON.stringify(npc).replace(/'/g, "&#39;")})'>
+                    ${bildUrl ? `<img src="${bildUrl}" alt="${npc.namn}" class="card-image-preview">` : ''}
                     <h3>${npc.namn}</h3>
                     <div class="card-meta">
                         ${npc.ras ? `<span class="tag purple">${npc.ras}</span>` : ''}
@@ -748,7 +979,8 @@
                         ${npc.fraktion ? `⚔️ ${npc.fraktion}` : 'Ingen fraktion'}
                     </div>
                 </div>
-            `).join('');
+                `;
+            }).join('');
 
             document.getElementById('npc-count').textContent = npcs.length;
         }
@@ -770,7 +1002,7 @@
                         ${plats.region ? `<span class="tag gold">📍 ${plats.region}</span>` : ''}
                     </div>
                     <div class="card-info">
-                        ${plats.beskrivning ? plats.beskrivning.substring(0, 100) + '...' : ''}
+                        ${plats.beskrivning ? stripMarkdown(plats.beskrivning).substring(0, 100) + '...' : ''}
                     </div>
                 </div>
             `).join('');
@@ -778,17 +1010,41 @@
 
         function renderFraktioner() {
             const container = document.getElementById('fraktioner-container');
+            const fraktioner = filteredFraktioner;
+
+            if (fraktioner.length === 0) {
+                container.innerHTML = '<div class="loading">Inga fraktioner matchade din sökning</div>';
+                return;
+            }
+
             container.innerHTML = fraktioner.map(f => `
-                <div class="card">
+                <div class="card" onclick='showFraktionModal(${JSON.stringify(f).replace(/'/g, "&#39;")})'>
                     <h3>${f.namn}</h3>
                     <div class="card-meta">
-                        <span class="tag ${getFraktionColor(f.status)}">${f.status}</span>
+                        ${f.typ ? `<span class="tag purple">${f.typ}</span>` : ''}
+                        ${f.ras ? `<span class="tag gold">${f.ras}</span>` : ''}
+                        ${f.status ? `<span class="tag ${getFraktionColor(f.status)}">${f.status}</span>` : ''}
                     </div>
                     <div class="card-info">
-                        ${f.beskrivning}
+                        ${f.ledare ? `👤 ${f.ledare}` : ''}
+                        ${f.huvudsäte ? `<br>🏰 ${f.huvudsäte}` : ''}
                     </div>
                 </div>
             `).join('');
+        }
+
+        // Rensa markdown-syntax för kortförhandsvisningar
+        function stripMarkdown(text) {
+            if (!text) return '';
+            return text
+                .replace(/#{1,6}\s*/g, '')           // Ta bort # rubriker
+                .replace(/\*\*(.*?)\*\*/g, '$1')     // Ta bort **bold**
+                .replace(/\*(.*?)\*/g, '$1')         // Ta bort *italic*
+                .replace(/`(.*?)`/g, '$1')           // Ta bort `code`
+                .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // Ta bort [text](url)
+                .replace(/^[-*]\s*/gm, '')           // Ta bort listor
+                .replace(/\n+/g, ' ')                // Ersätt radbrytningar med mellanslag
+                .trim();
         }
 
         function getStatusColor(status) {
@@ -814,6 +1070,9 @@
             const raser = [...new Set(allNpcs.map(n => n.ras).filter(r => r))];
             const typer = [...new Set(allPlatser.map(p => p.typ).filter(t => t))];
             const platsRegioner = [...new Set(allPlatser.map(p => p.region).filter(r => r))];
+            const fraktionTyper = [...new Set(allFraktioner.map(f => f.typ).filter(t => t))];
+            const fraktionRaser = [...new Set(allFraktioner.map(f => f.ras).filter(r => r))];
+            const fraktionStatuses = [...new Set(allFraktioner.map(f => f.status).filter(s => s))];
 
             // Render region filters
             document.getElementById('region-filters').innerHTML = regioner.sort().map(r =>
@@ -838,6 +1097,21 @@
             // Render typ filters
             document.getElementById('typ-filters').innerHTML = typer.sort().map(t =>
                 `<span class="filter-tag" data-filter="typ" data-value="${t}">${t}</span>`
+            ).join('');
+
+            // Render fraktion typ filters
+            document.getElementById('fraktion-typ-filters').innerHTML = fraktionTyper.sort().map(t =>
+                `<span class="filter-tag" data-filter="fraktion-typ" data-value="${t}">${t}</span>`
+            ).join('');
+
+            // Render fraktion ras filters
+            document.getElementById('fraktion-ras-filters').innerHTML = fraktionRaser.sort().map(r =>
+                `<span class="filter-tag" data-filter="fraktion-ras" data-value="${r}">${r}</span>`
+            ).join('');
+
+            // Render fraktion status filters
+            document.getElementById('fraktion-status-filters').innerHTML = fraktionStatuses.sort().map(s =>
+                `<span class="filter-tag" data-filter="fraktion-status" data-value="${s}">${s}</span>`
             ).join('');
 
             // Add click handlers
@@ -883,6 +1157,30 @@
                     activeFilters.typ = (activeFilters.typ || []).filter(v => v !== value);
                 }
                 applyPlatsFilters();
+            } else if (filterType === 'fraktion-typ') {
+                if (tag.classList.contains('active')) {
+                    activeFilters.fraktionTyp = activeFilters.fraktionTyp || [];
+                    activeFilters.fraktionTyp.push(value);
+                } else {
+                    activeFilters.fraktionTyp = (activeFilters.fraktionTyp || []).filter(v => v !== value);
+                }
+                applyFraktionFilters();
+            } else if (filterType === 'fraktion-ras') {
+                if (tag.classList.contains('active')) {
+                    activeFilters.fraktionRas = activeFilters.fraktionRas || [];
+                    activeFilters.fraktionRas.push(value);
+                } else {
+                    activeFilters.fraktionRas = (activeFilters.fraktionRas || []).filter(v => v !== value);
+                }
+                applyFraktionFilters();
+            } else if (filterType === 'fraktion-status') {
+                if (tag.classList.contains('active')) {
+                    activeFilters.fraktionStatus = activeFilters.fraktionStatus || [];
+                    activeFilters.fraktionStatus.push(value);
+                } else {
+                    activeFilters.fraktionStatus = (activeFilters.fraktionStatus || []).filter(v => v !== value);
+                }
+                applyFraktionFilters();
             } else {
                 if (tag.classList.contains('active')) {
                     activeFilters[filterType].push(value);
@@ -949,9 +1247,40 @@
             renderPlatser();
         }
 
+        function applyFraktionFilters() {
+            const searchQuery = document.getElementById('fraktion-search').value.toLowerCase();
+
+            filteredFraktioner = allFraktioner.filter(fraktion => {
+                // Search filter
+                if (searchQuery && !fraktion.namn.toLowerCase().includes(searchQuery)) {
+                    return false;
+                }
+
+                // Typ filter
+                if (activeFilters.fraktionTyp && activeFilters.fraktionTyp.length > 0) {
+                    if (!activeFilters.fraktionTyp.includes(fraktion.typ)) return false;
+                }
+
+                // Ras filter
+                if (activeFilters.fraktionRas && activeFilters.fraktionRas.length > 0) {
+                    if (!activeFilters.fraktionRas.includes(fraktion.ras)) return false;
+                }
+
+                // Status filter
+                if (activeFilters.fraktionStatus && activeFilters.fraktionStatus.length > 0) {
+                    if (!activeFilters.fraktionStatus.includes(fraktion.status)) return false;
+                }
+
+                return true;
+            });
+
+            renderFraktioner();
+        }
+
         function setupSearch() {
             document.getElementById('npc-search').addEventListener('input', applyNpcFilters);
             document.getElementById('plats-search').addEventListener('input', applyPlatsFilters);
+            document.getElementById('fraktion-search').addEventListener('input', applyFraktionFilters);
         }
 
         function showPlayerModal(player) {
@@ -1009,7 +1338,7 @@
             const bildUrl = npc.bild ? `./kampanjwiki/assets/images/npcs/${npc.bild}` : null;
 
             body.innerHTML = `
-                ${bildUrl ? `<img src="${bildUrl}" alt="${npc.namn}" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; float: right; margin-left: 1rem; margin-bottom: 1rem; border: 2px solid var(--gold);">` : ''}
+                ${bildUrl ? `<img src="${bildUrl}" alt="${npc.namn}" class="modal-image-clickable" onclick="event.stopPropagation(); showLightbox('${bildUrl}')" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; float: right; margin-left: 1rem; margin-bottom: 1rem; border: 2px solid var(--gold);">` : ''}
                 <h2>${npc.namn}</h2>
                 ${npc.titel ? `<div class="modal-row">
                     <span class="modal-label">Titel:</span>
@@ -1036,6 +1365,16 @@
                     <span class="modal-value">${npc.kapitel}</span>
                 </div>` : ''}
                 ${beskrivning ? `<div class="modal-beskrivning">${beskrivning}</div>` : ''}
+                ${npc.detaljsida ? `
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="${npc.detaljsida}"
+                           style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--flame-orange), var(--deep-red)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid var(--gold);"
+                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(255, 107, 74, 0.5)';"
+                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                            📖 Läs mer om ${npc.namn}
+                        </a>
+                    </div>
+                ` : ''}
             `;
 
             modal.classList.add('active');
@@ -1068,6 +1407,78 @@
                     <span class="modal-value">${plats.region}</span>
                 </div>` : ''}
                 ${beskrivning ? `<div class="modal-beskrivning">${beskrivning}</div>` : ''}
+                ${plats.detaljsida ? `
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="${plats.detaljsida}"
+                           style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--flame-orange), var(--deep-red)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid var(--gold);"
+                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(255, 107, 74, 0.5)';"
+                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                            📖 Läs mer om ${plats.namn}
+                        </a>
+                    </div>
+                ` : ''}
+            `;
+
+            modal.classList.add('active');
+        }
+
+        function showFraktionModal(fraktion) {
+            const modal = document.getElementById('modal');
+            const body = document.getElementById('modal-body');
+
+            // Convert markdown to basic HTML
+            let beskrivning = '';
+            if (fraktion.beskrivning) {
+                beskrivning = fraktion.beskrivning
+                    .replace(/### (.*?)$/gm, '<h3>$1</h3>')
+                    .replace(/## (.*?)$/gm, '<h2>$1</h2>')
+                    .replace(/# (.*?)$/gm, '<h1>$1</h1>')
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\n\n/g, '</p><p>')
+                    .replace(/^(.*)$/gm, '<p>$1</p>');
+            }
+
+            body.innerHTML = `
+                <h2>${fraktion.namn}</h2>
+                ${fraktion.typ ? `<div class="modal-row">
+                    <span class="modal-label">Typ:</span>
+                    <span class="modal-value">${fraktion.typ}</span>
+                </div>` : ''}
+                ${fraktion.ras ? `<div class="modal-row">
+                    <span class="modal-label">Ras:</span>
+                    <span class="modal-value">${fraktion.ras}</span>
+                </div>` : ''}
+                ${fraktion.huvudsäte ? `<div class="modal-row">
+                    <span class="modal-label">Huvudsäte:</span>
+                    <span class="modal-value">${fraktion.huvudsäte}</span>
+                </div>` : ''}
+                ${fraktion.ledare ? `<div class="modal-row">
+                    <span class="modal-label">Ledare:</span>
+                    <span class="modal-value">${fraktion.ledare}</span>
+                </div>` : ''}
+                ${fraktion.verksamhet ? `<div class="modal-row">
+                    <span class="modal-label">Verksamhet:</span>
+                    <span class="modal-value">${fraktion.verksamhet}</span>
+                </div>` : ''}
+                ${fraktion.status ? `<div class="modal-row">
+                    <span class="modal-label">Status:</span>
+                    <span class="modal-value">${fraktion.status}</span>
+                </div>` : ''}
+                ${fraktion.kapitel ? `<div class="modal-row">
+                    <span class="modal-label">Första omnämnande:</span>
+                    <span class="modal-value">${fraktion.kapitel}</span>
+                </div>` : ''}
+                ${beskrivning ? `<div class="modal-beskrivning">${beskrivning}</div>` : ''}
+                ${fraktion.detaljsida ? `
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="${fraktion.detaljsida}"
+                           style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--flame-orange), var(--deep-red)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid var(--gold);"
+                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(255, 107, 74, 0.5)';"
+                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                            📖 Läs mer om ${fraktion.namn}
+                        </a>
+                    </div>
+                ` : ''}
             `;
 
             modal.classList.add('active');
@@ -1075,6 +1486,18 @@
 
         function closeModal() {
             document.getElementById('modal').classList.remove('active');
+        }
+
+        function showLightbox(imageUrl) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = imageUrl;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
         }
 
         function showSection(sectionId) {
@@ -1088,6 +1511,25 @@
         // Close modal on outside click
         document.getElementById('modal').addEventListener('click', function(e) {
             if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close lightbox on outside click (handled by onclick in HTML)
+        // Prevent image click from closing lightbox
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightboxImage = document.getElementById('lightbox-image');
+            if (lightboxImage) {
+                lightboxImage.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            }
+        });
+
+        // Close lightbox with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
                 closeModal();
             }
         });

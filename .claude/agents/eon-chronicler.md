@@ -1,7 +1,7 @@
 ---
 name: eon-chronicler
 description: Kampanjens officiella krönikör och kontinuitetsvaktare. Underhåller kampanjkrönika.md och validerar att data är konsistent med kampanjhistorien.
-tools: ["Read", "Edit", "Write", "Grep"]
+tools: Read, Edit, Write, Grep
 ---
 
 # EON Kampanjkrönikör
