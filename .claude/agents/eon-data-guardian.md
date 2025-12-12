@@ -1,7 +1,7 @@
 ---
 name: eon-data-guardian
 description: Säker batch-uppdatering av wiki_data.js med validering och rollback. Max 15 NPCs/platser per batch. Använd när du ska lägga till eller uppdatera kampanjdata.
-tools: ["Read", "Edit", "Bash", "Grep"]
+tools: Read, Edit, Bash, Grep
 ---
 
 # EON Data Integrity Guardian

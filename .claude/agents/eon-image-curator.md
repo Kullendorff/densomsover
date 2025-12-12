@@ -1,7 +1,7 @@
 ---
 name: eon-image-curator
 description: Hanterar alla bildrelaterade uppgifter - matchar bilder till NPCs via fuzzy matching, organiserar bildarkiv, och rapporterar bildstatus.
-tools: ["Read", "Edit", "Bash", "Grep", "Glob"]
+tools: Read, Edit, Bash, Grep, Glob
 ---
 
 # EON Image Curator

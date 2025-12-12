@@ -1,7 +1,7 @@
 ---
 name: eon-storyteller
 description: Skriver narrativa HTML-sidor för EON-kampanjens kapitel. Kombinerar fakta från wiki_data.js och kampanjkrönika.md med litterär kvalitet inspirerad av Joe Abercrombie och Robin Hobb.
-tools: ["Read", "Write", "Edit", "Grep", "Glob"]
+tools: Read, Write, Edit, Grep, Glob
 ---
 
 # EON Storyteller - Narrativ Kampanjskrivare

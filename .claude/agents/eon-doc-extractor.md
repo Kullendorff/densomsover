@@ -1,7 +1,7 @@
 ---
 name: eon-doc-extractor
 description: Extraherar strukturerad kampanjdata (NPCs, platser, händelser) från ostrukturerade markdown-dokument till JSON-ready format.
-tools: ["Read", "Grep"]
+tools: Read, Grep
 ---
 
 # EON Document Extractor

@@ -6,12 +6,12 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 **Huvudsida:** Fantasy-dashboard (`/index.html`) med centraliserad databas (`wiki_data.js`)
 **Referens:** Jekyll-wiki (`/kampanjwiki/`) för strukturerad markdown-data
 
-## NUVARANDE STATUS (2025-12-11)
-- ✅ Dashboard live med 220 NPCs, 53 platser, 11 kapitel
+## NUVARANDE STATUS (2025-12-12)
+- ✅ Dashboard live med 242 NPCs, 58 platser, 11 kapitel
 - ✅ Grid + Modal-layout, sök/filter-funktioner
 - ✅ Bilder centraliserade i `kampanjwiki/assets/images/`
-- 🔄 Pågående: Massiv datainmatning (107 nya NPCs från 3 dokument)
-- 🔄 4 specialiserade agenter skapade för drift
+- ✅ 6 specialiserade agenter + 1 skill för drift
+- 🔄 Pågående: Bildmatchning (121 NPCs saknar bilder)
 
 ---
 
@@ -41,7 +41,7 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 
 ### 2. wiki_data.js (Centraliserad Databas)
 **Plats:** `/wiki_data.js` (rot-katalogen)
-**Storlek:** 284 KB (220 NPCs, 53 platser, 11 kapitel)
+**Storlek:** ~300 KB (242 NPCs, 58 platser, 11 kapitel)
 **Format:** CommonJS module (`module.exports`) + browser global (`var wikiData`)
 
 **Struktur:**
@@ -163,18 +163,54 @@ EON/kapitel/
 
 ---
 
-## Specialiserade Subagents
+## .claude/ - AI-infrastruktur
 
-**VIKTIGT:** Dessa är **autonoma subagents** (inte slash commands). Använd Task tool för att starta dem.
+### Struktur
+```
+.claude/
+├── agents/                      # Specialiserade autonoma agenter
+│   ├── eon-data-guardian.md     # Säker wiki_data.js-uppdatering
+│   ├── eon-chronicler.md        # Kampanjkrönikör
+│   ├── eon-doc-extractor.md     # Dokumentdataextraktion
+│   ├── eon-image-curator.md     # Bildmatchning
+│   ├── eon-storyteller.md       # Narrativ HTML-skrivare
+│   └── eon-midjourney-prompter.md # Midjourney prompt-generator
+├── skills/                      # Återanvändbara skills
+│   └── eon-npc-adder/           # NPC-tillägg (en i taget)
+│       └── Skill.md
+└── commands/                    # Slash commands (om några)
+```
+
+### Agent vs Skill - När använda vilket?
+
+**Agents (Task tool):**
+- Komplexa, multi-steg-processer
+- Kräver autonomt beslutsfattande
+- Kan köra flera verktyg i sekvens
+- Exempel: eon-data-guardian (batch-tillägg med validering)
+
+**Skills (Skill tool):**
+- Specifika, upprepbara uppgifter
+- Tydligt definierad input → output
+- Dokumenterar "lärdomar" från trial-and-error
+- Exempel: eon-npc-adder (en-i-taget-metod för säkerhet)
+
+---
+
+## Specialiserade Agents
+
+**VIKTIGT:** Dessa är **autonoma agents** (inte slash commands). Använd Task tool med `subagent_type` för att starta dem.
 
 ### eon-data-guardian
-**Fil:** `.claude/subagents/eon-data-guardian.md`
+**Fil:** `.claude/agents/eon-data-guardian.md`
 **Syfte:** Säker batch-uppdatering av wiki_data.js
 **Användning:**
-```
-Task tool med:
-  subagent_type: "eon-data-guardian"
-  prompt: "Lägg till följande 10 NPCs: [lista]"
+```python
+# Via Task tool
+Task(
+  subagent_type="eon-data-guardian",
+  prompt="Lägg till följande 10 NPCs: [lista]"
+)
 ```
 
 **Kapabiliteter:**
@@ -191,13 +227,15 @@ Task tool med:
 - När du vill garantera syntax-säkerhet
 
 ### eon-chronicler
-**Fil:** `.claude/subagents/eon-chronicler.md`
+**Fil:** `.claude/agents/eon-chronicler.md`
 **Syfte:** Kampanjens officiella krönikör och kontinuitetsvaktare
 **Användning:**
-```
-Task tool med:
-  subagent_type: "eon-chronicler"
-  prompt: "Uppdatera krönikan med Kapitel 8-händelser: [beskrivning]"
+```python
+# Via Task tool
+Task(
+  subagent_type="eon-chronicler",
+  prompt="Uppdatera krönikan med Kapitel 8-händelser: [beskrivning]"
+)
 ```
 
 **Master-dokument:** `EON/kampanjkrönika.md` (kronologisk tidslinje från start till nu)
@@ -232,13 +270,15 @@ Task tool med:
 - Historiska sökningar ("När hände X?")
 
 ### eon-doc-extractor
-**Fil:** `.claude/subagents/eon-doc-extractor.md`
+**Fil:** `.claude/agents/eon-doc-extractor.md`
 **Syfte:** Extrahera data från kampanjdokument
 **Användning:**
-```
-Task tool med:
-  subagent_type: "eon-doc-extractor"
-  prompt: "Extrahera NPCs och platser från Eon SL/jen.md"
+```python
+# Via Task tool
+Task(
+  subagent_type="eon-doc-extractor",
+  prompt="Extrahera NPCs och platser från Eon SL/jen.md"
+)
 ```
 
 **Extraherar:**
@@ -253,13 +293,15 @@ Task tool med:
 - Förbereda data för batch-tillägg via data-guardian
 
 ### eon-image-curator
-**Fil:** `.claude/subagents/eon-image-curator.md`
+**Fil:** `.claude/agents/eon-image-curator.md`
 **Syfte:** Bildmatchning och organisation
 **Användning:**
-```
-Task tool med:
-  subagent_type: "eon-image-curator"
-  prompt: "Matcha bilder till alla NPCs utan bilder"
+```python
+# Via Task tool
+Task(
+  subagent_type="eon-image-curator",
+  prompt="Matcha bilder till alla NPCs utan bilder"
+)
 ```
 
 **Hanterar:**
@@ -274,13 +316,15 @@ Task tool med:
 - Generera bildstatus-rapporter
 
 ### eon-storyteller
-**Fil:** `.claude/subagents/eon-storyteller.md`
+**Fil:** `.claude/agents/eon-storyteller.md`
 **Syfte:** Skriver narrativa HTML-sidor för kampanjens kapitel
 **Användning:**
-```
-Task tool med:
-  subagent_type: "eon-storyteller"
-  prompt: "Skriv Kapitel 5 (Vargnäset första besöket) baserat på kampanjkrönika.md"
+```python
+# Via Task tool
+Task(
+  subagent_type="eon-storyteller",
+  prompt="Skriv Kapitel 5 (Vargnäset första besöket) baserat på kampanjkrönika.md"
+)
 ```
 
 **Output:** Fristående HTML-sidor i `EON/kapitel/kapitel-X-namn.html`
@@ -317,6 +361,115 @@ Task tool med:
 - Storyteller konsulterar eon-chronicler för faktakontroll
 - Chronicler flaggar avvikelser från master-tidslinjen
 - Storyteller fixar omedelbart vid konflikt
+
+### eon-midjourney-prompter
+**Fil:** `.claude/agents/eon-midjourney-prompter.md`
+**Syfte:** Generera Midjourney-prompts för EON kampanjbilder
+**Användning:**
+```python
+# Via Task tool
+Task(
+  subagent_type="eon-midjourney-prompter",
+  prompt="Generera stämningsbild för Kapitel 5: Vargnäset"
+)
+```
+
+**Output:** Formaterade Midjourney-prompts redo att köra
+
+**Genererar:**
+- Stämningsbilder för kapitel
+- Plats-visualiseringar (städer, landskap, hamnar)
+- NPC-porträtt (karaktärer)
+- Scen-bilder (specifika händelser)
+
+**Stil och estetik:**
+- **Mörk fantasy:** Game of Thrones, Witcher, Warhammer
+- **Gritty realism:** Joe Abercrombie-estetik (smuts, blod, slitage)
+- **Konstnärer:** Gerald Brom, Frank Frazetta, Jakub Rozalski, Aleksi Briclot
+- **Färgpalett:** Flame orange (#ff6b4a), deep red (#d4534d), mystic purple (#a855a8), gold (#ffa500)
+
+**Regional stil:**
+- **Cermira/Mithera:** Nordisk/slavisk (skog, dimma, snö, kalla färger)
+- **Muhad:** Arabisk/persisk (öken, vit sten, gyllene kupoler, varma färger)
+- **Jargien:** Imperial (städer, militär, ordning, grå/röda toner)
+- **Skugglandet:** Demoniskt (förvrängd verklighet, Lovecraftian horror)
+
+**Arbetsflöde:**
+1. Läser källmaterial (kampanjkrönika.md, kapitel HTML, wiki_data.js)
+2. Identifierar visuella nyckelelement
+3. Bygger prompt enligt struktur: [MOTIV] [STIL] [DETALJER] [STÄMNING] [LJUS] [FÄRG] --[PARAMS]
+4. Genererar 2-4 prompts med variationer
+
+**Output-format:**
+```markdown
+## [BILDNAMN]
+**Typ:** Stämningsbild / Plats / Karaktär / Scen
+**Källa:** [dokument]
+
+### Midjourney Prompt:
+[FULL PROMPT]
+
+**Parametrar:**
+- Aspect ratio: 16:9 / 2:3 / 1:1
+- Stilisering: 100-300
+- Version: 6.1
+```
+
+**När använda:**
+- Skapa stämningsbilder för kapitel
+- Generera NPC-porträtt
+- Visualisera viktiga platser
+- Designa scen-bilder för händelser
+- Batch-generera prompts för flera bilder
+
+---
+
+## Specialiserade Skills
+
+**VIKTIGT:** Skills är återanvändbara tekniker som dokumenterar "lärdomar". Använd Skill tool för att aktivera dem.
+
+### eon-npc-adder
+**Fil:** `.claude/skills/eon-npc-adder/Skill.md`
+**Syfte:** Säker NPC-tillägg EN I TAGET med strukturell Edit-metod
+**Användning:**
+```python
+# Via Skill tool
+Skill(skill="eon-npc-adder")
+```
+
+**Kärnmetod (beprövad trial-and-error):**
+1. **Hitta alfabetisk plats** med `grep -n '"namn": "D' wiki_data.js`
+2. **Läs exakt sektion** med `Read wiki_data.js offset:X limit:15`
+3. **Matcha KORT strukturell sträng** (10-15 rader max)
+   - Matcha från slutet av föregående NPC till början av nästa
+   - ALDRIG matcha långa beskrivningar (100+ rader)
+   - Använd strukturella element: `}, {` och `"namn":`
+4. **Validera OMEDELBART** efter varje tillägg
+5. **EN NPC I TAGET** - aldrig batch utan validering mellan
+
+**Kritisk insikt:**
+❌ Försök INTE matcha hela `beskrivning`-fält (Edit hittar inte strängen)
+✅ Matcha korta strukturella delar mellan NPCs
+
+**Format:**
+```javascript
+{
+  "namn": "Namn Efternamn",
+  "bild": null,  // eller "namn.png"
+  "ras": "Människa/Dvärg/etc",
+  "titel": "Roll/yrke",
+  "status": "levande/död/okänd",
+  "plats": "Platsnamn",
+  "fraktion": "Fraktion eller null",
+  "kapitel": "Kapitel X",
+  "beskrivning": "# NAMN\n**Text...**"
+}
+```
+
+**När använda:**
+- Lägga till 1-3 NPCs manuellt med maximal säkerhet
+- När du vill ha full kontroll över varje steg
+- För att undvika syntax-fel i komplexa fall
 
 ---
 
@@ -362,31 +515,106 @@ Task tool med:
 ## Arbetsflöde
 
 ### Lägg till nya NPCs
-1. Extrahera från kampanjdokument eller skapa manuellt
-2. Använd `/eon-data-guardian` för batch-tillägg (max 15 åt gången)
-3. Validera med `node -e "require('./wiki_data.js')"`
-4. Verifiera i dashboard (öppna i browser)
+
+**Batch-tillägg (5-15 NPCs):**
+```python
+# Använd eon-data-guardian agent
+Task(
+  subagent_type="eon-data-guardian",
+  prompt="Lägg till följande 10 NPCs: [lista med alla detaljer]"
+)
+```
+
+**Manuellt tillägg (1-3 NPCs med max kontroll):**
+```python
+# Använd eon-npc-adder skill
+Skill(skill="eon-npc-adder")
+# Följt av: "Lägg till Dorin Kallhammare, dvärg, karavanledare"
+```
+
+**Efter tillägg:**
+```bash
+# Validera syntax
+node -e "const d=require('./wiki_data.js'); console.log('✓', d.npcs.length, 'NPCs');"
+
+# Verifiera i dashboard (öppna i browser)
+```
 
 ### Uppdatera befintliga NPCs
 1. Hitta i wiki_data.js: `grep -n '"namn": "Namn"' wiki_data.js`
 2. Använd Edit-verktyget (INTE Write)
-3. Validera omedelbart efter ändring
+3. Validera omedelbart efter ändring med Node.js
 
 ### Hantera bilder
-1. Lägg nya bilder i `kampanjwiki/assets/images/npcs/`
-2. Använd `/eon-image-curator` för automatisk matchning
-3. Eller manuellt: uppdatera `bild`-fält i wiki_data.js
+
+**Automatisk bildmatchning:**
+```python
+# Använd eon-image-curator agent
+Task(
+  subagent_type="eon-image-curator",
+  prompt="Matcha bilder till alla NPCs utan bilder"
+)
+```
+
+**Manuellt:**
+1. Lägg bilder i `kampanjwiki/assets/images/npcs/`
+2. Uppdatera `bild`-fält i wiki_data.js med filnamn
+3. Validera att dashboard visar bilden korrekt
 
 ### Uppdatera kampanjkrönika
-1. Använd `/eon-chronicler` när du har ny kampanjinfo
-2. Ge sammanfattningar, sessionsanteckningar, eller detaljer
-3. Agenten placerar allt kronologiskt i `kampanjkrönika.md`
-4. Cross-validerar mot wiki_data.js och flaggar konflikter
+
+```python
+# Använd eon-chronicler agent
+Task(
+  subagent_type="eon-chronicler",
+  prompt="Uppdatera krönikan med Kapitel 8-händelser: [sessionsbeskrivning]"
+)
+```
+
+**Agenten:**
+- Placerar allt kronologiskt i rätt kapitel
+- Cross-validerar mot wiki_data.js
+- Flaggar inkonsekvenser
+- Frågar om oklarheter (aldrig gissar!)
+
+### Skriva kapitel-sidor
+
+```python
+# Använd eon-storyteller agent
+Task(
+  subagent_type="eon-storyteller",
+  prompt="Skriv Kapitel 5 (Vargnäset första besöket) baserat på kampanjkrönika.md"
+)
+```
+
+**Output:** Narrativ HTML-sida i `EON/kapitel/kapitel-5-vargnaset.html`
+
+### Generera kampanjbilder
+
+```python
+# Använd eon-midjourney-prompter agent
+Task(
+  subagent_type="eon-midjourney-prompter",
+  prompt="Generera stämningsbild för Kapitel 5: Vargnäset"
+)
+```
+
+**Output:** Midjourney-prompts redo att köra
 
 ### Kontinuitetskontroll
-1. Använd `/eon-chronicler` för validering innan stora uppdateringar
-2. Be om kontroll av specifika kapitel eller hela tidslinjen
-3. Fixa flaggade problem innan commit
+
+```python
+# Använd eon-chronicler för validering
+Task(
+  subagent_type="eon-chronicler",
+  prompt="Validera att wiki_data.js stämmer överens med kampanjkrönika.md. Flagga alla konflikter."
+)
+```
+
+**Kör innan:**
+- Stora uppdateringar av wiki_data.js
+- Nya kapitel-sidor genereras
+- Git commits med kampanjdata
 
 ---
 
@@ -469,21 +697,21 @@ git checkout wiki_data.js
 ## Nästa steg
 
 ### Omedelbart (pågående)
-- [ ] Lägg till 107 nya NPCs från jen.md/flykten_genom_drunok.md/spegelmane.md
-- [ ] Uppdatera 14 befintliga NPCs
-- [ ] Lägg till 4 nya platser
-- [ ] Uppdatera Vargnäset-platsen
+- [ ] Bildmatchning: 121 NPCs saknar bilder (179 bilder tillgängliga)
+- [ ] Platsbilder: 58 platser saknar bilder (40 bilder tillgängliga)
+- [ ] Kapitel-sidor: Skriv kapitel 4, 5, 6, 7, 8, 10 (6 kapitel saknas)
 
 ### Kort sikt
-- [ ] Matcha 96 NPCs utan bilder
-- [ ] Bygga upp kampanjkrönika.md med alla kapitel
-- [ ] Kontinuitetskontroll med chronicler
+- [ ] Kontinuitetskontroll: validera wiki_data.js mot kampanjkrönika.md
+- [ ] Generera stämningsbilder för saknade kapitel med Midjourney
+- [ ] Uppdatera kampanjkrönika.md med senaste sessionerna (Kapitel 10-11)
 
 ### Lång sikt
 - [ ] Performance-optimering vid 500+ NPCs
-- [ ] Relationship-visualisering (nätverk)
-- [ ] Timeline-visualisering
-- [ ] Export-funktioner (PDF, JSON)
+- [ ] Relationship-visualisering (nätverk mellan NPCs)
+- [ ] Timeline-visualisering (interaktiv tidslinje)
+- [ ] Export-funktioner (PDF, JSON, Markdown)
+- [ ] Search-funktionalitet förbättring (fuzzy search, relationer)
 
 ---
 
