@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prolog: Tirakgraven - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        /* Chapter Header */
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Prose Styling */
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul, .prose ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        /* Quote Styling */
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <!-- Chapter Header -->
+        <header class="chapter-header">
+            <h1>Prolog: Tirakgraven</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Gränstrakterna mellan Cermira och Mithera</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik</div>
+            <div class="chapter-meta"><strong>Tidsperiod:</strong> Dag 1-14 vid utgrävningen</div>
+        </header>
+
+        <!-- Prose Content -->
+        <article class="prose">
+            <h2>Ankomsten</h2>
+
+            <p>Dimman låg tung över gränstrakterna den eftermiddagen kompaniet red in i dalen. <strong>Gordon Nahrzezia</strong> kände stanken av gammal magi innan han såg graven - en lukt av koppar och rutten jord som fick hästarna att dansa nervöst under sina ryttare.</p>
+
+            <p>"Vackert ställe", muttrade <strong>Kazrik</strong> från sin ponny. Dvärgens ögon var redan på runstenarna som stack upp ur marken som brutna tänder. "Någon ville verkligen att det som ligger här skulle stanna begravt."</p>
+
+            <p><strong>Umnatak</strong> sa ingenting. Ausern hade inte sagt ett ord sedan de passerat den sista byn tre dagar tidigare. Hans ögon rörde sig konstant, följde saker ingen annan kunde se. Det oroade Gordon mer än han ville erkänna.</p>
+
+            <p><strong>Migor Trollkunnig</strong> väntade vid tältlägret, hans lärlingar - tvillingarna <strong>Timron</strong> och <strong>Tamron</strong> - flankerade honom som nervösa skuggor. Den lärde mannens leende var för brett, hans ögon för hungriga när han såg soldaterna anlända.</p>
+
+            <div class="quote">
+                "Äntligen! Stålsvärdens bästa, hoppas jag. Vi har mycket att gräva upp."
+            </div>
+
+            <p>Gordon tyckte inte om det leendet. Han tyckte inte om stanken. Han tyckte inte om hur tvillingarna undvek hans blick, eller hur <strong>Zentri</strong> hade börjat gnugga sin vänstra tinning som om något sved där inne.</p>
+
+            <p>Men guld var guld, och <strong>Stålsvärds Kavalerister</strong> behövde betalt.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Kompaniets ledning</div>
+                <ul>
+                    <li><strong>Kapten Kaelar Stålsvärd</strong> - Kompaniets grundare och befälhavare</li>
+                    <li><strong>Serafina Eldstav</strong> - Second-in-command, Thismalv med hemligheter</li>
+                    <li><strong>Tjelvar</strong> - Kompanist, ansvarig för lägerbygge</li>
+                    <li><strong>Harald Vädermästare</strong> - Kompaniets vädermagiker</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h2>De Första Dagarna</h2>
+
+            <h3>Dag 2: Lägerbygge</h3>
+            <p>Morgonljuset avslöjade dalens sanna natur. Bergsknallar omgav dem på tre sidor, perfekta utsiktspunkter för observatörer. Gordon noterade dem alla medan <strong>Tjelvar</strong> dirigerade lägerbygget med den precision som bara en veteran kunde uppbringa.</p>
+
+            <p>Scouterna återvände vid middagstid. Mycket bytesdjur. Inga spår av civilisation. <em>Inga spår av tiraker.</em></p>
+
+            <p>Det sista borde ha varit en lättnad. Istället fick det Gordons nackhår att resa sig. Tirakerna levde i dessa marker. Hade levt här i generationer. Att de inte lämnade spår betydde att de <em>inte ville</em> lämna spår.</p>
+
+            <h3>Dag 3-6: Rutin</h3>
+            <p>Palissaden växte dag för dag. Grävandet fortsatte under Migors febriga ledning. Vakterna roterade. Allt var som det skulle vara.</p>
+
+            <p>Kazrik tillbringade varje ledig stund vid runstenarna, hans anteckningsbok fylldes med skisser och översättningar. "Gammalt", sa han en kväll vid elden. "Äldre än jag trodde möjligt. Den här graven är inte tirakisk - den är <em>före</em> tirakerna."</p>
+
+            <p>Ingen frågade vad det betydde. Ingen ville veta.</p>
+
+            <hr>
+
+            <h2>Första Varningen</h2>
+
+            <h3>Dag 7: Kimeran</h3>
+            <p>Den kom vid skymningen.</p>
+
+            <p>Skriken från hästhägnaden väckte halva lägret. Gordon var en av de första på plats, svärdet draget innan han ens var helt vaken. Det han såg fick honom att stanna mitt i steget.</p>
+
+            <p>Kimeran var utsvulten - revbenen syntes genom den smutsiga pälsen, och dess rörelser var desperata snarare än beräknande. Men det var inte det som fick Gordon att tveka. Det var ärren. Djupa, gamla ärr som bara kunde komma från kedjor och burar.</p>
+
+            <p>Varelsen hade varit fången. Någon hade hållit den fången. Och nu var den släppt.</p>
+
+            <div class="quote">
+                "Varför släpper man loss ett monster?"
+            </div>
+
+            <p>Kazrik ställde frågan ingen ville besvara. Umnatak stirrade mot bergsknallarna i mörkret, hans ögon vidöppna.</p>
+
+            <p>"För att se vad vi gör", viskade ausern. "De testar oss."</p>
+
+            <hr>
+
+            <h2>Stormen</h2>
+
+            <h3>Dag 8: Upptäckten</h3>
+            <p>Migor kunde knappt hålla sig stilla vid lunchen. Hans händer darrade när han viftade med sina anteckningar.</p>
+
+            <div class="quote">
+                "Vi har hittat något som kan vara huvudgraven. Behöver handräckning med grävning och väderskydd. Erbjuder 1 Solidus per dag."
+            </div>
+
+            <p>Flera kompanister anmälde sig frivilligt. Guld var guld.</p>
+
+            <p>På kvällen försökte <strong>Harald Vädermästare</strong> avstyra den inkommande stormen. Gordon såg hur svetten rann nerför magierns ansikte, hur hans händer skakade med ansträngningen. Men stormen kom ändå - som om något <em>ville</em> att den skulle komma.</p>
+
+            <p>Blixtar korsade himlen. Hästar fick panik. Tre tält slits sönder av vinden. Och mitt i kaoset såg Gordon honom - en figur uppe på bergsknallen, orörlig i stormen, <em>observerande</em>.</p>
+
+            <h3>Anfallet under Stormen</h3>
+            <p>De kom med stormen som täckmantel. En <strong>gurd</strong> med sin krigsulv, och en tirak - inne bland hästarna, försökte driva iväg dem i mörkret.</p>
+
+            <p>De slogs tillbaka. Men budskapet var tydligt: <em>Vi ser er. Vi kan nå er. Det här är bara början.</em></p>
+
+            <hr>
+
+            <h2>Eskalering</h2>
+
+            <h3>Dag 9: Möte med Fienden</h3>
+            <p>Vid skymningen kom de ut ur skuggorna. Två gurder med sina massiva kroppar, fyra tiraker med ansikten målade för krig. De gjorde inget försök att gömma sig.</p>
+
+            <p>Gordon ledde reträtten. Det var inte feghet - det var matematik. Sex fiender mot en patrull på fyra. Oddsen var dåliga, och tirakerna <em>ville</em> att de skulle slåss. Ville ha en ursäkt.</p>
+
+            <p>Den natten sov ingen. Dubbla vaktpass. Rörelser syntes vid bergsknallen - skuggor mot stjärnorna, försvinnande när man tittade för länge.</p>
+
+            <h3>Dag 11: Andeattacken</h3>
+            <p>Regnet hade avtagit under natten, men något annat kom i dess ställe.</p>
+
+            <p>Umnatak vaknade skrikande. "Andar! Vid hästarna!"</p>
+
+            <p>De var osynliga för de flesta - bara Umnatak och Zentri kunde se dem tydligt. Skuggor som rörde sig fel, kalla vindpustar som viskade i öronen. Hästarna kastade sig mot palissaden i ren panik.</p>
+
+            <p>När andeattacken misslyckades kom pilarna. Från mörkret. Tysta. Dödliga.</p>
+
+            <p><strong>Elara</strong>, pyaralvscoutern, träffades i sidan. Mantikoragift. Gordon hade sett tillräckligt många dö av det för att veta - om hon överlevde natten skulle det vara ett mirakel.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Mantikoragift</div>
+                <p>Snigelaktig spridning genom blodet. Först kommer domningen, sedan kramper, sedan andningssvårigheter. Utan motgift är döden nästan säker inom tolv timmar. Kompaniläkaren kämpade hela natten.</p>
+            </div>
+
+            <h3>Dag 12-13: Grottan</h3>
+            <p><strong>Thalia</strong> organiserade patrullerna med kylig effektivitet. Hon tog med Umnatak - hans spårningsförmågor var oöverträffade.</p>
+
+            <p>Det var Umnatak som såg ljuset. Djupt inne i skogen, där ingen människa borde vara. Ett flimrande sken som pulserade i ett rytmiskt mönster.</p>
+
+            <p>Grottan var en sidoingång till något större. Spår av ritualer fanns överallt - symboler målade i blod, utbrända facklor, rester av offer som Gordon inte ville titta för noga på. Och längst in, en tom bur. Stor nog för en kimera.</p>
+
+            <div class="quote">
+                "De vaktar något", sa Kazrik när de återvände. "Tirakerna. De försöker inte döda oss - de försöker stoppa oss. Det är en skillnad."
+            </div>
+
+            <p>Ingen frågade vad de vaktade. Vid det laget visste alla svaret.</p>
+
+            <hr>
+
+            <h2>Kistorna</h2>
+
+            <h3>Dag 13, Kväll: De Tre Kistorna</h3>
+            <p>Migor stod vid gropen med ett uttryck som var hälften triumf, hälften skräck. Bakom honom, i facklornas flimrande ljus, syntes tre kistor. En stor. Två mindre. Alla av svart sten, täckta med runor som fick Kazriks ögon att vidgas.</p>
+
+            <p>Olustkänslan som svepte över lägret var nästan fysisk. Zentri kräktes bakom ett tält. Hästar gnäggade oroligt. Även de hårdaste veteranerna i kompaniet undvek att titta mot utgrävningen.</p>
+
+            <p>"Underbart", viskade Migor. Hans händer darrade när han strök över den stora kistans lock. "Helt underbart."</p>
+
+            <h3>Dag 14: Jägarna</h3>
+            <p>De kom vid middagstid - två män med kött att sälja, historier om en by tre dagar norrut. Normal handel. Normal konversation.</p>
+
+            <p>Gordon såg hur en av dem tittade mot bergsknallen innan de lämnade. Bara en blick. Snabb. Nästan omärklig.</p>
+
+            <p>Han sa ingenting. Vad fanns det att säga? De var redan fångade i något de inte förstod.</p>
+
+            <hr>
+
+            <h2>Massattacken</h2>
+
+            <h3>Dag 14, Efter Skymning</h3>
+            <p>De kom från alla håll.</p>
+
+            <p>Tiraker. Gurder. Ulvar. Och bakom dem, djupt i mörkret, rörde sig något ännu större - <strong>trukher</strong>, de massiva bestar tirakerna använde som levande belägringsmaskiner.</p>
+
+            <p>Gordon skrek order medan pilarna regnade. Formera linje! Skydda utgrävningen! Håll palissaden!</p>
+
+            <p>Men den verkliga attacken kom inte mot väggarna. Den kom mot graven.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Ibran Anderyttare</div>
+                <p>Shamanen stod nästan två meter lång. Hans stav bar ett halvmåneformat metallstycke som glödde med inre eld. Benrustning klädde hans kropp, och hans hjälm var en dödskalle - mänsklig, tirakisk, det var omöjligt att säga.</p>
+                <p>Han hade vakat över graven i generationer. Hans förfäder före honom. Och nu kom han för att avsluta vad som aldrig borde ha börjat.</p>
+            </div>
+
+            <p>Gordon såg Ibran korsa slagfältet som om pilarna och svärden inte existerade. Tirakshamanen rörde sig med ett syfte som gick bortom överlevnad.</p>
+
+            <p>Vid graven möttes de - shamanen och den lärde. Migor höll något i handen. En dolk. Gammal. Kraftfull. <em>Fel.</em></p>
+
+            <hr>
+
+            <h2>Katastrofen</h2>
+
+            <h3>Demonens Frigörelse</h3>
+            <p>Vad som hände vid graven den natten skulle ingen av dem någonsin helt förstå. Skrik. Ljus som inte borde existera. En köld som trängde in i själva själen.</p>
+
+            <p>Och mitt i alltsammans - <strong>Urkhath</strong>.</p>
+
+            <p>Demonen var inte fri. Inte helt. Men den var inte längre bunden heller. Tusen år av fångenskap hade pressats genom en springa i verklighetens väv, och vad som läckte ut var tillräckligt för att förändra allt.</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Vad som hittades i graven</div>
+                <ul>
+                    <li><strong>Offerdolken</strong> - Ett vapen skapat för att binda, inte döda</li>
+                    <li><strong>Bindningsartefakterna</strong> - Kedjor av silver och magi som höll demonen fången</li>
+                    <li><strong>Silverringen</strong> - En del av demonens egen essens, avskild och lagrad</li>
+                </ul>
+            </div>
+
+            <h3>Zentris Hemlighet</h3>
+            <p>I kaoset såg ingen vad Zentri gjorde. Asharien hade kämpat som alla andra, hans magi flammande mot tirakerna. Men när han passerade den öppnade kistan, när hans hand snuddade vid silverringen...</p>
+
+            <p>Han stoppade den i fickan. Berättade för ingen.</p>
+
+            <p>Ringen var kall mot hans hud. Kall och hungrig. Och någonstans, djupt i hans medvetande, började något viska.</p>
+
+            <h3>Ibrans Fall - Och Återfödelse</h3>
+            <p>Shamanen föll. Gordon såg det - såg svärdet tränga in, såg livet lämna de gula ögonen. Men döden var inte slutet för Ibran Anderyttare.</p>
+
+            <p>Hans själ flöt fri i ett ögonblick. Sökande. Hungrande. Och fann ett kärl - <strong>Tamron</strong>, Migors lärling, vars sinne var öppet av skräck och förvirring.</p>
+
+            <p>Tamron/Ibran reste sig. Hans rörelser var fel - för stela, för beräknande. Hans ögon hade förändrats, fått en glöd som inte varit där förut.</p>
+
+            <p>Och medan ingen tittade dödade han sin tvillingbror. <strong>Timrons</strong> kropp kollapsade utan ett ljud, och Tamron/Ibran försvann in i natten med artefakterna han kunnat rädda.</p>
+
+            <h3>Serafinas Spel</h3>
+            <p><strong>Serafina Eldstav</strong> rörde sig genom kaoset med ett syfte ingen annan förstod. Thismalven samlade de återstående föremålen - de som Ibran inte hunnit ta. Hennes rörelser var för effektiva, för förberedda.</p>
+
+            <p>Hon hade vetat. Kanske inte allt, men tillräckligt. Och nu hade hon vad hon kommit för.</p>
+
+            <hr>
+
+            <h2>Efterdyningarna</h2>
+
+            <p>Morgonen avslöjade sanningen i sitt fulla, hemska ljus. Döda överallt - kompanister, tiraker, varelser som inte borde existera. Kapten Kaelar svårt skadad. Migor försvunnen - eller det som var kvar av honom.</p>
+
+            <p>Och mitt i alltsammans, fyra överlevare som visste att ingenting skulle bli sig likt igen.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Chockvågor genom Mundana</div>
+                <ul>
+                    <li><strong>Zorian-orden</strong> kände störningen - skickade ut "Systrarna", sina hemliga agenter</li>
+                    <li><strong>Sanari-alverna</strong> kontaktade Serafina med ett erbjudande: återtagning efter 10 års förvisning, i utbyte mot föremålen</li>
+                    <li><strong>Zentri</strong> började plågas av drömmar - röster i natten, visioner av eld och kedjor</li>
+                </ul>
+            </div>
+
+            <p>Gordon stod vid gravens kant och stirrade ner i mörkret. Någonstans där nere hade något urgammalt rört på sig. Något som inte skulle sluta förrän det var fritt.</p>
+
+            <p>Eller förrän de stoppade det.</p>
+
+            <div class="quote">
+                "Vad gör vi nu?"
+            </div>
+
+            <p>Kazriks fråga hängde i luften. Ingen hade ett svar. Men alla visste en sak - Tamron, eller vad som nu bar hans kropp, hade flytt med artefakter som kunde förändra världen. Och ringen i Zentris ficka pulserade med en hunger som aldrig skulle mättas.</p>
+
+            <p>Jakten hade börjat.</p>
+
+            <hr>
+
+            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
+                Så föddes äventyret ur blod och skuggor.<br>
+                Och demonen som sov i tusen år började drömma om frihet.
+            </p>
+        </article>
+    </div>
+
+    <script>
+        // Smooth scroll for any future internal navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
