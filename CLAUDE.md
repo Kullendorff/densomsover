@@ -153,7 +153,7 @@ EON/kapitel/
 - **MASTER:** `kampanjkrönika.md` (eon-chronicler's tidslinje)
 - **Kompletterande:** `wiki_data.js`, Jekyll markdown
 
-**Genereras av:** `eon-storyteller` subagent
+**Genereras av:** `eon-kapitel-writer` agent
 
 **Viktigt:**
 - ALLTID baserat på kampanjkrönika.md
@@ -173,7 +173,7 @@ EON/kapitel/
 │   ├── eon-chronicler.md        # Kampanjkrönikör
 │   ├── eon-doc-extractor.md     # Dokumentdataextraktion
 │   ├── eon-image-curator.md     # Bildmatchning
-│   ├── eon-storyteller.md       # Narrativ HTML-skrivare
+│   ├── eon-kapitel-writer.md    # Narrativ HTML-skrivare
 │   └── eon-midjourney-prompter.md # Midjourney prompt-generator
 ├── skills/                      # Återanvändbara skills
 │   └── eon-npc-adder/           # NPC-tillägg (en i taget)
@@ -315,14 +315,14 @@ Task(
 - Organisera och kategorisera bildarkiv
 - Generera bildstatus-rapporter
 
-### eon-storyteller
-**Fil:** `.claude/agents/eon-storyteller.md`
+### eon-kapitel-writer
+**Fil:** `.claude/agents/eon-kapitel-writer.md`
 **Syfte:** Skriver narrativa HTML-sidor för kampanjens kapitel
 **Användning:**
 ```python
 # Via Task tool
 Task(
-  subagent_type="eon-storyteller",
+  subagent_type="eon-kapitel-writer",
   prompt="Skriv Kapitel 5 (Vargnäset första besöket) baserat på kampanjkrönika.md"
 )
 ```
@@ -342,11 +342,18 @@ Task(
 - ALDRIG avvika från krönikan
 - ALDRIG uppfinna händelser
 - Vid konflikt: krönika har alltid rätt
+- Markera luckor: `[BEHÖVER BEKRÄFTELSE från Johan: fråga]`
 
 **Stil:**
 - **Abercrombie (40%):** Cynisk ton, rå realism, direkt action, mörk humor
 - **Hobb (40%):** Emotionell introspektiv, långsamma konsekvenser, rika relationer
 - **Fokus (20%):** Moraliska gråzoner, personliga kostnader, atmosfär
+
+**Arbetsflöde:**
+- 8 detaljerade steg (från fakta till validering)
+- Omfattande kvalitetskontroll-checklista
+- Teknisk validering och fakta-verifiering
+- Output-format med komplett rapportering
 
 **Befintliga kapitel:** Prolog, 1, 2, 3, 9
 **Saknas:** Kapitel 4, 5, 6, 7, 8, 10, 11
@@ -357,10 +364,10 @@ Task(
 - Förbättra narrativ kvalitet på befintliga sidor
 - ALLTID efter att chronicler uppdaterat kampanjkrönika.md
 
-**Validering:**
-- Storyteller konsulterar eon-chronicler för faktakontroll
-- Chronicler flaggar avvikelser från master-tidslinjen
-- Storyteller fixar omedelbart vid konflikt
+**Förbättring:**
+- Kombinerar det bästa från tidigare eon-storyteller och ursprungliga eon-kapitel-writer
+- Mer omfattande än ursprunglig version (14KB vs 10KB)
+- Inklusive kvalitetskontroll, validering, och entusiastisk ton
 
 ### eon-midjourney-prompter
 **Fil:** `.claude/agents/eon-midjourney-prompter.md`
@@ -580,9 +587,9 @@ Task(
 ### Skriva kapitel-sidor
 
 ```python
-# Använd eon-storyteller agent
+# Använd eon-kapitel-writer agent
 Task(
-  subagent_type="eon-storyteller",
+  subagent_type="eon-kapitel-writer",
   prompt="Skriv Kapitel 5 (Vargnäset första besöket) baserat på kampanjkrönika.md"
 )
 ```
