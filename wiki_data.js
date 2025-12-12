@@ -2423,6 +2423,17 @@ var wikiData = {
       "beskrivning": "# YENNARA AV BOCA\n**Köpman och rådman i Jarla**\n\n## GRUNDINFO\n- **Position:** Rådman i Jarlas råd (en av 10 köpmän)\n- **Inflytande:** Medlem i stadens styrande råd\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. En av stadens inflytelserika köpmän.\n\n## SL-ANTECKNINGAR\nEn av de oberoende köpmännen i rådet, inte direkt kopplad till de stora handelshus som Ramiz, Nejas eller Wezi."
     },
     {
+      "namn": "Yelgotha",
+      "bild": "yelgotha.png",
+      "ras": "Skugglandsfurste",
+      "titel": "Prins av det Första Hovet",
+      "status": "levande",
+      "plats": "Mithera (tidigare frusen)",
+      "fraktion": "Månskenshovet",
+      "kapitel": "Kapitel 9",
+      "beskrivning": "# YELGOTHA\n**Den Frusna Prinsen - Prins av det Första Hovet**\n\n## GRUNDINFO\n- **Ras:** Skugglandsfurste\n- **Titel:** Prins av det Första Hovet (Månskenshovet innan splittringen)\n- **Status:** Levande (väckt av hjältarna)\n- **Ålder:** Urgammal (frusen i 700 år)\n- **Plats:** Tidigare frusen i Mithera, nu väckt\n\n## BAKGRUND\nYelgotha var prins av det Första Hovet innan Månskenshovet splittrades. För 700 år sedan frystes han i en ispelare i Mithera, en händelse som försvagade gränsen mellan Mundana och Skugglandet.\n\n## RELATION TILL VINTERGLÖD\nVinterglöd tjänstgjorde som hans page under Tirakernas Krig (för 9000 år sedan). När Vinterglöd svek sina allierade och började tjäna demonen Urkhath, blev det ett svek även mot Yelgotha som hans herre.\n\n## I KAMPANJEN\nHjältarna hittade och väckte Yelgotha ur hans isfängelse i Den Frusna Katedralen i Mithera (Kapitel 9). Han gav dem fem varningar om Skugglandet.\n\n### Hans sista ord\n*\"När ni möter Vinterglöd, säg att Yelgotha skickade er. Han var min page en gång.\"*\n\nDessa ord blev nyckeln till att öppna dialog med Vinterglöd i Skugglandet.\n\n## MÖJLIG KOPPLING TILL KUBERON\nDet finns teorier om att Yelgotha kan vara Kuberons själ eller essens - den tredje manifestationen tillsammans med Kuberon (Balansen) och Vinterglöd (Ljuset/Ånger).\n\n## BETYDELSE\n- Yelgothas väckande var ett viktigt steg i kampanjen\n- Hans namn öppnar dörrar hos Vinterglöd\n- Hans isfängslande försvagade gränsen mellan världarna\n- Han kan vara nyckeln till att återförena Kuberon-manifestationerna\n\n## RELATIONER\n- **Vinterglöd:** Tidigare hans page, senare svikare\n- **Månskenshovet:** Prins av det Första Hovet\n- **Kuberon:** Möjligen samma väsen (olika manifestationer)\n- **Hjältarna:** De som väckte honom"
+    },
+    {
       "namn": "Ylva",
       "bild": "ylva.png",
       "ras": "Människa",
