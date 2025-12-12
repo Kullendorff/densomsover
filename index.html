@@ -807,39 +807,47 @@
 
             if (!modalType || !name) return;
 
+            console.log('handleUrlParams:', modalType, name);
+
             // Rensa URL:en utan att ladda om sidan
             window.history.replaceState({}, document.title, window.location.pathname);
 
-            if (modalType === 'npc') {
-                const npc = allNpcs.find(n => n.namn.toLowerCase() === name.toLowerCase());
-                if (npc) {
-                    // Växla till NPCs-sektionen
-                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-                    document.querySelector('[data-section="npcs"]').classList.add('active');
-                    document.getElementById('npcs').classList.add('active');
-                    // Öppna modal
-                    setTimeout(() => showModal(npc), 100);
+            // Vänta lite längre för att säkerställa att allt är renderat
+            setTimeout(() => {
+                if (modalType === 'npc') {
+                    const npc = allNpcs.find(n => n.namn.toLowerCase() === name.toLowerCase());
+                    console.log('Hittad NPC:', npc);
+                    if (npc) {
+                        // Växla till NPCs-sektionen
+                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                        document.querySelector('[data-section="npcs"]').classList.add('active');
+                        document.getElementById('npcs').classList.add('active');
+                        // Öppna modal
+                        showModal(npc);
+                    }
+                } else if (modalType === 'plats') {
+                    const plats = allPlatser.find(p => p.namn.toLowerCase() === name.toLowerCase());
+                    console.log('Hittad plats:', plats);
+                    if (plats) {
+                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                        document.querySelector('[data-section="platser"]').classList.add('active');
+                        document.getElementById('platser').classList.add('active');
+                        showPlatsModal(plats);
+                    }
+                } else if (modalType === 'fraktion') {
+                    const fraktion = allFraktioner.find(f => f.namn.toLowerCase() === name.toLowerCase());
+                    console.log('Hittad fraktion:', fraktion);
+                    if (fraktion) {
+                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                        document.querySelector('[data-section="fraktioner"]').classList.add('active');
+                        document.getElementById('fraktioner').classList.add('active');
+                        showFraktionModal(fraktion);
+                    }
                 }
-            } else if (modalType === 'plats') {
-                const plats = allPlatser.find(p => p.namn.toLowerCase() === name.toLowerCase());
-                if (plats) {
-                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-                    document.querySelector('[data-section="platser"]').classList.add('active');
-                    document.getElementById('platser').classList.add('active');
-                    setTimeout(() => showPlatsModal(plats), 100);
-                }
-            } else if (modalType === 'fraktion') {
-                const fraktion = allFraktioner.find(f => f.namn.toLowerCase() === name.toLowerCase());
-                if (fraktion) {
-                    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-                    document.querySelector('[data-section="fraktioner"]').classList.add('active');
-                    document.getElementById('fraktioner').classList.add('active');
-                    setTimeout(() => showFraktionModal(fraktion), 100);
-                }
-            }
+            }, 300);
         }
 
         // Kapitel data
