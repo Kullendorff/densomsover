@@ -3,7 +3,7 @@
 ## Projektöversikt
 EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan).
 
-**Huvudsida:** Fantasy-dashboard (`/dashboard/index.html`) med centraliserad databas (`wiki_data.js`)
+**Huvudsida:** Fantasy-dashboard (`/index.html`) med centraliserad databas (`wiki_data.js`)
 **Referens:** Jekyll-wiki (`/kampanjwiki/`) för strukturerad markdown-data
 
 ## NUVARANDE STATUS (2025-12-11)
@@ -18,10 +18,10 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 ## Arkitektur
 
 ### 1. Dashboard (Huvudsida)
-**Plats:** `EON/dashboard/index.html`
+**Plats:** `/index.html` (rot-katalogen)
 **Typ:** Single-file HTML (1050+ rader)
 **Tech Stack:** Vanilla JS, CSS Grid, Markdown-rendering
-**Data:** Laddar `../wiki_data.js` via `<script src>`
+**Data:** Laddar `wiki_data.js` via `<script src>`
 
 **Features:**
 - Hero-sektion med kampanjstatus
@@ -40,7 +40,7 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 - `--bg-dark: #0a0a0a` - Bakgrund
 
 ### 2. wiki_data.js (Centraliserad Databas)
-**Plats:** `EON/wiki_data.js`
+**Plats:** `/wiki_data.js` (rot-katalogen)
 **Storlek:** 284 KB (220 NPCs, 53 platser, 11 kapitel)
 **Format:** CommonJS module (`module.exports`) + browser global (`var wikiData`)
 
