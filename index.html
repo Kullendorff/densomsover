@@ -839,10 +839,10 @@
 
         // Kapitelsidor som finns (nummer → filnamn)
         const kapitelSidor = {
-            '1': 'prolog-tirakgraven.html',
-            '2': 'kapitel-1-jakten.html',
-            '3': 'kapitel-2-muhad.html',
-            '10': 'kapitel-9-mithera.html'
+            '0': 'prolog-tirakgraven.html',
+            '1': 'kapitel-1-jakten.html',
+            '2': 'kapitel-2-muhad.html',
+            '9': 'kapitel-9-mithera.html'
         };
 
         function renderKapitel() {
@@ -852,7 +852,7 @@
                 const sidlank = harSida ? `<a href="kapitel/${harSida}" class="kapitel-link">📖 Läs kapitlet</a>` : '';
                 return `
                 <div class="timeline-item ${k.status === 'pågående' ? 'current' : ''}">
-                    <h3>Kapitel ${k.nummer}: ${k.titel}</h3>
+                    <h3>${k.titel}</h3>
                     <div class="meta">${k.plats} | Status: ${k.status}</div>
                     <p>${k.beskrivning}</p>
                     ${sidlank}

@@ -3029,78 +3029,78 @@ var wikiData = {
   ],
   "kapitel": [
     {
-      "nummer": "1",
-      "titel": "Fas 1: Tirakgraven och Demonens Väckande",
+      "nummer": "0",
+      "titel": "Prolog: Tirakgraven och Demonens Väckande",
       "status": "avslutad",
       "plats": "Gränstrakterna mellan Cermira och Mithera",
       "datum": "Kampanjstart"
     },
     {
-      "nummer": "2",
-      "titel": "Fas 2: Jakten på Tamron/Ibran",
+      "nummer": "1",
+      "titel": "Kapitel 1: Jakten på Tamron/Ibran",
       "status": "avslutad",
       "plats": "Genom Cermiras skogar mot Grensfortet",
       "datum": "Efter Tirakgraven"
     },
     {
-      "nummer": "3",
-      "titel": "Fas 3: Uppdraget att hitta Hagge",
+      "nummer": "2",
+      "titel": "Kapitel 2: Uppdraget att hitta Hagge",
       "status": "avslutad",
       "plats": "Från Jarla till Jen i Muhad",
       "datum": "Tre månader efter Grensfortet"
     },
     {
-      "nummer": "4",
-      "titel": "Fas 4: Skeppsbrottet och Tarkas",
+      "nummer": "3",
+      "titel": "Kapitel 3: Skeppsbrottet och Tarkas",
       "status": "avslutad",
       "plats": "Tarkas kust och ökenlandskap",
       "datum": null
     },
     {
-      "nummer": "5",
-      "titel": "Fas 5: Genom Jargien mot hemmet",
+      "nummer": "4",
+      "titel": "Kapitel 4: Genom Jargien mot hemmet",
       "status": "avslutad",
       "plats": "Jargiska kejsardömet",
       "datum": null
     },
     {
-      "nummer": "6",
-      "titel": "Fas 6: Vargnäset - Första besöket och Zentris försvinnande",
+      "nummer": "5",
+      "titel": "Kapitel 5: Vargnäset - Första besöket",
       "status": "avslutad",
       "plats": "Byn Vargnäset, nära Cermiras gräns",
       "datum": null
     },
     {
-      "nummer": "7",
-      "titel": "Fas 7: Återkomst till Vitterdal och belöning",
+      "nummer": "6",
+      "titel": "Kapitel 6: Återkomst till Vitterdal",
       "status": "avslutad",
       "plats": "Vitterdal, Cermira",
       "datum": null
     },
     {
-      "nummer": "8",
-      "titel": "Fas 8: Tillbaka till Vargnäset - Andra besöket",
+      "nummer": "7",
+      "titel": "Kapitel 7: Vargnäset - Ockupationen",
       "status": "avslutad",
       "plats": "Vargnäset, nu ockuperat",
       "datum": null
     },
     {
-      "nummer": "9",
-      "titel": "Fas 9: Evakueringen",
+      "nummer": "8",
+      "titel": "Kapitel 8: Evakueringen",
       "status": "avslutad",
       "plats": "Flykt mot säkerhet genom Drunok",
       "datum": null
     },
     {
-      "nummer": "10",
-      "titel": "Fas 10: Genom Mithera",
+      "nummer": "9",
+      "titel": "Kapitel 9: Genom Mithera",
       "status": "avslutad",
       "plats": "Mithera-skogen, från Grensfortet till Skugglandet",
       "datum": null
     },
     {
-      "nummer": "11",
-      "titel": "Fas 11: Skugglandet",
+      "nummer": "10",
+      "titel": "Kapitel 10: Skugglandet",
       "status": "pågående",
       "plats": "Skugglandets förvrängda verklighet",
       "datum": null
