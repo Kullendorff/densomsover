@@ -1000,7 +1000,7 @@
                         ${plats.region ? `<span class="tag gold">📍 ${plats.region}</span>` : ''}
                     </div>
                     <div class="card-info">
-                        ${plats.beskrivning ? plats.beskrivning.substring(0, 100) + '...' : ''}
+                        ${plats.beskrivning ? stripMarkdown(plats.beskrivning).substring(0, 100) + '...' : ''}
                     </div>
                 </div>
             `).join('');
@@ -1029,6 +1029,20 @@
                     </div>
                 </div>
             `).join('');
+        }
+
+        // Rensa markdown-syntax för kortförhandsvisningar
+        function stripMarkdown(text) {
+            if (!text) return '';
+            return text
+                .replace(/#{1,6}\s*/g, '')           // Ta bort # rubriker
+                .replace(/\*\*(.*?)\*\*/g, '$1')     // Ta bort **bold**
+                .replace(/\*(.*?)\*/g, '$1')         // Ta bort *italic*
+                .replace(/`(.*?)`/g, '$1')           // Ta bort `code`
+                .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // Ta bort [text](url)
+                .replace(/^[-*]\s*/gm, '')           // Ta bort listor
+                .replace(/\n+/g, ' ')                // Ersätt radbrytningar med mellanslag
+                .trim();
         }
 
         function getStatusColor(status) {
