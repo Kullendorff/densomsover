@@ -1,10 +1,15 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2025-12-13 (NATT/TIDIG MORGON)
+## Datum: 2025-12-13 (MORGON/FÖRMIDDAG)
 
-## Status: ✅ MASSIV SESSION KLAR - Krönika utökad + Kapitel-sida skapad + Fraktioner kompletterade!
+## Status: ✅ DASHBOARD-INTEGRATION KLAR! Fraktioner nu live i dashboard!
 
-**Stora milstolpar:**
+**Senaste uppdatering:**
+- Dashboard (index.html) integrerat med fraktioner_data.js
+- Alla 45 fraktioner nu sökbara och filtrerbara i dashboard
+- Git commit och push klart (3406da3)
+
+**Tidigare milstolpar (natt-sessionen):**
 - Kapitel 9 (Mithera) utökat med 157 rader detaljrik beskrivning
 - Första kapitel-HTML-sida skapad (proof-of-concept)
 - Fraktioner_data.js kompletterad: 45 fraktioner (32 handelshus)
@@ -118,17 +123,47 @@ handelshus.md innehåller endast 32 handelshus totalt (inte 36 som tidigare anta
 
 ---
 
+## NYA UPPDATERINGAR (2025-12-13 MORGON)
+
+### ✅ KLART: Dashboard-integration av fraktioner_data.js
+
+**Johan's instruktion:** "börja integrera .- och committa och pusha utan att fråga mig"
+
+**Gjort:**
+1. ✅ Script-laddning: `<script src="./fraktioner_data.js"></script>` tillagd i index.html
+2. ✅ HTML-sektion: Fraktioner-sektion med sök- och filter-kontroller
+   - Sökfält: `fraktion-search`
+   - Filter: Typ (Handelshus/Magihus/etc), Ras (Pyaralver/Tirak/etc), Status (Allierad/Fiende/etc)
+3. ✅ JavaScript-funktioner tillagda:
+   - `renderFraktioner()` - Renderar grid-cards med typ, ras, status, ledare, huvudsäte
+   - `showFraktionModal()` - Modal med fullständig fraktionsinfo + markdown-rendering
+   - `applyFraktionFilters()` - Dynamisk filtrering av fraktioner
+   - setupFilters() uppdaterad för fraktioner
+   - setupSearch() uppdaterad för fraktioner
+4. ✅ activeFilters utökad: fraktionTyp, fraktionRas, fraktionStatus
+5. ✅ Git commit och push: `3406da3` - "Integrera fraktioner_data.js i dashboard"
+
+**Resultat:**
+- 45 fraktioner nu tillgängliga i dashboard
+- Sökbar och filtrerbar lista
+- Modal med alla detaljer (typ, ras, huvudsäte, ledare, verksamhet, status, kapitel, beskrivning)
+- Konsekvent UX med NPCs och Platser
+
+**Ändringar:** 180 insertions, 13 deletions i index.html
+
+---
+
 ## KVARVARANDE ARBETE
 
-### Prioritet 1: Dashboard-integration ⏳
-**VIKTIGT:** Johan påminde: "glöm inte bort att uppdatera index sidan med fraktion databasen"
+### Prioritet 1: Dashboard-integration ✅ KLAR!
+~~Johan påminde: "glöm inte bort att uppdatera index sidan med fraktion databasen"~~
 
-**Behöver göras:**
-1. Hitta huvuddashboard (index.html)
-2. Ladda fraktioner_data.js via `<script src="fraktioner_data.js">`
-3. Skapa fraktionssektion (grid-layout som NPCs/platser)
-4. Modal för fraktionsdetaljer
-5. Filter: typ, ras, status
+**✅ ALLT KLART:**
+1. ✅ Hitta huvuddashboard (index.html)
+2. ✅ Ladda fraktioner_data.js via `<script src="fraktioner_data.js">`
+3. ✅ Skapa fraktionssektion (grid-layout som NPCs/platser)
+4. ✅ Modal för fraktionsdetaljer
+5. ✅ Filter: typ, ras, status
 
 ### Prioritet 2: Kapitel-sidssystem (PÅBÖRJAT PLANERING)
 **VIKTIGT:** Johan sa: "börja skapa kapitel och kampanjhistoriken som vi sa innan"
@@ -251,32 +286,21 @@ EON/kapitel/
 ## Git Status
 
 **Branch:** main
-**Status:** Working directory has uncommitted changes
+**Status:** ✅ Clean - all changes committed and pushed!
+
+**Senaste commits:**
+1. `3406da3` (2025-12-13 morgon) - "Integrera fraktioner_data.js i dashboard"
+   - index.html: +180 insertions, -13 deletions
+   - Fraktioner nu live i dashboard med sök och filter
+
+2. `24cc11f` (tidigare) - Natt-sessionens arbete
+   - wiki_data.js: Warg Spegelsköld tillagd → 242 NPCs, 58 platser
+   - kampanjkrönika.md: Kapitel 9 utökat +157 rader → 2415 rader totalt
+   - fraktioner_data.js: Jhamalomian + Jhamkeir tillagda → 45 fraktioner
+   - kapitel/kapitel-9-mithera.html: Första kapitel-sidan skapad (~600 rader)
+
 **Modified files (uncommitted):**
-- wiki_data.js (Warg Spegelsköld tillagd → 242 NPCs, 58 platser)
-- kampanjkrönika.md (Kapitel 9 utökat +157 rader → 2415 rader totalt)
-- fraktioner_data.js (Jhamalomian + Jhamkeir tillagda → 45 fraktioner)
-- CURRENT_STATE.md (denna slutliga uppdatering)
-
-**Nya filer (uncommitted):**
-- kapitel/kapitel-9-mithera.html (första kapitel-sidan, ~600 rader)
-
-**Senaste commit:** `63ccc69` - "Update CURRENT_STATE.md - 2025-12-11 status"
-
-**REKOMMENDATION:** Committa innan Johan vaknar, så han har tydlig punkt att granska från.
-
-**Föreslagen commit-message:**
-```
-Massiv natt-session 2025-12-13: Krönika + Kapitel-sidor + Fraktioner
-
-- wiki_data.js: +1 NPC (Warg Spegelsköld), +1 plats (Vansnäs Gästgiveri) → 242 NPCs, 58 platser
-- kampanjkrönika.md: Kapitel 9 utökat +157 rader (Mithera-resan detaljerad)
-- fraktioner_data.js: +2 handelshus (Jhamalomian, Jhamkeir) → 45 fraktioner
-- NY: kapitel/kapitel-9-mithera.html (första proof-of-concept kapitel-sida)
-- CURRENT_STATE.md: Uppdaterad med 10 frågor till Johan
-
-Ny feature: Kapitel-sidssystem påbörjat!
-```
+- CURRENT_STATE.md (denna uppdatering - behöver committas)
 
 ---
 
