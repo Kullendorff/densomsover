@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 3: Skeppsbrottet och Tarkas - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul, .prose ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Entity Links - klickbara NPCs, platser, fraktioner */
+        .entity-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+            transition: all 0.2s ease;
+        }
+        .entity-link:hover { border-bottom-style: solid; }
+        .entity-npc { color: var(--flame-orange); }
+        .entity-plats { color: var(--mystic-purple); }
+        .entity-fraktion { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <div class="content-container">
+        <header class="chapter-header">
+            <h1>Kapitel 3: Skeppsbrottet och Tarkas</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Tarkas södra kust och inlandet</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik, Hagge</div>
+            <div class="chapter-meta"><strong>Tidsperiod:</strong> Omedelbart efter avfärden från Jen</div>
+        </header>
+
+        <article class="prose">
+            <h2>Havet Tar</h2>
+
+            <p>Resan hem skulle bli kort, hade de sagt. Två veckor längs kusten, sedan vidare över bergen. Enkelt. Säkert.</p>
+
+            <p>Havet hade andra planer.</p>
+
+            <p><strong>Gordon</strong> stod vid relingen när han såg det - en kolumn av svart rök vid horisonten, så tjock att den verkade sluka himlen själv. Marken under havet hade öppnat sig, och världen brann.</p>
+
+            <p>Vulkanutbrottet vid <strong>Tarkas kust</strong> var inget vanligt utbrott. Det var en kraft bortom mänsklig fattning - ett fenomen som förändrade havets färg från blått till kokhett grått på minuter.</p>
+
+            <p>Sedan kom vågorna.</p>
+
+            <h3>Skeppets Död</h3>
+
+            <p>Första vågen träffade dem bakifrån. Skeppet lyfte - faktiskt lyfte - som en leksak i ett barns hand. <strong>Kazrik</strong> hann bara gripa sin dagbok innan nästa våg slog till.</p>
+
+            <p><strong>Hagge</strong> skrek någonting - order, kanske, eller bön. Orden drunknade i vattnets rytande.</p>
+
+            <p><strong>Umnatak</strong> hade redan hunnit till livbåten när masten bröts. Träet splittrades som glas, och sedan var allt vatten och kaos och mörker.</p>
+
+            <div class="quote">
+                "Havet tar. Så har det alltid varit. Men ibland spottar det också ut det den tagit - trasigt, förändrat, men levande."
+            </div>
+
+            <p><strong>Zentri</strong> vaknade först. Aska i munnen, salt i ögonen, kroppen halvbegravd i svart sand. Runt honom låg vrakrester utspridda som spillrorna av ett sönderslaget liv.</p>
+
+            <p>En efter en hittade de varandra. Levande. Alla fem.</p>
+
+            <p>Det var mer tur än någon av dem förtjänade.</p>
+
+            <hr>
+
+            <h2>Ödemarkens Dagar</h2>
+
+            <h3>Det Askbeströdda Landskapet</h3>
+
+            <p>Tarkas södra kust var ingen plats för de levande.</p>
+
+            <p>Vulkanaska täckte allting - marken, träden, till och med luften verkade grå och tjock. Varje andetag smakade svavelrök och död. Inget växte här. Inget levde här.</p>
+
+            <p>Åtminstone inget som borde leva.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Överlevnad i Ödemarken</div>
+                <ul>
+                    <li><strong>Umnatak</strong> - Jagade och spårade, kämpade dagligen för att hitta vatten som inte var förgiftat</li>
+                    <li><strong>Gordon</strong> - Höll gruppen samman, drev dem vidare när kroppen sa stopp</li>
+                    <li><strong>Kazrik</strong> - Dokumenterade allt, trots att hans utrustning var förstörd</li>
+                    <li><strong>Hagge</strong> - Militär disciplin, organiserade läger och vakthållning</li>
+                    <li><strong>Zentri</strong> - Magiskt stöd när krafterna räckte</li>
+                </ul>
+            </div>
+
+            <p>Dagarna smälte samman. Vandring i gryningen, sömn i skuggan under dagens hetaste timmar, fortsatt vandring tills mörkret tvingade dem stanna. <strong>Gordon</strong> räknade dagarna på fingrarna - sex, sju, åtta - innan han slutade räkna.</p>
+
+            <p>Det var på nionde dagen de fann ruinen.</p>
+
+            <hr>
+
+            <h2>Ödlefolkets Ruiner</h2>
+
+            <h3>Upptäckten</h3>
+
+            <p>Vulkanutbrottet hade blottat något som legat begravt i tusentals år.</p>
+
+            <p><strong>Kazrik</strong> var den som såg det först - en stenkant som stack upp ur askan, för regelbunden för att vara naturlig. När de grävde bort askan avtäcktes en portal större än någon dörr hade rätt att vara.</p>
+
+            <p>Inskriptionerna på stenblocken var främmande. Inget språk någon av dem kände igen. Väggmålningar innanför föreställde varelser som var halvt människa, halvt ödla - reptilliknande humanoider med kalla ögon och verktyg i händerna.</p>
+
+            <div class="quote">
+                "De byggde detta. Ett folk som försvann innan människan ens fanns. Och de lämnade vakterna kvar."
+            </div>
+
+            <h3>Golemerna</h3>
+
+            <p>De hörde det innan de såg det. Ett skrapande ljud, sten mot sten, som malande tänder i mörkret.</p>
+
+            <p>Två figurer rörde sig i korridoren framför dem. Humanoidformer av massiv sten, tre meter höga, med ögon som glödde svagt i dunklet. De patrullerade - systematiskt, mekaniskt, som om de fortfarande väntade på order från herrar som varit döda i eoner.</p>
+
+            <p><strong>Gordon</strong> höll upp handen. Ingen rörelse. Ingen andning. De smög förbi medan golemerna vände ryggen till, centimeter för centimeter genom skuggorna.</p>
+
+            <p>Det var då Hagge sparkade till en sten.</p>
+
+            <p>Ljudet ekade genom korridoren. Golemernas huvuden vred sig. Ögonen flammade.</p>
+
+            <p>"Spring."</p>
+
+            <hr>
+
+            <h2>Den Stora Salen</h2>
+
+            <h3>Kolossen</h3>
+
+            <p>De flydde djupare in i komplexet - fel riktning, det visste Gordon, men det fanns inget val. Bakom dem mullrade golemernas tunga steg.</p>
+
+            <p>Sedan öppnade sig korridoren till en sal större än något <strong>Gordon</strong> sett. Taket försvann i mörkret ovanför. Och i mitten...</p>
+
+            <p>Den kolossala golemen stod som en frusen gud.</p>
+
+            <p>Tre gånger en människas höjd. Kropp av massiv, ogenomtränglig sten. Ansiktet var tomt - inga ögon, inget uttryck - men ändå verkade det se dem.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Kolossen</div>
+                <p>Inspirerad av legenderna om <em>Zalmareth the Colossus</em> - en uråldrig varelse från tiden före tid. Dess kropp var ogenomtränglig för vanliga vapen, dess kraft bortom allt mänskligt.</p>
+            </div>
+
+            <p>Ett mullrande från dess kärna. Armarna började röra sig.</p>
+
+            <p>Det var då ruinen började skaka.</p>
+
+            <h3>Zentris Pris</h3>
+
+            <p><strong>Zentri</strong> reagerade instinktivt. Magi flammade från hans händer - inte för att attackera, det hade varit meningslöst - utan för att skydda. Ett fält av kraft mellan dem och det kolossala monstret.</p>
+
+            <p>Pelaren ovanför honom sprack.</p>
+
+            <p><strong>Gordon</strong> skrek en varning, men det var för sent. Stenblocken föll. Zentri vände sig, hann halvt höja armen—</p>
+
+            <p>Splittret träffade honom i ansiktet.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Det Förlorade Ögat</div>
+                <p>En stensplitter från den kollapsande pelaren krossade <strong>Zentris</strong> vänstra öga. Blod rann nerför ansiktet, smärtan var bortom ord. I samma ögonblick slits hans <em>mantel</em> - det skyddande plagg han burit sedan resan började - i stycken av fallande sten.</p>
+                <p><strong>Permanenta konsekvenser:</strong></p>
+                <ul>
+                    <li>Förlorat vänster öga - för alltid</li>
+                    <li>Ärr över vänster ansiktshalva</li>
+                    <li>Manteln förstörd permanent</li>
+                </ul>
+            </div>
+
+            <p><strong>Hagge</strong> fångade honom innan han föll. Zentris skrik ekade genom salen, men kolossen rörde sig fortfarande, långsamt men orubbligt mot dem.</p>
+
+            <p>"Där!" <strong>Kazrik</strong> pekade mot väggen. En rad spakar - antika, rostiga, men fortfarande intakta. "Kontrollmekanismer. Det måste vara..."</p>
+
+            <p>Han sprang.</p>
+
+            <h3>Flykten</h3>
+
+            <p>Kazrik drog spakarna i desperat ordning - första, tredje, femte. Inget hände. Kolossen lyfte sin arm, beredd att krossa.</p>
+
+            <p>Andra, fjärde, sjätte.</p>
+
+            <p>Mullret började. Inte från kolossen denna gång - från väggarna, från taket, från berget självt.</p>
+
+            <p>En kontrollerad kollaps. Pelarna gav vika i sekvens, stenblock föll från väggarna i ett mönster som ledde... bort från utgången. Mot kolossen.</p>
+
+            <div class="quote">
+                "Ibland är det bästa vapnet inte stål eller magi - det är arkitektur."
+            </div>
+
+            <p>De sprang. Bakom dem hörde de kolossens vrål - ett ljud som ingen sten borde kunna frambringa - när tonvis av berg begravde den. Ljudet följde dem genom korridorerna, ekande, klagande.</p>
+
+            <p>Sedan dagsljus. Luft. Frihet.</p>
+
+            <p>De kollapsade i askan utanför ruinen. <strong>Zentri</strong> andades fortfarande, men hans ansikte var en ruin av blod och smärta. Hagge tryckte tyg mot såret, men blodet sipprade igenom.</p>
+
+            <p>"Han kommer klara sig," sa Gordon.</p>
+
+            <p>Det var mer hopp än övertygelse.</p>
+
+            <hr>
+
+            <h2>Vandring Mot Öster</h2>
+
+            <h3>Karavanleden</h3>
+
+            <p>De fortsatte österut. Det fanns inget annat val.</p>
+
+            <p><strong>Zentri</strong> kunde gå - knappt - stödd mot Hagge eller Gordon. Hans vänstra öga var borta, täckt av blodiga bandage som <strong>Umnatak</strong> bytte varje morgon. Han talade sällan, och när han gjorde det var rösterna... annorlunda.</p>
+
+            <p>Någonstans längs kusten hittade de <strong>karavanleden</strong> - en slingrande väg där handelsfolk färdades mellan Tarkas och östern. Där fanns vatten, ibland mat, och viktigast av allt: andra människor.</p>
+
+            <p>Eller så de trodde.</p>
+
+            <h3>Den Massiva Karavanen</h3>
+
+            <p><strong>Gordon</strong> såg den först - en stoftsky vid horisonten, för stor för att vara naturlig. En karavan, men ingen vanlig sådan. Hundratals vagnar, tusentals människor.</p>
+
+            <p>"Vi håller oss undan," sa han.</p>
+
+            <p>Ingen protesterade. Något med karavanen kändes fel - en tyngd i luften, en lukt som påminde om lik och rökelse.</p>
+
+            <hr>
+
+            <h2>Förhäxningen</h2>
+
+            <h3>Umnataks Spaningsuppdrag</h3>
+
+            <p>Det var <strong>Umnatak</strong> som gick ut den natten. Tyst som en skugga red han mot karavanen, driven av nyfikenhet och oro.</p>
+
+            <p>Han återvände i gryningen.</p>
+
+            <p>Febern kom först - svett rann från pannan, ögonen var vilda och såg saker som inte fanns. Han muttrade om skuggor, om viskar från döda, om ansikten i mörkret.</p>
+
+            <div class="quote">
+                "De pratar med mig. De döda. De vill att jag ska följa med dem. De vill... de vill..."
+            </div>
+
+            <p><strong>Gordon</strong> höll honom nedsänkt medan anfallen kom. Umnataks kropp krampade, skummade, kämpade mot osynliga fiender. Zentri - halvblind och själv knappast frisk - kände efter med sina svaga magiska sinnen.</p>
+
+            <p>"En förbannelse," sa han. Rösten var hes. "Nekromanti. Kraftfull."</p>
+
+            <h3>Nekromantikerns Läger</h3>
+
+            <p>De spårade källan genom <strong>Umnataks</strong> febriga mummel och Zentris vaga känsla för mörk magi. En patrull från karavanen - soldater med tomma ögon och rörelser som marionetter - stod mellan dem och svaret.</p>
+
+            <p>Striden var kort. Brutal. Soldaterna kämpade utan rädsla, utan smärta - som om de redan var halvdöda. <strong>Hagge</strong> och <strong>Gordon</strong> gjorde det nödvändiga arbetet, svärd och skicklighet mot kött som knappt reagerade.</p>
+
+            <p>Bakom dem låg nekromantikers läger.</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Fynden i Lägret</div>
+                <ul>
+                    <li><strong>Förbjudna skrifter</strong> - Ritualer, besvärjelser, instruktioner för att binda själar till världen</li>
+                    <li><strong>En mystisk amulett</strong> - Pulserande med mörk energi, ursprung okänt</li>
+                    <li><strong>En ritualdolk</strong> - Inskriptioner längs bladet, vapen för blodsmagi</li>
+                </ul>
+            </div>
+
+            <p>Nekromantikern själv var redan död - eller något värre än död. Hans kropp låg sammanfallen över ett altare, som om den energi som hållit honom vid liv plötsligt försvunnit.</p>
+
+            <p>Med hjälp av skrifterna bröt de förbannelsen. Det tog timmar - blodiga, utmattande timmar av ritualer ingen av dem förstod fullt ut. Men till slut sjönk <strong>Umnataks</strong> feber. Viskningarna tystnade.</p>
+
+            <p>Han sov i två dagar efteråt.</p>
+
+            <hr>
+
+            <h2>Den Ökända Fyren</h2>
+
+            <p>De såg den vid horisonten - ett torn av svart sten som reste sig ur klipporna. <strong>Fyren</strong> hade inget ljus längre, men dess silhuett var omöjlig att missa.</p>
+
+            <p>Lokalbefolkningen de mött hade varnat dem. Spöken, sa de. Försvunna resenärer. Ljud från havet som ingen kunde förklara.</p>
+
+            <p><strong>Gordon</strong> såg på de andra. Zentri halvblind och utmattad. Umnatak fortfarande svag efter förbannelsen. Hagge och Kazrik slitna till gränsen.</p>
+
+            <p>"Vi tar omvägen," sa han.</p>
+
+            <p>Ingen protesterade. De hade haft nog av mysterier för en livstid.</p>
+
+            <hr>
+
+            <h2>Bergens Port</h2>
+
+            <h3>Abhan-hir-renk-Ghor</h3>
+
+            <p>Dvärgfästet uppenbarade sig ur bergen som ett mirakel - eller en hallucination. <strong>Gordon</strong> var inte säker på vilket längre.</p>
+
+            <p><strong>Abhan-hir-renk-Ghor</strong> var inte byggt på berget. Det var berget. Massiva stengrindar huggna ur levande klippa, valv och hålrum som sträckte sig djupt in i underjorden, och överallt ljudet av hammare mot metall.</p>
+
+            <p>Dvärgarna tog emot dem med den misstänksamhet som bergfolk alltid visar främlingar - men när de hörde vad gruppen överlevt mjuknade deras ansikten något.</p>
+
+            <div class="info-box">
+                <div class="info-box-title">Dvärgfästet</div>
+                <ul>
+                    <li><strong>Plats:</strong> Bergskedjan mellan Tarkas och Jargien</li>
+                    <li><strong>Arkitektur:</strong> Inbyggd i berget självt, massiva stengrindar</li>
+                    <li><strong>Befolkning:</strong> Hantverkare, smeder, karavanledare</li>
+                    <li><strong>Funktion:</strong> Handelspost mellan öster och väster</li>
+                </ul>
+            </div>
+
+            <h3>En Oväntad Berömmelse</h3>
+
+            <p>Det var <strong>Kazrik</strong> som fick den verkliga överraskningen.</p>
+
+            <p>En äldre dvärg, skägget grått och händerna märkta av årtionden vid smedjan, stannade mitt i korridoren och stirrade på honom.</p>
+
+            <p>"Du. Du är han. <em>Den resande.</em>"</p>
+
+            <p>Kazrik blinkade. "Förlåt?"</p>
+
+            <p>Det visade sig att hans dagbok - den han skrivit under tidigare äventyr, inklusive tirakgraven och jakten på Ibran - hade fått ett eget liv. Hans lärlingar hade omarbetat hans anteckningar till två böcker. <strong>"Kazriks resor"</strong> hade blivit populära bland dvärgar och människor som drömde om äventyr utan att vilja uppleva det själva.</p>
+
+            <div class="quote">
+                "Ord reser längre än fötter. Och de behöver inte vila."
+            </div>
+
+            <p>Plötsligt var gruppen inte längre utarmade överlevare. De var gäster. Kvarteren blev bättre, maten rikligare, och viktigast av allt - de erbjöds plats i en handelskaravan genom Jargien.</p>
+
+            <p>"Vi tar emot erbjudandet," sa Gordon.</p>
+
+            <p>För första gången på veckor kände han något som liknade hopp.</p>
+
+            <hr>
+
+            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
+                Tarkas hade tagit mycket från dem - ett öga, hälsa, oskuld.<br>
+                Men de levde. Och resan fortsatte.<br>
+                Mot norr. Mot hem. Mot det som väntade.
+            </p>
+        </article>
+    </div>
+
+    <!-- Ladda data för auto-länkning -->
+    <script src="../wiki_data.js"></script>
+    <script src="../fraktioner_data.js"></script>
+    <script src="kapitel-linkify.js"></script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
