@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 1: Jakten - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul, .prose ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <div class="content-container">
+        <header class="chapter-header">
+            <h1>Kapitel 1: Jakten</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Genom Cermiras skogar mot Grensfortet</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik</div>
+            <div class="chapter-meta"><strong>Tidsperiod:</strong> Veckorna efter Tirakgraven</div>
+        </header>
+
+        <article class="prose">
+            <h2>Serafinas Order</h2>
+
+            <p>Morgonen efter massattacken stank av rök och blod. <strong>Gordon</strong> stod vid gravens kant och räknade de döda - kompanister han känt i månader, tiraker han dödat i nattens förvirring, och varelsen som inte borde finnas. Solen sken likgiltigt över alltsammans.</p>
+
+            <p><strong>Serafina Eldstav</strong> kom till honom med steg som var för bestämda, ögon som var för kalla. Thismalven hade inte sovit - det syntes på hennes ansikte - men hennes röst var stadig som sten när hon talade.</p>
+
+            <div class="quote">
+                "Han flydde norrut. Tamron. Eller vad som nu bär hans kropp. Ni ska följa honom."
+            </div>
+
+            <p>Det var inte en fråga. Gordon såg på henne, såg hur hennes hand vilade på föremålen hon samlat från graven. Bindningsartefakterna. Föremål värda mer än hela kompaniets årslön.</p>
+
+            <p>"Och du?" frågade han.</p>
+
+            <p>"Jag rapporterar till huvudstyrkan. Kapten Kaelar behöver vård." Hon mötte inte hans blick. "Ni har era order."</p>
+
+            <p><strong>Kazrik</strong> muttrade något på dvärgiska som Gordon inte förstod men vars ton var tydlig. <strong>Umnatak</strong> stirrade mot skogen med ögon som såg saker ingen annan kunde se. Och <strong>Zentri</strong> - Zentri gnuggade sin vänstra hand mot byxbenet, som om något där inne sved.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Serafinas hemliga agenda</div>
+                <p>Vad gruppen inte visste: Serafina hade redan tagit hand om bindningsföremålen från graven. Hennes mission var att leverera dem till <strong>Sanari-alverna</strong> - ett hemligt avtal som skulle ge henne återtagning efter 10 års förvisning från sitt folk.</p>
+                <p>Att skicka iväg rollpersonerna gav henne tid att agera ostörd. De var "utgångsbara" - verktyg att använda och sedan kassera.</p>
+            </div>
+
+            <hr>
+
+            <h2>Jakten Genom Skogen</h2>
+
+            <p>Spåren ledde norrut. Alltid norrut.</p>
+
+            <p>Umnatak gick först, hans steg tysta mot skogens golv av mossa och ruttnande löv. Ausern läste marken som andra läser böcker - brutna kvistar, nedtrampat gräs, spår i leran vid bäckar. <strong>Tamron/Ibran</strong> hade flytt i panik, men även panik lämnade mönster.</p>
+
+            <p>"Han blöder," sa Umnatak tredje dagen. "Inte mycket. Men tillräckligt."</p>
+
+            <p>Gordon nickade. Blodet betydde att shamanen var skadad. Skador betydde att han skulle behöva stanna. Stanna betydde att de skulle hinna ikapp.</p>
+
+            <p>Kazrik höll tempot utan att klaga, trots att hans korta ben tvingade honom ta två steg för var och en av de andras. Dvärgen skrev i sin anteckningsbok varje kväll - dokumenterade allt, varje detalj, varje observation. Någon måste komma ihåg, sa han alltid.</p>
+
+            <p>Zentri sa minst av alla. Han gick längst bak och höll sin vänstra hand i fickan. Ibland, när han trodde ingen såg, rörde han vid något där inne - något litet och runt och kallt.</p>
+
+            <hr>
+
+            <h2>Häxans Stuga</h2>
+
+            <h3>Mötet med Adisa</h3>
+
+            <p>Stugan dök upp ur dimman som om den alltid funnits där men valt att dölja sig. Väggar av mörkt trä, tak av torvmossa, en skorsten som ringlade rök mot den grå himlen. Runt byggnaden hängde torkade örter och djurben i snören - skydd eller varning, det var svårt att säga.</p>
+
+            <p>Kvinnan som öppnade dörren var gammal på ett sätt som inte hade med år att göra. Hennes ögon var mörka och djupa, och när hon såg på dem kände Gordon att hon läste mer än deras ansikten.</p>
+
+            <p><strong>Adisa</strong> log inte.</p>
+
+            <div class="quote">
+                "En man kom här för några dagar sedan. Mörk aura omkring honom. Jag kände ondskan på honom redan när han närmade sig stigen. Han bad om vatten och mat, men jag vägrade släppa in honom i mitt hem. Ont ska inte få passera min tröskel."
+            </div>
+
+            <p>Gordon kände lättnad - de var på rätt spår. Men det var något konstigt med hur häxan talade. Hennes blick vandrade förbi honom, förbi Kazrik och Umnatak, och stannade på Zentri.</p>
+
+            <p>Stannade länge.</p>
+
+            <h3>Tröskeln</h3>
+
+            <p>"Kom in," sa Adisa och steg åt sidan. "Ni tre."</p>
+
+            <p>Gordon frös. <em>Tre?</em></p>
+
+            <p>Han vände sig om. Zentri stod kvar vid skogens kant, ansiktet blekt, ögonen vidöppna. Asharien hade inte rört sig en tum mot stugan.</p>
+
+            <p>"Zentri?"</p>
+
+            <p>"Jag... jag stannar här." Hans röst var hes. "Jag mår inte bra. Kanske magen."</p>
+
+            <p>Adisa sa ingenting. Men hennes ögon - de ögonen som såg för mycket - följde Zentri med en intensitet som fick luften att kännas tjock.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Sanningen som ingen förstod</div>
+                <p>Adisa hade känt <strong>demonessensen i Zentris ring</strong> - den lilla silverring han stulit från tirakgraven utan att berätta för någon. Häxan kände magin genast, samma mörka resonans som hon känt hos Ibran/Tamron.</p>
+                <p><em>Ont ska inte passera hennes tröskel.</em></p>
+                <p>Detta var första gången något markerade att något var <strong>fel</strong> med Zentri. Första varningen. Inte den sista.</p>
+            </div>
+
+            <p>Inne i stugan serverade Adisa het te och bröd. Hon berättade om shamanen som flytt norrut, om mörkret som följde honom, om byn Frisänkan där han troligen sökt proviant.</p>
+
+            <p>Men hennes blick återvände ständigt till fönstret. Till mannen som väntade utanför i skuggan av träden, med handen i fickan och något kallt mot huden.</p>
+
+            <hr>
+
+            <h2>Frisänkan</h2>
+
+            <h3>Byn av Sorg</h3>
+
+            <p>Frisänkan var inte mycket att se på - en handfull hus omgivna av en träpalissad som mest verkade tänkt att hålla vildsvin ute. Fälten runtomkring var skördade och tomma, och röken från skorstenarna steg rakt upp i den stilla luften.</p>
+
+            <p>Men något var fel. Gordon kände det innan de ens nådde porten. Tystnaden. Inga barn som lekte, inga hundar som skällde, inget vardagligt sorl av liv.</p>
+
+            <p><strong>Kapten Benne Tok</strong> mötte dem vid vakten. Han var en liten man med ett ansikte som påminde om en padda, och hans andedräkt var så dålig att Gordon tog ett ofrivilligt steg bakåt. En rostig potthjälm satt snett på hans huvud, och hans händer darrade när han talade.</p>
+
+            <div class="quote">
+                "En främmande man kom igenom här för två dagar sedan. Mörk, stor. Tirak, tror jag. Han bad om vatten vid Pertil Fiskarens hus vid viken."
+            </div>
+
+            <p>Benne Toks röst sprack.</p>
+
+            <p>"Pertil är död nu. Hans fru också. Hon... hon bar deras första barn."</p>
+
+            <h3>Morden</h3>
+
+            <p>Gordon gick till huset vid viken. Han behövde inte - Kazrik hade redan dokumenterat allt, Umnatak hade redan läst spåren - men han gick ändå. Ibland måste man se för att förstå.</p>
+
+            <p><strong>Pertil Fiskaren</strong> hade varit en enkel man. Hans nät hängde fortfarande på tork utanför stugan, hans båt låg uppdrages på stranden. Inget av värde. Ingen anledning att döda.</p>
+
+            <p>Ändå var han död. Och hans fru. Och barnet hon aldrig skulle föda.</p>
+
+            <p>"Varför?" frågade Zentri bakom honom. Hans röst lät annorlunda - ihålig, nästan hungrig.</p>
+
+            <p>Gordon hade inget svar. Ibran - eller demonen i honom - behövde inte anledningar. Mörkret tog vad det ville ha.</p>
+
+            <div class="info-box">
+                <div class="info-box-title">Benne Toks varning</div>
+                <p>"Han gick mot bergen. Mot gamla <strong>Grensfortet</strong>. Ingen går dit längre. Det är förbannat, säger man. Saker... saker som inte borde röra sig, rör sig där."</p>
+            </div>
+
+            <hr>
+
+            <h2>Grensfortet</h2>
+
+            <h3>Gränsen till Skugglandet</h3>
+
+            <p>Fortet reste sig ur dimman som ett skelett av sten och minnen. Murar som en gång stått stolta lutade nu inåt, brutna av tid och försummelse. Torn som en gång bevakat gränsen hade kollapsat till högar av grus.</p>
+
+            <p>Men det var inte förfallet som fick Gordon att stanna. Det var känslan.</p>
+
+            <p>Luften här var <em>fel</em>. Tunnare. Kallare. Och skuggorna föll inte riktigt åt rätt håll.</p>
+
+            <p>"Gränsen," viskade Umnatak. Hans ögon var vida, pupillerna utspädda. "Vi står på gränsen till <strong>Skugglandet</strong>."</p>
+
+            <p>Kazrik svor på dvärgiska. Zentri sa ingenting - bara stirrade mot fortet med ett uttryck som Gordon inte kunde tyda.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Ibrans misstag</div>
+                <p>Shamanen visste inte var han hade flytt. Grensfortet - en övergiven borg från Hadrians tid - låg på den tunnaste punkten mellan Mundana och Skugglandet. En plats där verkligheten var skör.</p>
+                <p>Att använda bindningsföremålens kraft här var som att tända en eld i ett rum fullt av krut.</p>
+            </div>
+
+            <h3>Konfrontationen</h3>
+
+            <p>De hittade Ibran/Tamron i fortets stora sal. Eller vad som var kvar av den.</p>
+
+            <p>Shamanen stod i mitten av en cirkel ritad i blod - sitt eget blod, att döma av såren på hans armar. Bindningsföremålen han stulit låg utspridda runt honom, pulserande med ett ljus som inte borde finnas.</p>
+
+            <p>Och bakom honom, i luften själv, öppnade sig något.</p>
+
+            <p>En spricka. En reva i verkligheten. Och genom den trängde <strong>Urkhath</strong>.</p>
+
+            <p>Inte helt. Inte ännu. Men tillräckligt.</p>
+
+            <div class="quote">
+                "ÄNTLIGEN."
+            </div>
+
+            <p>Rösten kom från överallt och ingenstans. Den vibrerade i benen, i tänderna, i själva själen. Gordon kände hur hans grepp om svärdet blev slipprig av svett.</p>
+
+            <p>Demonen manifesterade sig - inte som kropp utan som <em>närvaro</em>. Skuggor som rörde sig fel. Kyla som brände. Och mitt i alltsammans, tre <strong>skuggvarelser</strong> som drog sig loss från mörkret och rusade mot dem.</p>
+
+            <h3>Striden</h3>
+
+            <p>Gordon mindes inte mycket av det som hände sedan. Fragmenter bara - svärdet i hans hand, svart blod som stänkte, skriket från Ibran när demondelen <em>slets</em> från Tamrons kropp.</p>
+
+            <p>Shamanen kastades genom luften som en trasdocka. Hans kropp - den riktiga kroppen, frigjord äntligen - landade i en hög av spillror och rörde sig inte.</p>
+
+            <p>Skuggvarelserna brann i fackelljuset. Fototropi, kallade Kazrik det efteråt. Deras mörka väsen tålde inte ljus.</p>
+
+            <p>Och mitt i kaoset, när allt verkade förlorat, dök <strong>Serafina Eldstav</strong> upp.</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Serafinas återkomst</div>
+                <p>Thismalven hade följt efter dem. I hennes händer bar hon bindningsföremålen från tirakgraven - de riktiga föremålen, de som kunde binda demoner.</p>
+                <p>Tillsammans lyckades de driva tillbaka manifestationen, döda skuggvarelserna, och delvis återbinda den del av Urkhath som sluppit fri.</p>
+                <p><em>Delvis.</em></p>
+            </div>
+
+            <p>När det var över låg Tamrons kropp stilla på stengolvet. Tamron - inte Ibran längre. Pojkens ögon var tomma, hans sinne bortom räddning efter månader som värd för shamanens själ.</p>
+
+            <p>Och Ibran själv? Hans spår ledde ut ur fortet, in i Mitheras skogar. Svårt skadad. Flyktig som rök.</p>
+
+            <p>Försvunnen.</p>
+
+            <hr>
+
+            <h2>Serafinas Svek</h2>
+
+            <p>De satt vid en eld utanför fortet, alla utmattade bortom ord. Gordon hade blod på händerna - sitt eget eller skuggvarelsernas, han visste inte längre. Kazrik skrev i sin anteckningsbok med darrig hand. Umnatak stirrade in i elden med ögon som sett för mycket.</p>
+
+            <p>Och Zentri satt för sig själv, med handen i fickan, viskande något ingen kunde höra.</p>
+
+            <p>Serafina reste sig.</p>
+
+            <div class="quote">
+                "Ni får INTE återvända till kompaniet. Ni får INTE tala om vad som hänt här. Skatterna från tirakgraven är min sak att hantera."
+            </div>
+
+            <p>Gordon såg på henne. Såg på föremålen hon höll - artefakterna som kunde binda demoner, som var värda förmögenheter, som hon redan bestämt skulle gå till Sanari-alverna.</p>
+
+            <p>"Du använde oss," sa han. Det var inte en fråga.</p>
+
+            <p>"Jag gav er en uppgift. Ni utförde den." Hon mötte hans blick utan att blinka. "Tre månaders tvingad ledighet. Möte i Jarla efter det. Och absolut tystnad."</p>
+
+            <p>"Och om vi vägrar?"</p>
+
+            <p>Serafina log. Det var inget vänligt i det leendet.</p>
+
+            <p>"Vem tror du kompaniet skulle tro på? Sin second-in-command, eller fyra legosoldater som knappt kan hålla sina historier raka?"</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Order</div>
+                <ul>
+                    <li>Tre månaders tvingad ledighet</li>
+                    <li>Möte i <strong>Jarla</strong> (stad i norra Vitterdal) efter denna tid</li>
+                    <li>Absolut tystnad om bindningsföremålen och vad som hänt vid Grensfortet</li>
+                </ul>
+                <p>Gruppen hade inget val. Serafina var deras befälhavare, och de hade ingen bevisning mot henne. Bara sanningen - och sanningen räckte sällan.</p>
+            </div>
+
+            <p>Gordon såg henne rida bort i gryningen, med föremålen säkrade i sina sadelväskor. Sanari-alverna skulle ge henne vad hon ville - återtagning efter ett decenniums förvisning. Och gruppen? De fick tre månader av tystnad och en rendezvous i en stad de aldrig besökt.</p>
+
+            <p>Men det var något annat som gnagde i honom. Något han inte kunde släppa.</p>
+
+            <p>Han vände sig mot Zentri.</p>
+
+            <p>"Vad har du i fickan?"</p>
+
+            <p>Asharien ryckte till. Hans hand drog sig djupare in i tyget, skyddande. "Ingenting."</p>
+
+            <p>"Zentri."</p>
+
+            <p>"<em>Ingenting.</em>"</p>
+
+            <p>De såg på varandra en lång stund. Sedan vände Gordon bort blicken. Det fanns gränser för vad man kunde tvinga ur en vän.</p>
+
+            <p>Men han glömde inte. Och i nätterna som följde, när Zentri vred sig i sömnen och viskade ord på språk ingen kände igen, tänkte Gordon på häxan Adisa och hennes tröskel.</p>
+
+            <p><em>Ont ska inte passera min tröskel.</em></p>
+
+            <p>Frågan var: vad hade redan passerat?</p>
+
+            <hr>
+
+            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
+                Tre månader av väntan väntade.<br>
+                Och i skuggorna vaknade något som aldrig skulle somna igen.
+            </p>
+        </article>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
