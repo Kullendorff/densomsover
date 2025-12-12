@@ -1365,6 +1365,16 @@
                     <span class="modal-value">${npc.kapitel}</span>
                 </div>` : ''}
                 ${beskrivning ? `<div class="modal-beskrivning">${beskrivning}</div>` : ''}
+                ${npc.detaljsida ? `
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="${npc.detaljsida}"
+                           style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--flame-orange), var(--deep-red)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid var(--gold);"
+                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(255, 107, 74, 0.5)';"
+                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                            📖 Läs mer om ${npc.namn}
+                        </a>
+                    </div>
+                ` : ''}
             `;
 
             modal.classList.add('active');
@@ -1397,6 +1407,16 @@
                     <span class="modal-value">${plats.region}</span>
                 </div>` : ''}
                 ${beskrivning ? `<div class="modal-beskrivning">${beskrivning}</div>` : ''}
+                ${plats.detaljsida ? `
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="${plats.detaljsida}"
+                           style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--flame-orange), var(--deep-red)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid var(--gold);"
+                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(255, 107, 74, 0.5)';"
+                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                            📖 Läs mer om ${plats.namn}
+                        </a>
+                    </div>
+                ` : ''}
             `;
 
             modal.classList.add('active');
@@ -1449,6 +1469,16 @@
                     <span class="modal-value">${fraktion.kapitel}</span>
                 </div>` : ''}
                 ${beskrivning ? `<div class="modal-beskrivning">${beskrivning}</div>` : ''}
+                ${fraktion.detaljsida ? `
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="${fraktion.detaljsida}"
+                           style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--flame-orange), var(--deep-red)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid var(--gold);"
+                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(255, 107, 74, 0.5)';"
+                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+                            📖 Läs mer om ${fraktion.namn}
+                        </a>
+                    </div>
+                ` : ''}
             `;
 
             modal.classList.add('active');
