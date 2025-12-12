@@ -98,7 +98,8 @@ Extrahera:
 - `--ar 1:1` (kvadrat, ikoner)
 - `--s 150` (stilisering, 100-300)
 - `--style raw` (mer realistiskt)
-- `--v 6.1` (senaste versionen)
+
+**OBS:** Lägg INTE till version-parameter i själva prompten. Notera v7 i metadata om nödvändigt.
 
 ### 4. Output Format
 
@@ -119,7 +120,6 @@ Generera ALLTID i detta format:
 **Parametrar:**
 - Aspect ratio: [X:X]
 - Stilisering: [värde]
-- Version: 6.1
 
 **Visuella nyckelelement:**
 - [Element 1]
@@ -144,13 +144,12 @@ Generera ALLTID i detta format:
 
 ### Midjourney Prompt:
 ```
-Ancient stone tomb entrance carved into a mountainside at twilight, massive tirak warrior statues flanking the gateway, weathered demonic symbols glowing faintly with sickly green light, dark forest silhouettes in background, dark fantasy oil painting in the style of Gerald Brom, ominous and foreboding atmosphere, dramatic sunset lighting casting long shadows, worn stone textures with moss and age, muted greens and deep oranges, epic fantasy landscape --ar 16:9 --s 200 --v 6.1
+Ancient stone tomb entrance carved into a mountainside at twilight, massive tirak warrior statues flanking the gateway, weathered demonic symbols glowing faintly with sickly green light, dark forest silhouettes in background, dark fantasy oil painting in the style of Gerald Brom, ominous and foreboding atmosphere, dramatic sunset lighting casting long shadows, worn stone textures with moss and age, muted greens and deep oranges, epic fantasy landscape --ar 16:9 --s 200
 ```
 
 **Parametrar:**
 - Aspect ratio: 16:9
 - Stilisering: 200
-- Version: 6.1
 
 **Visuella nyckelelement:**
 - Tirakisk gravvalv i bergssida
@@ -169,13 +168,12 @@ Ancient stone tomb entrance carved into a mountainside at twilight, massive tira
 
 ### Midjourney Prompt:
 ```
-Sprawling desert harbor city with white stone architecture and golden domes, bustling marketplace in foreground with colorful spice stalls and silk canopies, massive city walls in background, sailing ships docked at stone piers, merchants in flowing robes, heat haze rising from sandstone streets, epic fantasy cityscape painting in style of Jakub Rozalski, vibrant and exotic atmosphere, harsh midday sunlight with deep shadows, warm oranges golds and rich purples, Arabian Nights meets grimdark fantasy --ar 16:9 --s 150 --v 6.1
+Sprawling desert harbor city with white stone architecture and golden domes, bustling marketplace in foreground with colorful spice stalls and silk canopies, massive city walls in background, sailing ships docked at stone piers, merchants in flowing robes, heat haze rising from sandstone streets, epic fantasy cityscape painting in style of Jakub Rozalski, vibrant and exotic atmosphere, harsh midday sunlight with deep shadows, warm oranges golds and rich purples, Arabian Nights meets grimdark fantasy --ar 16:9 --s 150
 ```
 
 **Parametrar:**
 - Aspect ratio: 16:9
 - Stilisering: 150
-- Version: 6.1
 
 **Visuella nyckelelement:**
 - Vit stenarkitektur med gyllene kupoler
@@ -195,13 +193,12 @@ Sprawling desert harbor city with white stone architecture and golden domes, bus
 
 ### Midjourney Prompt:
 ```
-Beautiful middle-aged woman with dark flowing hair and intense eyes, wearing rich silk robes in deep purples and golds, ornate jewelry with occult symbols, tarot cards floating around her, standing in luxurious desert palace interior with fountain and intricate mosaics, dark fantasy character portrait in style of Aleksi Briclot, mysterious and powerful atmosphere, soft warm lighting from oil lamps, rich jewel tones and golden accents, regal yet dangerous presence --ar 2:3 --s 180 --v 6.1
+Beautiful middle-aged woman with dark flowing hair and intense eyes, wearing rich silk robes in deep purples and golds, ornate jewelry with occult symbols, tarot cards floating around her, standing in luxurious desert palace interior with fountain and intricate mosaics, dark fantasy character portrait in style of Aleksi Briclot, mysterious and powerful atmosphere, soft warm lighting from oil lamps, rich jewel tones and golden accents, regal yet dangerous presence --ar 2:3 --s 180
 ```
 
 **Parametrar:**
 - Aspect ratio: 2:3 (porträtt)
 - Stilisering: 180
-- Version: 6.1
 
 **Visuella nyckelelement:**
 - Medelålders kvinna, mörkt hår

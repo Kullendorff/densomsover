@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 5: Vargnäset - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        /* Chapter Header */
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Prose Styling */
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul {
+            margin: 1rem 0 1.5rem 2rem;
+            list-style-type: disc;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        /* Image Styling */
+        .chapter-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin: 2rem auto;
+            display: block;
+            border: 2px solid var(--border);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Quote Styling */
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Entity Links - klickbara NPCs, platser, fraktioner */
+        .entity-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+            transition: all 0.2s ease;
+        }
+        .entity-link:hover { border-bottom-style: solid; }
+        .entity-npc { color: var(--flame-orange); }
+        .entity-plats { color: var(--mystic-purple); }
+        .entity-fraktion { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <!-- Chapter Header -->
+        <header class="chapter-header">
+            <h1>Kapitel 5: Vargnäset - Blodet och Askan</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Vargnäset, vid foten av Korpklämman</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik, Hagge</div>
+            <div class="chapter-meta"><strong>Avgörande händelse:</strong> Zentris försvinnande, Thrakkas ankomst</div>
+        </header>
+
+        <!-- Prose Content -->
+        <article class="prose">
+            <h2>Byn vid Passets Fot</h2>
+
+            <p>Karavanen såg röken först - tunn, grå, stank av rädsla. Inte den tjocka, behagliga röken från spiseldar och bakning, utan desperat bränsle som brann för att hålla mörker och fiender borta.</p>
+
+            <p><strong>Vargnäset</strong> låg vid foten av <strong>Korpklämman</strong> som en samling sjukliga tankar. Trettio byggnader, kanske fyrtio själar, palissader av stockar som böjt sig under tidens och vädrets tryck. Bergen reste sig bakom byn som brutna tänder mot himlen.</p>
+
+            <p><strong>Gordon</strong> såg byborna röra sig - snabba, nervösa, som djur som vet att rovdjuret finns i närhetens skuggor men inte var. Inga barn lekte. Inga äldre satt utanför stugor. Alla hade vapen - knivar, klubbor, gamla spjut vars spetsar rostat mer än de vässats.</p>
+
+            <p>"De väntar på döden," sa <strong>Kazrik</strong> från sin ponny. Dvärgögon såg alltid sanningen först. "Frågan är bara när den kommer."</p>
+
+            <p>Karavanledaren - en fet man vars namn redan glömts av historien - ville inte stanna. <strong>Hagge</strong> höll med, adelsmannens självbevarelsedrift skarp som alltid. Men när <strong>Eira Holm</strong> kom till porten, byäldsten med händer som darrat i tjugo år av ålderdom men nu darrade värre av rädsla, fanns ingen valmöjlighet.</p>
+
+            <div class="quote">
+                "Desertörer," sa hon. Rösten tunn som vårisen på Svartenfloden. "Ledda av en före detta kapten. De kommer tillbaka ikväll eller imorgon. De har alltid kommit tillbaka."
+            </div>
+
+            <p><strong>Zentri</strong> såg på Gordon. <strong>Umnatak</strong> såg på marken där andarnas viskning talade om blod ännu inte spillt men redan förutspått. Kazrik såg på sina händer som om de kunde räkna priset innan det betalats.</p>
+
+            <p>Gordon såg på byborna. Femtio, kanske. Kvinnor med knivar. Män med räkor. Barn gömda i jordkällare.</p>
+
+            <p>"Vi stannar," sa han.</p>
+
+            <p>Karavanen red vidare nästa morgon. Fem krigare blev kvar. Det var inte nog. Det skulle aldrig vara nog.</p>
+
+            <hr>
+
+            <h2>Förberedelser för det Oundvikliga</h2>
+
+            <p>Gordon kände igen mönstret - samma förbannade mönster som alltid. För lite tid, för få händer, för mycket att göra. Men han gjorde det ändå, för det var vad man gjorde när andra inte kunde.</p>
+
+            <p>Han samlade byborna på torget. Tjugo män och kvinnor som aldrig hållit svärd, som aldrig sett kriget annat än från avstånd när legionärerna marscherat förbi på väg mot andras slagfält.</p>
+
+            <p>"Ni kommer att dö," sa Gordon. Inga vackra ord, inga löften. "Men ni kan dö efter ni skadat dem först. Det räknas också."</p>
+
+            <p>Han visade dem hur man höll ett spjut utan att droppa det. Hur man stod i linje så att bredvid-mannen inte stack dig av misstag. Hur man andades när rädslan kom. De lärde sig långsamt, feberaktigt, desperata.</p>
+
+            <p><strong>Kazrik</strong> arbetade med palissaderna. Dvärgars händer förstod sten och trä på sätt människor aldrig skulle - han förstärkte portar, täppte luckor, fann svaga punkter och gjorde dem mindre svaga. Det var inte vackert. Men väggar behöver inte vara vackra för att stoppa en pil.</p>
+
+            <p><strong>Umnatak</strong> försvann in i skogen vid gryning, kom tillbaka vid skymning med djurblod under naglarna och andarnas viskning i öronen. Han satte fällor - inte de enkla som fångade kaniner, utan de hemska som dödade män. Snaran som lyfte, spetsen som trängde, gropen som doldes. Gamla metoder, effektiva metoder.</p>
+
+            <p>Och <strong>Zentri</strong>... Zentri förberedde besvärjelser.</p>
+
+            <p>Gordon såg honom stå vid palissaden när solen gick ner, händerna formade mönster i luften, läpparna rörde sig i ord som inte var ord. Runor lyste svagt, flämtade, slocknade. Försvarsmagi. Skyddscirklar. Teoretiskt ofarligt.</p>
+
+            <p>Men ringen på Zentris finger brände svagare nu, som om den väntade. Som om den visste.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Vad Gordon inte visste</div>
+                <p><strong>Systrarnas spårhundar</strong> hade redan fått order. Inte att döda Zentri - att <em>fånga</em> honom. De hade silvernät vävda med besvärjelser, bindningar som skulle neutralisera hans magi. De hade följt honom sedan Jen, väntat på rätt tillfälle.</p>
+                <p><strong>Halrik Kord</strong> visste inte att hans attack skulle bli distraktion. Han trodde han plundrade en by. Han var bara verktyg.</p>
+            </div>
+
+            <hr>
+
+            <h2>Första Blodet</h2>
+
+            <p>De kom när skymningen gjorde världen till gråzoner och misstag.</p>
+
+            <p>Brandpilar först - eld mot torrt trä, kaos mot ordning. <strong>Kald Silvermask</strong> och hans bågskyttar sköt från trädkanten, höga vinklar, användes till att skjuta mot oförsvarade byar. De visste inte att Gordon hade satt vakter med blöta filtar, att Kazrik hade tömt alla vattentunnor och placerat dem strategiskt, att Umnatak hade markerat exakta positioner där bågskyttar troligen skulle stå.</p>
+
+            <p>Tre pilar träffade tak. Tre filtar slukade elden. Kald Silvermask svor på ett språk Gordon inte kände men förstod ändå - frustrationen är universell.</p>
+
+            <p>Umnatak sköt tillbaka. Inte mot där bågskyttarna stod nu, utan mot där de skulle vara om de var smarta nog att flytta efter första skottet. Skrik i mörkret bekräftade dvärgschaamens förståelse av taktik.</p>
+
+            <p>De drog sig tillbaka. Första testet. Första misslyckandet. Gordon kände hur spänningen i hans axlar inte lättade - det var för lätt. Desertörer kom inte tillbaka efter ett misslyckat försök. De kom inte tillbaka såvida de inte hade skäl.</p>
+
+            <p>"Imorgon," sa han till byborna. "Vila nu. Imorgon blir värre."</p>
+
+            <p>Han hade rätt.</p>
+
+            <hr>
+
+            <h2>Den Samordnade Attacken</h2>
+
+            <p>Andra kvällen kom de från två håll samtidigt.</p>
+
+            <p><strong>Halrik Kords</strong> huvudstyrka - trettio män som en gång tjänat under ordnade färger men nu bar lump och desperation - slog mot västporten. Det var brutalitet i rörelse: stegar mot palissader, påkar mot portar, män som vrålade för att döva rädslan.</p>
+
+            <p>Gordon mötte dem vid porten med byborna i linje. Spjut mot sköld, järn mot järn, den urgamla ekvationen av våld. En bybo - Gustav eller Gunnar, Gordon hann aldrig lära sig namnet - tog ett svärdhugg i halsen och föll med bubblande ljud. Bredvidmannen - definitivt Gustav om den döde var Gunnar - tog ett steg åt sidan för att fylla luckan utan att tänka.</p>
+
+            <p>Gordon kände en absurd stoltnad. De hade lärt sig. De dog, men de lärde sig först.</p>
+
+            <p>Då började skriken från andra sidan byn.</p>
+
+            <hr>
+
+            <h3>Spårhundarna</h3>
+
+            <p>Från öster kom de - inte desertörer, utan <strong>Systrarnas jägare</strong>. Tolv figurer i grå mantlar, ansikten dolda, rörelser tränade. De gick inte mot porten. De gick mot platsen där Zentri stod och förberedde sina besvärjelser.</p>
+
+            <p>Det var silvernäten som avslöjade deras syfte. Specialvävda, sjungna över, dödar inte - <em>fångar</em>. De ville ha honom levande.</p>
+
+            <p><strong>Umnatak</strong> såg det först. "ZENTRI! DE VILL DIG!"</p>
+
+            <p>Zentri vände sig, såg jägarna springa mot honom med nätens silvertrådar glänsande i eldsken. Han höjde händerna, ropade besvärjelsen - och ingenting hände. Silvernäten absorberade magin som sand dricker vatten.</p>
+
+            <p>En jägare kastade nätet. Zentri rullade åt sidan. Två jägare till kretsade. De hade gjort detta förut. De var bra på det.</p>
+
+            <p><strong>Kazrik</strong> stack sin kniv i den närmaste jägarens ben - dvärgar slåss smutsigt - men tre till tog hans plats. Umnatak sköt en pil som träffade manteln men inte kroppen under.</p>
+
+            <p>Zentri backade mot palissaden. Ingenstans att fly. Silvernäten närmade sig från tre håll. Hans andning var panik i kondenserad form.</p>
+
+            <p>Och då viskade demonen.</p>
+
+            <hr>
+
+            <h2>Zentris Val</h2>
+
+            <p>Senare skulle <strong>Gordon</strong> fråga sig om Zentri verkligen hade valet. Om det en gång varit fri vilja eller om <strong>Urkhath</strong> hade vävt stunden i förväg, arrangerat varje pjäs så att den enda möjliga utvägen var avgrunden.</p>
+
+            <p>Men i ögonblicket fanns bara desperationen.</p>
+
+            <p>Zentri kände ringen pulsera - inte smärta nu, utan <em>löfte</em>. Kraft. Makt. Överlevnad. Han hörde rösten, inte i öronen utan direkt i tankarnas kärna:</p>
+
+            <div class="quote">
+                <em>"De vill kedja dig. Förnedra dig. Bryta dig. Jag erbjuder frihet. Jag erbjuder makt. Allt jag kräver är... tillåtelse."</em>
+            </div>
+
+            <p>Silvernätet flög mot honom. Zentri såg det i slowmotion - trådarna som skulle snärja, binda, döva all magi. Han såg jägarnas ögon bakom maskerna - kalla, professionella, har fångat hundra magiker förut.</p>
+
+            <p>Han sa ja.</p>
+
+            <p>Inte med röst. Inte med ord. Men med den del av själen som ringen väntat på i månader. Han öppnade dörren. Urkhath gick in.</p>
+
+            <hr>
+
+            <h3>Blodsmagin</h3>
+
+            <p>Vad som hände nästa sekund skulle ingen någonsin kunna beskriva korrekt. <strong>Kazrik</strong> försökte i sina krönikor, men orden böjde sig fel, formades om, vägrade fånga det.</p>
+
+            <p>Zentri lyfte händerna. Ringen brände inte längre - den <em>sjöng</em>. Runor flammade till liv på hans armar, hans hals, hans ansikte - inte tatueringar utan brännmärken som ritade sig själva i realtid.</p>
+
+            <p>Ord lämnade hans mun i ett språk ingen levande borde kunna tala. Luften krökte sig. Verkligheten vred sig som smutsiga lakan.</p>
+
+            <p>De närmaste jägarna - tre män och en kvinna som tjänat <strong>Zorianorden</strong> i tjugo år - brast.</p>
+
+            <p>Inte exploderade. Inte föll. <em>Brast</em> - inifrån, som om något uthungrat rivit dem åt alla håll samtidigt. Blod blev dimma blev aska blev ingenting. Tre sekunder från människa till minne.</p>
+
+            <p>De andra jägarna frös. Backade. Ett silvernät föll till marken, oanvänt.</p>
+
+            <p>Vid västporten stannade <strong>Halrik Kords</strong> attack. Desertörerna såg eldskenet, hörde skriken, kände magisk terror som slog mot dem som fysisk våg. De började springa. Inte reträtt - <em>flykt</em>.</p>
+
+            <p>Byborna stirrade. <strong>Eira Holm</strong> viskade böner till gudar som inte lyssnade.</p>
+
+            <p>Gordon började springa mot Zentri. För sent. Alltid för sent.</p>
+
+            <hr>
+
+            <h2>Virveln</h2>
+
+            <p>Zentri föll på knä. Runorna brände fortfarande men falnade, som kol som svartnat efter elden. Han såg på sina händer - täckta av aska som en gång varit människor - och skrek.</p>
+
+            <p>Det var inte triumf i det skriket. Det var <em>förståelse</em>.</p>
+
+            <p>Luften framför honom började röra sig. Inte vind - virvel. Svart, tät, gjord av substans som inte skulle existera i normal verklighet. Den öppnade sig som ett sår i världens tyg.</p>
+
+            <p>"ZENTRI!" Gordon var tio meter bort. Umnatak sköt en pil med rep fäst - försökte ge Zentri något att greppa. Kazrik vrålade namn på dvärggudaar som kanske kunde hjälpa.</p>
+
+            <p>Zentri såg på dem. I hans ögon fanns något nytt - eller något gammalt som äntligen visat sitt verkliga ansikte. Ånger. Rädsla. Och något värre: <em>acceptans</em>.</p>
+
+            <p>"Det förlåt," viskade han. Rösten bars inte av luft utan av magin själv, nådde deras öron trots avståndet. "Jag trodde jag kunde kontrollera det."</p>
+
+            <p>Virveln drog honom in. Inte våld - mer som att världen kring honom avgjorde att han inte längre hörde hemma där. Han löstes upp i mörkret, pixel för pixel, tills inget fanns kvar.</p>
+
+            <p>Utom cirkeln på marken. Tre meters diameter, perfekt rund, bränd ner till grundstenar. Gräset kring den var vitt av frost trots sommarvärme.</p>
+
+            <p>Gordon nådde platsen tio sekunder för sent. Han stirrade på cirkeln. På askan som en gång varit Systrarnas bästa jägare. På tystnaden som lägrat sig efter magins brusande.</p>
+
+            <p>"Fan," sa Kazrik slutligen. Dvärgen hade tårar i skägget. "Fan, fan, fan."</p>
+
+            <p>Umnatak satt på marken, händerna pressade mot jorden, lyssnade på andarnas viskande. När han såg upp var hans ögon döda.</p>
+
+            <p>"Han är borta. Inte död. Men borta. Andarnas vägar känner inte igen honom längre."</p>
+
+            <hr>
+
+            <h2>Efterdyningarna och Lögnen</h2>
+
+            <p>Byborna började samlas. <strong>Eira Holm</strong> i täten, ansiktet blankt av chock. De hade sett vad Zentri gjort. De hade sett människor bli aska. De hade sett demoni i ren, okontaminerad form.</p>
+
+            <p>Gordon reste sig. Axlarna raka. Rösten stadig trots att allt inom honom skrek.</p>
+
+            <div class="quote">
+                "Det var <em>deras</em> magi. Fienderna. De försökte besegra oss med demonkraft. Vi stoppade dem."
+            </div>
+
+            <p>Lögnen var så smidig att den nästan trodde på sig själv.</p>
+
+            <p>Kazrik stirrade på honom. Umnatak blinkade långsamt, processade den taktiska nödvändigheten. Hagge - som gömt sig under attacken som vettigt folk gör - förstod omedelbart och nickade stödjande.</p>
+
+            <p>Eira Holm ville tro. Behövde tro. Hennes by hade överlevt. Priset för överlevnad var att inte ställa frågor vars svar hon inte orkade bära.</p>
+
+            <p>"Demonerna," viskade hon. "De använde demoner mot oss."</p>
+
+            <p>"Ja," sa Gordon. Rösten inte darrade. Inte en gång. "Men vi vann."</p>
+
+            <p>Tekniskt sann. Den farligaste lögnen är den som inte är helt lögn.</p>
+
+            <p>Byborna accepterade det. De begravde Gustav och Gunnar och fyra till vars namn Gordon aldrig lärt sig. De släckte de sista eldarna. De städade upp desertörernas efterlämnade vapen.</p>
+
+            <p>De rörde inte den brända cirkeln. Grass vägrade växa där i tio år efteråt.</p>
+
+            <hr>
+
+            <h2>Natten Efter</h2>
+
+            <p>De satt runt elden - Gordon, Kazrik, Umnatak, Hagge. Zentris plats stod tom. Ingen satte sig där. Det kändes fel, som att sätta sig i en död mans stol innan kroppen kallnat.</p>
+
+            <p>"Vi borde ha sett det," sa Kazrik slutligen. "Ringen. Drömmarna. Adisa som vägrade släppa in honom. Alla tecken—"</p>
+
+            <p>"Vi såg," avbröt Gordon. Rösten platt, tom. "Vi såg och gjorde ingenting. Det är värre."</p>
+
+            <p>Umnatak rörde vid marken, ögon stängda. "Andarnas vägar slutar vid cirkeln. Som om han... gick någon annanstans. Inte död. Inte levande. <em>Annorlunda</em>."</p>
+
+            <p>"Skugglandet," viskade Hagge. Adelsmannens händer darrade runt ölbägaren. "De sa att demonen kom från Skugglandet. Om Zentri är där..."</p>
+
+            <p>"Då går vi dit," sa Gordon. Inte förslag. Faktum. "Vi hittar honom. Vi tar honom tillbaka."</p>
+
+            <p>Kazrik såg på honom med dvärgar s-förmåga att se omöjliga odds och räkna dem exakt. "Skugglandet förvränger verkligheten. Demoner vandrar där fritt. Ingen karta fungerar. De som går in kommer sällan ut."</p>
+
+            <p>"Då blir vi de som kommer ut," sa Gordon.</p>
+
+            <p>Tystnaden accepterade det. Inte för att det var smart. Inte för att det var möjligt. Men för att alternativet - att lämna Zentri i helvetets utkant - var oacceptabelt.</p>
+
+            <p>De sov knappt den natten. Gordon tittade på den tomma platsen vid elden och mindes en ung magiker som trodde han kunde kontrollera vad ingen människa borde röra.</p>
+
+            <p>Priset för hybris betalas alltid. Frågan var bara vem som räknades som gäldenär.</p>
+
+            <hr>
+
+            <h2>Riddaren vid Gryning</h2>
+
+            <p>Dagen efter kom ryttaren.</p>
+
+            <p>Byborna - fortfarande nervösa, fortfarande beväpnade - såg figuren närma sig från söder. En ensam ryttare på kraftig häst, långsam, metodisk, inte hotfull men absolut inte vänlig.</p>
+
+            <p>De höjde sina vapen. Eira Holm kallade på Gordon.</p>
+
+            <p>Gordon kom till porten och stannade.</p>
+
+            <p>Han kände igen sigillet på ryttarens mantel innan han såg ansiktet. <strong>Lady Soffias</strong> emblem - rosen med törnen, symbolen för skönhet som försvara sig själv. Manteln var sliten men välhållen. Vapnen professionella. Hållningen militär.</p>
+
+            <p>Ryttaren red fram till porten och avmonterade i en rörelse som talade om år av träning. När hon tog av hjälmen såg Gordon grågrön hud, vassa gula ögon, ärr som kartade ett liv av våld.</p>
+
+            <p>Och vänsterhanden - omsluten av en mekanisk järnhandske vars fingerleden rörde sig med olikt klickande.</p>
+
+            <div class="quote">
+                "Jag är <strong>Thrakka</strong>," sa hon. Rösten djup, accentuerad av tirak-tungans skärande konsonanter men grammatiken perfekt cirefalisk. "Lady Soffia skickar mig. Hon sa att ni behöver beskydd mot magijägare och hundar."
+            </div>
+
+            <p>Paus. Thrakkas ögon scannate förbi Gordon, såg den brända cirkeln, den tomma platsen vid elden, bybornas traumatiserade ansikten.</p>
+
+            <p>"Jag kom för sent," konstaterade hon. Ingen ånger i rösten - bara faktum.</p>
+
+            <p>"Du kom precis i tid," sa Gordon. Han kände något inom sig - inte hopp, hopp var för stort ord, men kanske <em>möjlighet</em>. "Zentri är försvunnen. Vi ska hitta honom."</p>
+
+            <p>Thrakka nickade. "Demoner?"</p>
+
+            <p>"Ja."</p>
+
+            <p>"Bra." Något som kunde vara ett leende rörde sig över Thrakkas ansikte, snabbt som molnskugga. "<strong>Mahktah</strong> hatar demoner mest av allt. Om ni ska jaga demon, följer jag."</p>
+
+            <hr>
+
+            <h3>Brevet</h3>
+
+            <p>Thrakka gav Gordon brevet med Soffias sigill. Han bröt det, läste under tystnad. Kazrik såg honom läsa, såg någonting lättat i legosoldiates axlar.</p>
+
+            <p>Gordon läste högt:</p>
+
+            <div class="quote">
+                <p><em>"Gordon Nahrzezia,</em></p>
+                <p><em>Denne är Thrakka, en som tjänat mig väl i fem års tid. Hon har överlevt arenornas brutality, Mahktahs kall, och värre saker än desertörer. Hon är ert beskydd på vägen hem - och längre, om ni behöver.</em></p>
+                <p><em>Lita på henne som ni litade på Zentri. Hon har färre demoner.</em></p>
+                <p><em>- Soffia"</em></p>
+            </div>
+
+            <p>"Färre demoner," muttrade Kazrik. "Det är låg ribba just nu."</p>
+
+            <p>Umnatak studerade Thrakka med schaamans blick - såg bortom ytan, letade efter det andarnas viskning skulle berätta. När han talade var det långsamt, vägande.</p>
+
+            <p>"Du är tirak men talar som cirefalier. Du bär Mahktahs tecken men tjänar människoadel. Du dödar men utan vrede." Han lutade huvudet. "Vad <em>är</em> du?"</p>
+
+            <p>Thrakka såg på honom. "Professionell."</p>
+
+            <hr>
+
+            <h2>Tirak från Arenorna</h2>
+
+            <p>De satt vid elden den kvällen - fyra nu där tidigare varit fem. Thrakka vägrade Zentris plats utan att någon sagt något. Istället satte hon sig på Hägges vänstra, strategiskt placerad för att kunna se både porten och skogen.</p>
+
+            <p>Kazrik, som alltid letade historier som andra ville berätta om, frågade direkt:</p>
+
+            <p>"Lady Soffia skrev att du tjänat henne väl. Hur hamnade du i hennes tjänst?"</p>
+
+            <p>Thrakka drack ur sin vattenflaska - inget öl, inget vin, professionellt disciplinerad även vid elden. "Jag skyddade henne på en resa. Hon erbjöd permanent tjänst. Jag accepterade."</p>
+
+            <p>"Det är inte hela historien," sa Kazrik.</p>
+
+            <p>"Nej."</p>
+
+            <p>Tystnad. Thrakka såg in i elden med ögon som sett andra eldar, värre eldar. När hon talade igen var rösten platare, som rapport snarare än berättelse:</p>
+
+            <div class="quote">
+                <p>"Jag föddes krigsslave i <strong>Arena Zhen Kar</strong>, Jargiens femte största. Föräldrar okända - ägdes som egendom från födsel. Vid tolv började träningen. Vid fjorton dödade jag min första motståndare för publikens nöje."</p>
+            </div>
+
+            <p>Gordon stirrade. Inte chock - han hade sett slaveri förut - men den lugna presentationen av fakta vägrade någon slags reaktion. "Hur länge?"</p>
+
+            <p>"Åtta år. Fyrtiosju strider. Förlorade två fingrar—" Hon höjde järnhandsken. "—vid strid tjugotre. Lärde mig att döda effektivt utan hat. Bara arbete."</p>
+
+            <p>"Publiken vill ha blod," sa Thrakka, och något gammalt och bittert rörde sig bakom ögonen. "Ge dem blod. Ge dem död. Överlev. Gör om. Det var hela existensen."</p>
+
+            <p>Umnatak lutade sig framåt. "Men du är fri nu. Hur?"</p>
+
+            <p>"Vann min frihet vid tjugo - besegrade Jargiens mästare i traditionell strid. Regelverket sa att segrare blev fri." Ett kort, hårt ljud som kunde vara skratt. "Insåg samma dag att fri tirak i Jargien bara betyder oägd slave. Ingen skillnad."</p>
+
+            <p>Hagge, som ägt slavar innan Laila dött och förändrat honom, såg bort. Skammen var tydligt i hur hans axlar föll.</p>
+
+            <hr>
+
+            <h3>Mahktahs Kall</h3>
+
+            <p>Thrakka fortsatte, rösten mjukare nu - inte emotionell men mindre mekanisk:</p>
+
+            <p>"Natten efter frihetstriden drömde jag. Såg den röda guden - <strong>Mahktah</strong>, vrede och rättvisa, beskyddare av förtryckta. Han visade mig sanningen: Jag kämpade för andras nöje. Nu skulle jag kämpa för de svaga."</p>
+
+            <p>"Så du blev... vad?" frågade Kazrik. "Korsfarare? Beskyddare?"</p>
+
+            <p>"Livvakt." Praktiskt, enkelt. "De svaga behöver beskydd. Jag är bra på att döda. Mahktah är nöjd när jag dödar rätt folk."</p>
+
+            <p>Gordon kände något inom sig - igenkänning. En annan krigare som förstod att våld kunde vara verktyg snarare än syfte. "Och Lady Soffia?"</p>
+
+            <p>"Anställde mig för två år sedan. Farlig resa, många fiender. Jag skyddade henne. Hon behandlade mig som människa, inte egendom. Först människan som gjorde det." Thrakka såg på Gordon. "Hon är klok. Därför skickade hon mig till er."</p>
+
+            <p>"För att vi går mot demoner," sa Umnatak.</p>
+
+            <p>"Ja. Mahktah hatar demoner mest av allt. Om ni ska in i <strong>Skugglandet</strong> och hämta tillbaka er vän—" Hon pekade mot den brända cirkeln. "—då följer jag. Lady Soffias order eller ej."</p>
+
+            <hr>
+
+            <h2>Den Nya Gruppen</h2>
+
+            <p>Morgonen därpå bröt de läger. <strong>Vargnäset</strong> vajade farväl - Eira Holm med tårar i ögonen, byborna med vapen fortfarande nära. De hade överlevt. Priset var hemskt - sju döda, en bortförstådd magiker, en demoncirkel i deras mitt - men de levde.</p>
+
+            <p>Gruppen red österut, mot <strong>Vitterdal</strong> och svaren som väntat där. Fem ryttare nu:</p>
+
+            <p><strong>Gordon Nahrzezia</strong> - ledaren med alltför många döda barn i minnet.</p>
+
+            <p><strong>Kazrik klan Ghor</strong> - krönikören som skrev allt ner för att någon skulle komma ihåg.</p>
+
+            <p><strong>Umnatak</strong> - schamannen vars andar viskat om katastrofer men inte hur man undviker dem.</p>
+
+            <p><strong>Hagge</strong> - adelsmannen som blivit vän trots klasser och historier.</p>
+
+            <p>Och <strong>Thrakka "Järnhanden"</strong> - krigarinnan från arenorna, kallad av en gud som hatade demoner.</p>
+
+            <p>Zentris plats var tom. Men tomt betyder inte glömd. Gordon hade lovat att hitta honom. Gordon höll alltid sina löften, oavsett priset.</p>
+
+            <p>De red i tystnad. Bakom dem brann cirkeln fortfarande - inte med eld, men med frånvaro av allt som levde. Framför dem väntade <strong>Vitterdal</strong>, och bortom det <strong>Skugglandet</strong> där verkligheten löste upp sig och demoner vandrade fritt.</p>
+
+            <p>Någonstans i det förvridna landskapet var Zentri. Levande, död, eller något värre.</p>
+
+            <p>De skulle ta reda på vilket.</p>
+
+            <p>Vad det än kostade.</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Kapitlets Pris</div>
+                <ul>
+                    <li><strong>Zentri Bredarsson:</strong> Försvunnen in i demonskens domän, dragits in i Skugglandet</li>
+                    <li><strong>Systrarnas spårhundar:</strong> Fyra döda av blodsmagi, resten flydde i skräck</li>
+                    <li><strong>Vargnäsets offer:</strong> Sju bybor dödade i försvaret</li>
+                    <li><strong>Halrik Kords desertörer:</strong> Flydde efter att ha sett demonimagi</li>
+                    <li><strong>Ny allierad:</strong> Thrakka "Järnhanden" ansluter sig till gruppen</li>
+                </ul>
+            </div>
+
+        </article>
+    </div>
+
+    <!-- Script for entity linking -->
+    <script src="kapitel-linkify.js"></script>
+</body>
+</html>

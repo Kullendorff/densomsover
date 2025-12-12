@@ -16,7 +16,7 @@ var wikiData = {
     },
     {
       "namn": "Aisha bint-Najib",
-      "bild": null,
+      "bild": "aisha-bint-najib.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -27,7 +27,7 @@ var wikiData = {
     },
     {
       "namn": "Alaric",
-      "bild": null,
+      "bild": "alaric.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -60,7 +60,7 @@ var wikiData = {
     },
     {
       "namn": "Ali ibn-Yusuf",
-      "bild": null,
+      "bild": "ali-ibn-yusuf.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -71,7 +71,7 @@ var wikiData = {
     },
     {
       "namn": "Alistair Bågskytt",
-      "bild": null,
+      "bild": "alistair-bagskytt.png",
       "ras": "Människa",
       "titel": null,
       "status": "död",
@@ -82,7 +82,7 @@ var wikiData = {
     },
     {
       "namn": "Pertil Fiskaren",
-      "bild": null,
+      "bild": "pertil-fiskaren.png",
       "ras": "Människa",
       "titel": "Fiskare",
       "status": "död",
@@ -93,7 +93,7 @@ var wikiData = {
     },
     {
       "namn": "Pertils fru",
-      "bild": null,
+      "bild": "pertils-fru.png",
       "ras": "Människa",
       "titel": null,
       "status": "död",
@@ -127,7 +127,7 @@ var wikiData = {
     },
     {
       "namn": "Amina bint-Khalid",
-      "bild": null,
+      "bild": "amina-bint-khalid.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -138,7 +138,7 @@ var wikiData = {
     },
     {
       "namn": "Amina bint-Rashid",
-      "bild": null,
+      "bild": "amina-bint-rashid.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -149,7 +149,7 @@ var wikiData = {
     },
     {
       "namn": "Amina bint-Salim",
-      "bild": null,
+      "bild": "amina-bint-salim.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -160,7 +160,7 @@ var wikiData = {
     },
         {
       "namn": "Amir ibn-Farouk",
-      "bild": null,
+      "bild": "amir-ibn-farouk.png",
       "ras": "Människa",
       "titel": "Huvudadministratör",
       "status": "levande",
@@ -171,7 +171,7 @@ var wikiData = {
     },
     {
       "namn": "Amira bint-Hassan",
-      "bild": null,
+      "bild": "amira-bint-hassan.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -204,7 +204,7 @@ var wikiData = {
     },
     {
       "namn": "Anya Väv",
-      "bild": null,
+      "bild": "anya-vav.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -237,7 +237,7 @@ var wikiData = {
     },
         {
       "namn": "Benne Tok",
-      "bild": null,
+      "bild": "benne-tok.png",
       "ras": "Människa",
       "titel": "Vaktkapten",
       "status": "levande",
@@ -259,7 +259,7 @@ var wikiData = {
     },
     {
       "namn": "Beric Brorson",
-      "bild": null,
+      "bild": "beric-brorson.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -281,7 +281,7 @@ var wikiData = {
     },
     {
       "namn": "Borga Stenhands",
-      "bild": null,
+      "bild": "borga-stenhands.png",
       "ras": "Dvärg",
       "titel": "Gruvarbetare",
       "status": "levande",
@@ -292,7 +292,7 @@ var wikiData = {
     },
     {
       "namn": "Björn Hammarsmed",
-      "bild": null,
+      "bild": "bjorn-hammarsmed.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -303,7 +303,7 @@ var wikiData = {
     },
     {
       "namn": "Branar Tirakson",
-      "bild": null,
+      "bild": "branar-tirakson.png",
       "ras": "Tirak",
       "titel": null,
       "status": "levande",
@@ -325,7 +325,7 @@ var wikiData = {
     },
     {
       "namn": "Daela Häxmästare",
-      "bild": null,
+      "bild": "daela-haxmastare.png",
       "ras": "Människa",
       "titel": null,
       "status": "död",
@@ -336,7 +336,7 @@ var wikiData = {
     },
     {
       "namn": "Dain Stenyxa",
-      "bild": null,
+      "bild": "dain-stenyxa.png",
       "ras": "Dvärg",
       "titel": "Byggmästare",
       "status": "levande",
@@ -347,7 +347,7 @@ var wikiData = {
     },
     {
       "namn": "Darian den Snabbe",
-      "bild": null,
+      "bild": "darian-den-snabbe.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",

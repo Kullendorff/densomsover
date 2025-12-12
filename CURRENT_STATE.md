@@ -2,16 +2,95 @@
 
 ## Datum: 2025-12-12 (SENT KVÄLL)
 
-## Status: ✅ MASTERPLOT SYSTEM KOMPLETT MED MINI-SITE!
+## Status: ✅ KAPITEL 5 KLART - ZENTRIS FÖRSVINNANDE OCH THRAKKAS ANKOMST!
 
 **Senaste uppdatering (2025-12-12 sent kväll):**
-- ✅ **MASTERPLOT SYSTEM KOMPLETT** - Komplett kosmologi, timeline och masterplot mini-site
-- ✅ Integrerat EON-kosmologi från 5024_legenderhemligheter.txt (Aeon, eonerna, Mörkret)
-- ✅ Mahktahkulten-integration (Thrakkas religion, demon-prohibition)
-- ✅ Masterplot mini-site med navigation, timeline, character cards, 7 stämningsbilder
-- ✅ NPC-länkar till masterplot: Yelgotha, Urkhath, Vinterglöd (alla med detaljsida-knappar)
-- ✅ Navigation: Fluff + Masterplot länkar i index.html
-- ✅ Alla ändringar committade och pushade
+- ✅ **KAPITEL 5 HTML-SIDA SKAPAD** - Vargnäset: Blodet och Askan
+- ✅ 530 rader narrativ prosa i Abercrombie/Hobb-stil
+- ✅ Täcker Zentris försvinnande och Thrakkas introduction
+- ✅ Entity-länkar till NPCs (Zentri, Halrik Kord, Kald Silvermask, Eira Holm, Thrakka, Urkhath)
+- ✅ 100% baserad på kampanjkrönika.md (rad 840-995)
+- ✅ TIDIGARE: Masterplot-system komplett med mini-site
+
+---
+
+## NYTT: KAPITEL 5 - VARGNÄSET (2025-12-12 SENT KVÄLL)
+
+### ✅ Narrativ HTML-sida skapad
+
+**Fil:** `EON/kapitel/kapitel-5-vargnaset.html`
+**Storlek:** ~530 rader HTML med embedded CSS
+**Ordmängd:** ~3500 ord narrativ prosa
+
+**Innehåll täcker:**
+1. **Ankomst till Vargnäset** - Desperat by vid Korpklämman
+2. **Eira Holms bön** - Byäldsten ber om hjälp mot desertörer
+3. **Förberedelser** - Gordon tränar bybor, Kazrik förstärker palissader, Umnatak sätter fällor, Zentri förbereder besvärjelser
+4. **Första attacken** - Kald Silvermask och brandpilar (avvärjd)
+5. **Huvudattacken** - Samordnad attack från Halrik Kord (väst) och Systrarnas spårhundar (öst)
+6. **Zentris desperation** - Spårhundar med silvernät jagar Zentri specifikt
+7. **Blodsmagin** - Zentri accepterar Urkhaths makt i panik, fyra jägare blir aska
+8. **Virveln** - Zentri försvinner in i mörk virvel, bränd cirkel kvar
+9. **Gordons diplomati** - Övertalar bybor att det var fiendens magi
+10. **Thrakkas ankomst** - Dagen efter, med Lady Soffias sigill
+11. **Thrakkas bakgrund** - Tirak från arenorna, Mahktahs kallelse, Lady Soffias livvakt
+12. **Första mötet** - Gruppen tar emot Thrakka som Zentris ersättare
+
+**Stil och ton:**
+- **Joe Abercrombie (40%):** Cynisk, rå, brutal realism, lakonisk humor
+  - "De kom inte tillbaka oavsett hur noga han räknade"
+  - "Publiken vill ha blod. Ge dem blod."
+- **Robin Hobb (40%):** Emotionell introspektiv, långsamma konsekvenser
+  - Zentris ånger: "Det förlåt. Jag trodde jag kunde kontrollera det."
+  - Gordons ansvarstyngd för döda bybor
+- **POV:** Primärt Gordon (ledare), roterande till andra karaktärer
+- **Sensoriska detaljer:** Lukt av rädsla, blod blev dimma blev aska, frostbränd mark
+
+**Tekniska element:**
+- ✅ Full HTML-struktur med embedded CSS (samma färgschema som dashboard)
+- ✅ Sticky navigation bar med tillbaka-knapp till ../index.html
+- ✅ Chapter header med metadata (plats, närvarande, avgörande händelse)
+- ✅ Entity-länkar automatiska via kapitel-linkify.js:
+  - **NPCs (orange):** Gordon, Zentri, Kazrik, Umnatak, Hagge, Halrik Kord, Kald Silvermask, Eira Holm, Thrakka, Urkhath, Lady Soffia, Mahktah
+  - **Platser (purple):** Vargnäset, Korpklämman, Vitterdal, Skugglandet
+  - **Fraktioner (gold):** Systrarnas/Zorian-orden, Arvorns Hammare
+- ✅ Info-boxar (purple, gold, red) för meta-information
+- ✅ Quote-boxar för viktiga dialoger och Lady Soffias brev
+- ✅ HR-avdelare mellan scener
+
+**Validerat mot kampanjkrönika.md:**
+- ✅ Alla händelser från rad 840-995 inkluderade
+- ✅ Kronologisk ordning korrekt
+- ✅ Karaktärers handlingar stämmer
+- ✅ Inga uppfunna händelser
+- ✅ Alla NPCs finns i wiki_data.js
+
+**Kapitlets pris (info-box):**
+- Zentri Bredarsson: Försvunnen in i Skugglandet
+- Systrarnas spårhundar: Fyra döda av blodsmagi
+- Vargnäsets offer: Sju bybor dödade
+- Halrik Kords desertörer: Flydde i panik
+- Ny allierad: Thrakka "Järnhanden"
+
+### Berättelsens hjärta
+
+**Emotionell kärna:**
+- Zentris fall från osäker magiker till demonbesatt
+- Urkhaths manipulation - lockade med frihet, gav förbannelse
+- Gordons pragmatiska lögn till byborna ("Det var deras magi")
+- Thrakkas introduktion som ersättare och hopp
+- Den brända cirkeln som permanent ärr
+
+**Grimdark-element:**
+- "Priset för hybris betalas alltid. Frågan var bara vem som räknades som gäldenär."
+- "Lögnen var så smidig att den nästan trodde på sig själv."
+- "Blod blev dimma blev aska blev ingenting."
+
+**Setup för nästa kapitel:**
+- Gruppen fortsätter mot Vitterdal
+- Zentri försvunnen men inte glömd
+- Thrakka integrerad som ny krigare
+- Skugglandet väntar
 
 ---
 
