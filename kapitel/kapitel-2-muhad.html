@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 2: Uppdraget att Hitta Hagge - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul, .prose ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Entity Links - klickbara NPCs, platser, fraktioner */
+        .entity-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+            transition: all 0.2s ease;
+        }
+        .entity-link:hover { border-bottom-style: solid; }
+        .entity-npc { color: var(--flame-orange); }
+        .entity-plats { color: var(--mystic-purple); }
+        .entity-fraktion { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <div class="content-container">
+        <header class="chapter-header">
+            <h1>Kapitel 2: Uppdraget att Hitta Hagge</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Jarla → Spegelmåne → Tuzan Rim → Jen</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik</div>
+            <div class="chapter-meta"><strong>Tidsperiod:</strong> Tre månader efter Grensfortet</div>
+        </header>
+
+        <article class="prose">
+            <h2>Mötet i Jarla</h2>
+
+            <p>Tre månader är en lång tid att bära hemligheter.</p>
+
+            <p><strong>Gordon</strong> hade tillbringat dem med att dricka för mycket och sova för lite. <strong>Kazrik</strong> hade skrivit - sida efter sida av anteckningar, observationer, frågor utan svar. <strong>Umnatak</strong> hade vandrat i skogarna och talat med andar som ingen annan kunde se.</p>
+
+            <p>Och <strong>Zentri</strong>... Zentri hade haft drömmar. Mardrömmar fyllda av eld och kedjor, av en röst som viskade löften han inte ville höra.</p>
+
+            <p>Nu satt de alla på <strong>Clebias Pärla</strong> i Jarla och väntade. Värdshuset var halvtomt - för tidigt på dagen för de riktiga drinkarna, för sent för frukosten. Gordon hade beställt öl han inte ville ha, bara för att ha något att göra med händerna.</p>
+
+            <p>Dörren öppnades.</p>
+
+            <h3>Lady Soffia av Vitterdal</h3>
+
+            <p>Hon var inte vad Gordon hade väntat sig. Förklädd som köpmanshustru, klädd i enkla kläder som inte kunde dölja hur hon bar sig själv - ryggraden rak, hakan höjd, ögonen intensiva och bedömande.</p>
+
+            <p><strong>Soffia av Vitterdal</strong> var tunn, grått hår draget bakåt i en enkel fläta. Bakom henne kom fyra livvakter, ledda av en man som saknade höger öra - <strong>Revand</strong>, som Gordon senare skulle lära sig.</p>
+
+            <p>Hon satte sig utan att be om tillåtelse.</p>
+
+            <div class="quote">
+                "Min äldste son ligger döende. Min yngste son är försvunnen. Jag har inte tid för artigheter."
+            </div>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Uppdraget</div>
+                <ul>
+                    <li><strong>Talarra</strong>, äldste sonen, döende av sjukdom ingen läkare kunde bota</li>
+                    <li><strong>Hadrian "Hagge"</strong>, yngre sonen, måste återföras som arvinge</li>
+                    <li>Hagge hade förvisats på <em>falska anklagelser</em> från sin bror Talarra</li>
+                    <li>Sist rapporterades han ha rest till <strong>Tuzan Rim</strong> för att ansluta sig till legosoldatförbundet <strong>De Röda Vargarna</strong></li>
+                </ul>
+            </div>
+
+            <p>Gordon såg på de andra. Kazrik nickade nästan omärkligt. Umnatak stirrade på något över Soffias axel - något ingen annan kunde se. Zentri gnuggade sin handled mot bordet, som om något sved där inne.</p>
+
+            <p>"Vi tar uppdraget," sa Gordon.</p>
+
+            <hr>
+
+            <h2>Fartyget Spegelmåne</h2>
+
+            <h3>Resan Börjar</h3>
+
+            <p>Handelsfartyget <strong>Spegelmåne</strong> var en tjock, pålitlig sak - byggd för last snarare än fart. Två veckor längs Ashariens kust, hade kaptenen sagt. Gordon hade sovit dåligt på fartyg sedan han var ung, men det fanns inga andra alternativ.</p>
+
+            <p>Medpassagerarna var en blandad skara. <strong>Serina Elthor</strong> - en handelskvinna i trettioårsåldern med färgstarka kläder och ett leende som aldrig riktigt nådde ögonen. Hon handlade med kryddor och tyger, sa hon. Bar på en hemlighet, tänkte Gordon.</p>
+
+            <p>Och så var det <strong>Tafrandir</strong>.</p>
+
+            <p>Kiryaalven var gammal på ett sätt som fick Gordon att känna sig som ett barn. Tre hundra år, kanske mer. Hans rörelser var flytande, hans ögon såg för mycket, och vid hans sida hängde något Gordon aldrig sett förut - en <strong>petya</strong>, en tolv fot lång precisionssmidd stålkedja. Ett sant Kiriya-vapen.</p>
+
+            <p>"Elegant och dödlig," hade Kazrik sagt när han såg den. "Som en dansare som kan döda."</p>
+
+            <p>Tafrandir hade lett. Det var ett leende som visste saker.</p>
+
+            <h3>Nattens Strid</h3>
+
+            <p>Tredje natten till sjöss hörde kiryaalven något de andra missade.</p>
+
+            <p>Gordon vaknade av skrik - inte mänskliga skrik, utan det metalliska skriket av kedja mot stål. Han rusade upp på däck, svärd i hand, och såg det.</p>
+
+            <p>Två kvinnor. Våta från klättringen upp längs skrovet. Mörka kläder, ansikten dolda i skuggor. <strong>Systrarna</strong> - hemliga agenter från Zorian-orden, även om Gordon inte visste det ännu.</p>
+
+            <p>Tafrandir stod mellan dem och resten av skeppet, petyan dansande i månskenet.</p>
+
+            <div class="quote">
+                "Kiryaalven som hör för bra för sitt eget bästa. Vi kommer för pojken. Du är bara... i vägen."
+            </div>
+
+            <p>Den ljushåriga systern hade mjölkvita ögon som lyste i natten. Den mörkhåriga var brutal, direkt, effektiv.</p>
+
+            <p>Striden var kort och vacker och fruktansvärd.</p>
+
+            <p>Petyan svepte i vida cirklar. Systrarna attackerade koordinerat, knivar blixtrande. Det gungande däcket gjorde allting svårare - den perfekta dansen blev en graceless brottning om balans och överlevnad.</p>
+
+            <p>Kedjan slingrade sig runt en järnklampe vid relingen. Tafrandir drog åt - och klampen <em>sprack loss</em> under trycket.</p>
+
+            <p>Petyan föll.</p>
+
+            <div class="quote">
+                "NEJ! Inte min vackra petya!"
+            </div>
+
+            <p>Tafrandirs sista ord på däck. Han kastade sig mot relingen, försökte nå sitt vapen, och den ljushåriga systern <em>knuffade</em>. Den mörkhåriga, som höll hans ben, följde med ner i det svarta vattnet.</p>
+
+            <p>Det sista Gordon hörde var ett skratt: <em>"Ses på andra sidan, kiryaalv! Hoppas du kan simma lika elegant som du slåss!"</em></p>
+
+            <p>Sedan - tystnad.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Sanningen om Tafrandir</div>
+                <p>Kiryaalven överlevde. Sparkade sig fri från den mörkhåriga systern, simmade till land någonstans längs floden. Hans älskade petya ligger fortfarande på flodbottnen.</p>
+                <p>Hans öde förblir okänt. Lever han? Söker han sitt vapen? Kiryaalver är seglivade - men tre hundra år betyder inget mot sorg.</p>
+                <p><em>Systrarna sökte Zentri för demonringen. De hade följt spåren sedan tirakgraven. Tafrandir offrade sig för passagerare som inte ens visste om faran.</em></p>
+            </div>
+
+            <hr>
+
+            <h2>Tuzan Rim</h2>
+
+            <h3>Staden av Sand och Eld</h3>
+
+            <p>Tuzan Rim slog emot dem som en vägg av hetta och ljud. Femton, sexton flottans fartyg låg i hamnen. Cirefalisk arkitektur dominerade - raka linjer, stenbelagda gator, ordnade kvarter som försökte tämja kaos.</p>
+
+            <p>Solen var obarmhärtig. Sjömän gick utan skjortor, svetten glittrande på bruna ryggar. Vid portarna trängdes folk som ville in - stadsvakterna kontrollerade med den långsamma effektivitet som bara byråkrati kan frambringa.</p>
+
+            <p>Gordon kände sand i skor han aldrig skulle få rena igen.</p>
+
+            <h3>Den Dolda Dolken</h3>
+
+            <p>Det var <strong>Kazrik</strong> som hittade stället. Dvärgen hade en talang för att hitta de ställen där information flödade lika fritt som öl.</p>
+
+            <p><strong>Den Dolda Dolken</strong> låg gömd i en mörk gränd, markerad bara av en diskret dolk ristad i dörrkarmen. Inne var det halvmörkt och rökfyllt, draperier som delade upp rummet i privata bås.</p>
+
+            <p><strong>Sylva</strong> mötte dem vid baren. Ägaren var en före detta köpmansdotter med ögon som räknade varje detalj - varje vapen, varje sår, varje tecken på makt eller svaghet. Hon talade flera språk och samlade antikviteter i rum ingen fick se.</p>
+
+            <p>"Ni söker information," sa hon. Det var inte en fråga.</p>
+
+            <p>"En ung man. Adel. Skulle ansluta sig till De Röda Vargarna."</p>
+
+            <p>Sylva log. Det var inte ett vänligt leende. "Information kostar. Vad har ni att erbjuda?"</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Informanterna</div>
+                <ul>
+                    <li><strong>Zan Fjädertunga</strong> - Gatumusikant vid Hamnkvarteret. Hade hört en melodi kidnapparna nynnat. Melankolisk och skarp.</li>
+                    <li><strong>Theda</strong> - F.d. medlem i kidnappningsgänget. Hade fått kalla fötter. Rädd och villig att prata.</li>
+                    <li><strong>Rihal</strong> - Hamnkapten som sett kidnapparna och deras fånge lasta ombord på ett skepp.</li>
+                </ul>
+            </div>
+
+            <h3>De Röda Vargarna</h3>
+
+            <p>Två timmars ritt inåt landet. Damm överallt - i ögonen, i munnen, i varje veckning av kläderna.</p>
+
+            <p>Lägret var stort nog för tvåhundra soldater. Tält i raka rader, en dammig innergård, massvis med conscripts som drillades i den obarmhärtiga solen.</p>
+
+            <p><strong>Berak Skrivare</strong> tog emot dem - en administratör med ögon som aldrig riktigt mötte deras. <strong>Manzorra Enarm</strong> stod bakom honom, en veteransergeant med ett ansikte som sett för många strider.</p>
+
+            <p>"Hagge?" Berak bläddrade i sina papper med överdriven noggrannhet. "Ingen med det namnet har anslutit sig till De Röda Vargarna."</p>
+
+            <p>Gordon kände hur något kallt sjönk i magen.</p>
+
+            <p>"Han var på väg hit. Från Vitterdal."</p>
+
+            <p>"Många är på väg hit." Berak ryckte på axlarna. "Få kommer fram."</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Upptäckten</div>
+                <p>Hagge hade <strong>aldrig</strong> nått De Röda Vargarna. Någonstans mellan Vitterdal och Tuzan Rim hade han försvunnit. Kidnappade. Såld.</p>
+            </div>
+
+            <hr>
+
+            <h2>Lera Skuggskeppare</h2>
+
+            <p>Spåren ledde till havet. Till pirater. Till henne.</p>
+
+            <p><strong>Lera Skuggskeppare</strong> var en legend längs Ashariens kust. Dotter till en handelsman och sjöfarare, hade hon tagit befälet över sitt första fartyg innan hon fyllt tjugo. Nu kontrollerade hon <strong>Skuggflodens Syndikat</strong> - en av de största pirathamnarna i regionen.</p>
+
+            <p>Gordon väntade sig en demon. Han mötte en affärskvinna.</p>
+
+            <p>"Hagge av Vitterdal." Hon smakade på namnet som om det vore vin. "Ja. Han passerade genom mina händer."</p>
+
+            <p>"Var är han nu?"</p>
+
+            <p>Lera log. Det var ett leende som visste exakt vad det var värt.</p>
+
+            <div class="quote">
+                "Såld. Till Malik Al-Zahir i Jen. En köpman med... specifika smaker. Jag kan ge er namn. Adresser. Till och med en introduktion." Hon lutade sig framåt. "Men ingenting är gratis. Inte ens information om var era fienders fiender gömmer sig."
+            </div>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Lera Skuggskeppare</div>
+                <p>Både älskad och fruktad. Komplex - kunde vara grymt rå eller rättvis och lojal. Hederskodex mot fångar som förtjänade respekt. Beskyddare av Ashariens folk mot kolonialmakter.</p>
+                <p>Hon såg sig själv som väktare av balansen. Andra såg henne som pirat, mördare, slaver. Sanningen låg någonstans däremellan.</p>
+            </div>
+
+            <hr>
+
+            <h2>Jen</h2>
+
+            <h3>Staden av Hundra Tusen Själar</h3>
+
+            <p>Jen var kaos gjort till sten och kött. Hundra tusen invånare trängdes i gränder smala som tunnlar, marknader som aldrig sov, tempel till gudar Gordon inte kände namnen på.</p>
+
+            <p>Och slavar. Överallt slavar.</p>
+
+            <p>Ungefär tio procent av stadens befolkning, hade Kazrik räknat ut. Lagligt endast genom födsel, dom, eller som krigsbyte. Men lagen var böjlig, och <strong>Malik Al-Zahir</strong> hade böjt den tillräckligt för att köpa en ung adelsmann från Vitterdal med förfalskade papper.</p>
+
+            <h3>Systrarna Slår Till</h3>
+
+            <p>De hade följt gruppen hit. Gordon visste det innan han såg dem - kände blickarna i nacken, hörde steg som försvann för snabbt.</p>
+
+            <p>Deras lokala guide - en ung man vid namn Tarim som kände stadens gator - hittades död tredje dagen. Strupen skuren. Ögonen öppna mot en himmel han aldrig skulle se igen.</p>
+
+            <p>Zentri blev blek när han såg kroppen. Blekare än de andra. Hans hand försvann i fickan, och Gordon kunde ha svurit att han hörde något - ett ljud som inte riktigt var ett ljud, en viskning som inte riktigt var ord.</p>
+
+            <p>"De söker mig," sa Zentri. Hans röst var flat, utan känslor.</p>
+
+            <p>"Varför?"</p>
+
+            <p>Tystnad.</p>
+
+            <h3>Laila al-Jen</h3>
+
+            <p>Hagge hade sålts till henne. <strong>Laila al-Jen</strong> - en rik kvinna som närmadesig åldern där barnafödande blir omöjligt, och som hade bestämt sig för att köpa det hon inte kunde få på andra sätt.</p>
+
+            <p>En arvinge.</p>
+
+            <p>Gordon mötte henne i hennes palats - en byggnad av vit sten och skuggade innergårdar. Hon var vacker på ett kallt sätt, med ögon som vägde allt och alla på samma våg.</p>
+
+            <p>"Ni vill ha pojken tillbaka." Det var inte en fråga.</p>
+
+            <p>"Han är adel från Vitterdal. Hans mor vill ha honom hem."</p>
+
+            <p>Laila log. Det var inget vänligt i det leendet.</p>
+
+            <div class="quote">
+                "Jag köpte honom. Lagligt, enligt pappren. Om ni vill ha honom... ger ni mig vad jag vill ha."
+            </div>
+
+            <p>Det hon ville ha var enkelt och fruktansvärt: ett barn. Hagges barn.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Kazriks Bevis</div>
+                <p>Dvärgens bokföring - hans ändlösa anteckningar, hans spårning av papper och sigill - avslöjade sanningen. Hagge hade <strong>olagligt</strong> förslavats. Pappren var förfalskade. Köpet var en lögn.</p>
+                <p>Det räckte för att pressa Laila. Men inte för att stoppa henne helt.</p>
+            </div>
+
+            <hr>
+
+            <h2>Det Fruktansvärda Priset</h2>
+
+            <p>Ritualen skedde i öknen utanför Jen. Alkemisk magi, gammal som sanden själv. Laila hade hyrt en shaman - en krokig figur vars ögon var vita av blindhet men vars händer rörde sig med precision.</p>
+
+            <p><strong>Hagge</strong> stod i cirkelns mitt. Gordon hade förväntat sig en pojke - han fick en man. Ung, ja, men hårdnad av månader i slaveri. Ögon som sett för mycket.</p>
+
+            <p>"Är det verkligen nödvändigt?" frågade han. Hans röst var flat.</p>
+
+            <p>"Om du vill gå fri." Laila stod utanför cirkeln, hennes ansikte upplyst av facklorna. "Ge mig ett barn. Ge mig en arvinge. Sedan kan du gå."</p>
+
+            <p>Attacken kom mitt under ritualen.</p>
+
+            <p>Maliks hejdukar - slavhandlaren hade inte uppskattat att förlora sin vara. Och bakom dem, dragit ur öknens skuggor av magin som pulserade i luften, <strong>ökendemoner</strong>. Varelser av sand och hunger som skrek med röster som inte var mänskliga.</p>
+
+            <p>Gordon kämpade vid cirkelns kant. Kazrik svor på dvärgiska och högg med yxan han aldrig borde ha behövt använda. Umnatak sjöng - ord på ett språk ingen förstod, ord som fick andarna att vakna och slåss vid deras sida.</p>
+
+            <p>Och Zentri... Zentri brann.</p>
+
+            <p>Hans magi var starkare än Gordon någonsin sett den. Flammor som inte var naturliga, ljus som brände demonerna inifrån. Men hans ögon - hans ögon var fel. Glödande. Hungriga.</p>
+
+            <p>Efteråt sa ingen något. Inte om magin. Inte om ögonen. Inte om vad det betydde.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Efterdyningarna</div>
+                <p>Hagge befriades. Laila fick sitt barn - ett barn han aldrig skulle känna, aldrig skulle se växa upp. Ett pris betalt i kött och blod och skuld.</p>
+                <p>Gruppen lämnade Jen i gryningen. Ingen såg tillbaka.</p>
+            </div>
+
+            <hr>
+
+            <h2>Hemresan Börjar</h2>
+
+            <p>De bokade passage på första skepp mot Cermira. <strong>Hagge</strong> var tyst under resan - stirrade ut över havet med ögon som såg något annat. Något han lämnat kvar.</p>
+
+            <p>Gordon försökte prata med honom en gång. Bara en gång.</p>
+
+            <p>"Du är fri nu. Det är det som räknas."</p>
+
+            <p>Hagge vände sig mot honom. Hans ansikte var uttryckslöst.</p>
+
+            <div class="quote">
+                "Är jag? Fri från Laila, kanske. Men jag lämnade ett barn där. Mitt barn. Och jag kommer aldrig veta om det är en son eller dotter, om det lever eller dör, om det växer upp och hatar mig för att jag gick."
+            </div>
+
+            <p>Han vände sig tillbaka mot havet.</p>
+
+            <p>"Ingen är någonsin fri. Vi bär bara olika kedjor."</p>
+
+            <p>Gordon hade inget svar. Ibland finns det inga svar.</p>
+
+            <p>Skeppet seglade vidare mot norr, mot hem, mot de kedjor som väntade. Och i Zentris ficka pulserade något kallt och hungrigt, viskande löften som skulle ta tid att uppfylla.</p>
+
+            <hr>
+
+            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
+                Hagge var räddad. Priset var betalt.<br>
+                Men resan hem skulle visa sig vara längre än någon av dem anat.
+            </p>
+        </article>
+    </div>
+
+    <!-- Ladda data för auto-länkning -->
+    <script src="../wiki_data.js"></script>
+    <script src="../fraktioner_data.js"></script>
+    <script src="kapitel-linkify.js"></script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

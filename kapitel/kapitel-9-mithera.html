@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 9: Mithera och Älvakungen - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        /* Chapter Header */
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Prose Styling */
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul {
+            margin: 1rem 0 1.5rem 2rem;
+            list-style-type: disc;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        /* Image Styling */
+        .chapter-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin: 2rem auto;
+            display: block;
+            border: 2px solid var(--border);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Quote Styling */
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Entity Links - klickbara NPCs, platser, fraktioner */
+        .entity-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+            transition: all 0.2s ease;
+        }
+        .entity-link:hover { border-bottom-style: solid; }
+        .entity-npc { color: var(--flame-orange); }
+        .entity-plats { color: var(--mystic-purple); }
+        .entity-fraktion { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <!-- Chapter Header -->
+        <header class="chapter-header">
+            <h1>Kapitel 9: Mithera och Älvakungen</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Mitheras skogar</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Umnatak, Kazrik, Thrakka, Corvus</div>
+            <div class="chapter-meta"><strong>Tidsperiod:</strong> Dag 1-8 genom Mithera</div>
+        </header>
+
+        <!-- Prose Content -->
+        <article class="prose">
+            <h2>Utgångsläget i Grensfortet</h2>
+            <p>Efter den dramatiska evakueringen säkrades de överlevande flyktingarna i Grensfortet. Fyrtioett själar av ursprungliga femtio bybor från Vargnäset hade överlevt resan. Lady Soffia hade sänt förnödenheter från Vitterdal, och gruppen kunde äntligen återhämta sig efter veckors flykt.</p>
+
+            <p>Corvus opererade fortfarande under aliaset "Arcadius", en identitet som börjat kännas som en andra hud. Hans verkliga namn viskades bara i mörker, i samtal som ingen annan fick höra.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Förberedelser för Mithera</div>
+                <ul>
+                    <li><strong>Kazrik</strong> forskade i fortets boksamling om Skugglandet och Mithera</li>
+                    <li><strong>Umnatak</strong> förberedde sig andligt för navigering genom de förvrängda markerna</li>
+                    <li>Gruppen samlade vinterutrustning och proviant</li>
+                    <li>Information från lokala jägare om förändrad geografi - kartor ljög alltmer</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h2>ETAPP 1: Västra skogsranden (Dag 1-2)</h2>
+
+            <h3>Tormunds Stuga</h3>
+            <p>Den första kontakten med Mitheras verklighet kom i form av gamle <strong>Tormund Rimskägg</strong>, en eremitjägare som bott i skogen i fyrtio år. Hans stuga lutade sig mot en väldig gran vars grenar bildat ett naturligt tak över torvtaket. Runt stugan hängde märkliga troféer - djurskallar, björnklor, och något som såg ut som en vinge från en varelse som inte borde existera.</p>
+
+            <div class="quote">
+                "Kartor ljuger - skogen byter plats på landmärken."
+            </div>
+
+            <p>Tormunds ögon bar en sorg djupare än årstiderna. När han varnade för snökatter och farliga varelser, när han sålde isspett för att upptäcka frusna vattendrag, fanns något oförsonligt i hans röst. Gordon såg det först - gamle jägaren talade ur erfarenhet som kostat mer än år.</p>
+
+            <p>Senare, vid elden, berättade Tormund om silverfanfarer i fjärran. Men det var något han inte sa - något om en son som försvunnit när kartorna ljög. Smärtan fanns kvar i hans ögon efter fyra decennier, outtalad men kristallklar.</p>
+
+            <hr>
+
+            <h2>ETAPP 2: Tredelningen (Dag 3)</h2>
+            <p>Vid korsvägen mellan tre urgamla megaliter - stenar så gamla att runorna på dem hade utplånats av tid och vind - stod gruppen inför sitt första avgörande val.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">De Tre Vägarna</div>
+                <ul>
+                    <li><strong>Vänster:</strong> Mot Vixharzivas domän (drake-territorium, säker död för vanliga dödliga)</li>
+                    <li><strong>Mitten:</strong> Kortaste vägen (istroll-marker, snabb men dödligt farlig)</li>
+                    <li><strong>Höger:</strong> Tålamodets stig (längre, okänd, men kanske säkrast)</li>
+                </ul>
+            </div>
+
+            <p><em>[Gruppens val: BEHÖVER BEKRÄFTELSE från Johan]</em></p>
+
+            <hr>
+
+            <h2>ETAPP 3: Jättespindel-striden (Dag 4)</h2>
+            <p>I en snöklädd dal, där träden stod tätt som fängelsegaller, mötte gruppen döden i åtta meters krypande form.</p>
+
+            <p>Jättespindeln var massiv - åtta meter från framben till spinnkörtlar. Dess facettögon, stora som barnskallar, reflekterade snön i tusentals brutna fragment. När den rörde sig lät det som krossat glas mot sten.</p>
+
+            <p>Spindeln hade byggt sina spinntrådsfällor i träden - nästan osynliga trådar tjocka som tum, starka som stål. Umnatak såg andarnas rädsla kring varelsen först, ett mörker som inte skulle vara där. Gordon vrålade varning en sekund för sent.</p>
+
+            <p>Kazrik fastnade i en tråd, lyft från marken som en docka. Thrakka rusade in, svärd högt, och skar ner dvärgen. Spindeln vände sig - snabbare än något så stort borde kunna röra sig - och bet Thrakka i armen.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Konsekvenser</div>
+                <ul>
+                    <li>Thrakka fick spindelgift i armen - svullnad och feber i två dagar</li>
+                    <li>Kazrik samlade spinnkörtlar för framtida bruk (dvärgar slösar inget)</li>
+                    <li>Gruppen tvingades ta nattläger för återhämtning</li>
+                </ul>
+            </div>
+
+            <p><em>[BEHÖVER DETALJER från Johan: Hur besegrade gruppen den? Vem spelade nyckelroll?]</em></p>
+
+            <hr>
+
+            <h2>ETAPP 4: Mötet med Vitfläck (Dag 5)</h2>
+            <p>Den talande snökatten uppenbarade sig utan varning - tre meter från nos till svans, päls vit som nyfallen snö, ögon av bärnsten som brann med intelligens ingen katt borde äga.</p>
+
+            <p><strong>Vitfläck</strong>, Kuberons härold, visade tre rader rakbladsvassa tänder när han log. Det var inget vänligt i det leendet.</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Vitfläcks Bedömning av Gruppen</div>
+                <div class="quote">
+                    <p><strong>Gordon:</strong> <em>"Du luktar ansvar för döda barn. Intressant parfym."</em></p>
+                    <p><strong>Umnatak:</strong> <em>"Andevandrare! Din sort smakar konstigt."</em></p>
+                    <p><strong>Thrakka:</strong> <em>"Blod på sand, publiken jublar. Du har dödat för sport."</em></p>
+                    <p><strong>Kazrik:</strong> <em>"Ord, ord, ord. Du luktar pergament och bläck. Tråkigt."</em></p>
+                    <p><strong>Arcadius/Corvus:</strong> <em>"Två namn, två själar, två skulder. Du måste smaka FASCINERANDE."</em></p>
+                </div>
+            </div>
+
+            <p>Information från Vitfläck kom med pris. Han berättade att kartorna ljög värre än någonsin, att Skugglandet läckte som en punkterad vinslang, att Älvakungen rörde på sig i sömnen.</p>
+
+            <p>Om Zentri sa han: <em>"Han gick österut med demonen i hasorna. Såg honom gråta silverfärger."</em></p>
+
+            <p>Hans varning ekade länge efter han försvunnit in i snön: <em>"Ni kommer dö, vet ni. Inte idag, inte av mig, men snart."</em></p>
+
+            <p><em>[BEHÖVER BEKRÄFTELSE från Johan: Vad betalade gruppen som pris till Vitfläck?]</em></p>
+
+            <hr>
+
+            <h2>ETAPP 5: Åderbjörkslunden (Dag 6-7)</h2>
+            <p>Hundratals enorma vitbarkade björkar reste sig som pelare i en katedral byggd av tid och is. Grönt ljus från runstenar lyste genom dimman - sex stenar i en perfekt cirkel.</p>
+
+            <p>En för varje vandrare.</p>
+
+            <h3>Profetians Gåta</h3>
+            <p>Stenarna skulle aktiveras i rätt ordning, baserat på varje karaktärs sanna essens:</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Den Rätta Ordningen</div>
+                <ol>
+                    <li><strong>"Den första söker kunskap"</strong> → Kazriks sten</li>
+                    <li><strong>"Den andre bär bördan"</strong> → Gordons sten</li>
+                    <li><strong>"Den tredje ser bortom"</strong> → Umnataks sten</li>
+                    <li><strong>"Den fjärde minns smärtan"</strong> → Thrakkas sten</li>
+                    <li><strong>"Den femte bär skulden"</strong> → Corvus/Arcadius sten</li>
+                    <li><strong>"Den sjätte är förlorad"</strong> → Tom sten (för Zentri)</li>
+                </ol>
+            </div>
+
+            <p>När stenarna aktiverades i rätt ordning hände det: Grönt ljus möttes i mitten av cirkeln och sköt upp mot himlen som en pelare av ren magi. En levande karta manifesterades i luften - inte ritad på papper utan skapad av ljus och minne.</p>
+
+            <p>Vägen till Älvakungen uppenbarades.</p>
+
+            <p>Men med vägen kom märket - <strong>Vandrarnas Märke</strong>. Silverblad som växte in i varje persons hår, permanent, oåterkalleligt. De bar nu tecknet på vad de var: vandrare mot döden.</p>
+
+            <div class="quote">
+                "Sex vandrare... äntligen. Den sjätte är redan här. I Skugglandet."
+            </div>
+
+            <p>Visionen kom från ispelaren långt österut - den frusne fursten som väntade.</p>
+
+            <hr>
+
+            <h2>ETAPP 6: Älvakungens Sal (Dag 8)</h2>
+
+            <h3>Vandringen dit</h3>
+            <p>Gravitationen blev annorlunda ju närmare de kom. Steg som skulle vara lätta kändes tunga. Steg som skulle vara tunga blev fjäderlätta. Tiden hackade - samma händelse upprepades, som om verkligheten stoppade och startade om.</p>
+
+            <p>En man gick BAKLÄNGES mot dem på stigen. Hans mun rörde sig:</p>
+
+            <div class="quote">
+                "Vänd om, han vaknar, han samlar, han väntar..."
+            </div>
+
+            <p>Sedan var han borta, som om han aldrig funnits.</p>
+
+            <h3>Den Frusna Katedralen</h3>
+            <p>Perfekt cirkel av urgamla vitbjörkar, hundra meter höga, grenar sammanflätade som bönder händer. Marken var en spegel av svart is med stjärnor synliga i ytan - inte reflektioner av himlen ovan, utan verkliga stjärnor, som om isen var en portal.</p>
+
+            <p>Ispelaren stod i mitten. Fem meter bred. Tjugo meter hög. Kristallklar.</p>
+
+            <p>Inuti - prins <strong>Yelgotha av det Första Hovet</strong>, frusen i sjuhundra år.</p>
+
+            <p>Hans hovfolk fanns där också, alla frusna i samma ögonblick:</p>
+            <ul>
+                <li>Riddaren med halvdraget svärd</li>
+                <li>Skalden med evig sång fastnad i ögonen</li>
+                <li>Barnet med utsträckt hand</li>
+                <li>Älskarinnan med diamanttårar på kinden</li>
+                <li>Förrädaren, vänd bort i ånger</li>
+            </ul>
+
+            <h3>Furstens Väckande</h3>
+            <p>Kazrik läste runorna. Umnatak talade till andarna. Gordon lade sin hand på isen.</p>
+
+            <p>Isen började smälta.</p>
+
+            <p>Prins Yelgotha öppnade ögonen - silvervita, utan pupiller, utan mänsklighet kvar.</p>
+
+            <div class="quote">
+                "Fem kroppar men sex själar. Ni bär den sjätte inom er. I er skuld. I er saknad. I ert misslyckande."
+            </div>
+
+            <h3>Sanningens Krav</h3>
+            <p>Varje rollperson tvingades avslöja sin SANNA anledning till att vara där - inte den de berättade för andra, inte den de trodde själva, utan sanningen som brände djupare än allt annat.</p>
+
+            <p><em>[BEHÖVER BEKRÄFTELSE från Johan: Vad avslöjade varje karaktär?]</em></p>
+
+            <h3>De Tre Offren</h3>
+            <p>Fursten erbjöd tre alternativ. Ett måste väljas för att få passage:</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Offren</div>
+                <p><strong>1. TIDEN:</strong> Ge bort den bästa dagen - minnet av den försvinner för alltid, men ålder försvinner från kroppen. Bli yngre, men förlora det som gjorde dig levande.</p>
+
+                <p><strong>2. VÄRMEN:</strong> Ge bort känslan av värme - aldrig frysa igen, men sol, mat, beröring blir neutral. Känna allt som genom tjockt glas. Aldrig riktigt känna igen.</p>
+
+                <p><strong>3. SÄKERHETEN:</strong> Ge upp vetskapen om återkomst - ingen garanti att kunna återvända. Kanske fastna för evigt i Skugglandet. Kanske aldrig se hemmet igen.</p>
+            </div>
+
+            <p><em>[BEHÖVER BEKRÄFTELSE från Johan: Vilket offer valde gruppen?]</em></p>
+
+            <h3>De Fem Varningarna</h3>
+            <p>Innan portalen öppnades gav prins Yelgotha sina sista råd:</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Furstens Varningar</div>
+                <ol>
+                    <li><em>"I det Spegelvända Fortet väntar Vinterglöd. Han var människa. Hans syster dog i de varma källorna."</em></li>
+                    <li><em>"Er vän är delad. Kropp, själ och minne på olika platser. Styrka vinner kroppen. List vinner själen. Offer vinner minnet."</em></li>
+                    <li><em>"Tiden där är inte tid här. Sekunder blir år. År blir sekunder."</em></li>
+                    <li><em>"Lita på INGENTING utom er skuld. Skuld är alltid sann i Skugglandet."</em></li>
+                    <li><em>"Det finns alltid en utväg. Men den är aldrig den ni tror."</em></li>
+                </ol>
+            </div>
+
+            <div class="quote">
+                "När ni möter Vinterglöd, säg att Yelgotha sände er. Han var min page en gång."
+            </div>
+
+            <hr>
+
+            <h2>Mötet med Älvakungen - Offren</h2>
+            <p>Efter väckelsen av prins Yelgotha krävde "Älvakungen" sina egna offer för passage till Skugglandet - koloniska offer som skulle lämna tomrum i själen:</p>
+
+            <ul>
+                <li><strong>Thrakka:</strong> Offrade sina traumatiska minnen (gladiatoråren, slaveriet, smärtan)</li>
+                <li><strong>Umnatak:</strong> Offrade sin säkerhet/trygghet</li>
+                <li><strong>Gordon:</strong> Offrade sin generositet</li>
+                <li><strong>Arcadius/Corvus:</strong> Offrade sin skuld</li>
+                <li><strong>Kazrik:</strong> Offrade sin ambition/girighet</li>
+            </ul>
+
+            <p>Varje offer lämnade ett tomrum i offrarens själ. <strong>Arcadius särskilt påverkad</strong> - ett bokstavligt hål i bröstet där skulden borde vara. En tråd från hålet ledde bort, kopplad till något okänt, något som väntade.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Insikt i Efterhand</div>
+                <p>"Älvakungen" var ingen alva eller kung. Namnet var ett <strong>coloniskt ord</strong> som betydde "Själabärare" eller "Portal-väktare".</p>
+
+                <p>Offren gick inte till alvkungens välsignelse. De gick till något mycket äldre och mörkare - till Lord Vinterglöd själv, själssamlaren som väntade i Skugglandet.</p>
+
+                <p>Gruppen hade inte hjälpts av en allierad. De hade betalat passage till sin fiende.</p>
+            </div>
+
+            <hr>
+
+            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
+                Portalen öppnades. Skugglandet väntade.<br>
+                Och med det, sanningen om vad de hade blivit.
+            </p>
+        </article>
+    </div>
+
+    <!-- Ladda data för auto-länkning -->
+    <script src="../wiki_data.js"></script>
+    <script src="../fraktioner_data.js"></script>
+    <script src="kapitel-linkify.js"></script>
+
+    <script>
+        // Smooth scroll for any future internal navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
