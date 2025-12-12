@@ -518,6 +518,23 @@
             margin-bottom: 0.5rem;
         }
 
+        .kapitel-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--deep-red));
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .kapitel-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 107, 74, 0.4);
+        }
+
         /* Loading state */
         .loading {
             text-align: center;
@@ -820,15 +837,25 @@
             filteredFraktioner = allFraktioner;
         }
 
+        // Kapitelsidor som finns (nummer → filnamn)
+        const kapitelSidor = {
+            '1': 'prolog-tirakgraven.html',
+            '10': 'kapitel-9-mithera.html'
+        };
+
         function renderKapitel() {
             const container = document.getElementById('timeline-container');
-            container.innerHTML = kapitel.map((k, i) => `
+            container.innerHTML = kapitel.map((k, i) => {
+                const harSida = kapitelSidor[k.nummer];
+                const sidlank = harSida ? `<a href="kapitel/${harSida}" class="kapitel-link">📖 Läs kapitlet</a>` : '';
+                return `
                 <div class="timeline-item ${k.status === 'pågående' ? 'current' : ''}">
                     <h3>Kapitel ${k.nummer}: ${k.titel}</h3>
                     <div class="meta">${k.plats} | Status: ${k.status}</div>
                     <p>${k.beskrivning}</p>
+                    ${sidlank}
                 </div>
-            `).join('');
+            `}).join('');
         }
 
         function renderPlayers() {
