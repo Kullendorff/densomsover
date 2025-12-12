@@ -114,36 +114,83 @@ kampanjwiki/
 
 ---
 
-## Specialiserade Agenter
+## Specialiserade Subagents
 
-### /eon-data-guardian
-**Fil:** `.claude/commands/eon-data-guardian.md`
+**VIKTIGT:** Dessa är **autonoma subagents** (inte slash commands). Använd Task tool för att starta dem.
+
+### eon-data-guardian
+**Fil:** `.claude/subagents/eon-data-guardian.md`
 **Syfte:** Säker batch-uppdatering av wiki_data.js
-**Användning:** `/eon-data-guardian` sedan ge lista med NPCs
+**Användning:**
+```
+Task tool med:
+  subagent_type: "eon-data-guardian"
+  prompt: "Lägg till följande 10 NPCs: [lista]"
+```
 
 **Kapabiliteter:**
-- Max 15 NPCs per batch
+- Max 15 NPCs per batch (säkerhetsregel)
 - Automatisk validering efter varje ändring
 - Rollback vid syntax-fel
-- Duplikatkontroll
+- Duplikatkontroll innan tillägg
 - UTF-8 encoding-säkerhet
+- Arbetar autonomt och rapporterar resultat
 
-### /eon-lore-checker
-**Fil:** `.claude/commands/eon-lore-checker.md`
-**Syfte:** Validera kampanjkontinuitet
-**Användning:** `/eon-lore-checker` sedan be om specifik kontroll
+**När använda:**
+- Batch-tillägg av NPCs/platser
+- Uppdateringar av befintlig data
+- När du vill garantera syntax-säkerhet
 
-**Kontrollerar:**
-- Tidslinjer (kapitel-ordning)
-- Karaktärsstatus (död/levande konsistens)
-- Duplikater och namnkollisioner
-- Relationer (dubbelriktade)
-- Geografisk logik
+### eon-chronicler
+**Fil:** `.claude/subagents/eon-chronicler.md`
+**Syfte:** Kampanjens officiella krönikör och kontinuitetsvaktare
+**Användning:**
+```
+Task tool med:
+  subagent_type: "eon-chronicler"
+  prompt: "Uppdatera krönikan med Kapitel 8-händelser: [beskrivning]"
+```
 
-### /eon-doc-extractor
-**Fil:** `.claude/commands/eon-doc-extractor.md`
+**Master-dokument:** `EON/kampanjkrönika.md` (kronologisk tidslinje från start till nu)
+
+**Huvudfunktioner:**
+1. **Krönikör:** Underhåller master-tidslinjen
+   - Ta emot kampanjsammanfattningar och detaljer
+   - Placera all info på KORREKT kronologisk plats (aldrig bara sist)
+   - Tagga NPCs och platser för cross-referens
+   - Fråga ALLTID om oklarheter (vilket kapitel? före/efter X?)
+
+2. **Kontinuitetsvaktare:** Validerar mot tidslinjen
+   - Kontrollera att wiki_data.js stämmer med krönikan
+   - Flagga inkonsekvenser (död/levande, kapitel-ordning, geografisk logik)
+   - Föreslå lösningar på konflikter
+   - Rapportera luckor i data
+
+3. **Sökfunktion:** Besvara historikfrågor
+   - "När var NPC X aktiv?"
+   - "Vad hände i plats Y?"
+   - "Sammanfatta kapitel Z"
+
+**Viktigt:**
+- Krönikan är master-källa (inte wiki_data.js)
+- Aldrig gissa - fråga om osäker
+- Kronologi är heligt - placera alltid på rätt plats
+- Validera cross-referenser efter varje uppdatering
+
+**När använda:**
+- Uppdatera kampanjkrönika med nya sessioner/händelser
+- Validera kontinuitet mellan krönika och wiki_data.js
+- Historiska sökningar ("När hände X?")
+
+### eon-doc-extractor
+**Fil:** `.claude/subagents/eon-doc-extractor.md`
 **Syfte:** Extrahera data från kampanjdokument
-**Användning:** `/eon-doc-extractor` sedan ge .md-filvägar
+**Användning:**
+```
+Task tool med:
+  subagent_type: "eon-doc-extractor"
+  prompt: "Extrahera NPCs och platser från Eon SL/jen.md"
+```
 
 **Extraherar:**
 - NPCs (namn, ras, roll, beskrivning)
@@ -151,16 +198,31 @@ kampanjwiki/
 - Händelser och kapitel-info
 - Output: JSON-ready format
 
-### /eon-image-curator
-**Fil:** `.claude/commands/eon-image-curator.md`
+**När använda:**
+- Läsa kampanjdokument och extrahera strukturerad data
+- Hitta alla NPCs/platser i ett dokument
+- Förbereda data för batch-tillägg via data-guardian
+
+### eon-image-curator
+**Fil:** `.claude/subagents/eon-image-curator.md`
 **Syfte:** Bildmatchning och organisation
-**Användning:** `/eon-image-curator` sedan be om specifik uppgift
+**Användning:**
+```
+Task tool med:
+  subagent_type: "eon-image-curator"
+  prompt: "Matcha bilder till alla NPCs utan bilder"
+```
 
 **Hanterar:**
-- Fuzzy-matchning bilder → NPCs
+- Fuzzy-matchning bilder → NPCs (≥85% likhet)
 - Flytta bilder till rätt assets-mapp
 - Uppdatera bild-fält i wiki_data.js
 - Rapportera oanvända/saknade bilder
+
+**När använda:**
+- Automatisk bildmatchning för NPCs utan bilder
+- Organisera och kategorisera bildarkiv
+- Generera bildstatus-rapporter
 
 ---
 
@@ -221,9 +283,15 @@ kampanjwiki/
 2. Använd `/eon-image-curator` för automatisk matchning
 3. Eller manuellt: uppdatera `bild`-fält i wiki_data.js
 
+### Uppdatera kampanjkrönika
+1. Använd `/eon-chronicler` när du har ny kampanjinfo
+2. Ge sammanfattningar, sessionsanteckningar, eller detaljer
+3. Agenten placerar allt kronologiskt i `kampanjkrönika.md`
+4. Cross-validerar mot wiki_data.js och flaggar konflikter
+
 ### Kontinuitetskontroll
-1. Använd `/eon-lore-checker` innan stora uppdateringar
-2. Kontrollera kapitel-ordning, status-konsistens
+1. Använd `/eon-chronicler` för validering innan stora uppdateringar
+2. Be om kontroll av specifika kapitel eller hela tidslinjen
 3. Fixa flaggade problem innan commit
 
 ---
@@ -314,8 +382,8 @@ git checkout wiki_data.js
 
 ### Kort sikt
 - [ ] Matcha 96 NPCs utan bilder
-- [ ] Skapa 2 fler agenter (doc-extractor, image-curator)
-- [ ] Kontinuitetskontroll med lore-checker
+- [ ] Bygga upp kampanjkrönika.md med alla kapitel
+- [ ] Kontinuitetskontroll med chronicler
 
 ### Lång sikt
 - [ ] Performance-optimering vid 500+ NPCs
