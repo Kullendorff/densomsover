@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 4: Jargien - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul, .prose ol {
+            margin: 1rem 0 1.5rem 2rem;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Entity Links - klickbara NPCs, platser, fraktioner */
+        .entity-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+            transition: all 0.2s ease;
+        }
+        .entity-link:hover { border-bottom-style: solid; }
+        .entity-npc { color: var(--flame-orange); }
+        .entity-plats { color: var(--mystic-purple); }
+        .entity-fraktion { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../dashboard/index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <div class="content-container">
+        <header class="chapter-header">
+            <h1>Kapitel 4: Jargien</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Jargiska kejsardömet - från Abhan-hir-renk-Ghor till Vargnäset</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik, Hagge</div>
+            <div class="chapter-meta"><strong>Tidsperiod:</strong> 15 dagar genom vinterlandskapet</div>
+        </header>
+
+        <article class="prose">
+            <p><em>En krönika om äventyrarna Gordon, Umnatak, Kazrik och Zentris resa genom Kejsardömet</em></p>
+
+            <h2>I. Järnvägar genom snö</h2>
+
+            <p>De första solstrålarna skär genom den frosttyngda luften och reflekteras i den nyfallna snön när karavanens vagnar sätter sig i rörelse. Den jargiska vintern har lagt sitt vita täcke över landskapet, förvandlat den hårda jorden till kristalliserad is och sänkt temperaturen till ett bitande kallt tillstånd som får även den mest härdade resande att söka skydd.</p>
+
+            <p><strong>Kazrik klan Ghor</strong> drar sin tjocka yllekappa tätare runt sig där han sitter uppkrupen i sin vagn. Han har den sällsynta förmånen att slippa rida, och har istället inrättat en mobil arbetsplats bland lasten. Hans penna flödar över pergamentet - uppriktigt irriterad över att det förbannade bläcket envisas med att frysa så fort han inte håller flaskan tryckt mot sin kropp. "En dvärgagrav utan grav, förbannelser utan namn, och nu denna omänskliga köld... Sannerligen är historien en skådeplats för det groteska," mumlar han för sig själv medan han antecknar sina observationer om Rådslingan.</p>
+
+            <p>Framme vid vagnens främre del rider <strong>Zentri</strong>, blicken fastnaglad vid horisonten, det saknade vänsterögat dolt under en svart lapp. Hans vita mantel, som en gång hade kunnat kallas elegant, är nu ett lapptäcke av lagningar efter <strong>Tarkas</strong> prövningar. Sedan Rådslingans nedgörande och den stora ceremonin på berget har han varit mer tillbakadragen, spenderat nätterna med att studera de magiska skrifter han kommit över, och ännu djupare utforskat sina krafter. I tystnaden mellan hans koncentrerade andetag kan de övriga nästan ana hur maktens ljud sjunger genom hans ådror.</p>
+
+            <p><strong>Umnatak</strong> rider vid sidorna av karavanen, ögon ständigt avsökande efter hot och möjligheter till jakt. Den nye schamanen, som nu kan känna andevärldens närvaro där han tidigare endast anat den, finner sig underligt hemma i det jargiska vinterlandskapet. Inte olikt Ausernas hemtrakter är <strong>Jargiens</strong> norra provinser ett hårt land som kräver en hård människa. I stillheten mellan snöfallens vindsus kan han ibland höra andarnas viskningar, tydligare nu än någonsin. De talar om Thogas minne, och om vägar framåt som ännu är höljda i dimma.</p>
+
+            <p><strong>Gordon Nahrzezia</strong>, cirefalisk till själ och sinne men pragmatiskt anpassningsbar, rider ofta längst fram tillsammans med karavanens ledare <strong>Dorin Kallhammare</strong>. Den rutinerade legosoldaten har lagt sin praktiska blick på kartor och vägmarkeringar, men finner också tid att dela historier och sånger med de dvärgiska vakterna. Han är noga med att hålla sin värderade hillebard nära till hands, den rustiga metallen alltjämt märkt av kampen mot Rådslingans manifestationer.</p>
+
+            <p>Bakom dem, invirad i en tjock björnfäll som dolde hans adliga hållning, rider <strong>Hagge</strong>. <strong>Hadrian av Vitterdal</strong> har varit tyst sedan befrielsen, men hans sätt att betrakta områdena de passerar avslöjar en strategisk blick. Han sitter stadigt i sadeln, trots den haltande rytmen som hans kropp ännu inte riktigt återhämtat sig från efter tiden i slaveri. Han håller sitt slagsvärd - ett lån från hans befriares förråd - i en skida på ryggen, alltid beredd, alltid vaksam. Befrielse innebär inte frihet från gamla instinkter.</p>
+
+            <p><strong>Dorin Kallhammare</strong>, karavanens ledare, höjde sin röst över knarret från hjulen och hovarnas rytmiska slag mot den packade snön.</p>
+
+            <div class="quote">
+                "Vi följer Durikars handelslinje. Först håller vi oss till bergstrakterna, innan vi viker ner mot Korpklämman och Vargnäset. Kejsarvägen är relativt säker, men jag kommer inte att ljuga för er - vi är i rävsvin-terrängen. Soldater och prästmän är täta som svampar, och än värre - skatteindrivare. Håll era tungor i styr och era kappor dragna när vi passerar vaktposter. Låt mig sköta pratandet."
+            </div>
+
+            <p>Den erfarne dvärgen halade fram en läderpung fylld med silverkronor – en smörjgåva för svåra situationer. Han tillade med ett snett leende: "Och för era egna sakers skull, nämn inte ett ord om resan genom <strong>Tarkas</strong>. Cirefaliskas svartmagiker med ödlefolk-altare? Nej, den historien förblir mellan oss om ni inte vill stifta bekantskap med <strong>Daakkultens</strong> mer... entusiastiska förespråkare."</p>
+
+            <p>Och så rullar karavanen igång för femton dagar genom Jargiens snötäckta provinser, mot <strong>Vargnäset</strong> och äventyrets nästa kapitel.</p>
+
+            <h2>II. Kejsardömets ansikte</h2>
+
+            <p>Under de första dagarna efter att de lämnat dvärgarnas berg får de resande uppleva kontrasterna som definierar det jargiska kejsardömet - en stormakt på nedgång, men fortfarande imponerande i sin storhet.</p>
+
+            <p>Landskapet skiftar märkbart efter att man passerat de steniga höjderna. Skogarna tunnas ut och ger plats åt vidsträckta, snötäckta slätter där kejserliga lantegendomar avtecknar sig som mörka siluetter mot den vita bakgrunden. Varje gods är en värld i sig, med tiotals hushåll, tjänare och livegna bönder arbetande för en av de lägre adelsätterna. Omkring dem ligger byarna, små klungor av rökiga hus med halmtak, sammanbundna av smala, leriga vägar.</p>
+
+            <p>Den jargiska vintern är inte fullt så extrem som den i <strong>Cermira</strong>, påpekar Hagge en kväll vid lägerelden, men den är bitande och långvarig. Bönderna sitter tätt packade i sina mörka stugor med boskap instängd i samma utrymmen för värme, medan byns livegna dräng har den otacksamma uppgiften att sköta vagnar och handelsresande som passerar.</p>
+
+            <p>Dorin förklarar de formella hälsningarna och de komplicerade standar- och banderollsystemen som används för att markera ägande och tillhörighet när de passerar en träpåle med en solblekt röd och svart vimpel. "Det där är Raevska familjens märke. De har direkt anknytning till den jargiska kejsarfamiljen och äger allt land häromkring. Var noga med att buga djupt om ni ser någon med deras emblem, även om det bara är en stallpojke."</p>
+
+            <p>För Umnatak, som är mest van vid klanernas friare, mer flytande ägandestrukturer, är systemet förbryllande. "Så mycket makt över andra människor, baserat på vem som födde dem," observerar han en dag när de passerar en grupp bönder som arbetar i kylan.</p>
+
+            <p>Gordon skrattar torrt. "Det är därför cirefalier anställer legosoldater. I min värld räknas vad du kan göra, inte vem du känner."</p>
+
+            <hr>
+
+            <h3>Händelse 1: Marknadsdagen i byn Ravnovo</h3>
+
+            <p>En snöig eftermiddag, ungefär en vecka in i resan, anländer karavanen till den större byn <strong>Ravnovo</strong> där en lokal marknad pågår. Trots det bistra vädret är torget fyllt av stånd och besökare från flera dagsresor i alla riktningar.</p>
+
+            <p>"Skynda er," uppmanar Dorin. "Vi stannar bara så länge som behövs för att byta ut några delar till vagnarna och skaffa proviant."</p>
+
+            <p>Byn sjuder av liv och rörelse. Jargiens strikta hierarkier tonas tillfälligt ned när bönder, lägre adel, kringresande handelsmän och vanliga bybor trängs kring stånden. En korpulent präst i röda och svarta kläder välsignar varje transaktion i utbyte mot en liten slant. Lokala vakter med mestadels dekorativa hillebarder gör halvhjärtade försök att upprätthålla ordningen.</p>
+
+            <p>Gordon och Zentri tar på sig ansvaret för att köpa mer proviant, medan Umnatak och Kazrik följer med Dorin för att leta vagndelar. Hagge håller sig nära gruppen, hans kappa dragen över ansiktet för att skydda både mot kyla och nyfikna blickar.</p>
+
+            <p>Vid ett av stånden upptäcker Zentri en gammal kvinna som säljer örter och amuletter. Hans magiska sinnen registrerar genast att några av hennes varor faktiskt innehåller svaga magiska energier. När han närmar sig slår kvinnan upp sina blinda ögon och ler. "Jag känner dig, enögde magiker. Du bär ett märke, liksom jag."</p>
+
+            <p>Gordon är genast på sin vakt, handen på svärdet. "Vad menar du med det, gumma?"</p>
+
+            <p>"Inget att frukta, cirefalier," säger hon lågmält. "Alla vi som förlorat något bär ett tecken som kan kännas igen av andra med liknande förluster. Din vän har förlorat ett öga, men vunnit insikt. Jag har förlorat min syn, men kan se vad som komma skall."</p>
+
+            <p>Hon håller fram en liten, cirkelformad amulett gjord av mörkt trä. "För krigaren från öster," säger hon, vänd mot Zentri. "Bär detta över ditt hjärta. När drömmen kommer åter, låt inte dess röst nå in."</p>
+
+            <p>Zentri tar emot amuletten försiktigt. Den är enkelt karpad, föreställande någon sorts beskyddande symbol han inte känner igen. När han frågar om priset skakar kvinnan på huvudet. "Redan betalt," mumlar hon, och rör vid sin egen ögonbindel i ett spegelgest av Zentris ögonlapp.</p>
+
+            <p>Gordon drar undan Zentri med en beslutsam rörelse. "Tack, men vi har brått," säger han till gumman och drar med sig sin kamrat vidare in i vimlet.</p>
+
+            <p>"Var försiktig med vidskepelser, min vän," varnar han Zentri lågmält. "Daakkyrkans informanter är överallt i Jargien. En anklagelse om häxeri är en snabb väg till bålet."</p>
+
+            <p>Zentri svara inte, han håller bara amuletten hårt i sin hand. Den är varm, trots kylan, och känns märkligt bekant.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Amulettens syfte</div>
+                <p>Den blinda kvinnan var mer än en enkel marknadsgumma. Amuletten hon gav Zentri är ett skydd mot demonisk påverkan - ett försvar mot den röst som viskade i hans drömmar sedan graven.</p>
+                <p>Zentri förstod det inte då, men gåvan skulle visa sig vara livsviktig i veckorna som kom.</p>
+            </div>
+
+            <p>Samtidigt har Umnatak och Kazrik följt med Dorin till en smed i utkanten av marknaden. På vägen dit passerar de en utropare som högljutt läser upp kejserliga påbud, flankerad av två vakter i Jargiska kejsardömets uniformer.</p>
+
+            <div class="quote">
+                "...och vidare förkunnar Hans Kejserliga Majestät att alla rapporterade fall av häxeri och mörk magi ska omedelbart anmälas till närmaste Daak-tempel. Den som döljer kännedom om sådana aktiviteter ska anses medskyldig och möta samma straff..."
+            </div>
+
+            <p>Kazrik suckar och mumlar: "Föga förvånande att detta rike är i nedgång. De bekämpar kunskapens ljus med vidskepelse."</p>
+
+            <p>"Tala inte så högt," varnar Dorin. "I Jargien har väggarna öron, och Daakkyrkans inkvisitorer har ännu skarpare hörsel."</p>
+
+            <p>När de når smeden uppdagar de ett problem - mannen är stupfull, liggande i sin egen spya medan lärlingen desperat försöker hålla verksamheten flytande. Den unge pojken med sotigt ansikte förklarar stammande att mästaren "firar" årsdagen av sin frus död.</p>
+
+            <p>Kazrik betraktar den bedrövliga scenen och tar ett beslut. "Låt mig se verktygen," säger han till lärlingen.</p>
+
+            <p>Trots Dorins protester rullar Kazrik upp ärmarna och går in i verkstaden. Med smedens häpne lärling som assistent ägnar han en timme åt att reparera en av vagnens axelfästen. Svetten rinner från hans skägg trots kylan när han hamrar och formar metallen.</p>
+
+            <p>"En Ghor-dvärg sviker aldrig en hantverkare i nöd," säger han till Dorin när arbetet är klart, "även om hantverkaren råkar vara en berusad människa."</p>
+
+            <p>Lärlingen är överväldigad av tacksamhet och försöker erbjuda Kazrik en del av betalningen, men den stolta dvärgen viftar bort erbjudandet. "Lär din mästare att hedra minnesdagar utan att förnedra sitt hantverk. Det är betalning nog."</p>
+
+            <p>När de återvänder till torget ser de hur en folksamling snabbt bildats kring något uppseendeväckande. Gordon och Zentri kommer springande, följda av Hagge som håller sig i bakgrunden.</p>
+
+            <p>"Problem," säger Gordon kort. "En präst och några vakter håller på att arrestera en kvinna för häxeri. Den blinda gumman vi just pratade med."</p>
+
+            <p>Genom folkmassan kan de se hur den röd-svartklädde prästen gestikulerar vilt medan två vakter håller den gamla kvinnan i ett järngrepp. "Hon har förhäxat böndernas boskap! Hon har talat med en främmande tunga! Hon har sett utan ögon!"</p>
+
+            <p>Zentri griper hårt om amuletten i sin hand. Gordon märker gesten och skakar bestämt på huvudet. "Vi kan inte ingripa. Detta är Jargien, inte <strong>Asharien</strong>. Här bränner de häxor - och de som försvarar dem."</p>
+
+            <p>Umnatak ser sammanbitet på när kvinnan släpas iväg. "Ett bakvänt land," mumlar han, "där man straffar de som ser med andra ögon än de vanliga."</p>
+
+            <p>Dorin manar på gruppen. "Vi måste härifrån innan någon kopplar er till henne. Tro mig, ni vill inte hamna i Daakkyrkans blickfång."</p>
+
+            <p>När de lämnar Ravnovo faller snön tätare. Zentri öppnar sin hand och betraktar amuletten. På dess baksida, där han inte sett förut, finns en symbol inristad - en symbol han har sett innan. Men var?</p>
+
+            <h2>III. Andras ögon</h2>
+
+            <p>Under resans fortsättning för karavanen dem förbi flera mindre byar och ensliga gårdar. Ju längre österut de kommer, desto mer pågående blir kylan, och desto tätare ligger de små samhällena.</p>
+
+            <p>De passerar även flera militära posteringar - strama blockhus byggda av tjocka ekstockar med höga vakttorn där jargiska soldater spanar över vägarna. Gordon pekar ut detaljer i deras befästningar med en veterans öga, förklarar svagheter och styrkor med det militära arvet från sitt hemland.</p>
+
+            <p>Runtom dem lever och arbetar det jargiska folket i sina strängt hierarkiska strukturer. Bönder bockar för handelsmän, handelsmän bockar för lägre adel, alla bockar för prästerna. Det är ett land genomsyrat av ceremonier och ritualer.</p>
+
+            <p>Vid varje vägkorsning står stenbelagda obelisker med Daaksymboler, och minst en gång per dag passerar de ett litet kapell där lokala bönder lämnar enkla offergåvor. Präster och munkar är ett konstant inslag i landskapet, ofta resande i små grupper om tre eller fyra, klädda i röda och svarta kläder med stavar prydda av Daakkyrkans symboler.</p>
+
+            <p>"Bibehåll lugnet när vi passerar tempelriddare," instruerar Dorin. "Var respektfulla, men undvik att dra uppmärksamhet till er. De har befogenhet att undersöka vem som helst de misstänker för kätteri."</p>
+
+            <p>Umnatak, som sedan ceremonin på berget haft en ökad känslighet för andliga krafter, kan känna hur den jargiska religionen genomsyrar landskapet självt. Inte som en naturlig andlighet, utan som något påtvingat, institutionaliserat. "Det känns som om marken själv är rädd," säger han en kväll vid lägerelden. "Även andarna håller andan här."</p>
+
+            <p>Zentri, som förblir fascinerad av amuletten han fått, börjar återigen drömma intensivare för var natt som går. Drömmar där en röst talar till honom, ibland lockande, ibland varnande, men alltid med samma budskap: "Släpp in mig, så ska jag ge dig kraften att skydda dem alla." Han vaknar ofta kallsvettig, och amuletten känns onaturligt varm mot hans hud.</p>
+
+            <hr>
+
+            <h3>Händelse 2: Natten vid den övergivna bron</h3>
+
+            <p>Tio dagar in i resan når karavanen en plats där vägen korsas av en bred, delvis frusen flod. En gammal stenbro, delvis raserad på mitten, spänner över den mörka vattenytan. Dorin meddelar att de måste slå läger - det blir för mörkt för att säkert ta sig ned längs flodbankens branta sidor till vadstället en halv mils vandring söderut.</p>
+
+            <p>"Vi slår läger här och tar vadstället tidigt i morgon bitti," förklarar han. "Det här är Klibbsjälarnas bro. Ett olyckligt namn, men den närmaste byn hade dåliga erfarenheter för ett par generationer sedan efter en drunkningsolycka."</p>
+
+            <p>De slår läger vid brofästet, sätter ut vaktrundor och tänder eldar. Natten är klar och kall, stjärnhimlen glittrar genom grenverket från de knotiga träden som växer längs flodkanten. Kazrik, vars nyfikenhet väckts av historien om bron, går fram till den för att undersöka de delvis eroderade stenskulpturerna som dekorerar brofästet.</p>
+
+            <p>"Intressant," mumlar han. "Detta är inte jargisk arkitektur. Det är coloniskt hantverk, minst tusen år gammalt."</p>
+
+            <p>Gordon, som just tagit sitt vaktpass, kommer över för att titta. "Vackert arbete. Cirefaliska byggmästare studerar fortfarande colonernas tekniker."</p>
+
+            <p>När de två studerar de gamla stenrelieferna hör de plötsligt Umnataks röst bakom dem. "Vi är inte ensamma här." Hans ton är låg, intensiv, blicken fixerad vid flodens mörka vatten.</p>
+
+            <p>Genom sin nyväckta Andeförnimmelse känner Umnatak närvaron av något som inte hör hemma i den fysiska världen. "Det är själar här... bundna till vattnet. Många av dem."</p>
+
+            <p>Kazrik spänner blicken i mörkret. "Vad menar du?"</p>
+
+            <p>"De dog i vattnet, men blev aldrig fria," svarar Umnatak, rösten distanserad som om han talar i halvsömn. "Något håller dem kvar. Något i stenarna."</p>
+
+            <p>Gordon signalerar till Dorin och de andra dvärgarna att vara uppmärksamma. Under tiden har Zentri vaknat från sin oroliga sömn.</p>
+
+            <p>"Jag känner det också," säger han och kommer fram till brofästet. "Någon form av forntida magi. Colonernas verk, kanske."</p>
+
+            <p>Umnatak tar försiktigt ett steg ut på den halvt raserade bron. I det svaga ljuset från eldfacklorna kan de andra se hur hans ögon blivit märkligt blankt reflekterande, som en katts i mörkret.</p>
+
+            <p>"De ber om frihet," säger han, rösten alltmer dissonant. "De offrades för bron. En colonisk ritual. Blodet för stenarna." Han vänder sig plötsligt mot Zentri. "Anden du bär vet. Fråga den."</p>
+
+            <p>Hagge, som stått vakt på andra sidan lägret, kommer springande med draget svärd. "Något är fel. Hästarna är oroliga."</p>
+
+            <p>Från floden stiger nu ett svagt blått sken, som fosforescerande alger. Det rör sig i oregelbundna mönster under isen, och där det strålar som starkast kan de se skugglika former röra sig under ytan.</p>
+
+            <p>Zentri tar ett ofrivilligt steg bakåt. En röst viskar i hans sinne: "Låt mig hjälpa dig. Släpp in mig, så ska jag visa dig hur du befriar dem."</p>
+
+            <p>"Nej," mumlar han, och griper instinktivt om träamuletten som hänger runt hans hals.</p>
+
+            <p>Umnatak har nu gått längre ut på bron, som börjar knaka oroväckande under hans vikt. Hans rörelser är stela, ögonen fortfarande glödande i fackelskenet.</p>
+
+            <p>"Umnatak!" ropar Gordon. "Kom tillbaka! Det där är ingen säker plats!"</p>
+
+            <p>"Jag måste befria dem," svarar Umnatak, rösten nu knappast igenkännlig. "Jag kan se vägen."</p>
+
+            <p>Gordon svär på cirefaliska och gör sig redo att springa ut på bron efter honom, men Zentri stoppar honom med en hand på axeln.</p>
+
+            <p>"Vänta," säger han. "Detta är andligt, inte fysiskt."</p>
+
+            <p>I det ögonblicket börjar Umnatak göra märkliga handrörelser och mässa på ett språk ingen av dem kan identifiera - inte ens hans modersmål, ausiska. Hans kropp vrider sig i besynnerliga rörelser, halvt dans, halvt konvulsion.</p>
+
+            <p>Kazrik, med en dvärgs visdom, börjar snabbt leta bland stenarna vid brofästet. "Han är på rätt spår, men på fel sätt," muttrar han. "Colonerna brukade fästa en nyckelsten... ah!"</p>
+
+            <p>Han hittar en mindre stenplatta med olika symboler, halvt gömd under århundradens smuts och mossa. Med en dvärgisk styrka som överraskar även Gordon lyckas han rubba stenen från sin plats.</p>
+
+            <p>Samtidigt når Umnataks dans en fruktansvärd klimax. Han vrålar ut något i det främmande språket - och plötsligt lyser hela bron upp i ett kallt, blått ljus. De skuggliknande formerna under isen rör sig nu snabbare, stiger upp mot ytan.</p>
+
+            <p>"Umnatak! Kom tillbaka NU!" skriker Zentri och griper tag i amuletten med ena handen.</p>
+
+            <p>Ett ögonblick balanserar Umnatak på kanten av bron... sedan vänder han sig om och tittar på sina kamrater med klara ögon igen.</p>
+
+            <p>"De är fria nu," säger han, och i samma stund som Kazrik slutligen lyckas vrida loss den skulpterade stenen från brofästet slocknar det blå skenet. Umnatak lyckas vackla tillbaka till stranden innan hela bron, med ett dånande ljud, kollapsar ned i vattnet.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Colonisk blodsmagi</div>
+                <p>Colonerna offrade fångar och slavar när de byggde vissa konstruktioner, och band deras själar till stenverket för att förstärka det. En fasansfull praktik, men effektiv.</p>
+                <p>Umnataks shamanistiska förmågor och Kazriks kunskap om colonisk arkitektur räddade de bundna själarna - och möjligen Umnataks eget liv.</p>
+            </div>
+
+            <p>Efteråt, när lägereldarna brinner lågt och de flesta sover, sitter Umnatak, Zentri och Kazrik tillsammans.</p>
+
+            <p>"Vad hände där ute?" frågar Kazrik slutligen.</p>
+
+            <p>"Colonisk blodsmagi," säger Zentri lågmält. "De måste ha offrat fångar eller slavar när de byggde bron. Deras själar bands till konstruktionen för att förstärka den."</p>
+
+            <p>"Du visste vad du gjorde," säger Kazrik till Umnatak. "Hur?"</p>
+
+            <p>Umnatak skakar på huvudet. "Inte jag. De visste. Andarna." Han tittar på Zentri. Du bär... något. Något som ville hjälpa oss, men på ett farligt sätt."</p>
+
+            <p>Zentri nickar långsamt. "Den blinda kvinnan visste. Amuletten är ett skydd." Han rör vid träamuletten. "Men mot vad, exakt?"</p>
+
+            <p>De tre sitter tysta länge, blickande mot den nu tomma platsen där bron en gång stod. Slutligen säger Umnatak: "Jag tror inte det är slut. De själarna är fria, men... något annat vaknade också inatt."</p>
+
+            <h2>IV. Jarnthol och Rådslingan</h2>
+
+            <p>Efter ytterligare en dag genom snöstormen når karavanen <strong>Jarnthol</strong> - om man ens kan kalla det så. Ingen riktig by, bara en ensam värdshusbyggnad i mörkt trä, en grovhuggen handelsbod, och några skjul och förråd som kryper ihop mot bergets fot. Bakom byggnaderna gapar gruvmynningar som svarta ögonhålor i klippan.</p>
+
+            <p>Snön ligger djup och orörd runt utposten. Ingen fågelkvitter, bara vindens sus genom träden. Gordon känner det innan de når porten - en tyngd i luften, en känsla av att något observerar dem från skuggorna.</p>
+
+            <p>"Välkomna," säger den ärrade dvärgen som möter dem vid värdshuset. <strong>Grimdal Tungöga</strong>, introducerar han sig, och hans titel verkar välförtjänt - det ena ögat är dött vitt, och ärret som löper över det talar om våld överlevt. "Ni kommer i ... oroliga tider."</p>
+
+            <p>Dorin känner igen tonen. "Vad har hänt?"</p>
+
+            <p>Grimdal ser sig omkring innan han svarar, rösten låg. "Prospektören <strong>Griknar Granitson</strong> försvann för tre dagar sedan. Två gruvarbetare dagen efter. Vi hör ... saker. Från de gamla gruvgångarna."</p>
+
+            <h3>Undersökningen</h3>
+
+            <p>Vid elden den kvällen möter de <strong>Borga Stenhands</strong>, en gammal gruvarbetare med skakande händer och rädsla i blicken. Det tar tid att få ur honom vad han sett, men slutligen pratar han.</p>
+
+            <p>"Röster i mörkret," viskar han. "Gammal dvärgiska, men ... fel. Som många som talar på en gång. Och skuggor som rör sig utan ljus att kasta dem."</p>
+
+            <p><strong>Konrad</strong>, handelsmannen som sitter i hörnet med en kanna öl, skrattar nervöst. "Vidskepelse. Bara vinden i tunnlarna."</p>
+
+            <p>Men Kazrik ser hur Grimdal spänner käkarna. Dvärgen vet mer än han säger.</p>
+
+            <p>Det är Gordon som konfronterar honom direkt. "Vad öppnade Griknar?"</p>
+
+            <p>Grimdal möter hans blick, och något i veteranens ögon får dvärgen att ge upp hemligheten. "En förseglad gruvgång. Gammal, äldre än Jarnthol, äldre än de flesta dvärgiska bosättningar i dessa berg. Den skulle ha lämnats ensam." Han dricker djupt ur sin bägare. "Våra förfäder förseglades den av en anledning."</p>
+
+            <h3>Den förbjudna gruvan</h3>
+
+            <p>De går dit vid gryningen - Gordon, Zentri, Umnatak, Kazrik. Hagge erbjuder sig att följa med, men Gordon skakar på huvudet. "Vi behöver någon här uppe om vi inte kommer tillbaka."</p>
+
+            <p>Gruvgången sträcker sig djupt in i berget. Facklorna kastar långa skuggor, och luften blir kallare för varje steg. Kazrik studerar väggarna, runorna som är inhuggna där.</p>
+
+            <p>"Detta är ... fel," mumlar han. "Namnen är borta. Uthuggna. Någon har avsiktligt utplånat dessa dvärgar från historien."</p>
+
+            <p>Umnatak stannar abrupt. "Vi är inte ensamma."</p>
+
+            <p>Det kommer från mörkret framför dem - en skugga som rör sig mot dem, formlös i fackelljuset. När den närmar sig kan de se konturer, en skepnad av dvärg men utan ansikte, bara tomhet där drag borde vara.</p>
+
+            <p><strong>Rådslingan</strong>.</p>
+
+            <p>Rösten är många röster sammanflätade, de dödas kör: "Ni. Bär. Namn. Vi. Inget."</p>
+
+            <p>Gordon svänger hillebadern, men vapnet passerar rakt igenom skuggan som genom rök. Varelsen reformerar sig bakom honom, stenhårda fingrar som når mot hans nacke.</p>
+
+            <p>Zentri kastar eld - magi som brinner vitt i mörkret. Rådslingan vrålar, drar sig tillbaka, men upplöses inte. Elden tvingar den på avstånd, men endast tillfälligt.</p>
+
+            <p>"Vi kan inte döda den!" ropar Gordon. "Tillbaka!"</p>
+
+            <p>De reträtt ut ur gruvan, Zentri kastar eldklot för att hålla skuggan på avstånd. När de når solljuset stannar Rådslingan vid tröskeln, som bunden till mörkret.</p>
+
+            <h3>Ritualen på berget</h3>
+
+            <p>Det är Umnatak som förstår. "Inte en fiende. Ett offer. Förbannelsen håller dem bundna."</p>
+
+            <p>Kazrik slår igen sin anteckningsbok med ett smack. "Utplånade namn. De blev svikna, utraderade från historien. Förbannelsen bands till deras glömska."</p>
+
+            <p>"Då måste vi minnas dem," säger Umnatak.</p>
+
+            <p>De bestiger berget ovanför gruvan vid skymning. Umnatak har med sig symboler, örter, saker han behöver för ritualen. Det är första gången de andra ser honom arbeta som schaman - inte bara som spejare eller krigare, utan som en medlare mellan världarna.</p>
+
+            <p>Han sjunger på ausiska, ord som ingen av de andra förstår, men de känner kraften i dem. Zentri känner hur magin flödar genom marken under dem, gammalt och djupt. Kazrik ritar runor i snön, återställer de utplånade namnen så gott han kan.</p>
+
+            <div class="quote">
+                "Ni som förlorade era namn, hör oss nu. Vi minns er. Vi erkänner sviket. Vi släpper er fria."
+            </div>
+
+            <p>Umnataks röst når en klimax, och plötsligt känner de alla det - en vind som inte är naturlig, ett sus av röster som tackar dem och sedan tysnar. I gruvan under dem upplöses Rådslingan äntligen, själarna den bestod av befriade från sin förbannelse.</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Umnataks genombrott</div>
+                <p>Detta var ögonblicket då Umnatak verkligen blev schaman. Inte bara genom Thogas initiering, utan genom att utöva kraften - att förmedla mellan världarna, att befria de bundna.</p>
+                <p>Från denna natt bar han inte bara titeln. Han levde den.</p>
+            </div>
+
+            <p>När de återvänder till värdshuset är Grimdal Tungöga tyst länge. Slutligen häller han upp öl åt dem alla.</p>
+
+            <p>"De gamla historiskrivarna ljög ibland," säger han. "Raderade sanningar som var obekväma. Glömde bort svek. Men andarna glömmer inte." Han höjer sin bägare. "Ni gav dem deras namn tillbaka. Det är mer än någon dvärg gjort på tusen år."</p>
+
+            <p>Morgonen därpå lämnar de Jarnthol. Bakom dem ligger gruvan öppen och tom, inte längre hemsökt. Men Umnatak bär något nytt med sig - en visshet om sin väg, en förståelse för kraften han ärvt.</p>
+
+            <p>Och i hans blick ser de andra något förändrat. Schamanen har stigit fram.</p>
+
+            <h2>V. Det tigande landet</h2>
+
+            <p>De sista dagarna av resan blir alltmer ansträngande. Ett väderskifte har bringat tyngre snöfall och bitande vindar. Karavanen tvingas sakta ner takten, och sällskapet drar ihop sig i den tilltagande kylan.</p>
+
+            <p>När de färdas genom alltmer glesbygd märker de en subtil förändring i landskapet. Templen och kapellen blir allt mer sällsynta, och de små bosättningarna allt mer försiktiga. Folket här ute verkar mer vidskepliga, hänger upp buntar av örter och skyddande symboler på sina dörrar. De talar lågmält, tittar bort när militära patruller passerar, och håller sina barn nära.</p>
+
+            <p>"Vi närmar oss gränstrakterna," förklarar Dorin. "Det är annorlunda här. Mindre kejsarens lag, mer folktro."</p>
+
+            <p>En kväll, när de slagit läger nära en liten skogsglänta, kommer en ensam jägare fram till deras eldar. Han presenterar sig som Jakob, en lokal vägvisare och jägare som erbjuder ett nyslaktat rådjur i utbyte mot en plats vid elden och "säkerheten i gemenskapen."</p>
+
+            <p>Dorin, alltid försiktig men pragmatisk, accepterar erbjudandet. Jakob visar sig vara en god berättare, och delar villigt med sig av lokal information medan köttet tillagas.</p>
+
+            <p>"Den här vintern har varit hård," berättar han. "Inte bara vädret, utan... andra saker. Folk försvinner från de yttersta gårdarna. Ingen vill tala om det eftersom de fruktar myndigheterna."</p>
+
+            <p>"Är det rövare?" frågar Gordon, alltid den praktiske strategen.</p>
+
+            <p>"Rövare tar livsmedel och värdesaker. De här... tar bara människor. Särskilt barn."</p>
+
+            <p>Kazrik rynkar pannan. "Har du sett några bevis själv, eller är detta bara rykten?"</p>
+
+            <p>Jakob ser sig omkring innan han svarar, rösten nu knappt mer än en viskning. "Jag har följt spåren. Det är inga vanliga stövlar. De går inåt skogen, mot bergen och Vargnäset."</p>
+
+            <p>Umnatak, plötsligt mycket intresserad, lutar sig framåt. "Visa mig spåren imorgon. Jag är spårare."</p>
+
+            <p>Jakob skakar på huvudet. "För sent. Snön har täckt dem nu. Men jag kan visa er var de sågs senast."</p>
+
+            <p>Zentri, som suttit tyst och observerat, bryter slutligen tystnaden. "Du säger att myndigheterna inte bryr sig. Varför?"</p>
+
+            <p>"För att de har sina egna problem," svarar Jakob. "Det sägs att själva Arvonn har skickat ut inkvisitorer från sina tempel i söder. De letar efter tecken på kätteri och magi. Häromkring gömmer vi oss hellre än att söka hjälp."</p>
+
+            <hr>
+
+            <h3>Händelse 3: Skuggorna i skogen</h3>
+
+            <p>Den trettonde resdagen har snöfallet ökat till nästan storm. Karavanen kämpar sig framåt genom allt djupare drivor. Umnatak, som ridit ut för att spana, återvänder i sporrsträck.</p>
+
+            <p>"Rörelse i skogen," rapporterar han. "En mindre trupp, kommer från söder. De bär röda banér med svarta kanter."</p>
+
+            <p>Dorin bleknar synbart. "<strong>Arvorns Hammare</strong>. En av Daakkyrkans militanta ordnar. Vi måste hålla oss ur vägen."</p>
+
+            <p>Men det är för sent. Truppens ledare, en reslig man klädd i svart rustning med röda inslag och en mantel prydd med Daaksymbolen, har upptäckt karavanen. Ett dussin soldater i liknande uniform, men enklare, eskorterar en mindre vagn som verkar särskilt tungt bevakad.</p>
+
+            <p>"Vi kan inte undvika dem," säger Gordon lågmält. "Spela med. Låt Dorin sköta samtalet."</p>
+
+            <p>Truppens ledare, som presenterar sig som <strong>Kommendör Reval</strong>, beordrar karavanen att stanna för inspektion. "På kejsarens och Daaks uppdrag genomsöker vi alla resande efter tecken på förbjuden aktivitet," förklarar han med kall auktoritet.</p>
+
+            <p>Hans män börjar systematiskt genomsöka vagnarna. Våra hjältar tackar alla tyst för de lönnfack som finns i Kazriks vagn.</p>
+
+            <p>Hagge, som tvingas stå ansikte mot ansikte med soldaterna under inspektionen, behåller sin lugna fasad, men Gordon kan se den dolda rädslan i hans ögon - tempelriddare som dessa kunde mycket väl känna igen en förrymd slav från Cermira.</p>
+
+            <p>Plötsligt hör de ett ljud från den eskorterade vagnen - en kvinna som skriker på hjälp. Kommendör Reval vänder sig blixtsnabbt om och går dit med stora kliv. Efter en kort, dämpad konversation återvänder han, ansiktet uttryckslöst.</p>
+
+            <p>"Vi transporterar en häxa till templet i Vargnäset för rättegång," förklarar han som svar på Dorins ofrågade fråga. "Hon är... störd."</p>
+
+            <p>Umnatak, alltid observant, märker att något inte står rätt till. Truppens män verkar nervösa, mer än vad vanlig pliktuppfyllelse skulle orsaka. Och vagnen... den verkar nästan isolerad, med tjocka tyger hängande över gallerfönstren.</p>
+
+            <p>"Vi ber om ursäkt för uppehållet," säger Dorin med sin mest diplomatiska ton. "Vi är bara en vanlig handelstrupp på väg till Vargnäset. Med er tillåtelse skulle vi vilja fortsätta vår resa."</p>
+
+            <p>Kommendör Reval studerar dvärgen med kalkylerande ögon. "Och vad för ni för handel med, dvärg?"</p>
+
+            <p>"Främst metaller och verktyg från Abhan-hir-renk-Ghor," svarar Dorin. "Vi lever i fredlig samexistens med det glorvördiga kejsardömet, och betalar alla påbjudna tullar."</p>
+
+            <p>Från vagnen hörs skriket igen. "Hon ljuger! De är inte från templet! De tog mig från—"</p>
+
+            <p>Rösten bryts abrupt av ett dovt ljud, ett slag eller knuff.</p>
+
+            <p>Reval rörs inte en min. "En farlig häxa," upprepar han, "med förmågan att förvränga sinnen och sprida lögner. Ni förstår säkert hur viktigt det är att vi får henne till templet."</p>
+
+            <p>Gordon och Hagge utbyter en snabb blick. Hagge rör nästan omärkligt på huvudet - ett tyst råd att inte ingripa. Zentri, som håller sig i bakgrunden, känner hur något pulserar svagt mot hans hud, nästan som att den vill dra honom mot den mystiska vagnen.</p>
+
+            <p>"Naturligtvis, Kommendör," säger Dorin slutligen. "Vi önskar Daaks välsignelse över er heliga uppgift."</p>
+
+            <p>Efter ytterligare några minuters inspektioner tycks Reval bli nöjd. Han ger tecken till sina män att avsluta och återgå till formering runt vagnen.</p>
+
+            <p>"Var på er vakt när ni närmar er Vargnäset," säger han som avskedshälsning. "Det finns... ohälsosamma element i trakten."</p>
+
+            <p>När tempelriddarna försvunnit på en sidoväg samlas äventyrarna och Dorin för en hastig överläggning.</p>
+
+            <p>"Det där var ingen vanlig fångtransport," säger Hagge lågmält. "Jag har sett tillräckligt av slaveri för att känna igen någon som förs mot sin vilja."</p>
+
+            <p>"Men vad kan vi göra?" frågar Kazrik. "Vi är på deras territorium, och Arvorns Hammare är beryktad för sin hänsynslöshet mot de som motsätter sig dem."</p>
+
+            <p>Umnatak, som varit ovanligt tyst, pekar plötsligt mot skogen. "Titta."</p>
+
+            <p>Där, delvis dold bland träden, står en ensam gestalt insvept i en simpel grå kappa. Det är svårt att urskilja detaljer på avstånd, men figuren verkar iaktta dem intensivt.</p>
+
+            <p>"Vem är det?" frågar Gordon, handen redan på sitt svärdfäste.</p>
+
+            <p>Ingen hinner svara innan gestalten viker in bland träden och försvinner. Umnatak, driven av instinkt, tar ett steg mot skogen, men Dorin griper hans arm.</p>
+
+            <p>"Nej," säger dvärgen bestämt. "Vi håller oss till vägen och vår plan. Att blanda sig i Daakkyrkans affärer är ett säkert sätt att förkorta sin livslängd i Jargien."</p>
+
+            <p>Med oroade miner fortsätter karavanen sin färd, men stämningen har förändrats. Den väldiga, snötyngda skogen runt dem verkar dölja hemligheter som varken Dorin eller de själva är beredda att avslöja. För resten av dagen håller alla skarpare utkik, och samtalen är dämpade, försiktiga.</p>
+
+            <p>När de slår läger den kvällen, berättar Dorin mer om Vargnäset, deras nästa destination.</p>
+
+            <p>"Det är en gränsort," förklarar han, "halvt jargisk, halvt sin egen. Folket där är hårdare, mer självständiga än inne i kejsardömet. De lyder fortfarande under Daaks lagar, men..." han söker efter orden, "det finns en pragmatism där som saknas i söder."</p>
+
+            <p>"Och ett tempel, uppenbarligen," inflikar Kazrik.</p>
+
+            <p>"Ja," nickar Dorin, "men långt ifrån Tibaras storslagna katedraler. Det är ett gränskapell, antar jag. Varför Arvorns Hammare skulle föra en fånge dit istället för till en större stad är... besynnerligt."</p>
+
+            <p>Natten är orolig. Zentri drömmer intensivt om en kvinna som ropar på hjälp från andra sidan en flammande barriär. I drömmen bär kvinnan den blinda spåkvinnans ansikte, men när han kommer närmare förvandlas hon till någon annan - en yngre kvinna med mörkt hår som han aldrig sett förut.</p>
+
+            <div class="quote">
+                "Vaka över dem," viskar rösten i hans dröm. "De är dina att beskydda. Släpp in mig så kan jag ge dig makten."
+            </div>
+
+            <p>Zentri vaknar med ett ryck, kallsvettig trots kylan. På andra sidan lägerelden sitter Umnatak, vaken och tyst bevakande honom.</p>
+
+            <p>"Du drömde igen," säger ausern enkelt.</p>
+
+            <p>Zentri nickar. "Vad tror du om kvinnan i vagnen?" frågar han plötsligt.</p>
+
+            <p>Umnatak blickar mot den punkt i skogen där den grå gestalten försvann. "Något är fel. Inte bara med henne, utan med hela denna trakt." Han blir tyst en stund, sedan tillägger han: "Vid Vargnäset kommer vi att förstå mer."</p>
+
+            <h2>VI. Ankomsten till Vargnäset</h2>
+
+            <p>De sista två dagarnas resa blir märkbart mer ansträngande. Vädret förvärras ytterligare, och en gnistrande, isande köld griper tag i landskapet. Vid horisonten kan de skymta de massiva bergsmassiven som markerar ingången till <strong>Korpklämman</strong>, passet som ska leda dem vidare mot deras mål.</p>
+
+            <p>Vägen slingrar sig nu genom allt tätare skogar, och vid ett par tillfällen tror sig Umnatak skymta gestalter som följer dem på avstånd. "Vi bevakas," meddelar han Gordon under den sista dagens eftermiddag, men ausern verkar märkligt nog inte särskilt oroad.</p>
+
+            <p>När solen börjar sjunka dyker äntligen Vargnäset upp i fjärran - en samling hus och byggnader med rykande skorstenar, inbäddade i en skogsklädd dalgång där två mindre floder möts. Runt byn löper en enkel palissad i stort behov av lite vård, och i dess centrum reser sig ett litet torn med Daak-symbolen synlig även på avstånd.</p>
+
+            <p>Dorin pekar mot passet som skymtar bortom byn.</p>
+
+            <div class="quote">
+                "Där är Korpklämman. När vi väl tagit oss igenom den är vi på god väg mot Jarla och Asharien. Men först måste vi vila här och förbereda oss för passet."
+            </div>
+
+            <p>När karavanen närmar sig portarna till Vargnäset märker de en ovanlig livlighet i byn. Folk rör sig snabbt mellan husen, och vakt har positionerat sig vid palissaden.</p>
+
+            <p>"Något är inte som det ska," mumlar Dorin.</p>
+
+            <p>Vid porten möts de av en äldre kvinna med bestämt ansiktsuttryck och en vindpinad hy som vittnar om ett liv utomhus. Vid hennes sida står en storvuxen man med sotiga händer och en välsmidd hammare i bältet.</p>
+
+            <p>"Välkomna till Vargnäset," säger kvinnan. "Jag är <strong>Eira Holm</strong>, byns ledare. Det här är <strong>Brynjar</strong>, vår smed." Hon studerar dem noggrant innan hon fortsätter. "Ni har kommit i ett... komplicerat ögonblick."</p>
+
+            <p>"Vad händer?" frågar Dorin rakt på sak.</p>
+
+            <p>Eira utbyter en blick med smeden innan hon svarar. "Desertörer. En band avhoppare från kejserliga armén under ledning av kapten <strong>Halrik Kord</strong>. De har belägrat passet och kräver tribut från alla som passerar."</p>
+
+            <p>Gordon stiger fram. "Hur många?"</p>
+
+            <p>"Ett tjugotal, välutrustade och stridsvana," svarar Brynjar med dov röst. "De har redan plundrat två mindre karavaner, och avvisat våra förhandlare."</p>
+
+            <p>Hagge, som hållit sig i bakgrunden, spänner nu blicken i Eira. "Och den lokala garnisonen? Tempelriddarna vi såg på vägen hit?"</p>
+
+            <p>Ett mörkt uttryck glider över Eiras ansikte. "De har... andra prioriteringar just nu. Kapellet är låst och barrikaderat. Ingen har sett prästen på två dagar. Några tempelriddare har vi inte sett"</p>
+
+            <p>"Vi behöver er hjälp," säger hon direkt till Gordon och de andra. "Om ni vill fortsätta er resa genom passet måste vägen säkras. Hjälp oss organisera försvaret, för Kord har hotat att anfalla byn nästa kväll om vi inte betalar."</p>
+
+            <p>Gordon mäter kvinnan med blicken, en veterans bedömning. I hennes ögon ser han beslutsamhet, men också den lugna beräkningen hos någon som förstår oddsen.</p>
+
+            <p>"Vi har sett värre motstånd," säger han slutligen. "Men det kommer att kräva samarbete."</p>
+
+            <p>Kazrik nickar instämmande. "Berättelser om en grupp som stod fast mot Kords desertörer skulle spridas längs alla handelsrutter i regionen. Goda berättelser för en krönikör som jag."</p>
+
+            <p>Eira Holm ler för första gången, ett hårt men genuint leende. "Välkomna till Vargnäset då. För ert beskydd erbjuder vi husrum och förnödenheter." Hon vänder sig mot den större gruppen. "Och för er karavan säker passage så snart vägen är fri."</p>
+
+            <p>När de passerar genom portarna till Vargnäset möts de av bybornas vaksamma men hoppfulla blickar. Längre bort, högt ovanför byn, markerar Korklämmans mörka silhuett både utmaning och löfte om fortsatt färd.</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Kapitel 5 väntar</div>
+                <p>Framför dem ligger nu den lilla byn, inklämd mellan den skogbevuxna dalgången och bergets dramatiska profil. Det sista solljuset glimmar i snön på hustaken, och ljudet av hammarslag mot metall hörs från smedjan.</p>
+                <p>Men det är inte bara hotet från Halrik Kords rövare som hänger över Vargnäset. I skuggorna känner Umnatak andras närvaro, något som observerar och väntar. Zentri känner en närvaro igen, svagt men persistent, som en varning.</p>
+                <p>Denna gränsort, halvt jargisk och halvt vildmark, döljer sina egna hemligheter. Men först måste de hantera det omedelbara hotet.</p>
+            </div>
+
+            <hr>
+
+            <h2>Slutord</h2>
+
+            <p>Femton dagar i det jargiska vinterlandskapet har förändrat dem alla. Genom eld och is, genom hemligheter och möten, har de växt som grupp och som individer. <strong>Umnatak</strong> har tagit sina första steg som schaman, guidande dem genom osynliga faror. <strong>Zentri</strong> har brottats med kraft och lockelse. <strong>Kazrik</strong> har samlat berättelser värda att nedteckna i hans växande krönikor. <strong>Gordon</strong> har lett dem genom militära och taktiska utmaningar med en veterans säkerhet. Och <strong>Hagge</strong> har börjat återfinna sig själv, bit för bit, i resan mot sitt hem och sin framtid.</p>
+
+            <p>Nu står de inför nästa prövning - att försvara en by mot en överlägsen styrka, och att säkra sin passage genom <strong>Korpklämman</strong>. Men i skuggorna väntar andra faror: <strong>Arvorns Hammares</strong> mystiska aktiviteter, den okända fången i deras vagn, den grå gestalten i skogen, och de hemligheter som Vargnäset självt verkar dölja.</p>
+
+            <p>Resan genom Jargien är på många sätt slutet på en etapp, men början på nästa. När de blickar mot Korklämmans mörka siluett vet de att samma kalla stjärnor som vakat över deras väg genom det jargiska vinterlandskapet fortsätter lysa över de prövningar som väntar dem bortom passet.</p>
+        </article>
+    </div>
+
+    <script src="kapitel-linkify.js"></script>
+</body>
+</html>
