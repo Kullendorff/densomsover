@@ -838,6 +838,7 @@
         }
 
         // Kapitelsidor som finns (nummer → filnamn)
+        // Stödjer både gammal (1-11) och ny (0-10) numrering
         const kapitelSidor = {
             '0': 'prolog-tirakgraven.html',
             '1': 'kapitel-1-jakten.html',
@@ -845,10 +846,28 @@
             '9': 'kapitel-9-mithera.html'
         };
 
+        // Fallback-mappning för titlar (om nummer inte matchar)
+        const kapitelTitelSidor = {
+            'Tirakgraven': 'prolog-tirakgraven.html',
+            'Jakten': 'kapitel-1-jakten.html',
+            'Muhad': 'kapitel-2-muhad.html',
+            'Mithera': 'kapitel-9-mithera.html'
+        };
+
         function renderKapitel() {
             const container = document.getElementById('timeline-container');
             container.innerHTML = kapitel.map((k, i) => {
-                const harSida = kapitelSidor[k.nummer];
+                // Försök matcha på nummer först, sedan på titel
+                let harSida = kapitelSidor[k.nummer];
+                if (!harSida) {
+                    // Fallback: kolla om titeln innehåller ett känt kapitelnamn
+                    for (const [nyckel, fil] of Object.entries(kapitelTitelSidor)) {
+                        if (k.titel && k.titel.includes(nyckel)) {
+                            harSida = fil;
+                            break;
+                        }
+                    }
+                }
                 const sidlank = harSida ? `<a href="kapitel/${harSida}" class="kapitel-link">📖 Läs kapitlet</a>` : '';
                 return `
                 <div class="timeline-item ${k.status === 'pågående' ? 'current' : ''}">
