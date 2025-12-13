@@ -2,11 +2,11 @@
 
 ## Datum: 2025-12-13
 
-## Status: 🚀 KAPITEL 6 KLART - SKRIVER KAPITEL 7!
+## Status: 🔥 KAPITEL 7 KLART - CORVUS VÄNDNING SKRIVEN!
 
 **Dagens uppdateringar (2025-12-13 natt):**
+- ✅ **KAPITEL 7 HTML-SIDA SKAPAD** - Vargnäset ockupation, Sankt Astrid, Corvus vändning (~900 rader, ~5500 ord)
 - ✅ **KAPITEL 6 HTML-SIDA SKAPAD** - Återkomst till Vitterdal och Belöning (~680 rader, ~4200 ord)
-- 🔄 **KAPITEL 7 PÅBÖRJAD** - Vargnäset igen (ockupation)
 
 **Tidigare (2025-12-12 sent kväll):**
 - ✅ **KAPITEL 5 HTML-SIDA SKAPAD** - Vargnäset: Zentris försvinnande, Thrakkas ankomst
@@ -15,6 +15,96 @@
 - ✅ **EON-TERMER FIXADE** i prompts (Muhad → Arabian, Stålsvärds → cavalry, etc.)
 - ✅ **MIDJOURNEY V7** uppdaterad i agenter och prompts
 - ✅ **wiki_data.js** uppdaterad: 143 NPCs har nu bilder (59%)
+
+---
+
+## NYTT: KAPITEL 7 - VARGNÄSET OCKUPATION (2025-12-13)
+
+### ✅ Narrativ HTML-sida skapad
+
+**Fil:** `EON/kapitel/kapitel-7-vargnaset.html`
+**Storlek:** ~900 rader HTML med embedded CSS
+**Ordmängd:** ~5500 ord narrativ prosa
+**Agent:** Manuellt skriven baserat på eon-kapitel-writer-principer
+
+**Innehåll täcker:**
+1. **Återkomsten** - Gruppen återvänder till Vargnäset för att leta efter Zentri
+2. **Upptäckten** - Byn ockuperad av Arvorns Hammare, häxjägare i varje gathörn
+3. **Eira Holms flykt** - Hon och några bybor har flytt till skogen
+4. **Mötet i skogen** - Gruppen hittar flyktingarna, får veta sanningen
+5. **Kommendör Corvus Askhår** - "Den Rykande Hammaren", 31 år, 23 år som häxjägare
+6. **Sankt Astrid** - 12-årig flicka korsfäst för att ha ljugit om spelarna
+7. **Gudomlig uppenbarelse** - Daak talar genom Astrid, hennes blod fryser inte
+8. **Astrids förlåtelse** - Hennes sista ord, den tyngsta bördan
+9. **Corvus kollaps** - 23 års övertygelse krossad, existentiell kris
+10. **Protokoll Järnrening** - Order om total utplåning av byn
+11. **Konfrontationen** - Gruppen stormade kommandotältet för att stoppa Corvus
+12. **Corvus vändning** - Han vänder sig mot sina egna mitt i striden
+13. **Striden vid gryningen** - 15 häxjägare döda, resten flyr
+14. **Den fruktansvärda insikten** - Hela byn måste evakueras eller dö
+15. **Corvus blir spelarkaraktär** - Daniel tar över som Corvus "Arcadius" Askhar
+16. **Evakueringsplanering** - Genom Drunok mot Grensfortet
+
+**Stil och ton:**
+- **Joe Abercrombie (40%):** Brutal realism (Astrids korsfästelse), cynisk ton, rå våld
+- **Robin Hobb (40%):** Corvus djupa emotionella kollaps, Astrids förlåtelse som tyngsta bördan
+- **POV:** Primärt Gordon (ledaren), roterande till Corvus inre kris
+- **Atmosfär:** Mörk, tragisk, vändpunkt - ett barns död förändrar allt
+
+**Emotionella kärnor:**
+- **Astrids offer:** Oskyldigt barn som dör för att skydda spelarna
+- **Corvus vaknade:** 23 år av blod och fanatism krossad på ett ögonblick
+- **Förlåtelsens börda:** "Att förlåtas av den du dödat... det finns ingen tyngre börda"
+- **Gruppens skuld:** Deras närvaro kostade Vargnäset allt
+
+**Nyckelscener:**
+- **Korsfästelsen:** Grafisk, brutal, men inte exploaterande
+- **Daaks uppenbarelse:** Gudomlig röst genom döende barn
+- **Corvus knäböjande:** Mannen som insåg att han varit ett monster
+- **Vändningen:** Svärd genom sina egna bröders ryggar
+- **"Jag förtjänade aldrig hennes förlåtelse":** Corvus tragiska erkännande
+
+**Tekniska element:**
+- ✅ Full HTML-struktur med embedded CSS (samma färgschema som dashboard)
+- ✅ Sticky navigation bar med tillbaka-knapp till ../index.html
+- ✅ Chapter header med metadata (plats, närvarande, Corvus blir spelarkaraktär)
+- ✅ Entity-länkar via kapitel-linkify.js (NPCs orange, platser purple, fraktioner gold)
+- ✅ Info-box (red) för Protokoll Järnrening
+- ✅ Info-box (purple) för Corvus bakgrund och Astrids martyr-status
+- ✅ Info-box (gold) för Corvus vändning
+- ✅ Quote-boxar för Daaks röst och Astrids sista ord
+
+**Validerat mot kampanjkrönika.md:**
+- ✅ 100% baserad på kampanjkrönika.md (rad 1386-1435)
+- ✅ Kronologisk ordning korrekt
+- ✅ Inga uppfunna händelser
+- ✅ Alla viktiga detaljer inkluderade:
+  - Corvus 31 år, adelsfamilj från Soldarn
+  - Kidnappades som 8-åring, 23 år som häxjägare
+  - Astrid 12 år, korsfästes för att ha ljugit
+  - Blodet frös inte trots kylan
+  - Hennes sista ord: förlåtelse
+  - Corvus vändning mitt i strid
+  - Daniel tog över Corvus som spelarkaraktär
+  - Insikt om Järnrening och evakuering
+
+**Nyckelsektioner:**
+- **h2:** Återkomsten, Ockupationen, Mötet i Skogen, Infiltrationen, Sankt Astrid, Kollapsen, Konfrontationen, Efterdyningarna
+- **h3:** Första skylten, Byn, Flyktingarna, Kommendören, Upptäckten, Avrättningen, De sista orden, Kommendörens fall, Ordern, Planen spricker, Vändningen, Striden vid gryningen, Den hemska insikten, Corvus blir spelarkaraktär, Evakueringen planeras
+
+**Narrativa höjdpunkter:**
+- Astrids korsfästelse och Daaks röst genom henne
+- Corvus knäböjande under korset, själen krossad
+- "Jag förtjänade aldrig hennes förlåtelse" - upprepat mantra
+- Striden där Corvus vände sig mot sina egna
+- Gordons erbjudande: "Du kan dö meningsfullt istället för jagad som ett djur"
+- Avslutande scen: Tomt Vargnäset, ett kors på torget, ett monuments över vad övertygelse kostar
+
+**Speciella kännetecken:**
+- Detta är det mörkaste kapitlet hittills - ett barns död driver hela narrativet
+- Corvus vändning är kampanjens största karaktärstransformation
+- Astrids förlåtelse som vapen mot Corvus - värre än vilket straff som helst
+- Setup för Kapitel 8 (Evakueringen genom Drunok)
 
 ---
 
@@ -226,18 +316,18 @@
 
 ## BEFINTLIGA KAPITEL
 
-**Skrivna (7 st):**
+**Skrivna (8 st):**
 - ✅ Prolog: Tirakgraven
 - ✅ Kapitel 1: Jakten
 - ✅ Kapitel 2: Muhad
 - ✅ Kapitel 3: Tarkas
 - ✅ Kapitel 4: Jargien
 - ✅ Kapitel 5: Vargnäset (Zentris försvinnande, Thrakkas ankomst)
-- ✅ **Kapitel 6: Vitterdal** (NYA! Ylvas död, Frostnymfen, hemkomst)
+- ✅ Kapitel 6: Vitterdal (Ylvas död, Frostnymfen, hemkomst)
+- ✅ **Kapitel 7: Vargnäset** (NYA! Ockupation, Sankt Astrid, Corvus vändning)
 - ✅ Kapitel 9: Mithera
 
-**Saknas (4 st):**
-- ❌ Kapitel 7: Vargnäset igen (ockupation)
+**Saknas (3 st):**
 - ❌ Kapitel 8: Evakueringen
 - ❌ Kapitel 10: Skugglandet
 - ❌ Kapitel 11+: Slutuppgörelsen

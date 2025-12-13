@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 7: Vargnäset - Ockupationen - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        /* Chapter Header */
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Prose Styling */
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul {
+            margin: 1rem 0 1.5rem 2rem;
+            list-style-type: disc;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        /* Image Styling */
+        .chapter-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin: 2rem auto;
+            display: block;
+            border: 2px solid var(--border);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Quote Styling */
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Entity Links - klickbara NPCs, platser, fraktioner */
+        .entity-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+            transition: all 0.2s ease;
+        }
+        .entity-link:hover { border-bottom-style: solid; }
+        .entity-npc { color: var(--flame-orange); }
+        .entity-plats { color: var(--mystic-purple); }
+        .entity-fraktion { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <!-- Chapter Header -->
+        <header class="chapter-header">
+            <h1>Kapitel 7: Vargnäset - Ockupationen</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Vargnäset, nu ockuperat</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Umnatak, Kazrik, Thrakka, Corvus (blir spelarkaraktär)</div>
+            <div class="chapter-meta"><strong>Tidsperiod:</strong> Återkomst till Vargnäset efter Vitterdal</div>
+        </header>
+
+        <!-- Prose Content -->
+        <article class="prose">
+            <h2>Återkomsten</h2>
+
+            <p>Vägen tillbaka till Vargnäset låg kall och tom under deras fötter. Vitterdals belöning klirrade tungt i Gordons bälte - gott silver för goda tjänster - men pengarna smakade aska när han tänkte på varför de var här.</p>
+
+            <p>Zentri. Försvunnen. Kan död. Kan värre.</p>
+
+            <p>"Hur lång sedan vi var här?" frågade Kazrik, andedräkten virvlande vit i vinterkylan.</p>
+
+            <p>"Två veckor," sa Gordon. "Kanske tre."</p>
+
+            <p>"Känns som år."</p>
+
+            <p>Det gjorde det. Varje steg närmare byn tyngde dem med minnen - Zentris ögon i graven, blodringen på hans finger, skuggornas viskning i natten. De hade lämnat honom. Det spelade ingen roll att han hade gått själv, att han inte gett dem något val.</p>
+
+            <p>De hade lämnat honom ändå.</p>
+
+            <p>Umnatak stannade först. Schaman höll upp handen - tyst, varna inte - och hans ögon blev silvervita när han såg bortom det vanliga.</p>
+
+            <p>"Andarna flyr," viskade han. "Något fel."</p>
+
+            <p>Gordon drog sitt svärd utan ljud.</p>
+
+            <hr>
+
+            <h2>Ockupationen</h2>
+
+            <h3>Första Skylten</h3>
+
+            <p>Skogkanten var för tyst. Inga fåglar. Inga djur. Bara snö och vind och någonting under ytan som skrek fara.</p>
+
+            <p>Thrakka pekade. Där - mellan träden - rörelse.</p>
+
+            <p>Två män i silver-grå rustning patrullerade skogsvägen. Rustningen bar symbolen som fick Gordon att gripa svärdet hårdare: hammare omgiven av flammor.</p>
+
+            <p><strong>Arvorns Hammare.</strong> Häxjägare. Fanatiker. Män som brände först och frågade aldrig.</p>
+
+            <p>"Tillbaka," viskade Gordon. "Nu."</p>
+
+            <p>De smög runt patrullen, följde skogsranden norrifrån. Där Eira Holms stuga låg - eller hade legat - fanns nu bara snö och fotspår. Många fotspår.</p>
+
+            <p>Kazrik studerade marken. "Hon flydde. Hästspår österut, in i skogen. Nyligt - kanske igår."</p>
+
+            <p>"Ensam?" frågade Gordon.</p>
+
+            <p>"Nej. Fem, sex personer. Barn bland dem."</p>
+
+            <p>Bra. Eira var smart nog att fly när häxjägarna kom. Men frågan var: hur många andra hade inte hunnit?</p>
+
+            <h3>Byn</h3>
+
+            <p>De närmade sig från skogssidan, låg lågt i snön, och såg.</p>
+
+            <p>Vargnäset brann inte. Det var nästan värre.</p>
+
+            <p>Byn såg normal ut på avstånd - hus, röken från eldstäder, folk som rörde sig på gatorna. Men när Gordon tittade närmare såg han tvånget i hur de rörde sig. Soldater vid varje gathörn. Byborna gick med sänkta huvuden, blickar mot marken, som fångar i ett fängelse utan murar.</p>
+
+            <p>I byns centrum reste sig ett tält större än någon stuga. Silver-grå tyg med Arvorns Hammare målad i svart över ingången. Häxjägarnas kommandotält.</p>
+
+            <p>Och framför tältet, mitt på bytorget, reste sig något som fick Gordons mage att knytas.</p>
+
+            <p>Ett kors. Trävirke, tjockt och rått, rest mot himlen.</p>
+
+            <p>Tomt. Ännu.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Ockupationen</div>
+                <ul>
+                    <li>Arvorns Hammare hade tagit över byn "för att undersöka magisk kontamination"</li>
+                    <li>Systematiska förhör av alla bybor om "magiska händelser"</li>
+                    <li>Byborna terroriserade och rädda - ingen vågade tala öppet</li>
+                    <li>Patrullerande häxjägare dag och natt</li>
+                    <li>Eira Holm och några andra hade flytt till skogen</li>
+                </ul>
+            </div>
+
+            <p>"Vi måste hitta Eira," sa Gordon. "Hon vet vad som hänt."</p>
+
+            <p>Thrakka pekade österut. "Följ spåren. Hitta sanningen."</p>
+
+            <p>De vände byn ryggen och följde Eiras spår in i skogen.</p>
+
+            <hr>
+
+            <h2>Mötet i Skogen</h2>
+
+            <h3>Flyktingarna</h3>
+
+            <p>De hittade lägret efter två timmars spårning. Sex personer - Eira Holm och fem andra - vid en dold eldstad under täta granar. Barnen låg insvepta i filtar, de vuxna vaktade med spänd oro i varje muskel.</p>
+
+            <p>Eira reste sig när Gordon steg in i lägret, yxa redan i handen.</p>
+
+            <p>"Gordon," andades hon ut. Lättnad. Rädsla. Bådadera. "Ni kom tillbaka."</p>
+
+            <p>"Vad har hänt?"</p>
+
+            <p>Hon satte sig tungt, såg plötsligt tjugo år äldre ut. "Häxjägarna kom för fem dagar sedan. Sade att byn var kontaminerad av magi. Att de skulle 'rena' oss."</p>
+
+            <p>"Rena?"</p>
+
+            <p>"Förhör. Varje familj. Om vi sett någonting onaturligt. Om någon använt magi. Om..." Hon svalde hårt. "Om vi kände er."</p>
+
+            <p>Tystnad. Kall som snön.</p>
+
+            <p>"De vet att ni var här," fortsatte Eira. "Vet att ni kämpade mot... mot det som kom ur graven. Vet om Zentri."</p>
+
+            <p>"Hur mycket vet de?" frågade Kazrik skarpt.</p>
+
+            <p>"Allt. Nästan allt." Hennes röst var sprucken. "Byborna talade. Vad skulle de göra? Häxjägarna hot... de sade att de som teg skyddade demoniska krafter."</p>
+
+            <p>Gordon förstod. När Arvorns Hammare ville ha svar fick de svar. Det spelade ingen roll om svaren var sanna.</p>
+
+            <p>"Vem leder dem?" frågade Umnatak.</p>
+
+            <p>Eiras ansikte blev mörkt. "Kommendören. Corvus Askhår. De kallar honom 'Den Rykande Hammaren'."</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Kommendör Corvus Askhår</div>
+                <p><strong>Ålder:</strong> 31 år</p>
+                <p><strong>Bakgrund:</strong> Adelsfamilj från Soldarn, kidnappades som 8-åring under korstågen när hans familj dödades för att ha skyddat samoriska munkar</p>
+                <p><strong>Uppfostran:</strong> Arvorns Hammare tog in honom och formade honom till deras perfekta vapen</p>
+                <p><strong>Namn:</strong> "Den Rykande Hammaren" - känd för att aldrig lämna levande vittnen</p>
+                <p><strong>Tid som häxjägare:</strong> 23 år av fanatisk tjänst</p>
+            </div>
+
+            <p>"Han är..." Eira sökte ord. "Fruktansvärd. Kall. Men inte grym för grymhetens skull. Han tror på det han gör. Tror att han räddar världen."</p>
+
+            <p>"De värsta gör alltid det," muttrade Thrakka.</p>
+
+            <hr>
+
+            <h2>Infiltrationen</h2>
+
+            <h3>Planen</h3>
+
+            <p>Gordon samlade gruppen utom hörhåll från flyktingarna.</p>
+
+            <p>"Vi kan inte bara gå in," sa Kazrik. "De söker oss. Har beskrivningar."</p>
+
+            <p>"Vi måste veta vad de vet," svarade Gordon. "Vad de planerar. Om de vet vart Zentri gick."</p>
+
+            <p>Umnatak såg på dem med silvervita ögon. "Andarna viskar varning. Detta slutar i blod."</p>
+
+            <p>"Allt slutar i blod," sa Thrakka. "Frågan är vems."</p>
+
+            <p>De smugglade sig in i byn efter mörkers fall. Kazriks dvärgsyn ledde dem genom skuggorna, förbi patrullerna, mellan husväggarna. Mitt i sin egen by rörde de sig som tjuvar.</p>
+
+            <p>Vid det stora tältet stannade de. Röster därinne - två, tre män. En av dem djupare än de andra, mer kommandoton än diskussion.</p>
+
+            <p>Gordon kikade genom en springa i tygväggen.</p>
+
+            <h3>Kommendören</h3>
+
+            <p>Corvus Askhår såg inte ut som ett monster.</p>
+
+            <p>Han var lång men inte jättelik, bred i axlarna men inte massiv. Ansiktet var väderbitet men inte vackert, ögonen mörka men inte elaka. Han bar häxjägarnas rustning som en andra hud, och när han talade lyssnade varje man i rummet.</p>
+
+            <p>"Sammanfattning," sade Corvus.</p>
+
+            <p>En yngre häxjägare konsulterade sina anteckningar. "Fyrtiotre bybor förhörda. Alla bekräftar samma historia: främlingar anlände för tre veckor sedan, kämpade mot någonting vid den gamla graven. En av främlingarna - Zentri Bredarsson - visade tecken på demonisk påverkan. Försvann österut med blödande ögon."</p>
+
+            <p>"Och de andra?"</p>
+
+            <p>"Lämnade byn. Riktning okänd."</p>
+
+            <p>Corvus nickade långsamt. "Demonisk kontamination bekräftad. Protokoll Järnrening träder i kraft."</p>
+
+            <p>Tystnad i tältet. Tung som sten.</p>
+
+            <p>"Kommendör," började den yngre mannen. "Järnrening betyder..."</p>
+
+            <p>"Jag vet vad det betyder, broder Isak." Corvus röst var platt. Känslolös. "Byn är komprometterad. Demoniska krafter har rört vid dessa människor. Vi kan inte riskera spridning."</p>
+
+            <p>"Men... barn, kommendör. Det finns barn."</p>
+
+            <p>"Demoner gör ingen åtskillnad på ålder. Vi kan inte heller."</p>
+
+            <p>Gordon drog sig tillbaka från springan, hjärtat dunkat så hårt han var säker på att häxjägarna måste höra det.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Protokoll Järnrening</div>
+                <p>Arvorns Hammares slutgiltiga lösning på demonisk kontamination.</p>
+                <p>Alla invånare i ett komprometterat område avrättas.</p>
+                <p>Inga undantag. Inga överlevande. Ingen vittnen.</p>
+                <p>Total utplåning för att förhindra spridning.</p>
+            </div>
+
+            <p>Kazrik såg på Gordon med döda ögon. "De kommer döda dem alla."</p>
+
+            <p>"Ja."</p>
+
+            <p>"När?"</p>
+
+            <p>"Snart. När förhören är klara."</p>
+
+            <p>Umnatak viskade: "Andarna gråter. De känner vad som kommer."</p>
+
+            <p>Thrakka spottade i snön. "Vi flyr. Lämnar byborna. Inte vårt problem."</p>
+
+            <p>Gordon såg på Tirakkriegaren. "Nej."</p>
+
+            <p>"Nej?"</p>
+
+            <p>"Vi lämnar inte dem. Inte igen."</p>
+
+            <p>Zentris ansikte flimrade i Gordons minne. Jag lämnade honom en gång. Aldrig mer.</p>
+
+            <hr>
+
+            <h2>Sankt Astrid</h2>
+
+            <h3>Upptäckten</h3>
+
+            <p>Det var nästa morgon de såg henne.</p>
+
+            <p>Gordon hade smugit sig nära bytorget för att spionera på häxjägarnas rörelser. De planerade någonting - soldater samlade sig, verktyg bars fram, korset på torget kontrollerades för stadga.</p>
+
+            <p>Sedan släpades flickan fram.</p>
+
+            <p>Tolv år gammal, mager, med blont hår som hängde i toviga tofsar. Gordon kände igen henne - Astrid, dotter till en av bysmiderna. Hon hade burit vatten till deras hästar när de först kom till Vargnäset.</p>
+
+            <p>Hon grät inte. Det var det som slog Gordon hårdast. Hon bara stod där, händerna bundna, och såg på kommendören med stora ögon.</p>
+
+            <p>Corvus Askhår stod framför henne, höjd över barnet som en dom.</p>
+
+            <p>"Astrid Smedsdotter," sa han högt, rösten bars över torget så alla hörde. "Du har anklagats för att ha dolt sanningen om demonisk aktivitet. Du har skyddat de förbannade."</p>
+
+            <p>"Jag..." Flickans röst var knappt mer än en viskning. "Jag ljög inte, herre."</p>
+
+            <p>"Du sade i förhöret att främlingarna aldrig visade tecken på magi. Vittnen säger motsatsen."</p>
+
+            <p>"De... de var snälla mot oss. Betalade väl. Skyddade oss när—"</p>
+
+            <p>"Skyddade er?" Corvus stämma var stål. "De släppte lös en demon i er by. De kontaminerade er alla. Och du försvarar dem?"</p>
+
+            <p>Astrid höjde hakan. Tolv år gammal och hon mötte häxjägaren ögon. "De försökte göra rätt."</p>
+
+            <p>Tystnad.</p>
+
+            <p>Corvus Askhår såg på flickan länge. Så nickade han till sina män.</p>
+
+            <p>"Korsfäst henne."</p>
+
+            <h3>Avrättningen</h3>
+
+            <p>Gordon rörde sig instinktivt - ett steg framåt, hand på svärd - men Kazrik höll honom tillbaka.</p>
+
+            <p>"Femtio häxjägare," viskade dvärgen. "Vi når henne inte."</p>
+
+            <p>"Vi måste—"</p>
+
+            <p>"Vi dör. Hon dör ändå. Båda sanningar."</p>
+
+            <p>Gordon tvingade sig att stå still. Tvingade sig att se.</p>
+
+            <p>De bar Astrid till korset. Hon kämpade då - för första gången - sparkade och skrek och bad. Men små händer mot rustning betyder ingenting.</p>
+
+            <p>Spikar drevs genom handlederna. Genom fötterna. Kroppen lyft mot himlen.</p>
+
+            <p>Blod rann ner träet, doppade i snön, målade röda spiraler mot vitt.</p>
+
+            <p>Corvus Askhår stod kvar under korset. Tittade upp. Hans ansikte var...tomt. Inte grymt. Bara tomt.</p>
+
+            <p>En pliktuppgift. Inte mer.</p>
+
+            <h3>De Sista Orden</h3>
+
+            <p>Astrid hängde mot korset, andetagen flämtande korta skrik. Blod rann men stannade inte.</p>
+
+            <p>Kylan borde frysa det. Borde stoppa flödet. Men blodet fortsatte droppa, varmt, rött, levande.</p>
+
+            <p>Corvus såg det. Gordon såg hur kommendören stirrade på blodet som inte frös.</p>
+
+            <p>Astrids ögon öppnades - vidare än de borde kunna - och hon talade.</p>
+
+            <p>Men det var inte hennes röst.</p>
+
+            <div class="quote">
+                "Corvus Askhår av Soldarn. Hur många barn har du dödat i Gudens namn?"
+            </div>
+
+            <p>Kommendörens ansikte blev asfalt.</p>
+
+            <p>"Hur många mödrar? Hur många fäder? Hur många som bad om nåd?"</p>
+
+            <p>"Demon," viskade Corvus. "Du kan inte—"</p>
+
+            <p>"Ingen demon, krigare. Bara en gud som ser vad du blivit."</p>
+
+            <p>Ljus exploderade från Astrids bröst - vitt, rent, bländande. Häxjägarna stapplade bakåt, sköldade ögonen, vrålade varningar om magi.</p>
+
+            <p>Men Corvus stod kvar. Stirrade. Såg.</p>
+
+            <p>Astrid - eller vad som talade genom henne - log.</p>
+
+            <div class="quote">
+                "Tjugotre år av blod i mitt namn. Jag sanktionerade aldrig detta. Aldrig dig."
+            </div>
+
+            <p>"Daak..." Corvus röst bröts. "Herre Daak, jag har bara—"</p>
+
+            <p>"Dödat. Ja. I mitt namn dött i mitt namn. Men jag kallade dig aldrig, Corvus Askhår."</p>
+
+            <p>Ljuset slocknade. Astrid hängde livlös mot träet.</p>
+
+            <p>Hennes sista ord, med hennes egen röst, knappt hörbart:</p>
+
+            <div class="quote">
+                "Jag förlåter dig."
+            </div>
+
+            <p>Och hennes blod fros äntligen. Kristallklart is mot träet.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Vad de inte visste</div>
+                <p>Astrid dog inte bara som ett offer.</p>
+                <p>Hon blev en martyr - ett verktyg för guden Daak att nå sin villfarnen krigare.</p>
+                <p>Hennes förlåtelse var inte svaghet. Det var den hårdaste domen Corvus någonsin fått.</p>
+                <p>Att förlåtas av den du dödat... det finns ingen tyngre börda.</p>
+            </div>
+
+            <hr>
+
+            <h2>Kollapsen</h2>
+
+            <h3>Kommendörens Fall</h3>
+
+            <p>Corvus Askhår stod under korset i timmar.</p>
+
+            <p>Rörde sig inte. Talade inte. Hans män vågade inte närma sig.</p>
+
+            <p>När solen började sjunka såg Gordon hur kommendören långsamt föll på knä i snön. Händerna skakade. Rustningen skramlade.</p>
+
+            <p>En man som byggt sitt liv på övertygelse - om rätt, fel, Guds vilja - och fått se fundamentet smulas.</p>
+
+            <p>Tjugotre år. Hur många oskyldiga? Hur många som bad? Hur många som inte ens visste varför de dog?</p>
+
+            <p>"Han bryter," viskade Umnatak. "Själen krossas."</p>
+
+            <p>Kazrik såg kyligt på den knäböjande kommendören. "Bra. Låt honom känna det."</p>
+
+            <p>Men Gordon såg något annat. Såg en man som vaknat från ett tjugotre år långt mardrömsliv och insett vad han blivit.</p>
+
+            <p>Det fanns inte nog med ånger i världen för det.</p>
+
+            <h3>Ordern</h3>
+
+            <p>Vid midnatt reste sig Corvus Askhår. Hans ansikte var grått. Ögonen döda.</p>
+
+            <p>Han kallade sina underbefäl. Gordon och de andra hörde allt från sitt gömställe.</p>
+
+            <p>"Järnrening är aktiverad," sa Corvus. Rösten platt. Mekanisk. "I morgon gryning samlar vi byborna på torget. Alla. Barn, äldre, alla."</p>
+
+            <p>"Ja, kommendör."</p>
+
+            <p>"Armborsträckor i position. En salva. Snabbt och rent."</p>
+
+            <p>"Ja, kommendör."</p>
+
+            <p>"Och sedan bränner vi byn. Inget ska finnas kvar."</p>
+
+            <p>Tystnad.</p>
+
+            <p>"Frågor?"</p>
+
+            <p>Ingen vågade fråga.</p>
+
+            <p>Men när befälen lämnade tältet hörde Gordon något. En viskning från kommendören, så låg att knappt vinden borde höra den:</p>
+
+            <div class="quote">
+                "Förlåt mig."
+            </div>
+
+            <p>Det var oklart vem han bad om förlåtelse. Guden. Flickan. Sig själv.</p>
+
+            <p>Alla. Ingen.</p>
+
+            <hr>
+
+            <h2>Konfrontationen</h2>
+
+            <h3>Planen Spricker</h3>
+
+            <p>Gordon samlade gruppen vid midnatt. "Vi evakuerar byn. Nu. I natt."</p>
+
+            <p>"Omöjligt," sa Kazrik. "Häxjägarna patrullerar. De ser oss."</p>
+
+            <p>"Då kämpar vi."</p>
+
+            <p>"Mot femtio rustade soldater? Vi dör."</p>
+
+            <p>"Då dör vi!" Gordons röst höjdes, illsket nu. "Jag lämnar inte fler barn till dessa monstrer!"</p>
+
+            <p>Thrakka reste sig. "Jag kämpar. Döden kommer ändå. Hellre i strid."</p>
+
+            <p>Umnatak nickade tyst.</p>
+
+            <p>Kazrik suckade. "Dvärgar. Alltid de dåliga oddsen."</p>
+
+            <p>De närmade sig kommandotältet strax före gryningen. Planen var enkel: döda Corvus, orsaka kaos, utnyttja förvirringen för att evakuera byn.</p>
+
+            <p>En fruktansvärd plan. Men den enda de hade.</p>
+
+            <p>Gordon drog sitt svärd. Stål i månskenet. Redo.</p>
+
+            <p>De stormade tältet.</p>
+
+            <h3>Vändningen</h3>
+
+            <p>Corvus Askhår stod redan vänd mot dem när de bröt igenom tyget. Svärdet draget. Rustning felfri.</p>
+
+            <p>Men han attackerade inte.</p>
+
+            <p>"Ni kom tillbaka," sa han. Ingen överraskning i rösten. "För byn."</p>
+
+            <p>Gordon stannade. Svärd högt. "Vi stoppar dig."</p>
+
+            <p>"Ja. Det gör ni."</p>
+
+            <p>Tystnad.</p>
+
+            <p>Corvus sänkte sitt svärd. "Jag... såg. Idag. Vad jag blivit."</p>
+
+            <p>"Bra," sa Thrakka. "Dö med den kunskapen."</p>
+
+            <p>"Jag förtjänar det." Kommendören log - tomt, trasigt. "Men byborna förtjänar inte vad som kommer."</p>
+
+            <p>Gordon förstod inte. "Vad menar du?"</p>
+
+            <p>"Mina män följer order. Om jag dör kommer nästa kommandör. Järnrening fortsätter."</p>
+
+            <p>"Då dödar vi dem också."</p>
+
+            <p>"Femtio man? Ni är fyra."</p>
+
+            <p>Tystnad. Sanningen sved.</p>
+
+            <p>Corvus stödde sig mot bordet. "Det finns en annan väg. En värre. För mig."</p>
+
+            <p>"Vilken?"</p>
+
+            <p>"Jag vänder. Mot mina egna. Förklaras förrädare och demon-korrupted." Han log igen, och det såg ut som smärta. "De kommer jaga mig resten av livet. Ingen nåd. Ingen förlåtelse."</p>
+
+            <p>"Och byn?" frågade Gordon.</p>
+
+            <p>"Lever. Jag säger att jag undersökt dem ordentligt - fann ingen kontamination. Att flickans död var... en tragisk miss."</p>
+
+            <p>"Dina män tror inte på det."</p>
+
+            <p>"Nej. Men några följer order ändå. De andra..." Han mötte Gordons ögon. "Hjälp mig döda dem."</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Corvus Vändning</div>
+                <p>I det ögonblicket valde Corvus Askhår vad han skulle vara.</p>
+                <p>Inte en häxjägare. Inte en kommendör. Inte Den Rykande Hammaren.</p>
+                <p>Bara en man som försökte gottgöra tjugotre år av blod.</p>
+                <p>Han visste det inte skulle räcka. Visste att ingenting kunde gottgöra vad han gjort.</p>
+                <p>Men det var allt han hade kvar.</p>
+            </div>
+
+            <h3>Striden vid Gryningen</h3>
+
+            <p>När solen steg över Vargnäset exploderade världen i våld.</p>
+
+            <p>Corvus vände sig mot sina egna mitt i ett kommandomöte. Svärd genom den närmaste häxjägarens rygg, armborst mot nästa. Förräderi perfekt utfört.</p>
+
+            <p>Kaos.</p>
+
+            <p>Gordon och de andra rusade in, slog ner förvirrade häxjägare innan de hann reagera. Umnatak kallade andar - skuggor som distraherade, förvirrade, blinde.</p>
+
+            <p>Kazrik skrev i sin dagbok medan han slogs. "Historiskt ögonblick... kommendör blir förrädare... ska dokumentera..."</p>
+
+            <p>"KAN DU KÄMPA UTAN ATT SKRIVA?!" vrålade Thrakka, svärd roterande som en kvarn.</p>
+
+            <p>"Multitasking, krigare! Prova det!"</p>
+
+            <p>Striden varade tre minuter. Femton häxjägare döda. Resten flydde - österut, bort från den galne kommendören och hans nya allierade.</p>
+
+            <p>Corvus Askhår stod bland liken av sina före detta bröder, täckt i blod, rustning skramlig.</p>
+
+            <p>"Det är gjort," sa han tyst.</p>
+
+            <p>"Ja," svarade Gordon.</p>
+
+            <p>"Jag kan aldrig gå tillbaka."</p>
+
+            <p>"Nej."</p>
+
+            <p>Corvus såg på Astrids kors, fortfarande rest på torget. "Bra."</p>
+
+            <hr>
+
+            <h2>Efterdyningarna</h2>
+
+            <h3>Den Hemska Insikten</h3>
+
+            <p>De samlade byborna på torget - inte för avrättning utan för varning.</p>
+
+            <p>Gordon talade högt så alla hörde: "Arvorns Hammare kommer tillbaka. Fler häxjägare. De kommer leta efter oss. Efter kommendören. Och de kommer hitta er."</p>
+
+            <p>Rädsla krusade genom folkmassan.</p>
+
+            <p>"Vad ska vi göra?" vrålade någon.</p>
+
+            <p>Kazrik sa det ingen annan ville säga: "Fly. Alla. Nu."</p>
+
+            <p>Eira Holm steg fram. "Vart? Detta är vårt hem."</p>
+
+            <p>"Hem dödar er," sa Thrakka brutalt ärligt. "Häxjägarna dödar alla vittnen. Alltid."</p>
+
+            <p>Tystnad. Tung som sten.</p>
+
+            <p>Gordon såg sanningen i deras ögon. De förstod. Även om de stannade, även om de svor att de aldrig sett kommendören eller främlingarna...</p>
+
+            <p>Arvorns Hammare tar inga risker.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Den Fruktansvärda Sanningen</div>
+                <p>Gruppen insåg vad deras närvaro kostat byn:</p>
+                <p>Inte bara Astrids död. Inte bara häxjägarnas ockupation.</p>
+                <p>Utan total utrotning - antingen genom Järnrening eller som vittnen som måste tystas.</p>
+                <p>Vargnäset kunde aldrig vara hem igen.</p>
+                <p>Alla måste fly eller dö.</p>
+            </div>
+
+            <p>Corvus stod vid sidan, stirrade på sina händer. Blodet hade torkat till brunt. Han viskade något - ord ingen annan hörde - men Gordon läppläste:</p>
+
+            <div class="quote">
+                "Jag förtjänade aldrig hennes förlåtelse."
+            </div>
+
+            <h3>Corvus Askhar Blir Spelarkaraktär</h3>
+
+            <p>Vid eldstaden den kvällen, medan byborna packade sina liv i kärror och säckar, satte sig Corvus vid gruppen.</p>
+
+            <p>"Jag kan inte gå tillbaka," sa han. "Arvorns Hammare kommer jaga mig till livets slut."</p>
+
+            <p>"Bra," sa Gordon. "Vi litar inte på häxjägare ändå."</p>
+
+            <p>"Jag... jag har inget kvar. Inget syfte. Inget hopp."</p>
+
+            <p>Umnatak såg på honom med silvervita ögon. "Lögn. Du har ett syfte."</p>
+
+            <p>"Vilket?"</p>
+
+            <p>"Gottgörelse. Aldrig fullständig, aldrig tillräcklig, men ett syfte."</p>
+
+            <p>Corvus såg på schaman länge. "Är det nog?"</p>
+
+            <p>"Nej. Men det är vad du har."</p>
+
+            <p>Gordon sträckte fram sin hand. "Vi letar efter vår vän. Zentri. Han är någonstans österut, förlorad och besatt. Vi kommer hitta helveten på vägen."</p>
+
+            <p>"Och?"</p>
+
+            <p>"Och du kan dö meningsfullt istället för jagad som ett djur."</p>
+
+            <p>Corvus såg på handen. Tjugotre år av blod bakom sig. Ingenting framför utom en lång jakt mot döden.</p>
+
+            <p>Han tog Gordons hand.</p>
+
+            <p>"Mitt namn är Corvus Askhår. Men de flesta kommer kalla mig Arcadius nu. Enklare så."</p>
+
+            <p>"Arcadius då," sa Gordon. "Välkommen till gruppen. Vi dör troligen alla."</p>
+
+            <p>"Bra," sa Corvus. Och log för första gången - inte tomt, inte trasigt, bara trött. "Jag förtjänar det."</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Corvus "Arcadius" Askhar - Ny Spelarkaraktär</div>
+                <p><strong>Spelare:</strong> Daniel</p>
+                <p><strong>Identitet:</strong> Opererar under aliaset "Arcadius" för att dölja sin förflutna</p>
+                <p><strong>Status:</strong> Förrädare mot Arvorns Hammare, jagad som demon-korrupted</p>
+                <p><strong>Motivation:</strong> Gottgörelse för tjugotre års brott mot oskyldiga</p>
+                <p><strong>Börda:</strong> Astrids förlåtelse - den tyngsta gift han någonsin fått</p>
+            </div>
+
+            <hr>
+
+            <h2>Evakueringen Planeras</h2>
+
+            <p>Med fyrtioen bybor att transportera, häxjägare på väg, och vintern som bet allt hårdare, stod gruppen inför sin nästa omöjliga uppgift.</p>
+
+            <p>"Vi kan inte ta dem alla genom vildmarken," sa Kazrik. "För långsamt. Häxjägarna hinner ikapp."</p>
+
+            <p>"Vitterdal?" föreslog Gordon.</p>
+
+            <p>"För nära. Första stället häxjägarna letar."</p>
+
+            <p>"Österut då. Genom Drunok."</p>
+
+            <p>Tystnad. Drunok - den förbannade skogen där tid och rum böjde sig fel.</p>
+
+            <p>"Det dödar dem," sa Corvus. "Drunok tar alltid tribut."</p>
+
+            <p>"Och häxjägarna dödar dem garanterat," svarade Gordon. "Jag väljer kanske-död över säker-död."</p>
+
+            <p>Umnatak nickade. "Andarna är starkare i Drunok. Jag kan vägleda. Kanske."</p>
+
+            <p>"Kanske," upprepade Thrakka torrt. "Inspirerande."</p>
+
+            <p>Men de hade inget val. Och alla visste det.</p>
+
+            <p>Evakueringen skulle börja i gryningen. Genom Drunok. Mot Grensfortet.</p>
+
+            <p>Fyrtioen liv i deras händer.</p>
+
+            <p>Zentri förlorad någonstans österut.</p>
+
+            <p>Och Arvorns Hammare i deras spår.</p>
+
+            <hr>
+
+            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
+                Vargnäset brann inte den natten.<br>
+                Det skulle ha varit en nåd.<br>
+                Istället lämnades det tomt - spökhus och tomma gator och ett kors på torget.<br>
+                Ett monument över vad övertygelse kostar när den bygger på lögner.<br>
+                Och ett barns förlåtelse som vägde tyngre än alla synderna den förlät.
+            </p>
+        </article>
+    </div>
+
+    <!-- Ladda data för auto-länkning -->
+    <script src="../wiki_data.js"></script>
+    <script src="../fraktioner_data.js"></script>
+    <script src="kapitel-linkify.js"></script>
+
+    <script>
+        // Smooth scroll for any future internal navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
