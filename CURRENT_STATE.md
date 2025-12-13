@@ -1,16 +1,88 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2025-12-12 (SENT KVÄLL)
+## Datum: 2025-12-13
 
-## Status: ✅ KAPITEL 5 + 20 NPC-BILDER KLART!
+## Status: 🚀 KAPITEL 6 KLART - SKRIVER KAPITEL 7!
 
-**Dagens uppdateringar (2025-12-12 sent kväll):**
+**Dagens uppdateringar (2025-12-13 natt):**
+- ✅ **KAPITEL 6 HTML-SIDA SKAPAD** - Återkomst till Vitterdal och Belöning (~680 rader, ~4200 ord)
+- 🔄 **KAPITEL 7 PÅBÖRJAD** - Vargnäset igen (ockupation)
+
+**Tidigare (2025-12-12 sent kväll):**
 - ✅ **KAPITEL 5 HTML-SIDA SKAPAD** - Vargnäset: Zentris försvinnande, Thrakkas ankomst
 - ✅ **20 MIDJOURNEY-PROMPTS** genererade (batch 1-2) för NPCs utan bilder
 - ✅ **20 NPC-BILDER** matchade och flyttade från tempbild-mappen
 - ✅ **EON-TERMER FIXADE** i prompts (Muhad → Arabian, Stålsvärds → cavalry, etc.)
 - ✅ **MIDJOURNEY V7** uppdaterad i agenter och prompts
 - ✅ **wiki_data.js** uppdaterad: 143 NPCs har nu bilder (59%)
+
+---
+
+## NYTT: KAPITEL 6 - ÅTERKOMST TILL VITTERDAL (2025-12-13)
+
+### ✅ Narrativ HTML-sida skapad
+
+**Fil:** `EON/kapitel/kapitel-6-vitterdal.html`
+**Storlek:** ~680 rader HTML med embedded CSS
+**Ordmängd:** ~4200 ord narrativ prosa
+**Agent:** Manuellt skriven baserat på eon-kapitel-writer-principer
+
+**Innehåll täcker:**
+1. **Ylvas död vid bergpasset** - Kärlingarnas bakhåll, armborstslodet som tar en jägarflicka
+2. **Graven vid vägen** - Sorgens pris, varningen om jakten
+3. **Frostnymfen** - Tirakisk isbrytare uppför Raunfloden
+4. **Besättningen** - Kapten Nilmar, Selene "Silveröga", Garsten, Esma, och andra
+5. **Fem farliga dagar:**
+   - Dag 1: Avgång från Jarla, Selenes varning
+   - Dag 2: Isbarriären (sabotage)
+   - Dag 3: Ljussignalerna (Systrarna spårar dem)
+   - Dag 4: Övergivna handelsstationen (förrädare från Mitrahus)
+   - Dag 5: Fallet vid forsen, fortsättning till fots med Esma
+6. **Triumferande hemkomst** - Vitterdal nås äntligen
+7. **Lantrådet** - Hagge erkänns officiellt som jarl, Kung Vidkun besegras
+8. **Belöningsceremonin** - Gordon (kapten), Umnatak (jaktkniv), Kazrik (lärd man), Thrakka (välkomnad), alla (skattefrihet, hus, option på Grensfortet)
+9. **Äventyrarnas hus** - Detaljerad beskrivning av hemmet vid Mitrahus
+10. **Personal** - Fru Gerda, Lina, Alrik
+11. **Livet mellan uppdragen** - Gordon/Umnatak/Kazrik/Thrakkas rutiner
+12. **Vila och planering** - Sorgens arbete, Kaelar blir huskapten, förberedelser för Skugglandet
+
+**Stil och ton:**
+- **Joe Abercrombie (40%):** "Hjältar var dyra att följa" - cynisk realism, rå action, lakonisk humor
+- **Robin Hobb (40%):** Ylvas död, sorgens arbete, priset för att överleva
+- **POV:** Primärt Gordon (ledaren, ansvarstyngd), roterande till andra vid behov
+- **Atmosfär:** Tragedi (Ylva), paranoia (jakt på floden), lättnad (hemkomst), melankoli (temporär vila)
+
+**Emotionella kärnor:**
+- **Ylvas död:** Oskyldighet betalade priset för att följa hjältar
+- **Frostnymfen-resan:** Paranoia, Soffias nätverk, jakten intensifieras
+- **Hemkomsten:** Lättnad mixad med skuld (Zentri saknas)
+- **Äventyrarnas hus:** Ett tillfälligt hem, de vet att de snart ger sig av igen
+
+**Tekniska element:**
+- ✅ Full HTML-struktur med embedded CSS (samma färgschema som dashboard)
+- ✅ Sticky navigation bar med tillbaka-knapp till ../index.html
+- ✅ Chapter header med metadata (plats, närvarande, pris: Ylvas liv)
+- ✅ Entity-länkar via kapitel-linkify.js (NPCs orange, platser purple)
+- ✅ Info-box (purple) för Selenes hemliga roll
+- ✅ Quote-boxar för Ylvas sista ord och arresterings-order
+
+**Validerat mot kampanjkrönika.md:**
+- ✅ 100% baserad på kampanjkrönika.md (rad 997-1385)
+- ✅ Kronologisk ordning korrekt
+- ✅ Inga uppfunna händelser
+- ✅ Alla viktiga NPCs inkluderade (Ylva, Nilmar, Selene, Esma, Garsten, tvillingar, Marvo, Laszlo, Burhak, Fru Gerda, Lina, Alrik, Kaelar, Kung Vidkun)
+
+**Nyckelsektioner:**
+- **h2:** Priset för att följa hjältar, Frostnymfen, Fem farliga dagar, Triumferande hemkomst, Äventyrarnas hus, Vila och planering, Efterdyningarna
+- **h3:** Bakhållet, Graven, Fartyget, Besättningen, Dag 1-5, Lantrådet, Belöning, Hemmet, Livet, Sorgens arbete, Kaelar, Förberedelser, Hagges löfte
+
+**Narrativa höjdpunkter:**
+- Ylvas död och Thrakkas oväntat värdiga hyllning till henne
+- Frostnymfens besättning som mikroskosm av Soffias nätverk
+- De fem dagarnas eskalerande paranoia och sabotage
+- Gordons reflektion: "Hjältar var dyra att följa"
+- Äventyrarnas hus som temporärt hem
+- Avslutande scen: Gordon vid fönstret, "Troligtvis [kommer vi dö där]. Men vi går ändå."
 
 ---
 
@@ -154,17 +226,17 @@
 
 ## BEFINTLIGA KAPITEL
 
-**Skrivna (6 st):**
+**Skrivna (7 st):**
 - ✅ Prolog: Tirakgraven
 - ✅ Kapitel 1: Jakten
 - ✅ Kapitel 2: Muhad
 - ✅ Kapitel 3: Tarkas
 - ✅ Kapitel 4: Jargien
-- ✅ **Kapitel 5: Vargnäset** (NYA!)
+- ✅ Kapitel 5: Vargnäset (Zentris försvinnande, Thrakkas ankomst)
+- ✅ **Kapitel 6: Vitterdal** (NYA! Ylvas död, Frostnymfen, hemkomst)
 - ✅ Kapitel 9: Mithera
 
-**Saknas (5 st):**
-- ❌ Kapitel 6: Vitterdal
+**Saknas (4 st):**
 - ❌ Kapitel 7: Vargnäset igen (ockupation)
 - ❌ Kapitel 8: Evakueringen
 - ❌ Kapitel 10: Skugglandet

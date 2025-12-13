@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 6: Återkomst till Vitterdal - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        /* Chapter Header */
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Prose Styling */
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul {
+            margin: 1rem 0 1.5rem 2rem;
+            list-style-type: disc;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        /* Image Styling */
+        .chapter-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin: 2rem auto;
+            display: block;
+            border: 2px solid var(--border);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Quote Styling */
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Entity Links - klickbara NPCs, platser, fraktioner */
+        .entity-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+            transition: all 0.2s ease;
+        }
+        .entity-link:hover { border-bottom-style: solid; }
+        .entity-npc { color: var(--flame-orange); }
+        .entity-plats { color: var(--mystic-purple); }
+        .entity-fraktion { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <!-- Chapter Header -->
+        <header class="chapter-header">
+            <h1>Kapitel 6: Återkomst till Vitterdal</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Från Vargnäset till Vitterdal via Raunfloden, Cermira</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Umnatak, Kazrik, Thrakka, Hagge</div>
+            <div class="chapter-meta"><strong>Pris:</strong> Ylvas liv, jakten intensifieras</div>
+        </header>
+
+        <!-- Prose Content -->
+        <article class="prose">
+            <h2>Priset för att Följa Hjältar</h2>
+
+            <p>Vinterkylan bet genom kläder och hud när gruppen lämnade Vargnäset. Zentri var försvunnen - hämtad av någon eller något in i natten. I hans ställe red Thrakka, tiraken med järnhand och ögon som sett för mycket av arenans blod.</p>
+
+            <p>Gordon räknade huvuden för tredje gången den morgonen. Fem krigare. En jarl som behövde eskorteras hem. Och en flicka som inte borde varit där.</p>
+
+            <p>Ylva hade följt med karavanen från en liten by vars namn redan glömts. Sexton år, jägarflicka, ivrig att se världen utanför skogarnas gröna fängelse. Hon hade hjälpt till med jakt och spaning, lyssnat fascinerande på Gordons berättelser om Cirefalien, lärt sig överlevnadstekniker av Umnatak.</p>
+
+            <p>Hon var oskyldig. Optimistisk. En påminnelse om det normala liv de försvarade.</p>
+
+            <p>Gordon hade vetat att hon inte borde följa med. Men flickan hade leende och mod, och han hade inte haft hjärta att säga nej.</p>
+
+            <p>Det var ett misstag.</p>
+
+            <hr>
+
+            <h3>Bakhållet i Bergspasset</h3>
+
+            <p>Det kom på tredje dagen, i ett smalt pass där bergsväggarna reste sig som väktare på båda sidor. Platsen var för perfekt - ett ord som alltid varnade Gordon om fara.</p>
+
+            <p>Kazrik såg det först. Dvärgögon var tränade för att finna det som inte stämde, det som var för rätt, för arrangerat.</p>
+
+            <p>"Stanna," sa han. Rösten låg, kontrollerad. "Detta är—"</p>
+
+            <p>Armborstspilar slog ner som hagel av stål och fåfänga. De kom från båda sidor, koordinerade, dödliga. Kärlingarna - Systrarna - hade väntat på rätt ögonblick.</p>
+
+            <p>Gordon kastade sig ur sadeln. Umnatak var redan bland stenarna, rörde sig som skugga mot skugga. Thrakka höjde skölden - instinkt från arenan där reflexer avgör mellan liv och död.</p>
+
+            <p>Ylva försökte ta skydd.</p>
+
+            <p>Pilen träffade henne där inget läkemedel kunde hjälpa. Hon föll, så tyst, som om döden var något naturligt och väntat.</p>
+
+            <p>Gordon såg Kazriks händer - korta, starka dvärghänder - arbeta febrillt mot såret. Men dvärgögonen talade redan sanningen. Armborstslodet hade gått för djupt.</p>
+
+            <div class="quote">
+                "Jag försökte ta mig i skydd," viskade Ylva. Hennes ansikte plötsligt så mycket yngre i dödens närhet. "Trodde jag kunde vara till hjälp."
+            </div>
+
+            <p>Hagge ville säga något tröstande, något värdigt. Men orden fastnade. Vad säger man till ett barn som dör för att det råkade befinna sig i närheten av någon som andra vill döda?</p>
+
+            <p>Thrakka knäböjde vid Ylvas sida. Tirakens väderbitna ansikte, vanligtvis hårt som granit, mjuknade en aning - en sällsynt gest för någon som levt liv där svaghet betyder död.</p>
+
+            <p>"Du dog med heder, jägare," sa hon lågt, med en värdighet ingen väntat sig. "Mahktah kommer minnas ditt mod."</p>
+
+            <p>Ylvas hand grep tag i Hagges. Fingrarna så små och redan kalla. Hon hade berättat om skogarna runt hennes hem, om hur hon en gång följt en älg i tre dagar för att få mat till sin sjuka syster.</p>
+
+            <div class="quote">
+                "De vet... mer än de borde... om er alla..."
+            </div>
+
+            <p>Hennes hand slappnade av. Ljuset i hennes ögon slocknade.</p>
+
+            <p>Umnatak hade redan jagt angriparna in i bergen, men Kärlingarna var försvunna som dimma i morgonsol. De hade fått vad de ville - en påminnelse om att gruppen var jagad, och att ingen i deras närhet var säker.</p>
+
+            <h3>Graven vid Vägen</h3>
+
+            <p>De reste en grav av stenar. Det minsta de kunde göra. Kazrik mumlades en dvärgedsformulering - ord för de som faller långt från hem. Umnatak la örter vid stenarna som skulle hjälpa anden hitta vägen.</p>
+
+            <p>Gordon tänkte på Ylvas mor och syster, som nu skulle vänta förgäves. Någon måste berätta för dem. Men det skulle inte bli han. Hans resa ledde honom åt ett annat håll.</p>
+
+            <p>Hagge såg längst på graven. Han hade förlorat mycket redan - sin far, sitt arv, nästan sitt liv. Nu en flicka som följt honom i tron att hjältar kunde hålla andra säkra.</p>
+
+            <p>Hjältar var dyra att följa.</p>
+
+            <p>Ylvas sista ord ekade: <em>"De vet... mer än de borde... om er alla..."</em></p>
+
+            <p>Kärlingarna hade vetat precis var de skulle hitta gruppen. Någon hade berättat. Någonstans därute jagade någon fortfarande gruppen, och jakten var långt ifrån över.</p>
+
+            <hr>
+
+            <h2>Frostnymfen - Uppför Raunfloden</h2>
+
+            <p>Efter Ylvas död fortsatte den tysta gruppen mot närmaste flodhamn i Jarla. Vintern var hård och vägarna farliga - de behövde snabbare transport. Lady Soffia hade arrangerat passage uppför Raunfloden mot Vitterdal.</p>
+
+            <h3>Fartyget som Bet Genom Isen</h3>
+
+            <p>Frostnymfen låg förtöjd vid kajen när de anlände - ingen elegant flodpråm utan en arbetshäst byggd för vinterfloden. Arton meter lång, åtta meter bred, med en förstärkt stäv som format sig som frostblommor i järnbeslag.</p>
+
+            <p>Gordon kände igen designen omedelbart. Tirakisk konstruktion - praktisk, funktionell, byggd för att överleva snarare än imponera. Två master med latinsegel, däcket förstärkt för hästtransport, små runer insnidade vid styråran.</p>
+
+            <p>Kazrik nickade gillande när han såg konstruktionen. "Någon som vet vad de gör har byggt den här. Vattenkar med heta stenar för att hålla kölen isfri - smart."</p>
+
+            <p>Kapten Nilmar "Isnavigatorn" Gromsk väntade vid landgången. Tirak med väderbitna ansikte och skägg som bar spår av frost. Vänsterörat saknades - gammal förfrysningsskada, gissade Gordon. Kaptenen sa inget i välkomst, bara nickade och pekade mot däcket.</p>
+
+            <p>Kort på ord, lång på respekt. Gordon gillade honom omedelbart.</p>
+
+            <h4>Besättningen - Fler Än De Verkade</h4>
+
+            <p>Selene "Silveröga" Kazarov var underbefäl - asharisk kvinna på fyrtiofem med ett konstgjort silveröga som reflekterade ljuset på ett sätt som fick folk att stirra för länge. Hon mötte Gordons blick och höll den - inte utmanande, bara utvärderande.</p>
+
+            <p>När hon såg Hagge gav hon honom en menande blick. Hon <em>kände igen honom</em>.</p>
+
+            <p>Garsten "Soppsleven" Tretre var kock och ryktesspridare - pratglad på det sätt som bara de som spenderar för mycket tid ensamma kan vara. Inom en timme hade de lärt sig mer om Kärlingarnas patrullering längs floden än de ville veta.</p>
+
+            <p>"Och inte bara det," sa Garsten medan han rörde i en gryta som luktade bättre än den såg ut, "det sägs att någon med magiska krafter letar efter något... eller någon."</p>
+
+            <p>Hans blick flackade mot Thrakka. Tiraken bara mötte hans blick tills kocken vände sig tillbaka till grytan.</p>
+
+            <p>Esma Randarrohästare skötte hästarna med händer som visste exakt hur mycket kraft som behövdes - aldrig för mycket, aldrig för lite. Hon kände igen Vitterdals hästträningsmetoder på Hagges häst omedelbart.</p>
+
+            <p>"Du är verkligen Lady Soffias son," sa hon. Inte en fråga.</p>
+
+            <p>Resten av besättningen var en blandning - Burhak "Daggryningen" som sjöng lågmält på främmande språk, Laszlo med överkropp som en björn och röst som en fågel, tvillingarna Yrka och Yrko som blev nervösa vid minsta farosignal, Marvo "Isfingrarna" som kände igen isens svagaste punkter genom att bara röra vid den.</p>
+
+            <p>Alla tjänade Lady Soffia, förstod Gordon. Frostnymfen var mer än transport - det var en del av Soffias nätverk, den tysta infrastruktur som höll hennes makt levande även när kungamakten ville krossa den.</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">Vad de inte visste</div>
+                <p>Selene "Silveröga" var inte bara underbefäl - hon var en av Lady Soffias mest värdefulla informanter längs Raunfloden, medlem i ett hemligt nätverk som hjälpte förföljda att fly från kungamaktens grepp. Det silverögat hade sett mer än de flesta kunde ana, och rapporterat allt till Vitterdal.</p>
+            </div>
+
+            <hr>
+
+            <h2>Fem Farliga Dagar</h2>
+
+            <h3>Dag Ett - Avgång från Jarla</h3>
+
+            <p>Morgondimman hängde tung när Frostnymfen kastade loss. Den förstärkta stäven började metodiskt bryta igenom morgonisen - ljudet som krossad kristall, vackert och våldsamt på samma gång.</p>
+
+            <p>Selene sökte upp gruppen när de andra inte såg.</p>
+
+            <p>"Kapten Nilmar tjänar Lady Soffia," sa hon lågt. "De flesta här gör det. Men var försiktig med vad ni säger - öron finns överallt, även på floden."</p>
+
+            <p>Gordon nickade. Det visste han redan. Det visste man alltid.</p>
+
+            <p>Esma hittade Hagge vid hästspiltorna senare på dagen.</p>
+
+            <p>"Situationen i Vitterdal är spänd. Din mor har förstärkt Mitrahus med hjälp av dvärgar från Morgonstjärnornas faliska kontakter. Men Kärlingarnas män försöker stänga av alla tillförselvägar." Hon tittade ut över floden. "Hon väntar på dig. Lantrådet har flyttats fram."</p>
+
+            <p>Det var vad Hagge fruktade - att tiden höll på att rinna ut.</p>
+
+            <h3>Dag Två - Isbarriären</h3>
+
+            <p>Gryningen avslöjade ett problem. Isbarriär från strand till strand - tjock, massiv, betydligt mer än vad Frostnymfen normalt kunde hantera.</p>
+
+            <p>Nilmar stod i fören, studerande isen med ögon som läst Raunflodens vrede i tjugo vintrar.</p>
+
+            <p>"Detta är inget naturligt isverk," sa han. Rösten neutral, men Gordon hörde vad som inte sades - <em>någon byggde detta för att stoppa oss</em>.</p>
+
+            <p>Umnatak spårade fotspår längs strandbrinken medan Kazrik undersökte isens struktur. Slutsatsen var enkel och oroande - isen var hackad från andra delar och staplad här under natten.</p>
+
+            <p>Gordon hittade svagare punkt i barriären. Burhak och Laszlo högg i isen med specialverktyg - långsamt, metodiskt, timmars arbete för varje meter framgång. Marvo kände fram svagaste punkterna.</p>
+
+            <p>Efter flera timmar bröt de igenom. Men besättningen var nu övertygad - någon försökte aktivt förhindra resan till Vitterdal.</p>
+
+            <h3>Dag Tre - Ljussignalerna</h3>
+
+            <p>Natten sänkte sig. Frostnymfen gled genom mörkret som en skugga på vatten. Sedan såg de ljusen - blinkande från båda stränder, koordinerad signalering.</p>
+
+            <p>Selene och Nilmar viskade intensivt vid styråran. Tvillingarna blev nervösa, händerna på knivarna. Burhak började sjunga lågmält - en tirakisk sång för att dämpa ljudet av deras passage.</p>
+
+            <p>Thrakka kom till Gordon, ögonen på ljusen.</p>
+
+            <p>"Detta är en variant av tirakiska spaningssignaler," sa hon. "Anpassade för Systrarna. De vet att vi färdas på floden."</p>
+
+            <p>Genom en trång floddel där båda stränder var farligt nära manövrerade Nilmar med precision som skulle imponerat även på Cirefaliens bästa navigatörer. En pil slog ner i masten - en varning, inte direkt anfall.</p>
+
+            <p><em>Vi vet var ni är. Vi kan döda er när vi vill.</em></p>
+
+            <p>Selene bekräftade senare: "Vi tror att Systrarna samarbetar med någon av kungens män."</p>
+
+            <p>Naturligtvis gjorde de det. Fiender av din fiende behöver inte vara vänner - bara temporära allierade i jakten på gemensamt byte.</p>
+
+            <h3>Dag Fyra - Den Övergivna Handelsstationen</h3>
+
+            <p>Handelsstationen låg övergiven vid flodens kurva. Tecken på hastig utrymning - utrustning kvar, eldstaden kall men inte länge.</p>
+
+            <p>Nilmar beslutade stanna. "För riskabelt att fortsätta nu. De patrullerar floden dagtid, och vi är för synliga. Vi stannar här till kvällen."</p>
+
+            <p>Kazrik genomsökte byggnaden medan de andra höll vakt. Han hittade dokument som berättade mer än vad de ville veta - order med tydliga instruktioner:</p>
+
+            <div class="quote">
+                "Arrestera den förrädiska tirakkvinnan och Vitterdals arvinge på flykt österifrån."
+            </div>
+
+            <p>Det fanns kartmaterial med rutter mot Vitterdal markerade. Tecken på våld - blod på golvet, ännu inte helt torkat.</p>
+
+            <p>Under eftermiddagen närmade sig en patrullbåt. Gruppen gömde sig medan besättningen spelade oinformerade handlare. Spännande timmar medan patrullen genomsökte området.</p>
+
+            <p>Esma kände igen en av männen - en förrädare från Mitrahus som sålt sig till kungamakten.</p>
+
+            <p>När patrullen äntligen försvann hjälpte gruppen Laszlo reparera skador från isflak - tyst arbete under tvunget tystnad för att inte avslöja position.</p>
+
+            <h3>Dag Fem - Fallet vid Forsen</h3>
+
+            <p>Tidigt morgon nådde de forsområdet. Enorma isformationer skapade labyrint genom vilken vattnet forsade våldsamt - naturen som kämpade mot vinterns grepp.</p>
+
+            <p>Nilmar studerade vattnet länge innan han talade.</p>
+
+            <p>"Vi kan inte fortsätta med Frostnymfen. Forsen är för farlig med dessa isformationer. Jag tar båten på längre men säkrare rutt." Han vände sig till gruppen. "Ni måste fortsätta till fots."</p>
+
+            <p>Esma erbjöd sig omedelbart. "Jag känner till genvägar genom Vitterdal som inte finns på några kartor. Jag följer med som guide."</p>
+
+            <p>Selene gav Hagge ett speciellt sigill - en liten symbol i silver som glänste i morgonljuset.</p>
+
+            <p>"Om ni stöter på medlemmar i nätverket, visa detta. De kommer hjälpa er."</p>
+
+            <p>Tvillingarna gav Umnatak mystisk påse örter. "För skydd mot andevärldens faror."</p>
+
+            <p>Nilmars sista information kom privat till Hagge: "Din mor väntar. Lantrådet har flyttats fram - ni har mindre än en vecka på er."</p>
+
+            <p>Marvo varnade när de lämnade: "Följ inte huvudvägarna. Kärlingarnas vargmän patrullerar dem dygnet runt."</p>
+
+            <p>Gruppen samlade tillhörigheter och hästar. De såg Frostnymfen långsamt manövrera bort och börja sin långa omväg. Kapten Nilmar stod i aktern och höjde handen i tyst hälsning.</p>
+
+            <p>Framför dem bredde det snötäckta landskapet ut sig, med Vitterdals berg synliga som mörka silhuetter vid horisonten.</p>
+
+            <p>Esma pekade mot bergen. "Tre dagars marsch, om vi håller hög fart och har lyckan med oss. Vi tar genvägen genom Vintervargarnas klyfta - snabbare men farligare."</p>
+
+            <p>Gordon såg på gruppen. De hade kommit långt - förlorat mycket. Men de hade också lärt sig. De visste nu att Systrarna och kungens män jagade dem aktivt. Att förrädare fanns i Mitrahus. Att tiden var knapp.</p>
+
+            <p>Och att ett hemligt nätverk arbetade för Lady Soffia, något som kunde vara skillnaden mellan liv och död när de äntligen nådde Vitterdal.</p>
+
+            <hr>
+
+            <h2>Triumferande Hemkomst</h2>
+
+            <p>Tre dagar senare såg de Vitterdals murar resa sig mot vinterhimlen. Ingen tittade tillbaka. Ingen räknade hur många de förlorat på vägen. Det spelade ingen roll nu - de var framme.</p>
+
+            <p>Lady Soffia väntade vid porten - en kvinna vars ansikte bar samma trötthet som alla som kämpat för länge mot för många. Men när hon såg Hagge släppte kontroll en aning, och ögonen blev blanka.</p>
+
+            <p>"Välkommen hem, min son."</p>
+
+            <p>Det var ord Hagge inte hört på länge. Hem. Som om sådant fanns för dem som jagats över halva kontinenten.</p>
+
+            <p>Men när han såg in i Mitrahus stora hall - den hall där hans far en gång suttit, där jarlarna hållit råd i generationer - kände han något nytt. Inte hopp, det var för stort ord. Men kanske... möjlighet.</p>
+
+            <h3>Lantrådet - Legitimiteten Säkrad</h3>
+
+            <p>Talarra var redan död och begravd. Hagges far, jarlen som förlorat allt till kungamaktens girighet. Lantrådet sammankallades för att bekräfta arvinge.</p>
+
+            <p>Kung Vidkun hade försökt ta kontroll - skickat sina män för att protestera, hävda att Hagge var outbildad, ovärd, för ung. Men Lady Soffia hade spelat sina kort perfekt. Vitterdals adel stod bakom henne. Dvärgar från Morgonstjärnornas faliska kontakter vittnade om Hagges ärlighet. Handlare som gynnats av Mitrahus talade för kontinuitet.</p>
+
+            <p>När röstningen kom var resultatet inte ens nära.</p>
+
+            <p>Hagge Vitterdal, son av Talarra, erkändes officiellt som ny jarl av Vitterdal.</p>
+
+            <p>Gordon såg det från sin plats vid väggen - hur Hagge satte sig i stolen hans far en gång suttit i, hur vikten av ansvar syntes i varje muskel i adelsmannens rygg.</p>
+
+            <p>Kung Vidkun hade förlorat. Åtminstone denna gång.</p>
+
+            <h3>Belöningsceremonin - Skuld Betalad</h3>
+
+            <p>Dagen efter lantrådet anordnade Hagge formell ceremoni i Mitrahus stora hall. Gordon kände sig malplacerad i sådan omgivning - legosoldat hörde hemma på slagfältet, inte bland vävda tapeter och förgyllda kandelabrer.</p>
+
+            <p>Men Hagge hade insisterat.</p>
+
+            <p>"Gordon Nahrzezia," sa jarlen, rösten bar genom hallen, "du har räddat mitt liv mer än en gång. Du har lett med ära när andra skulle sviktat. Vitterdal står i evig tacksamhetsskuld."</p>
+
+            <p>Han räckte över en kaptenssymbol - en stiliserad örn i silver.</p>
+
+            <p>"Du är härmed utnämnd till Kapten av Vitterdals Hederskompani."</p>
+
+            <p>Gordon tog emot symbolen. Den var tyngre än den såg ut. De var alltid det.</p>
+
+            <p>"Umnatak," fortsatte Hagge, "din kunskap har fört oss säkert genom faror ingen annan kunde navigerat. Ta emot denna ceremoniella jaktkniv, och med den livslångt jaktprivilegium på Vitterdals mark."</p>
+
+            <p>Umnatak tog emot kniven med en bugning. Han sa inget - ausern hade aldrig varit man av många ord - men respekten i gesten talade tydligare än ord.</p>
+
+            <p>"Kazrik klan Ghor," sa Hagge, "din visdom och lärdom har varit ovärderlig. Du erkänns härmed som lärd man, med handelsrättigheter och plats vid jarlets råd om du så önskar."</p>
+
+            <p>Kazrik log - ett sällsynt uttryck på dvärgans ansikte. "Jag kommer dokumentera detta. Någon måste komma ihåg."</p>
+
+            <p>"Och Thrakka 'Järnhanden'," sa Hagge, vändande sig mot tiraken, "du är formellt välkommen som medlem av detta kompani. Din styrka och heder har redan bevisats. Vitterdal erkänner dig."</p>
+
+            <p>Thrakka nickade. Arenakrigaren hade inte väntat sig erkännande - för människor som henne var respekt något man tog, inte fick. Men hennes ögon talade om att hon accepterade det ändå.</p>
+
+            <p>"Till er alla," sa Hagge, "beviljas skattefrihet, hus på Mitrahus mark, och - om ni så önskar - option på Grensfortet som bas för framtida verksamheter."</p>
+
+            <p>Gordon tänkte på alla som dött för att nå hit. På Ylva vid bergpasset. På Zentri, försvunnen i Skugglandet. På legosoldater vars namn redan glömts.</p>
+
+            <p>Belöningar kunde inte väga upp sådant. Men de kunde göra det som återstod att göra lite lättare att utföra.</p>
+
+            <hr>
+
+            <h2>Äventyrarnas Hus - Hemmet vid Mitrahus</h2>
+
+            <p>Huset låg på Mitrahus mark - stort tegelhus i två våningar med gaveln vänd mot norr och entrén mot söder. Högt stängsel med port runt privat mark. Liten men välskött trädgård.</p>
+
+            <p>Lokalbefolkningen började kalla det "Äventyrarnas hus" nästan omedelbart. Gordon hatade namnet. Men det fastnade ändå.</p>
+
+            <h3>Hemmet de Inte Väntat Sig</h3>
+
+            <p>Bottenvåningen hade matsal med öppen spis och stort träbord för tio personer - för många för dem fyra, men Hagge hade insisterat på att de skulle kunna ta emot gäster. Allrum med bekväma sittgrupper och bokhyllor som Kazrik omedelbart började fylla. Kök med modern eldstad som fick Umnatak att nicka gillande.</p>
+
+            <p>Övervåning hade fyra sovrum med enstaka sängar - ett för var och en - plus ett större rum med dubbelsäng för gäster eller Hagge vid besök. Två eldstäder höll värmen, och ett mindre sällskapsrum för privata samtal.</p>
+
+            <p>Uthusbyggnad innehöll stall för sex hästar, lager för utrustning, och ett arbetsrum som Kazrik omedelbart konfiskerade för sitt skrivande.</p>
+
+            <p>Fru Gerda var hushållerskan - femtio år, före detta Mitrahus-tjänare, pålitlig och diskret. Hon tog hand om huset som om det var hennes eget.</p>
+
+            <p>"Aldrig trott jag skulle tjäna äventyrare," sa hon efter första veckan. "Men ni är artiga, betalar i tid, och dör inte i sängarna. Bättre än adeln!"</p>
+
+            <p>Lina var köksbiträdet - tjugo år, livlig, pratglad, duktig på att laga lokal mat. Hon lärde Umnatak om cermiriska örter och fick höra om auser-traditioner i utbyte.</p>
+
+            <p>Alrik var stallknekten - sexton år, ivrig, pålitlig, beundrade "äventyrarna" över allt. Han såg på dem som Gordon en gång sett på gamla legionärer - som om de bar svar på frågor han ännu inte visste hur han skulle ställa.</p>
+
+            <h3>Livet Mellan Uppdragen</h3>
+
+            <p>Gordon njöt av eldstaden i allrummet. Han bjöd ofta Kaelar och gamla kompani-medlemmar på middag - matsal blev mötesplats för att diskutera strategi, minnas gamla strider, planera framtiden.</p>
+
+            <p>Umnatak tillbringade tid i trädgården. Han saknade Ylva mest där - flickan skulle älskat att springa i gräset, hjälpa till med örterna. Hans rum var enkelt möblerat, nästan klosterliknande. Han behövde inte mer.</p>
+
+            <p>Kazrik förvandlade uthusarbetsrummet till författarverkstad. Där arbetade han på nya kapitel i "Kazriks resor" - dokumentering av allt de upplevt, alla de mött, alla som fallit. Någon måste komma ihåg.</p>
+
+            <p>Han korresponderade med sin klan i Khazim Renk Ghor. Breven hem blev längre och längre - så mycket att berätta, så lite tid att göra det.</p>
+
+            <p>Thrakka anpassade sig till cermirisk livsstil med överraskande lätthet. Hon tränade med träsvärd i trädgården varje morgon - gamla rutiner från arenan, nu utförda utan publik eller blod. Hennes rum var sparsamt möblerat.</p>
+
+            <p>"Gladiator behöver inte lyx," sa hon när Fru Gerda frågade om hon ville ha mer möbler. "Behöver bara vapen och plats att sova."</p>
+
+            <p>För första gången sedan legokompaniet splittrades hade gruppen en <em>bas</em> - en plats att återvända till. Ett hem.</p>
+
+            <p>Men de visste alla: detta var tillfälligt. Zentri väntade i Skugglandet. Så snart de var redo skulle de ge sig av igen.</p>
+
+            <hr>
+
+            <h2>Vila och Planering</h2>
+
+            <p>De vilade en vecka. Inte för att de ville - kroppen krävde det. Månaders strapatser tar sin tribut, och även Gordon - som ledde män sedan han var tjugo - behövde erkänna att utmattning dödar lika säkert som svärd.</p>
+
+            <h3>Sorgens Arbete</h3>
+
+            <p>Zentris tomhet kändes mest vid middagarna. Sex stolar vid bordet, fem personer. De försökte fylla tystnaden med samtal, planering, berättelser. Men stolen förblev tom.</p>
+
+            <p>Ylva begravdes vid Ylva. En jägarflicka långt från hem, liggande under cermirisk sten. Umnatak besökte graven varje dag den första veckan - la örter, viskade till andar, processade skuld som ingen annan kunde hjälpa honom bära.</p>
+
+            <p>"Jag borde sagt åt henne att stanna hemma," sa han till Gordon en kväll.</p>
+
+            <p>"Hon skulle inte lyssnat," svarade Gordon. "De gör aldrig det."</p>
+
+            <h3>Kaelar Stålsvärd - Gammal Vän, Ny Tjänst</h3>
+
+            <p>Kaelar accepterade tjänst som Hagges huskapten och flyttade in i Mitrahus. Den gamle kompanikapten - nu långt från Stålsvärdskavaleristerna - hade äntligen hittat ny plats att tjäna.</p>
+
+            <p>"Trodde aldrig jag skulle bli hovman," sa han när han besökte Äventyrarnas hus. "Men jarlen behöver folk han kan lita på. Och det finns för få av dem."</p>
+
+            <p>Han och Gordon pratade länge den kvällen - om gamla strider, förlorade kamrater, vad som återstod att göra. Kaelar kände till Lord VinterGlöd, demonen Urkhath, och jakten på Zentri.</p>
+
+            <p>"När ni ger er av efter honom," sa han, "gå med Vitterdals stöd. Hagge har gett order - proviant, utrustning, vapen - begär vad ni behöver."</p>
+
+            <h3>Förberedelser för det Oundvikliga</h3>
+
+            <p>Umnatak bad om tid att förbereda schamanistisk spårning. Han behövde drömma, kontakta andar, hitta vägen till Skugglandet.</p>
+
+            <p>Kazrik sökte information om Skugglandet i Vitterdals bibliotek. Gamla texter talade om förvrängd verklighet, demoners rike, platser där naturens lagar inte längre gällde.</p>
+
+            <p>"Ingenting av detta är uppmuntrande," rapporterade han efter tre dagars läsning. "Vi kommer troligtvis dö där."</p>
+
+            <p>"Troligtvis," höll Gordon med. "Men vi går ändå."</p>
+
+            <p>Gordon rekryterade potentiella medhjälpare - folk som kunde vara till nytta när de gav sig av. Guider. Översättare. Någon som känt till Skugglandet och överlevt att berätta.</p>
+
+            <p>Sådana var sällsynta. De flesta som gick till Skugglandet återkom inte.</p>
+
+            <p>Thrakka tränade och förberedde utrustning. Hon vässte vapen, kontrollerade rustning, packade proviant. Metodiskt, disciplinerat - arenan hade lärt henne att förberedelse var skillnaden mellan att leva och dö.</p>
+
+            <h3>Hagges Löfte</h3>
+
+            <p>På kvällen innan de planerade ge sig av kom Hagge till huset. Jarlen av Vitterdal bar kronan som om den tyngde honom - och kanske gjorde den det.</p>
+
+            <p>"När ni ger er av efter er kamrat," sa han, "går ni med hela Vitterdals stöd. Proviant, utrustning, vapen - begär vad ni behöver."</p>
+
+            <p>Gordon nickade. "Vi behöver guide. Någon som känner till vägen."</p>
+
+            <p>"Jag ska hitta en," lovade Hagge.</p>
+
+            <p>Kazrik frågade om kartmaterial. Umnatak om örter och ritualobjekt. Thrakka om bättre rustning.</p>
+
+            <p>Hagge lovade allt. Han var jarl nu - han hade resurser som en gång legosoldater bara drömt om.</p>
+
+            <p>Men när han lämnade såg Gordon sorgen i adelsmannens ögon. Hagge visste vad de gav sig in på. Visste att chansen var stor att de inte kom tillbaka.</p>
+
+            <p>Och han kunde inte göra något för att stoppa dem.</p>
+
+            <hr>
+
+            <h2>Efterdyningarna</h2>
+
+            <p>Gordon stod vid sitt fönster den kvällen och såg ut över Vitterdal. Staden låg utbredd nedanför - ljus från spiseldar, röken från smedjor, livet som fortsatte oavsett vad som hände för de som levde på knivsegg.</p>
+
+            <p>Han tänkte på Zentri. På demonringen. På Lord VinterGlöd och Urkhath. På Ylva vid bergpasset och alla andra som dött längs vägen.</p>
+
+            <p>De hade ett hem nu. Skattefrihet. Erkännande. Allt en legosoldat kunde önska.</p>
+
+            <p>Men Zentri var fortfarande försvunnen.</p>
+
+            <p>Och så länge han var det kunde de inte vila. Inte verkligen.</p>
+
+            <p>Kazrik hade sagt det bäst: "Vi kommer troligtvis dö där."</p>
+
+            <p>Gordon drack ur sin kopp och vände sig från fönstret.</p>
+
+            <p>"Troligtvis," sa han till tomma rummet. "Men vi går ändå."</p>
+
+            <p>För det var vad man gjorde. Inte för att det var smart. Inte för att oddsen var bra. Utan för att kamrater inte lämnade kamrater, och några löften var viktigare än överlevnad.</p>
+
+            <p>Äventyrarnas hus skulle stå tomt snart. Fru Gerda skulle undra när de kom tillbaka. Lina skulle hålla köket rent. Alrik skulle sköta hästarna.</p>
+
+            <p>Och de skulle ge sig av mot Skugglandet, mot Lord VinterGlöd, mot en räddningsmission som troligtvis var dömd att misslyckas.</p>
+
+            <p>Men först - en natt till i varma sängar. En middag till vid eldstaden. Ett kort ögonblick av fred innan stormen.</p>
+
+            <p>De hade tjänat åtminstone så mycket.</p>
+        </article>
+    </div>
+
+    <!-- Auto-link script -->
+    <script src="../wiki_data.js"></script>
+    <script src="kapitel-linkify.js"></script>
+</body>
+</html>
