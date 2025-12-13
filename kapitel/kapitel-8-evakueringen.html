@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 8: Evakueringen - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        /* Chapter Header */
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Prose Styling */
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul, .prose ol {
+            margin: 1rem 0 1.5rem 2rem;
+            list-style-type: disc;
+        }
+
+        .prose ol {
+            list-style-type: decimal;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        /* Image Styling */
+        .chapter-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin: 2rem auto;
+            display: block;
+            border: 2px solid var(--border);
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Quote Styling */
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Entity Links - klickbara NPCs, platser, fraktioner */
+        .entity-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+            transition: all 0.2s ease;
+        }
+        .entity-link:hover { border-bottom-style: solid; }
+        .entity-npc { color: var(--flame-orange); }
+        .entity-plats { color: var(--mystic-purple); }
+        .entity-fraktion { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <!-- Chapter Header -->
+        <header class="chapter-header">
+            <h1>Kapitel 8: Evakueringen</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Flykt från Vargnäset genom vinterlandskap till Raunfloden</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Umnatak, Kazrik, Thrakka, Corvus + 41 överlevande bybor</div>
+            <div class="chapter-meta"><strong>Tidsperiod:</strong> 5 dagar genom helvetet (-15°C)</div>
+        </header>
+
+        <!-- Prose Content -->
+        <article class="prose">
+            <h2>Upptäckten</h2>
+
+            <p>De kunde se Vargnäset redan från skogslinjen. Dimman hade lättat över natten, och den tidiga morgonsolen kastade långa skuggor över byn. Men det var inte dimman som fick Gordon att stanna.</p>
+
+            <p>Det var flaggan.</p>
+
+            <p>Silverfärg mot rött - Arvorns Hammares färger - hängde från det gamla värdshuset där Ingvild brukade servera öl och frågor. Flaggan rörde sig långsamt i vinden, som en hand som vinkade farväl.</p>
+
+            <p>"Jävlar," sa Kazrik.</p>
+
+            <p>Det var allt som behövde sägas.</p>
+
+            <h3>Korsfästelsen</h3>
+
+            <p>De såg henne från femtio meter. Ett barn - inte mer än tolv år - uppspikat på en träställning framför bykyrkan. Hennes blod hade stelnat mörkt mot vit snö.</p>
+
+            <p>Corvus stod stilla längre än Gordon trodde var möjligt. Längre än andningen borde tillåta. Sedan föll han på knä i snön och kräktes.</p>
+
+            <p>"Astrid," viskade han när han kunde tala igen. "Hennes namn var Astrid."</p>
+
+            <p>Gordon visste inte vad han skulle säga. Det fanns inga ord för detta. Kazrik dokumenterade det ändå - dvärgen skrev allt, för någon måste komma ihåg - men hans hand skakade när han höll pennan.</p>
+
+            <p>Thrakka sa ingenting. Tiraken hade sett värre i arenan. Men detta var ingen arena. Det fanns ingen publik som jublade. Bara vind och snö och en död flicka vars enda brott var att skydda sina grannar.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Sankt Astrid - Martyren</div>
+                <p>Astrid hade ljugit för att skydda gruppen från häxjägarna. När Arvorns Hammare kom tillbaka till Vargnäset frågade de om "de farliga männen som kommit till byn."</p>
+                <p>Astrid sa att hon sett dem gå söderut. Hon visste att det var en lögn som kunde kosta. Hon gjorde det ändå.</p>
+                <p>Kommendör Corvus Askhar - fortfarande lojal mot ordens doktrin - korsfäste henne själv.</p>
+            </div>
+
+            <h3>Corvus Uppenbarelse</h3>
+
+            <p>Vad han inte berättade för de andra var vad som hände när han slog i den sista spiken.</p>
+
+            <p>Daak talade till honom.</p>
+
+            <p>Inte genom en präst, inte genom skrifterna, utan direkt - en röst så tydlig att den nästan krossade hans tankar. Och det den sa bröt tjugotre års övertygelse i bitar små som glas.</p>
+
+            <p><em>Detta är inte mitt verk. Detta har aldrig varit mitt verk.</em></p>
+
+            <p>Corvus förstod då. Allt han trott vara heligt - utplåningen av magiker, reningen av de kontaminerade, Arvorns Hammares mission - det var inte Daaks vilja. Det var bara människors våld, inbakat i bön och ceremoni tills det såg ut som himmelsk lag.</p>
+
+            <p>Han kunde inte längre vara kommendör.</p>
+
+            <p>Men om han lämnade skulle Arvorns Hammare utplåna de kvarvarande byborna för att dölja vad som hänt. Det var så orden alltid fungerade - inga vittnen, inga frågor.</p>
+
+            <p>Det fanns bara en lösning.</p>
+
+            <p>Alla måste räddas.</p>
+
+            <hr>
+
+            <h2>Räkningen</h2>
+
+            <p>Gordon räknade de döda för tredje gången. Siffrorna förändrades inte.</p>
+
+            <p>Över hundrasextio döda. Smeden Brynjar Jorundsson avrättad som "upprorsmakare." Familjer utplånade. Barn dödade.</p>
+
+            <p>Fyrtioett personer överlevde.</p>
+
+            <p>Eira Holm, byäldsten med ett ansikte som sett för mycket, stod vid hans sida. Hennes händer darrade när hon höll upp listan - namn skrivna i bläck som sprungit när någon grätit över papperet.</p>
+
+            <p>"De flesta är gamla eller barn," sa hon. Rösten platt, emotionerna begravda djupt för att hon skulle kunna fungera. "Vi har kanske tjugo som kan slåss. Resten..."</p>
+
+            <p>Hon avslutade inte meningen. Det behövdes inte.</p>
+
+            <p>"Hur lång tid innan de kommer tillbaka?" frågade Gordon.</p>
+
+            <p>"De patrullerar varje dag klockan nio. Kommendör Järnkors är punktlig." Eira log bittert. "En dygd hos mördare."</p>
+
+            <p>Gordon såg mot horisonten. Solen hade nästan nått trädtopparna. Fyra timmar till patrullen. Kanske fem om de hade tur.</p>
+
+            <p>"Corvus," sa han. "Berätta om pråmarna."</p>
+
+            <h3>Flykten Planeras</h3>
+
+            <p>Corvus - som kallat sig Arcadius så länge att namnet nästan kändes verkligare än hans eget - hade kontakter. Smugglare, desertörer, folk som levde i skuggorna mellan lag och kaos. Han visste var korrupta flodkaptener kunde hittas.</p>
+
+            <p>Rödskäggs Tillflykt. Ett smugglarläger vid Raunfloden. Tre pråmar tillgängliga:</p>
+
+            <ul>
+                <li><strong>Rimfrosten</strong> - Kapten Nils "Järnhand" Gromsson - 300 silver, 15-20 personer</li>
+                <li><strong>Strömjungfrun</strong> - Kapten Berta "Flodkvinna" Eriksdotter - 250 silver, 10-12 personer</li>
+                <li><strong>Månljuset</strong> - Kapten Lars "Silkeskägg" Nordahl - 400 silver, 12-15 personer</li>
+            </ul>
+
+            <p>"Iskvarnsbryggan," sa Corvus. "Fem dagars marsch. Jag kan rida dit och boka platserna. Ni leder folket sakta efter."</p>
+
+            <p>Gordon såg på honom. Såg mannen som korsfäst ett barn och sedan krossats av vad han gjort. Såg en soldat som valt att bli desertör för att rädda folk han knappt kände.</p>
+
+            <p>"Du behöver inte göra detta," sa Gordon tyst.</p>
+
+            <p>"Jo," sa Corvus. "Jag gör det."</p>
+
+            <div class="info-box purple">
+                <div class="info-box-title">De 41 Överlevande</div>
+                <p><strong>Ledare och specialister (8):</strong> Eira Holm (byäldste), Ingvild (värdshusvärdinnan, läkare), Tomas Järnhjälm (fd. infanterist), Jonna Sköldbärare (fd. gränsvakt), Jossan Fallvind (scout), Skorda Bergsdotter (jägare), Tarek Halvhand (jägare), Faster Solveig (läskunnig)</p>
+                <p><strong>Stridsdugliga vuxna (12):</strong> Dagne, Karn, Rolla, Torik, Ville, Halvdan, Stina, Krake, Nils, Gunnar, Olof, Magnus</p>
+                <p><strong>Ungdomar (8):</strong> Ragnar (16, Astrids pojkvän), Saga (19, naturmagi), Birger, Lovisa, Astrid Björkgren, Johan, Ylva, Embla</p>
+                <p><strong>Äldre (6):</strong> Morfar Ulf, Gammal-Erik, Mormor Astrid, Tant Hildur, Gumman Ragnhild, Farbror Noak</p>
+                <p><strong>Barn (7):</strong> Erik (13), Lilla-Maja (8), Margareta (9), Torkel (11), Sigrid (6), Klas (7), Gustav (4)</p>
+            </div>
+
+            <hr>
+
+            <h2>Dag 1: Uppbrottet</h2>
+
+            <p>De lämnade Vargnäset i gryningen. Ingen tittade tillbaka.</p>
+
+            <p>Corvus och Umnatak red snabbt mot Rödskäggs Tillflykt - två ryttare kunde röra sig fort och smidigt där en grupp på fyrtioett själar bara blev en långsam, skör karavan av hopp och rädsla.</p>
+
+            <p>Gordon ledde marschen med Tomas Järnhjälm och Jonna Sköldbärare - den bästa försvarsstyrka de hade. Kazrik koordinerade tempot, räknade steg och vila med dvärgisk precision. Thrakka spejad framför och bakom, ögonen alltid på skuggorna mellan träden.</p>
+
+            <p>Väder: Klart men kallt. Minus åtta grader. Ändå en välsignelse - i snöstorm skulle de aldrig klarat det.</p>
+
+            <h3>Första Krisen</h3>
+
+            <p>Gubben Torsten kollapsade redan första kvällen.</p>
+
+            <p>Han hade gått hela dagen utan att klaga, en gammal man med ryggen böjd som en krok och händer som skakade när han höll sin vandringsstav. När han föll i snön låg han bara där och såg upp mot stjärnorna med ögon som redan slutat kämpa.</p>
+
+            <p>"Jag... jag kan inte," viskade han. "Kroppen är slut."</p>
+
+            <p>Ingvild kom med vatten och filtar. Thrakka bar honom till lägret. Gordon eldade så högt han vågade utan att riskera att synas från långt håll.</p>
+
+            <p>Men kroppen var slut. Det fanns inget mer att göra.</p>
+
+            <p>Torsten dog strax före midnatt, med Mormor Astrids hand i sin.</p>
+
+            <h3>Corvus Återkomst</h3>
+
+            <p>På kvällens andra dag kom Corvus tillbaka, hästen skummande av ansträngning.</p>
+
+            <p>"Det är gjort," sa han. "Betalat och bokat. Iskvarnsbryggan om tre dagar."</p>
+
+            <p>Gordon nickade. Sedan såg han kroppen de hade lagt vid lägerelden, täckt med en filt som skulle bli liksvepning.</p>
+
+            <p>Corvus förstod utan ord. Han gick till kroppen, knäföll, och började läsa från Daaks skrifter - de första bönerna han läst sedan Sankt Astrid. Hans händer skakade så mycket att han knappt kunde hålla boken.</p>
+
+            <p>"Daak, ta emot din tjänare Torsten. Han led länge. Låt honom vila nu."</p>
+
+            <p>Det var inga större ord. Men de betydde något ändå.</p>
+
+            <hr>
+
+            <h2>Dag 2-3: Moralens Kollaps</h2>
+
+            <p>Snöstormen kom på förmiddagen andra dagen - en vägg av vit som gjorde världen till en meter bred och inte mer. De kunde knappt se personen framför sig.</p>
+
+            <p>Matbristen började bita. Proviant för femton personer i två dagar räcker inte till fyrtioett i fem.</p>
+
+            <p>Lilla-Maja började hosta blod tredje dagen. Åtta år gammal, tunn som ett rep, med en feber som brände genom hennes kropp. Ingvild gjorde allt hon kunde - teer, omslag, böner till gudar hon inte trodde på - men febern vägrade ge vika.</p>
+
+            <p>Väder: Minus femton grader. Bitter kyla som bet genom kläder som om de var gjorda av luft.</p>
+
+            <h3>De Döda Barnen</h3>
+
+            <p>Helena Stenmark var två år gammal när hon dog. Undernäring och köld, sa Ingvild. Som om medicinska ord gjorde det mindre fruktansvärt.</p>
+
+            <p>Hennes mor Anna bar kroppen hela vägen efter det. Bar henne i sina armar, täckt med filt, viskande att "hon sover bara, hon sover bara."</p>
+
+            <p>Ingen hade hjärtat att ta kroppen från henne.</p>
+
+            <p>Gammal-Erik bet av sig tungan i frostfeber och blödde ihjäl på tredje natten. Sjuttifyra år gammal, blind på ena ögat, död i snön som om han aldrig funnits alls.</p>
+
+            <h3>Eiras Sammanbrott</h3>
+
+            <p>Byäldsten satt vid elden och stirrade in i lågorna. Hennes händer hade slutat skaka. Hennes ansikte var alldeles tomt.</p>
+
+            <p>"Jag kan inte," viskade hon. "Jag kan inte fatta fler beslut. Jag kan inte välja vem som får mat och vem som inte gör det. Jag kan inte..."</p>
+
+            <p>Gordon satte sig bredvid henne. Lade ingen hand på hennes axel - vissa sorgers berörde ingen - men sa tyst:</p>
+
+            <p>"Då fattar vi besluten. Du vilar."</p>
+
+            <p>Från det ögonblicket var det Gordon och Thrakka som ledde. Eira följde, men hon ledde inte längre.</p>
+
+            <h3>Sagas Genombrott</h3>
+
+            <p>Flickan med naturmagi - nitton år men med ögon äldre än så - började tala med de döda den tredje natten.</p>
+
+            <p>Hon satt vid lägerelden och viskade till luften. Till något ingen annan kunde se.</p>
+
+            <p>"Torsten säger att vägen är klar framåt. Han har gått den redan. Helena vill att hennes mamma ska veta att hon inte har ont längre."</p>
+
+            <p>Vissa trodde henne. Vissa var för rädda för att inte göra det. Andra vände sig bort och bad till Daak att flickan skulle sluta prata.</p>
+
+            <p>Men Saga slutade inte. Och de döda fortsatte viska.</p>
+
+            <hr>
+
+            <h2>Dag 4-5: Den Desperata Slutspurten</h2>
+
+            <p>All mat var slut på dag fyra. Folk svimmade av utmattning. Barn grät - inte länge, för de hade inte kraft att gråta, men korta små stönanden som bet värre än något skrik.</p>
+
+            <p>Arton kilometer till Iskvarnsbryggan. Arton kilometer genom snö och kyla med magar som långt sedan slutat kurra och bara blivit tomma hål.</p>
+
+            <h3>Gordons Historier</h3>
+
+            <p>På natten, när lägerelden brann och folk låg så tätt som sillar för att bevara värme, berättade Gordon historier.</p>
+
+            <p>Om Grensfortet. Om hur det stora fortet stod starkt mot bergen, byggt av sten som varat i hundra år och skulle vara kvar hundra till. Om hur garnisonen där hade mat och värme och säkerhet.</p>
+
+            <p>"När vi kommer dit," sa han, "får ni allt ni behöver. Mat. Vila. En plats där Arvorns Hammare inte kan röra er."</p>
+
+            <p>Han visste inte om det var sant. Men han sa det ändå, för hopp var ibland allt som höll folk vid liv.</p>
+
+            <p>Barnen somnade till hans röst. De vuxna lyssnade och låtsades tro.</p>
+
+            <h3>Kazriks Koordination</h3>
+
+            <p>Dvärgen fördelade det sista vattnet med precision som gjorde Gordon nästan rörd. Varje person fick exakt sin andel - barn lite mer, starka vuxna lite mindre, äldre efter behov.</p>
+
+            <p>Han roterade vilka som fick rida på de få hästar de hade. Tjugo minuters vila för de mest utmattade, sedan nästa grupp.</p>
+
+            <p>Och han skrev allt. Varje kväll, med händer så kalla att han knappt kunde hålla pennan, dokumenterade han vad som hänt. Namn på de döda. Distans gången. Väder och temperatur.</p>
+
+            <p>"Någon måste komma ihåg," sa han när Gordon frågade varför. "När det här är över måste någon veta vad som hände."</p>
+
+            <h3>Thrakkas Jakt</h3>
+
+            <p>Tiraken jagade vilt när han kunde. En hare här, en vinterräv där - inte mycket, men varje bit mat räknades.</p>
+
+            <p>Han hittade också patruller. Arvorns Hammares scouter som sökte efter flyktingar. Thrakka såg dem från kilometer bort - långsammanrörande gestalter i silver och rött - och styrde gruppen åt andra hållet.</p>
+
+            <p>De undkom tre gånger genom hans vaksamma ögon.</p>
+
+            <h3>Umnataks Andar</h3>
+
+            <p>Ausern talade med världen på sätt de andra inte kunde. Han läste snön och vinden och skogens tystnad. Han visste när fara var nära innan den syntes.</p>
+
+            <p>Och han talade med Saga. De två - schaman och ung häxa - delade något som ingen annan i gruppen förstod. En koppling till något bortom det synliga.</p>
+
+            <p>"Andarna säger att vägen framåt är öppen," rapporterade Umnatak på den femte morgonen. "Men bakom oss kommer jägarna."</p>
+
+            <p>Arvorns Hammare var på jakt.</p>
+
+            <hr>
+
+            <h2>Iskvarnsbryggan - Konfrontation</h2>
+
+            <p>De såg pråmarna över floden samtidigt som de hörde hästhovar bakom sig.</p>
+
+            <p>Tvåhundra meter öppen mark från skogslinjen till flodkanten. Tvåhundra meter utan skydd, bara snö och isen på Raunfloden som knarrade hotfullt i vinden.</p>
+
+            <p>Gordon vände sig om och såg dem - sju ryttare i silverrustning, Arvorns Hammares flagga fladdrande som en blodfläck mot snön.</p>
+
+            <h3>Kommendör Järnkors</h3>
+
+            <p>Kommendör Aldrich Järnkors var en man byggd av disciplin och tro. Hans ansikte var huggit i sten, hans röst kall som vinternatten.</p>
+
+            <p>Han såg Corvus och förstod inte.</p>
+
+            <p>"Kommendör Askhar!" ropade han över snön. "Har dessa magiker fängslat er? Ni behöver bara säga till - vi befriar er!"</p>
+
+            <p>Corvus stod stilla en lång sekund. Sedan ropade han tillbaka:</p>
+
+            <p>"Aldrich. De här människorna är oskyldiga. Låt dem passera."</p>
+
+            <p>Järnkors ansikte förändrades. Förståelse blev ilska blev sorg blev is.</p>
+
+            <p>"Så det är sant. De har vänt dig." Hans hand gick till svärdet. "Synd. Du var en god officer."</p>
+
+            <div class="info-box gold">
+                <div class="info-box-title">De Närvarande Krafterna</div>
+                <p><strong>Flyktinggruppen:</strong> 5 rollpersoner + 39 civila</p>
+                <p><strong>Arvorns Hammare:</strong> Kommendör Aldrich Järnkors + 6 tempelriddare</p>
+                <p><strong>Systrarna (Zorian-orden):</strong> Lady Isadora och Syster Moira observerade från skogskanten - osäkra på vilken sida de skulle välja</p>
+                <p><strong>Flodkaptenerna:</strong> 3 pråmar med besättning väntade nervöst på andra sidan floden</p>
+            </div>
+
+            <h3>Över Isen</h3>
+
+            <p>Gordon vrålade orden:</p>
+
+            <p>"SPRING!"</p>
+
+            <p>Fyrtioett personer rusade mot floden. Barn bars på axlarna. Gamla stöddes av yngre. Alla sprang som om helvetet var i hälarna.</p>
+
+            <p>För det var det.</p>
+
+            <p>Tempelriddarna laddade. Stål mot snö. Dödliga män med heliga uppdrag.</p>
+
+            <p>Gordon, Thrakka och Corvus ställde sig mellan riddarna och flyktingarna. Tre män mot sju. Inga bra odds, men odds var allt de hade.</p>
+
+            <p>Isen på Raunfloden knarrade när de första flyktingarna nådde den. Umnatak talade till andarna och viskade till floden: <em>Håll. Bara lite till. Håll.</em></p>
+
+            <p>Kazrik ledde folk över - tio meter åt vänster, där isen var tjockast, inte i mitten där den var tunn. Han visste, för dvärgar förstår sten och is bättre än de förstår människor.</p>
+
+            <p>Första femton över. Sedan tio till. Sedan resten.</p>
+
+            <p>När sista barnet nådde andra sidan vände Gordon och sprang. Thrakka följde. Corvus sist, svärdet i hand, blicken låst på Järnkors.</p>
+
+            <p>Isen sprack under tempelriddarnas hästar. Tre föll i det iskalla vattnet. Fyra vände om.</p>
+
+            <p>Järnkors vände inte om. Han ropade över floden:</p>
+
+            <p>"Vi kommer hitta er, Corvus! Det här är inte över!"</p>
+
+            <p>Men pråmarna var redan på väg uppströms, och floden tog deras röster.</p>
+
+            <hr>
+
+            <h2>Fördelning på Pråmarna</h2>
+
+            <p>Tre pråmar. Fyrtiofyra personer (fem rollpersoner + trettionio flyktingar som överlevt marschen). Dela upp dem så ingen pråm blir överbelastad.</p>
+
+            <h3>Rimfrosten</h3>
+
+            <p>Kapten Nils "Järnhand" Gromsson var en bullrig jävel med skägg som såg ut att ha sin egen biodiversitet. Hans pråm var störst, byggd för tung last, och han hade tagit emot gruppen med ett grymt leende.</p>
+
+            <p>"Betalt är betalt. Klättra ombord."</p>
+
+            <p>Kazrik gick ombord som gruppen representant - dvärgen hade ett öga för detaljer och en förmåga att förhandla som gjorde att Gordon litade på honom att hålla kaptenen ärlig.</p>
+
+            <p><strong>15 flyktingar ombord:</strong></p>
+            <ul>
+                <li><strong>Ledare:</strong> Eira Holm, Ingvild, Tomas Järnhjälm, Faster Solveig</li>
+                <li><strong>Familj Björkgren:</strong> Nils, Breta, Astrid (16), Erik (13), Lilla-Maja (8)</li>
+                <li><strong>Familj Lindkvist:</strong> Sven, Kristina, Johan (14), Margareta (9)</li>
+                <li><strong>Familj Stenmark:</strong> Olof, Anna (bar fortfarande Helenas kropp), Gustav (4)</li>
+            </ul>
+
+            <h3>Strömjungfrun</h3>
+
+            <p>Kapten Berta "Flodkvinna" Eriksdotter var tyst och effektiv. Hennes pråm var snabbast, byggd för smugglarjobb där snabbhet betydde skillnaden mellan vinst och fängelse.</p>
+
+            <p><strong>12 flyktingar ombord:</strong></p>
+            <ul>
+                <li><strong>Stridsdugliga:</strong> Jonna, Jossan, Dagne, Karn, Rolla</li>
+                <li><strong>Ungdomar:</strong> Ragnar (16), Saga (19), Birger, Lovisa, Ylva, Embla, Torik (23)</li>
+            </ul>
+
+            <h3>Månljuset</h3>
+
+            <p>Kapten Lars "Silkeskägg" Nordahl log för mycket. Det var det första Gordon la märke till - ett leende som inte nådde ögonen, som inte betydde något gott.</p>
+
+            <p>Men platsen var betald och de hade inget val.</p>
+
+            <p><strong>12 flyktingar ombord:</strong></p>
+            <ul>
+                <li><strong>Äldre:</strong> Morfar Ulf, Farbror Noak, Mormor Astrid, Tant Hildur, Gumman Ragnhild</li>
+                <li><strong>Stridsdugliga:</strong> Skorda, Tarek, Ville, Halvdan, Stina, Krake</li>
+                <li><strong>Familjer:</strong> Falkemo (4), Hällström (3)</li>
+            </ul>
+
+            <p>Pråmarna kastade loss samtidigt, roddare arbetade hårt mot strömmen, och för första gången på fem dagar kunde gruppen andas ut.</p>
+
+            <p>Nästan.</p>
+
+            <hr>
+
+            <h2>Silkeskäggs Förräderi</h2>
+
+            <p>De hade färdats i två timmar uppströms när Gordon såg Månljuset vända mot land.</p>
+
+            <p>"Vad i helvete..." började han.</p>
+
+            <p>Sedan hörde han skriken.</p>
+
+            <h3>Revolten</h3>
+
+            <p>Kapten Lars "Silkeskägg" Nordahl hade aldrig tänkt leverera sina passagerare hela vägen. Pengarna var tagna. Pråmen skulle dumpa sin mänskliga last vid första strandkant och sedan fortsätta som om ingenting hänt.</p>
+
+            <p>"Kör mot sandbanken," sa han till styrman Rask. "Vi lossar lasten här."</p>
+
+            <p>Lasten. Som om människor var ved.</p>
+
+            <h3>Sten Knotbindares Val</h3>
+
+            <p>Sten Knotbindare var tjugonio år, dekkshand, en man som följt order hela sitt liv. Men när han såg barnen på däck - Gustav som grät efter sin döda syster, Morfar Ulf som knappt kunde stå - valde han annorlunda.</p>
+
+            <p>"Kapten... det här är fel. De här människorna har barn. Jag har också en liten syster. Jag kan inte..."</p>
+
+            <p>Silkeskägg slog honom över munnen.</p>
+
+            <p>"Du kan och du ska."</p>
+
+            <p>Sten såg på de andra dekksarbetarna. Såg på flyktingarna. Valde.</p>
+
+            <p>Hans knytnäve träffade Silkeskägg i ansiktet med ett brak som hördes över hela pråmen.</p>
+
+            <h3>Striden</h3>
+
+            <p>Halvdan Kolare grep en järnstång från verktygskorgen och gick mot kaptenen som en varg mot hjort. Hans ögon brann med något bortom ilska - detta var raseri format av fem dagars helvete och barn som dött i hans armar.</p>
+
+            <p>Skorda Bergsdotter ropade order - koordinerade motståndet med precision som kom från år av att organisera jaktlag. Hon förstod slagfält, även när slagfältet var ett pråmdäck.</p>
+
+            <p>Tarek Halvhand höll styrman Rask på avstånd med kastspjut - inte för att döda, inte än, men för att hålla honom från rodret.</p>
+
+            <p>Stina Vävare kastade allt hon kunde lyfta. Verktyg, reprulle, en stövel hon slitit av någons fot. Hennes kast träffade med träffsäkerhet som kom från år vid vävstolen där varje rörelse måste vara exakt.</p>
+
+            <p>Ville Stigfinnare kämpade sig till rodret. Om de kunde styra pråmen bort från land...</p>
+
+            <h3>Priset</h3>
+
+            <p>Silkeskägg dog med järnstången genom bröstet. Halvdan slog tre gånger - en för Astrid, en för Helena, en för alla de andra.</p>
+
+            <p>Rask Flodborn försökte fly och föll överbord. Ingen försökte rädda honom. Strömmen tog hans kropp och han syntes aldrig mer.</p>
+
+            <p>Men i striden ramlade Tant Hildur.</p>
+
+            <p>Hon var sextiosex år gammal, den visaste läkekvinnan i Vargnäset, och när hon föll slog hon huvudet mot däckskanten med ett ljud som ingen ville höra men alla skulle komma ihåg.</p>
+
+            <p>Hennes sista ord, viskade till Morfar Ulf som höll hennes hand:</p>
+
+            <p>"Ulf... ta hand om mina örter... barnen behöver medicin... jag hann inte lära någon..."</p>
+
+            <p>Sedan var hon borta.</p>
+
+            <div class="info-box red">
+                <div class="info-box-title">Månljusets Nya Verklighet</div>
+                <p><strong>Kaptenen död.</strong> Styrman försvunnen. All navigationsexpertis borta.</p>
+                <p>Sten Knotbindare - hjälte men med begränsad kunskap - måste nu lära sig styra en flodpråm i vinterstorm.</p>
+                <p>Elva överlevande flyktingar (förlorade Tant Hildur).</p>
+                <p>Pråmen skadad, driver delvis okontrollerat.</p>
+                <p>De måste nå Grensfortet innan Arvorns Hammare hinner ikapp.</p>
+            </div>
+
+            <hr>
+
+            <h2>Slutstatus</h2>
+
+            <p>När de tre pråmarna äntligen lade till vid Grensfortets brygga - tre dagar senare än planerat, i en snöstorm som gjorde världen vit - räknade Gordon igen.</p>
+
+            <p>Fyrtioett började resan. Trettionina slutade den.</p>
+
+            <p><strong>De döda:</strong></p>
+            <ul>
+                <li>Gubben Torsten (dag 2) - begravd av Corvus i vildmarken</li>
+                <li>Helena Stenmark, 2 år (dag 3) - bar av sin mor till slutet</li>
+                <li>Gammal-Erik, 74 år (dag 3) - blödde ihjäl i frostfeber</li>
+                <li>Tant Hildur, 66 år (under revolten) - dog när hon ramlade</li>
+            </ul>
+
+            <p>Trettionio överlevande plus fem rollpersoner. Fyrtiofyra själar som tagit sig genom helvetet.</p>
+
+            <p>Det var inte tillräckligt många. Men det var vad de hade.</p>
+
+            <p>Kazrik skrev ner namnen på de döda i sin anteckningsbok. Raka kolumner, perfekt handstil, som om struktur kunde göra förlusten begriplig.</p>
+
+            <p>Gordon såg mot norr, mot bergen där Arvorns Hammare fortfarande var på jakt.</p>
+
+            <p>Och Corvus stod ensam vid rellingen, handen på bröstet, och kände efter hålet där skulden brukade vara. Hålet som allt detta inte lyckats fylla.</p>
+
+            <div class="quote">
+                "Vi räddade dem," sa Thrakka.<br>
+                "Inte alla," sa Gordon.<br>
+                "Ingen räddar alla," sa Thrakka. "Men vi räddade dem vi kunde."
+            </div>
+
+            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
+                Grensfortet väntade.<br>
+                Men även där fanns ingen verklig säkerhet.<br>
+                Inte längre.
+            </p>
+        </article>
+    </div>
+
+    <!-- Ladda data för auto-länkning -->
+    <script src="../wiki_data.js"></script>
+    <script src="../fraktioner_data.js"></script>
+    <script src="kapitel-linkify.js"></script>
+
+    <script>
+        // Smooth scroll for any future internal navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

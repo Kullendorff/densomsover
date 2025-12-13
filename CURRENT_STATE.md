@@ -2,9 +2,10 @@
 
 ## Datum: 2025-12-13
 
-## Status: 🔥 KAPITEL 7 KLART - CORVUS VÄNDNING SKRIVEN!
+## Status: 🔥 KAPITEL 8 KLART - EVAKUERINGEN GENOM HELVETET!
 
-**Dagens uppdateringar (2025-12-13 natt):**
+**Dagens uppdateringar (2025-12-13):**
+- ✅ **KAPITEL 8 HTML-SIDA SKAPAD** - Evakueringen: 5 dagars marsch genom helvetet (~760 rader, ~5000 ord)
 - ✅ **KAPITEL 7 HTML-SIDA SKAPAD** - Vargnäset ockupation, Sankt Astrid, Corvus vändning (~900 rader, ~5500 ord)
 - ✅ **KAPITEL 6 HTML-SIDA SKAPAD** - Återkomst till Vitterdal och Belöning (~680 rader, ~4200 ord)
 
@@ -15,6 +16,152 @@
 - ✅ **EON-TERMER FIXADE** i prompts (Muhad → Arabian, Stålsvärds → cavalry, etc.)
 - ✅ **MIDJOURNEY V7** uppdaterad i agenter och prompts
 - ✅ **wiki_data.js** uppdaterad: 143 NPCs har nu bilder (59%)
+
+---
+
+## NYTT: KAPITEL 8 - EVAKUERINGEN (2025-12-13)
+
+### ✅ Narrativ HTML-sida skapad
+
+**Fil:** `EON/kapitel/kapitel-8-evakueringen.html`
+**Storlek:** ~760 rader HTML med embedded CSS
+**Ordmängd:** ~5000 ord narrativ prosa
+**Agent:** Manuellt skriven baserat på eon-kapitel-writer-principer
+
+**Innehåll täcker:**
+1. **Upptäckten** - Arvorns Hammare har ockuperat Vargnäset, Sankt Astrids kors
+2. **Corvus uppenbarelse** - Daak talar, 23 års övertygelse krossad
+3. **Beslutet** - Alla 41 bybor måste evakueras eller dö
+4. **Räkningen** - 160+ döda, bara 41 överlevande
+5. **Flykten planeras** - Corvus kontakter, pråmarna vid Raunfloden
+6. **Dag 1: Uppbrottet** - Corvus/Umnatak rider snabbt, resten följer långsamt
+7. **Dag 2: Första döden** - Gubben Torsten dör av kyla, Corvus begravningsceremon i
+8. **Dag 3: Moralens kollaps** - Helena (2 år) och Gammal-Erik (74 år) dör, Eira bryter samman
+9. **Sagas genombrott** - Ung häxa börjar tala med de döda
+10. **Dag 4-5: Desperata slutspurten** - All mat slut, 18 km till Iskvarnsbryggan
+11. **Gordons historier** - Håller moralen uppe med löften om säkerhet
+12. **Iskvarnsbryggan** - Konfrontation med Kommendör Aldrich Järnkors
+13. **Över isen** - Flykt över frusen Raunflod, Arvorns Hammare jagar
+14. **Fördelning på pråmarna** - Rimfrosten (15), Strömjungfrun (12), Månljuset (12)
+15. **Silkeskäggs förräderi** - Kapten Lars försöker dumpa sina passagerare
+16. **Revolten** - Sten Knotbindare vänder sig mot kaptenen, flyktingar tar pråmen
+17. **Tant Hildurs död** - 66-årig läkekvinna ramlar under striden, sista dödsoffer
+18. **Slutstatus** - 39 överlevande av 41, ankomst till Grensfortet
+
+**Stil och ton:**
+- **Joe Abercrombie (40%):** "Gubben Torsten dog strax före midnatt, med Mormor Astrids hand i sin" - rå realism, cynisk ton
+- **Robin Hobb (40%):** Emotionell påfrestning, Gordons historier som håller hopp vid liv, Corvus bönhandalning trots krossad tro
+- **POV:** Primärt Gordon (ledaren, ansvarstyngd), roterande till andra vid behov
+- **Atmosfär:** Desperation, överlevnad, små hjältedåd mitt i kaos, priset för att rädda liv
+
+**Emotionella kärnor:**
+- **Barnen som dör:** Helena (2 år), Lilla-Maja (8 år) hostar blod
+- **Anna Stenmarks kollaps:** Bär sitt döda barn och tror "hon sover bara"
+- **Eiras sammanbrott:** Byäldsten kan inte längre fatta beslut
+- **Sagas röst:** Talar med de döda, skrämmer och tröstar samtidigt
+- **Corvus bönläsning:** Första bönerna sedan Sankt Astrid, händerna skakar
+- **Gordons löften:** Berättar historier om säkerhet han inte är säker på finns
+- **Tant Hildurs sista ord:** "Barnen behöver medicin... jag hann inte lära någon..."
+- **Silkeskäggs förräderi:** Smugglare kallar människor för "last"
+- **Sten Knotbindares val:** Dekkshand som vänder sig mot sin kapten för att rädda barn
+
+**Nyckelscener:**
+- **Sankt Astrids kors** - De ser hennes kropp när de kommer tillbaka
+- **Corvus knäböjning** - Kräks i snön när han förstår vad han gjort
+- **Gubben Torsens död** - "Kroppen är slut", dör under stjärnorna
+- **Helena Stenmark** - Anna bär kroppen, tror hon sover
+- **Gammal-Erik** - Bet av sin tunga i frostfeber
+- **Gordons historier vid lägerelden** - Barn somnar till hans röst
+- **Kazriks koordination** - Dvärgisk precision med vatten och rytturturer
+- **Thrakkas jakt** - Håller Arvorns Hammare på avstånd
+- **Umnataks andar** - "Andarna säger att vägen framåt är öppen"
+- **Konfrontationen vid Iskvarnsbryggan** - Järnkors: "Har dessa magiker fängslat er?"
+- **Flykten över isen** - Umnatak ber isen hålla
+- **Silkeskäggs order** - "Kör mot sandbanken. Vi lossar lasten här."
+- **Sten Knotbindare slår** - "Jag har också en liten syster"
+- **Halvdan med järnstång** - Tre slag för tre döda barn
+- **Tant Hildur ramlar** - Sista dödsoffer, läkekunskap förlorad
+- **Ankomst Grensfortet** - 39 överlevande räddade
+
+**Tekniska element:**
+- ✅ Full HTML-struktur med embedded CSS (samma färgschema som dashboard)
+- ✅ Sticky navigation bar med tillbaka-knapp till ../index.html
+- ✅ Chapter header med metadata (plats, närvarande, 5 dagars helvete)
+- ✅ Entity-länkar via kapitel-linkify.js (NPCs orange, platser purple, fraktioner gold)
+- ✅ Info-box (red) för Sankt Astrid martyrskap
+- ✅ Info-box (purple) för 41 överlevande (kategoriserad lista)
+- ✅ Info-box (gold) för närvarande krafter vid Iskvarnsbryggan
+- ✅ Info-box (red) för Månljusets nya verklighet efter revolten
+- ✅ Quote-boxar för Daaks röst, Thrakkas visdom
+
+**Validerat mot kampanjkrönika.md:**
+- ✅ 100% baserad på kampanjkrönika.md (rad 1436-1714)
+- ✅ Kronologisk ordning korrekt
+- ✅ Inga uppfunna händelser
+- ✅ Alla viktiga detaljer inkluderade:
+  - 41 bybor från start (160+ redan döda)
+  - 5 dagars marsch, -15°C
+  - 4 döda under resan (Torsten, Helena, Gammal-Erik, Tant Hildur)
+  - Corvus rider snabbt och bokar pråmarna
+  - Eira bryter samman, Gordon/Thrakka tar över
+  - Saga börjar tala med de döda
+  - Kommendör Aldrich Järnkors vid Iskvarnsbryggan
+  - Flykt över frusen Raunflod
+  - Silkeskäggs förräderi på Månljuset
+  - Sten Knotbindare som hjälte
+  - 39 överlevande når Grensfortet
+
+**Nyckelsektioner:**
+- **h2:** Upptäckten, Räkningen, Dag 1: Uppbrottet, Dag 2-3: Moralens Kollaps, Dag 4-5: Den Desperata Slutspurten, Iskvarnsbryggan - Konfrontation, Fördelning på Pråmarna, Silkeskäggs Förräderi, Slutstatus
+- **h3:** Korsfästelsen, Corvus Uppenbarelse, Flykten Planeras, Första Krisen, Corvus Återkomst, De Döda Barnen, Eiras Sammanbrott, Sagas Genombrott, Gordons Historier, Kazriks Koordination, Thrakkas Jakt, Umnataks Andar, Kommendör Järnkors, Över Isen, Rimfrosten, Strömjungfrun, Månljuset, Revolten, Sten Knotbindares Val, Striden, Priset
+
+**Narrativa höjdpunkter:**
+- Anna Stenmark bär sin döda dotter hela vägen: "hon sover bara"
+- Corvus läser böner med skakande händer trots krossad tro
+- Gordon berättar historier för att hålla barn vid liv
+- Kazriks dvärgiska precision räddar liv genom exakt vattenfördelning
+- Umnataks bön till floden: "Håll. Bara lite till. Håll."
+- Järnkors: "Vi kommer hitta er, Corvus! Det här är inte över!"
+- Sten Knotbindare: "Jag har också en liten syster. Jag kan inte..."
+- Halvdan med järnstång: "En för Astrid, en för Helena, en för alla de andra"
+- Tant Hildurs sista ord om örter och medicin
+- Thrakkas visdom: "Ingen räddar alla. Men vi räddade dem vi kunde."
+- Gordons sista blick mot norr där Arvorns Hammare jagar
+
+**Speciella kännetecken:**
+- Detta är kampanjens stora överlevnadsberättelse - ingen glory, bara desperation
+- Barndöden driver narrativet (Helena, Lilla-Maja, Tant Hildurs sista ord om barn)
+- Små hjältedåd: Gordon berättar, Kazrik räknar, Thrakka jagar, Corvus ber
+- Sten Knotbindares val: Dekkshand blir hjälte genom att välja rätt
+- Silkeskägg som kontrast: Smugglare som kallar människor för "last"
+- Emotionellt pris: 4 döda, skuld, trauma, men 39 räddade liv
+- Setup för Kapitel 9 (Mithera) och vidare flykt
+
+**NPCs introducerade/prominenta:**
+- **Eira Holm** - Byäldste, bryter samman
+- **Ingvild** - Värdshusvärdinnan, läkare
+- **Tomas Järnhjälm** - Fd. infanterist, försvar
+- **Jonna Sköldbärare** - Fd. gränsvakt
+- **Jossan Fallvind** - Scout, lokalsinne 16
+- **Skorda Bergsdotter** - Jägare, koordinerar revolt
+- **Tarek Halvhand** - Jägare, kastspjut
+- **Faster Solveig** - Läskunnig, dokumentansvarig
+- **Ragnar** - 16 år, Astrids pojkvän
+- **Saga** - 19 år, naturmagi, talar med döda
+- **Gubben Torsten** - Första dödsoffer
+- **Helena Stenmark** - 2 år, dör av kyla
+- **Anna Stenmark** - Bär sitt döda barn
+- **Gammal-Erik** - 74 år, bet av tungan
+- **Tant Hildur** - 66 år, läkekvinna, sista dödsoffer
+- **Kommendör Aldrich Järnkors** - Arvorns Hammare, punktlig mördare
+- **Lady Isadora** - Systrarna, observerar
+- **Syster Moira** - Systrarna, observerar
+- **Kapten Nils "Järnhand" Gromsson** - Rimfrosten
+- **Kapten Berta "Flodkvinna" Eriksdotter** - Strömjungfrun
+- **Kapten Lars "Silkeskägg" Nordahl** - Månljuset, förrädare, död
+- **Sten Knotbindare** - Dekkshand, hjälte
+- **Rask Flodborn** - Styrman, död
+- **Halvdan Kolare** - Järnstång, raseri
 
 ---
 
@@ -316,7 +463,7 @@
 
 ## BEFINTLIGA KAPITEL
 
-**Skrivna (8 st):**
+**Skrivna (9 st):**
 - ✅ Prolog: Tirakgraven
 - ✅ Kapitel 1: Jakten
 - ✅ Kapitel 2: Muhad
@@ -324,11 +471,11 @@
 - ✅ Kapitel 4: Jargien
 - ✅ Kapitel 5: Vargnäset (Zentris försvinnande, Thrakkas ankomst)
 - ✅ Kapitel 6: Vitterdal (Ylvas död, Frostnymfen, hemkomst)
-- ✅ **Kapitel 7: Vargnäset** (NYA! Ockupation, Sankt Astrid, Corvus vändning)
+- ✅ Kapitel 7: Vargnäset 2 (Ockupation, Sankt Astrid, Corvus vändning)
+- ✅ **Kapitel 8: Evakueringen** (NYTT! 5 dagars flykt, 4 döda, Silkeskäggs förräderi)
 - ✅ Kapitel 9: Mithera
 
-**Saknas (3 st):**
-- ❌ Kapitel 8: Evakueringen
+**Saknas (2 st):**
 - ❌ Kapitel 10: Skugglandet
 - ❌ Kapitel 11+: Slutuppgörelsen
 
@@ -379,15 +526,17 @@ d66263e - Lägg till Kapitel 5, 20 NPC-bilder och Midjourney-prompts
 
 ## KVARVARANDE ARBETE
 
-### Prioritet 1: Fler bilder
+### Prioritet 1: Fler kapitel
+- 2 kapitel kvar att skriva (10, 11+)
+- Använd eon-kapitel-writer agent
+- Basera på kampanjkrönika.md
+- **Kapitel 10: Skugglandet** - Största kapitlet, många viktiga händelser
+- **Kapitel 11+: Slutuppgörelsen** - Kampanjens klimax
+
+### Prioritet 2: Fler bilder
 - 99 NPCs saknar fortfarande bilder
 - ~59 oanvända bilder i arkivet att matcha
 - Kan generera batch 3-10 Midjourney-prompts vid behov
-
-### Prioritet 2: Fler kapitel
-- 5 kapitel kvar att skriva (6, 7, 8, 10, 11+)
-- Använd eon-kapitel-writer agent
-- Basera på kampanjkrönika.md
 
 ### Prioritet 3: Platsbilder
 - 58 platser totalt
