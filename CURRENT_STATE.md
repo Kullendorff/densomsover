@@ -2,12 +2,19 @@
 
 ## Datum: 2025-12-13
 
-## Status: 🔥 KAPITEL 8 KLART - EVAKUERINGEN GENOM HELVETET!
+## Status: 🎨 ALLA 58 PLATSER + 4 KAPITEL MIDJOURNEY-PROMPTS KLARA!
+
+**Dagens stora batch (2025-12-13 natt):**
+- ✅ **ALLA 58 PLATSER** har nu Midjourney-prompts (6 batchar)
+- ✅ **10 NPC-PROMPTS** batch 6 (Joran → Laila bint-Farid)
+- ✅ **20 KAPITEL-STÄMNINGSBILDER** (Kapitel 2, 3, 4, 10)
+- ✅ **4 KAPITEL HTML-SIDOR** färdiga (6, 7, 8, 10)
 
 **Dagens uppdateringar (2025-12-13):**
 - ✅ **KAPITEL 8 HTML-SIDA SKAPAD** - Evakueringen: 5 dagars marsch genom helvetet (~760 rader, ~5000 ord)
 - ✅ **KAPITEL 7 HTML-SIDA SKAPAD** - Vargnäset ockupation, Sankt Astrid, Corvus vändning (~900 rader, ~5500 ord)
 - ✅ **KAPITEL 6 HTML-SIDA SKAPAD** - Återkomst till Vitterdal och Belöning (~680 rader, ~4200 ord)
+- ✅ **KAPITEL 10 HTML-SIDA SKAPAD** - Skugglandet (~810 rader, ~6400 ord)
 
 **Tidigare (2025-12-12 sent kväll):**
 - ✅ **KAPITEL 5 HTML-SIDA SKAPAD** - Vargnäset: Zentris försvinnande, Thrakkas ankomst
@@ -16,6 +23,137 @@
 - ✅ **EON-TERMER FIXADE** i prompts (Muhad → Arabian, Stålsvärds → cavalry, etc.)
 - ✅ **MIDJOURNEY V7** uppdaterad i agenter och prompts
 - ✅ **wiki_data.js** uppdaterad: 143 NPCs har nu bilder (59%)
+
+---
+
+## NYTT: MIDJOURNEY-PROMPTS - KOMPLETT BATCH (2025-12-13 NATT)
+
+### ✅ ALLA 58 PLATSER HAR NU PROMPTS!
+
+**Totalt genererade platsprompts:** 58 platser (100% täckning)
+**Filer:** 6 batchar
+
+#### Batch 3 (Platser 21-30)
+**Fil:** `midjourney-prompts-platser-batch-3.md`
+**Platser:** Jargien, Jarnthol, Jarla, Jen, Kamelens Oas, Khazimbergen, Krökta Kompassen, Lejonets Bröl, Lundnäs, Månljuset
+**Stilar:** Kejsarliga vinterregioner (Jargien), arabiska hamnstäder (Jen), förbannelse-gruvby (Jarnthol)
+**Särskilda kännetecken:**
+- **Jen** (VIKTIG PLATS): Arabisk hamnmetropol med 100,000 invånare
+- **Jarnthol**: Förbannelse-gruvutpost, Rådslingan-äventyret
+- **Månljuset**: Evakueringsfartyg (tragedi med myteri)
+
+#### Batch 4 (Platser 31-40)
+**Fil:** `midjourney-prompts-platser-batch-4.md`
+**Platser:** Månskärets Gömställe, Mithera, Mitrahus, Muhad, Ödlefolkets ruiner, Ökendyrets Ro, Raunfloden, Rimfrosten, Rödskäggs Tillflykt, Sanari-alvernas Rike
+**Stilar:** Mystisk nordisk skog (Mithera VIKTIG!), arabisk ökenregion, älvisk mystisk sfär
+**Särskilda kännetecken:**
+- **Mithera** (VIKTIG PLATS): Magisk förvrängd skog, kampanjens mystiska epicenter
+- **Sanari-alvernas Rike**: Överjordisk älvdimension (stilisering 250)
+- **Rimfrosten**: Evakueringsfartyg (Nils Järnhand, 15 överlevande)
+
+#### Batch 5 (Platser 41-50)
+**Fil:** `midjourney-prompts-platser-batch-5.md`
+**Platser:** Sandens Sång, Sanningens Ljus, Silverskum, Skugglandet, Skuggornas Viloplats, Soldarn, Spegelmåne, Spegelvända Fortet, Strömjungfrun, Tarkas
+**Stilar:** Lovecraftian horror (Skugglandet), demonisk pervertering (Spegelvända Fortet)
+**Särskilda kännetecken:**
+- **SKUGGLANDET** (VIKTIG HORROR-PLATS!): Kapitel 10, Lovecraftian existentiell skräck (stilisering 250, --style raw)
+- **SPEGELVÄNDA FORTET** (SLUTBOSS DOMÄN!): Lord VinterGlöds citadell, spegelvänd arkitektur (stilisering 280, --style raw)
+- **Strömjungfrun**: Evakueringspråm med 12 flyktingar (desperat överlevnad)
+
+#### Batch 6 (Platser 51-58 - SISTA 8)
+**Fil:** `midjourney-prompts-platser-batch-6.md`
+**Platser:** Tirakgraven, Tormunds Stuga, Tredelningen, Tuzan Rim, Tysta Källan, Vansnäs Gästgiveri, Vargnäset, Vitterdal
+**Stilar:** Kampanjstart (Tirakgraven), nordisk vildmark, cermiranskt huvudstad
+**Särskilda kännetecken:**
+- **TIRAKGRAVEN** (KAMPANJSTART!): Demonens fängelse, forntida tirak-grav, brutna kedjor
+- **VITTERDAL** (HUVUDSTAD!): Cermiranskt maktcentrum, Hagges hem, civilisationens motvikt till vildmark
+- **VARGNÄSET** (CENTRAL TRAGISK PLATS!): 3 VERSIONER (före strid, efter strid, ockupation av Arvorns Hammare)
+
+**Totalt antal platsprompts:** 58 platser
+**Prompts per plats:** Huvudprompt + 1-2 alternativa
+**Aspect ratios:** 16:9 (landskap), 3:2 (byggnadsfokus)
+**Stilisering:** 120-280 (högt för horror/magiska platser)
+
+### ✅ NPC-Prompts Batch 6
+
+**Fil:** `midjourney-prompts-npcs-batch-6.md`
+**NPCs:** 10 st (#31-40)
+1. Joran - Gränssoldat vid Tuzan Rim
+2. Kaelthar Klerk - Cirefalisk kavallerist (Stålsvärds)
+3. Kapten Eamon - Pensionerad sjökapten (värdshusägare)
+4. Kapten Mordicus Helga - Kvinnlig flottkapten
+5. Karim al-Jafar - Handelsman i Jen
+6. Karim ibn-Hassan - Arbetare i Jen
+7. Konrad - Handelsman i Jarnthol (ryktespridare)
+8. Krake Fiskare - Evakuerad fiskare från Vargnäset
+9. Laila bint-Ali - Kvinna i Jen
+10. Laila bint-Farid - Marknadsförsäljare i Jen
+
+**Regionfördelning:**
+- Muhad/Jen: 6 NPCs (arabisk estetik)
+- Nordiska: 2 NPCs (Konrad, Krake)
+- Militära: 2 NPCs (Kaelthar, Kapten Helga)
+
+**Stilisering:** 130-160 (medel-låg för realism)
+**Aspect ratio:** 2:3 (porträtt)
+
+### ✅ Kapitel-Stämningsbilder (20 prompts)
+
+#### Kapitel 2: Muhad (5 bilder)
+**Fil:** `midjourney-prompts-kapitel-2.md`
+**Bilder:**
+1. **Ökenresan** - Spegelmåne på Ashariens kust (episk resa)
+2. **Jen** - Arabisk hamnmetropol (100,000 invånare, hetta, exotik)
+3. **Slavupproret** - Kaos i gator (brutal action, deep reds)
+4. **Hagges Räddning** - Ritualen i öknen (mystisk, moraliskt komplex)
+5. **Hamnens Frid** - Avresan (melankolisk, tyst skuld)
+
+**Stilar:** Aleksi Briclot (städer), Gerald Brom (action), Jakub Rozalski (landskap)
+**Färgpalett:** Guld, orange, deep purple (arabisk öken)
+**Stilisering:** 150-220
+
+#### Kapitel 3: Tarkas (5 bilder)
+**Fil:** `midjourney-prompts-kapitel-3.md`
+**Bilder:**
+1. **Skeppsbrottet** - Vulkanisk tsunami (apokalyptisk naturkraft)
+2. **Tarkas-byn** - Askbeströdd ödemark (post-vulkan katastrof)
+3. **Ödlefolkets Ruiner** - Reptiliska forntida tempel (stengolem, främmande arkitektur)
+4. **Ökenvandring** - Hård överlevnad (Zentri med blodiga bandage)
+5. **Bergspass** - Dvärgfäste Abhan-hir-renk-Ghor (episk tillflykt)
+
+**Stilar:** Gerald Brom (katastrof), Frank Frazetta (action), Aleksi Briclot (ruiner)
+**Färgpalett:** Grå aska, deep red (vulkan), blå-grön (ruiner)
+**Stilisering:** 150-200
+
+#### Kapitel 4: Jargien (5 bilder)
+**Fil:** `midjourney-prompts-kapitel-4.md` (agentutput, ej sparad fil ännu)
+**Bilder:**
+1. **Jargiens Kejsarväg** - Vinterlandskap (imperial ordning, kyla)
+2. **Jargiskt Militärt Fort** - Gränsbefästning (disciplin, övervakande)
+3. **Jarnthol Gruvby** - Förbannelse (kuslig, Rådslingan)
+4. **Kejserliga Patruller** - Arvorns Hammare (fanatisk, hotfull)
+5. **Gränsstationen** - Kontrollpunkt (byråkratisk, kall)
+
+**Stilar:** Jakub Rozalski (landskap), Aleksi Briclot (militär), Gerald Brom (horror)
+**Färgpalett:** Grå sten, röd-svart (imperial), vintersnö
+**Stilisering:** 150-180
+
+#### Kapitel 10: Skugglandet (5 bilder)
+**Fil:** `midjourney-prompts-kapitel-10.md` (agentutput, ej sparad fil ännu)
+**Bilder:**
+1. **Skugglandet** - Förvrängd verklighet (Lovecraftian horror, omöjlig geometri)
+2. **Titanen** - Tre-huvudad koloss (10 meter, sex armar, blå kärna)
+3. **Umnataks Offer** - Anden i kniven (tragisk själsbindning)
+4. **Colonisk Korridor** - Själarna under golvet (grönvita runor, sex pelare)
+5. **VinterGlöds Portal** - Citadellets port (blå cirkel, sluttorn)
+
+**Stilar:** Zdzisław Beksiński (horror), Gerald Brom (dark fantasy), Greg Rutkowski (dungeon)
+**Färgpalett:** Sjukgrönt, sick silver, elektriskt blått, deep purple
+**Stilisering:** 180-280 (högt för surrealism och horror)
+
+**Totalt antal kapitelbilder:** 20 bilder (4 kapitel × 5 bilder)
+**Aspect ratio:** 16:9 (cinematic stämningsbilder)
+**Stilnivåer:** 150-280 (medel-hög för dramatik)
 
 ---
 
