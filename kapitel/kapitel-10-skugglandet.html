@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 10: Skugglandet och Titanens Fall - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        /* Content Container */
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        /* Chapter Header */
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Prose Styling */
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .prose ul {
+            margin: 1rem 0 1.5rem 2rem;
+            list-style-type: disc;
+        }
+
+        .prose li {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .prose strong {
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        .prose em {
+            color: var(--gold);
+            font-style: italic;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        /* Quote Box */
+        .quote {
+            background: var(--bg-darker);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .quote strong {
+            color: var(--gold);
+            font-style: normal;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            .prose h2 {
+                font-size: 1.5rem;
+            }
+            .content-container {
+                padding: 0 1rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">📜 Gravens Arv - Kampanjhistoria</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <div class="content-container">
+        <header class="chapter-header">
+            <h1>Kapitel 10: Skugglandet och Titanens Fall</h1>
+            <div class="chapter-meta"><strong>Plats:</strong> Skugglandet - förvrängd verklighet bortom Mundana</div>
+            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Thrakka, Umnatak, Kazrik, Corvus/Arcadius</div>
+            <div class="chapter-meta"><strong>Huvudantagonist:</strong> Lord VinterGlöd (colonisk själssamlare)</div>
+        </header>
+
+        <article class="prose">
+
+<h2>Bortom Världens Kant</h2>
+
+<p>Dimman var fel. Den kröp inte över marken som vanlig dimma gör - den <em>hängde</em>, som om gravitationen inte riktigt visste hur den skulle bete sig här. <strong>Gordon</strong> såg sin andedräkt kristallisera framför munnen och falla uppåt, små isflingor som flöt mot en himmel som såg ut att blöda silver.</p>
+
+<p>"Det här är inte rätt," sa <strong>Kazrik</strong>. Dvärgensröst var låg, spänd. Han höll sin hammare hårdare än nödvändigt. "Jorden känns... tunn. Som att gå på is du vet är för svag att bära dig."</p>
+
+<p><strong>Thrakka</strong> sa ingenting. Tirakens öron låg platta mot skallen, och varje muskel i hans kropp var spänd för strid. Gladiatorinstinkten - den som hållit honom vid liv genom år i arenan - skrek att något var fel, fel, <em>fel</em>.</p>
+
+<p><strong>Skugglandet</strong>. De hade passerat genom <strong>Älvakungen</strong>s portal i Mithera-skogen, och det som väntade på andra sidan var ingen plats människor var menade att se. Verkligheten själv var förvrängd här - träd växte med rötterna uppåt, stenar flöt som mörka ballonger, och i fjärran såg de torn resa sig som skelettfingrar mot den blödande himlen.</p>
+
+<p>"<strong>Zentri</strong> är där någonstans," sa <strong>Gordon</strong>, pekar mot tornen. "Måste vara."</p>
+
+<p>"Om han fortfarande är Zentri," muttrade <strong>Corvus</strong>. Mannen var blek, svettig trots kylan. Hålet i hans bröst - där <strong>Älvakungen</strong> tagit hans skuld - hade börjat glöda svagt blått.</p>
+
+<p><strong>Umnatak</strong> knäppte ögonen stilla och tittade på världen genom andesynen. Det han såg där fick honom att önska att han inte hade. Andarna här var fel - vridna, skrikande, bundna i kedjor av silverskimrande energi som löpte genom marken som rötter.</p>
+
+<p>"Kolonerna byggde det här," viskade schamanen. "Det är ingen naturlig plats. Det är... ett <em>fängelse</em>. Ett enormt fängelse byggt av själar."</p>
+
+<p>Gruppen gick vidare. De hade inget val.</p>
+
+<hr>
+
+<h2>Titanen</h2>
+
+<p>De hörde den innan de såg den.</p>
+
+<p>Ett dånande steg. Sedan ett till. Marken skakade - nej, <em>verkligheten</em> skakade. Luften vibrerade som en kyrkoklocka efter slaget.</p>
+
+<p>"Vad i helvete..." <strong>Kazrik</strong> stannade.</p>
+
+<p>Över en kulles krön kom den. Tio meter hög. Kanske mer. Kroppen såg ut att vara huggen ur svart sten, men stenen <em>rörde sig</em> - andades - virade sig som muskler under hud. Sex armar sträckte sig från den massiva torson, varje hand stor nog att krossa en häst. Huvudet var en skalle - nej, tre skallar sammansmälta i en pervers parodi på ett ansikte.</p>
+
+<p>Och i bröstet, synligt genom sprickor i stenen, pulserade något <em>blått</em>.</p>
+
+<p>"Titan," viskade <strong>Umnatak</strong>. Hans röst darrade. "Colonisk... jag ser dem. I kärnan. Sex själar. Bundna. Fängslade. De skriker."</p>
+
+<p><strong>Thrakka</strong> drog sina svärd. "Då släpper vi dem."</p>
+
+<p>"Den är för stor!" <strong>Gordon</strong> grep tirakens arm. "Vi kan inte—"</p>
+
+<p>Titanen vände sig mot dem. De tre skallarna öppnade sina käkar i ett synkroniserat vrål som fick luften att spricka.</p>
+
+<p>"Strida eller dö!" <strong>Thrakka</strong> ryckte sig loss och stormade framåt.</p>
+
+<p>Det fanns inget annat val nu.</p>
+
+<h3>Striden</h3>
+
+<p>Det var kaos. Ren, brutal, överväldigande kaos.</p>
+
+<p><strong>Kazrik</strong> slog sin hammare mot titanens ben med kraft nog att spräcka vanlig sten. Stenen krackelerade - och växte ihop igen, vävdes samman av blått sken från kärnan.</p>
+
+<p><strong>Gordon</strong>s svärd gned av mot stenhuden. Varje träff gav chockvågor upp genom hans armar som om han slog mot en kyrkomur.</p>
+
+<p><strong>Corvus</strong> kastade magi - eld, is, åska - men titanens kropp absorberade alltihop som en svamp. Det blå ljuset från bröstet bara växte starkare.</p>
+
+<p>En av titanens sex armar svepte ned. <strong>Thrakka</strong> hoppade - nästan. Nästan. Knogar stora som stenar träffade hans sida med ljudet av något som går sönder.</p>
+
+<p>Tiraken flög tio meter och landade i ett moln av damm. Reste sig långsamt, blod rinnande från munnen. Revben brutna. Kanske flera.</p>
+
+<p>"Thrakka!" <strong>Gordon</strong> ville springa till honom men titanens fot dånade ner en meter från hans huvud och tvingade honom att rulla undan.</p>
+
+<p>"Jag klarar mig!" Tirakens röst var mer knyckig än han ville erkänna. "Kärnan! Gå för kärnan!"</p>
+
+<p>Men hur? Hur når man något inuti en tio meter hög stentitan som läker alla skador?</p>
+
+<p><strong>Umnatak</strong> såg det. På andeplanet var det tydligt. Titanens knä - där stenen var tunnast - där metallisten från <em>meteoritjärnskniven</em> kunde gå igenom både världarna.</p>
+
+<p>Kniven. Den kniv där <strong>Ulzak</strong>s ande levt fängslad i generationer. Den kniv som kunde skära både kött och andar.</p>
+
+<p>Schamanen tittade på sina vänner. På <strong>Thrakka</strong> som kämpade för att andas. På <strong>Gordon</strong> som aldrig skulle ge upp men saknade verktyg för att vinna. På <strong>Kazrik</strong> som studerat så mycket men inte hittat svaret. På <strong>Corvus</strong> vars själ redan var halvägs borta.</p>
+
+<p>På själarna i titanens kärna som skrek med röster som ekade <strong>Thoga</strong>, hans förlorade kärlek.</p>
+
+<p>Det fanns bara en väg.</p>
+
+<hr>
+
+<h2>Umnataks Val</h2>
+
+<p>"<strong>Ulzak</strong>," sa <strong>Umnatak</strong> tyst, hand på knivshandtaget. "Kan du höra mig?"</p>
+
+<p>Från kniven - en röst som malts sönder av tid och ensamhet: <em>"Pojke. Vad gör du?"</em></p>
+
+<p>"Något dumt. Något nödvändigt." Umnatak drog kniven och skar sig själv över handflatan. Blod droppade på bladet. Portalen öppnades.</p>
+
+<p>Hans kropp föll ihop som en docka med avklippta snören.</p>
+
+<h3>På Andeplanet</h3>
+
+<p><strong>Umnatak</strong> stod inuti titanen.</p>
+
+<p>Det var inte sten här. Det var <em>smärta</em> gjord synlig. Väggar av skrikande ansikten. Golv av händer som klöste och klöste utan att nå någonvart. Och i mitten - kärnan.</p>
+
+<p>En pärla av svart glas, stor som ett hjärta, hängande i luften. Inuti den kunde han se dem. Sex gestalter. Frusna. Fängslade. Skrikande tysta skrik.</p>
+
+<p>En av dem hade <strong>Thoga</strong>s ansikte.</p>
+
+<p>Det var inte hon. Han visste det. Men det såg ut som hon. Och han hade inte kunnat rädda henne då.</p>
+
+<p>Kanske kunde han rädda dem nu.</p>
+
+<p><strong>Ulzak</strong> materialiserade bredvid honom - en gammal tirak med ögon som sett för mycket.</p>
+
+<p>"Fem sekunder, pojke." Den gamle schamanen pekade på kärnan. "När den sprängs kollapsar titanen och portalen sliter sig. Krossar du den - offrar <em>mig</em> - kommer jag försvinna när magin brister. Eller så drar du dig ut nu och lever."</p>
+
+<p>"Finns det ett tredje alternativ?"</p>
+
+<p>"Vad menar du?"</p>
+
+<p><strong>Umnatak</strong> såg på själarna. På kärnan. På kniven i sin hand som fortfarande existerade här, mellan världarna.</p>
+
+<p>"Om JAG stannar istället? Om jag blir ankaret som släpper dem - men håller porten öppen? Då kan du gå tillbaka. Till kniven. Till <strong>Thrakka</strong>. De behöver dig mer än de behöver mig."</p>
+
+<p>Tystnad.</p>
+
+<p>Sedan skrattade <strong>Ulzak</strong>. Ett skratt som var halvvägs ett hulkande.</p>
+
+<p>"Pojke. Vet du vad du säger? Om du stannar när porten öppnas dras du IN I KNIVEN. Du blir som jag var. Fängslad. I generationer. Kanske för evigt."</p>
+
+<p>"Jag vet."</p>
+
+<p>"Varför?"</p>
+
+<p><strong>Umnatak</strong> rörde vid kärnan. Det brändes som is. Han log - första gången på länge det var ett äkta leende.</p>
+
+<p>"För att <strong>Thoga</strong> dog därför att jag inte kunde släppa taget. Inte kunde acceptera att någonting tar slut. Nu släpper jag. Allt."</p>
+
+<p>Han rev kärnan.</p>
+
+<h3>Kärnan Brister</h3>
+
+<p>Glaset sprack.</p>
+
+<p>Sex själar <em>exploderade</em> utåt i en våg av vitt ljus.</p>
+
+<p><strong>Ulzak</strong> skrek - tvingades bakåt av kraften - dragen som av en jättehands grepp tillbaka mot knivens fängelse—</p>
+
+<p>—men fängelset var inte tomt. <strong>Umnatak</strong> stod där, händerna utsträckta, höll porten öppen från insidan.</p>
+
+<p>"Gå!" skrek ung-schamanen. "Tillbaka till kroppen! De behöver—"</p>
+
+<p>Portalen <em>svalde</em> honom.</p>
+
+<p><strong>Umnatak</strong> drogs in i meteoritjärnet som vatten ner i ett avlopp. Han hann se <strong>Ulzak</strong>s gestalts rusa ut - fri för första gången på hundra år - innan mörkret tog honom.</p>
+
+<p>Det var kallt i järnet. Kallt och mörkt och ensamt.</p>
+
+<p>Men de sex själarna var fria.</p>
+
+<p>Det räckte.</p>
+
+<hr>
+
+<h2>Titanens Fall</h2>
+
+<p><strong>Gordon</strong> såg <strong>Umnatak</strong>s kropp falla. Såg meteoritjärnskniven glöda svart ljus. Såg titanens kärna <em>explodera</em>.</p>
+
+<p>Den massiva stenkroppen stannade. De tre skallarna tystnade mitt i ett vrål. De sex armarna föll slakt.</p>
+
+<p>Sedan började stenen rämna. Sprickor löpte upp längs benen, torson, armarna. Blått ljus blödde ut ur varje spricka.</p>
+
+<p>"LÖP!" <strong>Kazrik</strong> grep <strong>Gordon</strong>s arm och drog.</p>
+
+<p>De rusade. <strong>Corvus</strong> släpade <strong>Thrakka</strong> - tiraken för skadad för att springa. Bakom dem rasade titanen samman i en lavin av sten och magi och frigjorda själar.</p>
+
+<p>Tryckvågen slog dem omkull. Marken skakade. Något <em>skrek</em> - ett ljud inte menat för levande öron.</p>
+
+<p>Sedan tystnad.</p>
+
+<p><strong>Gordon</strong> vände sig om. Där titanen stått låg nu bara en hög med sprucken sten. Och mitt i högen - <strong>Umnatak</strong>s kropp.</p>
+
+<p>De rusade tillbaka. <strong>Kazrik</strong> nådde fram först, rullade schamanen på rygg—</p>
+
+<p>Ögonen öppnades.</p>
+
+<p>Men de var vita. Helt vita.</p>
+
+<p>"Gordon." Rösten var <em>fel</em>. Djupare. Äldre. Grövre.</p>
+
+<p>"<strong>Ulzak</strong>?" viskade dvärgen.</p>
+
+<p>Kroppen - <strong>Umnatak</strong>s kropp men inte hans ande - nickade långsamt. Den gamle schamanens medvetande i den unges kropp reste sig på ostadiga ben.</p>
+
+<p>"Pojken... han STANNADE." <strong>Ulzak</strong>s röst bröts. "Offrade sig. För själarna. För mig. Han är..."</p>
+
+<p>Den gamla schamanen lyfte kniven från titanruinerna. Meteoritjärnet lystes svart som en kolbit.</p>
+
+<p>"Han är här. I järnet. Fängslad. Som jag var."</p>
+
+<p><strong>Gordon</strong> sträckte sig ut och rörde vid kniven. Metallen var kall som vintern.</p>
+
+<p>Från någonstans djupt inuti järnet - <strong>Umnatak</strong>s röst, tunn som vinden:</p>
+
+<p><em>"Rätt... val... släppte... äntligen släppte..."</em></p>
+
+<p>Sedan ingenting mer.</p>
+
+<div class="quote">
+<strong>Umnatak</strong> hade alltid talat med andarna. Nu <em>var</em> han en ande. Bunden i järn. Fängslad i en kniv som älskade blod.
+<br><br>
+<strong>Ulzak</strong> var fri. Efter hundra års tortyr i mörkret. Men till vilket pris?
+<br><br>
+<strong>Thrakka</strong> låg med brutna revben och visste - visste - att det var <em>för honom</em> Umnatak offrat sig. För honom schamanen stannat kvar.
+<br><br>
+Skulden var tyngre än något han burit i arenan.
+</div>
+
+<hr>
+
+<h2>Flykt Under Jord</h2>
+
+<p><strong>Kazrik</strong> var första som såg dem.</p>
+
+<p>"Ryttare." Dvärgen pekade mot horisonten. "Tre. Med silvermasker."</p>
+
+<p>En kilometer bort öppnade sig portar i ett av de skelettlika tornen. Tre gestalter på skelettliknande hästar red ut. Maskerna reflekterade det blödande ljuset från himlen.</p>
+
+<p>"<strong>VinterGlöd</strong>s folk," viskade <strong>Ulzak</strong> (i <strong>Umnatak</strong>s kropp). "De vet att kärnan brast. De kommer."</p>
+
+<p>"Vi kan inte springa." <strong>Thrakka</strong> försökte resa sig och föll tillbaka med ett kväst andtag. "Revben... brutna..."</p>
+
+<p><strong>Gordon</strong> såg sig omkring. Öppen mark. Ingenstans att gömma sig. Ryttarna närmade sig fort - för fort.</p>
+
+<p>"Där!" <strong>Kazrik</strong> pekade på marken. En sten - nej, inte en sten. För regelbunden. För rätt utformad. Colonisk stil med runor ristad längs kanterna.</p>
+
+<p>Dvärgen knäböjde och studerade runorna. Hans fingrar löpte över dem med den säkerhet som kom från år av att studera uråldriga språk.</p>
+
+<p>"Nyckelsten. Det är... en ingång. Till något under marken." Han tryckte på en runsekvens.</p>
+
+<p>Stenen <em>sjönk</em>. En halv meter ner i marken och sedan åt sidan, avslöjande mörker och en stentrappa som ledde ner.</p>
+
+<p>"Ner! Nu!" <strong>Gordon</strong> hjälpte <strong>Thrakka</strong> på fötter. <strong>Corvus</strong> hoppade ner först. <strong>Ulzak</strong> klättrade ner med kropp han fortfarande inte var van vid.</p>
+
+<p>Hovslag. Närmare.</p>
+
+<p><strong>Kazrik</strong> och <strong>Gordon</strong> släpade <strong>Thrakka</strong> till kanten. Tittade ner. Mörker.</p>
+
+<p>"Hoppa," sa <strong>Kazrik</strong>.</p>
+
+<p>De hoppade.</p>
+
+<p><strong>Gordon</strong> landade på sten tio meter ner, rullade, tvingade sig upp. <strong>Kazrik</strong> slog i marken bredvid honom med ett dovt dunk.</p>
+
+<p>Ovanför dem - silvermaskerad ansikte tittade ner genom öppningen. En hand i metallhandske sträckte sig in—</p>
+
+<p><strong>Gordon</strong> slog kniven mot runstenen invid trappan.</p>
+
+<p>Stenen <em>rusade</em> tillbaka. Slammer stängdes som en käft.</p>
+
+<p>Fingrar fastnade. Krossades. Ett dämpat skrik ovanfrån.</p>
+
+<p>Sedan tystnad.</p>
+
+<p>"Tror du de kan öppna den?" viskade <strong>Corvus</strong>.</p>
+
+<p>"Hoppas inte." <strong>Kazrik</strong> reste sig. "För jag vet inte var vi är."</p>
+
+<hr>
+
+<h2>Den Coloniska Korridoren</h2>
+
+<p>Trappan ledde ner. Femtio steg. Kanske fler - <strong>Gordon</strong> räknade inte längre efter tjugo. Mörkret var kompakt, kvävande.</p>
+
+<p>Sedan öppnade sig rummet.</p>
+
+<p>Korridoren var bred. Tio meter från vägg till vägg, tak så högt att deras ljus inte nådde upp. Väggarna var täckta med runor som <em>lystes</em> - grönvitt sken som pulserade långsamt som en hjärtslag.</p>
+
+<p>"Coloniskt," sa <strong>Kazrik</strong>. Hans röst ekade konstigt, som om korridoren inte riktigt hade rätt akustik. "Men gammal. Äldre än något jag sett."</p>
+
+<p>Längs väggarna löpte reliefer. Sex figurer som smälte samman med något. Offrades. Bands. <strong>Ulzak</strong> rörde vid en relief och ryckte tillbaka handen som bränd.</p>
+
+<p>"Själsbindning," viskade han. "De offrade... sex själar här. För att bygga något."</p>
+
+<p>"Bygga vad?" <strong>Gordon</strong> höll svärdet i beredskap. Allt här kändes fel.</p>
+
+<p>"Vet inte. Men det lyser blått längre fram."</p>
+
+<p>Ljuset kom från korridorens slut. Blått. Pulserande. Lockande på ett sätt som fick <strong>Gordon</strong>s nackhår att resa sig.</p>
+
+<p>De gick vidare. Vad annars kunde de göra?</p>
+
+<h3>Arcadius och Draget</h3>
+
+<p><strong>Corvus</strong> stannade efter tio steg.</p>
+
+<p>"Känner du det?" viskade han.</p>
+
+<p>"Känner vad?" <strong>Gordon</strong> vände sig om.</p>
+
+<p>Men <strong>Corvus</strong> tittade inte på honom. Mannens ögon var fixerade på det blå ljuset. Hans hand låg mot bröstet - där hålet var. Där <strong>Älvakungen</strong> tagit hans skuld.</p>
+
+<p>"Lukten," sa <strong>Corvus</strong> tyst. "Söt. Järn. Rök. Offer. Samma lukt som från hålet. Det är..."</p>
+
+<p>Han tog ett steg mot ljuset.</p>
+
+<p>Sedan ett till.</p>
+
+<p>"<strong>Corvus</strong>?" <strong>Gordon</strong> grep hans arm. Mannen var kall. Iskall. Som att röra frost.</p>
+
+<p>"Det drar," viskade <strong>Corvus</strong>. Hans röst var tom. Ecklös. "Något revar. Innifrån hålet. Som fiske. Det drar mig mot ljuset."</p>
+
+<p><strong>Gordon</strong> rörde vid meteoritjärnskniven. <strong>Umnatak</strong>s röst kom omedelbart - svag, smärtsam:</p>
+
+<p><em>"Arcadius tråd... leder HIT... runorna är kedjor... något bundet under korridoren... det blå ljuset är PORTAL... inte bara Skugglandet... något äldre..."</em></p>
+
+<p>"Vad menar du?" <strong>Gordon</strong> viskade till kniven.</p>
+
+<p>Ingen svarade. <strong>Umnatak</strong> orkade inte mer.</p>
+
+<h3>Upptäckten Under Golvet</h3>
+
+<p><strong>Kazrik</strong> studerade runorna. Hans fingrar löpte över dem, tryckte försiktigt på vissa tecken i en sekvens han gissade var korrekt—</p>
+
+<p>Golvet blev genomskinligt.</p>
+
+<p>Bara för en sekund. En hjärtslag. Men det räckte.</p>
+
+<p>Under dem - tio meter ner - sex pelare av svart sten. I varje pelare en gestalt. Fryst. Bunden i runkedjor som lyste silver. Precis som titanens kärna. Precis som <strong>Älvakungen</strong>s offer.</p>
+
+<p>Sex själar. Sex fängelser. Sex nycklar till en portal som inte borde existera.</p>
+
+<p>"De håller portalen öppen," viskade <strong>Ulzak</strong>. "Sex själar som sex låskolvar. Offrade för tusentals år sedan för att bygga... det."</p>
+
+<p>Han pekade mot det blå ljuset.</p>
+
+<p><strong>Umnatak</strong>s röst, från kniven, knappt hörbar:</p>
+
+<p><em>"Sex själar... motor... portalen stannar öppen... men... VinterGlöd äter dem... långsamt... eller... väntar på att byta ut dem... sex nya... oss..."</em></p>
+
+<p>Tystnad.</p>
+
+<p>Sedan <strong>Kazrik</strong>, rösten darrade: "Älvakungen. Namnet står här. I runorna. Det betyder inte 'älva' eller 'kung'. Det är coloniskt. Betyder... 'själabärare'. 'Portalväktare'."</p>
+
+<p><strong>Gordon</strong> förstod. De hade aldrig haft en allierad. <strong>Älvakungen</strong> hade aldrig hjälpt dem. Varje offer de gett - <strong>Arcadius</strong> skuld, <strong>Thrakka</strong>s minnen, <strong>Gordon</strong>s generositet - allt hade gått till <strong>VinterGlöd</strong>.</p>
+
+<p>De hade varit <em>mat</em> hela tiden.</p>
+
+<div class="info-box purple">
+<div class="info-box-title">Colonernas Arv</div>
+<p>Kolonerna - det uråldriga folk som existerat före människornas riken - byggde portaler mellan världarna. Men portaler kräver energi. Kraft. Något levande att hålla dem öppna.</p>
+<p>Sex själar bundna i sten. Bundna för evigt. Skriker tysta skrik ingen hör medan deras essens långsamt förtärs för att mata portalen.</p>
+<p><strong>VinterGlöd</strong> var ingen demon. Han var en <em>själssamlare</em>. Colonisk titel. Hans jobb var att hitta nya själar när de gamla förtärdes.</p>
+<p><strong>Älvakungen</strong> var hans redskap. Hans fälla. Hans samlare.</p>
+<p>Och gruppen hade dansat rakt in i fällan.</p>
+</div>
+
+<hr>
+
+<h2>Tråden Brister</h2>
+
+<p><strong>Corvus</strong> tog ett steg till mot det blå ljuset. Sedan ett till. Hans kropp darrade. Från hålet i hans bröst växte frostkristaller - synliga nu, reale inte bara andliga.</p>
+
+<p>Tråden - den silver-svarta tråden som <strong>Ulzak</strong> kunde se på andeplanet - sträckte sig från <strong>Corvus</strong> bröst till portalen. Spändes. Vibrerade.</p>
+
+<p>"Om tråden spänns för hårt," viskade <strong>Ulzak</strong>, "dras hans själ in i sitt eget hål. Han försvinner. Inte död. Bara... borta."</p>
+
+<p>"Stoppa honom!" <strong>Gordon</strong> försökte gripa <strong>Corvus</strong> men mannens hud var som is. Som att röra vintern själv.</p>
+
+<p><strong>Corvus</strong> vände sig om. Hans ögon var tomma. Inte onda. Bara... tomma.</p>
+
+<p>"Jag förstår att detta är farligt," sa han med en röst som inte kände igen känslor. "Men jag förstår inte varför det betyder något. Jag offrade min skuld. Tappade förmågan att bry mig om konsekvenser."</p>
+
+<p>Tråden sträcktes.</p>
+
+<p>"SKÄR!" <strong>Umnatak</strong>s röst exploderade från kniven. "Tråd... skär... SKÄR AV..."</p>
+
+<p><strong>Ulzak</strong> grep meteoritjärnskniven. "Jag ser ingen tråd! Var—"</p>
+
+<p>"Mellan honom och ljuset! Kniven finns i båda världar! Skär där tråden spänns!"</p>
+
+<p><strong>Ulzak</strong> höjde kniven. Bladet <em>ryckte</em> i hans hand - draget mot något bara den kunde känna. Vibrerade med en ton bara tirakiska öron hörde.</p>
+
+<p>Han slog.</p>
+
+<p>Kniven fastnade. Mitt i tomma luften. Som att skära genom osynligt stål.</p>
+
+<p><em>KNÄPP.</em></p>
+
+<p>Tråden <em>brast</em>.</p>
+
+<h3>Explosionen</h3>
+
+<p><strong>Arcadius</strong> skrek.</p>
+
+<p>Kroppen <em>bågage</em>. Rygg bakåt. Huvudet kastades mot taket. Från hålet i bröstet exploderade blått sken - bländande, fruktansvärt, <em>vackert</em> - och sedan släcktes.</p>
+
+<p>Helt.</p>
+
+<p>Från portalen framåt - rösterna som viskat och lockat - tysta. Abrupt. Som att någon stängt av världen.</p>
+
+<p><strong>Corvus</strong> föll. <strong>Gordon</strong> hann fånga honom innan han slog i stenen. Mannen andades - häftigt, spasmodiskt - ögon rullade tillbaka i huvudet.</p>
+
+<p>Hålet i bröstet var fortfarande där. Men annorlunda nu. Råskuret. Tomt på ett nytt, värre sätt.</p>
+
+<p><strong>Ulzak</strong> stod med kniven. Bladet <em>röktes</em> - svart rök som när metall blir för hett att röra.</p>
+
+<p>Från kniven - <strong>Umnatak</strong>s röst, knappt en viskning:</p>
+
+<p><em>"...av... tråden... av..."</em></p>
+
+<p>Sedan tystnad.</p>
+
+<p><strong>Gordon</strong> band <strong>Corvus</strong>. Inte för att mannen kämpade - han var medvetslös eller värre - men för att vad som än hänt med hans själ när tråden brast, <strong>Gordon</strong> litade inte på vad som kunde komma tillbaka.</p>
+
+<p>Det blå ljuset fortsatte pulsera längre fram i korridoren. Portalen fortfarande öppen. Men rösterna tysta.</p>
+
+<p>"Vad nu?" viskade <strong>Kazrik</strong>.</p>
+
+<p><strong>Thrakka</strong> låg mot väggen, revben brutna, andades mödosamt. <strong>Corvus</strong> medvetslös, själ möjligen försvunnen. <strong>Umnatak</strong> fängslad i en kniv. <strong>Ulzak</strong> i fel kropp. <strong>Gordon</strong> och <strong>Kazrik</strong> de enda hela kvar.</p>
+
+<p>Och framför dem - en portal till något värre än Skugglandet. En portal byggd av sex tusenåriga själar. En portal som <strong>VinterGlöd</strong> väntade på andra sidan av.</p>
+
+<p>En portal där kanske <strong>Zentri</strong> fortfarande levde.</p>
+
+<p>Kanske.</p>
+
+<hr>
+
+<h2>Porten Till Citadellet</h2>
+
+<p><strong>Gordon</strong> beslutade. Någon måste. Ledare är den som beslutar när alla val är dåliga.</p>
+
+<p>"Vi går vidare," sa han.</p>
+
+<p>"Gordon—" började <strong>Kazrik</strong>.</p>
+
+<p>"Vi kom hit för <strong>Zentri</strong>. Han är där någonstans." <strong>Gordon</strong> pekade mot det blå ljuset. "Vänder vi nu är allt förgäves. <strong>Umnatak</strong>s offer. Allt."</p>
+
+<p>Tystnad.</p>
+
+<p>Sedan <strong>Thrakka</strong>, rösten svag men fast: "Då går vi."</p>
+
+<p>De lättade <strong>Corvus</strong> upp. Band <strong>Thrakka</strong>s revben så gott det gick. <strong>Ulzak</strong> gled in i sin nya kropp med den obehagliga enkelhet som kom från hundra års fångenskap i andlig form.</p>
+
+<p>De gick mot ljuset.</p>
+
+<p>Korridoren öppnade sig till en kammare. I kammaren stod portalen - en cirkel av blått sken hängande i luften som en vertikal sjö. Runor flödade runt kanterna. De sex pelarna under golvet pulserade i synk med portalen.</p>
+
+<p>Genom portalen såg de något.</p>
+
+<p>Ett torn. Massivt. Byggt av sten och is och någonting levande. På tornets topp - ett fönster. I fönstret - en skugga som kunde varit mänsklig.</p>
+
+<p>"<strong>Zentri</strong>," viskade <strong>Gordon</strong>.</p>
+
+<p>"Eller fälla," sa <strong>Kazrik</strong>.</p>
+
+<p>"Spelar det någon roll?" <strong>Gordon</strong> steg mot portalen. "Vi har kommit för långt för att vända nu."</p>
+
+<p>Han gick igenom.</p>
+
+<p>De andra följde.</p>
+
+<p>Det som väntade på andra sidan var inte en värld. Det var <strong>VinterGlöd</strong>s domän. Citadellet där själssamlaren suttit i tusen år och väntat på nya offer.</p>
+
+<p>Och nu hade offren kommit till honom.</p>
+
+<div class="info-box red">
+<div class="info-box-title">Vad De Inte Visste</div>
+<p><strong>Arcadius</strong> skuld var inte förstörd när tråden bröts. Den var <em>separerad</em>. Hälften fanns fortfarande i hålet. Hälften fanns bortom portalen.</p>
+<p>När han gick genom portalen skulle de två halvorna försöka återförenas.</p>
+<p>Frågan var: vad skulle bli kvar av <strong>Corvus</strong> när det hände?</p>
+</div>
+
+<hr>
+
+<h2>Session slutar - Cliffhanger</h2>
+
+<p>De stod i <strong>VinterGlöd</strong>s citadell. Väggar av is och sten och bundna andar. Skriken från sex tusenåriga själar ekade under deras fötter. Portalen bakom dem lystes blått och lockande.</p>
+
+<p><strong>Thrakka</strong> med brutna revben. <strong>Corvus</strong> med en själ i bitar. <strong>Umnatak</strong> fängslad i järn. <strong>Ulzak</strong> i fel kropp.</p>
+
+<p>Och någonstans i denna citadell - <strong>Zentri</strong>. Eller vad som var kvar av honom.</p>
+
+<p><strong>Gordon</strong> höjde sitt svärd.</p>
+
+<p>"För <strong>Vitterdal</strong>," sa han tyst.</p>
+
+<p>"För de fallna," svarade <strong>Thrakka</strong>.</p>
+
+<p>"För sanningen," tillade <strong>Kazrik</strong>.</p>
+
+<p>Från kniven - <strong>Umnatak</strong>s röst, svag men klar:</p>
+
+<p><em>"För det vi släppte..."</em></p>
+
+<p>De gick vidare in i mörkret.</p>
+
+<p>Och citadellet väntade.</p>
+
+<div class="quote">
+<strong>"Vissa offer kan inte tas tillbaka,"</strong> brukade <strong>Ulzak</strong> säga på sina gamla dagar. <strong>"Vissa val förvandlar dig så grundligt att det inte finns någon väg hem. Men ibland - bara ibland - är förvandlingen priset för något större."</strong>
+<br><br>
+<strong>Umnatak</strong> hade blivit något annat nu. Inte man. Inte ande. Något däremellan.
+<br><br>
+<strong>Corvus</strong> hade förlorat sin själs hälften. Vad som återstod var en människa utan förmåga att känna skuld.
+<br><br>
+<strong>Thrakka</strong> bar en ny börda - vetskapen att någon offrat sig för honom.
+<br><br>
+<strong>Gordon</strong> bar alltihop. Ledaren bär alltid alltihop.
+<br><br>
+Och framför dem väntade <strong>VinterGlöd</strong> - själssamlaren, portalväktaren, den som redan ägt dem sen de mötte <strong>Älvakungen</strong>.
+<br><br>
+Vissa offer kan inte tas tillbaka.
+<br><br>
+Men de kan användas.
+</div>
+
+        </article>
+    </div>
+
+    <script src="kapitel-linkify.js"></script>
+</body>
+</html>
