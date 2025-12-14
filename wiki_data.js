@@ -1,6 +1,3 @@
-// Wiki data för EON kampanjwiki
-// Genererad automatiskt från kampanjdokument
-
 var wikiData = {
   "npcs": [
     {
@@ -102,7 +99,7 @@ var wikiData = {
       "kapitel": "Kapitel 1",
       "beskrivning": "# PERTILS FRU\n**Gravid offer i Frisänkan**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Död (mördad)\n- **Plats:** Frisänkan\n- **Kapitel:** Kapitel 1\n- **Familj:** Gift med Pertil Fiskaren\n\n## BESKRIVNING\nPertils fru var gravid med deras första barn när hon mördades.\n\n## MORDET\nMördad av Tamron/Ibran tillsammans med sin man. Hon bar deras första barn. Mordet var meningslöst brutalt - ett oskyl digt offer för demonens mörker.\n\n## TRAGEDI\nHennes död och deras oföddas död representerar den mänskliga kostnaden av demonens frigörelse. Två liv (snart tre) utplånade utan anledning.\n\n## KOPPLINGAR\n- **Pertil Fiskaren:** Man (död)\n- **Tamron/Ibran:** Mördare\n- **Kapten Benne Tok:** Rapporterade mordet"
     },
-        {
+    {
       "namn": "Prins Yelgotha av det Första Hovet",
       "bild": "yelgotha.png",
       "ras": "Alv",
@@ -158,7 +155,7 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# AMINA BINT-SALIM\n**Serverare på Månskärets Gömställe**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Serverare\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nAmina bint-Salim arbetar som serverare på Månskärets Gömställe och är känd för sin förmåga att vara både närvarande och osynlig när situationen kräver det.\n\n## ARBETSUPPGIFTER\nSom serverare:\n- Serverar mat och dryck\n- Upprätthåller diskret service\n- Respekterar gästernas integritet\n- Säkerställer smidig verksamhet\n\n## KARAKTÄR\n- Diskret och observant\n- Professionell\n- Tystlåten\n- Läser av situationer väl\n\n## KOPPLINGAR\n- **Arbetsplats:** Månskärets Gömställe\n- **Arbetsgivare:** Zara al-Min\n- **Kollegor:** Rashid, Hassan, Laila\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
-        {
+    {
       "namn": "Amir ibn-Farouk",
       "bild": "amir-ibn-farouk.png",
       "ras": "Människa",
@@ -213,7 +210,7 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# ANYA VÄV\n**Textilansvarig och berättare**\n\n## GRUNDINFO\n- **Ras:** Människ\n\na\n- **Kön:** Kvinna\n- **Yrke:** Textilansvarig, berättare\n- **Plats:** Frisänkan (by)\n- **Status:** Levande\n\n## BESKRIVNING\nAnya är hjärtat i byns sociala liv genom hennes berättelser och hennes roll i att hålla byns traditioner levande.\n\n## ROLL I BYN\nHennes hus är ofta en samlingspunkt för byns kvinnor och barn, vilket skapar en känsla av gemenskap och tillhörighet.\n\n## KARAKTÄR\n- Hjärtat i byns sociala liv\n- Håller traditioner levande\n- Berättare\n- Skapar gemenskap\n\n## KOPPLINGAR\n- **Position:** Textilansvarig och berättare\n- **Plats:** Frisänkan\n- **Roll:** Social knutpunkt för byns kvinnor och barn"
     },
-        {
+    {
       "namn": "Båg-Pieter",
       "bild": "båg_pieter.png",
       "ras": "Människa",
@@ -235,7 +232,7 @@ var wikiData = {
       "kapitel": "Kapitel 2",
       "beskrivning": "# BARTOL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
     },
-        {
+    {
       "namn": "Benne Tok",
       "bild": "benne-tok.png",
       "ras": "Människa",
@@ -392,28 +389,6 @@ var wikiData = {
       "beskrivning": "# DEN BLINDA SPÅKVINNAN (†)\n**Spåkvinna i Ravnovo - arresterad och avrättad för häxeri**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** Gammal\n- **Yrke:** Spåkvinna och örtförsäljare\n- **Särskilda drag:** Blind, magisk känsla\n- **Status:** Död (bränd för häxeri)\n- **Plats:** Ravnovo marknad, Jargien\n- **Kapitel:** Kapitel 4 (Jargien)\n\n## BESKRIVNING\nEn gammal kvinna som sålde örter och amuletter på marknaden i Ravnovo. Trots sin blindhet kunde hon \\\"se\\\" magiska essenser och märken på människor.\n\n## KRITISKA HÄNDELSER\n\n### Mötet på marknaden\n**Kände igen Zentri:**\n- \\\"Jag känner dig, enögde magiker. Du bär ett märke, liksom jag.\\\"\n- Kände igen förluster: \\\"Alla vi som förlorat något bär ett tecken\\\"\n- Zentri: förlorat öga men vunnit insikt\n- Hon: förlorat syn men kan se framtiden\n\n**Gåvan:**\n- Gav Zentri en cirkelformad träamulett\n- \\\"För krigaren från öster. Bär detta över ditt hjärta.\\\"\n- \\\"När drömmen kommer åter, låt inte dess röst nå in.\\\"\n- Skydd mot demonisk påverkan\n- Priset: \\\"Redan betalt\\\" (mystiskt)\n\n### Arrestering och död\n**Anklagelser:**\n- Prästen anklagade henne för häxeri\n- \\\"Hon har förhäxat böndernas boskap!\\\"\n- \\\"Hon har talat med en främmande tunga!\\\"\n- \\\"Hon har sett utan ögon!\\\"\n\n**Avrättning:**\n- Arresterad av Daakkyrkans vakter\n- Troligen bränd på bål\n- Gruppen kunde inte ingripa (Jargiens lagar)\n\n## KARAKTÄRSDRAG\n- **Seende:** Blind men magiskt känslig\n- **Vis:** Förstod Zentris situation\n- **Generös:** Gav amuletten utan betalning\n- **Offer:** Visste riskerna med sin gåva\n\n## BETYDELSE\n**Amuletten:**\nSkyddet hon gav Zentri visade sig kritiskt - amuletten höll demonrösten på avstånd under flera viktiga ögonblick.\n\n**Varning:**\nHennes öde påminde gruppen om Jargiens farliga vidskepelse och Daakkyrkans makt.\n\n## SL-ANTECKNINGAR\n- Visste hon mer om Zentris framtid?\n- Varför sa hon priset var \\\"redan betalt\\\"?\n- Symboliken i ögonbindel/ögonlapp\n- Kunde hennes verkliga magi ha räddat henne - eller var hennes offer avsiktligt?"
     },
     {
-      "namn": "Den Frusne Fursten",
-      "bild": null,
-      "ras": "Alv",
-      "titel": "Portvakt mellan världarna",
-      "status": "levande",
-      "plats": "Älvakonungens Sal (Gränslandet)",
-      "fraktion": null,
-      "kapitel": null,
-      "beskrivning": "# DEN FRUSNE FURSTEN\n**Älvakungen, portvakt mellan Mundana och Skugglandet**\n\n## GRUNDINFO\n- **Namn:** Prins Yelgotha\n- **Alias:** Den Frusne Fursten, Älvakungen\n- **Ras:** Alvisk furste från Skugglandet\n- **Kön:** Man\n- **Status:** Frusen i ispelare, väntar\n- **Plats:** Älvakonungens Sal (Gränslandet)\n- **Första omnämnande:** Fas 10\n\n## BESKRIVNING\nDen Frusne Fursten är en gammal furste från Skugglandet som står frusen i en ispelare i Älvakonungens Sal. Hans björksal är evigt sänkt i köld och vinter, och han omges av sina sista lojala anhängare - frusna hovfolk.\n\n## FUNKTION\nFursten fungerar som **portvakt mellan världarna** - mellan Mundana och Skugglandet. Han kan inte vakna förrän profetian uppfylls.\n\n## PROFETIAN OM DEN SJÄTTE VANDRAREN\n\n\"Den Sjätte Vandrarens Profetia\" förutsäger sex vandrare:\n- *\"Den första söker kunskap\"*\n- *\"Den andre bär bördan\"*\n- *\"Den tredje ser bortom\"*\n- *\"Den fjärde minns smärtan\"*\n- *\"Den femte bär skulden\"*\n- *\"Den sjätte är förlorad\"*\n\nNär de sex vandrarena samlas vid Älvakonungens Sal kan portalen till Skugglandet öppnas.\n\n## INTRÄDESKRAVEN\n\nFör att väcka Fursten och öppna portalen krävs:\n\n1. **Sex vandrare samlade** - Gruppen + minnet av den sjätte\n2. **Acceptera Furstens vaknade** - Röra ispelaren\n3. **Offra värme** - Släcka all eld, acceptera kylan\n4. **Svära eden** - \"Vi kommer som den sjätte\"\n5. **Dricka från Iskalken** - Binder till Skugglandets lagar\n\n## MILJÖ\nÄlvakonungens Sal ligger där verkligheten är utsuddad mellan Mundana och Skugglandet. Här är gränsen mellan världarna nästan borta.\n\n- **Omgivning:** Björksal i evig vinter\n- **Vakter:** Frusna hovfolk, sista lojala anhängare\n- **Fenomen:** Skugglandets läckage, verkligheten förvrängs\n\n## ROLL I KAMPANJEN\nDen Frusne Fursten är den slutliga porten till Skugglandet. Att väcka honom och uppfylla profetian är nyckeln för att rädda Zentri från Lord Vinterglöd.\n\n## KOPPLINGAR\n- **Plats:** Älvakonungens Sal, Gränslandet mellan Mundana och Skugglandet\n- **Profetia:** Den Sjätte Vandrarens Profetia\n- **Funktion:** Portal till Skugglandet\n- **Relation:** Zentri är \"den sjätte\" i profetian"
-    },
-    {
-      "namn": "Den grå gestalten",
-      "bild": null,
-      "ras": "Okänd",
-      "titel": "Mystisk observatör",
-      "status": "okänd",
-      "plats": "Skogarna nära Vargnäset, Jargien",
-      "fraktion": null,
-      "kapitel": "Kapitel 4",
-      "beskrivning": "# DEN GRÅ GESTALTEN\n**Mystisk observatör i Jargiens skogar**\n\n## GRUNDINFO\n- **Ras:** Okänd\n- **Utseende:** Ensam gestalt insvept i grå kappa\n- **Status:** Okänd\n- **Plats:** Skogarna nära Vargnäset\n- **Kapitel:** Kapitel 4 (Jargien)\n\n## BESKRIVNING\nEn mystisk gestalt som observerade gruppen från skogskanten efter deras möte med Kommendör Reval och Arvorns Hammare. Figuren var delvis dold bland träden, svår att urskilja på avstånd.\n\n## KRITISKA HÄNDELSER\n\n### Observationen\n**Efter mötet med tempelriddarna:**\n- Gruppen hade precis mött Kommendör Reval\n- Såg en fången kvinna transporteras i vagn\n- Den grå gestalten observerade från skogskanten\n\n**Umnataks upptäckt:**\n- Umnatak pekade ut gestalten\n- Svår att urskilja detaljer på avstånd\n- Verkade intensivt iaktta gruppen\n\n**Försvinnande:**\n- Vek in bland träden innan någon kunde reagera\n- Umnatak ville följa men stoppades av Dorin\n- \\\"Vi håller oss till vägen och vår plan\\\"\n\n## SPEKULATIONER\n\n### Möjliga identiteter:\n- **Spion för Arvorns Hammare?** Följde tempelriddarna?\n- **Observatör för annan fraktion?** Zorian-systrar? Andra intressenter?\n- **Beskyddare?** Någon som följer gruppens resa?\n- **Hot?** Okänd fiende som spårar dem?\n\n### Koppling till fången?\nDen grå gestalten dyk upp direkt efter mötet med den mystiska kvinnliga fången. Samband?\n\n## KARAKTÄRSDRAG\n- **Diskret:** Dold i skogen, svår att se\n- **Observant:** Intensiv observation av gruppen\n- **Snabb:** Försvann innan reaktion\n- **Mystisk:** Ingen identifiering möjlig\n\n## BETYDELSE\nEn obesvarad fråga från Jargien-resan. Vem var gestalten? Varför observerade den gruppen? Kommer den dyka upp igen?\n\n## SL-ANTECKNINGAR\n- Potentiell återkommande karaktär\n- Koppling till större konspiration?\n- Relaterad till fången i Revals vagn?\n- Kan vara vän eller fiende"
-    },
-    {
       "namn": "Dhormel",
       "bild": "dhormel.png",
       "ras": "Troll",
@@ -479,7 +454,7 @@ var wikiData = {
       "kapitel": null,
       "beskrivning": "# EIRA HOLM\n\n**Ledare för Vargnäsets 50 överlevande flyktingar**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 9 (Evakueringen)\n- **Roll:** Civil ledare, allierad\n\n## BAKGRUND\n\nEira Holm var en av Vargnäsets bybor som såg både Zentris blodsmagiska attack och Sankt Astrids korsfästelse. Hon steg fram som naturlig ledare när evakueringen började.\n\n## KRITISKA HÄNDELSER\n\n### Evakueringen (Fas 9)\n**Flykt från Vargnäset:**\n- 50 bybor evakuerades\n- Eira koordinerade med Gordon\n- 41 överlevde resan till Grensfortet\n\n### Grensfortet\n- Etablerade flyktinggruppen\n- Lady Soffia skickade förnödenheter\n- Gruppen lämnade dem för att gå till Skugglandet\n\n## KARAKTÄRSDRAG\n\n- **Naturlig ledare:** Steg fram i krisen\n- **Pragmatisk:** Höll moralen uppe\n- **Lojal:** Gentemot gruppen som räddade dem\n\n## RELATIONER\n\n### Räddare\n- **Gordon och gruppen:** Ledde evakueringen\n- **Lady Soffia:** Skickade stöd\n\n### Flyktingar\n- **41 överlevande:** Hennes ansvar\n\n## NUVARANDE SITUATION\n\nEira leder de 41 överlevande i Grensfortet medan gruppen är i Skugglandet. De är ensamma och utsatta.\n\n## SL-ANTECKNINGAR\n\n- Flyktingarna är utsatta utan gruppen\n- Kan bli mål för Arvorns Hammare\n- Eira kan behöva försvara gruppen vid återkomst\n- Moralisk vikt - gruppen är ansvariga för dessa liv"
     },
-        {
+    {
       "namn": "Elara can De Mediva",
       "bild": "elara.png",
       "ras": "Alv",
@@ -3111,8 +3086,6 @@ var wikiData = {
     }
   ]
 };
-
-// Export for Node.js
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== "undefined" && module.exports) {
   module.exports = wikiData;
 }
