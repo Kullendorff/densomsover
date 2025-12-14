@@ -437,7 +437,7 @@ var wikiData = {
     },
     {
       "namn": "Dorin Kallhammare",
-      "bild": null,
+      "bild": "dorin-kallhammare.png",
       "ras": "Dvärg",
       "titel": "Karavanledare",
       "status": "okänd",
@@ -481,7 +481,7 @@ var wikiData = {
     },
         {
       "namn": "Elara can De Mediva",
-      "bild": null,
+      "bild": "elara.png",
       "ras": "Alv",
       "titel": null,
       "status": "levande",
@@ -612,7 +612,7 @@ var wikiData = {
     },
     {
       "namn": "Fatima bint-Salim",
-      "bild": null,
+      "bild": "fatima-bint-salim.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -832,7 +832,7 @@ var wikiData = {
     },
     {
       "namn": "Harald Vädermästare",
-      "bild": null,
+      "bild": "harald-vadermastare.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -843,7 +843,7 @@ var wikiData = {
     },
     {
       "namn": "Harun al-Farid",
-      "bild": null,
+      "bild": "harun-al-farid.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -854,7 +854,7 @@ var wikiData = {
     },
     {
       "namn": "Hassan al-Rashid",
-      "bild": null,
+      "bild": "hassan-al-rashid.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -865,7 +865,7 @@ var wikiData = {
     },
     {
       "namn": "Hassan ibn-Khalid",
-      "bild": null,
+      "bild": "hassan-ibn-khalid.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -876,7 +876,7 @@ var wikiData = {
     },
     {
       "namn": "Helena Stenmark",
-      "bild": null,
+      "bild": "helena-stenmark.png",
       "ras": "Människa",
       "titel": null,
       "status": "död",
@@ -887,7 +887,7 @@ var wikiData = {
     },
     {
       "namn": "Hemkhath Thokk",
-      "bild": null,
+      "bild": "hemkhath-thokk.png",
       "ras": "Tirak",
       "titel": null,
       "status": "okänd",
@@ -953,7 +953,7 @@ var wikiData = {
     },
     {
       "namn": "Inga Bredaxel",
-      "bild": null,
+      "bild": "inga-bredaxel.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -986,7 +986,7 @@ var wikiData = {
     },
     {
       "namn": "Isolde Eldkonstnär",
-      "bild": null,
+      "bild": "isolde-eldkonstnar.png",
       "ras": "Människa",
       "titel": null,
       "status": "död",
@@ -1008,7 +1008,7 @@ var wikiData = {
     },
     {
       "namn": "Jaela Härlig",
-      "bild": null,
+      "bild": "jaela-harlig.png",
       "ras": "Människa",
       "titel": null,
       "status": "död",
@@ -1019,7 +1019,7 @@ var wikiData = {
     },
     {
       "namn": "Jakob",
-      "bild": null,
+      "bild": "jakob.png",
       "ras": "Människa",
       "titel": "Jägare och vägvisare",
       "status": "okänd",
@@ -1184,7 +1184,7 @@ var wikiData = {
     },
     {
       "namn": "Kaelthar Klerk",
-      "bild": null,
+      "bild": "kaelthar-klerk.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1206,7 +1206,7 @@ var wikiData = {
     },
     {
       "namn": "Kapten Eamon",
-      "bild": null,
+      "bild": "kapten-eamon.png",
       "ras": "Människa",
       "titel": "Kapten (pensionerad)",
       "status": "levande",
@@ -1217,7 +1217,7 @@ var wikiData = {
     },
     {
       "namn": "Kapten Mordicus Helga",
-      "bild": null,
+      "bild": "kapten-mordicus-helga.png",
       "ras": "Människa",
       "titel": "Kapten",
       "status": "levande",
@@ -1228,7 +1228,7 @@ var wikiData = {
     },
     {
       "namn": "Karim al-Jafar",
-      "bild": null,
+      "bild": "karim-al-jafar.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1250,7 +1250,7 @@ var wikiData = {
     },
     {
       "namn": "Karim ibn-Hassan",
-      "bild": null,
+      "bild": "karim-ibn-hassan.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1283,7 +1283,7 @@ var wikiData = {
     },
     {
       "namn": "Konrad",
-      "bild": null,
+      "bild": "konrad.png",
       "ras": "Människa",
       "titel": "Handelsman",
       "status": "levande",
@@ -1294,7 +1294,7 @@ var wikiData = {
     },
     {
       "namn": "Krake Fiskare",
-      "bild": null,
+      "bild": "krake-fiskare.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1338,7 +1338,7 @@ var wikiData = {
     },
     {
       "namn": "Laila bint-Ali",
-      "bild": null,
+      "bild": "laila-bint-ali.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1349,7 +1349,7 @@ var wikiData = {
     },
     {
       "namn": "Laila bint-Farid",
-      "bild": null,
+      "bild": "laila-bint-farid.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -2592,7 +2592,7 @@ var wikiData = {
     },
     {
       "namn": "Gustav Stenmark",
-      "bild": null,
+      "bild": "gustav-stenmark.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
