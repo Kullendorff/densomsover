@@ -876,7 +876,7 @@ var wikiData = {
     },
     {
       "namn": "Helena Stenmark",
-      "bild": "helena-stenmark.png",
+      "bild": null,
       "ras": "Människa",
       "titel": null,
       "status": "död",
@@ -1779,7 +1779,7 @@ var wikiData = {
     },
     {
       "namn": "Ragnar Fiskare",
-      "bild": null,
+      "bild": "ragnar-fiskare.png",
       "ras": "Människa",
       "titel": null,
       "status": "okänd",
@@ -1790,7 +1790,7 @@ var wikiData = {
     },
     {
       "namn": "Ragnar",
-      "bild": null,
+      "bild": "ragnar.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
