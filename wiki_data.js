@@ -1578,7 +1578,7 @@ var wikiData = {
     },
     {
       "namn": "Mivell Thamrin",
-      "bild": null,
+      "bild": "Mivell_Thamrin.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1644,7 +1644,7 @@ var wikiData = {
     },
     {
       "namn": "Nekromantikern",
-      "bild": null,
+      "bild": "Nekromantikern.png",
       "ras": "Okänd",
       "titel": "Nekromantiker",
       "status": "död",
@@ -1677,7 +1677,7 @@ var wikiData = {
     },
     {
       "namn": "Nocturne",
-      "bild": null,
+      "bild": "Nocturne.png",
       "ras": "Okänd",
       "titel": null,
       "status": "levande",
@@ -1688,7 +1688,7 @@ var wikiData = {
     },
     {
       "namn": "Olav Murkross",
-      "bild": null,
+      "bild": "Olav_Murkross.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1732,7 +1732,7 @@ var wikiData = {
     },
     {
       "namn": "Omar ibn-Salim",
-      "bild": null,
+      "bild": "Omar_ibn-Salim.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
