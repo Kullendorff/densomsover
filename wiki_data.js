@@ -1567,7 +1567,7 @@ var wikiData = {
     },
     {
       "namn": "Mirelle",
-      "bild": null,
+      "bild": "Mirelle.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1633,7 +1633,7 @@ var wikiData = {
     },
     {
       "namn": "Naila bint-Zahir",
-      "bild": null,
+      "bild": "Naila_bint-Zahir.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1699,7 +1699,7 @@ var wikiData = {
     },
     {
       "namn": "Olof Stenmark",
-      "bild": null,
+      "bild": "Olof_Stenmark.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
