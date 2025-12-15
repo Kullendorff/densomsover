@@ -14,8 +14,8 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 - 🔄 Pågående: Bildmatchning (NPCs saknar bilder)
 
 ### VÄNTANDE BILDUPPLADDNING
-8 NPC-bilder är klara i wiki_data.js men **bildfiler saknas** i repot:
-- `Mivell_Thamrin.png` - Tempell edare, lila kläder med bok
+12 NPC-bilder är klara i wiki_data.js men **bildfiler saknas** i repot:
+- `Mivell_Thamrin.png` - Tempelledare, lila kläder med bok
 - `Nocturne.png` - Hooded mystisk figur, dolt ansikte
 - `Olav_Murkross.png` - Gammal veteran-soldat, sliten
 - `Omar_ibn-Salim.png` - Arabisk skrivare med turban
@@ -23,6 +23,10 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 - `Mirelle.png` - Kock med fisk, slev, köksmiljö
 - `Naila_bint-Zahir.png` - Arabisk serveringspersonal med tebricka
 - `Olof_Stenmark.png` - Ung far med barn, flyktingsituation
+- `Sheikh_Nabil.png` - Gammal eremit vid oas, bönepärlor
+- `Rimklo.png` - Massiv vit isbjörn, rytande
+- `Radslingan.png` - Skuggvarelse ur grotta/mörker
+- `Sankt_Astrid.png` - Blond flicka, ber, vildblommor, by
 
 **Att göra:** Kopiera från Midjourney-mappen till `kampanjwiki/assets/images/npcs/`, döp om, committa.
 

@@ -1853,7 +1853,7 @@ var wikiData = {
     },
     {
       "namn": "Rimklo",
-      "bild": null,
+      "bild": "Rimklo.png",
       "ras": "Monster",
       "titel": null,
       "status": "levande",
@@ -1886,7 +1886,7 @@ var wikiData = {
     },
     {
       "namn": "Rådslingan",
-      "bild": null,
+      "bild": "Radslingan.png",
       "ras": "Varelse",
       "titel": "Skuggvarelse",
       "status": "upplöst",
@@ -1919,7 +1919,7 @@ var wikiData = {
     },
     {
       "namn": "Sankt Astrid",
-      "bild": null,
+      "bild": "Sankt_Astrid.png",
       "ras": "Människa",
       "titel": null,
       "status": "död",
@@ -1974,7 +1974,7 @@ var wikiData = {
     },
     {
       "namn": "Sheikh Nabil",
-      "bild": null,
+      "bild": "Sheikh_Nabil.png",
       "ras": "Människa",
       "titel": "Sheikh",
       "status": "levande",
