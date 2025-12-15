@@ -6,12 +6,22 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 **Huvudsida:** Fantasy-dashboard (`/index.html`) med centraliserad databas (`wiki_data.js`)
 **Referens:** Jekyll-wiki (`/kampanjwiki/`) för strukturerad markdown-data
 
-## NUVARANDE STATUS (2025-12-12)
-- ✅ Dashboard live med 242 NPCs, 58 platser, 11 kapitel
+## NUVARANDE STATUS (2025-12-15)
+- ✅ Dashboard live med 240 NPCs, 58 platser, 11 kapitel
 - ✅ Grid + Modal-layout, sök/filter-funktioner
 - ✅ Bilder centraliserade i `kampanjwiki/assets/images/`
 - ✅ 6 specialiserade agenter + 1 skill för drift
-- 🔄 Pågående: Bildmatchning (121 NPCs saknar bilder)
+- 🔄 Pågående: Bildmatchning (NPCs saknar bilder)
+
+### VÄNTANDE BILDUPPLADDNING
+5 NPC-bilder är klara i wiki_data.js men **bildfiler saknas** i repot:
+- `Mivell_Thamrin.png` - Tempell edare, lila kläder med bok
+- `Nocturne.png` - Hooded mystisk figur, dolt ansikte
+- `Olav_Murkross.png` - Gammal veteran-soldat, sliten
+- `Omar_ibn-Salim.png` - Arabisk skrivare med turban
+- `Nekromantikern.png` - Skelettfigur med blå magi
+
+**Att göra:** Kopiera från Midjourney-mappen till `kampanjwiki/assets/images/npcs/`, döp om, committa.
 
 ---
 
