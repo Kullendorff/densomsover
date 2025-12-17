@@ -60,6 +60,20 @@
         .small-image:hover {
             transform: scale(1.02);
         }
+        .side-image {
+            float: right;
+            width: 280px;
+            max-height: 350px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin: 0 0 1rem 1.5rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .side-image:hover {
+            transform: scale(1.02);
+        }
         /* Lightbox styles */
         .lightbox {
             display: none;
@@ -144,11 +158,13 @@
 
 <h3>Om Urkhath</h3>
 
-<img src="kampanjwiki/assets/images/briefing/urkhath.png" alt="Urkhath - Hungerns Furste" class="inline-image">
+<img src="kampanjwiki/assets/images/briefing/urkhath.png" alt="Urkhath - Hungerns Furste" class="side-image">
 
 <p>En gammal demon. Äldre än de flesta kungariken i din värld. VinterGlöd kallar honom <em>"Hungerns Furste"</em> - han vill inte bara erövra, han vill sluka. Konsumera. Ta in allt i sig själv.</p>
 
 <p>Du har svårt att greppa skalan. VinterGlöd pratar om honom som något urgammalt och kosmiskt. Du tänker mer som "en väldigt mäktig demon" - men ibland ser du något i VinterGlöds ögon som säger att det är värre än så.</p>
+
+<div style="clear: both;"></div>
 
 <h3>Om Bindningen</h3>
 <p>För länge sedan - tusentals år - bands Urkhath av tiraker och andra. VinterGlöd var vag om detaljerna. Han sa bara att det krävdes <em>"offer på båda sidor av världen"</em> och att bindningen höll. Tills nu.</p>
