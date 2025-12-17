@@ -23,27 +23,77 @@
         hr { border: none; border-top: 1px solid #333; margin: 2rem 0; }
         .hero-image {
             width: 100%;
-            max-height: 400px;
-            object-fit: cover;
+            max-height: 500px;
+            object-fit: contain;
             border-radius: 8px;
             margin: 2rem 0;
             box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .hero-image:hover {
+            transform: scale(1.02);
         }
         .inline-image {
             width: 100%;
-            max-height: 300px;
-            object-fit: cover;
+            max-height: 400px;
+            object-fit: contain;
             border-radius: 8px;
             margin: 1.5rem 0;
             box-shadow: 0 2px 15px rgba(0,0,0,0.4);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .inline-image:hover {
+            transform: scale(1.02);
         }
         .small-image {
             width: 100%;
-            max-height: 250px;
-            object-fit: cover;
+            max-height: 300px;
+            object-fit: contain;
             border-radius: 8px;
             margin: 1rem 0;
             box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .small-image:hover {
+            transform: scale(1.02);
+        }
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            cursor: pointer;
+        }
+        .lightbox img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(255,107,74,0.3);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: #ff6b4a;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .lightbox-close:hover {
+            color: #ffa500;
         }
     </style>
 </head>
@@ -61,6 +111,8 @@
 <p>Du har varit hos <strong>VinterGlöd</strong> i hans torn - Frostspiran - i vad som känns som flera veckor. Kanske månader. Tiden flyter konstigt här.</p>
 
 <p>Du är inte fånge i vanlig mening. Du har ett rum, du får mat, du kan röra dig fritt i tornet. Men du kan inte lämna. VinterGlöd har förklarat att han <em>inte kan</em> låta dig gå - inte att han inte vill.</p>
+
+<p>Ibland, när demonen Urkhaths närvaro känns starkare, lägger VinterGlöd dig i en issarkofag i källaren. Han säger att det skyddar dig, att det isolerar ringen från demonens influenser. Du vaknar alltid efteråt med froströk i lungorna och minnen du inte kan greppa.</p>
 
 <p>Han har varit... vänlig. På sitt sätt. Kall och formell, men aldrig grym. Han har svarat på dina frågor. Kanske för ärligt.</p>
 
@@ -91,6 +143,9 @@
 <p>VinterGlöd säger att Skugglandet och Mundana (din hemvärld) hänger ihop. Vad som händer i den ena påverkar den andra.</p>
 
 <h3>Om Urkhath</h3>
+
+<img src="kampanjwiki/assets/images/briefing/urkhath.png" alt="Urkhath - Hungerns Furste" class="inline-image">
+
 <p>En gammal demon. Äldre än de flesta kungariken i din värld. VinterGlöd kallar honom <em>"Hungerns Furste"</em> - han vill inte bara erövra, han vill sluka. Konsumera. Ta in allt i sig själv.</p>
 
 <p>Du har svårt att greppa skalan. VinterGlöd pratar om honom som något urgammalt och kosmiskt. Du tänker mer som "en väldigt mäktig demon" - men ibland ser du något i VinterGlöds ögon som säger att det är värre än så.</p>
@@ -192,6 +247,40 @@
 <hr>
 
 <p><em>Du har förändrats, Zentri. Du är inte längre pojken som tog ringen i tirakgraven. Frågan är vem du har blivit istället.</em></p>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+// Lightbox functionality
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const images = document.querySelectorAll('.hero-image, .inline-image, .small-image');
+
+// Add click event to all images
+images.forEach(img => {
+    img.addEventListener('click', function() {
+        lightbox.style.display = 'block';
+        lightboxImg.src = this.src;
+        lightboxImg.alt = this.alt;
+    });
+});
+
+// Close lightbox on click
+lightbox.addEventListener('click', function() {
+    lightbox.style.display = 'none';
+});
+
+// Close lightbox on ESC key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        lightbox.style.display = 'none';
+    }
+});
+</script>
 
 </body>
 </html>

@@ -2,9 +2,26 @@
 
 ## Datum: 2025-12-17
 
-## Status: ✅ KAMPANJKRÖNIKA UPPDATERAD + BRAINSTORM FÖR KAPITEL 10 AVSLUTNING!
+## Status: ✅ ZENTRI RESCUE & BRIEFING UPPDATERADE - KROPP & SJÄL SEPARATION + LIGHTBOX BILDER!
 
-**NYTT (2025-12-17):**
+**NYTT (2025-12-17 kväll):**
+- ✅ **ZENTRI_RESCUE.HTML OMSKRIVEN** - Kropp & själ-separation implementerad:
+  * Zentris kropp i issarkofag i källaren (tom, levande)
+  * Själ fångad i kristall i tornets topp (medveten, ser ut)
+  * Ringen hos själen - återvänder vid återförening
+  * Umnataks offer DIREKT efter återförening för att neutralisera ringen
+  * Gråtonen (frostfågel) bär själen från kristall till kropp
+  * ~564 rader HTML med detaljerat ritual-flöde
+- ✅ **ZENTRI_BRIEFING_ANDREAS.HTML UPPDATERAD** - Bilder & lightbox-funktionalitet:
+  * Urkhath demon-bild tillagd (från tempbild)
+  * Sarkofag-text uppdaterad: "ibland" istället för permanent
+  * CSS fixad för 2:3 aspect ratio bilder (object-fit: contain)
+  * Lightbox-funktionalitet för alla bilder (klick → fullskärm)
+  * ESC-tangent och klick för att stänga lightbox
+  * Hover-effekt på bilder (scale 1.02)
+- ✅ **URKHATH-BILD KOPIERAD** - `kampanjwiki/assets/images/briefing/urkhath.png`
+
+**NYTT (2025-12-17 dag):**
 - ✅ **SPELKVÄLL DOKUMENTERAD** - Skugglandet: Titanstriden & Den Coloniska Korridoren
 - ✅ **KAMPANJKRÖNIKA UPPDATERAD** - eon-chronicler lade till ~80 rader nya händelser i Kapitel 10:
   * Kazriks tackling av Arcadius (20m från ljuset)
