@@ -1,10 +1,26 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2025-12-13
+## Datum: 2025-12-17
 
-## Status: 🎨 ALLA 58 PLATSER + 4 KAPITEL MIDJOURNEY-PROMPTS KLARA!
+## Status: ✅ KAMPANJKRÖNIKA UPPDATERAD + BRAINSTORM FÖR KAPITEL 10 AVSLUTNING!
 
-**Dagens stora batch (2025-12-13 natt):**
+**NYTT (2025-12-17):**
+- ✅ **SPELKVÄLL DOKUMENTERAD** - Skugglandet: Titanstriden & Den Coloniska Korridoren
+- ✅ **KAMPANJKRÖNIKA UPPDATERAD** - eon-chronicler lade till ~80 rader nya händelser i Kapitel 10:
+  * Kazriks tackling av Arcadius (20m från ljuset)
+  * Thrakkas bundning med rep
+  * Arcadius fragmenterade tillstånd (fysiskt + emotionellt)
+  * Gruppens fullständiga status vid sessionens slut
+- ✅ **BRAINSTORM-SIDA SKAPAD** - `brainstorm_kapitel10_avslutning.html`
+  * Episka scenarier för kampanjklimax
+  * Genom korridoren → Zentri → VinterGlöds hov
+  * 5 olika scenario-kategorier med 15+ detaljerade idéer
+  * Baserad på kampanj_masterplot.md och Skugglandet-master
+  * Färdig att öppna från jobbdatorn
+
+---
+
+**Tidigare batch (2025-12-13 natt):**
 - ✅ **ALLA 58 PLATSER** har nu Midjourney-prompts (6 batchar)
 - ✅ **10 NPC-PROMPTS** batch 6 (Joran → Laila bint-Farid)
 - ✅ **20 KAPITEL-STÄMNINGSBILDER** (Kapitel 2, 3, 4, 10)
