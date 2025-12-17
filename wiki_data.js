@@ -1798,7 +1798,7 @@ var wikiData = {
     },
     {
       "namn": "Rashid ibn-Farouk",
-      "bild": null,
+      "bild": "kullendorff_Middle-aged_Arabian_bartender_polishing_glass_beh_2e58ff9a-2b53-4b72-ba5a-e62c19953e0e_3.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1853,7 +1853,7 @@ var wikiData = {
     },
     {
       "namn": "Rimklo",
-      "bild": null,
+      "bild": "kullendorff_Enormous_white_bear_creature_roaring_in_grief_and_5f338b54-4835-42ce-a556-083686e49fee_0.png",
       "ras": "Monster",
       "titel": null,
       "status": "levande",
@@ -1864,7 +1864,7 @@ var wikiData = {
     },
     {
       "namn": "Rollo av Flod",
-      "bild": null,
+      "bild": "kullendorff_Simple_nordic_fisherman_in_weathered_wool_clothin_b4cd7707-bf34-458f-b2b0-8da4e13f246b_1.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1886,7 +1886,7 @@ var wikiData = {
     },
     {
       "namn": "Rådslingan",
-      "bild": null,
+      "bild": "kullendorff_Formless_shadow_entity_emerging_from_darkness_of__b75aedfd-6883-4590-8d95-5ced95a91bd6_3.png",
       "ras": "Varelse",
       "titel": "Skuggvarelse",
       "status": "upplöst",
@@ -1908,7 +1908,7 @@ var wikiData = {
     },
     {
       "namn": "Samir ibn-Rashid",
-      "bild": null,
+      "bild": "kullendorff_Young_Arabian_kitchen_apprentice_in_simple_work_c_c20adfab-053e-46d7-a0e3-d438fe30a1a5_0.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1919,7 +1919,7 @@ var wikiData = {
     },
     {
       "namn": "Sankt Astrid",
-      "bild": null,
+      "bild": "kullendorff_Innocent_12-year-old_girl_with_gentle_compassiona_26e9414b-fa9f-4add-ae2d-b64ee159f5f5_0.png",
       "ras": "Människa",
       "titel": null,
       "status": "död",
@@ -1974,7 +1974,7 @@ var wikiData = {
     },
     {
       "namn": "Sheikh Nabil",
-      "bild": null,
+      "bild": "kullendorff_Ancient_wise_Arabian_hermit_sheikh_sitting_cross-_9213aa69-b19b-4ab5-8414-33ffd3e03508_1.png",
       "ras": "Människa",
       "titel": "Sheikh",
       "status": "levande",
