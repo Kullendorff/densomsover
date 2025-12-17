@@ -3,1320 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zentri Rescue - Sessionsförslag</title>
+    <title>Zentri Rescue - Sessionsplan</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --flame-orange: #ff6b4a;
             --deep-red: #d4534d;
             --mystic-purple: #a855a8;
             --gold: #ffa500;
             --ice-blue: #4fb4d8;
-            --shadow-green: #4ade80;
             --bg-dark: #0a0a0a;
             --bg-card: #1a1a1a;
-            --bg-elevated: #2a2a2a;
             --text-light: #e0e0e0;
             --text-muted: #888;
         }
-
         body {
             background: linear-gradient(180deg, #0a0a0a 0%, #0d0818 50%, #0a0a0a 100%);
             color: var(--text-light);
             font-family: 'Georgia', serif;
             line-height: 1.7;
-            min-height: 100vh;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, rgba(168, 85, 168, 0.2) 0%, rgba(79, 180, 216, 0.1) 100%);
-            border-bottom: 3px solid var(--mystic-purple);
-            padding: 3rem 2rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23a855a8" stroke-width="0.5" opacity="0.1"/></svg>') repeat;
-            opacity: 0.3;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            background: linear-gradient(135deg, var(--ice-blue), var(--mystic-purple), var(--flame-orange));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 40px rgba(79, 180, 216, 0.5);
-            margin-bottom: 0.5rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        header .subtitle {
-            color: var(--ice-blue);
-            font-size: 1.3rem;
-            font-style: italic;
-            position: relative;
-            z-index: 1;
-        }
-
-        header .session-info {
-            margin-top: 1.5rem;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 1;
-        }
-
-        header .info-badge {
-            background: var(--bg-card);
-            border: 1px solid var(--mystic-purple);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
-        header .info-badge strong {
-            color: var(--flame-orange);
-        }
-
-        /* Navigation */
-        .back-btn {
-            position: fixed;
-            top: 1rem;
-            left: 1rem;
-            background: var(--mystic-purple);
-            color: white;
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            font-weight: bold;
-            z-index: 1000;
-            transition: all 0.3s;
-            box-shadow: 0 4px 12px rgba(168, 85, 168, 0.3);
-        }
-
-        .back-btn:hover {
-            background: var(--flame-orange);
-            transform: translateY(-2px);
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 1400px;
+            padding: 2rem;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 2rem;
         }
-
-        /* Status Box */
-        .status-box {
-            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
-            border: 2px solid var(--ice-blue);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 3rem;
-            position: relative;
-        }
-
-        .status-box::before {
-            content: 'NULÄGE';
-            position: absolute;
-            top: -12px;
-            left: 20px;
-            background: var(--ice-blue);
-            color: var(--bg-dark);
-            padding: 0.25rem 1rem;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 0.85rem;
-        }
-
-        .status-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .status-item {
-            background: rgba(79, 180, 216, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 3px solid var(--ice-blue);
-        }
-
-        .status-item h4 {
-            color: var(--ice-blue);
-            font-size: 0.9rem;
+        h1 {
+            font-size: 2.5rem;
+            color: var(--flame-orange);
+            text-align: center;
             margin-bottom: 0.5rem;
         }
-
-        .status-item p {
-            font-size: 0.95rem;
+        .subtitle {
+            text-align: center;
+            color: var(--ice-blue);
+            font-style: italic;
+            margin-bottom: 2rem;
         }
-
-        .status-item.danger {
+        h2 {
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--flame-orange);
+            padding-bottom: 0.5rem;
+            margin: 2.5rem 0 1rem 0;
+        }
+        h3 {
+            color: var(--mystic-purple);
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        h4 {
+            color: var(--gold);
+            margin: 1rem 0 0.5rem 0;
+        }
+        .box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--mystic-purple);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .box.important {
+            border-left-color: var(--flame-orange);
+            background: rgba(255, 107, 74, 0.1);
+        }
+        .box.andreas {
+            border-left-color: var(--gold);
+            background: rgba(255, 165, 0, 0.1);
+        }
+        .box.combat {
             border-left-color: var(--deep-red);
             background: rgba(212, 83, 77, 0.1);
         }
-
-        .status-item.danger h4 {
-            color: var(--deep-red);
-        }
-
-        /* Section Headers */
-        .section-header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin: 3rem 0 1.5rem 0;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--flame-orange);
-        }
-
-        .section-header h2 {
-            font-size: 2rem;
-            color: var(--flame-orange);
-        }
-
-        .section-header .icon {
-            font-size: 2rem;
-        }
-
-        /* Scenario Cards */
-        .scenario-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .scenario-card {
-            background: var(--bg-card);
-            border: 2px solid var(--bg-elevated);
-            border-radius: 12px;
-            overflow: hidden;
-            transition: all 0.3s;
-        }
-
-        .scenario-card:hover {
-            border-color: var(--flame-orange);
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(255, 107, 74, 0.2);
-        }
-
-        .scenario-card.recommended {
-            border-color: var(--gold);
-            box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
-        }
-
-        .scenario-card.recommended::before {
-            content: '★ REKOMMENDERAT';
-            display: block;
-            background: var(--gold);
-            color: var(--bg-dark);
-            text-align: center;
-            padding: 0.5rem;
-            font-weight: bold;
-            font-size: 0.85rem;
-        }
-
-        .scenario-header {
-            background: linear-gradient(135deg, var(--bg-elevated), var(--bg-card));
-            padding: 1.5rem;
-            border-bottom: 1px solid var(--bg-elevated);
-        }
-
-        .scenario-header h3 {
-            color: var(--flame-orange);
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .scenario-header .type {
-            color: var(--mystic-purple);
-            font-size: 0.9rem;
-            font-style: italic;
-        }
-
-        .scenario-content {
-            padding: 1.5rem;
-        }
-
-        .scenario-content p {
-            margin-bottom: 1rem;
-        }
-
-        .scenario-content h4 {
-            color: var(--gold);
-            margin: 1.5rem 0 0.75rem 0;
-            font-size: 1.1rem;
-        }
-
-        .scenario-content ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .scenario-content li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Quote Boxes */
-        .quote-box {
-            background: rgba(168, 85, 168, 0.1);
-            border-left: 4px solid var(--mystic-purple);
+        .quote {
+            background: rgba(168, 85, 168, 0.15);
             padding: 1rem 1.5rem;
             margin: 1rem 0;
             font-style: italic;
-            border-radius: 0 8px 8px 0;
+            border-radius: 8px;
         }
-
-        .quote-box .speaker {
+        .quote .speaker {
             color: var(--flame-orange);
             font-weight: bold;
             font-style: normal;
-            display: block;
-            margin-bottom: 0.5rem;
         }
-
-        .quote-box .direction {
-            color: var(--text-muted);
+        ul, ol { margin-left: 1.5rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.4rem; }
+        .tag {
+            display: inline-block;
+            background: var(--bg-card);
+            border: 1px solid var(--mystic-purple);
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
             font-size: 0.85rem;
-            display: block;
-            margin-top: 0.5rem;
+            margin-right: 0.5rem;
         }
-
-        /* Image Prompt Box */
-        .image-section {
-            background: linear-gradient(135deg, rgba(79, 180, 216, 0.1), rgba(168, 85, 168, 0.1));
-            border: 2px solid var(--mystic-purple);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 3rem 0;
-        }
-
-        .image-section h3 {
-            color: var(--mystic-purple);
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-        }
-
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .image-card {
-            background: var(--bg-card);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .image-placeholder {
-            height: 200px;
-            background: linear-gradient(135deg, var(--bg-elevated), var(--bg-dark));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-muted);
-            font-style: italic;
-            border-bottom: 1px solid var(--bg-elevated);
-        }
-
-        .image-info {
-            padding: 1rem;
-        }
-
-        .image-info h4 {
-            color: var(--ice-blue);
-            margin-bottom: 0.5rem;
-        }
-
-        .image-info .prompt {
-            font-family: 'Courier New', monospace;
-            font-size: 0.8rem;
-            background: var(--bg-dark);
-            padding: 0.75rem;
-            border-radius: 4px;
-            color: var(--text-muted);
-            margin-top: 0.75rem;
-            max-height: 100px;
-            overflow-y: auto;
-        }
-
-        /* Character Moments */
-        .character-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .character-card {
-            background: var(--bg-card);
-            border: 2px solid var(--bg-elevated);
-            border-radius: 12px;
-            padding: 1.5rem;
-            transition: all 0.3s;
-        }
-
-        .character-card:hover {
-            border-color: var(--mystic-purple);
-        }
-
-        .character-card h4 {
-            color: var(--flame-orange);
-            font-size: 1.2rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .character-card .role {
-            color: var(--mystic-purple);
-            font-size: 0.9rem;
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        .character-card .moment {
-            background: rgba(255, 107, 74, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-top: 1rem;
-            border-left: 3px solid var(--flame-orange);
-        }
-
-        .character-card .moment h5 {
-            color: var(--gold);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Decision Box */
-        .decision-box {
-            background: linear-gradient(135deg, rgba(212, 83, 77, 0.1), rgba(255, 107, 74, 0.1));
-            border: 2px solid var(--deep-red);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-
-        .decision-box h3 {
-            color: var(--deep-red);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .decision-options {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .decision-option {
-            background: var(--bg-card);
-            padding: 1.25rem;
-            border-radius: 8px;
-            border: 1px solid var(--bg-elevated);
-        }
-
-        .decision-option h4 {
-            color: var(--flame-orange);
-            margin-bottom: 0.5rem;
-        }
-
-        .decision-option .pro {
-            color: var(--shadow-green);
-            font-size: 0.9rem;
-        }
-
-        .decision-option .con {
-            color: var(--deep-red);
-            font-size: 0.9rem;
-        }
-
-        /* Encounter Box */
-        .encounter-box {
-            background: var(--bg-card);
-            border: 2px solid var(--flame-orange);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-
-        .encounter-box h3 {
-            color: var(--flame-orange);
-            margin-bottom: 1rem;
-        }
-
-        .encounter-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .stat-block {
-            background: var(--bg-elevated);
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .stat-block .label {
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        .stat-block .value {
-            color: var(--gold);
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        /* Timeline */
-        .timeline {
-            position: relative;
-            padding-left: 40px;
-            margin: 2rem 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 15px;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(180deg, var(--ice-blue), var(--mystic-purple), var(--flame-orange));
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2rem;
-            padding-left: 1.5rem;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -32px;
-            top: 5px;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background: var(--flame-orange);
-            border: 3px solid var(--bg-dark);
-        }
-
-        .timeline-item h4 {
-            color: var(--flame-orange);
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-item .time {
-            color: var(--ice-blue);
-            font-size: 0.85rem;
-            font-style: italic;
-        }
-
-        /* Tips Box */
-        .tips-box {
-            background: rgba(255, 165, 0, 0.1);
-            border: 2px solid var(--gold);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-
-        .tips-box h3 {
-            color: var(--gold);
-            margin-bottom: 1rem;
-        }
-
-        .tips-box ul {
-            margin-left: 1.5rem;
-        }
-
-        .tips-box li {
-            margin-bottom: 0.75rem;
-        }
-
-        /* Footer */
+        a { color: var(--ice-blue); }
         footer {
             text-align: center;
-            padding: 3rem 2rem;
-            border-top: 2px solid var(--mystic-purple);
-            margin-top: 4rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--bg-card);
             color: var(--text-muted);
-        }
-
-        footer .credits {
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            .scenario-grid,
-            .image-grid,
-            .character-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .back-btn {
-                position: relative;
-                display: block;
-                margin: 1rem;
-                text-align: center;
-            }
         }
     </style>
 </head>
 <body>
-    <a href="index.html" class="back-btn">← Tillbaka till Dashboard</a>
-
-    <header>
-        <h1>OPERATION: ZENTRI RESCUE</h1>
-        <p class="subtitle">Sessionsförslag - Kapitel 10/11: Frostspiran</p>
-        <div class="session-info">
-            <span class="info-badge"><strong>Plats:</strong> Colonisk korridor → VinterGlöds Frostspira</span>
-            <span class="info-badge"><strong>Mål:</strong> Rädda Zentri</span>
-            <span class="info-badge"><strong>Ton:</strong> Episk klimax, emotionella val</span>
-        </div>
-    </header>
-
-    <div class="container">
-
-        <!-- NULÄGE -->
-        <div class="status-box">
-            <p><strong>Gruppen befinner sig 40 meter från det blå ljuset</strong> - en portal som leder till VinterGlöds domän. Bakom dem ligger titanens fallna kropp och en korridor av coloniska hemligheter.</p>
-
-            <div class="status-grid">
-                <div class="status-item">
-                    <h4>Gordon Nahrzezia</h4>
-                    <p>Fysiskt oskadad. Ledde flykten. <em>Offer: Generositet borta</em></p>
-                </div>
-                <div class="status-item danger">
-                    <h4>Thrakka "Järnhanden"</h4>
-                    <p>Brutna revben. Kan gå men inte slåss hårt. Bär kniven.</p>
-                </div>
-                <div class="status-item">
-                    <h4>Kazrik klan Ghor</h4>
-                    <p>Oskadad. Hittade vägen. <em>Offer: Ambition borta</em></p>
-                </div>
-                <div class="status-item danger">
-                    <h4>Arcadius (Corvus)</h4>
-                    <p>Bunden. Fragmenterat medvetande. Tråden bruten. Hålet vidöppet.</p>
-                </div>
-                <div class="status-item">
-                    <h4>Umnatak (i kniven)</h4>
-                    <p>Fängslad i meteoritjärnskniven. Kan tala begränsat.</p>
-                </div>
-                <div class="status-item">
-                    <h4>Ulzak (i Umnataks kropp)</h4>
-                    <p>Styr kroppen. Utmattad efter att ha kapat tråden.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- DEL 1: KORRIDOREN -->
-        <div class="section-header">
-            <span class="icon">🚪</span>
-            <h2>DEL 1: De Sista 40 Meterna</h2>
-        </div>
-
-        <p>Korridoren till det blå ljuset är mer än en passage - det är en sista prövning. Välj ETT av följande scenarion:</p>
-
-        <div class="scenario-grid">
-            <div class="scenario-card recommended">
-                <div class="scenario-header">
-                    <h3>Portalen Kräver Sanning</h3>
-                    <span class="type">Karaktärsutveckling • Rollspel</span>
-                </div>
-                <div class="scenario-content">
-                    <p>Det blå ljuset är en <strong>portal</strong> som kräver pris för passage. Varje person som kliver igenom måste säga <strong>en sanning de aldrig sagt högt</strong>.</p>
-
-                    <h4>Förslag på hemligheter:</h4>
-                    <ul>
-                        <li><strong>Gordon:</strong> "Jag är rädd att jag leder er alla i döden."</li>
-                        <li><strong>Thrakka:</strong> "Jag var lättad när min mästare dog. Jag hatade honom."</li>
-                        <li><strong>Kazrik:</strong> "Jag flydde mitt folk för att jag var feg, inte nyfiken."</li>
-                        <li><strong>Arcadius:</strong> "Jag förtjänar inte förlåtelse. Aldrig."</li>
-                    </ul>
-
-                    <h4>Varför detta fungerar:</h4>
-                    <ul>
-                        <li>Bygger karaktärsdjup</li>
-                        <li>Skapar rollspelsmoment för varje spelare</li>
-                        <li>Förbereder gruppen emotionellt för Zentri-mötet</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Viskande Själar</h3>
-                    <span class="type">Atmosfär • Lore</span>
-                </div>
-                <div class="scenario-content">
-                    <p>Relieferna på väggarna <strong>börjar tala</strong>. Sex coloniska figurer som fångades här för årtusenden sedan viskar varningar och ledtrådar.</p>
-
-                    <div class="quote-box">
-                        <span class="speaker">RELIEFERNA:</span>
-                        "Vi byggde denna väg för att NÅ... men vi FASTNADE..."
-                        <br><br>
-                        "Sex måste bli ett... ett måste bli portalen... portalen kräver offer..."
-                        <br><br>
-                        "VinterGlöd... han tog vår plats... han samlar oss alla..."
-                    </div>
-
-                    <h4>Umnataks vision (genom kniven):</h4>
-                    <p>Relieferna LEVER - själarna är fortfarande medvetna, skriker i evighet, användes som "motor" för portalen.</p>
-                </div>
-            </div>
-
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Arcadius Vaknar - Ofullständig</h3>
-                    <span class="type">Drama • Horror</span>
-                </div>
-                <div class="scenario-content">
-                    <p>20 meter från ljuset vaknar Arcadius. Men han är <strong>inte hel längre</strong>. Hålet i bröstet är vidöppet och han känner ingenting.</p>
-
-                    <div class="quote-box">
-                        <span class="speaker">ARCADIUS:</span>
-                        "Var... är jag? Varför är jag bunden?"
-                        <span class="direction">(robotisk, platt ton)</span>
-                        "Jag... känner ingenting. Det är konstigt. Borde jag känna något?"
-                    </div>
-
-                    <p>Han kan gå och tala men fattar beslut baserat på <strong>ren logik</strong> utan empati. Det är skrämmande - är detta bättre eller värre?</p>
-
-                    <h4>Spelfråga:</h4>
-                    <p>Släpper gruppen honom lös? Litar de på honom nu?</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- DEL 2: FROSTSPIRAN -->
-        <div class="section-header">
-            <span class="icon">🏰</span>
-            <h2>DEL 2: Frostspiran - Mötet med VinterGlöd</h2>
-        </div>
-
-        <p>På andra sidan portalen tornar <strong>Frostspiran</strong> upp sig - ett torn av is och svart obsidian vid kanten av Intigheten. VinterGlöd väntar.</p>
-
-        <!-- VinterGlöd Encounter -->
-        <div class="encounter-box">
-            <h3>VinterGlöd - Den Motvillige Tjänaren</h3>
-
-            <p>Han är inte fiende. Han är en <strong>tragisk figur</strong> som väntat i 9000 år på befrielse.</p>
-
-            <div class="encounter-stats">
-                <div class="stat-block">
-                    <span class="label">Ålder</span>
-                    <span class="value">~9000 år</span>
-                </div>
-                <div class="stat-block">
-                    <span class="label">Status</span>
-                    <span class="value">Bunden av ed</span>
-                </div>
-                <div class="stat-block">
-                    <span class="label">Motivation</span>
-                    <span class="value">Frihet</span>
-                </div>
-                <div class="stat-block">
-                    <span class="label">Attityd</span>
-                    <span class="value">Vill förlora</span>
-                </div>
-            </div>
-
-            <div class="quote-box">
-                <span class="speaker">VINTERGLÖD:</span>
-                "Välkomna, vandrare från den varma världen. Jag är VinterGlöd, och jag har VÄNTAT på er."
-                <br><br>
-                "Ni söker pojken - Zentri, krigarmärkt och ringbärare. Han är HÄR, under mitt beskydd."
-                <br><br>
-                "Jag är BUNDEN att bevara honom. En gammal ed, svuren i dumhet och stolthet."
-                <br><br>
-                <span class="direction">(ögonen glittrar)</span>
-                "Ni får INTE ta honom. Jag kan INTE låta er ta honom... men ni är välkomna att FÖRSÖKA."
-            </div>
-
-            <h4>Nyckeln - Yelgothas Namn:</h4>
-            <p>Om gruppen nämner <strong>"Yelgotha skickade oss"</strong> sker en dramatisk reaktion:</p>
-
-            <div class="quote-box">
-                <span class="speaker">VINTERGLÖD:</span>
-                <span class="direction">(fryser, ansiktet spricker upp i chock)</span>
-                "Yelgotha... lever? Han... skickade er? Efter allt jag gjorde?"
-                <br><br>
-                <span class="direction">(faller på knä)</span>
-                "Ni förstår inte. Jag svek honom. Jag svek dem ALLA. Min syster dog vid de varma källorna och jag... jag accepterade demonens lögner."
-                <br><br>
-                "Nio tusen år. Nio tusen år har jag önskat att jag dött med de rättfärdiga."
-            </div>
-        </div>
-
-        <!-- Scenario för mötet -->
-        <div class="scenario-grid">
-            <div class="scenario-card recommended">
-                <div class="scenario-header">
-                    <h3>VinterGlöd Ber Om Hjälp</h3>
-                    <span class="type">Omvänd dynamik • Emotionellt</span>
-                </div>
-                <div class="scenario-content">
-                    <p>Istället för att gruppen ber VinterGlöd om hjälp... <strong>VinterGlöd ber DEM</strong>.</p>
-
-                    <div class="quote-box">
-                        <span class="speaker">VINTERGLÖD:</span>
-                        "Jag ÄR bunden. Jag KAN inte bryta eden. Men ni... ni är dödliga. Eder bryter inte på samma sätt."
-                        <br><br>
-                        <span class="direction">(faller på knä)</span>
-                        "JAG BER ER. Tag pojken. Bryt min ed genom er handling. Jag MÅSTE motstå - men GÖR mig till motståndare ni kan besegra."
-                    </div>
-
-                    <h4>Vad detta betyder:</h4>
-                    <p>VinterGlöd <strong>VILL förlora</strong>. Han kommer attackera men medvetet göra misstag. Det är patetiskt och mäktigt samtidigt.</p>
-
-                    <h4>Dramatiken:</h4>
-                    <p>En urgammal furste som tigit om sin skam i årtusenden ber nu främlingar om befrielse.</p>
-                </div>
-            </div>
-
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Gadd-Prövningen</h3>
-                    <span class="type">Action • Alla får stund</span>
-                </div>
-                <div class="scenario-content">
-                    <p>VinterGlöd kräver bevis att de är värdiga. Tre prövningar där han "råkar" göra dem lättare:</p>
-
-                    <h4>1. STYRKA (Thrakka/Gordon)</h4>
-                    <ul>
-                        <li>Bryt genom Isfrostporten med råstyrka</li>
-                        <li>Kamp mot iskonstrukt (VinterGlöd "glömmer" ladda den)</li>
-                    </ul>
-
-                    <h4>2. VISDOM (Kazrik/Umnatak)</h4>
-                    <ul>
-                        <li>Lös colonisk rungåta (VinterGlöd "råkar" lämna ledtrådsbok)</li>
-                        <li>Se genom illusioner till Zentris verkliga rum</li>
-                    </ul>
-
-                    <h4>3. HJÄRTA (alla)</h4>
-                    <ul>
-                        <li>Spegeltest: Möt era största rädslor</li>
-                        <li>Varje spelare ser något personligt</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- DEL 3: ZENTRI -->
-        <div class="section-header">
-            <span class="icon">👤</span>
-            <h2>DEL 3: Återföreningen med Zentri</h2>
-        </div>
-
-        <p>Hur träffar gruppen Zentri? Hans tillstånd och reaktion sätter tonen för hela klimaxet.</p>
-
-        <div class="scenario-grid">
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Zentri i Trädgården - Falsk Paradis</h3>
-                    <span class="type">Filosofiskt dilemma • Moraliskt val</span>
-                </div>
-                <div class="scenario-content">
-                    <p>En <strong>vacker trädgård</strong> mitt i evigt vinter. Blommor av is, träd av kristall. Zentri går där - fritt, lugnt, leende.</p>
-
-                    <div class="quote-box">
-                        <span class="speaker">ZENTRI:</span>
-                        "Gordon? Umnatak? Ni... ni kom?"
-                        <br><br>
-                        <span class="direction">(leendet når inte ögonen)</span>
-                        "Men... varför? Jag har det bra här. VinterGlöd är vänlig. Jag behöver inte oroa mig längre."
-                    </div>
-
-                    <h4>Sanningen:</h4>
-                    <p>Zentri är INTE korrumperad - han är <strong>befriad från rädsla</strong>. Han känner ingen ångest, ingen skuld, ingen fruktan. Men heller ingen längtan eller glädje. Han är <em>tom</em>.</p>
-
-                    <h4>Det moraliska dilemmat:</h4>
-                    <ul>
-                        <li><strong>Låta Zentri stanna:</strong> Han är "säker" men tom</li>
-                        <li><strong>Tvinga honom tillbaka:</strong> Han blir hel men lider</li>
-                        <li><strong>Bryta ringen FÖRST:</strong> Återger känslor innan val</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="scenario-card recommended">
-                <div class="scenario-header">
-                    <h3>Zentri Som Lokalt - Medveten</h3>
-                    <span class="type">Episk twist • Andreas får storscen</span>
-                </div>
-                <div class="scenario-content">
-                    <p>Zentri vet ALLT. VinterGlöd har berättat sanningen:</p>
-                    <ul>
-                        <li>Han är ett ankare för Urkhath</li>
-                        <li>Ringen binder demonen till honom</li>
-                        <li>Om han lämnar exploderar Urkhaths vrede</li>
-                        <li>Om han stannar växer demonen starkare</li>
-                    </ul>
-
-                    <div class="quote-box">
-                        <span class="speaker">ZENTRI:</span>
-                        "Jag vet varför ni kom. Och jag älskar er för det."
-                        <br><br>
-                        <span class="direction">(tårar i ögonen)</span>
-                        "Men... om ni tar mig... Mithera fryser. Skugglandet faller. Tusentals dör."
-                        <br><br>
-                        "VinterGlöd berättade. Han VILL att ni tar mig - det befriar honom. Men kostnaden..."
-                        <br><br>
-                        "Vad gör man när ens räddning dödar andra?"
-                    </div>
-
-                    <h4>Zentris tre förslag:</h4>
-                    <ol>
-                        <li><strong>Förstöra ringen HÄR:</strong> I Skugglandet kan artefakter krossas. Men explosionen kan döda honom.</li>
-                        <li><strong>Binda ringen till något annat:</strong> Fånga Urkhaths essens i något nytt.</li>
-                        <li><strong>Stanna kvar frivilligt:</strong> Inte som fånge - som vaktare tillsammans med VinterGlöd.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-
-        <!-- KARAKTÄRSMOMENT -->
-        <div class="section-header">
-            <span class="icon">🎭</span>
-            <h2>Karaktärsmoment - Varje Spelares Stund</h2>
-        </div>
-
-        <div class="character-grid">
-            <div class="character-card">
-                <h4>Gordon Nahrzezia</h4>
-                <span class="role">Kapten • Ledare • Förlorad generositet</span>
-                <p>Gordon måste leda gruppen genom det omöjliga valet. Utan sin generositet - hur motiverar han dem?</p>
-                <div class="moment">
-                    <h5>Rollspelsmoment:</h5>
-                    <p>Zentri frågar: "Du gav alltid allt för andra. Men nu... känns det annorlunda, eller hur?"</p>
-                </div>
-            </div>
-
-            <div class="character-card">
-                <h4>Thrakka "Järnhanden"</h4>
-                <span class="role">Tirak • Mahktahtroende • Brutna revben</span>
-                <p>VinterGlöd tjänade en DEMON. Thrakkas tro förbjuder STRÄNGT allt samröre. Men kan hon acceptera hans hjälp?</p>
-                <div class="moment">
-                    <h5>Konfrontation:</h5>
-                    <p>"Nio tusen år av ånger... Mahktah värderar MOD, inte ånger. Vad har du GJORT för att gottgöra?"</p>
-                </div>
-            </div>
-
-            <div class="character-card">
-                <h4>Kazrik klan Ghor</h4>
-                <span class="role">Dvärg • Forskare • Förlorad ambition</span>
-                <p>Coloniska runor. Uråldrig historia. Kazrik har chansen att dokumentera något ingen dvärg sett på 9000 år.</p>
-                <div class="moment">
-                    <h5>Upptäckt:</h5>
-                    <p>Hitta colonisk inskription som avslöjar hur bindningen fungerar - information dvärgarna BEHÖVER.</p>
-                </div>
-            </div>
-
-            <div class="character-card">
-                <h4>Arcadius (Corvus)</h4>
-                <span class="role">F.d. Kommendör • Hålet • Fragmenterad</span>
-                <p>Utan skuld, utan tråd - vad är han? Hans tomhet speglar Zentris falska paradis. Två tomma själar möts.</p>
-                <div class="moment">
-                    <h5>Parallell:</h5>
-                    <p>Zentri: "Du förstår, eller hur? Att inte känna... det är nästan skönt. Nästan."</p>
-                </div>
-            </div>
-
-            <div class="character-card">
-                <h4>Umnatak (i kniven)</h4>
-                <span class="role">Schaman • Fängslad • Ser andeplanet</span>
-                <p>Från kniven ser Umnatak ALLT - själar, bindningar, sanningar. Han kan guida gruppen genom det osynliga.</p>
-                <div class="moment">
-                    <h5>Avslöjande:</h5>
-                    <p>"Ringen... jag ser den nu. Den är inte bara metall. Den är ett FÄNGELSE. Och Zentri... han är nyckeln."</p>
-                </div>
-            </div>
-
-            <div class="character-card">
-                <h4>Ulzak (i Umnataks kropp)</h4>
-                <span class="role">Tirakshaman • 100 år fängslad • Främling</span>
-                <p>Ulzak var fängslad i kniven i ett sekel. Han förstår Zentris situation bättre än någon.</p>
-                <div class="moment">
-                    <h5>Visdom:</h5>
-                    <p>"Jag vet vad det är att vara fånge. Att välja fångenskapen... det är inte frihet. Det är bara en annan sorts kedjor."</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- EPISKA TWISTS -->
-        <div class="section-header">
-            <span class="icon">💥</span>
-            <h2>Episka Twists - Välj MAX 2</h2>
-        </div>
-
-        <div class="scenario-grid">
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Skymning Anfaller</h3>
-                    <span class="type">Boss Fight • Klimax</span>
-                </div>
-                <div class="scenario-content">
-                    <p>När VinterGlöd blir fri känner <strong>Urkhath/Skymning</strong> detta omedelbart. Skymning manifesterar i Frostspiran.</p>
-
-                    <h4>Skymnings Förmågor:</h4>
-                    <ul>
-                        <li><strong>Charmera:</strong> MIND-motstånd eller bli förförd</li>
-                        <li><strong>Kölddimma:</strong> 1T6 köldskada/runda</li>
-                        <li><strong>Skuggteleport:</strong> Rör sig genom skuggor</li>
-                        <li><strong>Sång av Längtan:</strong> Väcker hunger/tomhet</li>
-                    </ul>
-
-                    <div class="quote-box">
-                        <span class="speaker">SKYMNING:</span>
-                        "Trodde ni att jag skulle LÅTA er gå? Med mitt ankare?"
-                        <br><br>
-                        <span class="direction">(harpan börjar spela)</span>
-                        "Nej, nej, nej... Välkomna till Skugglandet. Permanent."
-                    </div>
-
-                    <h4>VinterGlöds Roll:</h4>
-                    <p>NU när han är fri kan han VÄLJA att hjälpa. Episk allians - VinterGlöd och gruppen mot Skymning.</p>
-                </div>
-            </div>
-
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Umnatak Offrar Sig (Igen)</h3>
-                    <span class="type">Tragedi • Christofers val</span>
-                </div>
-                <div class="scenario-content">
-                    <p>Ringen kan förstöras i Skugglandet - men explosionen dödar bäraren. Umnatak erbjuder en lösning:</p>
-
-                    <div class="quote-box">
-                        <span class="speaker">UMNATAK (från kniven):</span>
-                        "Jag... kan ta den... in i anden... in i kniven... där jag redan är..."
-                    </div>
-
-                    <h4>Konsekvenser:</h4>
-                    <ul>
-                        <li>Umnatak tar BÅDE sig själv OCH ring-essensen in i kniven</li>
-                        <li>Kniven blir dubbelt förbannad</li>
-                        <li>Umnatak HÅLLER båda i schack genom viljestyrka</li>
-                        <li>Men han kan ALDRIG komma ut igen</li>
-                    </ul>
-
-                    <h4>Christofers val:</h4>
-                    <p>Offra Umnatak permanent = hjälte som räddar alla. Eller vägra och hitta annan väg.</p>
-                </div>
-            </div>
-
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Zentri Blir Kvar Frivilligt</h3>
-                    <span class="type">Bittersöt • Andreas val</span>
-                </div>
-                <div class="scenario-content">
-                    <p>Efter att ha hört all information fattar Zentri ett beslut:</p>
-
-                    <div class="quote-box">
-                        <span class="speaker">ZENTRI:</span>
-                        "Jag förstår nu. Ni riskerade allt för mig. Men om jag kommer tillbaka... dödar jag Mithera."
-                        <br><br>
-                        "VinterGlöd - du är fri nu. Men jag kan stanna FRIVILLIGT. Inte som fånge - som gäst."
-                        <br><br>
-                        "Tillsammans kan vi MOTSTÅ Urkhath härifrån. Bevaka portalen. Hålla demonen BORTA från Mundana."
-                    </div>
-
-                    <h4>Framtiden:</h4>
-                    <ul>
-                        <li>Andreas spelar Zentri i Skugglandet-scener</li>
-                        <li>Zentri blir "inside man" som hjälper från andra sidan</li>
-                        <li>Gruppen kan besöka honom via portaler</li>
-                        <li>I slutstriden kommer han tillbaka som mäktig allierad</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- BESLUT -->
-        <div class="decision-box">
-            <h3>⚖️ KRITISKA BESLUT - Vad Spelarna Måste Välja</h3>
-
-            <p>Sessionen bör leda till minst ETT av dessa val:</p>
-
-            <div class="decision-options">
-                <div class="decision-option">
-                    <h4>Vad göra med ringen?</h4>
-                    <p class="pro">+ Ta den från Zentri → Bryter ankaret</p>
-                    <p class="con">- Någon annan måste bära den</p>
-                    <p class="pro">+ Förstöra den här → Permanent lösning</p>
-                    <p class="con">- Kan döda Zentri</p>
-                </div>
-
-                <div class="decision-option">
-                    <h4>Lita på VinterGlöd?</h4>
-                    <p class="pro">+ Han har kunskap gruppen behöver</p>
-                    <p class="pro">+ Han VILL hjälpa</p>
-                    <p class="con">- Han svek en gång förr</p>
-                    <p class="con">- Thrakkas tro förbjuder samröre</p>
-                </div>
-
-                <div class="decision-option">
-                    <h4>Ta med Zentri eller lämna?</h4>
-                    <p class="pro">+ Rädda vännen → Gruppen hel igen</p>
-                    <p class="con">- Urkhath rasar → Konsekvenser i båda världar</p>
-                    <p class="pro">+ Lämna honom → Stabilt ankare</p>
-                    <p class="con">- Överger vännen → Moraliskt svårt</p>
-                </div>
-
-                <div class="decision-option">
-                    <h4>Vem offras?</h4>
-                    <p>Om ringen måste förstöras...</p>
-                    <p class="con">- Umnatak (redan fängslad)?</p>
-                    <p class="con">- Zentri (bäraren)?</p>
-                    <p class="con">- VinterGlöd (gottgörelse)?</p>
-                    <p class="con">- Ingen (hitta annan väg)?</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- STÄMNINGSBILDER -->
-        <div class="image-section">
-            <h3>🎨 Stämningsbilder - Midjourney Prompts</h3>
-            <p>Generera dessa bilder för att sätta stämningen:</p>
-
-            <div class="image-grid">
-                <div class="image-card">
-                    <div class="image-placeholder">[ Frostspiran ]</div>
-                    <div class="image-info">
-                        <h4>VinterGlöds Torn</h4>
-                        <p>Is och obsidian vid Intighetens gräns</p>
-                        <div class="prompt">Massive tower of ice and black obsidian rising at edge of void, silver mist swirling around base, distant impossible geometry beyond, lone cloaked figure standing at gate, dark fantasy architecture, Beksiński style, cold silver and deep purple lighting, ominous and majestic --ar 16:9 --s 220</div>
-                    </div>
-                </div>
-
-                <div class="image-card">
-                    <div class="image-placeholder">[ VinterGlöd ]</div>
-                    <div class="image-info">
-                        <h4>Den Motvillige Tjänaren</h4>
-                        <p>9000 år av ånger i ett ansikte</p>
-                        <div class="prompt">Tall elegant shadow lord with ice-white hair and frost-blue streaks, eyes glittering like starlight, wearing silver-gray robes that move like mist, holding staff of black obsidian and frost ice, expression of ancient sorrow and desperate hope, dark fantasy portrait, Brom style, cold ethereal lighting --ar 2:3 --s 200</div>
-                    </div>
-                </div>
-
-                <div class="image-card">
-                    <div class="image-placeholder">[ Isträdgården ]</div>
-                    <div class="image-info">
-                        <h4>Zentris Paradis</h4>
-                        <p>Falsk skönhet, tom frid</p>
-                        <div class="prompt">Beautiful garden of ice flowers and crystal trees in eternal twilight, young man walking peacefully among frozen roses, expression serene but eyes empty, beauty that feels wrong, dark fantasy surreal garden, cold blues and silvers with hints of unnatural warmth, haunting and melancholic --ar 16:9 --s 180</div>
-                    </div>
-                </div>
-
-                <div class="image-card">
-                    <div class="image-placeholder">[ Skymning ]</div>
-                    <div class="image-info">
-                        <h4>Urkhaths Avatar</h4>
-                        <p>Androgyn skönhet, ren fara</p>
-                        <div class="prompt">Androgynous figure of terrible beauty, dark hair moving like smoke, eyes shifting between starlight and void black, holding silver harp, wearing robes of shifting shadows and frost, seductive yet menacing presence, dark fantasy villain, electric blue and deep purple highlights against black --ar 2:3 --s 240</div>
-                    </div>
-                </div>
-
-                <div class="image-card">
-                    <div class="image-placeholder">[ Portalen ]</div>
-                    <div class="image-info">
-                        <h4>Det Blå Ljuset</h4>
-                        <p>Vägen till VinterGlöd</p>
-                        <div class="prompt">Massive vertical circular portal of swirling blue magical energy in ancient colonist corridor, runic script flowing around edges, battered adventurers standing at threshold silhouetted against light, glimpse of ice tower through portal, epic fantasy climax scene, electric blue dominating with warm torch orange contrast --ar 16:9 --s 200</div>
-                    </div>
-                </div>
-
-                <div class="image-card">
-                    <div class="image-placeholder">[ Återföreningen ]</div>
-                    <div class="image-info">
-                        <h4>Gruppen och Zentri</h4>
-                        <p>Emotionell klimax</p>
-                        <div class="prompt">Group of weary adventurers reuniting with young man in ice garden, emotional embrace, tears and relief, diverse fantasy party including tirak warrior dwarf and humans, warm human moment in cold supernatural setting, dark fantasy emotional scene, golden warm lighting cutting through cold blues --ar 16:9 --s 180</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SESSIONSFLÖDE -->
-        <div class="section-header">
-            <span class="icon">⏱️</span>
-            <h2>Förslag på Sessionsflöde</h2>
-        </div>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <h4>Öppning: De Sista Meterna</h4>
-                <span class="time">~20-30 minuter</span>
-                <p>Korridoren, portalens pris (sanningar), passage till Frostspiran. Sätt stämningen.</p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>Mötet med VinterGlöd</h4>
-                <span class="time">~30-45 minuter</span>
-                <p>Dialog, Yelgothas namn, hans berättelse, Thrakkas reaktion. Rollspel-fokus.</p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>Prövningarna (valfritt)</h4>
-                <span class="time">~20-30 minuter</span>
-                <p>Om ni vill ha action - tre tester innan de når Zentri. Annars hoppa över.</p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>Zentri-Återföreningen</h4>
-                <span class="time">~30-45 minuter</span>
-                <p>Emotionell klimax. Andreas får stor scen. Zentris situation avslöjas.</p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>Beslutet</h4>
-                <span class="time">~20-30 minuter</span>
-                <p>Vad göra med ringen? Ta med Zentri? Lita på VinterGlöd? Gruppen måste välja.</p>
-            </div>
-
-            <div class="timeline-item">
-                <h4>Twist (om tid finns)</h4>
-                <span class="time">~30-45 minuter</span>
-                <p>Skymning anfaller ELLER portalen stängs ELLER annat drama. Cliffhanger.</p>
-            </div>
-        </div>
-
-        <!-- TIPS -->
-        <div class="tips-box">
-            <h3>💡 Tips för Spelledaren</h3>
-            <ul>
-                <li><strong>Ge Andreas/Zentri stor plats</strong> - han har väntat länge på detta moment</li>
-                <li><strong>Spela VinterGlöd som tragisk hjälte</strong> - inte skurk, inte allierad, utan någon som desperat söker förlåtelse</li>
-                <li><strong>Låt Thrakka vara Thrakka</strong> - hennes misstro mot VinterGlöd är berättigad och skapar drama</li>
-                <li><strong>Håll tempot</strong> - korridoren ska vara 15-20 min max, inte hela sessionen</li>
-                <li><strong>Var tydlig med konsekvenser</strong> - "Om ni tar Zentri händer X, om ni lämnar honom händer Y"</li>
-                <li><strong>Sluta på cliffhanger</strong> - oavsett vad de väljer, något dramatiskt bör hända</li>
-                <li><strong>MAX 2 twists</strong> - för många vändningar gör det rörigt</li>
-            </ul>
-        </div>
-
-        <!-- MÖJLIGA AVSLUTNINGAR -->
-        <div class="section-header">
-            <span class="icon">🎬</span>
-            <h2>Möjliga Sessionsavslutningar</h2>
-        </div>
-
-        <div class="scenario-grid">
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Triumferande Återkomst</h3>
-                    <span class="type">Seger med konsekvenser</span>
-                </div>
-                <div class="scenario-content">
-                    <p>Gruppen lyckas rädda Zentri och kliver ut genom portalen tillbaka till Mundana.</p>
-                    <ul>
-                        <li>Zentri är med dem, utan ring (förstörd/fångad)</li>
-                        <li>VinterGlöd frigjord, tacksam, lovar hjälp</li>
-                        <li>MEN: De känner Urkhaths RASERI</li>
-                    </ul>
-                    <p><strong>Cliffhanger:</strong> Vintern i Mithera blir VÄRRE. Stenstoderna skakar.</p>
-                </div>
-            </div>
-
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Bittersöt Seger</h3>
-                    <span class="type">Pris betalt</span>
-                </div>
-                <div class="scenario-content">
-                    <p>De räddar Zentri men till högt pris. Välj 1-2:</p>
-                    <ul>
-                        <li><strong>Umnatak:</strong> Permanent fängslad i kniven med ring-essensen</li>
-                        <li><strong>Arcadius:</strong> Utan tråd - emotionslös för alltid?</li>
-                        <li><strong>VinterGlöd:</strong> Offrar sig för att blockera Skymning</li>
-                        <li><strong>Thrakka:</strong> Skadorna från revbenen förvärras</li>
-                    </ul>
-                    <p><strong>Ton:</strong> Seger men med sorg. Episka offer får konsekvenser.</p>
-                </div>
-            </div>
-
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Den Delade Gruppen</h3>
-                    <span class="type">Två fronter</span>
-                </div>
-                <div class="scenario-content">
-                    <p>Zentri stannar frivilligt. Gruppen återvänder utan honom.</p>
-
-                    <div class="quote-box">
-                        <span class="speaker">ZENTRI:</span>
-                        "Säg till Gordon... säg att jag är ledsen. Men detta är rätt."
-                    </div>
-
-                    <p><strong>Framåt:</strong> Kampanjen fortsätter med två fronter - Mundana-team och Skugglandet-team.</p>
-                </div>
-            </div>
-
-            <div class="scenario-card">
-                <div class="scenario-header">
-                    <h3>Cliffhanger från Helvetet</h3>
-                    <span class="type">Maximum spänning</span>
-                </div>
-                <div class="scenario-content">
-                    <p>De HAR Zentri. VinterGlöd är fri. De börjar gå mot portalen...</p>
-                    <p><strong>PORTALEN STÄNGS.</strong></p>
-                    <p>Skymning står där och ler.</p>
-
-                    <div class="quote-box">
-                        <span class="speaker">SKYMNING:</span>
-                        "Trodde ni att jag skulle LÅTA er gå?"
-                        <br><br>
-                        <span class="direction">(harpan börjar spela)</span>
-                        "Välkomna till Skugglandet. Permanent."
-                    </div>
-
-                    <p><strong>Nästa session:</strong> BOSS FIGHT mot Skymning, desperat flykt.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <footer>
-        <p class="credits">Gravens Arv - Kapitel 10/11 Sessionsförslag</p>
-        <p>Baserat på: kampanjkrönika.md, kampanj_masterplot.md, brainstorm_kapitel10_avslutning.html</p>
-        <p>Skapat: 2025-12-17</p>
-    </footer>
+
+<h1>OPERATION: ZENTRI RESCUE</h1>
+<p class="subtitle">Sessionsplan - Kapitel 10/11</p>
+
+<div class="box important">
+    <h4>SLUTMÅL: ZENTRI BEFRIAS</h4>
+    <p>Detta är inte ett val - det är sessionens destination. Andreas vill ha tillbaka sin karaktär och det ska hända.</p>
+    <p><strong>Karaktärsbyten:</strong></p>
+    <ul>
+        <li><strong>Andreas:</strong> Spelar Zentri igen efter återföreningen</li>
+        <li><strong>Thrakka:</strong> Blir NPC (kan användas narrativt)</li>
+        <li><strong>Christofer/Umnatak:</strong> Vill byta karaktär → Umnataks offer är lösningen</li>
+    </ul>
+</div>
+
+<!-- ================================================== -->
+<h2>📋 BRIEFING FÖR ANDREAS (Före Sessionen)</h2>
+<!-- ================================================== -->
+
+<div class="box andreas">
+    <h4>Vad Andreas Bör Veta I Förväg</h4>
+    <p>Ge honom detta innan eller i början av sessionen så han kan förbereda sig:</p>
+</div>
+
+<h3>1. Zentris Situation</h3>
+<ul>
+    <li>Zentri har varit hos <strong>VinterGlöd i Frostspiran</strong> i flera veckor/månader (tiden flyter annorlunda)</li>
+    <li>Han är <strong>inte torterad</strong> - snarare en "gäst" som inte får lämna</li>
+    <li>VinterGlöd har varit <strong>ärlig mot honom</strong> - berättat om ringen, ankaret, eden</li>
+    <li>Zentri har haft tid att <strong>tänka, mogna, och förstå</strong> vad han orsakat</li>
+</ul>
+
+<h3>2. Vad Zentri Lärt Sig</h3>
+<ul>
+    <li><strong>Ringen är farlig</strong> - den bär Urkhaths essens</li>
+    <li><strong>Han är ett "ankare"</strong> - demonen använder honom för att påverka båda världarna</li>
+    <li><strong>VinterGlöd är inte ond</strong> - han är bunden av en urgammal ed och hatar sin situation</li>
+    <li><strong>Skugglandet</strong> - Zentri har sett Intigheten från tornets fönster, förstår platsen bättre nu</li>
+</ul>
+
+<h3>3. Zentris Emotionella Läge</h3>
+<ul>
+    <li><strong>Skuld:</strong> Han vet att han orsakade allt genom att ta ringen</li>
+    <li><strong>Tacksamhet:</strong> Chockad och rörd att gruppen kom för honom</li>
+    <li><strong>Mognad:</strong> Inte samma naiva Zentri - mer allvarlig, eftertänksam</li>
+    <li><strong>Beslutsamhet:</strong> Vill hjälpa fixa det han orsakat</li>
+</ul>
+
+<h3>4. Förslag på Zentris Första Ord</h3>
+<div class="quote">
+    <span class="speaker">ZENTRI:</span><br>
+    "Ni... ni kom? För mig?"<br><br>
+    "Jag är så ledsen. Jag förstod inte vad ringen var. Jag har orsakat allt detta."<br><br>
+    "VinterGlöd berättade allt. Jag vet vad jag är - ett ankare. Men jag vet också att vi kan fixa det."
+</div>
+
+<h3>5. Andreas Rollspelstips</h3>
+<ul>
+    <li>Zentri har <strong>förändrats</strong> - spela honom mer mogen och allvarlig</li>
+    <li>Han har haft <strong>tid att tänka</strong> - han kan ha insikter och idéer</li>
+    <li>Han känner <strong>skuld men också hopp</strong> - vännerna kom för honom</li>
+    <li>Han kan bli <strong>guide i Skugglandet</strong> framöver - han förstår platsen nu</li>
+</ul>
+
+<!-- ================================================== -->
+<h2>⚔️ STRIDEN - Frostväktarna</h2>
+<!-- ================================================== -->
+
+<div class="box combat">
+    <h4>Obligatorisk Strid</h4>
+    <p>Fantasy RPG kräver action! Här är striden som passar narrativet:</p>
+</div>
+
+<h3>Frostväktarna vid Portalen</h3>
+<p>När gruppen kliver genom portalen till Frostspiran attackeras de av <strong>iskonstrukter</strong> - VinterGlöds vakter som han "måste" sätta på dem (eden kräver det).</p>
+
+<h4>Fiender:</h4>
+<ul>
+    <li><strong>3-4 Frostväktare</strong> - Humanoidformade iskonstrukter, 2 meter höga</li>
+    <li><strong>1 Iskristallbehemoth</strong> (om gruppen behöver utmaning) - Större, långsammare, hårdare</li>
+</ul>
+
+<h4>Mekanik:</h4>
+<ul>
+    <li>Iskonstrukterna är <strong>starka men klumpiga</strong></li>
+    <li>Svaga mot <strong>eld och trubbigt våld</strong></li>
+    <li><strong>Thrakka (trots revben)</strong> kan få heroiskt moment - krossar en väktare med järnhanden</li>
+    <li><strong>VinterGlöd observerar</strong> från tornet - "testar" dem</li>
+</ul>
+
+<h4>Narrativ Twist:</h4>
+<p>Mitt i striden <strong>slutar väktarna attackera</strong>. VinterGlöd har sett nog.</p>
+<div class="quote">
+    <span class="speaker">VINTERGLÖD (ropande från tornet):</span><br>
+    "Nog. Ni har bevisat er. Kom upp - vi har mycket att tala om."
+</div>
+
+<h4>Alternativ: Skymning-Attack (som klimax)</h4>
+<p>Om du vill ha striden EFTER Zentri-återföreningen istället:</p>
+<ul>
+    <li>Skymning manifesterar när gruppen ska lämna</li>
+    <li>VinterGlöd + gruppen + Zentri vs Skymning</li>
+    <li>Umnatak gör sitt offer under striden för att neutralisera ringen</li>
+    <li>Mer dramatiskt men kräver mer tid</li>
+</ul>
+
+<!-- ================================================== -->
+<h2>🎭 THRAKKA SOM NARRATIVT VERKTYG</h2>
+<!-- ================================================== -->
+
+<p>När Andreas tar över Zentri blir Thrakka NPC. Använd henne för:</p>
+
+<h3>Under Mötet med VinterGlöd</h3>
+<div class="quote">
+    <span class="speaker">THRAKKA:</span><br>
+    "Du tjänade en DEMON. Mahktah förbannar sådana som dig."<br><br>
+    <em>(efter VinterGlöds berättelse)</em><br>
+    "...Nio tusen år. Det är... mycket tid för ånger."
+</div>
+<p>Thrakka kan gå från <strong>fientlig → motvilligt respektfull</strong> under samtalet.</p>
+
+<h3>Under Striden</h3>
+<ul>
+    <li>Heroiskt moment trots brutna revben</li>
+    <li>"Jag VÄGRAR falla här!" - krossar iskonstrukt</li>
+    <li>Visar hennes Mahktah-tro i action</li>
+</ul>
+
+<h3>Vid Zentri-Återföreningen</h3>
+<div class="quote">
+    <span class="speaker">THRAKKA (till Zentri):</span><br>
+    "Så du är pojken de alla talade om. Du orsakade mycket lidande."<br><br>
+    <em>(paus)</em><br>
+    "Men de riskerade allt för dig. Det säger något."
+</div>
+
+<h3>Vid Umnataks Offer</h3>
+<div class="quote">
+    <span class="speaker">THRAKKA:</span><br>
+    "Schaman... vad du gör är modigt. Mahktah ser dig."<br><br>
+    <em>(lägger handen på kniven)</em><br>
+    "Jag kommer bära din börda. Den är säker hos mig."
+</div>
+<p>Thrakka blir knivens väktare - perfekt för en tirak som hatar demoner.</p>
+
+<!-- ================================================== -->
+<h2>💀 UMNATAKS OFFER (Christofers Avslut)</h2>
+<!-- ================================================== -->
+
+<div class="box">
+    <h4>Christofer Vill Byta Karaktär</h4>
+    <p>Perfekt tillfälle! Umnatak gör ett heroiskt offer som löser ring-problemet OCH ger Christofer en värdig exit.</p>
+</div>
+
+<h3>Hur Det Går Till</h3>
+<p>Ringen måste neutraliseras för att Zentri ska kunna lämna Skugglandet säkert. Umnatak (redan fängslad i kniven) erbjuder sig:</p>
+
+<div class="quote">
+    <span class="speaker">UMNATAK (genom kniven):</span><br>
+    "Jag ser ringen nu... på andeplanet. Den är ett fängelse. Precis som kniven."<br><br>
+    "Jag kan... ta den. Dra in dess essens hit. Hålla den bunden."<br><br>
+    "Men om jag gör det... kommer jag aldrig kunna lämna kniven. Aldrig."
+</div>
+
+<h3>Vad Som Händer</h3>
+<ol>
+    <li>Umnatak drar Urkhath-fragmentet från ringen in i kniven</li>
+    <li>Ringen blir "tom" - bara metall</li>
+    <li>Zentri är fri från ankaret</li>
+    <li>Umnatak är permanent fängslad - håller demonessensen i schack</li>
+    <li>Kniven blir en mäktig (och farlig) artefakt som måste bevakas</li>
+</ol>
+
+<h3>Christofers Nya Karaktär</h3>
+<p>Alternativ för nästa session:</p>
+<ul>
+    <li><strong>Ulzak fortsätter:</strong> Han är redan i Umnataks kropp - Christofer spelar den uråldriga tirakschamanen</li>
+    <li><strong>Helt ny karaktär:</strong> Någon de möter i Mithera/Vitterdal efteråt</li>
+    <li><strong>Överlevare från Vargnäset:</strong> En av de 50 flyktingarna som vill hjälpa</li>
+</ul>
+
+<!-- ================================================== -->
+<h2>📝 SESSIONSFLÖDE (Förenklat)</h2>
+<!-- ================================================== -->
+
+<ol>
+    <li><strong>Portalen & Striden</strong> (30 min) - Genom portalen, frostväktare attackerar, VinterGlöd stoppar dem</li>
+    <li><strong>VinterGlöd-Mötet</strong> (30 min) - Dialog, Yelgothas namn, hans berättelse, Thrakka konfronterar</li>
+    <li><strong>Zentri-Återförening</strong> (20 min) - Emotionell scen, Andreas tar över Zentri</li>
+    <li><strong>Umnataks Offer</strong> (15 min) - Löser ring-problemet, heroisk exit för Christofers karaktär</li>
+    <li><strong>Återfärd</strong> (15 min) - Genom portalen, cliffhanger (Urkhath känner att ankaret bröts)</li>
+</ol>
+
+<!-- ================================================== -->
+<h2>🎬 AVSLUTNING - Cliffhanger</h2>
+<!-- ================================================== -->
+
+<p>Gruppen kliver tillbaka genom portalen till Mundana (Mithera-skogen). Zentri är med dem. Ringen är tom. Umnatak är borta.</p>
+
+<p>Men något är fel.</p>
+
+<div class="quote">
+    <span class="speaker">ZENTRI:</span><br>
+    "Känner ni det? Kölden... den är argare nu."
+</div>
+
+<p><strong>Vintern i Mithera intensifieras.</strong> Träd sprängs av frost. Marken skakar. I fjärran hörs ett ljud - som ett berg som vaknar.</p>
+
+<div class="quote">
+    <span class="speaker">VINTERGLÖD (om han är med):</span><br>
+    "Han vet. Urkhath vet att ankaret bröts. Hans vrede kommer kosta er dyrt."
+</div>
+
+<p><strong>Nästa fas:</strong> Stärka stenstoderna innan Urkhaths raseri förstör Mithera.</p>
+
+<!-- ================================================== -->
+
+<footer>
+    <p>Gravens Arv - Zentri Rescue Session</p>
+    <p>Uppdaterad: 2025-12-17</p>
+</footer>
 
 </body>
 </html>
