@@ -1567,7 +1567,7 @@ var wikiData = {
     },
     {
       "namn": "Mirelle",
-      "bild": null,
+      "bild": "kullendorff_Skilled_middle-aged_female_cook_in_medieval_taver_0f45050b-2582-4ec8-b68a-b1e20da04c30_3.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1578,7 +1578,7 @@ var wikiData = {
     },
     {
       "namn": "Mivell Thamrin",
-      "bild": null,
+      "bild": "kullendorff_Dignified_middle-aged_religious_leader_in_flowing_8393670a-7467-4bfe-9521-1ce82c6285bd_2.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1633,7 +1633,7 @@ var wikiData = {
     },
     {
       "namn": "Naila bint-Zahir",
-      "bild": null,
+      "bild": "kullendorff_Young_Arabian_woman_server_in_traditional_serving_b4d5d96c-3a6e-4ed5-a689-a0b82c4bcb72_2.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1644,7 +1644,7 @@ var wikiData = {
     },
     {
       "namn": "Nekromantikern",
-      "bild": null,
+      "bild": "kullendorff_Sinister_hooded_necromancer_in_tattered_dark_robe_5bb159da-bcc3-40db-93ba-5b20839a116d_3.png",
       "ras": "Okänd",
       "titel": "Nekromantiker",
       "status": "död",
@@ -1677,7 +1677,7 @@ var wikiData = {
     },
     {
       "namn": "Nocturne",
-      "bild": null,
+      "bild": "kullendorff_Enigmatic_cloaked_figure_in_shadows_face_complete_71b5c3ce-3e40-45fc-a5fc-9b2b84defb5b_2.png",
       "ras": "Okänd",
       "titel": null,
       "status": "levande",
@@ -1688,7 +1688,7 @@ var wikiData = {
     },
     {
       "namn": "Olav Murkross",
-      "bild": null,
+      "bild": "kullendorff_Grizzled_elderly_veteran_soldier_in_worn_leather__d42ee072-6e52-474b-91da-21496250d188_1.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1699,7 +1699,7 @@ var wikiData = {
     },
     {
       "namn": "Olof Stenmark",
-      "bild": null,
+      "bild": "kullendorff_Young_grief-stricken_father_in_simple_travel-worn_33a6a967-136e-459a-a585-31074fc324c0_2.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1820,7 +1820,7 @@ var wikiData = {
     },
     {
       "namn": "Raziq al-Nur",
-      "bild": null,
+      "bild": "kullendorff_Enigmatic_middle-aged_Arabian_tavern_owner_in_ric_d20f2139-5d5b-4916-92ed-06594e018423_1.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
