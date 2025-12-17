@@ -2244,6 +2244,59 @@ Men Arcadius kropp är **iskall** - som att röra frost.
 **Arcadius (tom röst):**
 "Jag offrade min skuld. Tappade förmågan att... bry mig om konsekvenser. Jag förstår att detta är farligt. Men förstår inte varför det betyder något."
 
+#### Arcadius Gång Mot Ljuset
+
+Arcadius började **gå**.
+
+Stegen bestämda, dragna framåt av tråden i hans bröst.
+
+**50 meter från ljuset.**
+
+Luften började sjunga - harmoniska röster, många, utan ord.
+
+**40 meter.**
+
+Hålet i bröstet brände kallare. Tråden spändes hårdare.
+
+**30 meter.**
+
+Det blå skenet reflekterades i hans ögon - stirrande, blinkade inte.
+
+**25 meter.**
+
+Gordon ropade något. Arcadius hörde inte.
+
+**20 meter från ljuset.**
+
+### Kazriks Tackling
+
+**Kazrik sprang.**
+
+Dvärgen kastade sig lågt - tacklade Arcadius i höftpartiet.
+
+Båda **föll hårt** mot colonisk sten.
+
+Arcadius kropp **spände** - försökte ta sig loss.
+
+Blått sken **läckte** från bröstet genom tyget.
+
+Händerna **klöste** mot stenen, försökte dra sig framåt mot ljuset.
+
+#### Thrakkas Bundning
+
+**Thrakka nådde fram** - ignorerade smärtan i brutna revben.
+
+Rep från packningen.
+
+Arcadius **bunden:**
+- Händer bakom rygg
+- Fötter hopsnörda
+- Kroppen darrar
+
+Det blå skenet **pulserar** genom tyget: ljusare-mörkare-ljusare.
+
+Ögon fixerade på ljuset 20 meter bort. Stirrar. Blinkar inte.
+
 ### Beslutet: Kapa Tråden
 
 **Umnatak från kniven:**
@@ -2292,24 +2345,127 @@ Ulzak står med kniven. Bladet **RÖKER** - svart rök som när metall blir för
 
 Sedan tystnad.
 
-### Tillståndet Nu
+### Arcadius Tillstånd Efter Trådens Brott
 
-**Arcadius:**
-- Ligger bunden på stengolvet
-- Medvetslös eller halvmedveten
-- Hålet i bröstet nu **råskuret** - tomt på ett nytt, värre sätt
-- Tråden borta
+#### Det Fysiska
+
+**SMÄRTA.**
+
+Något **RIVS ur** bröstet inifrån - inte hjärtat, utan själen själv.
+
+**Hålet:**
+- **Vidöppet**, råskuret
+- "Blöder" andligt
+- Kyla strömmar ut istället för blod
+
+**Kyla sprider sig:**
+- Fingrar **domnar**
+- Läppar **frusna**
+- MYCKET värre än tidigare
+- Som is växer från bröstet utåt
+
+**Kroppen:**
+- **Skakar** okontrollerat
+- Grund andhämtning
+- Suddig syn
+- Metallsmak i munnen
+- Hjärtat slår **oregelbundet** - missar slag
+
+#### Det Emotionella
+
+**Rädsla.**
+
+Men inte för något specifikt.
+
+Rädsla för **INGENTING**.
+
+**Hålet SKRIKER** nu.
+
+Vill fyllas. Måste fyllas. Men vet inte med vad.
+
+**Tystnaden.**
+
+Värre än smärtan - tystnaden **INUTI**.
+
+**Frånvaron.**
+
+Något som höll honom samman - borta.
+
+Som skelett utan senor.
+
+Som hus utan bjälkar.
+
+Står fortfarande. Men VET att det håller på att rasa.
+
+#### Tillståndet
+
+Arcadius ligger **bunden** på colonisk sten.
+
+Ögon öppna.
+
+Stirrar upp i valvtaket.
+
+**Tankar fragmenterade:**
+
+"Vem... var... varför bunden... något saknas... mer än skulden... mer än tråden... något som HÖLL... ihop..."
+
+Medvetandet flimrar.
+
+In. Ut. In. Ut.
+
+Som lampor i vinden.
 
 **Det Blå Ljuset:**
 - Lyser fortfarande
 - Men rösterna tysta
 - Vad händer på andra sidan?
 
-**Gruppen:**
-- Thrakka vaken men brutna revben
-- Gordon, Kazrik står runt Arcadius
-- Ulzak i Umnataks kropp, utmattad
-- Umnatak i kniven, tyst efter ansträngningen
+### Gruppens Status Vid Sessionens Slut
+
+**Plats:** Colonisk korridor, 40 meter från det blå ljuset
+
+**Gordon Nahrzezia:**
+- Fysiskt oskadad
+- Såg både Umnataks offer och Arcadius tråd brytas
+- Ledde flykten under jord
+- **Offer från Älvakungen:** Generositet borta
+
+**Thrakka "Järnhanden":**
+- **Brutna revben** från titanens slag
+- Kan gå men inte springa eller slåss hårt
+- Bundade Arcadius trots smärtan
+- Bär Umnataks meteoritjärnskniv vid bältet
+- **Offer från Älvakungen:** Traumatiska minnen borta (gladiatoråren)
+
+**Umnatak (fängslad i kniven):**
+- **Permanent förändring:** Fängslad i meteoritjärnskniven efter offret
+- Kan tala när någon rör kniven (begränsat, smärtsamt, uttröttande)
+- Ser andeplanet konstant
+- Instruerade hur tråden skulle kapas
+- Tyst nu efter ansträngningen
+- **Offer från Älvakungen:** Säkerhet/trygghet borta
+- **Christofer spelar:** "Kniv-Umnatak"
+
+**Ulzak (i Umnataks kropp):**
+- **Permanent förändring:** Befriad från kniven, gäst i Umnataks kropp
+- Utmattad efter att ha kapat tråden
+- Styr kroppen men dränerar den
+- **Christofer spelar:** "Ulzak i kroppen"
+
+**Kazrik klan Ghor:**
+- Oskadad
+- Hittade vägen under jord (colonisk nyckelsten)
+- Tacklade Arcadius och stoppade honom 20m från ljuset
+- **Offer från Älvakungen:** Ambition/girighet borta
+
+**Arcadius (Corvus kropp):**
+- Fysiskt oskadad men **bunden** på stengolvet
+- **Hålet i bröstet vidöppet** efter tråden bröts - råskuret, värre än någonsin
+- Kyla sprider sig i kroppen, hjärtat slår oregelbundet
+- **Medvetande fragmenterat** - tankar flimrar in och ut
+- Något som höll honom samman - borta
+- **Offer från Älvakungen:** Skuld borta (skapade hålet)
+- **Tråden till skulden:** Bruten - konsekvenser okända
 
 **Frågor:**
 - Lever Arcadius verkligen? Vad hände med hans själ?
