@@ -220,29 +220,29 @@ Gothic ice tower crumbling from top down, massive stone blocks falling, frost sh
 
 ---
 
-## 12. ARCADIUS RITUAL - BINDNING AV RINGEN
+## 12. RITUAL + UMNATAKS OFFER - BINDNING AV RINGEN
 
-**Beskrivning:** Fullständig bindningsritual där ALLA deltar. Kazrik placerar runstenar i oktagon (8 punkter), Arcadius knäböjer och läser formelböner med händer utsträckta, hålet i bröstet lyser blått och dras mot ringen, Gordon står bakom och koordinerar, Thrakka håller brutna kniven redo att skära. Zentri i cirkelns mitt med ringen på fingret (glöder röd). Dramatisk magisk konfrontation - heligt ljus (blå-vit) möter demoniskt (deep red).
+**Beskrivning:** Fullständig ritual där ALLA deltar, kulminerar i Umnataks offer. Arcadius leder ritualen (andligt) med formelböner, Kazrik placerar runstenar i oktagon, Gordon koordinerar (praktiskt), Thrakka håller kniven, Umnatak offrar sig. Zentri i cirkelns mitt med ringen på fingret. Heligt ljus (blå-vit) möter demoniskt (deep red). Själs-byte: Umnatak in i kniven, Thrakka/Ulzak ut i kroppen.
 
 ### Prompt A: Ritualen Börjar
 
 ```
-Religious binding ritual in ice chamber, circular floor with glowing rune circle 3 meters wide, dwarf placing eight rune-stones at compass points creating octagon of blue-white light, bearded warrior-priest kneeling with arms outstretched reciting prayers in ancient tongue, ethereal blue light streaming from hollow in priest's chest toward center, tirak warrior holding cracked glowing knife, human leader standing behind coordinating timing, young man in center with black ring on finger glowing deep red, intense magical energy building, holy vs demonic power clash, Greg Rutkowski fantasy ritual scene with dramatic lighting --ar 16:9 --s 210
+Religious binding ritual in ice chamber, circular floor with glowing rune circle 3 meters wide, bearded warrior-priest leading ritual reciting ancient prayers with arms raised, dwarf placing eight rune-stones at compass points creating octagon of blue-white light, human leader coordinating timing from side, tirak warrior holding cracked glowing knife preparing for sacrifice, young man in center with black ring on finger glowing deep red, intense magical energy building, holy vs demonic power clash, Greg Rutkowski fantasy ritual scene with dramatic lighting --ar 16:9 --s 210
 ```
 
-### Prompt B: Bindningens Klimax
+### Prompt B: Umnataks Offer - Själs-bytet
 
 ```
-Climax of binding ritual, blue-white energy flowing between eight rune-stones forming octagon barrier, priest with hollow in chest screaming as blue light from void meets red demonic glow from ring, ring being pulled from young man's finger by magical force, dwarf adjusting rune-stone placement with precision, tirak cutting spiritual bond with cracked knife (ethereal slash visible), human leader shouting commands, ice chamber walls reflecting magical explosion, holy energy vs demonic rage, Frank Frazetta dramatic magical confrontation --ar 16:9 --s 220
+Climax of ritual, blue-white energy flowing between eight rune-stones forming octagon barrier, tirak warrior cutting spiritual bond with cracked knife (ethereal slash visible between ring and young man), translucent blue-white soul being pulled from knife into air, demonic red-black soul being expelled from knife into tirak warrior's body, ring falling toward cracked knife, dwarf maintaining rune-stones, priest shouting prayers, leader coordinating, souls swapping places, Frank Frazetta dramatic soul exchange --ar 16:9 --s 220
 ```
 
-### Prompt C: Hålet Fångar Ringen
+### Prompt C: Ringen Binds till Kniven
 
 ```
-Final moment of ritual, black ring with deep red glow being sucked into glowing hollow in priest's chest, priest on knees with back arched in agony, ring disappearing INTO the void in his chest, rune circle exploding in blue-white light, young man collapsing free from curse, companions surrounding in exhausted relief, ice chamber floor cracking from magical backlash, triumphant but costly victory, Gerald Brom dark fantasy triumph --ar 16:9 --s 200
+Final moment of ritual, black ring with deep red glow being drawn toward cracked meteorite knife, ring binding itself to blade where soul is now trapped inside, knife smoking heavily from cracks with blue-white ethereal mist, young man collapsing free from curse, tirak warrior standing with knife in hand (now permanent bearer), companions surrounding in exhausted relief, rune circle exploding in blue-white light, ice chamber floor cracking, triumphant but costly victory, Gerald Brom dark fantasy sacrifice --ar 16:9 --s 200
 ```
 
-**Användning:** RITUAL-scen alternativ F, alla spelares roller synliga, dramatisk höjdpunkt
+**Användning:** RITUAL-scen alternativ F (A+F kombinerad), alla spelares roller synliga, Umnataks slutliga offer, Thrakka blir väktare
 
 ---
 
