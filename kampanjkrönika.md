@@ -2069,7 +2069,7 @@ Efter mötet med Prins Yelgotha (Älvakungen) och de offer som gjorts fortsatte 
 Gruppen mötte en massiv **Titan** - en kolonisk skapelse som höll sex drunknade själar fångna i sin kärna.
 
 **Striden var brutal:**
-- Thrakka fick **brutna revben**
+- Thrakka fick **spräckt skalle**
 - Gruppen kämpade desperat mot överväldigande motstånd
 - Umnatak förstod att titanens kärna måste krossas för att befria själarna
 
@@ -2285,7 +2285,7 @@ Händerna **klöste** mot stenen, försökte dra sig framåt mot ljuset.
 
 #### Thrakkas Bundning
 
-**Thrakka nådde fram** - ignorerade smärtan i brutna revben.
+**Thrakka nådde fram** - ignorerade smärtan från spräckt skalle.
 
 Rep från packningen.
 
@@ -2432,7 +2432,7 @@ Som lampor i vinden.
 - **Offer till Yelgotha:** Generositet borta
 
 **Thrakka "Järnhanden":**
-- **Brutna revben** från titanens slag
+- **Spräckt skalle** från titanens slag
 - Kan gå men inte springa eller slåss hårt
 - Bundade Arcadius trots smärtan
 - Bär Umnataks meteoritjärnskniv vid bältet

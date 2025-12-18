@@ -15,7 +15,7 @@ En intensiv session där gruppen först slogs mot Sjödöda Titanen, följt av U
 ## DEL 1: EFTER TITANSTRIDEN
 
 ### Situationen
-- **Thrakka:** Medvetslös från titanens slag, brutna revben
+- **Thrakka:** Medvetslös från titanens slag, spräckt skalle
 - **Umnatak:** Satt på knä, chockad från blodsoffret
 - **Titanens läge:** Sex drunknade själar sammanfogade, anfaller gruppen
 - **Ulzak:** Materialiserades från Umnataks blod för att hjälpa
@@ -238,8 +238,8 @@ En intensiv session där gruppen först slogs mot Sjödöda Titanen, följt av U
 - Ledde flykten under jord
 - **Offer från Älvakungen:** Generositet borta
 
-### Thrakka  
-- Brutna revben, kan gå men inte springa/slåss hårt
+### Thrakka
+- Spräckt skalle, kan gå men inte springa/slåss hårt
 - Bär Umnataks kniv vid bältet
 - Bundade Arcadius
 - **Offer från Älvakungen:** Traumatiska minnen borta (gladiator-åren)
