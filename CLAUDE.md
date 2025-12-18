@@ -13,10 +13,34 @@ Den filen är entry point och visar:
 
 ---
 
+## 🤖 AGENT-ANVÄNDNINGSPOLICY
+
+**VIKTIGT:** Sluta fråga om du ska använda en agent. Gör din egen bedömning.
+
+**Prioritetsordning:**
+1. **KVALITET/EXAKTHET/KONTINUITET** - Högsta prioritet
+2. **SNABBHET** - Andra prioritet
+3. **TOKEN-SPARANDE** - Lägsta prioritet
+
+**Beslutsregel:**
+- Om agent = bättre kvalitet → Använd agent (även om långsammare)
+- Om agent = snabbare MEN sämre kvalitet → Använd INTE agent
+- Tokens är INTE viktigt att spara - kvalitet är allt
+
+**Exempel:**
+- ✅ Använd eon-chronicler för kontinuitetskontroller (bättre kvalitet)
+- ✅ Använd eon-data-guardian för batch-tillägg (säkrare)
+- ✅ Använd eon-kapitel-writer för narrativ (bättre prosa)
+- ❌ Använd INTE agent om manuell redigering är noggrannare
+
+**TL;DR:** Tänk själv. Kvalitet > hastighet > tokens.
+
+---
+
 ## Projektöversikt
 EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan).
 
-**Huvudsida:** Fantasy-dashboard (`/index.html`) med centraliserad databas (`master/master/wiki_data.js`)
+**Huvudsida:** Fantasy-dashboard (`/index.html`) med centraliserad databas (`master/wiki_data.js`)
 **Referens:** Jekyll-wiki (`/kampanjwiki/`) för strukturerad markdown-data
 
 ## NUVARANDE STATUS (2025-12-12)
@@ -34,7 +58,7 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 **Plats:** `/index.html` (rot-katalogen)
 **Typ:** Single-file HTML (1050+ rader)
 **Tech Stack:** Vanilla JS, CSS Grid, Markdown-rendering
-**Data:** Laddar `master/master/wiki_data.js` via `<script src>`
+**Data:** Laddar `master/wiki_data.js` via `<script src>`
 
 **Features:**
 - Hero-sektion med kampanjstatus
@@ -53,7 +77,7 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 - `--bg-dark: #0a0a0a` - Bakgrund
 
 ### 2. master/wiki_data.js (Centraliserad Databas)
-**Plats:** `/master/master/wiki_data.js` (master-mappen)
+**Plats:** `/master/wiki_data.js` (master-mappen)
 **Storlek:** ~300 KB (242 NPCs, 58 platser, 11 kapitel)
 **Format:** CommonJS module (`module.exports`) + browser global (`var wikiData`)
 

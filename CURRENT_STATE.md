@@ -2,6 +2,45 @@
 
 ## Datum: 2025-12-18
 
+## Status: ✅ STOR OMSTRUKTURERING KLAR - MASTER/, SESSIONER/, ENTRY POINT!
+
+**NYTT (2025-12-18 EFTERMIDDAG):**
+- ✅ **STOR OMSTRUKTURERING GENOMFÖRD:**
+  * **master/ mapp skapad** - Single source of truth
+    - kampanjkrönika.md (kronologisk tidslinje)
+    - character_reference.md (kön, alias, pronomen)
+    - wiki_data.js (dashboard-databas)
+    - masterplot.md (kampanjplot)
+  * **sessioner/ mapp skapad** - Session-planering
+    - arkiv/zentri-rescue/ (gamla sessioner)
+    - _aktuell.md & _aktuell.html (mall)
+  * **guider/ mapp skapad** - SL-guider
+    - vinterglod_guide.html
+  * **midjourney/ mapp skapad** - 22 prompt-filer
+  * **arkiv/ mapp skapad** - Brainstorm-filer
+  * **_index.md SKAPAD** - 🎯 ENTRY POINT för alla agenter
+    - "Var är vi nu?"
+    - "För agenter - läs detta först!"
+    - Single source of truth-tabell
+    - Arbetsflöden (session, kapitel, data)
+    - Checklista
+- ✅ **ALLA FILSÖKVÄGAR UPPDATERADE:**
+  * index.html → läser master/wiki_data.js
+  * check-missing-images.js → läser master/wiki_data.js
+  * CLAUDE.md → alla sökvägar uppdaterade + agent-policy tillagd
+  * Alla 6 agenter → filsökvägar uppdaterade
+  * Alla skills → filsökvägar uppdaterade
+- ✅ **VALIDERAT:** wiki_data.js fungerar i ny plats (240 NPCs, 58 platser)
+- ✅ **COMMITTAT OCH PUSHAT:** 6f21d5a + uppföljande fix
+- ✅ **AGENT-POLICY TILLAGD I CLAUDE.MD:**
+  * Prioritet: Kvalitet > Snabbhet > Tokens
+  * Ingen fråga om agent-användning - gör egen bedömning
+
+**VARFÖR OMSTRUKTURERINGEN?**
+- **Problem:** 90+ filer i root, ingen entry point, agents visste inte var data fanns
+- **Lösning:** Tydlig struktur med master/ som "truth", _index.md som startpunkt
+- **Resultat:** Agenter vet alltid var de ska börja, minskad kontinuitetsrisk
+
 ## Status: ✅ ZENTRI RESCUE KOMPLETT - ARCADIUS HÅL-EFFEKTER & FULLSTÄNDIG RITUAL!
 
 **NYTT (2025-12-18):**
