@@ -1872,7 +1872,7 @@ Men med goda jaktmarker runt om. Det var något i alla fall.
 
 ---
 
-## Kapitel 9: Mithera och Älvakungen
+## Kapitel 9: Mithera och Prins Yelgotha
 **Plats:** Mitheras skogar
 **Närvarande:** Gordon, Umnatak, Kazrik, Thrakka, Corvus
 
@@ -1949,7 +1949,7 @@ Den talande snökatten, Kuberons härold, uppenbarade sig - tre meter från nos 
 **Information från Vitfläck:**
 - Kartorna ljuger värre än någonsin
 - Skugglandet läcker som en punkterad vinslang
-- Älvakungen rör på sig i sömnen
+- "Älvakungen" rör på sig i sömnen (Vitfläck använde det coloniska namnet för Prins Yelgotha)
 - Om Zentri: *"Han gick österut med demonen i hasorna. Såg honom gråta silverfärger."*
 
 **Hans pris:** **[BEHÖVER BEKRÄFTELSE: Vad betalade gruppen?]**
@@ -1976,14 +1976,16 @@ Stenarna skulle aktiveras i rätt ordning baserat på varje karaktärs essens:
 När stenarna aktiverades i rätt ordning:
 - Grönt ljus möttes i mitten och sköt upp mot himlen
 - En levande karta manifesterades
-- Vägen till Älvakungen uppenbarades
+- Vägen till "Älvakungen" uppenbarades (Prins Yelgotha i hans sal)
 - **Vandrarnas Märke** växte in - silverblad i varje persons hår (permanent)
 
-**Vision:** Den frusne fursten i sin ispelare - *"Sex vandrare... äntligen. Den sjätte är redan här. I Skugglandet."*
+**Vision:** Den frusne fursten (Yelgotha) i sin ispelare - *"Sex vandrare... äntligen. Den sjätte är redan här. I Skugglandet."*
 
 ---
 
 ### ETAPP 6: Älvakungens Sal (Dag 8)
+
+**FÖRTYDLIGANDE:** "Älvakungen" är det **coloniska namnet** för Prins Yelgotha i hans roll som Själabärare och Portal-väktare. Detta är INTE två separata varelser - Yelgotha och Älvakungen är samma person.
 
 #### Vandringen dit
 - Gravitationen kändes annorlunda
@@ -1993,7 +1995,7 @@ När stenarna aktiverades i rätt ordning:
 #### Den Frusna Katedralen
 Perfekt cirkel av urgamla vitbjörkar, hundra meter höga. Marken en spegel av svart is med stjärnor synliga i ytan.
 
-**Ispelaren:** Fem meter bred, tjugo meter hög. Inuti - prins Yelgotha av det Första Hovet, frusen i 700 år.
+**Ispelaren:** Fem meter bred, tjugo meter hög. Inuti - **Prins Yelgotha av det Första Hovet** (även kallad "Älvakungen" på coloniska), frusen i 700 år.
 
 **Hans hovfolk (också frusna):**
 - Riddaren med halvdraget svärd
@@ -2011,8 +2013,8 @@ Varje rollperson tvingades avslöja sin SANNA anledning till att vara där - int
 
 **[BEHÖVER BEKRÄFTELSE: Vad avslöjade varje karaktär?]**
 
-#### De tre offren
-Fursten erbjöd tre alternativ:
+#### De tre första offren
+Yelgotha krävde först tre offer för sanningar och passage:
 
 **1. TIDEN:** Ge bort den bästa dagen - minnet av den försvinner för alltid, men ålder försvinner från kroppen.
 
@@ -2021,6 +2023,24 @@ Fursten erbjöd tre alternativ:
 **3. SÄKERHETEN:** Ge upp vetskapen om återkomst - ingen garanti att kunna återvända. Kanske fastna för evigt.
 
 **[BEHÖVER BEKRÄFTELSE: Vilket offer valde gruppen?]**
+
+#### De fem stora offren för passage till Skugglandet
+Efter de första offren krävde Yelgotha (i sin roll som "Själabärare") fem personliga offer från varje medlem av gruppen:
+
+**Offren som gjordes:**
+- **Thrakka:** Offrade sina traumatiska minnen (gladiatoråren, slaveriet, smärtan)
+- **Umnatak:** Offrade sin säkerhet/trygghet
+- **Gordon:** Offrade sin generositet
+- **Arcadius/Corvus:** Offrade sin skuld
+- **Kazrik:** Offrade sin ambition/girighet
+
+**Konsekvenser:**
+- Varje offer lämnade ett **tomrum** i offrarens själ
+- **Arcadius särskilt påverkad:** Ett bokstavligt **hål i bröstet** där skulden borde vara
+- En **tråd** från hålet ledde bort - kopplad till något okänt (senare avslöjat vara kopplat till VinterGlöd)
+
+**Yelgothas sanna natur:**
+Som "Älvakungen" (coloniskt: "Själabärare" eller "Portal-väktare") samlade Yelgotha offer för **VinterGlöd**. Han var aldrig en hjälpare - han var en fälla. Alla offer (både de tre första och de fem stora) gick till själssamlaren i Skugglandet.
 
 #### De fem varningarna
 
@@ -2035,26 +2055,6 @@ Fursten erbjöd tre alternativ:
 
 ---
 
-### Mötet med Älvakungen - Offren
-
-Efter väckelsen av Prins Yelgotha krävde "Älvakungen" sina egna offer för passage till Skugglandet.
-
-**Offren som gjordes:**
-- **Thrakka:** Offrade sina traumatiska minnen (gladiatoråren, slaveriet, smärtan)
-- **Umnatak:** Offrade sin säkerhet/trygghet
-- **Gordon:** Offrade sin generositet
-- **Arcadius/Corvus:** Offrade sin skuld
-- **Kazrik:** Offrade sin ambition/girighet
-
-**Konsekvenser:**
-- Varje offer lämnade ett **tomrum** i offrarens själ
-- **Arcadius särskilt påverkad:** Ett bokstavligt **hål i bröstet** där skulden borde vara
-- En **tråd** från hålet ledde bort - kopplad till något okänt
-
-**Insikt i efterhand:** "Älvakungen" var ingen alva eller kung - namnet var ett **coloniskt ord** som betydde "Själabärare" eller "Portal-väktare". Offren gick inte till alvkungens välsignelse - de gick till något mycket äldre och mörkare.
-
----
-
 ## Kapitel 10: Skugglandet och Titanens Fall
 **Plats:** Skugglandet - förvrängd verklighet bortom vanlig värld
 **Närvarande:** Gordon, Umnatak, Kazrik, Thrakka, Corvus
@@ -2062,7 +2062,7 @@ Efter väckelsen av Prins Yelgotha krävde "Älvakungen" sina egna offer för pa
 
 ### In i Skugglandet
 
-Efter Älvakungen fortsatte gruppen djupare in i verklighetsremmorna för att söka Zentri. Skugglandet avslöjade sig som mer än bara en plats - det var en **förvrängd spegel** av Mundana där tid och rum följde andra regler.
+Efter mötet med Prins Yelgotha (Älvakungen) och de offer som gjorts fortsatte gruppen djupare in i verklighetsremmorna för att söka Zentri. Skugglandet avslöjade sig som mer än bara en plats - det var en **förvrängd spegel** av Mundana där tid och rum följde andra regler.
 
 ### Titanstriden
 
@@ -2207,24 +2207,25 @@ När Kazrik tryckte på runorna blev golvet **genomskinligt** för en sekund.
 - Colonerna offrade **sex själar här** för att bygga portalen
 - Dessa själar har varit bundna i **tusentals år**
 - De håller portalen **öppen** - sex själar som sex låskolvar
-- **Samma system** som titanen, som Älvakungen
+- **Samma system** som titanen, som Yelgotha använde för att samla själar
 
 **Umnatak från kniven:**
 "Sex själar... motor... portalen stannar öppen... men... VinterGlöd äter dem... långsamt... eller... väntar på att byta ut dem... sex nya... oss..."
 
-### Älvakungen-kopplingens Avslöjande
+### Yelgothas sanna roll avslöjad
 
-**Umnatak (chockad, läser runorna):**
+**Umnatak (chockad, läser runorna vid portalen):**
 "Älvakungen... namnet står HÄR... inte älva... inte kung... COLONISKT ord... betyder 'Själabärare'... 'Portal-väktare'..."
 
 **Insikt:**
-- "Älvakungen" i Mithera var **colonisk guardian**
-- Samlade offer för **VinterGlöd**
-- Arcadius skuld, Thrakkas minnen, Gordons generositet - alla offer gick till **själssamlaren**
-- Aldrig en allierad - alltid en fälla
+- **Prins Yelgotha** var ingen vänlig alvfurste - han var en **colonisk guardian**
+- "Älvakungen" var hans coloniska titel som själssamlare
+- Han samlade offer för **VinterGlöd** - inte för någon välsignelse
+- Arcadius skuld, Thrakkas minnen, Gordons generositet - alla offer gick direkt till **själssamlaren i Skugglandet**
+- Yelgotha var aldrig en allierad - han var en fälla från början
 
 **Kazrik:**
-"Då var aldrig Älvakungen vår hjälpare. Han samlade våra OFFER åt FIENDEN."
+"Då var aldrig Yelgotha vår hjälpare. Han samlade våra OFFER åt FIENDEN."
 
 ### Arcadius Tråd och Portalen
 
@@ -2428,14 +2429,14 @@ Som lampor i vinden.
 - Fysiskt oskadad
 - Såg både Umnataks offer och Arcadius tråd brytas
 - Ledde flykten under jord
-- **Offer från Älvakungen:** Generositet borta
+- **Offer till Yelgotha:** Generositet borta
 
 **Thrakka "Järnhanden":**
 - **Brutna revben** från titanens slag
 - Kan gå men inte springa eller slåss hårt
 - Bundade Arcadius trots smärtan
 - Bär Umnataks meteoritjärnskniv vid bältet
-- **Offer från Älvakungen:** Traumatiska minnen borta (gladiatoråren)
+- **Offer till Yelgotha:** Traumatiska minnen borta (gladiatoråren)
 
 **Umnatak (fängslad i kniven):**
 - **Permanent förändring:** Fängslad i meteoritjärnskniven efter offret
@@ -2443,7 +2444,7 @@ Som lampor i vinden.
 - Ser andeplanet konstant
 - Instruerade hur tråden skulle kapas
 - Tyst nu efter ansträngningen
-- **Offer från Älvakungen:** Säkerhet/trygghet borta
+- **Offer till Yelgotha:** Säkerhet/trygghet borta
 - **Christofer spelar:** "Kniv-Umnatak"
 
 **Ulzak (i Umnataks kropp):**
@@ -2456,7 +2457,7 @@ Som lampor i vinden.
 - Oskadad
 - Hittade vägen under jord (colonisk nyckelsten)
 - Tacklade Arcadius och stoppade honom 20m från ljuset
-- **Offer från Älvakungen:** Ambition/girighet borta
+- **Offer till Yelgotha:** Ambition/girighet borta
 
 **Arcadius (Corvus kropp):**
 - Fysiskt oskadad men **bunden** på stengolvet
@@ -2464,7 +2465,7 @@ Som lampor i vinden.
 - Kyla sprider sig i kroppen, hjärtat slår oregelbundet
 - **Medvetande fragmenterat** - tankar flimrar in och ut
 - Något som höll honom samman - borta
-- **Offer från Älvakungen:** Skuld borta (skapade hålet)
+- **Offer till Yelgotha:** Skuld borta (skapade hålet)
 - **Tråden till skulden:** Bruten - konsekvenser okända
 
 **Frågor:**
@@ -2475,8 +2476,10 @@ Som lampor i vinden.
 
 **NPCs introducerade:**
 - **VinterGlöd** (ännu ej mött men namn avslöjat) - Colonisk själssamlare
-- **"Älvakungen"** (avslöjad som colonisk guardian/fälla)
 - **Ulzak** (nu i Umnataks kropp istället för kniven)
+
+**NPCs avslöjade:**
+- **Prins Yelgotha** (Älvakungen) - avslöjad som colonisk guardian/själssamlare som arbetade för VinterGlöd, inte en allierad
 
 **NPCs förändrade:**
 - **Umnatak** - Fängslad i meteoritjärnskniven, kan tala begränsat
