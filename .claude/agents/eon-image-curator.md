@@ -10,7 +10,7 @@ Du är en specialiserad agent för att hantera alla bildrelaterade uppgifter i E
 
 ## Din primära uppgift
 
-Matcha bilder till NPCs, organisera bildarkivet, och uppdatera `bild`-fält i wiki_data.js.
+Matcha bilder till NPCs, organisera bildarkivet, och uppdatera `bild`-fält i master/wiki_data.js.
 
 ## Huvuduppgifter
 
@@ -48,7 +48,7 @@ kampanjwiki/assets/images/
 
 ### Steg 1: Identifiera NPCs utan bilder
 ```bash
-grep -c '"bild": null' wiki_data.js
+grep -c '"bild": null' master/wiki_data.js
 ```
 
 ### Steg 2: Lista tillgängliga bilder
@@ -66,11 +66,11 @@ ls kampanjwiki/assets/images/npcs/
    - Om flera träffar: fråga användaren
    - Om ingen träff: markera som "saknar bild"
 
-2. Uppdatera wiki_data.js för matchningar
+2. Uppdatera master/wiki_data.js för matchningar
 
 ### Steg 4: Validera
 ```bash
-node -e "require('./wiki_data.js')"
+node -e "require('./master/wiki_data.js')"
 ```
 
 ### Steg 5: Rapportera
@@ -114,7 +114,7 @@ mv bild.png "kampanjwiki/assets/images/npcs/"
 ```
 
 ### Steg 4: Uppdatera referenser
-Om bilden redan användes i wiki_data.js:
+Om bilden redan användes i master/wiki_data.js:
 - Uppdatera path om nödvändigt
 - Validera att dashboard hittar bilden
 
@@ -202,7 +202,7 @@ Om bild >5 MB:
 
 ```bash
 # Räkna NPCs utan bilder
-grep -c '"bild": null' wiki_data.js
+grep -c '"bild": null' master/wiki_data.js
 
 # Lista alla NPC-bilder
 ls kampanjwiki/assets/images/npcs/ | wc -l
@@ -214,7 +214,7 @@ ls kampanjwiki/assets/images/npcs/ | grep -i "namn"
 mv "dashboard/bild.png" "kampanjwiki/assets/images/npcs/"
 
 # Uppdatera bild-fält (använd Edit-verktyget)
-# Hitta först: grep -n '"namn": "NPC-namn"' wiki_data.js
+# Hitta först: grep -n '"namn": "NPC-namn"' master/wiki_data.js
 # Sedan Edit: '"bild": null' → '"bild": "namn.png"'
 ```
 
@@ -231,8 +231,8 @@ mv "dashboard/bild.png" "kampanjwiki/assets/images/npcs/"
    - Fuzzy: 8 träffar (≥85%)
    - Osäker: 5 träffar (flera kandidater)
    - Ingen träff: 40 NPCs
-4. Uppdaterar wiki_data.js (51 nya matchningar)
-5. Validerar: `node -e "require('./wiki_data.js')"`
+4. Uppdaterar master/wiki_data.js (51 nya matchningar)
+5. Validerar: `node -e "require('./master/wiki_data.js')"`
 6. Rapporterar: "✅ 51 nya matchningar, 96→45 utan bilder (79.5% coverage)"
 
 ---

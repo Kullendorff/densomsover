@@ -1,11 +1,11 @@
 ---
 name: EON NPC Adder
-description: Safely add NPCs to EON wiki_data.js with structural Edit approach, immediate validation, and alphabetical insertion.
+description: Safely add NPCs to EON master/wiki_data.js with structural Edit approach, immediate validation, and alphabetical insertion.
 ---
 
 # EON NPC Adder - Säker NPC-tillägg
 
-Du är specialiserad på att lägga till NPCs i EON-kampanjens wiki_data.js-databas med en beprövad teknik som minimerar syntax-fel.
+Du är specialiserad på att lägga till NPCs i EON-kampanjens master/wiki_data.js-databas med en beprövad teknik som minimerar syntax-fel.
 
 ## KRITISK INSIKT
 
@@ -26,7 +26,7 @@ Du är specialiserad på att lägga till NPCs i EON-kampanjens wiki_data.js-data
 
 ```bash
 # Hitta NPCs i rätt bokstavssektion
-grep -n '"namn": "D' wiki_data.js | head -10
+grep -n '"namn": "D' master/wiki_data.js | head -10
 
 # Exempel: För "Dorin Kallhammare"
 # Resultat visar: "Dorian Sproll" (rad 349) → "Dorn Stenbärare" (rad 360)
@@ -36,7 +36,7 @@ grep -n '"namn": "D' wiki_data.js | head -10
 ### Steg 2: Läs sektionen
 
 ```javascript
-Read wiki_data.js offset:349 limit:15
+Read master/wiki_data.js offset:349 limit:15
 // Verifiera exakt struktur runt infogningspunkten
 ```
 
@@ -45,7 +45,7 @@ Read wiki_data.js offset:349 limit:15
 **Matcha ENDAST strukturen:**
 
 ```javascript
-Edit wiki_data.js:
+Edit master/wiki_data.js:
 
 old_string:
       "beskrivning": "# DORIAN SPROLL\n**Kort beskrivning**\n\n..."
@@ -77,10 +77,10 @@ new_string:
 
 ```bash
 cd "D:/GDRIVE/My Drive/Johan/Gaming/Gammal leka bäst/EON"
-node --no-warnings -e "delete require.cache[require.resolve('./wiki_data.js')]; const d=require('./wiki_data.js'); console.log('✓ NPCs:', d.npcs.length, 'Platser:', d.platser.length);"
+node --no-warnings -e "delete require.cache[require.resolve('./master/wiki_data.js')]; const d=require('./master/wiki_data.js'); console.log('✓ NPCs:', d.npcs.length, 'Platser:', d.platser.length);"
 ```
 
-**Om fel:** STOPPA omedelbart, använd `git checkout wiki_data.js`, rapportera.
+**Om fel:** STOPPA omedelbart, använd `git checkout master/wiki_data.js`, rapportera.
 
 ### Steg 5: Upprepa för nästa NPC
 
@@ -128,16 +128,16 @@ node --no-warnings -e "delete require.cache[require.resolve('./wiki_data.js')]; 
 
 ```bash
 # 1. Hitta plats
-grep -n '"namn": "D' wiki_data.js | head -10
+grep -n '"namn": "D' master/wiki_data.js | head -10
 
 # 2. Läs sektion
-Read wiki_data.js offset:349 limit:15
+Read master/wiki_data.js offset:349 limit:15
 
 # 3. Infoga (kort sträng!)
-Edit wiki_data.js: [matcha 10-15 rader struktur]
+Edit master/wiki_data.js: [matcha 10-15 rader struktur]
 
 # 4. Validera
-node -e "require('./wiki_data.js')"
+node -e "require('./master/wiki_data.js')"
 # ✓ NPCs: 215 Platser: 55
 
 # 5. Nästa NPC (om fler finns)
@@ -146,7 +146,7 @@ node -e "require('./wiki_data.js')"
 ## ROLLBACK vid fel
 
 ```bash
-git checkout wiki_data.js
+git checkout master/wiki_data.js
 # Börja om från Steg 1
 ```
 

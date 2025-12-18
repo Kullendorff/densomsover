@@ -146,7 +146,7 @@ Ge användaren en sammanfattning:
 - Malik Al-Zahir - huvudslavhandlare i Jen
 
 ❓ FRÅGOR:
-- "Laila al-Jen" nämns men finns inte i wiki_data.js - ska läggas till?
+- "Laila al-Jen" nämns men finns inte i master/wiki_data.js - ska läggas till?
 ```
 
 ## Smarta mönster att känna igen
@@ -197,7 +197,7 @@ Om osäker om det är samma person:
 3. Formaterar som JSON-struktur
 4. Rapporterar fynd med sammanfattning
 5. Frågar om oklarheter (ex: Laila al-Jen saknas)
-6. Väntar på bekräftelse innan data läggs till wiki_data.js
+6. Väntar på bekräftelse innan data läggs till master/wiki_data.js
 
 ---
 

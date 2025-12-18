@@ -1,4 +1,4 @@
-const d = require('./wiki_data.js');
+const d = require('./master/wiki_data.js');
 
 const npcsUtan = d.npcs.filter(n => !n.bild);
 const platserUtan = d.platser.filter(p => !p.bild);

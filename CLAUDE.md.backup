@@ -16,7 +16,7 @@ Den filen är entry point och visar:
 ## Projektöversikt
 EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan).
 
-**Huvudsida:** Fantasy-dashboard (`/index.html`) med centraliserad databas (`master/master/wiki_data.js`)
+**Huvudsida:** Fantasy-dashboard (`/index.html`) med centraliserad databas (`master/wiki_data.js`)
 **Referens:** Jekyll-wiki (`/kampanjwiki/`) för strukturerad markdown-data
 
 ## NUVARANDE STATUS (2025-12-12)
@@ -34,7 +34,7 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 **Plats:** `/index.html` (rot-katalogen)
 **Typ:** Single-file HTML (1050+ rader)
 **Tech Stack:** Vanilla JS, CSS Grid, Markdown-rendering
-**Data:** Laddar `master/master/wiki_data.js` via `<script src>`
+**Data:** Laddar `wiki_data.js` via `<script src>`
 
 **Features:**
 - Hero-sektion med kampanjstatus
@@ -53,7 +53,7 @@ EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan)
 - `--bg-dark: #0a0a0a` - Bakgrund
 
 ### 2. master/wiki_data.js (Centraliserad Databas)
-**Plats:** `/master/master/wiki_data.js` (master-mappen)
+**Plats:** `/master/wiki_data.js` (master-mappen)
 **Storlek:** ~300 KB (242 NPCs, 58 platser, 11 kapitel)
 **Format:** CommonJS module (`module.exports`) + browser global (`var wikiData`)
 
@@ -163,8 +163,8 @@ EON/kapitel/
 - Quote-boxar för dialog
 
 **Data-källa:**
-- **MASTER:** `master/master/kampanjkrönika.md` (eon-chronicler's tidslinje)
-- **Kompletterande:** `master/master/wiki_data.js`, Jekyll markdown
+- **MASTER:** `master/kampanjkrönika.md` (eon-chronicler's tidslinje)
+- **Kompletterande:** `master/wiki_data.js`, Jekyll markdown
 
 **Genereras av:** `eon-kapitel-writer` agent
 
@@ -251,7 +251,7 @@ Task(
 )
 ```
 
-**Master-dokument:** `EON/master/master/kampanjkrönika.md` (kronologisk tidslinje från start till nu)
+**Master-dokument:** `EON/master/kampanjkrönika.md` (kronologisk tidslinje från start till nu)
 
 **Huvudfunktioner:**
 1. **Krönikör:** Underhåller master-tidslinjen
@@ -458,7 +458,7 @@ Skill(skill="eon-npc-adder")
 ```
 
 **Kärnmetod (beprövad trial-and-error):**
-1. **Hitta alfabetisk plats** med `grep -n '"namn": "D' master/wiki_data.js`
+1. **Hitta alfabetisk plats** med `grep -n '"namn": "D' wiki_data.js`
 2. **Läs exakt sektion** med `Read wiki_data.js offset:X limit:15`
 3. **Matcha KORT strukturell sträng** (10-15 rader max)
    - Matcha från slutet av föregående NPC till början av nästa
@@ -561,7 +561,7 @@ node -e "const d=require('./wiki_data.js'); console.log('✓', d.npcs.length, 'N
 ```
 
 ### Uppdatera befintliga NPCs
-1. Hitta i wiki_data.js: `grep -n '"namn": "Namn"' master/wiki_data.js`
+1. Hitta i wiki_data.js: `grep -n '"namn": "Namn"' wiki_data.js`
 2. Använd Edit-verktyget (INTE Write)
 3. Validera omedelbart efter ändring med Node.js
 
@@ -697,7 +697,7 @@ git checkout wiki_data.js
 
 ### Problem: Syntax-fel i wiki_data.js
 **Symptom:** Dashboard laddar inte, Node.js ger `SyntaxError`
-**Lösning:** `git checkout master/wiki_data.js` → börja om från senaste fungerande version
+**Lösning:** `git checkout wiki_data.js` → börja om från senaste fungerande version
 
 ### Problem: Mojibake (Ã¥ istället för å)
 **Orsak:** Python/script utan UTF-8 encoding

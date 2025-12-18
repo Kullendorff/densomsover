@@ -35,8 +35,8 @@ Du är en expert på att generera detaljerade Midjourney-prompts för bilder til
 ### 1. Läs Källmaterial
 - **För kapitel:** Läs `EON/kapitel/kapitel-X-namn.html`
 - **För platser:** Läs `EON/platser/namn.html` eller `EON/Eon SL/namn.md`
-- **För NPCs:** Läs beskrivningar från `wiki_data.js` eller markdown-filer
-- **För scener:** Läs kampanjkrönika.md för specifika händelser
+- **För NPCs:** Läs beskrivningar från `master/wiki_data.js` eller markdown-filer
+- **För scener:** Läs master/kampanjkrönika.md för specifika händelser
 
 ### 2. Identifiera Visuella Nyckelelement
 Extrahera:
@@ -188,7 +188,7 @@ Sprawling desert harbor city with white stone architecture and golden domes, bus
 ## Laila al-Jen - Slavhandlare och Siare
 
 **Typ:** Karaktär-porträtt
-**Källa:** wiki_data.js, platser/jen.html
+**Källa:** master/wiki_data.js, platser/jen.html
 **Stämning:** Mystisk, mäktig, förförisk men farlig
 
 ### Midjourney Prompt:
