@@ -1,17 +1,43 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2025-12-17
+## Datum: 2025-12-18
 
-## Status: ✅ ZENTRI RESCUE & BRIEFING UPPDATERADE - KROPP & SJÄL SEPARATION + LIGHTBOX BILDER!
+## Status: ✅ ZENTRI RESCUE KOMPLETT - ARCADIUS HÅL-EFFEKTER & FULLSTÄNDIG RITUAL!
 
-**NYTT (2025-12-17 kväll):**
+**NYTT (2025-12-18):**
+- ✅ **ZENTRI_RESCUE.HTML FULLSTÄNDIGT UPPDATERAD** (~750 rader):
+  * **OFFER DOKUMENTERADE:** Påminnelse om vad alla offrade för att komma in i Skugglandet (Älvakungen)
+    - Thrakka: Traumatiska minnen (gladiatoråren, slaveriet)
+    - Umnatak: Säkerhet/trygghet (sedan fängslad i kniven)
+    - Gordon: Generositet
+    - Arcadius: Skuld (hålet i bröstet kvar)
+    - Kazrik: Ambition/girighet
+  * **ARCADIUS HÅL-EFFEKTER** i alla scener:
+    - Källargång: Dras mot mittdörren (själsenergi)
+    - Sarkofagrummet: Skriker, dras uppåt mot själen, känner igen tomhet
+    - Kristallrummet: Längtar, vibrerar när han rör kristallen
+    - VinterGlöd-möte: Drar sig undan, känner igen tomhet i VinterGlöd
+  * **FULLSTÄNDIG BINDNINGS-RITUAL (Alternativ F):**
+    - Kazrik: Dvärgisk bindningscirkel med 8 runstenar (precision utan ambition)
+    - Arcadius: Religiösa böner från Daak-läran, hålet som mottagare (handling utan skuld)
+    - Gordon: Ledarskap koordinerar timing (order utan generositet)
+    - Thrakka/Umnatak: Kniven skär andebandet (precision utan rädsla)
+    - Arcadius hål FÅNGAR ringen inuti sig - temporär lösning
+    - Ringen bunden men inte förstörd - Urkhath kan inte nå Arcadius
+    - Alla spelares offer kopplas till deras rituella roller
+  * 7 VAL-PUNKTER med multipla alternativ för spelaragenskap
+  * Länk till zentri_rescue_environments.html (5-sinnen beskrivningar)
+- ✅ **MIDJOURNEY-PROMPTS UPPDATERADE:**
+  * 3 nya prompts för ritual-scenen (börjar, klimax, hålet fångar ringen)
+  * Visualiserar alla spelares roller i ritualen
+  * Stilisering 200-220 för dramatik
+
+**TIDIGARE (2025-12-17 kväll):**
 - ✅ **ZENTRI_RESCUE.HTML OMSKRIVEN** - Kropp & själ-separation implementerad:
   * Zentris kropp i issarkofag i källaren (tom, levande)
   * Själ fångad i kristall i tornets topp (medveten, ser ut)
   * Ringen hos själen - återvänder vid återförening
-  * Umnataks offer DIREKT efter återförening för att neutralisera ringen
   * Gråtonen (frostfågel) bär själen från kristall till kropp
-  * ~564 rader HTML med detaljerat ritual-flöde
 - ✅ **ZENTRI_BRIEFING_ANDREAS.HTML UPPDATERAD** - Bilder & lightbox-funktionalitet:
   * Urkhath demon-bild tillagd (från tempbild)
   * Sarkofag-text uppdaterad: "ibland" istället för permanent
