@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinterGlöd - SL-Guide</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --gold: #ffa500;
+            --ice-blue: #4fb4d8;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-light: #e0e0e0;
+            --text-muted: #888;
+        }
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0d0818 50%, #0a0a0a 100%);
+            color: var(--text-light);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: var(--ice-blue);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--mystic-purple);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: var(--ice-blue);
+            border-bottom: 2px solid var(--ice-blue);
+            padding-bottom: 0.5rem;
+            margin: 2.5rem 0 1rem 0;
+        }
+        h3 {
+            color: var(--mystic-purple);
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        h4 {
+            color: var(--gold);
+            margin: 1rem 0 0.5rem 0;
+        }
+        h5 {
+            color: var(--flame-orange);
+            margin: 0.75rem 0 0.5rem 0;
+        }
+        .box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--mystic-purple);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .box.important {
+            border-left-color: var(--flame-orange);
+            background: rgba(255, 107, 74, 0.1);
+        }
+        .box.choice {
+            border-left-color: var(--gold);
+            background: rgba(255, 165, 0, 0.1);
+        }
+        .box.combat {
+            border-left-color: var(--deep-red);
+            background: rgba(212, 83, 77, 0.1);
+        }
+        .box.mystery {
+            border-left-color: var(--ice-blue);
+            background: rgba(79, 180, 216, 0.1);
+        }
+        .box.dialogue {
+            border-left-color: #4a9d6f;
+            background: rgba(74, 157, 111, 0.1);
+            font-style: italic;
+        }
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin: 0.5rem 0; }
+        a { color: var(--ice-blue); text-decoration: none; }
+        a:hover { color: var(--gold); text-decoration: underline; }
+        .note {
+            background: rgba(168, 85, 168, 0.15);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 2rem 0;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--mystic-purple);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .back-button:hover {
+            background: var(--ice-blue);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            padding: 0.75rem;
+            border: 1px solid #333;
+            text-align: left;
+        }
+        th {
+            background: rgba(79, 180, 216, 0.2);
+            color: var(--ice-blue);
+        }
+    </style>
+</head>
+<body>
+
+<a href="zentri_rescue.html" class="back-button">← Tillbaka till Zentri Rescue</a>
+
+<h1>❄️ LORD VINTERGLÖD ❄️</h1>
+<p class="subtitle">SL-Guide: Spelandes den Sorgförlamade Väktaren</p>
+
+<div class="box important">
+    <h4>🎭 KRITISKT ATT FÖRSTÅ</h4>
+    <p><strong>VinterGlöd är INTE fiende.</strong> Han är:</p>
+    <ul>
+        <li>En tragisk figur fängslad av egen ed i tusentals år</li>
+        <li>Uttråkad, ensam, sorgsen - men inte elak</li>
+        <li>Desperat att bli fri från eden (återförening = frihet)</li>
+        <li>Farlig bara om spelarna GÖR honom till fiende</li>
+    </ul>
+    <p class="note"><strong>Spelarnas förväntning:</strong> "Detta är slutbossen, vi måste döda honom!" <strong>Verkligheten:</strong> "Han vill samma sak som vi - bara på ett annat sätt."</p>
+</div>
+
+<!-- ================================================== -->
+<h2>🧊 VEM ÄR VINTERGLÖD?</h2>
+<!-- ================================================== -->
+
+<h3>Grundfakta</h3>
+<ul>
+    <li><strong>Ålder:</strong> 3000+ år (exakt okänt, till och med för honom)</li>
+    <li><strong>Ras:</strong> Okänd (humanoid, inte människa, älva, eller alvisk - något äldre)</li>
+    <li><strong>Utseende:</strong> 2.1m lång, slank, androgyn. Snövit genomskinlig hud (blå ådror synliga). Frostblått långt hår. Isande vita iris (inga pupiller). Klädd i isblå-silver rustning ELLER svepning av froströk (byter beroende på sinnesstämning).</li>
+    <li><strong>Röst:</strong> Djup, resonerande, ekar lätt som i tom katedral. Talar LÅNGSAMT - väljer varje ord med omsorg. Långa pauser mellan meningar.</li>
+    <li><strong>Makt:</strong> Frost-magi (ispilar, frysa fiender, skapa iskonstruktioner), kontroll över Frostspiran, själs-manipulation (separerade Zentris kropp/själ)</li>
+</ul>
+
+<h3>Hans Historia (Kort Version)</h3>
+<ol>
+    <li><strong>Forntiden:</strong> Tjänade Kuberon (guden/demonen av ordning, bindning, regler)</li>
+    <li><strong>Sveket:</strong> För ~3000 år sedan svek han Kuberon i något sammanhang (exakt vad oklart - han pratar inte om det)</li>
+    <li><strong>Straffet:</strong> Fängslad i Skugglandet, bunden till Frostspiran, dömd att bevara/skydda själar som hamnar här</li>
+    <li><strong>Ångern:</strong> Tusentals år av ensamhet har förvandlat hans ilska till sorg, hans trots till ånger</li>
+    <li><strong>Nu:</strong> När Zentri trillade in i Skugglandet utlöstes VinterGlöds ed - han MÅSTE bevara Zentri. Separerade kropp/själ för att skydda från Urkhaths influens.</li>
+</ol>
+
+<div class="box mystery">
+    <h4>Vad VinterGlöd VET</h4>
+    <ul>
+        <li>✅ Att Zentri bär Urkhaths ringen</li>
+        <li>✅ Att ringen är ett ankar för demonen</li>
+        <li>✅ Hur man separerar kropp/själ (colonisk magi)</li>
+        <li>✅ Att hans ed säger "bevara" - inte "fängsla"</li>
+        <li>✅ Kuberon, Intigheten, colonerna, själs-bindningar</li>
+        <li>✅ Att gruppen kom för att rädda Zentri</li>
+        <li>❌ Exakt vad gruppen offrade för att komma hit (känner tomrummen men inte detaljer)</li>
+        <li>❌ Urkhaths exakta planer utanför Skugglandet</li>
+    </ul>
+</div>
+
+<!-- ================================================== -->
+<h2>💭 VINTERGLÖDS PERSPEKTIV</h2>
+<!-- ================================================== -->
+
+<h3>Vad Han Vill</h3>
+<ol>
+    <li><strong>Bli fri från eden</strong> - återförening = eden fullgjord = frihet</li>
+    <li><strong>Gottgöra sitt svek</strong> - hjälpa Zentri = något gott efter tusentals år av tomhet</li>
+    <li><strong>Känna något igen</strong> - ensamheten har gjort honom emotionellt utsvulten</li>
+    <li><strong>Inte göra mer ont</strong> - trött på våld efter årtusenden</li>
+</ol>
+
+<h3>Vad Han INTE Vill</h3>
+<ol>
+    <li><strong>Strida</strong> - har stridit nog för tio liv</li>
+    <li><strong>Döda</strong> - vill inte mer blod på sina händer</li>
+    <li><strong>Förhindra återföreningen</strong> - tvärtom, han vill hjälpa!</li>
+    <li><strong>Vara ensam igen</strong> - grupps närvaro är första levande varelserna på decennier</li>
+</ol>
+
+<h3>Hans Känslomässiga Tillstånd</h3>
+
+<div class="box dialogue">
+    <h5>Primärt: SORG OCH TRÖTTHET</h5>
+    <p>VinterGlöd är emotionellt <strong>utbränd</strong>. Han har känt allt tusen gånger - ilska, rädsla, ensamhet, ånger. Nu är det bara... <em>trötthet</em> kvar.</p>
+    <p><strong>Liknelse:</strong> Som en människa som gråtit så länge att tårarna tar slut. Kroppen skakar fortfarande, men inget kommer ut.</p>
+</div>
+
+<ul>
+    <li><strong>Inte deprimerad (aktivt)</strong> - bara uttömd, tom</li>
+    <li><strong>Inte vred</strong> - var vred för 2000 år sedan, inget kvar nu</li>
+    <li><strong>Inte rädd</strong> - vad kan hota någon som levt så länge?</li>
+    <li><strong>Inte hoppfull</strong> - men kanske... nyfiken? Första chansen till förändring på länge</li>
+</ul>
+
+<h3>Hur Han Ser På Gruppen</h3>
+
+<table>
+    <tr>
+        <th>Karaktär</th>
+        <th>VinterGlöds Syn</th>
+    </tr>
+    <tr>
+        <td><strong>Arcadius</strong></td>
+        <td>"Tomrummet i hans bröst... jag känner igen det. Skuld borta. Som jag - ånger kvar, skuld borta. Vi är lika, han och jag."</td>
+    </tr>
+    <tr>
+        <td><strong>Gordon</strong></td>
+        <td>"Ledaren. Bär bördan. Som jag en gång bar. Han förstår inte än vad den kostnaden blir."</td>
+    </tr>
+    <tr>
+        <td><strong>Kazrik</strong></td>
+        <td>"Dvärgisk precision. Ambition borta - bra. Ambition orsakar svek." (tänker på sitt eget svek)</td>
+    </tr>
+    <tr>
+        <td><strong>Thrakka</strong></td>
+        <td>"Krigarens tomhet. Minnen borta. Kanske ett välsignat tillstånd - jag skulle vilja glömma."</td>
+    </tr>
+    <tr>
+        <td><strong>Umnatak (i kniven)</strong></td>
+        <td>"Offrat sig själv för andra. Ädelt. Dumt. Jag gjorde tvärtom - svek andra för mig själv."</td>
+    </tr>
+    <tr>
+        <td><strong>Zentri</strong></td>
+        <td>"Pojken. Oskyldig men bärare av ont. Eden säger bevara - så jag bevarar. Men eden sa inte hur."</td>
+    </tr>
+</table>
+
+<!-- ================================================== -->
+<h2>🎬 HUR SPELA VINTERGLÖD</h2>
+<!-- ================================================== -->
+
+<h3>Röst och Kroppsspråk</h3>
+
+<div class="box dialogue">
+    <h5>Röst</h5>
+    <ul>
+        <li><strong>Tempo:</strong> LÅNGSAMT. Pausa 2-3 sekunder mellan meningar.</li>
+        <li><strong>Volym:</strong> Normal till lätt viskning - han behöver inte höja rösten</li>
+        <li><strong>Ton:</strong> Melankolisk, resignerad, som någon som berättar om något mycket gammalt</li>
+        <li><strong>Eko:</strong> Hans röst ekar svagt - inte övernaturligt, bara akustiken</li>
+    </ul>
+
+    <h5>Kroppsspråk</h5>
+    <ul>
+        <li><strong>Rörelser:</strong> Långsamma, graciösa, nästan flytande - ingen brådska</li>
+        <li><strong>Ögon:</strong> Fixerar blick länge - blinkar sällan (obekvämt för spelarna)</li>
+        <li><strong>Händer:</strong> Hänger vid sidan, öppna handflator - inget hot</li>
+        <li><strong>Hållning:</strong> Rak men inte stram - som en utmattad soldat som står vakt av ren vana</li>
+        <li><strong>Närvaro:</strong> Fyller rummet utan att röra sig - makt men inte aggression</li>
+    </ul>
+</div>
+
+<h3>Exempel-Dialoger</h3>
+
+<div class="box dialogue">
+    <h5>Första Mötet (Om De Inte Attackerar)</h5>
+    <p><em>(VinterGlöd står vid fönstret i stora salen, tittar ut mot Intigheten. Vänder sig långsamt när de kommer in.)</em></p>
+    <p><strong>VinterGlöd:</strong> "...Ni kom ändå."</p>
+    <p><em>(Paus. 3 sekunder.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Jag visste att ni skulle. Eden sa... att ni skulle komma."</p>
+    <p><em>(Paus. Ser på Arcadius, noterar hålet.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Tomrummet... i ditt bröst. Jag känner igen det. Du offrade något för att vara här." <em>(Inte fråga - konstaterar.)</em></p>
+    <p><em>(Vänder sig mot Gordon.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Du leder dem. Bär bördan. Som jag en gång bar."</p>
+    <p><em>(Lång paus. Tittar på alla.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Ni är här för pojken. Zentri."</p>
+    <p><em>(Paus.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Han är... säker. För närvarande."</p>
+</div>
+
+<div class="box dialogue">
+    <h5>Om De Frågar Var Zentri Är</h5>
+    <p><strong>Spelare:</strong> "Var är han? Vad har du gjort med honom?"</p>
+    <p><em>(VinterGlöd lutar huvudet lätt åt sidan - som om frågan är märklig.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Gjort... med honom?"</p>
+    <p><em>(Paus.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Jag bevarar honom. Eden sa... bevara."</p>
+    <p><em>(Paus. Ser mot taket.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Ringen han bar... den var... giftig. Demonen genom den. Urkhath."</p>
+    <p><em>(Första gången hans röst blir lite hårdare - hat mot Urkhath.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Så jag separerade dem. Kropp... och själ."</p>
+    <p><em>(Ser på dem igen, nästan försvarligt.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Han är SÄKER så. Demonen kan inte... nå honom."</p>
+</div>
+
+<div class="box dialogue">
+    <h5>Om De Hotar Honom</h5>
+    <p><strong>Spelare:</strong> "Ge oss Zentri nu, eller vi tar honom med våld!"</p>
+    <p><em>(VinterGlöd rör sig inte. Bara tittar. Lång tystnad - 5 sekunder.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Våld..."</p>
+    <p><em>(Paus.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Jag har sett våld i... tre tusen år. Jag har... utövat det. Blivit utsatt för det."</p>
+    <p><em>(Paus. Händerna hänger fortfarande vid sidan - inget försvar.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Om ni vill strida... jag försvarar mig. Jag fryser er. Tillfälligt."</p>
+    <p><em>(Paus.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Sedan... när ni tinar... pratar vi ändå."</p>
+    <p><em>(Paus. Nästan ledsen.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Varför inte... prata nu istället?"</p>
+</div>
+
+<div class="box dialogue">
+    <h5>Om De Frågar Varför Han Hjälper</h5>
+    <p><strong>Spelare:</strong> "Varför skulle du hjälpa oss? Vad vill du ha?"</p>
+    <p><em>(VinterGlöd ser ut genom fönstret igen, mot Intigheten.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Vad jag vill..."</p>
+    <p><em>(Lång paus - 7 sekunder. När han pratar igen är rösten mjukare, nästan viskning.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Jag vill... bli fri."</p>
+    <p><em>(Paus.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Eden säger... bevara Zentri. När han återförenas... kropp och själ... eden är uppfylld."</p>
+    <p><em>(Vänder sig mot dem.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Ni vill rädda honom. Jag vill bli fri. Samma... mål."</p>
+    <p><em>(Paus. Nästan sårbar.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Tre tusen år... i denna torn. Ensam. Jag är... trött."</p>
+</div>
+
+<!-- ================================================== -->
+<h2>⚔️ OM DE ATTACKERAR</h2>
+<!-- ================================================== -->
+
+<div class="box combat">
+    <h4>VinterGlöds Strid-Filosofi</h4>
+    <p><strong>Mål:</strong> INTE döda. Bara försvara sig tills de lugnar sig.</p>
+    <p><strong>Metod:</strong> Frysa dem tillfälligt → vänta tills de tinar → prata när de är lugnare</p>
+</div>
+
+<h3>Strid-Rundown</h3>
+
+<ol>
+    <li><strong>Runda 1 - Varning:</strong>
+        <ul>
+            <li>VinterGlöd höjer en hand - isvåg rullar ut från honom, knuffar alla bakåt 3 meter</li>
+            <li>"Sluta. Jag vill inte... göra er illa."</li>
+            <li>Inte skadande - bara varning</li>
+        </ul>
+    </li>
+    <li><strong>Runda 2 - Försvar:</strong>
+        <ul>
+            <li>Skapar isvägg mellan sig och dem</li>
+            <li>"Lyssna. Vi vill... samma sak."</li>
+            <li>Om de fortsätter attackera - väggen sprids, blir tjockare</li>
+        </ul>
+    </li>
+    <li><strong>Runda 3 - Frysning:</strong>
+        <ul>
+            <li>Frost sprider sig från golvet - fångar deras fötter</li>
+            <li>Fryser upp till knäna, midjan, bröstet</li>
+            <li>"Förlåt. Detta... gör inte ont. Ni... tinar snart."</li>
+            <li>Fryser alla utom ett huvud - kan fortfarande prata och andas</li>
+        </ul>
+    </li>
+    <li><strong>Efter Frysning:</strong>
+        <ul>
+            <li>VinterGlöd sätter sig framför dem (utom räckhåll)</li>
+            <li>"Nu... lyssnar ni?"</li>
+            <li>Förklarar allt medan de är frusna: separation, eden, hans önskan att bli fri</li>
+            <li>"Jag... släpper er om tio minuter. Då... pratar vi igen."</li>
+            <li>Tinaren efter 10 min - inga bestående skador, bara kalla och arga</li>
+        </ul>
+    </li>
+</ol>
+
+<div class="box important">
+    <h4>⚠️ VinterGlöd Dödar ALDRIG</h4>
+    <p>Även om de fortsätter attackera efter frysning:</p>
+    <ul>
+        <li>Han fryser dem igen</li>
+        <li>Han skapar isskulpturer för att blockera dem</li>
+        <li>Han FLYR till kristallrummet och låser dörren</li>
+        <li><strong>Han dödar INTE.</strong> Har dött tillräckligt i hans namn.</li>
+    </ul>
+    <p class="note">Om spelarna verkligen, mot alla odds, LYCKAS döda honom - han vissnar som frost i solen. Sista ord: "...äntligen." Ingen dramatik - bara lättnad.</p>
+</div>
+
+<h3>Stats (Om Strid Krävs)</h3>
+
+<ul>
+    <li><strong>KP:</strong> 50 (mycket hög)</li>
+    <li><strong>Försvar:</strong> 18 (svår att träffa - frost-aura)</li>
+    <li><strong>Attacker:</strong>
+        <ul>
+            <li>Ispilar (avstånd 30m): 2T6+4 skada, Ob3T6 frysning (fastnar 1 runda)</li>
+            <li>Frysvåg (kon 10m): Alla Ob4T6 Smidighet eller fastnar i is (som Runda 3 ovan)</li>
+            <li>Isvägg: Skapar 3m hög, 5m bred vägg (20 KP, Ob6T6 Styrka att krossa)</li>
+        </ul>
+    </li>
+    <li><strong>Svagheter:</strong> Eld-magi (dubbel skada), våld mot Frostspiran själv (smärtar honom)</li>
+</ul>
+
+<!-- ================================================== -->
+<h2>💬 VAD HAN BERÄTTAR / DÖLJER</h2>
+<!-- ================================================== -->
+
+<h3>Berättar Gärna (Om De Frågar)</h3>
+
+<table>
+    <tr>
+        <th>Ämne</th>
+        <th>Vad Han Säger</th>
+        <th>Varför</th>
+    </tr>
+    <tr>
+        <td><strong>Zentris Plats</strong></td>
+        <td>"Kroppen i källaren. Själen högst upp i tornet, i kristallpelaren."</td>
+        <td>Ingen anledning dölja - de hittar ändå</td>
+    </tr>
+    <tr>
+        <td><strong>Hur Återförena</strong></td>
+        <td>"Krossa kristallen. Gråtonen bär själen till kroppen. De smälter samman."</td>
+        <td>Vill att de lyckas - det befriar honom</td>
+    </tr>
+    <tr>
+        <td><strong>Ringen</strong></td>
+        <td>"Ringen återvänder när de återförenas. Urkhath känner det omedelbart."</td>
+        <td>Varning - vill inte att de överraskas</td>
+    </tr>
+    <tr>
+        <td><strong>Sin Ed</strong></td>
+        <td>"Jag är bunden att bevara själar. Återförening fullgör eden."</td>
+        <td>Förklara sin motivation - bygga förtroende</td>
+    </tr>
+    <tr>
+        <td><strong>Kuberon</strong></td>
+        <td>"Guden av ordning. Jag tjänade honom. Jag svek honom. Nu betalar jag."</td>
+        <td>Sanningen - men inte detaljer</td>
+    </tr>
+    <tr>
+        <td><strong>Intigheten</strong></td>
+        <td>"Verkligheten själv vrider sig. Urkhaths närvaro förvränger Skugglandet."</td>
+        <td>Fakta de behöver veta</td>
+    </tr>
+</table>
+
+<h3>Berättar Motvilligt (Måste Pusha)</h3>
+
+<table>
+    <tr>
+        <th>Ämne</th>
+        <th>Vad Han Säger</th>
+        <th>Varför Motvillig</th>
+    </tr>
+    <tr>
+        <td><strong>Sitt Svek</strong></td>
+        <td>"Jag... svek Kuberon. Detaljer spelar ingen roll. Svek är svek."</td>
+        <td>Skam - inte redo prata om det</td>
+    </tr>
+    <tr>
+        <td><strong>Hur Länge Fängslad</strong></td>
+        <td>"Tre tusen år. Kanske fyra. Man... slutar räkna."</td>
+        <td>Smärtsamt erkänna hur länge</td>
+    </tr>
+    <tr>
+        <td><strong>Ensamhet</strong></td>
+        <td>"Gråtonen besöker. Ibland. Annars... ingen." (rösten spricker lätt)</td>
+        <td>Sårbart - visar svaghet</td>
+    </tr>
+    <tr>
+        <td><strong>Om Han Ångrar Sig</strong></td>
+        <td>"Varje. Dag. I tre tusen år." (viskar)</td>
+        <td>Mest personliga erkännandet</td>
+    </tr>
+</table>
+
+<h3>Berättar INTE (Håller Hemligt)</h3>
+
+<table>
+    <tr>
+        <th>Ämne</th>
+        <th>Varför Hemligt</th>
+        <th>Om De Gissar Rätt</th>
+    </tr>
+    <tr>
+        <td><strong>Exakt Vad Han Svek Kuberon För</strong></td>
+        <td>För skamligt - kanske frigjorde något ont, eller svek en älskad</td>
+        <td>Tystnad. Vänder sig bort. "...Fråga inte."</td>
+    </tr>
+    <tr>
+        <td><strong>Att Han Kan Lämna Om Eden Fullgörs</strong></td>
+        <td>Vågar inte hoppas - tror inte det är sant</td>
+        <td>"Kanske. Jag... vet inte. Eden säger ingenting om... efter."</td>
+    </tr>
+    <tr>
+        <td><strong>Hur Ensam Han Verkligen Är</strong></td>
+        <td>Stolthet - vill inte verka svag</td>
+        <td>(Om Arcadius nämner sitt eget tomrum) "...Ja. Jag förstår."</td>
+    </tr>
+</table>
+
+<!-- ================================================== -->
+<h2>🤝 DIPLOMATISKA VÄGAR</h2>
+<!-- ================================================== -->
+
+<h3>Scenario 1: De Lyssnar Från Början</h3>
+
+<div class="box choice">
+    <h5>Vad Händer:</h5>
+    <ol>
+        <li>VinterGlöd förklarar allt: separation, eden, ringen, återförening</li>
+        <li>Erbjuder leda dem till kristallrummet</li>
+        <li>Varnar om Urkhaths reaktion</li>
+        <li>Föreslår lösningar för ringen (ta den själv, kasta i Intigheten, etc)</li>
+        <li>Följer med till källaren för återföreningen</li>
+        <li>Ser på när Zentri återförenas - första gången på 3000 år han ser eden fullgöras</li>
+        <li>Känner eden BRISTA - står stilla, chockad</li>
+        <li>"Jag är... fri?" (viskar, tror det inte)</li>
+    </ol>
+
+    <h5>Vad VinterGlöd Erbjuder:</h5>
+    <ul>
+        <li><strong>Guidning:</strong> Säkraste vägen genom tornet</li>
+        <li><strong>Kunskap:</strong> Hur krosssa kristallen utan skada själen</li>
+        <li><strong>Varning:</strong> Urkhaths raseri kommer - 5-10 min att fly</li>
+        <li><strong>Ringalternativ:</strong> Han kan TA ringen själv (alternativ C i zentri_rescue.html)</li>
+        <li><strong>Framtida Allierad:</strong> Om befriad - tacksam nog att hjälpa igen</li>
+    </ul>
+</div>
+
+<h3>Scenario 2: De Attackerar, Sedan Lyssnar</h3>
+
+<div class="box choice">
+    <h5>Vad Händer:</h5>
+    <ol>
+        <li>VinterGlöd fryser dem (som ovan)</li>
+        <li>Förklarar allt medan de är frusna</li>
+        <li>Släpper dem efter 10 min</li>
+        <li>Frågar: "Nu... lyssnar ni?"</li>
+        <li>Om JA: som Scenario 1, men han är lite mer försiktig</li>
+        <li>Om NEJ: fryser igen, sedan flyr till kristallrummet</li>
+    </ol>
+
+    <h5>Skillnad Från Scenario 1:</h5>
+    <ul>
+        <li>VinterGlöd mindre benägen erbjuda ta ringen själv (de visade våld)</li>
+        <li>Följer INTE med till källaren (stannar i tornet)</li>
+        <li>Mindre framtida allierad-potential</li>
+    </ul>
+</div>
+
+<h3>Scenario 3: De Smyger Förbi (Möter Honom Aldrig)</h3>
+
+<div class="box choice">
+    <h5>Vad Händer:</h5>
+    <ol>
+        <li>De hittar kristallrummet själva</li>
+        <li>Krossar kristallen (svårare utan VinterGlöds råd - risk skada själen)</li>
+        <li>Gråtonen bär själen ändå (den vet vad den ska göra)</li>
+        <li>Återföreningen sker</li>
+        <li>VinterGlöd står i stora salen när de springer förbi med Zentri</li>
+        <li>Ser dem fly - säger inget, bara står där</li>
+        <li>Känner eden brista - nästan ledsen att inte få säga farväl</li>
+    </ol>
+
+    <h5>Konsekvens:</h5>
+    <ul>
+        <li>Ingen VinterGlöd-allierad framöver</li>
+        <li>Ingen varning om Urkhaths raseri (lite mindre tid fly)</li>
+        <li>Ingen ring-lösning från honom</li>
+    </ul>
+</div>
+
+<!-- ================================================== -->
+<h2>🎁 VinterGLÖD SOM FRAMTIDA ALLIERAD</h2>
+<!-- ================================================== -->
+
+<div class="box mystery">
+    <h4>Om De Bygger Förtroende</h4>
+    <p>VinterGlöd kan bli en KRAFTFULL allierad framöver om de:</p>
+    <ul>
+        <li>Lyssnar istället för attackerar</li>
+        <li>Visar empati för hans situation</li>
+        <li>Frågar om hans ensamhet/svek (visar att de bryr sig)</li>
+        <li>Låter honom ta ringen som gottgörelse</li>
+    </ul>
+</div>
+
+<h3>Vad Han Kan Erbjuda Framöver</h3>
+
+<ul>
+    <li><strong>Kunskap om Skugglandet:</strong> 3000 år av observation - han VET detta ställe</li>
+    <li><strong>Kunskap om Kuberon:</strong> Tjänade guden - vet om ordning, bindningar, själs-magi</li>
+    <li><strong>Kunskap om Colonerna:</strong> Såg dem bygga portalen för årtusenden sedan</li>
+    <li><strong>Frost-Magi:</strong> Kan hjälpa i strid (om övertygad att saken är god)</li>
+    <li><strong>Ring-Väktare:</strong> Om han tar ringen - håller den säker från Urkhath</li>
+    <li><strong>Själs-Magi:</strong> Kan eventuellt hjälpa med själs-relaterade problem</li>
+</ul>
+
+<h3>Hur Kontakta Honom Igen</h3>
+
+<div class="box dialogue">
+    <p>Om de byggt förtroende - innan de lämnar Frostspiran:</p>
+    <p><strong>VinterGlöd:</strong> "Om ni... behöver mig. Tala mitt namn i frost. Jag hör."</p>
+    <p><em>(Menar bokstavligen - skriv "VinterGlöd" i frost/snö/is och han kan känna det)</em></p>
+    <p><strong>VinterGlöd:</strong> "Jag är... tacksam. För friheten."</p>
+    <p><em>(Första gången han ler - svagt, sorgset, men verkligt)</em></p>
+</div>
+
+<!-- ================================================== -->
+<h2>🎭 SL-TIPS: SPELANDES VINTERGLÖD</h2>
+<!-- ================================================== -->
+
+<div class="box important">
+    <h4>Viktigaste Reglerna</h4>
+    <ol>
+        <li><strong>LÅNGSAMT:</strong> Tala långsamt. Pausa ofta. Han har all tid i världen.</li>
+        <li><strong>TRÖTT:</strong> Han är emotionellt uttömd - inte arg, bara... tom och trött.</li>
+        <li><strong>ÄRLIG:</strong> Han ljuger inte - har inget behov, ingen energi för det.</li>
+        <li><strong>DEFENSIV:</strong> Attackerar aldrig först - bara försvarar.</li>
+        <li><strong>ENSAM:</strong> Första levande varelserna på decennier - han VILL prata.</li>
+    </ol>
+</div>
+
+<h3>Röst-Guide (Praktisk)</h3>
+
+<ul>
+    <li><strong>Tonläge:</strong> Djupt, lugnt, resonerande (tänk: Boris Karloff, Christopher Lee)</li>
+    <li><strong>Pauser:</strong> 2-3 sekunder mellan meningar, 5-7 sekunder vid känslomässiga ögonblick</li>
+    <li><strong>Betoningar:</strong> Minimala - han säger ord plant, nästan monotont</li>
+    <li><strong>Andning:</strong> Hörbar men inte störande - som vinden genom is</li>
+</ul>
+
+<h3>Kroppsspråk (Beskriv För Spelarna)</h3>
+
+<ul>
+    <li>"Han står helt stilla - inte en muskel rör sig."</li>
+    <li>"Hans blick fixerar dig - ögonen blinkar inte."</li>
+    <li>"Handen höjs långsamt, graciöst - som en panna sjunker genom vatten."</li>
+    <li>"Han lutar huvudet åt sidan - som en fågel som studerar något märkligt."</li>
+</ul>
+
+<h3>Vanliga Misstag (Undvik Dessa!)</h3>
+
+<table>
+    <tr>
+        <th>❌ DÅLIGT</th>
+        <th>✅ BRA</th>
+    </tr>
+    <tr>
+        <td>Göra honom ondskefull/elak</td>
+        <td>Han är sorgsen och trött, inte ond</td>
+    </tr>
+    <tr>
+        <td>Låta honom prata snabbt</td>
+        <td>LÅNGSAMT - varje ord är övervägt</td>
+    </tr>
+    <tr>
+        <td>Attackera spelarna först</td>
+        <td>Han försvarar sig bara - aldrig anfaller</td>
+    </tr>
+    <tr>
+        <td>Göra honom mystisk/kryptisk</td>
+        <td>Han är rak och ärlig - döljer bara skamliga detaljer</td>
+    </tr>
+    <tr>
+        <td>Låta honom döda spelare</td>
+        <td>Han fryser/knockar - dödar ALDRIG</td>
+    </tr>
+</table>
+
+<h3>Känslomässiga Triggerpunkter</h3>
+
+<p>Ämnen som GER reaktion (rösten ändras):</p>
+
+<ul>
+    <li><strong>Urkhath:</strong> Rösten blir hårdare - enda han verkligen HATAR</li>
+    <li><strong>Sitt svek:</strong> Rösten blir tystare, nästan visslar - skam</li>
+    <li><strong>Kuberon:</strong> Rösten blir vördnadsfull - fortfarande respekt</li>
+    <li><strong>Ensamhet:</strong> Rösten spricker lätt - såret visar</li>
+    <li><strong>Frihet:</strong> Rösten blir nästan hoppfull - vågar knappt tro</li>
+</ul>
+
+<!-- ================================================== -->
+<h2>📜 SLUTSCEN: EDENS BROTT</h2>
+<!-- ================================================== -->
+
+<div class="box mystery">
+    <h4>När Zentri Återförenas</h4>
+    <p>Om VinterGlöd närvarar (Scenario 1 eller 2 med fred):</p>
+</div>
+
+<div class="box dialogue">
+    <p><em>(Själen flödar in i kroppen. Zentri gapar efter luft. Ringen manifesterar. Allt enligt plan.)</em></p>
+    <p><em>(VinterGlöd står 5 meter bort, tittar på. Plötsligt - han RYCKmer till. Första gången han rört sig snabbt.)</em></p>
+    <p><em>(Händerna mot bröstet - som om något BRAST där.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Vad... det... eden..."</p>
+    <p><em>(Faller på knä - inte smärtsamt, bara... chockat.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Den... den brast. Eden är... borta."</p>
+    <p><em>(Ser på sina händer - som om han ser dem för första gången.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Jag är... fri?"</p>
+    <p><em>(Viskar. Tror det inte. Rösten spricker.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Tre tusen år... och... det var så enkelt?"</p>
+    <p><em>(Om spelarna säger något vänligt - han tittar upp.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Tack... för... allt."</p>
+    <p><em>(Första äkta leendet - vackert och sorgset samtidigt.)</em></p>
+    <p><em>(Sedan - Urkhaths raseri börjar. Tornet skakar.)</em></p>
+    <p><strong>VinterGlöd:</strong> <em>(rösten åter fast)</em> "Fly. NU. Jag håller tornet så länge jag kan."</p>
+    <p><em>(Om de tvekear - han ropar, första gången han höjer rösten:)</em></p>
+    <p><strong>VinterGlöd:</strong> "FLY! Jag betalar inte friheten med era liv!"</p>
+</div>
+
+<p class="note"><strong>Sista de ser av honom:</strong> VinterGlöd står i stora salen, händer mot väggarna, froststrålar håller kollapsen tillbaka - ger dem sekunder att fly. Han LER fortfarande.</p>
+
+<hr>
+
+<h2>🎯 SAMMANFATTNING</h2>
+
+<div class="box important">
+    <h4>VinterGlöd I Tre Meningar</h4>
+    <p><strong>1.</strong> En tragisk figur fängslad i 3000 år av egen skuld, emotionellt uttömd men inte ond.</p>
+    <p><strong>2.</strong> Vill samma sak som spelarna (befria Zentri) för att det befriar honom från eden.</p>
+    <p><strong>3.</strong> Farlig bara om spelarna GÖR honom till fiende - annars bästa allierade de har i Skugglandet.</p>
+</div>
+
+<div class="box choice">
+    <h4>🎲 Spelartips (Ge Spelarna Ledtrådar)</h4>
+    <p>Så här visar du spelarna att VinterGlöd INTE är fiende utan att säga det rakt ut:</p>
+    <ul>
+        <li>"Han höjer ingen hand i försvar när ni drar vapen - bara tittar."</li>
+        <li>"Hans röst... det är ingen ilska där. Bara... trötthet."</li>
+        <li>"När han säger 'jag vill bli fri' - ni hör sanningen i orden."</li>
+        <li>"Arcadius - ditt hål reagerar. Det känner igen... tomheten i honom."</li>
+    </ul>
+</div>
+
+<a href="zentri_rescue.html" class="back-button">← Tillbaka till Zentri Rescue</a>
+
+</body>
+</html>
