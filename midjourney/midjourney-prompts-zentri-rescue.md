@@ -20,35 +20,55 @@
 
 ## 1. KOLONISK KORRIDOR → SKUGGLANDS ÖVERGÅNG
 
-**Beskrivning:** Lång stenk orridor där arkitekturen ÄNDRAS från kolonisk (grå, grönvita runor) till Skugglandet (blå-vit, frostmönster). Gradvis övergång över 100 meter.
+**Beskrivning:** Lång stenkorridor där arkitekturen ÄNDRAS från kolonisk (grå, grönvita runor) till Skugglandet (blå-vit, frostmönster). Gradvis övergång över 100 meter. Geometrin blir subtilt fel, ljuset går från stadigt till pulserande.
 
-### Prompt A: Bred Vy
-
-```
-Ancient stone corridor transformation, left side features gray colonial stonework with green-white glowing runes, gradually shifting to right side with pale blue-white stone covered in intricate frost patterns, 3x3 meter vaulted ceiling, eerie transition between two realities, atmospheric mist, dark fantasy corridor --ar 16:9 --s 180 --style raw
-```
-
-### Prompt B: Närvy på Övergång
+### Prompt A: Panorama - Hela Övergången
 
 ```
-Close-up stone wall where colonial runes fade and transform into frost patterns, magical transition between worlds, glowing green-white runes bleeding into icy blue-white crystalline formations, Gerald Brom dark fantasy art style, detailed stonework texture --ar 3:2 --s 160
+Ancient colonisch stone corridor gradually transforming into otherworldly shadowland passage, grey-brown stone blocks shifting to pale blue-white stone over 100 meters, greenish-white glowing runes fading into frost-blue luminescence, geometric angles becoming subtly wrong and impossible, frost patterns etched into walls growing denser toward distance, dark fantasy environmental concept art in style of Jakub Rozalski and Aleksi Briclot, ominous atmospheric transition, lighting shifting from steady green-white to pulsing blue-white like breathing, weathered stone textures transitioning to ice-smooth surfaces, muted greens fading to cold blues and whites, reality-bending architecture, cinematic perspective showing full 100-meter transition --ar 16:9 --s 200
+```
+
+### Prompt B: Närvy - Detalj på Runor och Frost
+
+```
+Close view of ancient stone corridor wall mid-transition between mundane and shadowland realms, colonisch runic inscriptions glowing greenish-white fading into frost-blue ethereal light, grey stone gradually bleaching to pale blue-white, frost patterns emerging from cracks like living ice veins, impossible geometric angles subtly warping reality, grimdark fantasy environmental detail in style of Gerald Brom, eerie atmospheric transformation, dramatic contrast between warm green-white and cold blue-white illumination, worn stone and crystalline frost textures, mysterious and unsettling mood --ar 2:3 --s 180
+```
+
+### Prompt C: POV - Fotstegsperspektiv
+
+```
+First-person perspective walking through reality-shifting corridor, colonisch grey-brown stone walls warping into pale shadowland blue-white, greenish runes fading to frost-blue light, geometric distortions visible in distance, dark fantasy immersive environmental art, transition between worlds atmosphere, dramatic lighting shift green to blue, cinematic POV --ar 16:9 --s 180
 ```
 
 **Användning:** Environment #1 beskrivning, spelares första intryck
+**Visuella nyckelelement:** Gradvis övergång grå-brun→blå-vit, runor som bleknar, geometri som blir "fel", ljus som går från stadigt→pulserande
 
 ---
 
 ## 2. SPIRALTRAPPA UPPÅT - FROST OCH STEN
 
-**Beskrivning:** Stentrappa spiralformad uppåt, ~50 steg, täckt av genomskinlig blå-vit frost som växer i sprickor. Trappsteg precisiva (koloniskt arbete) men övergivna och kalla.
+**Beskrivning:** Stentrappa spiralformad uppåt, ~50 steg, täckt av genomskinlig blå-vit frost som växer i sprickor. Trappsteg precisiva (koloniskt arbete) men övergivna och kalla. Frostmönster på väggarna som träd och floder. Spiralen snävar in uppåt.
 
-### Prompt
+### Prompt A: Huvudvy - Uppåtgående Spiral
 
 ```
-Spiral stone staircase ascending upward, covered in translucent blue-white frost growing from cracks, colonial precision stonework, frost patterns like frozen rivers climbing the walls, 50 stone steps, dim blue-white glow from frost itself, oppressive cold atmosphere, dark fantasy dungeon, Zdzisław Beksiński surreal architecture style --ar 2:3 --s 200
+Spiral stone staircase ascending clockwise into darkness, 50 precise colonisch steps covered in supernatural frost that grows in cracks like crystalline veins, walls carved with frost patterns resembling frozen trees and rivers mid-flow, translucent blue-white frost glowing with faint moonlight-through-ice luminescence, spiral narrowing toward unseen summit, ethereal wind carrying distant music and song from above, dark fantasy environmental painting in style of Aleksi Briclot and Frank Frazetta, oppressive and mystical atmosphere, soft blue-white lighting from living frost itself, weathered grey stone with impossible crystalline ice textures, cold blues whites and deep shadows, cinematic upward perspective showing full spiral, reality warping architecture --ar 9:16 --s 220
+```
+
+### Prompt B: Närvy - Detalj på Frosttexturer
+
+```
+Detailed view of colonisch stone steps covered in supernatural frost, crystalline blue-white ice growing like living veins through ancient cracks, frost patterns on walls resembling frozen tree branches and rivers caught mid-flow, translucent ice glowing with inner moonlight, precise stonework meeting chaotic crystalline growth, grimdark fantasy environmental detail art in style of Gerald Brom, mysterious and cold atmosphere, soft blue-white bioluminescent glow from frost itself, weathered stone and impossible crystal textures, frozen blues and whites with deep grey shadows, close-up perspective showing intricate frost detail --ar 1:1 --s 180
+```
+
+### Prompt C: Underifrån - Dramatisk Uppåtvy
+
+```
+Dramatic upward view of spiral stone staircase disappearing into blue-white mist, frost-covered colonisch steps spiraling clockwise into darkness, walls covered in glowing crystalline frost patterns, narrow summit barely visible above, dark fantasy architecture painting in style of Jakub Rozalski, oppressive vertical atmosphere, cold blue-white lighting from living ice, epic upward perspective --ar 9:16 --s 200
 ```
 
 **Användning:** Environment #2, spelares klättring mot källaren
+**Visuella nyckelelement:** Spiraltrappa medurs uppåt, frost som växer levande i sprickor, frostmönster som träd/floder, spiralen snävar in, frosten lyser svagt
 
 ---
 
@@ -293,6 +313,132 @@ Adventuring party facing ancient ice lord in great hall, Lord VinterGlöd tall i
 ```
 Adventurers fleeing down collapsing spiral staircase, tower crumbling around them, ice shattering and stone falling, blue-white energy explosions, desperate escape, dynamic action scene, apocalyptic destruction, Gerald Brom dark fantasy action --ar 16:9 --s 200
 ```
+
+---
+
+## 16. ALTERNATIVA PERSPEKTIV: TUNNLAR MED VALVAT TAK SYNLIGT
+
+**Syfte:** Specialiserade prompts som GARANTERAR att valvat tak, istappar från tak, och tunnel-perspektiv är tydligt synliga. Använd dessa när du vill betona den inneslutna känslan och takdetaljer.
+
+---
+
+### A. KORRIDOREN - Med Valvat Tak Synligt
+
+#### Prompt 1: POV - Ser Takets Övergång Framifrån
+
+```
+First-person perspective walking through vaulted stone corridor, 3x3 meter arched ceiling clearly visible above, greenish-white glowing runes carved into ceiling vault transitioning to frost-blue patterns ahead, grey-brown stone blocks shifting to pale blue-white, ceiling geometry becoming subtly wrong and impossible angles, frost patterns emerging on vault like ice veins spreading overhead, dark fantasy underground tunnel in style of Greg Rutkowski and Gerald Brom, ominous atmospheric transition, dramatic lighting shift from warm green-white ceiling glow to cold blue-white frost luminescence, weathered stone vault textures meeting crystalline frost surfaces, emphasizing vaulted ceiling architecture and transformation, cinematic tunnel perspective --ar 16:9 --s 200
+```
+
+**Visuella nyckelelement:** 3x3m valvat tak TYDLIGT synligt, runor PÅ TAKET går från grönvitt→blått, geometri i taket blir "fel"
+
+#### Prompt 2: Närvy - Takets Runor Bleknar
+
+```
+Detailed upward view of vaulted stone ceiling in underground corridor, ancient colonisch runic inscriptions glowing greenish-white fading into frost-blue ethereal light, 3-meter arched vault with precise stonework warping into impossible angles, frost patterns emerging from ceiling cracks like crystalline veins spreading across vault surface, transition between mundane and shadowland realms visible overhead, grimdark fantasy architectural detail in style of Gerald Brom, mysterious transformation atmosphere, dramatic contrast between steady green-white runes and pulsing blue-white frost light, worn stone vault meeting living ice textures, emphasizing ceiling transformation --ar 16:9 --s 180
+```
+
+**Visuella nyckelelement:** Fokus PÅ TAKET (upward view), runor som bleknar längs takets valv, frost växer från takets sprickor
+
+#### Prompt 3: Sidvy - Hela Tunnelns Valv
+
+```
+Side perspective of arched underground tunnel showing full 3x3 meter vaulted ceiling, colonisch grey-brown stone vault with greenish-white ceiling runes transitioning into pale blue-white frost-covered vault ahead, corridor walls and ceiling transforming together over 100 meters, frost patterns growing denser on ceiling arch in distance, geometric angles of vault becoming subtly wrong, dark fantasy environmental concept art in style of Jakub Rozalski, reality-bending tunnel atmosphere, lighting shifting from steady ceiling-mounted runes to pulsing frost glow above, emphasizing vaulted architecture and transformation, cinematic side-angle perspective showing full tunnel depth --ar 16:9 --s 190
+```
+
+**Visuella nyckelelement:** Sidoperspektiv visar HELA tunnelns valv, 3x3m tak tydligt definierat, övergång synlig längs takets längd
+
+---
+
+### B. SPIRALTRAPPAN - Valv och Frost från Tak
+
+#### Prompt 1: Uppåt - Visar Spiralvalvet Ovanför
+
+```
+Upward perspective ascending spiral stone staircase, vaulted ceiling spiraling clockwise narrowing toward summit, translucent blue-white frost hanging from ceiling vault like crystalline stalactites, ceiling covered in frost patterns resembling frozen rivers flowing overhead, 50 precise colonisch steps spiraling up with arched vault above clearly visible, frost glowing with moonlight-through-ice luminescence from ceiling, spiral ceiling narrowing from 3 meters to 2 meters at top, dark fantasy underground architecture in style of Aleksi Briclot and Frank Frazetta, oppressive vertical atmosphere, cold blue-white lighting emanating from frost-covered vault ceiling, weathered grey stone vault with impossible crystalline ice hanging down, emphasizing vaulted ceiling narrowing overhead, dramatic upward tunnel perspective --ar 9:16 --s 220
+```
+
+**Visuella nyckelelement:** Spiralens valv SNÄVAR IN uppåt (3m→2m), frost hänger från TAKET nedåt, upward view visar valvet ovanför
+
+#### Prompt 2: Nedåt - Trappans Valv Uppifrån
+
+```
+Downward view descending spiral staircase showing vaulted ceiling arches from above, stone vault spiraling down clockwise with frost-covered arches, icicles and crystalline formations hanging from ceiling vault at each turn, ceiling narrowing as spiral descends, 50 steps visible spiraling into blue-white mist below, frost patterns on vault resembling frozen tree branches overhead, dark fantasy underground architecture in style of Greg Rutkowski, mysterious depth atmosphere, soft blue-white glow from living frost on ceiling, weathered stone vault with crystalline ice hanging down like teeth, emphasizing spiral vault ceiling perspective from above --ar 9:16 --s 200
+```
+
+**Visuella nyckelelement:** Downward view från toppen, spiralens valv syns från ovan, istappar hänger från varje valvbåge
+
+#### Prompt 3: Sidvy - Visar Hela Spiralens Valv
+
+```
+Dramatic side-angle view of spiral stone staircase with vaulted ceiling arches spiraling upward, each turn showing arched vault overhead covered in frost, icicles hanging from ceiling vault like crystalline fangs, stone vault narrowing as spiral ascends, colonisch precise stonework meeting chaotic frost growth from ceiling, translucent blue-white ice glowing from vault above, dark fantasy environmental painting in style of Gerald Brom, cold oppressive tunnel atmosphere, moonlight-through-ice luminescence from frost-covered ceiling, weathered stone and impossible ice textures overhead, emphasizing vaulted ceiling architecture throughout spiral --ar 16:9 --s 210
+```
+
+**Visuella nyckelelement:** Sidoperspektiv visar ALLA valvbågar, frost växer från varje valv, spiralens smalnande tydligt
+
+---
+
+### C. KÄLLARGÅNGEN - Istappar från Tak (Rovdjursgap)
+
+#### Prompt 1: POV - Framåt Mot Dörrarna (Tak Synligt)
+
+```
+First-person perspective corridor view toward three distinct doors, 3-meter high vaulted stone ceiling covered in hanging icicles like predator teeth, mirror-smooth ice floor, left door heavy iron with frost, center door simple wood half-open with blue light, right door smooth stone with colonial symbols, blue-white stone walls with frost patterns, ceiling vault filled with sharp crystalline icicles hanging down creating threatening atmosphere, dark fantasy dungeon interior in style of Greg Rutkowski and Gerald Brom, ominous frozen atmosphere, cold blue-white lighting from glowing frost and icicles, transparent ice floor and threatening ice-covered vault ceiling, emphasizing vaulted ceiling with icicle formations above doors --ar 16:9 --s 180
+```
+
+**Visuella nyckelelement:** 3m högt valvat tak TYDLIGT synligt, istappar hänger som TÄNDER från tak, "rovdjursgap"-känsla
+
+#### Prompt 2: Närvy - Istappar från Tak (Upward View)
+
+```
+Detailed upward view of vaulted corridor ceiling covered in massive icicles, sharp crystalline ice formations hanging like predator fangs, 3-meter stone vault densely packed with translucent blue-white icicles of varying lengths, frost patterns spreading across ceiling between icicles, ceiling resembling open maw of ice beast, grimdark fantasy environmental detail in style of Gerald Brom, threatening cold atmosphere, blue-white bioluminescent glow from ice formations, transparent crystalline ice textures creating menacing overhead threat, emphasizing dangerous vaulted ceiling perspective --ar 2:3 --s 200
+```
+
+**Visuella nyckelelement:** Fokus PÅ istapparna från tak, "rovdjursgap"-estetik, varierande längd på istappar, hotfull atmosfär
+
+#### Prompt 3: Sidvy - Hela Korridoren Med Tak och Dörrar
+
+```
+Side-angle perspective of ice corridor showing full 3-meter vaulted ceiling with hanging icicles, three doors visible along corridor wall (iron left, wood center, stone right), ceiling vault densely covered in sharp ice formations like teeth overhead, 10-meter corridor depth with mirror-ice floor, blue-white stone walls with frost tree patterns, dark fantasy dungeon architecture in style of Jakub Rozalski, claustrophobic frozen atmosphere, cold blue-white lighting from ceiling icicles and door glow, transparent ice floor reflecting dangerous ceiling above, emphasizing vaulted ceiling threat and door choices, cinematic corridor perspective --ar 16:9 --s 190
+```
+
+**Visuella nyckelelement:** Sidoperspektiv visar TAK + dörrar samtidigt, istappar från valv synliga längs korridoren, spegel-golv reflekterar taket
+
+---
+
+### D. EXTRA VARIATIONER
+
+#### Variation 1: Reflekterat Tak i Spegel-Golv
+
+```
+Underground corridor with mirror-smooth ice floor perfectly reflecting vaulted ceiling above, creating illusion of symmetrical tunnel extending both up and down, icicles hanging from real ceiling mirrored below, blue-white stone vault reflected, disorienting perspective, dark fantasy environmental art, surreal doubling effect --ar 16:9 --s 200 --style raw
+```
+
+**Användning:** Källargången, surreal atmosfär, vertikal symmetri
+
+#### Variation 2: Takets Frost Växer (Tidslapse-känsla)
+
+```
+Vaulted corridor ceiling showing frost spreading like living organism, crystalline ice veins growing across stone vault, icicles forming and extending downward, time-lapse growth aesthetic, blue-white bioluminescent patterns, dark fantasy magical growth, eerie transformation atmosphere --ar 16:9 --s 220 --style raw
+```
+
+**Användning:** Skugglandets levande frost, magisk effekt
+
+---
+
+### VIKTIGA PROMPT-ORD FÖR TAK-SYNLIGHET
+
+**KRITISKA fraser som garanterar synligt tak:**
+- `vaulted ceiling clearly visible above`
+- `upward perspective` / `upward view`
+- `ceiling vault` / `arched vault`
+- `icicles hanging from ceiling`
+- `3-meter / 3x3 meter arched ceiling`
+- `emphasizing vaulted ceiling`
+- `ceiling overhead`
+- `frost-covered vault above`
+
+**Använd dessa för att tvinga Midjourney visa TAKET!**
 
 ---
 
