@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluff - Sånger, Dikter och Berättelser - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .chapter-meta {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .prose {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .prose h2 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose h3 {
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+
+        .prose h4 {
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--mystic-purple);
+        }
+
+        .prose p {
+            margin-bottom: 1.2rem;
+        }
+
+        .prose hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 3rem 0;
+        }
+
+        /* Poetry-specific styling */
+        .poem {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-style: italic;
+            line-height: 1.8;
+            margin: 2rem 0;
+            padding: 1.5rem 2rem;
+            background: var(--bg-card);
+            border-left: 4px solid var(--gold);
+            border-radius: 4px;
+        }
+
+        .poem-line {
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .poem-verse {
+            margin-bottom: 1.5rem;
+        }
+
+        .poem-refrain {
+            color: var(--gold);
+            font-weight: 500;
+            margin: 1rem 0;
+            padding-left: 1rem;
+            border-left: 2px solid var(--gold);
+        }
+
+        .info-box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--flame-orange);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box.purple {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .info-box.gold {
+            border-left-color: var(--gold);
+        }
+
+        .info-box.red {
+            border-left-color: var(--deep-red);
+        }
+
+        .info-box-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--flame-orange);
+        }
+
+        .purple .info-box-title {
+            color: var(--mystic-purple);
+        }
+
+        .gold .info-box-title {
+            color: var(--gold);
+        }
+
+        .red .info-box-title {
+            color: var(--deep-red);
+        }
+
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        /* Entity Links */
+        .entity-link {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+            transition: all 0.2s ease;
+        }
+        .entity-link:hover { border-bottom-style: solid; }
+        .entity-npc { color: var(--flame-orange); }
+        .entity-plats { color: var(--mystic-purple); }
+        .entity-fraktion { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">🎭 Gravens Arv - Fluff & Berättelser</div>
+        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+    </nav>
+
+    <div class="content-container">
+        <header class="chapter-header">
+            <h1>Sånger, Dikter och Berättelser</h1>
+            <div class="chapter-meta">Levande fluff från kampanjvärlden</div>
+        </header>
+
+        <article class="prose">
+            <h2>Sånger om Lera Skuggskeppare</h2>
+
+            <div class="info-box gold">
+                <div class="info-box-title">Om Lera Skuggskeppare</div>
+                <p><strong>Lera Skuggskeppare</strong> - piratkaptenen från Asharien som sålde Hadrian "Hagge" av Vitterdal som slav. Hennes namn har vävt sig in i sjömännens sånger från de ashariska kuststäderna till de avlägsnaste tavernorna. Några ser henne som skräck och rövare, andra som beskyddare och frihetskämpe.</p>
+                <p>Hennes skepp <strong>Skuggtand</strong> och hennes organisation <strong>Skuggflodens Syndikat</strong> kontrollerar en av de största pirathamnarna i regionen.</p>
+            </div>
+
+            <h3>"Skepparens Svek"</h3>
+            <div class="info-box purple">
+                <div class="info-box-title">Kontext</div>
+                <p>En mörk ballad som sjungs i de tystare tavernorna. Berättar om sveket och sorgen som följer en kapten som valt makten framför hjärtat.</p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-verse">
+                    <div class="poem-line">I månens sken vid Skuggflodens rand,</div>
+                    <div class="poem-line">Lera, hon styrde med järnhand.</div>
+                    <div class="poem-line">Från barndomens hamn till de djupa sjöars land,</div>
+                    <div class="poem-line">Hon seglade iväg med en skatt från strand.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">Men kärlekens pris blev för högt att bära,</div>
+                    <div class="poem-line">För hjärtat som brast under stjärnklara era.</div>
+                    <div class="poem-line">Med svek i sin själ, hon förlorade mer,</div>
+                    <div class="poem-line">Än guld och juveler kunde ge henne här.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">För en broder hon förrådde, i skuggornas spel,</div>
+                    <div class="poem-line">Och skräcken hon sådde, blev hennes eget kväl.</div>
+                    <div class="poem-line">Lera, vars namn bär på legender så svart,</div>
+                    <div class="poem-line">Är fängslad i sorg, i sitt kalla hjärta hårt.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">Så när natten sänker sig, och havet ligger still,</div>
+                    <div class="poem-line">Kan man höra hennes sång i vinden, svag och skör.</div>
+                    <div class="poem-line">"Ett skepp som saknar hamn, är som ett hjärta utan vil",</div>
+                    <div class="poem-line">Så viskar vindarna om Lera, vars öde vi beklagar.</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>"Lera av Skuggtand"</h3>
+            <div class="info-box purple">
+                <div class="info-box-title">Kontext</div>
+                <p>En heroisk skaldedikt som sjungs av hennes besättning och supportrar. Framställer henne som frihetskämpe och beskyddare av de förtryckta.</p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-verse">
+                    <div class="poem-line">I havets armar, under stjärnors ljus,</div>
+                    <div class="poem-line">Seglar Lera, fri som brus.</div>
+                    <div class="poem-line">Med Skuggtand, sitt trogna skepp,</div>
+                    <div class="poem-line">Hon räddar själar från havets grepp.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">Från Ashariens stränder till fjärran riken,</div>
+                    <div class="poem-line">Mot tyranner och giriga liken,</div>
+                    <div class="poem-line">Hon svingar sitt svärd med ära och mod,</div>
+                    <div class="poem-line">För folket hon kämpar, i blod och flod.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">Lera, oh Lera, piraternas drottning,</div>
+                    <div class="poem-line">I ditt hjärta brinner en flamma så het.</div>
+                    <div class="poem-line">Mot orättvisa, du leder din strid,</div>
+                    <div class="poem-line">För frihet och rätt, i evighetens tid.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">Och när stormen vrålar och vågorna slår,</div>
+                    <div class="poem-line">Står Lera stadig, hon aldrig förlorar.</div>
+                    <div class="poem-line">Så sjung hennes namn med stolthet och hopp,</div>
+                    <div class="poem-line">Lera Skuggskeppare, aldrig ger upp.</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>"Balladen om Skuggskeppare Lera"</h3>
+            <div class="info-box red">
+                <div class="info-box-title">Kontext</div>
+                <p>En hotfull ballad sjungen av hennes fiender och offren. Varnar resenärer för den fruktade piratkaptenen.</p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-verse">
+                    <div class="poem-line"><strong>Vers 1:</strong></div>
+                    <div class="poem-line">I Tuzan Rims gråa hamn en skugga föll,</div>
+                    <div class="poem-line">Lera, Skuggskepparen, rädslans troll.</div>
+                    <div class="poem-line">Hennes skepp av natten glider fram,</div>
+                    <div class="poem-line">där de rättvisas röster tystnar kallt och klam.</div>
+                </div>
+
+                <div class="poem-refrain">
+                    <div class="poem-line"><strong>Refräng:</strong></div>
+                    <div class="poem-line">Hör, o hör, skuggornas viskning i natt,</div>
+                    <div class="poem-line">om Skuggskepparen som stjäl bort dagens makt.</div>
+                    <div class="poem-line">Hon är stormen som rycker, havet som tar,</div>
+                    <div class="poem-line">en rövarens själ, under svart flagg hon far.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line"><strong>Vers 2:</strong></div>
+                    <div class="poem-line">Hennes ögon som stjärnor kalla och klar,</div>
+                    <div class="poem-line">hennes hjärta, en kista, tomt utan dar.</div>
+                    <div class="poem-line">Hon dansar på vågor, som döden själv glad,</div>
+                    <div class="poem-line">med hennes kommando, en röst hård och stad.</div>
+                </div>
+
+                <div class="poem-refrain">
+                    <div class="poem-line"><em>(Refräng)</em></div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line"><strong>Vers 3:</strong></div>
+                    <div class="poem-line">Från Asharien till Mühads stränder långt bort,</div>
+                    <div class="poem-line">hon seglar genom sjöar där mången blivit bortfört.</div>
+                    <div class="poem-line">Hon tar vad hon vill ha, utan skuld eller skam,</div>
+                    <div class="poem-line">i hennes kölvatten, endast sorg och fördam.</div>
+                </div>
+
+                <div class="poem-refrain">
+                    <div class="poem-line"><em>(Refräng)</em></div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line"><strong>Vers 4:</strong></div>
+                    <div class="poem-line">Men hören mig nu, för en dag kommer stund,</div>
+                    <div class="poem-line">då Lera, den mörka, möter sin egen avgrund.</div>
+                    <div class="poem-line">En hjälte skall stiga ur folkets enkla rad,</div>
+                    <div class="poem-line">och sänka henne djupt ner, där skuggorna har sitt stad.</div>
+                </div>
+
+                <div class="poem-refrain">
+                    <div class="poem-line"><strong>Slutrefräng:</strong></div>
+                    <div class="poem-line">Så sjung, o sjung, för morgondagens ljus,</div>
+                    <div class="poem-line">när Skuggskepparen faller, under rättvisans krus.</div>
+                    <div class="poem-line">Hon är stormen som stillas, havet som ger,</div>
+                    <div class="poem-line">en rövarens slut, i djupets kyla hon ler.</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>"Ballad om Lera Skuggskeppare"</h3>
+            <div class="info-box purple">
+                <div class="info-box-title">Kontext</div>
+                <p>En längre legendisk ballad som berättar hennes historia från unga år till nutid. Sjungs av skalder i hamnar längs kusten.</p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-verse">
+                    <div class="poem-line"><strong>Vers 1:</strong></div>
+                    <div class="poem-line">Från Ashariens vindslitna kust,</div>
+                    <div class="poem-line">steg Lera fram, med havets lust.</div>
+                    <div class="poem-line">I ungdomens dagar, vild och fri,</div>
+                    <div class="poem-line">hon styrde skepp på öppet hav, under himlens bly.</div>
+                </div>
+
+                <div class="poem-refrain">
+                    <div class="poem-line"><strong>Refräng:</strong></div>
+                    <div class="poem-line">Oh, Lera, vågornas drottning, skräck på varje skepp,</div>
+                    <div class="poem-line">med Skuggtand i spetsen, hon styrde genom djupets grepp.</div>
+                    <div class="poem-line">Hennes namn ekar över våg och strand,</div>
+                    <div class="poem-line">som en storm som aldrig nånsin når land.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line"><strong>Vers 2:</strong></div>
+                    <div class="poem-line">Med kyligt mod och hjärta av stål,</div>
+                    <div class="poem-line">hon tog vad hon ville, betalade ej något tål.</div>
+                    <div class="poem-line">Men ögonen brann med en dold smärta,</div>
+                    <div class="poem-line">för sjörövarens väg är ensam i hjärtat.</div>
+                </div>
+
+                <div class="poem-refrain">
+                    <div class="poem-line"><em>(Refräng)</em></div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line"><strong>Vers 3:</strong></div>
+                    <div class="poem-line">Under stjärnklar himmel, vid månens sken,</div>
+                    <div class="poem-line">mötte hon fiender, stod stadigt igen.</div>
+                    <div class="poem-line">Men hjärtat sökte något mer än guld och ära,</div>
+                    <div class="poem-line">en plats att kalla hem, utan att kriget följa nära.</div>
+                </div>
+
+                <div class="poem-refrain">
+                    <div class="poem-line"><em>(Refräng)</em></div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line"><strong>Vers 4:</strong></div>
+                    <div class="poem-line">Nu vilar en legend om den mörka vågens bana,</div>
+                    <div class="poem-line">Lera Skuggskeppare, i tystnadens hamn hon står kvar.</div>
+                    <div class="poem-line">Och viskar till oss genom tidens sand,</div>
+                    <div class="poem-line">en piratlivets visa, från ett främmande land.</div>
+                </div>
+
+                <div class="poem-refrain">
+                    <div class="poem-line"><em>(Refräng)</em></div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Dryckesvisan "Lera på Vågorna"</h3>
+            <div class="info-box gold">
+                <div class="info-box-title">Kontext</div>
+                <p>En festlig dryckesvisa som sjungs av hennes besättning vid fester i Medesbys hamn. Full av stolthet och lojalitet.</p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-verse">
+                    <div class="poem-line">Höj nu våra bägare, fyll dem till brädden,</div>
+                    <div class="poem-line">för kämpen, vår kapten, den bästa av kämpen!</div>
+                    <div class="poem-line">På vågorna rider hon, stark och så fri,</div>
+                    <div class="poem-line">ingen storm, ingen fiende, får henne på knä.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">Så skål för vår kapten, vars skepp skär som kniv,</div>
+                    <div class="poem-line">i Medesbys hamn, där hon styr vårt liv!</div>
+                    <div class="poem-line">Varje natt, varje fest, låt hennes namn sjunga klart,</div>
+                    <div class="poem-line">för kapten Skuggskeppare, vårt hjärtas vakt!</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Hjältens Ballad "Skuggornas Väktare"</h3>
+            <div class="info-box gold">
+                <div class="info-box-title">Kontext</div>
+                <p>En ärofull ballad om Lera som beskyddare av sin hamn och sitt folk. Sjungs av de som ser henne som väktare snarare än rövare.</p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-verse">
+                    <div class="poem-line">I skuggornas rike, på öns steniga strand,</div>
+                    <div class="poem-line">står Lera så stolt, med ett svärd i sin hand.</div>
+                    <div class="poem-line">Hon vaktar sin hamn som en moder sitt barn,</div>
+                    <div class="poem-line">från främmande skepp som seglar in i arla morgon.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">Med hjärta så stort, och med blick så karg,</div>
+                    <div class="poem-line">hon utmanar världen, hennes vilja är stark.</div>
+                    <div class="poem-line">En legend, en hjälte, på de öppna haven,</div>
+                    <div class="poem-line">Lera Skuggskeppare, frihetsräven.</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Kärleksballaden "Havets Hjärta"</h3>
+            <div class="info-box purple">
+                <div class="info-box-title">Kontext</div>
+                <p>En romantisk och sorgsam ballad om förlorad kärlek. Sjungs ofta i de tystare stunderna efter middagstid.</p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-verse">
+                    <div class="poem-line">Under stjärnorna dansar, på silverglittrande våg,</div>
+                    <div class="poem-line">Lera, vars hjärta en gång brast, men som älskar ändå.</div>
+                    <div class="poem-line">Hon bar en kärlek, djup som havets djupaste vrå,</div>
+                    <div class="poem-line">nu sjunger hon sorgsen, där vindarna blå.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">Kan du höra henne sjunga, om kärlek som föll?</div>
+                    <div class="poem-line">Om tårar som blandas med regnet, när stormen den döll.</div>
+                    <div class="poem-line">Men i varje vågskvalp, i varje brisens lek,</div>
+                    <div class="poem-line">finns kärlekens låga, som aldrig ger vek.</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Sorgsna Balladen "Skeppsbrottets Sång"</h3>
+            <div class="info-box red">
+                <div class="info-box-title">Kontext</div>
+                <p>En melankoli ballad om Leras inre sorg och ensamma kamp. För de som ser henne som en tragisk figur.</p>
+            </div>
+
+            <div class="poem">
+                <div class="poem-verse">
+                    <div class="poem-line">Vid horisontens bortre rand, där solen sjunker ner,</div>
+                    <div class="poem-line">sitter Lera ensam kvar, med minnen tunga som ler.</div>
+                    <div class="poem-line">Ett skeppsbrott bär hon inom sig, från stormar hon ej kunde styra,</div>
+                    <div class="poem-line">hennes själ som sjunkit djupt, i havets mörka gyttja.</div>
+                </div>
+
+                <div class="poem-verse">
+                    <div class="poem-line">Så sörj med oss, ni sjömän grå, för kaptenen som led,</div>
+                    <div class="poem-line">vars hjärta brast, vars drömmar gick på grund i tidens flöd.</div>
+                    <div class="poem-line">Men stolt hon står, trots all sin sorg, mot skyn hennes blick den når,</div>
+                    <div class="poem-line">Lera Skuggskeppare, vars saga aldrig dör.</div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="quote">
+                "Ett skepp som saknar hamn, är som ett hjärta utan vil" - Ur Skepparens Svek
+            </div>
+
+        </article>
+    </div>
+
+    <!-- Kapitel-linkify för auto-länkning av NPCs och platser -->
+    <script src="../kapitel/kapitel-linkify.js"></script>
+</body>
+</html>
