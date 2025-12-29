@@ -789,10 +789,36 @@
                     </div>
                 </div>
 
+                <!-- Meny 6: Saltimbocca -->
+                <div class="menu-card" data-recipe="6">
+                    <div class="menu-header">
+                        <div class="menu-number">6</div>
+                        <div class="menu-title">Saltimbocca med Saffransrisotto</div>
+                        <div class="menu-icon">🍝</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="course">
+                            <div class="course-label">Huvudrätt</div>
+                            <div class="course-text">Saltimbocca alla Milanese med saffransrisotto – kalvkött, prosciutto och salvia</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Dessert</div>
+                            <div class="course-text">Panna cotta med amarenakörs</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Vinmatchning</div>
+                            <div class="course-text">Vitt vin – Soave Classico, Gavi eller Lugana (eller lätt Valpolicella)</div>
+                        </div>
+                        <div class="tip">Saltimbocca kan monteras dagen innan. Risotto kräver uppmärksamhet – en person bör fokusera på den!</div>
+                    </div>
+                    <div class="menu-footer">
+                        <span class="difficulty">⭐⭐⭐ Kräver bra timing</span>
+                        <span class="prep-tag">Kan förberedas</span>
+                    </div>
+                </div>
+
             </div>
         </section>
-
-        <!-- Rekommendationer -->
         <section>
             <h2>Rekommendationer</h2>
             <div class="recommendations">
@@ -827,6 +853,7 @@
                     <option value="4a">4a. Pilgrimsmusslor</option>
                     <option value="4b">4b. Havsabborre med chorizo</option>
                     <option value="5">5. Lammracks med gratäng</option>
+                    <option value="6">6. Saltimbocca med Saffransrisotto</option>
                 </select>
                 <br>
                 <button id="copyBtn" class="copy-btn" disabled>
@@ -997,6 +1024,33 @@
                     "• Blåbär (frysta, 300g)"
                 ],
                 wine: "Nebbiolo eller Rhône-blends"
+            },
+            "6": {
+                name: "Saltimbocca med Saffransrisotto",
+                items: [
+                    "HUVUDRÄTT",
+                    "• Tunna kalvschnitzlar (600g)",
+                    "• Prosciutto di Parma (10 skivor)",
+                    "• Färsk salvia (1 kruka)",
+                    "• Arborioris (3 dl)",
+                    "• Saffran (0,5g / 1 påse)",
+                    "• Parmesan (50g)",
+                    "• Kycklingbuljong (7-8 dl)",
+                    "• Kalvbuljong (1,5 dl)",
+                    "• Torrt vitt vin (3 dl)",
+                    "• Schalottenlök (2 st)",
+                    "• Vitlök (4 klyftor)",
+                    "• Smör (100g)",
+                    "",
+                    "DESSERT",
+                    "• Vispgrädde (5 dl)",
+                    "• Mjölk (1 dl)",
+                    "• Gelatinblad (3 st)",
+                    "• Socker (80g)",
+                    "• Vaniljpasta",
+                    "• Amarenakörs (1 burk)"
+                ],
+                wine: "Vitt vin: Soave Classico, Gavi eller Lugana"
             }
         };
 
@@ -1536,6 +1590,103 @@
                         <li>Häll i formar. Kyl minst 4 timmar.</li>
                         <li>Kompott: Koka blåbär, socker och citron 10 min.</li>
                     </ol>
+                `
+            },
+            "6": {
+                title: "🍝 Meny 6: Saltimbocca med Saffransrisotto",
+                html: `
+                    <h4>Huvudrätt: Saltimbocca alla Milanese med Saffransrisotto</h4>
+                    <p><em>"Hoppa in i munnen" – det möra kalvköttet, salvian och sältan från prosciutto blir ren magi.</em></p>
+
+                    <h5>Saltimbocca</h5>
+                    <ul>
+                        <li>600g tunna kalvschnitzlar (2-3 mm tunna)</li>
+                        <li>10 skivor prosciutto di Parma</li>
+                        <li>15-20 färska salviablad</li>
+                        <li>3 msk vetemjöl</li>
+                        <li>50g smör</li>
+                        <li>1,5 dl torrt vitt vin</li>
+                        <li>1,5 dl kalvbuljong</li>
+                        <li>Olivolja</li>
+                        <li>Svartpeppar (INGET salt – prosciutton saltar!)</li>
+                    </ul>
+
+                    <h5>Saffransrisotto</h5>
+                    <ul>
+                        <li>3 dl arborio- eller carnaroliris</li>
+                        <li>1 schalottenlök, finhackad</li>
+                        <li>2 vitlöksklyftor</li>
+                        <li>0,5g saffran (1 påse)</li>
+                        <li>1,5 dl torrt vitt vin</li>
+                        <li>7-8 dl kycklingbuljong (håll varm!)</li>
+                        <li>50g parmesan, riven</li>
+                        <li>40g smör (kallt)</li>
+                    </ul>
+
+                    <h4>Gör så här</h4>
+
+                    <h5>Förberedelser (kan göras timmar innan)</h5>
+                    <ol>
+                        <li>Banka ut schnitzlarna mellan plastfolie om de är tjockare än 3 mm.</li>
+                        <li>Lägg ett salviablad på varje köttbit.</li>
+                        <li>Lägg en skiva prosciutto ovanpå.</li>
+                        <li>Fäst med tandpetare vid behov. Förvara i kylskåp.</li>
+                    </ol>
+
+                    <h5>Saffransrisotto (börja 25 min före servering)</h5>
+                    <ol>
+                        <li><strong>Värm buljongen</strong> – håll varm hela tiden.</li>
+                        <li><strong>Saffran:</strong> Lägg i 1 dl varm buljong, låt dra.</li>
+                        <li><strong>Fräs lök:</strong> Schalottenlök i olivolja 3 min.</li>
+                        <li><strong>Ris:</strong> Tillsätt, fräs tills glasigt (2 min). Rör hela tiden.</li>
+                        <li><strong>Vin:</strong> Häll i, rör tills absorberat.</li>
+                        <li><strong>Buljong:</strong> En slev i taget, rör ofta. Efter halva: tillsätt saffransbuljongen.</li>
+                        <li><strong>Totalt ca 18 min</strong> tills riset är al dente.</li>
+                        <li><strong>Avsluta:</strong> Ta av värmen, rör ner kallt smör och parmesan.</li>
+                    </ol>
+
+                    <h5>Saltimbocca (sist – tar 5 min!)</h5>
+                    <ol>
+                        <li>Vänd köttbitarna lätt i mjöl på EN sida.</li>
+                        <li>Hetta upp smör + olivolja på hög värme.</li>
+                        <li>Lägg i köttet med prosciutto-sidan nedåt. Stek 1-2 min.</li>
+                        <li>Vänd, stek 1-2 min till. Lyft upp på fat.</li>
+                        <li>Häll vinet i pannan – det fräser! Skrapa loss godbitarna.</li>
+                        <li>Tillsätt buljong, koka ner till hälften (2-3 min).</li>
+                        <li>Peppra (INTE salta!). Lägg tillbaka köttet, värm igenom.</li>
+                    </ol>
+
+                    <div class="tip-box">
+                        <strong>Tips:</strong> En person på risotto, en på kött. Risotto väntar inte – servera direkt!
+                    </div>
+
+                    <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
+
+                    <h4>Dessert: Panna cotta med amarenakörs</h4>
+
+                    <h5>Ingredienser (5 pers)</h5>
+                    <ul>
+                        <li>5 dl vispgrädde</li>
+                        <li>1 dl mjölk</li>
+                        <li>80g socker</li>
+                        <li>3 gelatinblad</li>
+                        <li>1 tsk vaniljpasta</li>
+                        <li>1 burk amarenakörs</li>
+                    </ul>
+
+                    <h5>Gör så här</h5>
+                    <ol>
+                        <li>Blötlägg gelatin i kallt vatten 5 min.</li>
+                        <li>Värm grädde, mjölk, socker och vanilj. Av innan kokning.</li>
+                        <li>Krama ur gelatin, rör ner i varma grädden.</li>
+                        <li>Häll i formar/glas.</li>
+                        <li>Kyl minst 4 timmar, gärna över natten.</li>
+                        <li>Servera med amarenakörs och sirap.</li>
+                    </ol>
+
+                    <div class="tip-box">
+                        <strong>Vinmatchning:</strong> Vitt vin rekommenderas! Soave Classico, Gavi di Gavi eller Lugana. Alternativt lätt rödvin som Valpolicella Classico.
+                    </div>
                 `
             }
         };
