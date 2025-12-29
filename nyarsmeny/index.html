@@ -292,6 +292,89 @@
             font-weight: 500;
         }
 
+        /* Inköpslista */
+        .shopping-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 3px solid var(--wine);
+        }
+
+        .shopping-section p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-select {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid var(--wine);
+            border-radius: 4px;
+            background: white;
+            color: var(--text);
+            cursor: pointer;
+            margin-bottom: 1rem;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .menu-select:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+
+        .copy-btn {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--wine) 0%, var(--wine-dark) 100%);
+            color: var(--cream);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(114, 47, 55, 0.3);
+        }
+
+        .copy-btn:active {
+            transform: translateY(0);
+        }
+
+        .copy-btn.copied {
+            background: linear-gradient(135deg, #2d5a2d 0%, #1e3d1e 100%);
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--charcoal);
+            color: var(--cream);
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -558,7 +641,218 @@
                 </div>
             </div>
         </section>
+        <!-- Inköpslista -->
+        <section>
+            <h2>Inköpslista</h2>
+            <div class="shopping-section">
+                <p>Välj en meny och kopiera inköpslistan till urklipp</p>
+                <select id="menuSelect" class="menu-select">
+                    <option value="">-- Välj meny --</option>
+                    <option value="1">1. Tonfisk med rödvinssås</option>
+                    <option value="2">2. Oxfilé med rödvinssås</option>
+                    <option value="3">3. Confiterad ankklubba</option>
+                    <option value="4a">4a. Pilgrimsmusslor</option>
+                    <option value="4b">4b. Havsabborre med chorizo</option>
+                    <option value="5">5. Lammracks med gratäng</option>
+                </select>
+                <br>
+                <button id="copyBtn" class="copy-btn" disabled>
+                    <span>📋</span> Kopiera inköpslista
+                </button>
+            </div>
+        </section>
     </main>
+
+    <div id="toast" class="toast">Inköpslistan kopierad!</div>
+
+    <script>
+        const shoppingLists = {
+            base: [
+                "FÖRRÄTT",
+                "• Sallad (blandad eller ruccola)",
+                "• Halloumi (2 förp.)",
+                "• Citron (för pickling)",
+                "• Röda vindruvor (1 klase)",
+                "• Olivolja",
+                "",
+                "DRYCK",
+                "• Rödvin (2-3 flaskor)",
+                "• Cava (1-2 flaskor)",
+                ""
+            ],
+            "1": {
+                name: "Tonfisk med rödvinssås",
+                items: [
+                    "HUVUDRÄTT",
+                    "• Tonfiskbiffar (5 st, ca 150g/st)",
+                    "• Schalottenlök (4-5 st)",
+                    "• Rödvin (för sås, 3 dl)",
+                    "• Kalvfond (2 dl)",
+                    "• Smör",
+                    "• Persiljerot (3-4 st)",
+                    "• Palsternacka (3-4 st)",
+                    "",
+                    "DESSERT",
+                    "• Mörk choklad 70% (200g)",
+                    "• Smör (100g)",
+                    "• Ägg (4 st)",
+                    "• Socker (100g)",
+                    "• Vetemjöl (50g)",
+                    "• Salt karamellglass (eller vaniljglass + kolatopping)"
+                ],
+                wine: "Pinot Noir eller Barbaresco"
+            },
+            "2": {
+                name: "Oxfilé med rödvinssås",
+                items: [
+                    "HUVUDRÄTT",
+                    "• Oxfilé (ca 800g-1kg)",
+                    "• Rödvin (för sås, 5 dl)",
+                    "• Kalvfond (3 dl)",
+                    "• Schalottenlök (3 st)",
+                    "• Smör",
+                    "• Potatis (1 kg, för duchesse)",
+                    "• Äggulor (3 st)",
+                    "• Haricots verts (400g)",
+                    "",
+                    "DESSERT",
+                    "• Vispgrädde (5 dl)",
+                    "• Äggulor (6 st)",
+                    "• Strösocker (100g)",
+                    "• Vaniljstång (1 st)",
+                    "• Råsocker (för brûlée-topp)"
+                ],
+                wine: "Piemonte, Rhône eller Bordeaux"
+            },
+            "3": {
+                name: "Confiterad ankklubba",
+                items: [
+                    "HUVUDRÄTT",
+                    "• Ankklubbor (5 st)",
+                    "• Ankfett eller olivolja (för confit)",
+                    "• Potatis (1 kg)",
+                    "• Grönkål (1 bunt)",
+                    "• Apelsin (2 st, för glaze)",
+                    "• Honung (för glaze)",
+                    "• Vitlök, timjan, lagerblad",
+                    "",
+                    "DESSERT",
+                    "• Päron (5 st, fasta)",
+                    "• Rödvin (5 dl)",
+                    "• Socker (2 dl)",
+                    "• Kanel, stjärnanis",
+                    "• Mascarpone (250g)"
+                ],
+                wine: "Fyllig Syrah eller Sangiovese"
+            },
+            "4a": {
+                name: "Pilgrimsmusslor",
+                items: [
+                    "HUVUDRÄTT",
+                    "• Pilgrimsmusslor (15-20 st, färska)",
+                    "• Sidfläsk (200g, tärnat)",
+                    "• Frysta ärtor (300g)",
+                    "• Smör (för ärtkräm + brynt)",
+                    "• Färsk salvia (1 bunt)",
+                    "• Grädde (1 dl, för ärtkräm)",
+                    "",
+                    "DESSERT",
+                    "• Smördeg (1 rulle)",
+                    "• Äpplen (5-6 st, fasta)",
+                    "• Socker (150g)",
+                    "• Smör (75g)",
+                    "• Vaniljglass"
+                ],
+                wine: "Lättare Pinot Noir eller Barbaresco"
+            },
+            "4b": {
+                name: "Havsabborre med chorizo",
+                items: [
+                    "HUVUDRÄTT",
+                    "• Havsabborre eller brax (hel fisk, ca 1.5kg)",
+                    "• Chorizo (200g)",
+                    "• Körsbärstomater (400g)",
+                    "• Oliver (svarta, 150g)",
+                    "• Färsk rosmarin",
+                    "• Potatis (1 kg)",
+                    "• Saffran (1 påse)",
+                    "• Vitlök",
+                    "",
+                    "DESSERT",
+                    "• Smördeg (1 rulle)",
+                    "• Äpplen (5-6 st, fasta)",
+                    "• Socker (150g)",
+                    "• Smör (75g)",
+                    "• Vaniljglass"
+                ],
+                wine: "Medelkroppad Grenache eller Mencía"
+            },
+            "5": {
+                name: "Lammracks med gratäng",
+                items: [
+                    "HUVUDRÄTT",
+                    "• Lammracks (2 st, ca 400g/st)",
+                    "• Ströbröd (för panering)",
+                    "• Färsk rosmarin och timjan",
+                    "• Dijonsenap",
+                    "• Potatis (1 kg)",
+                    "• Vispgrädde (4 dl)",
+                    "• Vitlök",
+                    "• Zucchini (2 st)",
+                    "• Aubergine (1 st)",
+                    "• Paprika (2 st)",
+                    "• Tomater (4 st)",
+                    "",
+                    "DESSERT",
+                    "• Vispgrädde (4 dl)",
+                    "• Gelatinblad (4 st)",
+                    "• Citron (2 st)",
+                    "• Socker (100g)",
+                    "• Vaniljstång (1 st)",
+                    "• Blåbär (frysta, 300g)"
+                ],
+                wine: "Nebbiolo eller Rhône-blends"
+            }
+        };
+
+        const menuSelect = document.getElementById('menuSelect');
+        const copyBtn = document.getElementById('copyBtn');
+        const toast = document.getElementById('toast');
+
+        menuSelect.addEventListener('change', function() {
+            copyBtn.disabled = !this.value;
+            copyBtn.classList.remove('copied');
+            copyBtn.innerHTML = '<span>📋</span> Kopiera inköpslista';
+        });
+
+        copyBtn.addEventListener('click', async function() {
+            const menuId = menuSelect.value;
+            if (!menuId) return;
+
+            const menu = shoppingLists[menuId];
+            const list = [
+                `INKÖPSLISTA - Nyårsmiddag 2025`,
+                `Meny: ${menu.name}`,
+                `Rekommenderat vin: ${menu.wine}`,
+                `(4-5 personer)`,
+                ``,
+                ...shoppingLists.base,
+                ...menu.items
+            ].join('\n');
+
+            try {
+                await navigator.clipboard.writeText(list);
+                copyBtn.classList.add('copied');
+                copyBtn.innerHTML = '<span>✓</span> Kopierad!';
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 2500);
+            } catch (err) {
+                alert('Kunde inte kopiera. Försök igen.');
+            }
+        });
+    </script>
 
     <footer>
         <p>Gott nytt år!</p>
