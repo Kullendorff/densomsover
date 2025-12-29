@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyårsmiddag 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --wine: #722F37;
+            --wine-dark: #4a1f24;
+            --gold: #C9A227;
+            --gold-light: #E8D5A3;
+            --cream: #FAF8F5;
+            --charcoal: #2C2C2C;
+            --text: #3a3a3a;
+            --text-light: #666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            background: var(--cream);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--wine-dark) 0%, var(--wine) 100%);
+            color: var(--cream);
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A227' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        header h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        header .subtitle {
+            font-size: 1rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            position: relative;
+        }
+
+        header .details {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: var(--gold-light);
+            position: relative;
+        }
+
+        header .details span {
+            margin: 0 1rem;
+        }
+
+        /* Main content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Section styling */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--wine);
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: var(--gold);
+            margin: 1rem auto 0;
+        }
+
+        /* Förrätt */
+        .forratt {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 3px solid var(--gold);
+        }
+
+        .forratt h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--wine);
+            margin-bottom: 1.5rem;
+        }
+
+        .forratt ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .forratt li {
+            padding: 0.3rem 0;
+            color: var(--text-light);
+        }
+
+        .forratt .description {
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Meny-kort */
+        .menu-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .menu-card {
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .menu-header {
+            background: linear-gradient(135deg, var(--wine) 0%, var(--wine-dark) 100%);
+            color: var(--cream);
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .menu-number {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .menu-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        .menu-icon {
+            font-size: 1.5rem;
+            margin-left: auto;
+        }
+
+        .menu-content {
+            padding: 1.5rem;
+        }
+
+        .course {
+            margin-bottom: 1.2rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .course:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .course-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+
+        .course-text {
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        .menu-footer {
+            background: #f9f9f9;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .difficulty {
+            color: var(--text-light);
+        }
+
+        .prep-tag {
+            background: var(--gold-light);
+            color: var(--wine-dark);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .tip {
+            background: #fff8e7;
+            border-left: 3px solid var(--gold);
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Rekommendationer */
+        .recommendations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .rec-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .rec-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            color: var(--wine);
+            margin-bottom: 0.5rem;
+        }
+
+        .rec-card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .rec-card .highlight {
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--charcoal);
+            color: var(--cream);
+        }
+
+        footer p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        footer .champagne {
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header .details span {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            .menu-header {
+                flex-wrap: wrap;
+            }
+
+            .menu-footer {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .recommendations {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nyårsmiddag</h1>
+        <p class="subtitle">2025</p>
+        <p class="details">
+            <span>4–5 gäster</span>
+            <span>•</span>
+            <span>Rödvin & Cava</span>
+        </p>
+    </header>
+
+    <main>
+        <!-- Förrätt -->
+        <section>
+            <h2>Förrätt</h2>
+            <div class="forratt">
+                <h3>Halloumisallad med picklad citron och varma druvor</h3>
+                <ul>
+                    <li>Fräsch sallad som bas</li>
+                    <li>Stekt halloumi</li>
+                    <li>Picklad citron</li>
+                    <li>Varma stekta röda vindruvor</li>
+                </ul>
+                <p class="description">En härlig sweet-sour-salty-kombination som sätter tonen för kvällen.</p>
+            </div>
+        </section>
+
+        <!-- Huvudrätter -->
+        <section>
+            <h2>Huvudrätter – Välj en</h2>
+            <div class="menu-grid">
+
+                <!-- Meny 1: Tonfisk -->
+                <div class="menu-card">
+                    <div class="menu-header">
+                        <div class="menu-number">1</div>
+                        <div class="menu-title">Stekt tonfisk med rödvinssås</div>
+                        <div class="menu-icon">🐟</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="course">
+                            <div class="course-label">Huvudrätt</div>
+                            <div class="course-text">Tonfiskbiff (stekt medium rare) med rödvins- och schalottenlöksreduktion, rostad persiljerot och palsternacka</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Dessert</div>
+                            <div class="course-text">Chokladfondant med salt karamellglass</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Vinmatchning</div>
+                            <div class="course-text">Lättare rödvin – Pinot Noir eller Barbaresco</div>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <span class="difficulty">⭐⭐⭐ Timing är viktig</span>
+                    </div>
+                </div>
+
+                <!-- Meny 2: Oxfilé -->
+                <div class="menu-card">
+                    <div class="menu-header">
+                        <div class="menu-number">2</div>
+                        <div class="menu-title">Klassiker: Oxfilé med rödvinssås</div>
+                        <div class="menu-icon">🥩</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="course">
+                            <div class="course-label">Huvudrätt</div>
+                            <div class="course-text">Oxfilé med klassisk rödvinssås, pommes duchesse och haricots verts</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Dessert</div>
+                            <div class="course-text">Crème brûlée med vanilj</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Vinmatchning</div>
+                            <div class="course-text">Piemonte-viner, Rhône, eller en fin Bordeaux</div>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <span class="difficulty">⭐⭐ Osvikligt val</span>
+                        <span class="prep-tag">Såsen kan förberedas</span>
+                    </div>
+                </div>
+
+                <!-- Meny 3: Anka -->
+                <div class="menu-card">
+                    <div class="menu-header">
+                        <div class="menu-number">3</div>
+                        <div class="menu-title">Confiterad ankklubba med apelsin</div>
+                        <div class="menu-icon">🦆</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="course">
+                            <div class="course-label">Huvudrätt</div>
+                            <div class="course-text">Confiterad ankklubba med apelsinglaze, rostad potatis och grönkålschips</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Dessert</div>
+                            <div class="course-text">Päron pocherade i rödvin med mascarpone</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Vinmatchning</div>
+                            <div class="course-text">Fyllig Syrah eller Sangiovese</div>
+                        </div>
+                        <div class="tip">Ankklubban kan confiteras 1–2 dagar i förväg och krispas upp i ugnen precis före servering.</div>
+                    </div>
+                    <div class="menu-footer">
+                        <span class="difficulty">⭐⭐ Mindre stress</span>
+                        <span class="prep-tag">Kan förberedas</span>
+                    </div>
+                </div>
+
+                <!-- Meny 4a: Pilgrimsmusslor -->
+                <div class="menu-card">
+                    <div class="menu-header">
+                        <div class="menu-number">4a</div>
+                        <div class="menu-title">Pilgrimsmusslor med fläsk och ärtkräm</div>
+                        <div class="menu-icon">🦐</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="course">
+                            <div class="course-label">Huvudrätt</div>
+                            <div class="course-text">Stekta pilgrimsmusslor med krispigt sidfläsk, ärtkräm och brynt smör med salvia</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Dessert</div>
+                            <div class="course-text">Tarte Tatin med äpple och vaniljglass</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Vinmatchning</div>
+                            <div class="course-text">Lättare Pinot Noir eller elegant Barbaresco</div>
+                        </div>
+                        <div class="tip">Torka musslorna ordentligt innan stekning för fin stekyta. 90 sekunder per sida.</div>
+                    </div>
+                    <div class="menu-footer">
+                        <span class="difficulty">⭐⭐⭐ Kräver precision</span>
+                        <span class="prep-tag">Ärtkräm kan förberedas</span>
+                    </div>
+                </div>
+
+                <!-- Meny 4b: Havsabborre -->
+                <div class="menu-card">
+                    <div class="menu-header">
+                        <div class="menu-number">4b</div>
+                        <div class="menu-title">Stekt havsabborre med chorizo</div>
+                        <div class="menu-icon">🐟</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="course">
+                            <div class="course-label">Huvudrätt</div>
+                            <div class="course-text">Helstekt havsabborre med stekt chorizo, körsbärstomater, oliver och rosmarin. Serveras med saffranspotatis.</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Dessert</div>
+                            <div class="course-text">Tarte Tatin med äpple och vaniljglass</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Vinmatchning</div>
+                            <div class="course-text">Medelkroppad Grenache eller Mencía</div>
+                        </div>
+                    </div>
+                    <div class="menu-footer">
+                        <span class="difficulty">⭐⭐ Snygg presentation</span>
+                        <span class="prep-tag">Delvis förberedd</span>
+                    </div>
+                </div>
+
+                <!-- Meny 5: Lamm -->
+                <div class="menu-card">
+                    <div class="menu-header">
+                        <div class="menu-number">5</div>
+                        <div class="menu-title">Lammracks med örter och gratäng</div>
+                        <div class="menu-icon">🍖</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="course">
+                            <div class="course-label">Huvudrätt</div>
+                            <div class="course-text">Örtpanerad lammracks med potatisgratäng och ratatouille</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Dessert</div>
+                            <div class="course-text">Citronpannacotta med blåbärskompott</div>
+                        </div>
+                        <div class="course">
+                            <div class="course-label">Vinmatchning</div>
+                            <div class="course-text">Eleganta Nebbiolo-viner eller kraftigare Rhône-blends</div>
+                        </div>
+                        <div class="tip">Ta ut lammracksen ur kylen 1 timme före tillagning för jämn stekyta.</div>
+                    </div>
+                    <div class="menu-footer">
+                        <span class="difficulty">⭐⭐ Klassisk match</span>
+                        <span class="prep-tag">Gratängen kan förberedas</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Rekommendationer -->
+        <section>
+            <h2>Rekommendationer</h2>
+            <div class="recommendations">
+                <div class="rec-card">
+                    <h4>Minst stress</h4>
+                    <p><span class="highlight">Anka</span> eller <span class="highlight">Lamm</span> – mycket kan förberedas i förväg</p>
+                </div>
+                <div class="rec-card">
+                    <h4>Wow-faktor</h4>
+                    <p><span class="highlight">Pilgrimsmusslor</span> – elegant och imponerande</p>
+                </div>
+                <div class="rec-card">
+                    <h4>Trygg klassiker</h4>
+                    <p><span class="highlight">Oxfilé</span> – alla älskar det, svårt att misslyckas</p>
+                </div>
+                <div class="rec-card">
+                    <h4>Oväntat val</h4>
+                    <p><span class="highlight">Havsabborre</span> – medelhavskänsla på nyår</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Gott nytt år!</p>
+        <div class="champagne">🥂</div>
+    </footer>
+</body>
+</html>
