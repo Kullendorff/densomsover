@@ -114,6 +114,12 @@
         }
 
         /* Förrätt */
+        .forratt-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
         .forratt {
             background: white;
             padding: 2.5rem;
@@ -121,6 +127,20 @@
             box-shadow: 0 2px 20px rgba(0,0,0,0.05);
             text-align: center;
             border-top: 3px solid var(--gold);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .forratt:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+        }
+
+        .forratt[data-recipe]::after {
+            content: 'Klicka för recept →';
+            display: block;
+            color: var(--gold);
+            font-size: 0.75rem;
+            margin-top: 1rem;
         }
 
         .forratt h3 {
@@ -324,6 +344,20 @@
         .menu-select:focus {
             outline: none;
             border-color: var(--gold);
+        }
+
+        .select-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .select-row .menu-select {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 0;
         }
 
         .copy-btn {
@@ -607,16 +641,28 @@
     <main>
         <!-- Förrätt -->
         <section>
-            <h2>Förrätt</h2>
-            <div class="forratt" data-recipe="forratt" style="cursor: pointer;">
-                <h3>Halloumisallad med picklad citron och varma druvor</h3>
-                <ul>
-                    <li>Fräsch sallad som bas</li>
-                    <li>Stekt halloumi</li>
-                    <li>Picklad citron</li>
-                    <li>Varma stekta röda vindruvor</li>
-                </ul>
-                <p class="description">En härlig sweet-sour-salty-kombination som sätter tonen för kvällen.</p>
+            <h2>Förrätt – Välj en</h2>
+            <div class="forratt-grid">
+                <div class="forratt" data-recipe="forratt" style="cursor: pointer;">
+                    <h3>Halloumisallad med picklad citron och varma druvor</h3>
+                    <ul>
+                        <li>Fräsch sallad som bas</li>
+                        <li>Stekt halloumi</li>
+                        <li>Picklad citron</li>
+                        <li>Varma stekta röda vindruvor</li>
+                    </ul>
+                    <p class="description">En härlig sweet-sour-salty-kombination som sätter tonen för kvällen.</p>
+                </div>
+                <div class="forratt" data-recipe="soppa" style="cursor: pointer;">
+                    <h3>Jordärtskockssoppa med knaprig bacon</h3>
+                    <ul>
+                        <li>Len, krämig soppa</li>
+                        <li>Knaperstekt bacon</li>
+                        <li>Rostade hasselnötter</li>
+                        <li>Tryffelolja</li>
+                    </ul>
+                    <p class="description">En lyxig och vintervärmande klassiker – perfekt nyårsförrätt.</p>
+                </div>
             </div>
         </section>
 
@@ -844,18 +890,23 @@
         <section>
             <h2>Inköpslista</h2>
             <div class="shopping-section">
-                <p>Välj en meny och kopiera inköpslistan till urklipp</p>
-                <select id="menuSelect" class="menu-select">
-                    <option value="">-- Välj meny --</option>
-                    <option value="1">1. Tonfisk med rödvinssås</option>
-                    <option value="2">2. Oxfilé med rödvinssås</option>
-                    <option value="3">3. Confiterad ankklubba</option>
-                    <option value="4a">4a. Pilgrimsmusslor</option>
-                    <option value="4b">4b. Havsabborre med chorizo</option>
-                    <option value="5">5. Lammracks med gratäng</option>
-                    <option value="6">6. Saltimbocca med Saffransrisotto</option>
-                </select>
-                <br>
+                <p>Välj förrätt och huvudrätt, sedan kopiera inköpslistan till urklipp</p>
+                <div class="select-row">
+                    <select id="forrattSelect" class="menu-select">
+                        <option value="halloumi">Halloumisallad</option>
+                        <option value="soppa">Jordärtskockssoppa</option>
+                    </select>
+                    <select id="menuSelect" class="menu-select">
+                        <option value="">-- Välj huvudrätt --</option>
+                        <option value="1">1. Tonfisk med rödvinssås</option>
+                        <option value="2">2. Oxfilé med rödvinssås</option>
+                        <option value="3">3. Confiterad ankklubba</option>
+                        <option value="4a">4a. Pilgrimsmusslor</option>
+                        <option value="4b">4b. Havsabborre med chorizo</option>
+                        <option value="5">5. Lammracks med gratäng</option>
+                        <option value="6">6. Saltimbocca med Saffransrisotto</option>
+                    </select>
+                </div>
                 <button id="copyBtn" class="copy-btn" disabled>
                     <span>📋</span> Kopiera inköpslista
                 </button>
@@ -879,13 +930,33 @@
 
     <script>
         const shoppingLists = {
-            base: [
-                "FÖRRÄTT",
-                "• Sallad (blandad eller ruccola)",
-                "• Halloumi (2 förp.)",
-                "• Citron (för pickling)",
-                "• Röda vindruvor (1 klase)",
-                "• Olivolja",
+            forratter: {
+                halloumi: [
+                    "FÖRRÄTT: Halloumisallad",
+                    "• Sallad (blandad eller ruccola)",
+                    "• Halloumi (2 förp.)",
+                    "• Citron (för pickling)",
+                    "• Röda vindruvor (1 klase)",
+                    "• Honung",
+                    "• Olivolja"
+                ],
+                soppa: [
+                    "FÖRRÄTT: Jordärtskockssoppa",
+                    "• Jordärtskockor (600g)",
+                    "• Potatis (2 st, ca 200g)",
+                    "• Gul lök eller schalottenlök (1-2 st)",
+                    "• Vitlök (2 klyftor)",
+                    "• Vitt vin (2 dl)",
+                    "• Vispgrädde (3 dl)",
+                    "• Kycklingbuljong (5 dl)",
+                    "• Smör (2 msk)",
+                    "• Bacon, gärna tjockskuret (200g)",
+                    "• Hasselnötter (1 dl)",
+                    "• Tryffelolja",
+                    "• Krasse eller gräslök (för garnering)"
+                ]
+            },
+            dryck: [
                 "",
                 "DRYCK",
                 "• Rödvin (2-3 flaskor)",
@@ -1054,6 +1125,7 @@
             }
         };
 
+        const forrattSelect = document.getElementById('forrattSelect');
         const menuSelect = document.getElementById('menuSelect');
         const copyBtn = document.getElementById('copyBtn');
         const toast = document.getElementById('toast');
@@ -1066,16 +1138,22 @@
 
         copyBtn.addEventListener('click', async function() {
             const menuId = menuSelect.value;
+            const forrattId = forrattSelect.value;
             if (!menuId) return;
 
             const menu = shoppingLists[menuId];
+            const forratt = shoppingLists.forratter[forrattId];
+            const forrattNamn = forrattId === 'soppa' ? 'Jordärtskockssoppa' : 'Halloumisallad';
+
             const list = [
                 `INKÖPSLISTA - Nyårsmiddag 2025`,
-                `Meny: ${menu.name}`,
+                `Förrätt: ${forrattNamn}`,
+                `Huvudrätt: ${menu.name}`,
                 `Rekommenderat vin: ${menu.wine}`,
                 `(4-5 personer)`,
                 ``,
-                ...shoppingLists.base,
+                ...forratt,
+                ...shoppingLists.dryck,
                 ...menu.items
             ].join('\n');
 
@@ -1129,6 +1207,60 @@
 
                     <div class="tip-box">
                         <strong>Timing:</strong> Gör picklad citron dagen innan. Stek halloumi och druvor precis före servering.
+                    </div>
+                `
+            },
+            soppa: {
+                title: "Jordärtskockssoppa med knaprig bacon",
+                html: `
+                    <h4>Ingredienser (4-5 portioner)</h4>
+
+                    <h5>Soppa</h5>
+                    <ul>
+                        <li>600g jordärtskockor</li>
+                        <li>2 potatisar (ca 200g)</li>
+                        <li>1 gul lök eller 2 schalottenlökar</li>
+                        <li>2 vitlöksklyftor</li>
+                        <li>2 dl vitt vin</li>
+                        <li>3 dl vispgrädde</li>
+                        <li>5 dl vatten eller kycklingbuljong</li>
+                        <li>2 msk smör</li>
+                        <li>Salt och vitpeppar</li>
+                        <li>Tryffelolja (för lyxig finish)</li>
+                    </ul>
+
+                    <h5>Topping</h5>
+                    <ul>
+                        <li>200g bacon (gärna tjockskuret)</li>
+                        <li>1 dl hasselnötter</li>
+                        <li>Extra virgin olivolja</li>
+                        <li>Färsk krasse eller gräslök</li>
+                    </ul>
+
+                    <h4>Gör så här</h4>
+                    <ol>
+                        <li><strong>Förbered grönsakerna:</strong> Skala jordärtskockor och potatis (behåll gärna lite skal på jordärtskockorna för mer smak). Skär i mindre bitar. Hacka lök och vitlök fint.</li>
+                        <li><strong>Fräs basen:</strong> Smält smöret i en stor tjockbottnad kastrull. Fräs lök och vitlök på medelvärme tills mjuka och genomskinliga, ca 5 min. Tillsätt jordärtskockor och potatis, fräs ytterligare 2 min.</li>
+                        <li><strong>Tillsätt vätska:</strong> Häll i vitt vin och låt det koka in till hälften. Tillsätt vatten/buljong. Koka upp, sänk värmen och låt småkoka under lock i 15-20 min tills grönsakerna är helt mjuka.</li>
+                        <li><strong>Mixa soppan:</strong> Mixa soppan helt slät med stavmixer. Sila genom en finmaskig sil för silkeslen konsistens (valfritt men lyxigt). Rör i grädden och värm upp. Smaka av med salt och vitpeppar.</li>
+                        <li><strong>Rosta hasselnötterna:</strong> Rosta hasselnötterna i en torr panna tills gyllene och doftande. Gnugga bort skalen i en handduk. Hacka grovt.</li>
+                        <li><strong>Stek baconet:</strong> Skär baconet i små tärningar eller strimlor. Stek på medelhög värme tills knaprigt och gyllenbrunt. Låt rinna av på hushållspapper.</li>
+                    </ol>
+
+                    <h4>Servering</h4>
+                    <ol>
+                        <li>Häll upp den varma soppan i förvärmda skålar.</li>
+                        <li>Ringla över lite tryffelolja och olivolja.</li>
+                        <li>Toppa med knaprigt bacon och rostade hasselnötter.</li>
+                        <li>Garnera med krasse eller finklippt gräslök.</li>
+                    </ol>
+
+                    <div class="tip-box">
+                        <strong>Timing:</strong> Soppan kan göras dagen innan och värmas upp. Stek bacon och rosta nötter precis före servering för maximal krispighet.
+                    </div>
+
+                    <div class="tip-box">
+                        <strong>Vinmatchning:</strong> En smörig Chardonnay med ektoner, torr Riesling, eller varför inte ett glas torrt mousserande som Champagne eller Cava?
                     </div>
                 `
             },
