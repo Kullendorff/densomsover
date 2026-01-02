@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frostspiran Final - Kristallrummet till Flykt</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --gold: #ffa500;
+            --ice-blue: #4fb4d8;
+            --frost-white: #e8f4f8;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-light: #e0e0e0;
+            --text-muted: #888;
+            --success-green: #4a9d6f;
+        }
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0d0818 30%, #0a1520 70%, #0a0a0a 100%);
+            color: var(--text-light);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 2rem 0 3rem;
+            border-bottom: 2px solid var(--ice-blue);
+            margin-bottom: 2rem;
+            background: radial-gradient(ellipse at center, rgba(79, 180, 216, 0.1) 0%, transparent 70%);
+        }
+        h1 {
+            font-size: 3rem;
+            color: var(--ice-blue);
+            text-shadow: 0 0 30px rgba(79, 180, 216, 0.5);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.1em;
+        }
+        .subtitle {
+            color: var(--mystic-purple);
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: rgba(79, 180, 216, 0.05);
+            border-radius: 8px;
+        }
+        .nav-item {
+            padding: 0.5rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--ice-blue);
+            border-radius: 20px;
+            color: var(--ice-blue);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .nav-item:hover {
+            background: var(--ice-blue);
+            color: var(--bg-dark);
+        }
+
+        /* Headings */
+        h2 {
+            color: var(--ice-blue);
+            font-size: 1.8rem;
+            padding: 1rem 0;
+            margin: 3rem 0 1.5rem 0;
+            border-bottom: 2px solid var(--ice-blue);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        h2::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 100%;
+            min-height: 2rem;
+            background: var(--ice-blue);
+            border-radius: 2px;
+        }
+        h3 {
+            color: var(--mystic-purple);
+            margin: 2rem 0 1rem 0;
+            font-size: 1.3rem;
+        }
+        h4 {
+            color: var(--gold);
+            margin: 1rem 0 0.5rem 0;
+        }
+        h5 {
+            color: var(--flame-orange);
+            margin: 0.75rem 0 0.5rem 0;
+        }
+
+        /* Boxes */
+        .box {
+            background: var(--bg-card);
+            border-left: 4px solid var(--mystic-purple);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .box.important {
+            border-left-color: var(--flame-orange);
+            background: linear-gradient(90deg, rgba(255, 107, 74, 0.15) 0%, var(--bg-card) 100%);
+        }
+        .box.choice {
+            border-left-color: var(--gold);
+            background: linear-gradient(90deg, rgba(255, 165, 0, 0.1) 0%, var(--bg-card) 100%);
+        }
+        .box.combat {
+            border-left-color: var(--deep-red);
+            background: linear-gradient(90deg, rgba(212, 83, 77, 0.15) 0%, var(--bg-card) 100%);
+        }
+        .box.mystery {
+            border-left-color: var(--ice-blue);
+            background: linear-gradient(90deg, rgba(79, 180, 216, 0.1) 0%, var(--bg-card) 100%);
+        }
+        .box.dialogue {
+            border-left-color: var(--success-green);
+            background: linear-gradient(90deg, rgba(74, 157, 111, 0.1) 0%, var(--bg-card) 100%);
+            font-style: italic;
+        }
+        .box.narrative {
+            border-left-color: var(--mystic-purple);
+            background: linear-gradient(90deg, rgba(168, 85, 168, 0.15) 0%, var(--bg-card) 100%);
+            border-radius: 12px;
+            border-left-width: 0;
+            border: 1px solid rgba(168, 85, 168, 0.3);
+            position: relative;
+        }
+        .box.narrative::before {
+            content: '📖';
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--bg-dark);
+            padding: 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        .box.ritual {
+            border-left-color: var(--gold);
+            background: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 0%, rgba(168, 85, 168, 0.1) 50%, rgba(79, 180, 216, 0.1) 100%);
+            border: 1px solid rgba(255, 165, 0, 0.3);
+            border-left-width: 4px;
+        }
+
+        /* Lists */
+        ul, ol { margin: 1rem 0 1rem 2rem; }
+        li { margin: 0.5rem 0; }
+
+        /* Links */
+        a { color: var(--ice-blue); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--gold); text-decoration: underline; }
+
+        /* Note */
+        .note {
+            background: rgba(168, 85, 168, 0.15);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            font-style: italic;
+            border: 1px solid rgba(168, 85, 168, 0.2);
+        }
+
+        /* Dividers */
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 3rem 0;
+        }
+
+        /* Buttons */
+        .back-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, var(--mystic-purple) 0%, var(--ice-blue) 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+        }
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(79, 180, 216, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 1rem;
+            border: 1px solid #333;
+            text-align: left;
+        }
+        th {
+            background: linear-gradient(90deg, rgba(79, 180, 216, 0.3) 0%, rgba(79, 180, 216, 0.1) 100%);
+            color: var(--ice-blue);
+            font-weight: bold;
+        }
+        tr:hover td {
+            background: rgba(79, 180, 216, 0.05);
+        }
+
+        /* Timeline */
+        .timeline {
+            border-left: 3px solid var(--ice-blue);
+            padding-left: 2rem;
+            margin: 1.5rem 0;
+        }
+        .timeline-item {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding: 1rem;
+            background: rgba(79, 180, 216, 0.05);
+            border-radius: 8px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 1.2rem;
+            width: 14px;
+            height: 14px;
+            background: var(--ice-blue);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--ice-blue);
+        }
+
+        /* Status box */
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .status-card {
+            background: var(--bg-card);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        .status-card h5 {
+            margin-top: 0;
+            color: var(--ice-blue);
+        }
+
+        /* Ritual steps */
+        .ritual-step {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 165, 0, 0.2);
+            position: relative;
+        }
+        .ritual-step-number {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--flame-orange) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--bg-dark);
+        }
+        .ritual-step-content {
+            flex-grow: 1;
+        }
+        .ritual-step-content h4 {
+            margin-top: 0;
+        }
+
+        /* Character badges */
+        .char-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin: 0.25rem;
+        }
+        .char-arcadius { background: rgba(255, 165, 0, 0.2); color: var(--gold); border: 1px solid var(--gold); }
+        .char-kazrik { background: rgba(139, 69, 19, 0.3); color: #cd853f; border: 1px solid #cd853f; }
+        .char-gordon { background: rgba(255, 107, 74, 0.2); color: var(--flame-orange); border: 1px solid var(--flame-orange); }
+        .char-umnatak { background: rgba(79, 180, 216, 0.2); color: var(--ice-blue); border: 1px solid var(--ice-blue); }
+        .char-thrakka { background: rgba(212, 83, 77, 0.2); color: var(--deep-red); border: 1px solid var(--deep-red); }
+        .char-zentri { background: rgba(168, 85, 168, 0.2); color: var(--mystic-purple); border: 1px solid var(--mystic-purple); }
+
+        /* Progress indicator */
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .progress-bar::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #333;
+        }
+        .progress-step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .progress-step-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--bg-card);
+            border: 2px solid var(--ice-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-size: 0.9rem;
+        }
+        .progress-step-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Glow effect for important elements */
+        .glow {
+            box-shadow: 0 0 20px rgba(79, 180, 216, 0.3);
+        }
+
+        /* Quote styling */
+        blockquote {
+            border-left: 3px solid var(--mystic-purple);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--frost-white);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<a href="arkiv/zentri-rescue/zentri_rescue.html" class="back-button">← Tillbaka till Zentri Rescue</a>
+
+<div class="header">
+    <h1>❄️ FROSTSPIRAN FINAL ❄️</h1>
+    <p class="subtitle">Från Kristallrummet till Flykt - Den Sista Akten</p>
+</div>
+
+<!-- Progress Bar -->
+<div class="progress-bar">
+    <div class="progress-step">
+        <div class="progress-step-icon">❄️</div>
+        <div class="progress-step-label">VinterGlöd</div>
+    </div>
+    <div class="progress-step">
+        <div class="progress-step-icon">💎</div>
+        <div class="progress-step-label">Kristallen</div>
+    </div>
+    <div class="progress-step">
+        <div class="progress-step-icon">🐦</div>
+        <div class="progress-step-label">Gråtonen</div>
+    </div>
+    <div class="progress-step">
+        <div class="progress-step-icon">🔗</div>
+        <div class="progress-step-label">Återförening</div>
+    </div>
+    <div class="progress-step">
+        <div class="progress-step-icon">⚡</div>
+        <div class="progress-step-label">Raseriet</div>
+    </div>
+    <div class="progress-step">
+        <div class="progress-step-icon">💍</div>
+        <div class="progress-step-label">Ritualen</div>
+    </div>
+    <div class="progress-step">
+        <div class="progress-step-icon">✨</div>
+        <div class="progress-step-label">Frihet</div>
+    </div>
+    <div class="progress-step">
+        <div class="progress-step-icon">🏃</div>
+        <div class="progress-step-label">Flykt</div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="nav-bar">
+    <a href="#scen1" class="nav-item">❄️ VinterGlöd</a>
+    <a href="#scen2" class="nav-item">💎 Kristallen</a>
+    <a href="#scen3" class="nav-item">🐦 Gråtonen</a>
+    <a href="#scen4" class="nav-item">🔗 Återförening</a>
+    <a href="#scen5" class="nav-item">⚡ Raseriet</a>
+    <a href="#scen6" class="nav-item">💍 Ritualen</a>
+    <a href="#scen7" class="nav-item">✨ Frihet</a>
+    <a href="#scen8" class="nav-item">🏃 Flykt</a>
+</nav>
+
+<div class="box important">
+    <h4>📍 STARTLÄGE</h4>
+    <p><strong>Plats:</strong> Kristallrummet, högst upp i Frostspiran</p>
+    <div class="status-grid">
+        <div class="status-card">
+            <h5>Zentris Kropp</h5>
+            <p>I sarkofagen (nedre tornet)</p>
+        </div>
+        <div class="status-card">
+            <h5>Zentris Själ</h5>
+            <p>I kristallpelaren (här)</p>
+        </div>
+        <div class="status-card">
+            <h5>VinterGlöd</h5>
+            <p>Passerad utan strid</p>
+        </div>
+        <div class="status-card">
+            <h5>Yelgotha</h5>
+            <p>⚠️ INTE nämnd ännu</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================== -->
+<h2 id="scen1">❄️ SCEN 1: VinterGlöd Anländer</h2>
+<!-- ================================================== -->
+
+<div class="box narrative">
+    <h4>Beskrivning för spelarna</h4>
+    <p><em>Ni står runt kristallpelaren. Zentris själ glöder inuti - ibland ett ansikte, ibland bara ljus. Pelaren pulserar svagt, som ett hjärta.</em></p>
+    <p><em>Kylan kommer först. Sedan skuggan.</em></p>
+    <p><em>VinterGlöd står i dörröppningen. Han rörde sig inte - han var bara plötsligt där.</em></p>
+</div>
+
+<div class="box dialogue">
+    <h4>VinterGlöds Öppning</h4>
+    <p><em>(Lång paus. Han ser på kristallen. Sedan på dem.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Ni hittade honom."</p>
+    <p><em>(Paus. 3 sekunder.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Slå inte."</p>
+    <p><em>(Går långsamt närmare. Stannar 3 meter bort.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Kristallen är... känslig. Våld skadar det den håller."</p>
+    <p><em>(Ser på Zentris själ inuti pelaren.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Sjung istället. En ton. Ren. Ihållande. Kristallen svarar på... resonans."</p>
+    <p><em>(Paus.)</em></p>
+    <p><strong>VinterGlöd:</strong> "När den spricker... Gråtonen kommer. Hon vet vad hon ska göra."</p>
+</div>
+
+<h3>Dialog-alternativ</h3>
+
+<table>
+    <tr>
+        <th>Om de frågar...</th>
+        <th>VinterGlöd svarar...</th>
+    </tr>
+    <tr>
+        <td>"Varför hjälper du oss?"</td>
+        <td>"Eden säger bevara. Inte... fängsla. Återförening är... bevarande."</td>
+    </tr>
+    <tr>
+        <td>"Vad händer sedan?"</td>
+        <td>"Ringen återvänder. Demonen... känner det. Ni har... inte lång tid."</td>
+    </tr>
+    <tr>
+        <td>"Hur lång tid har vi?"</td>
+        <td>"Minuter. Kanske tio. Urkhath... rasar fort."</td>
+    </tr>
+    <tr>
+        <td>"Följer du med ut?"</td>
+        <td><em>(lång paus)</em> "Jag vet inte. Eden har bundit mig här i... tre tusen år."</td>
+    </tr>
+</table>
+
+<div class="box important">
+    <h4>⚠️ OM DE NÄMNER YELGOTHA</h4>
+    <p><em>(VinterGlöd FRYSER - bokstavligt)</em></p>
+    <p><strong>VinterGlöd:</strong> "...Yelgotha? Han... lever?"</p>
+    <p><em>(händerna darrar - frost sprider sig på golvet)</em></p>
+    <p><strong>VinterGlöd:</strong> "Jag trodde... han hatade mig. Att han glömt."</p>
+    <p class="note">Om de berättar att Yelgotha väntade: "Då ska jag göra mig förtjänt av det. Jag hjälper er. Med ALLT."</p>
+</div>
+
+<!-- ================================================== -->
+<h2 id="scen2">💎 SCEN 2: Kristallkrossningen</h2>
+<!-- ================================================== -->
+
+<div class="box choice">
+    <h4>Vem sjunger?</h4>
+    <p>
+        <span class="char-badge char-gordon">Gordon - Militär marsch</span>
+        <span class="char-badge char-kazrik">Kazrik - Dvärgisk hymn</span>
+        <span class="char-badge char-thrakka">Thrakka - Tirakisk dödssång</span>
+        <span class="char-badge char-umnatak">Ulzak - Shamanisk mässning</span>
+    </p>
+</div>
+
+<div class="box narrative">
+    <h4>Sekvensen</h4>
+    <p><em>Tonen börjar. Enkel. Ihållande.</em></p>
+    <p><em>Först - ingenting.</em></p>
+    <p><em>Sedan - kristallen SVARAR. En vibration djupt inuti.</em></p>
+    <p><em>Sprickor. Tunna som hårstrån. De sprider sig uppåt.</em></p>
+    <p><em>Zentris själ RÖR SIG inuti. Ögon som öppnas.</em></p>
+    <p><em>Ljuset intensifieras - blått, kallt, VACKERT.</em></p>
+    <p style="font-size: 1.5rem; text-align: center; color: var(--ice-blue);"><strong>KRASSSSCH.</strong></p>
+    <p><em>Kristallen BRISTER. Inte med våld. Med en suck.</em></p>
+</div>
+
+<!-- ================================================== -->
+<h2 id="scen3">🐦 SCEN 3: Gråtonen</h2>
+<!-- ================================================== -->
+
+<div class="box narrative">
+    <p><em>Vingslag. Inte vanliga vingar - ljudet är fel. Djupare.</em></p>
+    <p><em>Gråtonen landar på kristallpellarens rester.</em></p>
+    <p><em>Hon tittar på Zentri. Zentri tittar på henne.</em></p>
+    <p><em>Gråtonen kvittrar. Mer som klockor. Eller vind genom isiga grenar.</em></p>
+    <p><em>Gråtonen flyger upp - landar på hans axel. Själ och fågel blir sammanflätade.</em></p>
+    <p><strong>Zentris själ</strong> (svagt): <em>"...jag kommer tillbaka..."</em></p>
+    <p><em>De SJUNKER. Genom golvet. Som om stenen vore vatten. Borta.</em></p>
+</div>
+
+<div class="box dialogue">
+    <p><strong>VinterGlöd:</strong> "Hon tar honom till kroppen. Ni borde gå ner. Vara där när han vaknar."</p>
+</div>
+
+<!-- ================================================== -->
+<h2 id="scen4">🔗 SCEN 4: Återföreningen</h2>
+<!-- ================================================== -->
+
+<p class="note"><strong>Plats:</strong> Sarkofagrummet (nedre tornet)</p>
+
+<div class="box narrative">
+    <p><em>Gråtonen svävar över sarkofagen. Zentris själ börjar SJUNKA.</em></p>
+    <p><em>Ljuset FLÖDAR in i den tomma kroppen.</em></p>
+    <p><em>De vita ögonen FYLLS med färg.</em></p>
+    <p><em>Zentri GAPAR efter luft - första andetaget på månader.</em></p>
+    <p><em>Isen SPRICKER - han faller framåt.</em></p>
+    <p style="font-size: 1.2rem; color: var(--deep-red);"><strong>RINGEN MANIFESTERAR på hans finger - svart metall, glöder rött.</strong></p>
+</div>
+
+<div class="box dialogue">
+    <p><strong>Zentri</strong> (rosslig): "...vad... var är jag..."</p>
+    <p><em>(Ser ringen. PANIK.)</em></p>
+    <p><strong>Zentri:</strong> "NEJ! Ringen - jag kan känna honom - URKHATH -"</p>
+    <p><em>(Ringen BRÄNNER - Zentri skriker.)</em></p>
+</div>
+
+<!-- ================================================== -->
+<h2 id="scen5">⚡ SCEN 5: Urkhaths Raseri</h2>
+<!-- ================================================== -->
+
+<div class="box combat glow">
+    <h4>⚠️ OMEDELBAR REAKTION</h4>
+    <ul>
+        <li><strong>Ringen blir BRÄNNHET</strong> - Zentri skriker</li>
+        <li><strong>Röst ekar genom tornet</strong> - djup, vriden, RASANDE</li>
+        <li><strong>Tornets väggar SKAKAR</strong></li>
+    </ul>
+</div>
+
+<div class="box narrative">
+    <p><em>Rösten kommer från överallt. Från väggarna. Från ringen.</em></p>
+    <blockquote>
+        <strong>URKHATH:</strong> "MITT... ANKARE..."<br>
+        <strong>URKHATH:</strong> "NI... VÅGAR..."<br>
+        <strong>URKHATH:</strong> "VINTERGLÖD... SVIKER... IGEN..."
+    </blockquote>
+</div>
+
+<div class="box important">
+    <h4>⏱️ TIDSPRESSEN</h4>
+    <p><strong>~10 minuter innan tornet kollapsar. De MÅSTE agera med ringen NU.</strong></p>
+</div>
+
+<!-- ================================================== -->
+<h2 id="scen6">💍 SCEN 6: Den Stora Ritualen</h2>
+<!-- ================================================== -->
+
+<div class="box ritual glow">
+    <h4>⭐ RELIGIÖS RITUAL + UMNATAKS OFFER</h4>
+    <p><strong>Den episka lösningen där ALLA DELTAR. Varje spelare har en kritisk roll.</strong></p>
+    <p>
+        <span class="char-badge char-arcadius">Arcadius - Ritualmästare</span>
+        <span class="char-badge char-kazrik">Kazrik - Runväktare</span>
+        <span class="char-badge char-gordon">Gordon - Koordinator</span>
+        <span class="char-badge char-umnatak">Umnatak - Offret</span>
+        <span class="char-badge char-thrakka">Thrakka - Väktare</span>
+        <span class="char-badge char-zentri">Zentri - Centrum</span>
+    </p>
+</div>
+
+<h3>Fas 1: Förberedelser (3-5 minuter)</h3>
+
+<div class="ritual-step">
+    <div class="ritual-step-number">1</div>
+    <div class="ritual-step-content">
+        <h4><span class="char-badge char-arcadius">Arcadius</span> Ritar Cirkeln</h4>
+        <p>Med knivens spets (eller kol/blod) ritar Arcadius en ritual-cirkel på golvet:</p>
+        <ul>
+            <li>Daak-lärans symboler för själs-skydd</li>
+            <li>Coloniska mönster (kopierar runorna på väggarna)</li>
+            <li>Zentri måste stå i MITTEN</li>
+        </ul>
+        <p class="note"><strong>Arcadius offer (skuld borta):</strong> Kan utföra ritualen utan att tveka på konsekvenserna - ingen skuld stoppar honom.</p>
+    </div>
+</div>
+
+<div class="ritual-step">
+    <div class="ritual-step-number">2</div>
+    <div class="ritual-step-content">
+        <h4><span class="char-badge char-kazrik">Kazrik</span> Placerar Runstenar</h4>
+        <p>Åtta runstenar (eller improviserade stenar) vid kompassriktningarna:</p>
+        <ul>
+            <li>Millimeterprecision krävs - dvärgisk specialitet</li>
+            <li>Varje sten måste aktiveras i rätt sekvens</li>
+            <li>Stenarna stabiliserar själs-skärningen</li>
+        </ul>
+        <p class="note"><strong>Kazriks offer (ambition borta):</strong> Total fokus på precision - ingen tanke på belöning eller ära.</p>
+    </div>
+</div>
+
+<div class="ritual-step">
+    <div class="ritual-step-number">3</div>
+    <div class="ritual-step-content">
+        <h4><span class="char-badge char-gordon">Gordon</span> Koordinerar</h4>
+        <p>Håller koll på TIMING och ger order:</p>
+        <ul>
+            <li>"Kazrik - nu!" / "Arcadius - fortsätt!"</li>
+            <li>Håller gruppen fokuserad under kaos</li>
+            <li>Räknar ner tiden innan tornet kollapsar</li>
+        </ul>
+        <p class="note"><strong>Gordons offer (generositet borta):</strong> Kan ge hårda order utan att tveka - ingen mjukhet.</p>
+    </div>
+</div>
+
+<div class="ritual-step">
+    <div class="ritual-step-number">4</div>
+    <div class="ritual-step-content">
+        <h4><span class="char-badge char-umnatak">Umnatak</span> Förbereder Sig</h4>
+        <p>Från kniven, Umnataks röst:</p>
+        <blockquote>"Jag gör detta. För Zentri. För er alla. När jag skär bandet... måste jag TA ÖVER det. Bli det nya ankaret."</blockquote>
+        <ul>
+            <li>Han vet att detta är permanent</li>
+            <li>Han offrar sig frivilligt</li>
+        </ul>
+    </div>
+</div>
+
+<div class="ritual-step">
+    <div class="ritual-step-number">5</div>
+    <div class="ritual-step-content">
+        <h4><span class="char-badge char-thrakka">Thrakka</span> Håller Kniven</h4>
+        <p>Förbereder sig mentalt:</p>
+        <ul>
+            <li>Efter detta bär hon kniven för alltid</li>
+            <li>Allt hon lever för (hindra demoner) blir nu bokstavligt</li>
+            <li>Lyssnar på Umnataks instruktioner</li>
+        </ul>
+        <p class="note"><strong>Thrakkas offer (minnen borta):</strong> Ingen rädsla från förr - bara total fokus.</p>
+    </div>
+</div>
+
+<div class="ritual-step">
+    <div class="ritual-step-number">6</div>
+    <div class="ritual-step-content">
+        <h4><span class="char-badge char-zentri">Zentri</span> I Centrum</h4>
+        <p>Står i cirkelns mitt:</p>
+        <ul>
+            <li>Ringen glöder röd-het på hans finger</li>
+            <li>Han måste VILJA bli fri (hans vilja stärker ritualen)</li>
+            <li>Smärta men beslutsamhet</li>
+        </ul>
+    </div>
+</div>
+
+<hr>
+
+<h3>Fas 2: Ritualen Genomförs</h3>
+
+<div class="box narrative">
+    <h4>Steg 1: Arcadius Öppnar</h4>
+    <p><strong>Arcadius:</strong> <em>"I Daaks namn - jag öppnar vägen för själen."</em></p>
+    <p><em>Läser formelböner på fornspråk. Rösten resonerar i rummet.</em></p>
+    <p><em>Runorna på golvet börjar LYSA blå-vitt.</em></p>
+    <p><em>Hålet i Arcadius bröst REAGERAR - känner andlig energi.</em></p>
+</div>
+
+<div class="box narrative">
+    <h4>Steg 2: Gordon Koordinerar</h4>
+    <p><strong>Gordon:</strong> <em>"Kazrik - aktivera stenarna. NU."</em></p>
+    <p><em>Kazriks runstenar börjar lysa i sekvens - en i taget, medurs.</em></p>
+    <p><em>Energi FLÖDAR mellan stenarna - oktagon av ljus.</em></p>
+    <p><em>Ringen på Zentris finger SKRIKER - vill fly men hålls kvar.</em></p>
+    <p><strong>Gordon:</strong> <em>"Thrakka - gör dig redo. Arcadius - fortsätt."</em></p>
+</div>
+
+<div class="box combat glow">
+    <h4>⚔️ Steg 3: DET KRITISKA ÖGONBLICKET</h4>
+    <p><strong>Umnatak</strong> (genom Thrakka): <em>"Nu. Skär... och ta över."</em></p>
+    <p><strong>Arcadius</strong> (böner når klimax): <em>"Vägled själen genom skärningen!"</em></p>
+    <p><em>Thrakka höjer kniven. Bladet VIBRERAR.</em></p>
+    <p><em>Hon skär - bladet går genom INGET SYNLIGT men alla KÄNNER det.</em></p>
+    <p style="font-size: 1.3rem; text-align: center; color: var(--gold);"><strong>BANDET KLIPPS.</strong></p>
+</div>
+
+<div class="box narrative">
+    <h4>Steg 4: Själsbytet</h4>
+    <p><em>Thrakka/Ulzak SKJUTS UT ur kniven - in i kroppen permanent.</em></p>
+    <p><em>Umnatak DRAS IN - ersätter dem i kniven.</em></p>
+    <p><em>Thrakka SKRIKER - kroppen är HENNES nu.</em></p>
+    <p><strong>Umnataks röst</strong> (svag, från kniven): <em>"Ta hand om den... väktare..."</em></p>
+    <p><em>Kniven SPRICKER VÅLDSAMT - rök strömmar ut.</em></p>
+</div>
+
+<div class="box narrative">
+    <h4>Steg 5: Ringen Binds</h4>
+    <p><em>Ringen LOSSNAR från Zentris finger - faller mot golvet.</em></p>
+    <p><em>Men: Den DRAS mot kniven där Umnatak nu finns.</em></p>
+    <p><em>Ringen BINDER sig till kniven - Umnataks själ är det nya ankaret.</em></p>
+    <p><em>Ringen vilar mot bladet - glöder rött genom sprickan.</em></p>
+</div>
+
+<div class="box narrative">
+    <h4>Steg 6: Avslutning</h4>
+    <p><strong>Gordon:</strong> <em>"Kazrik - håll stenarna! Arcadius - avsluta!"</em></p>
+    <p><strong>Arcadius:</strong> <em>"Själen är vägledd. Offret är mottaget. Daak bevittnar."</em></p>
+    <p><em>Runorna på golvet EXPLODERAR i ljus - sedan mörker.</em></p>
+    <p><em>Zentri faller ihop - FRI, utmattad men hel.</em></p>
+    <p><em>Thrakka/Ulzak står med kniven - permanent i kroppen nu.</em></p>
+    <p><em>Kazriks runstenar SPRÄNGS - bara bitar kvar.</em></p>
+</div>
+
+<hr>
+
+<h3>Resultat</h3>
+
+<div class="status-grid">
+    <div class="status-card">
+        <h5 style="color: var(--success-green);">✓ Zentri</h5>
+        <p>FRI från ringen. Utmattad men hel.</p>
+    </div>
+    <div class="status-card">
+        <h5 style="color: var(--ice-blue);">⚓ Umnatak</h5>
+        <p>Permanent i kniven. Bär nu Urkhaths ankar. Kan kommunicera med Thrakka.</p>
+    </div>
+    <div class="status-card">
+        <h5 style="color: var(--deep-red);">⚔️ Thrakka/Ulzak</h5>
+        <p>Permanent i kroppen. Väktare av kniven. <strong>Christofer spelar henne framöver.</strong></p>
+    </div>
+    <div class="status-card">
+        <h5 style="color: var(--gold);">🗡️ Kniven</h5>
+        <p>Sprucken, röker. Innehåller Umnatak + ringen. Fortfarande fungerande.</p>
+    </div>
+</div>
+
+<!-- ================================================== -->
+<h2 id="scen7">✨ SCEN 7: VinterGlöds Frihet</h2>
+<!-- ================================================== -->
+
+<div class="box narrative">
+    <h4>Eden Brister</h4>
+    <p><em>(VinterGlöd RYCKER till. Första gången han rört sig snabbt.)</em></p>
+    <p><em>(Händerna mot bröstet - något BRAST där.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Eden... den brast. Jag är... fri?"</p>
+    <p><em>(Viskar. Tror det inte.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Tre tusen år... och det var så enkelt?"</p>
+    <p><em>(Första äkta leendet - vackert och sorgset.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Tack... för allt."</p>
+</div>
+
+<div class="box combat">
+    <p><em>Tornet SKAKAR våldsamt.</em></p>
+    <p><strong>VinterGlöd:</strong> (rösten åter fast) <em>"Fly. NU. Jag håller tornet."</em></p>
+    <p><strong>VinterGlöd:</strong> <em>"FLY! Jag betalar inte friheten med era liv!"</em></p>
+</div>
+
+<!-- ================================================== -->
+<h2 id="scen8">🏃 SCEN 8: Flykten</h2>
+<!-- ================================================== -->
+
+<div class="timeline">
+    <div class="timeline-item">
+        <strong>Spiraltrappan</strong> - Stenblock faller, väggar spricker, gruppen springer
+    </div>
+    <div class="timeline-item">
+        <strong>VinterGlöds hov</strong> - De frusna rör sig kaotiskt men attackerar inte
+    </div>
+    <div class="timeline-item">
+        <strong>Coloniska korridoren</strong> - Runorna flimrar, instabilt
+    </div>
+    <div class="timeline-item">
+        <strong>Det blå ljuset</strong> - Portalen PULSERAR, på väg att kollapsa
+    </div>
+    <div class="timeline-item">
+        <strong>HOPPA GENOM!</strong>
+    </div>
+</div>
+
+<div class="box narrative">
+    <h4>Tillbaka</h4>
+    <p><em>Blått ljus bländar. Tornets VRÅL bakom er.</em></p>
+    <p><em>Sedan - TYSTNAD.</em></p>
+    <p><em>Ni ligger på marken. Kall jord. Verklig jord.</em></p>
+    <p><em>Mitheras skog. Snö. Storm - men verklig storm.</em></p>
+    <p><em>Zentri ligger bredvid er. Andas. Lever. Fri.</em></p>
+</div>
+
+<div class="box mystery">
+    <h4>VinterGlöd? (Om han överlevde)</h4>
+    <p><em>Han dyker upp ~30 sekunder senare. Frost sprider sig omkring honom.</em></p>
+    <p><strong>VinterGlöd:</strong> "Tornet är borta. Tre tusen år... borta."</p>
+    <p><em>(Ser upp mot himlen - första gången på årtusenden.)</em></p>
+    <p><strong>VinterGlöd:</strong> "Det är... vackert."</p>
+</div>
+
+<hr>
+
+<h2>📝 AVSLUTNING</h2>
+
+<div class="box important">
+    <h4>Checklista</h4>
+    <ul>
+        <li>☐ Zentri räddad och fri</li>
+        <li>☐ Umnatak i kniven (permanent)</li>
+        <li>☐ Thrakka/Ulzak permanent i kroppen</li>
+        <li>☐ Ringen bunden till kniven</li>
+        <li>☐ VinterGlöd fri (allierad?)</li>
+        <li>☐ Gruppen tillbaka i Mithera</li>
+    </ul>
+</div>
+
+<div class="box mystery">
+    <h4>Framtida Hooks</h4>
+    <ul>
+        <li><strong>Thrakka som väktare</strong> - Bär kniven permanent, ny spelarkaraktär för Christofer</li>
+        <li><strong>Umnatak från kniven</strong> - Kan kommunicera, guide och vän</li>
+        <li><strong>Ringen måste förstöras</strong> - Framtida quest (Sanari? Dvärgmagi?)</li>
+        <li><strong>VinterGlöd</strong> - Allierad med kunskap om Kuberon/Skugglandet</li>
+        <li><strong>Kontakta VinterGlöd</strong> - "Tala mitt namn i frost. Jag hör."</li>
+    </ul>
+</div>
+
+<hr>
+
+<table>
+    <tr>
+        <th>Scen</th>
+        <th>Estimerad tid</th>
+    </tr>
+    <tr><td>1. VinterGlöd anländer</td><td>15-20 min</td></tr>
+    <tr><td>2. Kristallkrossningen</td><td>10-15 min</td></tr>
+    <tr><td>3. Gråtonen</td><td>5-10 min</td></tr>
+    <tr><td>4. Återföreningen</td><td>10-15 min</td></tr>
+    <tr><td>5. Urkhaths raseri</td><td>5-10 min</td></tr>
+    <tr><td>6. Ritualen</td><td>30-45 min</td></tr>
+    <tr><td>7. VinterGlöds frihet</td><td>5-10 min</td></tr>
+    <tr><td>8. Flykten</td><td>10-15 min</td></tr>
+    <tr><th>TOTALT</th><th>~2-2.5 timmar</th></tr>
+</table>
+
+<hr>
+
+<p style="text-align: center; color: var(--text-muted); font-style: italic; font-size: 1.1rem;">
+    ❄️ <strong>Lycka till med den sista akten!</strong> ❄️
+</p>
+
+<a href="arkiv/zentri-rescue/zentri_rescue.html" class="back-button">← Tillbaka till Zentri Rescue</a>
+
+</body>
+</html>
