@@ -2488,6 +2488,216 @@ Som lampor i vinden.
 
 ---
 
+### [NY SESSION] In i Frostspiran
+
+#### Genom Portalen
+
+Gruppen tog beslutet.
+
+Gick in i det blå ljuset.
+
+**Arcadius** - tom, mekanisk. Följde med som en marionett utan trådar. Trådbrottet hade lämnat honom som ett skal.
+
+Kroppen rörde sig.
+
+Men *vem* rörde den?
+
+#### Väktarna
+
+Strax efter ankomsten - **två iskristallkonstrukter**.
+
+Väktare av is och magi.
+
+Striden kort. Brutal. Effektiv.
+
+Gruppen avspisade dem snabbt. Isen sprack. Kristallerna föll.
+
+#### Sarkofagen
+
+I tornets nedre del: en **sarkofag**.
+
+Gordon öppnade den.
+
+Inuti: **Zentris kropp**.
+
+Livlös.
+
+Bevarad.
+
+Inte död.
+
+Inte levande.
+
+**VinterGlöd hade separerat kropp från själ.**
+
+Thrakka rörde vid Zentris ansikte.
+
+Kallt som marmor. Men mjukt. Som sovande.
+
+Kazrik:
+> "Han är här. Men han är inte här."
+
+#### Spiraltrappan
+
+En spiraltrappa slingrade sig uppåt genom Frostspiran.
+
+Gruppen började klättringen.
+
+Rund och rund.
+
+Uppåt genom det förvrängda tornets hjärta.
+
+#### Gråtonen
+
+På vägen såg de **Gråtonen** - en fågel.
+
+Inte vanlig.
+
+*Själsfärjan.*
+
+Hon kan bära själar mellan platser.
+
+Mötet kort.
+
+Ögonkontakt med Gordon.
+
+Sen försvann hon.
+
+#### VinterGlöds Hov
+
+Högre upp: en stor sal.
+
+**Lord VinterGlöd** väntade.
+
+Med sitt **hov**.
+
+Ett helt hov av skuggvarelser. Frusna väsen. Själar samlade under årtusenden.
+
+**När spelarna kom upp - VinterGlöd frös ner sitt eget hov.**
+
+Bokstavligt.
+
+Bildligt.
+
+Is spred sig över dem. Tysta. Stilla. Frusna i tid och rum.
+
+Han ville prata privat.
+
+#### Samtalet
+
+VinterGlöd talade med gruppen:
+
+**"Zentri är separerad."**
+
+Kropp i sarkofagen. Själ i kristallpelaren högst upp.
+
+**"Jag är bunden av ed att bevara honom."**
+
+En ed gjord för länge sedan.
+
+Till *någon*.
+
+**"Jag vill bli fri."**
+
+Trött.
+
+Resignerad.
+
+Kanske... hoppfull?
+
+**VIKTIGT:** Gruppen nämnde INTE Yelgotha. De visste inte att han var VinterGlöds forne herre.
+
+VinterGlöd lät dem passera.
+
+Ingen strid.
+
+Bara tystnad.
+
+Och is.
+
+Och årtusenden av ensamhet.
+
+#### Kristallrummet
+
+Högst upp i Frostspiran: **Kristallrummet**.
+
+**Kristallpelaren.**
+
+Och inuti - **Zentris själ**.
+
+Synlig.
+
+Fångad.
+
+Väntande.
+
+Ljuset från hans själ lyste genom kristallen som en stjärna i is.
+
+### Gruppens Status Vid Sessionens Slut
+
+**Plats:** Kristallrummet, högst upp i Frostspiran
+
+**Gordon Nahrzezia:**
+- Leder fortfarande
+- Förstår vad som måste göras
+- Såg Gråtonen - vet att hon kan bära själen
+
+**Thrakka "Järnhanden":**
+- **Fortfarande spräckt skalle** från titanstriden
+- Kan gå men skadan finns kvar
+- Bär Umnataks meteoritjärnskniv vid bältet
+
+**Umnatak (i kniven):**
+- Fängslad i meteoritjärnskniven
+- Kan tala när någon rör kniven
+- Ser allt genom andeplanen
+
+**Ulzak (i Umnataks kropp):**
+- I Umnataks kropp
+- Lite återhämtad efter trådbrottet
+- Väntar på vad som ska hända
+
+**Kazrik klan Ghor:**
+- Oskadad
+- Dokumenterar allt
+- Redo att hjälpa till
+
+**Arcadius (Corvus kropp):**
+- Självgående men tom
+- Trådbrottet har lämnat honom som ett skal
+- Rör sig mekaniskt, utan mål, utan drift
+
+**Zentri Bredarsson:**
+- **Kropp:** I sarkofagen (nedre tornet)
+- **Själ:** I kristallpelaren (kristallrummet)
+- Separerad men levande på sätt och vis
+
+**Viktiga NPCs:**
+- **Lord VinterGlöd:** Passerad utan strid, vet INTE att Yelgotha sände dem, hovet fruset
+- **Gråtonen:** Sedd på vägen upp, kan bära själar mellan kropp och kristall
+
+### Vad Händer Nu?
+
+**Planen:**
+1. Krossa kristallen → befria Zentris själ
+2. Gråtonen bär själen till kroppen (sarkofagen)
+3. Återförena Zentri
+
+**KONSEKVENSER:**
+- **Urkhaths ring** återvänder till Zentri vid återföreningen
+- **Urkhath** känner det omedelbart när ringen flyttas
+- **VinterGlöds ed** brister - han blir fri från sin plikt
+
+**Frågor:**
+- Vad händer med VinterGlöd när eden bryts?
+- Hur reagerar Urkhath när ringen flyttas?
+- Klarar Zentri återföreningen efter månaders separation?
+- Vad händer med Arcadius själ när Corvus kropp lämnar Skugglandet?
+
+**Status: Session slutade här vid kristallpelaren**
+
+---
+
 ## Appendix A: Viktiga NPCs efter Status
 
 ### Aktiva Spelarkaraktärer

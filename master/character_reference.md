@@ -9,7 +9,7 @@
 | Namn | Alias | Kön | Pronomen | Ras | Roll/Yrke | Spelare | Status |
 |------|-------|-----|----------|-----|-----------|---------|--------|
 | **Gordon Nahrzezia** | - | M | han/honom/hans | Cirefalier (människa) | Legosoldat, ledare | Calle | Aktiv |
-| **Thrakka "Järnhanden"** | - | **K** | **hon/henne/hennes** | **Tirak** | f.d. Gladiator/Livvakt | Andreas | Aktiv, besatt av Ulzak |
+| **Thrakka "Järnhanden"** | - | **K** | **hon/henne/hennes** | **Tirak** | f.d. Gladiator/Livvakt | Andreas | Aktiv, bär Umnataks kniv |
 | **Umnatak** | - | M | han/honom/hans | Auser | Spejare/Schaman | Christofer | Fängslad i colonisk kniv |
 | **Kazrik klan Ghor** | "Den resande" | M | han/honom/hans | Dvärg | Författare | Jonas | Aktiv |
 | **Corvus Askhar** | **Arcadius** | M | han/honom/hans | Människa | f.d. Kommendör, **TEMPELRIDDARE** | Daniel | Aktiv |
@@ -25,12 +25,12 @@
 |-----------|------------------------|----------|
 | **Corvus Askhar** | Arcadius | SAMMA PERSON - Corvus är riktiga namnet, Arcadius är alias/täcknamn |
 | **Prins Yelgotha** | Älvakungen, Själabäraren | SAMMA PERSON - "Älvakungen" är coloniskt namn för "Själabärare" |
-| **Thrakka** | Ulzak (från Kapitel 10) | Thrakka besatt av Ulzak-demonen, kroppen styrs av Ulzak nu |
+| **Umnatak** | Ulzak (från Kapitel 10) | Ulzak-tirakshaman är nu i Umnataks kropp, Umnatak själv fängslad i kniven |
 
 **När du skriver:**
 - Corvus/Arcadius: Fråga användaren vilket namn som passar i kontexten
 - Yelgotha: Använd "Prins Yelgotha" eller förtydliga "Yelgotha (Älvakungen)"
-- Thrakka efter Kapitel 10: "Thrakka/Ulzak" eller "Ulzak (i Thrakkas kropp)"
+- Umnatak efter Kapitel 10: "Ulzak (i Umnataks kropp)" - Umnatak själv finns i kniven
 
 ---
 
@@ -39,7 +39,8 @@
 ### Thrakka
 - **KÖN:** KVINNA (hon/henne/hennes)
 - **SKADA FRÅN TITANEN:** Spräckt skalle (ALDRIG "brutna revben"!)
-- **STATUS:** Besatt av Ulzak-demon från Kapitel 10
+- **STATUS:** Aktiv, bär Umnataks meteoritjärnskniv vid bältet
+- **RELATION TILL KNIVEN:** Umnatak fängslad i kniven, Ulzak i Umnataks kropp
 - **OFFER TILL YELGOTHA:** Traumatiska minnen (gladiatoråren, slaveriet)
 
 ### Corvus/Arcadius
@@ -109,7 +110,7 @@ ens ledare, taktisk koordinator
 | Lady Soffia | K | hon/henne | Vitterdals hov |
 | Laila bint-Asad | K | hon/henne | Slavhandlare, Jen |
 | Urkhath | M | han/honom | Demon, huvudantagonist |
-| Ulzak | Demon | han/honom | Demon som besatt Thrakka |
+| Ulzak | M | han/honom | Tirakshaman, nu i Umnataks kropp |
 
 **LÄGG TILL NPCs HÄR NÄR DE INTRODUCERAS!**
 
