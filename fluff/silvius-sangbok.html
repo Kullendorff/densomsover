@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvius Strängrörares Sista Sångbok - Gravens Arv</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --gold: #ffa500;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-light: #e0e0e0;
+            --text-muted: #888;
+            --border: #333;
+        }
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0d0818 50%, #0a0a0a 100%);
+            color: var(--text-light);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--deep-red);
+            padding: 1rem 2rem;
+            margin: -2rem -2rem 2rem -2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-title { font-size: 1.5rem; color: var(--deep-red); }
+        .back-btn {
+            background: var(--deep-red);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        .back-btn:hover { background: var(--flame-orange); }
+        h1 {
+            font-size: 2.5rem;
+            color: var(--deep-red);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        .intro {
+            background: var(--bg-card);
+            border-left: 4px solid var(--deep-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .poem-title {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        .poem {
+            background: rgba(212, 83, 77, 0.1);
+            border-left: 4px solid var(--deep-red);
+            padding: 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            line-height: 2;
+        }
+        .poem-line {
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+        .stanza {
+            margin-bottom: 1.5rem;
+        }
+        .epilogue {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+        .warning {
+            background: rgba(212, 83, 77, 0.2);
+            border: 2px solid var(--deep-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+            font-weight: bold;
+            color: var(--deep-red);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">Gravens Arv - Fluff & Berättelser</div>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Tillbaka till Fluff</button>
+    </nav>
+
+    <h1>Silvius Strängrörares Sista Sångbok</h1>
+    <p class="subtitle">Funnen vid hans lägerplats i västra Mithera</p>
+
+    <div class="intro">
+        Silvius Strängr örare var en kringvandrande bard från Cermira, känd för sin förmåga att sjunga berättelser som gjorde människor både till gråt och skratt. Hans sista sångbok hittades vid hans lägerplats i västra Mithera, skriven med darrande hand. Texten beskriver ett möte med Vitfläck, den legendariska snökatten som sägs vandra mellan världar.
+    </div>
+
+    <h2 class="poem-title">"Mötet vid Rimträdet"</h2>
+
+    <div class="poem">
+        <div class="stanza">
+            <div class="poem-line">Jag sjöng för ekarna den kvällen,</div>
+            <div class="poem-line">när frosten gjorde löven till glas.</div>
+            <div class="poem-line">Min luta bar genom stillheten,</div>
+            <div class="poem-line">tills en röst sa: "Vacker, den sången som var."</div>
+        </div>
+
+        <div class="stanza">
+            <div class="poem-line">Stor som en häst, vit som nysnö,</div>
+            <div class="poem-line">med ögon av urgammal bärnsten.</div>
+            <div class="poem-line">Vitfläck, sa den, var dess namn,</div>
+            <div class="poem-line">och varje ord föll som rimfrost från läppen.</div>
+        </div>
+
+        <div class="stanza">
+            <div class="poem-line">"Sjung mer," bad katten och lade sig ner,</div>
+            <div class="poem-line">runt mig en mur av päls och kraft.</div>
+            <div class="poem-line">"Sjung om världar som varit och världar som är,</div>
+            <div class="poem-line">om vägar som leder till midnatt."</div>
+        </div>
+
+        <div class="stanza">
+            <div class="poem-line">Jag sjöng tills fingrarna blödde mot strängarna,</div>
+            <div class="poem-line">sjöng medan månen blev till sol.</div>
+            <div class="poem-line">Sjöng om kärlek och förlust och längtan,</div>
+            <div class="poem-line">medan katten lyssnade, stilla som sten, kall som kol.</div>
+        </div>
+
+        <div class="stanza">
+            <div class="poem-line">"Du sjunger vackert om det som du känner," sa Vitfläck till slut,</div>
+            <div class="poem-line">"men kan du sjunga om det som du inte förstår?</div>
+            <div class="poem-line">Kan du sjunga om platser där snön faller uppåt?</div>
+            <div class="poem-line">Om träd som minns framtiden? Om is som består av år?"</div>
+        </div>
+
+        <div class="stanza">
+            <div class="poem-line">Och katten visade mig. Gud hjälpe mig, den visade.</div>
+            <div class="poem-line">I dess ögon såg jag skogar som växte i cirklar,</div>
+            <div class="poem-line">såg stigar som ledde till igår,</div>
+            <div class="poem-line">såg mitt eget ansikte åldras och födas i speglar.</div>
+        </div>
+
+        <div class="stanza">
+            <div class="poem-line">"Nu," sa Vitfläck, "sjung om DET om du kan.</div>
+            <div class="poem-line">Sjung så att andra förstår vad som väntar.</div>
+            <div class="poem-line">Men akta dig, bard, för sådana sånger</div>
+            <div class="poem-line">har ett pris som aldrig är vad man tänker."</div>
+        </div>
+
+        <div class="stanza">
+            <div class="poem-line">Jag sjöng. En enda vers innan rösten brast.</div>
+            <div class="poem-line">Innan orden blev till is i min strupe.</div>
+            <div class="poem-line">Nu kan jag bara viska, bara skriva,</div>
+            <div class="poem-line">medan kylan växer från insidan, djup efter djup.</div>
+        </div>
+
+        <div class="stanza">
+            <div class="poem-line">Vitfläck log - har ni sett en snökatt le?</div>
+            <div class="poem-line">Som månskäran över en frusen sjö.</div>
+            <div class="poem-line">"Du fick din sång," sa den. "Och jag fick min."</div>
+            <div class="poem-line">Sedan gick den, och lämnade bara spår som pekade mot norr... och mot dö.</div>
+        </div>
+    </div>
+
+    <div class="epilogue">
+        <strong>[Nedanför, kluddat med kol när bläcket tagit slut:]</strong><br><br>
+        Jag fryser nu. Inte utifrån. Inifrån.<br>
+        Hör ni? Jag viskar fortfarande sången. Den som handlar om andra sidan. Den ekar i huvudet. Den vill ut. Den vill spridas.
+    </div>
+
+    <div class="warning">
+        Bränn detta innan den tar er med.
+    </div>
+
+    <div class="epilogue">
+        <strong>[I marginalen, med annan handstil:]</strong><br><br>
+        "Hittade Silvius tre dagar senare. Frusen. Log. Ögonen öppna, stirrande norrut. När vi rörde vid honom föll han sönder som glas. På marken där han legat växte blommor. Blommor av is. De sjöng i vinden."
+    </div>
+
+    <script src="../kapitel/kapitel-linkify.js"></script>
+</body>
+</html>

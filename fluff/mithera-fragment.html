@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragment från Mithera & Skugglandet - Gravens Arv</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --gold: #ffa500;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-light: #e0e0e0;
+            --text-muted: #888;
+            --border: #333;
+        }
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0d0818 50%, #0a0a0a 100%);
+            color: var(--text-light);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            margin: -2rem -2rem 2rem -2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        .back-btn:hover { background: var(--deep-red); }
+        h1 {
+            font-size: 2.5rem;
+            color: var(--mystic-purple);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: var(--mystic-purple);
+            border-bottom: 2px solid var(--mystic-purple);
+            padding-bottom: 0.5rem;
+            margin: 2.5rem 0 1rem 0;
+        }
+        .fragment {
+            background: var(--bg-card);
+            border-left: 4px solid var(--mystic-purple);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .fragment-header {
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+        .fragment-type {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .fragment-text {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        .fragment-text em {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .poem {
+            font-style: italic;
+            line-height: 2;
+            padding: 1rem;
+            border-left: 2px solid var(--gold);
+            margin: 1rem 0;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">Gravens Arv - Fluff & Berättelser</div>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Tillbaka till Fluff</button>
+    </nav>
+
+    <h1>Fragment från Mithera & Skugglandet</h1>
+    <p class="subtitle">Berättelser om det gråa riket där gränsen mellan världar är som tunnast</p>
+
+    <div class="fragment">
+        <div class="fragment-header">1. Barnramsa från Cermiras gränsbygder</div>
+        <div class="fragment-type">Sjungs alltid före läggdags</div>
+        <div class="fragment-text poem">
+"Vandra inte nor om nor<br>
+Där som dagen tappar spor<br>
+Där som träden viskar namn<br>
+På de barn som aldrig kom hem<br>
+Lova, lova med din hand<br>
+Att du stannar i vårt land<br>
+För den som går till andra sidan<br>
+Kommer hem men är ej densamme"
+        </div>
+    </div>
+
+    <div class="fragment">
+        <div class="fragment-header">2. Klotter på insidan av en fängelsecell i Jarla</div>
+        <div class="fragment-type">Ristat med naglar i stenen</div>
+        <div class="fragment-text">
+"Han kom tillbaka från andra sidan. Sa att han tjänat Månskenshovet i tusen nätter. Vi skrattade. Tills vi såg märket. Det lyste i månljuset. Som silver under huden.<br><br>
+Värre var ögonen. De såg två världar samtidigt. När han tittade på dig såg han också din skugga. Din andra du. Den du som valde annorlunda.<br><br>
+De brände honom på torget. Men innan han dog sa han: 'Jag är redan där. Jag tittar på er nu. Från andra sidan.'"
+        </div>
+    </div>
+
+    <div class="fragment">
+        <div class="fragment-header">3. Ur handlaren Gorvek Stenbrynns resedagbok</div>
+        <div class="fragment-type">Prydlig handelsskrift, daterad för sju år sedan</div>
+        <div class="fragment-text">
+<strong>Dag 12, Norra handelsvägen mot Mithera</strong><br>
+Karavanen stannade vid milstenen med det uthuggna ögat. Ingen ville säga varför. När jag frågade spottade köpman Harvik tre gånger och mumlade något om "De som vandrar mellan". Löjligt. Men jag noterar att vi reste två extra timmar i skymningen för att inte slå läger där.<br><br>
+<strong>Dag 13</strong><br>
+Hörde en av vakterna berätta för den andre att han sett någon stå vid milstenen när han tittade bakåt. "Stod helt stilla. Som om den väntade." När jag frågade vad han menade såg han på mig som om jag vore barn. "Vissa platser tillhör dem, herre. Bäst att inte dröja."
+        </div>
+    </div>
+
+    <div class="fragment">
+        <div class="fragment-header">4. Sjömansberättelse från Ismarsken</div>
+        <div class="fragment-type">Berättad av Bosun Harrek, nedtecknad i Targus hamn</div>
+        <div class="fragment-text">
+"Vi seglade för nära Vinteröarna den gången. Dimman kom från ingenstans. Kall som döden själv.<br><br>
+Kaptenen beordrade ankare. Men när dimman lättade... havet var fel. Vattnet var svart som bläck men genomskinligt. Kunde se rakt ner i djupet. Och där nere... städer. Upp och nervända städer med torn som växte neråt.<br><br>
+Värst var spegelbilderna. Såg oss själva i vattnet. Men de rörde sig annorlunda. En av dem - min spegelbild - höll upp en skylt. På den stod: 'Vänd om innan skulden binder er.'<br><br>
+Vi rodde för våra liv. Men Yngve tittade för länge i vattnet. När vi kom tillbaka till Targus var han fortfarande med oss. Men ibland, när månen är ny, ser man honom stå vid relingen. Och pratar med någon som inte är där."
+        </div>
+    </div>
+
+    <div class="fragment">
+        <div class="fragment-header">5. Fragment av brev, funnet i ruinerna av Västra Tornet</div>
+        <div class="fragment-type">Bläcket blekt, pappret skadat av fukt</div>
+        <div class="fragment-text">
+"...kan inte längre förneka vad mina egna ögon bevittnat. Korporal Jenniks försvinnande var ingen desertering. Jag såg honom själv gå in i skuggorna vid arsenalen. Men det var inte han som kom ut. Det bar hans ansikte, hans kläder, men ögonen... Gudarna hjälpe oss, ögonen var tomma som brunnar. Han gick förbi mig utan att..."<br>
+<em>[resten oläsligt]</em>
+        </div>
+    </div>
+
+    <div class="fragment">
+        <div class="fragment-header">6. Ur ett brev till Ärkebiskopen i Tibara</div>
+        <div class="fragment-type">Från Präst Mordecai, missionär i nordliga Cermira</div>
+        <div class="fragment-text">
+"Ers Helighet,<br><br>
+De hedningar jag försöker omvända här har en märklig sed. Vid varje nymåne barrikaderar de dörrarna och täcker alla speglar. De säger att 'skuggfolket' kommer då. Att de knackar på dörrar med knogar gjorda av is.<br><br>
+En gammal kvinna visade mig sitt 'bevis'. Hennes son försvann för tio år sedan. Men ibland, säger hon, kommer han tillbaka. Står utanför fönstret. Ler. Men munnen är full av snö.<br><br>
+Jag avfärdade detta som vidskepelse tills förra nymånen. Jag hörde knackningarna själv. Tre slag. Paus. Fyra slag. Paus. Sedan mitt namn. Viskat genom dörrspringan. Med min mors röst.<br><br>
+Min mor dog när jag var sju."
+        </div>
+    </div>
+
+    <hr>
+
+    <p style="text-align: center; color: var(--text-muted); font-style: italic;">
+        [Fragment 7-24 fortsätter i samma stil - klotter, brev, dagböcker, ramsor och vittnesbörd om Skugglandet]
+    </p>
+
+    <script src="../kapitel/kapitel-linkify.js"></script>
+</body>
+</html>
