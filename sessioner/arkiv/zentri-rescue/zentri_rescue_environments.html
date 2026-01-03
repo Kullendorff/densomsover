@@ -80,22 +80,30 @@
             margin: 2rem 0;
         }
         .back-link {
-            text-align: center;
-            margin: 2rem 0;
-            padding: 1rem;
-            background: rgba(79, 180, 216, 0.1);
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            background: var(--bg-card);
+            padding: 0.5rem 1rem;
             border-radius: 8px;
+            border: 1px solid #333;
+            color: #888;
+            text-decoration: none;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            color: var(--flame-orange);
+            border-color: var(--flame-orange);
         }
     </style>
 </head>
 <body>
 
+<a href="../../index.html" class="back-link">← Tillbaka till Sessioner</a>
+
 <h1>🏔️ FROSTSPIRAN: MILJÖBESKRIVNINGAR 🏔️</h1>
 <p class="subtitle">Detaljerade 5-Sinnen Beskrivningar för Varje Rum</p>
-
-<div class="back-link">
-    <a href="zentri_rescue.html">← Tillbaka till Sessionsplanen</a>
-</div>
 
 <hr>
 
@@ -532,10 +540,6 @@
 </div>
 
 <hr>
-
-<div class="back-link">
-    <a href="zentri_rescue.html">← Tillbaka till Sessionsplanen</a>
-</div>
 
 <p style="text-align: center; color: var(--text-muted); font-style: italic; margin-top: 3rem;">
     <strong>Använd dessa beskrivningar för att SÄTTA SCENEN.</strong><br>
