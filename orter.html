@@ -314,19 +314,19 @@
     <!-- Statistics -->
     <div class="stats-bar">
         <div class="stat-box">
-            <div class="number" id="total-count">86</div>
+            <div class="number" id="total-count">123</div>
             <div class="label">Totalt Antal</div>
         </div>
         <div class="stat-box purple">
-            <div class="number">50</div>
-            <div class="label">Nya Örter (2025)</div>
+            <div class="number">11</div>
+            <div class="label">Regioner</div>
         </div>
         <div class="stat-box gold">
-            <div class="number">36</div>
-            <div class="label">Klassiska (Slätterna + Tarkas)</div>
+            <div class="number">86</div>
+            <div class="label">Kampanjspecifika & Klassiska</div>
         </div>
         <div class="stat-box red">
-            <div class="number">9</div>
+            <div class="number">13</div>
             <div class="label">Gifter 🩸</div>
         </div>
     </div>
@@ -336,6 +336,7 @@
         <input type="text" class="search-box" id="search" placeholder="🔍 Sök efter ört, effekt, region..." onkeyup="filterHerbs()">
         <button class="filter-btn active" onclick="filterRegion('all')">Alla</button>
         <button class="filter-btn" onclick="filterRegion('slätterna')">Stora Slätterna</button>
+        <button class="filter-btn" onclick="filterRegion('skogar')">🌲 Skogar</button>
         <button class="filter-btn" onclick="filterRegion('tarkas')">Tarkas</button>
         <button class="filter-btn" onclick="filterRegion('cermira')">Cermira/Mithera</button>
         <button class="filter-btn" onclick="filterRegion('muhad')">Muhad/Öken</button>
@@ -544,6 +545,15 @@
                     preparation: "Skärs ut till figuriner och symboler",
                     effect: "Används för att helga gudarna och vid offer",
                     skill: "Hantverk eller Rituallära",
+                    tags: []
+                },
+                {
+                    name: "Kungslykta",
+                    location: "Hälleberg, vår/sommar (Ob4T6)",
+                    price: "120 silver",
+                    preparation: "Ljusgul saft från fruktkapseln blandas med alkohol",
+                    effect: "Drog: Balansnedsättande. +Ob1T6 Rörelse-/Vapenfärdigheter i 1 timme",
+                    skill: "Alkemi",
                     tags: []
                 },
                 {
@@ -774,6 +784,51 @@
                     effect: "-Ob2T6 Smärta efter 1 timmes behandling. Lugnande",
                     skill: "Medicin eller Växtlära",
                     tags: []
+                },
+                {
+                    name: "Vinterraseri (Flugsvamp)",
+                    location: "Vanlig i hela Mithera, särskilt mellersta delarna (Ob2T6)",
+                    price: "5-10 silver",
+                    preparation: "Äts färsk eller torkad, kan brygas som te",
+                    effect: "Kraftigt rusgivande och hallucinogen. Ignorera 2 kryss Smärta i 1T6 timmar. Bygger aggression och blodtörst. FARA: Tappar hämningar, kan attackera vänner. Överdos = hjärtproblem",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Rimfrostlav (Glytemossa/Vätteskägg)",
+                    location: "Djupare in i Mithera, urgamla träd nära kryotropiska områden (Ob4T6)",
+                    price: "20-40 silver",
+                    preparation: "Torkas, malas till pulver, blandas med varmt vatten eller inandas som rök",
+                    effect: "Djup trance och andligt öppnande. -Ob1T6 på Schamanism-slag. Intensiva visioner. NACKDEL: Medvetslös i 2T6 timmar. FARA: Kan fastna i trance permanent",
+                    skill: "Schamanism eller Rituallära",
+                    tags: ["kampanj"]
+                },
+                {
+                    name: "Blodfeber-röt (Spikklubba-variant)",
+                    location: "Våtmarker och fuktiga sänkor i södra Mithera (Ob3T6)",
+                    price: "15-25 silver",
+                    preparation: "Kokas till brygd eller tuggas rå (smakar avskyvärt bittert)",
+                    effect: "Ökar kroppsvärme (+2T6 timmar kyla-motstånd). +2 STY, +2 TÅL i 3T6 timmar. Ingen trötthet 1T6+6 timmar. +1T6 mot Rädsla. NACKDEL: Efter -3 STY, -3 TÅL, total utmattning 2T6 timmar. FARA: Risk hjärtattack vid ansträngning (TÅL Ob4T6 eller 1T6 Trauma)",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Skuggblomma (Nattskugge-lilja)",
+                    location: "Mörka gläntor djupt in i Mithera, nära skuggfolkets platser. Blommar bara i fullmåne (Ob5T6)",
+                    price: "40-80 silver",
+                    preparation: "Kronbladen torkas och röks, eller läggs under tungan",
+                    effect: "Ignorera 3 kryss Smärta i 2T6 timmar. Bedövande och lugnande. Drömliknande tillstånd. Öppnar sinnet för skuggplanet (se andar och skuggvarelser). NACKDEL: Beroendeframkallande. FARA: Överdos = koma 1T6 dagar",
+                    skill: "Alkemi eller Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Isfrostkristall (Kryotropisk svamp)",
+                    location: "Djupaste delarna av Mithera där kryotropi är starkast (Ob6T6)",
+                    price: "50-100 silver",
+                    preparation: "Äts färsk (förlorar effekt vid torkning), smakar som mint-is",
+                    effect: "Immun mot naturlig kyla i 1T6+3 timmar. Andetag blir frostigt (lätt köldskada). Huden blekvit och kall (skrämmer varelser). +1T6 mot kryotropiska besvärjelser. NACKDEL: Extremt törstig. FARA: Överdos = kroppen fryser inifrån (1T6 Trauma/timme)",
+                    skill: "Växtlära eller Överlevnad",
+                    tags: []
                 }
             ],
             "muhad": [
@@ -859,6 +914,24 @@
                     tags: []
                 },
                 {
+                    name: "Lûhamin",
+                    location: "Stenöken, höst (Ob4T6)",
+                    price: "80 silver",
+                    preparation: "Koncentrerad lûhamin blandas i vin",
+                    effect: "Symptomframkallande: Lungpestsymptom inom 1T6 timmar, avtar efter 1T6+2 timmar",
+                    skill: "Alkemi eller Giftlära",
+                    tags: ["gift"]
+                },
+                {
+                    name: "Mûhadinsk vallmo",
+                    location: "Stenöken (Ob3T6)",
+                    price: "20 silver",
+                    preparation: "Fruktsaften blandas med vin",
+                    effect: "Drog: Som alkohol (TÅL). Ob3T6 Utmattning men helar Ob1T6 Smärta. Beroendeframkallande",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
                     name: "Nekropolensblod (Nobundusros)",
                     location: "Nekropolen Nobundus i Tarkas, natt (Ob6T6)",
                     price: "130 silver",
@@ -866,6 +939,33 @@
                     effect: "+Ob1T6 mot odöd påverkan. Synlig för andar i 1 timme",
                     skill: "Rituallära eller Nekromantik",
                     tags: []
+                },
+                {
+                    name: "Rödklocka",
+                    location: "Klippöken, sommar (Ob2T6)",
+                    price: "8 silver",
+                    preparation: "Koncentrat av små röda klockblommor",
+                    effect: "Uppiggande: Återfår 1T6 Långtidsutmattning (botar huvudvärk)",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Tandbär",
+                    location: "Stenöken, höst/vinter (Ob2T6)",
+                    price: "7 silver",
+                    preparation: "Svarta bär äts råa",
+                    effect: "Preventivmedel: Som grå tveblading",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Ökenrot",
+                    location: "Sandöken (Ob5T6)",
+                    price: "50 silver",
+                    preparation: "Rötter hackas, kokas med tran och kalvblod, blandas i mat/vin",
+                    effect: "Hungerframkallande: +Ob1T6 på allt i 2T6+6 timmar",
+                    skill: "Giftlära eller Alkemi",
+                    tags: ["gift"]
                 }
             ],
             "jargien": [
@@ -982,6 +1082,33 @@
             ],
             "hav": [
                 {
+                    name: "Dunna",
+                    location: "Tempererad regnskog, sommar/höst (Ob4T6)",
+                    price: "140 silver",
+                    preparation: "Dekokt på vitgrön mossa",
+                    effect: "Uppiggande: -Ob1T6 Marsch/Rida. Ingen riktig sömn. Dubbel vätske-/matbehov i 1T6 dagar",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Fingerbunke",
+                    location: "Tropisk regnskog (Ob3T6)",
+                    price: "25 silver",
+                    preparation: "Dekokt på blad från frodig buske med blåröda bär",
+                    effect: "Helande: Ob1T6 Trauma och Smärta, max 1/läkeperiod",
+                    skill: "Medicin eller Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Gul läkemalva",
+                    location: "Unik för de cirefaliska öarna, ej vinter (Ob3T6)",
+                    price: "20 silver",
+                    preparation: "Dekokt på rötter eller infusion på blad/blommor",
+                    effect: "Antiseptisk: 1T6 Smärta men -Ob1T6 infektionsrisk",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                },
+                {
                     name: "Havsnåd (Sjömannens Vän)",
                     location: "Klippiga kuster, alltid (Ob2T6)",
                     price: "15 silver",
@@ -1015,6 +1142,33 @@
                     preparation: "Svampen observeras (inte konsumeras)",
                     effect: "Ändrar färg 6-12 timmar före storm. Blå=lugnt, Grön=vind, Röd=storm",
                     skill: "Växtlära eller Sjöfarande",
+                    tags: []
+                },
+                {
+                    name: "Silverört",
+                    location: "Tempererad regnskog, vår (Ob4T6)",
+                    price: "200 silver",
+                    preparation: "Knoppar kokas med honung och hönsblod till buljong",
+                    effect: "Sövande: TÅL Ob3T6 (+Ob1T6/dubbeldos). Perfekt=dåsig. Lyckat=sömn 1T6+8h. Misslyckat=koma 2T6+16h. Fummel=syrebrist",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Svart läkemalva",
+                    location: "Unik för de Meloriska öarna, ej vinter (Ob4T6)",
+                    price: "50 silver",
+                    preparation: "Dekokt på rötter eller infusion på blad/blommor",
+                    effect: "Antiseptisk: 1T6 Smärta men -Ob2T6 infektionsrisk",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Vandringssav",
+                    location: "Tempererad regnskog, ej vinter (Ob4T6)",
+                    price: "90 silver",
+                    preparation: "Sav från pomeransträdet kokas och spädes (0,25 liter)",
+                    effect: "Hungerstillande: Mättnad 1 dygn. Stryker Trauma från svältreglerna",
+                    skill: "Överlevnad eller Matlagning",
                     tags: []
                 },
                 {
@@ -1076,6 +1230,15 @@
             ],
             "tirak": [
                 {
+                    name: "Bistört (Hrokk)",
+                    location: "Unik för Takalorr (Ob2T6)",
+                    price: "110 silver",
+                    preparation: "Dekokt på 50-65 cm hög ört med ljusgula blommor",
+                    effect: "Bedövande + Aggression. -Ob1T6 Aggression, -Ob1T6 Chockslag. Dubbel Stridsutmattning. Beroendeframkallande",
+                    skill: "Växtlära eller Alkemi",
+                    tags: []
+                },
+                {
                     name: "Blodsvalg (Guerras Styrka)",
                     location: "Tirakiska stäpper, sommar (Ob4T6)",
                     price: "60 silver",
@@ -1112,7 +1275,171 @@
                     tags: []
                 }
             ],
+            "skogar": [
+                {
+                    name: "Anatel",
+                    location: "Blandskog (Ob2T6)",
+                    price: "35 silver",
+                    preparation: "Rötterna krossas och kokas till brungrumlig brygd",
+                    effect: "Bedövande: -Ob1T6 Chockslag 15 min. Bieffekt: Ob5T6 Långtidsutmattning",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Asharisk brandmåra",
+                    location: "Blandskog (Ob5T6)",
+                    price: "150 silver",
+                    preparation: "Röda blommor, rötterna kokas",
+                    effect: "Sövande. Mycket svårt TÅL-slag (Ob5T6) eller sömn inom 20 min. Bieffekt: sömnighet",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Belladonna",
+                    location: "Lövskogar, sommar (Ob3T6)",
+                    price: "20 silver",
+                    preparation: "Svarta bär infunderas",
+                    effect: "Smärtstillande: helar Ob2T6 Smärta. Bieffekt: huvudvärk och yrsel",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Blodbota",
+                    location: "Blandskog (Ob5T6)",
+                    price: "200 silver",
+                    preparation: "Rötter kokas, dricks varmt",
+                    effect: "Blodbildande: Ob3T6 blodförlust försvinner på 30 min. Bieffekt: Ob2T6 Utmattning",
+                    skill: "Alkemi eller Medicin",
+                    tags: []
+                },
+                {
+                    name: "Blågräs",
+                    location: "Blandskog (Ob4T6)",
+                    price: "50 silver",
+                    preparation: "Dekokt på blåfärgat fältgräs",
+                    effect: "Lugnande (1T6 Långtidsutmattning). Hallucinogen: PSY Ob3T6 eller verklighetsförvrängning",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Demagora",
+                    location: "Lövskog, höst (Ob3T6)",
+                    price: "20 silver",
+                    preparation: "Gulvit svamp torkas, pulvriseras, blandas i svinfett till pasta",
+                    effect: "Helande: Trauma och Smärta läks dubbelt så snabbt (stryks på var 6:e timme)",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Ekmåra",
+                    location: "Lövskog, sommar (Ob4T6)",
+                    price: "5 silver",
+                    preparation: "Dekokt på ormbunksliknande växt",
+                    effect: "Hämmande: +Ob2T6 mot Alkoholist-regeln i Ob1T6+6 timmar",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Falsk jordsvamp",
+                    location: "Barrskog, höst (Ob5T6)",
+                    price: "140 silver",
+                    preparation: "Grön svamp hackas, blandas med sprit och kalkrik jord, torkas",
+                    effect: "Hallucinogen: Dövhet efter 1T6 timmar, varar 1T6+6 timmar",
+                    skill: "Alkemi eller Giftlära",
+                    tags: ["gift"]
+                },
+                {
+                    name: "Grå tveblading (Älskogsört)",
+                    location: "Lövskog, sommar (Ob1T6)",
+                    price: "5 silver",
+                    preparation: "Bladen förtärs",
+                    effect: "Preventivmedel: +Ob2T6 svårighet att bli gravid i Ob1T6 timmar",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Ilieteblad (Bronsblad)",
+                    location: "Lövskog, sommar (Ob3T6)",
+                    price: "25 silver",
+                    preparation: "Bronsfärgade blad tuggas",
+                    effect: "Sinnesstärkande: -Ob1T6 SYN/HÖR/Söka/Speja i 15 min. Bieffekt: Ob3T6 Långtidsutmattning",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Kärleksfloka",
+                    location: "Lövskog, vår/sommar (Ob3T6)",
+                    price: "10 silver",
+                    preparation: "Bakas i bröd eller blandas i dryck",
+                    effect: "Lusthöjande: -Ob1T6 Amor i 1T6+2 timmar",
+                    skill: "Matlagning eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Midvinterört",
+                    location: "Barrskog, vinter (Ob5T6)",
+                    price: "450 silver",
+                    preparation: "Varm dekokt av mörkgrön klubbformad knopp",
+                    effect: "Hallucinogen: PSY Ob3T6 eller katatonisk skräck. Vanlig i Xinu-kulten",
+                    skill: "Alkemi eller Rituallära",
+                    tags: []
+                },
+                {
+                    name: "Ormtunga",
+                    location: "Barrskog, sommar/höst (Ob4T6)",
+                    price: "80 silver",
+                    preparation: "Gulbruna rötter i matlagning",
+                    effect: "Symptomframkallande: Giftig. Magvredsymptom. Lätt TÅL (Ob2T6) halvera Långtidsutmattning",
+                    skill: "Giftlära",
+                    tags: ["gift"]
+                },
+                {
+                    name: "Sårläka",
+                    location: "Blandskog, sommar (Ob2T6)",
+                    price: "20 silver",
+                    preparation: "Pressas till växtsaft för förband",
+                    effect: "Blodstillande: Sänker Blödningstakten med Ob2T6",
+                    skill: "Medicin",
+                    tags: []
+                },
+                {
+                    name: "Vildvippa (Kozinn)",
+                    location: "Lövskog, sommar (Ob3T6)",
+                    price: "45 silver",
+                    preparation: "Dekokt på vitfärgad blomma",
+                    effect: "Helande: 1 Trauma + 2 Smärta/timme i 4 timmar (totalt 4 Trauma, 8 Smärta)",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                }
+            ],
             "alv": [
+                {
+                    name: "Alvgräs",
+                    location: "Unik för Sunari (Ob2T6)",
+                    price: "25 silver",
+                    preparation: "Torkas och rullas, röks som tobak",
+                    effect: "Drog - liknar alkoholrus (TÅL). Ob5T6 Långtidsutmattning/5 min. Starkt beroendeframkallande",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Alvsorg",
+                    location: "Unik för Sunari, sommar (Ob4T6)",
+                    price: "100 silver",
+                    preparation: "Svart blomma, lugnande medel framställs",
+                    effect: "Ob5T6 Långtidsutmattning. Svårt TÅL-slag (Ob4T6) eller djup sömn 1T6+4 timmar",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Kiriyaört",
+                    location: "Unik för Sunari, sommar (Ob4T6)",
+                    price: "100 silver",
+                    preparation: "Gul ört torkas till läkedrog",
+                    effect: "Helande: 1T6 Trauma och 2T6 Smärta varannan timme i 8 timmar (totalt 4T6 Trauma, 8T6 Smärta)",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                },
                 {
                     name: "Sanaris Gåva (Stjärnblomma)",
                     location: "Endast i Sanari-alvernas skogar, vår (Ob6T6)",
@@ -1141,6 +1468,15 @@
                     tags: []
                 },
                 {
+                    name: "Vattuklocka",
+                    location: "Unik för Sunari, vår (Ob3T6)",
+                    price: "50 silver",
+                    preparation: "Purpurfärgat sekret från trattformad blomma",
+                    effect: "Hallucinogen: TÅL Ob4T6 eller syner/hägringar i 1T6×10 min",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
                     name: "Yelgothas Tår (Portalört)",
                     location: "Nära portaler mellan världar (Ob6T6)",
                     price: "180 silver (osäljbar)",
@@ -1166,6 +1502,7 @@
                 'jargien': 'Jargien - Imperiella Örter',
                 'skugglandet': 'Skugglandet - Demoniska Örter',
                 'hav': 'Hav/Kust - Sjöfarares Medicin',
+                'skogar': 'Skogar - Europeiska Örter',
                 'dvärg': 'Dvärg/Underjord - Grottväxter',
                 'tirak': 'Tirak/Barbariska - Vilda Örter',
                 'alv': 'Alv/Sunari - Magiska Örter'
