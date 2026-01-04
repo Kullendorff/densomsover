@@ -1,10 +1,27 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2026-01-03
+## Datum: 2026-01-04
 
-## Status: NÄSTA SESSION FÖRBEREDD - FROSTSPIRAN FINAL!
+## Status: NÄSTA SESSION FÖRBEREDD + FLUFF EXPANSION KLAR!
 
-**NYTT (2026-01-03):**
+**NYTT (2026-01-04):**
+- **FLUFF-SIDOR SKAPAD:** Kampanjvärlden utökad med levande material
+  * `fluff/mithera-fragment.html` - KOMPLETT (alla 24 fragment tillagda)
+  * `fluff/thrakka-sånger.html` - NY! 8 sånger om Thrakka från olika kulturer
+    - Cermirian hjältesaga, Sung-poesi, Tirakisk krigssång
+    - Drunokisk barnvisa, Muhad-tavernsång, Dvärgisk dryckesvisa
+    - Arvorns Hammare hatpredikan, Vitterdals hovballad
+    - Baserat på Iskvarnsbryggan-striden där hon fortsatte med pil genom ögat
+  * `fluff/kokbok.html` - NY! 10 autentiska recept från kampanjens platser
+    - Muhad (Jens Kryddade Lamm, Öken-dadlar)
+    - Cermira (Vargnäsets Viltgryta, Vitterdals Julgrogg)
+    - Dvärgiska traditioner (Tunnbröd, Öl-brygd)
+    - Grensfortet, Festmat, Tirakisk mat
+    - Alla recept är faktiskt kokbara med riktiga mått
+  * `fluff/index.html` - UPPDATERAD med länkar till nya sidor
+- **GIT:** Committat och pushat (commit `3f3e748`)
+
+**TIDIGARE (2026-01-03):**
 - **SESSIONSPLAN SKAPAD:** `sessioner/frostspiran_final.html`
   * Komplett scenplan från kristallrummet till flykt
   * 8 scener: VinterGlöd, Kristallen, Gråtonen, Återförening, Raseriet, Ritualen, Frihet, Flykt
@@ -97,6 +114,17 @@
 | `guider/vinterglod_guide.html` | VinterGlöd SL-guide |
 | `sessioner/arkiv/zentri-rescue/` | Tidigare sessionsplan |
 
+### Fluff-filer (worldbuilding)
+| Fil | Beskrivning |
+|-----|-------------|
+| `fluff/index.html` | Hub för alla fluff-sidor |
+| `fluff/mithera-fragment.html` | 24 fragment om Mithera & Skugglandet |
+| `fluff/thrakka-sånger.html` | 8 sånger om Thrakka från olika kulturer |
+| `fluff/kokbok.html` | 10 kokbara recept från kampanjens platser |
+| `fluff/lera-sånger.html` | Sånger om Lera Skuggskeppare |
+| `fluff/resedagbocker.html` | Skorda, Xian-Li, Margarets brev |
+| `fluff/silvius-sangbok.html` | Silvius sista dikt |
+
 ---
 
 ## TIDIGARE SESSIONER
@@ -122,8 +150,9 @@
 
 ## GIT STATUS
 
-**Branch:** claude/prepare-game-session-adv30
+**Branch:** main
 **Senaste commits:**
+- `3f3e748` - Lägg till Thrakkas sånger och kokbok som ny fluff (2026-01-04)
 - `cfb82e6` - Lägg till sessionsplan för Frostspiran Final
 - `89de93e` - Uppdatera kampanjkrönika med ny session i Frostspiran
 
@@ -132,9 +161,16 @@
 ## KVARVARANDE ARBETE
 
 ### Nästa session (redo)
-- Sessionsplan klar
-- VinterGlöd-guide finns
-- Ring-alternativ dokumenterade
+- ✅ Sessionsplan klar
+- ✅ VinterGlöd-guide finns
+- ✅ Ring-alternativ dokumenterade
+
+### Fluff-expansion
+- ✅ Mithera-fragment komplett (24 fragment)
+- ✅ Thrakka-sånger skapad (8 sånger)
+- ✅ Kokbok skapad (10 recept)
+- ✅ Fluff-index uppdaterad
+- [ ] Övriga fluff-förslag (se `master/fluff-förslag-analys.md` för idéer)
 
 ### Efter sessionen
 - [ ] Uppdatera kampanjkrönika med vad som hände
@@ -145,8 +181,9 @@
 - [ ] Kapitel 10 HTML-sida (efter sessionen)
 - [ ] Kapitel 11+ planering (beroende på utgång)
 - [ ] Midjourney-prompts för Frostspiran-scener
+- [ ] Midjourney-prompts för nya fluff-sidor (Thrakka, kokbok)
 
 ---
 
-*Senast uppdaterad: 2026-01-03*
-*Status: Redo för nästa spelsession - Frostspiran Final!*
+*Senast uppdaterad: 2026-01-04*
+*Status: Redo för nästa spelsession + Fluff-expansion klar!*
