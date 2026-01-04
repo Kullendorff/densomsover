@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örter & Droger - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            background: var(--deep-red);
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(10,10,10,0.9));
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stats-bar {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-box {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--flame-orange);
+            text-align: center;
+        }
+
+        .stat-box.purple { border-left-color: var(--mystic-purple); }
+        .stat-box.gold { border-left-color: var(--gold); }
+        .stat-box.red { border-left-color: var(--deep-red); }
+
+        .stat-box .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-box.purple .number {
+            background: linear-gradient(135deg, var(--mystic-purple), var(--shadow-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-box .label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+        }
+
+        .controls {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+            padding: 0.75rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--flame-orange);
+        }
+
+        .filter-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--flame-orange);
+            color: white;
+            border-color: var(--flame-orange);
+        }
+
+        .content-container {
+            max-width: 1400px;
+            margin: 0 auto 4rem;
+            padding: 0 2rem;
+        }
+
+        .region-section {
+            margin-bottom: 3rem;
+        }
+
+        .region-header {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--flame-orange);
+            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .herb-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .herb-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+            border-left: 4px solid var(--flame-orange);
+        }
+
+        .herb-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(255, 107, 74, 0.2);
+            border-left-color: var(--gold);
+        }
+
+        .herb-card.gift {
+            border-left-color: var(--deep-red);
+        }
+
+        .herb-card.kampanj {
+            border-left-color: var(--mystic-purple);
+        }
+
+        .herb-name {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--flame-orange);
+        }
+
+        .herb-card.gift .herb-name {
+            color: var(--deep-red);
+        }
+
+        .herb-card.kampanj .herb-name {
+            color: var(--mystic-purple);
+        }
+
+        .herb-tag {
+            display: inline-block;
+            background: var(--bg-darker);
+            color: var(--gold);
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .herb-tag.gift {
+            background: var(--deep-red);
+            color: white;
+        }
+
+        .herb-tag.kampanj {
+            background: var(--mystic-purple);
+            color: white;
+        }
+
+        .herb-detail {
+            margin: 0.75rem 0;
+            font-size: 0.95rem;
+        }
+
+        .herb-detail strong {
+            color: var(--gold);
+            min-width: 100px;
+            display: inline-block;
+        }
+
+        .herb-effect {
+            background: var(--bg-darker);
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            border-left: 3px solid var(--flame-orange);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .herb-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-title">🌿 Örter & Droger i Mundana</div>
+        <a href="index.html" class="back-btn">← Tillbaka till Dashboard</a>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Örter, Droger & Gifter</h1>
+        <p>En komplett sammanställning av alla kända medicinalväxter, droger och gifter i Mundanas värld</p>
+    </div>
+
+    <!-- Statistics -->
+    <div class="stats-bar">
+        <div class="stat-box">
+            <div class="number" id="total-count">86</div>
+            <div class="label">Totalt Antal</div>
+        </div>
+        <div class="stat-box purple">
+            <div class="number">50</div>
+            <div class="label">Nya Örter</div>
+        </div>
+        <div class="stat-box gold">
+            <div class="number">36</div>
+            <div class="label">Befintliga</div>
+        </div>
+        <div class="stat-box red">
+            <div class="number">~10</div>
+            <div class="label">Gifter</div>
+        </div>
+    </div>
+
+    <!-- Search and Filters -->
+    <div class="controls">
+        <input type="text" class="search-box" id="search" placeholder="🔍 Sök efter ört, effekt, region..." onkeyup="filterHerbs()">
+        <button class="filter-btn active" onclick="filterRegion('all')">Alla</button>
+        <button class="filter-btn" onclick="filterRegion('cermira')">Cermira/Mithera</button>
+        <button class="filter-btn" onclick="filterRegion('muhad')">Muhad/Öken</button>
+        <button class="filter-btn" onclick="filterRegion('jargien')">Jargien</button>
+        <button class="filter-btn" onclick="filterRegion('skugglandet')">Skugglandet</button>
+        <button class="filter-btn" onclick="filterRegion('gift')">🩸 Gifter</button>
+        <button class="filter-btn" onclick="filterRegion('kampanj')">⭐ Kampanjkopplade</button>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container" id="herbs-container">
+        <!-- JavaScript will populate this -->
+    </div>
+
+    <script>
+        const herbsData = {
+            "cermira": [
+                {
+                    name: "Frostlav (Adisas Gärda)",
+                    location: "Bergssidor i Cermira, vinter (Ob3T6)",
+                    price: "35 silver",
+                    preparation: "Torkas och mals till pulver, blandas med varmt vatten",
+                    effect: "-Ob2T6 på Utmattning från kyla. Höjer kroppsvärme i 4 timmar",
+                    skill: "Växtlära eller Överlevnad",
+                    tags: []
+                },
+                {
+                    name: "Ulvbane (Vargörtens Blod)",
+                    location: "Cermiras djupa skogar, höst (Ob4T6)",
+                    price: "50 silver",
+                    preparation: "Rötterna kokas i 3 timmar, avkok koncentreras",
+                    effect: "Rovdjur undviker bäraren i Ob1T6 timmar. -Ob1T6 Djurhantering mot predatorer",
+                    skill: "Växtlära eller Jakt",
+                    tags: []
+                },
+                {
+                    name: "Andeviska (Schamanens Tystnad)",
+                    location: "Mitheras magiska lundar, sommarnätter (Ob5T6)",
+                    price: "80 silver",
+                    preparation: "Blommorna torkas och röks i ritual",
+                    effect: "+Ob1T6 på Ritualslag för andekommunikation. Hallucinationer Ob1T6 timmar. Beroenderisk",
+                    skill: "Rituallära eller Alkemi",
+                    tags: ["kampanj", "Umnatak"]
+                },
+                {
+                    name: "Silverlöv (Mitheras Gåva)",
+                    location: "Åderbjörkslunden i Mithera (Ob6T6)",
+                    price: "120 silver",
+                    preparation: "Bladen pressas färska till saft",
+                    effect: "Helar Ob2T6 Trauma. +Ob1T6 mot mörk magi i 1 timme",
+                    skill: "Växtlära eller Magi",
+                    tags: []
+                },
+                {
+                    name: "Fredriccas Öga (Häxört)",
+                    location: "Hemliga platser i Cermiras skogar, vår (Ob5T6)",
+                    price: "70 silver",
+                    preparation: "Hela växten torkas, pulvriseras, blandas med honung",
+                    effect: "+Ob2T6 på slag för att upptäcka demonisk/magisk närvaro i Ob1T6 timmar",
+                    skill: "Rituallära eller Spåkonst",
+                    tags: ["kampanj", "Häxan Fredricca"]
+                },
+                {
+                    name: "Björnmossa",
+                    location: "Gamla skogar i Cermira, året runt (Ob2T6)",
+                    price: "20 silver",
+                    preparation: "Mossan tuggas rå eller kokas till gröt",
+                    effect: "Mättar hunger Ob1T6 dagar, +1 Styrka i 1 timme",
+                    skill: "Överlevnad eller Matlagning",
+                    tags: []
+                },
+                {
+                    name: "Kvällsvart (Nattskadessyster)",
+                    location: "Fuktiga dalar, höst (Ob4T6)",
+                    price: "45 silver",
+                    preparation: "Bären pressas till tjära",
+                    effect: "Sövande - offret sover Ob2T6 timmar. TÅL Ob3T6 för att vakna",
+                    skill: "Alkemi eller Giftlära",
+                    tags: ["gift"]
+                },
+                {
+                    name: "Gränsfortets Bark",
+                    location: "Området runt Gränsfortet, året runt (Ob3T6)",
+                    price: "30 silver",
+                    preparation: "Barken kokas, avkok dricks varmt",
+                    effect: "-Ob1T6 Chockslag i 2 timmar. Dövar Skugglandet-påverkan",
+                    skill: "Växtlära eller Medicin",
+                    tags: []
+                },
+                {
+                    name: "Vargnäsetsalvia",
+                    location: "Runt Vargnäset, sommar (Ob2T6)",
+                    price: "15 silver",
+                    preparation: "Bladen torkas och läggs på sår",
+                    effect: "+Ob1T6 på Läka Sår. Antiseptisk - förhindrar infektion",
+                    skill: "Medicin eller Växtlära",
+                    tags: ["kampanj", "Ingvild"]
+                },
+                {
+                    name: "Vitterdals Lilja (Soffiablomman)",
+                    location: "Trädgårdar i Vitterdal, vår/sommar (Ob3T6)",
+                    price: "40 silver",
+                    preparation: "Blommorna infunderas i olja för massage",
+                    effect: "-Ob2T6 Smärta efter 1 timmes behandling. Lugnande",
+                    skill: "Medicin eller Växtlära",
+                    tags: []
+                }
+            ],
+            "muhad": [
+                {
+                    name: "Yusufis Livselixir",
+                    location: "Hemlig blandning från Jens kryddmarknader (Ob4T6)",
+                    price: "100 silver",
+                    preparation: "Komplex blandning av 7 örter, kokas under fullmåne",
+                    effect: "Helar Ob1T6+2 Trauma, Ob1T6 Smärta, Ob1T6 Blodförlust",
+                    skill: "Alkemi eller Medicin",
+                    tags: ["kampanj", "Dr. Yusuf"]
+                },
+                {
+                    name: "Ökensol (Solskiva)",
+                    location: "Östra ökenområdena, sommar (Ob3T6)",
+                    price: "25 silver",
+                    preparation: "Blommorna torkas och mals till pulver",
+                    effect: "-Ob2T6 mot värmeslag/uttorkning. +Ob1T6 Uthållighet i hetta",
+                    skill: "Överlevnad eller Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Kamelens Tunga",
+                    location: "Oaser i Muhad, året runt (Ob2T6)",
+                    price: "12 silver",
+                    preparation: "Bladen tuggas direkt",
+                    effect: "Släcker törst - ingen vätska behövs i Ob1T6 timmar",
+                    skill: "Överlevnad",
+                    tags: []
+                },
+                {
+                    name: "Slavmarknadens Gift (Tystnadsdroppen)",
+                    location: "Hemlig odling i Jen (Ob5T6)",
+                    price: "90 silver",
+                    preparation: "Sav från stammen utvinns, koncentreras",
+                    effect: "Offret kan inte tala i Ob2T6 timmar. TÅL Ob4T6",
+                    skill: "Giftlära eller Alkemi",
+                    tags: ["gift"]
+                },
+                {
+                    name: "Muhads Månblomma",
+                    location: "Jens trädgårdar, natt/sommar (Ob4T6)",
+                    price: "55 silver",
+                    preparation: "Kronbladen infunderas i vin",
+                    effect: "-Ob2T6 VIL mot förförelse. Afrodisiakum",
+                    skill: "Alkemi eller Förföra",
+                    tags: []
+                },
+                {
+                    name: "Rökelsegräs (Harambuske)",
+                    location: "Bergsområden i Muhad, höst (Ob3T6)",
+                    price: "30 silver",
+                    preparation: "Torkas och bränns som rökelse",
+                    effect: "+Ob1T6 mot sjukdomssmittor i Ob1T6 timmar",
+                    skill: "Medicin eller Rituallära",
+                    tags: []
+                },
+                {
+                    name: "Ökenviper (Sandormens Kött)",
+                    location: "Djupa ökendalarna, sommar (Ob5T6)",
+                    price: "75 silver",
+                    preparation: "Rötterna extraheras och blandas med fett till salva",
+                    effect: "Motgift mot orm-/skorpiongifter. -Ob2T6 giftmotstånd inom 10 min",
+                    skill: "Giftlära eller Medicin",
+                    tags: []
+                },
+                {
+                    name: "Jens Nattstjärna",
+                    location: "Kryddmarknaderna i Jen (Ob2T6)",
+                    price: "18 silver",
+                    preparation: "Mals och blandas med kaffe eller te",
+                    effect: "Uppiggande. -Ob1T6 Utmattning. Sömnlöshet 8 timmar",
+                    skill: "Matlagning eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Tarkas Lavakrydda",
+                    location: "Vulkanområden i Tarkas, året runt (Ob4T6)",
+                    price: "40 silver",
+                    preparation: "Mals och används som krydda",
+                    effect: "+Ob1T6 mot kyla. Mat håller sig Ob1T6 dagar längre",
+                    skill: "Matlagning",
+                    tags: []
+                },
+                {
+                    name: "Nekropolensblod (Nobundusros)",
+                    location: "Nekropolen Nobundus i Tarkas, natt (Ob6T6)",
+                    price: "130 silver",
+                    preparation: "Blommornas nektar samlas och bevaras i mörker",
+                    effect: "+Ob1T6 mot odöd påverkan. Synlig för andar i 1 timme",
+                    skill: "Rituallära eller Nekromantik",
+                    tags: []
+                }
+            ],
+            "jargien": [
+                {
+                    name: "Kejsarens Mod",
+                    location: "Kejserliga trädgårdar, sommar (Ob5T6)",
+                    price: "85 silver",
+                    preparation: "Bladen kokas med vin och honung",
+                    effect: "+Ob1T6 Ledarskap/Befäl i 1 timme. -Ob1T6 mot skrämma. Risk för övermod",
+                    skill: "Alkemi eller Ledarskap",
+                    tags: []
+                },
+                {
+                    name: "Legionärens Plåster",
+                    location: "Jargiens slätter, sommar (Ob2T6)",
+                    price: "15 silver",
+                    preparation: "Bladen krossas och läggs direkt på sår",
+                    effect: "-Ob2T6 Blödningstakt för nästa slag",
+                    skill: "Medicin eller Krigskonst",
+                    tags: []
+                },
+                {
+                    name: "Arenans Raseri (Gladiatorvatten)",
+                    location: "Stadsrädgårdar i Jargien, sommar (Ob4T6)",
+                    price: "60 silver",
+                    preparation: "Rötterna mals och blandas med vin",
+                    effect: "+Ob1T6 Styrka, -Ob1T6 Chockslag i 1 timme. Efteråt: +Ob1T6 Utmattning",
+                    skill: "Alkemi eller Krigare",
+                    tags: ["kampanj", "Thrakka"]
+                },
+                {
+                    name: "Tjuvens Dimma",
+                    location: "Mörka gränder i jargiska städer (Ob4T6)",
+                    price: "50 silver",
+                    preparation: "Mossan torkas och bränns",
+                    effect: "Tjock rök (5m radie), +Ob2T6 att se igenom i 10 minuter",
+                    skill: "Smyga eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Domarens Sanning",
+                    location: "Tempelträdgårdar, vår (Ob5T6)",
+                    price: "95 silver",
+                    preparation: "Avkok dricks av förhörsoffret",
+                    effect: "+Ob3T6 för offret att ljuga i Ob1T6 timmar",
+                    skill: "Förhör eller Alkemi",
+                    tags: ["gift"]
+                },
+                {
+                    name: "Adlig Lättja (Aristokratens Vila)",
+                    location: "Privata trädgårdar i Jargien, sommar (Ob3T6)",
+                    price: "35 silver",
+                    preparation: "Bladen röks eller infunderas i te",
+                    effect: "Euforisk avslappning 2-3 timmar. -Ob1T6 VIL. Beroendeframkallande",
+                    skill: "Alkemi eller Etikett",
+                    tags: []
+                }
+            ],
+            "skugglandet": [
+                {
+                    name: "Skuggblomma (Intets Ros)",
+                    location: "Endast i Skugglandet (Ob6T6)",
+                    price: "200 silver (om säljbar)",
+                    preparation: "Kronbladen konsumeras direkt (farligt)",
+                    effect: "Synlig för skuggväsen, +Ob1T6 kommunikation. RISK: Ob1T6 permanent VIL-skada vid TÅL Ob4T6",
+                    skill: "Svartkonst eller Rituallära",
+                    tags: ["gift"]
+                },
+                {
+                    name: "Demondimma",
+                    location: "Nära portaler till Skugglandet (Ob5T6)",
+                    price: "110 silver",
+                    preparation: "Sporer samlas och inandas",
+                    effect: "Visioner av Skugglandet Ob1T6 timmar. +Ob1T6 spå. Ob1T6 förvirring efteråt",
+                    skill: "Svartkonst eller Spåkonst",
+                    tags: []
+                },
+                {
+                    name: "Urkhaths Törnrot",
+                    location: "Platser där demoner vandrat (Ob6T6)",
+                    price: "Osäljbar",
+                    preparation: "Rötterna bränns i demonritual",
+                    effect: "+Ob2T6 demonbindande ritualer. FARA: Attraherar demonisk uppmärksamhet",
+                    skill: "Demonologi eller Svartkonst",
+                    tags: []
+                },
+                {
+                    name: "Frostspirens Is (Vinterglöds Tår)",
+                    location: "Lord Vinterglöds domäner (Ob6T6)",
+                    price: "Osäljbar",
+                    preparation: "Smälts och dricks (extremt farligt)",
+                    effect: "Immunitet mot kyla 1 dygn. PRIS: Ob1T6 permanent Utmattning",
+                    skill: "Svartkonst",
+                    tags: []
+                },
+                {
+                    name: "Själaröta (Andeförtärare)",
+                    location: "Gamla slagfält, döda städer (Ob5T6)",
+                    price: "150 silver",
+                    preparation: "Svampen torkas och pulvriseras",
+                    effect: "Blockerar andekommunikation 1 dygn. Ingen dröm i 3 dygn",
+                    skill: "Alkemi eller Rituallära",
+                    tags: []
+                },
+                {
+                    name: "Korruptionens Pollen",
+                    location: "Skugglandets nära skogar (Ob4T6)",
+                    price: "65 silver",
+                    preparation: "Samlas och förseglas i glas",
+                    effect: "Kastat i ansiktet: +Ob2T6 alla PSY-slag i 1 timme. Mardrömmar",
+                    skill: "Giftlära eller Svartkonst",
+                    tags: ["gift"]
+                }
+            ],
+            "hav": [
+                {
+                    name: "Havsnåd (Sjömannens Vän)",
+                    location: "Klippiga kuster, alltid (Ob2T6)",
+                    price: "15 silver",
+                    preparation: "Algen äts rå eller torkas",
+                    effect: "-Ob2T6 mot sjösjuka. Förebygger skörbjugg",
+                    skill: "Överlevnad eller Sjöfarande",
+                    tags: []
+                },
+                {
+                    name: "Skuggflodens Tång",
+                    location: "Flodmynningar i Asharien, sommar (Ob3T6)",
+                    price: "25 silver",
+                    preparation: "Torkas och bränns",
+                    effect: "Röken avskräcker sjömonster i Ob1T6 timmar",
+                    skill: "Sjöfarande eller Djurkännedom",
+                    tags: []
+                },
+                {
+                    name: "Korallblod",
+                    location: "Tropiska rev, sommar (Ob4T6)",
+                    price: "50 silver",
+                    preparation: "Extraheras från levande korall, kokas",
+                    effect: "Helar Ob1T6+1 Smärta från sjötrauma. Motgift mot manetgift",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Stormvarnarens Svamp",
+                    location: "Drivved och vrak, alltid (Ob3T6)",
+                    price: "30 silver",
+                    preparation: "Svampen observeras (inte konsumeras)",
+                    effect: "Ändrar färg 6-12 timmar före storm. Blå=lugnt, Grön=vind, Röd=storm",
+                    skill: "Växtlära eller Sjöfarande",
+                    tags: []
+                },
+                {
+                    name: "Djuphavsanemon",
+                    location: "Djupa vatten, sällsynt (Ob5T6)",
+                    price: "80 silver",
+                    preparation: "Gift extraheras från tentaklerna",
+                    effect: "Paralys Ob2T6 timmar vid hudkontakt. TÅL Ob4T6",
+                    skill: "Giftlära",
+                    tags: ["gift"]
+                }
+            ],
+            "dvarg": [
+                {
+                    name: "Mörkermossa (Klan Ghors Gåva)",
+                    location: "Djupa grottor, alltid (Ob3T6)",
+                    price: "35 silver",
+                    preparation: "Mossan äts rå eller bryggs",
+                    effect: "Mörkerseende i 4 timmar",
+                    skill: "Växtlära eller Gruvdrift",
+                    tags: []
+                },
+                {
+                    name: "Stenblommans Extrakt",
+                    location: "Mineralrika grottor (Ob4T6)",
+                    price: "55 silver",
+                    preparation: "Kristaller mals och blandas med vatten",
+                    effect: "+Ob1T6 TÅL mot gifter i 1 dygn. Hårdare ben",
+                    skill: "Alkemi eller Gruvdrift",
+                    tags: []
+                },
+                {
+                    name: "Grottgastruts (Dvärgbröd)",
+                    location: "Djupa tunnlar, alltid (Ob2T6)",
+                    price: "10 silver",
+                    preparation: "Svampen kokas eller steks",
+                    effect: "Ersätter daglig kost. +1 Uthållighet under jord",
+                    skill: "Matlagning eller Överlevnad",
+                    tags: []
+                },
+                {
+                    name: "Firegloens Svamp",
+                    location: "Nära underjordiska lavaflöden (Ob5T6)",
+                    price: "70 silver",
+                    preparation: "Torkas och mals",
+                    effect: "Eld tänds med pulvret brinner hett (+1T6 eldskada) men kortare",
+                    skill: "Smide eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Järnkyssenblomma",
+                    location: "Underjordiska sjöar (Ob4T6)",
+                    price: "45 silver",
+                    preparation: "Blommorna pressas till olja",
+                    effect: "Rustningsolja - förebygger rost i 1 månad",
+                    skill: "Smide eller Växtlära",
+                    tags: []
+                }
+            ],
+            "tirak": [
+                {
+                    name: "Blodsvalg (Guerras Styrka)",
+                    location: "Tirakiska stäpper, sommar (Ob4T6)",
+                    price: "60 silver",
+                    preparation: "Rötterna tuggas rå före strid",
+                    effect: "-Ob2T6 Chockslag, +Ob1T6 Styrka i första striden. Efteråt: +Ob2T6 Utmattning",
+                    skill: "Överlevnad eller Krigarkonst",
+                    tags: []
+                },
+                {
+                    name: "Andevandrare (Schamanens Ledstjärna)",
+                    location: "Heliga platser i tiraklander (Ob5T6)",
+                    price: "90 silver",
+                    preparation: "Blommorna röks under ritual",
+                    effect: "+Ob2T6 schamanistiska ritualer. Tillgång till andeplanet Ob1T6 timmar",
+                    skill: "Rituallära",
+                    tags: ["kampanj", "Umnatak"]
+                },
+                {
+                    name: "Gurdstyrka",
+                    location: "Slagfält och tirakläger (Ob3T6)",
+                    price: "30 silver",
+                    preparation: "Bladen kokas med kött",
+                    effect: "+Ob1T6 extra Smärta-läkning vid vila. Stärker immunförsvar",
+                    skill: "Matlagning eller Medicin",
+                    tags: []
+                },
+                {
+                    name: "Mahktahs Eld",
+                    location: "Vulkaniska områden (Ob5T6)",
+                    price: "85 silver",
+                    preparation: "Pulvriseras och äts med blod",
+                    effect: "+Ob1T6 stridsrelaterade slag 1 strid. -Ob1T6 sociala slag. Ökad Aggression",
+                    skill: "Krigarkonst eller Rituallära",
+                    tags: []
+                }
+            ],
+            "alv": [
+                {
+                    name: "Sanaris Gåva (Stjärnblomma)",
+                    location: "Endast i Sanari-alvernas skogar, vår (Ob6T6)",
+                    price: "150 silver",
+                    preparation: "Kronbladen äts färska under fullmåne",
+                    effect: "+Ob2T6 Magi-slag 1 timme. +Ob1T6 syn 1 dygn (endast magikunniga)",
+                    skill: "Magi eller Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Tusenårslövet",
+                    location: "Urgamla alvskogar (Ob5T6)",
+                    price: "100 silver",
+                    preparation: "Löven bereds i en veckolång process",
+                    effect: "Saktar åldrande: 1 dos = 1 år längre liv. Max 10 doser/livstid",
+                    skill: "Alkemi eller Magi",
+                    tags: []
+                },
+                {
+                    name: "Dimvävarens Spindelnät",
+                    location: "Alvernas hemliga lundar (Ob5T6)",
+                    price: "80 silver",
+                    preparation: "Nätet väves till bandage",
+                    effect: "Bandage helar +Ob1T6 extra Trauma/dag. Förhindrar ärr",
+                    skill: "Medicin eller Handarbete",
+                    tags: []
+                },
+                {
+                    name: "Yelgothas Tår (Portalört)",
+                    location: "Nära portaler mellan världar (Ob6T6)",
+                    price: "180 silver (osäljbar)",
+                    preparation: "Dropparna absorberas genom huden",
+                    effect: "Passage genom magiska barriärer. +Ob2T6 portalresning. ENGÅNGS",
+                    skill: "Portalmagi eller Rituallära",
+                    tags: []
+                }
+            ]
+        };
+
+        let currentFilter = 'all';
+
+        function renderHerbs() {
+            const container = document.getElementById('herbs-container');
+            container.innerHTML = '';
+
+            const regionTitles = {
+                'cermira': 'Cermira/Mithera - Nordiska Örter',
+                'muhad': 'Muhad/Öken - Arabiska Örter',
+                'jargien': 'Jargien - Imperiella Örter',
+                'skugglandet': 'Skugglandet - Demoniska Örter',
+                'hav': 'Hav/Kust - Sjöfarares Medicin',
+                'dvarg': 'Dvärg/Underjord - Grottväxter',
+                'tirak': 'Tirak/Barbariska - Vilda Örter',
+                'alv': 'Alv/Sunari - Magiska Örter'
+            };
+
+            Object.keys(herbsData).forEach(region => {
+                const section = document.createElement('div');
+                section.className = 'region-section';
+                section.dataset.region = region;
+
+                const header = document.createElement('h2');
+                header.className = 'region-header';
+                header.textContent = regionTitles[region];
+                section.appendChild(header);
+
+                const grid = document.createElement('div');
+                grid.className = 'herb-grid';
+
+                herbsData[region].forEach(herb => {
+                    const card = document.createElement('div');
+                    card.className = 'herb-card';
+                    card.dataset.name = herb.name.toLowerCase();
+                    card.dataset.effect = herb.effect.toLowerCase();
+                    card.dataset.tags = herb.tags.join(' ').toLowerCase();
+
+                    if (herb.tags.includes('gift')) {
+                        card.classList.add('gift');
+                    }
+                    if (herb.tags.includes('kampanj')) {
+                        card.classList.add('kampanj');
+                    }
+
+                    const tags = herb.tags.map(tag => {
+                        if (tag === 'gift') {
+                            return '<span class="herb-tag gift">🩸 GIFT</span>';
+                        } else if (tag === 'kampanj') {
+                            return '<span class="herb-tag kampanj">⭐ ' + herb.tags[herb.tags.indexOf(tag) + 1] + '</span>';
+                        } else if (herb.tags[herb.tags.indexOf(tag) - 1] !== 'kampanj') {
+                            return '<span class="herb-tag">' + tag + '</span>';
+                        }
+                        return '';
+                    }).filter(t => t).join('');
+
+                    card.innerHTML = `
+                        <div class="herb-name">${herb.name}</div>
+                        ${tags}
+                        <div class="herb-detail"><strong>📍 Växtplats:</strong> ${herb.location}</div>
+                        <div class="herb-detail"><strong>💰 Pris:</strong> ${herb.price} per dos</div>
+                        <div class="herb-detail"><strong>🧪 Tillredning:</strong> ${herb.preparation}</div>
+                        <div class="herb-detail"><strong>🎯 Färdighet:</strong> ${herb.skill}</div>
+                        <div class="herb-effect"><strong>✨ Effekt:</strong> ${herb.effect}</div>
+                    `;
+
+                    grid.appendChild(card);
+                });
+
+                section.appendChild(grid);
+                container.appendChild(section);
+            });
+        }
+
+        function filterRegion(region) {
+            currentFilter = region;
+
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            const sections = document.querySelectorAll('.region-section');
+            const cards = document.querySelectorAll('.herb-card');
+
+            if (region === 'all') {
+                sections.forEach(s => s.style.display = 'block');
+                cards.forEach(c => c.style.display = 'block');
+            } else if (region === 'gift') {
+                sections.forEach(s => s.style.display = 'block');
+                cards.forEach(c => {
+                    if (c.classList.contains('gift')) {
+                        c.style.display = 'block';
+                    } else {
+                        c.style.display = 'none';
+                    }
+                });
+            } else if (region === 'kampanj') {
+                sections.forEach(s => s.style.display = 'block');
+                cards.forEach(c => {
+                    if (c.classList.contains('kampanj')) {
+                        c.style.display = 'block';
+                    } else {
+                        c.style.display = 'none';
+                    }
+                });
+            } else {
+                sections.forEach(s => {
+                    if (s.dataset.region === region) {
+                        s.style.display = 'block';
+                    } else {
+                        s.style.display = 'none';
+                    }
+                });
+            }
+        }
+
+        function filterHerbs() {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const cards = document.querySelectorAll('.herb-card');
+
+            cards.forEach(card => {
+                const name = card.dataset.name;
+                const effect = card.dataset.effect;
+                const tags = card.dataset.tags;
+
+                if (name.includes(searchTerm) || effect.includes(searchTerm) || tags.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize on page load
+        renderHerbs();
+    </script>
+</body>
+</html>
