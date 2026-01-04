@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stålsvärds Kavalerister - Lägerberättelser - Gravens Arv</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --shadow-purple: #8b4789;
+            --gold: #ffa500;
+            --dark-gold: #d4af37;
+            --bg-dark: #0a0a0a;
+            --bg-darker: #050505;
+            --bg-card: #1a1a1a;
+            --bg-hover: #2a2a2a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --border: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--deep-red);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--deep-red);
+        }
+
+        .back-btn {
+            background: var(--deep-red);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            background: var(--flame-orange);
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem 4rem;
+        }
+
+        .chapter-header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .chapter-title {
+            font-size: 2.5rem;
+            color: var(--deep-red);
+            margin-bottom: 1rem;
+        }
+
+        .chapter-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .entry {
+            background: linear-gradient(135deg, var(--bg-card), var(--bg-darker));
+            border-left: 4px solid var(--deep-red);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .entry-header {
+            font-size: 1.3rem;
+            color: var(--flame-orange);
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .entry-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .entry-text {
+            color: var(--text-primary);
+            line-height: 1.9;
+        }
+
+        .song {
+            background: linear-gradient(135deg, var(--bg-darker), var(--bg-card));
+            border-left: 4px solid var(--gold);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .song-title {
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .song-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .verse {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid var(--border);
+            color: var(--text-primary);
+            line-height: 2;
+        }
+
+        .chorus {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--gold);
+            color: var(--gold);
+            font-style: italic;
+            line-height: 2;
+        }
+
+        .report {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--mystic-purple);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .report-header {
+            color: var(--mystic-purple);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .report-body {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">Stålsvärds Kavalerister: Lägerberättelser</div>
+        <a href="index.html" class="back-btn">← Tillbaka till Fluff</a>
+    </nav>
+
+    <div class="content-container">
+        <div class="chapter-header">
+            <h1 class="chapter-title">STÅLSVÄRDS KAVALERISTER</h1>
+            <p class="chapter-subtitle">Lägerberättelser, Soldatsånger & Fältrapporter</p>
+            <p class="chapter-subtitle" style="margin-top: 1rem; font-size: 1rem;">
+                Från lägren, marscherna och slagfälten - orden från de som bar stålet
+            </p>
+        </div>
+
+        <!-- SOLDATSÅNGER -->
+        <section class="section">
+            <h2 class="section-title">Soldatsånger</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-style: italic;">
+                Sånger sjungna runt lägereldar, på marschvägar och i drickssalar. Orden varierar från kompani till kompani, men rytmen är alltid densamma - takten av stålklädda stövlar mot jord.
+            </p>
+
+            <div class="song">
+                <div class="song-title">Marschen Hem</div>
+                <div class="song-meta">Traditionell marschtaktssång - Vers och kör alternerar med vänster-höger-takt</div>
+                <div class="verse">
+                    <em>Vänster, höger, stålet klirrar,<br>
+                    Vänster, höger, skorna irrar,<br>
+                    Tre dagar sen vi såg en säng,<br>
+                    Fem dagar sen vi hade bröd,<br>
+                    Men hemma väntar varm soppa ännd,<br>
+                    Om vi inte först är döda och döda är döda</em>
+                </div>
+                <div class="chorus">
+                    <em>Så marsch, marsch, kompani av stål!<br>
+                    Marsch, marsch, innan vintern tar oss all!<br>
+                    Ett steg till, kamrat, bara ett steg till,<br>
+                    Sen är vi hemma - eller död vid vägens brädd</em>
+                </div>
+                <div class="verse">
+                    <em>Vänster, höger, regnet faller,<br>
+                    Vänster, höger, kaptenen skraller,<br>
+                    Om ära och om plikt och skit,<br>
+                    Men vi vet vad vi marscherar för,<br>
+                    Tre koppar om dan och en sovplats natt,<br>
+                    Och kamratens axel när helvetet slår</em>
+                </div>
+                <div class="chorus">
+                    <em>Så marsch, marsch, kompani av stål!<br>
+                    Marsch, marsch, innan vintern tar oss all!<br>
+                    Ett steg till, kamrat, bara ett steg till,<br>
+                    Sen är vi hemma - eller död vid vägens brädd</em>
+                </div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">Sylas Ballad</div>
+                <div class="song-meta">Om vaktmästaren Sylas "Eldvakten" - Sjungs med respekt och ironi i lika mått</div>
+                <div class="verse">
+                    <em>Sylas sitter vid sin eld,<br>
+                    Vaken medan alla sover,<br>
+                    Sylas vaktar lägereldens sken,<br>
+                    Med ögon som aldrig sluter sig<br>
+                    <br>
+                    "Vem där?" ropar han i natten,<br>
+                    Till varje skugga, varje ljud,<br>
+                    "Vem där?" - det är Beric som ska pissa,<br>
+                    För fjärde gången denna natt</em>
+                </div>
+                <div class="verse">
+                    <em>Men när fienden kom i gryningen,<br>
+                    Genom dimma tjock som vägg,<br>
+                    Då var Sylas först med varningen,<br>
+                    Hans "Vem där!" räddade oss alla<br>
+                    <br>
+                    Så jävlas inte med vaktmästarn,<br>
+                    Låt honom skrika "Vem där!" hur mycket han vill,<br>
+                    För den natten du verkligen behöver honom,<br>
+                    Kommer Sylas vara vaken fortfarande</em>
+                </div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">Dricksvisan om Maten</div>
+                <div class="song-meta">Sjungs i messhallen - Alltid lika sann, aldrig lika rolig som första gången</div>
+                <div class="verse">
+                    <em>Vad är det för skit i grytan idag?<br>
+                    Det ser ut som igår, fast grått istället för brunt,<br>
+                    Kocken säger det är kött,<br>
+                    Men jag svor att jag såg det röra på sig<br>
+                    <br>
+                    Brödet är hårt som en soldats hjärta,<br>
+                    Ölet är varmt som kompanjens piss,<br>
+                    Men vi äter ändå för vad är alternativet?<br>
+                    Att svälta är fan inte bättre</em>
+                </div>
+                <div class="chorus">
+                    <em>Så skål för kocken som förgiftar oss,<br>
+                    Skål för maten som dödar långsamt,<br>
+                    Skål för ölet som smakar skit,<br>
+                    För imorgon kanske vi dör fort istället!</em>
+                </div>
+                <div class="verse">
+                    <em>Minns du den kött-grejen i Jarla?<br>
+                    Den som låg i solen i tre dar?<br>
+                    Darian åt den ändå, sa den smakade bra,<br>
+                    Nu skiter han fortfarande en gång i timmen<br>
+                    <br>
+                    Elara försöker laga "riktiga" måltider,<br>
+                    Med örter och sånt där elviskt skit,<br>
+                    Men vi vet alla vad som händer,<br>
+                    Det slutar som grått slammer i grytan ändå</em>
+                </div>
+                <div class="chorus">
+                    <em>Så skål för kocken som förgiftar oss,<br>
+                    Skål för maten som dödar långsamt,<br>
+                    Skål för ölet som smakar skit,<br>
+                    För imorgon kanske vi dör fort istället!</em>
+                </div>
+            </div>
+
+            <div class="song">
+                <div class="song-title">Beric Brorson Blues</div>
+                <div class="song-meta">Om scoutens eviga jobb att hitta vägen - Sjungs när man gått vilse (alltid)</div>
+                <div class="verse">
+                    <em>Beric säger han vet vägen,<br>
+                    Beric säger det är rakt fram,<br>
+                    Beric säger vi är nästan där,<br>
+                    Beric är en jävla lögnare<br>
+                    <br>
+                    Vi har gått i cirklar i tre timmar,<br>
+                    Passerat samma träd fyra gånger,<br>
+                    Beric stirrar på sin karta som den är skriven på dvärgiask,<br>
+                    Beric har kartan upp och ner</em>
+                </div>
+                <div class="verse">
+                    <em>Men förra veckan i Mithera-skogen,<br>
+                    När dimman var tät och träden likadana,<br>
+                    Då hittade Beric vägen hem,<br>
+                    Genom instinkt eller ren jävla tur<br>
+                    <br>
+                    Så vi följer Beric fortfarande,<br>
+                    Trots att han inte vet vad fan han gör,<br>
+                    För det är bättre att gå vilse tillsammans,<br>
+                    Än hitta rätt helt ensam</em>
+                </div>
+            </div>
+        </section>
+
+        <!-- LÄGERHISTORIER -->
+        <section class="section">
+            <h2 class="section-title">Lägerhistorier</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-style: italic;">
+                Berättelser som cirkulerar runt lägreldar när vakterna är satta, maten är äten och ölet börjar verka. Vissa är sanna. Vissa är överdrifter. Alla är viktiga.
+            </p>
+
+            <div class="entry">
+                <div class="entry-header">Den Natten med Gripen</div>
+                <div class="entry-meta">Berättad av Dorn Stenbärare - Varierar varje gång, men grunden är alltid densamma</div>
+                <div class="entry-text">
+                    "Så där stod vi, eller? Jag, Gordon, den där tirak-tjejen - ja, Thrakka - och en handfull andra som hade inte tillräckligt vett att spring åt andra hållet. Och gripen, fan ta mig, den var stor som ett hus. Större kanske. Stor som två hus.<br><br>
+
+                    Gordon sa nåt om taktik. Alltid med jävla taktiken, den killen. 'Omringa den,' sa han. 'Distrahera den,' sa han. Som om gripen skulle bara vänta artigt medan vi sprang runt som höns utan huvuden.<br><br>
+
+                    Thrakka hörde inte på honom förstås. Hör aldrig på nån den där. Bara ställde sig mitt framför besten med den där krökta yxan och skrek nåt på tirakiska som förmodligen betydde 'kom och ta mig, fågeljävel.'<br><br>
+
+                    Gripen tog henne. Bokstavligen. Grep tag i henne med klorna - stora som svärd, fan heller - och lyfte. Trodde vi hon var död. Trodde vi skulle få bära hem bitar av henne.<br><br>
+
+                    Men wissen vad den där tjejn gjorde? Hängde kvar i klorna och började SLÅSS uppåt. Med ena handen. Den andra var... nåja, inte så användbar just då. Blod överallt. Skriken... fan, man hör det fortfarande ibland på natten.<br><br>
+
+                    Gordon sköt den under tiden. Tre pilar rakt i ögat. Säger han. Jag såg kanske en. Men den räknas. Gripen tappade Thrakka - från typ tio meter upp - hon landade på Kaelthar som hade inte varit snabb nog att flytta sig. Bräckte hans arm. Han gnäller om det än idag.<br><br>
+
+                    Elara sydde ihop Thrakka efteråt. Tog typ hundra stygn. Kanske tusen. Thrakka sa inte ett ljud hela tiden. Bara satt där och drack medan elven jobbade. Nästa dag bar hon full utrustning på marschen som ingenting hade hänt.<br><br>
+
+                    Så... ja. Det var den natten med gripen. Var vi hjältar? Fuck nej. Vi var idioter som hade tur att inte dö. Men vi lever fortfarande. Gripen gör inte det.<br><br>
+
+                    Och det, kamrater, är skillnaden mellan oss och de döda: Vi är för envisa för att dö ordentligt."
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">Evelinas Första Strid</div>
+                <div class="entry-meta">Som berättad av Kaelthar Klerk - Alltid när nya rekryter frågar hur det "egentligen" är</div>
+                <div class="entry-text">
+                    Evelina? Nu Fältsyster Evelina? Fuck, den tjejen var rädd som fan första gången. Vi alla var det, men hon visade det. Skakade så man såg rustningen vibrera.<br><br>
+
+                    Det var banditrövare utanför Jarla. Ingenting fancy. Tjugo-trettio as som trodde de kunde ta en karavaneskort. Vi var tjugo. De var trettiofem. Dåliga odds men vi hade sett värre.<br><br>
+
+                    Evelina hade bara varit med oss i två veckor. Nyutbildad läkare, skickad från nåt tempel. Hon hade läst om strid. Hon hade tränat med bandage. Hon hade aldrig sett nån faktiskt DÖ.<br><br>
+
+                    Första mannen som föll var Torik. Pil genom halsen. Han hade inte ens tid att skrika. Bara föll där han stod och blödde ut på tre sekunder. Evelina stirrade. Bara stirrade.<br><br>
+
+                    Då knuffade Sylas henne. Hårt. 'Jobba eller stick åt helvete!' skrek han. För det är valet, eller? Jobba eller ge upp.<br><br>
+
+                    Hon jobbade. Gud hjälpe mig, hon jobbade. Kröp fram till Torik medan pilar fortfarande flög. Försökte stoppa blödningen fast han redan var död. Sen kröp hon till nästa. Och nästa. Höll folk vid liv medan helvetet exploderade runt henne.<br><br>
+
+                    När striden var över satt hon bara där. Blodig från topp till tå - inget av det hennes eget. Trettio bandage lagda. Tolv liv räddade. Ett förlorat.<br><br>
+
+                    'Det blir lättare,' sa jag till henne.<br><br>
+
+                    'Lögn,' sa Elara från andra sidan lägret.<br><br>
+
+                    Och elven hade rätt förstås. Det blir inte lättare. Du blir bara bättre på att stå ut med det.<br><br>
+
+                    Evelina gråt den natten. Hörde henne i tältet. Nästa morgon var hon uppe före alla andra, kollade bandage, blandade mediciner. Har aldrig sett henne skaka sen dess.<br><br>
+
+                    Så när ni nya ungar frågar hur det är första gången? Det är skit. Det är alltid skit. Men antingen slutar ni skaka eller så slutar ni andas. Evelina valde att sluta skaka.<br><br>
+
+                    Var smarta. Välj samma.
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">Tirakgraven-Expeditionen: Vad Verkligen Hände</div>
+                <div class="entry-meta">Fragment sammanställda från olika versioner - Sanningen är någonstans i mitten</div>
+                <div class="entry-text">
+                    Ingen pratar om det direkt, eller? Tirakgraven. Men alla vet. Vi förlorade folk där. Inte i strid. Värre.<br><br>
+
+                    <strong>[Från Beric Brorson, scout]</strong><br>
+                    "Graven var... fel. Från början. Träden växte åt fel håll. Fåglarna sjöng bakåt. Och stenen, fan, stenen VET saker. Kan se det i hur den ligger, hur den väntar..."<br><br>
+
+                    <strong>[Från Darian den Snabbe, vakt]</strong><br>
+                    "Timron gick in först med den där jävla Migor Trollkunnig. Jag höll vakten utanför. Skrek in att det var farligt. Han skrattade. SKRATTADE. Som om jag var ett barn som var rädd för mörker. Väl, jag är rädd för mörker nu. Rädd för vad som lever i det."<br><br>
+
+                    <strong>[Från Sylas "Eldvakten", vaktmästare]</strong><br>
+                    "De kom ut förändrade. Timron ögon var... annorlunda. Som om nån annan tittade ut genom dem. Tamron, hans lärling, pratade om saker som inte hänt än. Och den där Ibran... han rörde sig som hans kropp var för liten för vad som fanns inuti.<br><br>
+
+                    Jag sa åt kaptenen. 'De är inte rätt längre,' sa jag. Han sa åt mig att hålla käften. Soldater pratar inte om sånt. Vi bara... vi bara gör vårt jobb och hoppas vi overlever."<br><br>
+
+                    <strong>[Från Kaelthar Klerk, skrivare]</strong><br>
+                    "Rapporten jag skrev sa 'framgångsrik expedition, inga förluster.' Det stämde tekniskt. Vi förlorade inga KROPPAR. Men själar? Fan vet vad vi lämnade kvar där nere.<br><br>
+
+                    Gordon och hans gäng - de gick tillbaka sen. Ensamma. Inte vår sak längre, sa kaptenen. Bra riddance. Men jag undrar ibland vad de hittade. Och om det fortfarande är där. Väntar."<br><br>
+
+                    <strong>[Från Elara can De Mediva, läkare]</strong><br>
+                    "Jag undersökte dem alla efteråt. Inget fel. Fysiskt. Men när jag tittade i Timrons ögon... det var som att titta ner i en brunn som inte hade botten. Jag bad till mina förfäder den natten. För första gången på hundra år bad jag om hjälp.<br><br>
+
+                    De svarade inte. Kanske kunde de inte höra mig från där vi var. Kanske ville de inte komma närmare."<br><br>
+
+                    Ingen pratar om Tirakgraven nu. Men alla minns. Och när vi marscherar genom mörka skogar, när vi passerar gamla stenar, när vi hör ljud som inte borde finnas...<br><br>
+
+                    Vi alla minns vad som hände med dem som gick för djupt.
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">Darian och Ökendraken</div>
+                <div class="entry-meta">Berättad av Darian själv - Och ja, han kommer berätta den även om ingen frågade</div>
+                <div class="entry-text">
+                    Så ni har hört om gripen, ja? Stor fågel, farligt, blah blah. Men har ni hört om DRAKEN?<br><br>
+
+                    Det var i Muhad. Jarla-trakten. Hett som fan - hetare än helvetet. Vi eskortera en kara van genom öknen och plötsligt, från INGENSTANS, den där besten bara... dyker upp ur sanden.<br><br>
+
+                    'Dra Drake' kallar de det på den där lokala dialekten. För det är exakt vad den gör - drar ner dig under sanden och du är aldrig sedd igen.<br><br>
+
+                    Jag såg den först. Förstås jag gjorde - de kallar mig inte 'den Snabbe' för ingenting. 'DRAKE!' skrek jag. Alla trodde jag skämtade. Tills de såg den.<br><br>
+
+                    Tjugo meter lång. Fjäll som rustning. Ögon som glödande kol. Andedräkt som smälte sand till glas. Och den var HUNGRIG.<br><br>
+
+                    Gordon försökte med sin bågartaktik igen. Pilar bara studsade av. Thrakka försökte slåss - nästan blev uppäten. Jag? Jag sprang. Någon måste överleva för att berätta historien, eller hur?<br><br>
+
+                    <em>[Kaelthar från andra sidan lägret: "Du gömde dig bakom ett fat!"]</em><br><br>
+
+                    STRATEGISKT OMPOSITIONERING, Kaelthar! Anyway...<br><br>
+
+                    Den där tjejn de har nu - Umnatak, asuer-schaman - hon började sjunga. Bara sjunga. Någon konstig sång på hennes språk. Och draken... den bara stannade. Lyssnade.<br><br>
+
+                    Sen kröp den tillbaka ner i sanden och försvann.<br><br>
+
+                    <em>[Elara: "Det var en vanlig ödla. Kanske två meter lång."]</em><br><br>
+
+                    <em>[Darian: "Tio meter MINST. Du såg inte hela grejen!"]</em><br><br>
+
+                    <em>[Beric: "Den var stor, jag ger dig det. Men tjugo meter? Kom igen..."]</em><br><br>
+
+                    TJUGO METER. Jag mätte med mina egna ögon!<br><br>
+
+                    <em>[Sylas: "Dina ögon kan inte mäta för skit, Darian. Du trodde den där björnen förra veckan var 'stor som ett hus' också."]</em><br><br>
+
+                    DEN VAR STOR!<br><br>
+
+                    Poängen är - jag såg en ökendrake. Jag överlevde. Och om ni möter en, spring. Spring fort. Eller gör som mig och gömma dig bakom något stabilt tills nån annan löser problemet.<br><br>
+
+                    <em>[Kören av resten av lägret: "STRATEGISKT OMPOSITIONERING!"]</em><br><br>
+
+                    ...Fan ta er alla.
+                </div>
+            </div>
+        </section>
+
+        <!-- FÄLTRAPPORTER OCH BREV -->
+        <section class="section">
+            <h2 class="section-title">Fältrapporter & Brev</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-style: italic;">
+                Officiella rapporter, personliga brev, och allt däremellan. Det som skrivs ner blir sanning - även när det är lögn.
+            </p>
+
+            <div class="report">
+                <div class="report-header">
+                    FÄLTRAPPORT #247<br>
+                    FRÅN: Kaptenen, Stålsvärds Kavalerister<br>
+                    TILL: Regementschef Halverton<br>
+                    DATUM: 15e Daag, Selenios Månad<br>
+                    RE: Tirakgraven Expedition - Slutrapport
+                </div>
+                <div class="report-body">
+                    Rapporten följande:<br><br>
+
+                    Expeditionen till Tirakgraven slutförd enligt kontrakt. Arkeologen Migor Trollkunnig och assistenter eskorterade till målplatsen, skyddade under utgrävning, eskorterade tillbaka. Noll förluster personlig. Uppdrag framgångsrikt.<br><br>
+
+                    NOTIS: Expeditionsmedlemmar (Migor, Timron, Tamron, Ibran) uppvisade "oförklarbara beteendeförändringar" efter återkomst från gravplatsen. Läkare Elara can De Mediva finner inga fysiska åkommor. Beteendeförändringarna noterade men inte i strid med kontraktsåtaganden.<br><br>
+
+                    Rekommendation: Framtida expeditioner till liknande platser bör inkludera prästerlig rådgivning innan genomförande.<br><br>
+
+                    Ytterligare notis: Tre kompanimedlemmar (Gordon Nahrzezia, Thrakka Järnhanden, Umnatak) avslutade kontrakt omedelbart efter återkomst. Personliga skäl angavs. Inget disciplinärt. Avgångsvederlag betalat i enlighet med reglemente.<br><br>
+
+                    Kompaniet återgår till standardrotation: eskort, patrull, fredstida operationer.<br><br>
+
+                    Slutsats: Uppdraget framgångsrikt enligt alla mätbara parametrar. Att viss personal upplevde "obehag" är irrelevant för kontraktsmål.<br><br>
+
+                    Kaptenen<br>
+                    Stålsvärds Kavalerister
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">Brev Hem från Sylas till hans Mor</div>
+                <div class="entry-meta">Aldrig skickat - Hittat i hans packning efter han avgick</div>
+                <div class="entry-text">
+                    Mor,<br><br>
+
+                    Jag vet att du oroar dig. Du frågade i ditt senaste brev när jag kommer hem. Sanningen? Jag vet inte.<br><br>
+
+                    Jobbet är... jobbet. Vi vaktar vad som behöver vaktas. Eskorterar vem som betalar. Det är ärligt arbete. Nattsstt är helvetet, men du lärde mig att stå ut med helvetet länge sen.<br><br>
+
+                    Förlorade några kamrater förra månaden. Inte i strid - värre. De gick in i nåt gammalt, kom ut annorlunda. Försökte säga åt kaptenen att det var fel. Han lyssnade inte. Chefer lyssnar aldrig förrän det är försent.<br><br>
+
+                    Men de andra killarna - Beric, Darian, Kaelthar, Elara - de är bra folk. Håller dig vid liv när det räknas. Delar sista brödet. Håller vakt när du kan inte längre. Det är vad som betyder något här ute.<br><br>
+
+                    Du frågade om jag träffat nån. Kvinnor och sånt. Mor, jag vaktar lägerfyrar och skriker åt folk som måste pissa på natten. Inte direkt romantiskt, eller hur? Men det är okej. Har mina kamrater. Det räcker.<br><br>
+
+                    Pengar skickat med denna post. Borde räcka för taket du nämnde. Om det inte gör, skriv. Jag hittar mer.<br><br>
+
+                    Hälsa far från mig. Säg åt honom att jag håller vakt så han skulle varit stolt. Även om han aldrig sa det, jag vet det betyder nåt.<br><br>
+
+                    Kommer hem när kontraktet slutar. Eller när jag slutar. Vad som kommer först.<br><br>
+
+                    Din son,<br>
+                    Sylas<br><br>
+
+                    PS: Om du får det här brevet från nån annan än mig, då vet du vad som hände. Spendera inte pengarna på nån jävla fin begravning. Använd dem på taket. Jag vill åtminstone ha gjort nåt användbart.
+                </div>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">Elara can De Medivas Medicinska Anteckningar</div>
+                <div class="entry-meta">Från hennes privata journal - Inte avsedd för andra ögon</div>
+                <div class="entry-text">
+                    <strong>Dag 47, Selenios Månad</strong><br><br>
+
+                    Ytterligare tre skadade idag från "träningsökning." Vilket är ett fint ord för "slogs i messhallen efter för mycket öl." Brutna fingrar, sönderslagna näsor, en möjlig hjärnskakning.<br><br>
+
+                    Människor läker så långsamt jämfört med mitt folk. Det frustrerar mig fortfarande efter hundra år i deras kompani. En elv skulle ha läkt på två dagar. Människor tar två veckor. Och under den tiden klagar de.<br><br>
+
+                    Evelina hjälper bra nu. Hon har gelgiftiga händer - ärligt menat. För ett år sen kunde hon knappt sy en sårskada. Nu opererar hon pilfynd utan att blinka. Människor lär sig fort när de måste. Det är något jag kan respektera.<br><br>
+
+                    <strong>Dag 52, Selenios Månad</strong><br><br>
+
+                    Tirakgraven-expeditionen återvände. Alla levande. Alla... förändrade.<br><br>
+
+                    Undersökte Timron, Tamron, Ibran, Migor. Fysiskt oskadade. Men när jag tittade i deras ögon... mina förfäder bevare mig, det fanns något ANNAT där. Något som tittade tillbaka.<br><br>
+
+                    Rapporterade till kaptenen. Han noterade det. "Beteendeförändringar" kallade han det. Som om det förklarade något.<br><br>
+
+                    Gordon, Thrakka, Umnatak - de såg det också. Därför de lämnade. Kloka. Men jag kan inte lämna. För många är beroende av min kunskap. Och kanske, i mitt hjärtas djup, vill jag förstå vad som hände.<br><br>
+
+                    <strong>Dag 103, Astrios Månad</strong><br><br>
+
+                    Darian skadad igen idag. "Ökendrake" påstår han. Det var en ödla. En stor ödla, visserligen, men en ödla.<br><br>
+
+                    Sydde tolv stygn i hans arm. Han berättade historien hela tiden. Draken växer för varje berättelse. Om en månad blir det en legendarisk varelse. Om ett år blir det en gud.<br><br>
+
+                    Det är så här myter föds, antar jag. En stor ödla blir en drake. En rädd man blir en hjälte. En kompani av trötta soldater blir legender.<br><br>
+
+                    Men vi vet sanningen, eller hur? Vi är bara människor (och en elv) som gör ett jobb. Vi blöder. Vi skiter. Vi dör. Och innan vi dör, berättar vi historier om hur det egentligen var.<br><br>
+
+                    Kanske det är nog. Kanske historierna är allt som räknas i slutändan.<br><br>
+
+                    Men ibland, på nätterna när jag inte kan sova, minns jag Timrons ögon. Och jag vet: några historier borde inte berättas. Några sanningar borde stanna begravda.<br><br>
+
+                    Som det där i Tirakgraven.
+                </div>
+            </div>
+        </section>
+
+        <div style="text-align: center; padding: 3rem 0; border-top: 1px solid var(--border); margin-top: 4rem;">
+            <p style="color: var(--text-secondary); font-style: italic;">
+                "Vi marscherar. Vi kämpar. Vi överlever.<br>
+                Och när det är över berättar vi historier om hur det egentligen var.<br>
+                För det är allt som finns kvar av oss när stålet rostar."
+            </p>
+            <p style="color: var(--deep-red); margin-top: 1rem; font-weight: bold;">
+                - Stålsvärds Kavalerister
+            </p>
+        </div>
+    </div>
+</body>
+</html>
