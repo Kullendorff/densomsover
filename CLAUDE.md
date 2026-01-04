@@ -759,5 +759,27 @@ git checkout wiki_data.js
 
 ---
 
+## Kampanjreferenser
+
+### Damarien - Politiskt & Militärt Läge
+**Fil:** `master/damarien-politiska-läget.md`
+**Innehåll:** Fullständig sammanfattning av Damariens politiska situation, inklusive:
+- Storfurste Thamas Vitfjäders regim
+- **KRITISK HEMLIGHET:** Drottning Ariandra ÄR en inkarnation av Xinu
+- Hemlig vandöd-armé kontrollerad av Ariandra
+- Xinukultens planer för Damarien och omgivande länder
+- Ruinerna under Helm
+- Hot mot Ariadnas planer (kyrkan, vindmunkarna, vissa adelsmän)
+
+**Kampanjrelevans:**
+- Gordons bror Ethan har tagit värvning med Bronshjälmarna för att tjänstgöra i Damarien
+- Cirefalier kommer från/genom Damarien
+- Möjlig koppling till Arvorns Hammare
+- Möjlig koppling till lamior och vandöda gruppen stött på
+
+**När läsa:** Vid planering av Damarien-relaterade äventyr eller när spelarna frågar om regionen.
+
+---
+
 ## Frågor?
 Om något är oklart, fråga innan du gissar. Data-integritet är KRITISK - hellre fråga för mycket än för lite.
