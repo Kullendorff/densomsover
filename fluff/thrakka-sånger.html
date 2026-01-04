@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sånger om Thrakka Järnhanden - Gravens Arv</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --gold: #ffa500;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-light: #e0e0e0;
+            --text-muted: #888;
+            --border: #333;
+        }
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #180a0a 50%, #0a0a0a 100%);
+            color: var(--text-light);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--flame-orange);
+            padding: 1rem 2rem;
+            margin: -2rem -2rem 2rem -2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--flame-orange);
+        }
+        .back-btn {
+            background: var(--flame-orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        .back-btn:hover { background: var(--deep-red); }
+        h1 {
+            font-size: 2.5rem;
+            color: var(--deep-red);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--flame-orange);
+            padding-bottom: 0.5rem;
+            margin: 2.5rem 0 1rem 0;
+        }
+        .song {
+            background: var(--bg-card);
+            border-left: 4px solid var(--deep-red);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .song-header {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .song-origin {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .song-text {
+            color: var(--text-light);
+            line-height: 2;
+            font-style: italic;
+            padding: 1rem;
+            border-left: 2px solid var(--gold);
+        }
+        .song-text strong {
+            color: var(--flame-orange);
+            font-style: normal;
+        }
+        .song-note {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            font-style: normal;
+        }
+        .intro {
+            background: rgba(212, 83, 77, 0.1);
+            border: 1px solid var(--deep-red);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .intro p {
+            margin-bottom: 0.5rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">Gravens Arv - Fluff & Berättelser</div>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Tillbaka till Fluff</button>
+    </nav>
+
+    <h1>Sånger om Thrakka Järnhanden</h1>
+    <p class="subtitle">Från gladiatorns blod till legendens järn</p>
+
+    <div class="intro">
+        <p><strong>Om Thrakka:</strong> Tirak. Före detta gladiator från jargiska arenor. Mahktahs förkämpe. Krigare utan like.</p>
+        <p><strong>Hennes finaste stund:</strong> Vid Iskvarnsbryggan red hon mot sju tempelriddare. Träffad av pil genom ögat fortsatte hon slåss tills Systrarna ingrep.</p>
+        <p><strong>Hennes eftermäle:</strong> Olika folk sjunger olika visor. Samma hjälte. Olika sanningar.</p>
+    </div>
+
+    <h2>Heroiska Ballader</h2>
+
+    <div class="song">
+        <div class="song-header">Järnhandens Ställning vid Raunfloden</div>
+        <div class="song-origin">Cermirian ballad - Sjungs vid vintereldar i Drunok och Vargnäset</div>
+        <div class="song-text">
+Hör nu denna sång om blod och is,<br>
+Om Thrakka som red där döden ler vis,<br>
+Vid Iskvarns brygga där vattnet rann rött,<br>
+Där järnhanden slog och tempelns hopp dött.<br>
+<br>
+<strong>Refräng:</strong><br>
+Järnhanden! Järnhanden! Blodig men obruten!<br>
+Även pilen genom ögat kunde ej stoppa hennes sluten!<br>
+<br>
+Sju riddare i silverstål,<br>
+Daaks heligaste krigar-skål,<br>
+Men tiraken vrålade som vårflodis,<br>
+Och kroken i hennes hand blev deras grav precis.<br>
+<br>
+<strong>Refräng</strong><br>
+<br>
+Pilen kom från högra sidan,<br>
+Genom ögat, genom själva livsadern,<br>
+Men Thrakka stod där blodet rann,<br>
+Och hammaren dansade i hennes ena hand!<br>
+<br>
+På knä men aldrig besegrad,<br>
+Med rödslöja över ansikte skadad,<br>
+Drog hon ner en riddare med sig,<br>
+Till Mahktah kunde kalla - "Nog! Du tjänat mig!"<br>
+<br>
+<strong>Slutrefräng:</strong><br>
+Järnhanden! Järnhanden! Legendens namn!<br>
+När folk berättar tapper kamp,<br>
+Då nämns tiraken som red mot döden,<br>
+Och stod kvar när sju låg i flöden!
+        </div>
+        <div class="song-note">
+            <strong>Sångmästare Aldrics anmärkning:</strong> Denna vers sjöngs första gången bara tre dagar efter striden. Redan då växte sanningen till legend. Men vem behöver sanning när man har hjältar?
+        </div>
+    </div>
+
+    <div class="song">
+        <div class="song-header">Sung-diplomaten Xian-Lis Ode</div>
+        <div class="song-origin">Sung-poesi - Elegant, observerande, poetisk</div>
+        <div class="song-text">
+I fjärde månens sista skiftning,<br>
+Där Raunens vatten bär sin riktning,<br>
+Såg jag spår av dans i snön -<br>
+Bloddroppar som pärlor av mörk förhön.<br>
+<br>
+En fiskare med darriga läppar viskar:<br>
+"Tiraken vrålade som när vårisen brister -<br>
+Ett ljud från djupt i jordens mage,<br>
+Från innan ord, från krigets gamla sage."<br>
+<br>
+Två vapen bar hon - yxa, hammare,<br>
+Som smeder i forna dagar arbetade,<br>
+När gränsen mellan verktyg och vapen<br>
+Var tunn som silk, lätt som drömskap-en.<br>
+<br>
+Pilen genom ögat - borde dödat,<br>
+Borde fällt vad som helst av mänsklighet rotat,<br>
+Men Thrakka - hon var mer än mänska redan,<br>
+Hon var våldet självt, gjort kött i striden.<br>
+<br>
+I Sung säger vi: Sanningen har tusen ansikten,<br>
+Men blodets språk har endast ett - det allra enklaste:<br>
+Att leva betyder att stå,<br>
+Att dö betyder att falla ner i snön och dö.<br>
+<br>
+Hon stod. Det är allt som behöver sägas.
+        </div>
+        <div class="song-note">
+            <strong>Ur Xian-Lis resedagbok:</strong> Jag översatte fiskarens råa ord till min dagboks silkespapper. Men sedan... kunde inte låta bli att skriva mer. Hennes strid var poesi skriven i blod.
+        </div>
+    </div>
+
+    <h2>Krigsvisor & Stridssånger</h2>
+
+    <div class="song">
+        <div class="song-header">Mahktahs Dotter</div>
+        <div class="song-origin">Tirakisk krigssång - Sjungs före strid av tirakstammar</div>
+        <div class="song-text">
+<strong>Hark! Mahktah!</strong><br>
+Se din dotter slåss!<br>
+<br>
+Sand blodig under fotterna,<br>
+Publiken jublar åt hennes saga,<br>
+Men ingen vet - arenan var hennes smidja,<br>
+Där järnhand smiddes av blod och plåga!<br>
+<br>
+<strong>Hark! Mahktah!</strong><br>
+Se din dotter blöda!<br>
+<br>
+Sju mot en - ära i detta!<br>
+Ögat borta - strid inte slut!<br>
+Hammaren dansar i blodfördunklade syn,<br>
+För Mahktahs dotter behöver två ögon ej längre för att slå ut!<br>
+<br>
+<strong>Hark! Mahktah!</strong><br>
+Välkomna henne hem!<br>
+<br>
+När tiden kom att falla,<br>
+Föll hon framåt - inte bakåt!<br>
+Tog en fiende med sig,<br>
+Som gåva till krigets gud - så rätt!<br>
+<br>
+<strong>Hrak-ma-Thakka! Hrak-ma-Thakka!</strong><br>
+(Järnhand! Järnhand!)
+        </div>
+        <div class="song-note">
+            <strong>Tirakisk tradition:</strong> När en krigare visar exceptionellt mod sjungs deras namn av stammen. "Hrak-ma" betyder "den med järnhanden" - en titel man måste förtjäna genom blod. Thrakka förtjänade sitt.
+        </div>
+    </div>
+
+    <div class="song">
+        <div class="song-header">Den Röda Visionen</div>
+        <div class="song-origin">Drunokisk barnvisa - Sjungs av barn som minns evakueringen</div>
+        <div class="song-text">
+Stora Thrakka, stark och stor,<br>
+Räddade oss när faran for,<br>
+Genom snön och genom isen,<br>
+Bar hon barn när benen brast i visen.<br>
+<br>
+Vid bryggan red hon mot de svarta,<br>
+De med kors på bröst och järn om hjärta,<br>
+Hon vrålade högt så molnen skakade,<br>
+Och riddarna - de såg rädsla och vaknade!<br>
+<br>
+Pilen kom och tog hennes syn,<br>
+Men Thrakka såg med hjärtats tyn,<br>
+Fortsatte slåss med blod på kind,<br>
+Tills himlens systrar kom med vind.<br>
+<br>
+Nu sover hon i nordens land,<br>
+Med hammare tung i järnhand,<br>
+Och om vi kallar mitt i natten,<br>
+Kommer hon och jagar bort katten!<br>
+<br>
+<em>(Sista versen sjungs alltid med skratt - barnen är inte rädda för Thrakka, bara för monster)</em>
+        </div>
+        <div class="song-note">
+            <strong>Ragnar Johanssons berättelse:</strong> "Lilla-Maja sjöng den här visan för Thrakka en kväll vid elden. Thrakka blev alldeles tyst. Sen reste hon sig och gick ut i mörkret. Tror hon grät. Hade aldrig sett henne gråta förut."
+        </div>
+    </div>
+
+    <h2>Tavern-visor & Drinkvisor</h2>
+
+    <div class="song">
+        <div class="song-header">Tirakens Hammare</div>
+        <div class="song-origin">Muhad tavern-visa - Sjungs på "Kamelens Oas" i Jen</div>
+        <div class="song-text">
+<em>(Refräng - stampas i golvet med ölstop)</em><br>
+<strong>Drink! Drink! För tiraken med hammaren!<br>
+Drink! Drink! För den blodiga glammaren!</strong><br>
+<br>
+Hon kom från arenorna, blod på sin hud,<br>
+Hade dödat för silver, för bröd, för ett skratt från något slags gud,<br>
+När publiken jublade dödade hon mer,<br>
+Och Mahktah - han skrattade - "Ge mig fler! Ge mig fler!"<br>
+<br>
+<strong>(Refräng)</strong><br>
+<br>
+Vid floden red hon mot templets män,<br>
+Sju riddare - tänk! - mot henne en,<br>
+Pilen tog hennes öga - blodet sprang,<br>
+Men hammaren dansade vidare - kling och klang!<br>
+<br>
+<strong>(Refräng)</strong><br>
+<br>
+De säger hon dog, de säger hon le'r,<br>
+De säger hon vandrar i skuggland och ter,<br>
+Men jag säger: Om hon lever eller ej,<br>
+Skål för krigaren som aldrig vek sig undan strej!<br>
+<br>
+<strong>(Slutrefräng - alla reser sig)</strong><br>
+Drink! Drink! För järnhandens minne!<br>
+Drink! Drink! Må vi alla ha hennes sinne!<br>
+När döden kommer med pil och svärd,<br>
+Må vi stå som tiraken - och slåss tills vi dött i denna jord!
+        </div>
+        <div class="song-note">
+            <strong>Värdshusägare Amir ibn-Farouk:</strong> "Den här visan sjöngs för första gången hos oss. En handelsresande från norr kom in, berusad, och skrek 'Jag såg henne! Järnhanden!' Sen sjöng han. Nu sjunger vi den varje kväll. Bra för affärerna."
+        </div>
+    </div>
+
+    <div class="song">
+        <div class="song-header">Dvärgens Skål</div>
+        <div class="song-origin">Dvärgisk dryckesvisa - Från Klan Ghor's festvåningar</div>
+        <div class="song-text">
+<em>(Sjungs med full kanna, stampande fötter)</em><br>
+<br>
+Hör nu, bröder, systrar, släkt!<br>
+Om tiraken som stred rätt!<br>
+Ingen dvärg hon va', det sant,<br>
+Men hon hade JÄRNHAND! <em>(alla stampar)</em><br>
+<br>
+I arenan dog hon ej,<br>
+Trots att många försökt slåss mot hej!<br>
+Vid floden stod hon mot sju man,<br>
+Och slog som dvärg med hammare-i-hand! <em>(stampa!)</em><br>
+<br>
+Pilen genom ögat gick,<br>
+Borde fällt henne där hon stod så djick,<br>
+Men NO! Hon stod! Hon slog!<br>
+Hon visade vad en RIKTIG krigare dog! <em>(STAMPA!)</em><br>
+<br>
+Så vi reser våra kannor högt,<br>
+För tiraken som stred rätt och döpt,<br>
+Må hennes minne leva kvar,<br>
+I sten, i järn, i öl och i våra hammars slag - HVAR! <em>(alla dricker!)</em><br>
+<br>
+<strong>Kazrik klan Ghors tillägg:</strong><br>
+När jag skrev hennes saga i min bok,<br>
+Skrev jag sanningen, inte skrock:<br>
+"Thrakka Järnhanden - tirak ja,<br>
+Men i hjärtat? Dvärg i alla fall, hurra!" <em>(skratt och stampa!)</em>
+        </div>
+        <div class="song-note">
+            <strong>Kazriks anteckning:</strong> Sjöng den här för Thrakka en kväll i Grensfortet. Hon blev först arg, sen fnissade hon. "Dvärg i hjärtat? Kazrik, du är tokig." Men hon log. Sällan såg henne le.
+        </div>
+    </div>
+
+    <h2>Mörka Versioner</h2>
+
+    <div class="song">
+        <div class="song-header">Demonriddarens Död</div>
+        <div class="song-origin">Arvorns Hammare marschvisa - VARNING: Fiendens perspektiv</div>
+        <div class="song-text">
+<em>(Mörk, marscherande rytm)</em><br>
+<br>
+Bröderna marcherade för Daaks lov,<br>
+Mot kättare, mot ondskans hov,<br>
+Vid floden fann de demonskaran,<br>
+Ledd av tiraken - själva skaran!<br>
+<br>
+<strong>Varning! Varning! Demon i mänskligt skinn!<br>
+Varning! Varning! Låt inte ondskan vinn!</strong><br>
+<br>
+Kommendör Aldrich, helig man,<br>
+Såg tiraken - visste han<br>
+Detta var ej naturligt djur,<br>
+Men demon född ur helvetets mur!<br>
+<br>
+Hon vrålade med helvetets röst,<br>
+Släppte lös ondskans fulla höst,<br>
+Slog ner våra brödraskap,<br>
+Med krafter ej från denna jord, ej från Daaks nåds kap!<br>
+<br>
+Pil genom ögat - skulle dött,<br>
+Men demon dör ej som människa gött,<br>
+Fortsatte slåss med blod som rann,<br>
+Tills häxorna kom - hennes svarta ban!<br>
+<br>
+<strong>(Allvarlig slutvers - inte sjungen, men talas)</strong><br>
+Låt detta vara varning klar:<br>
+Magin tar många skapnader, alltid farbar,<br>
+När tiraker slåss som inga andre kan,<br>
+Fråga er: Är detta Daaks plan?<br>
+Eller är det demon i förklädnad, till oss sänd,<br>
+För att vilseleda trogna mot ett helvetiskt end?
+        </div>
+        <div class="song-note">
+            <strong>SL-anteckning:</strong> Denna version sjungs fortfarande av Arvorns Hammare. För dem var Thrakka inte hjälte - hon var bevis på att gruppen var demoniskt kontrollerad. Perspektiv förändrar allt.
+        </div>
+    </div>
+
+    <h2>Hoviska Ballader</h2>
+
+    <div class="song">
+        <div class="song-header">Balladen om Järnhandens Trofasthet</div>
+        <div class="song-origin">Vitterdals hovballad - Sjungs vid Jarl Hadrians festbord</div>
+        <div class="song-text">
+I Vitterdals stora sal vid elden brinnande,<br>
+Stod tiraken vid jarlens högra hand, beskyddande,<br>
+Från söder kom hon, sänd av Lady Soffia själv,<br>
+För att skydda dem hon svurit - liv och hjälp.<br>
+<br>
+Genom vinterlandets vita snö,<br>
+Genom fara, hunger, bröd som dog,<br>
+Ledde hon de svaga, bar de små,<br>
+Tills de nådde flodens strand - dit de skulle gå.<br>
+<br>
+Vid Raunens strand mötte fienden,<br>
+Sju riddare mot henne - en,<br>
+Men trofast som järn, stark som sten,<br>
+Red hon mot dem - för de svaga, för de ren.<br>
+<br>
+Pilen kom, tog hennes syn och mer,<br>
+Men löftet hon gett fortsatte gälla, kära vän och her,<br>
+Till sista andetag, till sista slag,<br>
+Skyddade hon dem som svurits - hennes dag.<br>
+<br>
+<em>(Refräng - sjungs av hela hovet)</em><br>
+Heder till Thrakka Järnhanden!<br>
+Vitterdals vän och fienden banden!<br>
+Må hennes namn leva i våra sånger,<br>
+Tills Vitterdals stenar faller - och länger!
+        </div>
+        <div class="song-note">
+            <strong>Jarl Hadrian "Hagge" av Vitterdals kommentar:</strong> "Jag sjöng aldrig den här för Thrakka. Skulle ha skämt henne. Men jag såg vad hon gjorde vid floden. Såg henne ta pilen och fortsätta. Såg henne falla framåt, aldrig bakåt. Om det inte är heder, vad är då heder?"
+        </div>
+    </div>
+
+    <hr>
+
+    <div style="text-align: center; color: var(--text-muted); font-style: italic; padding: 2rem;">
+        <p>Sju kulturer. Sju sånger. En hjälte.</p>
+        <p>Thrakka "Järnhanden" - Tirak, gladiator, krigare, legend.</p>
+        <p style="margin-top: 1rem; color: var(--flame-orange);">
+            Hennes strid vid Iskvarnsbryggan varade i minuter.<br>
+            Hennes legend kommer leva i århundraden.
+        </p>
+    </div>
+
+    <script src="../kapitel/kapitel-linkify.js"></script>
+</body>
+</html>

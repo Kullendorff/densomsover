@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokbok från Mundana - Gravens Arv</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --gold: #ffa500;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-light: #e0e0e0;
+            --text-muted: #888;
+            --border: #333;
+        }
+        body {
+            background: linear-gradient(180deg, #0a0a0a 0%, #0a0a18 50%, #0a0a0a 100%);
+            color: var(--text-light);
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .nav-bar {
+            background: var(--bg-card);
+            border-bottom: 2px solid var(--gold);
+            padding: 1rem 2rem;
+            margin: -2rem -2rem 2rem -2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-title {
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+        .back-btn {
+            background: var(--gold);
+            color: var(--bg-dark);
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .back-btn:hover { background: var(--flame-orange); }
+        h1 {
+            font-size: 2.5rem;
+            color: var(--gold);
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: var(--flame-orange);
+            border-bottom: 2px solid var(--flame-orange);
+            padding-bottom: 0.5rem;
+            margin: 2.5rem 0 1rem 0;
+        }
+        .recipe {
+            background: var(--bg-card);
+            border-left: 4px solid var(--gold);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .recipe-header {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        .recipe-origin {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .recipe-story {
+            background: rgba(255, 165, 0, 0.05);
+            border-left: 2px solid var(--gold);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+        .recipe-section {
+            margin: 1.5rem 0;
+        }
+        .recipe-section h3 {
+            color: var(--flame-orange);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        .recipe-section ul {
+            list-style-position: inside;
+            color: var(--text-light);
+        }
+        .recipe-section ul li {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+        }
+        .recipe-section ol {
+            list-style-position: inside;
+            color: var(--text-light);
+        }
+        .recipe-section ol li {
+            margin: 0.75rem 0;
+            padding-left: 1rem;
+        }
+        .recipe-note {
+            background: rgba(212, 83, 77, 0.1);
+            border-left: 2px solid var(--deep-red);
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+        .intro {
+            background: rgba(255, 165, 0, 0.1);
+            border: 1px solid var(--gold);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-title">Gravens Arv - Fluff & Berättelser</div>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Tillbaka till Fluff</button>
+    </nav>
+
+    <h1>Kokbok från Mundana</h1>
+    <p class="subtitle">Mat, Minnen & Kultur från Kampanjens Världar</p>
+
+    <div class="intro">
+        <p><strong>Om denna bok:</strong> Mat är mer än näring - det är kultur, minne, identitet. Dessa recept samlade från kampanjens många platser bär historier om folk, seder och överlevnad.</p>
+        <p style="margin-top: 0.5rem;"><strong>Varning:</strong> Alla recept är faktiska och kan lagas. Använd sunt förnuft - Mundana-måttenheter har konverterats till moderna.</p>
+    </div>
+
+    <h2>Muhad - Kryddornas Rike</h2>
+
+    <div class="recipe">
+        <div class="recipe-header">Jens Kryddade Lamm</div>
+        <div class="recipe-origin">Från Fatima bint-Alis kokbok, "Ökendyrets Ro" i Jen</div>
+
+        <div class="recipe-story">
+            "Min farmor lärde mig detta recept när jag var liten. Hon sa: 'Mat ska göra två saker - mätta kroppen och hedra gästen.' Detta gör båda. Kryddorna kommer från karavan-rutten österut. Lammet från lokala herdar. Resultatet? Jen på ett fat."
+            <br><br>
+            <em>— Fatima bint-Ali, värdshusvärd innan allt förändrades</em>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Ingredienser (4 portioner):</h3>
+            <ul>
+                <li>800g lamm (bog eller lägg), tärnat</li>
+                <li>2 gula lökar, hackade</li>
+                <li>4 vitlöksklyftor, finhackade</li>
+                <li>2 msk spiskummin</li>
+                <li>1 msk koriander (mald)</li>
+                <li>1 tsk kanel</li>
+                <li>½ tsk saffran (viktigt!)</li>
+                <li>2 msk olivolja</li>
+                <li>400g krossade tomater</li>
+                <li>250ml vatten</li>
+                <li>Salt, svartpeppar</li>
+                <li>100g aprikoser, torkade och halverade</li>
+                <li>50g mandlar, rostade</li>
+                <li>Färsk koriander till garnering</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Tillagning:</h3>
+            <ol>
+                <li>Hetta upp oljan i en stor gryta på medelhög värme.</li>
+                <li>Bryn lammbitarna tills de fått färg på alla sidor (8-10 min). Ta upp och lägg åt sidan.</li>
+                <li>Fräs lök och vitlök tills mjuka (5 min).</li>
+                <li>Tillsätt alla kryddor (kummin, koriander, kanel, saffran). Fräs 1 minut tills doften sprider sig.</li>
+                <li>Lägg tillbaka lammet. Tillsätt krossade tomater och vatten.</li>
+                <li>Koka upp, sänk värmen och låt sjuda under lock i 1,5 timme.</li>
+                <li>Tillsätt aprikoserna efter 1 timme.</li>
+                <li>Smaka av med salt och peppar.</li>
+                <li>Servera med ris eller couscous, toppa med rostade mandlar och färsk koriander.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-note">
+            <strong>Kazriks anteckning:</strong> Åt detta första gången i Jen. Trodde jag skulle dö av kryddor. Fatima skrattade åt mig. "Dvärg," sa hon, "din tunga måste vakna!" Tredje gången jag åt kunde inte sluta. Nu kan inte äta lamm utan att tänka på Jen.
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="recipe-header">Öken-dadlar med Mandelmassa</div>
+        <div class="recipe-origin">Efterrätt från Jens marknader</div>
+
+        <div class="recipe-story">
+            "På torget i Jen sålde en gammal man dessa varje morgon. Han sa: 'Dadlar är öknens gåva. Mandlar är trädens gåva. Tillsammans är de Guds fullkomlighet.' Gordon köpte tio stycken åt oss alla. Vi satt i skuggan och åt. För ett ögonblick var världen god."
+            <br><br>
+            <em>— Umnataks minnesanteckning</em>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Ingredienser (20 stycken):</h3>
+            <ul>
+                <li>20 färska dadlar (Medjool om möjligt)</li>
+                <li>100g mandlar, malda till mjöl</li>
+                <li>2 msk honung</li>
+                <li>½ tsk kardemumma</li>
+                <li>1 msk rosenvatten (valfritt men autentiskt)</li>
+                <li>Hackade pistaschnötter till garnering</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Tillagning:</h3>
+            <ol>
+                <li>Gör ett snitt längs varje dadel och ta ur kärnan försiktigt.</li>
+                <li>Blanda mandelm jöl, honung, kardemumma och rosenvatten till en deg.</li>
+                <li>Forma små kulor av degen och stoppa i dadlarna.</li>
+                <li>Tryck ihop dadeln runt fyllningen.</li>
+                <li>Rulla i hackade pistaschnötter.</li>
+                <li>Förvara svalt. Håller 1 vecka.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-note">
+            <strong>Tips från köpman Ali:</strong> Om du inte hittar rosenvatten, använd lite vaniljextrakt istället. Inte autentiskt, men gott ändå.
+        </div>
+    </div>
+
+    <h2>Cermira - Nordens Värme</h2>
+
+    <div class="recipe">
+        <div class="recipe-header">Vargnäsets Viltgryta</div>
+        <div class="recipe-origin">Skordas recept - "Överlevnad i gryta"</div>
+
+        <div class="recipe-story">
+            "Gjorde detta hundratals gånger i Vargnäset. Älgkött när jakten var god. Rådjur när älgen var blyg. Kanin när ingenting annat fanns. Det viktiga är inte vad som är i grytan - det är att något ÄR i grytan. Och att folk runt elden äter tillsammans."
+            <br><br>
+            <em>— Skorda Bergsdotter, jägare</em>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Ingredienser (6-8 portioner):</h3>
+            <ul>
+                <li>1 kg vilt (älg, rådjur eller nötkött)</li>
+                <li>3 morötter, tärnade</li>
+                <li>2 palsternackor, tärnade</li>
+                <li>1 rotselleri, tärnad</li>
+                <li>2 gula lökar, hackade</li>
+                <li>4 potatisar, stora tärningar</li>
+                <li>2 lagerblad</li>
+                <li>4 enbär, krossade</li>
+                <li>2 msk tomatpuré</li>
+                <li>1 liter mörk buljong (kött eller vilt)</li>
+                <li>2 dl rödvin (eller mer buljong)</li>
+                <li>Smör till stekning</li>
+                <li>Salt, peppar</li>
+                <li>Färsk timjan</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Tillagning:</h3>
+            <ol>
+                <li>Tärna köttet i grova bitar. Krydda med salt och peppar.</li>
+                <li>Bryn köttet i omgångar i smör tills gyllene. Ta upp.</li>
+                <li>Fräs lök tills mjuk. Tillsätt tomatpuré, fräs 2 min.</li>
+                <li>Häll i rödvin, skrapa botten på grytan.</li>
+                <li>Lägg tillbaka köttet. Tillsätt rotfrukter, potatis, buljong, lagerblad, enbär och timjan.</li>
+                <li>Koka upp, sänk värmen. Sjud under lock i 2-3 timmar tills köttet är mört.</li>
+                <li>Smaka av. Servera med grovt bröd.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-note">
+            <strong>Skordas tips:</strong> Grytan är bättre andra dagen. Gör stor sats. Ät rester. Det är vad jakt handlar om - ingenting slösas.
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="recipe-header">Vitterdals Julgrogg</div>
+        <div class="recipe-origin">Från Lady Soffias hovkök</div>
+
+        <div class="recipe-story">
+            "Vid vintersolståndet serveras detta i Vitterdals stora sal. Doften sprider sig genom hela borgen - kanel, kardemumma, varmt vin. Det är doften av hem. Doften av att vintern är lång men vi är tillsammans."
+            <br><br>
+            <em>— Hagge av Vitterdal</em>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Ingredienser (10-12 glas):</h3>
+            <ul>
+                <li>1,5 liter rött vin</li>
+                <li>500ml äppeljuice</li>
+                <li>200ml vatten</li>
+                <li>150g socker (justera efter smak)</li>
+                <li>2 kanelstänger</li>
+                <li>10 kryddnejlikor</li>
+                <li>10 kardemummakapslar, krossade</li>
+                <li>Skal av 1 apelsin (utan vitt)</li>
+                <li>100g russin</li>
+                <li>100g mandlar, skalade</li>
+                <li>1 dl Rom eller Konjak (valfritt, för styrka)</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Tillagning:</h3>
+            <ol>
+                <li>Blanda vin, äppeljuice, vatten och socker i en stor kastrull.</li>
+                <li>Tillsätt alla kryddor (kanel, nejlika, kardemumma) och apelsinskal.</li>
+                <li>Värm LÅNGSAMT till 75-80°C. FÅR INTE KOKA (alkoholen dunstar!).</li>
+                <li>Låt dra i minst 30 minuter på låg värme.</li>
+                <li>Tillsätt russin och mandlar 10 min före servering.</li>
+                <li>Om du vill ha starkare grogg, tillsätt rom/konjak precis före servering.</li>
+                <li>Sila upp i glas, låt några russin och mandlar följa med.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-note">
+            <strong>Vitterdals tradition:</strong> Första glaset skålas alltid för dem som inte är med oss längre. Andra glaset för dem som är här. Tredje glaset - då sjunger vi.
+        </div>
+    </div>
+
+    <h2>Dvärgiska Traditioner</h2>
+
+    <div class="recipe">
+        <div class="recipe-header">Klan Ghors Tunnbröd</div>
+        <div class="recipe-origin">Kazriks farmors recept, bakad i alla läger</div>
+
+        <div class="recipe-story">
+            "Dvärgar bakar detta på resor för det håller. Inget jäst, inget krångel. Mjöl, vatten, salt. Kanske honung om man är fancy. Kan hålla veckor om torrt. Smakar bäst varmt med smör. Men äter det kallt och hårt när man måste."
+            <br><br>
+            <em>— Kazrik klan Ghor, "Den Resande"</em>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Ingredienser (10-12 tunnbröd):</h3>
+            <ul>
+                <li>500g grovt rågmjöl</li>
+                <li>250g vetemjöl</li>
+                <li>2 tsk salt</li>
+                <li>1 msk honung (valfritt)</li>
+                <li>400ml vatten (ljummet)</li>
+                <li>Smör till stekning</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Tillagning:</h3>
+            <ol>
+                <li>Blanda mjöl och salt i en stor skål.</li>
+                <li>Rör ner vatten (och honung om du använder) lite i taget. Knåda till en smidig deg.</li>
+                <li>Låt vila 15 minuter.</li>
+                <li>Dela degen i 10-12 bitar. Kavla ut varje bit TUNNT (2-3mm).</li>
+                <li>Hetta upp en torr stekpanna (helst gjutjärn) på medelhög värme.</li>
+                <li>Grädda varje tunnbröd 1-2 min per sida tills lätt bruna fläckar bildas.</li>
+                <li>Pensla med smör medan de är varma.</li>
+                <li>Kan förvaras torrt i veckor. Fukta med vatten före servering för att mjukna.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-note">
+            <strong>Kazriks tillägg:</strong> Bakade detta vid varje läger under evakueringen. Folk klagade första gången - "för hårt!" Tredje dagen ingen klagade. Sjätte dagen frågade de om mer. Det är skillnaden mellan mat och överlevnad.
+        </div>
+    </div>
+
+    <div class="recipe">
+        <div class="recipe-header">Dvärgöl-brygd (Förenklad)</div>
+        <div class="recipe-origin">Klan Drezins recept - "för människor som tål mindre"</div>
+
+        <div class="recipe-story">
+            "Riktigt dvärgöl tar sex månader och bergsvatten från hemkällorna. Människor har inte tålamod. Eller magar. Detta är 'snabb-version' som tar två veckor. Dvärgar kallar det 'barnöl'. Människor kallar det 'för starkt'. Vi kallar det kompromiss."
+            <br><br>
+            <em>— Dain Stenyxa, dvärgbyggare</em>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Ingredienser (5 liter öl):</h3>
+            <ul>
+                <li>1 kg mörk maltextrakt</li>
+                <li>200g honung</li>
+                <li>30g humle (bittra sorter)</li>
+                <li>5 liter vatten</li>
+                <li>Öljäst (torr ale-jäst)</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Tillagning (kräver bryggutrustning):</h3>
+            <ol>
+                <li>Koka 3 liter vatten. Ta av från värmen.</li>
+                <li>Rör ner maltextrakten och honungen tills upplöst.</li>
+                <li>Tillsätt humle. Koka 60 minuter.</li>
+                <li>Kyl ner till 20°C. Tillsätt 2 liter kallt vatten.</li>
+                <li>Häll över i jäskar. Tillsätt jäst.</li>
+                <li>Låt jäsa 7-10 dagar vid rumstemperatur.</li>
+                <li>Tappa på flaskor. Vänta 1 vecka innan drickning.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-note">
+            <strong>VARNING från Dain:</strong> Detta är inte leksak. Följ renlighet. Sterilas allt. Om det luktar fel - häll ut. Dvärgöl dödar inga dvärgar, men människor mer ömtåliga.
+        </div>
+    </div>
+
+    <h2>Överlevnad - Greensfortets Mat</h2>
+
+    <div class="recipe">
+        <div class="recipe-header">Vinterns Rotsaksstuvning</div>
+        <div class="recipe-origin">Från Grensfortet - "När ingenting annat finns"</div>
+
+        <div class="recipe-story">
+            "Första vintermånaden i Grensfortet åt vi detta varje dag. Morötter från lager. Potatis från källaren. Vad vi kunde hitta. Ingen klagade. Allt bättre än att svälta. Femte dagen började Ragnar sjunga 'Morotsvisan'. Förbannade ungen. Men vi skrattade."
+            <br><br>
+            <em>— Eira Holm, byäldste</em>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Ingredienser (6 portioner):</h3>
+            <ul>
+                <li>4 potatisar, tärnade</li>
+                <li>3 morötter, skivade</li>
+                <li>2 palsternackor, tärnade</li>
+                <li>1 lök, hackad</li>
+                <li>2 vitlöksklyftor</li>
+                <li>500ml grönsaksbuljong (eller vatten + salt)</li>
+                <li>200ml grädde (om tillgängligt, annars mjölk)</li>
+                <li>2 msk smör</li>
+                <li>Timjan, lagerblad</li>
+                <li>Salt, peppar</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Tillagning:</h3>
+            <ol>
+                <li>Smälp smör i stor gryta. Fräs lök och vitlök tills mjuka.</li>
+                <li>Tillsätt alla rotsakerna. Fräs 5 minuter.</li>
+                <li>Häll i buljong, timjan och lagerblad. Koka upp.</li>
+                <li>Sjud 25-30 min tills rotsakerna är mjuka.</li>
+                <li>Mixa hälften av grönsakserna till puré, rör tillbaka (ger tjockare konsistens).</li>
+                <li>Tillsätt grädde/mjölk. Värm genom. Smaka av.</li>
+                <li>Servera med bröd (om sådant finns).</li>
+            </ol>
+        </div>
+
+        <div class="recipe-note">
+            <strong>Skordas praktiska tips:</strong> Kan varieras med vad som finns. Kålrot funkar. Pumpa funkar. Till och med rova funkar om desperat. Poängen inte vad det är - poängen att det värmer.
+        </div>
+    </div>
+
+    <h2>Festmat - När Lycka Fanns</h2>
+
+    <div class="recipe">
+        <div class="recipe-header">Hagges Kröningsfest-Fläskkarré</div>
+        <div class="recipe-origin">Serverad vid Hagges legitimering som Jarl</div>
+
+        <div class="recipe-story">
+            "När jag blev jarl - erkänd, äntligen - lät mor göra fest. Tre stekar. Åtta fåglar. Fjorton fat. Men det jag minns bäst? Denna fläskkarré. För medan jag åt den tänkte jag: 'För en månad sedan var jag slav. Nu är jag jarl och äter som konung.' Smaken av frihet, om frihet hade smak."
+            <br><br>
+            <em>— Jarl Hadrian "Hagge" av Vitterdal</em>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Ingredienser (6-8 portioner):</h3>
+            <ul>
+                <li>1,5 kg fläskkarré med svärd (obenhård)</li>
+                <li>3 msk grovt salt</li>
+                <li>1 msk spiskummin</li>
+                <li>1 msk fänkålsfrön</li>
+                <li>4 vitlöksklyftor, krossade</li>
+                <li>Färsk rosmarin</li>
+                <li>2 msk olivolja</li>
+                <li>Svartpeppar</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Tillagning:</h3>
+            <ol>
+                <li>Skåra svålen i rutmönster (djupt men inte i köttet).</li>
+                <li>Krossa kummin och fänkål i mortel. Blanda med salt, vitlök, hackad rosmarin, olja och peppar.</li>
+                <li>Gnid in kryddblandningen ÖVERALLT på köttet, extra i skårorna.</li>
+                <li>Låt marinera minst 4 timmar (helst över natten).</li>
+                <li>Värm ugn till 125°C. Stek 2-3 timmar tills innertemperatur är 70°C.</li>
+                <li>Höj värmen till 225°C. Stek 20-30 min till svålen är krispig.</li>
+                <li>Vila 15 min före skärning.</li>
+                <li>Servera med rotfrukter och sky.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-note">
+            <strong>Gordons observation:</strong> Åt detta vid Hagges fest. Bästa fläsk jag ätit. Frågade Hagge om han var lycklig. Han sa: "Lycklig? Nej. Men mätt, fri och erkänd. Tillräckligt." Skålade för det.
+        </div>
+    </div>
+
+    <h2>Tirakisk Mat - Kraft & Enkelhet</h2>
+
+    <div class="recipe">
+        <div class="recipe-header">Mahktahs Köttspett</div>
+        <div class="recipe-origin">Thrakkas recept - "Mat som kriget kräver"</div>
+
+        <div class="recipe-story">
+            "I arenan åt vi enkelt. Kött. Eld. Kryddor. Ingenting mer. Kroppen behöver kraft, inte komplicerat. Detta gjorde jag för gruppen en kväll i Mithera. De frågade varför så enkelt. Sa: 'Enklast håller längst. Som god strid.'"
+            <br><br>
+            <em>— Thrakka Järnhanden</em>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Ingredienser (4 portioner):</h3>
+            <ul>
+                <li>800g nötkött (innerfilé eller högrev), tärnat i stora kuber</li>
+                <li>2 paprikor, tärnade</li>
+                <li>2 röda lökar, tärnade</li>
+                <li>4 msk olivolja</li>
+                <li>2 msk paprikapulver (gärna rökt)</li>
+                <li>1 msk spiskummin</li>
+                <li>2 tsk chilipulver</li>
+                <li>Flingsalt, svartpeppar</li>
+                <li>Träspett (blötlagda)</li>
+            </ul>
+        </div>
+
+        <div class="recipe-section">
+            <h3>Tillagning:</h3>
+            <ol>
+                <li>Blanda olja med alla kryddor till marinad.</li>
+                <li>Lägg köttet i marinaden. Minst 2 timmar (helst över natten).</li>
+                <li>Trä kött, paprika och lök på spetten, växelvis.</li>
+                <li>Grilla över öppen eld eller i ugn på 225°C.</li>
+                <li>Vänd ofta. Grilla 10-15 min tills köttet fått färg.</li>
+                <li>Salta med flingsalt precis före servering.</li>
+                <li>Äts med händerna. Som Mahktah skulle velat.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-note">
+            <strong>Umnataks tillägg:</strong> Första gången jag såg Thrakka laga mat. Förväntade mig... vet inte. Mer våld kanske? Men hon var försiktig. Noggrann. "Mat är respekt," sa hon. "Till kroppen. Till gåvan. Till Mahktah." Åt tysta. Alla förstod.
+        </div>
+    </div>
+
+    <hr>
+
+    <div style="text-align: center; color: var(--text-muted); font-style: italic; padding: 2rem;">
+        <p>Mat är mer än näring. Det är minne. Det är kultur. Det är överlevnad.</p>
+        <p>Varje rätt i denna bok bars av händer, lagades vid eldar, delades mellan vänner.</p>
+        <p style="margin-top: 1rem; color: var(--gold);">
+            Laga dem. Ät dem. Minns historierna.<br>
+            Så lever kampanjen vidare - genom smak och doft och värme.
+        </p>
+    </div>
+
+    <script src="../kapitel/kapitel-linkify.js"></script>
+</body>
+</html>
