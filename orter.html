@@ -319,15 +319,15 @@
         </div>
         <div class="stat-box purple">
             <div class="number">50</div>
-            <div class="label">Nya Örter</div>
+            <div class="label">Nya Örter (2025)</div>
         </div>
         <div class="stat-box gold">
             <div class="number">36</div>
-            <div class="label">Befintliga</div>
+            <div class="label">Klassiska (Slätterna + Tarkas)</div>
         </div>
         <div class="stat-box red">
-            <div class="number">~10</div>
-            <div class="label">Gifter</div>
+            <div class="number">9</div>
+            <div class="label">Gifter 🩸</div>
         </div>
     </div>
 
@@ -335,10 +335,16 @@
     <div class="controls">
         <input type="text" class="search-box" id="search" placeholder="🔍 Sök efter ört, effekt, region..." onkeyup="filterHerbs()">
         <button class="filter-btn active" onclick="filterRegion('all')">Alla</button>
+        <button class="filter-btn" onclick="filterRegion('slätterna')">Stora Slätterna</button>
+        <button class="filter-btn" onclick="filterRegion('tarkas')">Tarkas</button>
         <button class="filter-btn" onclick="filterRegion('cermira')">Cermira/Mithera</button>
         <button class="filter-btn" onclick="filterRegion('muhad')">Muhad/Öken</button>
         <button class="filter-btn" onclick="filterRegion('jargien')">Jargien</button>
         <button class="filter-btn" onclick="filterRegion('skugglandet')">Skugglandet</button>
+        <button class="filter-btn" onclick="filterRegion('hav')">Hav/Kust</button>
+        <button class="filter-btn" onclick="filterRegion('dvärg')">Dvärg/Underjord</button>
+        <button class="filter-btn" onclick="filterRegion('tirak')">Tirak</button>
+        <button class="filter-btn" onclick="filterRegion('alv')">Alv/Sunari</button>
         <button class="filter-btn" onclick="filterRegion('gift')">🩸 Gifter</button>
         <button class="filter-btn" onclick="filterRegion('kampanj')">⭐ Kampanjkopplade</button>
     </div>
@@ -350,6 +356,334 @@
 
     <script>
         const herbsData = {
+            "slätterna": [
+                {
+                    name: "Ryttarblad (Alvmynta)",
+                    location: "Hedar (Ob2T6)",
+                    price: "Vanlig",
+                    preparation: "Används som krydda",
+                    effect: "Uppiggande: -Ob1T6 utmattning",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Slagruna (Amilith)",
+                    location: "Tundra (Ob5T6)",
+                    price: "Sällsynt",
+                    preparation: "Grå lav kokas och förtärs",
+                    effect: "Höjer smärttröskeln: –Ob2T6 Chockslag under en timme. Höjer Aggression vid beroende",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Bergslök",
+                    location: "Hedar (Ob1T6)",
+                    price: "Vanlig",
+                    preparation: "Matlagningslök",
+                    effect: "Läker tillagad 1 smärta och 1 utmattning",
+                    skill: "Matlagning",
+                    tags: []
+                },
+                {
+                    name: "Bitter vattenört",
+                    location: "Insjöar, sommar/höst (Ob2T6)",
+                    price: "Vanlig",
+                    preparation: "Frön används i bröd",
+                    effect: "Gör bröd hållbart. Lugnar: -1T6 utmattning, +Ob1T6 mot Aggression",
+                    skill: "Växtlära eller Matlagning",
+                    tags: []
+                },
+                {
+                    name: "Lögnare (Dvärgros)",
+                    location: "Kullar (Ob5T6)",
+                    price: "Sällsynt",
+                    preparation: "Bronsfärgad ros, bladen blandas med sprit, honung och arsenik",
+                    effect: "+Ob2T6 att ljuga under 1T6 timmar",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Eldfot",
+                    location: "Träsk (Ob5T6)",
+                    price: "Sällsynt",
+                    preparation: "Rödbrun rotväxt från Kagamarken",
+                    effect: "Uppvärmande, nedkylning +Ob2T6 svårare, men utmattande: +1 utmattning",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Hingstpåle (Filippaört)",
+                    location: "Slättland, sommar (Ob4T6)",
+                    price: "Ovanlig",
+                    preparation: "Görs till fet salva, smörjs runt könsorgan",
+                    effect: "Ökad lust: -Ob2T6 Amor",
+                    skill: "Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Grenbringel",
+                    location: "Hedar, sommar (Ob4T6)",
+                    price: "Ovanlig",
+                    preparation: "Torkade blad röks",
+                    effect: "Euforisk stämning. Aggression, Dansa, Förföra och Sjunga –Ob1T6 under 3-4 timmar. Beroendeframkallande",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Honungsklocka",
+                    location: "Öppna landskap, sommar (Ob1T6)",
+                    price: "Vanlig",
+                    preparation: "Gul blomma, sötning för mat",
+                    effect: "Ger hallucinationer vid stor dos (bra för schamaner)",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Rökpurpur (Mudelört)",
+                    location: "Slättland, sommar (Ob2T6)",
+                    price: "Vanlig",
+                    preparation: "Torkas, mals och röks",
+                    effect: "Liknar alkohol. Beroendeframkallande",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Naken flenört",
+                    location: "Busklandskap, sommar (Ob2T6)",
+                    price: "Vanlig",
+                    preparation: "Infusion på växt utan rötter",
+                    effect: "Smärtstillande på sår. Helar Ob1T6+3 Smärta",
+                    skill: "Medicin eller Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Röd jordklöver",
+                    location: "Våtmark, höst (Ob3T6)",
+                    price: "Ovanlig",
+                    preparation: "Koncentrat av maskangripen jordklöver",
+                    effect: "Blodåterbildande: återställer Ob1T6 blodförlust",
+                    skill: "Alkemi eller Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Självhela",
+                    location: "Slättland, sommar (Ob2T6)",
+                    price: "Vanlig",
+                    preparation: "Pressas till saft, stryks på förband",
+                    effect: "Sänker blödningstakt med Ob2T6",
+                    skill: "Medicin",
+                    tags: []
+                },
+                {
+                    name: "Småborre",
+                    location: "Busklandskap, vår/sommar (Ob2T6)",
+                    price: "Vanlig",
+                    preparation: "Fothög växt med grå blad",
+                    effect: "Helar 1T6 Smärta (men hälften bara temporärt)",
+                    skill: "Medicin eller Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Stor mjuknäva",
+                    location: "Kullar, vår (Ob2T6)",
+                    price: "Vanlig",
+                    preparation: "Se naken flenört",
+                    effect: "Smärtstillande (se naken flenört)",
+                    skill: "Medicin eller Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Svartrot",
+                    location: "Busklandskap (Ob5T6)",
+                    price: "Sällsynt",
+                    preparation: "Blandas med vätska och arsenik",
+                    effect: "Intagande ger minnesförlust för de senaste Ob5T6 timmarna. Svår huvudvärk, Ob5T6 utmattning",
+                    skill: "Alkemi eller Giftlära",
+                    tags: ["gift"]
+                },
+                {
+                    name: "Vallört",
+                    location: "Slättland, sommar (Ob2T6)",
+                    price: "Vanlig",
+                    preparation: "Dekokt",
+                    effect: "Helar 1T6+1 Trauma",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Vargört",
+                    location: "Slättland, höst (Ob2T6)",
+                    price: "Vanlig",
+                    preparation: "Stryks utanför tält",
+                    effect: "Motar bort djur och andar",
+                    skill: "Överlevnad eller Rituallära",
+                    tags: []
+                },
+                {
+                    name: "Slögräs (Åkerdryga)",
+                    location: "Slättland, höst (Ob5T6)",
+                    price: "Sällsynt",
+                    preparation: "Bakas till bröd",
+                    effect: "Inmundigande sänker VIL med Ob3T6 under 1T6+1 timmar. Offret blir lojt och viljelöst",
+                    skill: "Matlagning eller Alkemi",
+                    tags: ["gift"]
+                },
+                {
+                    name: "Odelgräs",
+                    location: "Slättland, vår/sommar (Ob1T6)",
+                    price: "Vanlig",
+                    preparation: "Läggs med kött, matvaror eller på sår",
+                    effect: "Håller saker rena och motverkar förruttnelse",
+                    skill: "Överlevnad eller Medicin",
+                    tags: []
+                },
+                {
+                    name: "Benrot",
+                    location: "Busklandskap (Ob3T6)",
+                    price: "Ovanlig",
+                    preparation: "Skärs ut till figuriner och symboler",
+                    effect: "Används för att helga gudarna och vid offer",
+                    skill: "Hantverk eller Rituallära",
+                    tags: []
+                },
+                {
+                    name: "Ondreva",
+                    location: "Slättland (Ob3T6)",
+                    price: "Ovanlig",
+                    preparation: "Safterna stryks på vapen eller blandas med mat",
+                    effect: "Orsakar Ob1T6 Trauma varannan timme i tre timmar. Kraftiga kräkningar",
+                    skill: "Giftlära eller Alkemi",
+                    tags: ["gift"]
+                }
+            ],
+            "tarkas": [
+                {
+                    name: "Thónbuske",
+                    location: "Lavafält och grusplatåer, året runt (Ob2T6)",
+                    price: "15 silver",
+                    preparation: "Bladen torkas och bryggs som te",
+                    effect: "–Ob1T6 Utmattning och +Ob1T6 Tålighet under en timme",
+                    skill: "Växtlära eller Överlevnad",
+                    tags: []
+                },
+                {
+                    name: "Svavelgräs",
+                    location: "Svavelrika områden, året runt (Ob4T6)",
+                    price: "25 silver",
+                    preparation: "Extrakt framställs genom kokning och silning",
+                    effect: "Motgift ger –Ob2T6 på vissa milda gifter",
+                    skill: "Alkemi eller Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Ökenrosett",
+                    location: "Sanddyner och klippor, vår/sommar (Ob3T6)",
+                    price: "20 silver",
+                    preparation: "Bladen pressas för att extrahera vätskan",
+                    effect: "+1T6 Vätskeåterställning och –Ob1T6 mot Uttorkning",
+                    skill: "Överlevnad",
+                    tags: []
+                },
+                {
+                    name: "Aspharotblomma",
+                    location: "Områden med magistormar, höst (Ob5T6)",
+                    price: "60 silver",
+                    preparation: "Bränns som rökelse eller mals och blandas i dryck",
+                    effect: "+1T6 på Magi- eller Ritualslag under en timme. Risk för beroende",
+                    skill: "Ritualkunskap eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Daggkrona",
+                    location: "Fuktiga områden nära Piralberget, vår (Ob3T6)",
+                    price: "30 silver",
+                    preparation: "Blommorna mals och blandas med vatten för rening",
+                    effect: "Rensar orenheter och förhindrar sjukdom vid vattenintag",
+                    skill: "Växtlära eller Överlevnad",
+                    tags: []
+                },
+                {
+                    name: "Zollobarträd",
+                    location: "Klippkanter i Ghaldenruinerna, vinter (Ob4T6)",
+                    price: "35 silver",
+                    preparation: "Barken torkas och mals till pulver för salva",
+                    effect: "+Ob1T6 på Läka Sår under en dag",
+                    skill: "Alkemi eller Medicin",
+                    tags: []
+                },
+                {
+                    name: "Stenlav",
+                    location: "Basaltstenar i fuktiga områden, höst (Ob3T6)",
+                    price: "20 silver",
+                    preparation: "Krossas och blandas med vatten till en pasta",
+                    effect: "+1T6 Näring och –Ob1T6 på Hungerslag",
+                    skill: "Växtlära",
+                    tags: []
+                },
+                {
+                    name: "Flamskott",
+                    location: "Nära vulkaner, året runt (Ob4T6)",
+                    price: "40 silver",
+                    preparation: "Blomman krossas för att frigöra värme och eld",
+                    effect: "Startar eldar i svåra förhållanden (+1T6 Eldstart)",
+                    skill: "Överlevnad",
+                    tags: []
+                },
+                {
+                    name: "Askero",
+                    location: "Nekropolen Nobundus, natt (Ob3T6)",
+                    price: "30 silver",
+                    preparation: "Bryggs som te eller mals till tinktur",
+                    effect: "–1T6 Utmattning och –Ob1T6 mot Ångest",
+                    skill: "Medicin eller Alkemi",
+                    tags: []
+                },
+                {
+                    name: "Vildjordrot",
+                    location: "Uttorkade flodbäddar, sommar (Ob2T6)",
+                    price: "15 silver",
+                    preparation: "Kokas eller äts rå",
+                    effect: "Återställer +1T6 Hungerslag och ger +Ob1T6 Uthållighet",
+                    skill: "Matlagning eller Överlevnad",
+                    tags: []
+                },
+                {
+                    name: "Solkärna",
+                    location: "Öppna sanddyner, sommar (Ob3T6)",
+                    price: "15 silver",
+                    preparation: "Blombladen torkas och bryggs som te",
+                    effect: "Återställer –Ob1T6 Utmattning och värmer kroppen i två timmar",
+                    skill: "Växtlära eller Medicin",
+                    tags: []
+                },
+                {
+                    name: "Vindbär",
+                    location: "Klippiga sluttningar, vår/höst (Ob2T6)",
+                    price: "12 silver",
+                    preparation: "Äts råa eller blandas i gröt",
+                    effect: "Ger +Ob1T6 på Förflyttning under en dagsmarsch",
+                    skill: "Matlagning eller Överlevnad",
+                    tags: []
+                },
+                {
+                    name: "Lavasalvia",
+                    location: "Nära aktiva vulkaner, sommar (Ob5T6)",
+                    price: "75 silver",
+                    preparation: "Bladen tuggas direkt eller används i te",
+                    effect: "Höjer Smärttröskeln (–Ob1T6 Chockslag) under en strid",
+                    skill: "Överlevnad eller Medicin",
+                    tags: []
+                },
+                {
+                    name: "Månhäva",
+                    location: "Övergivna nekropoler, natt (Ob5T6)",
+                    price: "90 silver",
+                    preparation: "Bladen bränns och inandas som rök",
+                    effect: "Ger visioner och +1T6 på Ritualslag, men risk för Ob1T6 förvirring efteråt",
+                    skill: "Ritualkunskap eller Alkemi",
+                    tags: []
+                }
+            ],
             "cermira": [
                 {
                     name: "Frostlav (Adisas Gärda)",
@@ -825,12 +1159,14 @@
             container.innerHTML = '';
 
             const regionTitles = {
+                'slätterna': 'Stora Slätterna - Klassiska Örter',
+                'tarkas': 'Tarkas - Vulkaniska Örter',
                 'cermira': 'Cermira/Mithera - Nordiska Örter',
                 'muhad': 'Muhad/Öken - Arabiska Örter',
                 'jargien': 'Jargien - Imperiella Örter',
                 'skugglandet': 'Skugglandet - Demoniska Örter',
                 'hav': 'Hav/Kust - Sjöfarares Medicin',
-                'dvarg': 'Dvärg/Underjord - Grottväxter',
+                'dvärg': 'Dvärg/Underjord - Grottväxter',
                 'tirak': 'Tirak/Barbariska - Vilda Örter',
                 'alv': 'Alv/Sunari - Magiska Örter'
             };
