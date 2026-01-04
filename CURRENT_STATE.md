@@ -1,10 +1,38 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2026-01-04
+## Datum: 2026-01-05
 
-## Status: NÄSTA SESSION FÖRBEREDD + FLUFF EXPANSION KLAR!
+## Status: NÄSTA SESSION FÖRBEREDD + KOMPLETT ÖRTDATABAS KLAR!
 
-**NYTT (2026-01-04):**
+**NYTT (2026-01-05):**
+- **ÖRTER & DROGER - KOMPLETT DATABAS:** 123 örter totalt i kampanjvärlden
+  * `orter.html` - Interaktiv webbsida med alla örter, sök och regional filtrering
+  * `dashboard/örter eon.md` - Källdata (50 nya örter skapade)
+  * **Inkluderar:**
+    - 22 klassiska örter från Stora Slätterna
+    - 14 vulkaniska örter från Tarkas
+    - 15 nordiska örter från Cermira/Mithera (inkl. 5 nya Mithera-droger)
+    - 20 arabiska örter från Muhad/Öken
+    - 6 imperiella örter från Jargien
+    - 6 demoniska örter från Skugglandet
+    - 12 kustnära örter från Hav/Kust
+    - 15 europeiska skogsörter (ny kategori)
+    - 5 underjordiska örter från Dvärgar
+    - 5 barbariska örter från Tirak
+    - 8 magiska örter från Alv/Sunari
+  * **Nya Mithera-droger (5 st):**
+    - Vinterraseri (Flugsvamp) - Rusgivande/aggression
+    - Rimfrostlav - Schamanisk trance
+    - Blodfeber-röt - Stridsstimulans
+    - Skuggblomma - Smärtstillande/skuggseende
+    - Isfrostkristall - Kryotropisk immunitet
+  * **32 örter från Spelledarguiden** integrerade i rätt regioner
+  * **13 gifter** taggade
+  * Kampanjkopplingar till NPCs: Ingvild, Dr. Yusuf, Häxan Fredricca, Thrakka, Umnatak
+- **WEBBSIDA:** Komplett regional filtrering, sök, gift-filter, kampanj-filter
+- **GIT:** Committat och pushat (commit `cc57467`)
+
+**TIDIGARE (2026-01-04):**
 - **FLUFF-SIDOR SKAPAD:** Kampanjvärlden utökad med levande material
   * `fluff/mithera-fragment.html` - KOMPLETT (alla 24 fragment tillagda)
   * `fluff/thrakka-sånger.html` - NY! 8 sånger om Thrakka från olika kulturer
@@ -118,6 +146,8 @@
 | Fil | Beskrivning |
 |-----|-------------|
 | `fluff/index.html` | Hub för alla fluff-sidor |
+| `orter.html` | **123 örter & droger** - Komplett databas |
+| `dashboard/örter eon.md` | Källdata för örter (markdown) |
 | `fluff/mithera-fragment.html` | 24 fragment om Mithera & Skugglandet |
 | `fluff/thrakka-sånger.html` | 8 sånger om Thrakka från olika kulturer |
 | `fluff/kokbok.html` | 10 kokbara recept från kampanjens platser |
@@ -152,9 +182,10 @@
 
 **Branch:** main
 **Senaste commits:**
+- `cc57467` - Komplett örter & droger-uppdatering: 123 örter totalt (2026-01-05)
+- `e12c968` - Lägg till alla 86 örter till webbsidan (2026-01-05)
+- `9fd4d78` - Lägg till 50 nya örter och interaktiv webbsida (2026-01-05)
 - `3f3e748` - Lägg till Thrakkas sånger och kokbok som ny fluff (2026-01-04)
-- `cfb82e6` - Lägg till sessionsplan för Frostspiran Final
-- `89de93e` - Uppdatera kampanjkrönika med ny session i Frostspiran
 
 ---
 
@@ -185,5 +216,5 @@
 
 ---
 
-*Senast uppdaterad: 2026-01-04*
-*Status: Redo för nästa spelsession + Fluff-expansion klar!*
+*Senast uppdaterad: 2026-01-05*
+*Status: Redo för nästa spelsession + Komplett örtdatabas klar!*
