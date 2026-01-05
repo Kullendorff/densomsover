@@ -572,7 +572,7 @@
                     location: "Lavafält och grusplatåer, året runt (Ob2T6)",
                     price: "15 silver",
                     preparation: "Bladen torkas och bryggs som te",
-                    effect: "–Ob1T6 Utmattning och +Ob1T6 Tålighet under en timme",
+                    effect: "–Ob1T6 Utmattning. –Ob1T6 vid slag mot Tålighet i 1T6 timmar",
                     skill: "Växtlära eller Överlevnad",
                     tags: []
                 },
@@ -590,7 +590,7 @@
                     location: "Sanddyner och klippor, vår/sommar (Ob3T6)",
                     price: "20 silver",
                     preparation: "Bladen pressas för att extrahera vätskan",
-                    effect: "+1T6 Vätskeåterställning och –Ob1T6 mot Uttorkning",
+                    effect: "Läker Ob1T6 utmattning orsakad av uttorkning",
                     skill: "Överlevnad",
                     tags: []
                 },
@@ -599,7 +599,7 @@
                     location: "Områden med magistormar, höst (Ob5T6)",
                     price: "60 silver",
                     preparation: "Bränns som rökelse eller mals och blandas i dryck",
-                    effect: "+1T6 på Magi- eller Ritualslag under en timme. Risk för beroende",
+                    effect: "–Ob1T6 vid Ritualslag under en timme. Risk för beroende",
                     skill: "Ritualkunskap eller Alkemi",
                     tags: []
                 },
@@ -617,7 +617,7 @@
                     location: "Klippkanter i Ghaldenruinerna, vinter (Ob4T6)",
                     price: "35 silver",
                     preparation: "Barken torkas och mals till pulver för salva",
-                    effect: "+Ob1T6 på Läka Sår under en dag",
+                    effect: "Snabbar upp läkningen under en dag",
                     skill: "Alkemi eller Medicin",
                     tags: []
                 },
@@ -653,7 +653,7 @@
                     location: "Uttorkade flodbäddar, sommar (Ob2T6)",
                     price: "15 silver",
                     preparation: "Kokas eller äts rå",
-                    effect: "Återställer +1T6 Hungerslag och ger +Ob1T6 Uthållighet",
+                    effect: "Återställer +1T6 Hungerslag och –Ob1T6 vid Uthållighetsslag",
                     skill: "Matlagning eller Överlevnad",
                     tags: []
                 },
@@ -671,7 +671,7 @@
                     location: "Klippiga sluttningar, vår/höst (Ob2T6)",
                     price: "12 silver",
                     preparation: "Äts råa eller blandas i gröt",
-                    effect: "Ger +Ob1T6 på Förflyttning under en dagsmarsch",
+                    effect: "–Ob1T6 vid Förflyttningsslag under en dagsmarsch",
                     skill: "Matlagning eller Överlevnad",
                     tags: []
                 },
@@ -689,7 +689,7 @@
                     location: "Övergivna nekropoler, natt (Ob5T6)",
                     price: "90 silver",
                     preparation: "Bladen bränns och inandas som rök",
-                    effect: "Ger visioner och +1T6 på Ritualslag, men risk för Ob1T6 förvirring efteråt",
+                    effect: "Ger visioner och –Ob1T6 vid Ritualslag, men risk för Ob1T6 förvirring efteråt",
                     skill: "Ritualkunskap eller Alkemi",
                     tags: []
                 }
@@ -718,7 +718,7 @@
                     location: "Mitheras magiska lundar, sommarnätter (Ob5T6)",
                     price: "80 silver",
                     preparation: "Blommorna torkas och röks i ritual",
-                    effect: "+Ob1T6 på Ritualslag för andekommunikation. Hallucinationer Ob1T6 timmar. Beroenderisk",
+                    effect: "–Ob1T6 vid Ritualslag för andekommunikation. Hallucinationer Ob1T6 timmar. Beroenderisk",
                     skill: "Rituallära eller Alkemi",
                     tags: ["kampanj", "Umnatak"]
                 },
@@ -733,10 +733,10 @@
                 },
                 {
                     name: "Fredriccas Öga (Häxört)",
-                    location: "Hemliga platser i Cermiras skogar, vår (Ob5T6)",
+                    location: "Lövskogar (kräver häxunderhållet område), vår (Ob5T6)",
                     price: "70 silver",
                     preparation: "Hela växten torkas, pulvriseras, blandas med honung",
-                    effect: "+Ob2T6 på slag för att upptäcka demonisk/magisk närvaro i Ob1T6 timmar",
+                    effect: "–Ob2T6 vid slag för att upptäcka demonisk/magisk närvaro i Ob1T6 timmar",
                     skill: "Rituallära eller Spåkonst",
                     tags: ["kampanj", "Häxan Fredricca"]
                 },
@@ -772,7 +772,7 @@
                     location: "Runt Vargnäset, sommar (Ob2T6)",
                     price: "15 silver",
                     preparation: "Bladen torkas och läggs på sår",
-                    effect: "+Ob1T6 på Läka Sår. Antiseptisk - förhindrar infektion",
+                    effect: "Snabbar upp läkningen. Antiseptisk - förhindrar infektion",
                     skill: "Medicin eller Växtlära",
                     tags: ["kampanj", "Ingvild"]
                 },
@@ -974,7 +974,7 @@
                     location: "Kejserliga trädgårdar, sommar (Ob5T6)",
                     price: "85 silver",
                     preparation: "Bladen kokas med vin och honung",
-                    effect: "+Ob1T6 Ledarskap/Befäl i 1 timme. -Ob1T6 mot skrämma. Risk för övermod",
+                    effect: "–Ob1T6 vid Ledarskapsslag i 1 timme. –Ob1T6 mot skrämma. Risk för övermod",
                     skill: "Alkemi eller Ledarskap",
                     tags: []
                 },
@@ -1030,7 +1030,7 @@
                     location: "Endast i Skugglandet (Ob6T6)",
                     price: "200 silver (om säljbar)",
                     preparation: "Kronbladen konsumeras direkt (farligt)",
-                    effect: "Synlig för skuggväsen, +Ob1T6 kommunikation. RISK: Ob1T6 permanent VIL-skada vid TÅL Ob4T6",
+                    effect: "Synlig för skuggväsen, –Ob1T6 vid kommunikation med dem. RISK: Ob1T6 permanent VIL-skada vid TÅL Ob4T6",
                     skill: "Svartkonst eller Rituallära",
                     tags: ["gift"]
                 },
@@ -1048,7 +1048,7 @@
                     location: "Platser där demoner vandrat (Ob6T6)",
                     price: "Osäljbar",
                     preparation: "Rötterna bränns i demonritual",
-                    effect: "+Ob2T6 demonbindande ritualer. FARA: Attraherar demonisk uppmärksamhet",
+                    effect: "–Ob2T6 vid demonbindande ritualer. FARA: Attraherar demonisk uppmärksamhet",
                     skill: "Demonologi eller Svartkonst",
                     tags: []
                 },
@@ -1252,7 +1252,7 @@
                     location: "Heliga platser i tiraklander (Ob5T6)",
                     price: "90 silver",
                     preparation: "Blommorna röks under ritual",
-                    effect: "+Ob2T6 schamanistiska ritualer. Tillgång till andeplanet Ob1T6 timmar",
+                    effect: "–Ob2T6 vid schamanistiska ritualer. Tillgång till andeplanet Ob1T6 timmar",
                     skill: "Rituallära",
                     tags: ["kampanj", "Umnatak"]
                 },
@@ -1270,7 +1270,7 @@
                     location: "Vulkaniska områden (Ob5T6)",
                     price: "85 silver",
                     preparation: "Pulvriseras och äts med blod",
-                    effect: "+Ob1T6 stridsrelaterade slag 1 strid. -Ob1T6 sociala slag. Ökad Aggression",
+                    effect: "–Ob1T6 vid stridsrelaterade slag i 1 strid. +Ob1T6 vid sociala slag. Ökad Aggression",
                     skill: "Krigarkonst eller Rituallära",
                     tags: []
                 }
@@ -1445,7 +1445,7 @@
                     location: "Endast i Sanari-alvernas skogar, vår (Ob6T6)",
                     price: "150 silver",
                     preparation: "Kronbladen äts färska under fullmåne",
-                    effect: "+Ob2T6 Magi-slag 1 timme. +Ob1T6 syn 1 dygn (endast magikunniga)",
+                    effect: "–Ob2T6 vid Magislag i 1 timme. +Ob1T6 synnedsättning i 1 dygn (endast magikunniga)",
                     skill: "Magi eller Växtlära",
                     tags: []
                 },
@@ -1481,7 +1481,7 @@
                     location: "Nära portaler mellan världar (Ob6T6)",
                     price: "180 silver (osäljbar)",
                     preparation: "Dropparna absorberas genom huden",
-                    effect: "Passage genom magiska barriärer. +Ob2T6 portalresning. ENGÅNGS",
+                    effect: "Passage genom magiska barriärer. –Ob2T6 vid portalresning. ENGÅNGS",
                     skill: "Portalmagi eller Rituallära",
                     tags: []
                 }
