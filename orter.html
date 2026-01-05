@@ -1576,6 +1576,9 @@
             const sections = document.querySelectorAll('.region-section');
             const cards = document.querySelectorAll('.herb-card');
 
+            // Rensa alltid sökrutan vid filterbyte
+            document.getElementById('search').value = '';
+
             if (region === 'all') {
                 sections.forEach(s => s.style.display = 'block');
                 cards.forEach(c => c.style.display = 'block');
@@ -1598,6 +1601,9 @@
                     }
                 });
             } else {
+                // Visa alla kort först (nollställ ev. tidigare sökfilter)
+                cards.forEach(c => c.style.display = 'block');
+                // Dölj alla sektioner utom den valda
                 sections.forEach(s => {
                     if (s.dataset.region === region) {
                         s.style.display = 'block';
