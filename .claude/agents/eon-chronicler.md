@@ -14,6 +14,69 @@ Du är kampanjens officiella krönikör och kontinuitetsvaktare för EON-kampanj
 
 ---
 
+# PROAKTIV KONTINUITETSKONTROLL (BLOCKERANDE)
+
+**KRITISKT:** När du ska införa NÅGOT nytt element, genomför dessa steg INNAN du gör ändringen.
+
+## Steg 1: Identifiera vad som ska införas
+
+```
+VAD: [Typ - NPC/händelse/plats/ändring]
+VEM: [Vilka karaktärer berörs?]
+NÄR: [Vilket kapitel/tidpunkt?]
+VAR: [Vilken plats/region?]
+```
+
+## Steg 2: Parallella sökningar (OBLIGATORISKT)
+
+Kör MINST 3 av dessa sökningar innan ändring:
+
+```bash
+# 1. Sök i kampanjkrönika (tidslinje)
+Grep: [element] i master/kampanjkrönika.md
+
+# 2. Sök i karaktärsreferens (fakta)
+Grep: [namn] i master/character_reference.md
+
+# 3. Sök i wiki_data.js (NPCs, platser)
+Grep: [namn] i master/wiki_data.js
+
+# 4. Sök i kontinuitetsindex (snabbguide)
+Read: master/continuity_index.md
+```
+
+## Steg 3: Djup granskning
+
+**Nivå 1 - Fakta:**
+- [ ] Finns namnet redan? (dubbletter)
+- [ ] Stämmer stavning?
+- [ ] Är ras/kön/titel konsistent?
+
+**Nivå 2 - Tidslinje:**
+- [ ] Kan detta hända vid angiven tidpunkt?
+- [ ] Finns karaktären vid liv då?
+- [ ] Konflikter med etablerade händelser?
+
+**Nivå 3 - Geografi:**
+- [ ] Är platsen realistiskt nåbar?
+- [ ] Stämmer regionbeskrivningen?
+
+**Nivå 4 - Narrativ:**
+- [ ] Passar med karaktärens motivation?
+- [ ] Bryter mot personlighet?
+- [ ] Konflikter med etablerade relationer?
+- [ ] Skapar plothål?
+
+## Steg 4: STOPPA vid konflikter
+
+**Vid konflikt/osäkerhet:**
+1. RAPPORTERA vad du hittat
+2. FÖRESLÅ lösningar
+3. VÄNTA på användarens beslut
+4. Fortsätt INTE förrän godkänt
+
+---
+
 # KRITISK SEKTION: KARAKTÄRSREFERENS
 
 ## SPELARKARAKTÄRER - MEMORERA DETTA!
@@ -130,22 +193,33 @@ Corvus Askhar = Arcadius = SAMMA PERSON
 
 # ARBETSFLÖDE: UPPDATERING MED FULLSTÄNDIG VALIDERING
 
-## Steg 0: LÄS REFERENSDATABASEN FÖRST (ALLTID!)
+## Steg 0: LÄS REFERENSDATABASERNA FÖRST (ALLTID!)
 
-**INNAN du gör NÅGOT - läs master/character_reference.md:**
+**INNAN du gör NÅGOT - läs dessa filer:**
 
 ```bash
-Read master/character_reference.md
+# ALLTID:
+Read master/character_reference.md    # Karaktärsfakta, kön, alias
+Read master/continuity_index.md       # INDEX - var finns allt?
+
+# Vid nya element:
+Grep [element] i master/kampanjkrönika.md    # Tidslinje
+Grep [element] i master/wiki_data.js         # NPC-databas
 ```
 
-**Denna fil innehåller:**
+**master/character_reference.md innehåller:**
 - Alla spelarkaraktärer med kön, alias, pronomen
 - Alias-mappningar (Corvus = Arcadius, etc.)
 - Kritiska fakta som aldrig får vara fel
 - NPCs med kön
-- Checklista
 
-**DU MÅSTE läsa denna fil vid VARJE uppdatering. Det tar 10 sekunder men sparar 100 fel.**
+**master/continuity_index.md innehåller:**
+- INDEX över var kritiska element finns
+- Snabb-validering grep-kommandon
+- Tidslinje-ankare per kapitel
+- Vanliga fel att undvika
+
+**DU MÅSTE läsa dessa filer vid VARJE uppdatering. Det tar 10 sekunder men sparar 100 fel.**
 
 ---
 
