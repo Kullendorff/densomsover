@@ -215,7 +215,19 @@ EON/kapitel/
 ├── skills/                      # Återanvändbara skills
 │   └── eon-npc-adder/           # NPC-tillägg (en i taget)
 │       └── Skill.md
+├── memory/                      # 🆕 Memory-system (lärdomar)
+│   └── learnings.md             # EON-specifika lärdomar
 └── commands/                    # Slash commands (om några)
+```
+
+**Global struktur** (utanför EON-projektet):
+```
+~/.claude/
+├── hooks/
+│   └── session-start.js         # Auto-loader hook (Node.js)
+├── memory/
+│   └── learnings.md             # Globala lärdomar (alla projekt)
+└── settings.json                # Hooks-konfiguration
 ```
 
 ### Agent vs Skill - När använda vilket?
@@ -231,6 +243,66 @@ EON/kapitel/
 - Tydligt definierad input → output
 - Dokumenterar "lärdomar" från trial-and-error
 - Exempel: eon-npc-adder (en-i-taget-metod för säkerhet)
+
+---
+
+## 🧠 Memory-system (Lärdomar)
+
+**Nytt sedan 2026-01-06:** Dokumentation av lärdomar på två nivåer.
+
+### Hur det fungerar
+
+**Vid session-start:**
+- SessionStart-hook körs automatiskt (`~/.claude/hooks/session-start.js`)
+- Hook läser projekt-filer: `_index.md`, `CLAUDE.md`, `CURRENT_STATE.md`
+- Hook läser **global** learnings.md (`~/.claude/memory/learnings.md`)
+- Hook läser **EON-specifik** learnings.md (`.claude/memory/learnings.md`)
+- Allt laddas automatiskt - inget manuellt "läs denna fil först"!
+
+### Global vs EON-specifik
+
+**Global learnings** (`~/.claude/memory/learnings.md`):
+- Lärdomar som gäller **alla projekt** (EON, Trip19, framtida)
+- Tekniska mönster (Edit-verktyget, Git, validering)
+- Verktygs-quirks och best practices
+- Ogmios-analys (vad vi tog, vad vi skippa de)
+
+**EON-specifika learnings** (`.claude/memory/learnings.md`):
+- wiki_data.js validering (ALLTID efter ändringar)
+- eon-npc-adder vs eon-data-guardian (när använda vilket)
+- kampanjkrönika.md som master source of truth
+- Bildmatchning fuzzy ≥85%
+- Kapitel-sidor baserade 100% på krönika
+- UTF-8 encoding (svenska tecken)
+- Dashboard färgschema och struktur
+- Agenter-prioritering (kvalitet > hastighet > tokens)
+
+### Uppdatera learnings
+
+**När du löser ett problem eller upptäcker ett mönster:**
+1. Lägg till i rätt learnings.md (global eller EON-specifik)
+2. Inkludera datum, problem, lösning, exempel
+3. Tagga vad det gäller för
+
+**Exempel:**
+```markdown
+## wiki_data.js: Validera ALLTID efter ändringar
+
+**Datum:** 2026-01-06
+**Fil:** `master/wiki_data.js`
+**Problem:** Syntax-fel kraschar dashboard
+**Lösning:** Kör `node -e "require('./master/wiki_data.js')"` OMEDELBART
+**Gäller:** Bara EON
+```
+
+### Fördelar
+
+- ✅ Konsistent context varje session
+- ✅ Inga glömda best practices
+- ✅ Dokumenterade lösningar på vanliga problem
+- ✅ Bygger institutionell kunskap över tid
+
+**Baserat på:** Ogmios (Carl Heath's PAI-system) - hybrid-approach.
 
 ---
 
