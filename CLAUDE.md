@@ -37,6 +37,174 @@ Den filen är entry point och visar:
 
 ---
 
+## 🚨 AUTOMATISK KONTINUITETSKONTROLL (BLOCKERANDE)
+
+**KRITISKT:** Varje gång användaren ber om något NYTT ska Claude AUTOMATISKT granska förslaget mot befintlig kampanjdata INNAN implementering. Detta är BLOCKERANDE - fortsätt inte utan godkännande vid konflikter.
+
+### Vad triggar kontrollen?
+
+ALLT nytt:
+- ✅ Nya NPCs (namn, bakgrund, relationer)
+- ✅ Nya händelser/scener
+- ✅ Nya platser
+- ✅ Ändringar i befintliga element
+- ✅ Nya relationer mellan karaktärer
+- ✅ Nya fraktioner eller grupper
+- ✅ Tidslinjeändringar
+
+### Steg 1: IDENTIFIERA vad som ska införas
+
+```
+VAD: [Typ av element - NPC/händelse/plats/ändring]
+VEM: [Vilka karaktärer berörs?]
+NÄR: [Vilket kapitel/tidpunkt?]
+VAR: [Vilken plats/region?]
+```
+
+### Steg 2: PARALLELLA SÖKNINGAR (minst 3, max 6)
+
+**OBLIGATORISKA sökningar vid varje nytt element:**
+
+```bash
+# 1. Sök i kampanjkrönika (tidslinje)
+Grep: [elementnamn/relaterade termer] i master/kampanjkrönika.md
+
+# 2. Sök i karaktärsreferens (fakta, kön, relationer)
+Grep: [namn/relaterade karaktärer] i master/character_reference.md
+
+# 3. Sök i wiki_data.js (NPCs, platser)
+Grep: [namn/plats] i master/wiki_data.js
+
+# 4. (vid händelse) Sök tidslinje-konflikter
+Grep: [kapitel/datum/plats] i master/kampanjkrönika.md
+
+# 5. (vid NPC) Sök namnkonflikter
+Grep: [förnamn] i master/wiki_data.js
+
+# 6. (vid plats) Sök geografisk konsistens
+Grep: [region/stad] i master/wiki_data.js + kampanjkrönika.md
+```
+
+### Steg 3: DJUP GRANSKNING (alla nivåer)
+
+**Nivå 1 - Fakta:**
+- [ ] Finns namnet redan? (dubbletter)
+- [ ] Stämmer stavning med befintliga element?
+- [ ] Är ras/kön/titel konsistent?
+
+**Nivå 2 - Tidslinje:**
+- [ ] Kan detta hända vid angiven tidpunkt?
+- [ ] Finns karaktären vid liv då?
+- [ ] Är karaktären på rätt plats geografiskt?
+- [ ] Konflikter med redan etablerade händelser?
+
+**Nivå 3 - Geografi:**
+- [ ] Är platsen realistiskt nåbar från föregående plats?
+- [ ] Stämmer regionbeskrivningen?
+- [ ] Finns platsen redan med annat namn?
+
+**Nivå 4 - Narrativ konsistens:**
+- [ ] Passar detta med karaktärens etablerade motivation?
+- [ ] Bryter detta mot karaktärens personlighet?
+- [ ] Finns det etablerade relationer som påverkas?
+- [ ] Är detta konsistent med fraktionens mål/värderingar?
+- [ ] Skapar detta plothål eller motsägelser?
+
+### Steg 4: RAPPORT (OBLIGATORISK INNAN ÄNDRING)
+
+```
+═══════════════════════════════════════════════════════════════
+📋 KONTINUITETSRAPPORT
+═══════════════════════════════════════════════════════════════
+
+FÖRSLAG: [Kort beskrivning av vad som ska införas]
+
+SÖKNINGAR UTFÖRDA:
+✓ kampanjkrönika.md - [X träffar]
+✓ character_reference.md - [X träffar]
+✓ wiki_data.js - [X träffar]
+[eventuella extra sökningar]
+
+───────────────────────────────────────────────────────────────
+FAKTA-KONTROLL:
+───────────────────────────────────────────────────────────────
+[✓/⚠/❌] Namn: [status]
+[✓/⚠/❌] Dubbletter: [status]
+[✓/⚠/❌] Stavning: [status]
+
+───────────────────────────────────────────────────────────────
+TIDSLINJE-KONTROLL:
+───────────────────────────────────────────────────────────────
+[✓/⚠/❌] Kronologi: [status]
+[✓/⚠/❌] Karaktärers status: [status - levande/död/var?]
+[✓/⚠/❌] Händelsesekvens: [status]
+
+───────────────────────────────────────────────────────────────
+GEOGRAFI-KONTROLL:
+───────────────────────────────────────────────────────────────
+[✓/⚠/❌] Plats existerar: [status]
+[✓/⚠/❌] Resväg logisk: [status]
+[✓/⚠/❌] Region korrekt: [status]
+
+───────────────────────────────────────────────────────────────
+NARRATIV-KONTROLL:
+───────────────────────────────────────────────────────────────
+[✓/⚠/❌] Motivation: [passar med etablerad karaktär?]
+[✓/⚠/❌] Relationer: [konflikter med etablerade band?]
+[✓/⚠/❌] Fraktionslogik: [stämmer med fraktionens mål?]
+[✓/⚠/❌] Plothål: [skapar detta motsägelser?]
+
+═══════════════════════════════════════════════════════════════
+RESULTAT: [✅ INGA KONFLIKTER / ⚠️ VARNINGAR / ❌ KONFLIKTER]
+═══════════════════════════════════════════════════════════════
+
+[Om konflikter:]
+KONFLIKTER FUNNA:
+1. [Beskrivning av konflikt]
+   - Källa: [fil:rad]
+   - Befintligt: [vad som står]
+   - Föreslaget: [vad som föreslås]
+   - FÖRSLAG: [hur lösa?]
+
+[Om varningar:]
+VARNINGAR:
+1. [Beskrivning av potentiellt problem]
+   - Risk: [vad kan gå fel]
+   - REKOMMENDATION: [vad göra]
+
+═══════════════════════════════════════════════════════════════
+VÄNTAR PÅ GODKÄNNANDE INNAN FORTSÄTTNING
+═══════════════════════════════════════════════════════════════
+```
+
+### Steg 5: BLOCKERANDE BESLUT
+
+**Vid ❌ KONFLIKTER:**
+- STOPPA. Fortsätt INTE utan explicit godkännande.
+- Presentera lösningsalternativ.
+- Vänta på användarens beslut.
+
+**Vid ⚠️ VARNINGAR:**
+- Presentera varningarna tydligt.
+- Fråga: "Vill du fortsätta trots dessa varningar?"
+- Vänta på bekräftelse.
+
+**Vid ✅ INGA KONFLIKTER:**
+- Informera användaren att kontrollen är klar.
+- Fråga: "Ska jag genomföra ändringen?"
+
+### TOKENS ÄR INTE EN BEGRÄNSNING
+
+Kontinuitetskontroll FÅR kosta tokens:
+- Kör FLER sökningar än minimum om osäker
+- Rapportera UTFÖRLIGT hellre än kortfattat
+- Läs HELA relevanta sektioner, inte bara snippets
+- FRÅGA hellre än att gissa
+
+**Kontinuitet > Tokens. Alltid.**
+
+---
+
 ## Projektöversikt
 EON-rollspelskampanj "Gravens Arv" - Dashboard och wiki för spelledaren (Johan).
 
