@@ -164,16 +164,41 @@ KONFLIKTER FUNNA:
    - Källa: [fil:rad]
    - Befintligt: [vad som står]
    - Föreslaget: [vad som föreslås]
-   - FÖRSLAG: [hur lösa?]
+
+───────────────────────────────────────────────────────────────
+LÖSNINGSALTERNATIV:
+───────────────────────────────────────────────────────────────
+
+**Konflikt 1: [namn]**
+
+☐ Alternativ A: [Anpassa det nya]
+   → Ändra [detalj] till [nytt värde] för att passa befintlig data
+   → Påverkar: [vilka filer/element]
+
+☐ Alternativ B: [Revidera det befintliga]
+   → Uppdatera [befintlig data] till [nytt värde]
+   → Kräver: ändringar i [lista filer]
+   → OBS: Detta ändrar etablerad kanon!
+
+☐ Alternativ C: [Kombinera/förklara]
+   → Behåll båda genom [förklaring/retcon]
+   → Exempel: "Det finns två [X] med samma namn" eller
+              "Tidigare information var felaktig/ofullständig"
+
+☐ Alternativ D: [Avbryt]
+   → Genomför inte ändringen
+
+**MIN REKOMMENDATION:** [Alternativ X] eftersom [motivering]
 
 [Om varningar:]
 VARNINGAR:
 1. [Beskrivning av potentiellt problem]
    - Risk: [vad kan gå fel]
-   - REKOMMENDATION: [vad göra]
+   - REKOMMENDATION: [konkret åtgärd]
+   - ALTERNATIV: [om användaren vill ignorera]
 
 ═══════════════════════════════════════════════════════════════
-VÄNTAR PÅ GODKÄNNANDE INNAN FORTSÄTTNING
+VÄLJ LÖSNINGSALTERNATIV (eller ange eget)
 ═══════════════════════════════════════════════════════════════
 ```
 
@@ -181,16 +206,20 @@ VÄNTAR PÅ GODKÄNNANDE INNAN FORTSÄTTNING
 
 **Vid ❌ KONFLIKTER:**
 - STOPPA. Fortsätt INTE utan explicit godkännande.
-- Presentera lösningsalternativ.
-- Vänta på användarens beslut.
+- Presentera MINST 2-4 konkreta lösningsalternativ (se format ovan).
+- Ge din REKOMMENDATION med motivering.
+- Vänta på användarens val (A/B/C/D eller eget förslag).
+- Genomför ENDAST vald lösning.
 
 **Vid ⚠️ VARNINGAR:**
-- Presentera varningarna tydligt.
-- Fråga: "Vill du fortsätta trots dessa varningar?"
+- Presentera varningarna med konkreta risker.
+- Ge REKOMMENDATION för hur risken kan minimeras.
+- Fråga: "Vill du fortsätta trots dessa varningar, eller ska jag anpassa förslaget?"
 - Vänta på bekräftelse.
 
 **Vid ✅ INGA KONFLIKTER:**
 - Informera användaren att kontrollen är klar.
+- Sammanfatta vad som ska ändras.
 - Fråga: "Ska jag genomföra ändringen?"
 
 ### TOKENS ÄR INTE EN BEGRÄNSNING
