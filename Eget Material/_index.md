@@ -12,11 +12,11 @@
 - **Länder:** 0
 - **Städer:** 0
 - **Platser:** 0
-- **Regioner:** 0
+- **Regioner:** 1
 - **Organisationer:** 0
 - **Föremål:** 0
 - **NPCs:** 0
-- **Totalt färdigt:** 0
+- **Totalt färdigt:** 1
 
 ### Pågående projekt
 - **Aktiva projekt:** 0
@@ -24,7 +24,7 @@
 - **I fas 3-5 (Skrivande):** 0
 - **I fas 6 (Validering):** 0
 
-**Senast uppdaterad:** 2026-02-01
+**Senast uppdaterad:** 2026-02-02
 
 ---
 
@@ -42,7 +42,7 @@
 - **Nästa:** [Nästa steg]
 ```
 
-*Inga pågående projekt ännu.*
+*Inga pågående projekt just nu. EM-R001 nyligen avslutat.*
 
 **För att se status på pågående projekt:**
 ```python
@@ -104,17 +104,24 @@ Task(
 
 ## 🗺️ REGIONER
 
-*Inga regioner skapade ännu.*
+### EM-R001: Vitterdal-baronieriet ✅
+- **Land:** Cermira (nordvästra hörnet)
+- **Typ:** Jarladöme med gruvstad
+- **Klimat:** Extremt kallt, bergstrakter
+- **Befolkning:** ~2250 (människor + dvärgar)
+- **Status:** Kampanjspecifikt (Hagge som jarl, gruppens bas)
+- **Kampanjstatus:** Aktivt använt (Kapitel 6+)
+- **HTML:** `projekt/EM-R001_vitterdal-baronieriet/vitterdal-baronieriet.html`
+- **Validerat:** 2026-02-02
 
-**Exempel:**
-```markdown
-### EM-R001: De Brinnande Slätterna
-- **Land:** Muhad (östra delen)
-- **Typ:** Öken/stäpp
-- **Klimat:** Extremt varmt, torrt
-- **Status:** Generiskt, delbart
-- **Kampanjstatus:** Ej använt i kampanj
-```
+**Innehåller:**
+- Komplett geografi och klimat
+- Historia (Colonisk → Asharisk → nutid)
+- Mitrahus (stad och borg)
+- Stålsvärds Kavalerister (officiell roster)
+- Grensfortet (ledarskap: Eira, Xian-Li, Skorda)
+- 6 kampanjhooks
+- 20 Midjourney-prompts
 
 ---
 
