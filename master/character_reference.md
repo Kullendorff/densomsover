@@ -6,14 +6,15 @@
 
 ## SPELARKARAKTÄRER
 
-| Namn | Alias | Kön | Pronomen | Ras | Roll/Yrke | Spelare | Status |
+| Namn | Alias | Kön | Pronomen | Ras | Roll/Yrke | Spelare | Status (Bok 1 Avslutad) |
 |------|-------|-----|----------|-----|-----------|---------|--------|
-| **Gordon Nahrzezia** | - | M | han/honom/hans | Cirefalier (människa) | Legosoldat, ledare | Calle | Aktiv |
-| **Thrakka "Järnhanden"** | - | **K** | **hon/henne/hennes** | **Tirak** | f.d. Gladiator/Livvakt | Andreas | Aktiv, bär Umnataks kniv |
-| **Umnatak** | - | M | han/honom/hans | Auser | Spejare/Schaman | Christofer | Fängslad i colonisk kniv |
-| **Kazrik klan Ghor** | "Den resande" | M | han/honom/hans | Dvärg | Författare | Jonas | Aktiv |
-| **Corvus Askhar** | **Arcadius** | M | han/honom/hans | Människa | f.d. Kommendör, **TEMPELRIDDARE** | Daniel | Aktiv |
-| **Zentri Bredarsson** | - | M | han/honom/hans | Asharier | Köpmansson/Krigarmagiker | Andreas (f.d.) | Fången hos VinterGlöd |
+| **Gordon Nahrzezia** | - | M | han/honom/hans | Cirefalier (människa) | Legosoldat, ledare | Calle | Aktiv, Grensfortet |
+| **Thrakka "Järnhanden"** | - | **K** | **hon/henne/hennes** | **Tirak** | f.d. Gladiator/Livvakt | Andreas | Aktiv, vaktar kniven med ringen |
+| **Umnatak** | - | M | han/honom/hans | Auser | Spejare/Schaman | Christofer | PERMANENT fängslad i kniven, ankare för ringen |
+| **Ulzak** | - | M | han/honom/hans | Tirak | Schaman | Christofer | PERMANENT i Umnataks kropp |
+| **Kazrik klan Ghor** | "Den resande" | M | han/honom/hans | Dvärg | Författare | Jonas | Aktiv, Grensfortet |
+| **Corvus Askhar** | **Arcadius** | M | han/honom/hans | Människa | f.d. Kommendör, **TEMPELRIDDARE** | Daniel | Aktiv, tom efter trådbrottet |
+| **Zentri Bredarsson** | - | M | han/honom/hans | Asharier | Köpmansson/Krigarmagiker | Andreas | **FRI!** Grensfortet, försvagad |
 
 ---
 
@@ -25,12 +26,16 @@
 |-----------|------------------------|----------|
 | **Corvus Askhar** | Arcadius | SAMMA PERSON - Corvus är riktiga namnet, Arcadius är alias/täcknamn |
 | **Prins Yelgotha** | Älvakungen, Själabäraren | SAMMA PERSON - "Älvakungen" är coloniskt namn för "Själabärare" |
-| **Umnatak** | Ulzak (från Kapitel 10) | Ulzak-tirakshaman är nu i Umnataks kropp, Umnatak själv fängslad i kniven |
+
+**VIKTIGT: Umnatak & Ulzak (PERMANENT FÖRÄNDRING Kapitel 10):**
+- **Umnatak:** PERMANENT fängslad i meteoritjärnskniven (ankare för Urkhaths ring)
+- **Ulzak:** PERMANENT i Umnataks kropp
+- **Christofer spelar BÅDA:** "kniv-Umnatak" OCH "Ulzak i kroppen"
 
 **När du skriver:**
 - Corvus/Arcadius: Fråga användaren vilket namn som passar i kontexten
 - Yelgotha: Använd "Prins Yelgotha" eller förtydliga "Yelgotha (Älvakungen)"
-- Umnatak efter Kapitel 10: "Ulzak (i Umnataks kropp)" - Umnatak själv finns i kniven
+- Umnatak efter Kapitel 10: Alltid specificera "Umnatak (i kniven)" eller "Ulzak (i Umnataks kropp)"
 
 ---
 
@@ -39,9 +44,10 @@
 ### Thrakka
 - **KÖN:** KVINNA (hon/henne/hennes)
 - **SKADA FRÅN TITANEN:** Spräckt skalle (ALDRIG "brutna revben"!)
-- **STATUS:** Aktiv, bär Umnataks meteoritjärnskniv vid bältet
-- **RELATION TILL KNIVEN:** Umnatak fängslad i kniven, Ulzak i Umnataks kropp
+- **STATUS:** Aktiv, VAKTAR meteoritjärnskniven med Urkhaths ring
+- **RELATION TILL KNIVEN:** Umnatak fängslad i kniven (ankare), Ulzak i Umnataks kropp (PERMANENT)
 - **OFFER TILL YELGOTHA:** Traumatiska minnen (gladiatoråren, slaveriet)
+- **PLATS:** Grensfortet (Bok 1 avslutad)
 
 ### Corvus/Arcadius
 - **YRKE:** TEMPELRIDDARE
@@ -49,36 +55,57 @@
 - **VAD HAN GÖR:** Slåss med svärd, leder ritualer (andligt/religiöst, EJ magiskt), formelböner
 - **OFFER TILL YELGOTHA:** Skuld (skapade hålet i bröstet)
 - **FYSISK MÄRKNING:** Hål i bröstet (där skulden var)
+- **STATUS BOK 1:** Tom efter trådbrottet, hålet kvarstår
+- **PLATS:** Grensfortet
 
 ### Umnatak
-- **STATUS:** Fängslad i colonisk kniv tillsammans med Urkhaths ring
-- **ROLL:** Ankare för ringen (offrade sig för att befria Zentri)
+- **STATUS:** PERMANENT fängslad i meteoritjärnskniven
+- **ROLL:** Ankare för Urkhaths ring (offrade sig för att befria Zentri)
 - **OFFER TILL YELGOTHA:** Säkerhet/trygghet
+- **SPELAS AV:** Christofer (som "kniv-Umnatak")
+- **KROPP:** Kontrolleras av Ulzak
+
+### Ulzak
+- **STATUS:** PERMANENT i Umnataks kropp (befriad från kniven)
+- **BAKGRUND:** Var fängslad i kniven i generationer
+- **SPELAS AV:** Christofer (som "Ulzak i kroppen")
+- **PLATS:** Grensfortet
 
 ### Gordon
-- **ROLL:** Grupp
-
-ens ledare, taktisk koordinator
+- **ROLL:** Gruppens ledare, taktisk koordinator
 - **OFFER TILL YELGOTHA:** Generositet
+- **PRESTERAT BOK 1:** Sjöng och krossade kristallen (räddade Zentri)
+- **PLATS:** Grensfortet
 
 ### Kazrik
 - **ROLL:** Dvärg-författare "Den resande"
 - **OFFER TILL YELGOTHA:** Ambition/girighet
+- **PLATS:** Grensfortet
 
 ### Zentri
-- **STATUS:** Fången hos Lord VinterGlöd i Skugglandet
-- **RELATION TILL RINGEN:** Tidigare bärare av Urkhaths ring (nu fri)
+- **STATUS:** FRI från Skugglandet (Bok 1 avslutad!)
+- **SPELAS AV:** Andreas (tillbaka!)
+- **RELATION TILL RINGEN:** Tidigare bärare, ringen nu bunden till kniven (Umnatak är ankaret)
+- **TILLSTÅND:** Försvagad efter månaders separation men levande
+- **PLATS:** Grensfortet, högsommar
 
 ---
 
-## SKADOR FRÅN TITANSTRIDEN (Kapitel 10)
+## SKADOR FRÅN TITANSTRIDEN & BOK 1 (Kapitel 10)
 
 **KORREKTA SKADOR:**
-- **Thrakka:** Spräckt skalle (KRITISKT: INTE revben!)
-- **Corvus/Arcadius:** Själ möjligen skadad/försvunnen
-- **Umnatak:** Fängslad i colonisk kniv (själsoffring)
-- **Gordon:** Relativt hel
-- **Kazrik:** Relativt hel
+- **Thrakka:** Spräckt skalle (KRITISKT: INTE revben!) - Kan läkas med tid
+- **Corvus/Arcadius:** Tom efter trådbrottet, hålet i bröstet kvarstår
+- **Umnatak:** PERMANENT fängslad i colonisk kniv (själsoffring, ankare för ringen)
+- **Ulzak:** PERMANENT i Umnataks kropp (befriad från kniven)
+- **Gordon:** Oskadad
+- **Kazrik:** Oskadad
+- **Zentri:** FRI från Skugglandet, försvagad men levande
+
+**PERMANENT FÖRÄNDRING:**
+- Umnatak kan ALDRIG lämna kniven
+- Ulzak kan ALDRIG lämna Umnataks kropp
+- Christofer spelar nu BÅDA
 
 **VANLIGT FEL:** Skriva "brutna revben" för Thrakka → ALLTID KORRIGERA till "spräckt skalle"
 
@@ -104,19 +131,20 @@ ens ledare, taktisk koordinator
 
 | NPC | Kön | Pronomen | Notis |
 |-----|-----|----------|-------|
-| Lord VinterGlöd | M | han/honom | Colonisk själssamlare, 3000+ år |
-| Prins Yelgotha | M | han/honom | = Älvakungen |
+| Lord VinterGlöd | M | han/honom | Colonisk själssamlare, FRI från eden, stannade i Skugglandet |
+| Prins Yelgotha | M | han/honom | = Älvakungen, Själabäraren |
+| Gråtonen | K | hon/henne | Själsfärja, bar Zentris själ till kroppen |
 | Hagge | M | han/honom | Vapensmeds assistent, Vargnäset |
 | Lady Soffia | K | hon/henne | Vitterdals hov |
 | Laila bint-Asad | K | hon/henne | Slavhandlare, Jen |
-| Urkhath | M | han/honom | Demon, huvudantagonist |
-| Ulzak | M | han/honom | Tirakshaman, nu i Umnataks kropp |
+| Urkhath | M | han/honom | Demon, huvudantagonist, tillfälligt neutraliserad |
+| Ulzak | M | han/honom | Tirakshaman, PERMANENT i Umnataks kropp |
 
 **LÄGG TILL NPCs HÄR NÄR DE INTRODUCERAS!**
 
 ---
 
-## CHECKL ISTA FÖR VARJE UPPDATERING
+## CHECKLISTA FÖR VARJE UPPDATERING
 
 **INNAN du sparar ändringar:**
 
@@ -125,6 +153,10 @@ ens ledare, taktisk koordinator
 - [ ] Thrakkas skada = spräckt skalle (INTE revben!)
 - [ ] Corvus = Arcadius (samma person!)
 - [ ] Yelgotha = Älvakungen (samma person!)
+- [ ] Umnatak = PERMANENT i kniven (ankare för ringen)
+- [ ] Ulzak = PERMANENT i Umnataks kropp
+- [ ] Zentri = FRI från Skugglandet (Bok 1 avslutad)
+- [ ] Christofer spelar BÅDA Umnatak (kniv) OCH Ulzak (kropp)
 - [ ] Alla nya NPCs har kön dokumenterat
 - [ ] Sök efter vanliga fel (brutna revben, Thrakka + han/honom, Corvus + magi)
 

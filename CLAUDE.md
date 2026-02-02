@@ -354,17 +354,17 @@ kampanjwiki/
 **Struktur:**
 ```
 EON/kapitel/
-├── prolog-tirakgraven.html      ✅ Finns (520 rader)
-├── kapitel-1-jakten.html        ✅ Finns (502 rader)
-├── kapitel-2-muhad.html         ✅ Finns (542 rader)
-├── kapitel-3-tarkas.html        ✅ Finns (542 rader)
-├── kapitel-4-jargien.html       ❌ SAKNAS
-├── kapitel-5-vargnaset.html     ❌ SAKNAS
-├── kapitel-6-vitterdal.html     ❌ SAKNAS
-├── kapitel-7-vargnaset-2.html   ❌ SAKNAS
-├── kapitel-8-evakueringen.html  ❌ SAKNAS
-├── kapitel-9-mithera.html       ✅ Finns (518 rader)
-├── kapitel-10-skugglandet.html  ❌ SAKNAS
+├── prolog-tirakgraven.html      ✅ Finns
+├── kapitel-1-jakten.html        ✅ Finns
+├── kapitel-2-muhad.html         ✅ Finns
+├── kapitel-3-tarkas.html        ✅ Finns
+├── kapitel-4-jargien.html       ✅ Finns
+├── kapitel-5-vargnaset.html     ✅ Finns
+├── kapitel-6-vitterdal.html     ✅ Finns
+├── kapitel-7-vargnaset.html     ✅ Finns (andra besöket)
+├── kapitel-8-evakueringen.html  ✅ Finns
+├── kapitel-9-mithera.html       ✅ Finns
+├── kapitel-10-skugglandet.html  ✅ Finns (BOK 1 KOMPLETT!)
 └── kapitel-linkify.js           # Auto-länkar NPCs/platser
 ```
 
@@ -661,8 +661,8 @@ Task(
 - Teknisk validering och fakta-verifiering
 - Output-format med komplett rapportering
 
-**Befintliga kapitel:** Prolog, 1, 2, 3, 9
-**Saknas:** Kapitel 4, 5, 6, 7, 8, 10, 11
+**Status:** Alla kapitel för Bok 1 FINNS (Prolog + Kapitel 1-10)
+**Bok 1 komplett!** Alla narrativa sidor skrivna.
 
 **När använda:**
 - Skriva nya kapitel-sidor från kampanjkrönika.md
@@ -962,12 +962,15 @@ git checkout wiki_data.js
 
 ## Viktiga regler
 
-### .gitignore (KRITISKT)
+### .gitignore
 ```gitignore
-# Copyrightskyddade PDF:er - ladda INTE upp
+# PDF-filer finns lokalt för referens och design-inspiration
+# Men läggs inte upp i git (för stora filer)
 *.pdf
 **/*.pdf
 ```
+
+**OBS:** PDF-filer (regelböcker, äventyr) får läsas fritt för design-inspiration och referens.
 
 ### UTF-8 Encoding
 - ALLTID UTF-8 utan BOM

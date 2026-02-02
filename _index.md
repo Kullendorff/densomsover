@@ -6,10 +6,16 @@
 
 ## VAR ÄR VI NU?
 
-- **Kapitel:** 10 - Skugglandet
-- **Senaste session:** 2025-01-XX (Zentri Rescue)
-- **Status:** Zentri räddad, Umnatak offrade sig, gruppen på väg ut ur Skugglandet
-- **Nästa session:** TBD (se `sessioner/_aktuell.md`)
+- **Kapitel:** Bok 1 AVSLUTAD (Kapitel 1-10)
+- **Senaste session:** 2026-02-03 (Frostspiran Final - Zentris Befrielse)
+- **Status:**
+  - ✅ Zentri RÄDDAD från Skugglandet (Andreas spelar honom igen)
+  - ✅ Umnatak PERMANENT i kniven (ankare för Urkhaths ring)
+  - ✅ Ulzak PERMANENT i Umnataks kropp
+  - ✅ VinterGlöd fri från eden (stannade i Skugglandet)
+  - ✅ Tillbaka i Mundana (Grensfortet, högsommar)
+  - ⚠️ Tidsförskjutning: Månader har gått sedan de lämnade
+- **Nästa session:** Bok 2 börjar (se `sessioner/_aktuell.md`)
 
 ---
 
@@ -164,5 +170,5 @@ EON/
 
 ---
 
-**Senast uppdaterad:** 2025-12-18
-**Version:** 1.0 (efter omstrukturering)
+**Senast uppdaterad:** 2026-02-03
+**Version:** 1.1 (Bok 1 avslutad - Zentri räddad)

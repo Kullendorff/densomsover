@@ -2698,18 +2698,296 @@ Ljuset från hans själ lyste genom kristallen som en stjärna i is.
 
 ---
 
+### [NY SESSION] Frostspiran Final - Zentris Befrielse
+
+#### VinterGlöds Instruktioner
+
+**Lord VinterGlöd** gav gruppen instruktioner om hur kristallen skulle krossas.
+
+Inte genom rå kraft.
+
+Utan genom **sång och resonans**.
+
+**VinterGlöd:**
+> "Kristallen är bunden av colonisk magi. Den svarar på ljud. På resonans. Sjung mot den. Låt din röst matcha dess frekvens. När den svarar - då kan ni krossa den."
+
+#### Gordons Sång
+
+**Gordon Nahrzezia** steg fram till kristallpelaren.
+
+Han började sjunga.
+
+Inte vackert.
+
+Inte perfekt.
+
+Men **äkta**.
+
+Kristallen började **vibrera**.
+
+Ljuset inifrån pulserade starkare.
+
+**Zentris själ** svarade på resonansen.
+
+Gordon höjde rösten.
+
+Frekvensen matchade.
+
+Kristallen **sprack**.
+
+#### Gråtonens Roll
+
+När kristallen bröts - **Gråtonen** kom.
+
+Själsfärjan.
+
+Hon flög in genom ett fönster ingen sett förut.
+
+**Zentris själ** - nu fri från kristallen - lyste som en stjärna.
+
+Gråtonen bar själen nedåt.
+
+Genom spiraltrappan.
+
+Till sarkofagen.
+
+Till **kroppen**.
+
+#### Återföreningen i Sarkofagrummet
+
+Gruppen rusade ner.
+
+Följde Gråtonen.
+
+I sarkofagrummet: **Zentris kropp** lag stilla.
+
+Gråtonen landade på hans bröst.
+
+Själen **strömmade** från fågeln in i kroppen.
+
+**Zentris ögon öppnades.**
+
+Han andades in - djupt, skakigt.
+
+**Första orden:**
+> "Jag... jag är tillbaka."
+
+**Urkhaths ring manifesterade på hans finger.**
+
+Synlig igen.
+
+Kännbar.
+
+#### Urkhaths Raseri
+
+I samma ögonblick - **Urkhath kände det**.
+
+Demonen visste att ringen hade flyttats.
+
+Att Zentri var fri.
+
+Raseri ekade genom Skugglandet.
+
+Torn skakade.
+
+Marken sprack.
+
+**Urkhaths röst** dundrade överallt:
+> "NEJ! HAN ÄR MIN! RINGEN ÄR MIN!"
+
+#### Ritualen - Umnataks Permanenta Offer
+
+Gruppen insåg: **ringen måste bindas om**.
+
+Inte till Zentri.
+
+Till något **annat**.
+
+**Umnatak (från kniven):**
+> "Använd mig. Jag är redan bunden till kniven. Bind ringen HIT. Jag kan hålla den."
+
+**Ritualen:**
+
+1. **Umnataks själ** - redan i kniven - blev det nya **ankaret** för ringen
+2. **Ringen bands till kniven** istället för till Zentri
+3. **Ulzak** - permanent i Umnataks kropp (ingen återvändo)
+4. **Thrakka** - vaktar kniven i sin egen kropp (ringen nära men ej på honom)
+
+**Christofer (spelaren) bekräftade:**
+- Umnatak stannar i kniven
+- Ulzak stannar i Umnataks kropp
+- Detta är **permanent**
+
+**Konsekvenser:**
+- Zentri är fri men ringen existerar fortfarande
+- Umnatak är det nya fängelset för ringen
+- Urkhath kan inte nå Zentri direkt längre
+- Men ringen måste förstöras för att Urkhath ska besegras permanent
+
+#### VinterGlöds Ed Bryter
+
+När Zentri återförenades - **VinterGlöds ed bröts**.
+
+Han hade bevarat Zentri som lovat.
+
+Nu var han fri.
+
+**Men:**
+
+Gruppen nämnde ALDRIG **Yelgotha** (Prins Älvakungen).
+
+De visste inte att Yelgotha var VinterGlöds forne herre.
+
+Ingen stark relation byggdes mellan VinterGlöd och gruppen.
+
+**VinterGlöd stannade i Skugglandet.**
+
+Fri.
+
+Men ensam.
+
+Som alltid.
+
+#### Flykt Genom Portalen
+
+Gruppen samlade sig:
+
+- **Zentri** - tillbaka i sin kropp, försvagad men levande
+- **Umnatak** - i kniven med ringen bunden till honom
+- **Ulzak** - permanent i Umnataks kropp
+- **Thrakka** - bär kniven vid bältet
+- **Gordon, Kazrik, Arcadius** - redo att fly
+
+De sprang tillbaka genom den blå portalen.
+
+Tillbaka till den coloniska korridoren.
+
+Tillbaka mot Mundana.
+
+**Urkhaths röst** jagade dem:
+> "NI KAN INTE FLY! RINGEN ÄR MIN! JAG HITTAR ER!"
+
+Men portalen stängdes bakom dem.
+
+Tillfälligt.
+
+#### Tillbaka i Mundana - Tidsförskjutning
+
+Gruppen kom ut vid **Grensfortet**.
+
+Men något var fel.
+
+**Luften.**
+
+Varm.
+
+**Växtligheten.**
+
+Grön. Full. Levande.
+
+**Kazrik:**
+> "Det är... högsommar. Vi var borta i... månader?"
+
+Tiden hade gått annorlunda i Skugglandet.
+
+Vad som kändes som dagar - var **månader** i Mundana.
+
+**Det är nu högsommar.**
+
+Gruppen står vid Grensfortet.
+
+Bok 1 är avslutad.
+
+### Gruppens Status Vid Bokavslutet
+
+**Plats:** Grensfortet, Cermira (högsommar)
+
+**Gordon Nahrzezia:**
+- Oskadad
+- Sjöng och bröt kristallen
+- Leder fortfarande
+- **Offer till Yelgotha:** Generositet borta
+
+**Thrakka "Järnhanden":**
+- **Spräckt skalle** från titanstriden (kan läkas med tid)
+- Bär Umnataks meteoritjärnskniv med Urkhaths ring bunden till den
+- Vaktar kniven/ringen i sin egen kropp
+- **Offer till Yelgotha:** Traumatiska minnen borta
+
+**Umnatak (i kniven - PERMANENT):**
+- Fängslad i meteoritjärnskniven
+- Nu även **ankare för Urkhaths ring**
+- Kan tala när någon rör kniven (begränsat)
+- Ser andeplanet konstant
+- **Offer till Yelgotha:** Säkerhet/trygghet borta
+- **Christofer spelar:** "Kniv-Umnatak"
+
+**Ulzak (i Umnataks kropp - PERMANENT):**
+- Befriad från kniven
+- Permanent gäst i Umnataks kropp
+- Kan aldrig lämna kroppen
+- **Christofer spelar:** "Ulzak i kroppen"
+
+**Kazrik klan Ghor:**
+- Oskadad
+- Dokumenterade allt
+- **Offer till Yelgotha:** Ambition/girighet borta
+
+**Zentri Bredarsson:**
+- **FRI från Skugglandet**
+- Återförenad kropp + själ
+- Försvagad efter månaders separation
+- Ringen inte längre på honom (bunden till kniven)
+- **Andreas spelar honom igen**
+
+**Arcadius (Corvus kropp):**
+- Fortfarande tom och mekanisk
+- Hålet i bröstet finns kvar
+- Trådbrottet har lämnat permanenta spår
+- Följer med gruppen men utan mål
+- **Offer till Yelgotha:** Skuld borta
+
+**Viktiga NPCs:**
+- **Lord VinterGlöd:** Fri från eden, stannade i Skugglandet
+- **Urkhath:** Tillfälligt neutraliserad, vet att ringen flyttats, KOMMER TILLBAKA
+- **Gråtonen:** Bar Zentris själ till kroppen, försvann efteråt
+
+**Nya NPCs i Grensfortet:**
+- **Arcadius** - Med gruppen, levande
+- **Xian-Li** - Sung-diplomat, finns i Grensfortet
+
+### Kapitel 10 - AVSLUTAT
+
+**Sammanfattning:**
+- Zentri räddad från Skugglandet
+- Umnatak permanent i kniven som nytt ankare för ringen
+- Ulzak permanent i Umnataks kropp
+- VinterGlöds ed bruten
+- Urkhath tillfälligt neutraliserad
+- Gruppen tillbaka i Mundana (Grensfortet, högsommar)
+- Flera månaders tidsförskjutning
+
+**Nästa mål:**
+- Förstöra ringen permanent
+- Återhämta sig efter Skugglandet
+- Hantera konsekvenserna av månaders frånvaro
+
+**Bok 1: AVSLUTAD**
+
+---
+
 ## Appendix A: Viktiga NPCs efter Status
 
 ### Aktiva Spelarkaraktärer
 - **Gordon Nahrzezia** - Cirefalier, Legosoldat, Kapten av Vitterdals Hederskompani
 - **Kazrik klan Ghor** - Dvärg, "Den resande", författare till "Kazriks resor"
-- **Thrakka "Järnhanden"** - Tirak, f.d. Gladiator/Livvakt (anslöt Kapitel 5)
-- **Corvus Askhår / Arcadius** - Människa, f.d. Kommendör Arvorns Hammare (anslöt Kapitel 7)
-- **Umnatak (fängslad i kniv)** - Auser, Schaman, nu fängslad i meteoritjärnskniv (Kapitel 10)
-- **Ulzak (i Umnataks kropp)** - Tirakshaman, befriad från kniven, gäst i Umnataks kropp (Kapitel 10)
+- **Thrakka "Järnhanden"** - Tirak, f.d. Gladiator/Livvakt, vaktar kniven med Urkhaths ring (anslöt Kapitel 5)
+- **Corvus Askhår / Arcadius** - Människa, f.d. Kommendör Arvorns Hammare, trådbrottet lämnade spår (anslöt Kapitel 7)
+- **Zentri Bredarsson** - Asharier, Krigarmagiker, FRI från Skugglandet (Kapitel 10), Andreas spelar honom igen
+- **Umnatak (fängslad i kniv)** - Auser, Schaman, PERMANENT fängslad i meteoritjärnskniv, ankare för Urkhaths ring (Kapitel 10)
+- **Ulzak (i Umnataks kropp)** - Tirakshaman, PERMANENT i Umnataks kropp (Kapitel 10)
 
 ### Försvunna
-- **Zentri Bredarsson** - Asharier, Krigarmagiker (försvann Kapitel 5, fången i Skugglandet)
 - **Tafrandir** - Kiryaalv (försvann Kapitel 2, orsak okänd)
 
 ### Allierade
@@ -2719,15 +2997,17 @@ Ljuset från hans själ lyste genom kristallen som en stjärna i is.
 - **Eira Holm** - Byäldste Vargnäset, leder de 50 evakuerade byborna
 
 ### Fiender
-- **Demonen Urkhath** - Huvudantagonist, partiellt fri, har Zentri
+- **Demonen Urkhath** - Huvudantagonist, tillfälligt neutraliserad, ringen nu bunden till kniven, KOMMER TILLBAKA
 - **Kommendör Aldrich Järnkors** - Arvorns Hammare, jagar Corvus och gruppen
-- **Lady Isadora & Syster Moira** - Systrarna (Zorian-orden), jagar demonringen
+- **Lady Isadora & Syster Moira** - Systrarna (Zorian-orden), jagar demonringen (nu i kniven)
 - **Halrik Kord** - Ex-kapten, desertörledare (flydde efter Vargnäset)
 
 ### Neutrala/Komplexa
+- **Lord VinterGlöd** - Colonisk själssamlare, fri från eden, stannade i Skugglandet (Kapitel 10)
 - **Serafina Eldstav** - Thismalv, tog bindningsföremål till Sanari-alverna
 - **Ibran Anderyttare** - Tirakshaman i Tamrons kropp, samma mål (stoppa demonen)
 - **Adisa** - Häxa som kände demonmagi
+- **Gråtonen** - Själsfärja, bar Zentris själ till kroppen (Kapitel 10)
 
 ### Döda
 - **Talarra av Vitterdal** - Hagges äldre bror, död av sjukdom
@@ -2774,11 +3054,16 @@ Ljuset från hans själ lyste genom kristallen som en stjärna i is.
 - Karavanrutt genom kejsardömet
 
 ### Drunok
-- Evakueringsrutt (pågående)
+- Evakueringsrutt (avslutad)
+
+### Skugglandet
+- **Frostspiran** - Lord VinterGlöds torn där Zentri hölls fången (Kapitel 10)
+- Coloniska korridorer och portaler
+- Titanens slagfält
 
 ---
 
 *Skapad från källdokument: kampanj_tidslinje.md, KAMPANJEN.txt, kampanjen-bakgrund.md, Ze campaign.md, start.md, Thuzan Rim.md, Stålsvärds_Kavallerister.md*
 
 *Krönikör: Claude (eon-chronicler)*
-*Senast uppdaterad: 2025-12-11*
+*Senast uppdaterad: 2026-02-03 (Bok 1 avslutad - Zentri räddad)*

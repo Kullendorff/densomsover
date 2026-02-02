@@ -1,10 +1,42 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
-## Datum: 2026-01-22
+## Datum: 2026-02-03
 
-## Status: KONTINUITETSSYSTEM FULLSTÄNDIGT IMPLEMENTERAT! 🎯
+## Status: BOK 1 AVSLUTAD! 🎯 Zentri Räddad från Skugglandet
 
-**NYTT (2026-01-22):**
+**NYTT (2026-02-03):**
+- **BOK 1 AVSLUTAD (Kapitel 1-10):** "Frostspiran Final - Zentris Befrielse"
+  * ✅ **Zentri RÄDDAD:** Andreas spelar honom igen
+    - Gordon sjöng och krossade kristallen genom resonans
+    - Gråtonen bar själen ner till kroppen i sarkofagen
+    - Återförening genomförd framgångsrikt
+  * ⚠️ **PERMANENT FÖRÄNDRING - Umnatak & Ulzak:**
+    - **Umnatak:** PERMANENT fängslad i meteoritjärnskniven, ankare för Urkhaths ring
+    - **Ulzak:** PERMANENT i Umnataks kropp
+    - Christofer spelar nu BÅDE "kniv-Umnatak" OCH "Ulzak i kroppen"
+  * 🔮 **Ritualen genomförd:**
+    - Umnataks själ i kniven → nytt ankare för ringen
+    - Ringen bunden till kniven (inte till Zentri längre)
+    - Thrakka vaktar kniven i sin egen kropp
+  * 🌅 **VinterGlöds ed bruten:**
+    - Han hjälpte med instruktioner (sång/resonans)
+    - Eden brast när Zentri återförenades
+    - VinterGlöd STANNADE i Skugglandet (fri men ensam)
+    - Gruppen nämnde ALDRIG Yelgotha
+  * 👿 **Urkhath tillfälligt neutraliserad:**
+    - Rasade när ringen flyttades
+    - Vet att Zentri är fri
+    - KOMMER TILLBAKA
+  * 🏰 **Tillbaka i Mundana:**
+    - Grensfortet, högsommar
+    - Tidsförskjutning: Flera MÅNADER har gått
+  * 📚 **Kampanjdata uppdaterad:**
+    - `master/kampanjkrönika.md` - Ny session tillagd + Appendix uppdaterad
+    - `master/wiki_data.js` - Ulzak, VinterGlöd, Kapitel 10 uppdaterade
+    - `_index.md` - Status uppdaterad till Bok 1 avslutad
+    - `index.html` - Navigering fixad (alla knappar lika stora)
+
+**TIDIGARE (2026-01-22):**
 - **KONTINUITETSSYSTEM FULLSTÄNDIGT:** Självförstärkande kontinuitet för kampanjen
   * **Learnings.md utökad:** 15 kategorier (från 9) med:
     - Geografi: Distanser och resvägar (etablerad kanon)
@@ -138,54 +170,57 @@
 
 ## KAMPANJENS NULÄGE
 
-**Kapitel:** 10 - Skugglandet (Frostspiran Final)
-**Plats:** Kristallrummet, högst upp i Frostspiran
-**Senaste session:** Gruppen nådde kristallrummet
+**Kapitel:** BOK 1 AVSLUTAD (Kapitel 1-10)
+**Plats:** Grensfortet, Cermira (högsommar)
+**Senaste session:** 2026-02-03 - "Frostspiran Final - Zentris Befrielse"
 
-### Gruppens Status
+### Gruppens Status (vid Grensfortet)
 | Karaktär | Status |
 |----------|--------|
-| **Gordon** | Leder |
-| **Kazrik** | Oskadad |
-| **Thrakka** | Spräckt skalle, bär Umnataks kniv |
-| **Arcadius** | Självgående men TOM efter trådbrottet |
-| **Umnatak** | Fängslad i meteoritjärnskniven |
-| **Ulzak** | I Umnataks kropp |
+| **Gordon** | Oskadad, sjöng och bröt kristallen |
+| **Kazrik** | Oskadad, dokumenterade allt |
+| **Thrakka** | Spräckt skalle (kan läkas), VAKTAR KNIVEN med ringen |
+| **Zentri** | ✅ FRI! Andreas spelar honom igen |
+| **Arcadius** | Tom efter trådbrottet, hålet i bröstet kvarstår |
+| **Umnatak** | PERMANENT fängslad i meteoritjärnskniven (Christofer) |
+| **Ulzak** | PERMANENT i Umnataks kropp (Christofer) |
 
 ### Zentris Status
-- **Kropp:** I sarkofagen (nedre tornet)
-- **Själ:** I kristallpelaren (kristallrummet)
-- **Ringen:** Manifesterar vid återförening
+- **Status:** FRI från Skugglandet, återförenad kropp + själ
+- **Ringen:** INTE längre på Zentri - nu bunden till kniven
+- **Försvagad:** Efter månaders separation, men levande
+- **Spelas av:** Andreas (tillbaka!)
+
+### Ringen & Urkhath
+- **Ringen:** Bunden till meteoritjärnskniven (Umnatak är ankaret)
+- **Thrakka:** Vaktar kniven i sin egen kropp
+- **Urkhath:** Tillfälligt neutraliserad, vet att ringen flyttats, KOMMER TILLBAKA
 
 ### VinterGlöd
-- Passerad utan strid
-- Vet INTE att Yelgotha sände dem
-- Hovet fruset
-- Ska dyka upp i kristallrummet med instruktioner
+- **Status:** Fri från eden (bruten när Zentri återförenades)
+- **Plats:** Stannade i Skugglandet (ensam)
+- **Relation:** Hjälpte gruppen, men ingen stark relation byggdes
+
+### Viktiga NPCs i Grensfortet
+- **Arcadius:** Med gruppen, levande men tom
+- **Xian-Li:** Sung-diplomat, finns i fortet
 
 ---
 
-## NÄSTA SESSION: FROSTSPIRAN FINAL
+## NÄSTA SESSION: BOK 2 BÖRJAR
 
-**Fil:** `sessioner/frostspiran_final.html`
+**Status:** ✅ Bok 1 avslutad - planering för Bok 2 behövs
 
-### Scener
-1. **VinterGlöd anländer** - Ger instruktioner om sång/resonans
-2. **Kristallkrossningen** - Sång bryter kristallen
-3. **Gråtonen** - Hon tar Zentris själ nedåt
-4. **Återföreningen** - Själ + kropp, ringen manifesterar
-5. **Urkhaths raseri** - ~10 minuter att agera
-6. **Ritualen** - Alternativ F, alla spelares roller
-7. **VinterGlöds frihet** - Eden brister
-8. **Flykten** - Tornet kollapsar
+### Vad händer nu?
+- Gruppen återhämtar sig efter Skugglandet
+- Månader har gått - vad har hänt i Mundana?
+- Nästa mål: Förstöra ringen permanent
+- Thrakka bär den farligaste artefakten i världen
 
-### Ring-alternativ (dokumenterade)
-- **A:** Umnataks offer (permanent i kniven)
-- **B:** Kasta i Intigheten (temporärt)
-- **C:** VinterGlöd tar ringen (bästa allierad-hook)
-- **D:** Förstöra (ej möjligt nu)
-- **E:** Zentri behåller (dåligt)
-- **F:** Religiös Ritual + Umnataks offer (episk, alla deltar)
+### Ring-alternativ framåt
+- ✅ **Genomfört:** Umnataks offer (permanent i kniven)
+- ⏳ **Återstående:** Hitta sätt att förstöra ringen permanent
+- 💀 **Hot:** Urkhath kommer att försöka återta ringen
 
 ---
 
@@ -236,7 +271,18 @@
 
 ---
 
-## TIDIGARE SESSIONER
+## TIDIGARE SESSIONER (Bok 1)
+
+### Session: Frostspiran Final - Zentris Befrielse (2026-02-03)
+- ✅ VinterGlöd gav instruktioner (sång/resonans)
+- ✅ Gordon sjöng och bröt kristallen
+- ✅ Gråtonen bar själen till kroppen
+- ✅ Återförening genomförd (Zentri + själ)
+- ✅ Ritualen: Umnataks själ → kniven, ringen bunden till kniven
+- ✅ Urkhath rasade när ringen flyttades
+- ✅ VinterGlöds ed bruten (stannade i Skugglandet)
+- ✅ Flykt genom portalen
+- ✅ Tillbaka i Mundana (Grensfortet, högsommar, månader har gått)
 
 ### Session: In i Frostspiran
 - Genom portalen (Arcadius tom efter trådbrottet)
@@ -266,12 +312,18 @@
 - `9fd4d78` - Lägg till 50 nya örter och interaktiv webbsida (2026-01-05)
 - `3f3e748` - Lägg till Thrakkas sånger och kokbok som ny fluff (2026-01-04)
 
-**🆕 Uncommitted changes (Kontinuitetssystem):**
-- `.claude/memory/learnings.md` - 15 kategorier (utökad från 9)
-- `kontinuitet.html` - Kontinuitets-dashboard (NY!)
-- `.git/hooks/pre-commit` - Pre-commit validering (NY!)
-- `.claude/agents/eon-chronicler.md` - Djup kontinuitetsvalidering (utökad)
+**🆕 Uncommitted changes (Bok 1 Avslutad):**
+- `master/kampanjkrönika.md` - Ny session "Frostspiran Final" + Appendix uppdaterad
+- `master/wiki_data.js` - Ulzak, VinterGlöd, Kapitel 10 uppdaterade (validerat ✅)
+- `_index.md` - Status: Bok 1 avslutad
 - `CURRENT_STATE.md` - Detta dokument (uppdaterat)
+- `index.html` - Navigering fixad (alla knappar lika stora)
+
+**Tidigare uncommitted (Kontinuitetssystem):**
+- `.claude/memory/learnings.md` - 15 kategorier
+- `kontinuitet.html` - Kontinuitets-dashboard
+- `.git/hooks/pre-commit` - Pre-commit validering
+- `.claude/agents/eon-chronicler.md` - Djup kontinuitetsvalidering
 - `CLAUDE.md` - Memory-sektion tillagd (2026-01-06)
 - `~/.claude/` - Global hooks och memory (ej i repo)
 
@@ -279,28 +331,38 @@
 
 ## KVARVARANDE ARBETE
 
-### Nästa session (redo)
-- ✅ Sessionsplan klar
-- ✅ VinterGlöd-guide finns
-- ✅ Ring-alternativ dokumenterade
+### Bok 1 Avslutad ✅
+- ✅ Session genomförd: "Frostspiran Final - Zentris Befrielse"
+- ✅ Kampanjkrönika uppdaterad med ny session
+- ✅ Wiki_data.js uppdaterad (Ulzak, VinterGlöd, Kapitel 10)
+- ✅ _index.md uppdaterad
+- ✅ CURRENT_STATE.md uppdaterad
+- ✅ Index.html navigering fixad
+
+### Dokumentation kvarstår
+- ✅ `master/character_reference.md` uppdaterad (Zentri, Umnatak, Ulzak, Arcadius)
+- ✅ `CLAUDE.md` korrigerad (alla kapitel FINNS!)
+- [ ] Commit Bok 1-avslutning till Git
+- ✅ **Alla kapitel-sidor FINNS redan:** Prolog + Kapitel 1-10 (BOK 1 KOMPLETT!)
+
+### Bok 2 Planering
+- [ ] Nästa session-planering (Bok 2 början)
+- [ ] Vad har hänt i Mundana under månader?
+- [ ] Gruppens nästa mål (förstöra ringen permanent)
+- [ ] Urkhaths återkomst (när?)
 
 ### Fluff-expansion
 - ✅ Mithera-fragment komplett (24 fragment)
 - ✅ Thrakka-sånger skapad (8 sånger)
 - ✅ Kokbok skapad (10 recept)
+- ✅ Örter & Droger komplett (123 örter)
 - ✅ Fluff-index uppdaterad
 - [ ] Övriga fluff-förslag (se `master/fluff-förslag-analys.md` för idéer)
 
-### Efter sessionen
-- [ ] Uppdatera kampanjkrönika med vad som hände
-- [ ] Uppdatera character_reference.md om Umnataks status ändras
-- [ ] Eventuellt uppdatera wiki_data.js (Zentri fri?)
-
-### Framtida
-- [ ] Kapitel 10 HTML-sida (efter sessionen)
-- [ ] Kapitel 11+ planering (beroende på utgång)
+### Bildgenerering
 - [ ] Midjourney-prompts för Frostspiran-scener
-- [ ] Midjourney-prompts för nya fluff-sidor (Thrakka, kokbok)
+- [ ] Midjourney-prompts för nya fluff-sidor
+- [ ] NPC-bilder för saknade (121 NPCs saknar bilder)
 
 ---
 
@@ -330,5 +392,5 @@
 
 ---
 
-*Senast uppdaterad: 2026-01-22*
-*Status: Kontinuitetssystem fullständigt implementerat + Självförstärkande kontinuitet*
+*Senast uppdaterad: 2026-02-03*
+*Status: BOK 1 AVSLUTAD - Zentri räddad från Skugglandet*
