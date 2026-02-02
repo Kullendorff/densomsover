@@ -54,6 +54,7 @@
 | **Vem är vem?** | `master/character_reference.md` | Karaktärsfakta, kön, alias, pronomen |
 | **NPC/Plats-data** | `master/wiki_data.js` | Dashboard-databas (genererad från krönika) |
 | **Kampanjplot** | `master/masterplot.md` | Övergripande storyline och master-plot |
+| **EON-regler** | NotebookLM (extern) | Officiellt regelbok & världsbeskrivning (se CLAUDE.md) |
 
 ---
 

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitterdal-baronieriet - EON Kampanjmaterial</title>
+    <style>
+        :root {
+            --flame-orange: #ff6b4a;
+            --deep-red: #d4534d;
+            --mystic-purple: #a855a8;
+            --gold: #ffa500;
+            --bg-dark: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-light: #e0e0e0;
+            --text-dim: #a0a0a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1520 100%);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-bottom: 3px solid var(--flame-orange);
+            box-shadow: 0 4px 20px rgba(255, 107, 74, 0.3);
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            color: var(--flame-orange);
+            text-shadow: 0 0 20px rgba(255, 107, 74, 0.5);
+            margin-bottom: 1rem;
+        }
+
+        .header .subtitle {
+            font-size: 1.3rem;
+            color: var(--text-dim);
+            font-style: italic;
+        }
+
+        .header .meta {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: var(--text-dim);
+        }
+
+        .header .meta span {
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 107, 74, 0.1);
+            border-radius: 5px;
+        }
+
+        /* Navigation */
+        .nav {
+            position: sticky;
+            top: 0;
+            background: var(--bg-card);
+            padding: 1rem 2rem;
+            border-bottom: 2px solid var(--mystic-purple);
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover {
+            background: rgba(255, 107, 74, 0.2);
+            color: var(--flame-orange);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background: var(--bg-card);
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: var(--flame-orange);
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--mystic-purple);
+        }
+
+        .section h3 {
+            font-size: 1.8rem;
+            color: var(--mystic-purple);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section h4 {
+            font-size: 1.4rem;
+            color: var(--gold);
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Atmosphere text */
+        .atmosphere {
+            background: linear-gradient(135deg, rgba(168, 85, 168, 0.1), rgba(255, 107, 74, 0.1));
+            border-left: 4px solid var(--mystic-purple);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--text-dim);
+        }
+
+        /* Info box */
+        .info-box {
+            background: rgba(255, 165, 0, 0.1);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box strong {
+            color: var(--gold);
+        }
+
+        /* Warning box */
+        .warning-box {
+            background: rgba(212, 83, 77, 0.1);
+            border-left: 4px solid var(--deep-red);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .warning-box strong {
+            color: var(--deep-red);
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* NPC Card */
+        .npc-card {
+            background: rgba(255, 107, 74, 0.05);
+            border: 2px solid rgba(255, 107, 74, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .npc-card h4 {
+            color: var(--flame-orange);
+            margin-top: 0;
+        }
+
+        .npc-meta {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Campaign hook */
+        .hook-card {
+            background: rgba(168, 85, 168, 0.05);
+            border: 2px solid rgba(168, 85, 168, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .hook-card h4 {
+            color: var(--mystic-purple);
+            margin-top: 0;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 107, 74, 0.2);
+        }
+
+        th {
+            background: rgba(255, 107, 74, 0.2);
+            color: var(--flame-orange);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: rgba(255, 107, 74, 0.05);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-card);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 2px solid var(--flame-orange);
+        }
+
+        .footer p {
+            color: var(--text-dim);
+            margin: 0.5rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>VITTERDAL-BARONIERIET</h1>
+        <div class="subtitle">Guldets och Köldens Rike</div>
+        <div class="meta">
+            <span>📍 Nordvästra Cermira</span>
+            <span>👥 ~2500 invånare</span>
+            <span>⚔️ Jarladöme</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul>
+            <li><a href="#oversikt">Översikt</a></li>
+            <li><a href="#geografi">Geografi</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#mitrahus">Mitrahus</a></li>
+            <li><a href="#kultur">Kultur & Religion</a></li>
+            <li><a href="#dagligtliv">Dagligt Liv</a></li>
+            <li><a href="#styre">Styre & Politik</a></li>
+            <li><a href="#npcs">Viktiga NPCs</a></li>
+            <li><a href="#hooks">Kampanjhooks</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Översikt -->
+        <section id="oversikt" class="section">
+            <h2>📋 ÖVERSIKT</h2>
+
+            <p><strong>Vitterdal-baronieriet</strong> är ett bergstrakter-jarladöme i Cermiras nordvästra hörn, känt för sina rika guldådror och det mystiska övergivna dvärgfästet Methras-Renk-Drezin (Dûhr Kins). Området är extremt kallt med dålig jordmån, men guldhandeln gör Vitterdal till en politiskt viktig och omstridd region.</p>
+
+            <div class="info-box">
+                <strong>Huvudort:</strong> Mitrahus (stad och borg vid bergsidan)<br>
+                <strong>Befolkning:</strong> ~2500 invånare (1900 människor, 500 dvärgar, 100 andra)<br>
+                <strong>Jarl:</strong> Hadrian "Hagge" av Vitterdal<br>
+                <strong>Huvudnäring:</strong> Guldgruvdrift (~60% av ekonomin)<br>
+                <strong>Viktiga platser:</strong> Mitrahus (borg), Dûhr Kins (dvärgfäste), Guldgruvorna
+            </div>
+
+            <p>Sedan gruvbrytningen inleddes för ett sekel sedan har en "aura av hotfullhet" lagt sig över området, utstålande från det övergivna dvärgfästet. Dvärgar från Klan Ghor har stationerats i gruvorna genom ett diplomatiskt avtal, och de har även förstärkt borgen Mitrahus med dvärgisk befästningsteknik.</p>
+        </section>
+
+        <!-- Geografi -->
+        <section id="geografi" class="section">
+            <h2>🗺️ GEOGRAFI</h2>
+
+            <div class="atmosphere">
+                Kölden är ingen fiende här - den är en medlem av familjen. Träden vet vart de lutar, och bergen minns varje steg som tagits i deras skugga.
+            </div>
+
+            <h3>Läge och Gränser</h3>
+            <p>Vitterdal ligger i <strong>nordvästra Cermira</strong>, vid gränsen mellan Cermiras hjärta och de karga bergstrakterna mot Mithera.</p>
+
+            <ul>
+                <li><strong>Norr:</strong> Mitheraskogen (den stora urskogen)</li>
+                <li><strong>Öster:</strong> Kronomarken (Cermiras centralområde)</li>
+                <li><strong>Söder:</strong> S:t Kira (västra jarladömet)</li>
+                <li><strong>Väster:</strong> Hög toppmyr och vidare till Drunok</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>Avstånd till viktiga platser:</strong><br>
+                • Cermira stad: ca 150 km öster<br>
+                • Raunfloden: ca 200 km söder (Cermiras södra gräns mot Asharien)
+            </div>
+
+            <h3>Klimat</h3>
+            <p><strong>Extremt kallt</strong> - Vitterdal är ett av Cermiras kallaste områden:</p>
+            <ul>
+                <li><strong>Vintrarna:</strong> 5-6 månader snötäcke, hårda temperaturer</li>
+                <li><strong>Somrarna:</strong> 2-3 månader kort och svalt, beroende på Mitheraskens iskalla vindar</li>
+                <li><strong>Temperatur:</strong> Betydligt kallare än andra delar av Cermira på samma breddgrad</li>
+                <li><strong>Vind:</strong> Konstant kylig vind från Mithera</li>
+            </ul>
+
+            <h3>Terräng</h3>
+            <p><strong>Bergstrakter med dålig jordmån:</strong></p>
+            <ul>
+                <li>Domineras av bergssidor och förtvinade träd</li>
+                <li>Träden på bergsidorna lutar <em>bort från dvärgfästet</em> (!)</li>
+                <li>Kuperad terräng uppbruten av täta skogspartier</li>
+                <li>Mörka, näckrosbeströdda tjärnar i lågområden</li>
+                <li><strong>INGEN jordbruk</strong> - all mat importeras</li>
+            </ul>
+
+            <h3>Naturresurser</h3>
+            <ol>
+                <li><strong>Guld</strong> - De främsta guldådrorna i Cermira</li>
+                <li><strong>Timmer</strong> - Små, hårda träd från Mitheras utkanter</li>
+                <li><strong>Örter och svampar</strong> - Speciella arter, höga priser utomlands</li>
+                <li><strong>Pälsar</strong> - Björn, varg, dovhjort, snökatter</li>
+                <li><strong>Sten</strong> - Byggmaterial från bergen</li>
+            </ol>
+        </section>
+
+        <!-- Historia -->
+        <section id="historia" class="section">
+            <h2>📜 HISTORIA</h2>
+
+            <div class="atmosphere">
+                Där dvärgarna gick, följde människor. Där guldet fanns, följde makt. Där makt fanns, följde blod.
+            </div>
+
+            <h3>Coloniska eran (före 2529 e.D.)</h3>
+            <p>Området var del av coloniska imperiets västra hörn. Dvärgfästet <strong>Methras-Renk-Drezin</strong> byggdes under denna period (eller tidigare), men övergavs av okänd anledning.</p>
+
+            <h3>Asharisk tid (2529-2605 e.D.)</h3>
+            <p><strong>76 år under asharisk kontroll:</strong> Efter Caserions nederlag i slaget vid Ramske slätt gav man hela Cermira-området till Asharien. Vitterdal underkastades asharisk administration, men den drunokiska befolkningen kände större kulturell koppling till Drunok än till sina ashariska härskare.</p>
+
+            <div class="info-box">
+                <strong>2605 e.D.: Sankt Kira-miraklet</strong><br>
+                Jordesoldaten steg ned och förjagade De förändrade från byn Nalthar. Miraklet ledde till inbördeskrig i norra Asharien, och Cermira blev självständigt rike.
+            </div>
+
+            <h3>Guldgruvorna (för ~100 år sedan)</h3>
+            <p>Systematisk gruvbrytning inleddes, och rika guldådror upptäcktes. Sedan dess har en <strong>"aura av hotfullhet"</strong> lagt sig över området, utstrålande från det övergivna dvärgfästet. Vitterdals guld blev en av de två stora politiska frågorna i Cermira.</p>
+
+            <h3>Kampanjens tidslinje</h3>
+            <ul>
+                <li><strong>Talarras död:</strong> Hagges äldre bror Talarra förgiftades (av en annan jarl för att ta kontroll över gruvorna)</li>
+                <li><strong>Hagges förvisning:</strong> Anklagades för förräderi på falska grunder, förvisades och såldes som slav i Muhad</li>
+                <li><strong>Kapitel 3 - Befrielsen:</strong> Gruppen räddade Hagge från slaveriet i Jen</li>
+                <li><strong>Kapitel 6 - Legitimering:</strong> Lantrådet bekräftade Hagge som jarl (Kung Vidkun VII misslyckades ta kontroll)</li>
+                <li><strong>Kapitel 6 - Dvärgavtalet:</strong> Kazrik förhandlade fram avtal med Klan Ghor (dvärgar stationerade i gruvorna)</li>
+                <li><strong>Kapitel 7 - Stålsvärds Kavalerister:</strong> Kapten Kaelar Stålsvärd accepterade tjänst som Hagges kapten</li>
+            </ul>
+        </section>
+
+        <!-- Mitrahus -->
+        <section id="mitrahus" class="section">
+            <h2>🏰 MITRAHUS (Stad och Borg)</h2>
+
+            <div class="atmosphere">
+                Stenen minns längre än kött. Mitrahus har sett jarlar komma och gå. Gruvorna har tagit mer än de gett.
+            </div>
+
+            <p>Mitrahus är mer borg än stad - jarla-borgen dominerar staden från sitt höga läge på <strong>bergsidan</strong>, och staden har vuxit upp nedanför borgen i terrasser längs bergssluttningen.</p>
+
+            <div class="info-box">
+                <strong>Befolkning:</strong> ~1200 invånare permanent (upp till 1500 under sommaren)<br>
+                <strong>Typ:</strong> Liten jarladöme-huvudstad<br>
+                <strong>Jämförelse:</strong> Mindre än Cermira stad (~7000), mycket mindre än Sankt Kira (~12000+)
+            </div>
+
+            <h3>Stadsplan (från topp till botten)</h3>
+            <ol>
+                <li><strong>Mitrahus (borgen)</strong> - Högst upp på bergsidan (~50-80m över stadsnivån)</li>
+                <li><strong>Övre staden</strong> - Terrass nedanför borgen, adel och rika köpmän</li>
+                <li><strong>Nedre staden</strong> - Terrass längre ned, hantverkare, gruvarbetare</li>
+                <li><strong>Gruvkvarteret</strong> - Botten och norrut, vid gruvingångarna</li>
+            </ol>
+
+            <h3>Mitrahus (Jarla-borgen)</h3>
+
+            <h4>Struktur och Läge</h4>
+            <ul>
+                <li>Byggd på klippformation 50-80m över stadsnivån</li>
+                <li><strong>Förstärkta stenmurar</strong> (renoverade av Klan Ghor enligt avtalet)</li>
+                <li>Tre vakttorn (två ursprungliga + ett nytt norra tornet byggt av dvärgar)</li>
+                <li>Huvudhall i centrum med eldstad och högsäte</li>
+                <li>Flyglar för boende, förråd, soldatkvarter</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>Dvärgarnas Befästningar (del av Klan Ghor-avtalet):</strong><br>
+                • <strong>Krell-Khan-Hon-Spaz:</strong> Två dvärgiska lavettarmborst monterade på murarna<br>
+                &nbsp;&nbsp;- Snabbskjutande med laddramar (12 skäktor/ram)<br>
+                &nbsp;&nbsp;- Räckvidd ~400m<br>
+                &nbsp;&nbsp;- Besättning: 3 dvärgar per armborst<br>
+                • <strong>Dvärg-vakter:</strong> 2-4 dvärgar med armborst på tjänst kväll/natt<br>
+                • <strong>Vapenförråd:</strong> Säkert förråd i källaren (dvärgiskt lås)
+            </div>
+
+            <h4>Boende i Mitrahus</h4>
+            <ul>
+                <li>Hagges privata kvarter (södra flygeln)</li>
+                <li>Lady Soffias kvarter (västra flygeln)</li>
+                <li>Gästkvarter för viktiga besökare</li>
+                <li>Soldatkvarter för Stålsvärds Kavalerister (~25 man)</li>
+                <li>Dvärgarnas kvarter (mindre, nära stallet)</li>
+                <li><strong>Gruppens hus:</strong> Stenhus på Mitrahus mark (belöning från Hagge)</li>
+            </ul>
+
+            <h3>Övre Staden</h3>
+            <p>Tyst och välhållen. Stenhusen står tätt men prydligt.</p>
+            <ul>
+                <li><strong>Daaktro-templet:</strong> Präst - Fader Boreas</li>
+                <li><strong>Lantrådsalen:</strong> Lokala ärenden och tvister</li>
+                <li><strong>Handelshus-kontor:</strong> Nejas (ashariskt), Wekzi (tirakiskt)</li>
+                <li>Adelhus och köpmänshus</li>
+            </ul>
+
+            <h3>Nedre Staden</h3>
+            <p>Bullrig och full av liv. Hamrande från smidjan, rop från torget.</p>
+            <ul>
+                <li><strong>Järnoxen (värdshus):</strong> Värdshusvärdinna - Helga Storhuvud</li>
+                <li><strong>Smedjan:</strong> Smed - Bjorn Järnhammare (dvärg)</li>
+                <li><strong>Marknadstorget:</strong> Handel (mest sommartid)</li>
+                <li><strong>Gruvkontoret:</strong> Gruvmästare - Torkel Stenbiter</li>
+            </ul>
+
+            <h3>Gruvkvarteret</h3>
+            <p>Smutsigt och bullrigt under arbetstid.</p>
+            <ul>
+                <li><strong>5 huvudsakliga gruvingångar</strong> till guldgruvorna</li>
+                <li><strong>Dvärgarnas vaktstation:</strong> Klan Ghor övervakar gruvbrytningen</li>
+                <li>Gruvarbetarbaracker och dvärgbostäder (i utbyggda gruvgångar)</li>
+                <li>Smältugnar för guldmalm</li>
+            </ul>
+        </section>
+
+        <!-- Kultur & Religion -->
+        <section id="kultur" class="section">
+            <h2>👥 KULTUR & RELIGION</h2>
+
+            <div class="atmosphere">
+                Vi är inte svaga för att vi bor här. Vi är starka för att vi överlevt.
+            </div>
+
+            <h3>Rasfördelning</h3>
+            <ul>
+                <li><strong>Människor (drunokier):</strong> ~1900 invånare (~76%)</li>
+                <li><strong>Dvärgar (Klan Ghor):</strong> ~500 invånare (~20%, främst i gruvgångar)</li>
+                <li><strong>Andra raser:</strong> ~100 invånare (~4%)</li>
+            </ul>
+
+            <h3>Drunokisk Kultur</h3>
+            <p>Drunokierna utgör majoriteten av Vitterdals befolkning. De har rötter i Drunok (grannlandet i väster) och känner större kulturell koppling dit än till Cermira stad.</p>
+
+            <h4>Kulturella kännetecken:</h4>
+            <ul>
+                <li><strong>Språk:</strong> Cermirsk dialekt av drunokiska (tunga konsonanter, kort och direkt)</li>
+                <li><strong>Klädsel:</strong> Tjocka pälskläder, praktiska toner (brunt, grått, grönt), pälsmössor</li>
+                <li><strong>Värderingar:</strong> Pragmatism, hårt arbete, respekt för expertis, misstro mot utomstående</li>
+                <li><strong>Mat:</strong> Importerad spannmål, lokalt jakt (björnkött, dovhjort), stark sprit, bevarad mat</li>
+            </ul>
+
+            <h4>Fördomar från andra cirmirer:</h4>
+            <div class="warning-box">
+                <strong>Män:</strong> "Enfaldiga lantisar"<br>
+                <strong>Kvinnor:</strong> "Godtrogna slampor"<br>
+                <strong>Generellt:</strong> Kulturellt efterblivna, opålitliga, superstiösa
+            </div>
+
+            <p><strong>Vitterdal-bornas respons:</strong> "Låt de fina stadsfolket försöka överleva en vinter här"</p>
+
+            <h3>Religion: Daaktro (med lokala andetraditioner)</h3>
+            <p><strong>Officiell religion:</strong> Daaktro (Jordesoldatens lära)</p>
+            <p><strong>I praktiken:</strong> Vitterdal-bor blandar Daaktro med äldre, lokala andetraditioner:</p>
+            <ul>
+                <li><strong>Kuberon (köldens herre):</strong> Lokal andegudom, aspect av naturens makt</li>
+                <li><strong>Bergsandar:</strong> Tro på andar i bergen som måste respekteras</li>
+                <li><strong>Förfäderskullt:</strong> Ritualer vid midvinter</li>
+            </ul>
+
+            <h4>Religiösa högtider:</h4>
+            <ul>
+                <li><strong>Jordesoldatens dag (vår)</strong></li>
+                <li><strong>Sankt Kiras dag (sommar)</strong></li>
+                <li><strong>Gruvdagens fest (sommar):</strong> Firar guldbrytningens början (för ~100 år sedan)</li>
+                <li><strong>Midvinterblot (vinter):</strong> Drunokisk högtid (blandning Daaktro + äldre seder)</li>
+            </ul>
+
+            <h3>Lokala Seder och Ordspråk</h3>
+
+            <h4>Ordspråk:</h4>
+            <ul>
+                <li>"Guldet kommer från bergen, men köld kommer från hjärtat"</li>
+                <li>"Träden vet vart de lutar"</li>
+                <li>"Dvärgen gräver djupare än du tänker"</li>
+                <li>"Vintern tar de svaga, våren tar de dumma"</li>
+            </ul>
+
+            <h4>Seder:</h4>
+            <ul>
+                <li><strong>Gruvdop:</strong> Ny gruvarbetare "döps" med gruvdust första dagen</li>
+                <li><strong>Aldrig vissla i gruvorna:</strong> Väcker "det som sover"</li>
+                <li><strong>Midvinter-guldnugget:</strong> Lämna guldnugget vid dvärgfästets ingång</li>
+                <li><strong>Tackbön:</strong> Tacka Daaktro och bergen efter lyckad gruvdag</li>
+            </ul>
+
+            <h3>Samlevnad mellan Människor och Dvärgar</h3>
+            <ul>
+                <li><strong>Respekt och distans:</strong> Dvärgar håller sig för sig själva</li>
+                <li><strong>Gott rykte:</strong> Ses sällan men respekteras högt</li>
+                <li><strong>Gruvgångar som hem:</strong> Dvärgar har byggt ut egna bostäder, lever i gruvgångarna</li>
+                <li><strong>Militär närvaro:</strong> ~50-70 dvärgsoldater från Klan Ghor patrullerar</li>
+                <li><strong>Expertis:</strong> Människor litar på dvärgarnas gruvkunskap</li>
+            </ul>
+        </section>
+
+        <!-- Dagligt Liv -->
+        <section id="dagligtliv" class="section">
+            <h2>⏰ DAGLIGT LIV I VITTERDAL</h2>
+
+            <h3>Arbetsdag (Sommar vs Vinter)</h3>
+
+            <table>
+                <tr>
+                    <th>Tid</th>
+                    <th>Sommar</th>
+                    <th>Vinter</th>
+                </tr>
+                <tr>
+                    <td>04:00 / 06:00</td>
+                    <td>Gruvarbetare vaknar</td>
+                    <td>Gruvarbetare vaknar (mörkare)</td>
+                </tr>
+                <tr>
+                    <td>05:00 / 07:00</td>
+                    <td>Första skiftet börjar</td>
+                    <td>Första skiftet börjar</td>
+                </tr>
+                <tr>
+                    <td>12:00 / 14:00</td>
+                    <td>Lunchpaus, andra skiftet</td>
+                    <td>Lunchpaus, andra skiftet</td>
+                </tr>
+                <tr>
+                    <td>19:00 / 18:00</td>
+                    <td>Andra skiftet slutar</td>
+                    <td>Andra skiftet slutar (mörkt)</td>
+                </tr>
+                <tr>
+                    <td>20:00 / 19:00</td>
+                    <td>Kvällsmåltid, Järnoxen</td>
+                    <td>Kvällsmåltid, hemma (värme)</td>
+                </tr>
+            </table>
+
+            <h3>Vecka och Säsonger</h3>
+            <ul>
+                <li><strong>Arbetsvecka:</strong> 6 dagar (måndag-lördag)</li>
+                <li><strong>Söndag:</strong> Vilodag, Daaktro-gudstjänst, familjetid</li>
+                <li><strong>Lördag kväll:</strong> Järnoxen fylls med gruvarbetare</li>
+            </ul>
+
+            <h4>Säsonger:</h4>
+            <ul>
+                <li><strong>Vinter (6 månader):</strong> Överlevnad, begränsat gruvarbete</li>
+                <li><strong>Vår (1 månad):</strong> Snösmältning, reparationer</li>
+                <li><strong>Sommar (3 månader):</strong> Intensivt gruvarbete, handel</li>
+                <li><strong>Höst (2 månader):</strong> Sista skörden, vinterberedskap</li>
+            </ul>
+        </section>
+
+        <!-- Styre & Politik -->
+        <section id="styre" class="section">
+            <h2>👑 STYRE & POLITIK</h2>
+
+            <div class="atmosphere">
+                Makt är som guld här - tung att bära, lätt att förlora, och alltid eftertraktad av andra.
+            </div>
+
+            <h3>Regeringsform: Jarladöme</h3>
+            <p>Del av Cermiras system av jarladömen under en överjarl ("kung"). Jarlen har stor autonomi i sitt jarladöme.</p>
+
+            <h3>Nuvarande Jarl: Hadrian "Hagge" av Vitterdal</h3>
+            <div class="info-box">
+                <strong>Ålder:</strong> ~30 år<br>
+                <strong>Bakgrund:</strong> Yngre son, förvisad av sin bror, såld som slav i Muhad, räddad av gruppen<br>
+                <strong>Position:</strong> Bekräftad som jarl av Lantrådet (Kapitel 6)<br>
+                <strong>Familj:</strong> Lady Soffia (mor), Talarra (bror, död), barn med Laila al-Jen (Muhad)
+            </div>
+
+            <h3>Politiska Spänningar</h3>
+
+            <div class="warning-box">
+                <strong>KRITISKT HOT:</strong> Hagge har tagit fast kontroll över guldgruvorna. Detta gillar INTE överjarlen (Kung Vidkun VII) eller nästan någon annan jarl i Cermira.
+            </div>
+
+            <h4>Bakgrund till Talarras död:</h4>
+            <p><strong>EN ANNAN JARL förgiftade Hagges bror Talarra</strong> för att ta kontroll över gruvorna. Samma jarl såg till att Hagge blev kidnappat och såld som slav. Vilken jarl som gjorde det är ej beslutat, men misstankar finns.</p>
+
+            <p><strong>Möjligt undantag:</strong> S:t Kira (kanske gynnsamma mot Hagge?)</p>
+
+            <h3>Militär och Försvar</h3>
+
+            <h4>Stålsvärds Kavalerister (Hagges hussoldater):</h4>
+            <ul>
+                <li><strong>Ledare:</strong> Kapten Kaelar Stålsvärd</li>
+                <li><strong>Styrka:</strong> ~25 erfarna legosoldater</li>
+                <li><strong>Bas:</strong> Mitrahus, soldatkvarter i borgen</li>
+                <li><strong>Viktiga medlemmar:</strong> Alrik Järnhand, Brenna "Blixten" Skarphög, Eldric Hammarbane, Thora Vintertass</li>
+            </ul>
+
+            <h4>Dvärgarnas militära närvaro:</h4>
+            <ul>
+                <li><strong>Klan Ghor-dvärgar:</strong> ~50-70 dvärgsoldater i gruvorna</li>
+                <li><strong>Mitrahus garnison:</strong> ~10-15 dvärgar (Morgonstjärnornas kontakter)</li>
+                <li><strong>Krell-Khan-Hon-Spaz:</strong> Två dvärgiska lavettarmborst på murarna</li>
+                <li><strong>Nattvakter:</strong> 2-4 dvärgar med armborst på tjänst kväll/natt</li>
+            </ul>
+
+            <p><strong>Total militär styrka:</strong> ~135-190 soldater (ovanligt starkt för ett litet jarladöme)</p>
+
+            <h3>Dvärgavtalet med Klan Ghor</h3>
+            <p><strong>Förhandlat av Kazrik (Kapitel 2-6):</strong></p>
+            <ul>
+                <li>Klan Ghor stationerar dvärgsoldater i gruvorna</li>
+                <li>Dvärgar har veto-rättigheter om gruvgångarna når dvärgfästet</li>
+                <li>Dvärgar förstärkte Mitrahus murar och bygde befästningar</li>
+                <li>Vitterdal får: gruvkunskap, militärt stöd, handelsfördelar</li>
+            </ul>
+        </section>
+
+        <!-- Viktiga NPCs -->
+        <section id="npcs" class="section">
+            <h2>🗝️ VIKTIGA NPCs</h2>
+
+            <div class="atmosphere">
+                Här är de som styr, kämpar, och överlever. Lär känna dem, eller underskatta dem på egen risk.
+            </div>
+
+            <div class="npc-card">
+                <h4>Hadrian "Hagge" av Vitterdal</h4>
+                <div class="npc-meta">Jarl av Vitterdal | Människa (drunokier) | ~30 år</div>
+                <p><strong>Bakgrund:</strong> Yngre son, förvisad av sin bror Talarra, såld som slav i Muhad, räddad av gruppen (Kapitel 3), bekräftad som jarl av lantrådet (Kapitel 6).</p>
+                <p><strong>Personlighet:</strong> Försiktig härskare, djupt tacksam mot gruppen, pragmatisk, oväntat ledarskap.</p>
+                <p><strong>Relation till gruppen:</strong> Djup tacksamhetsskuld, gav generösa belöningar (titlar, hus, skattefrihet).</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Lady Soffia av Vitterdal</h4>
+                <div class="npc-meta">Hagges mor, politisk rådgivare | Människa (drunokier) | ~55 år</div>
+                <p><strong>Bakgrund:</strong> Vitterdals verkliga härskare under Talarras formella styre, arrangerade Hagges räddning i hemlighet.</p>
+                <p><strong>Personlighet:</strong> Politiskt skicklig, beskyddande mor, strategisk tänkare.</p>
+                <p><strong>Styrka:</strong> Långtgående kontakter i Cermiras adel (Morgonstjärnorna, andra ädleätter).</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Kapten Kaelar Stålsvärd</h4>
+                <div class="npc-meta">Kapten för Hagges hussoldater | Människa | ~45 år</div>
+                <p><strong>Bakgrund:</strong> Ledde Stålsvärds Kavalerister vid Tirakgraven (Fas 1), utvecklade alkoholproblem efter traumat, övervann det och accepterade fast anställning hos Hagge (Fas 7).</p>
+                <p><strong>Militär förmåga:</strong> Decennier som legosoldat, expert på gruppstrid och försvarstaktik.</p>
+                <p><strong>Roll:</strong> Kapten över Hagges hussoldater (~25 man från Stålsvärds Kavalerister).</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Alrik Järnhand</h4>
+                <div class="npc-meta">Sergeant, Stålsvärds Kavalerister | Människa | ~40 år</div>
+                <p><strong>Utseende:</strong> Kraftig build, järngrå skägg, förlorade två fingrar på vänster hand (därav "Järnhand").</p>
+                <p><strong>Roll:</strong> Sergeant, andra i kommando, tränar nya rekryter.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Brenna "Blixten" Skarphög</h4>
+                <div class="npc-meta">Scout, Stålsvärds Kavalerister | Människa | ~28 år</div>
+                <p><strong>Utseende:</strong> Smal och atletisk, kort rött hår, gröna ögon, rör sig ljudlöst.</p>
+                <p><strong>Förmåga:</strong> Extremt snabb löpare (därav "Blixten"), expert på spaning.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Thora Vintertass</h4>
+                <div class="npc-meta">Bågskytteledare, Stålsvärds Kavalerister | Människa (drunokier från Vitterdal) | ~32 år</div>
+                <p><strong>Bakgrund:</strong> Uppvuxen i Vitterdal, jägare sedan barndomen, rekryterades av Kaelar för 10 år sedan.</p>
+                <p><strong>Lokal koppling:</strong> Känner Vitterdals terräng perfekt, har familj i nedre staden.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Fader Boreas</h4>
+                <div class="npc-meta">Präst vid Daaktro-templet | Människa (drunokier) | ~60 år</div>
+                <p><strong>Personlighet:</strong> Pragmatisk och förstående, respekterar lokala seder, inte dogmatisk.</p>
+                <p><strong>Särskiljning:</strong> Försvarar Vitterdal-bors blandade trosutövning mot anklagelser om kätteri.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Helga Storhuvud</h4>
+                <div class="npc-meta">Värdshusvärdinna på Järnoxen | Människa (drunokier) | ~50 år</div>
+                <p><strong>Personlighet:</strong> Högljudd och dominerande, hjärtlig mot stamgäster, tar inget skit.</p>
+                <p><strong>Särskiljning:</strong> Har öron överallt - vet allt som händer i Vitterdal.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Bjorn Järnhammare</h4>
+                <div class="npc-meta">Smed i nedre staden | Dvärg (Klan Ghor) | ~120 år</div>
+                <p><strong>Bakgrund:</strong> Kom med Klan Ghor för att stödja gruvbrytningen, stannade kvar för att driva smedja.</p>
+                <p><strong>Särskiljning:</strong> Brygger egen dvärg-sprit (mycket starkare än mänsklig sprit).</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Torkel Stenbiter</h4>
+                <div class="npc-meta">Gruvmästare | Människa (drunokier) | ~45 år</div>
+                <p><strong>Personlighet:</strong> Hård men rättvis, prioriterar säkerhet över produktion.</p>
+                <p><strong>Särskiljning:</strong> Har nära relation med dvärgarna, lär sig dvärgisk gruvteknik.</p>
+            </div>
+        </section>
+
+        <!-- Kampanjhooks -->
+        <section id="hooks" class="section">
+            <h2>🎯 KAMPANJHOOKS</h2>
+
+            <div class="atmosphere">
+                Guld lockar girighet, berg döljer hemligheter, och kölden dödar långsamt. Här finns äventyr för de modiga - och gravar för de dumma.
+            </div>
+
+            <div class="hook-card">
+                <h4>1. Det hotfulla dvärgfästet</h4>
+                <div class="npc-meta">Typ: Utforskning, Skräck, Mysterium | Svårighetsgrad: Hög</div>
+                <p><strong>Hook:</strong> Dvärgarna från Klan Ghor blir alltmer oroliga. De rapporterar om märkliga ljud från Methras-Renk-Drezin - ljud som inte hörts på decennier. Någon eller något rör sig i det övergivna dvärgfästet.</p>
+                <p><strong>Vad finns inuti:</strong> Demonisk närvaro? Fälla som aktiverades? Portal till Skugglandet?</p>
+                <p><strong>Konsekvenser:</strong> Om ignorerat förvärras "aura av hotfullhet". Om lyckat: Klan Ghors eviga tacksamhet.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>2. Guldkriget</h4>
+                <div class="npc-meta">Typ: Politisk intrig, Strid, Förhandling | Svårighetsgrad: Medelhög</div>
+                <p><strong>Hook:</strong> Handelshus Nejas och Wekzi har börjat aktivera sina kontakter i Vitterdal. De försöker båda få kontroll över guldhandeln. Hagge behöver hjälp att navigera utan att förlora kontrollen. Kung Vidkun VII har skickat en "rådgivare"...</p>
+                <p><strong>Utmaningar:</strong> Identifiera spioner, avslöja sabotage, förhandla med handelshus.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>3. Hertig Bernards anspråk</h4>
+                <div class="npc-meta">Typ: Militär konflikt, Diplomati | Svårighetsgrad: Hög</div>
+                <p><strong>Hook:</strong> Hertig Bernard den okuvlige anländer med 100 soldater och kräver att Hagge överlämnar jarladömet. Bernard hävdar att han är den rättmätige arvingen enligt drunokisk lag.</p>
+                <p><strong>Utmaningar:</strong> Försvara Mitrahus, förhandla med Bernard, få lantrådet att återbekräfta Hagge.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>4. Vinterfälla</h4>
+                <div class="npc-meta">Typ: Överlevnad, Räddning | Svårighetsgrad: Medelhög</div>
+                <p><strong>Hook:</strong> Mitt i vinterhalvåret fastnar en stor karavan från Drunok i snöstorm. Karavanen bär viktigt spannmål som Vitterdal MÅSTE ha för att överleva vintern. Gruppen måste rädda karavanen innan alla fryser ihjäl.</p>
+                <p><strong>Utmaningar:</strong> Snöstorm, monster från Mithera, laviner, tidsgräns.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>5. Gruvkollapsen</h4>
+                <div class="npc-meta">Typ: Räddning, Mysterium | Svårighetsgrad: Medelhög</div>
+                <p><strong>Hook:</strong> En av gruvorna kollapsar plötsligt, 30 gruvarbetare fastnar inuti. Kollapsen verkar inte vara naturlig - någon eller något ORSAKADE den. Sabotage från handelshus? Eller något värre från djupet?</p>
+                <p><strong>Utmaningar:</strong> Rädda gruvarbetare (tidsgräns), undersöka orsak, bekämpa hot.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>6. Den förgiftade jarlen</h4>
+                <div class="npc-meta">Typ: Mysterium, Politisk intrig | Svårighetsgrad: Hög</div>
+                <p><strong>Hook:</strong> EN ANNAN JARL förgiftade Hagges bror Talarra för att ta kontroll över gruvorna. Samma jarl såg till att Hagge blev kidnappat. Vem var det? Och kommer de försöka igen nu när Hagge har tagit fast kontroll över gruvorna?</p>
+                <p><strong>Utmaningar:</strong> Identifiera vilken jarl (utredning), bevisa skuld, skydda Hagge, hantera politiska konsekvenser.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p><strong>Vitterdal-baronieriet</strong> - EON Kampanjmaterial</p>
+        <p>Kod: EM-R001 | Version: 3.0 (Fas 5 - Komplett)</p>
+        <p>Senast uppdaterad: 2026-02-02</p>
+        <p>Källor: NotebookLM (EON-regelbok), Landsmodul Cermira, Kampanjkrönika, Wiki_data.js</p>
+    </div>
+
+</body>
+</html>

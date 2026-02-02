@@ -1048,6 +1048,41 @@ git checkout wiki_data.js
 
 **När läsa:** Vid planering av Damarien-relaterade äventyr eller när spelarna frågar om regionen.
 
+### EON Regelbok & Världsbeskrivning (NotebookLM)
+**Resurs:** NotebookLM-notebook (Google AI)
+**URL:** https://notebooklm.google.com/notebook/1a52a02f-a054-4c35-9b83-91e707286c79
+**ID i bibliotek:** `eon-komplett-regelbok-och-v-rl`
+
+**Innehåll:** Allt officiellt material släppt för EON-rollspelet:
+- Spelregler och mekanik
+- Raser (Människor, Tiraker, Dvärgar, Alver, Ausare, Mûhadier, etc.)
+- Magi och övernaturligt
+- Geografiska regioner (Damarien, Cermira, Mithera, Muhad, Jargien, etc.)
+- Fraktioner och organisationer
+- Historia och världsbakgrund
+- Strid och färdigheter
+- Föremål och utrustning
+
+**När använda:**
+- ✅ Validera rasegenskaper vid NPC-skapande
+- ✅ Kontrollera geografisk och regional konsistens
+- ✅ Verifiera magiregler och förmågor
+- ✅ Slå upp fraktioner och organisationer
+- ✅ Kontrollera historiska fakta och världskanon
+- ✅ Regelmekanik för strid, färdigheter, och utmaningar
+- ✅ När kontinuitetskontroll behöver regelverks-validering
+
+**VIKTIGT:** Konsultera NotebookLM AUTOMATISKT när du är osäker på EON-regler eller världsfakta. Fråga hellre än att gissa fel!
+
+**Användning:**
+```python
+# Ställ fråga till EON-regelboken
+Task(
+  subagent_type="general-purpose",
+  prompt="Använd NotebookLM (notebook_id: eon-komplett-regelbok-och-v-rl) för att svara: [fråga om EON-regler/värld]"
+)
+```
+
 ---
 
 ## Frågor?
