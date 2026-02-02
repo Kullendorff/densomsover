@@ -5,216 +5,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitterdal-baronieriet - EON Kampanjmaterial</title>
     <style>
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --gold: #ffa500;
-            --bg-dark: #0a0a0a;
-            --bg-card: #1a1a1a;
-            --text-light: #e0e0e0;
-            --text-dim: #a0a0a0;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1520 100%);
-            color: var(--text-light);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.7;
+            background: #f4e8d8;
+            color: #3d2817;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .page-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 4rem 3rem;
+            background: #faf6f0;
+            box-shadow: 0 0 40px rgba(61, 40, 23, 0.15);
+            border: 1px solid #d4c4b0;
         }
 
         /* Header */
-        .header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            padding: 3rem 2rem;
+        header {
             text-align: center;
-            border-bottom: 3px solid var(--flame-orange);
-            box-shadow: 0 4px 20px rgba(255, 107, 74, 0.3);
+            border-bottom: 3px double #8b6f47;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
         }
 
-        .header h1 {
+        h1 {
             font-size: 3.5rem;
-            color: var(--flame-orange);
-            text-shadow: 0 0 20px rgba(255, 107, 74, 0.5);
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #6d5d4b;
             margin-bottom: 1rem;
         }
 
-        .header .subtitle {
-            font-size: 1.3rem;
-            color: var(--text-dim);
-            font-style: italic;
-        }
-
-        .header .meta {
+        .meta {
             margin-top: 1.5rem;
             font-size: 0.95rem;
-            color: var(--text-dim);
-        }
-
-        .header .meta span {
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
-            background: rgba(255, 107, 74, 0.1);
-            border-radius: 5px;
+            color: #8b6f47;
+            font-weight: 600;
         }
 
         /* Navigation */
-        .nav {
-            position: sticky;
-            top: 0;
-            background: var(--bg-card);
-            padding: 1rem 2rem;
-            border-bottom: 2px solid var(--mystic-purple);
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        nav {
+            background: #f0e6d6;
+            border: 1px solid #d4c4b0;
+            padding: 1rem;
+            margin-bottom: 3rem;
+            border-radius: 4px;
         }
 
-        .nav ul {
+        nav ul {
             list-style: none;
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 1.5rem;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
         }
 
-        .nav a {
-            color: var(--text-light);
+        nav a {
+            color: #704214;
             text-decoration: none;
             font-weight: 600;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: all 0.3s;
+            font-size: 0.9rem;
+            padding: 0.3rem 0.5rem;
+            border-radius: 3px;
+            transition: all 0.2s;
         }
 
-        .nav a:hover {
-            background: rgba(255, 107, 74, 0.2);
-            color: var(--flame-orange);
-        }
-
-        /* Container */
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
+        nav a:hover {
+            background: #e8dcc8;
+            color: #2c1810;
         }
 
         /* Section */
         .section {
-            margin-bottom: 4rem;
-            padding: 2rem;
-            background: var(--bg-card);
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            margin-bottom: 3rem;
         }
 
-        .section h2 {
-            font-size: 2.5rem;
-            color: var(--flame-orange);
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2c1810;
             margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid var(--mystic-purple);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8b6f47;
         }
 
-        .section h3 {
-            font-size: 1.8rem;
-            color: var(--mystic-purple);
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #3d2817;
             margin-top: 2rem;
             margin-bottom: 1rem;
         }
 
-        .section h4 {
-            font-size: 1.4rem;
-            color: var(--gold);
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #704214;
             margin-top: 1.5rem;
             margin-bottom: 0.8rem;
         }
 
-        /* Atmosphere text */
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Atmosphere quote */
         .atmosphere {
-            background: linear-gradient(135deg, rgba(168, 85, 168, 0.1), rgba(255, 107, 74, 0.1));
-            border-left: 4px solid var(--mystic-purple);
-            padding: 1.5rem;
+            background: #f0e6d6;
+            border-left: 4px solid #8b6f47;
+            padding: 1.5rem 2rem;
             margin: 2rem 0;
-            border-radius: 8px;
             font-style: italic;
             font-size: 1.1rem;
-            color: var(--text-dim);
+            color: #5d4d3b;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Drop cap for long atmospheric texts */
+        .atmosphere-long p:first-of-type::first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            line-height: 0.7;
+            margin: 0.05rem 0.2rem -0.1rem 0;
+            color: #704214;
+            font-style: normal;
+            padding-top: 0.15rem;
+        }
+
+        /* First sentence emphasis for short atmospheric texts */
+        .atmosphere:not(.atmosphere-long) strong:first-of-type {
+            font-weight: 600;
+            color: #704214;
+            font-style: normal;
         }
 
         /* Info box */
         .info-box {
-            background: rgba(255, 165, 0, 0.1);
-            border-left: 4px solid var(--gold);
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
             padding: 1.5rem;
             margin: 1.5rem 0;
-            border-radius: 8px;
+            box-shadow: inset 0 0 10px rgba(139, 111, 71, 0.1);
+            border-radius: 4px;
         }
 
         .info-box strong {
-            color: var(--gold);
+            color: #704214;
+            font-weight: 600;
         }
 
         /* Warning box */
         .warning-box {
-            background: rgba(212, 83, 77, 0.1);
-            border-left: 4px solid var(--deep-red);
+            background: #f9e6e0;
+            border: 2px solid #a85442;
             padding: 1.5rem;
             margin: 1.5rem 0;
-            border-radius: 8px;
+            border-radius: 4px;
         }
 
         .warning-box strong {
-            color: var(--deep-red);
+            color: #8b2e1f;
+            font-weight: 700;
         }
 
         /* Lists */
         ul, ol {
-            margin-left: 2rem;
-            margin-top: 1rem;
+            margin-left: 2.5rem;
+            margin-bottom: 1rem;
         }
 
         li {
-            margin: 0.5rem 0;
+            margin: 0.6rem 0;
         }
 
         /* NPC Card */
         .npc-card {
-            background: rgba(255, 107, 74, 0.05);
-            border: 2px solid rgba(255, 107, 74, 0.3);
-            border-radius: 10px;
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
             padding: 1.5rem;
             margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
         }
 
         .npc-card h4 {
-            color: var(--flame-orange);
+            color: #704214;
             margin-top: 0;
+            font-size: 1.4rem;
         }
 
         .npc-meta {
-            color: var(--text-dim);
-            font-size: 0.95rem;
+            color: #8b6f47;
+            font-size: 0.9rem;
             margin: 0.5rem 0;
+            font-style: italic;
         }
 
         /* Campaign hook */
         .hook-card {
-            background: rgba(168, 85, 168, 0.05);
-            border: 2px solid rgba(168, 85, 168, 0.3);
-            border-radius: 10px;
+            background: #faf0e6;
+            border: 2px solid #b8985e;
+            border-radius: 6px;
             padding: 1.5rem;
             margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
         }
 
         .hook-card h4 {
-            color: var(--mystic-purple);
+            color: #704214;
             margin-top: 0;
+            font-size: 1.4rem;
         }
 
         /* Table */
@@ -222,90 +237,118 @@
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
+            background: #ffffff;
+            border: 2px solid #d4c4b0;
         }
 
         th, td {
             padding: 1rem;
             text-align: left;
-            border-bottom: 1px solid rgba(255, 107, 74, 0.2);
+            border-bottom: 1px solid #d4c4b0;
         }
 
         th {
-            background: rgba(255, 107, 74, 0.2);
-            color: var(--flame-orange);
-            font-weight: 600;
+            background: #f0e6d6;
+            color: #2c1810;
+            font-weight: 700;
         }
 
         tr:hover {
-            background: rgba(255, 107, 74, 0.05);
+            background: #faf6f0;
         }
 
         /* Footer */
-        .footer {
-            background: var(--bg-card);
-            padding: 2rem;
-            text-align: center;
+        footer {
+            border-top: 3px double #8b6f47;
+            padding-top: 2rem;
             margin-top: 4rem;
-            border-top: 2px solid var(--flame-orange);
+            text-align: center;
+            color: #6d5d4b;
+            font-size: 0.9rem;
         }
 
-        .footer p {
-            color: var(--text-dim);
+        footer p {
             margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        /* Divider */
+        .divider {
+            text-align: center;
+            margin: 2rem 0;
+            color: #8b6f47;
+            font-size: 1.5rem;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .header h1 {
+            .page-container {
+                margin: 0;
+                padding: 2rem 1.5rem;
+                border: none;
+            }
+
+            h1 {
                 font-size: 2.5rem;
             }
 
-            .nav ul {
+            nav ul {
                 flex-direction: column;
                 gap: 0.5rem;
-            }
-
-            .section {
-                padding: 1.5rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <div class="header">
-        <h1>VITTERDAL-BARONIERIET</h1>
-        <div class="subtitle">Guldets och Köldens Rike</div>
-        <div class="meta">
-            <span>📍 Nordvästra Cermira</span>
-            <span>👥 ~2250 invånare</span>
-            <span>⚔️ Jarladöme</span>
-        </div>
-    </div>
+    <div class="page-container">
+        <!-- Header -->
+        <header>
+            <h1>Vitterdal-baronieriet</h1>
+            <div class="subtitle">Guldets och Köldens Rike</div>
+            <div class="meta">
+                📍 Nordvästra Cermira • 👥 ~2250 invånare • ⚔️ Jarladöme
+            </div>
+        </header>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <ul>
-            <li><a href="../../../index.html" style="color: var(--gold);">← Dashboard</a></li>
-            <li><a href="#oversikt">Översikt</a></li>
-            <li><a href="#geografi">Geografi</a></li>
-            <li><a href="#historia">Historia</a></li>
-            <li><a href="#mitrahus">Mitrahus</a></li>
-            <li><a href="#kultur">Kultur & Religion</a></li>
-            <li><a href="#dagligtliv">Dagligt Liv</a></li>
-            <li><a href="#styre">Styre & Politik</a></li>
-            <li><a href="#npcs">Viktiga NPCs</a></li>
-            <li><a href="#fluff">Röster från Hovet</a></li>
-            <li><a href="#hooks">Kampanjhooks</a></li>
-        </ul>
-    </nav>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">← Dashboard</a></li>
+                <li><a href="#oversikt">Översikt</a></li>
+                <li><a href="#geografi">Geografi</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#mitrahus">Mitrahus</a></li>
+                <li><a href="#kultur">Kultur & Religion</a></li>
+                <li><a href="#dagligtliv">Dagligt Liv</a></li>
+                <li><a href="#styre">Styre & Politik</a></li>
+                <li><a href="#npcs">Viktiga NPCs</a></li>
+                <li><a href="#fluff">Röster från Hovet</a></li>
+                <li><a href="#hooks">Kampanjhooks</a></li>
+            </ul>
+        </nav>
 
-    <!-- Main Content -->
-    <div class="container">
+        <!-- Long Atmospheric Introduction -->
+        <section class="section">
+            <div class="atmosphere atmosphere-long" style="font-size: 1rem; line-height: 1.9; padding: 2rem 2.5rem; margin: 2rem 0 3rem 0;">
+                <p>Kazrik drog kappan tätare omkring sig när vinden bet tag i hans skägg. Sex dagar på vägen från Cermira stad och kölden hade bara förvärrats för varje mil norrut. Nu stod han äntligen på krönet av den sista höjden och kunde se Vitterdal breda ut sig nedanför.</p>
+
+                <p>Det första som slog honom var tystnaden. Inte den behagliga tystnaden i ett vilsamt hem, utan den tunga, nästan tryckande tystnaden av ett landskap som lärt sig hålla andan. Träden - förtvinade och lutande - böjde sig bort från bergen i norr, som om de flydde från något. Snön låg tjock över de små fälten mellan stenhusen, fält som knappast förtjänade namnet jord. Här växte inget som inte tvingades fram med blod och svett.</p>
+
+                <p>Mitrahus reste sig mot den gråa himlen som en knytnäve av sten. Borgen satt fast på bergsidan som en barnunge på moderns rygg, outhärdlig och trotsig. Runt den hade staden växt fram i terrasser, likt ringar på ett träd - varje ring en generation som vägrade ge upp. Från gruvingångarna vid foten steg rök upp i tunna, grå kolonner. Guldet, tänkte Kazrik. Det förbaskade guldet som gjort detta ställe värt att frysa ihjäl för.</p>
+
+                <p>Vinden ven igen och nu hörde han något i den - inte ord, men nästan. En vissling genom klippspringorna, ett kvidande från djupet av Mitheraskogen som låg som en svart mur i norr. De förändrade, hade någon varnat honom i Cermira stad. De tar de som går ensamma när mörkret faller. Kazrik hade skrattat då. Nu skrattade han inte.</p>
+
+                <p>Han började den sista nedfarten mot staden. När han kom närmare kunde han se folk röra sig i gatorna - pälsklädda gestalter som gick med huvudena nedböjda mot vinden. En dvärg passerade med en kärra full av malm, hans steg tunga men stadiga. Vid smedjan gnistrade det orange genom öppningen, och lukten av kolrök blandades med den bittra kylan.</p>
+
+                <p>När han passerade Järnoxen hörde han skratt inifrån - hårt och grovt men äkta. Värme sipprade ut genom dörröppningen tillsammans med lukten av öl och stuvad gryta. Kazrik stannade till, tvekade. Sex dagar på vägen och han var så trött att benen skakade. Men han var inte här för värme eller vila. Han var här för att guld hade upptäckts, och där guld fanns, fanns makt. Och där makt fanns, fanns alltid blod.</p>
+
+                <p>Träden visste vart de lutade. Och Kazrik skulle snart lära sig varför.</p>
+            </div>
+        </section>
 
         <!-- Översikt -->
         <section id="oversikt" class="section">
-            <h2>📋 ÖVERSIKT</h2>
+            <h2>Översikt</h2>
 
             <p><strong>Vitterdal-baronieriet</strong> är ett bergstrakter-jarladöme i Cermiras nordvästra hörn, känt för sina rika guldådror och det mystiska övergivna dvärgfästet Methras-Renk-Drezin. Området är extremt kallt med dålig jordmån, men guldhandeln gör Vitterdal till en politiskt viktig och omstridd region.</p>
 
@@ -322,10 +365,10 @@
 
         <!-- Geografi -->
         <section id="geografi" class="section">
-            <h2>🗺️ GEOGRAFI</h2>
+            <h2>Geografi</h2>
 
             <div class="atmosphere">
-                Kölden är ingen fiende här - den är en medlem av familjen. Träden vet vart de lutar, och bergen minns varje steg som tagits i deras skugga.
+                <strong>Kölden är ingen fiende här - den är en medlem av familjen.</strong> Träden vet vart de lutar, och bergen minns varje steg som tagits i deras skugga. Vinden från Mithera biter genom varje lager tyg, och marken ger inget frivilligt. De som kallar detta hem har lärt sig att ta emot gåvor från bergen - guld och sten och timmer - men de vet att bergen alltid kommer att kräva något tillbaka. Jorden är tunn och karg, och snön ligger djup fem månader om året. Men här står Vitterdal ändå, trotsigt och stolt, ett monument över människans vägran att ge upp.
             </div>
 
             <h3>Läge och Gränser</h3>
@@ -375,10 +418,10 @@
 
         <!-- Historia -->
         <section id="historia" class="section">
-            <h2>📜 HISTORIA</h2>
+            <h2>Historia</h2>
 
             <div class="atmosphere">
-                Där dvärgarna gick, följde människor. Där guldet fanns, följde makt. Där makt fanns, följde blod.
+                <strong>Där dvärgarna gick, följde människor.</strong> Där guldet fanns, följde makt. Där makt fanns, följde blod. Vitterdals historia är inte skriven i böcker utan i stenar och ben. Coloniska kolonner reser sig fortfarande ur snön som skelett av en glömd tid. Dvärgfästet Methras-Renk-Drezin står övergivet sedan århundraden, en gåta insvept i mörker. När människorna upptäckte guldet för hundra år sedan, väcktes något i bergen - en aura av hotfullhet som ännu inte försvunnit. Och nu, när den unge jarlen Hagge tar sitt säte efter år som slav, skrivs historien vidare. Men slutet är ännu inte skrivet, och bergen minns allt.
             </div>
 
             <h3>Coloniska eran (före 2529 e.D.)</h3>
@@ -408,10 +451,10 @@
 
         <!-- Mitrahus -->
         <section id="mitrahus" class="section">
-            <h2>🏰 MITRAHUS (Stad och Borg)</h2>
+            <h2>Mitrahus (Stad och Borg)</h2>
 
             <div class="atmosphere">
-                Stenen minns längre än kött. Mitrahus har sett jarlar komma och gå. Gruvorna har tagit mer än de gett.
+                <strong>Stenen minns längre än kött.</strong> Mitrahus har sett jarlar komma och gå. Gruvorna har tagit mer än de gett. Borgen på bergsidan blickar ned över staden som en järnklädd jätte - tyst, evig, obeveklig. I terrasser nedanför lever staden sitt hårda liv: smeder som hamrar från gryning till skymning, gruvarbetare som stiger ned i mörkret varje morgon, köpmän som räknar sitt guld med frusna fingrar. Rök stiger från skorstenar, dvärgar patrullerar murarna med sina korsborst, och i Järnoxens värme skrattar män som vet att morgondagen kanske inte kommer. Detta är Mitrahus - en stad av sten och vilja, där ingenting ges bort och allt måste förtjänas.
             </div>
 
             <p>Mitrahus är mer borg än stad - jarla-borgen dominerar staden från sitt höga läge på <strong>bergsidan</strong>, och staden har vuxit upp nedanför borgen i terrasser längs bergssluttningen.</p>
@@ -491,10 +534,10 @@
 
         <!-- Kultur & Religion -->
         <section id="kultur" class="section">
-            <h2>👥 KULTUR & RELIGION</h2>
+            <h2>Kultur & Religion</h2>
 
             <div class="atmosphere">
-                Vi är inte svaga för att vi bor här. Vi är starka för att vi överlevt.
+                <strong>Vi är inte svaga för att vi bor här.</strong> Vi är starka för att vi överlevt. Drunokierna säger det öppet, med stolthet i rösten och frost i skägget. De ber till Jordesoldaten i templet, ja - men de murmlar också böner till Kuberon, köldens herre, när vintervinden river i taken. De lämnar guldnuggets vid dvärgfästets port vid midvinter, inte för att kyrkan säger det, utan för att deras farmödrar gjorde det. De bär pälsar och pratar kort, dricker stark sprit och litar inte på främlingar. Men de som tjänar deras respekt får den för livet. Stadsfolk från Cermira kallar dem enfaldiga lantisar. Vitterdal-borna svarar: "Kom hit en vinter. Sen får vi se vem som är enfaldig."
             </div>
 
             <h3>Rasfördelning</h3>
@@ -571,7 +614,11 @@
 
         <!-- Dagligt Liv -->
         <section id="dagligtliv" class="section">
-            <h2>⏰ DAGLIGT LIV I VITTERDAL</h2>
+            <h2>Dagligt Liv i Vitterdal</h2>
+
+            <div class="atmosphere">
+                <strong>Dagarna här mäts inte i timmar utan i skift.</strong> Gryningen väcker gruvarbetarna medan mörkret fortfarande hänger tungt över bergen. Hackan slår mot stenen, kolröken stiger från smältugnen, och livet rullar på i sin envisa rytm. På sommaren är dagarna långa och arbetet intensivt - varje guldnugget måste bärgas innan hösten kommer. På vintern krymper dagarna till några få timmar av grått ljus, och livet drar sig inomhus. Men arbetet slutar aldrig helt. Gruvorna ger inte semester, och guldet väntar inte på vädret. De som bor här vet att vila är något man förtjänar - aldrig något man får.
+            </div>
 
             <h3>Arbetsdag (Sommar vs Vinter)</h3>
 
@@ -626,10 +673,10 @@
 
         <!-- Styre & Politik -->
         <section id="styre" class="section">
-            <h2>👑 STYRE & POLITIK</h2>
+            <h2>Styre & Politik</h2>
 
             <div class="atmosphere">
-                Makt är som guld här - tung att bära, lätt att förlora, och alltid eftertraktad av andra.
+                <strong>Makt är som guld här - tung att bära, lätt att förlora, och alltid eftertraktad av andra.</strong> Hagge sitter nu på jarlastolen, men hans säte är inte tryggt. Hans bror Talarra förgiftades av någon som ville ha gruvorna. Samma händer såg till att Hagge såldes som slav i Muhad. Nu är han tillbaka, räddad av hjältar, bekräftad av lantrådet - men Kung Vidkun VII glömmer inte, och hertig Bernard väntar sin chans. Guldet lockar rovdjur, och varje köpman, varje jarl, varje handelshus vill ha sin del. I Mitrahus spelar Hagge och Lady Soffia det politiska spelet med försiktiga steg, stödd av Stålsvärds Kavalerister och dvärgarna från Klan Ghor. Men makt är en glödande kol - håll den för hårt och du bränner dig, släpp den och någon annan tar den.
             </div>
 
             <h3>Regeringsform: Jarladöme</h3>
@@ -690,10 +737,10 @@
 
         <!-- Viktiga NPCs -->
         <section id="npcs" class="section">
-            <h2>🗝️ VIKTIGA NPCs</h2>
+            <h2>Viktiga NPCs</h2>
 
             <div class="atmosphere">
-                Här är de som styr, kämpar, och överlever. Lär känna dem, eller underskatta dem på egen risk.
+                <strong>Här är de som styr, kämpar, och överlever.</strong> Lär känna dem, eller underskatta dem på egen risk. Hagge som kom tillbaka från slaveri för att ta sin tron. Lady Soffia som spelar politiken bättre än någon man. Kaelar Stålsvärd som drunknade sitt trauma i sprit men fann redemption i tjänst. Helga på Järnoxen som vet allt som sägs i Vitterdal. Bjorn Järnhammare som smidera både stål och förtroende. Dessa är namnen som formar Vitterdals öde. De är inte perfekta, inte heroiska - bara envisa nog att stå kvar när andra flyr. Det är de som gör Vitterdal till vad det är: ett rike av guld och köld, där bara de starkaste överlever.
             </div>
 
             <div class="npc-card">
@@ -769,6 +816,8 @@
                 <p><strong>Särskiljning:</strong> Har nära relation med dvärgarna, lär sig dvärgisk gruvteknik.</p>
             </div>
 
+            <div class="divider">❖ ❖ ❖</div>
+
             <h3>Grensfortet - Ledning</h3>
 
             <div class="npc-card">
@@ -795,10 +844,10 @@
 
         <!-- Röster från Hovet -->
         <section id="fluff" class="section">
-            <h2>📜 RÖSTER FRÅN HOVET</h2>
+            <h2>Röster från Hovet</h2>
 
             <div class="atmosphere">
-                Ord bär längre än svärd i dessa salar. Lyssna noga - varje viskning har ett syfte.
+                <strong>Ord bär längre än svärd i dessa salar.</strong> Lyssna noga - varje viskning har ett syfte. Hagges brev bär diplomati och desperation i lika mått. Lady Soffias anteckningar avslöjar sanningar som aldrig skulle sägas högt. Gruvarbetarnas visa ekar genom gruvgångarna, halv bön och halv varning. Kapten Kaelars rapporter talar om faror som lurkar i mörkret. Här, i dessa skrifter och ord, vibrerar Vitterdals hjärta - desperat, trotsigt, levande. Lyssna mellan raderna. Läs mellan orden. För i Vitterdal säger ingen allt, men alla säger något.
             </div>
 
             <h3>Hagges brev till Jarl Eriksson av S:t Kira</h3>
@@ -843,10 +892,10 @@
 
         <!-- Kampanjhooks -->
         <section id="hooks" class="section">
-            <h2>🎯 KAMPANJHOOKS</h2>
+            <h2>Kampanjhooks</h2>
 
             <div class="atmosphere">
-                Guld lockar girighet, berg döljer hemligheter, och kölden dödar långsamt. Här finns äventyr för de modiga - och gravar för de dumma.
+                <strong>Guld lockar girighet, berg döljer hemligheter, och kölden dödar långsamt.</strong> Här finns äventyr för de modiga - och gravar för de dumma. Dvärgfästet Methras-Renk-Drezin väntar i mörkret, fulla med gåtor och fasor. Handelshus krigar om guldhandeln medan smugglare rider genom passen. Hertig Bernard den okuvlige planerar sitt drag, och någonstans går en mördare fri - den som förgiftade Talarra och stal Hagges liv. Vinterstormarna kan begrava hela karavaner, gruvkollaps kan fånga trettio man under tusentals ton sten, och i bergen lurar saker värre än köld. Detta är Vitterdal. Detta är där storyn händer.
             </div>
 
             <div class="hook-card">
@@ -893,15 +942,13 @@
             </div>
         </section>
 
+        <!-- Footer -->
+        <footer>
+            <p><strong>Vitterdal-baronieriet</strong> - EON Kampanjmaterial</p>
+            <p>Kod: EM-R001 | Version: 4.0 (Fas 7 - Validerad och Komplett)</p>
+            <p>Senast uppdaterad: 2026-02-02</p>
+            <p>Källor: NotebookLM (EON-regelbok), Landsmodul Cermira, Kampanjkrönika, Wiki_data.js</p>
+        </footer>
     </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <p><strong>Vitterdal-baronieriet</strong> - EON Kampanjmaterial</p>
-        <p>Kod: EM-R001 | Version: 4.0 (Fas 7 - Validerad och Komplett)</p>
-        <p>Senast uppdaterad: 2026-02-02</p>
-        <p>Källor: NotebookLM (EON-regelbok), Landsmodul Cermira, Kampanjkrönika, Wiki_data.js</p>
-    </div>
-
 </body>
 </html>
