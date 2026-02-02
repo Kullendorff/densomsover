@@ -3,12 +3,12 @@
 **Kod:** EM-R001
 **Typ:** Region (baronieriet + huvudstad)
 **Startdatum:** 2026-02-02
-**Senast uppdaterad:** 2026-02-03 00:35 (Fas 5 - 90% klar, väntar på användarbeslut)
+**Senast uppdaterad:** 2026-02-02 (Fas 5 - 100% klar, beslut fattade!)
 
 ---
 
 ## 🎯 NUVARANDE FAS
-**Fas 5: Detaljer** (av 7) - 90% klar, väntar på användarbeslut
+**Fas 5: Detaljer** (av 7) - ✅ 100% KLAR! (beslut fattade 2026-02-02)
 
 ---
 
@@ -47,12 +47,12 @@
 - [x] Styre/Ledning utökat (Kapten Stålsvärd, militär, försvarsanläggningar)
 - [x] Befolkning/Kultur fördjupat (Detaljerad drunokisk kultur, samlevnad, lokala seder)
 
-### Fas 5: Detaljer
+### Fas 5: Detaljer ✅ KLAR
 - [x] Städer/Viktiga platser (Mitrahus, Grensfortet, Frisänkan, Bergvik, Dûhr Kins)
 - [x] NPCs/Viktiga personer (Hagge, Lady Soffia, Kaelar, Stålsvärds Kavalerister, lokala figurer)
-- [x] Organisationer (Handelshus: Nejas, Wekzi, Mimore)
-- [x] Politiska spänningar (Folkmar av Sunnanmark, Kung Vidkun VII)
-- [ ] **VÄNTAR:** Användarbeslut på 12 frågor (se QUESTIONS.md)
+- [x] Organisationer (Handelshus: Nejas, Wekzi, Mimore, Solmarin)
+- [x] Politiska spänningar (Mördaren okänd, Bernard med emissarie, Kung Vidkun VII)
+- [x] **BESLUT FATTADE** (2026-02-02) - Se QUESTIONS.md för alla svar
 
 ### Fas 6: Validering
 - [ ] NotebookLM-validering genomförd
