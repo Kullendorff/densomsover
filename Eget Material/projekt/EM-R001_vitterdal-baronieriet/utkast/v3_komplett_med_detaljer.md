@@ -14,7 +14,7 @@
 **Namn:** Vitterdal-baronieriet (kallas "jarladöme" i EON-kanon, men "baronieriet" i kampanjen)
 **Läge:** Nordvästra Cermira, vid bergsområdet mot Mitheraskogen
 **Storlek:** Ett av Cermiras mindre jarladömen, dominerat av berg och skog
-**Befolkning:** ~2500 invånare totalt (Vitterdal stad ~1200, gruvbyar ~800, dvärgar ~500)
+**Befolkning:** ~2250 invånare totalt (Vitterdal stad ~1200, gruvbyar ~800, dvärgar ~250)
 **Huvudort:** Vitterdal (stad och borg Mitrahus)
 **Viktiga platser:** Mitrahus (jarla-borg), Dûhr Kins (övergivet dvärgfäste), guldgruvorna
 **Huvudnäring:** Guldgruvdrift, skogsbruk, örter och svampar
@@ -133,7 +133,10 @@ Avståndet till andra viktiga platser:
 - **Dvärg-komplexitet:** **Skaver lite med Ghor-dvärgarna** (dvärgar och tiraker har historisk konflikt), men de **klarar jobba runt det**
 - **Status i Vitterdal:** Smörar för bättre relationer, försöker återhämta sig från bakslag
 
-**VIKTIGT:** Klan Ghors handelshus (Khaz-Zatim-Ghor) arbetar **ALDRIG** med Wekzi (för våldsamma enligt dvärgisk policy). Detta skapar diplomatisk komplexitet för Hagge som vill arbeta med både Wekzi och Klan Ghor.
+**VIKTIGT:** Klan Ghors handelshus (Khaz-Zatim-Ghor) arbetar **ALDRIG** med Wekzi (för våldsamma enligt dvärgisk policy).
+- **Lösning:** Klan Ghor har **INGEN direkt kontakt** med Wekzi - de arbetar enbart genom sitt eget handelshus
+- Hagge kan handla med Wekzi separat, men Ghor är inte inblandade i dessa affärer
+- Detta skapar strikt separation men ingen öppen konflikt
 
 #### Mimore (cirefaliskt handelshus)
 - **Verksamhet:** Kredithuset Elzimaz, timmer från Mithera
@@ -484,6 +487,11 @@ Det övergivna dvärgfästet är en imponerande struktur inbyggd i bergssidan. S
 
 **Styre:** Militärt gränsfäste som styr över byarna Bergvik och Frisänkan
 
+**Ledning (fastställd av Johan):**
+- **Eira Holm** (55 år, f.d. byäldste) - **Huvudledare**, ansvarar för daglig drift och bosättningen
+- **Xian-Li** (Sung-diplomat) - **Organisatoriskt stöd**, hjälper med administration och krönikeföring (följer Thrakka)
+- **Skorda Bergsdotter** (45 år, jägare) - **Praktiskt stöd**, ansvarar för jakt, försvar och praktiska frågor
+
 **Beskrivning:**
 Grensfortet är ett gammalt gränsfäste byggt på "dvärggrund" med "människodrömmar" - elegant konstruktion men komplicerad (enligt dvärgen Dain Stenyxa: "Vackert. Komplicerat. Kommer falla"). Fästet övergavs för länge sedan men har nu bemannats av Vargnäsets flyktingar tillsammans med folk från Bergvik och Frisänkan.
 
@@ -758,26 +766,28 @@ Bergvik är varmare och mer välkomnande än Frisänkan. Barn stirrade på även
 - **Offret:** Talarra av Vitterdal (Hagges äldre bror), tidigare jarl
 - **Metod:** Förgiftning ("dog av sjukdom" officiellt, men sanningen är mord)
 - **Motiv:** Kontrollen över Vitterdals guldgruvor
-- **Förövare:** **Jarl Folkmar av Sunnanmark** (se nedan)
+- **Förövare:** **OKÄND** - Mysteriet är olöst
 
 **Hagges kidnappning:**
-- Efter Talarras död försökte Folkmar eliminera Hagge helt
+- Efter Talarras död försökte någon eliminera Hagge helt
 - Hagge kidnappades och såldes som slav till Muhad
 - Planen misslyckades när gruppen räddade Hagge (Kapitel 3)
 
-**Folkmar av Sunnanmark - Antagonisten:**
-- **Position:** Jarl av Sunnanmark (södra jarladömet, huvudort Äppelby)
-- **Personlighet:** Girig, ambitiös, skrupelfri
-- **Motivation:** Vill kontrollera Vitterdals guldgruvor för egen ekonomisk vinning
-- **Metoder:** Lönnmord, manipulation, använder mellanmän för att dölja sin inblandning
-- **Nuvarande status:** **Oavslöjad** - Folkmar har ännu inte avslöjats som mördaren
-- **Hot mot Hagge:** Fortsatt fara - Folkmar kan försöka igen om han känner sig hotad
+**Mysteriet - Vem är mördaren?**
+- **Status:** OLÖST - Förövaren är fortfarande okänd
+- **Misstänkta kandidater:** Intern rivalisering i Cermiras adel (grannjarlar?)
+- **Potentiella kandidater:**
+  - Jarl av Sunnanmark (geografiskt nära, ekonomiskt intresserad)
+  - Handelshus Nejas (kända för att använda Skrået)
+  - Kung Vidkuns agenter (vill kontrollera guldet)
+  - Hertig Bernards folk (drunokiskt anspråk)
+- **Johans beslut:** Lämna öppet för framtida kampanjutveckling
 
 **Konsekvenser:**
 - Hagge vet att någon mördade Talarra, men inte VEM
 - Lady Soffia misstänker att det var en intern rivalisering i Cermiras adel
-- Om Folkmar avslöjas: Lantrådet måste agera, potentiell inbördeskrig i Cermira
-- Om Folkmar INTE avslöjas: Han kan fortsätta intrigera mot Hagge
+- Mysteriet kan utforskas som framtida kampanjhook
+- Hotet kvarstår - mördaren kan försöka igen
 
 #### Kung Vidkun VII:s ambitioner
 
@@ -798,17 +808,29 @@ Bergvik är varmare och mer välkomnande än Frisänkan. Barn stirrade på även
 - Stålsvärds Kavalerister (professionell militär styrka)
 - Lady Soffias politiska nätverk (motverkar kungens inflytande)
 
-#### Hertig Bernard den okuvlige (potentiell framtida hot)
+#### Hertig Bernard den okuvlige (aktivt hot)
 
 **I EON-kanon:**
 - Hertig Bernard leder Talarra-ättens drunokiska huvudgren i Drunok
 - Gör anspråk på Vitterdal och guldgruvorna
-- Påstås vilja erövra Vitterdal med våld
+- Känd som "den okuvlige" för sin envisa ambition
 
 **Status i kampanj:**
-- **OKÄND** - Bernard har ännu inte dykt upp i kampanjen
-- Potentiell framtida antagonist om introducerad
-- Skulle skapa komplex situation: Drunokier i Vitterdal kan sympatisera med Bernard
+- **AKTIV** - Bernard har sänt en emissarie till Mitrahus
+- Tittar lystet på Vitterdals nyfunna förmögenheter
+- **Överväger** om Hagge är en asset eller fiende
+- Har ännu inte bestämt sin position
+
+**Bernards emissarie i Mitrahus:**
+- Befinner sig i Vitterdal för att observera och rapportera
+- Officiellt: Diplomatisk mission för att "hälsa den nye jarlen"
+- I verkligheten: Bedömer Hagges styrkor och svagheter
+- **Namn:** (ej fastställt - förslag: Aldric av Drunheim eller liknande)
+
+**Framtida möjligheter:**
+- Om Bernard ser Hagge som asset: Kan söka allians mot Kung Vidkun
+- Om Bernard ser Hagge som fiende: Kan förbereda militärt ingripande
+- Drunokier i Vitterdal kan sympatisera med Bernard (komplicerar situationen)
 
 #### Handelshus-intrig (vilande)
 
@@ -834,13 +856,18 @@ Bergvik är varmare och mer välkomnande än Frisänkan. Barn stirrade på även
 - **Bakgrund:** Professionellt legosoldatkompani, före detta arbetsgivare för Gordon, Zentri, Umnatak och Kazrik
 - **Roll:** Skydd av Hagge, Mitrahus, och Vitterdals intressen
 
-**Viktiga medlemmar:**
-- Kapten Kaelar Stålsvärd (ledare)
-- Alrik Järnhand (sergeant, andra i kommando)
-- Brenna "Blixten" Skarphög (scout, spaning och rekognosering)
-- Eldric Hammarbane (försvarare, håller linjen)
-- Thora Vintertass (bågskytteledare, ledare för bågskytt​tar)
-- Plus ~20 andra erfarna soldater
+**Viktiga medlemmar (officiell roster):**
+- **Kapten Kaelar Stålsvärd** (ledare)
+- **Thalia Skogslöpare** (scout, expert på spaning)
+- **Tjelvar Hovsmide** (vapensmed och rustningsmästare)
+- **Evelina Fältsyster** (medic och sjuksköterska)
+- **Valthor Banerbärare** (banerbärare och moralansvarig)
+- **Elara can De Mediva** (pyaralv, scout med magiska förmågor)
+- **Harald Vädermästare** (taktisk vädermagiker)
+- Plus ~15 andra stridande (Thrain, Morwen, Thalorin, Sylas, Elira, Branar, Kaelthar, Megir, Varia, Darian, Beric, Alaric, Dorn)
+
+**INTE MED (förrädare):**
+- Seraphina Eldstav (andra i kommando, avslöjad som förrädare)
 
 **OBS:** Kapten Stålsvärd är kapten över Hagges **hussoldater**, möjligen inte hela Vitterdals militära styrkor. Jarladömet har troligen också lokala miliser och gruvvakter.
 

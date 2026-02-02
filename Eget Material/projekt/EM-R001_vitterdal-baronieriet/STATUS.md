@@ -3,12 +3,12 @@
 **Kod:** EM-R001
 **Typ:** Region (baronieriet + huvudstad)
 **Startdatum:** 2026-02-02
-**Senast uppdaterad:** 2026-02-03 00:35 (Fas 5 - 90% klar, väntar på användarbeslut)
+**Senast uppdaterad:** 2026-02-02 (Fas 7 - KOMPLETT!)
 
 ---
 
 ## 🎯 NUVARANDE FAS
-**Fas 5: Detaljer** (av 7) - 90% klar, väntar på användarbeslut
+**Fas 7: Avslut** (av 7) - ✅ KOMPLETT!
 
 ---
 
@@ -47,23 +47,29 @@
 - [x] Styre/Ledning utökat (Kapten Stålsvärd, militär, försvarsanläggningar)
 - [x] Befolkning/Kultur fördjupat (Detaljerad drunokisk kultur, samlevnad, lokala seder)
 
-### Fas 5: Detaljer
+### Fas 5: Detaljer ✅ KLAR
 - [x] Städer/Viktiga platser (Mitrahus, Grensfortet, Frisänkan, Bergvik, Dûhr Kins)
 - [x] NPCs/Viktiga personer (Hagge, Lady Soffia, Kaelar, Stålsvärds Kavalerister, lokala figurer)
-- [x] Organisationer (Handelshus: Nejas, Wekzi, Mimore)
-- [x] Politiska spänningar (Folkmar av Sunnanmark, Kung Vidkun VII)
-- [ ] **VÄNTAR:** Användarbeslut på 12 frågor (se QUESTIONS.md)
+- [x] Organisationer (Handelshus: Nejas, Wekzi, Mimore, Solmarin)
+- [x] Politiska spänningar (Mördaren okänd, Bernard med emissarie, Kung Vidkun VII)
+- [x] **BESLUT FATTADE** (2026-02-02) - Se QUESTIONS.md för alla svar
 
-### Fas 6: Validering
-- [ ] NotebookLM-validering genomförd
-- [ ] Kontinuitetskontroll (kampanjkrönika.md)
-- [ ] Konflikter lösta
-- [ ] Avvikelser från kanon dokumenterade
+### Fas 6: Validering ✅ KLAR
+- [x] NotebookLM-validering genomförd (tidigare)
+- [x] Kontinuitetskontroll (kampanjkrönika.md) - **ALLA PUNKTER VALIDERADE**
+- [x] Konflikter lösta (inga kritiska konflikter)
+- [x] Avvikelser från kanon dokumenterade (Haukon→Hagge, Stålsvärds etc)
 
-### Fas 7: Avslut
-- [ ] Flyttat till slutmapp
-- [ ] _index.md uppdaterad
-- [ ] Kampanjspecifik sektion granskad
+**Valideringsresultat (2026-02-02):**
+- Alla viktiga element bekräftade mot kampanjkrönikan
+- Kampanjspecifika tillägg (Klan Ghor-avtal, Bernard emissarie) är logiska extrapoleringar
+- EON-kanonav vikelser dokumenterade och godkända
+
+### Fas 7: Avslut ✅ KLAR
+- [x] HTML-sida skapad/uppdaterad (v4.0)
+- [x] _index.md uppdaterad
+- [x] Kampanjspecifik sektion granskad
+- [x] Projekt komplett (2026-02-02)
 
 ---
 
@@ -172,11 +178,11 @@ Inga
 | 2. Research | ✅ Klar | 100% |
 | 3. Grundstruktur | ✅ Klar | 100% |
 | 4. Kärnan | ✅ Klar | 100% |
-| 5. Detaljer | 🔄 Pågående | 90% (väntar på beslut) |
-| 6. Validering | ❌ Ej påbörjad | 0% |
-| 7. Avslut | ❌ Ej påbörjad | 0% |
+| 5. Detaljer | ✅ Klar | 100% |
+| 6. Validering | ✅ Klar | 100% |
+| 7. Avslut | ✅ Klar | 100% |
 
-**Total progress:** 70% (4 klara + 1 nästan klar)
+**Total progress:** 100% ✅ KOMPLETT
 
 ---
 
