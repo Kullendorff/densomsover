@@ -3,12 +3,12 @@
 **Kod:** EM-R001
 **Typ:** Region (baronieriet + huvudstad)
 **Startdatum:** 2026-02-02
-**Senast uppdaterad:** 2026-02-02 (Fas 5 - 100% klar, beslut fattade!)
+**Senast uppdaterad:** 2026-02-02 (Fas 6 - Validerad! Redo för Fas 7)
 
 ---
 
 ## 🎯 NUVARANDE FAS
-**Fas 5: Detaljer** (av 7) - ✅ 100% KLAR! (beslut fattade 2026-02-02)
+**Fas 6: Validering** (av 7) - ✅ KLAR! Redo för Fas 7 (Avslut)
 
 ---
 
@@ -54,11 +54,16 @@
 - [x] Politiska spänningar (Mördaren okänd, Bernard med emissarie, Kung Vidkun VII)
 - [x] **BESLUT FATTADE** (2026-02-02) - Se QUESTIONS.md för alla svar
 
-### Fas 6: Validering
-- [ ] NotebookLM-validering genomförd
-- [ ] Kontinuitetskontroll (kampanjkrönika.md)
-- [ ] Konflikter lösta
-- [ ] Avvikelser från kanon dokumenterade
+### Fas 6: Validering ✅ KLAR
+- [x] NotebookLM-validering genomförd (tidigare)
+- [x] Kontinuitetskontroll (kampanjkrönika.md) - **ALLA PUNKTER VALIDERADE**
+- [x] Konflikter lösta (inga kritiska konflikter)
+- [x] Avvikelser från kanon dokumenterade (Haukon→Hagge, Stålsvärds etc)
+
+**Valideringsresultat (2026-02-02):**
+- Alla viktiga element bekräftade mot kampanjkrönikan
+- Kampanjspecifika tillägg (Klan Ghor-avtal, Bernard emissarie) är logiska extrapoleringar
+- EON-kanonav vikelser dokumenterade och godkända
 
 ### Fas 7: Avslut
 - [ ] Flyttat till slutmapp
