@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grens Baroneri - EON Kampanjmaterial</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #f4e8d8;
+            color: #3d2817;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .page-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 4rem 3rem;
+            background: #faf6f0;
+            box-shadow: 0 0 40px rgba(61, 40, 23, 0.15);
+            border: 1px solid #d4c4b0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            border-bottom: 3px double #8b6f47;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #6d5d4b;
+            margin-bottom: 1rem;
+        }
+
+        .meta {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: #8b6f47;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        nav {
+            background: #f0e6d6;
+            border: 1px solid #d4c4b0;
+            padding: 1rem;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
+        }
+
+        nav a {
+            color: #704214;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.3rem 0.5rem;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        nav a:hover {
+            background: #e8dcc8;
+            color: #2c1810;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8b6f47;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #3d2817;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #704214;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Atmosphere quote */
+        .atmosphere {
+            background: #f0e6d6;
+            border-left: 4px solid #8b6f47;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #5d4d3b;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Drop cap for long atmospheric texts */
+        .atmosphere-long p:first-of-type::first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            line-height: 0.7;
+            margin: 0.05rem 0.2rem -0.1rem 0;
+            color: #704214;
+            font-style: normal;
+            padding-top: 0.15rem;
+        }
+
+        .atmosphere:not(.atmosphere-long) strong:first-of-type {
+            font-weight: 600;
+            color: #704214;
+            font-style: normal;
+        }
+
+        /* Info box */
+        .info-box {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: inset 0 0 10px rgba(139, 111, 71, 0.1);
+            border-radius: 4px;
+        }
+
+        .info-box strong {
+            color: #704214;
+            font-weight: 600;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background: #f9e6e0;
+            border: 2px solid #a85442;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box strong {
+            color: #8b2e1f;
+            font-weight: 700;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin: 0.6rem 0;
+        }
+
+        /* NPC Card */
+        .npc-card {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+
+        .npc-card h4 {
+            color: #704214;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .npc-meta {
+            color: #8b6f47;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+            font-style: italic;
+        }
+
+        /* Campaign hook */
+        .hook-card {
+            background: #faf0e6;
+            border: 2px solid #b8985e;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+
+        .hook-card h4 {
+            color: #704214;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #ffffff;
+            border: 2px solid #d4c4b0;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #d4c4b0;
+        }
+
+        th {
+            background: #f0e6d6;
+            color: #2c1810;
+            font-weight: 700;
+        }
+
+        tr:hover {
+            background: #faf6f0;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 3px double #8b6f47;
+            padding-top: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            color: #6d5d4b;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        /* Divider */
+        .divider {
+            text-align: center;
+            margin: 2rem 0;
+            color: #8b6f47;
+            font-size: 1.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-container {
+                margin: 0;
+                padding: 2rem 1.5rem;
+                border: none;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header -->
+        <header>
+            <h1>Grens Baroneri</h1>
+            <div class="subtitle">Förläningen vid världens ände</div>
+            <div class="meta">
+                📍 Gränsen Cermira/Mithera • 👥 ~120 invånare • ⚔️ Vasallförläning under Vitterdal
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">← Dashboard</a></li>
+                <li><a href="#oversikt">Översikt</a></li>
+                <li><a href="#grensfortet">Grensfortet</a></li>
+                <li><a href="#bergvik">Bergvik</a></li>
+                <li><a href="#frisankan">Frisänkan</a></li>
+                <li><a href="#npcs">Viktiga NPCs</a></li>
+                <li><a href="#ekonomi">Ekonomi</a></li>
+                <li><a href="#hot">Hot & Mysterier</a></li>
+                <li><a href="#hooks">Kampanjhooks</a></li>
+            </ul>
+        </nav>
+
+        <!-- Long Atmospheric Introduction -->
+        <section class="section">
+            <div class="atmosphere atmosphere-long" style="font-size: 1rem; line-height: 1.9; padding: 2rem 2.5rem; margin: 2rem 0 3rem 0;">
+                <p>Gordon stannade hästen vid krönet och stirrade. Där, på klippan framför dem, reste sig Grensfortet mot den gråa himlen - men det var ingen normal borg. Tornen sträckte sig uppåt i spetsar som var för eleganta, för smala, för vackra för att vara byggda av människohänder. Gotiska spiror klättrade mot molnen som om de försökte fly från berget de satt fast i. En väg slingrade sig uppför klippan, stenlagd och urgammal, och vid foten gapade en mörk ingång rakt in i berget självt.</p>
+
+                <p>"Dvärggrund," sa Dain Stenyxa bakom honom, dvärgens röst ovanligt mjuk. "Människodrömmar." Han tystnade, och sedan, nästan för sig själv: "Vackert. Komplicerat. Kommer falla."</p>
+
+                <p>Vinden bet genom Gordons kappa med en kyla som inte hörde hemma här - inte i juli, inte ens i dessa bergstrakter. Det var en kyla från öster, från Mithera, från det land där demoner hade vandrat och verkligheten själv hade förvrängts. Han såg hur Umnatak höjde näsan och sniffade i luften, hur schamanens ögon smalnade.</p>
+
+                <p>Portarna stod öppna. Väntade på dem.</p>
+
+                <p>De red ner längs vägen i tystnad. Ingen fågel sjöng. Inga djur rörde sig i buskarna. Arcadius' krigshund, som hade följt dem genom krig och elände utan att vika, morrade lågt och pressade sig mot sin herres ben. "Lugn," sa Arcadius, men hans röst var inte lugn. Gordon noterade hur hans hand vilade på svärdsfästet.</p>
+
+                <p>De passerade en glänta där träden var för gamla, för tysta. En stuga låg där, full av torkade örter och märkliga flaskor. En lapp på dörren: "Till dem som kommer för att återställa det som en gång föll - det som söktes är inte längre där det var. När månen är som tunnast kommer jag att återvända." Adisa. Häxan. Hon visste att de skulle komma.</p>
+
+                <p>När de äntligen red in genom portarna mötte dem Eira Holm, byäldsten från Vargnäset - eller vad som återstod av Vargnäset. Hennes ögon var trötta men fasta. Bakom henne stod sjutton själar, allt som återstod av hennes folk efter flykten, efter De förändrades raid, efter vintern som tog de svaga.</p>
+
+                <p>"Ni kom," sa hon. Det var inte en fråga. Det var nästan en anklagelse. "Vi har väntat."</p>
+
+                <p>Gordon såg sig omkring. Stenmurar, delvis raserade. Torn med trasiga fönster. En matssal där ekot studsade fel, där luften kändes tjock av minnen som inte var deras. Detta var deras förläning nu. Detta var deras ansvar. Och i öster, bortom bergen, väntade Mithera med sina monster och sina hemligheter.</p>
+
+                <p>Han steg av hästen. "Vi stannar," sa han. Det var inget löfte. Det var ett faktum. För nu var det deras hem - detta märkliga, vackra, komplicerade fäste vid världens ände.</p>
+            </div>
+        </section>
+
+        <!-- Översikt -->
+        <section id="oversikt" class="section">
+            <h2>Översikt</h2>
+
+            <p><strong>Grens Baroneri</strong> är en liten förläning vid gränsen mellan Cermira och det demonhärjade Mithera. Området kontrolleras av spelarna som vasaller under Jarl Hagge av Vitterdal, och består av det urgamla Grensfortet samt byarna Bergvik och Frisänkan. Det är en gränsmark i ordets sannaste bemärkelse - mellan civilisation och vildmark, mellan det kända och det okända, mellan människors värld och något mycket äldre.</p>
+
+            <div class="info-box">
+                <strong>Förläningstyp:</strong> Litet Baroneri (Län på tjänst)<br>
+                <strong>Lensherre:</strong> Jarl Hagge av Vitterdal<br>
+                <strong>Vasaller:</strong> Gordon, Umnatak, Kazrik, Zentri, Arcadius<br>
+                <strong>Total befolkning:</strong> ~120 invånare<br>
+                <strong>Status:</strong> Juli/Augusti, efter spelarnas återkomst från Skugglandet
+            </div>
+
+            <p>Sedan gruppen bemannade fortet med flyktingar från Vargnäset har en bräcklig civilisation börjat ta form. Men allt är inte som det verkar. Vilt undviker området i stor båge. Onaturlig kyla blåser från öster. Och i bergen nära fortet bor en häxa som enligt dvärgen Dain är "äldre än dvärgar".</p>
+
+            <h3>Geografisk kontext</h3>
+
+            <div class="atmosphere">
+                <strong>Kölden är inte naturlig här.</strong> Den blåser från Mithera, från det land där kryotropi - köldmagi - genomsyrar allt. Träden böjer sig bort från bergen i öster som om de flyr från något. Snön ligger tjock sju månader om året, och jorden ger inget frivilligt. De som bor här har lärt sig att ta vad de kan - timmer från skogarna, fisk från sjöarna, vilt från jaktmarkerna som är märkligt rika, för rika, som om naturen kompenserar för något annat som fattas.
+            </div>
+
+            <p>Området ligger i kuperad ängsmark vid gränsen till Mithera. Enligt NotebookLM-researchm är Cermira tempererat med kalla vintrar, men gränsregionen är extremt kylig på grund av Mitheras magiska inflytande. <strong>De förändrade</strong> - människor infekterade av ett artefakt sedan Ramdor 2601 e.D. - vandrar genom Mithera med okänd agenda och utgör ett ständigt hot.</p>
+        </section>
+
+        <!-- Grensfortet -->
+        <section id="grensfortet" class="section">
+            <h2>Grensfortet</h2>
+
+            <div class="atmosphere">
+                <strong>Det är ingen mänsklig borg.</strong> Det förstod Gordon första gången han såg den - de gotiska spirorna, den eleganta arkitekturen, vägen som slingrade sig upp genom klippan som om den vuxit ur berget självt. Dain kallade det "dvärggrund" men skakade på huvudet. "Inte vårt arbete. Äldre." Tornen reser sig mot himlen i former som trotsar sunt förnuft, vackra och hotfulla på samma gång. Vid foten gapar en mörk ingång rakt in i berget, och ingen har ännu vågat utforska vad som finns innanför.
+            </div>
+
+            <div class="info-box">
+                <strong>Typ:</strong> Herresäte, nyligen renoverat<br>
+                <strong>Befolkning:</strong> 22 permanenta invånare<br>
+                <strong>Ledning:</strong> Eira Holm (daglig drift), Xian-Li (administration), Skorda Bergsdotter (praktiskt)<br>
+                <strong>Läge:</strong> Bergssida vid gränsen mot Mithera
+            </div>
+
+            <h3>Struktur och atmosfär</h3>
+            <ul>
+                <li><strong>Höga torn:</strong> Flera torn, några trasiga, elegant gotisk arkitektur</li>
+                <li><strong>Kapelltorn:</strong> Utan symbol - okänd ursprunglig religiös tillhörighet</li>
+                <li><strong>Murar:</strong> Stenmurar, delvis renoverade av dvärgbyggare</li>
+                <li><strong>Matsalen:</strong> Ekar tomt, har "fel känsla"</li>
+                <li><strong>Kapellet:</strong> Där Arcadius lade sin Daak-medaljong - den försvann nästa morgon</li>
+                <li><strong>Bergsportal:</strong> Mörk ingång i klippan vid fortets fot - outforskad</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>ÖVERNATURLIGA FENOMEN:</strong><br>
+                • <strong>Onaturlig kyla:</strong> Vind från Mithera som "biter genom allt"<br>
+                • <strong>Vilt undviker området:</strong> Alla spår går runt fortet i stor båge<br>
+                • <strong>Arcadius hund morrade:</strong> Värre än vid häxstugan<br>
+                • <strong>Isjättens döttrar:</strong> 3-meter höga isfigurer vandrar nätterna<br>
+                • <strong>Träddansare:</strong> Träd som flyttar sig långsamt<br>
+                • <strong>Ekospöken:</strong> Ljud upprepas timmar senare
+            </div>
+
+            <h3>Befolkning</h3>
+            <p>Fortet bebos huvudsakligen av flyktingar från Vargnäset - extrema Daak-fundamentalister som förlorat allt till De förändrade. De är traumatiserade, misstänksamma mot magi, och djupt religiösa. Detta skapar spänningar med Adisa (häxan), Zentri (krigarmagikern) och Xian-Li (den dolde magikern).</p>
+
+            <h4>De 6 månadernas händelser (under spelarnas frånvaro):</h4>
+            <ul>
+                <li><strong>Mars-April:</strong> Grundläggande fortifikationer, Xian-Li anlände diskret</li>
+                <li><strong>Maj-Juni:</strong> Adisa återkom, religiös konflikt med flyktingarna, Bärnsäl dödade 2 jägare</li>
+                <li><strong>Juli:</strong> Kungliga inspektörer accepterade förläningen, formellt erkännande</li>
+            </ul>
+        </section>
+
+        <!-- Bergvik -->
+        <section id="bergvik" class="section">
+            <h2>Bergvik</h2>
+
+            <div class="atmosphere">
+                <strong>Yxorna ekar genom dalen från gryning till skymning.</strong> Bergvik är en by av hårt arbetande människor som aldrig bad om en lord men fick en ändå - och till deras egen förvåning är de nöjda med det. Sågen skriker när timret kapas. Oxar drar tunga vagnar längs den leriga vägen. Kolmilan ryker i horisonten, och i kvällningen fylls det lilla värdshuset med skratt och stark sprit. De är enkla människor med enkla liv, och de har bestämt sig för att de nya herrarna på fortet är värda att lita på. Det återstår att se om de har rätt.
+            </div>
+
+            <div class="info-box">
+                <strong>Typ:</strong> Jordbruksby och stenbrytarsamhälle<br>
+                <strong>Befolkning:</strong> 35-40 invånare<br>
+                <strong>Karaktär:</strong> Lojala, traditionellt feodala<br>
+                <strong>Religion:</strong> Daaktro (traditionell)<br>
+                <strong>Ekonomiskt bidrag:</strong> 16-23 Bas/år
+            </div>
+
+            <h3>Näringar</h3>
+            <ul>
+                <li><strong>Timmer:</strong> Huvudnäring - export till Vitterdal</li>
+                <li><strong>Jakt:</strong> Pälsar och kött</li>
+                <li><strong>Stenbrytning:</strong> Byggmaterial</li>
+                <li><strong>Begränsat jordbruk:</strong> Rotfrukter, korn</li>
+            </ul>
+
+            <h3>Viktiga personer</h3>
+            <ul>
+                <li><strong>Torkel Skogsson:</strong> Byäldste, mötte karavanen med "stort leende"</li>
+                <li><strong>Björn Hammarsmed:</strong> Ung smed, nu på Grensfortet (tillfälligt)</li>
+                <li><strong>Lars & Erik Bergsson:</strong> Stenbrytare-bröder, nu på Grensfortet</li>
+                <li><strong>Olav Murkross:</strong> Gammal soldat, igenkände Arcadius som kamrat</li>
+            </ul>
+        </section>
+
+        <!-- Frisänkan -->
+        <section id="frisankan" class="section">
+            <h2>Frisänkan</h2>
+
+            <div class="atmosphere">
+                <strong>De litar inte på dig förrän du bevisat dig värdig.</strong> Frisänkan är en by av envisa fiskare och bönder som har klarat sig själva i generationer och inte ser någon anledning att ändra på det. De betalar sin skatt - motvilligt - och i gengäld förväntar de sig att bli lämnade ifred. Morgondimman rullar in från sjön varje gryning medan Vidars samoriska psalmer ekar mellan husen. Gamla nät hänger och torkar. Barn leker på bryggan. Och i byns utkant står ett litet tempel till en gud som skulle ge dödsstraff i Jargien.
+            </div>
+
+            <div class="info-box">
+                <strong>Typ:</strong> Fiskeby med samoriskt tempel<br>
+                <strong>Befolkning:</strong> 50 invånare<br>
+                <strong>Karaktär:</strong> Anti-feodala, självständiga, pragmatiska<br>
+                <strong>Religion:</strong> Samorisk tro (präst Vidar)<br>
+                <strong>Ekonomiskt bidrag:</strong> 2-8 Bas/år (motvilliga)
+            </div>
+
+            <div class="warning-box">
+                <strong>RELIGIÖS KONFLIKT:</strong><br>
+                Frisänkan betalar tionde till Vidar (samorisk präst), inte till Daak-kyrkan. Om detta upptäcks av kyrkliga myndigheter kan det bli allvarliga konsekvenser. Samtidigt är Grensfortets flyktingar extrema Daak-fundamentalister som ser all samorisk tro som kätteri.
+            </div>
+
+            <h3>Viktiga personer</h3>
+            <ul>
+                <li><strong>Halinor:</strong> Byäldste - "Bevisa er värda först"</li>
+                <li><strong>Benne Tok:</strong> Vaktkapten, paddliknande, minns Gordons förflutna</li>
+                <li><strong>Vidar Solvandrar:</strong> Samorisk präst, byns andlige ledare</li>
+            </ul>
+
+            <h3>Relation till Gordon</h3>
+            <p>Benne Toks ord vid ankomsten: <em>"Gordon. Vi minns. Både bra och dåligt."</em> Något hände här under Kapitel 1, något med Pertil och hans fru. Byn minns.</p>
+        </section>
+
+        <!-- Viktiga NPCs -->
+        <section id="npcs" class="section">
+            <h2>Viktiga NPCs</h2>
+
+            <div class="atmosphere">
+                <strong>Dessa är de som håller förläningen vid liv.</strong> Eira som bär skulden för alla hon inte kunde rädda. Skorda som aldrig ler men alltid levererar. Xian-Li som döljer sina hemligheter bakom poetiska ord. Adisa som vet mer än någon borde veta. De är inte hjältar - de är överlevare, och i Grens Baroneri är det samma sak.
+            </div>
+
+            <h3>Grensfortets ledning</h3>
+
+            <div class="npc-card">
+                <h4>Eira Holm</h4>
+                <div class="npc-meta">Byäldste, huvudledare | Människa (drunokier) | 55 år</div>
+                <p><strong>Bakgrund:</strong> F.d. byäldste från Vargnäset. Ledde de 50 överlevande flyktingarna till Grensfortet efter evakueringen. Bär en tung börda av skuld för alla hon inte kunde rädda.</p>
+                <p><strong>Roll:</strong> Ansvarar för daglig drift, arbetsfördelning, skatteuppbörd. Organiserade allt under spelarnas frånvaro med Xian-Lis hjälp.</p>
+                <p><strong>Personlighet:</strong> Alltmer skakig av trauma men vägrar ge upp. Tar ansvar även när hon tvivlar på sig själv.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Skorda Bergsdotter</h4>
+                <div class="npc-meta">Jägare, praktiskt stöd | Människa (drunokier) | 45 år</div>
+                <p><strong>Bakgrund:</strong> Ensamvarg från Vargnäset. Berättarröst i Kapitel 8.5 - hennes cyniska perspektiv färgade hela resan till fortet.</p>
+                <p><strong>Roll:</strong> Ansvarar för jakt, försvar och praktiska frågor. Organiserar jakten som ger 8-12 Bas/år i export.</p>
+                <p><strong>Personlighet:</strong> Rå realist. Ler aldrig. Säger sanningen även när ingen vill höra den. <em>"Det som folk inte förstår är att överlevnad inte handlar om styrka. Det handlar om att vakna nästa morgon."</em></p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Xian-Li</h4>
+                <div class="npc-meta">Sung-diplomat | Människa (Sung) | ~35 år</div>
+                <p><strong>Officiell roll:</strong> Diplomatisk rådgivare och filosof från Sung. Hjälper med administration och krönikeföring.</p>
+                <p><strong>Dold identitet:</strong> Skicklig magiker (pneumotropi) och kampmunk. Följer Thrakka av okänd anledning.</p>
+                <p><strong>Insats:</strong> Hjälpte hemligt driva bort Bärnsälen som dödade två jägare. Medierar mellan flyktingarna och Adisa.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Adisa</h4>
+                <div class="npc-meta">Häxan | Ålder okänd ("äldre än dvärgar")</div>
+                <p><strong>Boplats:</strong> Stugan i gläntan nära fortet. Träden runt stugan är "för gamla, för tysta".</p>
+                <p><strong>Roll:</strong> Informell rådgivare. Ger magiskt skydd, läker sjuka, har kunskap om Mithera.</p>
+                <p><strong>Konflikt:</strong> Flyktingarna fruktar henne som "demonisk". Hon bevisade sin godhet genom att läka sjuka barn, men misstron är djup.</p>
+                <p><strong>Mysterium:</strong> Dain Stenyxas ord: <em>"Äldre än dvärgar. Hon är inte vad hon verkar."</em> Vad betyder det?</p>
+            </div>
+
+            <div class="divider">❖ ❖ ❖</div>
+
+            <h3>Militärt befäl</h3>
+
+            <div class="npc-card">
+                <h4>Jonna Sköldbärare</h4>
+                <div class="npc-meta">F.d. gränsvakt, garnisonsbefäl | Människa | 38 år</div>
+                <p><strong>Roll:</strong> Militärt befäl över fortets försvar. Skötte säkerheten under spelarnas frånvaro.</p>
+                <p><strong>Förmåga:</strong> Erfaren gränsvakt med kunskap om områdets hot.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Tomas Järnhjälm</h4>
+                <div class="npc-meta">F.d. infanterist, försvarschef | Människa | 42 år</div>
+                <p><strong>Roll:</strong> Ansvarar för fortets fysiska försvar och träning av värnpliktiga.</p>
+            </div>
+        </section>
+
+        <!-- Ekonomi -->
+        <section id="ekonomi" class="section">
+            <h2>Ekonomi</h2>
+
+            <div class="atmosphere">
+                <strong>Guld mäts inte bara i mynt här.</strong> En Bas är 360 silver - nog för att försörja en bonde ett helt år. En Lyx är 720 silver - smycken, fina kläder, statusvaror som ingen i Grens Baroneri egentligen har råd med. Siffrorna på pappret ser bra ut: överskott, tillväxt, potential. Men siffrorna berättar inte om vintrarna som tar förråden, om vargarna som tar boskapen, om kylan som tar de svaga.
+            </div>
+
+            <div class="info-box">
+                <strong>Enheter (Riddaren-regler):</strong><br>
+                <strong>1 Bas</strong> = 360 silver = försörjer en bonde i ett år<br>
+                <strong>1 Lyx</strong> = 720 silver = statusvaror (smycken, fina kläder, kvalitetsvapen)
+            </div>
+
+            <h3>Årligt resultat</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Bas</th>
+                    <th>Lyx</th>
+                </tr>
+                <tr>
+                    <td><strong>Inkomster</strong></td>
+                    <td>34-42</td>
+                    <td>4-7</td>
+                </tr>
+                <tr>
+                    <td><strong>Utgifter</strong></td>
+                    <td>27-32</td>
+                    <td>11</td>
+                </tr>
+                <tr style="background: #f0e6d6;">
+                    <td><strong>NETTO</strong></td>
+                    <td><strong>+2 till +15</strong></td>
+                    <td><strong>-4 till -7</strong></td>
+                </tr>
+            </table>
+
+            <p><strong>Status:</strong> Måttligt Bas-överskott men <strong>Lyx-underskott</strong>. Vasallerna kan inte upprätthålla "Gott leverne" (2 Bas + 2 Lyx per person) utan att antingen sälja Bas, sänka standarden, eller etablera handelsvägar för att köpa Lyx.</p>
+
+            <h3>Militär kapacitet</h3>
+            <table>
+                <tr>
+                    <th>Styrka</th>
+                    <th>Antal</th>
+                    <th>Kostnad</th>
+                </tr>
+                <tr>
+                    <td>Tränad kärna (Vargnäset)</td>
+                    <td>8</td>
+                    <td>6-8 Bas/år</td>
+                </tr>
+                <tr>
+                    <td>Värnplikt vid hot</td>
+                    <td>~20</td>
+                    <td>Gratis (max 40 dagar/år)</td>
+                </tr>
+                <tr>
+                    <td><strong>Total mobilisering</strong></td>
+                    <td><strong>~35</strong></td>
+                    <td>Tillfälligt</td>
+                </tr>
+            </table>
+
+            <p><strong>Gordons vision:</strong> Ett legokompani på 20-30 soldater kräver 60-90 Bas/år. Nuvarande kapacitet: 5-15% av målet.</p>
+        </section>
+
+        <!-- Hot & Mysterier -->
+        <section id="hot" class="section">
+            <h2>Hot & Mysterier</h2>
+
+            <div class="atmosphere">
+                <strong>Det som lurar i mörkret vet att ni har kommit.</strong> Vintervargarna från Mithera är dubbelt så stora som vanliga. Bärnsälen - björnliknande med tentakler - dödade två jägare innan Xian-Li drev bort den. Isjättens döttrar vandrar nätterna som tre meter höga isfigurer. Och i fortet självt försvinner saker - Arcadius Daak-medaljong, ljud som upprepas timmar senare, en känsla av att någon alltid tittar.
+            </div>
+
+            <h3>Externa hot</h3>
+
+            <div class="warning-box">
+                <strong>FRÅN MITHERA:</strong><br>
+                • <strong>Vintervargarna:</strong> Dubbelt så stora som vanliga vargar<br>
+                • <strong>Bärnsäl:</strong> Björnliknande med tentakler - dödade 2 jägare<br>
+                • <strong>De förändrade:</strong> Infekterade människor med okänd agenda<br>
+                • <strong>Onaturlig kyla:</strong> Kryotropi (köldmagi) som genomsyrar allt
+            </div>
+
+            <h3>Interna spänningar</h3>
+            <ul>
+                <li><strong>Religiös konflikt:</strong> Daak-fundamentalister (fortet) vs Samorisk tro (Frisänkan)</li>
+                <li><strong>Magisk misstro:</strong> Flyktingar vs Adisa/Zentri/Xian-Li</li>
+                <li><strong>Tiondefrågan:</strong> Frisänkan betalar till Vidar, inte Daak-kyrkan</li>
+                <li><strong>Administrativ svaghet:</strong> Ingen professionell fogde eller skrivare</li>
+            </ul>
+
+            <h3>Olösta mysterier</h3>
+            <ul>
+                <li><strong>"Fortet är byggt på en grav":</strong> Folket säger att en alvprins begravdes här</li>
+                <li><strong>Adisas ålder:</strong> "Äldre än dvärgar" - vad betyder det?</li>
+                <li><strong>Försvunna föremål:</strong> Arcadius medaljong, kanske annat</li>
+                <li><strong>Bergsportalen:</strong> Den mörka ingången vid fortets fot - vad finns innanför?</li>
+                <li><strong>Varför undviker vilt området?:</strong> Alla spår går runt fortet i stor båge</li>
+            </ul>
+        </section>
+
+        <!-- Kampanjhooks -->
+        <section id="hooks" class="section">
+            <h2>Kampanjhooks</h2>
+
+            <div class="atmosphere">
+                <strong>Varje fråga har ett svar, men inte alla svar är vad ni vill höra.</strong> Fortet döljer hemligheter i sina murar. Mithera skickar sina monster. Byarna kräver rättvisa och beskydd. Och någonstans, i mörkret under bergen eller i skogen vid gränsen, väntar sanningen om vad detta ställe egentligen är.
+            </div>
+
+            <div class="hook-card">
+                <h4>1. Den försvunna jägaren</h4>
+                <div class="npc-meta">Typ: Utforskning, Mystery | Svårighetsgrad: Låg-Medium</div>
+                <p><strong>Hook:</strong> En jägare från Bergvik hittas inte efter en jakttur nära Mithera-gränsen. Hans kamrater hittade hans läger - men inga spår av kamp, inget blod, bara tomma skogsmarker och en känsla av att någon tittat på dem.</p>
+                <p><strong>Konsekvenser:</strong> Kan leda till upptäckt av De förändrade, ett monster, eller något värre.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>2. Tiondeinspektören</h4>
+                <div class="npc-meta">Typ: Politisk, Social | Svårighetsgrad: Medium</div>
+                <p><strong>Hook:</strong> Daak-kyrkan skickar en inspektör för att "verifiera tiondeuppbörden" i regionen. Om han upptäcker att Frisänkan betalar till en samorisk präst istället för kyrkan, blir det allvarliga konsekvenser.</p>
+                <p><strong>Utmaningar:</strong> Hantera inspektören, skydda Frisänkan, balansera religiösa spänningar.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>3. Bergsportalen</h4>
+                <div class="npc-meta">Typ: Utforskning, Dungeon | Svårighetsgrad: Hög</div>
+                <p><strong>Hook:</strong> Den mörka ingången vid fortets fot har alltid varit stängd - men nu har någon eller något öppnat den. Ljud hörs inifrån. Dain vägrar gå nära och säger bara: "Det som är därinne är inte för människor."</p>
+                <p><strong>Vad finns inuti:</strong> Dvärgisk gruva? Portal? Något äldre?</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>4. Gråben ber om hjälp</h4>
+                <div class="npc-meta">Typ: Diplomati, Mystery | Svårighetsgrad: Medium</div>
+                <p><strong>Hook:</strong> En gammal tirak dyker upp vid fortet - Gråben, förvisad från sin stam för ett brott han vägrar nämna. Han har bott i bergen i årtionden och ber nu om hjälp mot något som hotar honom. Litar gruppen på en tirak?</p>
+                <p><strong>Potential:</strong> Allierad med kunskap om området, eller en fälla.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>5. Deserteuren</h4>
+                <div class="npc-meta">Typ: Character Drama, Konfrontation | Svårighetsgrad: Medium</div>
+                <p><strong>Hook:</strong> En man som gömt sig i skogarna i tre år upptäcks av jägare - en desertör från Arvorns Hammare. Han vet inte att Arcadius (Corvus) också har lämnat orden. Vad händer när de möts?</p>
+                <p><strong>Drama:</strong> Arcadius förflutna, Arvorns Hammares intresse i regionen, lojaliteter.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>6. Dimgumman</h4>
+                <div class="npc-meta">Typ: Mystery, Supernatural | Svårighetsgrad: Medium-Hög</div>
+                <p><strong>Hook:</strong> Folk har sett rök från en stuga nära Mithera-gränsen - men ingen har hittat den. Dimgumman, säger de. Hon har sett något i Mithera som gruppen behöver veta, och hon söker kontakt genom drömmar.</p>
+                <p><strong>Adisa vet mer:</strong> Men delar hon informationen?</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>Grens Baroneri</strong> - EON Kampanjmaterial</p>
+            <p>Kod: EM-R002 | Version: 3.0 (Narrativ)</p>
+            <p>Senast uppdaterad: 2026-02-03</p>
+            <p>Underlyder: Vitterdal-baronieriet (EM-R001) under Jarl Hagge</p>
+        </footer>
+    </div>
+</body>
+</html>
