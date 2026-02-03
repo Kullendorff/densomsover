@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grens Baroneri - EON Kampanjmaterial</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #f4e8d8;
+            color: #3d2817;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .page-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 4rem 3rem;
+            background: #faf6f0;
+            box-shadow: 0 0 40px rgba(61, 40, 23, 0.15);
+            border: 1px solid #d4c4b0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            border-bottom: 3px double #8b6f47;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #6d5d4b;
+            margin-bottom: 1rem;
+        }
+
+        .meta {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: #8b6f47;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        nav {
+            background: #f0e6d6;
+            border: 1px solid #d4c4b0;
+            padding: 1rem;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
+        }
+
+        nav a {
+            color: #704214;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.3rem 0.5rem;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        nav a:hover {
+            background: #e8dcc8;
+            color: #2c1810;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8b6f47;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #3d2817;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #704214;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Atmosphere quote */
+        .atmosphere {
+            background: #f0e6d6;
+            border-left: 4px solid #8b6f47;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #5d4d3b;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Drop cap for long atmospheric texts */
+        .atmosphere-long p:first-of-type::first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            line-height: 0.7;
+            margin: 0.05rem 0.2rem -0.1rem 0;
+            color: #704214;
+            font-style: normal;
+            padding-top: 0.15rem;
+        }
+
+        /* Info box */
+        .info-box {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: inset 0 0 10px rgba(139, 111, 71, 0.1);
+            border-radius: 4px;
+        }
+
+        .info-box strong {
+            color: #704214;
+            font-weight: 600;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background: #f9e6e0;
+            border: 2px solid #a85442;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box strong {
+            color: #8b2e1f;
+            font-weight: 700;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin: 0.6rem 0;
+        }
+
+        /* NPC Card */
+        .npc-card {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+
+        .npc-card h4 {
+            color: #704214;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .npc-meta {
+            color: #8b6f47;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+            font-style: italic;
+        }
+
+        /* Place Card */
+        .place-card {
+            background: #e8f0e6;
+            border: 2px solid #5d7a54;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+
+        .place-card h4 {
+            color: #3d5a34;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        /* Campaign hook */
+        .hook-card {
+            background: #faf0e6;
+            border: 2px solid #b8985e;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+
+        .hook-card h4 {
+            color: #704214;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #ffffff;
+            border: 2px solid #d4c4b0;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #d4c4b0;
+        }
+
+        th {
+            background: #f0e6d6;
+            color: #2c1810;
+            font-weight: 700;
+        }
+
+        tr:hover {
+            background: #faf6f0;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 3px double #8b6f47;
+            padding-top: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            color: #6d5d4b;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        /* Divider */
+        .divider {
+            text-align: center;
+            margin: 2rem 0;
+            color: #8b6f47;
+            font-size: 1.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-container {
+                margin: 0;
+                padding: 2rem 1.5rem;
+                border: none;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header -->
+        <header>
+            <h1>Grens Baroneri</h1>
+            <div class="subtitle">Vid Världens Kant</div>
+            <div class="meta">
+                Bergsterräng vid gränsen Cermira/Mithera | ~120 invånare | Län på tjänst under Vitterdal
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">Dashboard</a></li>
+                <li><a href="#oversikt">Översikt</a></li>
+                <li><a href="#bosattningar">Bosättningar</a></li>
+                <li><a href="#ekonomi">Ekonomi</a></li>
+                <li><a href="#feodalt">Feodala Förpliktelser</a></li>
+                <li><a href="#militar">Militär</a></li>
+                <li><a href="#politik">Politik</a></li>
+                <li><a href="#npcs">NPCs</a></li>
+                <li><a href="#hot">Hot & Problem</a></li>
+                <li><a href="#hooks">Kampanjhooks</a></li>
+            </ul>
+        </nav>
+
+        <!-- Long Atmospheric Introduction -->
+        <section class="section">
+            <div class="atmosphere atmosphere-long" style="font-size: 1rem; line-height: 1.9; padding: 2rem 2.5rem; margin: 2rem 0 3rem 0;">
+                <p>Gordon stannade vid bergspassets topp och lät blicken svepa över landskapet nedanför. Sex dagars resa från Vitterdal, förbi Bergviks tysta timmerhuggare och Frisänkans motvilliga fiskare, och nu stod han här - vid gränsen till något annat.</p>
+
+                <p>Grensfortet reste sig ur bergssidan som ett gammalt sår som aldrig läkt ordentligt. Dvärgarbete i grunden, det syntes på stenarna - tusenåriga block huggna med en precision som ingen människa kunde matcha. Men ovanpå dem vilade människors drömmar, renoverade murar och ett torn som lutade en aning åt öster. Runt fortet hade en liten bosättning vuxit fram under månaderna sedan de lämnade, träbyggnader och tält som klamrade sig fast vid sluttningen.</p>
+
+                <p>Bakom fortet låg Mithera. Inte den skog människor kallade Mithera - städernas kartor och handelsvägar - utan den verkliga skogen. Den som andades. Gordon hade sett den under sin tid i Skugglandet, känt hur den levde på ett sätt som vanlig mark inte gjorde. Träden där borta rörde sig när ingen såg på. Djuren var för stora eller för tysta. Och natten... natten varade längre än den borde.</p>
+
+                <p>Eira stod i porten och väntade på dem. Hon var magrare än han mindes, ögonen djupare, men hon höll fortfarande ryggen rak. Bakom henne skymtade Xian-Li med sitt eviga halvleende och Jonna med handen på svärdfästet - gammal vana som aldrig dog.</p>
+
+                <p>De hade överlevt. Det var mer än Gordon hade vågat hoppas på.</p>
+
+                <p>Nu återstod frågan om de kunde göra mer än överleva. Om detta håla vid världens kant kunde bli något mer än en tillflykt. Ett hem. En maktbas. Något värt att dö för.</p>
+
+                <p>Gordon tog första steget nerför sluttningen. Bakom honom följde de andra - Kazrik som mumlade om dvärgmurar, Umnatak som sniffade i luften med den där blicken som sa att skogen redan viskat något till honom, och Zentri... Zentri som bar Skugglandets märken i ögonen och aldrig riktigt skulle bli densamma.</p>
+
+                <p>Det var dags att bli herrar över något. Eller dö i försöket.</p>
+            </div>
+        </section>
+
+        <!-- Översikt -->
+        <section class="section" id="oversikt">
+            <h2>Översikt</h2>
+
+            <div class="info-box">
+                <strong>Förläningstyp:</strong> Litet Baroneri (Län på tjänst)<br>
+                <strong>Lensherre:</strong> Jarl Hagge av Vitterdal<br>
+                <strong>Vasaller:</strong> Gordon, Umnatak, Kazrik, Zentri, Arcadius<br>
+                <strong>Geografiskt läge:</strong> Bergsterräng vid gränsen mellan Cermira och Mithera<br>
+                <strong>Total befolkning:</strong> ~120 invånare (exkl. spelarna)<br>
+                <strong>Status:</strong> Juli/Augusti, efter spelarnas återkomst från Skugglandet
+            </div>
+
+            <p>Grens Baroneri är en nyetablerad förläning i de avlägsna bergstrakterna där Cermira möter Mithera. Förläningen består av det renoverade Grensfortet - en gammal befästning med dvärggrund - samt två underlydande byar: det lojala Bergvik och det motvilliga Frisänkan.</p>
+
+            <p>Baroneriet är ungt men formellt legitimerat, med starkt stöd från Jarl Hagge av Vitterdal som ratificerat förläningen. Spelarnas grupp har fått länet i utbyte mot tidigare tjänster - främst att de räddade Hagges liv.</p>
+        </section>
+
+        <div class="divider">&#10086; &#10086; &#10086;</div>
+
+        <!-- Bosättningar -->
+        <section class="section" id="bosattningar">
+            <h2>Bosättningar</h2>
+
+            <div class="place-card">
+                <h4>Grensfortet (22 permanenta invånare)</h4>
+                <p><strong>Status:</strong> Herresäte, nyligen renoverat<br>
+                <strong>Läge:</strong> Vid gränsen mot Mithera/Skugglandet</p>
+
+                <p>Fortets grunder är dvärgarbete från en svunnen tid - massiva stenblock som trotsar tidens tand. Ovanpå dessa vilar mänskliga tillägg: renoverade murar, ett vakttorn, och enkla bostadsbyggnader för flyktingarna från Vargnäset.</p>
+
+                <p><strong>Befolkning:</strong></p>
+                <ul>
+                    <li>16-17 flyktingar från Vargnäset (extrema Daak-fundamentalister)</li>
+                    <li>Xian-Li (Sung-diplomat och dold magiker)</li>
+                    <li>Adisa (återkommen häxa - bor för sig själv men hjälper)</li>
+                    <li>Tillfälliga arbetare från Bergvik och Vitterdal</li>
+                </ul>
+            </div>
+
+            <div class="atmosphere">
+                <strong>Första intrycket:</strong> Fortet andas av något gammalt och tungt. Vindens ljud genom klippspringorna är inte riktigt som det borde vara - ibland upprepas det timmar senare, som om bergen minns. Djuren går runt området i en vid båge, och natten känns längre här än någon annanstans.
+            </div>
+
+            <div class="place-card">
+                <h4>Bergvik (35-40 invånare)</h4>
+                <p><strong>Karaktär:</strong> Lojala bergsbor, traditionellt feodala<br>
+                <strong>Näringar:</strong> Timmer (primär), jakt, begränsat jordbruk<br>
+                <strong>Läge:</strong> Bergsdalen mellan Grensfortet och Vitterdal</p>
+
+                <p>En enkel by av timmerhuggare och jägare som välkomnade nyheterna om en ny lord med öppna armar. De har längtat efter ordning och skydd - och är villiga att betala för det med lojalitet och arbete.</p>
+
+                <p><strong>Befolkning:</strong> 9 fria bönder (25%), 27 ofria bönder (75%), 1-2 hantverkare</p>
+                <p><strong>Ekonomiskt bidrag:</strong> 16-23 Bas/år (timmer, jakt, skatter)</p>
+            </div>
+
+            <div class="atmosphere">
+                <strong>Bylivet:</strong> Lukten av färskt sågat timmer hänger över Bergvik som en välsignelse. Yxornas rytmiska hugg börjar i gryningen och slutar först när skymningen gör arbetet omöjligt. Här finns ingen tveksamhet - de behövde en herre, och nu har de fått en.
+            </div>
+
+            <div class="place-card">
+                <h4>Frisänkan (50 invånare)</h4>
+                <p><strong>Karaktär:</strong> Självständiga fiskare och jordbrukare, anti-feodala<br>
+                <strong>Näringar:</strong> Fiske (primär), begränsat jordbruk<br>
+                <strong>Religion:</strong> Samorisk tro (Präst Vidar välkomnar alla)</p>
+
+                <p>En by som aldrig bett om en herre och inte är helt säker på att de behöver en nu heller. Frisänkans folk har klarat sig själva i generationer, och de ser på Grensfortets nya herrar med blandad misstro och pragmatisk acceptans.</p>
+
+                <p><strong>Befolkning:</strong> 12 fria bönder (25%), 36 ofria bönder (75%), 2 hantverkare</p>
+                <p><strong>Ekonomiskt bidrag:</strong> 2-8 Bas/år (motvilliga men fungerande skattebetalare)</p>
+            </div>
+
+            <div class="atmosphere">
+                <strong>Stämningen:</strong> Halinor, byns äldste, har ett sätt att se på främlingar som säger mer än ord. "Bevisa er värda först," verkar blicken säga. Men präst Vidars leende är varmt, och hans samoriska välkomsthälsning inkluderar alla - oavsett titel eller makt.
+            </div>
+        </section>
+
+        <div class="divider">&#10086; &#10086; &#10086;</div>
+
+        <!-- Ekonomi -->
+        <section class="section" id="ekonomi">
+            <h2>Ekonomi (Riddaren-regler)</h2>
+
+            <div class="info-box">
+                <strong>Enheter enligt modulerna Riddaren och Krigsherren:</strong><br>
+                <strong>1 Bas</strong> = 360 silver = försörjer en bonde i ett år (9 tunnor spannmål, en plog, etc.)<br>
+                <strong>1 Lyx</strong> = 720 silver = statusvaror (smycken, fina kläder, kvalitetsvapen, sällsynta pälsar)
+            </div>
+
+            <h3>Årliga Inkomster</h3>
+            <table>
+                <tr>
+                    <th>Källa</th>
+                    <th>Bas</th>
+                    <th>Lyx</th>
+                    <th>Kommentar</th>
+                </tr>
+                <tr>
+                    <td>Direkta skatter (Frisänkan + Bergvik)</td>
+                    <td>2,1</td>
+                    <td>—</td>
+                    <td>Motvilligt från Frisänkan</td>
+                </tr>
+                <tr>
+                    <td>Bergvik timmerexport</td>
+                    <td>8-12</td>
+                    <td>—</td>
+                    <td>Huvudnäring</td>
+                </tr>
+                <tr>
+                    <td>Bergvik jaktprodukter</td>
+                    <td>4-6</td>
+                    <td>1-2</td>
+                    <td>Pälsar och kött</td>
+                </tr>
+                <tr>
+                    <td>Grensfortet viltjakt (Mithera-gränsen)</td>
+                    <td>6-8</td>
+                    <td>3-5</td>
+                    <td>Ovanligt rika bestånd, sällsynta pälsar</td>
+                </tr>
+                <tr>
+                    <td>Jargisk gruva (från vintern)</td>
+                    <td>13,9</td>
+                    <td>—</td>
+                    <td>Första betalningen väntas</td>
+                </tr>
+                <tr style="font-weight: bold; background: #f0e6d6;">
+                    <td>TOTAL ÅRSINKOMST</td>
+                    <td>34-42</td>
+                    <td>4-7</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h3>Årliga Utgifter</h3>
+            <table>
+                <tr>
+                    <th>Post</th>
+                    <th>Bas</th>
+                    <th>Lyx</th>
+                    <th>Kommentar</th>
+                </tr>
+                <tr>
+                    <td>Vasallernas hushåll (5 pers × "Gott leverne")</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>2 Bas + 2 Lyx per person</td>
+                </tr>
+                <tr>
+                    <td>Grensfortet underhåll & mat (22 pers)</td>
+                    <td>8-10</td>
+                    <td>—</td>
+                    <td>Flyktingar + personal</td>
+                </tr>
+                <tr>
+                    <td>Anställda och förvaltare</td>
+                    <td>3-4</td>
+                    <td>1</td>
+                    <td>Eira, Jonna, specialister</td>
+                </tr>
+                <tr>
+                    <td>Nuvarande garnison (8 tränade)</td>
+                    <td>6-8</td>
+                    <td>—</td>
+                    <td>Delvis värnplikt, delvis avlönade</td>
+                </tr>
+                <tr style="font-weight: bold; background: #f0e6d6;">
+                    <td>TOTALA UTGIFTER</td>
+                    <td>27-32</td>
+                    <td>11</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h3>Ekonomiskt Resultat</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Bas</th>
+                    <th>Lyx</th>
+                </tr>
+                <tr>
+                    <td>Inkomster</td>
+                    <td>34-42</td>
+                    <td>4-7</td>
+                </tr>
+                <tr>
+                    <td>Utgifter</td>
+                    <td>27-32</td>
+                    <td>11</td>
+                </tr>
+                <tr style="font-weight: bold; background: #f0e6d6;">
+                    <td>Netto</td>
+                    <td>+2 till +15</td>
+                    <td>-4 till -7</td>
+                </tr>
+            </table>
+
+            <div class="warning-box">
+                <strong>Lyx-underskott!</strong> Baroneriet har ett måttligt Bas-överskott men ett Lyx-underskott. Vasallerna kan inte upprätthålla "Gott leverne" utan att sälja Bas eller silver. Alternativ: sänka levnadsstandarden till "Enkelt leverne" eller etablera handelsvägar för att sälja Bas och köpa Lyx.
+            </div>
+
+            <h3>Marknader</h3>
+            <table>
+                <tr>
+                    <th>Marknad</th>
+                    <th>Köp Bas</th>
+                    <th>Sälj Bas</th>
+                    <th>Köp Lyx</th>
+                    <th>Kapacitet</th>
+                </tr>
+                <tr>
+                    <td>Lokal (byarna)</td>
+                    <td>360s</td>
+                    <td>270s</td>
+                    <td>Sällsynt</td>
+                    <td>Begränsad</td>
+                </tr>
+                <tr>
+                    <td>Provinsiell (Vitterdal)</td>
+                    <td>540s</td>
+                    <td>360s</td>
+                    <td>720s</td>
+                    <td>~40 Bas/20 Lyx per år</td>
+                </tr>
+            </table>
+        </section>
+
+        <div class="divider">&#10086; &#10086; &#10086;</div>
+
+        <!-- Feodala Förpliktelser -->
+        <section class="section" id="feodalt">
+            <h2>Feodala Förpliktelser</h2>
+
+            <h3>Dagsverken</h3>
+            <p>Ofria bönder betalar genom arbete utöver avrad (hyra). Enligt Riddaren-reglerna:</p>
+            <ul>
+                <li><strong>Normalbörda:</strong> 80 dagsverken/år per ofri bonde</li>
+                <li><strong>Tyrannisk herre:</strong> Upp till 120 dagsverken/år (ökar missnöje och upprorsrisk)</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <th>By</th>
+                    <th>Ofria bönder</th>
+                    <th>Dagsverken/år</th>
+                    <th>Användning</th>
+                </tr>
+                <tr>
+                    <td>Frisänkan</td>
+                    <td>36</td>
+                    <td>2 880</td>
+                    <td>Vägunderhåll, fiske, transporter</td>
+                </tr>
+                <tr>
+                    <td>Bergvik</td>
+                    <td>27</td>
+                    <td>2 160</td>
+                    <td>Timmerhuggning, stenbrytning, byggnation</td>
+                </tr>
+                <tr style="font-weight: bold; background: #f0e6d6;">
+                    <td>Totalt</td>
+                    <td>63</td>
+                    <td>5 040</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <div class="info-box">
+                <strong>Praktisk användning av dagsverken:</strong><br>
+                Fortifikationsarbete: ~1 000/år | Vägunderhåll: ~500/år | Jordbruk: ~800/år | Timmer/ved: ~1 200/år<br>
+                <strong>Reserv:</strong> ~1 500 dagsverken (kan användas för expansion)
+            </div>
+
+            <h3>Tionde (Religiös skatt)</h3>
+            <p>Enligt Riddaren-reglerna ska 1/10 av bondeklassens produktion gå till kyrkan.</p>
+
+            <div class="warning-box">
+                <strong>Religiös konflikt!</strong><br>
+                <ul>
+                    <li><strong>Bergvik:</strong> Betalar tionde till Daak-kyrkan (fungerar normalt)</li>
+                    <li><strong>Frisänkan:</strong> Betalar tionde till präst Vidar (samorisk tro) - <em>Daak-kyrkan kan kräva "rättmätig" tionde!</em></li>
+                    <li><strong>Grensfortet:</strong> Daak-fundamentalister utan tempel - oroliga över "gudlösheten"</li>
+                </ul>
+            </div>
+
+            <h3>Avrad (Hyra för jord)</h3>
+            <p>Ofria bönder (landbor) betalar avrad för jorden de brukar. I Grens Baroneri betalas detta främst i naturaprodukter:</p>
+            <ul>
+                <li><strong>Bergvik:</strong> Timmer och jaktprodukter</li>
+                <li><strong>Frisänkan:</strong> Fisk och begränsat jordbruk</li>
+            </ul>
+        </section>
+
+        <div class="divider">&#10086; &#10086; &#10086;</div>
+
+        <!-- Militär -->
+        <section class="section" id="militar">
+            <h2>Militär Kapacitet</h2>
+
+            <h3>Befälsordning</h3>
+            <ul>
+                <li><strong>Gordon:</strong> Överbefälhavare (spelkaraktär)</li>
+                <li><strong>Arcadius:</strong> Strategisk rådgivare (spelkaraktär)</li>
+                <li><strong>Zentri:</strong> Magisk förstärkning (spelkaraktär)</li>
+                <li><strong>Jonna Sköldbärare:</strong> Garnisonsbefäl</li>
+                <li><strong>Tomas Järnhjälm:</strong> Försvarschef</li>
+            </ul>
+
+            <h3>Tillgängliga Styrkor</h3>
+            <table>
+                <tr>
+                    <th>Kategori</th>
+                    <th>Antal</th>
+                    <th>Kostnad</th>
+                    <th>Kommentar</th>
+                </tr>
+                <tr>
+                    <td>Värnplikt från byarna</td>
+                    <td>~20</td>
+                    <td>Gratis</td>
+                    <td>Endast vid hot, max 40 dagar/år</td>
+                </tr>
+                <tr>
+                    <td>Tränad kärna (Vargnäset)</td>
+                    <td>8</td>
+                    <td>6-8 Bas/år</td>
+                    <td>Delvis avlönade</td>
+                </tr>
+                <tr>
+                    <td>Bergvik-rekryter (potential)</td>
+                    <td>5-10</td>
+                    <td>3 Bas/soldat</td>
+                    <td>Olav Järnhand kan mobilisera</td>
+                </tr>
+                <tr style="font-weight: bold; background: #f0e6d6;">
+                    <td>Totalt vid mobilisering</td>
+                    <td>~35</td>
+                    <td>—</td>
+                    <td>Tillfälligt, max 1-2 månader</td>
+                </tr>
+            </table>
+
+            <h3>Militära Kostnader (Riddaren-regler)</h3>
+            <table>
+                <tr>
+                    <th>Truppslag</th>
+                    <th>Kostnad/år</th>
+                    <th>Kommentar</th>
+                </tr>
+                <tr>
+                    <td>Fotsoldat (professionell)</td>
+                    <td>3 Bas</td>
+                    <td>75% måste vara Bas</td>
+                </tr>
+                <tr>
+                    <td>Bågman/armborstman</td>
+                    <td>4 Bas</td>
+                    <td>Specialiserad</td>
+                </tr>
+                <tr>
+                    <td>Lätt ryttare</td>
+                    <td>8 Bas</td>
+                    <td>Inkl. häst och foder</td>
+                </tr>
+                <tr>
+                    <td>Riddare med väpnare + 5 hästar</td>
+                    <td>17 Bas + 3 Lyx</td>
+                    <td>Tung kavalleri</td>
+                </tr>
+            </table>
+
+            <div class="info-box">
+                <strong>Gordons vision:</strong> Ett legokompani på 20-30 soldater kräver 60-90 Bas/år.<br>
+                <strong>Nuvarande kapacitet:</strong> 5-15% av målet<br>
+                <strong>Väg framåt:</strong> Öka inkomster genom handel, gruvan, nya resurser
+            </div>
+
+            <h3>Värnplikt</h3>
+            <ul>
+                <li><strong>Bergvik:</strong> ~10 stridsdugliga (lojala, kommer snabbt)</li>
+                <li><strong>Frisänkan:</strong> ~10 stridsdugliga (motvilliga, kommer om hotet är tydligt)</li>
+                <li><strong>Flyktingar på fortet:</strong> 8 med stridserfarenhet</li>
+                <li><strong>Total värnplikt:</strong> ~28 personer vid akut hot</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>OBS - Dvärgar:</strong> Enligt Riddaren-reglerna är ALLA myndiga dvärgar värnpliktiga. Relevant för framtida samarbete med Klan Ghor!
+            </div>
+        </section>
+
+        <div class="divider">&#10086; &#10086; &#10086;</div>
+
+        <!-- Politik -->
+        <section class="section" id="politik">
+            <h2>Politiska Förhållanden</h2>
+
+            <h3>Interna Relationer</h3>
+
+            <div class="info-box">
+                <strong>Jarl Hagge av Vitterdal (Lensherre)</strong><br>
+                <strong>Status:</strong> Ratificerad jarl, formell länsherre<br>
+                <strong>Lojalitet:</strong> Hög (spelarna räddade hans liv)<br>
+                <strong>Stöd:</strong> Regelbundna leveranser av material och meddelanden<br>
+                <strong>Skuld:</strong> Spelarna är förskotterade 30-50 Bas i byggmaterial
+            </div>
+
+            <p><strong>Bergvik:</strong> Entusiastisk lojalitet. De ville ha en lord och fick en. Naturliga partners med fullt samarbete.</p>
+
+            <p><strong>Frisänkan:</strong> Motvillig men fungerande. Anti-feodala tendenser och religiös misstro mot magi. Potential: 5-8 Bas/år vid fullt samarbete.</p>
+
+            <h3>Externa Relationer</h3>
+
+            <p><strong>Cermiranska kronan:</strong> Accepterar förläningen formellt. Kungliga inspektörer kan återkomma.</p>
+
+            <div class="warning-box">
+                <strong>Arvorns Hammare:</strong> Intern splittring efter Corvus/Arcadius desertering. Kommendör Aldrich Järnkors har förklarat Arcadius "fallen". Oklart om orden kommer agera mot baroneriet.
+            </div>
+
+            <p><strong>St. Kiras Riddare:</strong> Nyfikna och respektfulla. Två riddare besökte i juni för att undersöka "magiska störningar". Möjliga allierade mot demonhotet.</p>
+        </section>
+
+        <div class="divider">&#10086; &#10086; &#10086;</div>
+
+        <!-- NPCs -->
+        <section class="section" id="npcs">
+            <h2>Viktiga NPCs</h2>
+
+            <h3>Grensfortet</h3>
+
+            <div class="npc-card">
+                <h4>Eira Holm</h4>
+                <p class="npc-meta">Människa | Administrativ ledare under spelarnas frånvaro</p>
+                <p>Trots trauma och självtvivel har Eira tagit ansvar för den dagliga förvaltningen. Hon organiserar arbetsfördelning, hanterar skatteuppbörd från Bergvik, och förhandlar med Frisänkan (med Xian-Lis hjälp). Magrare än förr, med djupare ögon, men ryggen fortfarande rak.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Xian-Li</h4>
+                <p class="npc-meta">Sung | Diplomat (dold magiker)</p>
+                <p><strong>Officiell roll:</strong> Diplomatisk rådgivare och filosof<br>
+                <strong>Dold identitet:</strong> Skicklig magiker (pneumotropi) och kampmunk<br>
+                <strong>Bidrag:</strong> Medling, organisation, diskret magisk hjälp<br>
+                Måste dölja sina förmågor för att inte skapa oro bland Daak-fundamentalisterna.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Adisa</h4>
+                <p class="npc-meta">Människa | Häxa</p>
+                <p><strong>Status:</strong> Informell rådgivare, bor för sig själv nära fortet<br>
+                <strong>Bidrag:</strong> Magiskt skydd mot Mithera, läkning, visdom<br>
+                <strong>Problem:</strong> Flyktingarnas rädsla, Frisänkans misstro<br>
+                Bevisade sin godhet genom att läka sjuka barn. Gradvis acceptans men fortfarande djup misstro.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Jonna Sköldbärare</h4>
+                <p class="npc-meta">Människa | Garnisonsbefäl | Flyktning från Vargnäset</p>
+                <p>Skötte försvaret under spelarnas frånvaro. Handen alltid på svärdfästet - en gammal vana som aldrig dör. En av de åtta tränade krigarna från Vargnäset.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Tomas Järnhjälm</h4>
+                <p class="npc-meta">Människa | Försvarschef | Flyktning från Vargnäset</p>
+                <p>Ansvarig för fortets fysiska försvar. Arbetar nära Jonna och koordinerar värnplikten från byarna.</p>
+            </div>
+
+            <h3>Bergvik</h3>
+
+            <div class="npc-card">
+                <h4>Torkel Skogsson</h4>
+                <p class="npc-meta">Människa | Byäldste, timmerhuggare</p>
+                <p>Bergviks ledare och den förste som välkomnade nyheterna om en ny lord. Praktisk man som förstår värdet av ordning och skydd.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Olav Järnhand</h4>
+                <p class="npc-meta">Människa | Jägarmästare, fd. soldat</p>
+                <p>Kan mobilisera 5-10 hårdföra bergsbor vid behov. Veteranens blick och soldatens instinkter - en värdefull resurs.</p>
+            </div>
+
+            <h3>Frisänkan</h3>
+
+            <div class="npc-card">
+                <h4>Vidar Solvandrar</h4>
+                <p class="npc-meta">Människa | Samorisk präst</p>
+                <p>Välkomnar alla med ett varmt leende. Hans samoriska tro står i kontrast till Daak-kyrkan - en potentiell konflikt om tiondet uppdagas.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Halinor</h4>
+                <p class="npc-meta">Människa | Byns äldste</p>
+                <p>Rak och ärlig med en blick som säger "Bevisa er värda först." Representerar Frisänkans anti-feodala traditioner men är pragmatisk nog att samarbeta.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Benne Tok</h4>
+                <p class="npc-meta">Människa | Vaktkapten</p>
+                <p>Paddliknande gubbe med potthjälm. Ansvarig för Frisänkans lokala säkerhet.</p>
+            </div>
+        </section>
+
+        <div class="divider">&#10086; &#10086; &#10086;</div>
+
+        <!-- Hot & Problem -->
+        <section class="section" id="hot">
+            <h2>Hot & Problem</h2>
+
+            <h3>Akuta Problem</h3>
+
+            <div class="warning-box">
+                <h4>1. Religiös Konflikt</h4>
+                <p><strong>Problem:</strong> Vargnäset-flyktingar vs Adisa/Zentri/Xian-Li<br>
+                <strong>Spänning:</strong> Extrema Daak-fundamentalister möter öppen magi<br>
+                <strong>Risk:</strong> Intern splittring, möjlig massexodus<br>
+                <strong>Lösning:</strong> Gradvis förståelse, diplomatisk hantering</p>
+            </div>
+
+            <div class="warning-box">
+                <h4>2. Administrativ Svaghet</h4>
+                <p><strong>Problem:</strong> Ingen professionell fogde eller skrivare<br>
+                <strong>Konsekvens:</strong> Juridik, kontrakt och ekonomi hanteras amatörmässigt<br>
+                <strong>Risk:</strong> Ekonomiska förluster, rättsliga tvister<br>
+                <strong>Lösning:</strong> Rekrytera eller träna kompetens</p>
+            </div>
+
+            <div class="warning-box">
+                <h4>3. Säkerhet mot Mithera</h4>
+                <p><strong>Problem:</strong> Ökande övernaturlig aktivitet<br>
+                <strong>Hot:</strong> Vintervargarna (dubbelt så stora som vanliga), Bärnsäl, märkliga fenomen<br>
+                <strong>Lösning:</strong> Magiskt skydd (Adisa/Zentri) + militär beredskap</p>
+            </div>
+
+            <h3>Märkliga Fenomen från Mithera</h3>
+            <ul>
+                <li><strong>Isjättens döttrar:</strong> 3-meter höga isfigurer som vandrar nätterna</li>
+                <li><strong>Träddansare:</strong> Träd som flyttar sig långsamt när ingen ser på</li>
+                <li><strong>Ekospöken:</strong> Ljud som upprepas timmar senare</li>
+                <li><strong>Vintervargarna:</strong> Dubbelt så stora som vanliga vargar</li>
+                <li><strong>Bärnsäl:</strong> Björnliknande med tentakler (dödade 2 Bergvik-jägare)</li>
+            </ul>
+        </section>
+
+        <div class="divider">&#10086; &#10086; &#10086;</div>
+
+        <!-- Kampanjhooks -->
+        <section class="section" id="hooks">
+            <h2>Kampanjhooks</h2>
+
+            <div class="hook-card">
+                <h4>1. Tiondetvisten</h4>
+                <p>Daak-kyrkan får nys om att Frisänkan betalar tionde till en samorisk präst. En kyrklig delegat anländer för att "korrigera" situationen. Hur hanterar herrarna konflikten utan att förlora antingen Frisänkans lojalitet eller kyrkans välvilja?</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>2. Gordons Legion</h4>
+                <p>Med ekonomin på plats börjar Gordon planera sitt legokompani. Men var hittar man 60-90 Bas/år? Gruvan? Handel? Eller finns det ett farligare alternativ - plundring av det som ligger i Mithera?</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>3. Arvornska Hämnden</h4>
+                <p>Kommendör Aldrich Järnkors har inte glömt Arcadius "svek". En riddare från Arvorns Hammare anländer med en "formell begäran" om att utlämna den fallne broderns utrustning. Men begäran luktar fälla...</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>4. Mitheras Hemlighet</h4>
+                <p>Jakten vid Mithera-gränsen ger ovanligt rika fångster - men också allt märkligare fenomen. En av jägarna återvänder med ett föremål från skogen. Något gammalt. Något som inte borde ha hittats.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>5. Fogdens Dilemma</h4>
+                <p>Baroneriet behöver desperat en fogde. Xian-Li föreslår en kandidat från Sung - kompetent men med egna agendor. Alternativt kan Eira tränas, men det tar tid. Eller finns det någon lokal som kan ta rollen?</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>6. Daak-kapellet</h4>
+                <p>Vargnäset-flyktingarna vill bygga ett Daak-kapell på fortet. Det skulle lugna deras religiösa oro men kan samtidigt skapa konflikt med Adisa, Zentri, och Frisänkans samoriska präst. Vem ska leda det? Och vad händer när Daak-kyrkan skickar en "officiell" präst?</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>EM-R002: Grens Baroneri</strong></p>
+            <p>EON Kampanjmaterial | Gravens Arv | Kapitel 5+</p>
+            <p>Baserat på modulerna Riddaren och Krigsherren</p>
+            <p><em>Senast uppdaterad: 2026-02-03</em></p>
+        </footer>
+    </div>
+</body>
+</html>

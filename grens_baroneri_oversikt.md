@@ -84,31 +84,103 @@
 
 ---
 
+## FEODALA FÖRPLIKTELSER (Riddaren-regler)
+
+### DAGSVERKEN
+Ofria bönder betalar genom arbete utöver avrad (hyra). Enligt Riddaren-reglerna:
+- **Normalbörda:** 80 dagsverken/år per ofri bonde
+- **Tyrannisk herre:** Upp till 120 dagsverken/år (ökar missnöje och upprorsrisk)
+
+**Grens Baroneris dagsverken:**
+| By | Ofria bönder | Dagsverken/år | Användning |
+|----|--------------|---------------|------------|
+| Frisänkan | 36 | 2 880 | Vägunderhåll, fiske, transporter |
+| Bergvik | 27 | 2 160 | Timmerhuggning, stenbrytning, byggnation |
+| **Totalt** | **63** | **5 040** | |
+
+**Praktisk användning:**
+- Fortifikationsarbete: ~1 000 dagsverken/år (murar, torn, palissader)
+- Vägunderhåll: ~500 dagsverken/år (vägen till Vitterdal)
+- Jordbruk på fortets mark: ~800 dagsverken/år
+- Timmer och ved: ~1 200 dagsverken/år
+- **Reserv:** ~1 500 dagsverken (kan användas för expansion)
+
+### TIONDE (Religiös skatt)
+Enligt Riddaren-reglerna ska 1/10 av bondeklassens produktion gå till kyrkan.
+
+**Problem i Grens Baroneri:**
+| By | Religion | Tionde till... | Status |
+|----|----------|----------------|--------|
+| Bergvik | Daak (traditionell) | Daak-kyrkan | Fungerar normalt |
+| Frisänkan | Samorisk tro | Präst Vidar (lokalt) | **Konflikt!** |
+| Grensfortet | Daak-fundamentalister | Inget tempel finns | **Olöst** |
+
+**Den religiösa konflikten:**
+1. **Frisänkan:** Betalar tionde till Vidar Solvandrar (samorisk präst), inte till Daak
+   - Daak-kyrkan kan kräva "rättmätig" tionde
+   - Risk för kyrklig intervention om detta uppdagas
+2. **Grensfortet:** Vargnäset-flyktingarna är extrema Daak-anhängare
+   - Inget tempel → ingen tiondeinsamling
+   - Flyktingarna oroliga över "gudlösheten"
+   - **Potential:** Bygga ett litet Daak-kapell kan lugna dem
+3. **Framtida problem:** Om baroneriet växer, kommer Daak-kyrkan kräva formell tiondeuppbörd
+
+### AVRAD (Hyra för jord)
+Ofria bönder (landbor) betalar avrad för jorden de brukar:
+- Beräknas på tunnland × jordkvalitet × beteskvalitet
+- I Grens Baroneri: Främst betalat i naturaprodukter (fisk, timmer, kött)
+- **Bergvik:** Timmer och jaktprodukter
+- **Frisänkan:** Fisk och begränsat jordbruk
+
+---
+
 ## EKONOMISK ÖVERSIKT (Riddaren-regler)
 
-### ÅRLIGA INKOMSTER
-| Källa | Belopp (Bas) |
-|-------|--------------|
-| Direkta skatter (Frisänkan + Bergvik) | 2,1 |
-| Bergvik resursexport (timmer + jakt) | 14-21 |
-| Grensfortet viltjakt | 8-12 |
-| Jargisk gruva (från vintern) | 13,9 |
-| **TOTAL ÅRSINKOMST** | **38-49 Bas** |
+### ENHETER
+*Enligt modulerna Riddaren och Krigsherren:*
+- **1 Bas** = 360 silver = försörjer en bonde i ett år (9 tunnor spannmål, en plog, etc.)
+- **1 Lyx** = 720 silver = statusvaror (smycken, fina kläder, kvalitetsvapen, sällsynta pälsar)
 
-*Obs: 1 Bas = 360 silver (försörjer en bonde i ett år)*
+### ÅRLIGA INKOMSTER
+| Källa | Bas | Lyx | Kommentar |
+|-------|-----|-----|-----------|
+| Direkta skatter (Frisänkan + Bergvik) | 2,1 | — | Motvilligt från Frisänkan |
+| Bergvik timmerexport | 8-12 | — | Huvudnäring |
+| Bergvik jaktprodukter | 4-6 | 1-2 | Pälsar och kött |
+| Grensfortet viltjakt (Mithera-gränsen) | 6-8 | 3-5 | Ovanligt rika bestånd, sällsynta pälsar |
+| Jargisk gruva (från vintern) | 13,9 | — | Första betalningen väntas |
+| **TOTAL ÅRSINKOMST** | **34-42 Bas** | **4-7 Lyx** | |
 
 ### ÅRLIGA UTGIFTER
-| Post | Belopp (Bas) |
-|------|--------------|
-| Hushållskostnad (herresäte) | 8-12 |
-| Grensfortet underhåll & mat | 6-8 |
-| Anställda och förvaltare | 4-6 |
-| Militär och försvar | 3-5 |
-| **TOTALA UTGIFTER** | **21-31 Bas** |
+| Post | Bas | Lyx | Kommentar |
+|------|-----|-----|-----------|
+| Vasallernas hushåll (5 pers × "Gott leverne") | 10 | 10 | 2 Bas + 2 Lyx per person |
+| Grensfortet underhåll & mat (22 pers) | 8-10 | — | Flyktingar + personal |
+| Anställda och förvaltare | 3-4 | 1 | Eira, Jonna, specialister |
+| Nuvarande garnison (8 tränade, värnplikt) | 6-8 | — | Delvis värnplikt, delvis avlönade |
+| **TOTALA UTGIFTER** | **27-32 Bas** | **11 Lyx** |
 
 ### EKONOMISKT RESULTAT
-**Netto-överskott:** 17-18 Bas/år  
-**Status:** Stabilt och välmående baroneri
+| | Bas | Lyx |
+|---|-----|-----|
+| Inkomster | 34-42 | 4-7 |
+| Utgifter | 27-32 | 11 |
+| **Netto** | **+2 till +15** | **-4 till -7** |
+
+**Status:** Baroneriet har ett **måttligt Bas-överskott** men ett **Lyx-underskott**.
+
+**Konsekvenser av Lyx-underskottet:**
+- Vasallerna kan inte upprätthålla "Gott leverne" utan att sälja Bas eller silver
+- Alternativ: Sänka levnadsstandarden till "Enkelt leverne" (1 Bas/person) sparar 5 Bas + 10 Lyx
+- Alternativ: Etablera handelsvägar för att sälja Bas och köpa Lyx
+
+### MARKNADER
+| Marknad | Köp Bas | Sälj Bas | Köp Lyx | Sälj Lyx | Kapacitet |
+|---------|---------|----------|---------|----------|-----------|
+| Lokal (byarna) | 360s | 270s | Sällsynt | Sällsynt | Begränsad |
+| Provinsiell (Vitterdal) | 540s | 360s | 720s | 540s | ~40 Bas/20 Lyx per år |
+
+**Handelsmöjlighet:** Sälja överskotts-Bas i Vitterdal (360s) och köpa Lyx (720s) för att balansera ekonomin.
 
 ---
 
@@ -189,20 +261,52 @@ Under spelarnas frånvaro har Eira Holm, trots sin trauma och självtvivel, tagi
 - **Tomas Järnhjälm:** Försvarschef
 
 ### TILLGÄNGLIGA STYRKOR
-- **Värnplikt från byarna:** ~20 stridsdugliga män
-- **Tränad kärna:** 8 personer från Vargnäset med stridserfarenhet
-- **Potential från Bergvik:** Olav Järnhand kan rekrytera hårdföra bergsbor
+| Kategori | Antal | Kostnad | Kommentar |
+|----------|-------|---------|-----------|
+| Värnplikt från byarna | ~20 | Gratis | Endast vid hot, max 40 dagar/år |
+| Tränad kärna (Vargnäset) | 8 | 6-8 Bas/år | Delvis avlönade, delvis självförsörjande |
+| Bergvik-rekryter (potential) | 5-10 | 3 Bas/soldat | Olav Järnhand kan mobilisera |
+| **Totalt permanent** | **8** | **6-8 Bas** | |
+| **Totalt vid mobilisering** | **~35** | — | Tillfälligt, max 1-2 månader |
+
+### MILITÄRA KOSTNADER (Riddaren-regler)
+| Truppslag | Kostnad/år | Kommentar |
+|-----------|-----------|-----------|
+| Fotsoldat (professionell) | 3 Bas | 75% måste vara Bas (mat, utrustning) |
+| Bågman/armborstman | 4 Bas | Specialiserad |
+| Lätt ryttare | 8 Bas | Inkl. häst och foder |
+| Riddare med väpnare + 5 hästar | 17 Bas + 3 Lyx | Tung kavalleri |
 
 ### BEFÄSTNINGAR
 - **Grensfortet:** Renoverat, funktionsdugliga murar och torn
 - **Strategiskt läge:** Kontrollerar bergspassen mot Mithera
 - **Svaghet:** Fortfarande begränsad garnison
 
-### LEGOKOMPANI-POTENTIAL
-Med 17-18 Bas/år överskott kan baroneriet finansiera:
-- 20-30 professionella soldater
-- Grundläggande utrustning och träning
-- Första steget mot Gordons vision
+### LEGOKOMPANI-POTENTIAL (Korrigerad)
+Med **+2 till +15 Bas/år** överskott (beroende på år) kan baroneriet finansiera:
+
+| Överskott | Fotsoldater | Alternativ |
+|-----------|-------------|------------|
+| +5 Bas | 1-2 st | Behåll nuvarande, spara till expansion |
+| +10 Bas | 3 st | Eller 1 lätt ryttare + 1 fotsoldat |
+| +15 Bas | 5 st | Realistiskt maxtak för nu |
+
+**Gordons vision:** Ett legokompani på 20-30 soldater kräver **60-90 Bas/år**.
+- **Nuvarande kapacitet:** 5-15% av målet
+- **Väg framåt:** Öka inkomster genom handel, gruvan, nya resurser
+- **Alternativ:** Värnpliktsträning + liten professionell kärna
+
+### VÄRNPLIKT (Riddaren-regler)
+Enligt cermiranska traditioner:
+- Jarlar skyldiga ställa upp riddare till överjarlens förfogande
+- Byar bidrar med värnpliktiga vid hot (inte permanent)
+- **Dvärgar:** ALLA myndiga dvärgar är värnpliktiga (relevant för Klan Ghor-kontakten!)
+
+**Grens Baroneris värnplikt:**
+- Bergvik: ~10 stridsdugliga (lojala, kommer snabbt)
+- Frisänkan: ~10 stridsdugliga (motvilliga, kommer om hotet är tydligt)
+- Flyktingar på fortet: 8 med stridserfarenhet
+- **Total värnplikt:** ~28 personer vid akut hot
 
 ---
 
