@@ -280,11 +280,14 @@ Grens Baroneri ska kännas som en verklig plats där människor lever, arbetar, 
 - Handlar pälsar mot metall
 
 ### Deserteuren
-✅ **GODKÄND men ändrad:**
-- ~~Arvorns Hammare~~ → **Drunoks gränsvakt**
-- Deserterade för tre år sedan
+✅ **GODKÄND:**
+- ~~Arvorns Hammare~~ → **Nattgardet (Damarien)**
+- "Mörkerhundarna" - storfurste Thamas Vitfjäders fruktade elitstyrka
+- Deserterade för tre år sedan efter att ha vägrat delta i "storfurstens vinskörd" (brutala utrensningar)
+- **EXTREMT FARLIGT:** Om han hittas kan hans familj avrättas ("avrättning i tredje led")
+- Ledaren Marok Svärdshand är *hemligt en helmgast* (vandöd)
 - Gömmer sig i skogarna, lever på jakt och stöld
-- Fortfarande intressant hook, men utan koppling till Arcadius orden
+- **Koppling:** Gordons bror Ethan tjänstgör i Damarien - potential för framtida konflikt
 
 ---
 
