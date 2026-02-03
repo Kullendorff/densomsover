@@ -74,7 +74,7 @@ Lady Soffia har under årtionden byggt ett informellt nätverk av informanter - 
 ### De som vet
 Endast två personer känner till nätverkets existens:
 - **Helga Järnoxen:** Soffias barndomsvän, värdshusvärd i Mitrahus. De växte upp tillsammans innan Soffia gifte in sig i adeln.
-- **Syster Mirelle:** Vandringsprästinna för Daak. Soffia räddade henne för 20 år sedan.
+- **Syster Mirelle:** Vandrande prästinna för Daak. Soffia räddade henne för 20 år sedan.
 
 ### Hagges misstankar
 Hagge misstänker att hans mor har "ovanligt bra intuition" - men han har aldrig pressat frågan. Han vet bättre än att underskatta henne.

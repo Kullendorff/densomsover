@@ -2085,12 +2085,12 @@ var wikiData = {
       "namn": "Syster Mirelle",
       "bild": null,
       "ras": "Människa",
-      "titel": "Vandringsprästinna (Daak)",
+      "titel": "Vandrande prästinna (Daak)",
       "status": "levande",
       "plats": "Vandrande (Cermira, Drunok)",
       "fraktion": "Daakkyrkan",
       "kapitel": "Kapitel 6",
-      "beskrivning": "# SYSTER MIRELLE\n\n**Vandringsprästinna och del av Soffias nätverk**\n\n## Bakgrund\n\nFör 20 år sedan var hon en ung änka med tre barn och skulder till fel människor. Lady Soffia betalade skulderna. Barnen fick utbildning. Mirelle fann sin kallelse till Daak - och sin tacksamhetsskuld till Soffia.\n\n## Roll\n\nReser mellan byar i Cermira och delar av Drunok för att predika, viga, och ge sista smörjelsen. Välkommen överallt - ingen misstänker en prästinna.\n\n## Hemlighet\n\nDel av Soffias informationsnätverk. Döende människor erkänner saker på dödsbädden. Biktande syndare avslöjar hemligheter. Mirelle samlar allt - men berättar aldrig allt. Vissa hemligheter är för heliga.\n\n## Relation till Soffia\n\nSkulden är betald tusen gånger om, men Mirelle fortsätter av lojalitet. Soffia respekterar hennes omdöme om vad som är viktigt att dela.\n\n## Säkerhet\n\nNär Mirelle kommer till Mitrahus stannar hon på Järnoxen. Hon och Helga utbyter information innan Soffia får höra - separation för säkerhet."
+      "beskrivning": "# SYSTER MIRELLE\n\n**Vandrande prästinna och del av Soffias nätverk**\n\n## Bakgrund\n\nFör 20 år sedan var hon en ung änka med tre barn och skulder till fel människor. Lady Soffia betalade skulderna. Barnen fick utbildning. Mirelle fann sin kallelse till Daak - och sin tacksamhetsskuld till Soffia.\n\n## Roll\n\nReser mellan byar i Cermira och delar av Drunok för att predika, viga, och ge sista smörjelsen. Välkommen överallt - ingen misstänker en prästinna.\n\n## Hemlighet\n\nDel av Soffias informationsnätverk. Döende människor erkänner saker på dödsbädden. Biktande syndare avslöjar hemligheter. Mirelle samlar allt - men berättar aldrig allt. Vissa hemligheter är för heliga.\n\n## Relation till Soffia\n\nSkulden är betald tusen gånger om, men Mirelle fortsätter av lojalitet. Soffia respekterar hennes omdöme om vad som är viktigt att dela.\n\n## Säkerhet\n\nNär Mirelle kommer till Mitrahus stannar hon på Järnoxen. Hon och Helga utbyter information innan Soffia får höra - separation för säkerhet."
     },
     {
       "namn": "Syster Moira",
