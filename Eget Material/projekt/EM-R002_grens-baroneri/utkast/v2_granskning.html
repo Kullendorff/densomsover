@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grens Baroneri - Granskning</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #f4e8d8;
+            color: #3d2817;
+            font-family: 'Lora', serif;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .page-container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 3rem;
+            background: #faf6f0;
+            box-shadow: 0 0 40px rgba(61, 40, 23, 0.15);
+            border: 1px solid #d4c4b0;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px double #8b6f47;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #6d5d4b;
+        }
+
+        .review-notice {
+            background: #fff3cd;
+            border: 2px solid #d4a024;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .review-notice strong {
+            color: #8b6914;
+            font-size: 1.1rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: #f0e6d6;
+            border: 1px solid #d4c4b0;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1rem;
+        }
+
+        nav a {
+            color: #704214;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        nav a:hover {
+            background: #e8dcc8;
+            color: #2c1810;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 3rem;
+            padding-top: 1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8b6f47;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #3d2817;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        h4 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #704214;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p { margin-bottom: 0.8rem; }
+
+        /* Status badges */
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-left: 0.5rem;
+        }
+
+        .badge-confirmed {
+            background: #28a745;
+            color: white;
+        }
+
+        .badge-review {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .badge-question {
+            background: #dc3545;
+            color: white;
+        }
+
+        .badge-new {
+            background: #17a2b8;
+            color: white;
+        }
+
+        /* Info boxes */
+        .info-box {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .review-box {
+            background: #fff8e6;
+            border: 2px dashed #d4a024;
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .question-box {
+            background: #ffe6e6;
+            border: 2px solid #dc3545;
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        /* NPC Cards */
+        .npc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .npc-card {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .npc-card.review {
+            background: #fff8e6;
+            border: 2px dashed #d4a024;
+        }
+
+        .npc-card h4 {
+            margin: 0 0 0.5rem 0;
+            color: #2c1810;
+        }
+
+        .npc-card .meta {
+            font-size: 0.85rem;
+            color: #6d5d4b;
+            margin-bottom: 0.5rem;
+        }
+
+        .npc-card .description {
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* Location cards */
+        .location-card {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
+            padding: 1rem;
+            margin: 0.8rem 0;
+        }
+
+        .location-card.review {
+            background: #fff8e6;
+            border: 2px dashed #d4a024;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 0.6rem;
+            border: 1px solid #d4c4b0;
+            text-align: left;
+        }
+
+        th {
+            background: #f0e6d6;
+            font-weight: 600;
+            color: #704214;
+        }
+
+        tr:nth-child(even) {
+            background: #faf6f0;
+        }
+
+        /* Atmosphere quote */
+        .atmosphere {
+            background: #f0e6d6;
+            border-left: 4px solid #8b6f47;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #5d4d3b;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin: 0.4rem 0;
+        }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .checklist li {
+            padding: 0.5rem;
+            margin: 0.3rem 0;
+            background: #fff8e6;
+            border-radius: 4px;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .checklist li::before {
+            content: "☐";
+            font-size: 1.2rem;
+            color: #d4a024;
+        }
+
+        /* Summary stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .stat-box {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .stat-box .number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #704214;
+        }
+
+        .stat-box .label {
+            font-size: 0.85rem;
+            color: #6d5d4b;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 2px solid #d4c4b0;
+            text-align: center;
+            color: #8b6f47;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1>Grens Baroneri</h1>
+            <p class="subtitle">Förläning vid gränsen till det okända</p>
+        </header>
+
+        <div class="review-notice">
+            <strong>📋 GRANSKNINGSVERSION</strong><br>
+            Gå igenom materialet och markera vad som ska behållas, ändras eller tas bort.<br>
+            <span class="badge badge-confirmed">BEKRÄFTAT</span> = Från kampanjen
+            <span class="badge badge-review">GRANSKAS</span> = Förslag att godkänna
+            <span class="badge badge-question">FRÅGA</span> = Behöver beslut
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#oversikt">Översikt</a></li>
+                <li><a href="#bosattningar">Bosättningar</a></li>
+                <li><a href="#bekraftade-npcs">Bekräftade NPCs</a></li>
+                <li><a href="#forslag-npcs">Förslag: NPCs</a></li>
+                <li><a href="#solo-invånare">Solo-invånare</a></li>
+                <li><a href="#platser">Platser</a></li>
+                <li><a href="#ekonomi">Ekonomi</a></li>
+                <li><a href="#militar">Militär</a></li>
+                <li><a href="#rykten">Rykten & Legender</a></li>
+                <li><a href="#fragor">Frågor till Johan</a></li>
+            </ul>
+        </nav>
+
+        <!-- ÖVERSIKT -->
+        <section id="oversikt" class="section">
+            <h2>Översikt <span class="badge badge-confirmed">BEKRÄFTAT</span></h2>
+
+            <div class="info-box">
+                <strong>Förläningstyp:</strong> Litet Baroneri (Län på tjänst)<br>
+                <strong>Lensherre:</strong> Jarl Hagge av Vitterdal<br>
+                <strong>Vasaller:</strong> Gordon, Umnatak, Kazrik, Zentri, Arcadius<br>
+                <strong>Läge:</strong> Bergsterräng vid gränsen mellan Cermira och Mithera<br>
+                <strong>Status:</strong> Juli/Augusti, efter spelarnas återkomst från Skugglandet
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="number">~120</div>
+                    <div class="label">Total befolkning</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">3</div>
+                    <div class="label">Bosättningar</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">+2-15</div>
+                    <div class="label">Bas/år överskott</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">28</div>
+                    <div class="label">Värnplikt vid hot</div>
+                </div>
+            </div>
+
+            <div class="atmosphere">
+                <strong>Ton:</strong> Gritty realism med underton av det övernaturliga. Folk kämpar för att överleva, men märkliga saker händer i skogen. Grens Baroneri ska kännas som en verklig plats där människor lever, arbetar, älskar och dör - inte bara en kuliss.
+            </div>
+
+            <h3>Cermira/Mithera-gränsen <span class="badge badge-new">NOTEBOOKLM</span></h3>
+            <p><strong>Geografi:</strong> Området ligger i den kuperade ängsmarken vid gränsen. Cermira är tempererat med kalla, snörika vintrar. Mithera är demonhärjat och har <em>kryotropi</em> (köld-magi) som dominerar - därav den onaturliga kylan som biter genom allt.</p>
+            <p><strong>De förändrade:</strong> Sedan Ramdor 2601 e.D. finns "De förändrade" - människor infekterade av ett artefakt. De vandrar genom Mithera med okänd agenda. Viltdjuren undviker området - ett tecken på övernaturlig närvaro.</p>
+            <p><strong>Ruiner:</strong> Colonanska, Danarthska och Ramorska ruiner finns i regionen. Alla är farliga - hemsökta av vålnader, demoner och monster. Dain nämnde att Grensfortet är byggt på "dvärggrund".</p>
+        </section>
+
+        <!-- BOSÄTTNINGAR -->
+        <section id="bosattningar" class="section">
+            <h2>Bosättningar</h2>
+
+            <h3>Grensfortet <span class="badge badge-confirmed">BEKRÄFTAT</span></h3>
+            <div class="info-box">
+                <strong>Typ:</strong> Herresäte, nyligen renoverat<br>
+                <strong>Befolkning:</strong> 22 permanenta invånare<br>
+                <strong>Läge:</strong> Vid gränsen mot Mithera/Skugglandet
+            </div>
+            <div class="atmosphere">
+                Portarna stod öppna och väntade på dem. Vilt undviker området - alla spår går runt fortet i stor båge som ett osynligt stängsel. Arcadius hund morrade värre än vid häxstugan. Dain sa: "Dvärggrund. Människodrömmar. Vackert. Komplicerat. Kommer falla."
+            </div>
+            <p><strong>Ledning:</strong> Eira Holm (administrativ), Xian-Li (organisatoriskt stöd), Skorda Bergsdotter (praktiskt stöd), Jonna Sköldbärare (militärt befäl)</p>
+            <p><strong>Atmosfär:</strong> Onaturlig kyla från öster, kapelltorn utan symbol, ekande tomhet i matsalen, mystiska fenomen (isjättens döttrar, träddansare, ekospöken)</p>
+
+            <h3>Bergvik <span class="badge badge-confirmed">BEKRÄFTAT</span> <span class="badge badge-question">BEFOLKNING?</span></h3>
+            <div class="info-box">
+                <strong>Typ:</strong> Jordbruksby och stenbrytarsamhälle<br>
+                <strong>Befolkning:</strong> 35-40 invånare <em>(eller 80-100 enligt Vitterdal-dokumentet?)</em><br>
+                <strong>Karaktär:</strong> Lojala, traditionellt feodala, "Vi behövde en lord"
+            </div>
+            <div class="atmosphere">
+                Ljudet av yxor ekar genom dalen. Sågen skriker när timret kapas. Lukten av färskt sågspån. Kolmilan ryker i horisonten. Oxar drar timmervagnar. När evakueringskaravanen anlände möttes de med varm mat och stora leenden.
+            </div>
+            <p><strong>Näringar:</strong> Timmer (primär), jakt, begränsat jordbruk</p>
+            <p><strong>Religion:</strong> Daak (traditionell)</p>
+            <p><strong>Ekonomiskt bidrag:</strong> 16-23 Bas/år</p>
+
+            <h3>Frisänkan <span class="badge badge-confirmed">BEKRÄFTAT</span> <span class="badge badge-question">BEFOLKNING?</span></h3>
+            <div class="info-box">
+                <strong>Typ:</strong> Fiskeby med samoriskt tempel<br>
+                <strong>Befolkning:</strong> 50 invånare <em>(eller 60-80 enligt Vitterdal-dokumentet?)</em><br>
+                <strong>Karaktär:</strong> Anti-feodala, självständiga, "Vi klarar oss själva"
+            </div>
+            <div class="atmosphere">
+                Morgondimman rullar in från sjön. Lukten av rökta pälsar. Vidars samoriska psalmer hörs i gryningen. Barn leker på bryggan. Gamla nät hänger och torkar. "Gordon. Vi minns. Både bra och dåligt." - Benne Tok
+            </div>
+            <p><strong>Näringar:</strong> Fiske (primär), begränsat jordbruk</p>
+            <p><strong>Religion:</strong> Samorisk tro (Präst Vidar) - <strong>kätteri i Jargien!</strong></p>
+            <p><strong>Ekonomiskt bidrag:</strong> 2-8 Bas/år (motvilliga)</p>
+
+            <div class="question-box">
+                <strong>⚠️ KONFLIKT: Befolkningssiffror</strong><br>
+                Grens-dokumentet säger Frisänkan 50, Bergvik 35-40.<br>
+                Vitterdal-dokumentet säger Frisänkan 60-80, Bergvik 80-100.<br>
+                <strong>Vilket stämmer?</strong>
+            </div>
+        </section>
+
+        <!-- BEKRÄFTADE NPCs -->
+        <section id="bekraftade-npcs" class="section">
+            <h2>Bekräftade NPCs <span class="badge badge-confirmed">FRÅN KAMPANJEN</span></h2>
+
+            <h3>Grensfortet (Vargnäset-flyktingar)</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Eira Holm</h4>
+                    <div class="meta">55 år | Byäldste, huvudledare</div>
+                    <div class="description">Tar ansvar trots trauma och självtvivel. Organiserade arbetsfördelning under spelarnas frånvaro.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Skorda Bergsdotter</h4>
+                    <div class="meta">45 år | Jägare, praktiskt stöd</div>
+                    <div class="description">Berättarröst i Kapitel 8.5. Cynisk överlevare, ensamvarg, realist. "Det som folk inte förstår är att överlevnad inte handlar om styrka."</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Tomas Järnhjälm</h4>
+                    <div class="meta">42 år | F.d. infanterist, försvarschef</div>
+                    <div class="description">Ansvarar för fortets försvar.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Jonna Sköldbärare</h4>
+                    <div class="meta">38 år | F.d. gränsvakt, garnisonsbefäl</div>
+                    <div class="description">Skötte försvaret under frånvaron.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Jossan Fallvind</h4>
+                    <div class="meta">28 år | Huvudjägare</div>
+                    <div class="description">Hat/respekt-relation med gruppen.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Morfar Ulf</h4>
+                    <div class="meta">68 år | F.d. byvise</div>
+                    <div class="description">Förvirrad men har lucida stunder med viktig visdom.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Ragnar</h4>
+                    <div class="meta">16 år | Ungdom</div>
+                    <div class="description">Hjälteförälskad i gruppen, särskilt Thrakka.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Sten Knotbindare</h4>
+                    <div class="meta">18 år | F.d. däckshand</div>
+                    <div class="description">Myterist från Drunok - dödsstraff om fångad!</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Dain Stenyxa</h4>
+                    <div class="meta">Dvärg | Byggmästare (tillfälligt)</div>
+                    <div class="description">Observatör från Vitterdal. "Äldre än dvärgar. Hon är inte vad hon verkar." (om Adisa)</div>
+                </div>
+            </div>
+
+            <h4>Övriga bekräftade flyktingar:</h4>
+            <ul>
+                <li>Anna & Olof Stenmark (26 & 29) - traumatiserad mor + timmerman</li>
+                <li>Gustav Stenmark (4) - enda överlevande barnet</li>
+                <li>Magnus & Elsa Hällström (37 & 34)</li>
+                <li>Klas Hällström (7) - modig pojke</li>
+                <li>Gumman Ragnhild (73) - f.d. barnmorska</li>
+                <li>Tarek Halvhand (36) - jägare, saknar två fingrar</li>
+                <li>Halvdan Kolare (50) - koltillverkare, våldsam</li>
+                <li>Stina Vävare (35) - textilarbetare</li>
+                <li>Krake Fiskare (41) - vattenexpert</li>
+            </ul>
+
+            <h3>Speciella personer</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Xian-Li</h4>
+                    <div class="meta">Sung-diplomat</div>
+                    <div class="description">Officiell roll: diplomatisk rådgivare. <strong>Dold:</strong> Skicklig magiker (pneumotropi) och kampmunk. Följde Thrakka till Grensfortet.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Adisa</h4>
+                    <div class="meta">Häxa | Ålder okänd</div>
+                    <div class="description">"Äldre än dvärgar." Bor i stugan nära fortet. Återkom i juni, hjälper trots flyktingarnas rädsla. Läker sjuka, ger magiskt skydd.</div>
+                </div>
+            </div>
+
+            <h3>Bergvik</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Torkel Skogsson</h4>
+                    <div class="meta">Byäldste, timmerhuggare</div>
+                    <div class="description">Mötte karavanen med "stort leende, desperat eller falskt".</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Björn Hammarsmed</h4>
+                    <div class="meta">Ung smed | Nu på Grensfortet</div>
+                    <div class="description">Ärrade händer. Anslöt under evakueringen.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Lars & Erik Bergsson</h4>
+                    <div class="meta">Stenbrytare (bröder) | Nu på Grensfortet</div>
+                    <div class="description">Lars "pratar om stenar som vänner".</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Olav Murkross</h4>
+                    <div class="meta">Gammal soldat</div>
+                    <div class="description">Igenkände Arcadius som soldatkamrat.</div>
+                </div>
+            </div>
+
+            <h3>Frisänkan</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Halinor</h4>
+                    <div class="meta">Byäldste</div>
+                    <div class="description">"Bevisa er värda först." Pragmatisk, tuff, skeptisk.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Benne Tok</h4>
+                    <div class="meta">Vaktkapten</div>
+                    <div class="description">Paddliknande gubbe med potthjälm och grumligt öga. Minns Gordons förflutna.</div>
+                </div>
+                <div class="npc-card">
+                    <h4>Vidar Solvandrar</h4>
+                    <div class="meta">Samorisk präst</div>
+                    <div class="description">Byns andlige ledare. Har tempel i byn - dödsstraff i Jargien!</div>
+                </div>
+            </div>
+
+            <h4>Övriga från Vitterdal-dokumentet (behöver bekräftas):</h4>
+            <div class="review-box">
+                <ul>
+                    <li><strong>Mera Flint</strong> (Jägarmästare, Frisänkan)</li>
+                    <li><strong>Anya Väv</strong> (Textilansvarig, Frisänkan)</li>
+                    <li><strong>Rollo av Flod</strong> (Fiskare, Frisänkan)</li>
+                    <li><strong>Astrid Björnsdotter</strong> (Såg-mästare, Bergvik)</li>
+                    <li><strong>Olav Järnhand</strong> (Jägarmästare, f.d. soldat, Bergvik)</li>
+                    <li><strong>Ragna Klokhand</strong> (Bykvinna/läkare, Bergvik)</li>
+                </ul>
+                <strong>⚠️ Är dessa kanoniska eller tillagda för att fylla ut?</strong>
+            </div>
+        </section>
+
+        <!-- FÖRSLAG: NYA NPCs -->
+        <section id="forslag-npcs" class="section">
+            <h2>Förslag: Nya Bybor <span class="badge badge-review">GRANSKAS</span></h2>
+
+            <h3>Frisänkan - Föreslagna NPCs</h3>
+
+            <h4>Fiskare-familjer</h4>
+            <div class="npc-grid">
+                <div class="npc-card review">
+                    <h4>Gamle Sigurd <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">70+ | Äldste fiskaren</div>
+                    <div class="description">Minns "förr i tiden" när Grensfortet var bemannat. Berättar historier om vad som hände där. Respekterad av alla.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Tilda & Orm Sjöberg <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">40-tal, gifta | Driver rökeriet</div>
+                    <div class="description">Orm är tystlåten, Tilda pratar för två. Tre vuxna barn som alla fiskar.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Enöga Klas <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">50-tal | Navigator</div>
+                    <div class="description">Förlorade ett öga i en storm. Bästa navigatören. Har sett saker ute på sjön som han vägrar prata om.</div>
+                </div>
+            </div>
+
+            <h4>Hantverkare</h4>
+            <div class="npc-grid">
+                <div class="npc-card review">
+                    <h4>Neta Båtbyggare <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">45 år | Båtbyggare</div>
+                    <div class="description">Enda som kan bygga och reparera båtar. Envis perfektionist. Hennes godkännande krävs för alla nya båtar.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Kopparsansen <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">60-tal | Reparatör</div>
+                    <div class="description">Riktigt namn okänt. Lagar allt av metall. Ryktas vara förrymd från Jargien. Frågar man får man inget svar.</div>
+                </div>
+            </div>
+
+            <h4>Speciella</h4>
+            <div class="npc-grid">
+                <div class="npc-card review">
+                    <h4>Stum-Maja <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">20-tal | Dykare</div>
+                    <div class="description">Född stum, men bästa dykaren. Kan stanna under vatten längre än normalt. Kommunicerar med tecken. Vet saker om sjöbotten som ingen annan.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Gransen <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">40-tal | "Halvgalen"</div>
+                    <div class="description">Bor i utkanten. Påstår sig kunna "prata med fiskarna". Folk skrattar, men hans fiskelycka är oförklarligt god.</div>
+                </div>
+            </div>
+
+            <h3>Bergvik - Föreslagna NPCs</h3>
+
+            <h4>Timmerhuggare</h4>
+            <div class="npc-grid">
+                <div class="npc-card review">
+                    <h4>Bror & Stig Tallgren <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">30-tal | Rivaliserande tvillingar</div>
+                    <div class="description">Tävlar om allt - vem fäller flest träd, vem dricker mest, vem vinner Astrid Björnsdotters hjärta.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Änke-Margit <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">50-tal | Timmervagnsförare</div>
+                    <div class="description">Mannen dog i skogsolycka. Har fortsatt driva hans vagn ensam i tio år. Starkare än de flesta män.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Ull Björnsson <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">60-tal | Veteran</div>
+                    <div class="description">Förlorade tre fingrar i en såg. Kan inte hugga längre men lär ut tekniker till de unga. Bitvis bitter, bitvis vis.</div>
+                </div>
+            </div>
+
+            <h4>Jägare</h4>
+            <div class="npc-grid">
+                <div class="npc-card review">
+                    <h4>Varg-Mika <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">40-tal | Spårare</div>
+                    <div class="description">Kallas så för att hon en gång dödade en varg med bara händerna. Sanningen är mer komplicerad. Bästa spåraren efter Olav Järnhand.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Lille Per <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">30-tal | Jägare</div>
+                    <div class="description">Ironiskt namn - stor som ett hus. Snäll jätte. Bär hem hela älgar ensam. Rädd för mörkret.</div>
+                </div>
+            </div>
+
+            <h4>Speciella</h4>
+            <div class="npc-grid">
+                <div class="npc-card review">
+                    <h4>Kolaren Svart-Erik <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">50-tal | Kolmilan</div>
+                    <div class="description">Bor i kolmilan utanför byn. Kommer bara in för att sälja kol och köpa öl. Folk viskar att han sett De förändrade på nära håll.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Trollbinderskan Rut <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">70-tal | Folkhealer</div>
+                    <div class="description">Inte häxa som Adisa, men kan "binda bort" småkrämpor. Accepterad av Daak som "folklig tradition". Har öga på Grensfortets märkligheter.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLO-INVÅNARE -->
+        <section id="solo-invånare" class="section">
+            <h2>Förslag: Solo-invånare <span class="badge badge-review">GRANSKAS</span></h2>
+            <p>Ensamma bosättare i trakten - jägare, eremiter, udda existenser.</p>
+
+            <h3>Jägare och skogsfolk</h3>
+            <div class="npc-grid">
+                <div class="npc-card review">
+                    <h4>Grimme Jansen <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">50-tal | Stuga 2 timmar från Bergvik</div>
+                    <div class="description">Ensam jägare. Säljer pälsar och kött. Pratar aldrig om varför han lämnade Drunok för 20 år sedan. Har tatuering på armen som han alltid döljer.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Systkonen Märta & Sten <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">60-tal | Mellan Frisänkan och Bergvik</div>
+                    <div class="description">Syskon som bor tillsammans. Aldrig gift, aldrig lämnat varandra. Samlar örter och svamp. Adisa besöker dem ibland.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Trädklättraren / "Ekansen" <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">Ålder okänd | Koja i en jätteek</div>
+                    <div class="description">Ingen vet vad han heter eller var han kommer ifrån. Klättrar ner för att byta kött mot verktyg. Pratar aldrig.</div>
+                </div>
+            </div>
+
+            <h3>Eremiter och udda existenser</h3>
+            <div class="npc-grid">
+                <div class="npc-card review">
+                    <h4>Broder Tomas <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">40-tal | F.d. Daak-präst</div>
+                    <div class="description">"Förlorade sin tro" och lever nu som eremit i en grotta. Byfolk respekterar honom. Kan läsa och skriva - ovärderligt!</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Gråben <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">70+? | TIRAK (!)</div>
+                    <div class="description">Gammal tirak förvisad från sin stam för något han vägrar prata om. Bor i berget nära Grensfortet. Handlar pälsar mot metall. Gruppen har troligen inte mött honom.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Dimgumman <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">Ålder okänd | Nära Mithera-gränsen</div>
+                    <div class="description">Mer rykte än person. Folk har sett rök från hennes stuga men ingen har hittat den. Adisa vet troligen mer.</div>
+                </div>
+            </div>
+
+            <h3>Före detta soldater/äventyrare</h3>
+            <div class="npc-grid">
+                <div class="npc-card review">
+                    <h4>Enarmade Gunnar <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">60-tal | Vid sjön nära Frisänkan</div>
+                    <div class="description">Förlorade armen i ett krig för länge sedan. Fiskar med ena handen. Berättar krigshistorier för barn som vågar besöka.</div>
+                </div>
+                <div class="npc-card review">
+                    <h4>Deserteuren <span class="badge badge-review">NY</span></h4>
+                    <div class="meta">30-tal | Gömmer sig i skogarna</div>
+                    <div class="description">Deserterade från <strong>Arvorns Hammare</strong> för tre år sedan. Lever på jakt och stöld. Vet inte att Arcadius också är "fallen". Intressant potentiellt möte!</div>
+                </div>
+            </div>
+
+            <div class="question-box">
+                <strong>⚠️ FRÅGOR:</strong><br>
+                1. <strong>Gråben (tirak)</strong> - Passar det med en ensam tirak i området?<br>
+                2. <strong>Deserteuren</strong> - Passar det med en Arvorns Hammare-avhoppare? Hur reagerar Arcadius?
+            </div>
+        </section>
+
+        <!-- PLATSER -->
+        <section id="platser" class="section">
+            <h2>Platser</h2>
+
+            <h3>Bekräftade platser <span class="badge badge-confirmed">FRÅN KAMPANJEN</span></h3>
+
+            <div class="location-card">
+                <h4>Adisas stuga (Häxstugan)</h4>
+                <p>Liten stuga i glänta. Träden för gamla och tysta. Full av torkade örter, glödande vätskor, kritcirklar, böcker med symboler. Arcadius hund vägrade gå nära.</p>
+                <p><em>Lapp: "Till dem som kommer för att återställa det som en gång föll - det som söktes är inte längre där det var. När månen är som tunnast kommer jag att återvända."</em></p>
+            </div>
+
+            <div class="location-card">
+                <h4>Gråvargens pass</h4>
+                <p>Den enklaste vägen in i Mithera från Grensfortet. Namngiven efter en legendarisk varg som vakade där. Gruppen har passerat här.</p>
+            </div>
+
+            <h3>Föreslagna platser <span class="badge badge-review">GRANSKAS</span></h3>
+
+            <h4>Mellan byarna</h4>
+            <div class="location-card review">
+                <h4>Korsvägskrogen <span class="badge badge-review">NY</span></h4>
+                <p>Fallfärdig byggnad vid vägskälet mellan Bergvik, Frisänkan och Grensfortet. Användes förr som rastplats. Nu tom, men taket håller. Bra mötesplats.</p>
+            </div>
+
+            <div class="location-card review">
+                <h4>Trollstenen <span class="badge badge-review">NY</span></h4>
+                <p>Enorm sten mitt i skogen med märkliga ristningar. Ingen vet vem som gjorde dem. Lokala säger att man inte ska sova nära den under fullmåne.</p>
+            </div>
+
+            <div class="location-card review">
+                <h4>Svältbacken <span class="badge badge-review">NY</span></h4>
+                <p>Kulle där hungersnödens offer begravdes för generationer sedan. Odlad mark runt om, men ingen bygger där. Ryktas vara hemsökt.</p>
+            </div>
+
+            <h4>Vid Mithera-gränsen</h4>
+            <div class="location-card review">
+                <h4>De sju stenarna <span class="badge badge-review">NY</span></h4>
+                <p>Cirkel av resta stenar precis vid gränsen. Ingen vet vem som reste dem. Umnatak känner troligen deras betydelse.</p>
+            </div>
+
+            <div class="location-card review">
+                <h4>Issjön <span class="badge badge-review">NY</span></h4>
+                <p>Liten sjö som aldrig fryser, trots kylan. Vattnet är kristallklart. Djuren dricker inte ur den.</p>
+            </div>
+
+            <h4>Dolda platser</h4>
+            <div class="location-card review">
+                <h4>Den övergivna gruvan <span class="badge badge-review">NY</span></h4>
+                <p>Gammal dvärggruva i bergen mellan Bergvik och Grensfortet. Övergivits. Dain Stenyxa vet om den men har inte nämnt det.</p>
+            </div>
+
+            <div class="location-card review">
+                <h4>Flodkällan <span class="badge badge-review">NY</span></h4>
+                <p>Där floden börjar, högt i bergen. Helig plats för de samoriska. Vidar gör pilgrimsvandring dit en gång om året.</p>
+            </div>
+        </section>
+
+        <!-- EKONOMI -->
+        <section id="ekonomi" class="section">
+            <h2>Ekonomi <span class="badge badge-confirmed">BEKRÄFTAT</span></h2>
+
+            <div class="info-box">
+                <strong>Enheter (Riddaren-regler):</strong><br>
+                <strong>1 Bas</strong> = 360 silver = försörjer en bonde i ett år<br>
+                <strong>1 Lyx</strong> = 720 silver = statusvaror (smycken, fina kläder, kvalitetsvapen)
+            </div>
+
+            <h3>Årliga inkomster</h3>
+            <table>
+                <tr><th>Källa</th><th>Bas</th><th>Lyx</th><th>Kommentar</th></tr>
+                <tr><td>Direkta skatter</td><td>2,1</td><td>—</td><td>Motvilligt från Frisänkan</td></tr>
+                <tr><td>Bergvik timmerexport</td><td>8-12</td><td>—</td><td>Huvudnäring</td></tr>
+                <tr><td>Bergvik jaktprodukter</td><td>4-6</td><td>1-2</td><td>Pälsar och kött</td></tr>
+                <tr><td>Grensfortet viltjakt</td><td>6-8</td><td>3-5</td><td>Ovanligt rika bestånd</td></tr>
+                <tr><td>Jargisk gruva</td><td>13,9</td><td>—</td><td>Första betalningen väntas</td></tr>
+                <tr><th>TOTALT</th><th>34-42</th><th>4-7</th><th></th></tr>
+            </table>
+
+            <h3>Årliga utgifter</h3>
+            <table>
+                <tr><th>Post</th><th>Bas</th><th>Lyx</th><th>Kommentar</th></tr>
+                <tr><td>Vasallernas hushåll (5 pers)</td><td>10</td><td>10</td><td>"Gott leverne"</td></tr>
+                <tr><td>Grensfortet (22 pers)</td><td>8-10</td><td>—</td><td>Underhåll och mat</td></tr>
+                <tr><td>Anställda/förvaltare</td><td>3-4</td><td>1</td><td>Eira, Jonna, specialister</td></tr>
+                <tr><td>Garnison (8 tränade)</td><td>6-8</td><td>—</td><td>Delvis värnplikt</td></tr>
+                <tr><th>TOTALT</th><th>27-32</th><th>11</th><th></th></tr>
+            </table>
+
+            <h3>Resultat</h3>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="number" style="color: #28a745;">+2 till +15</div>
+                    <div class="label">Bas/år</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number" style="color: #dc3545;">-4 till -7</div>
+                    <div class="label">Lyx/år</div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <strong>Status:</strong> Måttligt Bas-överskott men <strong>Lyx-underskott</strong>.<br><br>
+                <strong>Konsekvenser:</strong> Vasallerna kan inte upprätthålla "Gott leverne" utan att sälja Bas eller sänka standarden till "Enkelt leverne" (sparar 5 Bas + 10 Lyx).
+            </div>
+
+            <h3>Dagsverken (80/år per ofri bonde)</h3>
+            <table>
+                <tr><th>By</th><th>Ofria bönder</th><th>Dagsverken/år</th></tr>
+                <tr><td>Frisänkan</td><td>36</td><td>2 880</td></tr>
+                <tr><td>Bergvik</td><td>27</td><td>2 160</td></tr>
+                <tr><th>Totalt</th><th>63</th><th>5 040</th></tr>
+            </table>
+
+            <h3>Tionde - Religiös konflikt!</h3>
+            <div class="question-box">
+                <strong>⚠️ PROBLEM:</strong><br>
+                <strong>Bergvik:</strong> Betalar tionde till Daak-kyrkan (normalt)<br>
+                <strong>Frisänkan:</strong> Betalar tionde till Vidar (samorisk) - <strong>KONFLIKT!</strong><br>
+                <strong>Grensfortet:</strong> Daak-fundamentalister utan tempel - <strong>OLÖST</strong><br><br>
+                Om Daak-kyrkan upptäcker Frisänkans "kätterska" tiondebetalning kan det bli intervention.
+            </div>
+        </section>
+
+        <!-- MILITÄR -->
+        <section id="militar" class="section">
+            <h2>Militär kapacitet <span class="badge badge-confirmed">BEKRÄFTAT</span></h2>
+
+            <h3>Tillgängliga styrkor</h3>
+            <table>
+                <tr><th>Kategori</th><th>Antal</th><th>Kostnad</th><th>Kommentar</th></tr>
+                <tr><td>Tränad kärna (Vargnäset)</td><td>8</td><td>6-8 Bas/år</td><td>Delvis självförsörjande</td></tr>
+                <tr><td>Värnplikt från byarna</td><td>~20</td><td>Gratis</td><td>Max 40 dagar/år</td></tr>
+                <tr><td>Bergvik-rekryter (potential)</td><td>5-10</td><td>3 Bas/soldat</td><td>Olav kan mobilisera</td></tr>
+                <tr><th>Total permanent</th><th>8</th><th>6-8 Bas</th><th></th></tr>
+                <tr><th>Total vid mobilisering</th><th>~35</th><th>—</th><th>Tillfälligt</th></tr>
+            </table>
+
+            <h3>Militära kostnader (Riddaren-regler)</h3>
+            <table>
+                <tr><th>Truppslag</th><th>Kostnad/år</th></tr>
+                <tr><td>Fotsoldat (professionell)</td><td>3 Bas</td></tr>
+                <tr><td>Bågman/armborstman</td><td>4 Bas</td></tr>
+                <tr><td>Lätt ryttare</td><td>8 Bas</td></tr>
+                <tr><td>Riddare med väpnare + 5 hästar</td><td>17 Bas + 3 Lyx</td></tr>
+            </table>
+
+            <div class="info-box">
+                <strong>Gordons vision:</strong> Legokompani på 20-30 soldater kräver 60-90 Bas/år.<br>
+                <strong>Nuvarande kapacitet:</strong> 5-15% av målet.<br>
+                <strong>Väg framåt:</strong> Öka inkomster genom handel, gruvan, nya resurser.
+            </div>
+        </section>
+
+        <!-- RYKTEN & LEGENDER -->
+        <section id="rykten" class="section">
+            <h2>Rykten & Legender <span class="badge badge-review">GRANSKAS</span></h2>
+
+            <h3>Sanning eller lögn?</h3>
+            <ul class="checklist">
+                <li><strong>"Grensfortet är byggt på en grav"</strong> - Folket säger att fortet byggdes på platsen där en alvprins begravdes. Dvärgarna vet mer.</li>
+                <li><strong>"Adisa är 300 år gammal"</strong> - Dain sa "äldre än dvärgar". Vad betyder det egentligen?</li>
+                <li><strong>"Något sover under Trollstenen"</strong> - Gamla berättelser om en varelse som bundits där. Vad händer om den vaknar?</li>
+                <li><strong>"Mitheras vargar tar barn"</strong> - Skräckhistoria för att hålla barn borta? Eller sanning?</li>
+                <li><strong>"Den sista dvärgkungen vilar i berget"</strong> - Dain nämnde Methras-Renk-Drezin. Vad finns där?</li>
+            </ul>
+
+            <h3>Lokala sägner</h3>
+            <ul class="checklist">
+                <li><strong>Vinterns första natt:</strong> Den som är ute den natten ser sin egen död.</li>
+                <li><strong>Sjöjungfrun i Frisänkan:</strong> En drunknad flicka som drar ner fiskare. Stum-Maja säger att hon sett henne.</li>
+                <li><strong>Ekansens hemlighet:</strong> Varför bor han i trädet? Vad flyr han från?</li>
+            </ul>
+
+            <h3>Potentiella händelser/hooks</h3>
+            <ul class="checklist">
+                <li><strong>En jägare försvinner</strong> - Någon från Bergvik hittas inte. Söker gruppen?</li>
+                <li><strong>Tiondeinspektör</strong> - Daak-kyrkan skickar någon för att "kontrollera" situationen i Frisänkan.</li>
+                <li><strong>Deserteuren upptäcks</strong> - Arvorns Hammares avhoppare avslöjas. Vad gör Arcadius?</li>
+                <li><strong>Gråben ber om hjälp</strong> - Den gamla tiraken har ett problem. Litar gruppen på honom?</li>
+                <li><strong>Dimgumman söker kontakt</strong> - Hon har sett något i Mithera som gruppen behöver veta.</li>
+            </ul>
+        </section>
+
+        <!-- FRÅGOR TILL JOHAN -->
+        <section id="fragor" class="section">
+            <h2>Frågor till Johan <span class="badge badge-question">BEHÖVER SVAR</span></h2>
+
+            <div class="question-box">
+                <h4>1. Befolkningssiffror</h4>
+                <p><strong>Frisänkan:</strong> 50 (Grens-dok) eller 60-80 (Vitterdal-dok)?</p>
+                <p><strong>Bergvik:</strong> 35-40 (Grens-dok) eller 80-100 (Vitterdal-dok)?</p>
+            </div>
+
+            <div class="question-box">
+                <h4>2. NPCs att bekräfta</h4>
+                <p>Är dessa kanoniska?</p>
+                <ul>
+                    <li>Astrid Björnsdotter (Såg-mästare, Bergvik)</li>
+                    <li>Olav Järnhand (Jägarmästare, Bergvik)</li>
+                    <li>Ragna Klokhand (Bykvinna/läkare, Bergvik)</li>
+                    <li>Mera Flint (Jägarmästare, Frisänkan)</li>
+                    <li>Anya Väv (Textilansvarig, Frisänkan)</li>
+                    <li>Rollo av Flod (Fiskare, Frisänkan)</li>
+                </ul>
+            </div>
+
+            <div class="question-box">
+                <h4>3. Xian-Li</h4>
+                <p>När och hur anlände han till Grensfortet? (Följde Thrakka enligt Vitterdal-dok)</p>
+            </div>
+
+            <div class="question-box">
+                <h4>4. Skorda Bergsdotter</h4>
+                <p>Är hon med på fortet eller i Bergvik?</p>
+            </div>
+
+            <div class="question-box">
+                <h4>5. Nya idéer - Godkänn/Avslå</h4>
+                <ul>
+                    <li><strong>Gråben (tirak)</strong> - Ensam gammal tirak i berget. Passar?</li>
+                    <li><strong>Deserteuren</strong> - Arvorns Hammare-avhoppare i skogarna. Passar?</li>
+                    <li><strong>Trollstenen</strong> - Mystisk sten med ristningar. Intressant?</li>
+                    <li><strong>Issjön</strong> - Sjö som aldrig fryser. Vill du använda?</li>
+                    <li><strong>Den övergivna gruvan</strong> - Gammal dvärggruva. Relevant?</li>
+                </ul>
+            </div>
+
+            <div class="question-box">
+                <h4>6. Vilka nya NPCs vill du ha med?</h4>
+                <p>Gå igenom listan och markera vilka som ska utvecklas vidare.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>Grens Baroneri</strong> - Granskningsversion</p>
+            <p>Genererad 2026-02-03 | EM-R002 Fas 2 (Research)</p>
+            <p><a href="../../_index.md">← Tillbaka till Eget Material</a></p>
+        </footer>
+    </div>
+</body>
+</html>
