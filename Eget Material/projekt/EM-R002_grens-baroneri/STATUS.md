@@ -8,9 +8,9 @@
 
 ## NUVARANDE STATUS
 
-**Fas:** 5 av 7 (Detaljer)
-**Progress:** 80%
-**Status:** Research klar, grundstruktur klar, ekonomi korrigerad, redo för HTML
+**Fas:** 2 av 7 (Research)
+**Progress:** 40%
+**Status:** Samlar material, ekonomi korrigerad, väntar på Johans input om NPCs
 
 ---
 
@@ -19,12 +19,12 @@
 | Fas | Namn | Status | Kommentar |
 |-----|------|--------|-----------|
 | 1 | Syfte & Koncept | ✅ Klar | Förläning för spelarkaraktärerna |
-| 2 | Research | ✅ Klar | NotebookLM: förläningar, tionde, dagsverken |
-| 3 | Grundstruktur | ✅ Klar | grens_baroneri_oversikt.md skapad |
-| 4 | Kärnan | ✅ Klar | Ekonomi, militär, feodala förpliktelser |
-| 5 | Detaljer | 🔄 Pågår | NPCs finns, hooks behövs, HTML ska byggas |
+| 2 | Research | 🔄 Pågår | NotebookLM klar, Vitterdal-data hämtad, validering mot krönika klar |
+| 3 | Grundstruktur | ⬜ Ej startad | grens_baroneri_oversikt.md finns men behöver mer material |
+| 4 | Kärnan | ⬜ Ej startad | Väntar på Johans input om NPCs och befolkning |
+| 5 | Detaljer | ⬜ Ej startad | |
 | 6 | Validering | ⬜ Ej startad | |
-| 7 | Avslut | ⬜ Ej startad | |
+| 7 | Avslut | ⬜ Ej startad | HTML-sida byggs sist |
 
 ---
 

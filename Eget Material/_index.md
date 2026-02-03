@@ -19,12 +19,12 @@
 - **Totalt färdigt:** 1
 
 ### Pågående projekt
-- **Aktiva projekt:** 0
-- **I fas 2 (Research):** 0
+- **Aktiva projekt:** 1
+- **I fas 2 (Research):** 1
 - **I fas 3-5 (Skrivande):** 0
 - **I fas 6 (Validering):** 0
 
-**Senast uppdaterad:** 2026-02-02
+**Senast uppdaterad:** 2026-02-03
 
 ---
 
@@ -32,17 +32,25 @@
 
 *Projekt i `projekt/`-mappen som inte är färdiga ännu.*
 
-**Format:**
-```markdown
-### EM-XXX: Namn
-- **Typ:** Land/Stad/etc
-- **Fas:** X av 7 (Namn)
-- **Progress:** X%
-- **Status:** [Vad händer just nu]
-- **Nästa:** [Nästa steg]
-```
+### EM-R002: Grens Baroneri
+- **Typ:** Region/Förläning
+- **Fas:** 2 av 7 (Research)
+- **Progress:** 40%
+- **Status:** Samlar material, korrigerat ekonomi enligt Riddaren-regler
+- **Nästa:** Verifiera NPCs med Johan, definiera ytterligare material
+- **Koppling:** Underlydande under EM-R001 (Vitterdal-baronieriet)
 
-*Inga pågående projekt just nu. EM-R001 nyligen avslutat.*
+**Senaste ändringar (2026-02-03):**
+- Korrigerat ekonomi med Bas + Lyx
+- Lagt till dagsverken och tionde
+- Justerat militärkapacitet till realistiska nivåer
+- Validerat mot kampanjkrönika.md
+- Research från Vitterdal-projektet inhämtad
+
+**Frågor till Johan:**
+- Vilka NPCs är kanoniska? (Astrid Björnsdotter, Olav Järnhand, Ragna Klokhand, etc.)
+- Frisänkan befolkning: 50 eller 60-80?
+- När/hur anlände Xian-Li till Grensfortet?
 
 **För att se status på pågående projekt:**
 ```python
