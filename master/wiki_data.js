@@ -883,6 +883,17 @@ var wikiData = {
       "beskrivning": "# HELENA STENMARK\n**2-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 2 år\n- **Status:** Död (dag 3 av evakueringen)\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nHelena Stenmark var den yngsta dottern till Olof Stenmark (29 år) och Anna Stenmark (26 år), och lillasyster till Gustav (4 år).\n\n## DÖD UNDER EVAKUERINGEN\nHelena dog på dag 3 av flykten genom Drunok-skogen. Hennes död traumatiserade djupt hennes mor Anna, som inte kunnat bearbeta förlusten.\n\n## FAMILJ\n- **Far:** Olof Stenmark (29 år)\n- **Mor:** Anna Stenmark (26 år, traumatiserad)\n- **Bror:** Gustav Stenmark (4 år, levande)\n\n## EFFEKT PÅ FAMILJEN\nHelenas död har brutit ner Anna Stenmark mentalt. Gustav klamrar sig nu fast vid sin far och har blivit tyst och ängslig.\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 flyktingar\n- Död dag 3 av flykten\n- En av tre som dog under de första dagarna (tillsammans med Gammal-Erik och en tredje person)"
     },
     {
+      "namn": "Helga \"Storhuvud\" Järnoxen",
+      "bild": null,
+      "ras": "Människa (Drunokier)",
+      "titel": "Värdshusvärdinna på Järnoxen",
+      "status": "levande",
+      "plats": "Mitrahus, Vitterdal",
+      "fraktion": "Jarladömet Vitterdal",
+      "kapitel": "Kapitel 6",
+      "beskrivning": "# HELGA JÄRNOXEN\n\n**Värdshusvärdinna och Lady Soffias äldsta vän**\n\n## Bakgrund\n\nVäxte upp med Soffia innan hon gifte in sig i adeln. De lekte i leran tillsammans som barn. Helga valde värdshusen, Soffia valde politiken - men vänskapen glömde de aldrig.\n\n## Järnoxen\n\nDriver Vitterdals populäraste värdshus. Högljudd och dominerande, hjärtlig mot stamgäster, tar inget skit. Den enda som kallar Lady Soffia för 'Fia'.\n\n## Hemlighet\n\nDel av Soffias informationsnätverk. Allt som sägs på Järnoxen når så småningom Soffias öron. De ses aldrig offentligt - men Helgas syster arbetar i Mitrahus kök och bär 'recept' med marginalanteckningar.\n\n## Personlighet\n\nJämlikt förhållande med Soffia. Kan säga saker till henne som ingen annan vågar. 40 års vänskap betyder att ingen skuld finns - bara förtroende."
+    },
+    {
       "namn": "Hemkhath Thokk",
       "bild": "hemkhath-thokk.png",
       "ras": "Tirak",
@@ -2069,6 +2080,17 @@ var wikiData = {
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
       "beskrivning": "# SYLVA\n**Ägare och värdinna på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Värdshusvä rdinna och ägare\n- **Värdshus:** \"Den Dolda Dolken\" (ljusskygg del av Tuzan Rim)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BAKGRUND\nSylva kommer från en familj av köpmän i en större handelsstad. Hon lärde sig tidigt konsten att förhandla och bedöma människor. Efter en katastrofal affärsuppgörelse som nästan kostade henne livet, flydde hon och använde sina besparingar för att starta nytt liv. Hon köpte \"Den Dolda Dolken\" där hon kunde tillämpa sina färdigheter i en mindre officiell miljö.\n\n## KARAKTÄR\n- **Beräknande och listig:** Utmärkt på att hålla koll på detaljer och förutse problem\n- **Skyddande:** Ser till sina gästers och anställdas väl, vårdar stark lojalitet\n- **Reserverad:** Privat till sin natur, delar sällan personlig historia\n- **Flerspråkig:** Talar flera språk flytande\n\n## INTRESSANTA DRAG\n- Förkärlek för antikviteter (samlar och visar upp i privata rum)\n- Etablerat förståelse med lokala lagvaktare\n- Underhåller informationsnätverk om potentiella hot\n\n## DEN DOLDA DOLKEN\nVärdshuset ligger gömt i mörk gränd med diskret dolk som markering:\n- Halvmörkt, rökfyllt, tunga draperier\n- Privata bås för diskreta möten\n- Strikt regler (förbud mot öppna strider)\n- Hemligt rum under baren (flyktväg)\n\n## PERSONAL\n- Merek (bartender, före detta sjöman)\n- Lia (serveringspersonal, från skådespelarfamilj)\n- Diskret bevakning och övervakning\n\n## I KAMPANJEN\nFas 2-5 (Kapitel 2): Möttes på Den Dolda Dolken under karavanresan. Perfekt plats för hemliga möten och diskreta affärer."
+    },
+    {
+      "namn": "Syster Mirelle",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Vandringsprästerska (Daak)",
+      "status": "levande",
+      "plats": "Vandrande (Cermira, Drunok)",
+      "fraktion": "Daakkyrkan",
+      "kapitel": "Kapitel 6",
+      "beskrivning": "# SYSTER MIRELLE\n\n**Vandringsprästerska och del av Soffias nätverk**\n\n## Bakgrund\n\nFör 20 år sedan var hon en ung änka med tre barn och skulder till fel människor. Lady Soffia betalade skulderna. Barnen fick utbildning. Mirelle fann sin kallelse till Daak - och sin tacksamhetsskuld till Soffia.\n\n## Roll\n\nReser mellan byar i Cermira och delar av Drunok för att predika, viga, och ge sista smörjelsen. Välkommen överallt - ingen misstänker en prästinna.\n\n## Hemlighet\n\nDel av Soffias informationsnätverk. Döende människor erkänner saker på dödsbädden. Biktande syndare avslöjar hemligheter. Mirelle samlar allt - men berättar aldrig allt. Vissa hemligheter är för heliga.\n\n## Relation till Soffia\n\nSkulden är betald tusen gånger om, men Mirelle fortsätter av lojalitet. Soffia respekterar hennes omdöme om vad som är viktigt att dela.\n\n## Säkerhet\n\nNär Mirelle kommer till Mitrahus stannar hon på Järnoxen. Hon och Helga utbyter information innan Soffia får höra - separation för säkerhet."
     },
     {
       "namn": "Syster Moira",
