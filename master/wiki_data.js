@@ -400,6 +400,17 @@ var wikiData = {
       "beskrivning": "# DHORMEL\n**Grottroll sydväst om Lundnäs**\n\n## GRUNDINFO\n- **Ras:** Grottroll\n- **Hemvist:** Grotta sydväst om Lundnäs\n- **Särskilda Drag:** Stort och farligt\n\n## I KAMPANJEN\nRegnsynd-äventyret: Grottroll som spelarna kan stöta på i området kring Lundnäs.\n\n## SL-ANTECKNINGAR\nEn bit sydväst om byn Lundnäs bor grottrollet Dhormel. Eventuellt hot för resande i området."
     },
     {
+      "namn": "Dimgumman",
+      "bild": null,
+      "ras": "Okänd",
+      "titel": "Mystisk figur i dimman",
+      "status": "okänd",
+      "plats": "Mithera-gränsen",
+      "fraktion": null,
+      "kapitel": "Kapitel 10",
+      "beskrivning": "# DIMGUMMAN\n\n**En gestalt som ingen kan finna**\n\n## Rykten\n\nFolk har sett rök från en stuga nära Mithera-gränsen - men ingen har hittat den. 'Dimgumman', säger de.\n\n## Vad hon vet\n\nHon har sett något i Mithera som gruppen behöver veta, och hon söker kontakt genom drömmar.\n\n## Mysterium\n\nAdisa vet mer om henne - men delar hon informationen?\n\n## Natur\n\nÄr hon människa? Ande? Något annat? Ingen vet."
+    },
+    {
       "namn": "Dorian Sproll",
       "bild": "dorian.png",
       "ras": "Människa",
@@ -705,6 +716,17 @@ var wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 4",
       "beskrivning": "# GRIKNAR GRANITSON\n**Försvunnen prospektör**\n\n## GRUNDINFO\n- **Ras:** Dvärg\n- **Yrke:** Prospektör\n- **Status:** Död/försvunnen\n- **Plats:** Jarnthol (gruvutpost)\n- **Kapitel:** Kapitel 4\n\n## BESKRIVNING\nGriknar var en dvärgisk prospektör som letade efter nya fyndigheter i Jarnthol-området.\n\n## KRITISK HÄNDELSE\nGriknar upptäckte en gammal **förseglad gruvgång** och bröt sigillet. Detta väckte **Rådslingan** - en skuggformad varelse som är resultatet av en uråldrig förbannelse.\n\n## FÖRSVINNANDET\nFör några dagar sedan försvann Griknar efter att ha gått in i den nyöppnade gruvgången. Flera gruvarbetare, inklusive **Borga Stenhands**, var med honom och hörde **röster i mörkret** innan han försvann.\n\nGruvarbetare vägrar nu gå tillbaka till platsen - något skrämmer dem.\n\n## FÖRKOLNADE ANTECKNINGAR\nBland spillrorna i gruvan kan spelarna hitta Griknars delvis förkolnade anteckningsbok med fragment om hans upptäckt.\n\n## KOPPLINGAR\n- **Grimdal Tungöga:** Värdshuvärd som vet mer än han säger\n- **Borga Stenhands:** Såg Griknar senast\n- **Rådslingan:** Orsaken till hans försvinnande"
+    },
+    {
+      "namn": "Gråben",
+      "bild": null,
+      "ras": "Tirak",
+      "titel": "Förvisad eremit",
+      "status": "levande",
+      "plats": "Bergen vid Grensfortet",
+      "fraktion": null,
+      "kapitel": "Kapitel 10",
+      "beskrivning": "# GRÅBEN\n\n**Gammal tirak, förvisad och ensam**\n\n## Bakgrund\n\nEn gammal tirak som bott i bergen nära Grensfortet i årtionden. Förvisad från sin stam för ett brott han vägrar nämna.\n\n## Nuvarande situation\n\nDyker upp vid fortet och ber om hjälp mot något som hotar honom. Han har kunskap om området som kan vara ovärderlig - men kan man lita på en tirak?\n\n## Potential\n\nKan bli en värdefull allierad med kunskap om bergen och Mithera-gränsen. Eller en fälla."
     },
     {
       "namn": "Gumman Ragnhild",
@@ -2291,6 +2313,17 @@ var wikiData = {
       "beskrivning": "# VALTHOR BANERBÄRARE\n**Banerbärare i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Banerbärare och moralansvarig\n- **Ansvar:** Gruppens fana och allmän springpojke\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Höll moralen uppe vid Tirakgraven."
     },
     {
+      "namn": "Varen Kolsten",
+      "bild": null,
+      "ras": "Människa (Damarier)",
+      "titel": "Desertör från Nattgardet",
+      "status": "levande",
+      "plats": "Skogarna vid Grensfortet",
+      "fraktion": "F.d. Nattgardet",
+      "kapitel": "Kapitel 10",
+      "beskrivning": "# VAREN KOLSTEN\n\n**Flytt soldat som gömmer sig för sitt förflutna**\n\n## Bakgrund\n\nEn man som gömt sig i skogarna i tre år - en desertör från **Nattgardet**, storfurste Thamas Vitfjäders fruktade elitstyrka i Damarien (kallade 'Mörkerhundarna').\n\n## Varför han flydde\n\nVägrade delta i 'storfurstens vinskörd' - en brutal utrensning av en hel by. Hans samvete tillät det inte.\n\n## Faran\n\nOm Damarien får veta var han är kan hans familj avrättas ('avrättning i tredje led' - föräldrar, syskon, barn). Nattgardets ledare **Marok Svärdshand** är känd för att aldrig ge upp jakten på desertörer.\n\n## Koppling till kampanjen\n\nGordons bror Ethan tjänstgör i Damarien. Vad händer om han hör talas om detta?"
+    },
+    {
       "namn": "Valyra Nattöga",
       "bild": "Valyra_Nattöga.png",
       "ras": "Människa",
@@ -2366,6 +2399,17 @@ var wikiData = {
       "fraktion": "Zorian-orden",
       "kapitel": null,
       "beskrivning": "# WARG SPEGELSKÖLD\n**Zoriánriddare på genomresa**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Titel:** Zoriánriddare\n- **Plats:** Vansnäs Gästgiveri, Lundnäs\n- **Status:** Levande\n- **Fraktion:** Zorian-orden/Systrarna\n\n## BESKRIVNING\nWarg Spegelsköld är en Zoriánriddare som bor på dubbelrummet på Vansnäs Gästgiveri tillsammans med sin väpnare.\n\n## I KAMPANJEN\nNPC på Vansnäs Gästgiveri i Lundnäs (Regniga synden-äventyr).\n\n## KOPPLINGAR\n- **Fraktion:** Zorian-orden\n- **Väpnare:** Oresat (namn okänt)\n- **Plats:** Vansnäs Gästgiveri, Lundnäs\n\n## SL-ANTECKNINGAR\nZoriánriddare är demonhunters och medlemmar av Systrarna (Zorian-orden). Deras närvaro i Lundnäs kan indikera att de spårar demonisk aktivitet i området."
+    },
+    {
+      "namn": "Xian-Li",
+      "bild": null,
+      "ras": "Människa (Sung)",
+      "titel": "Diplomat och dold magiker",
+      "status": "levande",
+      "plats": "Grensfortet",
+      "fraktion": null,
+      "kapitel": "Kapitel 10",
+      "beskrivning": "# XIAN-LI\n\n**Sung-diplomat med dolda förmågor**\n\n## Bakgrund\n\nAnlände till Grensfortet en dag efter att spelarna lämnade för Mithera. Officiellt en diplomatisk rådgivare och filosof från Sung som hjälper med administration och krönikeföring.\n\n## Dold identitet\n\nSkicklig magiker (pneumotropi) och kampmunk. Följer Thrakka av okänd anledning - något han aldrig förklarat.\n\n## Insatser vid Grensfortet\n\n- Hjälpte hemligt driva bort Bärnsälen som dödade två jägare\n- Medierar mellan flyktingarna och Adisa\n- Assisterar Eira Holm med administration\n\n## Personlighet\n\nPoetisk, filosofisk, döljer mycket bakom artiga ord."
     },
     {
       "namn": "Yasir ibn-Farid",
