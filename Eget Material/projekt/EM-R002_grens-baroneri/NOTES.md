@@ -247,15 +247,59 @@ Grens Baroneri ska kännas som en verklig plats där människor lever, arbetar, 
 
 ---
 
-## FRÅGOR TILL JOHAN
+## BESLUT (2026-02-03)
 
-1. **Befolkningssiffror:** Frisänkan 50 eller 60-80? Bergvik 35-40 eller 80-100?
-2. **NPCs att bekräfta:** Är Astrid Björnsdotter, Olav Järnhand, Ragna Klokhand kanoniska?
-3. **Xian-Li:** När och hur anlände han till Grensfortet?
-4. **Skorda Bergsdotter:** Är hon med på fortet eller i Bergvik?
-5. **Gråben (tirak):** Intressant idé - passar det i kampanjen?
-6. **Dezerteuren:** Passar det med en Arvorns Hammare-avhoppare i området?
-7. **Vilka av dessa idéer ska vi utveckla vidare?**
+### Befolkningssiffror
+✅ **Vitterdal-dokumentet gäller:**
+- Frisänkan: **60-80 invånare**
+- Bergvik: **80-100 invånare**
+
+### Bekräftade NPCs
+✅ **Alla dessa är kanoniska:**
+- Astrid Björnsdotter (såg-mästare, Bergvik)
+- Olav Järnhand (jägarmästare, f.d. soldat, Bergvik)
+- Ragna Klokhand (bykvinna/läkare, Bergvik)
+- Mera Flint (jägarmästare, Frisänkan)
+- Anya Väv (textilansvarig, Frisänkan)
+- Rollo av Flod (fiskare, Frisänkan)
+
+### Xian-Li
+✅ **Dök upp en dag efter att spelarna lämnade mot Mithera** (december)
+- Anledning fortfarande okänd för de flesta
+- Hjälpte till med administration under vintern
+
+### Skorda Bergsdotter
+✅ **Bor på fortet, men spenderar mycket tid solo i skogen**
+- Jagar, spanar, håller sig undan folk
+- Cynisk ensamvarg som levererar
+
+### Gråben (tirak)
+✅ **GODKÄND** - Passar i kampanjen
+- Gammal tirak förvisad från sin stam
+- Bor i bergen nära fortet
+- Handlar pälsar mot metall
+
+### Deserteuren
+✅ **GODKÄND:**
+- ~~Arvorns Hammare~~ → **Nattgardet (Damarien)**
+- "Mörkerhundarna" - storfurste Thamas Vitfjäders fruktade elitstyrka
+- Deserterade för tre år sedan efter att ha vägrat delta i "storfurstens vinskörd" (brutala utrensningar)
+- **EXTREMT FARLIGT:** Om han hittas kan hans familj avrättas ("avrättning i tredje led")
+- Ledaren Marok Svärdshand är *hemligt en helmgast* (vandöd)
+- Gömmer sig i skogarna, lever på jakt och stöld
+- **Koppling:** Gordons bror Ethan tjänstgör i Damarien - potential för framtida konflikt
+
+---
+
+## ETABLERAD HISTORIA: Frisänkan
+
+**Från Kapitel 1:** Pertil Fiskaren och hans gravida fru mördades av Ibran/Tamron (den demonbesatte shamanen) när han passerade genom byn på flykt.
+
+Detta förklarar Benne Toks ord vid spelarnas återkomst: *"Gordon. Vi minns. Både bra och dåligt."*
+
+Byn minns:
+- **Det dåliga:** Morden som hände när shamanen kom
+- **Det bra:** (Oklart - kanske Gordons tidigare hjälp? Behöver kanske utvecklas)
 
 ---
 
