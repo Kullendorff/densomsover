@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC 4: Game Manual - Vitterdal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #2b1d14;
+            color: #d4c5b0;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #3a2819;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            background: #1a0f08;
+            border-bottom: 3px solid #8b6914;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #f4d58d;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #b8a382;
+            font-style: italic;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .stat-block {
+            background: #2b1d14;
+            border: 2px solid #8b6914;
+            padding: 1rem;
+            margin: 1rem 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #8b6914;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f4d58d;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #f4d58d;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: #1a0f08;
+            border-left: 4px solid #8b6914;
+        }
+
+        .info-box {
+            background: #1a0f08;
+            border: 1px solid #4a3421;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .info-box strong {
+            color: #f4d58d;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Vitterdal-baronieriet</h1>
+            <div class="subtitle">Guldets och Köldens Rike</div>
+        </header>
+
+        <div class="content">
+            <div class="stat-block">
+                <div class="stat-item">
+                    <div class="stat-label">Region</div>
+                    <div class="stat-value">Nordvästra Cermira</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Befolkning</div>
+                    <div class="stat-value">~2250</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Typ</div>
+                    <div class="stat-value">Jarladöme</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Översikt</h2>
+                <p><strong>Vitterdal-baronieriet</strong> är ett bergstrakter-jarladöme i Cermiras nordvästra hörn, känt för sina rika guldådror och det mystiska övergivna dvärgfästet Methras-Renk-Drezin.</p>
+
+                <div class="info-box">
+                    <strong>Huvudort:</strong> Mitrahus (stad och borg vid bergsidan)<br>
+                    <strong>Befolkning:</strong> ~2250 invånare (1900 människor, 250 dvärgar, 100 andra)<br>
+                    <strong>Jarl:</strong> Hadrian "Hagge" av Vitterdal
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Geografi</h2>
+                <p>Vitterdal ligger i <strong>nordvästra Cermira</strong>, vid gränsen mellan Cermiras hjärta och de karga bergstrakterna mot Mithera.</p>
+
+                <ul>
+                    <li><strong>Norr:</strong> Mitheraskogen (den stora urskogen)</li>
+                    <li><strong>Öster:</strong> Kronomarken (Cermiras centralområde)</li>
+                    <li><strong>Söder:</strong> S:t Kira (västra jarladömet)</li>
+                    <li><strong>Väster:</strong> Hög toppmyr och vidare till Drunok</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

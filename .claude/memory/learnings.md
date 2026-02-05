@@ -6,6 +6,47 @@ För globala lärdomar som gäller alla projekt, se `~/.claude/memory/learnings.
 
 ---
 
+## eon-parchment-design: EON Eget Material HTML-sidor
+
+**Datum:** 2026-02-03
+**Skill:** `.claude/skills/eon-parchment-design/Skill.md`
+**Baserat på:** Vitterdal-baronieriet (EM-R001)
+**Stilkälla:** Asharien & Soldarn (officiellt EON-material)
+
+**Vad:** Komplett design-specifikation för EON Eget Material HTML-sidor med parchment-estetik och EON-stil stämningstexterna.
+
+**Komponenter:**
+1. **Parchment-färgschema** - Varma bruna/beige toner (#f4e8d8, #faf6f0, #704214)
+2. **Lora serif font** - Klassisk, lättläst, 17px body
+3. **Single-column layout** - 900px max-width, luftigt
+4. **Lång introduktionstext** - 400-600 ord berättande, drop cap på första bokstaven
+5. **Kortare stämningstexterna** - Före varje sektion, första meningen bold
+6. **Info/warning-boxar** - Parchment-stil med border
+
+**Trial-and-error lärdomar:**
+- ❌ **Försök 1:** EON-inspirerad två-kolumn layout → "fruktansvärt ful"
+- ✅ **Lösning:** 5 POC-alternativ, valde parchment (#2)
+- ❌ **Drop cap:** K:et svävar i mitten av andra raden
+- ✅ **Lösning:** line-height: 0.7, padding-top: 0.15rem
+- ❌ **Hela första raden bold** istället för första meningen
+- ✅ **Lösning:** Manuella `<strong>` tags runt första meningen
+
+**Användning:**
+```python
+Skill(skill="eon-parchment-design")
+# Följt av: "Skapa HTML-sida för EM-R002: Jarndalen"
+```
+
+**Output:**
+- Komplett HTML-fil med all CSS embedded
+- Parchment-design klar att använda
+- Mallar för stämningstexterna
+- Drop cap på lång intro, bold första mening i kortare
+
+**Gäller:** Eget Material-projekt (land, stad, region, organisation)
+
+---
+
 ## wiki_data.js: Validera ALLTID efter ändringar
 
 **Datum:** 2026-01-06

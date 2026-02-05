@@ -44,6 +44,7 @@ Eget Material/
 │   └── EM-L001_landnamn/
 │       ├── STATUS.md        # Projektstatus, fas-tracking
 │       ├── NOTES.md         # Vision, frågor, anteckningar
+│       ├── landnamn.md      # 📄 Sammanfattning (all info för NotebookLM)
 │       ├── research/        # Research-data från NotebookLM
 │       │   ├── geografi.md
 │       │   ├── kultur.md
@@ -93,6 +94,7 @@ Material som tar flera sessioner att skapa hanteras i `projekt/`-mappen med stru
 **Varje projekt har:**
 - `STATUS.md` - Fas-tracking, progress, nästa steg, blockerare
 - `NOTES.md` - Vision, frågor, idéer, kampanjlänkar
+- `[projektnamn].md` - **Sammanfattning med ALL info** (redo för NotebookLM)
 - `research/` - NotebookLM-queries, kampanjdata
 - `utkast/` - Work-in-progress versioner
 
@@ -203,11 +205,13 @@ Task(
 3. Organisationer (om relevant)
 4. Kampanjhooks (2-5 äventyrsiäder)
 5. Atmosfär-texter (för städer/platser)
+6. **Skapa `[projektnamn].md`** - Sammanställ ALL info från research och utkast i EN markdown-fil (redo för NotebookLM-import)
 
 **Kvalitetskrav:**
 - Alla mallavsnitt ifyllda
 - Kampanjhooks konkreta
 - Atmosfär-texter stämningsfulla
+- **Markdown-sammanfattning skapad** med komplett info
 
 ### Fas 6: Validering
 
@@ -277,7 +281,7 @@ KAMPANJINFO > NOTEBOOKLM
 
 ### NotebookLM-referens
 - **ID:** `eon-komplett-regelbok-och-v-rl`
-- **URL:** https://notebooklm.google.com/notebook/1a52a02f-a054-4c35-9b83-91e707286c79
+- **URL:** https://notebooklm.google.com/notebook/6633c085-c455-46a7-bcf2-6267a249a622
 - **Innehåll:** Kompletta EON-regelboken, alla rasreferenser, geografi, magi, fraktioner
 
 ### Automatisk regelvalidering
@@ -781,7 +785,7 @@ Task(
 
 ### Officiellt EON-material (via NotebookLM)
 - **ID:** `eon-komplett-regelbok-och-v-rl`
-- **URL:** https://notebooklm.google.com/notebook/1a52a02f-a054-4c35-9b83-91e707286c79
+- **URL:** https://notebooklm.google.com/notebook/6633c085-c455-46a7-bcf2-6267a249a622
 - **Innehåll:** Kompletta regelboken, alla rasreferenser, geografi, magi, fraktioner
 
 ### Kampanjens wiki (för inspiration)

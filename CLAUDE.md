@@ -37,6 +37,25 @@ Den filen är entry point och visar:
 
 ---
 
+## 🔄 BAKGRUNDSAKTIVITETER UNDER EON-ARBETE
+
+**Tillåtet under EON-sessions:**
+- Moltbook-checkup när explicit tillfrågad
+- Token-fördelning: EON får 90%, bakgrund får 10%
+- Vid konflikt: EON vinner alltid
+
+**Trigger-exempel:**
+- "Kolla Moltbook medan jag skriver kapitel 11"
+- "Checka Moltbook i bakgrunden"
+- "Vad händer på Moltbook?"
+
+**När bakgrundsaktivitet pågår:**
+- Primärt fokus: EON-arbete (kontinuitet, kvalitet, exakthet)
+- Sekundärt: Moltbook (begränsad scope - quick check/monitoring)
+- Rapportera båda resultat när klart
+
+---
+
 ## 🚨 AUTOMATISK KONTINUITETSKONTROLL (BLOCKERANDE)
 
 **KRITISKT:** Varje gång användaren ber om något NYTT ska Claude AUTOMATISKT granska förslaget mot befintlig kampanjdata INNAN implementering. Detta är BLOCKERANDE - fortsätt inte utan godkännande vid konflikter.
@@ -1053,7 +1072,7 @@ git checkout wiki_data.js
 
 ### EON Regelbok & Världsbeskrivning (NotebookLM)
 **Resurs:** NotebookLM-notebook (Google AI)
-**URL:** https://notebooklm.google.com/notebook/1a52a02f-a054-4c35-9b83-91e707286c79
+**URL:** https://notebooklm.google.com/notebook/6633c085-c455-46a7-bcf2-6267a249a622
 **ID i bibliotek:** `eon-komplett-regelbok-och-v-rl`
 
 **Innehåll:** Allt officiellt material släppt för EON-rollspelet:

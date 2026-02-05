@@ -54,3 +54,8 @@ yarn.lock
 Eon SL/hemsidan/
 *.rtf
 *.exe
+
+# ============================================
+# Arkiverade filer (gamla versioner, skräp)
+# ============================================
+arkiv/

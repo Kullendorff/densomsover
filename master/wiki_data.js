@@ -78,6 +78,18 @@ var wikiData = {
       "beskrivning": "# ALISTAIR BÅGSKYTT ⚔️\n**Fallen långbågsskytt**\n\n## GRUNDINFO\n- **Roll:** Långbågsskytt och scout\n- **Specialitet:** Precisionsskott\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
     },
     {
+      "namn": "Alma Smedjans",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Smedsänka",
+      "status": "levande",
+      "plats": "Haraziz Krack, Caserion",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# ALMA SMEDJANS\n\n**Roll:** Smedsänka (säljer mat till soldater vid garnisonsporten)\n**Plats:** Haraziz Krack (2000 inv, garnisonsstad, krigsflotta), Caserion\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nAlmas man dog i smedjan under tillverkning av dvärgvapen. Den caseriska staten vägrade att ge kompensation till änkan. Soffia skickade pengar anonymt för att rädda Alma från fattigdom. Alma vet inte vem som hjälpte henne, bara att \"någon norrifrån\" brydde sig.\n\n## Roll i nätverket\n\nAlma säljer mat (bröd, korv, öl) till soldater vid garnisonsporten i Haraziz Krack. Soldater pratar fritt med henne - hon är \"bara en fattig änka\" som ingen tänker på. Hon ser vilka fartyg som anlöper krigshamnen, hör soldatrykten om kommande operationer, och noterar när dvärgvapen-tillverkningen ökar (krigsförberedelser).\n\n## Rapporterar\n\n- Krigsflottans rörelser (vilka fartyg seglar ut, åt vilket håll)\n- Dvärgvapen-tillverkning (ökad produktion = krig förestår?)\n- Soldatrykten (moral, klagomål, planerade operationer)\n- Cirefaliska befälhavares besök\n\n## Kontaktmetod\n\nBrevduva (sällan, oregelbundet - 2-4 gånger per år). Almas rapporter är kortfattade men värdefulla.\n\n## Lojalitet\n\n**Hög.** Alma är tacksam för att någon brydde sig när hennes man dog och staten vände ryggen åt henne. Hon rapporterar inte för pengar, utan av lojalitet."
+    },
+    {
       "namn": "Pertil Fiskaren",
       "bild": "pertil-fiskaren.png",
       "ras": "Människa",
@@ -411,6 +423,43 @@ var wikiData = {
       "beskrivning": "# DIMGUMMAN\n\n**En gestalt som ingen kan finna**\n\n## Rykten\n\nFolk har sett rök från en stuga nära Mithera-gränsen - men ingen har hittat den. 'Dimgumman', säger de.\n\n## Vad hon vet\n\nHon har sett något i Mithera som gruppen behöver veta, och hon söker kontakt genom drömmar.\n\n## Mysterium\n\nAdisa vet mer om henne - men delar hon informationen?\n\n## Natur\n\nÄr hon människa? Ande? Något annat? Ingen vet."
     },
     {
+      "namn": "Ditte Lundbäck",
+      "bild": null,
+      "ras": "Människa",
+      "ålder": "24 år",
+      "titel": "Tjänsteflicka och budbärare",
+      "status": "levande",
+      "plats": "Mitrahus, Vitterdal",
+      "fraktion": "Lady Soffias hushåll",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# DITTE LUNDBÄCK\n\n**Tjänsteflicka åt Lady Soffia av Vitterdal**\n\nDitte är en 24-årig cermirisk tjänsteflicka som springer ärenden åt Lady Soffia i Vitterdal och Mitrahus. Hon är extremt lojal och tacksam efter att Soffia räddade hennes familj från svält för 6 år sedan.\n\n## Roll\n- Budbärare och springer ärenden i Vitterdal\n- Hanterar brevduvor (matar, tränar, skickar meddelanden)\n- Bär meddelanden mellan Soffia och lokala kontakter\n- Diskreta uppdrag och inhandlingar\n\n## Kunskap om nätverket\nDitte känner **INTE** till Soffias spionnätverk. Hon ser att Soffia \"känner alla\" och \"vet mycket\", men tror bara att hon är en vanlig tjänsteflicka. Detta skyddar henne - om hon gripas kan hon inte avslöja något.\n\n## Personlighet\n- Trogen som en hund - skulle aldrig svika Soffia\n- Nyfiken men disciplinerad - vet när hon inte ska fråga\n- Pratglad med andra tjänare men tystlåten om Soffias ärenden\n- Ser upp till Soffia som förebild\n\n**Lojalitet:** Absolut (familj räddad från svält)"
+    },
+    {
+      "namn": "Disa Trofast",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Serveringsbiträde",
+      "status": "levande",
+      "plats": "Jarla, Asharien",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# DISA TROFAST\n\n**Roll:** Serveringsbiträde vid värdshuset Vita Hjorten\n**Plats:** Jarla, Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** Tyst och diskret servitris\n\n## Bakgrund\n\nDisa har arbetat på Vita Hjorten i tre år. Värdshuset är känt som den plats där cirefaliska diplomater, köpmän och ombud bor när de besöker Jarla. Hon är \"osynlig\" - folk talar fritt eftersom tjänare inte förväntas lyssna. Till skillnad från de flesta serveringsbiträden kan Disa läsa och skriva (hennes far var skrivare).\n\nDisas bror mördades av Skrået (lönnmördargillen i Jarla). Soffia hjälpte henne fly och hitta nytt arbete. Disa är djupt tacksam och rapporterar allt hon hör om cirefaliskt inflytande i Jarla.\n\n## Spionaktivitet\n\n- Lyssnar på cirefaliska diplomaters samtal vid middagar och vinkällare\n- Läser brevpost som lämnats på värdshuset (ibland \"av misstag\" öppnad)\n- Noterar vilka cirefaliska officerare besöker Jarla och hur länge de stannar\n- Observerar när Jeskia av Nejas (Handelshus Nejas ledare) träffar cirefalier privat\n\n## Rapporterar till Soffia\n\n- Cirefaliska militära rörelser (officerare, rekrytering, truppförflyttningar)\n- Planerar Cirefa militär närvaro i Asharien?\n- Rykten om Chetos nästa drag (nya reformer? Krav på Frijarl Todor?)\n- Nejas-möten med cirefaliska handelshus\n\n## Kontaktmetod\n\nBrev gömda i leveranser av vitvin till Vitterdals ambassad i Jarla. Rapporterar varje månad.\n\n## Lojalitet\n\n**Mycket hög.** Disa hatar Skrået och cirefaliskt inflytande i Jarla. Hon ser Soffia som någon som bryr sig om rättvisa."
+    },
+    {
+      "namn": "\"Dubbel-Orm\"",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Gruvarbetare",
+      "status": "levande",
+      "plats": "Rampor, Västmark",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# \"DUBBEL-ORM\"\n\n**Namn:** \"Dubbel-Orm\" (öknamn - riktigt namn okänt)\n**Roll:** Gruvarbetare (arbetar bland tiraker)\n**Plats:** Rampor (7000 inv, gruvor, tiraker), Västmark\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nDubbel-Orm kollapsade i gruvan och skadades svårt för flera år sedan. Kantonfurste Persal vägrade betala läkarvård (\"bara en gruvarbetare\"). Soffia betalade anonymt för läkning i Cermira. Dubbel-Orm överlevde men blev puckelryggig - därav öknamnet.\n\nHan vet inte vem som räddade honom, bara att \"någon från Cermira\" betalade. När en budbärare från Vitterdal bad om information om gruvorna i utbyte mot fortsatt stöd, accepterade han.\n\n## Varför väl placerad\n\nRampor är Västmarks gruvcenter och hem åt en stor tirakisk population. Dubbel-Orm arbetar bland tiraker och hör deras planer. Kantonfurste Persal och Nihtor Wekzi (tirakisk ledare) kämpar om makten i Västmark.\n\n## Rapporterar\n\n- Maktkampen Persal vs Nihtor Wekzi\n- Tirakernas planer (militära rörelser, rekrytering)\n- Gruvproduktion (ökad produktion kan betyda krigsförberedelser)\n- Tirakskt inflytande i regionen\n\n## Kontaktmetod\n\nBrevduva (sällan, 2-3 gånger per år). Dubbel-Orm rapporterar endast när något viktigt händer.\n\n## Lojalitet\n\n**Mycket hög.** Dubbel-Orm är tacksam för att någon brydde sig när Kantonfursten vägrade. Han litar på \"folk från norr\" mer än sin egen regerare."
+    },
+    {
       "namn": "Dorian Sproll",
       "bild": "dorian.png",
       "ras": "Människa",
@@ -433,6 +482,18 @@ var wikiData = {
       "beskrivning": "# DORIN KALLHAMMARE\n**Dvärgisk karavanledare genom Jargien**\n\n## GRUNDINFO\n- **Ras:** Dvärg\n- **Yrke:** Karavanledare\n- **Affiliation:** Durikars handelslinje\n- **Status:** Okänd\n- **Plats:** Jargien (15-dagarsresan)\n- **Kapitel:** Kapitel 4 (Jargien)\n\n## BESKRIVNING\nDorin Kallhammare är en erfaren dvärgisk karavanledare som ledde Gordon, Umnatak, Kazrik, Zentri och Hagge genom Jargiens snötäckta provinser under femton dagar.\n\n## KARAKTÄRSDRAG\n- **Erfaren:** Känner handelsvägarna väl\n- **Diplomatisk:** Hanterar vaktposter och tullar smidigt\n- **Pragmatisk:** Har mutor redo när behövs\n- **Försiktig:** Varnar för Daakkyrkans faror\n- **Kunnig:** Känner Jargiens hierarkier och seder\n\n## KRITISKA HÄNDELSER\n\n### 15-dagarsresan genom Jargien\n**Ledare och guide:**\n- Ledde karavanen från dvärgarnas berg till Vargnäset\n- Följde Durikars handelslinje\n- Navigerade genom Jargiens komplexa tullar och vaktposter\n\n**Råd och varningar:**\n- \\\"Håll era tungor i styr och era kappor dragna\\\"\n- \\\"Låt mig sköta pratandet\\\" vid vaktposter\n- Varnade för Daakkyrkans inkvisitorer\n- \\\"Nämn inte ett ord om resan genom Tarkas\\\"\n\n**Kris vid Ravnovo:**\n- Såg den blinda spåkvinnan arresteras\n- Manade gruppen att lämna snabbt\n- \\\"Vi måste härifrån innan någon kopplar er till henne\\\"\n\n**Möte med Arvorns Hammare:**\n- Diplomatisk hantering av Kommendör Reval\n- \\\"Vi lever i fredlig samexistens med det glorvördiga kejsardömet\\\"\n- Stoppade gruppen från att ingripa med fången\n\n**Vid Vargnäset:**\n- Levererade gruppen säkert till destinationen\n- Erbjöd säker passage vidare när vägen fri\n\n## BETYDELSE\nDorin var nyckeln till att gruppen säkert kunde korsa Jargien. Hans kunskap om lokala seder, kontakter och erfarenhet skyddade dem från Daakkyrkans uppmärksamhet.\n\n## RELATIONER\n- **Gordon:** Ofta rid framme tillsammans, delade historier\n- **Kazrik:** Professionell respekt mellan dvärgar\n- **Umnatak, Zentri, Hagge:** Beskyddade resenärer\n- **Eira Holm:** Affärskontakt i Vargnäset\n\n## SL-ANTECKNINGAR\n- Pålitlig NPC för framtida resor genom Jargien\n- Känner handelsrutter och kontakter\n- Vet nu gruppens hemligheter (Tarkas, magi)\n- Potentiell allierad eller informationskälla"
     },
     {
+      "namn": "\"Dubbel-Orm\"",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Gruvarbetare",
+      "status": "levande",
+      "plats": "Rampor, Västmark",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# \"DUBBEL-ORM\"\n**Gruvarbetare, Rampor**\n\n## GRUNDINFO\n- **Namn:** \"Dubbel-Orm\" (öknamn)\n- **Ras:** Människa (västmarkisk)\n- **Roll:** Gruvarbetare (arbetar bland tiraker)\n- **Plats:** Rampor (7000 inv, gruvor, tiraker), Västmark\n- **Status:** Levande (puckelryggig)\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nDubbel-Orm kollapsade i gruvan och skadades svårt. Kantonfurste Persal vägrade betala läkarvård. Soffia betalade anonymt för läkning i Cermira. Han överlevde men blev puckelryggig.\n\n## RAPPORTERAR\n- Maktkampen Persal vs Nihtor Wekzi\n- Tirakernas planer\n- Gruvproduktion (militär användning?)\n- Spänningar i Rampor\n\n## KONTAKTMETOD\nBrevduva (sällan, 2-3 gånger/år).\n\n## LOJALITET\nMycket hög (livet räddat)"
+    },
+    {
       "namn": "Dorn Stenbärare",
       "bild": null,
       "ras": "Människa",
@@ -442,6 +503,18 @@ var wikiData = {
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
       "beskrivning": "# DORN STENBÄRARE\n**Försvarsspecialist i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Försvarsspecialist\n- **Utrustning:** Stor sköld och harnesk\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Försvarade vid Tirakgraven."
+    },
+    {
+      "namn": "Dubbel-Orm",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Gruvarbetare",
+      "status": "levande",
+      "plats": "Rampor, Västmark",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# DUBBEL-ORM\n**Gruvarbetare i Rampor, Västmark**\n\n## GRUNDINFO\n- **Ras:** Människa (cermirisk)\n- **Titel:** Gruvarbetare\n- **Öknamn:** \"Dubbel-Orm\" (pga puckelrygg från gruvskada)\n- **Arbetsplats:** Gruvorna i Rampor (7000 inv)\n- **Plats:** Rampor, Västmark\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nDubbel-Orm kollapsade i gruvan för 7 år sedan och skadades svårt. Kantonfurste Persal vägrade betala läkarvård för en \"simpel gruvarbetare\". Soffia betalade anonymt för läkning i Cermira. Han överlevde men blev puckelryggig (därav öknamnet \"Dubbel-Orm\"). Kantonfursten vet inte vem som betalade, men Dubbel-Orm vet sanningen.\n\n## VARFÖR VÄL PLACERAD\n- Arbetar direkt bland tiraker i gruvorna\n- Hör tirakernas planer och politiska diskussioner\n- Tillgång till gruvproduktionsdata (viktigt för militär planering)\n- Insyn i maktkampen mellan Kantonfurste Persal och Nihtor Wekzi\n\n## RAPPORTERAR\n- Maktkampen Persal vs Nihtor Wekzi (tirak-fraktion)\n- Tirakernas politiska planer i Västmark\n- Gruvproduktion (järn, silver, andra metaller)\n- Militära förflyttningar genom Rampor\n\n## KONTAKTMETOD\nBrevduva magiskt styrd. Rapporterar sällan (2-3 gånger/år) pga svår tillgång till duvslag i Rampor.\n\n## LOJALITET\nMycket hög (livet räddat, skuld till Soffia)"
     },
     {
       "namn": "Dr. Yusuf al-Mansur",
@@ -542,6 +615,18 @@ var wikiData = {
       "beskrivning": "# ETHAN NAHRZEZIA\n**Gordons yngre bror - desillusionerad desertör på flykt**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Före detta soldat (Bronshjälmarna), nu desertör\n- **Hemort:** Vambolien\n- **Nuvarande plats:** Damarien (på flykt)\n- **Status:** Levande, jagad\n- **Första omnämnande:** Fas 9\n\n## BESKRIVNING\nEthan Nahrzezia är Gordons yngre bror som lämnade familjegården i Vambolien för att söka äventyr och ära. Inspirerad av berättelserna om sin storebror Gordons bedrifter - kampen mot gripar, ökendrakar och banditer - beslutade sig Ethan för att bevisa sig själv.\n\n## VÄRVING OCH RESA\nFör tre veckor sedan (före fas 9) lämnade Ethan gården mitt i natten med orden: *\"Om Gordon kan slåss mot drakar, kan jag slåss mot människor\"*. Han tog värvning med **Kapten Mordicus Helgas Bronshjälmar**, ett soldkompani som skulle österut över havet till Damarien, där Storfursten rustar för krig.\n\n## VAD SOM HÄNDE I DAMARIEN\nEthan anlände till Damarien med Bronshjälmarna. Där såg han **något** som skrämde honom tillräckligt för att bryta hans idealism och få honom att desertera:\n\n*Exakt vad han såg är okänt, men det förändrade honom fundamentalt. Margaret hade rätt att vara rädd - \"människors ondska\" var värre än någon drake.*\n\nEfter att ha bevittnat detta flydde Ethan från kompaniet och deserterade. Han är nu på flykt i eller nära Damarien.\n\n## NUVARANDE SITUATION\n**STATUS:** Desillusionerad desertör på flykt\n\n**JAGAD AV:**\n- Damariska soldater (desertering = dödsstraff)\n- Möjligen andra (beroende på vad han såg)\n\n**TILLSTÅND:**\n- Traumatiserad men fortfarande sig själv\n- Har förlorat sin idealism\n- På flykt för sitt liv\n- Position okänd (för både förföljare och Gordon)\n\n## KARAKTÄR (FÖRE DAMARIEN)\n- Modig och hängiven\n- Inspirerad av sin storebror Gordon\n- Söker äventyr och bevisande\n- Impulsiv (for mitt i natten)\n- **Naiv om \"människors ondska\"**\n\n## KARAKTÄR (EFTER DAMARIEN)\n- Desillusionerad och skrämd\n- Traumatiserad av vad han sett\n- Förstår nu varför Gordon flydde hemmet\n- Kämpar för överlevnad\n\n## FAMILJERELATIONER\n- **Gordon Nahrzezia:** Storebror, förebild och inspiration - nu Ethans enda hopp?\n- **Oliver Nahrzezia:** Bror som är rasande över Ethans beslut\n- **Margaret Nahrzezia:** Mor som är dödsrädd för sin son\n\n## MODERNS ORO\nMargaret skrev till Gordon: *\"Efter att ha hört om dina segrar mot monster, skrämmer det mig mer att Ethan ska möta människors ondska.\"*\n\nHon hade rätt. Nu är Ethan förlorad i ett främmande land, jagad och traumatiserad.\n\nMargaret ber Gordon använda sina kontakter för att ta reda på var Ethan är och rädda honom.\n\n## GORDONS DETOUR\n**AKTIVERAS:** Efter Zentri-räddningen (Kapitel 10-11)\n\n**TRIGGER:** Brev från Margaret, rykte om desertör från Bronshjälmarna, eller annan information når Gordon\n\n**UPPDRAG:** Gordon måste spåra, hitta och rädda sin bror innan det är för sent\n\n**STAKES:** \n- Om Gordon kommer för sent: död, fångad, eller värre\n- Personligt drama: Gordons rykte inspirerade Ethan till detta\n- Familjeband på spel\n\n## ROLL I KAMPANJEN\n**Personligt drama för Gordon:**\nEthan representerar konsekvenserna av Gordons heroism. Hans segrar och rykte inspirerade hans yngre bror att söka sig till kriget - och nu betalar Ethan priset.\n\n**Koppling till Damarien:**\nIntroducerar Damarien och dess faror personligt för Gordon. Vad Ethan såg (flexibelt - kan vara vandöd-armé, Xinu-ritual, krigsbrott, eller annat) kopplar till större kampanjhot.\n\n**Sekventiell sidoquest:**\nEfter att ha räddat Zentri får Gordon chansen (eller tvingas) att rädda sin egen bror. Familj vs. plikt. Skuld vs. ansvar.\n\n## KOPPLINGAR\n- **Familj:** Nahrzezia-familjen, Vambolien\n- **Före detta militär:** Bronshjälmarna under Kapten Mordicus Helga (deserterad)\n- **Plats:** Damarien (på flykt, exakt position okänd)\n- **Relation:** Gordons yngre bror\n- **Hot:** Damariska militären + möjligen Xinukulten/andra\n- **Framtid:** Räddas av Gordon? Dö? Något värre?\n\n## FRAMTIDA POTENTIALER\n**Om räddad:**\n- Traumatiserad men tacksamfull\n- Kan följa med gruppen eller återvända hem\n- Vittne till Damariens ondska\n- Fördjupad relation med Gordon\n\n**Om för sent:**\n- Död (permanent förlust, familjens förtroende borta)\n- Fångad (gisslan, framtida räddning)\n- Förvandlad till vandöd (måste \"dödas\" av Gordon senare)\n- Rekryterad av Xinukulten (bror blir fiende)\n\n**Flexibelt beslutas under kampanj**\n\n---\n\n## SPELLEDARREFERENS\n**Detaljerat scenario:** `master/ethan-scenario-detour.md`\n\nInnehåller:\n- Flexibla alternativ för vad Ethan såg (vandöd-armé, ritual, krigsbrott, etc.)\n- Triggers och timing för detour\n- Geografiska placeringsalternativ\n- Räddnings-/konfrontationsscenarier (jakt-climax, gömställe, fälla, etc.)\n- Stakes och misslyckande-konsekvenser\n- Integration med större kampanj\n\n**Damarien-kontext:** `master/damarien-politiska-läget.md` (Ariandra = Xinu-inkarnation, vandöd-armé, etc.)"
     },
     {
+      "namn": "Ervin Stigfinnare",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Guide och alv-tolk",
+      "status": "levande",
+      "plats": "Nada, Asharien",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# ERVIN STIGFINNARE\n\n**Roll:** Guide och alv-tolk\n**Plats:** Nada (800 inv, port till Sunariskogen), Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nErvins dotter försvann i Sunariskogen för 4 år sedan. Han sökte desperat men kunde inte hitta henne - alverna i skogen lät honom inte passera. Soffia skickade Syster Mirelle som hjälpte söka och förhandlade med alverna. Dottern fanns levande hos alverna (de hade tagit hand om henne efter att hon gått vilse).\n\nErvin är djupt tacksam och rapporterar allt han hör om alvernas rörelser, Frijarl Lomins beslut, och örthandel i Nada.\n\n## Varför väl placerad\n\nNada är den enda porten till Sunariskogen, hem åt Sanari-alverna. Ervin är en av få människor som kan kommunicera med alverna. Han hör rykten från resande, ser vilka köpmän handlar med alverna, och noterar militära rörelser nära skogen.\n\n## Rapporterar\n\n- Alvernas rörelser (sanari-alverna är viktiga i EON-världen)\n- Frijarl Lomins beslut (Nadas ledare)\n- Örthandel (alvernas örter kan vara magiska eller militärt värdefulla)\n- Resande som söker tillträde till Sunariskogen\n\n## Kontaktmetod\n\nRapporterar till Syster Mirelle vid hennes besök (oregelbundet, 1-2 gånger per år).\n\n## Lojalitet\n\n**Mycket hög.** Ervin är tacksam för att Soffia (via Mirelle) räddade hans dotter. Han skulle göra vad som helst för att återgälda."
+    },
+    {
       "namn": "Evelina Fältsyster",
       "bild": "evelina.png",
       "ras": "Människa",
@@ -628,6 +713,19 @@ var wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 8",
       "beskrivning": "# GAMMAL-ERIK\n**74-årig man från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 74 år\n- **Status:** Död (dag 3 av evakueringen)\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nGammal-Erik var en äldre man från Vargnäset som evakuerades med de 41 flyktingarna.\n\n## DÖD UNDER EVAKUERINGEN\nPå dag 3 av flykten genom Drunok-skogen insjuknade Gammal-Erik i frostfeber. I sitt delirium bet han av sig sin egen tunga och blödde ihjäl - en fasansfull död som djupt traumatiserade de som bevittnade den.\n\n## EFFEKT PÅ GRUPPEN\nHans våldsamma död var en av de mest skrämmande händelserna under evakueringen och bidrog till den växande desperationen bland flyktingarna.\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 flyktingar\n- Död dag 3: Frostfeber → bet av sin tunga i delirium → blödde ihjäl\n- En av tre som dog under de första dagarna"
+    },
+    {
+      "namn": "Gardar \"Falköga\"",
+      "bild": null,
+      "ras": "Människa",
+      "ålder": "42 år",
+      "titel": "Livvakt och handgången man",
+      "status": "levande",
+      "plats": "Mitrahus, Vitterdal",
+      "fraktion": "Lady Soffias hushåll",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# GARDAR \"FALKÖGA\"\n\n**Livvakt åt Lady Soffia av Vitterdal**\n\nGardar är en 42-årig före detta soldat från Egisborgs garde som nu tjänar som Lady Soffias personliga livvakt. Hans tillnamn \"Falköga\" kommer från hans skarpa observation och förmåga att upptäcka hot tidigt.\n\n## Bakgrund\nTjänstgjorde i 15 år vid Egisborgs garde, ett av Cermiras viktigaste fästen. För 8 år sedan sårades han allvarligt i en gränsstrid - en pil träffade vänster axel och han förlorade rörligheten delvis. Gardeskommendanten ville pensionera honom utan pension, men Soffia ordnade arbete som livvakt och betalade för läkarvård som återställde armen.\n\n## Roll\n- Beskyddar Soffia vid resor och möten\n- Eskortering till Cermira stad och farliga platser\n- Säkerhetsgranskare - kontrollerar besökare till Mitrahus\n- Diskret muskel - \"övertygar\" folk när Soffia behöver det\n- Kurir för känsliga meddelanden\n- Vaktar Soffias privatrum och duvslag\n\n## Kunskap om nätverket\nGardar **känner till** att Soffias spionnätverk finns. Han vet att Helga Järnoxen och Syster Mirelle är del av det, men känner INTE till specifika kunskapare eller detaljer (need-to-know basis). Han vet att brevduvorna är viktiga men tror bara att de är väl tränade, inte magiska.\n\n## Förmågor\n- Expert på observation och riskbedömning\n- Kunnig i svärd, sköld, och närkamp\n- Läser människor - ser när någon ljuger\n- Diskret och professionell\n\n## Personlighet\n- Lugn och metodisk - agerar sällan i affekt\n- Lojal till döden\n- Minimal talare - säger bara vad som behövs\n- Misstänksam mot främlingar - alla är hot tills motsatsen bevisats\n\n**Lojalitet:** Absolut (liv och heder räddad)"
     },
     {
       "namn": "Garsten \"Soppsleven\" Tretre",
@@ -738,6 +836,18 @@ var wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 8",
       "beskrivning": "# GUMMAN RAGNHILD\n**73-årig fd. barnmorska och läkare från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 73 år\n- **Yrke:** Fd. barnmorska och byläkare\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nGumman Ragnhild är den äldsta av de evakuerade från Vargnäset. Trots sin höga ålder är hon fortfarande byns primära läkare och det medicinska stödet för flyktingarna.\n\n## ROLL UNDER EVAKUERINGEN\nUnder den fem dagar långa flykten från Vargnäset var Gumman Ragnhild ovärderlig:\n- Vårdade de sjuka och skadade\n- Behandlade Gammal-Eriks frostfeber (kunde inte rädda honom)\n- Försökte trösta Anna Stenmark efter Helenas död\n- Höll modet uppe med sin erfarenhet och lugn\n\n## MEDICINSKA KUNSKAPER\n- Barnmorska (förlöst generationer av Vargnäsetbarn)\n- Örtmedicin och traditionell läkekonst\n- Sårvård och bensättning\n- Sjukdomsdiagnostik\n\n## KARAKTÄR\n- Bestämd och erfaren\n- Varm men pragmatisk\n- Respekterad av alla i byn\n- Stark trots hög ålder\n\n## EVAKUERINGEN\n- En av 41 överlevande från Vargnäset\n- Medicinsk ansvarig under flykten\n- Såg tre människor dö på vägen (Gammal-Erik, Helena Stenmark, en tredje)\n\n## KOPPLINGAR\n- **Gammal-Erik:** Försökte rädda honom från frostfeber\n- **Anna Stenmark:** Tröstade efter Helenas död\n- **Vargnäset:** Byns läkare i generationer"
+    },
+    {
+      "namn": "Gina Bryggvakt",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Värdshusvärdens dotter",
+      "status": "levande",
+      "plats": "Västerbrygga, Soldarn",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# GINA BRYGGVAKT\n\n**Roll:** Värdshusvärdens dotter (serverar soldater)\n**Plats:** Västerbrygga (500 inv, militär utpost), Soldarn\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nGinas bror deserterade från hertig Larnbrous här för flera år sedan. Han väntades bli hängd. Soffia ordnade för att han skulle \"försvinna\" norrut till Vitterdal och få nytt liv under falskt namn. Familjen tror att han dog, men Gina vet sanningen - Soffia räddade honom.\n\n## Varför väl placerad\n\nVästerbrygga är en militär utpost i Soldarn, nära gränsen mot Västmark där tiraker ofta anfaller. Ginas familj driver värdshuset där soldater från hertig Larnbrous här samlats. Soldater pratar fritt när de dricker - Gina hör allt.\n\n## Rapporterar\n\n- Soldatrykten (moral, klagomål, planerade operationer)\n- Tiraköverfallens frekvens (ökar de? Vart attackerar de?)\n- Hertig Larnbrous militära planer\n- Rekrytering och truppförflyttningar\n\n## Kontaktmetod\n\nBrevduva via handelskaravaner norrut (var 3:e månad).\n\n## Lojalitet\n\n**Mycket hög.** Gina är tacksam för att hennes bror lever och har en ny chans. Hon rapporterar allt hon hör."
     },
     {
       "namn": "Hadrian \\\"Hagge\\\" av Vitterdal",
@@ -1180,6 +1290,18 @@ var wikiData = {
       "beskrivning": "# JOSSAN FALLVIND\n**Utmärkt bågskytt från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande (evakuerad)\n- **Plats:** Vargnäset → Vitterdal → Grensfortet\n- **Kapitel:** Kapitel 7-8\n- **Specialitet:** Utmärkt bågskytt\n- **Personlighet:** Stolt, ogillar att behöva hjälp\n\n## VARGNÄSETS FÖRSVAR (Kapitel 7)\n- **Position:** 3-4 bågskyttar på taken och höjderna\n- **Förmåga:** Kan identifiera fiendens ledare\n- **Roll i försvaret:** Del av Zentris zon (taken och höjderna)\n- Försvarade Vargnäset från taken, identifierade fientliga ledare\n\n## EVAKUERINGEN (Kapitel 8)\nEvakuerad med de 41 överlevande från Vargnäset. Hatade att behöva gruppens hjälp - stolthet och självständighet gjorde det svårt att acceptera räddning. Men hon följde med. Som Skorda Bergsdotter noterade: \"Hat är bättre än apati. Hat håller dig varm.\"\n\n## RESAN TILL GRENSFORTET (Kapitel 8.5)\nDeltog i resan från Vitterdal till Grensfortet. Höll sig i utkanten av gruppen, irriterad på glädjen i Bergvik. Hennes hat och stolthet höll henne fokuserad.\n\n## KARAKTÄRSDRAG\n- **Stolt:** Ogillar att behöva hjälp\n- **Skicklig:** En av byns bästa bågskyttar\n- **Driven:** Hat och stolthet ger henne energi\n- **Överlevare:** Tog sig genom evakueringen och resan\n\n## SL-ANTECKNINGAR\nJossan är en av byns bästa bågskyttar med viktigt uppdrag att hålla höjderna under försvar. Hennes stolthet och självständighet gör henne till en komplex karaktär - svår att arbeta med men pålitlig i strid."
     },
     {
+      "namn": "Justus Tullskrivare",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Tullkontors skrivbiträde",
+      "status": "levande",
+      "plats": "Remzian Krack, Caserion",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# JUSTUS TULLSKRIVARE\n\n**Roll:** Tullkontors skrivbiträde\n**Plats:** Remzian Krack (6000 inv, Svarta fortet, Raunfloden-tullar), Caserion\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nJustus syster såldes som slavinna till Cirefa för 8 år sedan (caserisk lag tillåter slaveri i cirefaliska kolonier). Justus var desperat men maktlös. Soffia köpte fri henne via mellanhand och ordnade arbete i Vitterdal. Justus vet att \"någon från Cermira\" räddade hans syster och har lovat att hjälpa.\n\n## Varför väl placerad\n\nRemzian Krack är Caserions viktigaste handelsutpost längs Raunfloden. Alla fartyg som seglar uppströms mot Cermira måste passera här och betala tull. Justus arbetar på tullkontoret och ser ALLA fraktsedlar.\n\n## Rapporterar\n\n- Tullavgifter på Raunfloden (ökade tullar kan skada Vitterdals handel)\n- Vilka fartyg passerar (militära transporter? Truppförflyttningar?)\n- Cirefaliska militära transporter\n- Handelsmönster (ökad vapen-export? Guld-transport?)\n\n## Kontaktmetod\n\nBrevduva med kodade tullrapporter (var 2:a månad). Justus skriver \"tullrapporter\" som ser ut som administrativa dokument men innehåller kodad information.\n\n## Lojalitet\n\n**Mycket hög.** Justus syster är fri och lever ett gott liv i Vitterdal. Han rapporterar allt han ser."
+    },
+    {
       "namn": "Kaelar Stålsvärd",
       "bild": "kaelar.png",
       "ras": "Människa",
@@ -1331,7 +1453,7 @@ var wikiData = {
       "plats": "Vitterdal",
       "fraktion": "Jarladömet Vitterdal",
       "kapitel": null,
-      "beskrivning": "# LADY SOFFIA AV VITTERDAL\n\n**Hagges mor, tidigare de facto härskare av Vitterdal**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 3 (arrangerade uppdraget)\n- **Roll:** Politisk aktör, gruppens ursprungliga kontakt\n\n## BAKGRUND\n\nLady Soffia var Vitterdals verkliga härskare under Talarras formella styre. När hennes yngre son Hagge förvisades och försvann, arrangerade hon i hemlighet hans räddning.\n\n## VIKTIGA HÄNDELSER\n\n### Anlitande av gruppen (Fas 3)\n- Kontaktade gruppen för att hitta och befria Hagge\n- Kände till hans slaveri i Muhad\n- Säkrade resurser för räddningen\n\n### Hagges återkomst (Fas 7)\n- Överlycklig över sonens återkomst\n- Stöttade hans legitimering som jarl\n- Säkrade jarladömets framtid\n\n### Sändande av Thrakka (Fas 6)\n- Skickade Thrakka som förstärkning till gruppen\n- Visade fortsatt engagemang för deras säkerhet\n\n## KARAKTÄRSDRAG\n\n- **Politiskt skicklig:** Manövrerade i det komplexa hovet\n- **Beskyddande mor:** Allt för sina söner\n- **Strategisk:** Långsiktig planering\n\n## RELATIONER\n\n### Familj\n- **Hagge:** Yngre son, nu jarl\n- **Talarra:** Äldre son (död)\n\n### Gruppen\n- **Ursprunglig uppdragsgivare:** Etablerade kontakten\n- **Fortsatt allierad:** Sänt förnödenheter till Grensfortet\n\n## NUVARANDE SITUATION\n\nLady Soffia fortsätter vara inflytelserik i Vitterdals politik, stödjande Hagges styre bakom kulisserna.\n\n## SL-ANTECKNINGAR\n\n- Kan användas för politiska intriger\n- Har långtgående kontakter\n- Hennes motiv är alltid kopplat till Vitterdals bästa"
+      "beskrivning": "# LADY SOFFIA AV VITTERDAL\n\n**Hagges mor, tidigare de facto härskare av Vitterdal**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 3 (arrangerade uppdraget)\n- **Roll:** Politisk aktör, gruppens ursprungliga kontakt\n\n## BAKGRUND\n\nLady Soffia var Vitterdals verkliga härskare under Talarras formella styre. När hennes yngre son Hagge förvisades och försvann, arrangerade hon i hemlighet hans räddning.\n\n## VIKTIGA HÄNDELSER\n\n### Anlitande av gruppen (Fas 3)\n- Kontaktade gruppen för att hitta och befria Hagge\n- Kände till hans slaveri i Muhad\n- Säkrade resurser för räddningen\n\n### Hagges återkomst (Fas 7)\n- Överlycklig över sonens återkomst\n- Stöttade hans legitimering som jarl\n- Säkrade jarladömets framtid\n\n### Sändande av Thrakka (Fas 6)\n- Skickade Thrakka som förstärkning till gruppen\n- Visade fortsatt engagemang för deras säkerhet\n\n## KARAKTÄRSDRAG\n\n- **Politiskt skicklig:** Manövrerade i det komplexa hovet\n- **Beskyddande mor:** Allt för sina söner\n- **Strategisk:** Långsiktig planering\n\n## RELATIONER\n\n### Familj\n- **Hagge:** Yngre son, nu jarl\n- **Talarra:** Äldre son (död)\n\n### Gruppen\n- **Ursprunglig uppdragsgivare:** Etablerade kontakten\n- **Fortsatt allierad:** Sänt förnödenheter till Grensfortet\n\n## NUVARANDE SITUATION\n\nLady Soffia fortsätter vara inflytelserik i Vitterdals politik, stödjande Hagges styre bakom kulisserna.\n\n## SL-ANTECKNINGAR\n\n- Kan användas för politiska intriger\n- Har långtgående kontakter\n- Hennes motiv är alltid kopplat till Vitterdals bästa\n- **[Se hennes kompletta informationsnätverk](soffias-natverk.html)** - 20 kunskapare över hela Mundana"
     },
     {
       "namn": "Laila al-Jen",
@@ -1453,6 +1575,18 @@ var wikiData = {
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
       "beskrivning": "# LIA\n**Serveringspersonal på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Serveringspersonal\n- **Arbetsplats:** Den Dolda Dolken (värdshus)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BAKGRUND\nLia växte upp i en familj av skådespelare och lärde sig tidigt att underhålla och fängsla publik. Hennes uppväxt gav henne unika färdigheter som nu tjänar henne väl i värdshusverksamheten.\n\n## KARAKTÄR\nLia är en ung, observant och karismatisk kvinna med stor anpassningsförmåga. Hon är:\n- **Observant:** Kan läsa av människor väl\n- **Karismatisk:** Fängslande personlighet från skådespelarfamiljen\n- **Anpassningsbar:** Hanterar olika typer av gäster med lätthet\n- **Skicklig dansare:** Underhåller ibland på värdshuset\n- **Vänlig och hjälpsam:** Särskilt mot generösa gäster\n\n## ROLL PÅ DEN DOLDA DOLKEN\n- Serveringspersonal\n- Potentiell informationskälla (hör mycket genom sitt arbete)\n- Underhållare vid speciella tillfällen\n\n## I KAMPANJEN\nFas 2 (Kapitel 2): Möttes på Den Dolda Dolken i Tuzan Rim under karavanresan."
+    },
+    {
+      "namn": "Linna Blekgatan",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Tvättflicka",
+      "status": "levande",
+      "plats": "Camard, Asharien",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# LINNA BLEKGATAN\n\n**Roll:** Tvättflicka hos överjarlen Anstir Tyldons hushåll\n**Plats:** Camard (20000 inv, huvudstad), Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nLinnas man dog skuldsatt till Handelshus Temiranz för 6 år sedan. Handelshuset hotade att sälja Linna som slavinna för att täcka skulden. Soffia betalade skulden via mellanhand och Linna vet att \"någon från norr\" räddade henne. När en budbärare bad om hjälp i utbyte, accepterade hon.\n\n## Varför väl placerad\n\nLinna tvättar linne för överjarlen Anstir Tyldons hushåll i Camard, Ashariens huvudstad. Tvätterskor är OSYNLIGA - adeln pratar fritt när hon hämtar/lämnar linne. Hon hör privata samtal om Landsrådets beslut, maktkampen mellan Handelshus Temiranz och Handelshus Ziliz, och politiska intriger.\n\n## Rapporterar\n\n- Landsrådets beslut (lagar, tullar, militära beslut)\n- Överjarl Tyldons gäster (vilka adelsmän besöker honom privat?)\n- Rykten om Temiranz vs Ziliz (handelshusmaktkamp)\n- Politiska spänningar i Asharien\n\n## Kontaktmetod\n\nKodade lappar i tvättbalar till resande köpmän norrut (var 3:e månad).\n\n## Lojalitet\n\n**Hög.** Linna är tacksam för att hon inte såldes som slavinna. Hon rapporterar vad hon hör."
     },
     {
       "namn": "Lord Vinterglöd",
@@ -1610,6 +1744,43 @@ var wikiData = {
       "beskrivning": "# MIRELLE\n**Kock på Den Gyldene Ankaret**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Kvinna\n- **Yrke:** Kock\n- **Arbetsplats:** Den Gyldene Ankaret\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nMirelle är värdhusets skickliga kock, känd för sina havsfångsträtter och traditionella sjömansmat. Hon lagar mat åt sjöfolk, köpmän och resenärer som besöker Den Gyldene Ankaret.\n\n## SPECIALITET\nMirelles matlagning fokuserar på:\n- Havsfångsträtter\n- Traditionell sjömansmat\n- Färsk fisk från hamnen\n- Välkryddade rätter\n\n## KARAKTÄR\n- Skicklig kock\n- Stolt över sina rätter\n- Känner sjömännens smakönskemål\n- Professionell och pålitlig\n\n## KOPPLINGAR\n- **Arbetsplats:** Den Gyldene Ankaret\n- **Arbetsgivare:** Bartol\n- **Plats:** Tuzan Rim, vid hamnen\n- **Fas:** 3"
     },
     {
+      "namn": "Marta \"Tvätterskorna\"",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Tvättflicka i adelskvarteren",
+      "status": "levande",
+      "plats": "Cermira stad",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# MARTA \"TVÄTTERSKORNA\"\n\n**Namn:** Marta \"Tvätterskorna\"\n**Roll:** Tvättflicka i adelskvarteren\n**Plats:** Cermira stad (7000 invånare, huvudstad)\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** Enkel tvätterska som hämtar/lämnar linne hos adelsfamiljer\n\n## Bakgrund\n\nFör 8 år sedan var Marta skuldsatt till ett spelarhelge efter att hennes man dog i hamnolycka. Hon skulle sälja sin dotter till bordell för att betala skulden. Soffia betalade skulden anonymt via mellanhand och ordnade arbete åt dottern i Mitrahus (Vitterdal). Marta vet inte vem som hjälpte henne, bara att \"en dam från norr\" sa att hon skulle \"hålla öronen öppna\".\n\n## Varför väl placerad\n\nTvätterskor är OSYNLIGA - adeln pratar fritt när hon hämtar linne. Marta tvättar för 15+ adelshushåll i Cermira, inklusive landsrådsmedlemmar och officerare. Hon hör privata samtal om politik, tullar, guldhandel och militära planer.\n\n## Rapporterar\n\n- Landsrådets diskussioner (hörd genom fönster/tjänare)\n- Vilka adelsfamiljer möts privat (hemliga möten)\n- Rykten om tullar och guldhandel\n- Militära förflyttningar (hörd från officerares hustrur)\n\n## Kontaktmetod\n\nKodade lappar gömda i tvättbalar till Vitterdals handelshus (varje månad).\n\n## Lojalitet\n\n**Mycket hög.** Marta är tacksam för att hennes dotter räddades från bordell. Hon rapporterar allt hon hör."
+    },
+    {
+      "namn": "Moder Elin",
+      "bild": null,
+      "ras": "Människa",
+      "ålder": "60+",
+      "titel": "Pensionerad köksförestånderska",
+      "status": "levande",
+      "plats": "Sankt Kira, Cermira",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# MODER ELIN\n\n**Roll:** Pensionerad köksförestånderska\n**Plats:** Sankt Kira (12000 invånare inkl. pilgrimer, pilgrimsort), Cermira\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** \"Hjälper till lite\" i pilgrimshusets kök\n\n## Bakgrund\n\nFörestånderska i 20 år men anklagades felaktigt för stöld av silverfat för 6 år sedan. En yngre rival ville ha hennes position och planterade bevis. Soffia skickade Syster Mirelle som \"vittnade\" om den verkliga tjuven. Elin klarades men tvingades gå i pension ändå. Hon vet att \"en dam från norr\" räddat hennes heder och rapporterar till Syster Mirelle.\n\n## Varför väl placerad\n\nSankt Kira är en viktig pilgrimsort där pilgrimer från HELA Mundana passerar genom. Moder Elin arbetar i pilgrimshusets kök och hör rykten från resande köpmän, präster, och adel som reser \"inkognito\". Hon känner alla lokala värdshus och krögare.\n\n\"Gammal kvinna\" - folk pratar öppet framför henne eftersom hon anses ofarlig.\n\n## Rapporterar\n\n- Vilka adelsmän reser söderut mot Jarla (hemliga resor? Diplomati?)\n- Rykten från pilgrimer om krig/politik/handel\n- Landvägstrafik (karavaner, militära rörelser)\n- Cirefaliska pilgrimer (spioner?)\n\n## Kontaktmetod\n\nRapporterar till Syster Mirelle vid hennes besök (3-4 gånger per år).\n\n## Lojalitet\n\n**Mycket hög.** Moder Elin är tacksam för att hennes heder räddades. Hon rapporterar allt hon hör."
+    },
+    {
+      "namn": "Moder Sala",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Bibliotekets städerska",
+      "status": "levande",
+      "plats": "Hadarlon, Soldarn",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# MODER SALA\n\n**Roll:** Bibliotekets städerska\n**Plats:** Hadarlon (2000 inv, f.d. huvudstad, bibliotek), Soldarn\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nSala åtalades för stöld av ett forntida kodex från Hadarlons berömda bibliotek. Hon var oskyldig - den verkliga tjuven var en korrupt Zoriánmunk som ville sälja kodexet på svarta marknaden. Soffia skickade Syster Mirelle som vittnade om den verkliga tjuven. Sala klarades och munken fängslades.\n\nSala är djupt tacksam och rapporterar till Syster Mirelle om Zoriánordens aktivitet och vad forskare söker i biblioteket.\n\n## Varför väl placerad\n\nHadarlon är Soldarns f.d. huvudstad och hem åt ett av Mundanas viktigaste bibliotek. Zoriánorden (kunskaps- och magiorden) är aktiv här. Sala städar biblioteket och ser vilka forskare söker vilka böcker, hör samtal mellan Zoriánmunkar, och noterar hertig Yssecs besök.\n\n## Rapporterar\n\n- Zoriánordens aktivitet (vad forskar de om?)\n- Vad forskare söker i biblioteket (militära texter? Magiska formulär?)\n- Hertig Yssecs planer (Soldarns ledare)\n- Ovanliga besökare från andra länder\n\n## Kontaktmetod\n\nRapporterar till Syster Mirelle vid hennes besök (oregelbundet, 1-2 gånger per år).\n\n## Lojalitet\n\n**Mycket hög.** Sala är tacksam för att hennes heder räddades och den korrupta munken avslöjades."
+    },
+    {
       "namn": "Mivell Thamrin",
       "bild": null,
       "ras": "Människa",
@@ -1674,6 +1845,18 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# NAILA BINT-ZAHIR\n**Serveringspersonal på Kamelens Oas**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Serveringspersonal\n- **Arbetsplats:** Kamelens Oas\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nNaila bint-Zahir arbetar som serveringspersonal på Kamelens Oas och tar hand om gästerna med professionalism och vänlighet.\n\n## ARBETSUPPGIFTER\nSom serveringspersonal:\n- Serverar mat och dryck\n- Tar emot beställningar\n- Säkerställer gästernas trivsel\n- Hjälper till i matsalen och innergården\n\n## KOPPLINGAR\n- **Arbetsplats:** Kamelens Oas\n- **Arbetsgivare:** Farid & Leyla al-Malik\n- **Kollegor:** Tariq, Amira, Youssef, Samir\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
+    },
+    {
+      "namn": "Nils",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Stallmästare",
+      "status": "levande",
+      "plats": "Arlon, Drunok",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# STALLPOJKE NILS\n**Stallmästare vid kungens stall, Arlon**\n\n## GRUNDINFO\n- **Namn:** Nils (stallpojke)\n- **Ras:** Människa (drunokisk)\n- **Roll:** Stallmästare vid kungens stall\n- **Plats:** Arlon (5000 inv, huvudstad, kung Gahallan III), Drunok\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nNils far avrättades för desertering. Familjen utarmades. Soffia ordnade lärlingskap i kungsstallet för Nils. Han vet inte vem som hjälpte.\n\n## RAPPORTERAR\n- Kungens militära planer mot Jargien\n- Budbärare som besöker kungens hov\n- Jargiska legationens aktivitet\n- Hästbeställningar (krigsförberedelser?)\n\n## KONTAKTMETOD\nBrevduva (magiskt styrd). Rapporterar var 3:e månad.\n\n## LOJALITET\nHög"
     },
     {
       "namn": "Nekromantikern",
@@ -1918,6 +2101,18 @@ var wikiData = {
       "beskrivning": "# RORIK\n**Kock på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Kock\n- **Plats:** Den Dolda Dolken, Tuzan Rim\n- **Anställningstid:** Har jobbat på värdshuset i många år\n\n## UTSEENDE & PERSONLIGHET\n- **Kroppsbyggnad:** Stor som ett hus\n- **Temperament:** Snäll och skygg\n- **Beskyddande:** Blir mycket arg om någon behandlar Lia eller Isla dåligt\n\n## RELATIONER\n- **Sylva:** Arbetsgivare (värdshusägare)\n- **Lia & Isla:** Beskyddar dem starkt\n\n## I KAMPANJEN\n**Kapitel 2 - Muhad:** Träffades på Den Dolda Dolken i Tuzan Rim. Trots sin imponerande storlek är han varsam och vänlig, men visar en annan sida om någon hotar de han bryr sig om.\n\n## SL-ANTECKNINGAR\nLojal anställd och pålitlig beskyddare av värdshuspersonalen. Hans fysiska närvaro och skyddande natur gör honom till en viktig tillgång för Sylva."
     },
     {
+      "namn": "Runo Silvertråd",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Juvelerare och köpman av fina metaller",
+      "status": "levande",
+      "plats": "Jarla, Asharien",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# RUNO SILVERTRÅD\n\n**Roll:** Juvelerare och köpman av fina metaller\n**Plats:** Jarla, Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** Oberoende hantverkare, ärlig och diskret\n\n## Bakgrund\n\nRuno driver en liten men välrenommerad juvelerares verkstad i Jarlas köpmannskvarter. Han är känd för diskret hantverk och säljer smycken till stadens rika köpmän, adelsmän och cirefaliska diplomater. Folk pratar öppet framför honom eftersom \"hantverkare inte bryr sig om politik\".\n\nRunos familj hotades av konkurs för 5 år sedan efter att Handelshus Nejas (som nu dominerar Jarla) bojkottade deras verkstad. Soffia betalade deras skulder via mellanhand och ordnade nya kunder. Runo är tacksam och rapporterar allt han hör.\n\n## Spionaktivitet\n\n- Lyssnar på privata samtal i rika hushåll när han levererar smycken\n- Noterar **stora silverköp** (militära förberedelser? Bestickningar?)\n- Spårar **guldflöden** mellan Handelshus Nejas och cirefaliska konton\n- Känner till vilka cirefaliska familjer köper fastigheter i Jarla\n\n## Rapporterar till Soffia\n\n- Vilka cirefalier investerar i Jarla-egendom\n- Storköp av vapen/rustningar genom smidesgillet\n- Ekonomiska förbindelser mellan Handelshus Nejas och Cirefa\n- Betalningar för \"reformer\" (mutpengar till Frijarl Todor Fete)\n\n## Kontaktmetod\n\nKod-smycke levererat till Vitterdals handelshus i Jarla (varannan månad).\n\n## Lojalitet\n\n**Hög.** Runo är tacksam för att hans familj räddades från konkurs."
+    },
+    {
       "namn": "Rådslingan",
       "bild": "kullendorff_Formless_shadow_entity_emerging_from_darkness_of__b75aedfd-6883-4590-8d95-5ced95a91bd6_3.png",
       "ras": "Varelse",
@@ -2059,6 +2254,18 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# STEN KNOTBINDARE\n**Besättningsmedlem på Månljuset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Besättningsmedlem på flodbåt\n- **Fartyg:** Månljuset\n- **Status:** Levande\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nSten Knotbindare är en pålitlig besättningsmedlem som blev kvar och hjälpte Gordon Nahrzezia att styra fartyget efter det tragiska myteriet under evakueringen från Vargnäset.\n\n## MUTERIET PÅ MÅNLJUSET\nNär myteriet bröt ut och kapten Lars \"Silkeskägg\" Nordahl dödades, var Sten en av de som förblev lojala. Han hjälpte Gordon att ta kontroll över situationen och säkerställa att de återstående 11 flyktingarna kom till säkerhet.\n\n## KARAKTÄR\n- Lojal och pålitlig\n- Modig under kris\n- Kunnig sjöman (\"Knotbindare\" antyder expertis med rep och sjömansarbete)\n- Stöttade Gordon i svår stund\n\n## BETYDELSE\nStens lojalitet och stöd var avgörande för att räddningen kunde slutföras trots tragedin med myteriet.\n\n## KOPPLINGAR\n- **Fartyg:** Månljuset\n- **Händelse:** Myteri under evakuering från Vargnäset\n- **Arbetade med:** Gordon Nahrzezia\n- **Fas:** 7"
+    },
+    {
+      "namn": "Sven Hammarhand",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Hamnararbetare och lastkontrollant",
+      "status": "levande",
+      "plats": "Cermira stad, Månsjöns hamn",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# SVEN HAMMARHAND\n**Hamnararbetare och lastkontrollant, Cermira stad**\n\n## GRUNDINFO\n- **Ras:** Människa (cermirisk)\n- **Roll:** Hamnararbetare och lastkontrollant\n- **Täckmantel:** Hamnarbetare som \"skriver rätt vad som lastas\"\n- **Arbetsplats:** Cermiras hamn, Månsjön\n- **Plats:** Cermira stad (7000 invånare, huvudstad)\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nSvens bror dog i gruvras i Vitterdal för 5 år sedan och lämnade efter sig hustru + 3 barn. Soffia såg till att familjen fick pension och att barnen fick lärlingskap. Sven vet att \"Lady Soffia hjälpte min brors familj\" och är djupt tacksam. Han kan läsa och skriva (ovanligt för hamnarbetare).\n\n## VARFÖR VÄL PLACERAD\n- Ser ALLA fartyg som anlöper Cermiras hamn vid Månsjön\n- Vet vad som lastas/lossas (vapen, trupper, guld)\n- Hör sjömäns rykten från andra städer\n- Kan läsa fraktsedlar och se ovanliga laster\n\n## RAPPORTERAR\n- Vilka fartyg kommer från Jarla/Asharien\n- Ovanliga laster (militära, smuggel)\n- Guldtransporter som passerar hamnen\n- Rykten från sjömän om andra hamnar\n\n## KONTAKTMETOD\n\"Inventarielistor\" till Vitterdals handelshus (kodade rapporter). Rapporterar varannan månad.\n\n## LOJALITET\nHög (brors familj räddad från fattigdom)"
     },
     {
       "namn": "Sylas \\\"Eldvakten\\\"",
@@ -2247,6 +2454,18 @@ var wikiData = {
       "beskrivning": "# TOMAS JÄRNHJÄLM\n**Veteransoldat och försvarsansvarig**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** ~42 år\n- **Bakgrund:** F.d. infanterist, veteransoldat\n- **Status:** Levande\n- **Plats:** Bergvik (senare Grensfortet)\n- **Kapitel:** Kapitel 8\n- **Roll:** Försvarsansvarig\n\n## BESKRIVNING\nTomas Järnhjälm är en erfaren veteransoldat från Bergvik. Hans namngivande järnhjälm (Pv:8, BRYT:14) är både skydd och symbol för hans militära bakgrund.\n\n## EGENSKAPER & FÄRDIGHETER\n**Fysiska egenskaper:**\n- STY 15, TÅL 15 - exceptionellt stark och uthållig\n- RÖR 12, PER 13 - bra reflexer och uppfattning\n- PSY 11, VIL 14 - stark vilja\n\n**Stridsfärdigheter:**\n- Yxa 15 (expert)\n- Sköld 14\n- Undvika 13\n- Stridsvana 15 (erfaren veteran)\n\n**Andra färdigheter:**\n- Krigsföring 13 (taktisk kunskap)\n- Härda ut 15 (extremt uthållig)\n- Speja 12\n- Träarbete 14\n\n## RESAN TILL GRENSFORTET\nDag 4 i Bergvik (14:e Tretoria) deltog Tomas i kvällsplaneringen med Gordon om försvar. Han är en naturlig ledare för defensive åtgärder och fortifikationer.\n\n## ROLL PÅ GRENSFORTET\nSom försvarsansvarig är Tomas Järnhjälm central för:\n- Planering av fortets försvar\n- Träning av försvarare\n- Taktisk rådgivning\n- Byggande av befästningar\n\n## UTRUSTNING\n- **Stridsyxa** (H+Ob2T6)\n- **Järnhjälm** (Pv:8, BRYT:14) - namngivare\n- **Sköld**\n\n## KARAKTÄR\n- Erfaren och pålitlig\n- Taktiskt kunnig\n- Stark ledare\n- Praktisk problemlösare\n\n## KOPPLINGAR\n- **Bergvik:** Hemstad\n- **Gordon:** Samarbetar om försvarsplanering\n- **Grensfortet:** Ny bosättning, försvarsansvarig"
     },
     {
+      "namn": "Tomas Segelmakar",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Segelmakarelev",
+      "status": "levande",
+      "plats": "Tuzan Rim, Asharien",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# TOMAS SEGELMAKAR\n**Segelmakarelev vid örlogsvarvet, Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa (asharisk)\n- **Roll:** Segelmakarelev vid örlogsvarvet\n- **Arbetsplats:** Tuzan Rims örlogshamn\n- **Plats:** Tuzan Rim (2000 invånare, örlogshamn), Asharien\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nTomas far anklagades för sabotage av örlogsflottans segel för 3 år sedan. Soffia ordnade bevis för hans oskuld via mellanhand. Far klarades och familjen återfick sitt heder.\n\n## VARFÖR VÄL PLACERAD\n- Arbetar direkt med örlogsflottans segel\n- Ser vilka fartyg som förs och vilka som returnerar\n- Hör soldaternas och sjömännens samtal\n- Känner till örlogsflottans förberedelser\n\n## RAPPORTERAR\n- Örlogsflottans rörelser (vilka fartyg mobiliseras)\n- Cirefaliske köpmannen El Benurs planer och kontakter\n- Militära förberedelser i Tuzan Rim\n- Nya segel-beställningar (indikerar flottexpansion)\n\n## KONTAKTMETOD\nBrevduva (magiskt styrd). Rapporterar var 2:a månad.\n\n## LOJALITET\nMycket hög (far räddad från avrättning)"
+    },
+    {
       "namn": "Tamron",
       "bild": "timronochtamron.png",
       "ras": "Människa",
@@ -2278,6 +2497,19 @@ var wikiData = {
       "fraktion": "Oberoende",
       "kapitel": null,
       "beskrivning": "# TORMUND RIMSKÄGG\n\n**Eremitjägare i Mithera, 40 år i skogen**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Ålder:** Gammal\n- **Status:** Levande\n- **Första fas:** Fas 10 (Mithera)\n- **Roll:** Vägvisare och varning om Mitheras faror\n\n## BAKGRUND\n\nTormund Rimskägg har bott i Mithera-skogen i 40 år, lever som eremitjägare. Han vet skogens hemligheter och faror.\n\n### Personlig tragedi\n- Såg sin son försvinna när kartor ljög\n- Därför varnar han andra\n\n## KRITISKA HÄNDELSER\n\n### Mithera (Fas 10)\n**Mötet vid Den Sista Jägarstugan:**\n\n**Varningar:**\n- *\"Kartor ljuger - skogen byter plats på landmärken.\"*\n- Varnade för varma källor\n- Varnade för snökatter\n- Berättade om silverfanfarer i fjärran\n\n**Hjälp:**\n- Sålde isspett för att upptäcka frusna vattendrag\n- Gav praktisk överlevnadskunskap\n\n## KARAKTÄRSDRAG\n\n- **Erfaren:** 40 år i Mithera\n- **Försiktig:** Varnar andra\n- **Traumatiserad:** Sonens försvinnande präglar honom\n- **Hjälpsam:** Trots allt hjälper han resande\n\n## RELATIONER\n\n### Förlust\n- **Son:** Försvann när kartorna ljög\n\n### Gruppen\n- **Vägvisare:** Gav avgörande information\n\n## BETYDELSE\n\nTormunds varningar om kartorna, källorna och snökatter var avgörande för gruppens överlevnad i Mithera.\n\n## NUVARANDE SITUATION\n\nTormund lever kvar i sin stuga, varnar andra resande om skogens faror.\n\n## SL-ANTECKNINGAR\n\n- Symbol för Mitheras fara - även erfarna kan förlora allt\n- Hans son kan dyka upp i Skugglandet?\n- Potentiell räddare om gruppen återvänder skadade\n- Vet mer om Mithera än de flesta levande"
+    },
+    {
+      "namn": "Torsten",
+      "bild": null,
+      "ras": "Människa",
+      "ålder": "~20 år",
+      "titel": "Stallmästare",
+      "status": "levande",
+      "plats": "Sunnanmark (Äppelby), Cermira",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# TORSTEN STALLPOJKE\n**Stallmästare i jarlens stall, Sunnanmark**\n\n## GRUNDINFO\n- **Namn:** Torsten (inget efternamn känt)\n- **Ras:** Människa (cermirisk)\n- **Ålder:** ~20 år\n- **Roll:** Stallmästare i jarlens stall\n- **Täckmantel:** Vanlig stallpojke\n- **Arbetsplats:** Äppelby jarls huvudstall, Sunnanmark\n- **Plats:** Sunnanmark (Äppelby), Ätten Kärlings säte, södra Cermira\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nTorstens syster våldtogs av en Kärling-man för 4 år sedan. Ingen brydde sig - \"bara en bondflicka\". Soffia hörde via Helga och ordnade diskret för systern att få arbete i Mitrahus och läkarvård. Torsten vet att \"Lady Soffia räddade min syster\" och hatar Kärlingarna. Han arbetar i deras stall men rapporterar allt.\n\n## VARFÖR VÄL PLACERAD\n- Stallpojkar är OSYNLIGA - adeln pratar fritt vid stallet\n- Hör när jarlen/söner diskuterar militära planer\n- Ser vilka budbärare som kommer/går\n- Känner till truppsmobilisering (hästar beställs)\n\n## RAPPORTERAR\n- Kärlingarnas krigsmobilisering\n- Vilka allierade de kontaktar\n- Attacker mot Asharien/Jargien\n- När jarlen reser till Cermira för att pressa landsrådet\n\n## KONTAKTMETOD\nRapporter gömda i hölaster norrut till Vitterdal. Rapporterar varje månad.\n\n## LOJALITET\nMycket hög (syster räddad från övergrepp, hatar Kärlingarna)"
     },
     {
       "namn": "Turam",
@@ -2531,6 +2763,18 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# ZAN FJÄDERTUNGA\n**Gatumusikant i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Gatumusikant\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nZan Fjädertunga är en gatumusikant som uppträder på Tuzan Rims gator. Hans smeknamn \"Fjädertunga\" antyder att han har en lätt och skicklig sångröst.\n\n## VERKSAMHET\nSom gatumusikant:\n- Spelar musik på gatorna\n- Underhåller förbipasserande\n- Samlar in mynt från åhörare\n- Sprider nyheter och rykten genom sång\n\n## KARAKTÄR\n- Talangfull musikant\n- Lätt och behaglig röst\n- Känner till mycket som händer i staden\n- Populär bland lokalbefolkningen\n\n## VÄRDE SOM INFORMATIONSKÄLLA\nGatumusikanter som Zan hör mycket av vad som händer i staden och kan vara värdefulla källor till rykten och information.\n\n## KOPPLINGAR\n- **Plats:** Tuzan Rim\n- **Yrke:** Musikant\n- **Fas:** 3"
+    },
+    {
+      "namn": "Zara",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Köksflicka",
+      "status": "levande",
+      "plats": "Sor, Jargien",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "källa": "EM-R001",
+      "beskrivning": "# ZARA\n**Köksflicka i Sor, Jargien**\n\n## GRUNDINFO\n- **Ras:** Människa (jargisk)\n- **Titel:** Köksflicka\n- **Arbetsplats:** Rikaste grisfarm-ägaren i Sor (1200 inv, Sorskinkan)\n- **Plats:** Sor, Jargien\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nZaras bror falskt anklagad för grisstöld av grisfarm-ägaren (skulle hängas enligt jargisk lag). Soffia skickade Syster Mirelle som \"vittnade\" om den verkliga tjuven. Bror klarades och släpptes fri. Zara vet inte vem som hjälpte, bara att \"en nunna från norr\" kom och räddade hennes bror.\n\n## VARFÖR VÄL PLACERAD\n- Arbetar i köket hos Sors rikaste grisfarm-ägare\n- Hör samtal om livsmedelsproduktion till jargiska armén\n- Sor är känt för Sorskinkan (levereras till jargiska militära förläggningar)\n- Ser militära inköpsorder och transportscheman\n\n## RAPPORTERAR\n- Livsmedelsproduktion till jargiska armén (hur mycket mat skickas?)\n- Jargiska militära rörelser nära gränsen (ökad efterfrågan = truppförflyttningar)\n- Planer för militär expansion (hörd från militära köpare)\n\n## KONTAKTMETOD\nRapporterar till Syster Mirelle vid hennes sällsynta besök till Sor (1 gång/år). Mirelle presenterar sig som \"vandrande nunna\".\n\n## LOJALITET\nMycket hög (bror räddad från avrättning)"
     },
     {
       "namn": "Zara al-Min",

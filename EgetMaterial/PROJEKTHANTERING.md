@@ -127,6 +127,7 @@ projekt/EM-L001_namn/
 ├── STATUS.md           # Fas-tracking, progress, blockerare
 ├── NOTES.md            # Vision, frågor, idéer
 ├── VALIDERING.md       # Valideringslogg (skapas i fas 6)
+├── [projektnamn].md    # 📄 SAMMANFATTNING (all info för NotebookLM)
 ├── research/
 │   ├── geografi.md     # NotebookLM-svar
 │   ├── kultur.md
