@@ -1491,6 +1491,7 @@
                     .replace(/## (.*?)$/gm, '<h2>$1</h2>')
                     .replace(/# (.*?)$/gm, '<h1>$1</h1>')
                     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" style="color: var(--flame-orange); text-decoration: underline;">$1</a>')
                     .replace(/\n\n/g, '</p><p>')
                     .replace(/^(.*)$/gm, '<p>$1</p>');
             }
@@ -1553,6 +1554,7 @@
                     .replace(/## (.*?)$/gm, '<h2>$1</h2>')
                     .replace(/# (.*?)$/gm, '<h1>$1</h1>')
                     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" style="color: var(--flame-orange); text-decoration: underline;">$1</a>')
                     .replace(/\n\n/g, '</p><p>')
                     .replace(/^(.*)$/gm, '<p>$1</p>');
             }
@@ -1595,6 +1597,7 @@
                     .replace(/## (.*?)$/gm, '<h2>$1</h2>')
                     .replace(/# (.*?)$/gm, '<h1>$1</h1>')
                     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" style="color: var(--flame-orange); text-decoration: underline;">$1</a>')
                     .replace(/\n\n/g, '</p><p>')
                     .replace(/^(.*)$/gm, '<p>$1</p>');
             }
