@@ -256,48 +256,44 @@ Benne Tok pekade norrut: "Han gick mot bergen. Mot gamla **Grensfortet**. Ingen 
 **Platsen:**
 Grensfortet - en övergiven borg från Hadrians tid, nu förfallen och hemsökt. Byggnaden låg i bergen mellan Vitterdal och Mitheras gränsland.
 
-**Ibrans misstag:**
-Shamanen visste inte att fortet låg på **gränsen till Skugglandet**. Detta skulle bli hans - och demonens - ödefattningsamma misstag.
+**Urkhaths manipulation:**
+Ibrans enda tanke var att fly med föremålen och säkra dem. Men Urkhath är en mäktig demon. Med föremålen så nära lyckades demonen **styra Tamron mot Grensfortet** - en övergiven borg på gränsen till Skugglandet, där dimensionsgränserna är tunnare.
 
-**Vad som hände:**
-När gruppen nådde Grensfortet hade Ibran/Tamron börjat använda bindningsföremålens kraft. Men positionen - så nära Skugglandet - skapade en **resonans** med de mörka krafterna där.
+**Demonens manifestation:**
+Vid Grensfortet lyckades Urkhath manifestera sig i en liten svart form. Demonen **slog ut Tamron** och **tog föremålen**. Tre **skuggvarelser** - väsen från gränslandet som dragits till demonens kraft - materialiserades också.
 
-**Demonens partiella frigörelse:**
-En del av **Urkhath** lyckades bryta sig fri från bindningarna. Den enorma kraften **kastade bort Ibran från Tamrons kropp** - shamanen skars loss från sitt värd, tappad som en trasig docka.
+**Spelarnas ankomst:**
+Gruppen anlände till Grensfortet tillsammans med **Serafina Eldstav**, som hade ridit ikapp dem.
 
-**Manifestationen:**
-Demonen materialiserade sig delvis - ingen fullständig kropp, men tillräckligt för att bli fruktansvärt farlig. Tre **skuggvarelser** - väsen från gränslandet som dragits till demonens kraft - attackerade också.
+(Dubbel skada från fototropi - ljus från faklar och besvärjelser gjorde skuggvarelserna extra sårbara)
 
-(Dubbel skada från fototropi - ljus från faklar och besvärjelser gjorde dem extra sårbara)
-
-**Serafinas återkomst:**
-Mitt under striden dök **Serafina Eldstav** upp - hon hade ridit ikapp gruppen. Hon deltog i striden.
-
-**Tillsammans** lyckades de:
+**Striden:**
+Tillsammans lyckades de:
 - Bekämpa och driva tillbaka demonmanifestationen
 - Döda skuggvarelserna
-- Återbinda demondelen (delvis)
-- Återta bindningsföremålen (som Ibran/Tamron haft med sig)
+- Återta bindningsföremålen från demonens grepp
 
-**Ibrans öde:**
-Shamanen Ibran Anderyttare, riven från Tamrons kropp, flydde svårt skadad in i skogarna. Hans spår försvann mot Mithera.
+**Efter striden:**
+- **Tamron** hade vaknat under striden och flytt - hans spår försvann mot Mithera
+- **Ibrans själ** var borta ur Tamrons kropp sedan demonen slagit ut honom
+- **Serafina** tog hand om de återtagna föremålen
 
 ### Serafinas Svek
 
 Efter striden visade Serafina sitt sanna ansikte:
 
 **Förbudet:**
-"Ni får **INTE** återvända till kompaniet. Ni får **INTE** tala om vad som hänt här. Skatterna från tirakgraven är **min** sak att hantera."
+"Ni får **INTE** återvända till kompaniet. Ni får **INTE** tala om vad som hänt här. Föremålen från tirakgraven är **min** sak att hantera."
 
 **Beordringar:**
-- Tre månaders **tvingad ledighet**
+- Tre månaders **permission med lön** (för att hålla dem borta från truppen)
 - Möte satt till **Jarla** (stad i norra Vitterdal) efter denna tid
-- Absolut tystnad om bindningsföremålen
+- Absolut tystnad om föremålen och vad som hänt
 
-**Gruppen insåg:**
-Serafina hade använt dem. De var "utgångsbara" för henne. Nu tog hon hand om de återtagna föremålen och avsåg att leverera dem till Sanari-alverna i hopp om att köpa tillbaka sin plats efter 10 års förvisning - helt på eget initiativ, utan att alverna bett om det.
+**Serafinas kalkyl:**
+Som deras befäl gav hon dem generös permission med lön - inte som belöning utan för att hindra dem från att nå truppen och prata om föremål och demoner. Det gav henne tid att sätta sin plan i verket: leverera föremålen till Sanari-alverna i hopp om att köpa tillbaka sin plats efter 10 års förvisning - helt på eget initiativ, utan att alverna bett om det.
 
-Men de kunde inget göra. Hon var deras befälhavare, och de hade ingen bevisning mot henne.
+Gruppen hade inget val. De kunde inte bevisa något, och betald ledighet var svårt att klaga på.
 
 **NPCs introducerade:**
 - **Adisa** - Mäktig häxa i Cermiras skogar, kan känna av demonmagi
