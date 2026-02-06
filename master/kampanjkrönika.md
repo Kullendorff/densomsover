@@ -315,7 +315,7 @@ Gruppen hade inget val. De kunde inte bevisa något, och betald ledighet var sv�
 ### Mötet i Jarla (5:e Hömånad - den vita gåsen)
 Efter tre månaders ledighet samlades gruppen på värdshuset **Clebias Pärla**.
 
-**Soffia av Vitterdal** (165 cm, tunn, grått hår, intensiva ögon) kom förklädd med 4 livvakter (ledare: **Revand**, saknar höger öra).
+**Soffia av Vitterdal** (165 cm, tunn, grått hår, intensiva ögon) kom förklädd med 4 livvakter (ledare: **Gardar "Falköga"**, f.d. garde från Egisborg).
 
 **Uppdraget:**
 - Äldste sonen **Talarra** döende av sjukdom
@@ -524,10 +524,15 @@ Efter veckor i Tuzan Rim samlade gruppen tillräckligt med information:
 Gruppen bokade passage till Jen för att fortsätta räddningsoperationen.
 
 ### Sidoäventyr: Regnsynd
-På vägen till Jen blev skeppet skadat av piratattack. Gruppen sökte skydd i fiskebyn **Lundsnäs**.
+På vägen till Jen blev **Spegelmåne** skadat av piratattack. Gruppen sökte skydd i fiskebyn **Lundnäs** i östra Soldarn (~1600 invånare, vid Raunfloden).
 
-**Förbannelsen:** Fyra svarta pärlor från mystisk fisk orsakade katastrofala regn.
-**Lösning:** Besegrade gripar och kastade pärlorna i havet.
+**Förbannelsen:** Fiskaren **Ragnar** hade dragit upp en svart fisk ur havet - i dess mage fanns fyra **svarta pärlor**, nycklar till en portal för onda makter. Pärlorna orsakade onaturligt regn, mental påverkan (paranoia, huvudvärk) på invånarna, och drev djur till galenskap.
+
+**Viktiga NPCs:** Baron Semuel Leijon (sjuk), fogde Herr Thall Spjut, Riddar Warg Spegelsköld (Zoriánriddare, paranoid av pärla), Häxan Fredricca (allierad), Båg-Pieter (jägare, motstod pärlpåverkan), grottrollet Dhormel (hjälpte till).
+
+**De fyra pärlorna:** 1) Hos Riddar Warg. 2) I gravgårdsbrunnen. 3) Borttappad i skogen av Wargs väpnare Oke, hittad av Dhormel. 4) Hos griparna i deras näste på en klippö.
+
+**Lösning:** Episk strid mot galna gripar på klippö. Fick hjälp av grottrollet Dhormel. Blev vän med Häxan Fredricca. Förde pärlorna ut till havs och sänkte dem i djupet. Regnet upphörde omedelbart. Gruppens rykte i regionen växte avsevärt - byborna skrev en ballad om "Hjältarna i Lundnäs".
 
 ### Jen och Muhad
 **Jen:** 100 000 invånare, självstyrande område **Ziu** i Muhad. Viktig handelsstad.
@@ -556,7 +561,7 @@ På vägen till Jen blev skeppet skadat av piratattack. Gruppen sökte skydd i f
 - Lady Soffia av Vitterdal (uppdragsgivare, Hagges mor)
 - Hadrian "Hagge" av Vitterdal (yngre son, förvisad, slav → jarl)
 - Talarra av Vitterdal (äldre son, död av sjukdom)
-- Revand (livvakt, saknar höger öra)
+- Gardar "Falköga" (livvakt, f.d. garde från Egisborg)
 - Lera Skuggskeppare (piratkaptene, Asharien)
 - Malik Al-Zahir (slavhandlare, Jen)
 - Laila al-Jen (rik kvinna, köpte Hagge som slav, mor till hans barn)
