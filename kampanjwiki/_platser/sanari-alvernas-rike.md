@@ -14,16 +14,16 @@ bild: "/assets/images/platser/sanari-rike.png"
 ## GRUNDINFO
 - **Typ:** Alviskt rike
 - **Härskare:** Sanari-alvernas ledare (okänd)
-- **Relation:** Serafina Eldstav skickades hit med artefakter
+- **Relation:** Serafina Eldstav reste hit på eget initiativ med artefakter
 - **Status:** Inte besökt av gruppen
 
 ## HISTORIA
-Efter händelserna vid Tirakgraven kontaktades Serafina Eldstav av Sanari-alverna med ett erbjudande. Hon tog bindningsartefakterna från Tirakgraven och reste till deras rike.
+Efter händelserna vid Tirakgraven agerade Serafina Eldstav på eget initiativ. Sanari-alverna kände av den magiska störningen men visste inte vad som hänt. Serafina tog bindningsartefakterna och reste till deras rike i hopp om att köpa tillbaka sin plats efter 10 års förvisning.
 
 ## BETYDELSE
 - Sanari-alverna har möjligen de artefakter som höll demonen Urkhath fången
 - Deras motiv och planer är okända
-- Serafina agerar som deras agent
+- Serafina agerade på eget initiativ, inte som deras agent
 
 ## MYSTERIER
 - Var ligger riket?

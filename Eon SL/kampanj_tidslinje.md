@@ -25,12 +25,13 @@ Rollpersonerna (Gordon, Zentri, Umnatak, Kazrik) tjänstgjorde som del av legoso
 - Massiv attack från både levande tiraker och odöda
 - Ibran Anderyttare "dödades" men överförde sin själ till Tamron
 - Ibran/Tamron dödade sin tvillingbror och flydde med artefakterna
-- Serafina Eldstav tog resterande föremål för Sanari-alverna
+- Serafina Eldstav tog resterande föremål på eget initiativ
 
 ### Konsekvenser
 - Demonens partiella frigörelse sände magiska chockvågor genom Mundana
 - Zorian-orden skickade ut "Systrarna" att undersöka
-- Sanari-alverna kontaktade Serafina med erbjudande
+- Sanari-alverna och Drezin-dvärgarna kände av störningen (men visste inte mer)
+- Serafina agerade på eget initiativ - hoppades köpa tillbaka sin plats bland alverna
 - Zentri började få drömmar och visioner från ringen
 
 ---

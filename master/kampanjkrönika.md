@@ -173,12 +173,14 @@ Tiraker, gurder, ulvar och minst 5 Trukher attackerade. Striden koncentrerades m
 - Massiv attack från både levande tiraker och odöda från graven
 - Ibran Anderyttare "dödades" men överförde sin själ till **Tamron**
 - Ibran/Tamron dödade sin tvillingbror **Timron** och flydde med artefakterna
-- **Serafina Eldstav** tog resterande föremål för Sanari-alverna
+- **Serafina Eldstav** tog resterande föremål på eget initiativ
 
 ### Konsekvenser
 Demonens partiella frigörelse sände magiska chockvågor genom Mundana:
 - **Zorian-orden** skickade ut "Systrarna" (hemliga agenter) att undersöka
-- **Sanari-alverna** kontaktade Serafina med erbjudande om återtagning (efter 10 års förvisning) i utbyte mot hjälp
+- **Sanari-alverna** kände av störningen, men visste inte mer om vad som hänt
+- **Drezin-dvärgarna** kände också av störningen - senare, genom Kazriks rapporter, fick de kunskap om händelserna
+- **Serafina** agerade på eget initiativ - hon hoppades att föremålen kunde köpa tillbaka hennes plats bland Sanari-alverna efter 10 års förvisning
 - **Zentri** började plågas av drömmar från ringen
 
 **NPCs introducerade:**
@@ -197,7 +199,7 @@ Demonens partiella frigörelse sände magiska chockvågor genom Mundana:
 Efter massattacken vid tirakgraven och Kapten Kaelar Stålsvärds skador tog **Serafina Eldstav** befälet över situationen. Hon såg rollpersonerna som "utgångsbara" och skickade iväg dem för att spåra upp Tamron/Ibran medan hon själv "rapporterade" till huvudstyrkan.
 
 **Serafinas hemliga agenda:**
-I verkligheten hade Serafina redan tagit hand om bindningsföremålen från graven. Hennes mission var att leverera dem till Sanari-alverna som en del av en dold överenskommelse om hennes återtagning efter 10 års förvisning. Att skicka iväg rollpersonerna gav henne tid att agera ostörd.
+I verkligheten hade Serafina redan tagit hand om bindningsföremålen från graven. Hon agerade på eget initiativ - ingen hade kontaktat henne, men hon visste att föremålen kanske kunde köpa tillbaka hennes plats bland Sanari-alverna efter 10 års förvisning. Att skicka iväg rollpersonerna gav henne tid att agera ostörd.
 
 ### Jakten Genom Skogen
 Gruppen följde Tamron/Ibrans spår genom Cermiras djupa skogar. Jakten var lång och krävande - spåren ledde genom tät skog och vildmark.
@@ -288,7 +290,7 @@ Efter striden visade Serafina sitt sanna ansikte:
 - Absolut tystnad om bindningsföremålen
 
 **Gruppen insåg:**
-Serafina hade använt dem. De var "utgångsbara" för henne - sändas att jaga Ibran medan hon tog hand om skatterna. Nu skulle hon leverera dem till Sanari-alverna och få sin återtagning efter 10 års förvisning.
+Serafina hade använt dem. De var "utgångsbara" för henne - sändas att jaga Ibran medan hon tog hand om skatterna. Nu skulle hon leverera föremålen till Sanari-alverna i hopp om att köpa tillbaka sin plats efter 10 års förvisning - helt på eget initiativ, utan att alverna bett om det.
 
 Men de kunde inget göra. Hon var deras befälhavare, och de hade ingen bevisning mot henne.
 
@@ -3004,7 +3006,7 @@ Bok 1 är avslutad.
 
 ### Neutrala/Komplexa
 - **Lord VinterGlöd** - Colonisk själssamlare, fri från eden, stannade i Skugglandet (Kapitel 10)
-- **Serafina Eldstav** - Thismalv, tog bindningsföremål till Sanari-alverna
+- **Serafina Eldstav** - Thismalv, tog bindningsföremål på eget initiativ (hoppades köpa tillbaka sin plats bland Sanari-alverna)
 - **Ibran Anderyttare** - Tirakshaman i Tamrons kropp, samma mål (stoppa demonen)
 - **Adisa** - Häxa som kände demonmagi
 - **Gråtonen** - Själsfärja, bar Zentris själ till kroppen (Kapitel 10)

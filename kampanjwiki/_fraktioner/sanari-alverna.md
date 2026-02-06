@@ -14,19 +14,19 @@ symbol: "/assets/images/fraktioner/sanari-alver.png"
 ## GRUNDINFO
 - **Typ:** Alvisk nation/civilisation
 - **Karaktär:** Mystisk, långsiktig planering
-- **Agent:** Serafina Eldstav
+- **Serafina Eldstav:** Agerade på eget initiativ (ej kontaktad av alverna)
 - **Mål:** Okända
 
 ## HISTORIA
-Efter händelserna vid Tirakgraven kontaktade Sanari-alverna Serafina Eldstav med ett erbjudande. Hon tog bindningsartefakterna från graven och reste till deras rike.
+Efter händelserna vid Tirakgraven kände Sanari-alverna av den magiska störningen, men visste inte vad som hänt. Serafina Eldstav agerade på eget initiativ - hon tog bindningsartefakterna och reste till deras rike i hopp om att köpa tillbaka sin plats efter 10 års förvisning.
 
 ## VIKTIGA AKTIONER
-**Fas 1:** Kontaktade Serafina efter demonens frigörelse  
-**Fas 2:** Serafina levererade bindningsartefakter till dem  
-**Fas 2:** Förbjöd rollpersonerna att återvända till kompaniet
+**Fas 1:** Kände av demonens frigörelse (men visste inte mer)
+**Fas 1-2:** Serafina levererade bindningsartefakter på eget initiativ
+**Fas 2:** Serafina förbjöd rollpersonerna att återvända till kompaniet
 
 ## VIKTIGA MEDLEMMAR
-- **Serafina Eldstav:** Agent och kontakt
+- **Serafina Eldstav:** Förvisad thismalv som agerade på eget initiativ
 - **Okända ledare:** Aldrig visade sig för gruppen
 
 ## ARTEFAKTER I DERAS BESITTNING
