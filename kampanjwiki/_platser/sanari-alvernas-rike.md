@@ -18,7 +18,7 @@ bild: "/assets/images/platser/sanari-rike.png"
 - **Status:** Inte besökt av gruppen
 
 ## HISTORIA
-Efter händelserna vid Tirakgraven agerade Serafina Eldstav på eget initiativ. Sanari-alverna kände av den magiska störningen men visste inte vad som hänt. Serafina tog bindningsartefakterna och reste till deras rike i hopp om att köpa tillbaka sin plats efter 10 års förvisning.
+Sanari-alverna kände av den magiska störningen från Tirakgraven men visste inte vad som hänt. Ibran/Tamron stal föremålen från graven, men de återtogs vid Grensfortet. Serafina Eldstav tog sedan hand om föremålen och reste till alvernas rike på eget initiativ - i hopp om att köpa tillbaka sin plats efter 10 års förvisning.
 
 ## BETYDELSE
 - Sanari-alverna har möjligen de artefakter som höll demonen Urkhath fången

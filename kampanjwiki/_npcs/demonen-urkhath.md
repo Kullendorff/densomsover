@@ -43,7 +43,7 @@ Urkhath är en urgammal demon som för årtusenden sedan försegslades av tiraks
 **Frigörelse:**
 - Migor Trollkunnigs utgrävning bröt förseglingen
 - Zentri stal silverringen med del av demonens essens
-- Serafina stal bindningsföremålen
+- Ibran/Tamron stal bindningsföremålen (för att hindra demonens frigörelse)
 - Demonen delvis frigjord, sände chockvågor genom Mundana
 
 ### Efter frigörelse

@@ -18,7 +18,7 @@ symbol: "/assets/images/fraktioner/sanari-alver.png"
 - **Mål:** Okända
 
 ## HISTORIA
-Efter händelserna vid Tirakgraven kände Sanari-alverna av den magiska störningen, men visste inte vad som hänt. Serafina Eldstav agerade på eget initiativ - hon tog bindningsartefakterna och reste till deras rike i hopp om att köpa tillbaka sin plats efter 10 års förvisning.
+Efter händelserna vid Tirakgraven kände Sanari-alverna av den magiska störningen, men visste inte vad som hänt. Ibran/Tamron stal bindningsföremålen från graven. Dessa återtogs vid striden mot Urkhaths manifestation vid Grensfortet. Serafina tog sedan hand om föremålen och reste till Sanari-alvernas rike på eget initiativ - i hopp om att köpa tillbaka sin plats efter 10 års förvisning.
 
 ## VIKTIGA AKTIONER
 **Fas 1:** Kände av demonens frigörelse (men visste inte mer)

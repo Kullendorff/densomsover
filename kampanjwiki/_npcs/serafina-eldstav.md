@@ -7,12 +7,12 @@ status: "försvunnen"
 forsta_fas: 1
 plats: "Okänd"
 fraktion: "Sanari-alverna"
-roll: "Antagonist - stal demonbindningsföremål"
+roll: "Komplex antagonist - tog föremål efter Grensfortet"
 relationer:
   - namn: "Kaelar Stålsvärd"
     typ: "före detta befälhavare"
   - namn: "Sanari-alverna"
-    typ: "förrädda av, nu återförenad?"
+    typ: "förvisad från, hoppas på återtagning"
 ---
 
 # SERAFINA ELDSTAV
@@ -31,24 +31,24 @@ relationer:
 Serafina var second-in-command för legosoldatkompaniet "Stålsvärds Kavalerister" under Tirakgravens utgrävning. Hon hade blivit förvisad från Sanari-alvernas samhälle 10 år tidigare.
 
 ### Hemligheten
-Hon tog i hemlighet demonbindningsföremålen från tirakgraven för att leverera till Sanari-alverna i utbyte mot att återtas i alvsamhället.
+Serafina hade inga föremål från tirakgraven - Ibran/Tamron stal dem alla. Men efter striden vid Grensfortet, där föremålen återtogs, tog Serafina hand om dem. Hon agerade på eget initiativ i hopp om att kunna köpa tillbaka sin plats bland Sanari-alverna efter 10 års förvisning - utan att alverna bett om det.
 
 ## KRITISKA HÄNDELSER
 
 ### Tirakgraven (Fas 1)
 - Deltog som second-in-command för Stålsvärds Kavalerister
-- Stal bindningsföremålen när demonen frigjordes
-- Försvann med föremålen
+- Tog INGA föremål vid graven (Ibran/Tamron stal dem)
 
-### Efter stölden
-- Tog bindningsförmålet till Sanari-alverna
-- Status okänd - återupptagen eller förrådd?
+### Grensfortet (Fas 1)
+- Red ikapp gruppen och deltog i striden mot Urkhaths manifestation
+- Tog hand om de återtagna föremålen efter striden
+- Reste med föremålen till Sanari-alverna (eget initiativ)
 
 ## KARAKTÄRSDRAG
 
 - **Driven av längtan:** Ville återförenas med sitt folk
 - **Delade lojaliteter:** Mellan kompaniet och alverna
-- **Modig eller desperat:** Stal farliga artefakter
+- **Modig eller desperat:** Tog föremålen på eget initiativ
 
 ## RELATIONER
 
@@ -60,7 +60,7 @@ Hon tog i hemlighet demonbindningsföremålen från tirakgraven för att leverer
 
 ## NUVARANDE SITUATION
 
-Serafina är försvunnen med demonbindningsföremålen. Hennes öde är okänt - det är möjligt att Sanari-alverna tog emot henne, eller att de förrådde henne efter att ha tagit föremålen.
+Serafina tog föremålen efter striden vid Grensfortet och reste till Sanari-alverna på eget initiativ. Hennes öde är okänt - det är möjligt att alverna tog emot henne, eller att de förrådde henne efter att ha tagit föremålen.
 
 ## SL-ANTECKNINGAR
 

@@ -429,7 +429,7 @@ var fraktionerData = {
       "verksamhet": "Legosoldater (upplöst)",
       "status": "upplöst",
       "kapitel": "Prolog",
-      "beskrivning": "# STÅLSVÄRDS KAVALERISTER\n**Legosoldatkompani - Upplöst efter Tirakgraven**\n\n## GRUNDINFO\n- **Typ:** Legosoldatkompani\n- **F.d. ledare:** Kaelar Stålsvärd\n- **Status:** Upplöst eller spridd\n- **Verksamhet:** Bevakade Tirakgravens utgrävning (Prolog)\n\n## HISTORIA\n**Tirakgraven (Fas 1):**\n- Bevakade utgrävningen\n- Såg demonen delvis frigöras\n- Förlorade kontroll när Serafina stal bindningsföremålen\n- Traumatiska förluster\n\n## EFTER TIRAKGRAVEN\n- Kaelar utvecklade alkoholproblem\n- Kompaniet upplöstes eller spreds\n- Medlemmar spridda över Mundana\n\n## KAELAR IDAG\nÖvervann alkoholism, nu kapten för Hagges hussoldate i Vitterdal\n\n## SL-ANTECKNINGAR\nF.d. medlemmar kan dyka upp som allierade eller fiender - delade traumat från Tirakgraven."
+      "beskrivning": "# STÅLSVÄRDS KAVALERISTER\n**Legosoldatkompani - Upplöst efter Tirakgraven**\n\n## GRUNDINFO\n- **Typ:** Legosoldatkompani\n- **F.d. ledare:** Kaelar Stålsvärd\n- **Status:** Upplöst eller spridd\n- **Verksamhet:** Bevakade Tirakgravens utgrävning (Prolog)\n\n## HISTORIA\n**Tirakgraven (Fas 1):**\n- Bevakade utgrävningen\n- Såg demonen delvis frigöras\n- Förlorade kontroll när Ibran/Tamron stal bindningsföremålen och flydde\n- Traumatiska förluster\n\n## EFTER TIRAKGRAVEN\n- Kaelar utvecklade alkoholproblem\n- Kompaniet upplöstes eller spreds\n- Medlemmar spridda över Mundana\n\n## KAELAR IDAG\nÖvervann alkoholism, nu kapten för Hagges hussoldate i Vitterdal\n\n## SL-ANTECKNINGAR\nF.d. medlemmar kan dyka upp som allierade eller fiender - delade traumat från Tirakgraven."
     },
     {
       "namn": "Systrarna / Zorian-orden",
