@@ -189,6 +189,52 @@ Gardar behöver veta att nätverket finns för att kunna beskydda det. Han ident
 
 ---
 
+### SELENE "SILVERÖGA" KAZAROV
+**Namn:** Selene "Silveröga" Kazarov
+**Ras:** Människa (asharisk)
+**Ålder:** ~45 år
+**Roll:** Underbefäl på Frostnymfen, flodspion
+**Tidigare yrke:** Flodfarare
+
+**Bakgrund:**
+Selene har i flera år fungerat som informant åt Lady Soffia längs Raunfloden. Som underbefäl på flodpråmen Frostnymfen under kapten Nilmar "Isnavigatorn" Gromsk har hon perfekt täckmantel - en flodfarare som reser regelbundet längs hela floden och kan samla information utan att väcka misstankar. Hennes konstgjorda silveröga (höger) har blivit hennes kännetecken.
+
+**Vad hon gör:**
+- Informant längs Raunfloden - rapporterar om trafik, patrullering, rykten
+- Hemlig medlem i ett nätverk som hjälper förföljda att fly från kungamaktens grepp
+- Kontakter längs hela Raunfloden
+- Delar ut sigill till betrodda allierade för identifiering
+
+**Vad hon VET:**
+- ✅ **Känner till att nätverket FINNS** - Vet att Soffia har informanter
+- ✅ Vet att Frostnymfens hela besättning i praktiken tjänar Soffia
+- ❌ Känner INTE till specifika kunskapare i städerna (need to know)
+- ✅ Förstår att Soffia samlar information för Vitterdals säkerhet
+
+**Varför hon vet:**
+Selene opererar på floden och behöver kunna identifiera vänner och fiender. Hennes position som underbefäl ger henne naturlig anledning att iaktta och rapportera. Kapten Nilmar och hon koordinerar direkt med Soffia.
+
+**Förmågor:**
+- Expert på observation och övervakning
+- Läser människor - ser när någon ljuger
+- Navigering och flodkunskap
+- Diskret och professionell
+
+**Personlighet:**
+- Misstänksam mot främlingar - alla är hot tills motsatsen bevisats
+- Extremt lojal mot kapten Nilmar och Lady Soffia
+- Vaksam och observant - silverögat missar inget
+- Pratar mer öppet i enrum än inför grupp
+
+**Relation till andra:**
+- **Kapten Nilmar:** Absolut lojalitet, nära samarbete
+- **Gardar:** Har aldrig träffats men vet om varandra
+- **Helga:** Rapporterar via Nilmar, inte direkt
+
+**Lojalitet:** Mycket hög (lång tjänst, ömsesidig respekt)
+
+---
+
 ## 🌍 CERMIRA
 
 ### Översikt
@@ -537,6 +583,7 @@ Soffia har enskilda kunskapare i strategiskt viktiga städer över hela Mundana.
 | **Helga Järnoxen** | Värdshusvärd | Mitrahus, Vitterdal | Samordnare Cermira, rykten | Absolut (vänskap) |
 | **Syster Mirelle** | Vandringspräst | Resande (Cermira/Drunok/Jargien) | Resande samordnare, kurir | Mycket hög (skuld) |
 | **Gardar "Falköga"** | Livvakt | Mitrahus, Vitterdal | Säkerhet, beskydd, diskret muskel | Absolut (liv räddat) |
+| **Selene "Silveröga" Kazarov** | Underbefäl, Frostnymfen | Raunfloden (resande) | Flodtrafik, patrullering, rykten | Mycket hög (lång tjänst) |
 
 ### Soffias Personliga Tjänare (daglig verksamhet)
 
@@ -642,15 +689,15 @@ Varje månad via brev gömda i vitvinsleveranser till Vitterdals ambassad.
 **Källa:** Baserat på NotebookLM-research om Jarla efter "Maktens skugga"-händelserna
 
 **Status:**
-- ✅ Nätverkets kärna etablerad (Helga Järnoxen, Syster Mirelle, Gardar "Falköga")
+- ✅ Nätverkets kärna etablerad (Helga Järnoxen, Syster Mirelle, Gardar "Falköga", Selene "Silveröga" Kazarov)
 - ✅ Personliga tjänare (Ditte Lundbäck, Gardar "Falköga")
 - ✅ Cermira-nätverk komplett (4 kunskapare)
 - ✅ Jarla-nätverk etablerat (2 kunskapare)
 - ✅ Utvidgat nätverk i 10 strategiska städer över Mundana
 - ✅ Magiska brevduvor för kommunikation
 
-**Totalt nätverk:** 20 personer
-- 3 som känner till nätverkets existens (Helga, Mirelle, Gardar)
+**Totalt nätverk:** 21 personer
+- 4 som känner till nätverkets existens (Helga, Mirelle, Gardar, Selene)
 - 2 personliga tjänare (Ditte känner INTE till nätverket, Gardar gör det)
 - 16 kunskapare (4 Cermira + 2 Jarla + 10 utvidgat)
 

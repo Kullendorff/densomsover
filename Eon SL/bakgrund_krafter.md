@@ -16,7 +16,7 @@
 ### Kända fragment och artefakter
 1. **Silverringen** - Med Zentri i Skugglandet
 2. **Offerdolken** - Togs av Ibran/Tamron, nuvarande plats okänd
-3. **Bindningsföremålen** - Hos Sanari-alverna via Serafina
+3. **Bindningsföremålen** - Hos Sanari-alverna (Serafina tog dem efter Grensfortet, på eget initiativ)
 4. **Andra fragment** - Möjligen spridda över Mundana
 
 ---
@@ -31,7 +31,7 @@
 
 **Nyckelaktörer:**
 - **Liljans Råd** - Styrande organ
-- **Serafina Eldstav** - Deras agent, försvunnen med artefakter
+- **Serafina Eldstav** - Förvisad thismalv, agerade på eget initiativ med artefakter
 - **Kontakt med spelarna:** Indirekt via "glömda dörrar" och "tappade dokument"
 
 ### DVÄRGARNA (speciellt Klan Drezin)

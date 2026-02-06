@@ -38,7 +38,7 @@ Kaelar ledde legosoldatkompaniet "Stålsvärds Kavalerister" som bevakade Tirakg
 ### Tirakgraven (Fas 1)
 - Ledde bevakningsstyrkan
 - Såg demonen delvis frigöras
-- Förlorade kontroll när Serafina stal bindningsföremålen
+- Förlorade kontroll när Ibran/Tamron stal bindningsföremålen och flydde
 
 ### Efter Tirakgraven
 - Utvecklade alkoholproblem

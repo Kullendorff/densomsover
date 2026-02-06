@@ -127,9 +127,9 @@ Tidigare ledare för legosoldatkompaniet "Stålsvärds Kavalerister". Har överk
 
 ### Serafina Eldstav
 **Ras:** Thismalv  
-**Status:** Försvunnen med demonbindningsföremålen
+**Status:** Försvunnen med bindningsföremålen (tagna efter Grensfortet)
 
-Second-in-command för Stålsvärds Kavalerister. Tog i hemlighet föremålen från tirakgraven för att leverera till Sanari-alverna i utbyte mot att återtas i alvsamhället efter 10 års förvisning.
+Second-in-command för Stålsvärds Kavalerister. Tog hand om föremålen efter striden vid Grensfortet (hade inga föremål från själva graven - de stals av Ibran/Tamron). Agerade på eget initiativ i hopp om att köpa tillbaka sin plats bland Sanari-alverna efter 10 års förvisning.
 
 ### Ibran Anderyttare
 **Ras:** Tirak (i 13-årig pojkkropp)  

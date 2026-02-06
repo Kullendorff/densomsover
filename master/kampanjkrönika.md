@@ -172,13 +172,19 @@ Tiraker, gurder, ulvar och minst 5 Trukher attackerade. Striden koncentrerades m
 **Stridens utgång:**
 - Massiv attack från både levande tiraker och odöda från graven
 - Ibran Anderyttare "dödades" men överförde sin själ till **Tamron**
-- Ibran/Tamron dödade sin tvillingbror **Timron** och flydde med artefakterna
-- **Serafina Eldstav** tog resterande föremål för Sanari-alverna
+- **Migor** tog föremålen i säker förvaring efter striden
+
+**Följande natt:**
+- Ibran/Tamron mördade sin tvillingbror **Timron**
+- Ibran/Tamron stal föremålen från Migors förvar och flydde
+- Hans syfte: skydda föremålen och hindra demonen från att bryta sig fri
+- Det enda föremål han inte fick med sig var silverringen på Zentris finger
 
 ### Konsekvenser
 Demonens partiella frigörelse sände magiska chockvågor genom Mundana:
 - **Zorian-orden** skickade ut "Systrarna" (hemliga agenter) att undersöka
-- **Sanari-alverna** kontaktade Serafina med erbjudande om återtagning (efter 10 års förvisning) i utbyte mot hjälp
+- **Sanari-alverna** kände av störningen, men visste inte mer om vad som hänt
+- **Drezin-dvärgarna** kände också av störningen - senare, genom Kazriks rapporter, fick de kunskap om händelserna
 - **Zentri** började plågas av drömmar från ringen
 
 **NPCs introducerade:**
@@ -197,7 +203,7 @@ Demonens partiella frigörelse sände magiska chockvågor genom Mundana:
 Efter massattacken vid tirakgraven och Kapten Kaelar Stålsvärds skador tog **Serafina Eldstav** befälet över situationen. Hon såg rollpersonerna som "utgångsbara" och skickade iväg dem för att spåra upp Tamron/Ibran medan hon själv "rapporterade" till huvudstyrkan.
 
 **Serafinas hemliga agenda:**
-I verkligheten hade Serafina redan tagit hand om bindningsföremålen från graven. Hennes mission var att leverera dem till Sanari-alverna som en del av en dold överenskommelse om hennes återtagning efter 10 års förvisning. Att skicka iväg rollpersonerna gav henne tid att agera ostörd.
+Serafina hade inga föremål - Ibran/Tamron hade stulit dem alla (utom silverringen på Zentris finger). Men Serafina agerade på eget initiativ med hopp om att på något sätt kunna använda situationen för att köpa tillbaka sin plats bland Sanari-alverna efter 10 års förvisning. Att skicka iväg rollpersonerna efter Ibran/Tamron gav henne tid att agera ostörd.
 
 ### Jakten Genom Skogen
 Gruppen följde Tamron/Ibrans spår genom Cermiras djupa skogar. Jakten var lång och krävande - spåren ledde genom tät skog och vildmark.
@@ -250,47 +256,44 @@ Benne Tok pekade norrut: "Han gick mot bergen. Mot gamla **Grensfortet**. Ingen 
 **Platsen:**
 Grensfortet - en övergiven borg från Hadrians tid, nu förfallen och hemsökt. Byggnaden låg i bergen mellan Vitterdal och Mitheras gränsland.
 
-**Ibrans misstag:**
-Shamanen visste inte att fortet låg på **gränsen till Skugglandet**. Detta skulle bli hans - och demonens - ödefattningsamma misstag.
+**Urkhaths manipulation:**
+Ibrans enda tanke var att fly med föremålen och säkra dem. Men Urkhath är en mäktig demon. Med föremålen så nära lyckades demonen **styra Tamron mot Grensfortet** - en övergiven borg på gränsen till Skugglandet, där dimensionsgränserna är tunnare.
 
-**Vad som hände:**
-När gruppen nådde Grensfortet hade Ibran/Tamron börjat använda bindningsföremålens kraft. Men positionen - så nära Skugglandet - skapade en **resonans** med de mörka krafterna där.
+**Demonens manifestation:**
+Vid Grensfortet lyckades Urkhath manifestera sig i en liten svart form. Demonen **slog ut Tamron** och **tog föremålen**. Tre **skuggvarelser** - väsen från gränslandet som dragits till demonens kraft - materialiserades också.
 
-**Demonens partiella frigörelse:**
-En del av **Urkhath** lyckades bryta sig fri från bindningarna. Den enorma kraften **kastade bort Ibran från Tamrons kropp** - shamanen skars loss från sitt värd, tappad som en trasig docka.
+**Spelarnas ankomst:**
+Gruppen anlände till Grensfortet tillsammans med **Serafina Eldstav**, som hade ridit ikapp dem.
 
-**Manifestationen:**
-Demonen materialiserade sig delvis - ingen fullständig kropp, men tillräckligt för att bli fruktansvärt farlig. Tre **skuggvarelser** - väsen från gränslandet som dragits till demonens kraft - attackerade också.
+(Dubbel skada från fototropi - ljus från faklar och besvärjelser gjorde skuggvarelserna extra sårbara)
 
-(Dubbel skada från fototropi - ljus från faklar och besvärjelser gjorde dem extra sårbara)
-
-**Serafinas återkomst:**
-Mitt under striden dök **Serafina Eldstav** upp med bindningsföremålen hon tagit från tirakgraven. Hon hade följt efter gruppen.
-
-**Tillsammans** lyckades de:
+**Striden:**
+Tillsammans lyckades de:
 - Bekämpa och driva tillbaka demonmanifestationen
 - Döda skuggvarelserna
-- Återbinda demondelen (delvis)
+- Återta bindningsföremålen från demonens grepp
 
-**Ibrans öde:**
-Shamanen Ibran Anderyttare, riven från Tamrons kropp, flydde svårt skadad in i skogarna. Hans spår försvann mot Mithera.
+**Efter striden:**
+- **Tamron** hade vaknat under striden och flytt - hans spår försvann mot Mithera
+- **Ibrans själ** var borta ur Tamrons kropp sedan demonen slagit ut honom
+- **Serafina** tog hand om de återtagna föremålen
 
 ### Serafinas Svek
 
 Efter striden visade Serafina sitt sanna ansikte:
 
 **Förbudet:**
-"Ni får **INTE** återvända till kompaniet. Ni får **INTE** tala om vad som hänt här. Skatterna från tirakgraven är **min** sak att hantera."
+"Ni får **INTE** återvända till kompaniet. Ni får **INTE** tala om vad som hänt här. Föremålen från tirakgraven är **min** sak att hantera."
 
 **Beordringar:**
-- Tre månaders **tvingad ledighet**
+- Tre månaders **permission med lön** (för att hålla dem borta från truppen)
 - Möte satt till **Jarla** (stad i norra Vitterdal) efter denna tid
-- Absolut tystnad om bindningsföremålen
+- Absolut tystnad om föremålen och vad som hänt
 
-**Gruppen insåg:**
-Serafina hade använt dem. De var "utgångsbara" för henne - sändas att jaga Ibran medan hon tog hand om skatterna. Nu skulle hon leverera dem till Sanari-alverna och få sin återtagning efter 10 års förvisning.
+**Serafinas kalkyl:**
+Som deras befäl gav hon dem generös permission med lön - inte som belöning utan för att hindra dem från att nå truppen och prata om föremål och demoner. Det gav henne tid att sätta sin plan i verket: leverera föremålen till Sanari-alverna i hopp om att köpa tillbaka sin plats efter 10 års förvisning - helt på eget initiativ, utan att alverna bett om det.
 
-Men de kunde inget göra. Hon var deras befälhavare, och de hade ingen bevisning mot henne.
+Gruppen hade inget val. De kunde inte bevisa något, och betald ledighet var svårt att klaga på.
 
 **NPCs introducerade:**
 - **Adisa** - Mäktig häxa i Cermiras skogar, kan känna av demonmagi
@@ -312,7 +315,7 @@ Men de kunde inget göra. Hon var deras befälhavare, och de hade ingen bevisnin
 ### Mötet i Jarla (5:e Hömånad - den vita gåsen)
 Efter tre månaders ledighet samlades gruppen på värdshuset **Clebias Pärla**.
 
-**Soffia av Vitterdal** (165 cm, tunn, grått hår, intensiva ögon) kom förklädd med 4 livvakter (ledare: **Revand**, saknar höger öra).
+**Soffia av Vitterdal** (165 cm, tunn, grått hår, intensiva ögon) kom förklädd med 4 livvakter (ledare: **Gardar "Falköga"**, f.d. garde från Egisborg).
 
 **Uppdraget:**
 - Äldste sonen **Talarra** döende av sjukdom
@@ -521,10 +524,15 @@ Efter veckor i Tuzan Rim samlade gruppen tillräckligt med information:
 Gruppen bokade passage till Jen för att fortsätta räddningsoperationen.
 
 ### Sidoäventyr: Regnsynd
-På vägen till Jen blev skeppet skadat av piratattack. Gruppen sökte skydd i fiskebyn **Lundsnäs**.
+På vägen till Jen blev **Spegelmåne** skadat av piratattack. Gruppen sökte skydd i fiskebyn **Lundnäs** i östra Soldarn (~1600 invånare, vid Raunfloden).
 
-**Förbannelsen:** Fyra svarta pärlor från mystisk fisk orsakade katastrofala regn.
-**Lösning:** Besegrade gripar och kastade pärlorna i havet.
+**Förbannelsen:** Fiskaren **Ragnar** hade dragit upp en svart fisk ur havet - i dess mage fanns fyra **svarta pärlor**, nycklar till en portal för onda makter. Pärlorna orsakade onaturligt regn, mental påverkan (paranoia, huvudvärk) på invånarna, och drev djur till galenskap.
+
+**Viktiga NPCs:** Baron Semuel Leijon (sjuk), fogde Herr Thall Spjut, Riddar Warg Spegelsköld (Zoriánriddare, paranoid av pärla), Häxan Fredricca (allierad), Båg-Pieter (jägare, motstod pärlpåverkan), grottrollet Dhormel (hjälpte till).
+
+**De fyra pärlorna:** 1) Hos Riddar Warg. 2) I gravgårdsbrunnen. 3) Borttappad i skogen av Wargs väpnare Oke, hittad av Dhormel. 4) Hos griparna i deras näste på en klippö.
+
+**Lösning:** Episk strid mot galna gripar på klippö. Fick hjälp av grottrollet Dhormel. Blev vän med Häxan Fredricca. Förde pärlorna ut till havs och sänkte dem i djupet. Regnet upphörde omedelbart. Gruppens rykte i regionen växte avsevärt - byborna skrev en ballad om "Hjältarna i Lundnäs".
 
 ### Jen och Muhad
 **Jen:** 100 000 invånare, självstyrande område **Ziu** i Muhad. Viktig handelsstad.
@@ -553,7 +561,7 @@ På vägen till Jen blev skeppet skadat av piratattack. Gruppen sökte skydd i f
 - Lady Soffia av Vitterdal (uppdragsgivare, Hagges mor)
 - Hadrian "Hagge" av Vitterdal (yngre son, förvisad, slav → jarl)
 - Talarra av Vitterdal (äldre son, död av sjukdom)
-- Revand (livvakt, saknar höger öra)
+- Gardar "Falköga" (livvakt, f.d. garde från Egisborg)
 - Lera Skuggskeppare (piratkaptene, Asharien)
 - Malik Al-Zahir (slavhandlare, Jen)
 - Laila al-Jen (rik kvinna, köpte Hagge som slav, mor till hans barn)
@@ -603,7 +611,7 @@ När de undersökte ruinen väckte de oavsiktligt två stenliknande golems - hum
 ### Den Kolossala Golemen
 
 **Den Stora Salen:**
-Djupare in i komplexet nådde gruppen en massiv sal med högt i tak. Där stod **den kolossala golemen** - en jätte inspirerad av legenden om **Zalmareth the Colossus**.
+Djupare in i komplexet nådde gruppen en massiv sal med högt i tak. Där stod **den kolossala golemen** - ödlefolkets mästerverk, en uråldrig vaktare byggd för att stå i evighet.
 
 **Beskrivning:**
 - Tre gånger en människas höjd
@@ -3004,8 +3012,8 @@ Bok 1 är avslutad.
 
 ### Neutrala/Komplexa
 - **Lord VinterGlöd** - Colonisk själssamlare, fri från eden, stannade i Skugglandet (Kapitel 10)
-- **Serafina Eldstav** - Thismalv, tog bindningsföremål till Sanari-alverna
-- **Ibran Anderyttare** - Tirakshaman i Tamrons kropp, samma mål (stoppa demonen)
+- **Serafina Eldstav** - Thismalv, förvisad från Sanari-alverna (hade inga föremål)
+- **Ibran Anderyttare** - Tirakshaman i Tamrons kropp, flydde med bindningsföremålen för att skydda dem
 - **Adisa** - Häxa som kände demonmagi
 - **Gråtonen** - Själsfärja, bar Zentris själ till kroppen (Kapitel 10)
 

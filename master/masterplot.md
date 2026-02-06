@@ -629,10 +629,10 @@ Befolkning flyr           Intigheten expanderar
 - **Ibran** HAR den men vet kanske inte vad den gör
 - Måste återtas från Ibran
 
-**3. BINDNINGSFÖREMÅLEN** (hos Serafina → Sanari-alverna)
-- Alverna fick dessa från tirakerna efter Kriget
+**3. BINDNINGSFÖREMÅLEN** (hos Sanari-alverna via Serafina)
+- Ibran/Tamron stal dem från graven, återtagna vid Grensfortet
+- Serafina tog dem efter striden och reste till Sanari (eget initiativ, ej avtalat)
 - Innehåller instruktioner/kraft för bindningsritual
-- Serafina levererade dem till Sanari för sin återtagning
 - Måste hämtas från alverna (kräver diplomati eller stöld)
 
 ### Stenstoderna (I Mithera)
@@ -833,7 +833,7 @@ När de når högsta rummet:
 
 **Kapitel 14 - Alverna (Sanari):**
 - Resa till Sanari (eller möta deras agenter)
-- Hitta Serafina som levererade bindningsföremålen
+- Hitta Serafina som tog bindningsföremålen till alverna (på eget initiativ)
 - Få tillbaka bindningsföremålen (diplomati eller stöld)
 - Kanske hitta Serafina och avslöja hennes agenda
 - Lära sig alvisk bindningsmagi
