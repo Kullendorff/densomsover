@@ -209,7 +209,9 @@ Kuberon är **BALANS** - varken god eller ond. Han håller världarna åtskilda 
 
 ---
 
-## YELGOTHA - DEN FRUSNA PRINSEN
+## YELGOTHA - DEN FRUSNA PRINSEN ← UPPDATERING: SANN NATUR AVSLÖJAD (KAP 9-10)
+
+> **STATUS (efter Kap 10):** Yelgotha avslöjades som colonisk själssamlare ("Älvakungen" = coloniskt namn för "Själabärare"). Han samlade offer för VinterGlöd, INTE för någon välsignelse. Alla offer gruppen gav (skuld, minnen, trygghet, generositet, ambition) gick direkt till VinterGlöd/Skugglandet. Han var en fälla, inte en hjälpare. Väckt ur isfängelset av gruppen i Kap 9.
 
 ### Vem Han Är
 
@@ -285,7 +287,9 @@ Yelgotha's ord till Vinterglöd kan **bryta Vinterglöds resolve** - påminna ho
 
 ---
 
-## VINTERGLÖD - DEN MOTVILLIGE TJÄNAREN
+## VINTERGLÖD - DEN MOTVILLIGE TJÄNAREN ← UPPDATERING: FRI SEDAN KAP 10
+
+> **STATUS (efter Kap 10):** VinterGlöds ed bröts när Zentri återförenades. Han är nu FRI men stannade frivilligt i Skugglandet (Frostspiran). Gruppen nämnde ALDRIG Yelgotha → den emotionella kopplingen aktiverades aldrig. Han blev INTE allierad. Ensam, fri, och med okänd framtid.
 
 ### Vem Han Är
 
@@ -308,7 +312,7 @@ Yelgotha's ord till Vinterglöd kan **bryta Vinterglöds resolve** - påminna ho
 - Ensam - inga nära vänner eller allierade kvar
 
 **Hans ställning:**
-- Lever isolerad i **Spegelvända Fortet** (vid gränsen till Intigheten)
+- Lever isolerad i **Frostspiran** (kallas "Spegelvända Fortet" i originalplanen, men heter Frostspiran i kampanjen)
 - Inte del av Månskenshovet eller Svarta Hovet
 - Respekterad för sin makt men undviken för hans historia
 - Inga allierade, inga fiender - bara isolation
@@ -681,146 +685,64 @@ Befolkning flyr           Intigheten expanderar
 - Mithera har koppling till allt detta (köld, odjur, stenstoder)
 - Yelgothas varningar ger ledtrådar
 
-### AKT 2: SANNINGEN (Kapitel 10-12) → PÅGÅR NU
+### AKT 2: SANNINGEN (Kapitel 9-10) ✓ KLAR - BOK 1 AVSLUTAD
 
-**Kapitel 10 - Skugglandet (nuvarande läge):**
-- Gruppens ankomst och navigation i Skugglandet
-- Träffa skuggväsen (rimurer, strigoi, andra)
-- Höra rykten om Skymning och Månskenshovet
-- Höra rykten om "Den Ensamma Fursten" (Vinterglöd)
-- Hitta vägen till Spegelvända Fortet
+> **STATUS:** Akt 2 avslutades ANNORLUNDA än planerat. Kapitel 11-12 existerade aldrig - Bok 1 slutade vid Kapitel 10. Nedan: VERKLIGT UTFALL, inte originalplanen.
 
-**Kapitel 11 - Spegelvända Fortet (nästa session - KRITISK):**
+**Kapitel 9 - Mithera och Prins Yelgotha (VERKLIGT UTFALL):**
+- Gruppen vandrade genom Mitheras skogar till Älvakungens Sal
+- Väckte Prins Yelgotha (den "Frusna Prinsen") ur isfängelset
+- **AVSLÖJANDE:** Yelgotha var en colonisk själssamlare som arbetade för VinterGlöd, INTE en hjälpare
+- Varje gruppmedlem offrade en del av sig själv (skuld, minnen, trygghet, generositet, ambition)
+- Offren gick direkt till VinterGlöd - inte till någon välsignelse
+- Yelgotha gav fem varningar och instruktioner om Zentris tre delar (kropp, själ, minne)
+- Yelgotha sa: "Säg att Yelgotha sände er. Han var min page en gång." ← ALDRIG ANVÄNT
 
-**MÖTE MED VINTERGLÖD:**
+**Kapitel 10 - Skugglandet (VERKLIGT UTFALL):**
+- Gruppen gick in genom blått ljus i colonisk korridor
+- **Arcadius tråd-brott:** Arcadius drogs mot portalen, Kazrik tacklade honom 20m från ljuset. Tråden från skuld-offret bröts - katastrofal själsskada. Arcadius-identiteten dog → tillbaka till Corvus
+- Fann Zentris kropp i sarkofag i nedre tornet av Frostspiran
+- Mötte VinterGlöd i hans hov (INTE "Spegelvända Fortet")
+- VinterGlöd frös ner sitt eget hov för privat samtal
+- **KRITISKT:** Gruppen nämnde ALDRIG Yelgotha → hela den planerade dialogkedjan skedde aldrig
+- VinterGlöd var trött, resignerad, kanske hoppfull - LÄTTADE dem passera utan strid
+- Gordon sjöng och bröt kristallpelaren med Zentris själ (colonisk resonansmagi)
+- Gråtonen bar Zentris själ ner till kroppen - återförening lyckades
+- **Umnataks offer:** Umnatak tog frivilligt plats i meteoritjärnskniven som nytt ankare för Urkhaths ring (PERMANENT)
+- Ulzak tog Umnataks kropp (PERMANENT) - Christofer spelar nu "kniv-Umnatak" och "Ulzak-i-kroppen"
+- VinterGlöds ed bröts när Zentri återförenades
+- **VinterGlöd stannade i Skugglandet** - fri men ensam. Blev INTE allierad (som planerat)
+- Gruppen flydde tillbaka till Mundana genom underjordisk passage
 
-Scenen: Spegelvända Fortet - Ett torn av is och mörk sten som tornar upp sig vid kanten av Intigheten. Kring tornet sveper evig dimma och kalla vindar. Tornet SPEGLAR sig själv - uppochned, vriden, paradoxal arkitektur.
+**Vad spelarna lärde sig i Akt 2 (VERKLIGT):**
+- ✓ Yelgothas sanna natur (själssamlare, inte hjälpare)
+- ✓ Zentris tre delar (kropp, själ, minne - separerade)
+- ✓ Hur man besegrar bindningen (resonans/sång)
+- ✓ VinterGlöds bakgrund (page, systerns död, eden)
+- ✗ Urkhaths fullständiga plan (ALDRIG avslöjat av VinterGlöd - han gav inga detaljer)
+- ✗ Stenstodernas betydelse (EJ diskuterat)
+- ✗ Drakarnas roll (EJ diskuterat)
+- ✗ Kuberon och Skymning (EJ diskuterat)
+- ✗ Fragmenten (EJ diskuterat)
 
-**Vinterglöds öppning:**
-> *"Välkomna, vandrare från den varma världen. Jag är Vinterglöd, och jag har VÄNTAT på er."*
-> *"Ni söker pojken - Zentri, krigarmärkt och ringbärare. Han är HÄR, under mitt beskydd."*
-> *"Jag är BUNDEN att bevara honom. En gammal ed, svuren i dumhet och stolthet."*
-> *"Ni får INTE ta honom. Jag kan INTE låta er ta honom."*
-> *(paus, ögonen glittrar med hopp och sorg)*
-> *"...men ni är välkomna att FÖRSÖKA."*
+**KONSEKVENSER FÖR FRAMTIDA AKTER:**
+1. VinterGlöd är INTE allierad → all info han skulle ge i Akt 3-5 saknas
+2. Yelgotha-kopplingen oanvänd → potentiell framtida plottråd
+3. Ringen nu på kniven (Umnatak = ankare) → helt ny bindningssituation
+4. Umnatak permanent i kniv → spelarkaraktär förlorad men fortfarande "närvarande"
+5. Corvus (f.d. Arcadius) svårt skadad av trådbrottet → tom, fragmenterad
 
-**När spelarna säger "Yelgotha sände oss":**
-> *(Vinterglöd stannar upp, andningen fastnar)*
-> *"Yelgotha... Mitt namn har inte passerat hans läppar på över nio tusen år."*
-> *"Han var min herre. Jag var hans page, en gång, i en annan tid. Innan..."*
-> *(vänder sig bort, rösten blir mjukare)*
-> *"Innan jag blev detta. Innan jag svek allt jag en gång värdesatte."*
-> *(tillbaka, med vass blick)*
-> *"Vad sa han om mig? Kallade han mig förrädare? Det skulle vara sant."*
-
-**Dialog-dynamik:**
-
-Vinterglöd kommer:
-1. **Förklara sanningen** - han ljuger aldrig (skugglandsregler)
-2. **Varna** dem för farorna
-3. **Testa** deras beslutsamhet och styrka
-4. **Respektera** mod och klokhet
-5. **"Glömma"** att nämna vägar ut
-6. **Antyda** utan att direkt hjälpa
-
-**Exempel-interaktioner:**
-
-**SPELARE:** "Varför håller du honom?"
-**VINTERGLÖD:** *"En ed svuren för årtusenden sedan till den som binder världarna. Han KALLADE på mig. Nu MÅSTE jag bevara det han skickade. Sådana är eders kraft för oss som vandrar mellan nätterna."*
-
-**SPELARE:** "Vad händer om vi tar honom?"
-**VINTERGLÖD:** *"Då har jag MISSLYCKATS med mitt uppdrag. Eden... skulle kanske rämna. Eller bli fullgjord genom mitt misslyckande. Det är SVÅRT att säga med sådana urgamla bindningar..."* (han låter hoppfull, nästan desperat)
-
-**SPELARE:** "Hjälp oss!"
-**VINTERGLÖD:** *"Jag KAN inte. Eden binder mig hårdare än någon kedja av järn. Men..."* (paus, ser bort) *"...ni behöver inte MIN hjälp. Ni är starka. Fem vandrare som korsat gränsen. Och tornet är gammalt. Och jag är ensam här. Och vissa tider är jag DISTRAHERAD av minnen... säg, vid midnatt, när månen är som kraftigast och skuggorna djupast..."*
-
-**SPELARE:** "Demonen lovade dig din syster tillbaka?"
-**VINTERGLÖD:** *(ögonen glittrar av tårar som aldrig faller)* *"Nio tusen år har jag väntat. Samlat själar. Byggt hans kraft. Han sa... han sa att när han var stark nog skulle han väva hennes essens tillbaka från tomheten."*
-*(paus, rösten blir svagare)*
-*"Men ni är kloka vandrare. Ni har sett mycket. Säg mig... kan de döda verkligen återkomma? Kan en demon verkligen återskapa vad som förstörts?"*
-*(han FRÅGAR dem - söker bekräftelse på vad han alltid vetat)*
-
-**VÄNDPUNKTEN - Yelgothas budskap:**
-
-När spelarna berättar mer om Yelgotha - hur han frös sig själv, hur han väntade, hur han sa "Han var min page en gång" med sorg, inte vrede:
-
-**VINTERGLÖD:** *(rösten brister)*
-*"Han... väntade? För MIG? Efter allt jag..."*
-*(sätter sig ned, staven faller ur handen)*
-*"Jag trodde han hatade mig. Jag trodde alla hatade mig. Jag trodde jag var utesluten från minne och nåd för evigt."*
-*(ser upp på spelarna)*
-*"Vad... vad ville han att ni skulle göra?"*
-
-**OM spelarna säger att Yelgotha ville att de skulle rädda Zentri:**
-
-**VINTERGLÖD:** *(reser sig, plockar upp staven)*
-*"Då har min gamle herre talat. Och jag... jag har hört."*
-*(vänder sig mot tornet)*
-*"Pojken är i högsta rummet. Vägen dit är fylld med mina skuggor - minnen som tagit form. De kommer testa er. Om ni BESEGRAR dem... då har ni visat er värdiga."*
-*(tillbaka till spelarna, rösten formell men ögonen fulla av hopp)*
-*"Jag kommer FÖRSÖKA stoppa er med all min kraft. Det KRÄVER eden. Men kanske... kanske är min kraft inte vad den en gång var. Kanske har nio tusen år i ensamhet gjort mig svag. Vi får se."*
-*(ett litet, sorgset leende)*
-*"Må den bäste vinna."*
-
-**STRIDEN/PROVEN:**
-
-Vinterglöd kommer INTE döda spelarna - men han kommer testa dem hårt:
-1. **Skuggornas Sal** - möt dina största rädslor (psykologiskt)
-2. **Tidens Korridor** - navigera tidsförvrängning (gåta)
-3. **Frostens Prov** - fysisk utmaning i köld
-4. **Sanningens Spegel** - varje spelare möter sig själv
-5. **Högsta Rummet** - där Zentri hålls
-
-**ZENTRI ÅTERFÖRENAS:**
-
-När de når högsta rummet:
-
-**ZENTRI:** *(chockad, rörd, rädd)*
-*"Ni... ni kom? För MIG? Men hur... Vinterglöd sa att ingen kunde..."*
-*(kastar sig om Gordon/den han är närmast)*
-*"Jag är så ledsen. Jag förstod inte vad ringen var. Jag har SETT vad den gör nu. Demonen visar mig. Världar som brinner, själar som skriker. Jag är... jag är skrämd."*
-
-**VINTERGLÖD (anländer till rummet):**
-*"Ni vann. Ni var starkare än mina skuggor. Starkare än mitt motstånd."*
-*(vänder sig mot ett osynligt närvaro, talar till tomma luften)*
-*"Du hör mig, Urkhath. Eden är BRUTEN. Jag FÖRSÖKTE. Men de var för starka. Din ankare är förlorat."*
-*(tillbaka till spelarna)*
-*"Ta pojken. Ta ringen. Fly härifrån. Urkhath kommer bli rasande när han inser vad som hänt."*
-
-**OM spelarna frågar vad som händer med honom:**
-
-**VINTERGLÖD:**
-*"Jag är fri. Först gången på nio tusen år. Eden är bruten, och demonen kan inte längre tvinga mig."*
-*(ser ut över Intigheten)*
-*"Men min syster... jag vet nu att jag aldrig kommer få henne tillbaka. Lögnen är avslöjad. Arbetet var förgäves."*
-*(vänder sig till spelarna)*
-*"Säg till Yelgotha, om ni möter honom igen, att... att jag är tacksam. Att jag är ledsen. Att jag önskar jag kunde göra om allt."*
-*(paus)*
-*"Och säg att jag kommer hjälpa er nu. Demonen måste stoppas. Och jag vet var hans svaghet ligger."*
-
-**HAN BLIR EN ALLIERAD!**
-
-**Kapitel 12 - Återfärden och Urkhaths Raseri:**
-- Med Zentri tillbaka och Vinterglöd befriad
-- Men ankaret är brutet - Urkhath RASAR
-- Effekter i båda världarna:
-  * **Mundana:** Värre storm, fler odjur, stenstoder skakar
-  * **Skugglandet:** Skymning blir AGGRESSIV, Intigheten expanderar snabbare
-- Måste fly tillbaka till Mundana
-- Men nu med KUNSKAP och en ny allierad
-
-**Vad spelarna lär sig i Akt 2:**
-- ✓ Urkhaths fullständiga plan (från Vinterglöd)
-- ✓ Stenstodernas betydelse
-- ✓ Drakarnas roll
-- ✓ Kuberon och Skymning
-- ✓ Att fragmenten måste samlas
-- ✓ Att alver och dvärgar måste samarbeta
-- ✓ Att nästa Mörker närmar sig (32 år!)
+> **[ORIGINALPLAN FÖR KAP 11-12 ARKIVERAD]**
+> Kapitel 11 ("Spegelvända Fortet") och Kapitel 12 ("Återfärden") spelades ALDRIG.
+> VinterGlöd-mötet skedde annorlunda i Kap 10 (se ovan). Yelgothas namn nämndes aldrig.
+> VinterGlöd blev INTE allierad. Bok 1 avslutades efter Kap 10.
+> Den detaljerade originalplanen för dialog och prövningar finns i git-historiken om den behövs.
 
 ---
 
-### AKT 3: ALLIANSEN (Kapitel 13-15)
+### AKT 3: ALLIANSEN (Kapitel 13-15) ⚠️ BEHÖVER OMARBETAS
+
+> **VARNING:** Akt 3 förutsätter att VinterGlöd är allierad och att gruppen har full kunskap om Urkhaths plan, stenstoderna, och fragmenten. INGET av detta stämmer. Ringen är nu bunden till Umnataks kniv (inte på Zentri). Umnatak är permanent i kniven. Gruppen saknar kritisk information. Denna akt behöver omdesignas helt för Bok 2.
 
 **Mål: Samla fragmenten och kunskap**
 
@@ -855,7 +777,9 @@ När de når högsta rummet:
 
 ---
 
-### AKT 4: MOTATTACKEN (Kapitel 16-18)
+### AKT 4: MOTATTACKEN (Kapitel 16-18) ⚠️ BEHÖVER OMARBETAS
+
+> **VARNING:** Förutsätter resultat från Akt 3 som inte längre stämmer. Behöver omdesignas.
 
 **Mål: Förbereda båda världarna**
 
@@ -894,7 +818,9 @@ När de når högsta rummet:
 
 ---
 
-### AKT 5: ÅTERBINDNINGEN (Kapitel 19-20) KLIMAX
+### AKT 5: ÅTERBINDNINGEN (Kapitel 19-20) KLIMAX ⚠️ BEHÖVER OMARBETAS
+
+> **VARNING:** Klimax förutsätter att alla fragment samlats, alliansen bildats, och ritualen förberetts. Grundförutsättningarna har förändrats dramatiskt. Behöver omdesignas.
 
 **Mål: Binda Urkhath för evigt (eller åtminstone till nästa Mörker)**
 
@@ -1290,7 +1216,9 @@ Tragedi, nederlag, kostnad för misslyckande, världens bräcklighet
 
 ---
 
-## SAMMANFATTNING FÖR NÄSTA MÖTE (Kapitel 11)
+## SAMMANFATTNING FÖR NÄSTA MÖTE (Kapitel 11) ⚠️ OBSOLET - BOK 1 ÄR KLAR
+
+> **OBS:** Denna sektion skrevs inför ett Kapitel 11 som ALDRIG spelades som planerat. Bok 1 avslutades vid Kapitel 10. VinterGlöd-mötet skedde annorlunda (se Akt 2 ovan). Nedanstående dialog-mallar och scenarier arkiveras som referens men är INTE längre aktuella. Nästa session = Bok 2, Kapitel 11 (nytt innehåll behövs).
 
 ### Vad Johan Behöver Veta
 

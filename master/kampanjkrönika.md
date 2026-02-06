@@ -7,7 +7,7 @@
 - **Huvudantagonist:** Demonen Urkhath
 - **Världsmiljö:** EON-rollspelssystemet
 - **Kampanjstart:** Tirakgraven, gränstrakterna Cermira/Mithera
-- **Kronologisk täckning:** Prolog → Kapitel 8 (Evakueringen)
+- **Kronologisk täckning:** Prolog → Kapitel 10 (Skugglandet & Zentris Befrielse)
 
 ---
 
@@ -1499,7 +1499,7 @@ Corvus använde sin insiderkunskap för att hitta **korrupta flodkaptener** vid 
 **Ungdomar (8):**
 - **Ragnar** (16) - Astrids kille, vill hämnas Sankt Astrids död
 - **Saga** (19) - utvecklar naturmagi sedan traumat
-- Birger, Lovisa, Astrid Björkgren, Johan, Ylva, Embla
+- Birger, Lovisa, Astrid Björkgren, Johan, Ylva Ekström, Embla
 
 **Äldre (6):**
 - **Morfar Ulf** (68, vise men förvirrad)
@@ -1597,7 +1597,7 @@ ANDRA SIDAN (Pråmarna väntar)
 
 **Flyktinggruppen:**
 - 5 rollpersoner (Gordon, Umnatak, Kazrik, Thrakka, Corvus)
-- 39 överlevande civila (förlorade 2 under marsch)
+- 38 överlevande civila (förlorade 3 under marsch: Torsten, Helena, Gammal-Erik)
 
 **Arvorns Hammare:**
 - **Kommendör Aldrich Järnkors** + 6 tempelriddare
@@ -1632,7 +1632,7 @@ Konfrontation skedde. Gruppen kom över.
 
 **12 flyktingar:**
 - **Stridsdugliga:** Jonna, Jossan, Dagne, Karn, Rolla
-- **Ungdomar:** Ragnar (16), Saga (19), Birger, Lovisa, Ylva, Embla, Torik (23)
+- **Ungdomar:** Ragnar (16), Saga (19), Birger, Lovisa, Ylva Ekström, Embla, Torik (23)
 
 #### Månljuset (Kapten Lars "Silkeskägg" Nordahl)
 
@@ -1682,13 +1682,13 @@ När pråmarna kom loss planerade **Lars "Silkeskägg" Nordahl** att dumpa sina 
 
 ### Slutstatus - Efter Evakueringen
 
-**Totala förluster från ursprungliga ~50 bybor:**
+**Förluster under evakueringen (av 41 som överlevde attacken):**
 1. **Gubben Torsten** (dag 2) - begravd av Corvus
 2. **Helena Stenmark**, 2 år (dag 3) - Anna bar kroppen hela vägen
 3. **Gammal-Erik**, 74 år (dag 3) - bet av tungan, blödde ihjäl
 4. **Tant Hildur**, 66 år (under revolten) - ramlade, slog huvudet
 
-**Överlevande:** 39 flyktingar + 5 rollpersoner = 44 personer
+**Överlevande:** 37 flyktingar + 5 rollpersoner = 42 personer
 
 **Månljusets status efter revolt:**
 - Kapten och styrman döda
@@ -1728,7 +1728,7 @@ När pråmarna kom loss planerade **Lars "Silkeskägg" Nordahl** att dumpa sina 
 
 ### Bakgrund - Efter Evakueringen
 
-De 41 överlevande från Vargnäset nådde Vitterdal säkert. Men inte alla kunde stanna. **Grensfortet** - det gamla förfallna fortet vid Skugglandets gräns - behövde bemannas och återuppbyggas som basläger för räddningen av Zentri.
+De 37 överlevande flyktingarna från Vargnäset nådde Vitterdal säkert. Men inte alla kunde stanna. **Grensfortet** - det gamla förfallna fortet vid Skugglandets gräns - behövde bemannas och återuppbyggas som basläger för räddningen av Zentri.
 
 **Gordon** tog på sig uppdraget att leda en mindre grupp till fortet. 17 personer totalt, inklusive äventyrarna:
 - **12 flyktingar från Vargnäset** villiga att börja om på nytt
@@ -1737,7 +1737,7 @@ De 41 överlevande från Vargnäset nådde Vitterdal säkert. Men inte alla kund
 ### Dag 1: Avgång från Vitterdal (11:e Tretoria, Helenio)
 
 **Gruppen (17 personer):**
-- **Äventyrarna:** Gordon, Umnatak, Kazrik, Thrakka, Corvus (+ Arcadius hund)
+- **Äventyrarna:** Gordon, Umnatak, Kazrik, Thrakka, Corvus/Arcadius (+ hans krigshund)
 - **Från Vargnäset:** Eira Holm, Skorda Bergsdotter, Magnus Hällström, Ragnar, Jossan Fallvind, Sten Knotbindare, Dain Stenyxa (dvärgbyggare)
 - **Från Frisänkan:** Benne Tok, Vidar Solvandrar (samorisk präst)
 
@@ -1751,8 +1751,8 @@ De 41 överlevande från Vargnäset nådde Vitterdal säkert. Men inte alla kund
 
 Eira räknade gruppen igen och igen - traumatiserad från evakueringen. Skorda såg hennes försämrade mentala tillstånd men sa inget. *"Skuld dödar folk långsammare än knivar men lika säkert."*
 
-**Arcadius dilemma:**
-Corvus (f.d. Arcadius) red sist med sin stora grå krigshund. Flyktingarna stirrade - osäkra om de skulle vara tacksamma eller rädda för den förre häxjägaren som förrått Arvorns Hammare för deras skull.
+**Corvus dilemma:**
+Corvus (under aliaset Arcadius) red sist med sin stora grå krigshund. Flyktingarna stirrade - osäkra om de skulle vara tacksamma eller rädda för den förre häxjägaren som förrått Arvorns Hammare för deras skull.
 
 ### Dag 2: Uppför Bergen (12:e Tretoria, Selenio)
 
@@ -1886,7 +1886,7 @@ Men med goda jaktmarker runt om. Det var något i alla fall.
 
 ### Utgångsläget i Grensfortet
 Efter den dramatiska evakueringen säkrades de överlevande flyktingarna i Grensfortet:
-- **41 överlevande** av ursprungliga 50 bybor från Vargnäset
+- **37 överlevande** av ursprungliga ~50 bybor (41 överlevde attacken, 4 dog under evakueringen)
 - Gruppen återhämtad och utrustad
 - Lady Soffia hade sänt förnödenheter från Vitterdal
 - Corvus opererar fortfarande under aliaset "Arcadius"
@@ -2510,6 +2510,8 @@ Kroppen rörde sig.
 
 Men *vem* rörde den?
 
+> **NAMNBYTE:** Från denna punkt väljer spelaren (Daniel) att karaktären inte längre är "Arcadius" (namnet Arvorns Hammare gav honom). Arcadius-identiteten dog med skulden. Det som återstår tar tillbaka sitt födelsenamn: **Corvus**.
+
 #### Väktarna
 
 Strax efter ankomsten - **två iskristallkonstrukter**.
@@ -2961,7 +2963,7 @@ Bok 1 är avslutad.
 - **Gråtonen:** Bar Zentris själ till kroppen, försvann efteråt
 
 **Nya NPCs i Grensfortet:**
-- **Arcadius** - Med gruppen, levande
+- **Corvus** (f.d. Arcadius) - Med gruppen, levande men tom efter trådbrottet
 - **Xian-Li** - Sung-diplomat, finns i Grensfortet
 
 ### Kapitel 10 - AVSLUTAT
@@ -2990,7 +2992,7 @@ Bok 1 är avslutad.
 - **Gordon Nahrzezia** - Cirefalier, Legosoldat, Kapten av Vitterdals Hederskompani
 - **Kazrik klan Ghor** - Dvärg, "Den resande", författare till "Kazriks resor"
 - **Thrakka "Järnhanden"** - Tirak, f.d. Gladiator/Livvakt, vaktar kniven med Urkhaths ring (anslöt Kapitel 5)
-- **Corvus Askhår / Arcadius** - Människa, f.d. Kommendör Arvorns Hammare, trådbrottet lämnade spår (anslöt Kapitel 7)
+- **Corvus Askhår** (f.d. Arcadius) - Människa, f.d. Kommendör Arvorns Hammare, tog tillbaka Corvus-namnet efter trådbrottet (anslöt Kapitel 7)
 - **Zentri Bredarsson** - Asharier, Krigarmagiker, FRI från Skugglandet (Kapitel 10), Andreas spelar honom igen
 - **Umnatak (fängslad i kniv)** - Auser, Schaman, PERMANENT fängslad i meteoritjärnskniv, ankare för Urkhaths ring (Kapitel 10)
 - **Ulzak (i Umnataks kropp)** - Tirakshaman, PERMANENT i Umnataks kropp (Kapitel 10)
@@ -3002,7 +3004,7 @@ Bok 1 är avslutad.
 - **Hadrian "Hagge" av Vitterdal** - Ny jarl av Vitterdal, gruppens uppdragsgivare
 - **Lady Soffia av Vitterdal** - Hagges mor, ordnade uppdraget
 - **Kaelar Stålsvärd** - F.d. kompanikapten, nu Hagges huskapten
-- **Eira Holm** - Byäldste Vargnäset, leder de 50 evakuerade byborna
+- **Eira Holm** - Byäldste Vargnäset, leder de 37 överlevande byborna
 
 ### Fiender
 - **Demonen Urkhath** - Huvudantagonist, tillfälligt neutraliserad, ringen nu bunden till kniven, KOMMER TILLBAKA

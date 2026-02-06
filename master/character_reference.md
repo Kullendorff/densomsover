@@ -24,7 +24,7 @@
 
 | Huvudnamn | Alias/Alternativt namn | Relation |
 |-----------|------------------------|----------|
-| **Corvus Askhar** | Arcadius | SAMMA PERSON - Corvus är riktiga namnet, Arcadius är alias/täcknamn |
+| **Corvus Askhar** | Arcadius | SAMMA PERSON - "Corvus" är födelsenamnet. "Arcadius" fick han av Arvorns Hammare. Spelaren valde i Skugglandet (Kap 10) att gå tillbaka till **Corvus** - Arcadius-identiteten dog med skulden. |
 | **Prins Yelgotha** | Älvakungen, Själabäraren | SAMMA PERSON - "Älvakungen" är coloniskt namn för "Själabärare" |
 
 **VIKTIGT: Umnatak & Ulzak (PERMANENT FÖRÄNDRING Kapitel 10):**
@@ -33,7 +33,7 @@
 - **Christofer spelar BÅDA:** "kniv-Umnatak" OCH "Ulzak i kroppen"
 
 **När du skriver:**
-- Corvus/Arcadius: Fråga användaren vilket namn som passar i kontexten
+- Corvus/Arcadius: Före Kap 10 = "Arcadius" (alias). Från Kap 10 = "Corvus" (spelaren valde att droppa aliaset efter trådbrottet)
 - Yelgotha: Använd "Prins Yelgotha" eller förtydliga "Yelgotha (Älvakungen)"
 - Umnatak efter Kapitel 10: Alltid specificera "Umnatak (i kniven)" eller "Ulzak (i Umnataks kropp)"
 
@@ -49,7 +49,8 @@
 - **OFFER TILL YELGOTHA:** Traumatiska minnen (gladiatoråren, slaveriet)
 - **PLATS:** Grensfortet (Bok 1 avslutad)
 
-### Corvus/Arcadius
+### Corvus (f.d. Arcadius)
+- **NAMNHISTORIK:** Född som Corvus → kidnappades av Arvorns Hammare → fick namnet "Arcadius" → tillbaka till födelsenamnet "Corvus" efter trådbrottet i Kap 10
 - **YRKE:** TEMPELRIDDARE
 - **MAGI:** Kastar ALDRIG magi, använder ALDRIG besvärjelser
 - **VAD HAN GÖR:** Slåss med svärd, leder ritualer (andligt/religiöst, EJ magiskt), formelböner
