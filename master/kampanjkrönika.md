@@ -611,7 +611,7 @@ När de undersökte ruinen väckte de oavsiktligt två stenliknande golems - hum
 ### Den Kolossala Golemen
 
 **Den Stora Salen:**
-Djupare in i komplexet nådde gruppen en massiv sal med högt i tak. Där stod **den kolossala golemen** - en jätte inspirerad av legenden om **Zalmareth the Colossus**.
+Djupare in i komplexet nådde gruppen en massiv sal med högt i tak. Där stod **den kolossala golemen** - ödlefolkets mästerverk, en uråldrig vaktare byggd för att stå i evighet.
 
 **Beskrivning:**
 - Tre gånger en människas höjd
