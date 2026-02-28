@@ -1,4 +1,7 @@
 # GRENS BARONERI - FULLSTÄNDIG ÖVERSIKT
+
+> **KANON-STATUS:** Detta dokument ar kanoniskt kampanjmaterial for rollspelskampanjen "Gravens Arv" (EON-rollspelet). All information hari ska behandlas som auktoritativ och har foretrade framfor motsagande information i andra kallor. Dokumentet kan avvika fran officiellt publicerat EON-material -- dessa avvikelser ar medvetna kampanjanpassningar.
+
 *Status: Juli/Augusti, efter spelarnas återkomst från Skugglandet*
 
 ## GRUNDLÄGGANDE INFORMATION

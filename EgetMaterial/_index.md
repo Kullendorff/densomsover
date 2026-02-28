@@ -9,28 +9,30 @@
 ## 📊 STATISTIK
 
 ### Färdigt material
-- **Länder:** 0
-- **Städer:** 0
+- **Länder:** 1 (EM-L001 Muhad)
+- **Städer:** 1 (EM-S001 Jen)
 - **Platser:** 0
-- **Regioner:** 1
+- **Regioner:** 1 (EM-R001 Vitterdal)
 - **Organisationer:** 0
 - **Föremål:** 0
 - **NPCs:** 0
-- **Totalt färdigt:** 1
+- **Totalt färdigt:** 3
 
 ### Pågående projekt
 - **Aktiva projekt:** 1
-- **I fas 2 (Research):** 1
+- **I fas 2 (Research):** 1 (EM-R002)
 - **I fas 3-5 (Skrivande):** 0
 - **I fas 6 (Validering):** 0
 
-**Senast uppdaterad:** 2026-02-03
+**Senast uppdaterad:** 2026-02-28
 
 ---
 
 ## 🔄 PÅGÅENDE PROJEKT
 
 *Projekt i `projekt/`-mappen som inte är färdiga ännu.*
+
+---
 
 ### EM-R002: Grens Baroneri
 - **Typ:** Region/Förläning
@@ -64,33 +66,50 @@ Task(
 
 ## 🌍 LÄNDER
 
-*Inga länder skapade ännu.*
+### EM-L001: Muhad (Gudalandet) ✅
+- **Region:** Västlanden (västra Mundana)
+- **Storlek:** ~1 200 000 invånare (~325 000 km2)
+- **Styre:** Teokrati (Mhim = gudahärskare)
+- **Status:** Kampanjaktivt material, kanoniskt
+- **Kampanjstatus:** Besökt i Kapitel 2 (Jen/Ziu)
+- **Fil:** `lander/EM-L001_muhad.md`
+- **HTML:** `projekt/EM-L001_muhad/muhad.html`
+- **Validerat:** 2026-02-28 (korsvaliderad mot EM-S001 Jen + NotebookLM)
 
-**Exempel:**
-```markdown
-### EM-L001: Örkenriket Khamara
-- **Region:** Muhad (södra delen)
-- **Storlek:** ~200,000 invånare
-- **Styre:** Teokrati (solkult)
-- **Status:** Generiskt, delbart
-- **Kampanjstatus:** Ej använt i kampanj
-```
+**Innehåller:**
+- Komplett geografi, klimat, naturresurser, farliga varelser
+- Full historia (grundande ~1399 f.D. till nutid 2967 e.D.)
+- Styre, politik, rättssystem (Fata'a), 6 nyckelkefaler
+- Befolkning, kultur, religion (Mhimrätten), ceremonier
+- Ekonomi, handel, slaveri (~120 000 slavar)
+- Militär (granascher, nattdräpare, slavarmé, flotta)
+- Magi (selenotropi, Juubuls lärjungar, Gharbawi)
+- 7 städer (Alkarzan, Tabbah, Kaal, Melucka, Quaran, Jen, m.fl.)
+- Nomadfolk (Savakunnerna, östzhaner, Tarkas)
+- 20+ NPCs, 5+ kampanjhooks
+- Avvikelser dokumenterade (delat Ziu-styre, Al-Hafizun, Jen ~100k)
 
 ---
 
 ## 🏙️ STÄDER
 
-*Inga städer skapade ännu.*
+### EM-S001: Jen (Handelsstaden) ✅
+- **Land:** Muhad (Ziu-halvön)
+- **Storlek:** ~100 000 invånare (kampanjanpassning)
+- **Typ:** Hamnstad, handelsstad, slavhandelscentrum
+- **Status:** Kampanjaktivt material, kanoniskt
+- **Kampanjstatus:** Besökt i Kapitel 2
+- **Fil:** `stader/EM-S001_jen.md`
+- **HTML:** `projekt/EM-S001_jen/jen.html`
+- **Validerat:** 2026-02-28 (korsvaliderad mot EM-L001 Muhad + NotebookLM)
 
-**Exempel:**
-```markdown
-### EM-S001: Oasstaden Al-Nur
-- **Land:** Muhad
-- **Storlek:** 15,000 invånare
-- **Typ:** Handelsstad
-- **Status:** Generiskt, delbart
-- **Kampanjstatus:** Ej använt i kampanj
-```
+**Innehåller:**
+- Komplett geografi, historia, styre/lag, kultur, religion, ekonomi, slaveri, militär
+- 10 stadsdelar med platser och NPCs
+- 90+ NPCs, 7 fraktioner med intern struktur
+- 12 nyckel-NPCs med personlighet och dialog
+- Kanalprojektet, kampanjhooks
+- Avvikelser dokumenterade (befolkning, delat styre, Al-Hafizun)
 
 ---
 
@@ -217,15 +236,17 @@ Task(
 
 ---
 
-## 📋 KOMMANDE MATERIAL (IDÉER)
+## 📋 KOMMANDE MATERIAL (PLANERAT)
 
-*Lista över material du planerar att skapa*
+**Planerade projekt (i prioritetsordning):**
+- [x] EM-S001: Jen (Muhads rikaste handelsstad) -- **KLAR**
+- [x] EM-L001: Muhad (Gudalandet) -- **KLAR**
+- [ ] EM-L002: Momolan (matriarkalt grannland söder om Muhad)
 
-**Exempel:**
-- [ ] EM-S001: Oasstaden Al-Nur (muhad-stil handelsstad)
-- [ ] EM-N001: Al-Rashid (karavanledare, mûhadier)
-- [ ] EM-P001: De Svarta Cisternerna (ökenruin)
-- [ ] EM-O001: Skugghandelns Gille (smugglarnätverk)
+**Framtida idéer:**
+- [ ] EM-O001: Juubuls lärjungar (nekromanti-orden i Melûcka)
+- [ ] EM-P001: Dalkhrekni (ruinstad med orakel i Tarkas)
+- [ ] EM-O002: Savakunnerna (nomadkonfederation i Tarkas)
 
 ---
 
@@ -302,4 +323,4 @@ Task(
 
 ---
 
-**Senast uppdaterad:** 2026-02-01
+**Senast uppdaterad:** 2026-02-28

@@ -711,6 +711,8 @@
             <button class="nav-btn">Eget Material ▼</button>
             <div class="nav-dropdown-content">
                 <button onclick="showSection('eget-material')">Översikt</button>
+                <button onclick="window.location.href='EgetMaterial/projekt/EM-L001_muhad/muhad.html'">Muhad (Gudalandet)</button>
+                <button onclick="window.location.href='EgetMaterial/projekt/EM-S001_jen/jen.html'">Jen (Handelsstaden)</button>
                 <button onclick="window.location.href='EgetMaterial/projekt/EM-R001_vitterdal-baronieriet/vitterdal-baronieriet.html'">Vitterdal-baronieriet</button>
                 <button onclick="window.location.href='EgetMaterial/projekt/EM-R002_grens-baroneri/grens-baroneri.html'">Grens Baroneri</button>
             </div>
@@ -885,10 +887,58 @@
                 </div>
 
                 <h3 style="color: var(--flame-orange); margin-bottom: 1rem;">📖 Färdiga Material</h3>
-                <div style="padding: 2rem; background: rgba(255, 107, 74, 0.05); border: 1px solid rgba(255, 107, 74, 0.2); border-radius: 8px; text-align: center;">
-                    <p style="color: var(--text-secondary);">
-                        Inga färdiga material än. När projekt är kompletta flyttas de hit för enkel åtkomst och delning.
-                    </p>
+                <div style="display: grid; gap: 1.5rem; margin-bottom: 3rem;">
+                    <!-- Muhad -->
+                    <div class="card" style="cursor: pointer;" onclick="window.location.href='EgetMaterial/projekt/EM-L001_muhad/muhad.html'">
+                        <div style="display: flex; align-items: start; gap: 1.5rem;">
+                            <div style="flex-shrink: 0; font-size: 2.5rem;">🏜️</div>
+                            <div style="flex-grow: 1;">
+                                <h3 style="color: var(--flame-orange); margin-bottom: 0.5rem;">
+                                    EM-L001: Muhad (Gudalandet)
+                                </h3>
+                                <p style="color: var(--text-secondary); margin-bottom: 0.75rem; font-size: 0.95rem;">
+                                    <strong>Typ:</strong> Land •
+                                    <strong>Status:</strong> <span style="color: var(--gold);">✅ Komplett</span>
+                                </p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
+                                    Teokratiskt rike styrt av gudahärskaren Mhim. ~1,2 miljoner invånare, ~120 000 slavar.
+                                    Komplett med geografi, historia, styre, religion, militär (granascher, nattdräpare),
+                                    7 städer (Alkarzan, Tabbah, Kaal, Melucka, Quaran, Jen), nomadfolk och 20+ NPCs.
+                                </p>
+                                <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                    <span style="background: rgba(168, 85, 168, 0.2); color: var(--mystic-purple); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Västlanden</span>
+                                    <span style="background: rgba(255, 107, 74, 0.2); color: var(--flame-orange); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Kampanjaktivt</span>
+                                    <span style="background: rgba(255, 165, 0, 0.2); color: var(--gold); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">896 rader</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jen -->
+                    <div class="card" style="cursor: pointer;" onclick="window.location.href='EgetMaterial/projekt/EM-S001_jen/jen.html'">
+                        <div style="display: flex; align-items: start; gap: 1.5rem;">
+                            <div style="flex-shrink: 0; font-size: 2.5rem;">⚓</div>
+                            <div style="flex-grow: 1;">
+                                <h3 style="color: var(--flame-orange); margin-bottom: 0.5rem;">
+                                    EM-S001: Jen (Handelsstaden)
+                                </h3>
+                                <p style="color: var(--text-secondary); margin-bottom: 0.75rem; font-size: 0.95rem;">
+                                    <strong>Typ:</strong> Stad •
+                                    <strong>Status:</strong> <span style="color: var(--gold);">✅ Komplett</span>
+                                </p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
+                                    Muhads rikaste stad, ~100 000 invånare. Enda hamnen öppen för utlänningar.
+                                    10 stadsdelar, 90+ NPCs, 7 fraktioner, slavhandel (Järntorget),
+                                    kryddmarknaden, kanalprojektet. Besökt i Kapitel 2.
+                                </p>
+                                <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                    <span style="background: rgba(168, 85, 168, 0.2); color: var(--mystic-purple); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Muhad/Ziu</span>
+                                    <span style="background: rgba(255, 107, 74, 0.2); color: var(--flame-orange); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Kampanjaktivt</span>
+                                    <span style="background: rgba(255, 165, 0, 0.2); color: var(--gold); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Korsvaliderad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

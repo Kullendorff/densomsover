@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhad - Gudalandet - EON Kampanjmaterial</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #f4e8d8;
+            color: #3d2817;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .page-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 4rem 3rem;
+            background: #faf6f0;
+            box-shadow: 0 0 40px rgba(61, 40, 23, 0.15);
+            border: 1px solid #d4c4b0;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px double #8b6f47;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #6d5d4b;
+            margin-bottom: 1rem;
+        }
+
+        .meta {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: #8b6f47;
+            font-weight: 600;
+        }
+
+        nav {
+            background: #f0e6d6;
+            border: 1px solid #d4c4b0;
+            padding: 1rem;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
+        }
+
+        nav a {
+            color: #704214;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.3rem 0.5rem;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        nav a:hover { background: #e8dcc8; color: #2c1810; }
+
+        .section { margin-bottom: 3rem; }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8b6f47;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #3d2817;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #704214;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p { margin-bottom: 1rem; text-align: justify; }
+
+        .atmosphere {
+            background: #f0e6d6;
+            border-left: 4px solid #8b6f47;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #5d4d3b;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .atmosphere-long p:first-of-type::first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            line-height: 0.7;
+            margin: 0.05rem 0.2rem -0.1rem 0;
+            color: #704214;
+            font-style: normal;
+            padding-top: 0.15rem;
+        }
+
+        .info-box {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: inset 0 0 10px rgba(139, 111, 71, 0.1);
+            border-radius: 4px;
+        }
+
+        .info-box strong { color: #704214; font-weight: 600; }
+
+        .warning-box {
+            background: #f9e6e0;
+            border: 2px solid #a85442;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box strong { color: #8b2e1f; font-weight: 700; }
+
+        ul, ol { margin-left: 2.5rem; margin-bottom: 1rem; }
+        li { margin: 0.6rem 0; }
+
+        .npc-card {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+
+        .npc-card h4 { color: #704214; margin-top: 0; font-size: 1.4rem; }
+        .npc-meta { color: #8b6f47; font-size: 0.9rem; margin: 0.5rem 0; font-style: italic; }
+
+        .hook-card {
+            background: #faf0e6;
+            border: 2px solid #b8985e;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+
+        .hook-card h4 { color: #704214; margin-top: 0; font-size: 1.4rem; }
+
+        .city-card {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .city-card h4 { color: #704214; margin-top: 0; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #ffffff;
+            border: 2px solid #d4c4b0;
+        }
+
+        th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #d4c4b0; }
+        th { background: #f0e6d6; color: #2c1810; font-weight: 700; }
+        tr:hover { background: #faf6f0; }
+
+        footer {
+            border-top: 3px double #8b6f47;
+            padding-top: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            color: #6d5d4b;
+            font-size: 0.9rem;
+        }
+
+        footer p { margin: 0.5rem 0; text-align: center; }
+
+        .divider { text-align: center; margin: 2rem 0; color: #8b6f47; font-size: 1.5rem; }
+
+        @media (max-width: 768px) {
+            .page-container { margin: 0; padding: 2rem 1.5rem; border: none; }
+            h1 { font-size: 2.5rem; }
+            nav ul { flex-direction: column; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1>Muhad</h1>
+            <div class="subtitle">Gudalandet &mdash; Ghabesh Zil, "Den tusenogdes land"</div>
+            <div class="meta">
+                &#x1F3DC; Vastra Mundana &bull; &#x1F465; ~1 200 000 invanare &bull; &#x1F3DB; Teokrati
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">&larr; Dashboard</a></li>
+                <li><a href="#oversikt">Oversikt</a></li>
+                <li><a href="#geografi">Geografi</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#styre">Styre</a></li>
+                <li><a href="#befolkning">Befolkning</a></li>
+                <li><a href="#religion">Religion</a></li>
+                <li><a href="#ekonomi">Ekonomi</a></li>
+                <li><a href="#slaveri">Slaveri</a></li>
+                <li><a href="#militar">Militar</a></li>
+                <li><a href="#magi">Magi</a></li>
+                <li><a href="#stader">Stader</a></li>
+                <li><a href="#nomader">Nomader</a></li>
+                <li><a href="#npcs">NPCs</a></li>
+                <li><a href="#hooks">Hooks</a></li>
+            </ul>
+        </nav>
+
+        <!-- Atmospheric Introduction -->
+        <section class="section">
+            <div class="atmosphere atmosphere-long" style="font-size: 1rem; line-height: 1.9; padding: 2rem 2.5rem; margin: 2rem 0 3rem 0;">
+                <p>Oknen sov aldrig, tankte Kazrik nar han drog kappan tatare runt sig mot nattkylan. Det var det foersta han laert sig i Muhad: att dagarna braende och naetterna fryste, och att ingenting daeremellan var vad det verkade.</p>
+
+                <p>Karavanen hade stannatt vid en oas tva dagsmaerscher soeder om Kaal. Kamelerna drack girigt vid kanten av den grumliga dammen, och slavarna -- kedjade vid anklen, ansikten maerkta med aeagarens bomerken i intrikat tatuerad konst -- satt tysta i raeder under palmerna. Ingen sa nagot. I Muhad laerde man sig snabbt att tystnad var tryggare aen ord.</p>
+
+                <p>Fran minareten i det lilla samhaellet vid oasen skar en rabbals roest genom luften -- boneutropet, skarpt och melodiskt, som kallade de troende till den fjarde boenen. Overallt stannade maenniskor i sina sysslor. En kopman laede ner sin vag. En soldat saenkte sitt svaerd. En slav boejde sig aennu djupare. Regh'b ad Mhim -- vaelsignelsen kommer fran Mhim.</p>
+
+                <p>Kazrik hade sett maanga laender. Men inget land var som Muhad. Haer var allting lag: maaltidernas ordning, gaestfrihetens regler, straffet for att baera en ahma-dolk utan tillstand. Allt floedat fran Mhim, gudahaerskaren, som paastods vara himlen sjaelv i maensklig gestalt. Och under det -- under allt -- rykten om nagot moerkare. Nagot som inte ens kefalerna visste om. Nagot som styrde dem alla.</p>
+
+                <p>Men saa var det ju med Muhad, taenkte dvaergen. Sanningen var som oknen: den sag ut att vara tom, men daer fanns mera aen vad oegat kunde se. Man behoevde bara veta var man skulle graeva.</p>
+            </div>
+        </section>
+
+        <!-- Oversikt -->
+        <section id="oversikt" class="section">
+            <h2>Oversikt</h2>
+
+            <p><strong>Muhad</strong> ar ett av Mundanas maektigaste och mest fascinerande riken -- en teokratisk stat styrd av gudahaerskaren Mhim, som enligt Mhimraetten aer himlen inkarnerad pa jorden. Landet aer extremt rikt tack vare handel, karavanvaegar och sjoefart, men ocksa brutalt i sin behandling av slavar och avvikare.</p>
+
+            <p>Det aer en kultur av kontraster: raffinerad poesi och braedspel samexisterar med offentliga avrattningar och narkotikadrogade slavaarmeer. Fruktade elitkrigare som granascher och nattdraepare har gjort Muhad till en militaer stormakt, medan landets diplomatiska isolationism sakta utmanas av en ny generation pragmatiker.</p>
+
+            <div class="info-box">
+                <strong>Lage:</strong> Vastra Mundana. Graensar till Bla havet (norr), Igonhavet (soeder/ost), Tarkas-oeknen (ost), Momolan (soeder), Eumo (sydvaest)<br>
+                <strong>Storlek:</strong> ~325 000 km&sup2;<br>
+                <strong>Befolkning:</strong> ~1 200 000 (varav ~120 000 slavar)<br>
+                <strong>Huvudstad:</strong> Alkarzan (~120 000 invanare). Mhim residerar i Tabbah.<br>
+                <strong>Sprak:</strong> Muhadinska (zhanska)<br>
+                <strong>Kod:</strong> EM-L001
+            </div>
+
+            <div class="warning-box">
+                <strong>Kampanjanpassningar:</strong> Ziu har delat styre (Jen=handel, Quaran=admin). Al-Hafizun (hemligt byrakratrad) styr Muhad i hemlighet. Jen har ~100 000 invanare (officiellt ~30 000).
+            </div>
+        </section>
+
+        <!-- Geografi -->
+        <section id="geografi" class="section">
+            <h2>Geografi</h2>
+
+            <p>Muhad domineras av extremt hett och torrt klimat. De boerdiga omradena koncentreras till nordvaest och kring oaser.</p>
+
+            <h3>Terraeng</h3>
+            <ul>
+                <li><strong>Norra kusten (Bla havet):</strong> Kustremsa med handelshamnar. Memakusten i nordost aer foerraderisk -- "Kalamiteternas kust". Sjoemonster Morh drar skepp mot klipporna.</li>
+                <li><strong>Vaestra bergen (Tabim):</strong> Ogaestveanlig terraeng med vilddjur. Mhimberget med evig sno. Heliga staden Tabbah.</li>
+                <li><strong>Centrala slaetterna:</strong> Boerdiga jordbruksmarker kring Diuz-floden. Odling av vete, hirs, frukter, drogvaexter.</li>
+                <li><strong>Soedra oeknen:</strong> Kargt oekenlandskap med oaser som livgivande noder. Karavanleder mot Momolan och Eumo.</li>
+                <li><strong>Ziu ("Landet mellan haven"):</strong> Halvoen i oester. Naestan uteslutande oeken. Jen-Quaran tar 7 dagar.</li>
+                <li><strong>Oeestra graensen (Tarkas):</strong> Braennande oeken som naturlig barriaer mot Jargien.</li>
+            </ul>
+
+            <h3>Viktiga platser</h3>
+            <ul>
+                <li><strong>Diuz-floden:</strong> Bred, livgivande flod genom de boerdiga omradena</li>
+                <li><strong>Mhimberget:</strong> Heligt berg med evig sno, synligt fran stora delar av Muhad</li>
+                <li><strong>Sarabkaellan:</strong> Muhads stoersta oas, helig plats, vallfaerdsmal</li>
+                <li><strong>Ildir-kanalen:</strong> Fornlaemning -- forntida kanal fran Bla havet till Igonhavet</li>
+            </ul>
+
+            <h3>Farliga varelser</h3>
+            <ul>
+                <li><strong>Draghiren:</strong> Rovdjur med elektriska urladdningar. Goems under sanden.</li>
+                <li><strong>Moerkerhundar:</strong> Nattaktiva eldsprutande rovdjur.</li>
+                <li><strong>Morh:</strong> Sjoemonster vid Memakusten.</li>
+                <li><strong>Fum:</strong> Oekenande och palmernas vaektare. Skapar magiska haegringar.</li>
+            </ul>
+        </section>
+
+        <!-- Historia -->
+        <section id="historia" class="section">
+            <h2>Historia</h2>
+
+            <table>
+                <tr><th>Period</th><th>Haendelse</th></tr>
+                <tr><td>~1399 f.D.</td><td>Mhim stamfadern nedstiger, enar stammarna, grundar Muhad</td></tr>
+                <tr><td>~400 f.D.</td><td>Stamfaderns himmelfaerd. Fata'a sammanstaells. Al-Hafizun bildas.</td></tr>
+                <tr><td>51 e.D.</td><td>Muhad formellt skapat som enad stat</td></tr>
+                <tr><td>526 e.D.</td><td>Mirahmad den lysande eroevrar Ziu</td></tr>
+                <tr><td>1486 e.D.</td><td>Pesten -- bryter ut i Quaran, sprids till Jen och Alkarzan</td></tr>
+                <tr><td>2037 e.D.</td><td>Nederlaget mot Eumo -- mer aen halva armen foerlorad</td></tr>
+                <tr><td>2138 e.D.</td><td>Foersta invasionen av Jargien -- Jarum och Absalon eroevras</td></tr>
+                <tr><td>2498 e.D.</td><td>Eumo invaderar -- eroevrar stora muhadinska landomraden</td></tr>
+                <tr><td>2597 e.D.</td><td>Andra invasionen av Jargien -- naestan till Tibara</td></tr>
+                <tr><td>2608 e.D.</td><td>Blodbadet vid Zadgurla -- oemsesidig slakt</td></tr>
+                <tr><td>2658 e.D.</td><td>Jargien grundar kolonin Lopnor soeder om Muhad</td></tr>
+                <tr><td>~2890 e.D.</td><td>Wolani-dynastin grundas genom arrangerad envig</td></tr>
+                <tr><td>2951 e.D.</td><td>Mhim Matruk Wolani tilltaeder vid 16 ars alder</td></tr>
+            </table>
+
+            <h3>Nutida situation (2967 e.D.)</h3>
+            <p>Muhad befinner sig i relativ fred men med betydande inre spaenningar. Mhim Matruk Wolani har regerat i 16 ar med en diplomatisk linje som avviker fran historisk militarism. Interna maktstrider pyr: Amzro-familjen planerar att ta tronen, Salodan agiterar for heligt krig, och kanalprojektet i Ziu hotar att omstoeepa maktbalansen.</p>
+        </section>
+
+        <!-- Styre och Politik -->
+        <section id="styre" class="section">
+            <h2>Styre och Politik</h2>
+
+            <h3>Regeringsform</h3>
+            <p>Muhad aer en <strong>teokrati</strong> -- en gudahaearskarstat daer Mhim innehar oinskaenkt andlig och vaerldslig makt. Mhim anses vara stamfaderns staellfoeretraedare pa jorden. Att foerrada Mhim innebar att hela ens slaekt i sju slaektled utplanas.</p>
+
+            <div class="info-box">
+                <strong>Mhim Matruk Wolani:</strong> Gudahaerskare, 32 ar, fjaerde i Wolani-dynastin. Folksky, barmhaertig, diplomatisk -- historisk avvikare. Radgiven av draken Alzakh-Andhor.<br><br>
+                <strong>Kairkhan Nayman:</strong> "Oekenherren", armechef<br>
+                <strong>Shamir Tarim Uzun ben Isma'il:</strong> Hoegste sjoeofficer
+            </div>
+
+            <h3>Nyckelkefaler</h3>
+            <table>
+                <tr><th>Namn</th><th>Bas</th><th>Karaktaer</th></tr>
+                <tr><td>Isma'il IV (Amzro)</td><td>Alkarzan</td><td>Planerar ta tronen vid Mhims doed. Maektig aett.</td></tr>
+                <tr><td>Salodan den store</td><td>Kaal</td><td>Mhims fraemsta rival. Vill ha krig mot Jargien.</td></tr>
+                <tr><td>Marammar den vise</td><td>Melucka</td><td>Pompoees, foeredrar lyx framfoer styre.</td></tr>
+                <tr><td>Khabi Jaakoh</td><td>Jen/Ziu</td><td>Fundamentalistisk. Fientlig mot cirefalierna.</td></tr>
+                <tr><td>Raheb Ab-Radi Samjed</td><td>Quaran/Ziu</td><td>Rival till Jaakoh. Stoedjer kanalprojektet.</td></tr>
+            </table>
+
+            <h3>Maktspel</h3>
+            <ul>
+                <li><strong>Amzro vs Wolani:</strong> Amzro-familjen planerar i hemlighet att ta makten nar Mhim doer</li>
+                <li><strong>Salodan vs Mhim:</strong> Ideologisk kamp om upprustning och heligt krig</li>
+                <li><strong>Jaakoh vs Samjed:</strong> Regional fejd i Ziu om kefalambetet och kanalprojektet</li>
+            </ul>
+
+            <h3>Raettssystem</h3>
+            <p>Baserat pa <strong>Fata'a</strong> ("Min kunskap"), sammanstaelld ~400 f.D. Tre parallella system: gudahaerskarens lag (hoegst), vanlig lag, slavlagar. Straff drakoniska: stympning foer smabrott, doedsstraff foer haedelse.</p>
+        </section>
+
+        <!-- Befolkning -->
+        <section id="befolkning" class="section">
+            <h2>Befolkning och Kultur</h2>
+
+            <h3>Rasfoerdelning</h3>
+            <ul>
+                <li><strong>Zhaner (maenniskor):</strong> ~86% (~1 032 000). Olivfaergad hy, moerkt har, ofta ljusa oegon.</li>
+                <li><strong>Slavar (blandad):</strong> ~10% (~120 000). Alla raser foerekommar.</li>
+                <li><strong>Oevriga fria:</strong> ~4% (~48 000). Utlaenningar, handelsmaen, diplomater.</li>
+            </ul>
+
+            <h3>Kultur och seder</h3>
+            <div class="info-box">
+                <strong>Heder:</strong> Extremt viktigt. Brutna loeften innebar social utstaengning.<br>
+                <strong>Gaestfrihet:</strong> Vida kaend dygd. Khaf (kaffe) eller khe (mintte) serveras alltid.<br>
+                <strong>Razdo:</strong> Muhads foernaemsta braedspel. Anvaends aeven foer formella dueller.<br>
+                <strong>Mat-tabu:</strong> Flygande fagel ALDRIG (heliga). Markfagel OK.<br>
+                <strong>Musik:</strong> Enstaemmig, censurerad. Haediska verk = avrattning.
+            </div>
+
+            <h3>Samhallsklasser</h3>
+            <ol>
+                <li><strong>Mhim</strong> -- Gudahaerskaren</li>
+                <li><strong>Kefaler</strong> -- Hoegadel (~100 st, 30 styr landomraden)</li>
+                <li><strong>Bei</strong> -- Handelsmannaadel (aerftlig)</li>
+                <li><strong>Emirer</strong> -- Krigsadel (militaer)</li>
+                <li><strong>Granascher</strong> -- Adlade elitkrigare (inga aegodelar)</li>
+                <li><strong>Fria medborgare</strong> -- Koepmaen, hantverkare, boender</li>
+                <li><strong>Slavar</strong> -- Laegst (~120 000)</li>
+            </ol>
+        </section>
+
+        <!-- Religion -->
+        <section id="religion" class="section">
+            <h2>Religion</h2>
+
+            <h3>Mhimratten</h3>
+            <p>Muhads enda tillatna religion. Mhim = himlen inkarnerad, "den tusenoogde" (Ghabesh Zil). Doeodsstraff foer oeoppen utoevning av annan religion.</p>
+
+            <div class="info-box">
+                <strong>Fata'a ("Min kunskap"):</strong> Heligt lagverk, sammanstaellt ~400 f.D. Innhaller mytologiska beraettelser, gudahaerskarens lag, folklagar, slavlagar och domedagsprofetia.<br><br>
+                <strong>Heliga platser:</strong> Sar'whid i Tabbah (heligaste), An'ak Khanum i Alkarzan, Sarabkaellan (heliga oasen)
+            </div>
+
+            <h3>5 dagliga boener</h3>
+            <p>Soluppgang, efter foersta maltiden, middagstid, vid sista maltiden, solnedgang. Procedur: staende akalla Mhims namn, knaeberja med Fata'a-verser, meditativ avslutning, hoeja matskalen mot himlen.</p>
+
+            <h3>Symboler</h3>
+            <p><strong>Oegat</strong> (tusenoogde), <strong>manskaran</strong> (styrka), <strong>stjaernan</strong> (himlens skoenhet).</p>
+
+            <h3>Religioesa ordnar</h3>
+            <ul>
+                <li><strong>Gharbawi ("Himmelssaenda krigare"):</strong> Strider med elementarvaesen -- sylfer (luft) och stellarer (stjaernor)</li>
+                <li><strong>Granasch Muhadin:</strong> Tempelkrigare/elitkrigare. Asketiska, inga aegodelar.</li>
+            </ul>
+        </section>
+
+        <!-- Ekonomi -->
+        <section id="ekonomi" class="section">
+            <h2>Ekonomi</h2>
+
+            <h3>Huvudsakliga naeringar</h3>
+            <ul>
+                <li><strong>Handel:</strong> Livsnerven. Karavanvaegar och sjoefare genererar enorm rikedom.</li>
+                <li><strong>Jordbruk:</strong> Centrala slaetterna kring Kaal och Diuz-floden.</li>
+                <li><strong>Slaveri:</strong> ~120 000 slavar i gruvor, bygge, hushall, militaer.</li>
+                <li><strong>Boskapsskoetsel:</strong> Kameler, noeotkreatur, far, getter.</li>
+            </ul>
+
+            <h3>Valuta (Bas 33)</h3>
+            <p>1 gulddirham = 33 silverdirham = 1089 koppardirham. Slavmynt: 3 = 1 koppardirham (foerbjudet att vaexla).</p>
+
+            <h3>Cirefaliska intressen</h3>
+            <ul>
+                <li><strong>Jhamrimsez:</strong> Kredithus i Alkarzan</li>
+                <li><strong>Zyrkozian:</strong> Driver kanalprojektet genom Ziu</li>
+                <li><strong>Caseranz:</strong> Slavhandelshus</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>Kanalprojektet:</strong> Ambitioest cirefaliskt projekt att graeva kanal genom Ziu mellan Jen och Quaran. Syfte: segla direkt mellan Gordrion och Melorion. Stoedjs av arkefurst Tzar Balozin och Samjed. Motverkat av Kefal Jaakoh.
+            </div>
+        </section>
+
+        <!-- Slaveri -->
+        <section id="slaveri" class="section">
+            <h2>Slaveri</h2>
+
+            <p>~120 000 slavar (~10% av befolkningen). Djupt rotad tradition, central del av ekonomin, reglerat i Fata'a.</p>
+
+            <h3>Slavtyper</h3>
+            <ul>
+                <li><strong>Arbetsslavar:</strong> Gruvor, byggprojekt. Hardast behandlade, kort foervaentat liv.</li>
+                <li><strong>Hushallsslavar:</strong> Staedernas hushall, nagot baettre.</li>
+                <li><strong>Slavsoldater (~20 000):</strong> Infanteri/chocktrupper. Drogade infoer strid.</li>
+                <li><strong>Alvslavar:</strong> Dyraste statussymbolen -- dansoser, musikanter, konkubiner.</li>
+            </ul>
+
+            <p>Slavtatueringar i ansiktet med aeagarens bomerke. Befrielse lagligt moejlig via Fata'a men i praktiken mycket svart.</p>
+
+            <div class="atmosphere">
+                <strong>Ryktet om sanari-ligan:</strong> Bland alvslavar cirkulerar ett hoppfullt rykte om att sanari-alverna i hemlighet organiserat en liga som befriar alvslavar. Officiellt har sanari-alverna inte agerat mot slavhandeln.
+            </div>
+        </section>
+
+        <!-- Militar -->
+        <section id="militar" class="section">
+            <h2>Militar</h2>
+
+            <h3>Elitfoerband</h3>
+
+            <div class="npc-card">
+                <h4>Granascher (Kafer-granasch)</h4>
+                <div class="npc-meta">Muhads sanna vapenmastare</div>
+                <p>Traning: 12-16 timmar/dygn, 10-15 ar. Stridskonst: "vacker men doedlig dans" med virvlande klingor. Vapen: shamshir i VARJE hand. Kodex: inga aegodelar. Tabu: aldrig aeta fagel. Hoegsaete: Gibelacar.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Nattdraepare (Kafer-thon)</h4>
+                <div class="npc-meta">Loenmoerdare och kommandosoldater</div>
+                <p>Stridskonst: smidighet, foerklaednad, loenmoerd. Vapen: Ahma-dolken (vagformad) -- doeodsstraff att inneha utan tillstand. Specialpilar: Nom-Akadh (tysta).</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Mangalningar (Kafer-nim)</h4>
+                <div class="npc-meta">Bersaerkare med selenotropi (manmagi)</div>
+                <p>Kombinerar vapentekniker med manmagi. Vapen: Ehk-ankhaz (stangvapen). Kan framkalla maaneffekter.</p>
+            </div>
+
+            <h3>Slavarmen</h3>
+            <p>~20 000 slavsoldater. Reguljaert infanteri/chocktrupper. Drogade infoer strid. Behandlas baettre aen arbetsslavar.</p>
+
+            <h3>Flotta (~100 fartyg)</h3>
+            <p>Uppdelad pa tva kuster. Huvudtyp: <strong>Lanacka</strong> (tvamastad med loggertsegel). Tradition: stort oega malat pa foerstaeven.</p>
+        </section>
+
+        <!-- Magi -->
+        <section id="magi" class="section">
+            <h2>Magi och oevernaturligt</h2>
+
+            <p>Generell regel: Magi som tjanar staten = OK. Magi tolkad som haedelse/demondyrkan = DOEODSSTRAFF.</p>
+
+            <h3>Tillatna former</h3>
+            <ul>
+                <li><strong>Selenotropi (manmagi):</strong> Mangalningar, bersaerkerraseri + maaneffekter</li>
+                <li><strong>Gharbawi:</strong> Strider med elementarvaesen (sylfer, stellarer)</li>
+                <li><strong>Sungs magimaestare:</strong> Hemliga laeger djupt i oeknen</li>
+            </ul>
+
+            <h3>Moerk magi</h3>
+            <div class="warning-box">
+                <strong>Juubuls laerjungar (Melucka):</strong> Doedskult/nekromantiker. Ser doeden som VETENSKAP. Styrs av rad av 5 maektiga nekromantiker. En av de fem ryktas vara radgivare at Kefal Marammar.
+            </div>
+
+            <h3>Kanda magiker</h3>
+            <ul>
+                <li><strong>Madrianna</strong> (Alkarzan): Driver bordell + sjukhus. Besverjelsen "Madriannas foerfoerriska sang".</li>
+                <li><strong>Sabera:</strong> Drog/giftmaestare, ryktas allierad med moerka krafter.</li>
+            </ul>
+        </section>
+
+        <!-- Stader -->
+        <section id="stader" class="section">
+            <h2>Stader och viktiga platser</h2>
+
+            <div class="city-card">
+                <h4>Alkarzan -- Huvudstaden (~120 000 inv.)</h4>
+                <p>Saejs vara <strong>Mundanas aeldsta fortfarande bebodda stad</strong>. Imponerande men foerfallen arkitektur. Stora biblioteket (ett av Mundanas fraemsta), An'ak Khanum (beroemd moske), oraklet. Kefal Isma'il IV (Amzro) styr.</p>
+            </div>
+
+            <div class="city-card">
+                <h4>Tabbah -- Den heliga staden (~1 500 inv.)</h4>
+                <p>I vaestra Tabim-bergen. Heligaste platsen foer Mhimraettens utoevare. Sar'whid ("Himmelska tronen"), den gyllene tronen. Skyddas av De tusen vaktarna. Intraede BEGRAENSAT.</p>
+            </div>
+
+            <div class="city-card">
+                <h4>Kaal -- Jordbruksstaden (~12 000 inv.)</h4>
+                <p>Centrala Muhad. Muhads fraemsta jordbrukscentrum. Kefal Salodan den store -- oeppet kritisk mot Mhim, foeresprakar krig. Sarabkaellan en dagsmarsch soeder om staden.</p>
+            </div>
+
+            <div class="city-card">
+                <h4>Melucka -- Oekenosaen (~2 000 inv.)</h4>
+                <p>Soedra Muhad, i en stor oas omgiven av mur. Knutpunkt foer karavanhandel. Kefal Marammar den vise. <em>Hemlig koppling: Juubuls laerjungar (nekromantiker) har hoegsaete haer.</em></p>
+            </div>
+
+            <div class="city-card">
+                <h4>Jen -- Handelsstaden (~100 000 inv.)</h4>
+                <p>Muhads rikaste stad, enda hamnen oeppen foer utlaenningar. Zius sydkust. Kefal Khabi Jaakoh. <strong><a href="../EM-S001_jen/jen.html" style="color: #704214;">Se fullstaendig beskrivning (EM-S001) &rarr;</a></strong></p>
+            </div>
+
+            <div class="city-card">
+                <h4>Quaran -- Den befaesta hamnen (~6 000 inv.)</h4>
+                <p>Zius norra kust. Starkt befaest. Stort fyrtorn. Kefal Raheb Ab-Radi Samjed. Hanterar juridik, slavfrigoerivning, administration foer Ziu.</p>
+            </div>
+        </section>
+
+        <!-- Nomader -->
+        <section id="nomader" class="section">
+            <h2>Nomadfolk och Tarkas</h2>
+
+            <h3>Nomadstammar</h3>
+            <p>Muhad grundades av nomadstammar. Majoriteten lever fortfarande som nomader -- boskapsskoetsel, jakt, handel. Rorelse mellan oaser.</p>
+
+            <div class="npc-card">
+                <h4>Savakunnerna ("Roedturbanerna")</h4>
+                <div class="npc-meta">Mest fruktade oestzhaner &bull; Grundade ~500 ar sedan</div>
+                <p>Konfederation av nomadstammar + avhoppade muhadinska soldater. Kontrollerar Khalkaslaetten och Karakim. Ledare: <strong>Kuchlug</strong> (f.d. muhadinsk elitkrigare) och <strong>Nur</strong> (delat ledarskap). Turban faergad roed med haestblod och ockra.</p>
+            </div>
+
+            <h3>Tarkas-oeknen</h3>
+            <p>Ingenmansland mellan Jargien och Muhad. Format av utslocknade vulkaner och magistormar. Magiska fenomen: teleportering, tidsfoervraengning, spontant genererade magiska kongelat.</p>
+
+            <ul>
+                <li><strong>Dalkhrekni:</strong> Ruinstad med stencirkel av roeda monoliter och mystiskt orakel</li>
+                <li><strong>Ghalden:</strong> Ruiner med Rathoxit ("Askans fader"), mortuachdrake/demon</li>
+                <li><strong>Yonggurla:</strong> Borg under Demjan Eldfursten</li>
+            </ul>
+        </section>
+
+        <!-- NPCs -->
+        <section id="npcs" class="section">
+            <h2>Viktiga NPCs</h2>
+
+            <h3>Ledare och makthavare</h3>
+            <div class="npc-card">
+                <h4>Mhim Matruk Wolani</h4>
+                <div class="npc-meta">Gudahaerskare &bull; 32 ar &bull; Fjaerde Wolani</div>
+                <p>Folksky, barmhaertig, diplomatisk -- historisk avvikare fran krigartraditionen. Radgiven av draken Alzakh-Andhor ("Accendrim"). Foersoeker oeppna diplomatiska kanaler med Jargien.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Kefal Salodan den store</h4>
+                <div class="npc-meta">Kaal &bull; Mhims fraemsta rival</div>
+                <p>Snikken, maktlysten. Foeresprakar upprustning och heligt krig mot Jargien/Lopnor. Oeppet kritisk mot Mhims diplomatiska linje. Anar troligen Al-Hafizuns existens.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Kefal Isma'il IV (Amzro)</h4>
+                <div class="npc-meta">Alkarzan &bull; Planerar succession</div>
+                <p>Maektig och populaer aett som styrt Alkarzan "sa laenge man kan minnas". Planerar i HEMLIGHET att ta makten nar Mhim doer.</p>
+            </div>
+
+            <h3>Oevriga viktiga</h3>
+            <ul>
+                <li><strong>Kairkhan Nayman:</strong> "Oekenherren", armechef</li>
+                <li><strong>Ghabel ben Taghob:</strong> Alkarzans beroemda boeneutropare, ~30 ar</li>
+                <li><strong>Noma Sullel:</strong> Kvinna fran Allvetandets broedraskap, studerar stjaernor</li>
+                <li><strong>Madrianna:</strong> Magiker i Alkarzan, driver bordell + sjukhus</li>
+                <li><strong>Bei Amin Ben Lahwan:</strong> Melucka, hemlig droghandel</li>
+                <li><strong>Arimar Khard:</strong> Muhads utsaende i Daval (Jargien)</li>
+                <li><strong>Nawan Ben Hayel:</strong> "Underbarnet fran Quaran", beroemd Razdo-maestare</li>
+            </ul>
+        </section>
+
+        <!-- Kampanjhooks -->
+        <section id="hooks" class="section">
+            <h2>Kampanjhooks</h2>
+
+            <div class="hook-card">
+                <h4>1. Amzro-kuppen</h4>
+                <p>Familjen i Alkarzan planerar ta tronen vid Mhims doed. Spelarna kan hamna mitt i en palatskupp -- som vittnen, agenter, eller motstandare.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>2. Salodans heliga krig</h4>
+                <p>Kefal Salodan mobiliserar foer krig mot Jargien/Lopnor. Kan spelarna stoppa kriget? Geopolitiska konsekvenser.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>3. Kanalprojektet</h4>
+                <p>Cirefaliskt megaprojekt genom Ziu. Politisk intrig mellan Jaakoh och Samjed. Perfekt foer cirefaliska karaktaerer.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>4. Glastiaran -- det foersvunna fredstecknet</h4>
+                <p>Historiskt fredstecken mellan Muhad och Momolan som foersvunnit. Expedition genom oeknen.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>5. Dalkhreknis orakel</h4>
+                <p>Ruinstaden i Tarkas med sitt mystiska orakel. Vad vet oraklet om demonerna?</p>
+            </div>
+        </section>
+
+        <!-- Relationer -->
+        <section class="section">
+            <h2>Relationer med andra laender</h2>
+
+            <table>
+                <tr><th>Land</th><th>Relation</th><th>Notering</th></tr>
+                <tr><td>Jargien</td><td>Arvfiende</td><td>Tva stora invasioner, blodbadet vid Zadgurla. Mhim foersoeker diplomati.</td></tr>
+                <tr><td>Lopnor</td><td>Fiende</td><td>Jargisk koloni soeder om Muhad. Salodan foeresprakar krig.</td></tr>
+                <tr><td>Momolan</td><td>Allierad</td><td>Fraemsta allierade. Stark karavanhandel. Beslaektade spraak.</td></tr>
+                <tr><td>Eumo</td><td>God relation</td><td>Historiska krig men nu fredligt. Respekt foer Sungs krigarmukar.</td></tr>
+                <tr><td>Cirefalien</td><td>Pragmatisk</td><td>Handelspartner. Kredithus, kanalprojekt, slavhandel.</td></tr>
+            </table>
+        </section>
+
+        <footer>
+            <p><strong>EM-L001: Muhad -- Gudalandet</strong></p>
+            <p>EON Kampanjmaterial &bull; Gravens Arv &bull; Validerat via NotebookLM (20+ queries)</p>
+            <p>Avvikelser fran kanon: Delat Ziu-styre, Al-Hafizun, Jen ~100k</p>
+        </footer>
+    </div>
+</body>
+</html>
