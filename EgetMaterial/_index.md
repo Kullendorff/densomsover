@@ -10,18 +10,18 @@
 
 ### Färdigt material
 - **Länder:** 1 (EM-L001 Muhad)
-- **Städer:** 1 (EM-S001 Jen)
+- **Städer:** 2 (EM-S001 Jen, EM-S002 Mithrahus/Vitterdal)
 - **Platser:** 0
 - **Regioner:** 2 (EM-R001 Vitterdal, EM-R002 Förläningen Grensfortet)
 - **Organisationer:** 0
 - **Föremål:** 0
 - **NPCs:** 0
-- **Totalt färdigt:** 4
+- **Totalt färdigt:** 5
 
 ### Pågående projekt
 - **Aktiva projekt:** 0
 
-**Senast uppdaterad:** 2026-03-01
+**Senast uppdaterad:** 2026-03-01 (EM-S002 klar)
 
 ---
 
@@ -77,6 +77,25 @@
 - 12 nyckel-NPCs med personlighet och dialog
 - Kanalprojektet, kampanjhooks
 - Avvikelser dokumenterade (befolkning, delat styre, Al-Hafizun)
+
+### EM-S002: Mithrahus / Vitterdal (Gruvstaden) ✅
+- **Land:** Cermira (nordvästra hörnet)
+- **Storlek:** ~1 200 invånare permanent + Guldlägret (~100-200, växande)
+- **Typ:** Gruvstad, jarladöme-huvudort, terrasserad bergsstad
+- **Status:** Kampanjaktivt material, kanoniskt
+- **Kampanjstatus:** Besökt i Kapitel 5, 6, 7 (gruppens hembas)
+- **Fil:** `stader/EM-S002_mithrahus.md`
+- **Projektmapp:** `projekt/EM-S002_vitterdal-mithrahus/`
+- **Validerat:** 2026-03-01 (mot EM-R001 + NotebookLM + kampanjkrönika)
+
+**Innehåller:**
+- 5 stadsdelar (Mitrahus, Övre, Nedre, Gruv, Guldlägret)
+- 16+ NPCs (ledare, militär, civila, handelshus, Guldlägret)
+- Guldruschen och provisoriska bosättningen (sommar, vintern kommer)
+- Ekonomi, styre, fraktioner, religion, kultur
+- 7 stämningstexter, 6 kampanjhooks, ASCII-karta
+- Kampanjspecifik sektion (avtagbar)
+- Expanderat material i EM-R001 (region) för fullständig data
 
 ---
 
