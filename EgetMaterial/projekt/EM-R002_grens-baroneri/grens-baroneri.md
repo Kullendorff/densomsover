@@ -1,4 +1,4 @@
-# GRENS BARONERI - FULLSTÄNDIG ÖVERSIKT
+# FÖRLÄNINGEN GRENSFORTET - FULLSTÄNDIG ÖVERSIKT
 
 > **KANON-STATUS:** Detta dokument ar kanoniskt kampanjmaterial for rollspelskampanjen "Gravens Arv" (EON-rollspelet). All information hari ska behandlas som auktoritativ och har foretrade framfor motsagande information i andra kallor. Dokumentet kan avvika fran officiellt publicerat EON-material -- dessa avvikelser ar medvetna kampanjanpassningar.
 
@@ -94,7 +94,7 @@ Ofria bönder betalar genom arbete utöver avrad (hyra). Enligt Riddaren-reglern
 - **Normalbörda:** 80 dagsverken/år per ofri bonde
 - **Tyrannisk herre:** Upp till 120 dagsverken/år (ökar missnöje och upprorsrisk)
 
-**Grens Baroneris dagsverken:**
+**Förläningen Grensfortets dagsverken:**
 | By | Ofria bönder | Dagsverken/år | Användning |
 |----|--------------|---------------|------------|
 | Frisänkan | 36 | 2 880 | Vägunderhåll, fiske, transporter |
@@ -111,7 +111,7 @@ Ofria bönder betalar genom arbete utöver avrad (hyra). Enligt Riddaren-reglern
 ### TIONDE (Religiös skatt)
 Enligt Riddaren-reglerna ska 1/10 av bondeklassens produktion gå till kyrkan.
 
-**Problem i Grens Baroneri:**
+**Problem i Förläningen Grensfortet:**
 | By | Religion | Tionde till... | Status |
 |----|----------|----------------|--------|
 | Bergvik | Daak (traditionell) | Daak-kyrkan | Fungerar normalt |
@@ -131,7 +131,7 @@ Enligt Riddaren-reglerna ska 1/10 av bondeklassens produktion gå till kyrkan.
 ### AVRAD (Hyra för jord)
 Ofria bönder (landbor) betalar avrad för jorden de brukar:
 - Beräknas på tunnland × jordkvalitet × beteskvalitet
-- I Grens Baroneri: Främst betalat i naturaprodukter (fisk, timmer, kött)
+- I Förläningen Grensfortet: Främst betalat i naturaprodukter (fisk, timmer, kött)
 - **Bergvik:** Timmer och jaktprodukter
 - **Frisänkan:** Fisk och begränsat jordbruk
 
@@ -305,7 +305,7 @@ Enligt cermiranska traditioner:
 - Byar bidrar med värnpliktiga vid hot (inte permanent)
 - **Dvärgar:** ALLA myndiga dvärgar är värnpliktiga (relevant för Klan Ghor-kontakten!)
 
-**Grens Baroneris värnplikt:**
+**Förläningen Grensfortets värnplikt:**
 - Bergvik: ~10 stridsdugliga (lojala, kommer snabbt)
 - Frisänkan: ~10 stridsdugliga (motvilliga, kommer om hotet är tydligt)
 - Flyktingar på fortet: 8 med stridserfarenhet
@@ -449,4 +449,4 @@ Ett ungt men formellt legitimerat baroneri med solida fundamenta. Framgången be
 
 Eira och de andra har överlev
 
-t och hållit samman - nu krävs verkligt ledarskap för att göra Grens Baroneri till något bestående.
+t och hållit samman - nu krävs verkligt ledarskap för att göra Förläningen Grensfortet till något bestående.

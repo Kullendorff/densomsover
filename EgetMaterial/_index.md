@@ -12,55 +12,22 @@
 - **Länder:** 1 (EM-L001 Muhad)
 - **Städer:** 1 (EM-S001 Jen)
 - **Platser:** 0
-- **Regioner:** 1 (EM-R001 Vitterdal)
+- **Regioner:** 2 (EM-R001 Vitterdal, EM-R002 Förläningen Grensfortet)
 - **Organisationer:** 0
 - **Föremål:** 0
 - **NPCs:** 0
-- **Totalt färdigt:** 3
+- **Totalt färdigt:** 4
 
 ### Pågående projekt
-- **Aktiva projekt:** 1
-- **I fas 2 (Research):** 1 (EM-R002)
-- **I fas 3-5 (Skrivande):** 0
-- **I fas 6 (Validering):** 0
+- **Aktiva projekt:** 0
 
-**Senast uppdaterad:** 2026-02-28
+**Senast uppdaterad:** 2026-03-01
 
 ---
 
 ## 🔄 PÅGÅENDE PROJEKT
 
-*Projekt i `projekt/`-mappen som inte är färdiga ännu.*
-
----
-
-### EM-R002: Grens Baroneri
-- **Typ:** Region/Förläning
-- **Fas:** 2 av 7 (Research)
-- **Progress:** 40%
-- **Status:** Samlar material, korrigerat ekonomi enligt Riddaren-regler
-- **Nästa:** Verifiera NPCs med Johan, definiera ytterligare material
-- **Koppling:** Underlydande under EM-R001 (Vitterdal-baronieriet)
-
-**Senaste ändringar (2026-02-03):**
-- Korrigerat ekonomi med Bas + Lyx
-- Lagt till dagsverken och tionde
-- Justerat militärkapacitet till realistiska nivåer
-- Validerat mot kampanjkrönika.md
-- Research från Vitterdal-projektet inhämtad
-
-**Frågor till Johan:**
-- Vilka NPCs är kanoniska? (Astrid Björnsdotter, Olav Järnhand, Ragna Klokhand, etc.)
-- Frisänkan befolkning: 50 eller 60-80?
-- När/hur anlände Xian-Li till Grensfortet?
-
-**För att se status på pågående projekt:**
-```python
-Task(
-  subagent_type="eon-projekt-tracker",
-  prompt="Fortsätt med [projektnamn]"
-)
-```
+*Inga aktiva projekt just nu.*
 
 ---
 
@@ -146,9 +113,28 @@ Task(
 - Historia (Colonisk → Asharisk → nutid)
 - Mitrahus (stad och borg)
 - Stålsvärds Kavalerister (officiell roster)
-- Grensfortet (ledarskap: Eira, Xian-Li, Skorda)
+- Förläningen Grensfortet (ledarskap: Eira, Xian-Li, Skorda)
 - 6 kampanjhooks
 - 20 Midjourney-prompts
+
+---
+
+### EM-R002: Förläningen Grensfortet ✅
+- **Land:** Cermira (gränsen mot Mithera)
+- **Typ:** Vasallförläning under Vitterdal
+- **Klimat:** Kallt, bergstrakter vid Mitheraskogen
+- **Befolkning:** ~180 (Grensfortet + byarna Bergvik och Frisänkan)
+- **Status:** Kampanjspecifikt (spelarnas förläning)
+- **Kampanjstatus:** Aktivt använt (Kapitel 1, 5, 9-10)
+- **HTML:** `projekt/EM-R002_grens-baroneri/grens-baroneri.html`
+- **Validerat:** 2026-03-01
+
+**Innehåller:**
+- Komplett geografi (fort + två byar)
+- Ekonomi (Bas/Lyx-system, dagsverken, tionde)
+- Militärkapacitet (legokompani under Gordon)
+- NPCs (Eira, Skorda, Xian-Li, Adisa, m.fl.)
+- Kampanjhooks
 
 ---
 

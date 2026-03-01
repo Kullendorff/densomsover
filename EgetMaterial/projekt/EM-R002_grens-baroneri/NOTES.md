@@ -1,4 +1,4 @@
-# EM-R002: Grens Baroneri - Anteckningar och Idéer
+# EM-R002: Förläningen Grensfortet - Anteckningar och Idéer
 
 **Syfte:** Flesha ut området kring Grensfortet för att göra det levande och intressant för kampanjspel.
 
@@ -6,7 +6,7 @@
 
 ## VISION
 
-Grens Baroneri ska kännas som en verklig plats där människor lever, arbetar, älskar och dör. Det är inte bara en kuliss - det är ett samhälle på gränsen till det okända, med alla konflikter och möjligheter det innebär.
+Förläningen Grensfortet ska kännas som en verklig plats där människor lever, arbetar, älskar och dör. Det är inte bara en kuliss - det är ett samhälle på gränsen till det okända, med alla konflikter och möjligheter det innebär.
 
 **Ton:** Gritty realism med underton av det övernaturliga. Folk kämpar för att överleva, men märkliga saker händer i skogen.
 

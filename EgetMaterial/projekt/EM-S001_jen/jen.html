@@ -228,11 +228,44 @@
 
         .district-card h4 { margin-top: 0; }
 
+        .hierarchy-box {
+            background: #f8f4ee;
+            border: 2px solid #8b6f47;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-family: monospace;
+            font-size: 0.95rem;
+            white-space: pre-line;
+            border-radius: 4px;
+            line-height: 1.6;
+        }
+
+        .map-box {
+            background: #f8f4ee;
+            border: 2px solid #8b6f47;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-family: monospace;
+            font-size: 0.9rem;
+            white-space: pre;
+            border-radius: 4px;
+            line-height: 1.4;
+            overflow-x: auto;
+        }
+
+        .npc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
         @media (max-width: 768px) {
             .page-container { margin: 0; padding: 2rem 1.5rem; border: none; }
             h1 { font-size: 2.5rem; }
             nav ul { flex-direction: column; gap: 0.5rem; }
             .district-grid { grid-template-columns: 1fr; }
+            .npc-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -242,14 +275,15 @@
             <h1>Jen</h1>
             <div class="subtitle">Handelsstaden i Ziu, Muhad</div>
             <div class="meta">
-                &#x1F3DC; Ziu-halvon, Muhad &bull; &#x1F465; ~100 000 invanare &bull; &#x2693; Hamnstad &amp; Handelscentrum
+                &#x1F3DC; Ziu-halvön, Muhad &bull; &#x1F465; ~100 000 invånare &bull; &#x2693; Hamnstad &amp; Handelscentrum
             </div>
         </header>
 
         <nav>
             <ul>
                 <li><a href="../../../index.html">&larr; Dashboard</a></li>
-                <li><a href="#oversikt">Oversikt</a></li>
+                <li><a href="#oversikt">Översikt</a></li>
+                <li><a href="#atmosfar">Atmosfär</a></li>
                 <li><a href="#geografi">Geografi</a></li>
                 <li><a href="#historia">Historia</a></li>
                 <li><a href="#styre">Styre &amp; Lag</a></li>
@@ -257,370 +291,1224 @@
                 <li><a href="#religion">Religion</a></li>
                 <li><a href="#ekonomi">Ekonomi</a></li>
                 <li><a href="#slaveri">Slaveri</a></li>
-                <li><a href="#militar">Militar</a></li>
+                <li><a href="#militar">Militär</a></li>
                 <li><a href="#stadsdelar">Stadsdelar</a></li>
-                <li><a href="#fraktioner">Fraktioner</a></li>
+                <li><a href="#vardshus">Värdshus</a></li>
                 <li><a href="#npcs">NPCs</a></li>
+                <li><a href="#fraktioner">Fraktioner</a></li>
+                <li><a href="#kryddhandel">Kryddhandel</a></li>
+                <li><a href="#slavhandel">Slavhandel</a></li>
+                <li><a href="#kanal">Kanalprojektet</a></li>
+                <li><a href="#karta">Karta</a></li>
                 <li><a href="#hooks">Kampanjhooks</a></li>
+                <li><a href="#kampanj">Kampanjspecifikt</a></li>
             </ul>
         </nav>
 
         <!-- Atmospheric Introduction -->
         <section class="section">
             <div class="atmosphere atmosphere-long" style="font-size: 1rem; line-height: 1.9; padding: 2rem 2.5rem; margin: 2rem 0 3rem 0;">
-                <p>Solen slog ner som en hammare mot det vitkalkade stenet nar Gordon klev i land pa kajen. Luften var sa het att den darrande, och lukten av kryddor, svett och salt blandades till nagot som var bade lockande och kvalande. Runt honom skrek sjoman pa tungamal han inte forstod, droglangare vagade sina pasar i skuggorna under palmerna, och en boneutropare skrek fran ett avlagset torn -- en dag som alla andra i Jen.</p>
+                <p>Solen slog ner som en hammare mot det vitkalkade stenet när Gordon klev i land på kajen. Luften var så het att den darrade, och lukten av kryddor, svett och salt blandades till något som var både lockande och kvävande. Runt honom skrek sjömän på tungomål han inte förstod, droglangare vägade sina påsar i skuggorna under palmerna, och en böneutropare skrek från ett avlägset torn -- en dag som alla andra i Jen.</p>
 
-                <p>Hamnen var ett kaos av farger och ljud. Cirefaliska handelskepp lag flank vid flank med muhadinska lanackor, och langs kajen strosade vaktare i gula uniformer med ansiktsmasker av gyllene tyg. Tullkontoret -- en bastant byggnad av ljus sandsten -- var den forsta barriaren. Atta procent, sa man. Av allt. Och sa det dar leendet som sa att det kunde bli mer om man inte visste hur saker fungerade har.</p>
+                <p>Hamnen var ett kaos av färger och ljud. Cirefaliska handelsskepp låg flank vid flank med muhadinska lanackor, och längs kajen strövsade vaktare i gula uniformer med ansiktsmasker av gyllene tyg. Tullkontoret -- en bastant byggnad av ljus sandsten -- var den första barriären. Åtta procent, sa man. Av allt. Och så det där leendet som sa att det kunde bli mer om man inte visste hur saker fungerade här.</p>
 
-                <p>Bortom hamnen reste sig Kaw-basaren -- fyra tusen ar av handel pressade ihop i ett labyrintiskt natverk av gator sa smala att tva man knappt kunde ga sida vid sida. Har saldes allt: saffran fran Xians hogslattar, shamshir-sablar fran Yangishars smedjor, och i de morkare grenarna av labyrinten -- manniskor. Slaveri var inte en skam i Jen; det var en naringsfang.</p>
+                <p>Bortom hamnen reste sig Kaw-basaren -- fyra tusen år av handel pressade ihop i ett labyrintiskt nätverk av gator så smala att två män knappt kunde gå sida vid sida. Här såldes allt: saffran från Xians högslätter, shamshir-sablar från Yangishars smedjor, och i de mörkare grenarna av labyrinten -- människor. Slaveri var inte en skam i Jen; det var en näringsfång.</p>
 
-                <p>Jen var friheten att handla med hela varlden, inpackad i det teokratiska Muhads straff for dem som brot mot reglerna. En stad av kontraster: guld och kedjor, kryddor och blod, gastfrihet och halshuggning. Och mitt i allt detta -- politiken. Kefal Jaakoh mot slakten Samjed. Fundamentalism mot pragmatism. Och djupt under ytan, det hemliga rad som styrde allt.</p>
+                <p>Jen var friheten att handla med hela världen, inpackad i det teokratiska Muhads straff för dem som bröt mot reglerna. En stad av kontraster: guld och kedjor, kryddor och blod, gästfrihet och halshuggning. Och mitt i allt detta -- politiken. Kefal Jaakoh mot släkten Samjed. Fundamentalism mot pragmatism. Och djupt under ytan, det hemliga råd som styrde allt.</p>
             </div>
         </section>
 
-        <!-- Oversikt -->
+        <!-- ÖVERSIKT -->
         <section id="oversikt" class="section">
-            <h2>Oversikt</h2>
+            <h2>Översikt</h2>
 
-            <p><strong>Jen</strong> ar Muhads rikaste stad och rikets enda hamn oppen for utlanningar. Staden ligger pa sydkusten av Ziu-halvon ("Landet mellan haven") och vetter mot Igonhavet. Med ~100 000 invanare ar den en unik ekonomisk buffertzon som skyddar resten av det slutna teokratiska riket fran "oren" handel med frammande folkslag.</p>
+            <p><strong>Jen</strong> är Muhads rikaste stad och rikets enda hamn öppen för utlänningar. Därmed är den en unik ekonomisk buffertzon som skyddar resten av det slutna teokratiska riket från "oren" handel med främmande folkslag. I Jen blandas muhadinsk tradition med internationell kommers -- cirefaliska bankirer, tirakiska vapenhandlare, jargiska slavköpare och pyariska sjömän rör sig sida vid sida med muhadinska kryddhandlare och slavägare. Staden är en paradoxal blandning av extrem rikedom och djup misär, raffinerad kultur och brutal grymhet.</p>
 
-            <p>Ziu-halvon styrs genom ett delat system: Jen ansvarar for handel, ekonomi och sjofart, medan systerstaden Quaran pa nordkusten hanterar juridik, administration och slavfrigivning.</p>
+            <p>Ziu-halvön styrs genom ett delat system: Jen ansvarar för handel, ekonomi och sjöfart, medan systerstaden Quaran på nordkusten hanterar juridik, administration och slavfrigivning.</p>
 
             <div class="info-box">
-                <strong>Styre:</strong> Kefal Khabi Jaakoh (over Ziu); Stadshallare Hakim al-Rashid (daglig administration)<br>
-                <strong>Hamn:</strong> Storlek 7. Anlopningsavgift 3 silver/last, lotsavgift 65 silver, tull 8%<br>
-                <strong>Klimat:</strong> Extremt hett och torrt. Sandstormar. Vatten fran brunnar och cisterner<br>
+                <strong>Namn:</strong> Jen<br>
+                <strong>Läge:</strong> Sydkusten av Ziu-halvön, Muhad. Vetter mot Igonhavet i söder.<br>
+                <strong>Storlek:</strong> ~100 000 invånare (officiellt ~30 000; kampanjanpassning)<br>
+                <strong>Typ:</strong> Hamnstad, handelsstad, slavhandelscentrum<br>
+                <strong>Styre:</strong> Kefal Khabi Jaakoh (över Ziu); Stadshållare Hakim al-Rashid (daglig administration)<br>
+                <strong>Hamn:</strong> Storlek 7 (mycket stor). Anlöpningsavgift 3 silver/last, lotsavgift 65 silver, tull 8%<br>
                 <strong>Kod:</strong> EM-S001
             </div>
 
             <div class="warning-box">
-                <strong>Kampanjanpassningar:</strong> Jen har ~100 000 invanare (officiellt ~30 000). Ziu har delat styre (officiellt Quaran under Jen). Al-Hafizun styr Muhad i hemlighet (officiellt ar Mhim gudomligt utvald).
+                <strong>Kampanjanpassningar:</strong> Jen har ~100 000 invånare (officiellt ~30 000). Ziu har delat styre (officiellt Quaran under Jen). Al-Hafizun styr Muhad i hemlighet (officiellt är Mhim gudomligt utvald).
             </div>
         </section>
 
-        <!-- Geografi -->
+        <!-- ATMOSFÄR -->
+        <section id="atmosfar" class="section">
+            <h2>Atmosfär och Första Intryck</h2>
+
+            <h3>Ansegling från havet</h3>
+            <div class="atmosphere">
+                <p>"När ni närmar er Jen från havet, möts ni först av den mäktiga stadsmuren som reser sig högt över horisonten. Denna imponerande mur, byggd av ljus sten och förstärkt med magiska runor, omger hela staden och skyddar den från yttre hot. Solens strålar reflekteras på murens yta, vilket får den att glänsa gyllene i morgonljuset."</p>
+            </div>
+            <div class="atmosphere">
+                <p>"Bakom stadsmuren ser ni de ändlösa sanddynerna sträcka sig mot horisonten, påminnande om att ni nu befinner er i ett ökenrike. Vinden för med sig små virvlar av sand som ibland gnistrar som guld i solljuset."</p>
+            </div>
+            <div class="atmosphere">
+                <p>"Framför er breder hamnen ut sig, en livlig knutpunkt av aktivitet och liv. Stora skepp från alla världens hörn ligger ankrade vid kajerna, deras master sticker upp som en skog av trä och segel. Sjömän springer fram och tillbaka, lossar varor och ropar instruktioner till varandra."</p>
+            </div>
+            <div class="atmosphere">
+                <p>"Luften är fylld med en blandning av dofter -- saltan från havet blandas med aromerna från kryddor och exotiska varor som lossas från skeppen. Ni kan känna doften av kanel, saffran och kardemumma."</p>
+            </div>
+
+            <h3>Stadskaraktär</h3>
+            <p>Jen är en stad av kontraster. Hamnens internationella myllrande aktivitet möts av tempeldistiktets stilla bönestunder. Kryddmarknadens berusande doftkaskader ligger bara några kvarter från slavmarknadens tryckande desperation. Handelsdistriktets marmorvillor med porlande fontäner existerar bredvid slummens trångbackar där solljuset knappt når ner.</p>
+
+            <h3>Atmosfärstexter</h3>
+
+            <h4>Morgon vid hamnen</h4>
+            <div class="atmosphere">
+                <p>"Gryningsljuset färgar vattnet koppar och guld. Första skeppen glider in genom viken -- lanackor med målade ögon på förstäven, som om de stirrar genom dimman. Sjömän ropar. Kranar gnisslar. Lukten av salt och tjära blandas med den första kryddlasten som öppnas på kajen. Dagen har börjat i Jen."</p>
+            </div>
+
+            <h4>Kryddmarknaden vid högtrafik</h4>
+            <div class="atmosphere">
+                <p>"En kaskad av dofter -- kanel, saffran, kardemumma -- sveper över er som en våg. Säckar med röda chilifrukter, gyllene gurkmeja och gröna kardemummafrön trängs på stånden. En äldre kvinna maler kryddor i en stor mortel, varje slag fyller luften med nya aromer. Folkmassan är lika varierad som kryddorna själva."</p>
+            </div>
+
+            <h4>Slavmarknadens tystnad</h4>
+            <div class="atmosphere">
+                <p>"När ni passerar genom de vita murarna känns det som att lämna en värld och kliva in i en annan. Sorlet dämpas. Luften är tung av svett, rökelse och tyst desperation. Slavar sitter i burar, några med tomma blickar, andra med ögon fyllda av trots. En slavhandlare ropar ut sina priser. Kedjor rasslar."</p>
+            </div>
+
+            <h4>Kväll i handelsdistriktet</h4>
+            <div class="atmosphere">
+                <p>"Fontänerna porlar i skuggan av palmerna. Silkeslampor tänds i arkaderna. Någonstans spelas flöjt -- en melodi lika mjuk som kvällsluften. De rika köpmännen sitter på innergårdarna, viskar över te och affärsdokument. Den verkliga makten i Jen handlas här, när solen gått ner."</p>
+            </div>
+
+            <h4>Natt i slummen</h4>
+            <div class="atmosphere">
+                <p>"Gränderna är så smala att man kan röra vid bägge väggarna samtidigt. Solljuset når aldrig hit -- även på dagen är det halvmörkt. På natten är det becksvart. Någonting rör sig i mörkret. Steg som stannar. Ögon som glimmar. Det här är Jens andra ansikte -- det som aldrig visas för besökarna från hamnen."</p>
+            </div>
+
+            <h4>Böneutropet vid gryning</h4>
+            <div class="atmosphere">
+                <p>"Rabbalen klättrar uppför trapporna i det höga tornet. Staden sover ännu. Första ljusstrimman kryper över horisonten och färgar himmeln rosa och guld. Han renar sin strupe, fyller lungorna, och slår ut med armarna. Ropet ekar över hustaken -- vekt, sjungande, oändligt ledset. 'Mhama'a kallar.' Överallt i Jen stannar människor i sina morgonbestyr, sluter ögonen, och vänder sig mot Tabbah."</p>
+            </div>
+
+            <h4>Guldsmeden stänger</h4>
+            <div class="atmosphere">
+                <p>"Den sista kunden har gått. Khalid al-Tamir lägger försiktigt den sista guldringen tillbaka i sitt sammetsfodral. Han låser lådan med tre nycklar -- en för varje generation av guldsmeder i hans familj. Utanför fönstergluggen hörs kvällsbönen börja. Han stannar vid disken, böjer huvudet, och viskar Mhims namn. Sedan släcker han lampan och går ut i den varma natten."</p>
+            </div>
+        </section>
+
+        <!-- GEOGRAFI -->
         <section id="geografi" class="section">
             <h2>Geografi</h2>
 
-            <p>Jen ligger pa en smal landtunga mellan Bla havet (norr) och Igonhavet (soder). Hamnen ar skyddad i en vik. Bakom stadsmurarna breder oknen ut sig. Quaran (nordkusten) nas via 7 dagars karavanresa.</p>
+            <h3>Läge</h3>
+            <p>Jen ligger på sydkusten av Ziu-halvön, en smal landtunga mellan Blå havet (norr) och Igonhavet (söder). Hamnen är skyddad i en vik som bevakas hårt mot pirater. Bakom stadsmurarna breder öknen ut sig åt alla håll utom mot havet.</p>
 
-            <p>Arkitekturen ar vitkalkad sten med kupoler, hoga torn for boneutropare, fontaner for rituell rening, och pelararkader langs basargatorna. Rika hus ar byggda runt inngardar (riad) med fontan och palmtrad.</p>
+            <h3>Klimat</h3>
+            <p>Extremt hett och torrt. Brännande sol under större delen av året. Regn är ytterst sällsynt -- allt vatten hämtas från djupa brunnar och cisterner. Havsvindarna ger viss svalka i hamnområdet, men inne i staden är hettan kvävande. Sandstormar från öknen är ett regelbundet problem (därför vakternas ansiktsmasker).</p>
+
+            <h3>Omgivningar</h3>
+            <ul>
+                <li><strong>Söder:</strong> Igonhavet -- öppen sjöväg mot Consaber, Cirefaliska samväldet, Jargien</li>
+                <li><strong>Norr:</strong> Ökenlandskap, karavanrutt till Quaran (7 dagars resa)</li>
+                <li><strong>Öster/Väster:</strong> Öknen, karga kullar, enstaka oaser</li>
+                <li><strong>Quaran:</strong> Systerstaden på nordkusten, lyder under Jen</li>
+            </ul>
+
+            <h3>Arkitektur</h3>
+            <p>Jens byggnader följer traditionell muhadinsk ökenestetik:</p>
+            <ul>
+                <li><strong>Material:</strong> Vitkalkad sten är dominerande. Kalken reflekterar solljuset och håller byggnaderna svalare.</li>
+                <li><strong>Kupoler:</strong> Karaktäristiska för dhaorager och offentliga byggnader. Koppar- eller guldplåt på de viktigaste. Symbolen för Mhims ögon pryder många kupoler.</li>
+                <li><strong>Torn:</strong> Höga, smala torn för böneutropare (rabbaler) reser sig över stadssilhuetten. Hör boneropet fem gånger om dagen.</li>
+                <li><strong>Pelare och valv:</strong> Arkader längs basargator skyddar mot solen. Pelarnas sniderier berättar historier ur Fata'a.</li>
+                <li><strong>Fontäner:</strong> I nästan varje innergård och på offentliga platser. Både praktiska (vatten) och symboliska (rening).</li>
+                <li><strong>Innergård (Riad):</strong> Rikare hus är byggda runt centrala innergårdar med fontän, palmträd och skuggande tyger.</li>
+                <li><strong>Stengator:</strong> Huvudgatorna är stenlagda; trängre gränder i slummen har bara packad jord.</li>
+                <li><strong>Social skiktning:</strong> Byggnadshöjd och utsmyckning avspeglar ägarens sociala rang. Kefalens palats högst, slummens hus lägst.</li>
+            </ul>
         </section>
 
-        <!-- Historia -->
+        <!-- HISTORIA -->
         <section id="historia" class="section">
             <h2>Historia</h2>
 
+            <h3>Förhistorisk tid (före Muhads grundande)</h3>
+            <p>Ziu-halvön -- "Landet mellan haven" -- har varit bebodd sedan urminnes tider. Halvöns strategiska läge mellan Blå havet i norr och Igonhavet i söder gjorde den till en naturlig mötesplats för sjöfart och handel. Kaw-basaren, den urgamla marknadsplatsen i östra Jen, har anor från tiden <strong>före</strong> Muhads grundande, över 4 000 år sedan. Handelsplatsen existerade länge innan gudahärskaren Mhim förenade de muhadinska stammarna.</p>
+            <p>De första bosättarna var sannolikt fiskare och kusthandlare. Med tiden växte handelsplatsen till en permanent bosättning. Dakhur-nu (kamorfer) -- uråldringa ödlemänniskor -- verkade i Ziu som halvt gudomliga orakel, och spåren av deras närvaro kan ännu märkas i de äldsta delarna av Kaw-basaren.</p>
+
+            <h3>Stamfaderns tid</h3>
+            <p><strong>5823 f.D.:</strong> Enkidu An-Salario uppnådde "totala kunskapen" i Ziu -- en betydelsefull händelse som tyder på att halvön har en särskild andlig laddning.</p>
+
+            <h3>Eunuckernas revolt (23 e.D.)</h3>
+            <p>Tidigt i Muhads historia reste sig eunuckerna -- kastrerade slavtjänare som innehade maktpositioner vid hovet -- i våldsamt uppror. Revolten skakade det unga riket men slogs ner. Händelsen är en påminnelse om att slaveriets brutalitet alltid bar fröet till revolt.</p>
+
+            <h3>Mirahmads erövring (526 e.D.)</h3>
+            <p>Muhads expansionsfas under Mirahmad nådde även Ziu. Erövringen integrerade Jen formellt i det muhadinska riket, men staden behöll sin unika ställning som handelszon -- en plats där det "orena" (utländsk handel, främmande folkslag) kunde hanteras utan att besmitta resten av riket.</p>
+
+            <h3>Pesten (1486 e.D.)</h3>
+            <p>En devastarande farsot bröt ut i Quaran och svepte genom Muhad. Jen drabbades hårt. Som hamnstad med konstant internationell trafik var Jen särskilt sårbar. Befolkningen decimerades. Återhämtningen tog generationer, men handeln återupplivades snabbare.</p>
+
+            <h3>Eumo-invasionen (2498 e.D.)</h3>
+            <p>Krigare från Eumo invaderade delar av Muhad. Ziu påverkades indirekt -- handelsvägar avbröts, sjöfart försvårades. Jen fick öka sitt försvar och befästa hamnen ytterligare.</p>
+
+            <h3>Andra muhadinska invasionen (2597 e.D.)</h3>
+            <p>Muhad slog tillbaka mot Jargien. Jen fungerade som logistisk bas för flottan och som knutpunkt för internationella kontakter. Invasionen nådde nästan ända till Tibara innan den stoppades.</p>
+
+            <h3>Blodbadet vid Zadgurla (2608 e.D.)</h3>
+            <p>Det jargiska motanfallet drev muhadinerna tillbaka till Zius gräns. Blodbadet vid Zadgurla blev en vändpunkt -- därefter stabiliserades gränsdragningen. För Jen innebar det slutet på den militära expansionsfasen och en återgång till handelsfokus.</p>
+
+            <h3>Släkten Samjeds fall (~2957 e.D.)</h3>
+            <p>För ungefär tio år sedan gick släkten Samjed miste om kefalämbetet över Ziu. Trots att de förväntades ärva posten, utsåg Mhim Matruk Wolani istället Khabi Jaakoh till ny kefal. Samjed tvingades till Quaran och planerar nu "illvillig hämnd".</p>
+
+            <h3>Nutida situation (2967 e.D.)</h3>
+            <p>Jen befinner sig i en spänd politisk period. Kefal Khabi Jaakoh motsätter sig det cirefaliska kanalprojektet, medan rivalsläkten Samjed stödjer projektet och samarbetar med cirefaliska kredithus. Det finns lönnmordsplaner mot Jaakoh från de cirefaliska intressena. Samtidigt växer de utländska handelshusens inflytande, och skuggfraktioner som Xinukulten och De Utstötta (lamior) opererar i mörkret under staden.</p>
+
+            <h3>Tidslinje</h3>
             <table>
-                <tr><th>Period</th><th>Handelse</th></tr>
-                <tr><td>~4000+ ar sedan</td><td>Kaw-basaren etablerad (fore Muhads grundande)</td></tr>
-                <tr><td>5823 f.D.</td><td>Enkidu An-Salario uppnadde "totala kunskapen" i Ziu</td></tr>
+                <tr><th>Period</th><th>Händelse</th></tr>
+                <tr><td>~4000+ år sedan</td><td>Kaw-basaren etablerad (före Muhads grundande)</td></tr>
+                <tr><td>5823 f.D.</td><td>Enkidu An-Salario uppnådde "totala kunskapen" i Ziu</td></tr>
+                <tr><td>Muhads grundande</td><td>Jen infogas i riket, behåller unik ställning</td></tr>
                 <tr><td>23 e.D.</td><td>Eunuckernas revolt</td></tr>
-                <tr><td>526 e.D.</td><td>Mirahmads erovring av Ziu -- Jen infogades i riket</td></tr>
-                <tr><td>1486 e.D.</td><td>Pesten -- Jen hart drabbat som hamnstad</td></tr>
-                <tr><td>2498 e.D.</td><td>Eumo-invasionen -- handelsvagar avbrats</td></tr>
-                <tr><td>2597 e.D.</td><td>Andra muhadinska invasionen (Jen som flotbas)</td></tr>
-                <tr><td>2608 e.D.</td><td>Blodbadet vid Zadgurla -- gransen stabiliseras</td></tr>
-                <tr><td>~2957 e.D.</td><td>Slakten Samjed gick miste om kefalambetet till Jaakoh</td></tr>
-                <tr><td>Nutid</td><td>Kanalprojektet, cirefaliskt inflytande, Jaakoh vs Samjed</td></tr>
+                <tr><td>526 e.D.</td><td>Mirahmads erövring av Ziu</td></tr>
+                <tr><td>1486 e.D.</td><td>Pesten -- Jen hårt drabbat</td></tr>
+                <tr><td>2498 e.D.</td><td>Eumo-invasionen</td></tr>
+                <tr><td>2597 e.D.</td><td>Andra muhadinska invasionen (Jen som flottbas)</td></tr>
+                <tr><td>2608 e.D.</td><td>Blodbadet vid Zadgurla (gränsen stabiliseras)</td></tr>
+                <tr><td>~2957 e.D.</td><td>Släkten Samjed förlorar kefalämbetet till Jaakoh</td></tr>
+                <tr><td>2967 e.D. (nutid)</td><td>Kanalprojektet, cirefaliskt inflytande, Jaakoh vs Samjed</td></tr>
             </table>
         </section>
 
-        <!-- Styre och Lag -->
+        <!-- STYRE OCH LAG -->
         <section id="styre" class="section">
             <h2>Styre och Lag</h2>
 
-            <h3>Hierarki</h3>
-            <p><strong>Kefal Khabi Jaakoh</strong> ("den arofyllde") ar hogsta makten i Ziu -- fundamentalistisk, hansynslos, mottsatter sig cirefaliskt inflytande. <strong>Stadshallare Hakim al-Rashid</strong> skoter daglig administration. <strong>Abir Hasan Ben Amih Jaakoh</strong> ar andlig ledare. <strong>Gharbawis</strong> ("himmelssanda krigare") ar kefalens personliga garde.</p>
+            <h3>Politisk hierarki</h3>
+            <div class="hierarchy-box">MHIM (gudahärskare) -- oinskränkt makt
+  |
+  +-- KEFAL KHABI JAAKOH (Ziu) -- styrande släkten
+  |     |
+  |     +-- ABIR Hasan Ben Amih Jaakoh -- andlig ledare
+  |     +-- EMIRER -- krigsadel under kefalen
+  |     +-- GHARBAWIS -- kefalens personliga beskyddare
+  |     +-- GRANASCHER -- adlade elitkrigare
+  |     |
+  |     +-- STADSHÅLLARE Hakim al-Rashid (Jen)
+  |           |
+  |           +-- Stadsvakten (kapten Rashan al-Ghedi)
+  |           +-- Tullkontoret
+  |           +-- Slavkontoret (huvudadm. Amir ibn-Farouk)
+  |           +-- Civil administration
+  |
+  +-- RIVALSLÄKT SAMJED (Quaran) -- opposition
+        |
+        +-- Raheb Ab-Radi Samjed (kefal av Quaran)
+        +-- Cirefaliska allierade (Elizimaz, Zyrkozian)</div>
 
-            <p>Rivalslakten Samjed (<strong>Kefal av Quaran: Raheb Ab-Radi Samjed</strong>) opererar fran Quaran och samarbetar med cirefaliska kredithus (Elizimaz, Zyrkozian) for att genomdriva kanalprojektet och aterta kefalambetet.</p>
+            <h4>Kefal Khabi Jaakoh "den ärofyllde"</h4>
+            <ul>
+                <li><strong>Titel:</strong> Kefal av Ziu</li>
+                <li><strong>Släkt:</strong> Jaakoh -- välbärgad, fundamentalistisk, hänsynslös</li>
+                <li><strong>Politik:</strong> Motsätter sig cirefalisk kanal och ökat utländskt inflytande</li>
+                <li><strong>Utnämning:</strong> Av gudahärskaren (Mhim), som kan gå emot traditionell arvföljd</li>
+                <li><strong>Måltavla:</strong> För lönnmordsplaner från cirefaliska intressen</li>
+                <li><strong>Makt:</strong> Både politisk OCH andlig ledare i sitt område. Rätt att utse personer till religiösa ämbeten.</li>
+            </ul>
+
+            <h4>Stadshållare Hakim al-Rashid</h4>
+            <ul>
+                <li><strong>Titel:</strong> Stadshållare av Jen</li>
+                <li><strong>Roll:</strong> Daglig administration, tull, handel, civil ordning</li>
+                <li><strong>Rapporterar till:</strong> Kefal Jaakoh</li>
+                <li><strong>Kommando:</strong> Över stadsvakten</li>
+                <li><strong>Pragmatisk:</strong> Hanterar det dagliga samspelet mellan muhadinska lagar och internationell handel</li>
+            </ul>
+
+            <h4>Rivalsläkten Samjed</h4>
+            <ul>
+                <li><strong>Kefal av Quaran:</strong> Raheb Ab-Radi Samjed</li>
+                <li><strong>Bas:</strong> Quaran (nordkusten)</li>
+                <li><strong>Strategi:</strong> Samarbetar med cirefaliska kredithus (Elizimaz, Zyrkozian)</li>
+                <li><strong>Mål:</strong> Återta kefalämbetet, genomdriva kanalprojektet</li>
+                <li><strong>Stöd:</strong> Arkefurst Tzar Balozin (Cirefaliska samväldet)</li>
+            </ul>
 
             <div class="info-box">
-                <strong>Al-Hafizun ("Vaktarna"):</strong> Ett hemligt rad av sju som i hemlighet styr hela Muhad och valjer varje ny Mhim. De verkliga makthavarna bakom den teokratiska fasaden.
+                <strong>Al-Hafizun ("Väktarna"):</strong> Bakom den synliga maktstrukturen döljer sig Al-Hafizun -- ett hemligt råd av sju muhadiniska rådherrar som i hemlighet styr Muhads öden. Rådet väljer varje ny Mhim och har de facto total makt. De sitter på livstid och kontrollerar hela riket genom infiltration och manipulation. Ingen vet deras identiteter; de döljer sig bakom agenter och mellanhänder. Al-Hafizuns inflytande i Jen är oklart men troligen betydande -- staden är för viktig för att lämna utan uppsikt.
             </div>
 
-            <h3>Lag</h3>
-            <p>Rattssystemet grundar sig pa <strong>Fata'a</strong> ("Min kunskap"), sammanstillt ca 400 f.D. Tre parallella system: gudaharskarens lag (hogst), vanlig lag (fria medborgare), slavlagar. Keralor ar ~100 godkanda tolkningsrullar.</p>
+            <h3>Rättssystemet</h3>
 
-            <p>Straff ar drakoniska: stympning for smabrott, dodsstraff for hadelse, annan religion, hogforraderi och falskmynteri (smalt mynt halls i halsen). Domstolsarenden hanteras i Quaran, inte Jen.</p>
+            <h4>Fata'a-lagen</h4>
+            <p>Rättssystemet grundar sig på <strong>Fata'a</strong> ("Min kunskap"), Muhads heliga lagverk sammanställt ca 400 f.D. Fata'a innehåller:</p>
+            <ol>
+                <li><strong>Mytologiska berättelser</strong> (första 333 sidorna) -- legender om stamfaderns gudomliga krafter</li>
+                <li><strong>Gudahärskarens lag</strong> -- tre universella budord: ära Mhim och sträva mot himlen; lydnad mot överordnade + överordnades skyldigheter mot underordnade; individens ansvar inför kollektivet</li>
+                <li><strong>Folklagar</strong> -- komplicerade vardagsregler (arv, skatter, förbud)</li>
+                <li><strong>Slavlagar</strong> -- förslavningsregler, behandling, friköpsmetoder</li>
+                <li><strong>Domedagsprofetia</strong> -- dunkel profetia om Mhims slutgiltiga dom</li>
+            </ol>
+            <p><strong>Keralor:</strong> ~100 offentligt godkända tolkningsrullar. "Heliga mäns" förklaringar av texterna. Vissa anses "alltför sanna för att offentliggöras" -- censurerade texter som enbart abirer får läsa.</p>
+
+            <h4>Tre parallella rättssystem</h4>
+            <ol>
+                <li><strong>Gudahärskarens lag</strong> (högst) -- för brott mot staten/religionen</li>
+                <li><strong>Vanlig lag</strong> (för fria medborgare) -- vardagliga tvister</li>
+                <li><strong>Slavlagar</strong> (ur Fata'a) -- slavars rättigheter och skyldigheter</li>
+            </ol>
+            <p><strong>Domstolar:</strong> I Ziu hanteras domstolsärenden i <strong>Quaran</strong> (nordkusten), inte i Jen. Kefal och abir dömer tillsammans -- politisk och andlig makt förenas i rättsprocessen. Det finns inget oberoende domstolsväsende. För vardagliga ärenden (ordningsstörningar, tulldispyter, marknadsbrott) agerar stadshållaren och stadsvakten i Jen direkt.</p>
+
+            <h4>Straffmetoder</h4>
+            <table>
+                <tr><th>Brott</th><th>Straff</th></tr>
+                <tr><td>Småbrott (stöld, oordning)</td><td>Stympning (hand, fingrar), slavarbete</td></tr>
+                <tr><td>Allvarliga brott (våld, bedrägeri)</td><td>Offentlig tortyr, avrättning</td></tr>
+                <tr><td>Hädelse mot Mhim</td><td>Dödsstraff (omedelbart)</td></tr>
+                <tr><td>Öppet utöva annan religion</td><td>Dödsstraff</td></tr>
+                <tr><td>Högförräderi</td><td>Dödsstraff (tortyr först)</td></tr>
+                <tr><td><strong>Falskmynteri</strong></td><td><strong>Smält mynt hälls i halsen till döden</strong></td></tr>
+                <tr><td>Innehav av ahma-dolk (utan tillstånd)</td><td>Dödsstraff</td></tr>
+                <tr><td>Droghandel (ahma, vallmo)</td><td>Slavarbete eller dödsstraff</td></tr>
+            </table>
+            <p><strong>Avrättningsplatsen:</strong> Offentliga avrättningar sker regelbundet vid den norra stadsmuren. De är både straff och avskräckande underhållning -- folksamlingar samlas.</p>
+
+            <h4>Korruption</h4>
+            <p>Trots drakoniska straff är korruption utbredd i Jen:</p>
+            <ul>
+                <li><strong>Hamnen:</strong> Mutor är vanligt för att sänka tull eller släppa igenom förbjudna varor</li>
+                <li><strong>Slavhandeln:</strong> Förfalskade slavcertifikat, olaglig förslavning (Hagges fall)</li>
+                <li><strong>Gränstrafik:</strong> Droghandel mot Jargien (via Lopnor) drivs av mäktiga familjer (Ben Lahwan)</li>
+                <li><strong>Konkurrens om poster:</strong> Inkomstbringande ämbeten (tullindrivare, slavinspektör) kan "köpas" genom kontakter</li>
+            </ul>
         </section>
 
-        <!-- Befolkning och Kultur -->
+        <!-- BEFOLKNING -->
         <section id="befolkning" class="section">
             <h2>Befolkning och Kultur</h2>
 
-            <h3>Rasfordelning</h3>
-            <p>Muhadier ~70%, manniskor ovriga ~15%, tiraker ~5%, alver ~3%, dvargar ~2%, ovriga ~5%. Slavar utgor ~10% (~10 000).</p>
+            <h3>Rasfördelning</h3>
+            <table>
+                <tr><th>Ras</th><th>Andel</th><th>Antal</th><th>Notering</th></tr>
+                <tr><td>Muhadier (zhaner)</td><td>~70%</td><td>~70 000</td><td>Dominerande, alla samhällsskikt</td></tr>
+                <tr><td>Människor (övriga)</td><td>~15%</td><td>~15 000</td><td>Cirefalier, jargier, asharier, cermirer</td></tr>
+                <tr><td>Tiraker</td><td>~5%</td><td>~5 000</td><td>Handlare, legosoldater, gladiatorer</td></tr>
+                <tr><td>Alver (pyarer)</td><td>~3%</td><td>~3 000</td><td>Sjömän, handlare (Hahna, Elisari)</td></tr>
+                <tr><td>Dvärgar</td><td>~2%</td><td>~2 000</td><td>Hantverkare, smeder</td></tr>
+                <tr><td>Övriga (ausare, etc.)</td><td>~5%</td><td>~5 000</td><td>Blandad</td></tr>
+            </table>
 
-            <h3>Samhallsklasser</h3>
-            <p>Mhim (gudaharskare) &gt; Kefaler &gt; Bei (handelsadel) &gt; Emirer (krigsadel) &gt; Granascher (elitkrigare) &gt; Upphoejda yrken &gt; Fria medborgare &gt; Slavar. Social rorlighet ar mojlig men svart.</p>
+            <h3>Samhällsklasser</h3>
+            <div class="hierarchy-box">1. MHIM -- Gudahärskare (oinskränkt makt)
+2. KEFALER -- Högadel (politisk + andlig ledare)
+3. BEI -- Handelsmannaadel (rik, ärftlig, betalar avgift)
+4. EMIRER -- Krigsadel (militärt ansvar, skatteindrivning)
+5. GRANASCHER -- Adlade elitkrigare (inga ägodelar, ej ärftligt)
+6. UPPHÖJDA YRKEN -- Lahider, handlare, hantverkare
+7. FRIA MEDBORGARE -- Bönder, nomader, dagarbetare
+8. SLAVAR -- Egendom, reglerade i Fata'a (~10 000 i Jen)</div>
 
-            <h3>Kultur</h3>
-            <p>Hederskodexen ar den kraftfullaste sociala normen. Gastfrihet (khaf/khe) ar helig. "Hetsigt folk" -- pratar snabbt, kannar starkt, men tallmodiga i forhandlingar. Vardagsspraket genomsyras av religiosa fraser ("Regh'b ad Mhim").</p>
+            <p><strong>Social rörlighet:</strong> Uppåt är möjligt men svårt. Stordåd i krig kan ge granasch-titel. Studier kan leda till lahid. Exceptionellt handelsämne kan bli bei (kräver Mhims godkännande). Visad tapperhet i slavarmén kan ge sällsynt frigivning. Nedåt: förmögenhetsförlust, brott, kefalens onåd.</p>
+
+            <p><strong>Utlänningars position:</strong> Utlänningar lever under <strong>strängare lag</strong> än muhadinska medborgare. De har begränsade rättigheter, får inte äga mark, och bestraffas hårdare för brott. Ziu är dock mer tolerant än resten av Muhad -- Jens beroende av internationell handel gör att utlänningar tolereras, om än med misstänksamhet. Kulturell distans upprätthålls: utlänningar bor i det Utländska kvarteret.</p>
+
+            <h3>Heder</h3>
+            <p>Hederskodexen är den kraftfullaste sociala normen. Brutna löften innebär social utestängning. Hedern är inte bara individuell -- den omfattar hela familjen, släkten, ja även staden. En mans vanära är hans familjs vanära. I Jen, där handel och rykte är allt, är hedern särskilt viktig: en köpman som bryter ett ord är socialt död.</p>
+
+            <h3>Gästfrihet</h3>
+            <p>Djupt rotad kulturell dygd. Gäster serveras alltid <strong>khaf</strong> (starkt kaffe) eller <strong>khe</strong> (mintte med socker). Att neka gästfrihet är en allvarlig skymf. I Jen innebär detta att även utländska handlare behandlas med formell artighet i privata sammanhang -- även om de formellt betraktas som "orena".</p>
+
+            <h3>Temperament</h3>
+            <p>"Hetsigt folk" -- muhadiner pratar snabbt, gestikulerar mycket, och känner starkt. Samtidigt eftertänksamma; i förhandlingar vägs varje ord noga. Handelsaffärer kan ta år att slutföra, men när samarbetet väl inletts prioriteras smidighet.</p>
+
+            <h3>Religiösa fraser</h3>
+            <ul>
+                <li><strong>"Regh'b ad Mhim"</strong> ("Välsignelsen kommer från Mhim") -- sägs efter måltider, lyft matskålen mot himlen</li>
+                <li>Ständig hänvisning till gudahärskaren i vardagssamtal</li>
+                <li>Svordomar och eder knyts till Mhims namn</li>
+            </ul>
+
+            <h3>Klädsel</h3>
+            <ul>
+                <li><strong>Kläpor:</strong> Långa, i flera tunna lager, vackert utsmyckade. Materialet och utsmyckningen signalerar social rang.</li>
+                <li><strong>Mahab:</strong> Huvudduk som hålls på plats av två tjockt lindade tygremsor (pannskydd). Både män och kvinnor bär någon form av huvudbonad (sol och sand).</li>
+                <li><strong>Slavtatueringar:</strong> Slavar bär ansiktstatueringar -- konstnärliga, vackra mönster med ägarens bomärke invävt. Permanenta och markerar slavens status för livet.</li>
+                <li><strong>Stadsvaktens uniformer:</strong> Glänsande gula med ansiktsmasker mot ökensand.</li>
+            </ul>
+
+            <h3>Mat och dryck</h3>
+            <table>
+                <tr><th>Rätt</th><th>Beskrivning</th></tr>
+                <tr><td><strong>Kebap</strong></td><td>Grillat lamm på spett, marinerat i kryddor</td></tr>
+                <tr><td><strong>Al'am</strong></td><td>Mustig lammgryta med saffran och dadlar</td></tr>
+                <tr><td><strong>Ganosh</strong></td><td>Rostad aubergineröra med olivolja och sesam</td></tr>
+                <tr><td><strong>Valif</strong></td><td>Friterade degsaker fyllda med kryddad köttfärs</td></tr>
+                <tr><td><strong>Khubtz</strong></td><td>Tunnbröd -- bakat på stenugn, serveras till allt</td></tr>
+                <tr><td><strong>Ebtz</strong></td><td>Sort specialbröd, festligt</td></tr>
+                <tr><td><strong>Shawarma</strong></td><td>Skivat kryddat kött från roterande spett</td></tr>
+            </table>
 
             <div class="info-box">
-                <strong>Mat:</strong> Kebap, al'am (lammgryta), ganosh (aubergineroe), valif (friterade degsaker), khubtz (tunnbrod), ebtz (festbrod). <em>Tabu: flygande fagel ALDRIG (heliga).</em> Khaf (kaffe) och khe (mintte) ar standarddrycker.<br><br>
-                <strong>Hogtider:</strong> Stamfaderns fodelsedag, Mhims fodelsedag, Nyar, Offerhoegtiden, fredagsboonen.<br><br>
-                <strong>Razdo:</strong> Bradspel som aven anvands for formella dueller. Mastare har celebritetstatus.<br><br>
-                <strong>Musik:</strong> Enstammig, censurerad. Hadiska verk bestraffas med avrattning.
+                <strong>Dryck:</strong> <strong>Khaf</strong> (starkt kaffe -- gästfrihetssymbol), <strong>khe</strong> (mintte med socker), dadelvin (lokalt), starka rusmedel (avråds av Mhimrätten men förekommer i hamnen).<br><br>
+                <strong>Mattabu:</strong> Flygande fågel ALDRIG. Fåglar som flyger är heliga -- de flyger närmast Mhama'a (himlen). Markfågel (kyckling) är tillåtet. Tabuet är absolut. Granascher har dessutom ett särskilt tabu mot att äta fågel överhuvudtaget.
             </div>
+
+            <h3>Högtider</h3>
+            <table>
+                <tr><th>Högtid</th><th>Beskrivning</th></tr>
+                <tr><td><strong>Stamfaderns födelsedag</strong></td><td>Till ära för förste Mhim -- högsta högtiden</td></tr>
+                <tr><td><strong>Nuvarande Mhims födelsedag</strong></td><td>Firar Matruk Wolani</td></tr>
+                <tr><td><strong>Nyår</strong></td><td>Markerar första tronbestigningen -- viktigaste högtiden efter stamfadern</td></tr>
+                <tr><td><strong>Offerhögtiden</strong></td><td>Kopplad till vallfärd. Slaktoffer (aldrig flygande fågel).</td></tr>
+                <tr><td><strong>Fredagsbönen</strong></td><td>Veckovis men räknas som högtid -- gemensam samling i dhaoragen</td></tr>
+            </table>
+            <p>Under högtider pryder man dhaorager och hus med lampor, tyger och blommor. Måltider är stora, offentliga berättare uppträder, och razdo-turneringar hålls.</p>
+
+            <h3>Razdo ("Blindbräde")</h3>
+            <p>Muhads förnämsta sällskapsspel -- ett brädspel som enligt legenden gavs till folket av stamfadern Mhim själv. Razdo är inte bara underhållning utan även ett sätt att utkämpa <strong>formella dueller</strong>. Berömda mästare som Nawan Ben Hayel ("Underbarnet från Quaran") åtnjuter celebritetstatus. I Jen spelas razdo överallt -- i tehusen, på basaren, i handelsdistriktet. Insatserna varierar från små släntar till betydande summor.</p>
+
+            <h3>Musik, dans och konst</h3>
+            <p>Muhadinsk musik är <strong>enstämmig</strong> (monofon) med instrumentalt ackompanjemang. Melodier bär ofta magisk/kosmologisk innebörd. Sång, dans och teater uppskattas högt men underkastas <strong>kraftig censur</strong>. Hädiska verk bestraffas med avrättning. I Jen, där internationellt inflytande är starkare, hörs även utländsk musik i hamnkvarteren och det Utländska kvarteret -- men aldrig offentligt i de muhadinska stadsdelarna.</p>
+
+            <h3>Kvinnors ställning</h3>
+            <p>Generellt tillbakadragen roll i det patriarkala samhället. Rika kefaler lever med konkubiner. Kvinnor har begränsade offentliga rättigheter men kan utöva betydande makt bakom kulisserna -- särskilt i handeln. Laila al-Jen är ett framstående exempel på en kvinna som styr ett handelsimperium. Undantag existerar: magikern Madrianna är inflytelserik i Alkarzan, och historiskt var 'Akidja (stamfaderns dotter) den första kvinnliga gharbawian.</p>
         </section>
 
-        <!-- Religion -->
+        <!-- RELIGION -->
         <section id="religion" class="section">
             <h2>Religion</h2>
 
-            <h3>Mhimratten</h3>
-            <p>Enda tillatna religionen. Mhim = himlen inkarnerad, "den tusenogde". Inga andra gudar accepteras -- dodsstraff for oppen utovning av annan religion.</p>
+            <h3>Mhimrätten i Jen</h3>
+            <p>Mhimrätten är Muhads enda tillåtna religion och genomsyrar varje aspekt av livet:</p>
+            <ul>
+                <li><strong>Mhim</strong> = himlen inkarnerad, "den tusenögde" (Ghabesh Zil)</li>
+                <li><strong>Mhama'a (Himlen)</strong> = det högsta, mest ouppnåeliga</li>
+                <li>Världen skapades i himlen; döda själar återvänder dit</li>
+                <li>Syndare förvandlas till sand, splittras av vind, renas under hundratals år, och färdas slutligen till himlen</li>
+                <li><strong>Inga andra gudar</strong> accepteras. Dödsstraff för öppen utövning av annan religion</li>
+                <li>Utländska gudar betraktas som "avgudar" eller "demoner"</li>
+                <li>Drakar = heliga väsen (nära himlen), rangordnas efter hur väl de följer läran</li>
+            </ul>
 
+            <h3>Jens dhaorag (Stora moskén)</h3>
             <div class="info-box">
-                <strong>Jens dhaorag (Stora mosken):</strong> Forgyllda kupoler med Mhims ogonsymbol, hoga minaretar for boneutropare (rabbaler), fontaner for rituell rening, marmorgolv.
+                <strong>Jens viktigaste dhaorag</strong> tjänar som Abir Hasan Ben Amih Jaakohs andliga säte:<br><br>
+                <strong>Kupoler:</strong> Förgyllda med guld och prydda med Mhims ögonsymbol<br>
+                <strong>Torn:</strong> Höga minareter där rabbaler kallar till bön fem gånger dagligen via somar-metoden<br>
+                <strong>Fontäner:</strong> Framför ingången för rituell rening (obligatorisk före bön)<br>
+                <strong>Interiörer:</strong> Prydda med dyrbara metaller, mosaikdetaljer, och kalligrafi ur Fata'a<br>
+                <strong>Marmorgolv:</strong> Svalt, blankt -- de troende knäböjer med pannan mot golvet<br>
+                <strong>Inget figurativt:</strong> Inga bilder av människor eller djur (hädelse)
             </div>
 
-            <h3>Religios hierarki</h3>
-            <p>Mhim &gt; Kefal &gt; Abir (andligt overhuvud) &gt; Lahider (bonforattare) &gt; Rabbaler (boneutropare) &gt; Rasigh (studenter). Gharbawis (himmelssanda krigare) och Granasch Muhadin (tempelkrigare) ar specialroller.</p>
+            <h3>Religiös hierarki i Jen</h3>
+            <table>
+                <tr><th>Rang</th><th>Titel</th><th>Roll i Jen</th></tr>
+                <tr><td>1</td><td><strong>Mhim</strong></td><td>Gudahärskare (fjärran, men hans ord är lag)</td></tr>
+                <tr><td>2</td><td><strong>Kefal Jaakoh</strong></td><td>Både politisk OCH andlig ledare för Ziu</td></tr>
+                <tr><td>3</td><td><strong>Abir Hasan Ben Amih Jaakoh</strong></td><td>Andligt överhuvud, rådgivare, kan bannlysa/benåda</td></tr>
+                <tr><td>4</td><td><strong>Lahider</strong></td><td>Bönförfattare, notarier, bibliotekarier, historiker</td></tr>
+                <tr><td>5</td><td><strong>Rabbaler</strong></td><td>Böneutropare (somar-metoden), tidgivare, varningssystem</td></tr>
+                <tr><td>6</td><td><strong>Rasigh/Termidh</strong></td><td>Studenter och lärlingar</td></tr>
+                <tr><td>Special</td><td><strong>Gharbawis</strong></td><td>"Himmelssända krigare" -- trons beskyddare</td></tr>
+                <tr><td>Special</td><td><strong>Granasch Muhadin</strong></td><td>Tempelkrigare</td></tr>
+            </table>
+            <p><strong>Abiren:</strong> Abir Hasan Ben Amih Jaakoh har makt att <strong>bannlysa</strong> (utesluta ur samhället) och <strong>benåda</strong> (återupprätta). Hans ord väger tungt i domstolsärenden. Som medlem av den styrande släkten är gränserna mellan politisk och andlig makt suddiga.</p>
 
-            <h3>5 dagliga boner</h3>
-            <p>Soluppgang, efter forsta maltiden, middagstid, vid sista maltiden, solnedgang. Procedur: staende akalla Mhims namn, knaboja med Fata'a-verser, meditativ avslutning, lyfta matskalen mot himlen.</p>
+            <h3>5 dagliga böner</h3>
+            <ol>
+                <li><strong>Soluppgång</strong> -- Morgonbön</li>
+                <li><strong>Efter första måltiden</strong> -- Tacksägelse</li>
+                <li><strong>Middagstid</strong> -- Middagsbön</li>
+                <li><strong>Vid sista måltiden</strong> -- Tacksägelse</li>
+                <li><strong>Solnedgång</strong> -- Kvällsbön</li>
+            </ol>
+            <div class="info-box">
+                <strong>Böneprocedur (10-20 minuter):</strong><br>
+                Stående åkalla Mhims namn &rarr; Knäböja/underkastd position med verser ur Fata'a &rarr; Meditativ avslutning &rarr; Lyfta, kyssa och höja matskålen mot himlen &rarr; "Regh'b ad Mhim"<br><br>
+                I Jen innebär detta att handeln stannar fem gånger om dagen. Basarerna tystnar. Utlänningar väntas respektera bönestunderna -- att öppet ignorera dem är en provokation.
+            </div>
 
-            <p><strong>Fredagsboonen:</strong> Sjatte dagen, middagstid. Samling i dhaoragen, reningsceremoni vid fontanerna, lang gemensam bon med predikan.</p>
+            <h3>Fredagsbönen</h3>
+            <p>Sjätte dagen varje vecka vid middagstid hålls fredagsbön -- den viktigaste veckovisa ceremonin:</p>
+            <ol>
+                <li><strong>Samling i dhaoragen</strong> -- alla fria muhadinska män förväntas närvara</li>
+                <li><strong>Reningsceremoni vid fontänerna</strong> -- tvätta huvud, armar, ben uppifrån och ner</li>
+                <li><strong>Lång gemensam bön</strong> med predikan ledd av en lahid</li>
+                <li><strong>Social samling</strong> efteråt -- nyheter, affärer, politik diskuteras</li>
+            </ol>
+            <p>Fredagsbönen är även ett tillfälle för abiren att göra uttalanden, bannlysa eller benåda.</p>
 
-            <p><strong>Symboler:</strong> Ogat (tusenogde), manskaran (styrka), stjarnan (himlens skonhet).</p>
+            <h3>Religiösa symboler</h3>
+            <ul>
+                <li><strong>Ögat</strong> -- den tusenögde som ser allt (Mhims främsta symbol). Finns på kupoler, dörrposter, mynt.</li>
+                <li><strong>Månskäran</strong> -- styrka och makt. Vanlig på vapen och rustningar.</li>
+                <li><strong>Stjärnan</strong> -- himlens skönhet. Pryder textilier och konstverk.</li>
+            </ul>
+
+            <h3>Alternativa religioner i Jen</h3>
+            <p>Öppet utövande av annan religion är förbjudet -- dödsstraff. Men i Jen, med sin internationella befolkning, existerar religion i det fördolda:</p>
+            <ul>
+                <li>Utländska handlare utövar sina religioner <strong>privat</strong> i sina kvarter</li>
+                <li>Stadsvakten "ser inte" smärre överträdelser så länge de inte är offentliga</li>
+                <li><strong>'Asawismen</strong> -- en mystisk röring inom Mhimrätten med mer tolerant tolkning -- har anhängare även i Jen</li>
+                <li>Xinukultens hemliga dyrkan opererar under totalhemlighet</li>
+            </ul>
         </section>
 
-        <!-- Ekonomi -->
+        <!-- EKONOMI -->
         <section id="ekonomi" class="section">
             <h2>Ekonomi</h2>
 
-            <h3>Valuta (Bas 33)</h3>
-            <p>1 gulddirham = 33 silverdirham = 1089 koppardirham. Femkantiga mynt. Slavmynt: 3 = 1 koppardirham (forbjudet att vaxla). 1 silverdirham &#8776; 2 jargiska denarer.</p>
+            <h3>Valutasystemet (Bas 33)</h3>
+            <p>Muhads myntsystem bygger på <strong>talet 33</strong> -- stamfaderns antal söner:</p>
+            <table>
+                <tr><th>Valuta</th><th>Värde</th><th>Form</th></tr>
+                <tr><td><strong>1 Gulddirham</strong></td><td>= 33 silverdirham</td><td>Femkantig</td></tr>
+                <tr><td><strong>1 Silverdirham</strong></td><td>= 33 koppardirham</td><td>Femkantig</td></tr>
+                <tr><td><strong>1 Koppardirham</strong></td><td>Grundenhet</td><td>Femkantig</td></tr>
+                <tr><td><strong>1 Slavmynt</strong></td><td>= 1/3 koppardirham</td><td>Särskild form</td></tr>
+            </table>
+            <p><strong>Växelkurs:</strong> 1 silverdirham &asymp; 2 jargiska denarer. <strong>Femkantiga dirhams:</strong> Muhadinska mynt är femkantiga, inte runda -- unikt för Muhad. Utländsk valuta måste vägas för att bestämma värde. <strong>Slavmynt:</strong> 3 slavmynt = 1 koppardirham. Det är <strong>förbjudet</strong> att växla mellan slavmynt och vanlig valuta. I praktiken värdelösa för fria medborgare.</p>
 
-            <div class="info-box">
-                <strong>Referenspriser:</strong> Shamshir 350 silver, ahma-dolk 40, kamel 300, hast 500, arbetsslav 500+, kvalificerad slav 800+, alvslav 2000+.
-            </div>
+            <h3>Priser (referens)</h3>
+            <table>
+                <tr><th>Vara/Tjänst</th><th>Pris</th><th>Valuta</th></tr>
+                <tr><td>Muhadinsabel (shamshir)</td><td>350</td><td>Silverdirham</td></tr>
+                <tr><td>Ahma-dolk (vågformad)</td><td>40</td><td>Silverdirham</td></tr>
+                <tr><td>Kamel</td><td>300</td><td>Silver</td></tr>
+                <tr><td>Häst</td><td>500</td><td>Silver</td></tr>
+                <tr><td>Arbetsslav (utgångspris auktion)</td><td>500+</td><td>Silver</td></tr>
+                <tr><td>Kvalificerad slav</td><td>800+</td><td>Silver</td></tr>
+                <tr><td>Alvslav (högstatus)</td><td>2000+</td><td>Silver</td></tr>
+                <tr><td>Lots i hamnen</td><td>65</td><td>Silver</td></tr>
+                <tr><td>Tull på import</td><td>8%</td><td>Av varans värde</td></tr>
+                <tr><td>Anlöpningsavgift</td><td>3</td><td>Silver/last</td></tr>
+            </table>
 
-            <h3>Naringar</h3>
+            <h3>Skatter och avgifter</h3>
             <ul>
-                <li><strong>Kryddhandel:</strong> Kanel, saffran, kardemumma fran Xian och Cirha. Kaw-basaren och kryddmarknaden ar centrum.</li>
-                <li><strong>Slavhandel:</strong> Jarntorget (slavmarknaden). Export till Cirefalien, Jargien m.fl.</li>
-                <li><strong>Internationell sjofart:</strong> Hamnen tar emot skepp fran hela Mundana. 8% tull.</li>
-                <li><strong>Export:</strong> Slavar, vapen (shamshir fran Yangishar), vin.</li>
-                <li><strong>Import:</strong> Kryddor, lyxvaror, ALLA livsmedel (okenstad).</li>
+                <li><strong>Bei-tribut:</strong> Årlig avgift baserad på vinst, betalas till kefalen</li>
+                <li><strong>Religiösa tributer:</strong> Rasigh (student) 1/4 av inkomst; Lahid (bönförfattare) 1/5 av inkomst</li>
+                <li><strong>Tullar:</strong> 8% på all import/export genom hamnen</li>
+                <li><strong>Slavregistrering:</strong> Avgift vid varje transaktion i Slavkontoret</li>
+                <li><strong>Marknadsskatt:</strong> Ståndhyra och handelsavgifter på basarer</li>
             </ul>
 
-            <h3>Internationella handelshus</h3>
-            <p>Temiranz (Mundanas storsta, cirefaliskt), Davorz (cirefalisk slavhandel), Elizimaz och Zyrkozian (kredithus, allierade med Samjed), Zaral Zargon (cirefaliskt, infiltrerat av Xinukulten), Wekzi (tirakisk vapenhandel), Hahna och Elisari (pyariska).</p>
+            <h3>Huvudsakliga näringar</h3>
+            <ul>
+                <li><strong>Kryddhandel:</strong> Jens mest världsberömda näring. Kanel, saffran, kardemumma, gurkmeja importeras från Xian, Cirha och tropiska regioner. Kaw-basaren och kryddmarknaden är centrum.</li>
+                <li><strong>Slavhandel:</strong> En av de mörkaste men mest lukrativa verksamheterna. Järntorget (slavmarknaden) är internationellt känd.</li>
+                <li><strong>Internationell sjöfart:</strong> Hamnen (storlek 7) tar emot skepp från hela Mundana. 8% tull.</li>
+                <li><strong>Vapentillverkning:</strong> Shamshir-sablar från Yangishar (nordost om Jen) är berömda.</li>
+                <li><strong>Vinproduktion:</strong> Tredje exportvaran -- trots öknens klimat.</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>Export:</strong> Slavar, vapen, vin<br>
+                <strong>Import:</strong> Kryddor, lyxvaror (glas, porslin, tobak), ALLA livsmedel (ökenmiljö)<br>
+                <strong>Handelspartners:</strong> Cirefaliska samväldet, Jargien, Consaber, Stora arkipelagen, Momolan, Kryddöarna
+            </div>
+
+            <h3>Internationella handelshus aktiva i Jen</h3>
+            <table>
+                <tr><th>Handelshus</th><th>Ursprung</th><th>Verksamhet i Jen</th></tr>
+                <tr><td>Temiranz</td><td>Cirefaliskt (Mundanas största)</td><td>Glas, spannmål, salt, metaller</td></tr>
+                <tr><td>Davorz</td><td>Cirefaliskt (Caserion)</td><td>Slavhandel till Jen</td></tr>
+                <tr><td>Elizimaz</td><td>Cirefaliskt kredithus</td><td>Finansiella tjänster, samarbetar med Samjed</td></tr>
+                <tr><td>Zyrkozian</td><td>Cirefaliskt kredithus</td><td>Finansiella tjänster, stöds av arkefursten</td></tr>
+                <tr><td>Zaral Zargon</td><td>Cirefaliskt</td><td>Distribution (infiltrerat av Xinukulten)</td></tr>
+                <tr><td>Wekzi</td><td>Tirakiskt (Asharina)</td><td>Vapen, tyger, sällsynta varor</td></tr>
+                <tr><td>Hahna</td><td>Pyariskt (Kryddöarna)</td><td>Sjöfart, slavhandel, tullkrävning</td></tr>
+                <tr><td>Elisari</td><td>Pyariskt (multinationellt)</td><td>Exotiska varor, information</td></tr>
+            </table>
         </section>
 
-        <!-- Slaveri -->
+        <!-- SLAVERI -->
         <section id="slaveri" class="section">
             <h2>Slaveri</h2>
 
-            <p>~10 000 slavar i Jen. Forslavning via fodsel, brott, krigsbyte, utlanningar.</p>
+            <h3>Omfattning</h3>
+            <p>~10 000 slavar i Jen (~10% av befolkningen). Djupt rotad tradition, central del av ekonomin, reglerat i Fata'a. Slaveriet är inte en avvikelse -- det är en grundpelare i det muhadinska samhället.</p>
+
+            <h3>Förslavningsvägar</h3>
+            <ol>
+                <li><strong>Födsel:</strong> Födda in i slaveri i städernas slavkvarter. Barn till slavar är slavar.</li>
+                <li><strong>Brott:</strong> Småbrott kan leda till livstids slaveri. Straffslavar arbetar i gruvor och byggprojekt.</li>
+                <li><strong>Krigsbyte:</strong> Kaparskepp tar fångar. Krigsfångar förslavas rutinmässigt.</li>
+                <li><strong>Utlänningar:</strong> Äventyrare (främst jargier) löper stor risk. Strängare lag mot utlänningar gör förslavning lättare. Förfalskade papper förekommer (Hagges fall).</li>
+            </ol>
 
             <h3>Slavtyper</h3>
+
+            <h4>Arbetsslavar</h4>
+            <p>Gruvor, byggprojekt, jordbruk. Hårdast behandlade, kort förväntat liv. Drogade med viljeavtrubbande medel för att maximera arbete. Hög omsättning -- många "utbrända", dör i förtid.</p>
+
+            <h4>Hushållsslavar</h4>
+            <p>Städernas rika hushåll. Något bättre behandlade. Innefattar kock, städerska, tjänare, amning.</p>
+
+            <h4>Slavsoldater</h4>
+            <p>Reguljärt infanteri / chocktrupper (~20 000 i hela Muhad). Drogade inför strid (smärtfria, aggressiva). Binder upp fienden så kavalleriet kan manövrera. Beväpnade med enklare vapen (spjut, klubbor -- ej sablar, "ovärdiga"). Sällsynt: frihet efter visad tapperhet.</p>
+
+            <h4>Alvslavar (högsta status)</h4>
+            <p><strong>Dyraste statussymbolen</strong> bland rika muhadiner. Dansöser, musikanter, konkubiner, eunucker. Oerhörda priser (2000+ silverdirham). Tragiskt inslag -- skönhet förslavad.</p>
+
+            <h4>Misslor (giftprovare)</h4>
+            <p>Särskild kategori: slavar som tjänar som giftprovare. Smakar all mat och dryck före sin herre. Kort förväntad livslängd. Anses som en "hedersposition" bland slavar.</p>
+
+            <h3>Slavarnas vardag</h3>
             <ul>
-                <li><strong>Arbetsslavar:</strong> Gruvor, bygge. Hardast behandlade.</li>
-                <li><strong>Hushallsslavar:</strong> Tjänstefolk i rika familjer.</li>
-                <li><strong>Slavsoldater:</strong> ~20 000 i hela Muhad, drogade infor strid.</li>
-                <li><strong>Alvslavar:</strong> Hogsta status -- danseoser, konkubiner.</li>
-                <li><strong>Misslor:</strong> Giftprovare.</li>
+                <li>Längst ner i samhällshierarkin -- juridiskt egendom</li>
+                <li>Slavtatueringar i ansiktet: konstnärliga, vackra mönster med ägarens bomärke invävt. Permanenta.</li>
+                <li><strong>Slavmynt:</strong> 3 slavmynt = 1 koppardirham. Förbjudet att växla.</li>
+                <li>Drogade med viljeavtrubbande medel</li>
+                <li>Hög omsättning -- många utbrända</li>
             </ul>
 
-            <p>Slavtatueringar i ansiktet med agarens bomarke. Slavmynt vardelosa for fria. Drogade med viljeavtrubbande medel. Befrielse lagligt mojlig via Fata'a men i praktiken nastan omojlig.</p>
-
-            <p>Slavkontoret i Jen (registrering/handel), domstolar/frigivning i Quaran.</p>
-        </section>
-
-        <!-- Militar -->
-        <section id="militar" class="section">
-            <h2>Militar och Forsvar</h2>
-
+            <h3>Befrielse</h3>
+            <p>Lagliga vägar att köpa sig fri finns i Fata'a:</p>
             <ul>
-                <li><strong>Stadsvakten:</strong> Under kapten Rashan al-Ghedi. Gula uniformer med ansiktsmasker. Patrullerar alla viktiga platser.</li>
-                <li><strong>Gharbawis:</strong> Kefalens personliga garde. Strider med elementarvasen (sylfer, stellarer). Fruktade och respekterade.</li>
-                <li><strong>Granascher:</strong> Elitkrigare med shamshir i varje hand. 10-15 ars traning. Inga agodelar. Relwan Jaakohs svardsakademi i Jen.</li>
-                <li><strong>Nattdrapare:</strong> Hemliga lonnmordare. Ahma-dolken (vagformad, dodsstraff att inneha). Nom-Akadh specialpilar (tysta).</li>
+                <li><strong>Friköp:</strong> Slaven sparar slavmynt över år (nästan omöjligt med slavmyntets värde)</li>
+                <li><strong>Ägarbeslut:</strong> Ägaren kan frivilligt frigiva en slav</li>
+                <li><strong>Domstolsbeslut:</strong> I särskilda fall (Quaran -- ej Jen)</li>
+                <li><strong>Tapperhet:</strong> Slavsoldater kan i sällsynta fall frigivas efter extraordinär tapperhet</li>
             </ul>
+            <p>I praktiken är befrielse MYCKET svår. De befriande bär fortfarande slavtatueringarna och möts med misstänksamhet.</p>
 
             <div class="info-box">
-                <strong>Stadsmuren:</strong> Ljus sten med magiska runor, armborstorn, gula vakter. Tarkas-oknen ar naturligt forsvar.<br><br>
-                <strong>Vapen:</strong> Shamshir (sabel), ahma (dolk), tan-chadra (kedjevapen), zanmuhal (ryttarbege), amaqen (trarustninge), quallamisa (laderpansar).
+                <strong>Ryktet om sanari-ligan:</strong> Bland alvslavar i Muhads harem cirkulerar ett hoppfullt rykte om att sanari-alverna (den mäktigaste alvstammen, baserad i Sunariskogen) i hemlighet organiserat en liga som befriar alvslavar. De flesta betraktar det som fåfängt hopp -- de få som lyckas bli fria stannar ofta kvar i Västlanden, oförmögna att återanpassa sig till alvsamhället.<br><br>
+                <strong>Salma bint-Hafiz:</strong> Driver en hemlig befrielserörelse i Jen under täckmantel av kryddhandel ("Frihetens Kryddor"). Hennes nätverk är verkligt, till skillnad från de osäkra ryktena om sanari-ligan.
             </div>
         </section>
 
-        <!-- Stadsdelar -->
+        <!-- MILITÄR -->
+        <section id="militar" class="section">
+            <h2>Militär och Försvar</h2>
+
+            <h3>Stadsvakten</h3>
+            <div class="npc-card">
+                <h4>Kapten Rashan al-Ghedi</h4>
+                <div class="npc-meta">Ledare &bull; Strikt och plikttrogen</div>
+                <p>Flera hundra vakter. Gula uniformer, ansiktsmasker (ökensand), spjut, sablar. Ansvarar för ordning, tull, brottsbekämpning, portbevakning. Patrullerar alla viktiga platser. Rashan har en ambivalent hållning till slavhandeln.</p>
+            </div>
+
+            <h3>Gharbawis (kefalens garde)</h3>
+            <div class="info-box">
+                <strong>"Himmelssända krigare"</strong> -- Kefalens personliga beskyddare + trons försvarare. Strider med <strong>elementarväsen</strong> -- sylfer (luftväsen) och stellarer (stjärnväsen). Religiös utmärkning för exceptionell tapperhet. Anses ha en direkt koppling till Mhims gudomliga kraft. Stationerade i gharbawis kasern i norra Jen. De mest fruktade krigarna i Muhad.
+            </div>
+
+            <h3>Granascher i Jen</h3>
+            <div class="info-box">
+                <strong>Elitkrigare</strong> med muhadinsabel (shamshir) i VARJE hand. "Vacker men dödlig dans" med virvlande klingor.<br><br>
+                <strong>Träning:</strong> 12-16 timmar/dygn, 10-15 år för fullvärdig granasch<br>
+                <strong>Kodex:</strong> Inga ägodelar utom vapen och rustning. Ej ärftlig adelstitel.<br>
+                <strong>Sabeldans (Sabins stavar):</strong> En rituell form av svärdskonst som är både uppvisning och verklig stridsträning<br>
+                <strong>Högaste:</strong> Gibelacar (gränsfort) -- men granascher är stationerade i alla stora städer<br>
+                <strong>Relwan Jaakohs Svärdsakademi:</strong> I Jen -- utbildar blivande granascher och krigare. Relwan är medlem av styrande släkten.
+            </div>
+
+            <h3>Nattdräpare</h3>
+            <p>Lönnmördare och kommandosoldater. Dolda bland befolkningen, aktiveras på kefalens order. <strong>Ahma-dolken</strong> (vågformad) -- ENDA som får bära den. Dödsstraff att inneha utan tillstånd. <strong>Nom-Akadh</strong> specialpilar -- tysta, skär av rep och kablar utan ljud. I Jen: stationerade men osynliga.</p>
+
+            <h3>Stadsmuren</h3>
+            <ul>
+                <li>Ljus sten med magiska runor (förstärkning/varning)</li>
+                <li>Glänser gyllene i morgonljuset</li>
+                <li><strong>Armborstorn</strong> med regelbundna intervall -- bemannade dygnet runt</li>
+                <li>Vakter i gula uniformer med ansiktsmasker</li>
+                <li>Omsluter hela staden</li>
+                <li>Portar i norr (karavanväg till Quaran), söder (hamn), öst och väst</li>
+            </ul>
+
+            <h3>Hamnskydd</h3>
+            <p>Viken är naturligt skyddad, svår att anfalla från havet. Patrullskepp bevakar inloppen. Fyrar och signalsystem varnar om annalkande hot. Kustbefästningar -- stadsmuren sträcker sig ut mot havet.</p>
+
+            <h3>Naturligt försvar</h3>
+            <p><strong>Tarkas-öknen:</strong> Den omgivande öknen är i sig ett försvar. Att marschera en armé genom Tarkas är nästan omöjligt -- hetta, brist på vatten, sandstormar. Jen är i praktiken endast anfallbar från havet.</p>
+
+            <h3>Muhadinska vapen</h3>
+            <table>
+                <tr><th>Vapen</th><th>Typ</th><th>Notering</th></tr>
+                <tr><td><strong>Shamshir</strong></td><td>Muhadinsabel</td><td>Tillverkad i Yangishar, standard för kavalleri/granascher</td></tr>
+                <tr><td><strong>Ahma</strong></td><td>Vågformad dolk</td><td>Exklusivt för nattdräpare -- dödsstraff att inneha</td></tr>
+                <tr><td><strong>Tan-chadra</strong></td><td>Kedjevapen</td><td>Ökenkrigarens signaturvapen</td></tr>
+                <tr><td><strong>Zhinabagdh</strong></td><td>Krökt dolk</td><td>Ökenkrigarens sekundärvapen</td></tr>
+                <tr><td><strong>Zanmuhal</strong></td><td>Ryttarbåge</td><td>Sträng av tvinnat kamelhår</td></tr>
+                <tr><td><strong>Nom-Akadh</strong></td><td>Specialpilar</td><td>Tysta, skär rep</td></tr>
+                <tr><td><strong>Amaqen</strong></td><td>Lätt rustning av trä</td><td>Ökenanpassad, luftig</td></tr>
+                <tr><td><strong>Quallamisa</strong></td><td>Lamellpansar av läder</td><td>Standard för stadsvakten</td></tr>
+            </table>
+        </section>
+
+        <!-- STADSDELAR -->
         <section id="stadsdelar" class="section">
             <h2>10 Stadsdelar</h2>
 
-            <div class="district-grid">
-                <div class="district-card">
-                    <h4>1. Hamnomradet</h4>
-                    <p>Internationellt, bullrigt. Kajerna, lagerhus, tullkontoret. Har mots varldens sjoman och handlare.</p>
-                </div>
-                <div class="district-card">
-                    <h4>2. Kaw-basaren</h4>
-                    <p>4000+ ar gammal marknad. Allt saljs har, inklusive "orena" varor. Labyrintiska grander.</p>
-                </div>
-                <div class="district-card">
-                    <h4>3. Kryddmarknaden</h4>
-                    <p>Sinnlig, fargsprakande. "Kryddornas Rike" (Lubna), "Frihetens Kryddor" (Salma).</p>
-                </div>
-                <div class="district-card">
-                    <h4>4. Jarntorget (Slavmarknaden)</h4>
-                    <p>Vita murar, stad inom staden. Slavkontoret, auktioner. Har koeps och saljs manniskor.</p>
-                </div>
-                <div class="district-card">
-                    <h4>5. Handelsdistriktet</h4>
-                    <p>Lyxigt, exklusivt. Lailas villa, Manskrets Gomstalle, kredithus.</p>
-                </div>
-                <div class="district-card">
-                    <h4>6. Tempel och helgedomar</h4>
-                    <p>Andligt, lugnt. Stora mosken (dhaoragen), abirs sate.</p>
-                </div>
-                <div class="district-card">
-                    <h4>7. Bostadsomraden (Ovre staden)</h4>
-                    <p>Lugnt, respektabelt. Svardsakademin, Kamelens Oas (vardshus).</p>
-                </div>
-                <div class="district-card">
-                    <h4>8. Utlandska kvarteret</h4>
-                    <p>Kosmopolitiskt. Wekzi, Davorz, Temiranz, Zaral Zargon.</p>
-                </div>
-                <div class="district-card">
-                    <h4>9. Slummen (Nedre staden)</h4>
-                    <p>Farlig. Skuggornas Viloplats, svarta marknaden, De Utstottas ingangar.</p>
-                </div>
-                <div class="district-card">
-                    <h4>10. Fangelset och kasernerna</h4>
-                    <p>Brutal. Underjordiska celler, gharbawis kasern, avrattningsplatsen.</p>
-                </div>
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>1. Hamnområdet</h4>
+                <p><em>"Hamnen i Jen är stadens pulsåder, där skepp från alla världens hörn anländer och avgår."</em></p>
+                <p><strong>Karaktär:</strong> Internationell, bullrig, saltdoftande. Masternas skog mot himlen, sjömän på tio språk.</p>
+                <p><strong>Viktiga platser:</strong> Kajerna (hundratals fartyg, lanackor med målade ögon), Lagerhus (Temiranz, Davorz, lokala köpmän), Tullkontoret, Lotsstationen (65 silver), Den Brännande Skatten (pirat-temat värdshus).</p>
+                <p><strong>NPCs:</strong> Hamnmästaren, Hamnmäklaren, Kapten Eamon, Jamil al-Baz (skeppsmäklare)</p>
+            </div>
+
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>2. Kaw-basaren (Östra Jen)</h4>
+                <p><em>"Det man inte hittar på Kaw-basaren finns inte."</em></p>
+                <p><strong>Karaktär:</strong> Urgammal (4000+ år), kaotisk, allting-finns. Äldre än själva Muhad.</p>
+                <p><strong>Viktiga platser:</strong> Kaw-basarens labyrinter (hundratals stånd), Wahan Rus Stånd (exotiska vapen, gifter, örter), Den stora fontänen, "Orena" varor-sektionen.</p>
+                <p><strong>NPCs:</strong> Wahan Ru, Darim al-Fazul (köpman med vidtsträckta nätverk)</p>
+            </div>
+
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>3. Kryddmarknaden</h4>
+                <p><em>"Färgerna, dofterna och ljuden blandas till en oförglömlig symfoni."</em></p>
+                <p><strong>Karaktär:</strong> Sinnlig, färgsprakande, berusande. Jens mest berömda marknad.</p>
+                <p><strong>Viktiga platser:</strong> Kryddstånden, "Kryddornas Rike" (Lubna bint-Maliks stånd), "Frihetens Kryddor" (Salma bint-Hafiz -- täckmantel för slavbefrielserörelse), Fontänen.</p>
+                <p><strong>NPCs:</strong> Lubna bint-Malik, Salma bint-Hafiz, Darim al-Fazul</p>
+            </div>
+
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>4. Järntorget (Slavmarknaden)</h4>
+                <p><em>"När ni närmar er slavmarknaden, känns det som om ni lämnar en värld och kliver in i en annan."</em></p>
+                <p><strong>Karaktär:</strong> Mörkt, tryckande, välbevakat. En stad inom staden -- höga vita murar, vaktade portar.</p>
+                <p><strong>Viktiga platser:</strong> Slavkontoret (3-våningsbyggnad, mosaikdetaljer, 5 avdelningar, 11 tjänstemän), Auktionsplatsen, Burar och tält, Dr. Yusuf al-Mansurs inspektionsmottagning.</p>
+                <p><strong>NPCs:</strong> Amir ibn-Farouk, Dr. Yusuf al-Mansur, Ghalib al-Nur, Malik Al-Zahir, Thamz, Khabin Ben Kemal, Sarrius</p>
+            </div>
+
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>5. Handelsdistriktet</h4>
+                <p><em>"De pråliga byggnaderna och den lyxiga livsstilen står i skarp kontrast till stadens fattigare delar."</em></p>
+                <p><strong>Karaktär:</strong> Lyxigt, exklusivt, porlande fontäner, mosaikgolv.</p>
+                <p><strong>Viktiga platser:</strong> Laila al-Jens villa (lyxig, innergård, fontän, 12 personal), Månskärets Gömställe, Den Gyldene Dromedaren, Den Gyllene Gryningen, Kredithusens kontor (Elizimaz, Zyrkozian), Khalid al-Tamirs juvelerarbutik.</p>
+                <p><strong>NPCs:</strong> Laila al-Jen, Hassan ibn-Khalid, Zara al-Min, Khalid al-Tamir, Soraya al-Majid, Esmeralda de Vries, Karim al-Jafar</p>
+            </div>
+
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>6. Tempel och helgedomar</h4>
+                <p><strong>Karaktär:</strong> Andligt, lugnt, respektingivande. Kupoler i guld och blått, rökelse, bönerop vid gryning.</p>
+                <p><strong>Viktiga platser:</strong> Stora moskén (Hasan Ben Amih Jaakohs andliga säte), Helgedomar för Mhims aspekter, Tysta Källan (meditativt värdshus), Den Klara Källan (hälsoinriktat värdshus).</p>
+                <p><strong>NPCs:</strong> Hasan Ben Amih Jaakoh (abir), Ibrahim al-Dawood (historiker/bibliotekarie), Laila bint-Farid, Harun al-Farid</p>
+            </div>
+
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>7. Bostadsområden (Övre staden)</h4>
+                <p><strong>Karaktär:</strong> Lugnt, välmående, respektabelt. Breda gator, palmalléer, barn som leker.</p>
+                <p><strong>Viktiga platser:</strong> Relwan Jaakohs Svärdsakademi, Kamelens Oas (fridfullt värdshus, innergård, fontän, 7 personal), Sandens Sång (traditionellt ökenvärdshus), Ökendyrets Ro (rustik ökentaverna).</p>
+                <p><strong>NPCs:</strong> Relwan Jaakoh, Farid &amp; Leyla al-Malik, Rashan al-Ghedi, Nadir al-Said (arkitekt), Amina bint-Khalid, Fatima bint-Ali</p>
+            </div>
+
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>8. Utländska kvarteret</h4>
+                <p><strong>Karaktär:</strong> Kosmopolitiskt, myllrande, kulturkrock. Arkitektur i blandade stilar.</p>
+                <p><strong>Viktiga platser:</strong> Wekzi-kontoret (tirakisk vapenhandel, Handelsfurstinna Nihtor Wekzi), Davorz-filial, Temiranz kontor, Zaral Zargons Handelshus (Xinukulten-infiltrerat), Den Svävande Fenixen (mystiskt värdshus), Ivon Valentins residens.</p>
+                <p><strong>NPCs:</strong> Ivon Valentin (asharisk köpman), Ben Lahwan (droghandel Jen-Jargien), Mikor "den fantastiska" (magiker/guide), Raziq al-Nur</p>
+            </div>
+
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>9. Slummen (Nedre staden)</h4>
+                <p><em>"I de fattigare delarna är livet hårt och brottsligheten hög."</em></p>
+                <p><strong>Karaktär:</strong> Desperat, farlig, utanför lagen. Tätt packade byggnader, solljuset når knappt ner.</p>
+                <p><strong>Viktiga platser:</strong> Skuggornas Viloplats (mörkt värdshus för hemliga möten), Svarta marknaden (stulna varor, förbjudna substanser), Lejonets Bröl (bullrigt värdshus), De Utstöttas gömda ingångar (lamior under jorden), Trångbackarna.</p>
+                <p><strong>NPCs:</strong> Nocturne, Umar al-Rashid, Hassan "Ökenormen" al-Rashid</p>
+            </div>
+
+            <div class="district-card" style="margin-bottom: 1.5rem;">
+                <h4>10. Fängelset och kasernerna</h4>
+                <p><em>"Jens fängelse är känt för sina hårda förhållanden."</em></p>
+                <p><strong>Karaktär:</strong> Sträng, brutal, orubblig. Massiva stenväggar, järn, kedjor, noll tolerans.</p>
+                <p><strong>Viktiga platser:</strong> Jens fängelse (underjordiska celler, tortyr), Stadsvaktens högkvarter (Rashan al-Ghedis bas), Gharbawis kasern, Avrättningsplatsen, Armborstorn längs stadsmuren.</p>
+                <p><strong>NPCs:</strong> Rashan al-Ghedi, Gharbawis-ledare</p>
             </div>
         </section>
 
-        <!-- Fraktioner -->
+        <!-- VÄRDSHUS -->
+        <section id="vardshus" class="section">
+            <h2>Värdshus och Krogar</h2>
+
+            <table>
+                <tr><th>Värdshus</th><th>Tema</th><th>Stadsdel</th><th>Ägare</th></tr>
+                <tr><td>Den Gyldene Dromedaren</td><td>Lyxig ökenoas</td><td>Handelsdistriktet</td><td>Karim al-Jafar</td></tr>
+                <tr><td>Ökendyrets Ro</td><td>Rustik ökentaverna</td><td>Bostadsområden</td><td>Fatima bint-Ali</td></tr>
+                <tr><td>Den Svävande Fenixen</td><td>Mystisk och exotisk</td><td>Utländska kvarteret</td><td>Raziq al-Nur</td></tr>
+                <tr><td>Lejonets Bröl</td><td>Ljudlig och livlig</td><td>Slummen</td><td>Umar al-Rashid</td></tr>
+                <tr><td>Tysta Källan</td><td>Tyst och meditativ</td><td>Nära tempel</td><td>Laila bint-Farid</td></tr>
+                <tr><td>Den Brännande Skatten</td><td>Pirat/äventyr</td><td>Hamnen</td><td>Kapten Eamon</td></tr>
+                <tr><td>Den Gyllene Gryningen</td><td>Elegant/sofistikerat</td><td>Handelsdistriktet</td><td>Esmeralda de Vries</td></tr>
+                <tr><td>Skuggornas Viloplats</td><td>Mörk och mystisk</td><td>Slummen</td><td>Nocturne</td></tr>
+                <tr><td>Sandens Sång</td><td>Traditionell ökenoas</td><td>Bostadsområden</td><td>Amina bint-Khalid</td></tr>
+                <tr><td>Den Klara Källan</td><td>Hälsoinriktad</td><td>Nära helgedomar</td><td>Harun al-Farid</td></tr>
+            </table>
+
+            <h3>Kamelens Oas (detaljerat)</h3>
+            <div class="npc-card">
+                <h4>Kamelens Oas</h4>
+                <div class="npc-meta">Lugnt bostadsområde nära tempel &bull; Fridfullt värdshus</div>
+                <p><strong>Rum:</strong> Entré (snidade trädörrar), reception, matsal, innergård med fontän och palmer, 2 enkelrum, 3 dubbelrum, 1 familjerum, kök, badrum, trädgård.</p>
+                <p><strong>Personal (7 st):</strong> Farid al-Malik (ägare, 50+, kamelförare), Leyla al-Malik (kock, 40+, ärvda recept), Tariq ibn-Salim (receptionist, 20+), Amira bint-Hassan (städare, 30+), Youssef al-Najjar (underhåll, 40+, hantverkare), Naila bint-Zahir (servering, 20+), Samir ibn-Rashid (kökshjälp, tonåring, Leylas systerson).</p>
+            </div>
+
+            <h3>Månskärets Gömställe (detaljerat)</h3>
+            <div class="npc-card">
+                <h4>Månskärets Gömställe</h4>
+                <div class="npc-meta">Undangömd gränd i handelsdistriktet &bull; Exklusivt, mystiskt</div>
+                <p><strong>Rum:</strong> Smal entré (blygsam skylt), reception (mahogny/brons), bar/lounge, bibliotek, 3 enkelrum, 4 dubbelrum, 1 svit, litet kök, badrum, undangömd innergård.</p>
+                <p><strong>Personal (5 st):</strong> Zara al-Min (ägare, 40+, gåtfull, studerat magi), Rashid ibn-Farouk (bartender, ung, charmig), Amina bint-Salim (städare, 30+, diskret), Hassan al-Rashid (underhåll, 40+, hantverkare/kock), Laila bint-Ali (servering, ung, drömmer om eget värdshus).</p>
+            </div>
+        </section>
+
+        <!-- NPCS -->
+        <section id="npcs" class="section">
+            <h2>Viktiga NPCs</h2>
+
+            <h3>Ledare och makthavare</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Kefal Khabi Jaakoh</h4>
+                    <div class="npc-meta">"Den ärofyllde" &bull; Kefal av Ziu</div>
+                    <p>Fundamentalistisk, hänsynslös, motsätter sig cirefaliskt inflytande. Kontrollerar handeln i Jen med järnhand. Måltavla för lönnmordsplaner.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Stadshållare Hakim al-Rashid</h4>
+                    <div class="npc-meta">Muhadier &bull; Daglig administration</div>
+                    <p>Pragmatisk byråkrat som håller stadens hjul snurrande. Lojal mot Jaakoh. Balanserar kefalens krav mot praktisk verklighet.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Abir Hasan Ben Amih Jaakoh</h4>
+                    <div class="npc-meta">Andlig ledare &bull; Styrande släktens religiösa pelare</div>
+                    <p>Andligt överhuvud med makt att bannlysa och benåda. Hans ord väger tungt i domstolsärenden. Medlem av styrande släkten.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Relwan Jaakoh</h4>
+                    <div class="npc-meta">Krigare &bull; Styrande släkten</div>
+                    <p>Driver svärdsakademin i Jen. Utbildar blivande granascher. Bekämpade barbarer i Tarkas.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Raheb Ab-Radi Samjed</h4>
+                    <div class="npc-meta">Kefal av Quaran &bull; Rival till Jaakoh</div>
+                    <p>Rivalsläktens överhuvud. Samarbetar med cirefaliska kredithus. Stödjer kanalprojektet. Planerar att återta kefalämbetet.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Tariq al-Jabbar</h4>
+                    <div class="npc-meta">Magiker &bull; Rådgivare till kefalen</div>
+                    <p>Mystisk magiker som tjänar som rådgivare åt kefalen. Hans verkliga lojaliteter är osäkra.</p>
+                </div>
+            </div>
+
+            <h3>Handelshus och köpmän</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Laila al-Jen</h4>
+                    <div class="npc-meta">Bayt Al-Laila &bull; Kryddimperium &bull; Spåkvinna</div>
+                    <p>Driver kryddimperiet Bayt Al-Laila. Manipulativ och inflytelserik. Framstående exempel på en kvinna med verklig makt. Lyxig villa med innergård, fontän, 12 personal (8 fria + 4 slavar).</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Malik Al-Zahir</h4>
+                    <div class="npc-meta">Al-Zahir &bull; Slavhandelsimperium &bull; Hänsynslös</div>
+                    <p>Jens största slavhandlare. Brutal och hänsynslös. Kontrollerar en stor del av slavhandeln. Har ett omfattande nätverk av agenter.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Lubna bint-Malik</h4>
+                    <div class="npc-meta">Förmögen kryddhandlare &bull; "Kryddornas Rike"</div>
+                    <p>Driver det största och mest välbesökta kryddståndet. En av de mest inflytelserika personerna på kryddmarknaden. Kontakter med odlare i fjärran regioner.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Darim al-Fazul</h4>
+                    <div class="npc-meta">Respekterad köpman &bull; Internationella nätverk</div>
+                    <p>Importör med vidsträckta handelsnätverk. Känd för sin pålitlighet och kvaliteten på sina varor. Stort lagerhus.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Khalid al-Tamir</h4>
+                    <div class="npc-meta">Juvelerare &bull; Handelsdistriktet</div>
+                    <p>Juvelerare med tre generationers tradition. Hans guldring-fodral och tre nycklar är hans stolthet.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Soraya al-Majid</h4>
+                    <div class="npc-meta">Klädkonstnör &bull; Handelsdistriktet</div>
+                    <p>Skicklig klädkonstnör som syr kläder åt stadens elit.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Jamil al-Baz</h4>
+                    <div class="npc-meta">Skeppsmäklare &bull; Hamnområdet</div>
+                    <p>Arrangerar fraktavtal och fartygsförsäljningar i hamnen.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Ivon Valentin</h4>
+                    <div class="npc-meta">Asharisk köpman &bull; Utländska kvarteret</div>
+                    <p>Asharisk köpman som köper slavar. Har residens i utländska kvarteret.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Wahan Ru</h4>
+                    <div class="npc-meta">Exotisk köpman &bull; Kaw-basaren</div>
+                    <p>Säljer österländska vapen, gifter, sällsynta örter. Bär fjäderbestyckad halmhatt. Har varor som inte borde existera.</p>
+                </div>
+            </div>
+
+            <h3>Slavhandlare</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Ghalib al-Nur</h4>
+                    <div class="npc-meta">Gladiatorägare &bull; Järntorget</div>
+                    <p>"Endast de starkaste överlever." Tränar slavar till gladiatorer och säljer dem till de rika och mäktiga. Känd för sin hårdhet men också sin rättvisa.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Thamz</h4>
+                    <div class="npc-meta">Tirakisk slavhandlare &bull; "Okänt vidrig"</div>
+                    <p>Tirakisk slavhandlare känd för sin vidriga karaktär. Aktiv på Järntorget.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Sarrius</h4>
+                    <div class="npc-meta">Jargisk slavhandlare &bull; Monster &amp; Exotiska djur</div>
+                    <p>Jargisk slavhandlare som säljer slavar, monster och exotiska djur. Ovanlig kombination av varor.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Khabin Ben Kemal</h4>
+                    <div class="npc-meta">Utropare &bull; Järntorget</div>
+                    <p>Slavmarknadens utropare. Hans röst ekar över Järntorget vid varje auktion.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Ben Lahwan</h4>
+                    <div class="npc-meta">Droghandlare &bull; Jen-Jargien</div>
+                    <p>Driver droghandel mellan Jen och Jargien via Lopnor. Mäktig familj.</p>
+                </div>
+            </div>
+
+            <h3>Administration</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Amir ibn-Farouk</h4>
+                    <div class="npc-meta">Huvudadministratör &bull; Slavkontoret</div>
+                    <p>Äldre man med strikt uppsyn och stor pondus. 30+ års erfarenhet inom stadens administration. Respekterad av alla. Alltid i formella, traditionella kläder.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Dr. Yusuf al-Mansur</h4>
+                    <div class="npc-meta">Slavinspektör/Läkare &bull; Järntorget</div>
+                    <p>Inspekterar slavars hälsa och godkänner dem för försäljning. Mottagning på Järntorget.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Rashan al-Ghedi</h4>
+                    <div class="npc-meta">Kapten &bull; Stadsvakten</div>
+                    <p>Strikt och plikttrogen. Gula uniformer. Ambivalent hållning till slavhandeln men gör sitt jobb noggrant.</p>
+                </div>
+            </div>
+
+            <h3>Slavkontorets personal (11 tjänstemän)</h3>
+            <div class="info-box">
+                <strong>Registratorer:</strong> Layla bint-Karim (ung, noggrann, 5 års erfarenhet), Omar ibn-Salim (medelålders, militärbakgrund, 10 år)<br><br>
+                <strong>Transaktionsansvariga:</strong> Amina bint-Rashid (medelålders, 15+ år, känd för integritet), Khalid ibn-Mustafa (ung, nyanställd men kompetent)<br><br>
+                <strong>Inspektörer:</strong> Rashid ibn-Farid (äldre, 20 års erfarenhet i rättsväsendet), Zahra bint-Hassan (medelålders, skarp blick, 10 år)<br><br>
+                <strong>Arkivarier:</strong> Fatima bint-Salim (äldre, 20+ år, mycket organiserad), Ali ibn-Yusuf (ung, nyanställd, kompetent)<br><br>
+                <strong>Kontorister:</strong> Layla bint-Hassan (ung, sprudlande humör), Yasir ibn-Farid (ung, effektiv och noggrann)
+            </div>
+
+            <h3>Religiösa ledare</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Ibrahim al-Dawood</h4>
+                    <div class="npc-meta">Historiker/Bibliotekarie &bull; Tempelområdet</div>
+                    <p>Bevarar stadens och religionens skriftliga historia. Har tillgång till sällsynta texter.</p>
+                </div>
+            </div>
+
+            <h3>Hemliga och kriminella</h3>
+            <div class="npc-grid">
+                <div class="npc-card">
+                    <h4>Salma bint-Hafiz</h4>
+                    <div class="npc-meta">"Frihetens Kryddor" &bull; Slavbefriare</div>
+                    <p>Filantrop och hemlig slavbefriare. Använder kryddhandeln som täckmantel. Hennes nätverk är verkligt och aktivt. Finansierar befrielserörelsen med intäkter från kryddaffären.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Hassan "Ökenormen" al-Rashid</h4>
+                    <div class="npc-meta">Al-Zahirs agent &bull; Slummen</div>
+                    <p>Malik Al-Zahirs agent i Jens undre värld. Opererar från slummen.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Nocturne</h4>
+                    <div class="npc-meta">Gåtfull värdshusägare &bull; Skuggornas Viloplats</div>
+                    <p>Mystisk figur som sällan visar sitt ansikte. Driver Skuggornas Viloplats i slummen. Mörka ales, kryddiga rätter, mystiska elixirer. Idealisk plats för hemliga möten.</p>
+                </div>
+                <div class="npc-card">
+                    <h4>Mikor "den fantastiska"</h4>
+                    <div class="npc-meta">Magiker/Guide &bull; Utländska kvarteret</div>
+                    <p>Magiker och stadsguide. Kan ordna det mesta i Jen -- mot betalning.</p>
+                </div>
+            </div>
+
+            <h3>Övriga värdshusägare</h3>
+            <ul>
+                <li><strong>Karim al-Jafar</strong> -- Den Gyldene Dromedaren. Vänlig men affärsmässig köpman. Saffransris, lammgrytor, importerat vin.</li>
+                <li><strong>Fatima bint-Ali</strong> -- Ökendyrets Ro. Barsk men rättvis kvinna med stort hjärta. Grillade köttspett, hemlagat flatbröd.</li>
+                <li><strong>Raziq al-Nur</strong> -- Den Svävande Fenixen. Gåtfull man med mörkt förflutet. Kryddade likörer, fruktcocktails.</li>
+                <li><strong>Umar al-Rashid</strong> -- Lejonets Bröl. Jovialisk man med stor röst. Kryddiga köttgrytor, lokalt öl.</li>
+                <li><strong>Laila bint-Farid</strong> -- Tysta Källan. Vänlig, andlig kvinna. Vegetariska rätter, örtteer.</li>
+                <li><strong>Kapten Eamon</strong> -- Den Brännande Skatten. Pensionerad sjökapten med många historier. Fisk- och skaldjursrätter, stark rom.</li>
+                <li><strong>Esmeralda de Vries</strong> -- Den Gyllene Gryningen. Sofistikerad kvinna. Fine dining, årgångsviner.</li>
+                <li><strong>Amina bint-Khalid</strong> -- Sandens Sång. Varm kvinna som älskar historier. Falafel, hummus, dadelvin.</li>
+                <li><strong>Harun al-Farid</strong> -- Den Klara Källan. Hälsoentusiast och herbalist. Hälsosamma rätter, örtteer.</li>
+            </ul>
+
+            <h3>Laila al-Jens hushåll</h3>
+            <div class="info-box">
+                <strong>Fria anställda (8 st):</strong><br>
+                <strong>Hassan ibn-Khalid</strong> (hushållsförvaltare, äldre, grått hår, lojal i många år)<br>
+                <strong>Mira bint-Salim</strong> (huvudkock, medelålders, passion för matlagning)<br>
+                <strong>Amina bint-Farid</strong> (hembiträde, ung, sprudlande humör)<br>
+                <strong>Omar ibn-Hassan</strong> (vakt, robust, 40+)<br>
+                <strong>Rashid ibn-Khalid</strong> (vaktkapten, äldre, militär bakgrund)<br>
+                <strong>Jamal ibn-Mustafa</strong> (vakt, robust, 40+, f.d. soldat)<br>
+                <strong>Karim ibn-Hassan</strong> (vakt, ung, atletisk)<br>
+                <strong>Fadil ibn-Yusuf</strong> (vakt, medelålders, f.d. livvakt)<br><br>
+                <strong>Slavar (4 st):</strong><br>
+                <strong>Hagge (Hadrian av Vitterdal)</strong> (adlig rådgivare -- befriad i kampanjen)<br>
+                <strong>Kasim ibn-Farid</strong> (bärare, stark, 30+)<br>
+                <strong>Selim ibn-Rashid</strong> (bärare, ung, smidig -- Maliks infiltratör, död i kampanjen)<br>
+                <strong>Fatima bint-Ali</strong> (hembiträde, 30+, tystlåten, plikttrogen)
+            </div>
+        </section>
+
+        <!-- FRAKTIONER -->
         <section id="fraktioner" class="section">
             <h2>Fraktioner</h2>
 
             <h3>Lokala handelshus</h3>
-            <ul>
-                <li><strong>Handelshuset Al-Zahir</strong> (Malik) -- Slavhandel, brutal</li>
-                <li><strong>Bayt Al-Laila</strong> (Laila al-Jen) -- Kryddhandel, manipulativ</li>
-                <li><strong>Banu Qadisha</strong> -- Allman handel</li>
-            </ul>
+            <div class="npc-card">
+                <h4>Handelshuset Al-Zahir (Slavhandel)</h4>
+                <p><strong>Ledare:</strong> Malik Al-Zahir. <strong>Verksamhet:</strong> Slavhandel, politiskt inflytande. <strong>Agenter:</strong> Hassan "Ökenormen" al-Rashid. <strong>Rival:</strong> Bayt Al-Laila. Dominant på slavmarknaden.</p>
+            </div>
+            <div class="npc-card">
+                <h4>Handelshuset Bayt Al-Laila (Kryddhandel)</h4>
+                <p><strong>Ledare:</strong> Laila al-Jen. <strong>Verksamhet:</strong> Kryddhandel, långdistanshandel, spådom. <strong>Personal:</strong> Hassan ibn-Khalid (förvaltare), Mira bint-Salim (kock), Rashid ibn-Khalid (vaktkapten). <strong>Rival:</strong> Al-Zahir.</p>
+            </div>
+            <div class="npc-card">
+                <h4>Handelshuset Banu Qadisha</h4>
+                <p><strong>Verksamhet:</strong> Allmän muhadinsk handel. <strong>Relation:</strong> Konkurrent till båda ovanstående. Potential för utveckling.</p>
+            </div>
 
-            <h3>Styrande slakter</h3>
-            <ul>
-                <li><strong>Slakten Jaakoh</strong> -- Kefal, anti-cirefalisk, fundamentalistisk</li>
-                <li><strong>Slakten Samjed</strong> -- Rival, pro-cirefalisk, opererar fran Quaran</li>
-            </ul>
+            <h3>Styrande släkter</h3>
+            <div class="npc-card">
+                <h4>Släkten Jaakoh (styrande)</h4>
+                <p>Kefal Khabi Jaakoh, Abir Hasan Ben Amih, Relwan (svärdsakademi). Gharbawis (elitkrigare). Anti-cirefalisk, fundamentalistisk.</p>
+            </div>
+            <div class="npc-card">
+                <h4>Släkten Samjed (rivaler)</h4>
+                <p>Raheb Ab-Radi Samjed (bas i Quaran). Pro-cirefalisk, stödjer kanalprojektet. Samarbetar med Elizimaz och Zyrkozian.</p>
+            </div>
 
             <h3>Skuggfraktioner</h3>
-            <ul>
-                <li><strong>Xinukulten</strong> -- Hemlig sekt, har infiltrerat Zaral Zargon</li>
-                <li><strong>De Utstotta</strong> -- Lamior under jorden</li>
-            </ul>
+            <div class="npc-card">
+                <h4>Xinukulten</h4>
+                <p>Hemlig sekt för Xinus ankomst. Infiltrerat samhällsskikt. Kontakter i Zaral Zargons Handelshus. Sprider lidande, förbereder för Xinus ankomst.</p>
+            </div>
+            <div class="npc-card">
+                <h4>De Utstötta (Lamior)</h4>
+                <p>Besjälade vandöda. Söker makt via slavhandel, guld, ädelstenar. Lever under jorden (undviker dagsljus). Aktiva i Jens underjord.</p>
+            </div>
 
-            <h3>Befrielserorrelse</h3>
-            <p><strong>Salma bint-Hafiz</strong> ("Frihetens Kryddor") -- Hemlig slavbefrielse fran kryddstandet pa marknaden.</p>
+            <h3>Befrielserörelse</h3>
+            <div class="npc-card">
+                <h4>Salma bint-Hafiz ("Frihetens Kryddor")</h4>
+                <p>Hemlig slavbefrielse från kryddståndet på marknaden. Verkligt nätverk till skillnad från rykten om sanari-ligan.</p>
+            </div>
         </section>
 
-        <!-- NPCs -->
-        <section id="npcs" class="section">
-            <h2>Nyckel-NPCs</h2>
+        <!-- KRYDDHANDELN -->
+        <section id="kryddhandel" class="section">
+            <h2>Kryddhandeln (detaljerat)</h2>
 
-            <h3>Ledare</h3>
-            <div class="npc-card">
-                <h4>Kefal Khabi Jaakoh</h4>
-                <div class="npc-meta">Hogsta makten i Ziu &bull; Fundamentalistisk</div>
-                <p>"Den arofyllde" -- hansynslos, mottsatter sig cirefaliskt inflytande. Kontrollerar handeln i Jen med jarnhand.</p>
-            </div>
+            <h3>Handelskedjan</h3>
+            <ol>
+                <li><strong>Odling:</strong> Xian, Cirha, tropiska regioner</li>
+                <li><strong>Transport:</strong> Karavaner (öknen), sjövägar (pirater), konvojer</li>
+                <li><strong>Försäljning:</strong> Kaw-basaren och kryddmarknaden, nattliga storaffärer</li>
+                <li><strong>Förädling:</strong> Torkning, malning, unika Jen-blandningar</li>
+                <li><strong>Distribution:</strong> Lokalt + internationell export</li>
+            </ol>
 
-            <div class="npc-card">
-                <h4>Stadshallare Hakim al-Rashid</h4>
-                <div class="npc-meta">Muhadier &bull; Daglig administration</div>
-                <p>Pragmatisk byrakrat som haller stadens hjul snurrande. Balanserar kefalens krav mot praktisk verklighet.</p>
-            </div>
-
-            <div class="npc-card">
-                <h4>Raheb Ab-Radi Samjed</h4>
-                <div class="npc-meta">Kefal av Quaran &bull; Rival till Jaakoh</div>
-                <p>Samarbetar med cirefaliska kredithus. Stodjer kanalprojektet. Planerar att aterta kefalambetet.</p>
-            </div>
-
-            <h3>Handelshus</h3>
-            <div class="npc-card">
-                <h4>Laila al-Jen</h4>
-                <div class="npc-meta">Kryddimperium &bull; Manipulativ</div>
-                <p>Driver Bayt Al-Laila. Kontrollerar stora delar av kryddhandeln. Manipulativ och inflytelserik.</p>
-            </div>
-
-            <div class="npc-card">
-                <h4>Malik Al-Zahir</h4>
-                <div class="npc-meta">Slavimperium &bull; Grym</div>
-                <p>Jens storsta slavhandlare. Brutal och hanynslos. Hans lagerhus ar beryktat.</p>
-            </div>
-
-            <h3>Ovriga viktiga</h3>
+            <h3>Viktiga aktörer</h3>
             <ul>
-                <li><strong>Abir Hasan Ben Amih Jaakoh</strong> -- Andlig ledare</li>
-                <li><strong>Relwan Jaakoh</strong> -- Krigare, driver svardsakademin</li>
-                <li><strong>Lubna bint-Malik</strong> -- Kryddhandlare, "Kryddornas Rike"</li>
-                <li><strong>Darim al-Fazul</strong> -- Internationell kopman</li>
-                <li><strong>Ghalib al-Nur</strong> -- Gladiatoragare</li>
-                <li><strong>Salma bint-Hafiz</strong> -- Slavbefriare (hemlig)</li>
-                <li><strong>Rashan al-Ghedi</strong> -- Stadsvaktens kapten</li>
-                <li><strong>Wahan Ru</strong> -- Exotisk kopman, Kaw-basaren</li>
-                <li><strong>Kapten Eamon</strong> -- Pensionerad sjokapten, vardshus</li>
-                <li><strong>Mikor "den fantastiska"</strong> -- Magiker/guide</li>
+                <li><strong>Lubna bint-Malik:</strong> "Kryddornas Rike" -- största ståndet, kontakter med odlare</li>
+                <li><strong>Darim al-Fazul:</strong> Importör med internationella nätverk</li>
+                <li><strong>Salma bint-Hafiz:</strong> "Frihetens Kryddor" -- täckmantel för slavbefrielse</li>
+                <li><strong>Laila al-Jen:</strong> Bayt Al-Laila -- största kryddhandelshuset</li>
+            </ul>
+
+            <p><strong>Kulturell betydelse:</strong> Kryddhandeln är inte bara ekonomisk -- den är en kulturell symbol för Jens rikedom och mångfald. Används i matlagning, medicin och religiösa ceremonier. Marknaden är platsen där kulturer möts.</p>
+        </section>
+
+        <!-- SLAVHANDELN -->
+        <section id="slavhandel" class="section">
+            <h2>Slavhandeln (detaljerat)</h2>
+
+            <h3>Järntorgets struktur</h3>
+            <p>Vita murar, stad inom staden. Portar vaktade av beväpnade vakter. Tält, burar, försäljningsstånd. Auktionsplats (upphöjd plattform).</p>
+
+            <h3>Slavkontoret (5 avdelningar)</h3>
+            <ol>
+                <li>Registrering och certifiering</li>
+                <li>Inspektion och hälsa</li>
+                <li>Transaktioner och betalning</li>
+                <li>Tvister och klagomål</li>
+                <li>Arkiv och historik</li>
+            </ol>
+
+            <h3>Handelskedjan</h3>
+            <ol>
+                <li><strong>Fångst:</strong> Räder, köp, olaglig förslavning, brott, krigsbyte</li>
+                <li><strong>Transport:</strong> Öken, hav (grymma förhållanden, många dör)</li>
+                <li><strong>Försäljning:</strong> Auktioner på Järntorget (utgångspris ~500 silver)</li>
+                <li><strong>Träning:</strong> Gladiatorer (Ghalib), tjänare, hantverkare</li>
+                <li><strong>Användning:</strong> Hushåll, fält, gruvor, underhållare, skrivare</li>
+            </ol>
+
+            <h3>Internationella slavhandlare</h3>
+            <ul>
+                <li><strong>Davorz (Caserion):</strong> Cirefalisk slavhandel till Jen</li>
+                <li><strong>Thamz:</strong> Tirakisk, "okänt vidrig"</li>
+                <li><strong>Sarrius:</strong> Jargisk, slavar + monster + exotiska djur</li>
+                <li><strong>Ivon Valentin:</strong> Asharisk köpare</li>
             </ul>
         </section>
 
-        <!-- Kanalprojektet -->
-        <section class="section">
+        <!-- KANALPROJEKTET -->
+        <section id="kanal" class="section">
             <h2>Kanalprojektet</h2>
 
             <div class="info-box">
-                <strong>Stor kanal genom Ziu</strong> mellan Jen och Quaran (~10 mil).<br><br>
-                <strong>Forordare:</strong> Samjed + cirefaliska kredithus (Elizimaz, Zyrkozian) + Arkefurst Tzar Balozin<br>
-                <strong>Motstandare:</strong> Kefal Jaakoh<br><br>
-                Skulle revolutionera handeln mellan Gordrion och Melorion. Lonnmordsplaner mot Jaakoh. Politiskt dodlage.
+                <strong>Vad:</strong> Stor kanal genom Ziu mellan Jen (syd) och Quaran (nord), ca 10 mil lång<br>
+                <strong>Förordare:</strong> Cirefaliska kredithus (Elizimaz, Zyrkozian), släkten Samjed, Arkefurst Tzar Balozin<br>
+                <strong>Motståndare:</strong> Kefal Khabi Jaakoh<br>
+                <strong>Syfte:</strong> Segla direkt mellan Gordrion och Melorion utan att runda hela västra kontinenten<br>
+                <strong>Konsekvens:</strong> Lönnmordsplaner mot Jaakoh<br>
+                <strong>Ekonomisk betydelse:</strong> Skulle revolutionera handeln genom Ziu<br>
+                <strong>Status:</strong> Politiskt dödläge -- Jaakoh lever, Samjed konspirerar
             </div>
         </section>
 
-        <!-- Kampanjhooks -->
+        <!-- KARTA -->
+        <section id="karta" class="section">
+            <h2>Karta (logisk layout)</h2>
+
+            <div class="map-box">              N (öknen, karavan till Quaran)
+              |
+    +========[STADSMUREN]========+
+    |                            |
+    |  10. Fängelse/Kaserner     |
+    |                            |
+    |    7. Bostadsomr.  6.Tempel|
+    |                            |
+    |  9. Slummen  5. Handelsdistr.|
+    |                            |
+    |    3. Kryddmarkn.  4. Järntorg|
+    |                            |
+    |  8. Utl.kvart  2. Kaw-basaren|
+    |                            |
+    |        1. Hamnområdet      |
+    |                            |
+    +========[STADSMUREN]========+
+              |
+              S (Igonhavet)</div>
+
+            <p><strong>Logik:</strong> Hamnen i söder (havet). Basarer och marknader nära hamnen. Handelsdistriktet centralt. Tempel och bostäder längre från hamnen. Fängelse/kaserner nära norra muren (försvar mot öknen). Slummen i västra utkanten. Utländska kvarteret mellan hamn och basarer.</p>
+        </section>
+
+        <!-- KAMPANJHOOKS -->
         <section id="hooks" class="section">
             <h2>Kampanjhooks</h2>
 
+            <h3>Äventyrsidéer</h3>
             <div class="hook-card">
                 <h4>1. Slavbefrielsen</h4>
-                <p>Salma behover hjalp att befria slavar fran Maliks lagerhus. Farligt uppdrag djupt in i slavhandlarnas territorium.</p>
+                <p>Salma bint-Hafiz söker hjälp att befria en grupp slavar från Maliks lagerhus. Men vakterna är många och slavarna drogade -- och någon i Salmas egen organisation är en spion.</p>
             </div>
 
             <div class="hook-card">
                 <h4>2. Kanalkomplotten</h4>
-                <p>Bevis pa lonnmordsplaner leder till bade Samjed OCH Xinukulten. Politisk intrig pa hogsta niva.</p>
+                <p>Någons hittat bevis på lönnmordsplaner mot kefal Jaakoh. Men bevisen leder både till Samjed OCH till Zaral Zargons handelshus (Xinukulten). Vem är den egentliga fienden?</p>
             </div>
 
             <div class="hook-card">
                 <h4>3. Lamiornas underjord</h4>
-                <p>Folk forsvinner fran slummen -- tunnlar under staden. De Utstotta har nagot att dolja.</p>
+                <p>Folk försvinner från slummen -- fattiga, slavar, ingen som saknas. Rykten om De Utstötta sprids. Under Jen finns tunnlar som ingen kartlagt...</p>
             </div>
 
             <div class="hook-card">
                 <h4>4. Kaw-basarens hemlighet</h4>
-                <p>4000 ar gammal artefakt gommer sig i basarens djup. Nagon ar beredd att doda for den.</p>
+                <p>Wahan Ru har kommit över ett föremål från "före Muhads tid". Någon dödar för att få tag på det. Föremålets ursprung leder tillbaka 4000 år -- till något som begravdes under basaren.</p>
             </div>
 
             <div class="hook-card">
                 <h4>5. Pirathotet</h4>
-                <p>Anfaller skepp utanfor Jen -- kanske inte pirater alls. Nagon har ett intresse av att strypa handeln.</p>
+                <p>En piratflotta anfaller skepp utanför Jen. Hamnen förlorar handelsintäkter. Hamnmästaren vill ha hjälp -- men kanske är det inte pirater alls, utan en rival-stad som försöker kapa handeln.</p>
             </div>
+
+            <h3>Mysterier</h3>
+            <ul>
+                <li>Vad döljer sig under Kaw-basaren? (4000+ års historia)</li>
+                <li>Vilka är Xinukulten EGENTLIGEN och hur långt har de infiltrerat?</li>
+                <li>Vad gör lamiorna med alla människor som försvinner från slummen?</li>
+                <li>Varför har Wahan Ru varor som inte borde existera?</li>
+            </ul>
+
+            <h3>Konflikter</h3>
+            <ul>
+                <li><strong>Jaakoh vs Samjed:</strong> Maktkamp om kefalämbetet, kanalprojektet som utlösande faktor</li>
+                <li><strong>Al-Zahir vs Bayt Al-Laila:</strong> Rivalitet inom handeln, mörka metoder</li>
+                <li><strong>Lokala vs utländska:</strong> Wekzis konflikt med lokala bazirk-tiraker</li>
+                <li><strong>Slaveri-debatten:</strong> Salmas befrielserörelse vs etablissemangets intressen</li>
+            </ul>
+        </section>
+
+        <!-- KAMPANJSPECIFIKT -->
+        <section id="kampanj" class="section">
+            <h2>Kampanjspecifikt (Gravens Arv)</h2>
+
+            <div class="warning-box">
+                <strong>VARNING:</strong> Detta avsnitt innehåller kampanj-specifika detaljer och spoilers. Ta bort denna sektion om du delar filen med andra!
+            </div>
+
+            <h3>Användning i kampanjen</h3>
+            <p>Gruppen besökte Jen i <strong>Kapitel 2 (Muhad)</strong>. Var en central plats för Hagges befrielse från slaveri och konfrontation med Malik Al-Zahirs hejdukar.</p>
+
+            <h3>Relaterade händelser (Kapitel 2)</h3>
+            <ul>
+                <li>Ankomst via hamnen</li>
+                <li>Systrarna förföljde gruppen (deras guide dödades)</li>
+                <li>Kazriks bokföring avslöjade den olagliga förslavningen av Hagge</li>
+                <li>Laila al-Jens krav: ett barn från Hagge för hans frihet</li>
+                <li>Alkemisk befruktning i öknen utanför Jen</li>
+                <li>Samtidig attack från Maliks hejdukar + ökendemoner</li>
+                <li>Resa till Quaran för administrativ frigivning</li>
+            </ul>
+
+            <h3>Koppling till masterplot</h3>
+            <ul>
+                <li>Jens rikedom och skuggfraktioner kan kopplas till demonantagonisten Urkhath</li>
+                <li>Xinukulten i Zaral Zargons handelshus -- potentiell långsiktig koppling</li>
+                <li>Lamiornas underjord -- potentiell framtida komplikation</li>
+                <li>Laila al-Jens barn med Hagge -- framtida arvsfråga för Vitterdal</li>
+            </ul>
+
+            <h3>NPCs som gruppen träffat</h3>
+            <ul>
+                <li><strong>Laila al-Jen</strong> (köpte Hagge, krävde barn)</li>
+                <li><strong>Malik Al-Zahir</strong> (skickade hejdukar)</li>
+                <li><strong>Selim ibn-Rashid</strong> (död -- Maliks infiltratör i Lailas hushåll)</li>
+                <li><strong>Mikor "den fantastiska"</strong> (guide)</li>
+                <li><strong>Darina</strong> (död, fraktionslös)</li>
+                <li><strong>Zairgaz</strong> (död, demonisk kraft)</li>
+                <li>Diverse värdshuspersonal</li>
+            </ul>
         </section>
 
         <footer>
             <p><strong>EM-S001: Jen -- Handelsstaden i Ziu, Muhad</strong></p>
-            <p>EON Kampanjmaterial &bull; Gravens Arv &bull; Validerat via NotebookLM</p>
-            <p>Avvikelser fran kanon: Befolkning ~100k, delat Ziu-styre, Al-Hafizun</p>
+            <p>EON Kampanjmaterial &bull; Gravens Arv &bull; Validerat via NotebookLM (16+ queries)</p>
+            <p>Avvikelser från kanon: Befolkning ~100k, delat Ziu-styre, Al-Hafizun</p>
+            <p>Version 2.0 (komplett)</p>
         </footer>
     </div>
 </body>

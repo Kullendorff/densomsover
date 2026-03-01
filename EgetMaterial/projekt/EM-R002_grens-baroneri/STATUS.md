@@ -1,16 +1,16 @@
-# EM-R002: Grens Baroneri - Projektstatus
+# EM-R002: Förläningen Grensfortet - Projektstatus
 
 **Typ:** Region/Förläning
 **Startdatum:** 2026-02-03
-**Senast uppdaterad:** 2026-02-03
+**Senast uppdaterad:** 2026-03-01
 
 ---
 
 ## NUVARANDE STATUS
 
-**Fas:** 2 av 7 (Research)
-**Progress:** 40%
-**Status:** Samlar material, ekonomi korrigerad, väntar på Johans input om NPCs
+**Fas:** 7 av 7 (Klar)
+**Progress:** 100%
+**Status:** ✅ KOMPLETT - Omdöpt från "Grens Baroneri" till "Förläningen Grensfortet"
 
 ---
 
@@ -19,12 +19,12 @@
 | Fas | Namn | Status | Kommentar |
 |-----|------|--------|-----------|
 | 1 | Syfte & Koncept | ✅ Klar | Förläning för spelarkaraktärerna |
-| 2 | Research | 🔄 Pågår | NotebookLM klar, Vitterdal-data hämtad, validering mot krönika klar |
-| 3 | Grundstruktur | ⬜ Ej startad | grens_baroneri_oversikt.md finns men behöver mer material |
-| 4 | Kärnan | ⬜ Ej startad | Väntar på Johans input om NPCs och befolkning |
-| 5 | Detaljer | ⬜ Ej startad | |
-| 6 | Validering | ⬜ Ej startad | |
-| 7 | Avslut | ⬜ Ej startad | HTML-sida byggs sist |
+| 2 | Research | ✅ Klar | NotebookLM klar, Vitterdal-data hämtad, validering mot krönika klar |
+| 3 | Grundstruktur | ✅ Klar | |
+| 4 | Kärnan | ✅ Klar | |
+| 5 | Detaljer | ✅ Klar | HTML-sida skapad med full innehåll |
+| 6 | Validering | ✅ Klar | Validerat mot kampanjkrönika.md |
+| 7 | Avslut | ✅ Klar | Omdöpt till "Förläningen Grensfortet" (2026-03-01) |
 
 ---
 
