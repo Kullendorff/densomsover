@@ -3,7 +3,7 @@
 
 ## GRUNDLÄGGANDE INFORMATION
 
-**Förläningstyp:** Litet Baroneri (Län på tjänst)  
+**Förläningstyp:** Gränsförläning (Vasalltjänst)  
 **Lensherre:** Jarl Hagge av Vitterdal  
 **Vasaller:** Gordon, Umnatak, Kazrik, Zentri, Arcadius  
 **Geografiskt läge:** Bergsterräng vid gränsen mellan Cermira och Mithera  
@@ -91,7 +91,7 @@ Ofria bönder betalar genom arbete utöver avrad (hyra). Enligt Riddaren-reglern
 - **Normalbörda:** 80 dagsverken/år per ofri bonde
 - **Tyrannisk herre:** Upp till 120 dagsverken/år (ökar missnöje och upprorsrisk)
 
-**Grens Baroneris dagsverken:**
+**Förläningen Grensfortets dagsverken:**
 | By | Ofria bönder | Dagsverken/år | Användning |
 |----|--------------|---------------|------------|
 | Frisänkan | 36 | 2 880 | Vägunderhåll, fiske, transporter |
@@ -108,7 +108,7 @@ Ofria bönder betalar genom arbete utöver avrad (hyra). Enligt Riddaren-reglern
 ### TIONDE (Religiös skatt)
 Enligt Riddaren-reglerna ska 1/10 av bondeklassens produktion gå till kyrkan.
 
-**Problem i Grens Baroneri:**
+**Problem i Förläningen Grensfortet:**
 | By | Religion | Tionde till... | Status |
 |----|----------|----------------|--------|
 | Bergvik | Daak (traditionell) | Daak-kyrkan | Fungerar normalt |
@@ -123,12 +123,12 @@ Enligt Riddaren-reglerna ska 1/10 av bondeklassens produktion gå till kyrkan.
    - Inget tempel → ingen tiondeinsamling
    - Flyktingarna oroliga över "gudlösheten"
    - **Potential:** Bygga ett litet Daak-kapell kan lugna dem
-3. **Framtida problem:** Om baroneriet växer, kommer Daak-kyrkan kräva formell tiondeuppbörd
+3. **Framtida problem:** Om förläningen växer, kommer Daak-kyrkan kräva formell tiondeuppbörd
 
 ### AVRAD (Hyra för jord)
 Ofria bönder (landbor) betalar avrad för jorden de brukar:
 - Beräknas på tunnland × jordkvalitet × beteskvalitet
-- I Grens Baroneri: Främst betalat i naturaprodukter (fisk, timmer, kött)
+- I Förläningen Grensfortet: Främst betalat i naturaprodukter (fisk, timmer, kött)
 - **Bergvik:** Timmer och jaktprodukter
 - **Frisänkan:** Fisk och begränsat jordbruk
 
@@ -167,7 +167,7 @@ Ofria bönder (landbor) betalar avrad för jorden de brukar:
 | Utgifter | 27-32 | 11 |
 | **Netto** | **+2 till +15** | **-4 till -7** |
 
-**Status:** Baroneriet har ett **måttligt Bas-överskott** men ett **Lyx-underskott**.
+**Status:** Förläninget har ett **måttligt Bas-överskott** men ett **Lyx-underskott**.
 
 **Konsekvenser av Lyx-underskottet:**
 - Vasallerna kan inte upprätthålla "Gott leverne" utan att sälja Bas eller silver
@@ -283,7 +283,7 @@ Under spelarnas frånvaro har Eira Holm, trots sin trauma och självtvivel, tagi
 - **Svaghet:** Fortfarande begränsad garnison
 
 ### LEGOKOMPANI-POTENTIAL (Korrigerad)
-Med **+2 till +15 Bas/år** överskott (beroende på år) kan baroneriet finansiera:
+Med **+2 till +15 Bas/år** överskott (beroende på år) kan förläningen finansiera:
 
 | Överskott | Fotsoldater | Alternativ |
 |-----------|-------------|------------|
@@ -302,7 +302,7 @@ Enligt cermiranska traditioner:
 - Byar bidrar med värnpliktiga vid hot (inte permanent)
 - **Dvärgar:** ALLA myndiga dvärgar är värnpliktiga (relevant för Klan Ghor-kontakten!)
 
-**Grens Baroneris värnplikt:**
+**Förläningen Grensfortets värnplikt:**
 - Bergvik: ~10 stridsdugliga (lojala, kommer snabbt)
 - Frisänkan: ~10 stridsdugliga (motvilliga, kommer om hotet är tydligt)
 - Flyktingar på fortet: 8 med stridserfarenhet
@@ -341,7 +341,7 @@ Enligt cermiranska traditioner:
 **Arvorns Hammare:**
 - **Status:** Intern splittring efter Corvus/Arcadius desertering
 - **Hot:** Kommendör Aldrich Järnkors har förklarat Arcadius "fallen"
-- **Osäkerhet:** Oklart om orden kommer agera mot baroneriet
+- **Osäkerhet:** Oklart om orden kommer agera mot förläningen
 
 **St. Kiras Riddare:**
 - **Status:** Nyfikna och respektfulla
@@ -427,7 +427,7 @@ Enligt cermiranska traditioner:
 - **Frisänkan:** Öka samarbete och skatteintäkter
 
 ### LÅNGSIKTIGT (Flera år)
-- **Regional maktfaktor:** Respekterat baroneri med militär styrka
+- **Regional maktfaktor:** Respekterad gränsförläning med militär styrka
 - **Skugglandet-expert:** Unik position med Zentris kunskap
 - **Ekonomisk expansion:** Exploatera mineraler i bergen
 - **Politisk påverkan:** Stödja Hagge som stark jarl
@@ -446,4 +446,4 @@ Ett ungt men formellt legitimerat baroneri med solida fundamenta. Framgången be
 
 Eira och de andra har överlev
 
-t och hållit samman - nu krävs verkligt ledarskap för att göra Grens Baroneri till något bestående.
+t och hållit samman - nu krävs verkligt ledarskap för att göra Förläningen Grensfortet till något bestående.

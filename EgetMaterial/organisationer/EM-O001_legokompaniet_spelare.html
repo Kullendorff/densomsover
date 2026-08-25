@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravens Legionärer — Gordons guide</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #f4e8d8;
+            color: #3d2817;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .page-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 4rem 3rem;
+            background: #faf6f0;
+            box-shadow: 0 0 40px rgba(61, 40, 23, 0.15);
+            border: 1px solid #d4c4b0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            border-bottom: 3px double #8b6f47;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #6d5d4b;
+            margin-bottom: 1rem;
+        }
+
+        .meta {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: #8b6f47;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        nav {
+            background: #f0e6d6;
+            border: 1px solid #d4c4b0;
+            padding: 1rem;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
+        }
+
+        nav a {
+            color: #704214;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.3rem 0.5rem;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        nav a:hover {
+            background: #e8dcc8;
+            color: #2c1810;
+        }
+
+        .nav-sep {
+            color: #b8985e;
+            font-size: 1rem;
+            padding: 0;
+            list-style: none;
+            user-select: none;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8b6f47;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #3d2817;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #704214;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Atmosphere quote */
+        .atmosphere {
+            background: #f0e6d6;
+            border-left: 4px solid #8b6f47;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #5d4d3b;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Info box */
+        .info-box {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: inset 0 0 10px rgba(139, 111, 71, 0.1);
+            border-radius: 4px;
+        }
+
+        .info-box strong {
+            color: #704214;
+            font-weight: 600;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background: #f9e6e0;
+            border: 2px solid #a85442;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box strong {
+            color: #8b2e1f;
+            font-weight: 700;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin: 0.6rem 0;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #ffffff;
+            border: 2px solid #d4c4b0;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #d4c4b0;
+        }
+
+        th {
+            background: #f0e6d6;
+            color: #2c1810;
+            font-weight: 700;
+        }
+
+        tr:hover {
+            background: #faf6f0;
+        }
+
+        /* Data table (smaller) */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #ffffff;
+            border: 2px solid #d4c4b0;
+            font-size: 0.92rem;
+        }
+        .data-table th {
+            background: #f0e6d6;
+            color: #2c1810;
+            font-weight: 700;
+            padding: 0.7rem 1rem;
+            border-bottom: 1px solid #d4c4b0;
+        }
+        .data-table td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid #e8dcc8;
+            vertical-align: top;
+        }
+        .data-table td:first-child {
+            font-weight: 600;
+            color: #704214;
+            white-space: nowrap;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 3px double #8b6f47;
+            padding-top: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            color: #6d5d4b;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        /* Divider */
+        .divider {
+            text-align: center;
+            margin: 2rem 0;
+            color: #8b6f47;
+            font-size: 1.5rem;
+        }
+
+        /* Artiklar */
+        .articles-section {
+            background: #faf6f0;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .articles-title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 0.3rem;
+        }
+        .articles-subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #6d5d4b;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        .article-item {
+            border-bottom: 1px solid #d4c4b0;
+            padding: 0.8rem 0;
+        }
+        .article-item:last-child {
+            border-bottom: none;
+        }
+        .article-heading {
+            font-weight: 700;
+            color: #704214;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Kompani-kort */
+        .company-card {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-left: 4px solid #704214;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+        .company-card h4 {
+            color: #704214;
+            margin-top: 0;
+            font-size: 1.4rem;
+            margin-bottom: 0.3rem;
+        }
+        .company-meta {
+            color: #8b6f47;
+            font-size: 0.88rem;
+            margin: 0.4rem 0 0.8rem 0;
+            font-style: italic;
+        }
+        .company-status-kanon {
+            display: inline-block;
+            background: #e8d4a0;
+            color: #5a3a10;
+            font-size: 0.72rem;
+            padding: 0.15em 0.5em;
+            border-radius: 3px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border: 1px solid #b8985e;
+            margin-right: 0.4em;
+        }
+        .company-status-eget {
+            display: inline-block;
+            background: #e0e8d4;
+            color: #2d4a1a;
+            font-size: 0.72rem;
+            padding: 0.15em 0.5em;
+            border-radius: 3px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border: 1px solid #7a9850;
+            margin-right: 0.4em;
+        }
+
+        /* Spelteknisk ruta */
+        .mechanics-box {
+            background: #e8f0e0;
+            border: 2px solid #5a7a40;
+            border-left: 4px solid #3d5a28;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .mechanics-box strong {
+            color: #2d4a1a;
+            display: block;
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.06em;
+        }
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        .checklist li {
+            padding: 0.3rem 0;
+            padding-left: 1.8rem;
+            position: relative;
+            margin: 0;
+        }
+        .checklist li::before {
+            content: '☐';
+            position: absolute;
+            left: 0;
+            color: #5a7a40;
+        }
+        .checklist li.done::before {
+            content: '✓';
+            color: #2d4a1a;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-container {
+                margin: 0;
+                padding: 2rem 1.5rem;
+                border: none;
+            }
+            h1 { font-size: 2.5rem; }
+            nav ul { flex-direction: column; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+
+        <header>
+            <h1>Gravens Legionärer</h1>
+            <div class="subtitle">Gordons guide till att starta ett kompani</div>
+            <div class="meta">Gordon Nahrzezia &nbsp;&bull;&nbsp; Grensfortet &nbsp;&bull;&nbsp; Cirefalier, f.d. Stålsvärdskavalerister</div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">&larr; Dashboard</a></li>
+                <li class="nav-sep">|</li>
+                <li><a href="#del1">Gordons läge</a></li>
+                <li><a href="#del2">Speltekniskt</a></li>
+                <li><a href="#del3">Livet i kompaniet</a></li>
+                <li><a href="#del4">Att leda</a></li>
+                <li><a href="#del5">Starta kompaniet</a></li>
+                <li><a href="#del6">Artiklarna</a></li>
+                <li><a href="#del7">Kompanikatalog</a></li>
+            </ul>
+        </nav>
+
+        <!-- ============================================================ -->
+        <!-- DEL 1: GORDONS UTGÅNGSLÄGE -->
+        <!-- ============================================================ -->
+
+        <div class="section" id="del1">
+            <h2>Del 1: Gordons utgångsläge</h2>
+
+            <div class="atmosphere">
+                <strong>Grensfortet hade aldrig varit vackert.</strong> Men nu, med rök från tre skorstenar och isen i Skugglandet fortfarande sval i fingrarna, stod Gordon och tittade på stenmurarna och tänkte ett tanke han inte velat tänka: <em>vi är redan ett kompani</em>. Vi har alltid varit det. Vi saknade bara pappren.
+            </div>
+
+            <h3>1.1 Vem du är</h3>
+
+            <p>Gordon Nahrzezia. Cirefalier, ~30 år. Du lämnade din familjs gård i norra Vambolien som tonåring för att söka lyckan som legosoldat. Drivkraften är enkel: tjäna tillräckligt för att pensionera sig och återvända hem.</p>
+
+            <p>Det gamla jobbet — Stålsvärds Kavalerister under Kapten Kaelar Stålsvärd — är ett avslutat kapitel. Stålsvärd är nu fast anställd hos jarl Hadrian i Vitterdal. Kompaniet existerar inte längre i sin gamla form. Men det du fick med dig är ditt: ett kontaktnätverk, en förståelse för hur kompanier faktiskt fungerar, och ett rykte som är bättre än ingenting.</p>
+
+            <div class="info-box">
+                <strong>Vad du har med dig från Stålsvärds Kavalerister:</strong>
+                <ul style="margin-top:0.5rem;">
+                    <li>200 silver/månad i lön (din senaste rank som kavalleri-officer)</li>
+                    <li>Permission med en revers på 600 silver utställd av Serafina Eldstav</li>
+                    <li>Kontakter bland f.d. kollegor i kompaniet &mdash; folk som nu letar ny anknytning</li>
+                    <li>Cirefalisk affärspraxis och kulturell förankring som öppnar vissa dörrar</li>
+                    <li>Förtrogenhet med Cermira/Mithera-terrängen</li>
+                </ul>
+            </div>
+
+            <h3>1.2 Gruppen &mdash; vad du faktiskt har</h3>
+
+            <p>Du är inte ensam. Gruppen är i praktiken redan ett kompani. Det saknas bara pappren och ett namn.</p>
+
+            <div class="info-box">
+                <strong>Kärngruppen vid Grensfortet:</strong>
+                <ul style="margin-top:0.5rem;">
+                    <li><strong>Gordon Nahrzezia (du):</strong> Ledarskapserfarenhet, cirefaliskt kontaktnätverk, känd i regionen.</li>
+                    <li><strong>Thrakka "Järnhanden":</strong> Tirak, f.d. gladiator och livvakt. Exceptionell stridsskicklighet. Rykte som skrämmer folk &mdash; det är ett verktyg, inte ett problem.</li>
+                    <li><strong>Corvus Askhar:</strong> F.d. kommendör i Arvorns Hammare. Operationell tänkare, administrativ erfarenhet. Bäst av er tre på att planera.</li>
+                    <li><strong>Umnatak:</strong> Auser, spejare och schaman. Oöverträffad i spaning och spårning. Schamanistiska förmågor är ett unikt tillgång.</li>
+                    <li><strong>Kazrik klan Ghor:</strong> Dvärg, resande författare med diplomatiska kontakter. Kan sannolikt täcka administration och bokhållning.</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <strong>Det ni saknar:</strong>
+                <ul style="margin-top:0.5rem;">
+                    <li>Inget startkapital utöver vad ni har med er.</li>
+                    <li>Grensfortets position: perifert, kallt, liten lokal marknad för kontrakt.</li>
+                    <li>Tre starka ledarskapsinstinkter (Gordon, Corvus, Thrakka) &mdash; kommandostrukturen behöver klargöras tidigt.</li>
+                    <li>Inget officiellt erkännande &mdash; ännu.</li>
+                </ul>
+            </div>
+
+            <h3>1.3 Kompaniets naturliga nisch</h3>
+
+            <p>Ni är inte en frontstyrkka mot en organiserad armé. Ni är inte en garnison. Vad ni faktiskt är: en <strong>liten, rörlig styrka med ovanligt hög kompetens</strong> per man. Umnataks spejing, Corvus operationella tänkande, Thrakkas stridsförmåga, Gordons ledarskap &mdash; det är mer än de flesta kompanidubbletter på 20 man kan erbjuda.</p>
+
+            <p>Nischen: uppdrag som kräver kompetens och diskretion snarare än antal. Kontrakt som inte ska synas. Situationer där kvalitet väger tyngre än kvantitet.</p>
+        </div>
+
+        <div class="divider">&#9876;</div>
+
+        <!-- ============================================================ -->
+        <!-- DEL 2: SPELTEKNISKT -->
+        <!-- ============================================================ -->
+
+        <div class="section" id="del2">
+            <h2>Del 2: Speltekniskt &mdash; vad Gordon faktiskt behöver</h2>
+
+            <p>Det här avsnittet är ditt. Rollspelet och mekaniken separerat så du kan se exakt vad som gäller.</p>
+
+            <h3>2.1 Nyckelfärdigheter för en kompanibefälhavare</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Färdighet</th>
+                        <th>Varför det spelar roll</th>
+                        <th>Slag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ledarskap</strong></td>
+                        <td>Hur många soldater du kan kontrollera direkt. Moralslag för att hindra flykt. Kärnfärdigheten.</td>
+                        <td>Ob2T6 (lydiga) / Ob4T6 (okända)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Krigsföring</strong></td>
+                        <td>Taktik och strategi. I strid avgör det lägsta av Krigsföring/Stridsvana hur väl order genomförs.</td>
+                        <td>Ob3T6 normalsvårt</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stridsvana</strong></td>
+                        <td>VINIT, Insikt, motståndsslag vid utmattning. Påverkar stridsprestanda direkt.</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Övertala</strong></td>
+                        <td>Kontraktsförhandlingar, kontroversiella beslut. Spec: Köpslå (priser) och Argumentation (tvister).</td>
+                        <td>Ob3T6 normalsvårt</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diplomati</strong></td>
+                        <td>Mellanhänder, kulturkännedom, känsliga budskap &mdash; viktig för adelskontakter.</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Handel</strong></td>
+                        <td>Hitta investerare, köpa förnödenheter billigare.</td>
+                        <td>&mdash;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Speja</strong></td>
+                        <td>Underrättelser och fiendepositioner. Kompletterar Umnataks förmåga.</td>
+                        <td>Ob3T6 normalsvårt</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><em>Bokhållning/Räkning och Lagkunskap (krigsrätt) behövs för administration och disciplin &mdash; men Kazrik kan sannolikt täcka det förstnämnda.</em></p>
+
+            <h3>2.2 Ledarskapsregeln &mdash; viktigt att förstå</h3>
+
+            <div class="mechanics-box">
+                <strong>Ledarskapsregeln</strong>
+                En befälhavare kan utan hjälp av underofficerare kontrollera <strong>4 &times; Ledarskap-nivå</strong> soldater direkt.<br><br>
+                Exempel: Ledarskap nivå 3 = max 12 man direkt. Ledarskap nivå 4 = max 16 man direkt.<br><br>
+                För fler soldater krävs underofficerare (serganter, korpraler) som buffertar. Varje sergeant hanterar sin grupp &mdash; du leder sergeanten, sergeanten leder gruppen.
+            </div>
+
+            <h3>2.3 Befordringskrav (EON-kanon)</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grad</th>
+                        <th>Krav</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Korpral</strong></td>
+                        <td>Ob3T6 mot Krigsföring + Ob3T6 mot Ledarskap</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sergeant</strong></td>
+                        <td>Ob3T6 mot Krigsföring + Ob4T6 mot Ledarskap</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kapten/Löjtnant</strong></td>
+                        <td>Ob4T6 mot Krigsföring + Ob4T6 mot Ledarskap</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Befordran är inte automatisk. Maximalt ett befordringsslag per år. En menig nomineras av befälet och måste sedan klara provet.</p>
+
+            <h3>2.4 Gordons prioriteringslista</h3>
+
+            <div class="mechanics-box">
+                <strong>Vad Gordon behöver &mdash; i prioritetsordning</strong>
+                <ul class="checklist" style="margin-top:0.8rem;">
+                    <li class="done"><strong>Ledarskap:</strong> höj till minst nivå 4 (= kontrollerar 16 man utan officerare) &mdash; kärnfärdigheten</li>
+                    <li class="done"><strong>Krigsföring:</strong> höj &mdash; styr taktiska slag i strid och sänker inte kompaniets utfall</li>
+                    <li><strong>Övertala/Köpslå:</strong> för kontraktsförhandlingar &mdash; Gordon är kompaniets ansikte utåt</li>
+                    <li><strong>Officiellt erkännande:</strong> via Hagge är den snabbaste vägen (se Del 5)</li>
+                    <li><strong>Bokhållning/Räkning:</strong> Kazrik täcker sannolikt detta &mdash; verifiera</li>
+                    <li><strong>Lagkunskap (krigsrätt):</strong> behövs för att döma disciplinärenden korrekt &mdash; lägre prioritet men viktig</li>
+                    <li><strong>Diplomati:</strong> viktigt för adelskontakter &mdash; Corvus är komplement här</li>
+                </ul>
+            </div>
+
+            <h3>2.5 Rollspel vs speltekniskt</h3>
+
+            <div class="info-box">
+                <strong>Rollspel &mdash; vad Gordon gör:</strong>
+                <ul style="margin-top:0.5rem;">
+                    <li>Förhandlar kontrakt, håller moralen uppe, fattar beslut under press</li>
+                    <li>Leder via personlig auktoritet och förtroende, inte titel</li>
+                    <li>Hanterar interna konflikter (tre starka personligheter = tre ledarinstinkter)</li>
+                    <li>Bygger kompaniets rykte uppdrag för uppdrag</li>
+                </ul>
+            </div>
+
+            <div class="mechanics-box">
+                <strong>Speltekniskt &mdash; vad som faktiskt slås:</strong>
+                <ul style="margin-top:0.5rem; list-style:disc; margin-left:1.5rem;">
+                    <li>Ledarskap: moralslag för truppen, kontrollgräns för antal soldater</li>
+                    <li>Krigsföring: taktiska beslut i strid, orderutförande</li>
+                    <li>Övertala/Köpslå: kontraktsförhandlingar, prispress</li>
+                    <li>Stridsvana: Gordons egna stridsprestanda</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider">&#8853;</div>
+
+        <!-- ============================================================ -->
+        <!-- DEL 3: LIVET I KOMPANIET -->
+        <!-- ============================================================ -->
+
+        <div class="section" id="del3">
+            <h2>Del 3: Livet i ett kompani &mdash; praktisk guide</h2>
+
+            <h3>3.1 Vad ett kompani faktiskt är</h3>
+
+            <p>En privat militär organisation som säljer stridstjänster mot betalning. Varken mer eller mindre. Det är inte ett riddarsällskap, inte ett brödraband av hjältar. Det är ett jobb, och jobbet handlar om organiserat våld mot betalning.</p>
+
+            <p>Storlek avgör allt: under 30 man är ni ett <em>litet kompani</em> &mdash; rörligare, mer personligt, varje förlust syns. Tre döda i ett regemente på hundra är ett bakslag. Tre döda i ett gäng på tolv är en katastrof.</p>
+
+            <h3>3.2 Hierarkin</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grad</th>
+                        <th>Funktion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Kapten / Löjtnant</strong></td>
+                        <td>Kontrakt, löner, extern kommunikation, taktik. Kompaniets ansikte utåt.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sergeant</strong></td>
+                        <td>Hanterar en grupp i fält. Är befälhavaren när befälhavaren är borta.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Korpral</strong></td>
+                        <td>Leder 5&ndash;8 man. Bär befälhavarskapets vikt i frontlinjen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Menig</strong></td>
+                        <td>Gör jobbet. Lyder order.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.3 Löner och betalning</h3>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Grad</th>
+                        <th>Sold per vecka</th>
+                        <th>Sold per månad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Menig</td>
+                        <td>10&ndash;30 silver</td>
+                        <td>~80 silver</td>
+                    </tr>
+                    <tr>
+                        <td>Korpral</td>
+                        <td>~30 silver</td>
+                        <td>~120 silver</td>
+                    </tr>
+                    <tr>
+                        <td>Sergeant</td>
+                        <td>~40 silver</td>
+                        <td>~160 silver</td>
+                    </tr>
+                    <tr>
+                        <td>Kapten/Löjtnant</td>
+                        <td>~50&ndash;60 silver</td>
+                        <td>~200&ndash;240 silver</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Gordons lön som kavalleri-officer i Stålsvärds:</strong> 200 silver/månad (bekräftat).</p>
+
+            <p><strong>50% betalas alltid i basvaror</strong> &mdash; mat, kläder, förnödenheter. Det är praxis, inte välgörenhet. En soldat som dricker upp hela sin lön är inte stridsberedd nästa morgon. Solden kan skäras i nödsituationer, men aldrig under 50%. Den gränsen är helig. Kompaniet som bryter den vaknar upp med hälften av soldaterna borta.</p>
+
+            <h4>Andelssystemet</h4>
+
+            <p>Plundring och byte fördelas så här: uppdragsgivaren tar 50% av allt byte. Resten fördelas i andelar:</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr><th>Grad</th><th>Andelar</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Menig</td><td>1 andel</td></tr>
+                    <tr><td>Korpral / Sergeant</td><td>2&ndash;3 andelar</td></tr>
+                    <tr><td>Officer / Löjtnant</td><td>4 andelar</td></tr>
+                </tbody>
+            </table>
+
+            <h4>Skadeersättning (tirakisk standard)</h4>
+
+            <table class="data-table">
+                <thead>
+                    <tr><th>Skada</th><th>Ersättning</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Hand eller ben</td><td>600 silver</td></tr>
+                    <tr><td>Båda händerna</td><td>1 800 silver</td></tr>
+                    <tr><td>Båda benen</td><td>1 500 silver</td></tr>
+                    <tr><td>Ett öga</td><td>100 silver</td></tr>
+                    <tr><td>Båda ögonen</td><td>2 000 silver</td></tr>
+                    <tr><td>Båda öronen</td><td>200 silver</td></tr>
+                </tbody>
+            </table>
+
+            <h3>3.4 Vardagen &mdash; det ingen romantiserar</h3>
+
+            <p>Fotfolk marscherar ~30 km per dag. Varje man bär upp mot 40 kg: vapen, sköld, tältelar, ransoner. Maten är gröt, bröd och saltat kött &mdash; smak är lyx, kalorier är nödvändighet. Löss är nästintill oundvikliga. Det är inget tecken på slarv, det är ett faktum av liv i nära kvarter.</p>
+
+            <p><strong>Sysslolösa soldater är ett problem.</strong> En legoknekt som inte har något att göra hittar på något att göra, och det är sällan konstruktivt. Håll dem upptuktade &mdash; med meningslösa uppgifter om nödvändigt.</p>
+
+            <h3>3.5 Moral och sammanhållning &mdash; vad som spränger ett kompani</h3>
+
+            <ul>
+                <li><strong>Opålitlig sold.</strong> Nummer ett, alltid. En man som inte fått betalt i sex veckor börjar räkna på vad hans lojalitet faktiskt är värd.</li>
+                <li><strong>Upplevd meningslöshet i förlusterna.</strong> Soldaterna förväntar sig att folk dör. De förväntar sig <em>inte</em> att dö för ingenting.</li>
+                <li><strong>Orättvisa i andelsfördelningen.</strong> "Varför fick han en extra andel och inte jag?" kan spräcka ett kompani.</li>
+                <li><strong>En sergeant som underminerar befälet.</strong> Det farligaste scenariot. Tecken: omtolkade order, historier om befälets felsteg vid lägerelden. Hantera det direkt och privat, tidigt.</li>
+            </ul>
+        </div>
+
+        <div class="divider">&#9876;</div>
+
+        <!-- ============================================================ -->
+        <!-- DEL 4: ATT LEDA -->
+        <!-- ============================================================ -->
+
+        <div class="section" id="del4">
+            <h2>Del 4: Att leda ett kompani</h2>
+
+            <div class="atmosphere">
+                <strong>Alla kan se när en kapten misslyckas i strid.</strong> Det syns i hur linjen viker, hur männen springer. Vad ingen ser är de tjugo beslut som fattades i veckan innan som gjorde det misslyckandet oundvikligt.
+            </div>
+
+            <h3>4.1 Vad jobbet faktiskt är</h3>
+
+            <p>Den romantiska bilden är en man i pansarskjorta som leder en attack, svärd i hand. Den bilden dödar ett kompani inom ett år.</p>
+
+            <ul>
+                <li><strong>40% administration:</strong> lön, kontrakt, utrustning, relationer med uppdragsgivare. En kapten som inte håller koll på kassan har ett kompani som imploderar i tysthet.</li>
+                <li><strong>30% psykologi:</strong> moral, missnöje, konflikter, vem som befordras, vem som måste sparkas.</li>
+                <li><strong>20% politik:</strong> uppdragsgivare, rivalerande kompanier, lokala auktoriteter, mäklare.</li>
+                <li><strong>10% strid:</strong> taktiska beslut, positionering, ledning under eld. Det här är det minsta av jobbet &mdash; men det enda som syns.</li>
+            </ul>
+
+            <h3>4.2 Rykte &mdash; den viktigaste valutan</h3>
+
+            <p>Rykte är det enda Gordon inte kan köpa. Det byggs så här:</p>
+
+            <ul>
+                <li>Leverera vad man lovat. Varje gång. Det är lägsta ribban.</li>
+                <li>Hantera kriser synligt och professionellt. Hur kompaniet beter sig när det går dåligt definierar ryktet mer än när det går bra.</li>
+                <li>Behandla soldaterna rättvist nog att de inte sprider dåliga historier när de lämnar.</li>
+                <li>Välj uppdragsgivare med omsorg. Man associeras med sin uppdragsgivare.</li>
+            </ul>
+
+            <p><strong>Utan rykte</strong> accepterar man de sämsta kontrakten till de sämsta priserna, och rekryterar de svagaste soldaterna. En nedåtspiral med klar slutpunkt.</p>
+
+            <h3>4.3 Kontrakt &mdash; vad du letar efter och vad du undviker</h3>
+
+            <p><strong>Bra kontrakt har:</strong></p>
+            <ul>
+                <li>Tydlig definition av uppgiften. "Skydda karavanen" är okej. "Stöd operationerna" är en fälla.</li>
+                <li>Klart slutdatum, eller tydlig exit-klausul.</li>
+                <li>Förskott: normalt hälften av totalsumman. Utan förskott finansierar du uppdragsgivarens risk.</li>
+                <li>Explicit ansvarsfördelning vid förluster.</li>
+            </ul>
+
+            <p><strong>Varningssignaler:</strong></p>
+            <ul>
+                <li>Uppdragsgivaren erbjuder 20% mer än marknadspris utan att förklara varför.</li>
+                <li>"Betalning vid uppdragets slut" &mdash; utan förskott.</li>
+                <li>Vaga formuleringar om "stöd" och "assistans".</li>
+                <li>Muntliga avtal med mäktiga uppdragsgivare. De har bättre advokater.</li>
+            </ul>
+
+            <p><em>Cirefaliskt talesätt: om det inte är nedskrivet finns det inte.</em></p>
+        </div>
+
+        <div class="divider">&#8853;</div>
+
+        <!-- ============================================================ -->
+        <!-- DEL 5: STARTA KOMPANIET -->
+        <!-- ============================================================ -->
+
+        <div class="section" id="del5">
+            <h2>Del 5: Starta kompaniet &mdash; steg för steg</h2>
+
+            <h3>5.1 Steg-för-steg</h3>
+
+            <div class="info-box">
+                <strong>Steg 1: Klargör kommandostrukturen internt</strong><br>
+                Tre starka personligheter (Gordon, Corvus, Thrakka) med egna ledarinstinkter. Vem är kapten? Vem är löjtnant? Det behöver bestämmas <em>innan</em> kompaniet presenteras utåt. En kommandostruktur som är oklar internt syns direkt för uppdragsgivare och soldater.
+            </div>
+
+            <div class="info-box">
+                <strong>Steg 2: Kapital</strong><br>
+                Minimikostnad för att komma igång med 10&ndash;15 man med utrustning och en månads proviant: räkna med minst 2 000&ndash;3 000 silver. Utan hästar. Med hästar: tre gånger det.<br><br>
+                Möjliga källor: revers från Serafina (600 silver), kontrakt med förskott, investerare via Kazriks kontakter, ett uppdrag från Hagge med förskottsbetalning.
+            </div>
+
+            <div class="info-box">
+                <strong>Steg 3: Det första kontraktet</strong><br>
+                Utan rykte tar man det kontrakt man kan få. Eskort, vakttjänst, patruller. Leverera kompetent och i tid. Det första uppdraget handlar inte om pengar &mdash; det handlar om att bevisa att kompaniet existerar och fungerar.
+            </div>
+
+            <div class="info-box">
+                <strong>Steg 4: Identitet</strong><br>
+                Namn, standar, eventuellt ett emblem. Det är inte ytlighet &mdash; det är märkning. Uppdragsgivare ska kunna identifiera kompaniet. Soldaterna ska kunna identifiera sig med något.
+            </div>
+
+            <h3>5.2 Juridiskt erkännande &mdash; Cermira-situationen</h3>
+
+            <p>Att operera lagligt i Cermira kräver:</p>
+            <ul>
+                <li>Officiella dokument + preliminärt förläningsbrev från en jarl</li>
+                <li>Erkännande av Lantrådet</li>
+            </ul>
+
+            <div class="mechanics-box">
+                <strong>Genvägen: Hagge</strong>
+                Att utföra ett uppdrag för jarl Hadrian "Hagge" av Vitterdal ger officiellt erkännande. Hagge kan utfärda ett förläningsbrev och ge kompaniet en titel ("Vitterdals Hederskompani" eller liknande). Det är den snabbaste vägen till legal status &mdash; och Hagge är en kontakt gruppen redan har.<br><br>
+                <strong>OBS:</strong> Stålsvärdskavaleristerna sitter redan hos Hagge. Det gör Vitterdals hov till ett andrahandsval som fast uppdragsgivare &mdash; men ett enstaka erkännandeuppdrag är fortfarande möjligt.
+            </div>
+
+            <h3>5.3 Vem ni bör söka kontakt med &mdash; och vem ni bör undvika</h3>
+
+            <p><strong>Naturliga uppdragsgivare:</strong></p>
+            <ul>
+                <li>Grensfortets borgledning &mdash; lokal kontakt, kortsiktigt</li>
+                <li>Handelshus längs Cermira/Mithera-gränsen</li>
+                <li>Cirefaliska handelsnätverk via Gordon</li>
+                <li>Hagge för juridiskt erkännande (se ovan)</li>
+            </ul>
+
+            <p><strong>Undvik:</strong></p>
+            <ul>
+                <li><strong>Arvorns Hammare.</strong> Uppenbara skäl &mdash; Corvus bakgrund gör gruppen till ett mål.</li>
+                <li><strong>Zorian-orden (Systrarna).</strong> Komplex och opålitlig. De har jagat gruppen. Ingen anledning att ge dem fler verktyg.</li>
+                <li><strong>Jargiska uppdrag.</strong> Magikunniga är förbjudna, och Corvus klassas troligen som politiskt suspekt av kejsardömet.</li>
+                <li><strong>Damarien-kontrakt för nu.</strong> Tills ni vet mer om Gordons bror Ethan och Bronshjälmarnas situation.</li>
+            </ul>
+
+            <h3>5.4 Rekrytering</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Typ</th>
+                        <th>Varför de söker sig hit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Veteraner från Grensfortet</td>
+                        <td>Känner terrängen, inget bättre alternativ, Gordons rykte är känt lokalt</td>
+                    </tr>
+                    <tr>
+                        <td>F.d. Stålsvärds-kontakter</td>
+                        <td>Kompaniet upplöstes; folk letar ny anknytning</td>
+                    </tr>
+                    <tr>
+                        <td>Cirefaliska legosoldater</td>
+                        <td>Gordons etniska bakgrund skapar naturlig rekryteringsbas</td>
+                    </tr>
+                    <tr>
+                        <td>Specialister (läkare, magiker)</td>
+                        <td>Litet kompani = mer inflytande och bättre andelsutfall per person</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="divider">&#9876;</div>
+
+        <!-- ============================================================ -->
+        <!-- DEL 6: ARTIKLARNA -->
+        <!-- ============================================================ -->
+
+        <div class="section" id="del6">
+            <h2>Del 6: Artiklarna &mdash; Gordons utkast</h2>
+
+            <p>Det här är ett utkast. Inte ett färdigt dokument. Gordon har skissat på det, strukit om, lagt till. Det bär med sig spåren av tio år som legosoldat &mdash; av vad som fungerar och vad som inte gör det. Artiklarna är råare än vad ett etablerat kompani skulle presentera, men de är ärliga.</p>
+
+            <div class="articles-section">
+                <div class="articles-title">Artiklar för [Kompaninamn]</div>
+                <div class="articles-subtitle">Utkast &mdash; Grensfortet &mdash; undertecknas av kompaniets kärnmedlemmar vid grundandet</div>
+
+                <div class="article-item">
+                    <div class="article-heading">Artikel I &mdash; Sold och betalning</div>
+                    <p>Varje man erhåller sin avtalade sold. Betalning sker månadsvis, hälften i basvaror. Vid nödsituation kan solden tillfälligt reduceras, men aldrig under 50 procent, och aldrig utan förklaring inför kompaniet. Det är inte en diskussion &mdash; det är en gräns.</p>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-heading">Artikel II &mdash; Byte och andelar</div>
+                    <p>Byte från uppdrag fördelas efter andelssystemet: meniga en andel, underofficerare två till tre, officer fyra. Uppdragsgivarens andel (50%) avräknas alltid först. Extra andelar kan ges vid exceptionell insats &mdash; befälhavaren godkänner det, inget annat. Inga förhandlingar om andelar under pågående operation. Det ämnet väntar tills vi är hemma.</p>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-heading">Artikel III &mdash; Disciplin</div>
+                    <p>Kompaniet lyder militärrätt under operation. Befälhavaren har rätt att utdöma straff upp till och inklusive prygel utan rättegång vid uppenbara brott. Dödsstraff kräver befälhavaren och bägge serganternas samtycke &mdash; utom vid omedelbart förräderi, då behövs ingen rösträkning.</p>
+                    <p>Brott som medför dödsstraff: mord inom kompaniet, öppen ordervägran under strid, stöld från befäl, förräderi mot uppdragsgivare. Det är en kort lista. Det är avsiktligt.</p>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-heading">Artikel IV &mdash; Skador och kompensation</div>
+                    <p>Kompaniet utbetalar skadeersättning enligt tirakisk standard för permanenta skador ådragits under uppdrag. Vid dödsfall: en månads sold till namngiven anhörig, om sådan angetts vid rekrytering. Om ingen anhörig angivits: andelen går till kompaniets nödfond.</p>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-heading">Artikel V &mdash; Lojalitet och sekretess</div>
+                    <p>Uppdragets detaljer är inte för utomstående. En man som säljer information om kompaniet eller dess kontrakt har satt sig själv utanför artiklarna. Det finns inga grader av förräderi. Det finns bara förräderi.</p>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-heading">Artikel VI &mdash; Utträde</div>
+                    <p>En man kan lämna med en månads varsel, under förutsättning att det inte sker under pågående operation. En man som lämnar utan varsel under operation kan hämtas tillbaka. Inga undantag. Artikeln gäller oavsett vad mannen tyckte om beslutet som fick honom att vilja lämna.</p>
+                </div>
+
+                <div class="article-item">
+                    <div class="article-heading">Artikel VII &mdash; Befälhavaren</div>
+                    <p>Befälhavaren fattar slutliga beslut i alla frågor. Han är ansvarig för ekonomin, kontrakten och de externa relationerna. Han kan avsättas om samtliga underofficerare och mer än hälften av kompaniet röstar för det vid ett formellt möte. Inte annars. Inte av en enskild man. Och definitivt inte i fält.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">&#8853;</div>
+
+        <!-- ============================================================ -->
+        <!-- DEL 7: KOMPANIKATALOG -->
+        <!-- ============================================================ -->
+
+        <div class="section" id="del7">
+            <h2>Del 7: Kompanikatalog &mdash; vad Gordon vet</h2>
+
+            <div class="atmosphere">
+                <em>&ldquo;Lär dig namnen. Inte för att det är vackert &mdash; för att det är nödvändigt. Du vill veta vem som tar betalt för att döda dig, och du vill veta om de brukar leverera.&rdquo;</em>
+                <p style="margin-top:0.8rem; margin-bottom:0; font-size:0.9rem; color:#8b6f47;">&mdash; Okänd, attribuerad till ett dussin befälhavare</p>
+            </div>
+
+            <p>Det här är vad Gordon vet &mdash; rykte, mäklarprat, historier från lägerelden. Inte hårda fakta. Befälhavare dör. Kompanistorlekar förändras. Informationen är så exakt som rykten tillåter.</p>
+
+            <p><em>Använd som referens, inte som löfte.</em></p>
+
+            <h3>Etablerade kompanier (bekräftade i mäklarregister)</h3>
+
+            <div class="company-card">
+                <h4>Gragg Ragars knektar <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Bas: Perina, Pereine &nbsp;&bull;&nbsp; Region: Pereine / Colonan &nbsp;&bull;&nbsp; ~100 man</div>
+                <p>Hundra tiraker. Tyng infanteri med en befälhavare som sägs vara en av världens mäktigaste kämpar. Hyr du dessa betalar du mycket, och du får något som krossar det du pekar på. Inget kompani för diskretion. Allt kompani för att något behöver krossas.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Korparna <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Kapten: Dann Casen &nbsp;&bull;&nbsp; Bas: Drunok / Caserion-området &nbsp;&bull;&nbsp; ~20 man</div>
+                <p>Nästan hälften kvinnor &mdash; det är detaljen folk fastnar vid, och det är fel detalj att fastna vid. De är skickliga, rörliga, och vägrar sälja sig till Jargiens kejsardöme. Det är ett politiskt ställningstagande som definierar dem tydligare än deras stridsstil. Om ni behöver kontraguerilla i Asharien-regionen: fråga om Korparna först.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Ladovan Solmörkes kompani <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Kapten: Ladovan Solmörke &nbsp;&bull;&nbsp; Bas: Damarien &nbsp;&bull;&nbsp; 223 man</div>
+                <p>223 man med fullt spektrum &mdash; elitinfanteri, bågskyttar, kavalleri. Ett av få kompanjer som kan föra ett eget krig. Rykte: "brutala men effektiva", vilket är det bästa en uppdragsgivare kan hoppas på. Kontraktera bara om ni har råd och om ni inte vill veta detaljerna.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Blodsbröderna <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Fyra kapitelhus: Abin-Thukor, Hammarnäs, Cretén, Falano &nbsp;&bull;&nbsp; Hela Mundana</div>
+                <p>Ingen vet exakt hur många de är. Det är antagligen avsiktligt. De tar uppdrag som andra nekar &mdash; inte av oförmåga utan av princip. Det definierar deras rykte med precision. Undvik om ni vill hålla er borta från den typen av uppdragsgivarrelationer.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Vandrarna under stjärnan <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Kapten: "Gåtmästaren" (pyaralv) &nbsp;&bull;&nbsp; Inget fast högkvarter &nbsp;&bull;&nbsp; Rörliga</div>
+                <p>Att förhandla med Vandrarna är som att förhandla med ett eko. De svarar, men det är inte alltid klart vad svaret betyder. Effektiva i fält, säger de som anlitat dem. Svåra att avtala med. Förmodligen sant i båda fallen.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Barandu den rödes band <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Kapten: Barandu den röde &nbsp;&bull;&nbsp; Bas: Norr om Caserion &nbsp;&bull;&nbsp; ~12 man</div>
+                <p>Tolv man. Avståndsvapen och riddjur. Barandus raseri i strid är dokumenterat nog att det fungerar som ett taktiskt verktyg snarare än ett problem. De tar uppdrag av vem som helst med råd att betala.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Kopparmantlarna <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Kapten: Tydaros &nbsp;&bull;&nbsp; Bas: Jargiska kejsardömet &nbsp;&bull;&nbsp; 14 man</div>
+                <p>Fjorton man i roströda mantlar. Extremt disciplinerade. Sägs ha kopplingar till något obehagligt i Jargien &mdash; mäklarna berättar inte detaljerna, och du bör inte fråga för insistentant. Jargien är farlig av egna skäl. Undvik kontakt om ni inte har politisk förankring i regionen.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>De Röda Vargarna <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Kapten: Manzorra Enarm (drillmästare) &nbsp;&bull;&nbsp; Bas: Nära Tuzan Rim &nbsp;&bull;&nbsp; 100&ndash;200 i träning</div>
+                <p>Inte ett stridskompani. En fabrik. Råmaterial ankommer och lämnar sex månader senare som soldater. Om ni behöver utbildad grundtrupp och har tid: De Röda Vargarna är källan. Om ni behöver folk nu: leta på annat håll.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Lärkorna <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Fyra veteraner, ingen formell ledare &nbsp;&bull;&nbsp; Rörliga &nbsp;&bull;&nbsp; 4 man</div>
+                <p>Fyra erfarna prisjägare som slutat göra dumma saker och lever på den ekonomin. Kombinerad erfarenhet från fler kampanjer än de flesta befälhavare sett. Tar enklare uppdrag &mdash; med betoning på "enklare" &mdash; och de har självkännedom att skilja på vad som är lättare än det ser ut och vad som inte är det. En nisch som betalar sig.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Vindens systrar <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Kapten: Hawyana &nbsp;&bull;&nbsp; Bas: Tarkas / Mûhad-området &nbsp;&bull;&nbsp; Litet sällskap</div>
+                <p>I norra Mundana okända. I Tarkas och Mûhad respekterade &mdash; eller fruktade, beroende på vem man frågar. Deras värde är störst i regioner där deras kulturella förankring ger tillgång som pengar ensamt inte köper.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Svartkrokarna &amp; Xaghs spjutslungare <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Bas: Tiban, Takalorr &nbsp;&bull;&nbsp; Rivaliserande kompanier via mäklaragenturen "Svärden"</div>
+                <p>Två rivaliserande kompanier knutna till mäklarorganisationen "Svärden" i Tiban. Svartkrokarna: okänd organisation. Xaghs spjutslungare: tirakisk tradition, tung beväpning. Rivaliteten håller priserna rimliga. Kontakta via "Svärden" om kontrakt söks i Takalorr-regionen.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Bronshjälmarna <span class="company-status-kanon">Känt</span></h4>
+                <div class="company-meta">Bas: Damarien &nbsp;&bull;&nbsp; Storlek, specialitet: okänd</div>
+                <p>Det enda Gordon vet med säkerhet: hans bror Ethan tjänstgör som menig soldat i Bronshjälmarna. Allt annat är andrahandskällor. Kompaniet opererar i Damarien under en politisk situation som verkar mer instabil än vad officiella rapporter antyder. Det är information att ha &mdash; och en personlig risk att räkna med.</p>
+            </div>
+
+            <h3>Regionala kompanier (rykte och mäklarprat)</h3>
+
+            <div class="company-card">
+                <h4>Gråulvarna <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: Britta "Järnhäl" Tingfastdotter &nbsp;&bull;&nbsp; Norra Cermira / Drunok-gränsen &nbsp;&bull;&nbsp; 35&ndash;45 man</div>
+                <p>Pålitliga när snön ligger. Dyra om sommaren, och Britta förhandlar inte om priset. Vad ryktet säger om deras fångar? Fråga inte. Inte för att det är hemligt, utan för att det är bekvämare om frågan aldrig ställdes. Fiendskapen mot Arvorns Hammare är öppen &mdash; de erbjuder reducerat pris till alla som bekämpar dem. Det är ett tydligt politiskt ställningstagande.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Hammarsönernas Gille <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: Ulf Järnnäve &nbsp;&bull;&nbsp; Centrala Drunok &nbsp;&bull;&nbsp; 55&ndash;65 man</div>
+                <p>Inget kontrakt brutet på 47 år. Det är deras marknadsföring. Specialitet: befästningsarbete och belägringsstöd. Bäst i sin nisch norr om Colonan-gränsen. Järnnäve tar tre månaders ledighet per år utan förhandling &mdash; planera därefter.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Röda Nålarna <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: "Farassi" (cirefalisk kvinna, alias) &nbsp;&bull;&nbsp; Caserion / Soldarn / Västmark &nbsp;&bull;&nbsp; 18&ndash;22 man</div>
+                <p>Diskreta och förutsägbara i sin leverans &mdash; vilket är exakt vad en uppdragsgivare vill ha. Farassi har lämnat ett kontrakt som krävde massavrättning av civiler. Det berättar mer om henne än tio mäklarrecensioner. Cirefalisk bakgrund: ett naturligt kontaktnät för Gordon.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Soltändarnas Kompani <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: Radomar av Kressil (f.d. adelsman) &nbsp;&bull;&nbsp; Södra Soldarn / Asharien &nbsp;&bull;&nbsp; 40 man, 12 kavalleri</div>
+                <p>Rörliga och snabba i terräng där kavalleri fungerar. Radomars adliga bakgrund gör honom mer kompetent i salonger än de flesta befälhavare. Uppdragsgivare med tålamod för en viss sorts självtillit i kaptenrollen rapporterar goda resultat.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>De Fria Svärdsbärarna <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: Merete "Svarta ärret" Osensdóttir &nbsp;&bull;&nbsp; Norra Asharien &nbsp;&bull;&nbsp; 25&ndash;30 man</div>
+                <p>Tar kontrakt mot Vrimzikiel för halva normalpriset. Det är ett politiskt ställningstagande finansierat av deras andra uppdrag. Kompaniet stannar när det hettar till &mdash; en egenskap som inte kan tas för given.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Vattenmaskarna <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: Tomek "Trekroken" Balzarsen &nbsp;&bull;&nbsp; Längs Raunfloden, Drunok &nbsp;&bull;&nbsp; 30 man + 3 flodbåtar</div>
+                <p>Lokalt oundgängliga längs Raunfloden. Utanför Drunok har nästan ingen hört talas om dem &mdash; vilket verkar vara exakt vad Balzarsen föredrar. Tre flatbottnade flodbåtar ger dem kapacitet ingen annan i regionen har. Värde för den som rör sig längs vattenvägarna. Noll värde annars.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Nattörnarna <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: "Bokföraren" (alias &mdash; identitet okänd) &nbsp;&bull;&nbsp; Damarien / Soldarn &nbsp;&bull;&nbsp; 12 man</div>
+                <p>Mytologiserade i proportion till vad som faktiskt kan verifieras. Tolv man, aldrig fler &mdash; medveten kapacitetsgräns. Kontakt via tre mellanled minimum. Specialitet: uppdrag som inte kan annonseras öppet. Pris: ogenomskådligt. Möjlighet: om man har ett problem som inte kan synas.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Kopparsköldarna <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: Greigor Halvansen, ~60 år &nbsp;&bull;&nbsp; Västmark / Caserion &nbsp;&bull;&nbsp; 80 man</div>
+                <p>Klippor på ett slagfält som behöver hållas. Halvansen har inte förlorat en defensiv position på tjugo år. Besvärliga att kontraktera &mdash; Halvansen förhandlar inte sina villkor. En inre successionsfråga pyr: han är sextio, kompaniet har ingen utsedd efterföljare. Det påverkar inte nuvarande kapacitet men är information att ha.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Järntänder <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: Hrodnar Galdriksson klan Ghor hus Vargskägg &nbsp;&bull;&nbsp; Cermiras berg &nbsp;&bull;&nbsp; 15 dvärgar</div>
+                <p>Tre gånger marknadspris, tio sidor kontrakt, och sedan det omöjliga under jord. Femton dvärgar med djup förtrogenhet med Cermiras bergsmassivet. Klan Ghor &mdash; Kazrik delar klantillhörighet. Det kanske öppnar en dörr. Det kanske inte gör det. En familjekoppling garanterar ingenting.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>De Gråa Bröderna <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: Ostrik Valannen &nbsp;&bull;&nbsp; Norra Damarien / Soldarn &nbsp;&bull;&nbsp; 60 man</div>
+                <p>Tråkigt arbete gjort pålitligt: logistik, garnisonstjänst, provianttransporter. Inget dramatiskt rykte. Opererar i samma region som Bronshjälmarna. Om Gordon behöver information om brorens situation utan att kontakta Bronshjälmarna direkt &mdash; De Gråa Bröderna är en möjlig kanal. Hantera det med omsorg.</p>
+            </div>
+
+            <div class="company-card">
+                <h4>Bläckfiskarna <span class="company-status-eget">Regionalt känt</span></h4>
+                <div class="company-meta">Kapten: "Kapten" Sera Vandijk &nbsp;&bull;&nbsp; Västmarks hamnar (Rampor / Quilla) &nbsp;&bull;&nbsp; 25 man + 2 galjoter</div>
+                <p>Effektiva i Igonhavet. Kustförsvar och kontrapiratverksamhet &mdash; pappren är i ordning, och det är allt man kan säga om det med säkerhet. Galjoternas rörlighet är unik längs Nermádas norra kustlinje. Värde om kampanjen rör sig mot havet.</p>
+            </div>
+
+            <h3>Snabbreferens &mdash; alla kompanier</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kompani</th>
+                        <th>Storlek</th>
+                        <th>Region</th>
+                        <th>Specialitet</th>
+                        <th>Kostnad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Gragg Ragars knektar</td><td>~100</td><td>Pereine/Colonan</td><td>Tung infanteri, tiraker</td><td>Mycket hög</td></tr>
+                    <tr><td>Korparna</td><td>~20</td><td>Asharien/Caserion</td><td>Lätt infanteri, kontraguerilla</td><td>Medel</td></tr>
+                    <tr><td>Ladovan Solmörkes kompani</td><td>223</td><td>Damarien</td><td>Fullt spektrum</td><td>Mycket hög</td></tr>
+                    <tr><td>Blodsbröderna</td><td>Okänd</td><td>Hela Mundana</td><td>Inga uppdrag utesluts</td><td>Hög&ndash;Mycket hög</td></tr>
+                    <tr><td>Vandrarna under stjärnan</td><td>Litet</td><td>Rörliga</td><td>Filosofiskt, Aftonstjärnan</td><td>Okänd</td></tr>
+                    <tr><td>Barandu den rödes band</td><td>~12</td><td>Caserion/Thalamur</td><td>Avståndsvapen, riddjur</td><td>Medel</td></tr>
+                    <tr><td>Kopparmantlarna</td><td>14</td><td>Jargien</td><td>Disciplinerat infanteri</td><td>Hög</td></tr>
+                    <tr><td>De Röda Vargarna</td><td>100&ndash;200 (elever)</td><td>Caserion/Soldarn</td><td>Rekrytutbildning</td><td>Låg</td></tr>
+                    <tr><td>Lärkorna</td><td>4</td><td>Rörliga</td><td>Erfarenhet, enklare uppdrag</td><td>Medel</td></tr>
+                    <tr><td>Vindens systrar</td><td>Litet</td><td>Tarkas/Mûhad</td><td>Krigarkvinnor, livvakter</td><td>Hög</td></tr>
+                    <tr><td>Svartkrokarna</td><td>Okänd</td><td>Tiban/Takalorr</td><td>"Svärden"-agenturen</td><td>Medel&ndash;Hög</td></tr>
+                    <tr><td>Xaghs spjutslungare</td><td>Okänd</td><td>Tiban/Takalorr</td><td>Tirakisk tradition, tung</td><td>Medel&ndash;Hög</td></tr>
+                    <tr><td>Bronshjälmarna</td><td>Okänd</td><td>Damarien</td><td>Okänd (Ethan Nahrzezia)</td><td>Okänd</td></tr>
+                    <tr><td>Gråulvarna</td><td>35&ndash;45</td><td>Cermira/Drunok</td><td>Vinterkrigföring, skog</td><td>Hög (vinter)</td></tr>
+                    <tr><td>Hammarsönernas Gille</td><td>55&ndash;65</td><td>Drunok/södra Cermira</td><td>Befästning, belägring</td><td>Medel</td></tr>
+                    <tr><td>Röda Nålarna</td><td>18&ndash;22</td><td>Caserion/Soldarn</td><td>Armborstskytte, skärmytslare</td><td>Medel</td></tr>
+                    <tr><td>Soltändarnas Kompani</td><td>40 (12 kav.)</td><td>Soldarn/Asharien</td><td>Lätt kavalleri</td><td>Hög</td></tr>
+                    <tr><td>De Fria Svärdsbärarna</td><td>25&ndash;30</td><td>Norra Asharien</td><td>Kontraguerilla</td><td>Medel</td></tr>
+                    <tr><td>Vattenmaskarna</td><td>30 + 3 båtar</td><td>Drunoks flodnät</td><td>Flodeskorter, amfibisk</td><td>Medel</td></tr>
+                    <tr><td>Nattörnarna</td><td>12</td><td>Damarien/Soldarn</td><td>Kontraspionage</td><td>Mycket hög</td></tr>
+                    <tr><td>Kopparsköldarna</td><td>80</td><td>Västmark/Caserion</td><td>Defensiv linjestrid</td><td>Hög</td></tr>
+                    <tr><td>Järntänder</td><td>15 (dvärgar)</td><td>Cermiras berg</td><td>Bergsstrid, sprängning</td><td>Mycket hög</td></tr>
+                    <tr><td>De Gråa Bröderna</td><td>60</td><td>Damarien/Soldarn</td><td>Logistik, garnison</td><td>Medel</td></tr>
+                    <tr><td>Bläckfiskarna</td><td>25 + 2 galjoter</td><td>Igonhavet</td><td>Kustförsvar, kaperi</td><td>Hög</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>EM-O001_spelare &mdash; Gravens Legionärer (Spelarversion) v1.0</p>
+            <p>Gordon Nahrzezia &mdash; EON Kampanjwiki &mdash; 2026-04-21</p>
+        </footer>
+
+    </div>
+</body>
+</html>

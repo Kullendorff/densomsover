@@ -16,15 +16,17 @@
 - **Organisationer:** 0
 - **Föremål:** 0
 - **NPCs:** 0
+- **Organisationer:** 0
 - **Totalt färdigt:** 1
 
 ### Pågående projekt
-- **Aktiva projekt:** 1
+- **Aktiva projekt:** 2
+- **I fas 1 (Syfte & Koncept):** 1
 - **I fas 2 (Research):** 1
 - **I fas 3-5 (Skrivande):** 0
 - **I fas 6 (Validering):** 0
 
-**Senast uppdaterad:** 2026-02-03
+**Senast uppdaterad:** 2026-04-16
 
 ---
 
@@ -32,7 +34,25 @@
 
 *Projekt i `projekt/`-mappen som inte är färdiga ännu.*
 
-### EM-R002: Grens Baroneri
+### EM-O001: Legokompaniet - Guide & Katalog
+- **Typ:** Organisationsguide + Kompanikatalog
+- **Fas:** 1 av 7 (Syfte & Koncept klar → Fas 2 Research nästa)
+- **Progress:** 15%
+- **Status:** Projektmapp skapad, vision definierad, redo för research
+- **Nästa:** NotebookLM-queries (Krigsherren, befintliga kompanier, ekonomi)
+
+**Innehåll:**
+- Del 1: Guide - Livet i ett legokompani (det lilla kompaniet, 10-50 man)
+- Del 2: Guide - Att leda ett kompani (befälshavarens perspektiv)
+- Del 3: Gordons kompani (kampanjspecifikt - hur startar gruppen ett?)
+- Del 4: Kompanikatalog - Befintliga kompanier i Mundana
+
+**Frågor till Johan (innan Fas 3):**
+- Gordons tidigare kompaninamn (om det finns)?
+- Startar kompaniet i Bok 2 eller bara bakgrundsidé?
+- Vilken region ska vara bas initialt?
+
+### EM-R002: Förläningen Grensfortet
 - **Typ:** Region/Förläning
 - **Fas:** 2 av 7 (Research)
 - **Progress:** 40%
@@ -135,7 +155,11 @@ Task(
 
 ## 🏛️ ORGANISATIONER
 
-*Inga organisationer skapade ännu.*
+### EM-O001: Legokompaniet - Guide & Katalog 🔄 (Pågående)
+- **Typ:** Sourcebook (Guide + Katalog)
+- **Region:** Hela Mundana (fokus Cermira/Mithera initialt)
+- **Status:** Under produktion (Fas 1 klar)
+- **Kampanjstatus:** Kampanjspecifikt (Gordon & gruppen som potentiella kompanichefer)
 
 **Exempel:**
 ```markdown

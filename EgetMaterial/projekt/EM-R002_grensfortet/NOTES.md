@@ -1,4 +1,4 @@
-# EM-R002: Grens Baroneri - Anteckningar och Idéer
+# EM-R002: Förläningen Grensfortet - Anteckningar och Idéer
 
 **Syfte:** Flesha ut området kring Grensfortet för att göra det levande och intressant för kampanjspel.
 
@@ -6,7 +6,7 @@
 
 ## VISION
 
-Grens Baroneri ska kännas som en verklig plats där människor lever, arbetar, älskar och dör. Det är inte bara en kuliss - det är ett samhälle på gränsen till det okända, med alla konflikter och möjligheter det innebär.
+Förläningen Grensfortet ska kännas som en verklig plats där människor lever, arbetar, älskar och dör. Det är inte bara en kuliss - det är ett samhälle på gränsen till det okända, med alla konflikter och möjligheter det innebär.
 
 **Ton:** Gritty realism med underton av det övernaturliga. Folk kämpar för att överleva, men märkliga saker händer i skogen.
 
@@ -31,17 +31,17 @@ Grens Baroneri ska kännas som en verklig plats där människor lever, arbetar, 
 ### Förslag: Nya bybor
 
 **Fiskare-familjer:**
-- [ ] **Gamle Sigurd** (70+) - Den äldste fiskaren, minns "förr i tiden" när Grensfortet var bemannat. Berättar historier om vad som hände där. Respekteras av alla.
-- [ ] **Tilda och Orm Sjöberg** (40-tal, gifta) - Driver byns enda rökeri. Orm är tystlåten, Tilda pratar för två. Tre vuxna barn som alla fiskar.
-- [ ] **Enöga Klas** (50-tal) - Förlorade ett öga i en storm. Bästa navigatören i byn. Har sett saker ute på sjön som han vägrar prata om.
+- [x] **Gamle Sigurd** (70+) - ✅ Implementerad i `frisankan.md`
+- [x] **Tilda och Orm Sjöberg** (40-tal, gifta) - ✅ Implementerad i `frisankan.md`
+- [x] **Enöga Klas** (50-tal) - ✅ Implementerad i `frisankan.md`
 
 **Hantverkare:**
-- [ ] **Neta Båtbyggare** (45) - Enda som kan bygga och reparera båtar ordentligt. Envis, perfektionist. Hennes godkännande är nödvändigt för alla nya båtar.
-- [ ] **Kopparsansen** (60-tal, riktig namn okänt) - Gammal man som lagar allt av metall. Ryktas vara en förrymd från Jargien. Frågar man får man inget svar.
+- [x] **Neta Båtbyggare** (45) - ✅ Implementerad i `frisankan.md`
+- [x] **Kopparsansen** (60-tal) - ✅ Implementerad i `frisankan.md`
 
 **Speciella:**
-- [ ] **Stum-Maja** (20-tal) - Född stum, men bästa dykaren i byn. Kan stanna under vatten längre än normalt. Kommunicerar med tecken och skriftligt. Vet saker om sjöbotten som ingen annan.
-- [ ] **Gransen** (40-tal) - Halvgalen man som bor i utkanten. Påstår sig kunna "prata med fiskarna". Folk skrattar åt honom, men hans fiskelycka är oförklarligt god.
+- [x] **Stum-Maja** (20-tal) - ✅ Implementerad i `frisankan.md`
+- [x] **Gransen** (40-tal) - ✅ Implementerad i `frisankan.md`
 
 ### Atmosfär-element
 - Fiskebåtarna har namn (alla namnges efter döda släktingar)
@@ -78,17 +78,17 @@ Grens Baroneri ska kännas som en verklig plats där människor lever, arbetar, 
 ### Förslag: Nya bybor
 
 **Timmerhuggare:**
-- [ ] **Bror och Stig Tallgren** (30-tal, bröder) - Rivaliserande tvillingar. Tävlar om allt - vem som fäller flest träd, vem som dricker mest, vem som vinner Astrid Björnsdotters hjärta.
-- [ ] **Änke-Margit** (50-tal) - Hennes man dog i en olycka i skogen. Hon har fortsatt driva hans timmervagn ensam i tio år. Starkare än de flesta män.
-- [ ] **Ull Björnsson** (60-tal) - Veteran, förlorade tre fingrar i en såg. Kan inte hugga längre men lär ut tekniker till de unga. Bitvis bitter, bitvis vis.
+- [x] **Bror och Stig Tallgren** (30-tal, bröder) - ✅ Implementerad i `bergvik.md`
+- [x] **Änke-Margit** (50-tal) - ✅ Implementerad i `bergvik.md`
+- [x] **Ull Björnsson** (60-tal) - ✅ Implementerad i `bergvik.md`
 
 **Jägare:**
-- [ ] **Varg-Mika** (40-tal) - Kallas så för att hon en gång dödade en varg med bara händerna. Sanningen är mer komplicerad. Bästa spåraren i byn efter Olav Järnhand.
-- [ ] **Lille Per** (30-tal, stor som ett hus) - Ironiskt namn. Snäll jätte. Bär hem hela älgar ensam. Rädd för mörkret.
+- [x] **Varg-Mika** (40-tal) - ✅ Implementerad i `bergvik.md`
+- [x] **Lille Per** (30-tal) - ✅ Implementerad i `bergvik.md`
 
 **Speciella:**
-- [ ] **Kolaren Svart-Erik** (50-tal) - Bor i kolmilan utanför byn. Kommer bara in för att sälja kol och köpa öl. Folk viskar att han har sett De förändrade på nära håll.
-- [ ] **Trollbinderskan Rut** (70-tal) - Inte en häxa som Adisa, men kan "binda bort" småkrämpor. Accepterad av Daak-tron som "folklig tradition". Har ett öga på Grensfortets märkligheter.
+- [x] **Kolaren Svart-Erik** (50-tal) - ✅ Implementerad i `bergvik.md`
+- [x] **Trollbinderskan Rut** (70-tal) - ✅ Implementerad i `bergvik.md`
 
 ### Atmosfär-element
 - Ljudet av yxor som ekar genom dalen
@@ -109,25 +109,25 @@ Grens Baroneri ska kännas som en verklig plats där människor lever, arbetar, 
 
 ### Jägare och skogsfolk
 
-- [ ] **Grimme Jansen** (50-tal) - Ensam jägare med stuga 2 timmars vandring från Bergvik. Säljer pälsar och kött. Pratar inte om varför han lämnade Drunok för 20 år sedan. Tatuering på armen som han alltid döljer.
+- [x] **Grimme Jansen** (50-tal) - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **Systkonen Märta och Sten** (60-tal) - Syskon som bor tillsammans i en stuga halvvägs mellan Frisänkan och Bergvik. Aldrig gift, aldrig lämnat varandra. Samlar örter och svamp. Adisa besöker dem ibland.
+- [x] **Systkonen Märta och Sten** (60-tal) - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **Trädklättraren** (ålder okänd) - Ingen vet vad han heter eller var han kommer ifrån. Bor i en koja uppe i en jätteek. Klättrar ner för att byta kött mot verktyg. Pratar aldrig. Barn i byarna kallar honom "Ekansen".
+- [x] **Trädklättraren** (ålder okänd) - ✅ Implementerad i `trakten-omgivningar.md`
 
 ### Eremiter och udda existenser
 
-- [ ] **Broder Tomas** (40-tal) - Före detta Daak-präst som "förlorade sin tro" och nu lever som eremit i en grotta. Byfolk respekterar honom trots hans "fall". Kan läsa och skriva - ovärderligt.
+- [x] **Broder Tomas** (40-tal) - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **Gråben** (70+?) - Gammal tirak (!) som bor i berget nära Grensfortet. Förvisad från sin stam för något han vägrar prata om. Handelar ibland med byarna - pälsar mot metall. Äventyrarna har troligen inte mött honom än.
+- [x] **Gråben** (70+?) - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **Dimgumman** (ålder okänd) - Rykte mer än person. Sägs bo någonstans i närheten av Mithera-gränsen. Folk har sett rök från hennes stuga men ingen har hittat den. Adisa vet troligen mer.
+- [x] **Dimgumman** (ålder okänd) - ✅ Implementerad i `trakten-omgivningar.md`
 
 ### Före detta soldater/äventyrare
 
-- [ ] **Enarmade Gunnar** (60-tal) - Förlorade armen i ett krig för länge sedan. Bor i en stuga vid sjön nära Frisänkan. Fiskar med ena handen. Berättar krigshistorier för barn som vågar besöka honom.
+- [x] **Enarmade Gunnar** (60-tal) - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **Dezerteuren** (30-tal) - Gömmer sig i skogarna. Deserterade från Arvorns Hammare för tre år sedan. Lever på jakt och stöld. Vet inte att Arcadius (Corvus) också är "fallen". Potential för intressant möte.
+- [x] **Dezerteuren** (30-tal) - ✅ Implementerad i `trakten-omgivningar.md` (uppdaterad: Nattgardet/Mörkerhundarna)
 
 ---
 
@@ -135,25 +135,25 @@ Grens Baroneri ska kännas som en verklig plats där människor lever, arbetar, 
 
 ### Mellan byarna
 
-- [ ] **Korsvägskrogen** - En fallfärdig byggnad vid vägskälet mellan Bergvik, Frisänkan och Grensfortet. Användes förr som rastplats. Nu tom, men taket håller fortfarande. Bra mötesplats.
+- [x] **Korsvägskrogen** - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **Trollstenen** - En enorm sten mitt i skogen med märkliga ristningar. Ingen vet vem som gjorde dem. Lokala säger att man inte ska sova nära den under fullmåne.
+- [x] **Trollstenen** - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **Svältbacken** - En kulle där hungersnödens offer begravdes för generationer sedan. Odlad mark runt om, men ingen bygger där. Ryktas vara hemsökt.
+- [x] **Svältbacken** - ✅ Implementerad i `trakten-omgivningar.md`
 
 ### Vid Mithera-gränsen
 
-- [ ] **Gråvargens pass** - Den enklaste vägen in i Mithera från Grensfortet. Namngiven efter en legendarisk varg som vakade där. Gruppen har troligen passerat här.
+- [x] **Gråvargens pass** - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **De sju stenarna** - Cirkel av resta stenar precis vid gränsen. Ingen vet vem som reste dem. Umnatak känner troligen deras betydelse.
+- [x] **De sju stenarna** - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **Issjön** - En liten sjö som aldrig fryser, trots kylan. Vattnet är kristallklart. Djuren dricker inte ur den.
+- [x] **Issjön** - ✅ Implementerad i `trakten-omgivningar.md`
 
 ### Dolda platser
 
-- [ ] **Den övergivna gruvan** - Gammal dvärggruva som övergivits. Ligger i bergen mellan Bergvik och Grensfortet. Dain Stenyxa vet om den men har inte nämnt det.
+- [x] **Den övergivna gruvan** - ✅ Implementerad i `trakten-omgivningar.md`
 
-- [ ] **Flodkällan** - Där den lilla floden börjar, högt i bergen. Helig plats för de samoriska. Vidar gör pilgrimsvandring dit en gång om året.
+- [x] **Flodkällan** - ✅ Implementerad i `trakten-omgivningar.md`
 
 ---
 
@@ -303,4 +303,15 @@ Byn minns:
 
 ---
 
-**Senast uppdaterad:** 2026-02-03
+**Senast uppdaterad:** 2026-02-16
+
+---
+
+## IMPLEMENTERINGSSTATUS (2026-02-16)
+
+**Alla idéer från detta dokument har implementerats i separata filer:**
+- `frisankan.md` - 13 NPCs, atmosfär, byggnader, konflikter
+- `bergvik.md` - 14 NPCs, atmosfär, byggnader, konflikter
+- `trakten-omgivningar.md` - 8 solo-invånare, 8 platser, rykten, händelser, ekonomi, årstider
+
+**NOTES.md behålls som referens för ursprungliga idéer och godkända beslut.**
