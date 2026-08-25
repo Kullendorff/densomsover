@@ -26,7 +26,8 @@
 1. Läs master/character_reference.md (vem är vem?)
 2. Läs master/kampanjkrönika.md (senaste 500 rader - vad har hänt?)
 3. Läs sessioner/_aktuell.md (vad ska hända?)
-4. Skapa sessioner/_aktuell.html (HTML för spelmötet)
+4. Vid resor i scenariot: läs reseplanerare/reseregister-data.md (kalibrerade restider)
+5. Skapa sessioner/_aktuell.html (HTML för spelmötet)
 ```
 
 ### 📖 Skriva kapitel?
@@ -95,6 +96,11 @@ EON/
 │
 ├── midjourney/                  # 🎨 BILDPROMPTS
 │   └── *.md                     # Alla Midjourney-prompts
+│
+├── reseplanerare/               # 🗺️ SL-VERKTYG: kalibrerade restider
+│   ├── resedata.js              # Kantlista (källa till sanningen för resor)
+│   ├── generate.js              # Genererar registret ur wiki_data.js + resedata
+│   └── reseregister-data.md     # GENERERAD — redigera aldrig för hand
 │
 ├── arkiv/                       # 📦 ARKIV
 │   └── brainstorm/              # Gamla brainstorm-filer
