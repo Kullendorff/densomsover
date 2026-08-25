@@ -15,11 +15,16 @@
 
 var reseData = {
   meta: {
-    version: 1,
+    version: 2,
     skapad: "2026-08-25",
     tier: 1,
     omfang: "Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder)",
-    kaliberkalla: "Spelade rutter i kampanjkrönika.md, EM-R001/R002 och .claude/memory/learnings.md"
+    kaliberkalla: "Spelade rutter i kampanjkrönika.md, EM-R001/R002 och .claude/memory/learnings.md",
+    kampanj_datum: {
+      text: "17:e Hömånad, år 2 (relativ datering; år 1 = kampanjstart)",
+      sasong: "Högsommar",
+      kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)"
+    }
   },
 
   // Join-nycklar: nodnamn här -> postnamn i wiki_data.js (om de skiljer sig)
@@ -158,10 +163,9 @@ var reseData = {
     {
       fran: "Vargnäset", till: "Rödskäggs Tillflykt",
       transport: "ridande, snabbt, obelastat",
-      km: null, dagar: { min: 0.75, max: 1.5 },
+      km: null, dagar: { min: 1, max: 1 },
       terrang: "vinter, snö",
-      tolkning: true, johan_bekrafta: true,
-      anmarkning: "Källan anger '~1,5 dygn tur o retur' — tolkat som ~0,75 dygn enkelväg; alternativt 1,5 enkelväg",
+      anmarkning: "Bekräftat av Johan 2026-08-25: ~1 dygn enkelväg (krönikans '~1,5 dygn t/r' var ett för snävt spann)",
       kalla: { fil: "kampanjkrönika.md", rad: "1522, 1537" }
     },
     {
@@ -202,17 +206,17 @@ var reseData = {
     {
       fraga: "Frisänkan-konflikt (15 km/1 d vs 5 dagar handel)",
       losning: "Två leder: direktled 15 km/1 d endast för lätt fotfolk (vitterdal-baronieriet.md:649); handelsled via Bergvik 4+1 d för kärror (trakten-omgivningar.md:307 'Längre väg, sämre' + krönikanas civila tåg dag 5). Båda källvärdena bevaras som separata kanter.",
-      status: "tolkning klar, johan_bekrafta: true"
+      status: "BEKRÄFTAD av Johan 2026-08-25 — två separata leder gäller"
     },
     {
       fraga: "Rödskäggs '~1,5 dygn t/r'",
-      losning: "Tolkat som 0,75–1,5 dygn enkelväg beroende på läsning; se kantens anmarkning.",
-      status: "johan_bekrafta: true"
+      losning: "Johan bekräftade 2026-08-25: ~1 dygn enkelväg. Infört i kanten Vargnäset→Rödskäggs Tillflykt.",
+      status: "STÄNGD"
     },
     {
       fraga: "Kampanjkalender — aktuellt datum/år i kampanjen",
-      losning: "Finns inte skrivet någonstans. Behövs från Johan innan säsongskolumnen kan göras exakt ('just nu, funkar det'). Nuläge enligt CURRENT_STATE.md: Grensfortet, högsommar, efter Bok 1.",
-      status: "BLOCKERAR ENDAST säsongsexakthet, inte Tier 1-kärnan"
+      losning: "Bekräftat av Johan 2026-08-25: 17:e Hömånad, år 2 i relativ datering (år 1 = kampanjstart; mötet i Jarla var 5:e Hömånad år 1). Absolut årtal i e.D.-systemet ej fastställt — relativt ankare räcker. Se även meta.kampanj_datum.",
+      status: "STÄNGD (relativ datering)"
     },
     {
       fraga: "Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')",

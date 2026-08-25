@@ -4,6 +4,7 @@
 >
 > Genererad: 2026-08-25 · Källa: `D:\rollspel\EON\master\wiki_data.js` (58 platser, 317 NPCs laddade)
 > Omfång: Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder). Kanonordning vid konflikt: kampanjkrönika.md > wiki_data.js > NotebookLM.
+> Kampanjdato: 17:e Hömånad, år 2 (relativ datering; år 1 = kampanjstart) · Säsong: Högsommar · Källa: Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)
 
 ## 1. Platsregister (noder — härledda ur wiki_data.js via join)
 
@@ -35,7 +36,7 @@
 | Vitterdal → Bergvik <br>**tolkning** | oxkärra, bergsväg | — | 4 | bergsväg, ofta dimma | — | kampanjkrönika.md:1737–1783 |
 | Bergvik → Frisänkan | oxkärra | — | 1 | skog/mark | — | kampanjkrönika.md:1804 |
 | Frisänkan → Grensfortet | oxkärra | — | 1 | gränstrakter | — | kampanjkrönika.md:1817 |
-| Vargnäset → Rödskäggs Tillflykt <br>**tolkning**, **johan_bekrafta** | ridande, snabbt, obelastat | — | 0.75–1.5 | vinter, snö | — | kampanjkrönika.md:1522, 1537 |
+| Vargnäset → Rödskäggs Tillflykt | ridande, snabbt, obelastat | — | 1 | vinter, snö | — | kampanjkrönika.md:1522, 1537 |
 | Vargnäset → Iskvarnsbryggan | marsch, 41 civila inkl hjälpbehövande | — | 5 | vinter, −8 till −15 °C | kyla (en dog), snöstorm, matbrist | kampanjkrönika.md:1483 |
 | Abhan-hir-renk-Ghor → Vargnäset | dvärgisk handelskaravan, vinter | — | 15 | vinterväglag | snöstorm förlängde resan med veckor | kapitel-4-jargien.html + kampanjkrönika.md:255 / 748 |
 | Vargnäset → Vitterdal | ridande/häst | — | 3 | — | — | .claude/memory/learnings.md:268 |
@@ -62,15 +63,15 @@
 
 ### 5.1 Frisänkan-konflikt (15 km/1 d vs 5 dagar handel)
 - **Lösning/tolkning:** Två leder: direktled 15 km/1 d endast för lätt fotfolk (vitterdal-baronieriet.md:649); handelsled via Bergvik 4+1 d för kärror (trakten-omgivningar.md:307 'Längre väg, sämre' + krönikanas civila tåg dag 5). Båda källvärdena bevaras som separata kanter.
-- **Status:** tolkning klar, johan_bekrafta: true
+- **Status:** BEKRÄFTAD av Johan 2026-08-25 — två separata leder gäller
 
 ### 5.2 Rödskäggs '~1,5 dygn t/r'
-- **Lösning/tolkning:** Tolkat som 0,75–1,5 dygn enkelväg beroende på läsning; se kantens anmarkning.
-- **Status:** johan_bekrafta: true
+- **Lösning/tolkning:** Johan bekräftade 2026-08-25: ~1 dygn enkelväg. Infört i kanten Vargnäset→Rödskäggs Tillflykt.
+- **Status:** STÄNGD
 
 ### 5.3 Kampanjkalender — aktuellt datum/år i kampanjen
-- **Lösning/tolkning:** Finns inte skrivet någonstans. Behövs från Johan innan säsongskolumnen kan göras exakt ('just nu, funkar det'). Nuläge enligt CURRENT_STATE.md: Grensfortet, högsommar, efter Bok 1.
-- **Status:** BLOCKERAR ENDAST säsongsexakthet, inte Tier 1-kärnan
+- **Lösning/tolkning:** Bekräftat av Johan 2026-08-25: 17:e Hömånad, år 2 i relativ datering (år 1 = kampanjstart; mötet i Jarla var 5:e Hömånad år 1). Absolut årtal i e.D.-systemet ej fastställt — relativt ankare räcker. Se även meta.kampanj_datum.
+- **Status:** STÄNGD (relativ datering)
 
 ### 5.4 Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')
 - **Lösning/tolkning:** Alias-tabellen löser joinet; överväg egen SSOT-post 'Cermira stad'.

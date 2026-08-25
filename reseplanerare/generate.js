@@ -76,6 +76,10 @@ L.push(`> **GENERERAD FIL — redigera inte för hand.** Ändra \`resedata.js\` 
 L.push(`>`);
 L.push(`> Genererad: 2026-08-25 · Källa: \`${wikiPath}\` (${wiki.platser.length} platser, ${wiki.npcs.length} NPCs laddade)`);
 L.push(`> Omfång: ${reseData.meta.omfang}. Kanonordning vid konflikt: kampanjkrönika.md > wiki_data.js > NotebookLM.`);
+if (reseData.meta.kampanj_datum) {
+  const kd = reseData.meta.kampanj_datum;
+  L.push(`> Kampanjdato: ${kd.text} · Säsong: ${kd.sasong} · Källa: ${kd.kalla}`);
+}
 L.push("");
 
 L.push(`## 1. Platsregister (noder — härledda ur wiki_data.js via join)`);
