@@ -15,7 +15,7 @@
 
 var reseData = {
   meta: {
-    version: 3,
+    version: 4,
     skapad: "2026-08-25",
     tier: 1,
     omfang: "Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder)",
@@ -24,12 +24,18 @@ var reseData = {
       text: "17:e Hömånad, år 2 (relativ datering; år 1 = kampanjstart)",
       sasong: "Högsommar",
       kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)"
-    }
+    },
+    kartkalla: "cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen Camard–Kathar, Cermira EJ med, inget årtal). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön. Lundaby/Ramul/Svarta skogen syns på BÅDA kartorna — samma gränstrakt från två håll"
   },
 
   // Join-nycklar: nodnamn här -> postnamn i wiki_data.js (om de skiljer sig)
   alias: {
     "Cermira stad": "Cermira"
+  },
+
+  // Platsnoter: nyanser som wiki_data.js-regionfältet inte fångar (renderas under platsregistret)
+  platsnoter: {
+    "Jarla": "Gränsstad och Ashariens nordligaste jarladöme (egen häroldsbaner enligt asharien.jpg). Ligger precis innanför Cermiras sydgräns (cermira.png, vid Svarta skogen) — politiskt Asharisk, geografiskt Cermiras sydport. wiki_data-regionen 'Asharien' är korrekt men ofullständig; föreslagen SSOT-formulering: 'Asharien (jarladömet Jarla, gränsar Cermira i söder)'. Gränsläget + läget PÅ Raunfloden gör Jarla till naturlig passagepunkt/nod i vägnätet (tull, karavanuppsamling, flodtransport vid kröken)."
   },
 
   // Noder som behövs i grafen men SAKNAS i wiki_data.js (SSOT-luckor, ej migrerade
@@ -138,8 +144,9 @@ var reseData = {
   // Floder & vinter — viktigt för säsongsmatrisen
   floder_vinter: {
     regel: "Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är det uttryckliga undantaget (isfri året runt). Övriga floder (Månfloden m.fl.) antas isbelagda vintertid om kampanjfilen inte anger annat.",
+    lopp: "Raunflodens lopp enligt de två kartorna: källa vid Stencirkeln (öst, cermira.png) → västerut genom Fort Otis → Ramil/Jarla där floden KRÖKER → österut genom Jarladömet Jarla → mynning vid Nordvik (Ashariska kartan). Jarla ligger alltså PÅ floden vid kröken — flodtransport Fort Otis↔Jarla↔Nordvik är medströms österut från Fort Otis.",
     not: "Inget exakt ström-hastighetstabellvärde finns i regelverket — flodfärd beräknas fallvis.",
-    kalla: "klimat-/regiontext i Spelledarens guide + landsmodul-cermira"
+    kalla: "klimat-/regiontext i Spelledarens guide + landsmodul-cermira + cermira.png"
   },
 
   // Valuta (Tabell SH-26/27, verifierad ordagrant)
@@ -265,11 +272,12 @@ var reseData = {
     },
     {
       fran: "Cermira stad", till: "Fort Otis",
-      transport: "flodbåt via Månsjön→Raunfloden, medström söderut",
+      transport: "flodbåt via Månsjön→Raunfloden",
       km: null, dagar: null,
       terrang: "Raunfloden är ISFRI ÅRET RUNT",
       sasong: "fungerar alla säsonger",
-      kalla: { fil: "EON-Reseregister-Mall.md", rad: "48–51" }
+      anmarkning: "RIKTNINGSFRÅGA ÖPPEN: kartan antyder att Fort Otis ligger UPPSTRÖMS på Raunfloden (vattnet rinner Fort Otis→Jarla→Ramul), vilket strider mot mallens 'medström söderut'. Resan Cermira stad→Fort Otis kan alltså kräva motströmssträcka eller annat led via Månsjön — väntar Johans bekräftelse (se oppna_fragor).",
+      kalla: { fil: "EON-Reseregister-Mall.md + cermira.png", rad: "48–51" }
     }
   ],
 
@@ -299,6 +307,16 @@ var reseData = {
       fraga: "Karavanpris per person/dagsmarsch",
       losning: "BEKRÄFTAT SAKNAS i regelverket (Spelarens bok, Spelledarens guide, Riddaren genomsökta 2026-08-25) — avsiktligt öppen SL-heuristik som mallen §6 redan antog. Prisankare finns nu under valuta.lonreferenser.",
       status: "AVSIKTLIGT ÖPPEN — Johan bestämmer modell vid behov"
+    },
+    {
+      fraga: "Absolut datering: kartans 'År 2967 efter reningen'",
+      losning: "cermira.png bär årtalsangivelsen 2967 e.R. Om kartan avser kampanjens nutid gäller: kampanjstart (år 1) ≈ 2966 e.R., aktuellt datum (17:e Hömånad år 2) = 2967 e.R. Det skulle stänga den sista dateringsluckan.",
+      status: "VÄNTAR JOHANS BEKRÄFTELSE — är kartans 2967 nutiden?"
+    },
+    {
+      fraga: "Raunflodens flödesriktning: Cermira stad → Fort Otis 'medström söderut'?",
+      losning: "DELVIS KLARLAGT via kartorna: Raunfloden rinner Stencirkeln→Fort Otis→krök vid Jarla→Nordvik. Fort Otis→Jarla→Nordvik är medströms. Kvar: sambandet Cermira stad/Månsjön ↔ övre Raunfloden — ligger Fort Otis uppströms eller nedströms Månsjöns utlopp? Mallens 'medström söderut' antyder nedströms hela vägen.",
+      status: "VÄNTAR JOHANS BEKRÄFTELSE — påverkar endast resriktningstext, inte isfriheten"
     },
     {
       fraga: "Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')",

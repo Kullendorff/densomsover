@@ -80,6 +80,9 @@ if (reseData.meta.kampanj_datum) {
   const kd = reseData.meta.kampanj_datum;
   L.push(`> Kampanjdato: ${kd.text} · Säsong: ${kd.sasong} · Källa: ${kd.kalla}`);
 }
+if (reseData.meta.kartkalla) {
+  L.push(`> Kartkälla: ${reseData.meta.kartkalla}`);
+}
 L.push("");
 
 L.push(`## 1. Platsregister (noder — härledda ur wiki_data.js via join)`);
@@ -88,6 +91,11 @@ L.push(`| Namn | Typ | Region | Datakälla |`);
 L.push(`|---|---|---|---|`);
 [...grafNoder].sort().forEach((n) => L.push(platsRad(n)));
 L.push("");
+if (reseData.platsnoter) {
+  L.push(`**Platsnoter:**`);
+  Object.entries(reseData.platsnoter).forEach(([n, t]) => L.push(`- **${esc(n)}:** ${esc(t)}`));
+  L.push("");
+}
 
 const land = reseData.kanter.filter((k) => !/segling|flodbåt/.test(k.transport));
 const vatten = reseData.kanter.filter((k) => /segling|flodbåt/.test(k.transport));
