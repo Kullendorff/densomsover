@@ -25,7 +25,7 @@ var reseData = {
       sasong: "Högsommar",
       kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)"
     },
-    kartkalla: "cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen Camard–Kathar, Cermira EJ med, inget årtal). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön. Lundaby/Ramul/Svarta skogen syns på BÅDA kartorna — samma gränstrakt från två håll"
+    kartkalla: "cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + gammal mundanakarta (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används ENDAST för makrosammanhang, aldrig lokal Cermira-geografi). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön"
   },
 
   // Join-nycklar: nodnamn här -> postnamn i wiki_data.js (om de skiljer sig)
@@ -307,6 +307,11 @@ var reseData = {
       fraga: "Karavanpris per person/dagsmarsch",
       losning: "BEKRÄFTAT SAKNAS i regelverket (Spelarens bok, Spelledarens guide, Riddaren genomsökta 2026-08-25) — avsiktligt öppen SL-heuristik som mallen §6 redan antog. Prisankare finns nu under valuta.lonreferenser.",
       status: "AVSIKTLIGT ÖPPEN — Johan bestämmer modell vid behov"
+    },
+    {
+      fraga: "Drunok i två skalor: lokal 'Drunokleden' (väster om Vitterdal, Johans beslut seq 13) vs världskartans Drunok (markerat öster om Jargien)",
+      losning: "Ingen motsägelse konstaterad — mundanakartan är FÖRE Cermiras inskrivning i världen (Johan) och styr inte lokal geografi; den lokala Drunokleden avser gränszonen nära Vitterdal. Men vid framtida resefrågor av typen 'res till Drunok' ska skalan förtydligas (lokal gränszon vs världsregion öster om Jargien).",
+      status: "OBSERVATION — ingen åtgärd, skalfråga vid framtida Tier 2/3"
     },
     {
       fraga: "Absolut datering: kartans 'År 2967 efter reningen'",

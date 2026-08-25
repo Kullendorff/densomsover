@@ -5,7 +5,7 @@
 > Genererad: 2026-08-25 · Källa: `D:\rollspel\EON\master\wiki_data.js` (58 platser, 317 NPCs laddade)
 > Omfång: Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder). Kanonordning vid konflikt: kampanjkrönika.md > wiki_data.js > NotebookLM.
 > Kampanjdato: 17:e Hömånad, år 2 (relativ datering; år 1 = kampanjstart) · Säsong: Högsommar · Källa: Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)
-> Kartkälla: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen Camard–Kathar, Cermira EJ med, inget årtal). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön. Lundaby/Ramul/Svarta skogen syns på BÅDA kartorna — samma gränstrakt från två håll
+> Kartkälla: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + gammal mundanakarta (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används ENDAST för makrosammanhang, aldrig lokal Cermira-geografi). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön
 
 ## 1. Platsregister (noder — härledda ur wiki_data.js via join)
 
@@ -141,19 +141,23 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 - **Lösning/tolkning:** BEKRÄFTAT SAKNAS i regelverket (Spelarens bok, Spelledarens guide, Riddaren genomsökta 2026-08-25) — avsiktligt öppen SL-heuristik som mallen §6 redan antog. Prisankare finns nu under valuta.lonreferenser.
 - **Status:** AVSIKTLIGT ÖPPEN — Johan bestämmer modell vid behov
 
-### 5.6 Absolut datering: kartans 'År 2967 efter reningen'
+### 5.6 Drunok i två skalor: lokal 'Drunokleden' (väster om Vitterdal, Johans beslut seq 13) vs världskartans Drunok (markerat öster om Jargien)
+- **Lösning/tolkning:** Ingen motsägelse konstaterad — mundanakartan är FÖRE Cermiras inskrivning i världen (Johan) och styr inte lokal geografi; den lokala Drunokleden avser gränszonen nära Vitterdal. Men vid framtida resefrågor av typen 'res till Drunok' ska skalan förtydligas (lokal gränszon vs världsregion öster om Jargien).
+- **Status:** OBSERVATION — ingen åtgärd, skalfråga vid framtida Tier 2/3
+
+### 5.7 Absolut datering: kartans 'År 2967 efter reningen'
 - **Lösning/tolkning:** cermira.png bär årtalsangivelsen 2967 e.R. Om kartan avser kampanjens nutid gäller: kampanjstart (år 1) ≈ 2966 e.R., aktuellt datum (17:e Hömånad år 2) = 2967 e.R. Det skulle stänga den sista dateringsluckan.
 - **Status:** VÄNTAR JOHANS BEKRÄFTELSE — är kartans 2967 nutiden?
 
-### 5.7 Raunflodens flödesriktning: Cermira stad → Fort Otis 'medström söderut'?
+### 5.8 Raunflodens flödesriktning: Cermira stad → Fort Otis 'medström söderut'?
 - **Lösning/tolkning:** DELVIS KLARLAGT via kartorna: Raunfloden rinner Stencirkeln→Fort Otis→krök vid Jarla→Nordvik. Fort Otis→Jarla→Nordvik är medströms. Kvar: sambandet Cermira stad/Månsjön ↔ övre Raunfloden — ligger Fort Otis uppströms eller nedströms Månsjöns utlopp? Mallens 'medström söderut' antyder nedströms hela vägen.
 - **Status:** VÄNTAR JOHANS BEKRÄFTELSE — påverkar endast resriktningstext, inte isfriheten
 
-### 5.8 Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')
+### 5.9 Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')
 - **Lösning/tolkning:** Alias-tabellen löser joinet; överväg egen SSOT-post 'Cermira stad'.
 - **Status:** förslag till claude-sessionen/Johan
 
-### 5.9 Mallens 10 Cermira-orter saknas i wiki_data.js
+### 5.10 Mallens 10 Cermira-orter saknas i wiki_data.js
 - **Lösning/tolkning:** Listade under tier2_platser; migrering till SSOT triggar AGENTS.md blockerande kontinuitetsprocess och ägs av Johan/claude-sessionen.
 - **Status:** utanför detta uppdrag
 
