@@ -15,7 +15,7 @@
 
 var reseData = {
   meta: {
-    version: 7,
+    version: 8,
     skapad: "2026-08-25",
     tier: 1,
     omfang: "Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder)",
@@ -25,7 +25,7 @@ var reseData = {
       sasong: "Högsommar",
       kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9 + seq 18: cermira-kartans 'År 2967 efter reningen' = kampanjens nutid)"
     },
-    kartkalla: "PRIMÄR världskarta: mundana-extra.jpg (har CERMIRA + skala 0–200 mil; Drunok syns mellan Jargiska kejsardömet och Cermira ✓, Mithera norr om Cermira, Gaserion öster om Cermira). Lokalkartor: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen). Historisk: mundana-gammal.jpg (CERMIRA SAKNAS — före Cermiras inskrivning i världen, endast kuriosum/makro-historik). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Skalenote: kartans 'mil' antas vara 10 km (200 mil ≈ 2 000 km världsbredd på karta). Geografibekräftat 2026-08-25: Mitheraskogen ÖST/NORR om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön. StavvariaNT: 'Gaserion' (mundana-extra) vs 'Caserion' (Asharien-kanon) — antas samma rike"
+    kartkalla: "PRIMÄR världskarta: mundana-extra.jpg (har CERMIRA + skala 0–200 mil; Drunok mellan Jargien och Cermira ✓). Regionkartor: cermira.png ('År 2967 efter reningen'), asharien.jpg (jarladömena), cirefalier.jpg (samväldet: Gordrion/Melorion-öarna/Caserion/Colm — bekräftar Remzian Krack på Raunfloden, Marek Pomian vid Rhungsjön, Zian Rims fyr m.fl.). Historisk: mundana-gammal.jpg (CERMIRA SAKNAS — före inskrivningen, endast kuriosum). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Skala: 'mil' antas 10 km (200 mil ≈ 2 000 km). Geografibekräftat 2026-08-25: Mitheraskogen ÖST/NORR om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön. Stavvariant: 'Gaserion' (mundana-extra) vs 'Caserion' (kanon) — antas samma rike"
   },
 
   // Join-nycklar: nodnamn här -> postnamn i wiki_data.js (om de skiljer sig)
@@ -146,7 +146,7 @@ var reseData = {
   floder_vinter: {
     regel: "Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är det uttryckliga undantaget (isfri året runt). Övriga floder (Månfloden m.fl.) antas isbelagda vintertid om kampanjfilen inte anger annat.",
     sommar_risk: "MOTSATT risk på Raunfloden: under EXTREMA TORKPERIODER kan vattennivån sjunka så drastiskt att sjöfarten helt stoppas (Johan, Drunok-beskrivning 2026-08-25). Vinter = isfria Raunfloden men frusna sidofloder; torr sommar = Raunfloden kan bli oseglbar. Kontrollera alltid årstid + väderläge.",
-    lopp: "Raunflodens lopp (Johan seq 17 + kartorna): källor i KROLIMBERGEN → flyter söderut; Månsjöns utlopp ansluter (Cermira stads hamn trafikerar uppströms mot Vitterdal och nedströms ut på Raunfloden) → förbi Fort Otis (NEDSTRÖMS utloppet) → krök vid Ramil/Jarla → österut genom Jarladömet Jarla → mynning vid Nordvik. Medströms hela vägen från Månsjöns utlopp till Nordvik. ÖVRE LOPPET ligger i Drunok (transithandel spannmål, bred långsam flod).",
+    lopp: "Raunflodens FULLA lopp (Johan + kartor + Caserion-kanon): källor i KROLIMBERGEN → övre loppet i DRUNOK (bred, långsam transithandel) → söderut genom CERMIRA (Månsjöns utlopp, Cermira stads hamn, förbi Fort Otis) → krök vid Ramil/JARLA → österut som GRÄNSFLOD Asharien/Caserion → mynning vid Nordvik. Medströms från Månsjöns utlopp till Nordvik. TULLFÄLLA: Remzian Krack (cirefalisk, Caserion-sidan) kontrollerar all flodtrafik med mycket höga tullar; Marek Pomian (cirefalisk huvudstad Caserion) konkurrerar med extremt låga tullar.",
     not: "Inget exakt ström-hastighetstabellvärde finns i regelverket — flodfärd beräknas fallvis.",
     kalla: "klimat-/regiontext i Spelledarens guide + landsmodul-cermira + cermira.png + Johan (Drunok, 2026-08-25)"
   },
@@ -244,6 +244,49 @@ var reseData = {
       { namn: "Karpal", not: "2 000. Ön Dram i Lemira; lever helt på fiske." },
       { namn: "Lopnor", not: "Koloni på södra kontinenten, fulla provinsrättigheter; handel + stort kavalleri med breda jargsablar." },
       { namn: "Karakul", not: "Koloni på bördig savann söder om Forion, erövrad 2809 e.D. — djup fiendskap med Forion." }
+    ],
+    kalla: "Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)"
+  },
+
+  // Cirefaliska samväldet — makro-referens (Johan 2026-08-25)
+  cirefaliska_samveldet: {
+    overview: "Handelsvänlig feodal federation (ärke-/kurfurstar styr provinser/kolonier), Mundanas mest utbredda och ekonomiskt dominerande makt. Skickliga handelsmän, navigatörer, skeppsbyggare — finansiering över hela kända Mundana (jfr Temiranz-lånen till Jargien).",
+    melorion: {
+      lage: "Hemlandet — ögrupp norr om Takalorr, väster om Ashariska halvön, söder om Jargien. Igonhavet NW, Purpurhavet NE. Tropiskt men tempererat av havsvindar; bördigt, självförsörjande. Tre huvudöar: Vambolien, Rimcoz, Dazava.",
+      stader: [
+        { namn: "Ciremelo", not: "~40 000. HUVUDSTAD på Vambolien (lagun, södra slätterna). En av Mundanas största hamnar. Ointagen genom historien. Cirzateologins heligaste byggnad: 40 m vitt torn i dvärgamarmor." },
+        { namn: "Tzarmun Riskoz", not: "~36 000. Vamboliens norra spets; kanaler, Cirzatempel med silverbelagt tak. Notera namnmönstret 'Riskoz' — samma som Soldarns Kemithor Riskoz." },
+        { namn: "Remrim", not: "~13 000. Hamnstad Vambolien; enorma årliga tygmarknader; kanaler djupt in i urskogarna." },
+        { namn: "Nahrzmel Krack", not: "~18 000 (främst militärer). Samväldets viktigaste MILITÄRstad på egen ö öster om Vambolien — hel mur av dvärgasten, stor del av krigsflottan + krigsakademier." },
+        { namn: "Cirza Falz", not: "~12 000. HELIG pilgrimsort på Rimcoz (Cirza steg här ned till Mundana enl. Tzorlack-rullarna). Strikt förbjuden för icke-cirefalier. Ingen storhandel." },
+        { namn: "Dzara Pomian", not: "~30 000. Rimcoz södra kust; tungt befäst (uråldrig dvärgamur); omlastning mot Stora arkipelagen. Rimcoz = samväldets metall/tenn-källa, torr och glesbefolkad." },
+        { namn: "Zhirim Mian", not: "~30 000. Största staden på konfliktdrabbade Dazava (tirakiska plundringståg från Takalorr). Kirurgisk skola (samväldets bästa läkare). 'Den FLYTANDE STADEN' — Jargiens slavimport går hit (jfr Jargien-kanon)." }
+      ]
+    },
+    caserion: {
+      lage: "STÖRSTA och snabbast växande kolonin — samväldets KORNBOD. Öster om Asharien, väster om Thalamur, söder om De stora slätterna (Raon), norr om Rhungsjön. FLODEN RAUN = GRÄNSEN MOT ASHARIEN i väster; floden Thukor gräns mot Thalamur i öster. Konstbevattning; ~160 000 cirefalier + nära HALVMILJON gästarbetare.",
+      stader: [
+        { namn: "Marek Pomian", not: "~18 000. HUVUDSTAD (Mareks Frihamn). Grundad 1192 e.D. på raunländska Raons sydvästra hörn, tagen via politiskt rävspel 2478 e.D. Koncentriska ringmurar; EXTREMT LÅGA TULLAR (medveten handelspolitik mot Remzian Kracks höga)." },
+        { namn: "Ramezior Turak", not: "~11 000. Stor stad djupt i inlandet — kolonins huvudsakliga kornbod; kanal- och slussystem till Rhungsjön." },
+        { namn: "Narzkar Falz", not: "~7 000. Vid floden Thukor i NO; tvillingstad med Thalamurs Abin-Thukor; port för handel Rhungsjön ↔ Stora slätterna." },
+        { namn: "Remzian Krack", not: "~6 000. PÅ GRÄNSEN till Asharien intill RAUNFLODEN. Svarta ointagliga fortet kontrollerar ALL trafik längs Raunfloden genom MYCKET HÖGA TULLAR — nyckelpost för flodhandel Cermira/Jarla↔utlandet! Krigsakademi för sjöstrid." },
+        { namn: "Haraziz Krack", not: "~2 000. Sotig garnisonsstad med stor krigshamn; fästningen 'Smedjan' — dvärgar smider tunga vapen." },
+        { namn: "Harandzran", not: "Militär utpost norrut på Stora slätterna — cirefalier + allierade raunlänningar planerar expansion norrut." }
+      ]
+    },
+    gordrion: {
+      lage: "Yngsta landet (grundat 2874 e.D. — för 93 år sedan!) av kolonisatörer, slavar och straffångar. Långt NW, på Blå havets nordkust, SW om jargiska kolonin Lothian. Kallt, blåsigt, granskogar + snöberg. ~140 000 cirefalier + enorma gästarbetarmängder. Export: järnmalm, guld, silver, ädelstenar.",
+      stader: [
+        { namn: "Casemian", not: "~13 000. HUVUDSTAD vid floden Lorzimas utlopp; timmerstad på båda flodsidorna; uppsamlingsplats för malm + stora gjuterier (järn → tackor)." },
+        { namn: "Tzorfalz", not: "~7 000. Östlig utpost; stort välbesökt Cirzatempel med reliker från Cirza själv; jordbruket försörjer kolonin." },
+        { namn: "Zian Rim", not: "~4 000 (soldater/marinkårister). Renodlad FLOTTBAS på sydvästra udden; stort fort + väldig fyr mot farliga rev. Notera 'Rim'-namnmönstret (Tuzan Rim, Zian Rim)." },
+        { namn: "Chimazo / Daliz Falz / Penxium", not: "Mindre bosättningar, skogshuggar- och straffläger i vildmarken." }
+      ]
+    },
+    strategiska_oar: [
+      { namn: "Ön Colm", not: "SW om halvön Danbréann (Consaber). MAGISKT DÖD för hydrotropi — extremt torr. Annekterad 2946 e.D. Befästa Ramezior Krack (~10 000) + allierade dvärgfästet Kholam-Renk-Ghor (notera -renk-Ghor-namntraditionen). Spionbas mot sabriska flottan; potentiellt brohuvud för sjöblockad av Consaber." },
+      { namn: "Stora arkipelagen (Kryddöarna)", not: "Total militär kontroll över huvudöarna PERDOS och YOL + dussintal mindre. Kolonisationslagar tvingar fram export av kaffe, socker, bomull, tobak, kryddor → Melorion. Största avlastningen: Pomimbukten (Perdos). Styrs från fortet CIREKRACK av guvernör Pomimalo; rykten om mörka magiska experiment på revoltörer." },
+      { namn: "Szal Dorian (i Jargien)", not: "Cirefalisk handelskoloni grundad 210 e.D., erövrad av jargiska legioner 2445 e.D. — men 7 500 cirefalier kvar och driver banker/kredithus/handel (jfr Jargien-kanon ✓)." }
     ],
     kalla: "Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)"
   },
