@@ -5,7 +5,7 @@
 > Genererad: 2026-08-25 · Källa: `D:\rollspel\EON\master\wiki_data.js` (58 platser, 317 NPCs laddade)
 > Omfång: Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder). Kanonordning vid konflikt: kampanjkrönika.md > wiki_data.js > NotebookLM.
 > Kampanjdato: 17:e Hömånad, år 2 (relativ datering; år 1 = kampanjstart) · Säsong: Högsommar · Källa: Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)
-> Kartkälla: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + gammal mundanakarta (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används ENDAST för makrosammanhang, aldrig lokal Cermira-geografi). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön
+> Kartkälla: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används ENDAST för makrosammanhang, aldrig lokal Cermira-geografi). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön
 
 ## 1. Platsregister (noder — härledda ur wiki_data.js via join)
 

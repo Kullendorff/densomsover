@@ -25,7 +25,7 @@ var reseData = {
       sasong: "Högsommar",
       kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)"
     },
-    kartkalla: "cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + gammal mundanakarta (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används ENDAST för makrosammanhang, aldrig lokal Cermira-geografi). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön"
+    kartkalla: "cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används ENDAST för makrosammanhang, aldrig lokal Cermira-geografi). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön"
   },
 
   // Join-nycklar: nodnamn här -> postnamn i wiki_data.js (om de skiljer sig)
