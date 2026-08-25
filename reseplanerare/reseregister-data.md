@@ -5,7 +5,7 @@
 > Genererad: 2026-08-25 · Källa: `D:\rollspel\EON\master\wiki_data.js` (58 platser, 317 NPCs laddade)
 > Omfång: Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder). Kanonordning vid konflikt: kampanjkrönika.md > wiki_data.js > NotebookLM.
 > Kampanjdato: 17:e Hömånad, år 2 (relativ datering; år 1 = kampanjstart) · Säsong: Högsommar · Källa: Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)
-> Kartkälla: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används ENDAST för makrosammanhang, aldrig lokal Cermira-geografi). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön
+> Kartkälla: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används för makrosammanhang). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Geografibekräftat 2026-08-25: Mitheraskogen ligger ÖST/NORR om Vitterdal (sveper över norrsidan och fortsätter ner längs östsidan mot Trollmassivet/Mitheras kullar); Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön
 
 ## 1. Platsregister (noder — härledda ur wiki_data.js via join)
 
@@ -134,16 +134,16 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 - **Status:** STÄNGD (relativ datering)
 
 ### 5.4 Grensfortets grannland (Drunok vs Mithera-gränsen) + dubbla 'Östra vägen'-etiketter i baronieri-filen
-- **Lösning/tolkning:** Johan avgjorde (oxen-launch seq 13): Grensfortet ligger på Vitterdals ÖSTRA kant intill Mithera; Drunok ligger VÄSTERUT via Hög toppmyr (två väsensskilda vägar). Kanten Vitterdal→Grensfortet uppdaterad därefter. Etiketter: detta register namnger alltid kanter efter DESTINATION (ingen kollision möjlig); för kartfilens ruttetiketter föreslås 'Mithervägen' (Grensfortet-leden) resp. 'Drunokleden' (Hög toppmyr-vägen) — slutligt namn väljer Johan/claude-sessionen.
+- **Lösning/tolkning:** Johan avgjorde (oxen-launch seq 13 + tillägg): Grensfortet ligger på Vitterdals ÖSTRA kant intill Mithera — Mitheraskogen ligger ÖST/NORR om Vitterdal (cermira.png); Drunok ligger VÄSTERUT via Hög toppmyr (två väsensskilda vägar). Makro-ordning: Jargien → Drunok → Cermira/Asharien (väster→öster). Kanten Vitterdal→Grensfortet uppdaterad därefter. Etiketter: detta register namnger alltid kanter efter DESTINATION (ingen kollision möjlig); för kartfilens ruttetiketter föreslås 'Mithervägen' (Grensfortet-leden) resp. 'Drunokleden' (Hög toppmyr-vägen) — slutligt namn väljer Johan/claude-sessionen.
 - **Status:** SAKNFRÅGA STÄNGD; etikettförslag väntar val
 
 ### 5.5 Karavanpris per person/dagsmarsch
 - **Lösning/tolkning:** BEKRÄFTAT SAKNAS i regelverket (Spelarens bok, Spelledarens guide, Riddaren genomsökta 2026-08-25) — avsiktligt öppen SL-heuristik som mallen §6 redan antog. Prisankare finns nu under valuta.lonreferenser.
 - **Status:** AVSIKTLIGT ÖPPEN — Johan bestämmer modell vid behov
 
-### 5.6 Drunok i två skalor: lokal 'Drunokleden' (väster om Vitterdal, Johans beslut seq 13) vs världskartans Drunok (markerat öster om Jargien)
-- **Lösning/tolkning:** Ingen motsägelse konstaterad — mundanakartan är FÖRE Cermiras inskrivning i världen (Johan) och styr inte lokal geografi; den lokala Drunokleden avser gränszonen nära Vitterdal. Men vid framtida resefrågor av typen 'res till Drunok' ska skalan förtydligas (lokal gränszon vs världsregion öster om Jargien).
-- **Status:** OBSERVATION — ingen åtgärd, skalfråga vid framtida Tier 2/3
+### 5.6 Drunok: lokal 'Drunokleden' (väster om Vitterdal) vs världskartans Drunok (öster om Jargien) — samma region?
+- **Lösning/tolkning:** JA — Johan bekräftade makro-ordningen västerut→österut: Jargien → Drunok → Cermira/Asharien. Drunok är regionen EMELLAN; världskartans placering och den lokala västerut-leden från Vitterdal beskriver samma region från varsitt håll. Lokal kanon (seq 13: Grensfortet österut mot Mithera, Drunokleden västerut via Hög toppmyr) och makrokarta är nu konsistenta.
+- **Status:** STÄNGD — makro-ordning dokumenterad i meta.kartkalla
 
 ### 5.7 Absolut datering: kartans 'År 2967 efter reningen'
 - **Lösning/tolkning:** cermira.png bär årtalsangivelsen 2967 e.R. Om kartan avser kampanjens nutid gäller: kampanjstart (år 1) ≈ 2966 e.R., aktuellt datum (17:e Hömånad år 2) = 2967 e.R. Det skulle stänga den sista dateringsluckan.

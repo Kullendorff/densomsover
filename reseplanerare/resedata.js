@@ -25,7 +25,7 @@ var reseData = {
       sasong: "Högsommar",
       kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)"
     },
-    kartkalla: "cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används ENDAST för makrosammanhang, aldrig lokal Cermira-geografi). Geografibekräftat 2026-08-25: Mitheraskogen norr om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön"
+    kartkalla: "cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används för makrosammanhang). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Geografibekräftat 2026-08-25: Mitheraskogen ligger ÖST/NORR om Vitterdal (sveper över norrsidan och fortsätter ner längs östsidan mot Trollmassivet/Mitheras kullar); Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön"
   },
 
   // Join-nycklar: nodnamn här -> postnamn i wiki_data.js (om de skiljer sig)
@@ -195,7 +195,7 @@ var reseData = {
       km: { min: 50, max: 50 }, dagar: { min: 2, max: 3 },
       terrang: "bergsterräng",
       faror: "Skugglandets gränser går tunt in i Mithera — tematiskt samma gräns (Johan, oxen-launch seq 13)",
-      anmarkning: "Grannland KLARGJORT av Johan 2026-08-25: fortet ligger på Vitterdals ÖSTRA kant, precis väster om Mithera — det gränsar MITHERA, inte Drunok (gamla tabellraden '→ Drunok' var felet). Drunok ligger på motsatta sidan, västerut via Hög toppmyr. OBS: baronieri-filens geografi-sektion (rad 680–683: 'Norr: Mitheraskogen') behöver synkas med detta beslut.",
+      anmarkning: "Grannland KLARGJORT av Johan 2026-08-25: fortet ligger på Vitterdals ÖSTRA kant, precis väster om Mithera — det gränsar MITHERA, inte Drunok (gamla tabellraden '→ Drunok' var felet). Mitheraskogen ligger ÖST/NORR om Vitterdal (Johan, cermira.png): skogen sveper över norrsidan och fortsätter ner längs östkanten, där fortet vaktar passagepunkten. Drunok ligger på motsatta sidan, västerut via Hög toppmyr. OBS: baronieri-filens geografi-sektion (rad 680: 'Norr: Mitheraskogen') bör uppdateras till 'Öst/norr' och synkas med detta beslut.",
       kalla: { fil: "vitterdal-baronieriet.md", rad: 688 }
     },
     {
@@ -300,7 +300,7 @@ var reseData = {
     },
     {
       fraga: "Grensfortets grannland (Drunok vs Mithera-gränsen) + dubbla 'Östra vägen'-etiketter i baronieri-filen",
-      losning: "Johan avgjorde (oxen-launch seq 13): Grensfortet ligger på Vitterdals ÖSTRA kant intill Mithera; Drunok ligger VÄSTERUT via Hög toppmyr (två väsensskilda vägar). Kanten Vitterdal→Grensfortet uppdaterad därefter. Etiketter: detta register namnger alltid kanter efter DESTINATION (ingen kollision möjlig); för kartfilens ruttetiketter föreslås 'Mithervägen' (Grensfortet-leden) resp. 'Drunokleden' (Hög toppmyr-vägen) — slutligt namn väljer Johan/claude-sessionen.",
+      losning: "Johan avgjorde (oxen-launch seq 13 + tillägg): Grensfortet ligger på Vitterdals ÖSTRA kant intill Mithera — Mitheraskogen ligger ÖST/NORR om Vitterdal (cermira.png); Drunok ligger VÄSTERUT via Hög toppmyr (två väsensskilda vägar). Makro-ordning: Jargien → Drunok → Cermira/Asharien (väster→öster). Kanten Vitterdal→Grensfortet uppdaterad därefter. Etiketter: detta register namnger alltid kanter efter DESTINATION (ingen kollision möjlig); för kartfilens ruttetiketter föreslås 'Mithervägen' (Grensfortet-leden) resp. 'Drunokleden' (Hög toppmyr-vägen) — slutligt namn väljer Johan/claude-sessionen.",
       status: "SAKNFRÅGA STÄNGD; etikettförslag väntar val"
     },
     {
@@ -309,9 +309,9 @@ var reseData = {
       status: "AVSIKTLIGT ÖPPEN — Johan bestämmer modell vid behov"
     },
     {
-      fraga: "Drunok i två skalor: lokal 'Drunokleden' (väster om Vitterdal, Johans beslut seq 13) vs världskartans Drunok (markerat öster om Jargien)",
-      losning: "Ingen motsägelse konstaterad — mundanakartan är FÖRE Cermiras inskrivning i världen (Johan) och styr inte lokal geografi; den lokala Drunokleden avser gränszonen nära Vitterdal. Men vid framtida resefrågor av typen 'res till Drunok' ska skalan förtydligas (lokal gränszon vs världsregion öster om Jargien).",
-      status: "OBSERVATION — ingen åtgärd, skalfråga vid framtida Tier 2/3"
+      fraga: "Drunok: lokal 'Drunokleden' (väster om Vitterdal) vs världskartans Drunok (öster om Jargien) — samma region?",
+      losning: "JA — Johan bekräftade makro-ordningen västerut→österut: Jargien → Drunok → Cermira/Asharien. Drunok är regionen EMELLAN; världskartans placering och den lokala västerut-leden från Vitterdal beskriver samma region från varsitt håll. Lokal kanon (seq 13: Grensfortet österut mot Mithera, Drunokleden västerut via Hög toppmyr) och makrokarta är nu konsistenta.",
+      status: "STÄNGD — makro-ordning dokumenterad i meta.kartkalla"
     },
     {
       fraga: "Absolut datering: kartans 'År 2967 efter reningen'",
