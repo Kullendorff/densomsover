@@ -144,7 +144,7 @@ var reseData = {
   // Floder & vinter — viktigt för säsongsmatrisen
   floder_vinter: {
     regel: "Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är det uttryckliga undantaget (isfri året runt). Övriga floder (Månfloden m.fl.) antas isbelagda vintertid om kampanjfilen inte anger annat.",
-    lopp: "Raunflodens lopp enligt de två kartorna: källa vid Stencirkeln (öst, cermira.png) → västerut genom Fort Otis → Ramil/Jarla där floden KRÖKER → österut genom Jarladömet Jarla → mynning vid Nordvik (Ashariska kartan). Jarla ligger alltså PÅ floden vid kröken — flodtransport Fort Otis↔Jarla↔Nordvik är medströms österut från Fort Otis.",
+    lopp: "Raunflodens lopp (Johan seq 17 + kartorna): källor i KROLIMBERGEN → flyter söderut; Månsjöns utlopp ansluter (Cermira stads hamn trafikerar uppströms mot Vitterdal och nedströms ut på Raunfloden) → förbi Fort Otis (NEDSTRÖMS utloppet) → krök vid Ramil/Jarla → österut genom Jarladömet Jarla → mynning vid Nordvik. Medströms hela vägen från Månsjöns utlopp till Nordvik.",
     not: "Inget exakt ström-hastighetstabellvärde finns i regelverket — flodfärd beräknas fallvis.",
     kalla: "klimat-/regiontext i Spelledarens guide + landsmodul-cermira + cermira.png"
   },
@@ -191,7 +191,7 @@ var reseData = {
     },
     {
       fran: "Vitterdal", till: "Grensfortet",
-      transport: "bergsväg österut (mot Mithera-gränsen)",
+      transport: "Mithervägen — bergsväg österut (mot Mithera-gränsen; namnet godkänt av Johan, oxen-launch seq 17)",
       km: { min: 50, max: 50 }, dagar: { min: 2, max: 3 },
       terrang: "bergsterräng",
       faror: "Skugglandets gränser går tunt in i Mithera — tematiskt samma gräns (Johan, oxen-launch seq 13)",
@@ -272,12 +272,12 @@ var reseData = {
     },
     {
       fran: "Cermira stad", till: "Fort Otis",
-      transport: "flodbåt via Månsjön→Raunfloden",
+      transport: "flodbåt via Månsjön→Raunfloden, MEDSTRÖM söderut (bekräftat)",
       km: null, dagar: null,
       terrang: "Raunfloden är ISFRI ÅRET RUNT",
       sasong: "fungerar alla säsonger",
-      anmarkning: "RIKTNINGSFRÅGA ÖPPEN: kartan antyder att Fort Otis ligger UPPSTRÖMS på Raunfloden (vattnet rinner Fort Otis→Jarla→Ramul), vilket strider mot mallens 'medström söderut'. Resan Cermira stad→Fort Otis kan alltså kräva motströmssträcka eller annat led via Månsjön — väntar Johans bekräftelse (se oppna_fragor).",
-      kalla: { fil: "EON-Reseregister-Mall.md + cermira.png", rad: "48–51" }
+      anmarkning: "Johan bekräftade 2026-08-25 (oxen-launch seq 17): Fort Otis ligger NEDSTRÖMS Månsjöns utlopp — man passerar utloppet FÖRE Fort Otis på väg söderut. Raunflodens källor ligger i Krolimbergen och floden flyter söderut; Cermira stads hamn trafikerar både uppströms (mot Vitterdal) och nedströms (ut på Raunfloden).",
+      kalla: { fil: "EON-Reseregister-Mall.md + Johan seq 17", rad: "48–51" }
     }
   ],
 
@@ -301,7 +301,7 @@ var reseData = {
     {
       fraga: "Grensfortets grannland (Drunok vs Mithera-gränsen) + dubbla 'Östra vägen'-etiketter i baronieri-filen",
       losning: "Johan avgjorde (oxen-launch seq 13 + tillägg): Grensfortet ligger på Vitterdals ÖSTRA kant intill Mithera — Mitheraskogen ligger ÖST/NORR om Vitterdal (cermira.png); Drunok ligger VÄSTERUT via Hög toppmyr (två väsensskilda vägar). Makro-ordning: Jargien → Drunok → Cermira/Asharien (väster→öster). Kanten Vitterdal→Grensfortet uppdaterad därefter. Etiketter: detta register namnger alltid kanter efter DESTINATION (ingen kollision möjlig); för kartfilens ruttetiketter föreslås 'Mithervägen' (Grensfortet-leden) resp. 'Drunokleden' (Hög toppmyr-vägen) — slutligt namn väljer Johan/claude-sessionen.",
-      status: "SAKNFRÅGA STÄNGD; etikettförslag väntar val"
+      status: "STÄNGD — 'Mithervägen' godkänt av Johan (seq 17); motpartsnamnet 'Drunokleden' för Hög toppmyr-vägen antas därmed"
     },
     {
       fraga: "Karavanpris per person/dagsmarsch",
@@ -320,8 +320,8 @@ var reseData = {
     },
     {
       fraga: "Raunflodens flödesriktning: Cermira stad → Fort Otis 'medström söderut'?",
-      losning: "DELVIS KLARLAGT via kartorna: Raunfloden rinner Stencirkeln→Fort Otis→krök vid Jarla→Nordvik. Fort Otis→Jarla→Nordvik är medströms. Kvar: sambandet Cermira stad/Månsjön ↔ övre Raunfloden — ligger Fort Otis uppströms eller nedströms Månsjöns utlopp? Mallens 'medström söderut' antyder nedströms hela vägen.",
-      status: "VÄNTAR JOHANS BEKRÄFTELSE — påverkar endast resriktningstext, inte isfriheten"
+      losning: "BEKRÄFTAT av Johan (oxen-launch seq 17): Fort Otis ligger NEDSTRÖMS Månsjöns utlopp; Raunflodens källor i Krolimbergen, floden flyter söderut, kröker vid Jarla och mynnar i Nordvik. Mallens 'medström söderut' var korrekt. Ny kanon-detali: Krolimbergen som källområde.",
+      status: "STÄNGD"
     },
     {
       fraga: "Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')",

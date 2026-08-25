@@ -35,7 +35,7 @@
 | Vitterdal → Cermira stad | landsväg, häst/vagn | 150 | 3–4 | kultiverat, östra vägen | — | vitterdal-baronieriet.md:686 |
 | Vitterdal → S:t Kira | landsväg, södra vägen | — | — | kultiverat | — | vitterdal-baronieriet.md:687 |
 | S:t Kira → Jarla | landsväg, södra vägen | — | — | övergår till Asharien (gränspassage) | — | vitterdal-baronieriet.md:687 |
-| Vitterdal → Grensfortet | bergsväg österut (mot Mithera-gränsen) | 50 | 2–3 | bergsterräng | Skugglandets gränser går tunt in i Mithera — tematiskt samma gräns (Johan, oxen-launch seq 13) | vitterdal-baronieriet.md:688 |
+| Vitterdal → Grensfortet | Mithervägen — bergsväg österut (mot Mithera-gränsen; namnet godkänt av Johan, oxen-launch seq 17) | 50 | 2–3 | bergsterräng | Skugglandets gränser går tunt in i Mithera — tematiskt samma gräns (Johan, oxen-launch seq 13) | vitterdal-baronieriet.md:688 |
 | Vitterdal → Frisänkan <br>**tolkning** | direktled norrut, ENDAST lätt last till fots | 15 | 1 | myr-/skogsteräng mot Mitheragränsen | — | vitterdal-baronieriet.md:690 |
 | Vitterdal → Bergvik <br>**tolkning** | oxkärra, bergsväg | — | 4 | bergsväg, ofta dimma | — | kampanjkrönika.md:1737–1783 |
 | Bergvik → Frisänkan | oxkärra | — | 1 | skog/mark | — | kampanjkrönika.md:1804 |
@@ -50,7 +50,7 @@
 | Från → Till | Transport | Km | Dagar | Terräng/säsong | Källa |
 |---|---|---|---|---|---|
 | Jarla → Tuzan Rim | kustsegling (handelsfartyg) | — | 14 | Ashariens kust | kampanjkrönika.md:330 |
-| Cermira stad → Fort Otis | flodbåt via Månsjön→Raunfloden | — | — | Raunfloden är ISFRI ÅRET RUNT (fungerar alla säsonger) | EON-Reseregister-Mall.md + cermira.png:48–51 |
+| Cermira stad → Fort Otis | flodbåt via Månsjön→Raunfloden, MEDSTRÖM söderut (bekräftat) | — | — | Raunfloden är ISFRI ÅRET RUNT (fungerar alla säsonger) | EON-Reseregister-Mall.md + Johan seq 17:48–51 |
 
 ## 4. Bas-hastigheter och referensvärden
 
@@ -135,7 +135,7 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 
 ### 5.4 Grensfortets grannland (Drunok vs Mithera-gränsen) + dubbla 'Östra vägen'-etiketter i baronieri-filen
 - **Lösning/tolkning:** Johan avgjorde (oxen-launch seq 13 + tillägg): Grensfortet ligger på Vitterdals ÖSTRA kant intill Mithera — Mitheraskogen ligger ÖST/NORR om Vitterdal (cermira.png); Drunok ligger VÄSTERUT via Hög toppmyr (två väsensskilda vägar). Makro-ordning: Jargien → Drunok → Cermira/Asharien (väster→öster). Kanten Vitterdal→Grensfortet uppdaterad därefter. Etiketter: detta register namnger alltid kanter efter DESTINATION (ingen kollision möjlig); för kartfilens ruttetiketter föreslås 'Mithervägen' (Grensfortet-leden) resp. 'Drunokleden' (Hög toppmyr-vägen) — slutligt namn väljer Johan/claude-sessionen.
-- **Status:** SAKNFRÅGA STÄNGD; etikettförslag väntar val
+- **Status:** STÄNGD — 'Mithervägen' godkänt av Johan (seq 17); motpartsnamnet 'Drunokleden' för Hög toppmyr-vägen antas därmed
 
 ### 5.5 Karavanpris per person/dagsmarsch
 - **Lösning/tolkning:** BEKRÄFTAT SAKNAS i regelverket (Spelarens bok, Spelledarens guide, Riddaren genomsökta 2026-08-25) — avsiktligt öppen SL-heuristik som mallen §6 redan antog. Prisankare finns nu under valuta.lonreferenser.
@@ -150,8 +150,8 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 - **Status:** VÄNTAR JOHANS BEKRÄFTELSE — är kartans 2967 nutiden?
 
 ### 5.8 Raunflodens flödesriktning: Cermira stad → Fort Otis 'medström söderut'?
-- **Lösning/tolkning:** DELVIS KLARLAGT via kartorna: Raunfloden rinner Stencirkeln→Fort Otis→krök vid Jarla→Nordvik. Fort Otis→Jarla→Nordvik är medströms. Kvar: sambandet Cermira stad/Månsjön ↔ övre Raunfloden — ligger Fort Otis uppströms eller nedströms Månsjöns utlopp? Mallens 'medström söderut' antyder nedströms hela vägen.
-- **Status:** VÄNTAR JOHANS BEKRÄFTELSE — påverkar endast resriktningstext, inte isfriheten
+- **Lösning/tolkning:** BEKRÄFTAT av Johan (oxen-launch seq 17): Fort Otis ligger NEDSTRÖMS Månsjöns utlopp; Raunflodens källor i Krolimbergen, floden flyter söderut, kröker vid Jarla och mynnar i Nordvik. Mallens 'medström söderut' var korrekt. Ny kanon-detali: Krolimbergen som källområde.
+- **Status:** STÄNGD
 
 ### 5.9 Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')
 - **Lösning/tolkning:** Alias-tabellen löser joinet; överväg egen SSOT-post 'Cermira stad'.
