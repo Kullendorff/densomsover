@@ -180,7 +180,29 @@ if (reseData.valuta) {
   L.push("");
 }
 
-L.push(`## 9. Dokumenterade tolkningar och öppna frågor`);
+if (reseData.drunok) {
+  const dr = reseData.drunok;
+  L.push(`## 9. Konungariket Drunok (referens — Drunokleden & norra resor)`);
+  L.push("");
+  L.push(`**Läge:** ${esc(dr.lage)}`);
+  L.push("");
+  L.push(`**Styre & konflikt:** ${esc(dr.styre)}`);
+  L.push("");
+  L.push(`**Religion:** ${esc(dr.religion)}`);
+  L.push("");
+  L.push(`**Handel:** ${esc(dr.handel)}`);
+  L.push("");
+  L.push(`| Stad | Not |`);
+  L.push(`|---|---|`);
+  dr.stader.forEach((s) => L.push(`| ${esc(s.namn)} | ${esc(s.not)} |`));
+  L.push("");
+  L.push(`*Matkultur:* ${esc(dr.matkultur)}`);
+  L.push("");
+  L.push(`*Källa: ${esc(dr.kalla)}*`);
+  L.push("");
+}
+
+L.push(`## 10. Dokumenterade tolkningar och öppna frågor`);
 L.push("");
 reseData.oppna_fragor.forEach((o, i) => {
   L.push(`### 5.${i + 1} ${o.fraga}`);
@@ -189,7 +211,7 @@ reseData.oppna_fragor.forEach((o, i) => {
   L.push("");
 });
 
-L.push(`## 10. Tier 2 — kända platser utan kanter ännu`);
+L.push(`## 11. Tier 2 — kända platser utan kanter ännu`);
 L.push("");
 L.push(`| Namn | Kommentar |`);
 L.push(`|---|---|`);

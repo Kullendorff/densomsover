@@ -15,15 +15,15 @@
 
 var reseData = {
   meta: {
-    version: 4,
+    version: 5,
     skapad: "2026-08-25",
     tier: 1,
     omfang: "Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder)",
     kaliberkalla: "Spelade rutter i kampanjkrönika.md, EM-R001/R002 och .claude/memory/learnings.md",
     kampanj_datum: {
-      text: "17:e Hömånad, år 2 (relativ datering; år 1 = kampanjstart)",
+      text: "17:e Hömånad, år 2 = 2967 e.R. (kampanjstart år 1 = 2966 e.R.)",
       sasong: "Högsommar",
-      kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)"
+      kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9 + seq 18: cermira-kartans 'År 2967 efter reningen' = kampanjens nutid)"
     },
     kartkalla: "cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används för makrosammanhang). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Geografibekräftat 2026-08-25: Mitheraskogen ligger ÖST/NORR om Vitterdal (sveper över norrsidan och fortsätter ner längs östsidan mot Trollmassivet/Mitheras kullar); Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön"
   },
@@ -144,9 +144,27 @@ var reseData = {
   // Floder & vinter — viktigt för säsongsmatrisen
   floder_vinter: {
     regel: "Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är det uttryckliga undantaget (isfri året runt). Övriga floder (Månfloden m.fl.) antas isbelagda vintertid om kampanjfilen inte anger annat.",
-    lopp: "Raunflodens lopp (Johan seq 17 + kartorna): källor i KROLIMBERGEN → flyter söderut; Månsjöns utlopp ansluter (Cermira stads hamn trafikerar uppströms mot Vitterdal och nedströms ut på Raunfloden) → förbi Fort Otis (NEDSTRÖMS utloppet) → krök vid Ramil/Jarla → österut genom Jarladömet Jarla → mynning vid Nordvik. Medströms hela vägen från Månsjöns utlopp till Nordvik.",
+    sommar_risk: "MOTSATT risk på Raunfloden: under EXTREMA TORKPERIODER kan vattennivån sjunka så drastiskt att sjöfarten helt stoppas (Johan, Drunok-beskrivning 2026-08-25). Vinter = isfria Raunfloden men frusna sidofloder; torr sommar = Raunfloden kan bli oseglbar. Kontrollera alltid årstid + väderläge.",
+    lopp: "Raunflodens lopp (Johan seq 17 + kartorna): källor i KROLIMBERGEN → flyter söderut; Månsjöns utlopp ansluter (Cermira stads hamn trafikerar uppströms mot Vitterdal och nedströms ut på Raunfloden) → förbi Fort Otis (NEDSTRÖMS utloppet) → krök vid Ramil/Jarla → österut genom Jarladömet Jarla → mynning vid Nordvik. Medströms hela vägen från Månsjöns utlopp till Nordvik. ÖVRE LOPPET ligger i Drunok (transithandel spannmål, bred långsam flod).",
     not: "Inget exakt ström-hastighetstabellvärde finns i regelverket — flodfärd beräknas fallvis.",
-    kalla: "klimat-/regiontext i Spelledarens guide + landsmodul-cermira + cermira.png"
+    kalla: "klimat-/regiontext i Spelledarens guide + landsmodul-cermira + cermira.png + Johan (Drunok, 2026-08-25)"
+  },
+
+  // Konungariket Drunok — referens för Drunokleden & norra resor (Johan 2026-08-25)
+  drunok: {
+    lage: "Nordost om Jargiska kejsardömet, norr om Ashariska halvön. Till stor del platt, mycket bördigt slättland kring Raunflodens ÖVRE lopp. 140 000 km², ~40 000 inv (58 % drunoker/vanarer, 23 % jargier, 12 % tauper, 6 % pyar-alver).",
+    styre: "Ärftlig monarki, kung Akala Gahallan III (vis, diplomatisk), huvudstad Arlon. Traditionellt utanför konflikter — men OFFICIELLT I KRIG med Jargien: Jargien ockuperade västra Drunok 2957 e.D., misslyckat återerövringståg 2961 e.D., stor jargisk legation i Arlon som eftergift. Tio nybyggda gränsfort i VÄSTER (100 soldater + 2 riddare vardera) mot jargisk invasion. Ingen flotta (saknar kust).",
+    religion: "70 % Daak, välutvecklad religionsfrihet (lockar förföljda flyktingar). Drunoks visdomskyrka = kättersk Daak-irrlära (individens band framför hierarkin), bannlyst av aboraterna i Tibara. Stor andel ortodoxa udariter (de flesta präster kvinnor).",
+    handel: "Kornbod — exporterar spannmål m.a. till jargiska grannprovinsen Maulio. Transithandel på den breda, långsamma Raunfloden (torka-risk, se floder_vinter.sommar_risk).",
+    stader: [
+      { namn: "Arlon", not: "Huvudstad ~5 000 inv, låg kulle, ringmur med höga torn, kungens gul-/svartrutiga standar. Jargiska delegationens pampiga bygge. Taupsläkten Xilozbaki brygger Raunpilsnern." },
+      { namn: "Durum", not: "Nära Arlon. Bryggardynastin Erstain — aggressivt handelskrig (ölkrig) mot Xilozbaki." },
+      { namn: "Urag-Ghan", not: "Hektisk handelsplats vid Raunfloden i NORR, söder om Eyrenskogarna och Kraggbergen. Styrs av Eyrentigrinnorna. Neutral fredlig handelszon för nordbor (kraggbarbarer, raunlänningar) ↔ sydlänningar. SÄKERT VADSTÄLLE över floden." },
+      { namn: "Thara-Tiannen", not: "Handelsort i VÄSTER, anlagd 2304 e.D. på kraggbarbarisk gåva. HELT OCKUPERAD av Jargien sedan tio år — ständig gnagande spänning." },
+      { namn: "Ramdor", not: "Förbannad RUINSTAD, övergiven sedan 2601 e.D. (mystiska händelser + pest). Lockar skattsökare." }
+    ],
+    matkultur: "Enkla näringssoppor/grytor; specialitet dorksoppa (kött, lök, rödbetor, palsternacka, morötter, tomat + vispad grädde).",
+    kalla: "Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)"
   },
 
   // Valuta (Tabell SH-26/27, verifierad ordagrant)
@@ -315,8 +333,8 @@ var reseData = {
     },
     {
       fraga: "Absolut datering: kartans 'År 2967 efter reningen'",
-      losning: "cermira.png bär årtalsangivelsen 2967 e.R. Om kartan avser kampanjens nutid gäller: kampanjstart (år 1) ≈ 2966 e.R., aktuellt datum (17:e Hömånad år 2) = 2967 e.R. Det skulle stänga den sista dateringsluckan.",
-      status: "VÄNTAR JOHANS BEKRÄFTELSE — är kartans 2967 nutiden?"
+      losning: "BEKRÄFTAT av Johan (oxen-launch seq 18): 2967 efter reningen = kampanjens nutid. Kampanjstart (år 1) = 2966 e.R., aktuellt datum 17:e Hömånad år 2 = 2967 e.R. Alla dateringsluckor stängda.",
+      status: "STÄNGD"
     },
     {
       fraga: "Raunflodens flödesriktning: Cermira stad → Fort Otis 'medström söderut'?",

@@ -4,7 +4,7 @@
 >
 > Genererad: 2026-08-25 · Källa: `D:\rollspel\EON\master\wiki_data.js` (58 platser, 317 NPCs laddade)
 > Omfång: Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder). Kanonordning vid konflikt: kampanjkrönika.md > wiki_data.js > NotebookLM.
-> Kampanjdato: 17:e Hömånad, år 2 (relativ datering; år 1 = kampanjstart) · Säsong: Högsommar · Källa: Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9)
+> Kampanjdato: 17:e Hömånad, år 2 = 2967 e.R. (kampanjstart år 1 = 2966 e.R.) · Säsong: Högsommar · Källa: Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9 + seq 18: cermira-kartans 'År 2967 efter reningen' = kampanjens nutid)
 > Kartkälla: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används för makrosammanhang). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Geografibekräftat 2026-08-25: Mitheraskogen ligger ÖST/NORR om Vitterdal (sveper över norrsidan och fortsätter ner längs östsidan mot Trollmassivet/Mitheras kullar); Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön
 
 ## 1. Platsregister (noder — härledda ur wiki_data.js via join)
@@ -119,7 +119,29 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 
 *Löne-/prisankare (för karavan-heuristiken):* Soldat ~80 silver/månad; officer ~240; dräng/piga 40–50; enkel logi 15–30/mån (SH s.42); länsherretjänare 10–50 silver/dag (5029_riddaren.txt:3169) — användbara som prisankare för karavan-heuristiken
 
-## 9. Dokumenterade tolkningar och öppna frågor
+## 9. Konungariket Drunok (referens — Drunokleden & norra resor)
+
+**Läge:** Nordost om Jargiska kejsardömet, norr om Ashariska halvön. Till stor del platt, mycket bördigt slättland kring Raunflodens ÖVRE lopp. 140 000 km², ~40 000 inv (58 % drunoker/vanarer, 23 % jargier, 12 % tauper, 6 % pyar-alver).
+
+**Styre & konflikt:** Ärftlig monarki, kung Akala Gahallan III (vis, diplomatisk), huvudstad Arlon. Traditionellt utanför konflikter — men OFFICIELLT I KRIG med Jargien: Jargien ockuperade västra Drunok 2957 e.D., misslyckat återerövringståg 2961 e.D., stor jargisk legation i Arlon som eftergift. Tio nybyggda gränsfort i VÄSTER (100 soldater + 2 riddare vardera) mot jargisk invasion. Ingen flotta (saknar kust).
+
+**Religion:** 70 % Daak, välutvecklad religionsfrihet (lockar förföljda flyktingar). Drunoks visdomskyrka = kättersk Daak-irrlära (individens band framför hierarkin), bannlyst av aboraterna i Tibara. Stor andel ortodoxa udariter (de flesta präster kvinnor).
+
+**Handel:** Kornbod — exporterar spannmål m.a. till jargiska grannprovinsen Maulio. Transithandel på den breda, långsamma Raunfloden (torka-risk, se floder_vinter.sommar_risk).
+
+| Stad | Not |
+|---|---|
+| Arlon | Huvudstad ~5 000 inv, låg kulle, ringmur med höga torn, kungens gul-/svartrutiga standar. Jargiska delegationens pampiga bygge. Taupsläkten Xilozbaki brygger Raunpilsnern. |
+| Durum | Nära Arlon. Bryggardynastin Erstain — aggressivt handelskrig (ölkrig) mot Xilozbaki. |
+| Urag-Ghan | Hektisk handelsplats vid Raunfloden i NORR, söder om Eyrenskogarna och Kraggbergen. Styrs av Eyrentigrinnorna. Neutral fredlig handelszon för nordbor (kraggbarbarer, raunlänningar) ↔ sydlänningar. SÄKERT VADSTÄLLE över floden. |
+| Thara-Tiannen | Handelsort i VÄSTER, anlagd 2304 e.D. på kraggbarbarisk gåva. HELT OCKUPERAD av Jargien sedan tio år — ständig gnagande spänning. |
+| Ramdor | Förbannad RUINSTAD, övergiven sedan 2601 e.D. (mystiska händelser + pest). Lockar skattsökare. |
+
+*Matkultur:* Enkla näringssoppor/grytor; specialitet dorksoppa (kött, lök, rödbetor, palsternacka, morötter, tomat + vispad grädde).
+
+*Källa: Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)*
+
+## 10. Dokumenterade tolkningar och öppna frågor
 
 ### 5.1 Frisänkan-konflikt (15 km/1 d vs 5 dagar handel)
 - **Lösning/tolkning:** Två leder: direktled 15 km/1 d endast för lätt fotfolk (vitterdal-baronieriet.md:649); handelsled via Bergvik 4+1 d för kärror (trakten-omgivningar.md:307 'Längre väg, sämre' + krönikanas civila tåg dag 5). Båda källvärdena bevaras som separata kanter.
@@ -146,8 +168,8 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 - **Status:** STÄNGD — makro-ordning dokumenterad i meta.kartkalla
 
 ### 5.7 Absolut datering: kartans 'År 2967 efter reningen'
-- **Lösning/tolkning:** cermira.png bär årtalsangivelsen 2967 e.R. Om kartan avser kampanjens nutid gäller: kampanjstart (år 1) ≈ 2966 e.R., aktuellt datum (17:e Hömånad år 2) = 2967 e.R. Det skulle stänga den sista dateringsluckan.
-- **Status:** VÄNTAR JOHANS BEKRÄFTELSE — är kartans 2967 nutiden?
+- **Lösning/tolkning:** BEKRÄFTAT av Johan (oxen-launch seq 18): 2967 efter reningen = kampanjens nutid. Kampanjstart (år 1) = 2966 e.R., aktuellt datum 17:e Hömånad år 2 = 2967 e.R. Alla dateringsluckor stängda.
+- **Status:** STÄNGD
 
 ### 5.8 Raunflodens flödesriktning: Cermira stad → Fort Otis 'medström söderut'?
 - **Lösning/tolkning:** BEKRÄFTAT av Johan (oxen-launch seq 17): Fort Otis ligger NEDSTRÖMS Månsjöns utlopp; Raunflodens källor i Krolimbergen, floden flyter söderut, kröker vid Jarla och mynnar i Nordvik. Mallens 'medström söderut' var korrekt. Ny kanon-detali: Krolimbergen som källområde.
@@ -161,7 +183,7 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 - **Lösning/tolkning:** Listade under tier2_platser; migrering till SSOT triggar AGENTS.md blockerande kontinuitetsprocess och ägs av Johan/claude-sessionen.
 - **Status:** utanför detta uppdrag
 
-## 10. Tier 2 — kända platser utan kanter ännu
+## 11. Tier 2 — kända platser utan kanter ännu
 
 | Namn | Kommentar |
 |---|---|
