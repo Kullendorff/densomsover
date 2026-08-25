@@ -15,7 +15,7 @@
 
 var reseData = {
   meta: {
-    version: 5,
+    version: 6,
     skapad: "2026-08-25",
     tier: 1,
     omfang: "Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder)",
@@ -35,7 +35,8 @@ var reseData = {
 
   // Platsnoter: nyanser som wiki_data.js-regionfältet inte fångar (renderas under platsregistret)
   platsnoter: {
-    "Jarla": "Gränsstad och Ashariens nordligaste jarladöme (egen häroldsbaner enligt asharien.jpg). Ligger precis innanför Cermiras sydgräns (cermira.png, vid Svarta skogen) — politiskt Asharisk, geografiskt Cermiras sydport. wiki_data-regionen 'Asharien' är korrekt men ofullständig; föreslagen SSOT-formulering: 'Asharien (jarladömet Jarla, gränsar Cermira i söder)'. Gränsläget + läget PÅ Raunfloden gör Jarla till naturlig passagepunkt/nod i vägnätet (tull, karavanuppsamling, flodtransport vid kröken)."
+    "Jarla": "Gränsstad och Ashariens nordligaste jarladöme (egen häroldsbaner enligt asharien.jpg). Ligger på RAUNFLODENS SÖDRA STRAND (kanon ~1 600 inv, frijarl Todor Fete) — livlig knutpunkt för flod- och landshandel, Cermiras sydport. Plågas av cirefaliska spioner, tjuvgillen och lönnmördarskrån. wiki_data-regionen 'Asharien' är korrekt men ofullständig; föreslagen SSOT-formulering: 'Asharien (jarladömet Jarla, gränsar Cermira i söder)'.",
+    "Tuzan Rim": "Kvävande het kuststad med stor, tungt befäst ÖRLOGSHAMN — Ashariens krigsflottas bas. Starkt thalaskiskt och cirefaliskt inflytande; frijarl Lemendien Silverfjäder."
   },
 
   // Noder som behövs i grafen men SAKNAS i wiki_data.js (SSOT-luckor, ej migrerade
@@ -167,6 +168,53 @@ var reseData = {
     kalla: "Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)"
   },
 
+  // Asharien & Soldarn — makro-referens för halvöresor (Johan 2026-08-25).
+  // Tier 2-underlag: inga noder ännu, men kriserna påverkar resrisk i hela regionen.
+  asharien_soldarn: {
+    asharien: {
+      statsskick: "Jarlaunion av 10 stadsstater (frijarlar + landsråd i Camard). Överjarl Anstir Tyldon. 240 000 km², ~190 000 inv (0,8/km²). Demografi: asharier 66 %, alver 11 %, dvärgar 9 %, tiraker 6 %.",
+      geografi: "Torr, roströd högplatå (järnrik jord) mellan Khazimbergen (V), Sunariskogen (Ö) och floden BZAR (S, gräns mot Soldarn). Asha-slätten täcks av meterhögt, vassartat ashamirgräs; raviner = laglös gömställen. Livsådern: JÄRNFORSEN, segelbar — de flesta städer ligger vid den. Klippslätten (stenblocksökken) NW om Tuzan Rim.",
+      kriser: [
+        "Svält & slum — magra skördar driver flyktingströmmar till städerna",
+        "KORSARKRIGET — tirakiska pirater + cirefaliska kapare från Caserion härjar på Rhungsjön (påverkar kustsegling Jarla↔Tuzan Rim, se kanten)",
+        "Vrimzikiels upprorshär — avsatte cirefaliske markfursten plundrar de NORDRA delarna av Asharien; landsrådet har värvat motarmé under cirefaliske krigsfursten Ezori"
+      ],
+      stader: [
+        { namn: "Camard", not: "~20 000. Huvudstad, överjarlens säte, hamn vid Järnforsens mynning, marinsoldataakademi. Stadsdelen Camard-Hazr: forntida dvärgisk bosättning (~1 400 zoloddvärgar)." },
+        { namn: "Chadarians hopp", not: "~11 700. Akademiskt centrum vid sydkusten (universitet, magikerakademier); tirakiske frijarlen Torgug Xoro. Serina Elthors destination i Bok 1. 'De dödas krig' 2401 e.D." },
+        { namn: "Nimto", not: "~5 700. FEM DAGSMARSCHER uppströms Järnforsen från Camard — färdigkalibrerat Tier 2-ankare! Legosoldatmarknad, stridsarena, stridscyklé (krigsakademi). Damé Ramoni Girom." },
+        { namn: "Lim'alan vhic Sunariye", not: "~2 600. 'Sunaris portar' — två tredjedelar alver, grundad 1754 e.D. av Xerim, dold bakom grönmålad träpalissad. Alviskt skriftbibliotek. Frijarl Fimanol." },
+        { namn: "Jarla", not: "~1 600. Se platsnoter ovan — Raunflodens södra strand, frijarl Todor Fete, handelsknutpunkt." },
+        { namn: "Fala", not: "~1 300. Djupt ute på torra Asha-slätten; inga bondbyar (karg jord) men många gästväna värdshus. Frijarl Logan Marsac." },
+        { namn: "Ashahrien-Rahls-Unbahr", not: "~1 400. Dyster gruvstad i norra Khazimbergen; nästan hälften dvärgar (guld, silver, platina), Vontar-tro. Zolod Torgar klan Zolod hus Mirun." },
+        { namn: "Nada", not: "~800. Mycket lugn stad vid Järnforsen (segelbar ända hit). Halvöns centrum för sällsynta helande örter + pälsverk. Heliga Andarnas berg strax söderut." },
+        { namn: "Daggbacken", not: "~800. Idyllisk stad i NW-Asharien, majoritet MISSLOR, omges av Ramulskogen. Frijarl Vitlugg." },
+        { namn: "Tuzan Rim", not: "Se platsnoter ovan — örlogshamn, flottbas, thalask/cirefaliskt inflytande." }
+      ],
+      krigsmakt: "Ingen nationell anfallshär — strikt defensiv doktrin. Stadsarnisoner (ofta ~10 % av befolkningen!) + bondemilis (lag: alla vuxna milismän ska äga och träna avståndsvapen, företrädesvis pilbåge) + adelns tunga riddare. Unionsflottan stark men hyrs ut som eskort. Inofficiell försvarsallians med Soldarn."
+    },
+    soldarn: {
+      statsskick: "Feodal ärftlig monarki: rikskonung Sachsar den Vidsynte (magiska svärdet Jisally-Neadh) + 8 hertigar, 23 grevar, 70 baroner. Huvudstad Talon. 80 000 km², ~62 000 inv (+8 000 i Kemithor). Bildat 158 e.D. då fältherren Sold svek Jargien.",
+      geografi: "Bördigt och grönt — Ashariens motsats. Stora outforskade urskogar (rovdjur, monster, skogstroll). Gräns: floden BZAR i norr (mot Asharien), Khazimbergen + Sunariskogen NW. Södra Soldarn: varmt vinland — kronomarker producerar Mundanas mest kända söta viner ('soldiskt gult').",
+      kriser: [
+        "Svarta pesten 2916 e.D. — fem år, nästan HALVA befolkningen dog (kung Artol Remulan inkl.)",
+        "Missväxt 2954–57 — landsbygden övergiven till städerna",
+        "INBÖRDESKRIGSHOT — konungen vs upprorisk adelskoalition ledd av hertig Amirro och den laglöse hertig Basur av Katharsis. Hela riket rustar."
+      ],
+      religion_krigsmakt: "Samoriska läran 85 % med fanatiska Zoriánorden (grundad 1002 e.D.; bränner Daak-troende utan rättegång; aboraterna i Tibara utropade NYTT KORSTÅG mot Soldarn 2966 e.D.). Daak strikt förbjudet. Krigsmakt: dåligt tränade bondemiliser + Solds väktare (1 200 elit i Talon) + Zoriánriddare (få men slagkraftiga).",
+      stader: [
+        { namn: "Talon", not: "~4 000. Befäst kusthuvudstad: legendarisk ringmur (18 m hög, 15 m tjock) på brandkulle (1354 e.D.), katakombnätverk, kungens borg + Zoriánordens högkvarter." },
+        { namn: "Kemithor Riskoz", not: "~8 000. Soldarns största handelsstad + FRIHAMN vid sydkusten; cirefaliska borgmästaren Karkraza av Wekzi; kosmopolitisk (tiraker, alver, cirefalier)." },
+        { namn: "Hadarlon", not: "~2 000. Anrik f.d. huvudstad (195 e.D.), omsluten av djupa skogar, zoriántrogne hertig Yssec Solstjärna, rikets bäst bevarade forntida bibliotek." },
+        { namn: "Daan Hammal", not: "Mycket livlig hamnstad vid sydkusten; riksamiralen hertig Umeran (konungens allierade); stående garnison, cirefaliskt stentorn, torkad/saltad fisk-export." },
+        { namn: "Västerbrygga", not: "~500. Strategisk timmer- och handelsutpost vid JÄRNFORSEN i NORRA gränstrakten mot Asharien; 1/3 av befolkningen flottar timmer nedströms till Trollhem. Trollkrigen 2911 e.D.: 500 krigare nedgjorde 100 troll." },
+        { namn: "Katharsis", not: "~1 000. Laglöst piratfäste på ön Kathar; den korrupte hertig Basur (ätten Två Lansar); fristad för smugglare, lönnmördare, legosoldater som vill störta rikskonungen." }
+      ]
+    },
+    myntfot: "Asharien & Soldarn: 1 guldmark = 160 silverdaler · 1 gulden = 6 silverdaler · 1 silverdaler = 10 koppar — stämmer exakt mot Tabell SH-26/27 (guldmark 160 ✓, gulden 6 ✓).",
+    kalla: "Johan, kanon-beskrivningar 2026-08-25 (direkt i oxen-launch)"
+  },
+
   // Valuta (Tabell SH-26/27, verifierad ordagrant)
   valuta: {
     standard: "1 silver = silvermynt på 1,9 g (jargiska denaren är referensmynt). Samma vikt OCH värde: silverdaler, dinar, thaler, olom, drakma, penning, trugg m.fl.",
@@ -253,7 +301,7 @@ var reseData = {
       transport: "kustsegling (handelsfartyg)",
       km: null, dagar: { min: 14, max: 14 },
       terrang: "Ashariens kust",
-      anmarknung: null,
+      faror: "KORSARKRIGET: tirakiska pirater + cirefaliska kapare från Caserion härjar på Rhungsjön och lamslår handelsrutterna. Unionsflottan hyrs ut som eskortskydd till rika köpmän — eskort kan bokas mot pris (Asharien-kanon 2026-08-25).",
       anmarkning: "'cirka två veckor längs Ashariens kust' — Spegelmåne, Bok 1",
       kalla: { fil: "kampanjkrönika.md", rad: 330 }
     },
@@ -320,6 +368,11 @@ var reseData = {
       fraga: "Grensfortets grannland (Drunok vs Mithera-gränsen) + dubbla 'Östra vägen'-etiketter i baronieri-filen",
       losning: "Johan avgjorde (oxen-launch seq 13 + tillägg): Grensfortet ligger på Vitterdals ÖSTRA kant intill Mithera — Mitheraskogen ligger ÖST/NORR om Vitterdal (cermira.png); Drunok ligger VÄSTERUT via Hög toppmyr (två väsensskilda vägar). Makro-ordning: Jargien → Drunok → Cermira/Asharien (väster→öster). Kanten Vitterdal→Grensfortet uppdaterad därefter. Etiketter: detta register namnger alltid kanter efter DESTINATION (ingen kollision möjlig); för kartfilens ruttetiketter föreslås 'Mithervägen' (Grensfortet-leden) resp. 'Drunokleden' (Hög toppmyr-vägen) — slutligt namn väljer Johan/claude-sessionen.",
       status: "STÄNGD — 'Mithervägen' godkänt av Johan (seq 17); motpartsnamnet 'Drunokleden' för Hög toppmyr-vägen antas därmed"
+    },
+    {
+      fraga: "Vrimzikiels upprorshär — mallen §8 säger 'Cermira, Östanmark', Asharien-kanonen (2026-08-25) säger 'norra delarna av Asharien'",
+      losning: "Båda kan stämma om hären 'drar runt' (den plundrar landsbygden rörligt), men resriskbedömningen behöver veta var den är JUST NU. Landsrådet har värvat motarmé under krigsfursten Ezori — pågående fälttåg i norra Asharien.",
+      status: "OBSERVATION till claude-sessionen/Johan — riskfält i norra Asharien nära Cermiras gräns"
     },
     {
       fraga: "Karavanpris per person/dagsmarsch",

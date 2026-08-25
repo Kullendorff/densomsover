@@ -202,7 +202,47 @@ if (reseData.drunok) {
   L.push("");
 }
 
-L.push(`## 10. Dokumenterade tolkningar och öppna frågor`);
+if (reseData.asharien_soldarn) {
+  const as = reseData.asharien_soldarn;
+  L.push(`## 10. Asharien & Soldarn (makro-referens — halvöresor, Tier 2-underlag)`);
+  L.push("");
+  L.push(`### Asharien — ${esc(as.asharien.statsskick)}`);
+  L.push("");
+  L.push(`**Geografi:** ${esc(as.asharien.geografi)}`);
+  L.push("");
+  L.push(`**Akuta kriser (resrisk!):**`);
+  as.asharien.kriser.forEach((k) => L.push(`- ${esc(k)}`));
+  L.push("");
+  L.push(`**Städer:**`);
+  L.push("");
+  L.push(`| Stad | Not |`);
+  L.push(`|---|---|`);
+  as.asharien.stader.forEach((s) => L.push(`| ${esc(s.namn)} | ${esc(s.not)} |`));
+  L.push("");
+  L.push(`**Krigsmakt:** ${esc(as.asharien.krigsmakt)}`);
+  L.push("");
+  L.push(`### Soldarn — ${esc(as.soldarn.statsskick)}`);
+  L.push("");
+  L.push(`**Geografi:** ${esc(as.soldarn.geografi)}`);
+  L.push("");
+  L.push(`**Kriser & historia (resrisk!):**`);
+  as.soldarn.kriser.forEach((k) => L.push(`- ${esc(k)}`));
+  L.push("");
+  L.push(`**Religion & krigsmakt:** ${esc(as.soldarn.religion_krigsmakt)}`);
+  L.push("");
+  L.push(`**Städer:**`);
+  L.push("");
+  L.push(`| Stad | Not |`);
+  L.push(`|---|---|`);
+  as.soldarn.stader.forEach((s) => L.push(`| ${esc(s.namn)} | ${esc(s.not)} |`));
+  L.push("");
+  L.push(`**Myntfot:** ${esc(as.myntfot)}`);
+  L.push("");
+  L.push(`*Källa: ${esc(as.kalla)}*`);
+  L.push("");
+}
+
+L.push(`## 11. Dokumenterade tolkningar och öppna frågor`);
 L.push("");
 reseData.oppna_fragor.forEach((o, i) => {
   L.push(`### 5.${i + 1} ${o.fraga}`);
@@ -211,7 +251,7 @@ reseData.oppna_fragor.forEach((o, i) => {
   L.push("");
 });
 
-L.push(`## 11. Tier 2 — kända platser utan kanter ännu`);
+L.push(`## 12. Tier 2 — kända platser utan kanter ännu`);
 L.push("");
 L.push(`| Namn | Kommentar |`);
 L.push(`|---|---|`);
