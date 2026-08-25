@@ -15,7 +15,7 @@
 
 var reseData = {
   meta: {
-    version: 2,
+    version: 3,
     skapad: "2026-08-25",
     tier: 1,
     omfang: "Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder)",
@@ -68,21 +68,92 @@ var reseData = {
   ],
 
   // Referensvärden — baser att räkna med när kantdata saknar km/dagar
+  // Regelboksbaserna verifierade ordagrant mot extracted_text av BÅDA sessionerna 2026-08-25.
   bas_hastigheter: [
-    { transportsatt: "Till fots (normaltakt)", km_per_dag: { min: 30, max: 30 },
-      kalla: "krigsherren.md:198 (EM-O001_legokompaniet/research)" },
+    // --- Regelboksbaser (Eon III Spelledarens guide, R2-80 ff) — UTAN terräng-/lastfriktion ---
+    { transportsatt: "Fotmarsch, normal (regelbok)", km_per_dag: { min: 36, max: 36 },
+      kalla: "5092_eon_III_spelledarens_guide.txt:5918–5920 (3 km/h × max 12 tim)" },
+    { transportsatt: "Fotmarsch, snabb (regelbok)", km_per_dag: { min: 44, max: 44 },
+      kalla: "samtlig fil (4 km/h × 11 tim)" },
+    { transportsatt: "Fotmarsch, forcerad (regelbok)", km_per_dag: { min: 50, max: 50 },
+      kalla: "samma fil (5 km/h × 10 tim)" },
+    { transportsatt: "Ritt, normal, obelastad (regelbok)", km_per_dag: { min: 48, max: 48 },
+      kalla: "samma fil:5924, 5929 (4 km/h × 12 tim)" },
+    { transportsatt: "Ritt, snabb (regelbok)", km_per_dag: { min: 80, max: 80 },
+      kalla: "samma fil (8 km/h × 10 tim)" },
+    { transportsatt: "Ritt, forcerad (regelbok)", km_per_dag: { min: 120, max: 120 },
+      kalla: "samma fil (15 km/h × 8 tim)" },
+    { transportsatt: "Ritt, galopp (regelbok, max 1 tim)", km_per_dag: { min: 30, max: 30 },
+      kalla: "samma fil (30 km/h × 1 tim — sprint, ej dagsetapp)" },
+    { transportsatt: "Vagn, normal (regelbok)", km_per_dag: { min: 36, max: 36 },
+      kalla: "samma fil:5825–5827 (3 km/h × 12 tim)" },
+    { transportsatt: "Vagn, snabb (regelbok)", km_per_dag: { min: 50, max: 50 },
+      kalla: "samma fil (5 km/h × 10 tim)" },
+    { transportsatt: "Vagn, forcerad (regelbok)", km_per_dag: { min: 80, max: 80 },
+      kalla: "samma fil (10 km/h × 8 tim)" },
+    // --- Fälthärledda värden (spelade rutter — inkluderar redan last-, väg- och terrängfriktion) ---
+    { transportsatt: "Till fots, militär takt (Krigsherren)", km_per_dag: { min: 30, max: 30 },
+      kalla: "krigsherren.md:198 (EM-O001_legokompaniet/research)",
+      anmarkning: "lägre än regelbokens 36 — militärmarsch med full packning" },
     { transportsatt: "Standardpackning fotfolk", km_per_dag: null, packning_kg: { max: 40 },
       kalla: "krigsherren.md:199", anmarkning: "viktrapport, inte hastighet" },
-    { transportsatt: "Ridande, landsväg, belastad", km_per_dag: { min: 38, max: 50 },
+    { transportsatt: "Häst, landsväg, BELASTAD (fälthastighet)", km_per_dag: { min: 38, max: 50 },
       kalla: "härledt baklänges ur Vitterdal↔Cermira (150 km/3–4 d) och Vitterdal↔Jarla (200 km/5–6 d)",
-      anmarkning: "HÖGRE än mallens 36 km — mallvärdet är fotfolk-referens felplacerat under 'ridande'" },
-    { transportsatt: "Bergsterräng (häst/oxkärra)", km_per_dag: { min: 17, max: 25 },
+      anmarkning: "jämför regelboksbasen 48 (ritt normal obelastad): spelade rutter ger lägre effekt pga last+terräng — använd fältsiftet för realistiska etapper, 48 för idealförhållanden" },
+    { transportsatt: "Bergsterräng (häst/oxkärra, fältvärde)", km_per_dag: { min: 17, max: 25 },
       kalla: "härledt ur Vitterdal→Grensfortet (50 km/2–3 d)" },
-    { transportsatt: "Ridande, obelastad", km_per_dag: null,
-      kalla: "GAP — tabell K-7 (trupptyp-proxy) enligt mallen avsnitt 4; väntar NotebookLM" },
     { transportsatt: "Karavan", km_per_dag: null,
-      kalla: "Ingen fast tabell — heuristik enligt mallen avsnitt 6; pris/bärkraft väntar NotebookLM-GAP" }
+      kalla: "Ingen fast tabell i regelverket (bekräftat saknas) — heuristik enligt mallen avsnitt 6" }
   ],
+
+  // Bärförmåga & belastning (verifierat ordagrant mot extracted_text)
+  belastning: {
+    barformaga: [
+      { typ: "Tvåbenta", formel: "(STY+TÅL)/2 kg, avrundat nedåt" },
+      { typ: "Fyrbenta (häst m.fl.)", formel: "STY+TÅL kg (ingen division)" }
+    ],
+    kalla_formler: "5092_eon_III_spelledarens_guide.txt sid 75–78 + 5091_eon_III_spelarens_bok.txt:3747 ('Bärförmåga är lika med (STY+TÅL).')",
+    tabell_r2_79: [
+      { belastning: "≤ BF", utmattning: "±0", forflyttning: "±0 (bas)", svarighet: "±0" },
+      { belastning: "≤ 2×BF", utmattning: "+1", forflyttning: "−1", svarighet: "±0" },
+      { belastning: "≤ 3×BF", utmattning: "+2", forflyttning: "−2", svarighet: "+Ob1T6" },
+      { belastning: "≤ 4×BF", utmattning: "+3", forflyttning: "−3", svarighet: "+Ob1T6" },
+      { belastning: "≤ 5×BF", utmattning: "+4", forflyttning: "−4", svarighet: "+Ob2T6" },
+      { belastning: "≤ 6×BF", utmattning: "+5", forflyttning: "−5", svarighet: "+Ob2T6" }
+    ],
+    mekanism: "Ingen fast procentuell km-reducering — överbelastning verkar via svårighetsslaget (Marsch/Rida/Köra vagn för dagsetappen) plus extra utmattning. Misslyckat slag kortar dagsetappen med 1 timme per negativ effektpoäng. Förflyttning kan aldrig sänkas under 1."
+  },
+
+  // Vägtyper & möten — mekaniken bakom 'sämre väg = kortare/kriskare dag'
+  vagtyper_och_moten: {
+    princip: "Vägtyp ger INGEN direkt hastighetsmultiplikator. Två separata mekaniska effekter:",
+    effekter: [
+      "Svårighet på dagens Marsch/Rida-slag: lätt terräng (väg, bred stig) −Ob1T6; jobbig terräng (snårigt/sankt/kuperat) +Ob1T6. Misslyckat slag = 1 tim kortare restid per negativ effektpoäng.",
+      "Mötesfrekvens (Tabell R2-141/142): kejserlig landsväg/större handelsväg nivå 4 → Ob6T6 möten/dag; mindre väg nivå 2 → Ob1T6/dag. Modifierare: stenlagd +1, förfallen −1, obefolkat −1, tätbefolkat +1, marknadstider +2, dåligt väder −1, stormväder −2."
+    ],
+    not: "RI-34/35 (tullmultiplikator) är separat ekonomisk mekanik — se mallen §7. Påverkar varken hastighet eller möten.",
+    kalla: "5092_eon_III_spelledarens_guide.txt (R2-79–84, R2-141/142)"
+  },
+
+  // Floder & vinter — viktigt för säsongsmatrisen
+  floder_vinter: {
+    regel: "Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är det uttryckliga undantaget (isfri året runt). Övriga floder (Månfloden m.fl.) antas isbelagda vintertid om kampanjfilen inte anger annat.",
+    not: "Inget exakt ström-hastighetstabellvärde finns i regelverket — flodfärd beräknas fallvis.",
+    kalla: "klimat-/regiontext i Spelledarens guide + landsmodul-cermira"
+  },
+
+  // Valuta (Tabell SH-26/27, verifierad ordagrant)
+  valuta: {
+    standard: "1 silver = silvermynt på 1,9 g (jargiska denaren är referensmynt). Samma vikt OCH värde: silverdaler, dinar, thaler, olom, drakma, penning, trugg m.fl.",
+    avvikande_mynt: [
+      { mynt: "Sekha (Thalamur)", vikt: "1,4 g silver", varde: "3/4 silver", not: "omtyckt inte överallt" },
+      { mynt: "Silverdirham", vikt: "3,8 g silver", varde: "2 silver", not: null },
+      { mynt: "Sunuvai (alviskt siluna)", vikt: "10,0 g", varde: "2 silver", not: null }
+    ],
+    guld_referenser: "Solida 20 silver · Gulden/Florin 6 · Drock 6 · Cador 4 · Narin 10 · Guldmark/Dukat/Kulg 160 · Remerier 252 · Guldlibra 240 · Guldkrona 360 (silverenheter)",
+    lonreferenser: "Soldat ~80 silver/månad; officer ~240; dräng/piga 40–50; enkel logi 15–30/mån (SH s.42); länsherretjänare 10–50 silver/dag (5029_riddaren.txt:3169) — användbara som prisankare för karavan-heuristiken",
+    kalla: "5002_spelarens_handbok.txt Tabell SH-26/27"
+  },
 
   // Kalibrerade kanter. km/dagar = {min,max}; null = okänt (fylls när karta gåtts igenom).
   // tolkning:true = dokumenterad bedömning, johan_bekrafta:true = väntar Johans bekräftelse.
@@ -113,10 +184,11 @@ var reseData = {
     },
     {
       fran: "Vitterdal", till: "Grensfortet",
-      transport: "bergsväg västerut",
+      transport: "bergsväg österut (mot Mithera-gränsen)",
       km: { min: 50, max: 50 }, dagar: { min: 2, max: 3 },
       terrang: "bergsterräng",
-      faror: "Skugglandets gräns vid fortet",
+      faror: "Skugglandets gränser går tunt in i Mithera — tematiskt samma gräns (Johan, oxen-launch seq 13)",
+      anmarkning: "Grannland KLARGJORT av Johan 2026-08-25: fortet ligger på Vitterdals ÖSTRA kant, precis väster om Mithera — det gränsar MITHERA, inte Drunok (gamla tabellraden '→ Drunok' var felet). Drunok ligger på motsatta sidan, västerut via Hög toppmyr. OBS: baronieri-filens geografi-sektion (rad 680–683: 'Norr: Mitheraskogen') behöver synkas med detta beslut.",
       kalla: { fil: "vitterdal-baronieriet.md", rad: 688 }
     },
     {
@@ -217,6 +289,16 @@ var reseData = {
       fraga: "Kampanjkalender — aktuellt datum/år i kampanjen",
       losning: "Bekräftat av Johan 2026-08-25: 17:e Hömånad, år 2 i relativ datering (år 1 = kampanjstart; mötet i Jarla var 5:e Hömånad år 1). Absolut årtal i e.D.-systemet ej fastställt — relativt ankare räcker. Se även meta.kampanj_datum.",
       status: "STÄNGD (relativ datering)"
+    },
+    {
+      fraga: "Grensfortets grannland (Drunok vs Mithera-gränsen) + dubbla 'Östra vägen'-etiketter i baronieri-filen",
+      losning: "Johan avgjorde (oxen-launch seq 13): Grensfortet ligger på Vitterdals ÖSTRA kant intill Mithera; Drunok ligger VÄSTERUT via Hög toppmyr (två väsensskilda vägar). Kanten Vitterdal→Grensfortet uppdaterad därefter. Etiketter: detta register namnger alltid kanter efter DESTINATION (ingen kollision möjlig); för kartfilens ruttetiketter föreslås 'Mithervägen' (Grensfortet-leden) resp. 'Drunokleden' (Hög toppmyr-vägen) — slutligt namn väljer Johan/claude-sessionen.",
+      status: "SAKNFRÅGA STÄNGD; etikettförslag väntar val"
+    },
+    {
+      fraga: "Karavanpris per person/dagsmarsch",
+      losning: "BEKRÄFTAT SAKNAS i regelverket (Spelarens bok, Spelledarens guide, Riddaren genomsökta 2026-08-25) — avsiktligt öppen SL-heuristik som mallen §6 redan antog. Prisankare finns nu under valuta.lonreferenser.",
+      status: "AVSIKTLIGT ÖPPEN — Johan bestämmer modell vid behov"
     },
     {
       fraga: "Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')",

@@ -31,7 +31,7 @@
 | Vitterdal → Cermira stad | landsväg, häst/vagn | 150 | 3–4 | kultiverat, östra vägen | — | vitterdal-baronieriet.md:686 |
 | Vitterdal → S:t Kira | landsväg, södra vägen | — | — | kultiverat | — | vitterdal-baronieriet.md:687 |
 | S:t Kira → Jarla | landsväg, södra vägen | — | — | övergår till Asharien (gränspassage) | — | vitterdal-baronieriet.md:687 |
-| Vitterdal → Grensfortet | bergsväg västerut | 50 | 2–3 | bergsterräng | Skugglandets gräns vid fortet | vitterdal-baronieriet.md:688 |
+| Vitterdal → Grensfortet | bergsväg österut (mot Mithera-gränsen) | 50 | 2–3 | bergsterräng | Skugglandets gränser går tunt in i Mithera — tematiskt samma gräns (Johan, oxen-launch seq 13) | vitterdal-baronieriet.md:688 |
 | Vitterdal → Frisänkan <br>**tolkning** | direktled norrut, ENDAST lätt last till fots | 15 | 1 | myr-/skogsteräng mot Mitheragränsen | — | vitterdal-baronieriet.md:690 |
 | Vitterdal → Bergvik <br>**tolkning** | oxkärra, bergsväg | — | 4 | bergsväg, ofta dimma | — | kampanjkrönika.md:1737–1783 |
 | Bergvik → Frisänkan | oxkärra | — | 1 | skog/mark | — | kampanjkrönika.md:1804 |
@@ -52,14 +52,70 @@
 
 | Transportsätt | Km/dag | Packning | Källa/anmärkning |
 |---|---|---|---|
-| Till fots (normaltakt) | 30 | — | krigsherren.md:198 (EM-O001_legokompaniet/research) |
+| Fotmarsch, normal (regelbok) | 36 | — | 5092_eon_III_spelledarens_guide.txt:5918–5920 (3 km/h × max 12 tim) |
+| Fotmarsch, snabb (regelbok) | 44 | — | samtlig fil (4 km/h × 11 tim) |
+| Fotmarsch, forcerad (regelbok) | 50 | — | samma fil (5 km/h × 10 tim) |
+| Ritt, normal, obelastad (regelbok) | 48 | — | samma fil:5924, 5929 (4 km/h × 12 tim) |
+| Ritt, snabb (regelbok) | 80 | — | samma fil (8 km/h × 10 tim) |
+| Ritt, forcerad (regelbok) | 120 | — | samma fil (15 km/h × 8 tim) |
+| Ritt, galopp (regelbok, max 1 tim) | 30 | — | samma fil (30 km/h × 1 tim — sprint, ej dagsetapp) |
+| Vagn, normal (regelbok) | 36 | — | samma fil:5825–5827 (3 km/h × 12 tim) |
+| Vagn, snabb (regelbok) | 50 | — | samma fil (5 km/h × 10 tim) |
+| Vagn, forcerad (regelbok) | 80 | — | samma fil (10 km/h × 8 tim) |
+| Till fots, militär takt (Krigsherren) | 30 | — | krigsherren.md:198 (EM-O001_legokompaniet/research). lägre än regelbokens 36 — militärmarsch med full packning |
 | Standardpackning fotfolk | — | ≤ 40 kg | krigsherren.md:199. viktrapport, inte hastighet |
-| Ridande, landsväg, belastad | 38–50 | — | härledt baklänges ur Vitterdal↔Cermira (150 km/3–4 d) och Vitterdal↔Jarla (200 km/5–6 d). HÖGRE än mallens 36 km — mallvärdet är fotfolk-referens felplacerat under 'ridande' |
-| Bergsterräng (häst/oxkärra) | 17–25 | — | härledt ur Vitterdal→Grensfortet (50 km/2–3 d) |
-| Ridande, obelastad | — | — | GAP — tabell K-7 (trupptyp-proxy) enligt mallen avsnitt 4; väntar NotebookLM |
-| Karavan | — | — | Ingen fast tabell — heuristik enligt mallen avsnitt 6; pris/bärkraft väntar NotebookLM-GAP |
+| Häst, landsväg, BELASTAD (fälthastighet) | 38–50 | — | härledt baklänges ur Vitterdal↔Cermira (150 km/3–4 d) och Vitterdal↔Jarla (200 km/5–6 d). jämför regelboksbasen 48 (ritt normal obelastad): spelade rutter ger lägre effekt pga last+terräng — använd fältsiftet för realistiska etapper, 48 för idealförhållanden |
+| Bergsterräng (häst/oxkärra, fältvärde) | 17–25 | — | härledt ur Vitterdal→Grensfortet (50 km/2–3 d) |
+| Karavan | — | — | Ingen fast tabell i regelverket (bekräftat saknas) — heuristik enligt mallen avsnitt 6 |
 
-## 5. Dokumenterade tolkningar och öppna frågor
+## 5. Bärförmåga & belastning
+
+- **Tvåbenta:** (STY+TÅL)/2 kg, avrundat nedåt
+- **Fyrbenta (häst m.fl.):** STY+TÅL kg (ingen division)
+
+Tabell R2-79 (belastning vs. BF):
+
+| Belastning | Utmattning | Förflyttning | Svårighet |
+|---|---|---|---|
+| ≤ BF | ±0 | ±0 (bas) | ±0 |
+| ≤ 2×BF | +1 | −1 | ±0 |
+| ≤ 3×BF | +2 | −2 | +Ob1T6 |
+| ≤ 4×BF | +3 | −3 | +Ob1T6 |
+| ≤ 5×BF | +4 | −4 | +Ob2T6 |
+| ≤ 6×BF | +5 | −5 | +Ob2T6 |
+
+Ingen fast procentuell km-reducering — överbelastning verkar via svårighetsslaget (Marsch/Rida/Köra vagn för dagsetappen) plus extra utmattning. Misslyckat slag kortar dagsetappen med 1 timme per negativ effektpoäng. Förflyttning kan aldrig sänkas under 1.
+
+*Källor: 5092_eon_III_spelledarens_guide.txt sid 75–78 + 5091_eon_III_spelarens_bok.txt:3747 ('Bärförmåga är lika med (STY+TÅL).')*
+
+## 6. Vägtyper & möten
+
+Vägtyp ger INGEN direkt hastighetsmultiplikator. Två separata mekaniska effekter:
+- Svårighet på dagens Marsch/Rida-slag: lätt terräng (väg, bred stig) −Ob1T6; jobbig terräng (snårigt/sankt/kuperat) +Ob1T6. Misslyckat slag = 1 tim kortare restid per negativ effektpoäng.
+- Mötesfrekvens (Tabell R2-141/142): kejserlig landsväg/större handelsväg nivå 4 → Ob6T6 möten/dag; mindre väg nivå 2 → Ob1T6/dag. Modifierare: stenlagd +1, förfallen −1, obefolkat −1, tätbefolkat +1, marknadstider +2, dåligt väder −1, stormväder −2.
+- *RI-34/35 (tullmultiplikator) är separat ekonomisk mekanik — se mallen §7. Påverkar varken hastighet eller möten.*
+
+*Källa: 5092_eon_III_spelledarens_guide.txt (R2-79–84, R2-141/142)*
+
+## 7. Floder & vinter
+
+Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är det uttryckliga undantaget (isfri året runt). Övriga floder (Månfloden m.fl.) antas isbelagda vintertid om kampanjfilen inte anger annat. *Inget exakt ström-hastighetstabellvärde finns i regelverket — flodfärd beräknas fallvis.*
+
+## 8. Valuta & prisankare
+
+**Standard:** 1 silver = silvermynt på 1,9 g (jargiska denaren är referensmynt). Samma vikt OCH värde: silverdaler, dinar, thaler, olom, drakma, penning, trugg m.fl.
+
+| Mynt | Vikt | Värde | Not |
+|---|---|---|---|
+| Sekha (Thalamur) | 1,4 g silver | 3/4 silver | omtyckt inte överallt |
+| Silverdirham | 3,8 g silver | 2 silver | — |
+| Sunuvai (alviskt siluna) | 10,0 g | 2 silver | — |
+
+*Guldreferenser:* Solida 20 silver · Gulden/Florin 6 · Drock 6 · Cador 4 · Narin 10 · Guldmark/Dukat/Kulg 160 · Remerier 252 · Guldlibra 240 · Guldkrona 360 (silverenheter)
+
+*Löne-/prisankare (för karavan-heuristiken):* Soldat ~80 silver/månad; officer ~240; dräng/piga 40–50; enkel logi 15–30/mån (SH s.42); länsherretjänare 10–50 silver/dag (5029_riddaren.txt:3169) — användbara som prisankare för karavan-heuristiken
+
+## 9. Dokumenterade tolkningar och öppna frågor
 
 ### 5.1 Frisänkan-konflikt (15 km/1 d vs 5 dagar handel)
 - **Lösning/tolkning:** Två leder: direktled 15 km/1 d endast för lätt fotfolk (vitterdal-baronieriet.md:649); handelsled via Bergvik 4+1 d för kärror (trakten-omgivningar.md:307 'Längre väg, sämre' + krönikanas civila tåg dag 5). Båda källvärdena bevaras som separata kanter.
@@ -73,15 +129,23 @@
 - **Lösning/tolkning:** Bekräftat av Johan 2026-08-25: 17:e Hömånad, år 2 i relativ datering (år 1 = kampanjstart; mötet i Jarla var 5:e Hömånad år 1). Absolut årtal i e.D.-systemet ej fastställt — relativt ankare räcker. Se även meta.kampanj_datum.
 - **Status:** STÄNGD (relativ datering)
 
-### 5.4 Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')
+### 5.4 Grensfortets grannland (Drunok vs Mithera-gränsen) + dubbla 'Östra vägen'-etiketter i baronieri-filen
+- **Lösning/tolkning:** Johan avgjorde (oxen-launch seq 13): Grensfortet ligger på Vitterdals ÖSTRA kant intill Mithera; Drunok ligger VÄSTERUT via Hög toppmyr (två väsensskilda vägar). Kanten Vitterdal→Grensfortet uppdaterad därefter. Etiketter: detta register namnger alltid kanter efter DESTINATION (ingen kollision möjlig); för kartfilens ruttetiketter föreslås 'Mithervägen' (Grensfortet-leden) resp. 'Drunokleden' (Hög toppmyr-vägen) — slutligt namn väljer Johan/claude-sessionen.
+- **Status:** SAKNFRÅGA STÄNGD; etikettförslag väntar val
+
+### 5.5 Karavanpris per person/dagsmarsch
+- **Lösning/tolkning:** BEKRÄFTAT SAKNAS i regelverket (Spelarens bok, Spelledarens guide, Riddaren genomsökta 2026-08-25) — avsiktligt öppen SL-heuristik som mallen §6 redan antog. Prisankare finns nu under valuta.lonreferenser.
+- **Status:** AVSIKTLIGT ÖPPEN — Johan bestämmer modell vid behov
+
+### 5.6 Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')
 - **Lösning/tolkning:** Alias-tabellen löser joinet; överväg egen SSOT-post 'Cermira stad'.
 - **Status:** förslag till claude-sessionen/Johan
 
-### 5.5 Mallens 10 Cermira-orter saknas i wiki_data.js
+### 5.7 Mallens 10 Cermira-orter saknas i wiki_data.js
 - **Lösning/tolkning:** Listade under tier2_platser; migrering till SSOT triggar AGENTS.md blockerande kontinuitetsprocess och ägs av Johan/claude-sessionen.
 - **Status:** utanför detta uppdrag
 
-## 6. Tier 2 — kända platser utan kanter ännu
+## 10. Tier 2 — kända platser utan kanter ännu
 
 | Namn | Kommentar |
 |---|---|

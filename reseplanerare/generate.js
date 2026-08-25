@@ -122,7 +122,57 @@ reseData.bas_hastigheter.forEach((b) => {
 });
 L.push("");
 
-L.push(`## 5. Dokumenterade tolkningar och öppna frågor`);
+if (reseData.belastning) {
+  const b = reseData.belastning;
+  L.push(`## 5. Bärförmåga & belastning`);
+  L.push("");
+  b.barformaga.forEach((f) => L.push(`- **${esc(f.typ)}:** ${esc(f.formel)}`));
+  L.push("");
+  L.push(`Tabell R2-79 (belastning vs. BF):`);
+  L.push("");
+  L.push(`| Belastning | Utmattning | Förflyttning | Svårighet |`);
+  L.push(`|---|---|---|---|`);
+  b.tabell_r2_79.forEach((r) => L.push(`| ${esc(r.belastning)} | ${esc(r.utmattning)} | ${esc(r.forflyttning)} | ${esc(r.svarighet)} |`));
+  L.push("");
+  L.push(`${esc(b.mekanism)}`);
+  L.push("");
+  L.push(`*Källor: ${esc(b.kalla_formler)}*`);
+  L.push("");
+}
+if (reseData.vagtyper_och_moten) {
+  const v = reseData.vagtyper_och_moten;
+  L.push(`## 6. Vägtyper & möten`);
+  L.push("");
+  L.push(`${esc(v.princip)}`);
+  v.effekter.forEach((e) => L.push(`- ${esc(e)}`));
+  L.push(`- *${esc(v.not)}*`);
+  L.push("");
+  L.push(`*Källa: ${esc(v.kalla)}*`);
+  L.push("");
+}
+if (reseData.floder_vinter) {
+  L.push(`## 7. Floder & vinter`);
+  L.push("");
+  L.push(`${esc(reseData.floder_vinter.regel)} *${esc(reseData.floder_vinter.not)}*`);
+  L.push("");
+}
+if (reseData.valuta) {
+  const va = reseData.valuta;
+  L.push(`## 8. Valuta & prisankare`);
+  L.push("");
+  L.push(`**Standard:** ${esc(va.standard)}`);
+  L.push("");
+  L.push(`| Mynt | Vikt | Värde | Not |`);
+  L.push(`|---|---|---|---|`);
+  va.avvikande_mynt.forEach((m) => L.push(`| ${esc(m.mynt)} | ${esc(m.vikt)} | ${esc(m.varde)} | ${esc(m.not || "—")} |`));
+  L.push("");
+  L.push(`*Guldreferenser:* ${esc(va.guld_referenser)}`);
+  L.push("");
+  L.push(`*Löne-/prisankare (för karavan-heuristiken):* ${esc(va.lonreferenser)}`);
+  L.push("");
+}
+
+L.push(`## 9. Dokumenterade tolkningar och öppna frågor`);
 L.push("");
 reseData.oppna_fragor.forEach((o, i) => {
   L.push(`### 5.${i + 1} ${o.fraga}`);
@@ -131,7 +181,7 @@ reseData.oppna_fragor.forEach((o, i) => {
   L.push("");
 });
 
-L.push(`## 6. Tier 2 — kända platser utan kanter ännu`);
+L.push(`## 10. Tier 2 — kända platser utan kanter ännu`);
 L.push("");
 L.push(`| Namn | Kommentar |`);
 L.push(`|---|---|`);
