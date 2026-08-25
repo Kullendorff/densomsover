@@ -39,7 +39,7 @@ Den filen är entry point och visar:
 
 ## 🚨 AUTOMATISK KONTINUITETSKONTROLL (BLOCKERANDE)
 
-**KRITISKT:** Varje gång användaren ber om något NYTT ska Claude AUTOMATISKT granska förslaget mot befintlig kampanjdata INNAN implementering. Detta är BLOCKERANDE - fortsätt inte utan godkännande vid konflikter.
+**KRITISKT:** Varje gång användaren ber om något NYTT ska Codex AUTOMATISKT granska förslaget mot befintlig kampanjdata INNAN implementering. Detta är BLOCKERANDE - fortsätt inte utan godkännande vid konflikter.
 
 ### Vad triggar kontrollen?
 
@@ -406,11 +406,11 @@ EON/kapitel/
 
 ---
 
-## .claude/ - AI-infrastruktur
+## .Codex/ - AI-infrastruktur
 
 ### Struktur
 ```
-.claude/
+.Codex/
 ├── agents/                      # Specialiserade autonoma agenter
 │   ├── eon-data-guardian.md     # Säker wiki_data.js-uppdatering
 │   ├── eon-chronicler.md        # Kampanjkrönikör
@@ -428,7 +428,7 @@ EON/kapitel/
 
 **Global struktur** (utanför EON-projektet):
 ```
-~/.claude/
+~/.Codex/
 ├── hooks/
 │   └── session-start.js         # Auto-loader hook (Node.js)
 ├── memory/
@@ -457,7 +457,7 @@ EON/kapitel/
 **VIKTIGT:** Dessa är **autonoma agents** (inte slash commands). Använd Task tool med `subagent_type` för att starta dem.
 
 ### eon-data-guardian
-**Fil:** `.claude/agents/eon-data-guardian.md`
+**Fil:** `.Codex/agents/eon-data-guardian.md`
 **Syfte:** Säker batch-uppdatering av wiki_data.js
 **Användning:**
 ```python
@@ -482,7 +482,7 @@ Task(
 - När du vill garantera syntax-säkerhet
 
 ### eon-chronicler
-**Fil:** `.claude/agents/eon-chronicler.md`
+**Fil:** `.Codex/agents/eon-chronicler.md`
 **Syfte:** Kampanjens officiella krönikör och kontinuitetsvaktare
 **Användning:**
 ```python
@@ -525,7 +525,7 @@ Task(
 - Historiska sökningar ("När hände X?")
 
 ### eon-doc-extractor
-**Fil:** `.claude/agents/eon-doc-extractor.md`
+**Fil:** `.Codex/agents/eon-doc-extractor.md`
 **Syfte:** Extrahera data från kampanjdokument
 **Användning:**
 ```python
@@ -548,7 +548,7 @@ Task(
 - Förbereda data för batch-tillägg via data-guardian
 
 ### eon-image-curator
-**Fil:** `.claude/agents/eon-image-curator.md`
+**Fil:** `.Codex/agents/eon-image-curator.md`
 **Syfte:** Bildmatchning och organisation
 **Användning:**
 ```python
@@ -571,7 +571,7 @@ Task(
 - Generera bildstatus-rapporter
 
 ### eon-kapitel-writer
-**Fil:** `.claude/agents/eon-kapitel-writer.md`
+**Fil:** `.Codex/agents/eon-kapitel-writer.md`
 **Syfte:** Skriver narrativa HTML-sidor för kampanjens kapitel
 **Användning:**
 ```python
@@ -625,7 +625,7 @@ Task(
 - Inklusive kvalitetskontroll, validering, och entusiastisk ton
 
 ### eon-midjourney-prompter
-**Fil:** `.claude/agents/eon-midjourney-prompter.md`
+**Fil:** `.Codex/agents/eon-midjourney-prompter.md`
 **Syfte:** Generera Midjourney-prompts för EON kampanjbilder
 **Användning:**
 ```python
@@ -691,7 +691,7 @@ Task(
 **VIKTIGT:** Skills är återanvändbara tekniker som dokumenterar "lärdomar". Använd Skill tool för att aktivera dem.
 
 ### eon-npc-adder
-**Fil:** `.claude/skills/eon-npc-adder/Skill.md`
+**Fil:** `.Codex/skills/eon-npc-adder/Skill.md`
 **Syfte:** Säker NPC-tillägg EN I TAGET med strukturell Edit-metod
 **Användning:**
 ```python
@@ -1036,9 +1036,11 @@ Task(
 ---
 
 ## EgetMaterial/
-`EgetMaterial/` innehåller egenproducerat kampanjmaterial — regioner, baronier, organisationer och projekt med egna HTML-sidor. Har egen struktur med mallar, projektmappar och status-filer. Se `EgetMaterial/CLAUDE.md` för detaljer.
+`EgetMaterial/` innehåller egenproducerat kampanjmaterial — regioner, baronier, organisationer och projekt med egna HTML-sidor. Har egen struktur med mallar, projektmappar och status-filer. Se `EgetMaterial/AGENTS.md` för detaljer.
 
 ---
 
 ## Frågor?
 Om något är oklart, fråga innan du gissar. Data-integritet är KRITISK - hellre fråga för mycket än för lite.
+
+## Imported Claude Cowork project instructions
