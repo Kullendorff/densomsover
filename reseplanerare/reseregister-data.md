@@ -236,7 +236,50 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 
 *Källa: Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)*
 
-## 12. Dokumenterade tolkningar och öppna frågor
+## 12. Cirefaliska samväldet (makro-referens)
+
+**Översikt:** Handelsvänlig feodal federation (ärke-/kurfurstar styr provinser/kolonier), Mundanas mest utbredda och ekonomiskt dominerande makt. Skickliga handelsmän, navigatörer, skeppsbyggare — finansiering över hela kända Mundana (jfr Temiranz-lånen till Jargien).
+
+### Melorion (hemlandet) — Hemlandet — ögrupp norr om Takalorr, väster om Ashariska halvön, söder om Jargien. Igonhavet NW, Purpurhavet NE. Tropiskt men tempererat av havsvindar; bördigt, självförsörjande. Tre huvudöar: Vambolien, Rimcoz, Dazava.
+
+| Stad | Not |
+|---|---|
+| Ciremelo | ~40 000. HUVUDSTAD på Vambolien (lagun, södra slätterna). En av Mundanas största hamnar. Ointagen genom historien. Cirzateologins heligaste byggnad: 40 m vitt torn i dvärgamarmor. |
+| Tzarmun Riskoz | ~36 000. Vamboliens norra spets; kanaler, Cirzatempel med silverbelagt tak. Notera namnmönstret 'Riskoz' — samma som Soldarns Kemithor Riskoz. |
+| Remrim | ~13 000. Hamnstad Vambolien; enorma årliga tygmarknader; kanaler djupt in i urskogarna. |
+| Nahrzmel Krack | ~18 000 (främst militärer). Samväldets viktigaste MILITÄRstad på egen ö öster om Vambolien — hel mur av dvärgasten, stor del av krigsflottan + krigsakademier. |
+| Cirza Falz | ~12 000. HELIG pilgrimsort på Rimcoz (Cirza steg här ned till Mundana enl. Tzorlack-rullarna). Strikt förbjuden för icke-cirefalier. Ingen storhandel. |
+| Dzara Pomian | ~30 000. Rimcoz södra kust; tungt befäst (uråldrig dvärgamur); omlastning mot Stora arkipelagen. Rimcoz = samväldets metall/tenn-källa, torr och glesbefolkad. |
+| Zhirim Mian | ~30 000. Största staden på konfliktdrabbade Dazava (tirakiska plundringståg från Takalorr). Kirurgisk skola (samväldets bästa läkare). 'Den FLYTANDE STADEN' — Jargiens slavimport går hit (jfr Jargien-kanon). |
+
+### Caserion (kornbodskolonin) — STÖRSTA och snabbast växande kolonin — samväldets KORNBOD. Öster om Asharien, väster om Thalamur, söder om De stora slätterna (Raon), norr om Rhungsjön. FLODEN RAUN = GRÄNSEN MOT ASHARIEN i väster; floden Thukor gräns mot Thalamur i öster. Konstbevattning; ~160 000 cirefalier + nära HALVMILJON gästarbetare.
+
+| Stad | Not |
+|---|---|
+| Marek Pomian | ~18 000. HUVUDSTAD (Mareks Frihamn). Grundad 1192 e.D. på raunländska Raons sydvästra hörn, tagen via politiskt rävspel 2478 e.D. Koncentriska ringmurar; EXTREMT LÅGA TULLAR (medveten handelspolitik mot Remzian Kracks höga). |
+| Ramezior Turak | ~11 000. Stor stad djupt i inlandet — kolonins huvudsakliga kornbod; kanal- och slussystem till Rhungsjön. |
+| Narzkar Falz | ~7 000. Vid floden Thukor i NO; tvillingstad med Thalamurs Abin-Thukor; port för handel Rhungsjön ↔ Stora slätterna. |
+| Remzian Krack | ~6 000. PÅ GRÄNSEN till Asharien intill RAUNFLODEN. Svarta ointagliga fortet kontrollerar ALL trafik längs Raunfloden genom MYCKET HÖGA TULLAR — nyckelpost för flodhandel Cermira/Jarla↔utlandet! Krigsakademi för sjöstrid. |
+| Haraziz Krack | ~2 000. Sotig garnisonsstad med stor krigshamn; fästningen 'Smedjan' — dvärgar smider tunga vapen. |
+| Harandzran | Militär utpost norrut på Stora slätterna — cirefalier + allierade raunlänningar planerar expansion norrut. |
+
+### Gordrion (gruvkolonin i norr) — Yngsta landet (grundat 2874 e.D. — för 93 år sedan!) av kolonisatörer, slavar och straffångar. Långt NW, på Blå havets nordkust, SW om jargiska kolonin Lothian. Kallt, blåsigt, granskogar + snöberg. ~140 000 cirefalier + enorma gästarbetarmängder. Export: järnmalm, guld, silver, ädelstenar.
+
+| Stad/post | Not |
+|---|---|
+| Casemian | ~13 000. HUVUDSTAD vid floden Lorzimas utlopp; timmerstad på båda flodsidorna; uppsamlingsplats för malm + stora gjuterier (järn → tackor). |
+| Tzorfalz | ~7 000. Östlig utpost; stort välbesökt Cirzatempel med reliker från Cirza själv; jordbruket försörjer kolonin. |
+| Zian Rim | ~4 000 (soldater/marinkårister). Renodlad FLOTTBAS på sydvästra udden; stort fort + väldig fyr mot farliga rev. Notera 'Rim'-namnmönstret (Tuzan Rim, Zian Rim). |
+| Chimazo / Daliz Falz / Penxium | Mindre bosättningar, skogshuggar- och straffläger i vildmarken. |
+
+**Strategiska öar & besittningar:**
+- **Ön Colm:** SW om halvön Danbréann (Consaber). MAGISKT DÖD för hydrotropi — extremt torr. Annekterad 2946 e.D. Befästa Ramezior Krack (~10 000) + allierade dvärgfästet Kholam-Renk-Ghor (notera -renk-Ghor-namntraditionen). Spionbas mot sabriska flottan; potentiellt brohuvud för sjöblockad av Consaber.
+- **Stora arkipelagen (Kryddöarna):** Total militär kontroll över huvudöarna PERDOS och YOL + dussintal mindre. Kolonisationslagar tvingar fram export av kaffe, socker, bomull, tobak, kryddor → Melorion. Största avlastningen: Pomimbukten (Perdos). Styrs från fortet CIREKRACK av guvernör Pomimalo; rykten om mörka magiska experiment på revoltörer.
+- **Szal Dorian (i Jargien):** Cirefalisk handelskoloni grundad 210 e.D., erövrad av jargiska legioner 2445 e.D. — men 7 500 cirefalier kvar och driver banker/kredithus/handel (jfr Jargien-kanon ✓).
+
+*Källa: Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)*
+
+## 13. Dokumenterade tolkningar och öppna frågor
 
 ### 5.1 Frisänkan-konflikt (15 km/1 d vs 5 dagar handel)
 - **Lösning/tolkning:** Två leder: direktled 15 km/1 d endast för lätt fotfolk (vitterdal-baronieriet.md:649); handelsled via Bergvik 4+1 d för kärror (trakten-omgivningar.md:307 'Längre väg, sämre' + krönikanas civila tåg dag 5). Båda källvärdena bevaras som separata kanter.
@@ -286,7 +329,7 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 - **Lösning/tolkning:** Listade under tier2_platser; migrering till SSOT triggar AGENTS.md blockerande kontinuitetsprocess och ägs av Johan/claude-sessionen.
 - **Status:** utanför detta uppdrag
 
-## 13. Tier 2 — kända platser utan kanter ännu
+## 14. Tier 2 — kända platser utan kanter ännu
 
 | Namn | Kommentar |
 |---|---|

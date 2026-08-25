@@ -266,7 +266,38 @@ if (reseData.jargien) {
   L.push("");
 }
 
-L.push(`## 12. Dokumenterade tolkningar och öppna frågor`);
+if (reseData.cirefaliska_samveldet) {
+  const c = reseData.cirefaliska_samveldet;
+  L.push(`## 12. Cirefaliska samväldet (makro-referens)`);
+  L.push("");
+  L.push(`**Översikt:** ${esc(c.overview)}`);
+  L.push("");
+  L.push(`### Melorion (hemlandet) — ${esc(c.melorion.lage)}`);
+  L.push("");
+  L.push(`| Stad | Not |`);
+  L.push(`|---|---|`);
+  c.melorion.stader.forEach((s) => L.push(`| ${esc(s.namn)} | ${esc(s.not)} |`));
+  L.push("");
+  L.push(`### Caserion (kornbodskolonin) — ${esc(c.caserion.lage)}`);
+  L.push("");
+  L.push(`| Stad | Not |`);
+  L.push(`|---|---|`);
+  c.caserion.stader.forEach((s) => L.push(`| ${esc(s.namn)} | ${esc(s.not)} |`));
+  L.push("");
+  L.push(`### Gordrion (gruvkolonin i norr) — ${esc(c.gordrion.lage)}`);
+  L.push("");
+  L.push(`| Stad/post | Not |`);
+  L.push(`|---|---|`);
+  c.gordrion.stader.forEach((s) => L.push(`| ${esc(s.namn)} | ${esc(s.not)} |`));
+  L.push("");
+  L.push(`**Strategiska öar & besittningar:**`);
+  c.strategiska_oar.forEach((o) => L.push(`- **${esc(o.namn)}:** ${esc(o.not)}`));
+  L.push("");
+  L.push(`*Källa: ${esc(c.kalla)}*`);
+  L.push("");
+}
+
+L.push(`## 13. Dokumenterade tolkningar och öppna frågor`);
 L.push("");
 reseData.oppna_fragor.forEach((o, i) => {
   L.push(`### 5.${i + 1} ${o.fraga}`);
@@ -275,7 +306,7 @@ reseData.oppna_fragor.forEach((o, i) => {
   L.push("");
 });
 
-L.push(`## 13. Tier 2 — kända platser utan kanter ännu`);
+L.push(`## 14. Tier 2 — kända platser utan kanter ännu`);
 L.push("");
 L.push(`| Namn | Kommentar |`);
 L.push(`|---|---|`);
