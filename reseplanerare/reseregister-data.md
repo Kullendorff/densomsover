@@ -2,7 +2,7 @@
 
 > **GENERERAD FIL — redigera inte för hand.** Ändra `resedata.js` och kör `node generate.js`.
 >
-> Genererad: 2026-08-25 · Källa: `D:\rollspel\EON\master\wiki_data.js` (58 platser, 292 NPCs laddade)
+> Genererad: 2026-08-25 · Källa: `D:\rollspel\EON\master\wiki_data.js` (58 platser, 317 NPCs laddade)
 > Omfång: Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder). Kanonordning vid konflikt: kampanjkrönika.md > wiki_data.js > NotebookLM.
 
 ## 1. Platsregister (noder — härledda ur wiki_data.js via join)
@@ -18,7 +18,7 @@
 | Iskvarnsbryggan | Flodbrygga | Cermira | wiki_data.js |
 | Jarla | Fristad | Asharien | wiki_data.js |
 | Rödskäggs Tillflykt | Dolt handelsläger | Cermira | wiki_data.js |
-| S:t Kira | Jarladöme/ort | Cermira | EXTRA — cermira.png + vitterdal-baronieriet.md:642 ('jarladöme med bättre klimat') |
+| S:t Kira | Jarladöme/ort | Cermira | EXTRA — cermira.png + vitterdal-baronieriet.md:682 ('jarladöme med bättre klimat') |
 | Tuzan Rim | Hamnstad | Kusten | wiki_data.js |
 | Vargnäset | By | Mellan Muhad och Cermira | wiki_data.js |
 | Vitterdal | Region/Område | Cermira | wiki_data.js |
@@ -27,11 +27,11 @@
 
 | Från → Till | Transport | Km | Dagar | Terräng | Faror/säsong | Källa |
 |---|---|---|---|---|---|---|
-| Vitterdal → Cermira stad | landsväg, häst/vagn | 150 | 3–4 | kultiverat, östra vägen | — | vitterdal-baronieriet.md:646 |
-| Vitterdal → S:t Kira | landsväg, södra vägen | — | — | kultiverat | — | vitterdal-baronieriet.md:647 |
-| S:t Kira → Jarla | landsväg, södra vägen | — | — | övergår till Asharien (gränspassage) | — | vitterdal-baronieriet.md:647 |
-| Vitterdal → Grensfortet | bergsväg västerut | 50 | 2–3 | bergsterräng | Skugglandets gräns vid fortet | vitterdal-baronieriet.md:648 |
-| Vitterdal → Frisänkan <br>**tolkning** | direktled norrut, ENDAST lätt last till fots | 15 | 1 | myr-/skogsteräng mot Mitheragränsen | — | vitterdal-baronieriet.md:649 |
+| Vitterdal → Cermira stad | landsväg, häst/vagn | 150 | 3–4 | kultiverat, östra vägen | — | vitterdal-baronieriet.md:686 |
+| Vitterdal → S:t Kira | landsväg, södra vägen | — | — | kultiverat | — | vitterdal-baronieriet.md:687 |
+| S:t Kira → Jarla | landsväg, södra vägen | — | — | övergår till Asharien (gränspassage) | — | vitterdal-baronieriet.md:687 |
+| Vitterdal → Grensfortet | bergsväg västerut | 50 | 2–3 | bergsterräng | Skugglandets gräns vid fortet | vitterdal-baronieriet.md:688 |
+| Vitterdal → Frisänkan <br>**tolkning** | direktled norrut, ENDAST lätt last till fots | 15 | 1 | myr-/skogsteräng mot Mitheragränsen | — | vitterdal-baronieriet.md:690 |
 | Vitterdal → Bergvik <br>**tolkning** | oxkärra, bergsväg | — | 4 | bergsväg, ofta dimma | — | kampanjkrönika.md:1737–1783 |
 | Bergvik → Frisänkan | oxkärra | — | 1 | skog/mark | — | kampanjkrönika.md:1804 |
 | Frisänkan → Grensfortet | oxkärra | — | 1 | gränstrakter | — | kampanjkrönika.md:1817 |

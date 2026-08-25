@@ -34,7 +34,7 @@ var reseData = {
       namn: "S:t Kira",
       typ: "Jarladöme/ort",
       region: "Cermira",
-      kalla: "cermira.png + vitterdal-baronieriet.md:642 ('jarladöme med bättre klimat')"
+      kalla: "cermira.png + vitterdal-baronieriet.md:682 ('jarladöme med bättre klimat')"
     },
     {
       namn: "Bergvik",
@@ -88,7 +88,7 @@ var reseData = {
       km: { min: 150, max: 150 }, dagar: { min: 3, max: 4 },
       terrang: "kultiverat, östra vägen",
       faror: null,
-      kalla: { fil: "vitterdal-baronieriet.md", rad: 646 }
+      kalla: { fil: "vitterdal-baronieriet.md", rad: 686 }
     },
     {
       fran: "Vitterdal", till: "S:t Kira",
@@ -96,7 +96,7 @@ var reseData = {
       km: null, dagar: null,
       terrang: "kultiverat",
       anmarkning: "Delsträcka av totalen Vitterdal→Jarla (200 km/5–6 d); km-fördelning mellan S:t Kira och Jarla okänd tills kartan mätts",
-      kalla: { fil: "vitterdal-baronieriet.md", rad: 647 }
+      kalla: { fil: "vitterdal-baronieriet.md", rad: 687 }
     },
     {
       fran: "S:t Kira", till: "Jarla",
@@ -104,7 +104,7 @@ var reseData = {
       km: null, dagar: null,
       terrang: "övergår till Asharien (gränspassage)",
       anmarkning: "Samma delsträckekommentar som Vitterdal→S:t Kira",
-      kalla: { fil: "vitterdal-baronieriet.md", rad: 647 }
+      kalla: { fil: "vitterdal-baronieriet.md", rad: 687 }
     },
     {
       fran: "Vitterdal", till: "Grensfortet",
@@ -112,7 +112,7 @@ var reseData = {
       km: { min: 50, max: 50 }, dagar: { min: 2, max: 3 },
       terrang: "bergsterräng",
       faror: "Skugglandets gräns vid fortet",
-      kalla: { fil: "vitterdal-baronieriet.md", rad: 648 }
+      kalla: { fil: "vitterdal-baronieriet.md", rad: 688 }
     },
     {
       fran: "Vitterdal", till: "Frisänkan",
@@ -121,7 +121,7 @@ var reseData = {
       terrang: "myr-/skogsteräng mot Mitheragränsen",
       tolkning: true,
       anmarkning: "Se konfliktlösning: direktleden är snabb för fotfolk men olämplig för kärror — tung last tar handelsleden via Bergvik",
-      kalla: { fil: "vitterdal-baronieriet.md", rad: 649 }
+      kalla: { fil: "vitterdal-baronieriet.md", rad: 690 }
     },
     {
       fran: "Vitterdal", till: "Bergvik",

@@ -53,3 +53,9 @@ Byggd 2026-08-25 av ox-alpha-sessionen (Claude Code) uppdrag från
 claude-sessionen via `C:\oxen-launch` tråd `reseplanerare` (seq 5→).
 Kalibreringsdata spot-checkad mot kampanjkrönika.md, EM-R001/R002,
 learnings.md innan införande — alla citat verifierade mot fil.
+
+Proveniens-notering (Johan 2026-08-25): `vitterdal-baronieriet.html`
+ersatte en tidigare PDF med samma info — `.md`/`.html` i projektet är
+källorna, sök inte efter någon PDF. Kant-citaten i resedata.js uppdaterade
+samma dag efter att baronieri-filen utökats (+48 rader): tabellen flyttade
+från rad 646–649 till 686–690.
