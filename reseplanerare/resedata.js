@@ -15,7 +15,7 @@
 
 var reseData = {
   meta: {
-    version: 8,
+    version: 9,
     skapad: "2026-08-25",
     tier: 1,
     omfang: "Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder)",
@@ -25,7 +25,7 @@ var reseData = {
       sasong: "Högsommar",
       kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9 + seq 18: cermira-kartans 'År 2967 efter reningen' = kampanjens nutid)"
     },
-    kartkalla: "PRIMÄR världskarta: mundana-extra.jpg (har CERMIRA + skala 0–200 mil; Drunok mellan Jargien och Cermira ✓). Regionkartor: cermira.png ('År 2967 efter reningen'), asharien.jpg (jarladömena), cirefalier.jpg (samväldet: Gordrion/Melorion-öarna/Caserion/Colm — bekräftar Remzian Krack på Raunfloden, Marek Pomian vid Rhungsjön, Zian Rims fyr m.fl.). Historisk: mundana-gammal.jpg (CERMIRA SAKNAS — före inskrivningen, endast kuriosum). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Skala: 'mil' antas 10 km (200 mil ≈ 2 000 km). Geografibekräftat 2026-08-25: Mitheraskogen ÖST/NORR om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön. Stavvariant: 'Gaserion' (mundana-extra) vs 'Caserion' (kanon) — antas samma rike"
+    kartkalla: "PRIMÄR världskarta: mundana-extra.jpg (har CERMIRA + skala 0–200 mil; Drunok mellan Jargien och Cermira ✓). Regionkartor: cermira.png ('År 2967 efter reningen'), asharien.jpg (jarladömena), cirefalier.jpg (samväldet: Gordrion/Melorion-öarna/Caserion/Colm — bekräftar Remzian Krack på Raunfloden, Marek Pomian vid Rhungsjön, Zian Rims fyr m.fl.), damarien.jpg (Damarien/Västmark med gränsfloden Krylon, bergspassen Dvärgpasset/Utborgspasset/Rolvis trappa/Korpärnas pass — SKALA I DAGSMARSCHER: 2 dagsmarscher ≈ 10 mil ⇒ kartan antyder ~5 mil/dagsmarsch, översta spannet; grov skala, använd försiktigt). Historisk: mundana-gammal.jpg (CERMIRA SAKNAS — före inskrivningen, endast kuriosum). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Skala: 'mil' antas 10 km (200 mil ≈ 2 000 km). Geografibekräftat 2026-08-25: Mitheraskogen ÖST/NORR om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön. Stavvariant: 'Gaserion' (mundana-extra) vs 'Caserion' (kanon) — antas samma rike"
   },
 
   // Join-nycklar: nodnamn här -> postnamn i wiki_data.js (om de skiljer sig)
@@ -291,6 +291,43 @@ var reseData = {
     kalla: "Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)"
   },
 
+  // Västmark & Damarien — makro-referens (Johan 2026-08-25)
+  vastmark_damarien: {
+    vastmark: {
+      statsskick: "Lös rådsrepublik: 5 självstyrande kantoner, president Kamand av Xerims ätt (medelmåttig, slätstruken). 75 000 km², 38 000 inv (0,5/km²). Demografi: västmarkare (asharier) 68 %, Marnakh-tiraker 14 %, Bazirk-tiraker 10 %, zolod-/ghor-dvärgar 3 %, alver 3 %. Huvudstad Rampor (~7 000). Ingen statsreligion: samoriska läran 70 % (uppblandad med lokala gudar/Daak), tirakerna dyrkar krigsgudinnan MAHKTAH.",
+      geografi_resrisk: "SYDKUSTEN: låglänt, gyttjig SANKMARK med mangrove och vass — näst intill obeboelig, sjuder av reptiler, fiskar och FRUKTANSVÄRDA TRÄSKMONSTER; ständiga skyfall/översvämningar. Inlandet: vilda Khrûn- och Khazimbergen — bergatroll och vättekolonier i djupa grottsystem. DEN GEOLOGISKA SÄNKAN: 2 km bred, 200 m djup cirkulär sänka i Khazimbergen norr om Rampor; botten = monsterinfekterat träsk. LEGEND: en hel dvärgisk handelskaravan (guld, magiska reliker, ädelstenar) störtade ner här under tiraköverfall — äventyrskrok.",
+      handel: "Huvudnäring gruvdrift; export malm/metaller/ädelstenar/smidesvaror; import spannmål/kött/tyg/kryddor. Handelsvägar: sjövägen + längs den GRÖNA FLODEN. Myntfot: västmarkisk THALER = 1,9 g silver = 1 silver (jargisk denar-paritet). Vänner: Soldarn, Caserion, Jargien, Consaber. Fiende: Damarien (kallt krig, fientliga stunder). Krigsmakt: 1 400 yrkessoldater (1 200 lätt kavalleri + 200 bågskyttar) + ~1 400 i uppbåd; inga örlogsfartyg utom patrullbåtar mot tirakiska pirater.",
+      stader: [
+        { namn: "Rampor", not: "~7 000. Huvudstad på brant klippig halvö mot ön Naldor; byggd MITT I en forntida ruin stad — den monumentala bevarade muren är försvar (presidentens garde bemannar). Färgstark NÖJES- & UNDERHÅLLNINGSORT: krogar, tavernor, spelhålor, bordeller — gruvarbetarna från RALKOM (gruvstad på Naldor) spenderar här. INTERNT PROBLEM: stadsvakten splittrad i två fientliga falanger (människor vs tiraker). President Kamand + kantonfurste Dac Persal den dristige." },
+        { namn: "Västborg", not: "~1 200. Starkt befäst utpost mellan Norra skogen och gränsfloden KRYLON: stor borg i träskmark + TRE yttre citadell (belägringsskydd). Västmarks viktigaste handelsstation mot Damarien — men handeln MILITÄRT STRYPT på senare år. Furstinnan Liora Rekim (skicklig, omtyckt, diplomatisk)." },
+        { namn: "Vazago", not: "Forntida, fruktad RUINSTAD längs gamla kustvägen östsydöst om Rampor; gick under pga sista härskaren Garons synder." }
+      ]
+    },
+    damarien: {
+      varning: "⚠️ SL-HEMLIGHETER I DETTA BLOCK (Ariandras pakt, vandöda-armén) — FÅR ALDRIG LÄCKA till spelar-synligt material. Jfr AGENTS.md 'Damarien — Politiskt & Militärt Läge'.",
+      statsskick: "Monarkisk diktatur: storfurste Thamas Vitfjäder Donato ('Envåldshärskaren'), drottning Ariandra den Behagfulla. 45 000 km², ~630 000 inv (historiska källor: 96 000 FÖRE de norra provinserna införlivades helt — diskrepans värd att notera). Rättvisa: okorrumperad, skoningslös, DRAKONISK — grymma avrättningar, främst PÅLSPETSNING. Huvudstad Targus (~8 000, borgen Pelgrinmarac; grundad 211 e.D.). Språk: jargiska + targatiska dialekt.",
+      geografi_resrisk: "VRAKKUSTEN (S): varmt/fuktigt men LIVSFARLIGT SJÖFARTSOMRÅDE — kall nordström + varm sydström möts i 'Hoppinglöshetens hav': turbulenta virvlar och MALSTRÖMMAR driver fartyg mot dolda vassa rev. Hammarnäset: fuktiga snårskogar, djungellika träsk. Norra kusten: svalt, regnigt, DIMHÖLJT, branta klippor, roströda JÄRVSKOGEN. Inlandet: torr karg grässlätt, rödbruna klippor, RAGADIKLYFTAN (flera hundra meter djup forntida floddal).",
+      handel_resor: "Sjöhandel ENDAST via frihamnen MIRRON (enda plats där utländska köpmän släpps in utan pappersexercis). Landvägen mot Jargien kontrolleras via HELM; skyddade pass genom Khazimbergen (damarien-kartan visar Dvärgpasset, Utborgspasset, Rolvis trappa, Korpärnas pass). KALLT KRIG mot Västmark & Soldarn: gränsflod KRYLON — damariska sidan TALEM = upprustad invasionsbas med TOTALT handelsförbud mot Västmark; västra sidan Västborg (handeln strypt). Import: spannmål + timmer (till pågående FARTYGSBYGGE). Export: järnmalm (östra Targatia/Culnar), träkol. Myntfot: asharisk standard — ducat=guldmark 160, florin=gulden 6, dinar=silverdaler 10 koppar.",
+      krigsmakt: "4 200 yrkessoldater + 9 800 milis; örlogsflotta med 1 000 marininfanterister; storfurstens legendariska personliga livvakt NATTGARDET (tränas i Svarta citadellet). Legokompaniet BLODSBRÖDERNA har bas i Hammarnäs (jfr EM-O001_legokompaniet-research i repot). Allierade: Jargiska kejsardömet, dvärgafästet KHAZIM-RENK-GHOR. Fiender: Takalorr-pirater; kallt krig Västmark/Soldarn.",
+      historia_hemligheter: "Vampyr-eran VESPERIARDINA ('Skymningens trädgård'): inlandet styrdes ÖPPET av vampyrer (lamior) — människor som slavar, skatter i färskt blod. DAGBRÄCKNINGSKRIGET 713 e.D.: trollkarlen Damas den Svarte (gav landet namnet) besegrade lamiorna; sista striden krävde 'Damas offer' — han offrade den belägrade hemstaden Targus + sin familj. IDAG (SL-HEMLIGT): drottning Ariandra har i hemlighet slutit pakt med lamiorna i orden INCANTAMENTI LAMIA — en GIGANTISK UNDERJORDISK VANDÖDA-ARMÉ byggs i katakomberna under tvillingtornen SIN-MEGADA, avsedd för stundande erövringskrig. (Stämmer mot AGENTS.md: Ariandra = Xinu-inkarnation; 'Ruinerna under Helm'.) Källfråga: stadstexten säger 'grundad av magikern DAMAR den Svarte', historieavsnittet 'DAMAS den Svarte' — stavvariant eller två personer?",
+      stader: [
+        { namn: "Targus", not: "~8 000. Huvudstad på torra blåsiga inlandsslätter. Borgen Pelgrinmarac (storfurstens säte); de fem vindarnas kloster HQ; Xinukulten växer i skuggorna." },
+        { namn: "Hammarnäs", not: "~11 000. ÄLDSTA, STÖRSTA och mest militariserade staden — hög kulle vid näsets västra udde, osedvanligt hög/kraftig mur. Örlogsflottan + armén stationerade; Blodsbrödernas bas; Svarta citadellet (Nattgardet tränas)." },
+        { namn: "Mirron", not: "Rikaste + snabbast växande; ENDA FRIHAMNEN (västkusten) — utlänningar tillåts röra sig fritt. Trähus, smala labyrintgränder, hög träpalissad mot landsidan. Stadsmannaråd; historisk fredlig medlarplats i inbördeskrig." },
+        { namn: "Helm", not: "~3 000. F.D. stolt huvudstad vid Svarta skogens kant; mystisk ohelig katastrof + HELMSLAKTEN för ~100 år sedan → ödelagd, DJUPT FÖRBANNAD, undviks av damarier. Numera skogshuggarort. (Jfr AGENTS.md 'Ruinerna under Helm' = KRITISK HEMLIGHET; Gordons bror Ethan tjänstgör i Damarien via Bronshjälmarna.)" },
+        { namn: "Talem", not: "~5 000. Strategisk, hårt befäst gränsstad vid KRYLON — MASSIV nyligen upprustning som Thamas primära INVASIONSBAS och spärrfäste mot Västmark. Handel med Västmark STRÄNGT FÖRBUDDEN i staden. Styrs av godsfrun Odille Vitfjäder + general Grigorios Vallecata." }
+      ],
+      fornlamningar: [
+        { namn: "Monolitcirkeln", not: "144 monoliter à ~15 m, strategiskt placerad MITT EMELLAN Targus/Mirron/Hammarnäs där flera starka magiska kraftlinjer korsas." },
+        { namn: "Sin-Megada", not: "Tvillingtorn (ursprungligen bostäder åt nekromantikern Aagel + symbolisten Damaga) bundna av DOLD UNDERJORDISK TUNNEL. Idag blodssekternas och lamiornas högfäste + vandöda-arméns katakomber (SL-HEMLIGT)." },
+        { namn: "Thummons portar", not: "Två ENORMA 25-m statyer uthuggna i klipporna vid inloppet till sundet mellan ön Thummon och Takalorr — två forntida Allamlahjältar (en människa, en tirak), varsin sida om vattnet." },
+        { namn: "Det Vita Klostret", not: "VINDTRONS heligaste plats — pampig vit stenborg på hög kulle ute på de karga inlandshedarna i Silvianestia, styrs av 'Den Äldste'." },
+        { namn: "Vesperiardina", not: "'Skymningens trädgård' — raserade ruiner efter vampyrdrottningen Odettes svarta slott djupt i skogarna; vaktas enligt legenden av mörka nattrosor (livnär sig på månljus + människoblod)." }
+      ],
+      kalla: "Johan, kanon-beskrivningar + damarien.jpg 2026-08-25 (direkt i oxen-launch)"
+    }
+  },
+
   // Valuta (Tabell SH-26/27, verifierad ordagrant)
   valuta: {
     standard: "1 silver = silvermynt på 1,9 g (jargiska denaren är referensmynt). Samma vikt OCH värde: silverdaler, dinar, thaler, olom, drakma, penning, trugg m.fl.",
@@ -449,6 +486,11 @@ var reseData = {
       fraga: "Vrimzikiels upprorshär — mallen §8 säger 'Cermira, Östanmark', Asharien-kanonen (2026-08-25) säger 'norra delarna av Asharien'",
       losning: "BEKRÄFTAT av Johan: BÅDA stämmer — hären är rörlig och plundrar i både Cermiras Östanmark och norra Asharien. Resriskfältet omfattar hela gränstrakten; landsrådets motarmé under krigsfursten Ezori opererar i norra Asharien.",
       status: "STÄNGD"
+    },
+    {
+      fraga: "Dagsmarsch-skala på damarien.jpg: 2 dagsmarscher ≈ 10 mil ⇒ ~5 mil (50 km)/dagsmarsch?",
+      losning: "Kartans dubbla skala antyder 50 km/dagsmarsch — ÖVERSTA änden av regelboks-spannet (ritt normal 48, fot forcerad 50) och över fältsiffrorna (30–48). Kan avse ridande normalfart på goda vägar, eller vara kartografisk förenkling. Använd regelboksbaserna som primära; kartskalan som grov orientering.",
+      status: "OBSERVATION — Johan kan bekräfta avsett dagsmarschvärde"
     },
     {
       fraga: "Era-beteckningar: 'e.R.' (efter Reningen — Jargien-kanon: 'Sedan Reningen år 0') vs 'e.D.' (används i Drunok-/Soldarn-texterna)",

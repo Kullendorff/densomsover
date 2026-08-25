@@ -297,7 +297,46 @@ if (reseData.cirefaliska_samveldet) {
   L.push("");
 }
 
-L.push(`## 13. Dokumenterade tolkningar och öppna frågor`);
+if (reseData.vastmark_damarien) {
+  const vd = reseData.vastmark_damarien;
+  L.push(`## 13. Västmark & Damarien (makro-referens)`);
+  L.push("");
+  L.push(`### Västmark (Vanskmar) — ${esc(vd.vastmark.statsskick)}`);
+  L.push("");
+  L.push(`**Geografi & resrisk:** ${esc(vd.vastmark.geografi_resrisk)}`);
+  L.push("");
+  L.push(`**Handel & politik:** ${esc(vd.vastmark.handel)}`);
+  L.push("");
+  L.push(`| Stad | Not |`);
+  L.push(`|---|---|`);
+  vd.vastmark.stader.forEach((s) => L.push(`| ${esc(s.namn)} | ${esc(s.not)} |`));
+  L.push("");
+  L.push(`### Damarien (Storfurstendömet) — ${esc(vd.damarien.statsskick)}`);
+  L.push("");
+  L.push(`> ${esc(vd.damarien.varning)}`);
+  L.push("");
+  L.push(`**Geografi & resrisk:** ${esc(vd.damarien.geografi_resrisk)}`);
+  L.push("");
+  L.push(`**Handel & resor:** ${esc(vd.damarien.handel_resor)}`);
+  L.push("");
+  L.push(`**Krigsmakt:** ${esc(vd.damarien.krigsmakt)}`);
+  L.push("");
+  L.push(`**Historia & hemligheter:** ${esc(vd.damarien.historia_hemligheter)}`);
+  L.push("");
+  L.push(`**Städer:**`);
+  L.push("");
+  L.push(`| Stad | Not |`);
+  L.push(`|---|---|`);
+  vd.damarien.stader.forEach((s) => L.push(`| ${esc(s.namn)} | ${esc(s.not)} |`));
+  L.push("");
+  L.push(`**Fornlämningar & heliga platser:**`);
+  vd.damarien.fornlamningar.forEach((f) => L.push(`- **${esc(f.namn)}:** ${esc(f.not)}`));
+  L.push("");
+  L.push(`*Källa: ${esc(vd.damarien.kalla)}*`);
+  L.push("");
+}
+
+L.push(`## 14. Dokumenterade tolkningar och öppna frågor`);
 L.push("");
 reseData.oppna_fragor.forEach((o, i) => {
   L.push(`### 5.${i + 1} ${o.fraga}`);
@@ -306,7 +345,7 @@ reseData.oppna_fragor.forEach((o, i) => {
   L.push("");
 });
 
-L.push(`## 14. Tier 2 — kända platser utan kanter ännu`);
+L.push(`## 15. Tier 2 — kända platser utan kanter ännu`);
 L.push("");
 L.push(`| Namn | Kommentar |`);
 L.push(`|---|---|`);
