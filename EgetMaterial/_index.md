@@ -9,24 +9,23 @@
 ## 📊 STATISTIK
 
 ### Färdigt material
-- **Länder:** 0
-- **Städer:** 0
+- **Länder:** 1 (EM-L001 Muhad)
+- **Städer:** 2 (EM-S001 Jen, EM-S002 Mithrahus/Vitterdal)
 - **Platser:** 0
-- **Regioner:** 1
+- **Regioner:** 2 (EM-R001 Vitterdal, EM-R002 Förläningen Grensfortet)
 - **Organisationer:** 0
 - **Föremål:** 0
 - **NPCs:** 0
-- **Organisationer:** 0
-- **Totalt färdigt:** 1
+- **Totalt färdigt:** 5
 
 ### Pågående projekt
-- **Aktiva projekt:** 2
+- **Aktiva projekt:** 1
 - **I fas 1 (Syfte & Koncept):** 1
-- **I fas 2 (Research):** 1
+- **I fas 2 (Research):** 0
 - **I fas 3-5 (Skrivande):** 0
 - **I fas 6 (Validering):** 0
 
-**Senast uppdaterad:** 2026-04-16
+**Senast uppdaterad:** 2026-08-25 (EM-R002 klar, EM-O001 pågående)
 
 ---
 
@@ -52,26 +51,6 @@
 - Startar kompaniet i Bok 2 eller bara bakgrundsidé?
 - Vilken region ska vara bas initialt?
 
-### EM-R002: Förläningen Grensfortet
-- **Typ:** Region/Förläning
-- **Fas:** 2 av 7 (Research)
-- **Progress:** 40%
-- **Status:** Samlar material, korrigerat ekonomi enligt Riddaren-regler
-- **Nästa:** Verifiera NPCs med Johan, definiera ytterligare material
-- **Koppling:** Underlydande under EM-R001 (Vitterdal-baronieriet)
-
-**Senaste ändringar (2026-02-03):**
-- Korrigerat ekonomi med Bas + Lyx
-- Lagt till dagsverken och tionde
-- Justerat militärkapacitet till realistiska nivåer
-- Validerat mot kampanjkrönika.md
-- Research från Vitterdal-projektet inhämtad
-
-**Frågor till Johan:**
-- Vilka NPCs är kanoniska? (Astrid Björnsdotter, Olav Järnhand, Ragna Klokhand, etc.)
-- Frisänkan befolkning: 50 eller 60-80?
-- När/hur anlände Xian-Li till Grensfortet?
-
 **För att se status på pågående projekt:**
 ```python
 Task(
@@ -80,37 +59,75 @@ Task(
 )
 ```
 
+EM-R002 Förläningen Grensfortet är klar (fas 7/7) — se sektionen REGIONER nedan.
+
 ---
 
 ## 🌍 LÄNDER
 
-*Inga länder skapade ännu.*
+### EM-L001: Muhad (Gudalandet) ✅
+- **Region:** Västlanden (västra Mundana)
+- **Storlek:** ~1 200 000 invånare (~325 000 km2)
+- **Styre:** Teokrati (Mhim = gudahärskare)
+- **Status:** Kampanjaktivt material, kanoniskt
+- **Kampanjstatus:** Besökt i Kapitel 2 (Jen/Ziu)
+- **Fil:** `lander/EM-L001_muhad.md`
+- **HTML:** `projekt/EM-L001_muhad/muhad.html`
+- **Validerat:** 2026-02-28 (korsvaliderad mot EM-S001 Jen + NotebookLM)
 
-**Exempel:**
-```markdown
-### EM-L001: Örkenriket Khamara
-- **Region:** Muhad (södra delen)
-- **Storlek:** ~200,000 invånare
-- **Styre:** Teokrati (solkult)
-- **Status:** Generiskt, delbart
-- **Kampanjstatus:** Ej använt i kampanj
-```
+**Innehåller:**
+- Komplett geografi, klimat, naturresurser, farliga varelser
+- Full historia (grundande ~1399 f.D. till nutid 2967 e.D.)
+- Styre, politik, rättssystem (Fata'a), 6 nyckelkefaler
+- Befolkning, kultur, religion (Mhimrätten), ceremonier
+- Ekonomi, handel, slaveri (~120 000 slavar)
+- Militär (granascher, nattdräpare, slavarmé, flotta)
+- Magi (selenotropi, Juubuls lärjungar, Gharbawi)
+- 7 städer (Alkarzan, Tabbah, Kaal, Melucka, Quaran, Jen, m.fl.)
+- Nomadfolk (Savakunnerna, östzhaner, Tarkas)
+- 20+ NPCs, 5+ kampanjhooks
+- Avvikelser dokumenterade (delat Ziu-styre, Al-Hafizun, Jen ~100k)
 
 ---
 
 ## 🏙️ STÄDER
 
-*Inga städer skapade ännu.*
+### EM-S001: Jen (Handelsstaden) ✅
+- **Land:** Muhad (Ziu-halvön)
+- **Storlek:** ~100 000 invånare (kampanjanpassning)
+- **Typ:** Hamnstad, handelsstad, slavhandelscentrum
+- **Status:** Kampanjaktivt material, kanoniskt
+- **Kampanjstatus:** Besökt i Kapitel 2
+- **Fil:** `stader/EM-S001_jen.md`
+- **HTML:** `projekt/EM-S001_jen/jen.html`
+- **Validerat:** 2026-02-28 (korsvaliderad mot EM-L001 Muhad + NotebookLM)
 
-**Exempel:**
-```markdown
-### EM-S001: Oasstaden Al-Nur
-- **Land:** Muhad
-- **Storlek:** 15,000 invånare
-- **Typ:** Handelsstad
-- **Status:** Generiskt, delbart
-- **Kampanjstatus:** Ej använt i kampanj
-```
+**Innehåller:**
+- Komplett geografi, historia, styre/lag, kultur, religion, ekonomi, slaveri, militär
+- 10 stadsdelar med platser och NPCs
+- 90+ NPCs, 7 fraktioner med intern struktur
+- 12 nyckel-NPCs med personlighet och dialog
+- Kanalprojektet, kampanjhooks
+- Avvikelser dokumenterade (befolkning, delat styre, Al-Hafizun)
+
+### EM-S002: Mithrahus / Vitterdal (Gruvstaden) ✅
+- **Land:** Cermira (nordvästra hörnet)
+- **Storlek:** ~1 200 invånare permanent + Guldlägret (~100-200, växande)
+- **Typ:** Gruvstad, jarladöme-huvudort, terrasserad bergsstad
+- **Status:** Kampanjaktivt material, kanoniskt
+- **Kampanjstatus:** Besökt i Kapitel 5, 6, 7 (gruppens hembas)
+- **Fil:** `stader/EM-S002_mithrahus.md`
+- **Projektmapp:** `projekt/EM-S002_vitterdal-mithrahus/`
+- **Validerat:** 2026-03-01 (mot EM-R001 + NotebookLM + kampanjkrönika)
+
+**Innehåller:**
+- 5 stadsdelar (Mitrahus, Övre, Nedre, Gruv, Guldlägret)
+- 16+ NPCs (ledare, militär, civila, handelshus, Guldlägret)
+- Guldruschen och provisoriska bosättningen (sommar, vintern kommer)
+- Ekonomi, styre, fraktioner, religion, kultur
+- 7 stämningstexter, 6 kampanjhooks, ASCII-karta
+- Kampanjspecifik sektion (avtagbar)
+- Expanderat material i EM-R001 (region) för fullständig data
 
 ---
 
@@ -147,9 +164,28 @@ Task(
 - Historia (Colonisk → Asharisk → nutid)
 - Mitrahus (stad och borg)
 - Stålsvärds Kavalerister (officiell roster)
-- Grensfortet (ledarskap: Eira, Xian-Li, Skorda)
+- Förläningen Grensfortet (ledarskap: Eira, Xian-Li, Skorda)
 - 6 kampanjhooks
 - 20 Midjourney-prompts
+
+---
+
+### EM-R002: Förläningen Grensfortet ✅
+- **Land:** Cermira (gränsen mot Mithera)
+- **Typ:** Vasallförläning under Vitterdal
+- **Klimat:** Kallt, bergstrakter vid Mitheraskogen
+- **Befolkning:** ~180 (Grensfortet + byarna Bergvik och Frisänkan)
+- **Status:** Kampanjspecifikt (spelarnas förläning)
+- **Kampanjstatus:** Aktivt använt (Kapitel 1, 5, 9-10)
+- **HTML:** `projekt/EM-R002_grensfortet/grensfortet.html`
+- **Validerat:** 2026-03-01
+
+**Innehåller:**
+- Komplett geografi (fort + två byar)
+- Ekonomi (Bas/Lyx-system, dagsverken, tionde)
+- Militärkapacitet (legokompani under Gordon)
+- NPCs (Eira, Skorda, Xian-Li, Adisa, m.fl.)
+- Kampanjhooks
 
 ---
 
@@ -241,15 +277,17 @@ Task(
 
 ---
 
-## 📋 KOMMANDE MATERIAL (IDÉER)
+## 📋 KOMMANDE MATERIAL (PLANERAT)
 
-*Lista över material du planerar att skapa*
+**Planerade projekt (i prioritetsordning):**
+- [x] EM-S001: Jen (Muhads rikaste handelsstad) -- **KLAR**
+- [x] EM-L001: Muhad (Gudalandet) -- **KLAR**
+- [ ] EM-L002: Momolan (matriarkalt grannland söder om Muhad)
 
-**Exempel:**
-- [ ] EM-S001: Oasstaden Al-Nur (muhad-stil handelsstad)
-- [ ] EM-N001: Al-Rashid (karavanledare, mûhadier)
-- [ ] EM-P001: De Svarta Cisternerna (ökenruin)
-- [ ] EM-O001: Skugghandelns Gille (smugglarnätverk)
+**Framtida idéer:**
+- [ ] EM-O001: Juubuls lärjungar (nekromanti-orden i Melûcka)
+- [ ] EM-P001: Dalkhrekni (ruinstad med orakel i Tarkas)
+- [ ] EM-O002: Savakunnerna (nomadkonfederation i Tarkas)
 
 ---
 
@@ -326,4 +364,4 @@ Task(
 
 ---
 
-**Senast uppdaterad:** 2026-02-01
+**Senast uppdaterad:** 2026-08-25

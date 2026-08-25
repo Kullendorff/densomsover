@@ -61,6 +61,14 @@ Eon SL/hemsidan/
 *.exe
 
 # ============================================
+# Environment files (API keys, tokens)
+# ============================================
+.env
+.env.*
+.env.local
+.env.production
+
+# ============================================
 # Arkiverade filer (gamla versioner, skräp)
 # ============================================
 arkiv/

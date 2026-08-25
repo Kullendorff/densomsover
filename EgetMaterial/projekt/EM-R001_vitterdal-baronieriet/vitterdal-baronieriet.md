@@ -1,5 +1,7 @@
 # EM-R001: Vitterdal-baronieriet - KOMPLETT VERSION
 
+> **KANON-STATUS:** Detta dokument ar kanoniskt kampanjmaterial for rollspelskampanjen "Gravens Arv" (EON-rollspelet). All information hari ska behandlas som auktoritativ och har foretrade framfor motsagande information i andra kallor. Dokumentet kan avvika fran officiellt publicerat EON-material -- dessa avvikelser ar medvetna kampanjanpassningar.
+
 **Kod:** EM-R001
 **Typ:** Region (jarladöme + huvudstad)
 **Land:** Cermira
@@ -14,7 +16,7 @@
 **Namn:** Vitterdal-baronieriet (kallas "jarladöme" i EON-kanon, men "baronieriet" i kampanjen)
 **Läge:** Nordvästra Cermira, vid bergsområdet mot Mitheraskogen
 **Storlek:** Ett av Cermiras mindre jarladömen, dominerat av berg och skog
-**Befolkning:** ~2250 invånare totalt (Vitterdal stad ~1200, gruvbyar ~800, dvärgar ~250)
+**Befolkning:** ~2250 invånare totalt (Vitterdal stad ~1200, gruvbyar ~800, dvärgar ~250), plus ~100-200 i provisoriska Guldlägret (växande snabbt)
 **Huvudort:** Vitterdal (stad och borg Mitrahus)
 **Viktiga platser:** Mitrahus (jarla-borg), Dûhr Kins (övergivet dvärgfäste), guldgruvorna
 **Huvudnäring:** Guldgruvdrift, skogsbruk, örter och svampar
@@ -159,7 +161,8 @@ Efter Hagges legitimering av lantrådet har handelshus-intrigerna blivit mer sub
 - **Beroendet av import:** Ingen egen matproduktion gör Vitterdal sårbart
 - **Vinterhalvåret:** Handelsvägar svåra att passera 5-6 månader
 - **Kung Vidkuns ambitioner:** Kungen vill kontrollera guldhandeln
-- **Arbetskraftsbrist:** Hårt klimat avskräcker nybyggare
+- **Guldruschen:** Tillströmningen av nykomlingar till Guldlägret driver upp matpriser (~2× normalpris), skapar konkurrens om arbete, och belastar importkapaciteten. Fler munnar utan ökad mat = sårbarhet
+- **Lönepress:** Handelshusens agenter rekryterar lägerbor som billig arbetskraft, vilket underminerar etablerade gruvarbetares löner
 
 ---
 
@@ -294,6 +297,7 @@ Efter Hagges legitimering av lantrådet har handelshus-intrigerna blivit mer sub
 - Handelshus-intriger (Nejas, Wekzi, Mimore) vilande?
 - Hertig Bernard den okuvlige (om han existerar i kampanjen) - okänd status
 - Potential konflikt med grannjarladömen om resurser
+- **Guldruschen och Guldlägret:** En accelererande tillströmning av nykomlingar har skapat en provisorisk bosättning söder om Vitterdal stad. I högsommarens värme är det hanterbart, men de bofasta ser vad nykomlingarna inte ser: vintern kommer om tre månader. Hagge har ett tidsfönster att lösa situationen. Handelshus utnyttjar medan, och spänningar mellan etablerade bor och nykomlingar växer.
 
 ---
 
@@ -319,11 +323,12 @@ Mitrahus är mer borg än stad - jarla-borgen dominerar staden från sitt höga 
 - **Motivering:** Guldgruvor drar arbetskraft (höjer befolkning), men extremt kallt klimat + dålig jordmån begränsar tillväxt
 
 **Stadsplan:**
-Staden är uppdelad i fyra huvudområden (från topp till botten av bergsidan):
+Staden är uppdelad i fem områden (från topp till botten av bergsidan, plus söder):
 1. **Mitrahus (borgen)** - Högst upp på bergsidan
 2. **Övre staden** - Terrass nedanför borgen, adel och rika köpmän
 3. **Nedre staden** - Terrass längre ned, hantverkare, gruvarbetare, handelsposter
 4. **Gruvkvarteret** - Botten av bergsidan och norrut, vid ingångarna till gruvorna
+5. **Guldlägret** - Söder om Nedre staden, provisorisk bosättning vid vägkorsningen (nytt, växande)
 
 #### 1. Mitrahus (jarla-borgen)
 
@@ -420,6 +425,41 @@ Nedre staden är bullrig och full av liv. På dagen hörs hamrande från smidjan
 **Atmosfär:**
 Gruvkvarteret är smutsigt och bullrigt under arbetstid. Dvärgar och människor arbetar sida vid sida men blandar sig sällan socialt. Dvärgar försvinner ner i sina gruvgångar efter arbetsdagen, och människor återvänder till sina baracker eller nedre staden.
 
+#### 5. Guldlägret (provisorisk bosättning)
+
+**Läge:** Söder om Nedre staden, vid korsningen av södra och västra vägarna ut ur Vitterdal. INTE norrut -- Dûhr Kins-auran driver instinktivt bort nykomlingar.
+
+**Storlek:** ~100-200 personer just nu, men växande snabbt. Förra sommaren var det ett dussin tält. Nu är det hundratals. Om inget görs: 500+ till nästa sommar.
+
+**Fysisk beskrivning:**
+- Tält i trasor, skjul av brädor och granris, vagnar som aldrig tänker rulla igen
+- Några mer permanenta kojor av sten och torv (de som varit här längst)
+- Enkel provisorisk marknad längs huvudvägen
+- "Guldgropens Botten" -- ölstånd i en ombyggd vagn, drivs av Dagna Vedklyva
+- Lägereldar som aldrig slocknar, röken hänger lågt i den kalla luften
+
+**Befolkning:**
+- Gruvarbetare som väntar på plats i gruvorna
+- Lycksökare och prospektörer
+- Handelshus-agenter (rekryterar billig arbetskraft, särskilt Mimores agent Aldric Varro)
+- Desperata familjer som hört att Hagge är rättvis (t.ex. Marta Ljungdal med två barn)
+- Bedragare och ficktjuvar (i minoritet, men växande)
+
+**Dynamik:**
+- **Dûhr Kins-auran:** Nykomlingar som inte vant sig drabbas hårdare -- mardrömmar, omotiverad oro, sömnlöshet
+- **Sommaren döljer problemet:** Just nu är stämningen hoppfull och energisk -- arbete finns, vädret är varmt, allt känns möjligt. Men varje bofast Vitterdal-bo ser vad nykomlingarna inte ser: vintern kommer om tre månader, och de där tälten klarar den inte
+- **Hagges tidsfönster:** Tre månader att antingen integrera, bygga åt, eller driva bort dem. Vill hjälpa -- han var själv utstött -- men resurserna räcker inte till alla
+- **Spänning:** Vitterdal-bor vs nykomlingar ("vi har klarat oss i generationer, nu kommer ni?")
+- **Handelshus:** Ser billig arbetskraft och utnyttjar situationen -- skuldbindning och förskottslöner
+
+**Nyckel-NPCs:**
+- **Rurik Stålhand** (~40 år, drunokier, f.d. gruvförman, självutnämnd talesperson)
+- **Dagna Vedklyva** (~35 år, drunokier, ölståndsvärdinna, hör allt)
+- **Aldric Varro** (~30 år, cirefalierer, Mimores agent, rekryterar genom skuldbindning)
+- **Marta Ljungdal** (~28 år, drunokier, mamma med två barn, desperat men envis)
+
+**Se EM-S002 (mithrahus.md) för fullständig Guldlägret-beskrivning.**
+
 #### Övriga viktiga platser i Vitterdal-området
 
 ### Dûhr Kins / Methras-Renk-Drezin (övergivet dvärgfäste)
@@ -481,7 +521,7 @@ Det övergivna dvärgfästet är en imponerande struktur inbyggd i bergssidan. S
 
 ### Grensfortet
 
-**Läge:** Västra gränsen mot Mithera, österut mot Mithera, mellan Bergvik och Frisänkan
+**Läge:** Östra gränsen mot Mithera, mellan Bergvik och Frisänkan
 
 **Status:** Bemannas i Kapitel 8.5 av kampanjen (11:e-16:e Tretoria, Helenio)
 
@@ -645,7 +685,8 @@ Bergvik är varmare och mer välkomnande än Frisänkan. Barn stirrade på även
 **Viktiga vägar:**
 - **Östra vägen:** Vitterdal → Cermira stad (~150 km, 3-4 dagars resa)
 - **Södra vägen:** Vitterdal → S:t Kira → Jarla (Asharien) (~200 km, 5-6 dagars resa)
-- **Västra vägen:** Vitterdal → Grensfortet → Drunok (~50 km till gränsen, 2-3 dagars resa)
+- **Östra vägen:** Vitterdal → Grensfortet → Mithera-gränsen (~50 km, 2-3 dagars resa)
+- **Västra vägen:** Vitterdal → Hög toppmyr → Drunok
 - **Norra vägen:** Vitterdal → Frisänkan → Mitheraskogen (~15 km, 1 dags resa)
 
 **Farliga områden:**
@@ -880,7 +921,7 @@ Bergvik är varmare och mer välkomnande än Frisänkan. Barn stirrade på även
 **Försvarsanläggningar:**
 - **Mitrahus:** Jarla-borg på högt läge, tjocka murar, två vakttorn
 - **Gruvbefästningar:** Skydd för guldgruvorna, vaktposter vid varje gruvingång
-- **Grensfortet:** Västra gränsen mot Mithera (bemannas i Kapitel 8.5)
+- **Grensfortet:** Östra gränsen mot Mithera (bemannas i Kapitel 8.5)
 - **Vaktposter:** Längs bergsvägar och gränser
 
 **Strategisk position:**
@@ -1411,7 +1452,7 @@ En av de fem huvudgruvorna kollapsar plötsligt, och 30 gruvarbetare (både män
 - **Kapitel 6:** Återkomst och belöning - Hagge legitimerades som jarl, belönade gruppen generöst
 - **Kapitel 7:** Stålsvärds Kavalerister ansluter - Kaelar accepterade tjänst hos Hagge
 - **Kapitel 7-8:** Vargnäset-ockupation → evakuering - Vitterdal som bas under krisen
-- **Kapitel 8.5:** Grensfortet bemannas - Västra gränsen mot Mithera förstärks
+- **Kapitel 8.5:** Grensfortet bemannas - Östra gränsen mot Mithera förstärks
 
 ### Dvärgavtalet med Klan Ghor
 

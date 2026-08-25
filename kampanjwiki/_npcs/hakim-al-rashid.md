@@ -1,44 +1,50 @@
 ---
 layout: npc
 namn: "Hakim al-Rashid"
-titel: "Kefal av Jen"
+titel: "Stadshållare av Jen"
 ras: "Mûhadier"
 kon: "Man"
 status: "levande"
 forsta_fas: 3
 plats: "Jen, Muhad"
-yrke: "Kefal (ämbetsman)"
+yrke: "Stadshållare (ämbetsman)"
 ---
 
 # HAKIM AL-RASHID
-**Kefal av Jen**
+**Stadshållare av Jen**
 
 ## GRUNDINFO
 - **Ras:** Mûhadier
 - **Kön:** Man
-- **Titel:** Kefal av Jen
-- **Yrke:** Högsta ämbetsmannen i staden
+- **Titel:** Stadshållare av Jen
+- **Yrke:** Stadens högsta administrativa tjänsteman
 - **Plats:** Jen, Muhad
 - **Status:** Levande
 - **Första omnämnande:** Fas 3
 
 ## BESKRIVNING
-Hakim al-Rashid är kefal av Jen, en fruktansvärt inflytelserik och mäktig ämbetsman. Hans ord är lag i staden.
+Hakim al-Rashid är stadshållare av Jen, utsedd av kefal Khabi Jaakoh för att sköta stadens dagliga administration. Han fungerar som kefalens förlängda arm i Jen och hanterar handelsfrågor, tullärenden och civil ordning medan Jaakoh styr det bredare Ziu-området.
 
 ## KARAKTÄR
 - Ståtlig man
 - Utstrålar auktoritet och visdom
-- Extremt inflytelserik
-- Respekterad och fruktad
+- Extremt inflytelserik i Jens dagliga politik
+- Respekterad av handlare och fruktad av tjuvar
+- Lojal mot Jaakoh men med egna ambitioner
 
 ## MAKT OCH INFLYTANDE
-Som kefal har Hakim al-Rashid:
-- Högsta administrativ makt i Jen
-- Direkt kontroll över stadens styrning
-- Avgörande inflytande över alla större beslut
-- Ansvar för lag och ordning
+Som stadshållare har Hakim al-Rashid:
+- Daglig administrativ kontroll över Jen
+- Ansvar för tull, handel och civil ordning
+- Rapporterar direkt till kefal Khabi Jaakoh
+- Avgörande inflytande över handelstillstånd och marknadsregler
+- Kommando över stadsvakten
+
+## RELATIONER
+- **Kefal Khabi Jaakoh:** Hakim tjänar under Jaakoh och genomför kefalens vilja i Jen
+- **Slakten Samjed:** Spänningar — Samjed ser Hakim som ett hinder
 
 ## KOPPLINGAR
-- **Position:** Kefal av Jen
+- **Position:** Stadshållare av Jen (under kefal Khabi Jaakoh)
 - **Plats:** Jen, Muhad
 - **Fas:** 3

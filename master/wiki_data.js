@@ -1,6 +1,17 @@
 var wikiData = {
   "npcs": [
     {
+      "namn": "Abir Hasan Ben Amih Jaakoh",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Andlig ledare i Jen",
+      "status": "levande",
+      "plats": "Jen",
+      "fraktion": "Släkten Jaakoh",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# Abir Hasan Ben Amih Jaakoh\n**Andligt överhuvud i Jen, Ziu.** Ansvarar för religiösa ceremonier och kan bannlysa eller benåda. Medlem av släkten Jaakoh och lojal mot kefalen."
+    },
+    {
       "namn": "Adisa",
       "bild": "Adisa.png",
       "ras": "Människa",
@@ -223,6 +234,17 @@ var wikiData = {
       "beskrivning": "# ANYA VÄV\n**Textilansvarig och berättare**\n\n## GRUNDINFO\n- **Ras:** Människ\n\na\n- **Kön:** Kvinna\n- **Yrke:** Textilansvarig, berättare\n- **Plats:** Frisänkan (by)\n- **Status:** Levande\n\n## BESKRIVNING\nAnya är hjärtat i byns sociala liv genom hennes berättelser och hennes roll i att hålla byns traditioner levande.\n\n## ROLL I BYN\nHennes hus är ofta en samlingspunkt för byns kvinnor och barn, vilket skapar en känsla av gemenskap och tillhörighet.\n\n## KARAKTÄR\n- Hjärtat i byns sociala liv\n- Håller traditioner levande\n- Berättare\n- Skapar gemenskap\n\n## KOPPLINGAR\n- **Position:** Textilansvarig och berättare\n- **Plats:** Frisänkan\n- **Roll:** Social knutpunkt för byns kvinnor och barn"
     },
     {
+      "namn": "Arimar Khard",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Muhads ambassadör i Jargien",
+      "status": "levande",
+      "plats": "Daval, Jargien",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Arimar Khard\n**Muhads utsände i Daval (Jargien).** Bor i borgliknande palats, skyddas av 100 muhadinska livvakter. Representerar Muhads intressen i fiendelandet."
+    },
+    {
       "namn": "Astrid Björnsdotter",
       "bild": null,
       "ras": "Människa",
@@ -254,6 +276,28 @@ var wikiData = {
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
       "beskrivning": "# BARTOL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
+    },
+    {
+      "namn": "Bei Amin Ben Lahwan",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Handelsman och drogsmugglare",
+      "status": "levande",
+      "plats": "Melucka",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Bei Amin Ben Lahwan\n**Inflytelserik handelsman i Melucka.** Handlar med tyger, slavar och kryddor. Har egna beväpnade soldater. Driver hemlig droghandel till den jargiska kolonin Lopnor."
+    },
+    {
+      "namn": "Ben-Bannar Barada",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Politisk rådgivare",
+      "status": "levande",
+      "plats": "Muhad",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Ben-Bannar Barada\n**Politisk rådgivare i Muhad.** Verkar i de muhadinska maktkorridorerna."
     },
     {
       "namn": "Benne Tok",
@@ -397,6 +441,17 @@ var wikiData = {
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
       "beskrivning": "# DARIAN DEN SNABBE\n**Kavalleri i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Tungt kavalleri\n- **Specialitet:** Lanscharge mot fiendestridslinjer\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Kavalleriattacker vid Tirakgraven."
+    },
+    {
+      "namn": "Darim al-Fazul",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Internationell köpman",
+      "status": "levande",
+      "plats": "Jen",
+      "fraktion": null,
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# Darim al-Fazul\n**Internationell köpman verksam i Jen.** Driver handel mellan Muhad och omvärlden via Jens hamn."
     },
     {
       "namn": "Darina",
@@ -860,6 +915,17 @@ var wikiData = {
       "beskrivning": "# GERRICK\n**Piratstamgäst**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Pirat\n- **Stamlokal:** Den Svävande Albatrossen\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nGerrick är en notorisk piratstamgäst som ofta ses på Den Svävande Albatrossen. Han har många spännande (om än tvivelaktiga) historier att dela med gästerna.\n\n## KARAKTÄR\n- Notorisk pirat\n- Pratsam och historieberättare\n- Skröntör (historierna kan vara överdrivna)\n- Populär underhållare på värdshuset\n\n## HISTORIER\nGerricks berättelser handlar om:\n- Piratliv och äventyr\n- Skatter och plundring\n- Farliga havsresor\n- Möten med mytiska varelser\n\n## VÄRDE SOM INFORMATIONSKÄLLA\nÄven om Gerricks historier ofta är överdrivna, kan de innehålla korn av sanning om pirater, smugglare och sjöfartsrutter i regionen.\n\n## KOPPLINGAR\n- **Stamlokal:** Den Svävande Albatrossen\n- **Kollegor:** Velissa (sångerska), Halmar (bartender)\n- **Yrke:** Pirat\n- **Plats:** Tuzan Rim\n- **Fas:** 3"
     },
     {
+      "namn": "Ghabel ben Taghob",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Böneutropare (Rabbal)",
+      "status": "levande",
+      "plats": "Alkarzan",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Ghabel ben Taghob\n**Alkarzans berömda böneutropare (Rabbal).** Omkring 30 år gammal. Hans röst hörs utanför stadsmurarna -- en from, genuin troende vars somar-metod anses exceptionell."
+    },
+    {
       "namn": "Ghalib al-Nur",
       "bild": "Ghalib_al-Nur.png",
       "ras": "Människa",
@@ -962,13 +1028,13 @@ var wikiData = {
     {
       "namn": "Hakim al-Rashid",
       "bild": null,
-      "ras": "Människa",
-      "titel": "Kefal av Jen",
+      "ras": "Mûhadier",
+      "titel": "Stadshållare av Jen",
       "status": "levande",
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
-      "beskrivning": "# HAKIM AL-RASHID\n**Kefal av Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Titel:** Kefal av Jen\n- **Yrke:** Högsta ämbetsmannen i staden\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nHakim al-Rashid är kefal av Jen, en fruktansvärt inflytelserik och mäktig ämbetsman. Hans ord är lag i staden.\n\n## KARAKTÄR\n- Ståtlig man\n- Utstrålar auktoritet och visdom\n- Extremt inflytelserik\n- Respekterad och fruktad\n\n## MAKT OCH INFLYTANDE\nSom kefal har Hakim al-Rashid:\n- Högsta administrativ makt i Jen\n- Direkt kontroll över stadens styrning\n- Avgörande inflytande över alla större beslut\n- Ansvar för lag och ordning\n\n## KOPPLINGAR\n- **Position:** Kefal av Jen\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
+      "beskrivning": "# HAKIM AL-RASHID\n**Stadshållare av Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Titel:** Stadshållare av Jen\n- **Yrke:** Stadens högsta administrativa tjänsteman\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nHakim al-Rashid är stadshållare av Jen, utsedd av kefal Khabi Jaakoh för att sköta stadens dagliga administration. Han fungerar som kefalens förlängda arm i Jen och hanterar handelsfrågor, tullärenden och civil ordning medan Jaakoh styr det bredare Ziu-området.\n\n## KARAKTÄR\n- Ståtlig man\n- Utstrålar auktoritet och visdom\n- Extremt inflytelserik i Jens dagliga politik\n- Respekterad av handlare och frukad av tjuvar\n- Lojal mot Jaakoh men med egna ambitioner\n\n## MAKT OCH INFLYTANDE\nSom stadshållare har Hakim al-Rashid:\n- Daglig administrativ kontroll över Jen\n- Ansvar för tull, handel och civil ordning\n- Rapporterar direkt till kefal Khabi Jaakoh\n- Avgörande inflytande över handelstillstånd och marknadsregler\n- Kommando över stadsvakten\n\n## RELATIONER\n- **Kefal Khabi Jaakoh:** Hakim tjänar under Jaakoh och genomför kefalens vilja i Jen\n- **Slakten Samjed:** Spänningar — Samjed ser Hakim som ett hinder\n\n## KOPPLINGAR\n- **Position:** Stadshållare av Jen (under kefal Khabi Jaakoh)\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
       "namn": "Halinor",
@@ -1423,6 +1489,17 @@ var wikiData = {
       "beskrivning": "# KAELTHAR KLERK\n**Stridande i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Ras:** Cirefalier\n- **Roll:** Stridande\n- **Utrustning:** Yxa, sköld\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Stred vid Tirakgraven."
     },
     {
+      "namn": "Kairkhan Nayman",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Arméchef, 'Ökenherren'",
+      "status": "levande",
+      "plats": "Muhad",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Kairkhan Nayman\n**'Ökenherren' -- Muhads arméchef.** Leder den muhadinska armén operativt under Mhims överhöghet. En av Muhads mäktigaste militära ledare."
+    },
+    {
       "namn": "Kald Silvermask",
       "bild": "silvermask.png",
       "ras": "Människa",
@@ -1500,6 +1577,61 @@ var wikiData = {
       "beskrivning": "# KASIM IBN-FARID\n**Slav och bärare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Status:** Slav\n- **Yrke:** Bärare\n- **Ägare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nKasim ibn-Farid är en stark man i trettioårsåldern med kort svart hår och muskulös byggnad. Han är klädd i enkla, men prydliga kläder.\n\n## BAKGRUND\nKasim köptes för sin fysiska styrka och används ofta för att bära Laila i en palankin genom stadens gator och torg.\n\n## ARBETSUPPGIFTER\nSom bärare:\n- Bär Laila i palankin\n- Utför tunga lyft\n- Fysiskt krävande arbete\n- Utför uppgifter med precision\n\n## KARAKTÄR\n- Stark och muskulös\n- Lojal och tystlåten\n- Precis i sitt arbete\n- Plikttrogen\n\n## KOPPLINGAR\n- **Ägare:** Laila al-Jen\n- **Arbetsuppgift:** Bärare\n- **Kollega:** Selim ibn-Rashid (medarbetare som bärare)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
     },
     {
+      "namn": "Kefal Isma'il IV",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Kefal av Alkarzan (ätten Amzro)",
+      "status": "levande",
+      "plats": "Alkarzan",
+      "fraktion": "Ätten Amzro",
+      "kapitel": null,
+      "beskrivning": "# Kefal Isma'il IV\n**Kefal av Alkarzan, ätten Amzro.** Leder en mäktig och populär ätt som styrt huvudstaden 'så länge man kan minnas'. Planerar i HEMLIGHET att ta makten när Mhim Matruk Wolani dör. Kontrollerar Mundanas äldsta stad."
+    },
+    {
+      "namn": "Kefal Khabi Jaakoh",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Kefal av Ziu",
+      "status": "levande",
+      "plats": "Jen",
+      "fraktion": "Släkten Jaakoh",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# Kefal Khabi Jaakoh\n**'Den ärofyllde' -- högsta makten i Ziu.** Fundamentalistisk och hänsynslös, mottsätter sig cirefaliskt inflytande. Kontrollerar Jens handel med järnhand. Hans rivalitet med släkten Samjed i Quaran präglar hela Ziu-halvöns politik."
+    },
+    {
+      "namn": "Kefal Marammar den vise",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Kefal av Melucka",
+      "status": "levande",
+      "plats": "Melucka",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Kefal Marammar den vise\n**Kefal av Melucka, ökenoasen.** Pompös man som föredrar lyx framför styre -- har väckt missnöje i Tabbah. Hans stad hyser i hemlighet Juubuls lärjungar (nekromantiker), och en av de fem mästarna ryktas vara hans rådgivare."
+    },
+    {
+      "namn": "Kefal Salodan den store",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Kefal av Kaal",
+      "status": "levande",
+      "plats": "Kaal",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Kefal Salodan den store\n**Kefal av Kaal -- Mhims främsta rival.** Snikken och maktlysten. Förespråkar öppet upprustning och heligt krig mot Jargien och kolonin Lopnor. Kritiserar Mhim Matruk Wolanis diplomatiska linje. Anar troligen Al-Hafizuns existens."
+    },
+    {
+      "namn": "Khabin Ben Kemal",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Slavauktionsutropare",
+      "status": "levande",
+      "plats": "Jen",
+      "fraktion": null,
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# Khabin Ben Kemal\n**Utropare vid slavauktionerna på Järntorget i Jen.** Hans röst ekar över slavmarknaden när han presenterar dagens 'varor' för köparna."
+    },
+    {
       "namn": "Khalid ibn-Mustafa",
       "bild": "Khalid_al-Tamir.png",
       "ras": "Människa",
@@ -1553,6 +1685,17 @@ var wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 8",
       "beskrivning": "# KRAKE FISKARE\n**41-årig vattenexpert från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 41 år\n- **Yrke:** Fiskare och vattenexpert\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nKrake Fiskare är en erfaren fiskare från Vargnäset med djup kunskap om vatten, fiske och vattenvägar.\n\n## SPECIALKUNSKAPER\n- Fiske (nät, spö, fällor)\n- Vattenkvalitet och vattenföring\n- Navigering på vattendrag\n- Båthantering\n- Ismönster och vintervatten\n- Fiskbestånd och ekologi\n\n## ROLL PÅ GRENSFORTET\nKrakes kunskaper om vatten gör honom ovärderlig:\n- Säkerställer färskvattenförsörjning\n- Etablerar fiskfällor i närliggande vattendrag\n- Underhåller vattensystem\n- Kan bedöma issäkerhet under vintern\n\n## EVAKUERINGEN\n- En av 41 överlevande från Vargnäset\n- Hans vattenkunskaper användes under flykten\n- Hjälpte gruppen hitta säkra vadställen\n\n## KARAKTÄR\n- Praktisk och jordnära\n- Tyst men kunnig\n- Respekterad för sin expertis\n- Pålitlig och stabil\n\n## KOPPLINGAR\n- **Grensfortet:** Vattenansvarig och fiskare\n- **Vargnäset:** Tidigare hemby"
+    },
+    {
+      "namn": "Kuchlug",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Ledare för Savakunnerna",
+      "status": "levande",
+      "plats": "Karakim, Tarkas",
+      "fraktion": "Savakunnerna",
+      "kapitel": null,
+      "beskrivning": "# Kuchlug\n**Savakunnernas nuvarande ledare.** F.d. muhadinsk elitkrigare som bytte sida och anslöt sig till de fruktade 'Rödturbanerna' i Tarkas-öknen. Delar ledarskapet med sin hustru Nur. Kontrollerar Khalkaslätten och gränsstaden Karakim."
     },
     {
       "namn": "Lady Isadora",
@@ -1744,6 +1887,17 @@ var wikiData = {
       "beskrivning": "# LUBNA BINT-MALIK\n**Förmögen handelsdam**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Handelsdam specialiserad på kryddor\n- **Arbetsplats:** Kryddornas Rike\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nLubna bint-Malik är en förmögen handelsdam som specialiserat sig på exotiska kryddor. Hon är en av de mest inflytelserika personerna på kryddmarknaden.\n\n## VERKSAMHET\nLubnas affärsverksamhet:\n- **Butik:** \"Kryddornas Rike\" - en av de största och mest välbesökta på marknaden\n- Kontakter med odlarna i avlägsna regioner\n- Säkerställer att de bästa kryddorna alltid finns tillgängliga\n- Import av exotiska kryddor\n\n## AFFÄRSSKICKLIGHET\nLubna är känd för:\n- Sin förmåga att förhandla\n- Sitt skarpa affärssinne\n- Sitt omfattande nätverk\n- Högkvalitativa varor\n\n## KARAKTÄR\n- Inflytelserik på kryddmarknaden\n- Skicklig förhandlare\n- Skarpt affärssinne\n- Förmögen\n\n## KOPPLINGAR\n- **Arbetsplats:** Kryddornas Rike\n- **Verksamhet:** Kryddhandel\n- **Plats:** Jen, kryddmarknaden\n- **Fas:** 3"
     },
     {
+      "namn": "Madrianna",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Magiker och bordellägare",
+      "status": "levande",
+      "plats": "Alkarzan",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Madrianna\n**Magiker i Alkarzan.** Driver en bordell samt ett sjukhus för krigsveteraner -- en ovanlig kombination. Känd för besvärjelsen 'Madriannas förföriska sång'. En av få inflytelserika kvinnor i det patriarkala Muhad."
+    },
+    {
       "namn": "Magnus Hällström",
       "bild": null,
       "ras": "Människa",
@@ -1819,6 +1973,17 @@ var wikiData = {
       "fraktion": "Oberoende",
       "kapitel": null,
       "beskrivning": "# MEREK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+    },
+    {
+      "namn": "Mhim Matruk Wolani",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Gudahärskare av Muhad",
+      "status": "levande",
+      "plats": "Tabbah",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Mhim Matruk Wolani\n**Gudahärskare av Muhad, fjärde i Wolani-dynastin.** 32 år gammal, tillträdde som 16-åring (2951 e.D.). Folksky, barmhärtig och diplomatisk -- en historisk avvikare från krigartraditionen. Rådgiven av den uråldriga draken Alzakh-Andhor ('Accendrim'). Försöker öppna diplomatiska kanaler med Jargien, vilket väcker starkt motstånd."
     },
     {
       "namn": "Migor Trollkunnig",
@@ -1979,6 +2144,17 @@ var wikiData = {
       "beskrivning": "# NAILA BINT-ZAHIR\n**Serveringspersonal på Kamelens Oas**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Serveringspersonal\n- **Arbetsplats:** Kamelens Oas\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nNaila bint-Zahir arbetar som serveringspersonal på Kamelens Oas och tar hand om gästerna med professionalism och vänlighet.\n\n## ARBETSUPPGIFTER\nSom serveringspersonal:\n- Serverar mat och dryck\n- Tar emot beställningar\n- Säkerställer gästernas trivsel\n- Hjälper till i matsalen och innergården\n\n## KOPPLINGAR\n- **Arbetsplats:** Kamelens Oas\n- **Arbetsgivare:** Farid & Leyla al-Malik\n- **Kollegor:** Tariq, Amira, Youssef, Samir\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
+      "namn": "Nawan Ben Hayel",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Razdo-mästare",
+      "status": "levande",
+      "plats": "Quaran",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Nawan Ben Hayel\n**'Underbarnet från Quaran' -- berömd Razdo-mästare.** Razdo är Muhads förnämsta brädspel som även används för formella dueller. Nawan åtnjuter celebritetstatus i hela Muhad."
+    },
+    {
       "namn": "Neta Båtbyggare",
       "bild": null,
       "ras": "Människa",
@@ -2044,6 +2220,28 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# NOCTURNE\n**Gåtfull ägare av Skuggornas Viloplats**\n\n## GRUNDINFO\n- **Ras:** Okänd\n- **Kön:** Okänt\n- **Yrke:** Värdshusägare\n- **Arbetsplats:** Skuggornas Viloplats\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nNocturne är en gåtfull figur som sällan visar sitt ansikte. Få vet vem som verkligen driver etablissemanget Skuggornas Viloplats i Jens skuggiga kvarter.\n\n## VERKSAMHET\nNocturne driver sitt värdshus med:\n- Extrem diskretion\n- Hemlighetsfull stämning\n- Dämpad belysning\n- Skumma affärer och hemliga möten\n\n### Värdshuset\nSkuggornas Viloplats är känt för:\n- Mörk och mystisk atmosfär\n- Röda sammetstyger och svaga ljus\n- Mörka ales och mystiska elixirer\n- Hemliga möten och skumma affärer\n\n## KARAKTÄR\n- Extremt gåtfull\n- Sällan synlig\n- Diskret och hemlighetsfull\n- Identitet okänd\n\n## BETYDELSE\nNocturnes anonymitet gör Skuggornas Viloplats till den perfekta platsen för de som söker absolut diskretion. Vem Nocturne verkligen är förblir ett mysterium.\n\n## KOPPLINGAR\n- **Arbetsplats:** Skuggornas Viloplats\n- **Plats:** Jen, skuggiga kvarter\n- **Fas:** 3"
+    },
+    {
+      "namn": "Noma Sullel",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Astronom",
+      "status": "levande",
+      "plats": "Alkarzan",
+      "fraktion": "Allvetandets brödraskap",
+      "kapitel": null,
+      "beskrivning": "# Noma Sullel\n**Kvinna från Allvetandets brödraskap.** Befinner sig i Alkarzan för att studera stjärnhimlen. En av få utländska akademiker med tillträde till Alkarzans stora bibliotek."
+    },
+    {
+      "namn": "Nur",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Medledare för Savakunnerna",
+      "status": "levande",
+      "plats": "Karakim, Tarkas",
+      "fraktion": "Savakunnerna",
+      "kapitel": null,
+      "beskrivning": "# Nur\n**Kuchlugs hustru och medledare för Savakunnerna ('Rödturbanerna').** Delar ledarskapet med sin man över den fruktade nomadkonfederationen i Tarkas-öknen."
     },
     {
       "namn": "Olav Järnhand",
@@ -2167,6 +2365,17 @@ var wikiData = {
       "beskrivning": "# RAGNAR\n**Ungdom från Vargnäset**\n\n## GRUNDINFO\n- **Ålder:** 16 år\n- **Ras:** Människa\n- **Status:** Levande\n\n## RELATION\n- **Astrid Björkgren:** Ragnars flickvän\n- **Motivation:** Vill hämnas Sankt Astrids död\n\n## POTENTIAL\nFramtida krigare som vågar ta risker.\n\n## I KAMPANJEN\n**Kapitel 8 - Evakueringen:** Var ombord på Strömjungfrun tillsammans med andra ungdomar under flykten genom Drunok.\n\n## SL-ANTECKNINGAR\nUng man med starka känslor kring Sankt Astrids död. Visar mod och beredd att ta risker för att hämnas."
     },
     {
+      "namn": "Raheb Ab-Radi Samjed",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Kefal av Quaran",
+      "status": "levande",
+      "plats": "Quaran",
+      "fraktion": "Släkten Samjed",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# Raheb Ab-Radi Samjed\n**Kefal av Quaran, Ziu.** Rival till Kefal Khabi Jaakoh i Jen. Samarbetar med cirefaliska kredithus (Elizimaz, Zyrkozian) för att genomdriva det ambitiösa kanalprojektet genom Ziu-halvön. Planerar att återta kefalämbetet som hans släkt gick miste om."
+    },
+    {
       "namn": "Rashan al-Ghedi",
       "bild": "Rashan_al-Ghedi.png",
       "ras": "Människa",
@@ -2220,6 +2429,17 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# RAZIQ AL-NUR\n**Ägare av Den Svävande Fenixen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Värdshusägare\n- **Arbetsplats:** Den Svävande Fenixen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nRaziq al-Nur är en gåtfull man med ett mörkt förflutet. Han driver Den Svävande Fenixen, en mystisk och exotisk bar i Jen.\n\n## VERKSAMHET\nRaziq driver sitt värdshus med:\n- Aura av hemlighet\n- Mystisk atmosfär\n- Diskreta bås för hemliga möten\n- Exotiska drinkar och rökelse\n\n### Värdshuset\nDen Svävande Fenixen är känt för:\n- Mystisk och förtrollande atmosfär\n- Gobelänger och antika artefakter\n- Kryddade likörer och fruktcocktails\n- Äventyrare och diskreta gäster\n\n## KARAKTÄR\n- Gåtfull och hemlighetsfull\n- Mörkt förflutet\n- Diskret och pålitlig\n- Skapar mystisk stämning\n\n## KOPPLINGAR\n- **Arbetsplats:** Den Svävande Fenixen\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
+    },
+    {
+      "namn": "Relwan Jaakoh",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Krigare och svärdsmästare",
+      "status": "levande",
+      "plats": "Jen",
+      "fraktion": "Släkten Jaakoh",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# Relwan Jaakoh\n**Krigare och svärdsmästare ur släkten Jaakoh.** Driver svärdsakademin i Jen där granascher tränas. En farlig man med klingan."
     },
     {
       "namn": "Rennil",
@@ -2300,6 +2520,17 @@ var wikiData = {
       "beskrivning": "# RÅDSLINGAN\n**Uråldrig skuggformad väktare**\n\n## GRUNDINFO\n- **Typ:** Skuggformad varelse\n- **Status:** Upplöst (efter ritual)\n- **Plats:** Jarnthol, den förbannade gruvan\n- **Kapitel:** Kapitel 4\n- **Ursprung:** Skapad av dvärgklan för länge sedan\n\n## BESKRIVNING\nRådslingan är en uråldrig, skuggformad varelse som skapades av en dvärgklan för länge sedan som en väktare av deras mest hemliga gruva.\n\n**Utseende:**\n- Formlös i mörkret\n- När den närmar sig: grova stenhårda fingrar\n- Skepnad av en dvärg utan ansikte\n- Röst som viskning av många röster på en gång - som om de döda från gruvan talar genom den\n\n## URSPRUNG & FÖRBANNELSE\nRådslingan är resultatet av en gammal förbannelse kopplad till en grupp dvärgar vars **namn avsiktligt hade utplånats från den dvärgiska historien**. Ett svek begicks mot dem, och deras namn utplånades - vilket skapade förbannelsen.\n\n## FÖRMÅGOR\n- **Odödlig genom vapen:** Kan inte dödas med vapen - när den attackeras upplöses den och återbildas längre in i gruvan\n- **Bunden till platsen:** Kan inte lämna gruvområdet\n- **Jagar intrångare:** Alla som försöker utforska gruvan blir jagade\n\n## VÄCKT AV GRIKNAR\nNär prospektören **Griknar Granitson** upptäckte den gamla **förseglade gruvgången** och bröt sigillet väcktes Rådslingan. Griknar försvann, och gruvarbetare hörde **röster i mörkret**.\n\n## LÖSNINGEN\nFörbannelsen bröts genom att **återställa de utplånade dvärgarnas namn** och erkänna det svek som begåtts mot dem. I en dramatisk ritual på bergstoppen ovanför gruvan lyckades gruppen återställa namnen genom ceremoni, vilket släppte de bundna dvärgarnas själar fria och bröt förbannelsen.\n\n**Umnataks genombrott:** Under ritualen upplevde Umnatak en stark koppling till andeplanet. Detta markerade **början på hans formella utövande av schamanistiska färdigheter** - en viktig vändpunkt för hans karaktär.\n\n## KOPPLINGAR\n- **Griknar Granitson:** Väckte varelsen genom att bryta sigillet\n- **Grimdal Tungöga:** Visste om varelsen men dolde sanningen\n- **Borga Stenhands:** Hörde rösterna i mörkret\n- **Umnatak:** Bröt förbannelsen genom schamanistisk ritual\n- **De utplånande dvärgarnas själar:** Frigjordes när ritualen genomfördes"
     },
     {
+      "namn": "Sabera",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Drog- och giftmästare",
+      "status": "levande",
+      "plats": "Muhad",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Sabera\n**Drog- och giftmästare i Muhad.** Ryktas vara allierad med mörka krafter. Expert på allt som rör gifter, droger och berusningsmedel."
+    },
+    {
       "namn": "Salma bint-Hafiz",
       "bild": "Salma_bint-Hafiz.png",
       "ras": "Människa",
@@ -2320,6 +2551,17 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# SAMIR IBN-RASHID\n**Kökshjälp på Kamelens Oas**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Kökshjälp\n- **Arbetsplats:** Kamelens Oas\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nSamir ibn-Rashid arbetar som kökshjälp på Kamelens Oas under ledning av sin moster Leyla al-Malik. Han lär sig matlagningskonsten från henne.\n\n## FAMILJ\nSamir är systerson till Leyla al-Malik, värdshusägaren och kocken. Han har vuxit upp i familjens tradition av matlagning.\n\n## ARBETSUPPGIFTER\nSom kökshjälp:\n- Assisterar Leyla i köket\n- Förbereder ingredienser\n- Lär sig familjens receptböcker\n- Hjälper till med alla köksarbeten\n\n## KOPPLINGAR\n- **Arbetsplats:** Kamelens Oas\n- **Moster:** Leyla al-Malik\n- **Arbetsgivare:** Farid & Leyla al-Malik\n- **Kollegor:** Tariq, Amira, Youssef, Naila\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
+    },
+    {
+      "namn": "Sarrius",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Slavhandlare och monsterjägare",
+      "status": "levande",
+      "plats": "Jen",
+      "fraktion": null,
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# Sarrius\n**Jargisk slavhandlare och monsterjägare verksam i Jen.** Handlar med både slavar och exotiska monster. En farlig och hänsynslös affärsman från Jargien."
     },
     {
       "namn": "Sankt Astrid",
@@ -2375,6 +2617,17 @@ var wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 8",
       "beskrivning": "# SAGA\n**Ung häxa med naturmagi**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 19 år\n- **Yrke:** Utvecklar naturmagi\n- **Status:** Levande\n- **Plats:** Vargnäset (bland flyktinggruppen)\n- **Första omnämnande:** Kapitel 8\n\n## BESKRIVNING\nSaga är en 19-årig flicka från Vargnäset som utvecklade naturmagi efter det trauma hon upplevde under Arvorns Hammares ockupation.\n\n## MAGISKA FÖRMÅGOR\nEfter traumat vaknade Sagas naturmagi:\n- **Kommunikation med döda:** Kan höra och tala med de döda\n- **Väderkänslighet:** Känner av väderförändringar\n- **Naturkoppling:** Växande koppling till naturen\n\n## ROLL I EVAKUERINGEN\n**Kapitel 8:** Under den desperata 5-dagarsflykten från Vargnäset:\n- **Dag 3:** Efter Helena Stenmarks och Gammal-Eriks död började Saga kommunicera med de döda\n- Skrämde först flyktinggruppen med sina förmågor\n- Gav sedan hopp genom att visa vägen\n- Kommunicerade med **Umnatak** om andevärlden\n\n## FRAMTIDA POTENTIAL\nSaga betraktas som en av de mest värdefulla överlevande:\n- Kan utvecklas till kraftfull naturmagiker\n- Potentiell allierad för gruppen\n- Unik förmåga att kommunicera med döda\n\n## KARAKTÄR\n- Traumatiserad men stark\n- Rädd för sina egna krafter\n- Vill hjälpa andra\n- Växer in i sin roll som magikanvändare\n\n## KOPPLINGAR\n- **Grupp:** Vargnäsets överlevande (39 flyktingar)\n- **Skepp:** Strömjungfrun (Kapten Berta)\n- **Relation:** Umnatak (lärde henne om andevärlden)"
+    },
+    {
+      "namn": "Shamir Tarim Uzun ben Isma'il",
+      "bild": null,
+      "ras": "Mûhadier",
+      "titel": "Högste sjöofficer",
+      "status": "levande",
+      "plats": "Muhad",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "# Shamir Tarim Uzun ben Isma'il\n**Muhads högste sjöofficer.** Befälhavar över den muhadinska flottan (~100 fartyg) som är uppdelad mellan norra kusten (Blå havet) och södra kusten (Igonhavet)."
     },
     {
       "namn": "Sheikh Nabil",
@@ -2606,6 +2859,17 @@ var wikiData = {
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
       "beskrivning": "# THALIA SKOGSLÖPARE\n**Scout i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Scout, expert på spaning\n- **Utrustning:** Stridssvärd, dolk, liten rundsköld\n- **Status:** Aktiv (efter Tirakgraven)\n\n## I KAMPANJEN\nFas 1: Del av Stålsvärds Kavalerister vid Tirakgraven."
+    },
+    {
+      "namn": "Thamz",
+      "bild": null,
+      "ras": "Tirak",
+      "titel": "Slavhandlare",
+      "status": "levande",
+      "plats": "Jen",
+      "fraktion": null,
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# Thamz\n**Tirakisk slavhandlare i Jen.** Beskriven som 'okänt vidrig'. En av de mer frånstötande figurerna på Järntorgets slavmarknad."
     },
     {
       "namn": "Thalorin Sigrd",
@@ -2917,6 +3181,17 @@ var wikiData = {
       "fraktion": "Jarlas stadsvakt",
       "kapitel": null,
       "beskrivning": "# VOMDAL\n**Jarlas vaktkapten**\n\n## GRUNDINFO\n- **Position:** Vaktkapten för Jarlas stadsvakt\n- **Styrkor:** Befäl över 120 stadsvakter totalt\n- **Ansvar:** Bevakning av staden och yttre bevakningen av Todor Felkes palats\n- **Organisation:**\n  - 4 patruller på murarna samtidigt\n  - Extra vakter i torn som står på vakt konstant\n  - 4 ytterligare patruller i högkvarteret som kan rycka ut vid behov\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Ansvarar för stadens säkerhet.\n\n## SL-ANTECKNINGAR\nVomdal sköter den yttre säkerheten kring frijarlen Todor Felkes palats, medan tiraken Hemkhath Thokk ansvarar för den inre bevakningen med sitt garde på 40 välrustade soldater. Denna uppdelning visar en viss osäkerhet/misstro i maktstrukturen.\n\nEnligt senare händelser (jarla_nu_text.txt) har stadsvakten blivit alltmer brutal under order från Todor Felkes närmaste män, med order att fängsla alla misstänkta förrädare."
+    },
+    {
+      "namn": "Wahan Ru",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Exotisk köpman",
+      "status": "levande",
+      "plats": "Jen",
+      "fraktion": null,
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# Wahan Ru\n**Exotisk köpman på Kaw-basaren i Jen.** Handlar med ovanliga och sällsynta varor från fjärran länder. En av basarens mest färgstarka personligheter."
     },
     {
       "namn": "Warg Spegelsköld",
