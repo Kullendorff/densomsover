@@ -76,7 +76,7 @@ new_string:
 ### Steg 4: VALIDERA OMEDELBART
 
 ```bash
-cd "D:/GDRIVE/My Drive/Johan/Gaming/Gammal leka bäst/EON"
+cd "D:/rollspel/EON"
 node --no-warnings -e "delete require.cache[require.resolve('./master/wiki_data.js')]; const d=require('./master/wiki_data.js'); console.log('✓ NPCs:', d.npcs.length, 'Platser:', d.platser.length);"
 ```
 

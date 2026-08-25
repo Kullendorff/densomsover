@@ -11,7 +11,7 @@ Lägg till eller uppdatera NPCs/platser i wiki_data.js MED ABSOLUT SÄKERHET - i
 1. **MAX 15 NPCs per batch** - större batchar = högre felrisk
 2. **ALLTID validera OMEDELBART efter ändring:**
    ```bash
-   cd "D:/GDRIVE/My Drive/Johan/Gaming/Gammal leka bäst/EON"
+   cd "D:/rollspel/EON"
    node -e "const data = require('./wiki_data.js'); console.log('✓ Giltig -', data.npcs.length, 'NPCs,', data.platser.length, 'platser');"
    ```
 3. **Om validering MISSLYCKAS:**
@@ -47,7 +47,7 @@ Om träff: flagga och fråga användaren.
 
 ### Steg 4: VALIDERA OMEDELBART
 ```bash
-cd "D:/GDRIVE/My Drive/Johan/Gaming/Gammal leka bäst/EON"
+cd "D:/rollspel/EON"
 node -e "const data = require('./wiki_data.js'); console.log('✓', data.npcs.length, 'NPCs,', data.platser.length, 'platser');"
 ```
 

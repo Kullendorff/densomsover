@@ -187,7 +187,7 @@ def generate_javascript(data):
     return js_output
 
 def main():
-    base_path = r'D:\GDRIVE\My Drive\Johan\Gaming\Gammal leka bäst\EON\kampanjwiki'
+    base_path = r'D:\rollspel\EON\kampanjwiki'
 
     print("Läser NPCs...")
     npcs = extract_npcs(base_path)
@@ -212,7 +212,7 @@ def main():
     js_output = generate_javascript(data)
 
     # Spara till fil
-    output_path = r'D:\GDRIVE\My Drive\Johan\Gaming\Gammal leka bäst\EON\wiki_data.js'
+    output_path = r'D:\rollspel\EON\wiki_data.js'
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(js_output)
 

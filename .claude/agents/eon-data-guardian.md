@@ -27,7 +27,7 @@ Lägg till eller uppdatera NPCs/platser i master/wiki_data.js MED ABSOLUT SÄKER
 
 3. **ALLTID validera OMEDELBART efter ändring:**
    ```bash
-   cd "D:/GDRIVE/My Drive/Johan/Gaming/Gammal leka bäst/EON"
+   cd "D:/rollspel/EON"
    node --no-warnings -e "delete require.cache[require.resolve('./master/wiki_data.js')]; const d=require('./master/wiki_data.js'); console.log('✓ NPCs:', d.npcs.length, 'Platser:', d.platser.length);"
    ```
    **OBS:** Använd `--no-warnings` och `delete require.cache` för att undvika caching-problem.
@@ -144,7 +144,7 @@ Matcha ENDAST strukturella element (10-20 rader max):
 
 #### 3d. VALIDERA OMEDELBART
 ```bash
-cd "D:\GDRIVE\My Drive\Johan\Gaming\Gammal leka bäst\EON"
+cd "D:/rollspel/EON"
 node --no-warnings -e "delete require.cache[require.resolve('./master/wiki_data.js')]; const d=require('./master/wiki_data.js'); console.log('✓ NPCs:', d.npcs.length, 'Platser:', d.platser.length);"
 ```
 

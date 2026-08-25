@@ -56,7 +56,7 @@ Skill(skill="eon-parchment-design")
 
 **Validerings-kommando:**
 ```bash
-cd "D:/GDRIVE/My Drive/Johan/Gaming/Gammal leka bäst/EON"
+cd "D:/rollspel/EON"
 node -e "const d=require('./master/wiki_data.js'); console.log('✓', d.npcs.length, 'NPCs,', d.platser.length, 'platser');"
 ```
 
