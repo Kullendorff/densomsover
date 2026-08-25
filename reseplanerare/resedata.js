@@ -15,7 +15,7 @@
 
 var reseData = {
   meta: {
-    version: 6,
+    version: 7,
     skapad: "2026-08-25",
     tier: 1,
     omfang: "Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder)",
@@ -25,7 +25,7 @@ var reseData = {
       sasong: "Högsommar",
       kalla: "Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9 + seq 18: cermira-kartans 'År 2967 efter reningen' = kampanjens nutid)"
     },
-    kartkalla: "cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används för makrosammanhang). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Geografibekräftat 2026-08-25: Mitheraskogen ligger ÖST/NORR om Vitterdal (sveper över norrsidan och fortsätter ner längs östsidan mot Trollmassivet/Mitheras kullar); Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön"
+    kartkalla: "PRIMÄR världskarta: mundana-extra.jpg (har CERMIRA + skala 0–200 mil; Drunok syns mellan Jargiska kejsardömet och Cermira ✓, Mithera norr om Cermira, Gaserion öster om Cermira). Lokalkartor: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen). Historisk: mundana-gammal.jpg (CERMIRA SAKNAS — före Cermiras inskrivning i världen, endast kuriosum/makro-historik). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Skalenote: kartans 'mil' antas vara 10 km (200 mil ≈ 2 000 km världsbredd på karta). Geografibekräftat 2026-08-25: Mitheraskogen ÖST/NORR om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön. StavvariaNT: 'Gaserion' (mundana-extra) vs 'Caserion' (Asharien-kanon) — antas samma rike"
   },
 
   // Join-nycklar: nodnamn här -> postnamn i wiki_data.js (om de skiljer sig)
@@ -215,6 +215,39 @@ var reseData = {
     kalla: "Johan, kanon-beskrivningar 2026-08-25 (direkt i oxen-launch)"
   },
 
+  // Jargiska kejsardömet — makro-referens (Johan 2026-08-25)
+  jargien: {
+    statsskick: "Kejsardöme (diktatur). Kejsare Jargus Zavian Salvianis — 131 ÅR vid makten (onaturlig livslängd; vördnad + fruktan för tronskiftet). 490 000 km², ~6 000 000 inv (12/km²) — Mundanas största och folkrikaste stat. Huvudstad Daval (425 000). Strikt klassamhälle: medborgare / prästerskap / fria män / slavar. Kriser: genomgripande korruption (rättvisa köps med mutor); enorma statsskulder till cirefaliska handelshuset TEMIRANZ — cirefalisk påtryckningsmakt och insyn i riket.",
+    geografi_vagar: "Behagligt klimat (varma somrar, snöiga vintrar). Kuperat, barr-/lövskogar, bördiga floddalar (vete, korn). VÄGNÄTET MYCKET VÄL UTBYGGT — storslagna vägar hålls ständigt i skick. Bekräftar mallen §8 ('väl utbyggt i kärnan Orno/Liboria, förfallet i periferin'). Jargiens kärnvägar = Mundanas snabbaste landsvägsresor — MEN se religion_resrisk.",
+    religion_resrisk: "Daak 99 %. Moderkyrkan styrs av Aboraterna i Tibara. Sedan Reningen år 0: alla andra religioner BANNLYSTA under DÖDSSTRAFF. MAGI OCH HÄXKONST = HÄDELSE = DÖDSSTRAFF PÅ BÅL. Inkvisitionen 'Daaks skugga' torterar systematiskt. Resor med magikunniga eller icke-Daak-troende PC:er i Jargien = hög risk; prästmän patrullerar vägskäl (bekräftat i kapitel 4-kanon: 'Soldater och prästmän täta som svampar').",
+    krigsmakt: "Mundanas största krigshär: yrkes- + tvångsrekryterade soldater, tungt infanteri drillat i täta formationer med JARGBILAN (2,5 m hillebard, 75 cm yxblad). Flottan gammalmodig och defensiv — undviker sjöslag, vill avgöra krig på land.",
+    myntfot: "1 guldlibra = 12 solidor · 1 solida = 20 denarer · 1 denar = 10 cupra (silverdenaren väger 1,9 g). KONTROLL: 12 × 20 = 240 silver per guldlibra ✓ stämmer exakt mot Tabell SH-26. Export: tyg, finsmide, sorskinka. Import: slavar (via den flytande staden i Zhirim), timmer, spannmål.",
+    stader: [
+      { namn: "Daval", not: "425 000. Monumental huvudstad: kejsarens palatsområde Rasur, Kejserliga biblioteket, mäktiga adelsätter (däribland Randarian)." },
+      { namn: "Tibara", not: "Daaktron HELIGA stad, moderkyrkans säte, högste aboraten residerar. Zolod-kvarteret Tibar-Shun-Azh: ~8 000 dvärgar under kyrkans vaksamma öga." },
+      { namn: "Binkh", not: "~90 000. Provinshuvudstad i rika bördiga Rankun. Viktig handelsort, berömd ingenjörsskola." },
+      { namn: "Orno", not: "15 000. Provins Jargien. Kejsardömets ÄLDSTA stad, vid floden Kebe. 'Jargiens portal' — gigantisk forntida triumfbåge." },
+      { namn: "Kelamith", not: "~8 000. Stor garnisonsstad i provins Genrio — logistisk stödjepunkt för gränsfästet CHAN; centrum för norra jordbruket/boskapen. (Närmast Cermira-sidans gränstrakter.)" },
+      { namn: "Szal Dorian", not: "7 500. Provins Salan. F.d. cirefalisk handelskoloni; stor cirefalisk befolkning; finsmide- och textil-export." },
+      { namn: "Erafalan", not: "7 500. Östra Merun, vid den HÖGSTA SEGELBARA PUNKTEN på floden Erannen — transshipment-nod." },
+      { namn: "Erat", not: "Provins Merun. Kejserliga akademin + ätten Ducas boktryckeri." },
+      { namn: "Gnar-Muur", not: "~2 000. Ökänd LAGLÖS hamnstad vid Igonhavet — banditband styr, månatliga illegala SLAVAUKTIONER, Igonhavets piraters främsta bas." },
+      { namn: "Henok", not: "Provins/koloni vid Blå havet. Starkt befäst; exporterar kläder och rotfrukter." },
+      { namn: "Salan", not: "12 000. Vida känt ORAKEL." },
+      { namn: "Jukon", not: "~5 000. Hamnstad i Lemira; slapphänt ordning — fruktad rövarhåla." },
+      { namn: "Arbido", not: "Provins huvudstad Sardan (bergig nordlig GRUVPROVINS)." },
+      { namn: "Nizam", not: "Känd kurort i Sardan: sanatoriet 'Jarhos vila' + St Jersephs kloster." },
+      { namn: "Sor", not: "1 200. Maulio: enorma grisfarmar, SORSKINKAN (Drunoks exportpartner-provins)." },
+      { namn: "Randarro", not: "3 000. Västra Maulio: STUTERIER — randarriska stridshingstar och fullblod." },
+      { namn: "Sabesta", not: "8 000. Distrikt Charino." },
+      { namn: "Variso", not: "~5 000. Distrikt Daro." },
+      { namn: "Karpal", not: "2 000. Ön Dram i Lemira; lever helt på fiske." },
+      { namn: "Lopnor", not: "Koloni på södra kontinenten, fulla provinsrättigheter; handel + stort kavalleri med breda jargsablar." },
+      { namn: "Karakul", not: "Koloni på bördig savann söder om Forion, erövrad 2809 e.D. — djup fiendskap med Forion." }
+    ],
+    kalla: "Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)"
+  },
+
   // Valuta (Tabell SH-26/27, verifierad ordagrant)
   valuta: {
     standard: "1 silver = silvermynt på 1,9 g (jargiska denaren är referensmynt). Samma vikt OCH värde: silverdaler, dinar, thaler, olom, drakma, penning, trugg m.fl.",
@@ -371,8 +404,13 @@ var reseData = {
     },
     {
       fraga: "Vrimzikiels upprorshär — mallen §8 säger 'Cermira, Östanmark', Asharien-kanonen (2026-08-25) säger 'norra delarna av Asharien'",
-      losning: "Båda kan stämma om hären 'drar runt' (den plundrar landsbygden rörligt), men resriskbedömningen behöver veta var den är JUST NU. Landsrådet har värvat motarmé under krigsfursten Ezori — pågående fälttåg i norra Asharien.",
-      status: "OBSERVATION till claude-sessionen/Johan — riskfält i norra Asharien nära Cermiras gräns"
+      losning: "BEKRÄFTAT av Johan: BÅDA stämmer — hären är rörlig och plundrar i både Cermiras Östanmark och norra Asharien. Resriskfältet omfattar hela gränstrakten; landsrådets motarmé under krigsfursten Ezori opererar i norra Asharien.",
+      status: "STÄNGD"
+    },
+    {
+      fraga: "Era-beteckningar: 'e.R.' (efter Reningen — Jargien-kanon: 'Sedan Reningen år 0') vs 'e.D.' (används i Drunok-/Soldarn-texterna)",
+      losning: "ANTAGEN SAMMA ERA: nutid = 2967 ('efter reningen' på cermira.png, Johan-bekräftat), och Drunoks 2957/2961-händelser är nutidens nära förflutna — datumen linjerar bara om e.D. = e.R. Registret skriver e.R.",
+      status: "ANTAGANDE — Johan kan bekräfta att e.D. = e.R."
     },
     {
       fraga: "Karavanpris per person/dagsmarsch",

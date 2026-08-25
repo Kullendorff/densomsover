@@ -242,7 +242,31 @@ if (reseData.asharien_soldarn) {
   L.push("");
 }
 
-L.push(`## 11. Dokumenterade tolkningar och öppna frågor`);
+if (reseData.jargien) {
+  const j = reseData.jargien;
+  L.push(`## 11. Jargiska kejsardömet (makro-referens)`);
+  L.push("");
+  L.push(`**Statsskick & kriser:** ${esc(j.statsskick)}`);
+  L.push("");
+  L.push(`**Geografi & vägnät:** ${esc(j.geografi_vagar)}`);
+  L.push("");
+  L.push(`⚠️ **Religion & resrisk:** ${esc(j.religion_resrisk)}`);
+  L.push("");
+  L.push(`**Krigsmakt:** ${esc(j.krigsmakt)}`);
+  L.push("");
+  L.push(`**Myntfot & handel:** ${esc(j.myntfot)}`);
+  L.push("");
+  L.push(`**Viktiga städer:**`);
+  L.push("");
+  L.push(`| Stad | Not |`);
+  L.push(`|---|---|`);
+  j.stader.forEach((s) => L.push(`| ${esc(s.namn)} | ${esc(s.not)} |`));
+  L.push("");
+  L.push(`*Källa: ${esc(j.kalla)}*`);
+  L.push("");
+}
+
+L.push(`## 12. Dokumenterade tolkningar och öppna frågor`);
 L.push("");
 reseData.oppna_fragor.forEach((o, i) => {
   L.push(`### 5.${i + 1} ${o.fraga}`);
@@ -251,7 +275,7 @@ reseData.oppna_fragor.forEach((o, i) => {
   L.push("");
 });
 
-L.push(`## 12. Tier 2 — kända platser utan kanter ännu`);
+L.push(`## 13. Tier 2 — kända platser utan kanter ännu`);
 L.push("");
 L.push(`| Namn | Kommentar |`);
 L.push(`|---|---|`);

@@ -5,7 +5,7 @@
 > Genererad: 2026-08-25 · Källa: `D:\rollspel\EON\master\wiki_data.js` (58 platser, 317 NPCs laddade)
 > Omfång: Cermira + Vitterdal-kärnan (kalibreringsdata finns för dessa noder). Kanonordning vid konflikt: kampanjkrönika.md > wiki_data.js > NotebookLM.
 > Kampanjdato: 17:e Hömånad, år 2 = 2967 e.R. (kampanjstart år 1 = 2966 e.R.) · Säsong: Högsommar · Källa: Johan via claude-sessionen 2026-08-25 (oxen-launch seq 9 + seq 18: cermira-kartans 'År 2967 efter reningen' = kampanjens nutid)
-> Kartkälla: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen, Cermira EJ med) + mundana-gammal.jpg (världsöversikt; CERMIRA SAKNAS — inskriven i världen senare än karttrycket per Johan, används för makrosammanhang). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Geografibekräftat 2026-08-25: Mitheraskogen ligger ÖST/NORR om Vitterdal (sveper över norrsidan och fortsätter ner längs östsidan mot Trollmassivet/Mitheras kullar); Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön
+> Kartkälla: PRIMÄR världskarta: mundana-extra.jpg (har CERMIRA + skala 0–200 mil; Drunok syns mellan Jargiska kejsardömet och Cermira ✓, Mithera norr om Cermira, Gaserion öster om Cermira). Lokalkartor: cermira.png ('Jarladömet Cermira, År 2967 efter reningen') + asharien.jpg (Ashariens jarladömen). Historisk: mundana-gammal.jpg (CERMIRA SAKNAS — före Cermiras inskrivning i världen, endast kuriosum/makro-historik). MAKRO-ORDNING (Johan): västerut→österut Jargien → Drunok → Cermira/Asharien. Skalenote: kartans 'mil' antas vara 10 km (200 mil ≈ 2 000 km världsbredd på karta). Geografibekräftat 2026-08-25: Mitheraskogen ÖST/NORR om Vitterdal; Jarla = Ashariens nordligaste jarladöme vid Cermiras sydgräns; Raunflodens lopp Stencirkeln→Fort Otis→Ramil/Jarla (krök)→österut→Nordvik; Tuzan Rim på ostkusten vid Rhung sjön. StavvariaNT: 'Gaserion' (mundana-extra) vs 'Caserion' (Asharien-kanon) — antas samma rike
 
 ## 1. Platsregister (noder — härledda ur wiki_data.js via join)
 
@@ -196,7 +196,47 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 
 *Källa: Johan, kanon-beskrivningar 2026-08-25 (direkt i oxen-launch)*
 
-## 11. Dokumenterade tolkningar och öppna frågor
+## 11. Jargiska kejsardömet (makro-referens)
+
+**Statsskick & kriser:** Kejsardöme (diktatur). Kejsare Jargus Zavian Salvianis — 131 ÅR vid makten (onaturlig livslängd; vördnad + fruktan för tronskiftet). 490 000 km², ~6 000 000 inv (12/km²) — Mundanas största och folkrikaste stat. Huvudstad Daval (425 000). Strikt klassamhälle: medborgare / prästerskap / fria män / slavar. Kriser: genomgripande korruption (rättvisa köps med mutor); enorma statsskulder till cirefaliska handelshuset TEMIRANZ — cirefalisk påtryckningsmakt och insyn i riket.
+
+**Geografi & vägnät:** Behagligt klimat (varma somrar, snöiga vintrar). Kuperat, barr-/lövskogar, bördiga floddalar (vete, korn). VÄGNÄTET MYCKET VÄL UTBYGGT — storslagna vägar hålls ständigt i skick. Bekräftar mallen §8 ('väl utbyggt i kärnan Orno/Liboria, förfallet i periferin'). Jargiens kärnvägar = Mundanas snabbaste landsvägsresor — MEN se religion_resrisk.
+
+⚠️ **Religion & resrisk:** Daak 99 %. Moderkyrkan styrs av Aboraterna i Tibara. Sedan Reningen år 0: alla andra religioner BANNLYSTA under DÖDSSTRAFF. MAGI OCH HÄXKONST = HÄDELSE = DÖDSSTRAFF PÅ BÅL. Inkvisitionen 'Daaks skugga' torterar systematiskt. Resor med magikunniga eller icke-Daak-troende PC:er i Jargien = hög risk; prästmän patrullerar vägskäl (bekräftat i kapitel 4-kanon: 'Soldater och prästmän täta som svampar').
+
+**Krigsmakt:** Mundanas största krigshär: yrkes- + tvångsrekryterade soldater, tungt infanteri drillat i täta formationer med JARGBILAN (2,5 m hillebard, 75 cm yxblad). Flottan gammalmodig och defensiv — undviker sjöslag, vill avgöra krig på land.
+
+**Myntfot & handel:** 1 guldlibra = 12 solidor · 1 solida = 20 denarer · 1 denar = 10 cupra (silverdenaren väger 1,9 g). KONTROLL: 12 × 20 = 240 silver per guldlibra ✓ stämmer exakt mot Tabell SH-26. Export: tyg, finsmide, sorskinka. Import: slavar (via den flytande staden i Zhirim), timmer, spannmål.
+
+**Viktiga städer:**
+
+| Stad | Not |
+|---|---|
+| Daval | 425 000. Monumental huvudstad: kejsarens palatsområde Rasur, Kejserliga biblioteket, mäktiga adelsätter (däribland Randarian). |
+| Tibara | Daaktron HELIGA stad, moderkyrkans säte, högste aboraten residerar. Zolod-kvarteret Tibar-Shun-Azh: ~8 000 dvärgar under kyrkans vaksamma öga. |
+| Binkh | ~90 000. Provinshuvudstad i rika bördiga Rankun. Viktig handelsort, berömd ingenjörsskola. |
+| Orno | 15 000. Provins Jargien. Kejsardömets ÄLDSTA stad, vid floden Kebe. 'Jargiens portal' — gigantisk forntida triumfbåge. |
+| Kelamith | ~8 000. Stor garnisonsstad i provins Genrio — logistisk stödjepunkt för gränsfästet CHAN; centrum för norra jordbruket/boskapen. (Närmast Cermira-sidans gränstrakter.) |
+| Szal Dorian | 7 500. Provins Salan. F.d. cirefalisk handelskoloni; stor cirefalisk befolkning; finsmide- och textil-export. |
+| Erafalan | 7 500. Östra Merun, vid den HÖGSTA SEGELBARA PUNKTEN på floden Erannen — transshipment-nod. |
+| Erat | Provins Merun. Kejserliga akademin + ätten Ducas boktryckeri. |
+| Gnar-Muur | ~2 000. Ökänd LAGLÖS hamnstad vid Igonhavet — banditband styr, månatliga illegala SLAVAUKTIONER, Igonhavets piraters främsta bas. |
+| Henok | Provins/koloni vid Blå havet. Starkt befäst; exporterar kläder och rotfrukter. |
+| Salan | 12 000. Vida känt ORAKEL. |
+| Jukon | ~5 000. Hamnstad i Lemira; slapphänt ordning — fruktad rövarhåla. |
+| Arbido | Provins huvudstad Sardan (bergig nordlig GRUVPROVINS). |
+| Nizam | Känd kurort i Sardan: sanatoriet 'Jarhos vila' + St Jersephs kloster. |
+| Sor | 1 200. Maulio: enorma grisfarmar, SORSKINKAN (Drunoks exportpartner-provins). |
+| Randarro | 3 000. Västra Maulio: STUTERIER — randarriska stridshingstar och fullblod. |
+| Sabesta | 8 000. Distrikt Charino. |
+| Variso | ~5 000. Distrikt Daro. |
+| Karpal | 2 000. Ön Dram i Lemira; lever helt på fiske. |
+| Lopnor | Koloni på södra kontinenten, fulla provinsrättigheter; handel + stort kavalleri med breda jargsablar. |
+| Karakul | Koloni på bördig savann söder om Forion, erövrad 2809 e.D. — djup fiendskap med Forion. |
+
+*Källa: Johan, kanon-beskrivning 2026-08-25 (direkt i oxen-launch)*
+
+## 12. Dokumenterade tolkningar och öppna frågor
 
 ### 5.1 Frisänkan-konflikt (15 km/1 d vs 5 dagar handel)
 - **Lösning/tolkning:** Två leder: direktled 15 km/1 d endast för lätt fotfolk (vitterdal-baronieriet.md:649); handelsled via Bergvik 4+1 d för kärror (trakten-omgivningar.md:307 'Längre väg, sämre' + krönikanas civila tåg dag 5). Båda källvärdena bevaras som separata kanter.
@@ -215,34 +255,38 @@ Cermiras hårda vintrar fryser mindre floder/sjöar vintertid. RAUNFLODEN är de
 - **Status:** STÄNGD — 'Mithervägen' godkänt av Johan (seq 17); motpartsnamnet 'Drunokleden' för Hög toppmyr-vägen antas därmed
 
 ### 5.5 Vrimzikiels upprorshär — mallen §8 säger 'Cermira, Östanmark', Asharien-kanonen (2026-08-25) säger 'norra delarna av Asharien'
-- **Lösning/tolkning:** Båda kan stämma om hären 'drar runt' (den plundrar landsbygden rörligt), men resriskbedömningen behöver veta var den är JUST NU. Landsrådet har värvat motarmé under krigsfursten Ezori — pågående fälttåg i norra Asharien.
-- **Status:** OBSERVATION till claude-sessionen/Johan — riskfält i norra Asharien nära Cermiras gräns
+- **Lösning/tolkning:** BEKRÄFTAT av Johan: BÅDA stämmer — hären är rörlig och plundrar i både Cermiras Östanmark och norra Asharien. Resriskfältet omfattar hela gränstrakten; landsrådets motarmé under krigsfursten Ezori opererar i norra Asharien.
+- **Status:** STÄNGD
 
-### 5.6 Karavanpris per person/dagsmarsch
+### 5.6 Era-beteckningar: 'e.R.' (efter Reningen — Jargien-kanon: 'Sedan Reningen år 0') vs 'e.D.' (används i Drunok-/Soldarn-texterna)
+- **Lösning/tolkning:** ANTAGEN SAMMA ERA: nutid = 2967 ('efter reningen' på cermira.png, Johan-bekräftat), och Drunoks 2957/2961-händelser är nutidens nära förflutna — datumen linjerar bara om e.D. = e.R. Registret skriver e.R.
+- **Status:** ANTAGANDE — Johan kan bekräfta att e.D. = e.R.
+
+### 5.7 Karavanpris per person/dagsmarsch
 - **Lösning/tolkning:** BEKRÄFTAT SAKNAS i regelverket (Spelarens bok, Spelledarens guide, Riddaren genomsökta 2026-08-25) — avsiktligt öppen SL-heuristik som mallen §6 redan antog. Prisankare finns nu under valuta.lonreferenser.
 - **Status:** AVSIKTLIGT ÖPPEN — Johan bestämmer modell vid behov
 
-### 5.7 Drunok: lokal 'Drunokleden' (väster om Vitterdal) vs världskartans Drunok (öster om Jargien) — samma region?
+### 5.8 Drunok: lokal 'Drunokleden' (väster om Vitterdal) vs världskartans Drunok (öster om Jargien) — samma region?
 - **Lösning/tolkning:** JA — Johan bekräftade makro-ordningen västerut→österut: Jargien → Drunok → Cermira/Asharien. Drunok är regionen EMELLAN; världskartans placering och den lokala västerut-leden från Vitterdal beskriver samma region från varsitt håll. Lokal kanon (seq 13: Grensfortet österut mot Mithera, Drunokleden västerut via Hög toppmyr) och makrokarta är nu konsistenta.
 - **Status:** STÄNGD — makro-ordning dokumenterad i meta.kartkalla
 
-### 5.8 Absolut datering: kartans 'År 2967 efter reningen'
+### 5.9 Absolut datering: kartans 'År 2967 efter reningen'
 - **Lösning/tolkning:** BEKRÄFTAT av Johan (oxen-launch seq 18): 2967 efter reningen = kampanjens nutid. Kampanjstart (år 1) = 2966 e.R., aktuellt datum 17:e Hömånad år 2 = 2967 e.R. Alla dateringsluckor stängda.
 - **Status:** STÄNGD
 
-### 5.9 Raunflodens flödesriktning: Cermira stad → Fort Otis 'medström söderut'?
+### 5.10 Raunflodens flödesriktning: Cermira stad → Fort Otis 'medström söderut'?
 - **Lösning/tolkning:** BEKRÄFTAT av Johan (oxen-launch seq 17): Fort Otis ligger NEDSTRÖMS Månsjöns utlopp; Raunflodens källor i Krolimbergen, floden flyter söderut, kröker vid Jarla och mynnar i Nordvik. Mallens 'medström söderut' var korrekt. Ny kanon-detali: Krolimbergen som källområde.
 - **Status:** STÄNGD
 
-### 5.10 Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')
+### 5.11 Cermira-som-stad har ingen egen wiki_data-post (endast regionposten 'Cermira')
 - **Lösning/tolkning:** Alias-tabellen löser joinet; överväg egen SSOT-post 'Cermira stad'.
 - **Status:** förslag till claude-sessionen/Johan
 
-### 5.11 Mallens 10 Cermira-orter saknas i wiki_data.js
+### 5.12 Mallens 10 Cermira-orter saknas i wiki_data.js
 - **Lösning/tolkning:** Listade under tier2_platser; migrering till SSOT triggar AGENTS.md blockerande kontinuitetsprocess och ägs av Johan/claude-sessionen.
 - **Status:** utanför detta uppdrag
 
-## 12. Tier 2 — kända platser utan kanter ännu
+## 13. Tier 2 — kända platser utan kanter ännu
 
 | Namn | Kommentar |
 |---|---|
