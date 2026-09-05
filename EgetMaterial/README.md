@@ -20,15 +20,13 @@ Eget Material/
 ├── _index.md          # Katalog
 ├── README.md          # Detta dokument
 │
-├── lander/            # Länder (EM-L001_namn.md)
-├── stader/            # Städer (EM-S001_namn.md)
-├── platser/           # Platser (EM-P001_namn.md)
-├── regioner/          # Regioner (EM-R001_namn.md)
-├── organisationer/    # Organisationer (EM-O001_namn.md)
-├── foremal/           # Föremål (EM-F001_namn.md)
-├── npcs/              # NPCs (EM-N001_namn.md)
+├── projekt/           # Allt markdown — pågående OCH avslutade projekt, en mapp per EM-kod
+├── Klart/             # Färdiga HTML/PDF-versioner, en flat mapp, inget markdown här
 └── mallar/            # Malldokument
 ```
+
+**Förenklad 2026-09-05:** de sju typmapparna (lander/stader/platser/regioner/
+organisationer/foremal/npcs) är borttagna. Se CLAUDE.md för nuvarande arbetsflöde.
 
 ## Kodningssystem
 

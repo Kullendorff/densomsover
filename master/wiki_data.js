@@ -1,5 +1,29 @@
 var wikiData = {
-  "npcs": [
+  npcs: [
+    {
+      "namn": "\"Dubbel-Orm\"",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Gruvarbetare",
+      "status": "levande",
+      "plats": "Rampor, Västmark",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "beskrivning": "\r\n> **⚠️ DUBBLETT UPPTÄCKT VID MIGRERING:** Det finns TRE separata poster för \"Dubbel-Orm\" (gruvarbetare, Rampor) i källdatan, med olika detaljnivå men samma person: undefined, undefined, undefined. Ingen är raderad — Johan bör läsa alla tre och slå ihop till en kanonisk version.\r\n\r\n# \"DUBBEL-ORM\"\r\n**Gruvarbetare, Rampor**\r\n\r\n## GRUNDINFO\r\n- **Namn:** \"Dubbel-Orm\" (öknamn)\r\n- **Ras:** Människa (västmarkisk)\r\n- **Roll:** Gruvarbetare (arbetar bland tiraker)\r\n- **Plats:** Rampor (7000 inv, gruvor, tiraker), Västmark\r\n- **Status:** Levande (puckelryggig)\r\n- **Fraktion:** Lady Soffias informationsnätverk\r\n- **Källa:** EM-R001\r\n\r\n## BAKGRUND\r\nDubbel-Orm kollapsade i gruvan och skadades svårt. Kantonfurste Persal vägrade betala läkarvård. Soffia betalade anonymt för läkning i Cermira. Han överlevde men blev puckelryggig.\r\n\r\n## RAPPORTERAR\r\n- Maktkampen Persal vs Nihtor Wekzi\r\n- Tirakernas planer\r\n- Gruvproduktion (militär användning?)\r\n- Spänningar i Rampor\r\n\r\n## KONTAKTMETOD\r\nBrevduva (sällan, 2-3 gånger/år).\r\n\r\n## LOJALITET\r\nMycket hög (livet räddat)\r",
+      "källa": "EM-R001"
+    },
+    {
+      "namn": "\"Dubbel-Orm\"",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Gruvarbetare",
+      "status": "levande",
+      "plats": "Rampor, Västmark",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "beskrivning": "\r\n> **⚠️ DUBBLETT UPPTÄCKT VID MIGRERING:** Det finns TRE separata poster för \"Dubbel-Orm\" (gruvarbetare, Rampor) i källdatan, med olika detaljnivå men samma person: undefined, undefined, undefined. Ingen är raderad — Johan bör läsa alla tre och slå ihop till en kanonisk version.\r\n\r\n# \"DUBBEL-ORM\"\r\n\r\n**Namn:** \"Dubbel-Orm\" (öknamn - riktigt namn okänt)\r\n**Roll:** Gruvarbetare (arbetar bland tiraker)\r\n**Plats:** Rampor (7000 inv, gruvor, tiraker), Västmark\r\n**Fraktion:** Lady Soffias informationsnätverk\r\n\r\n## Bakgrund\r\n\r\nDubbel-Orm kollapsade i gruvan och skadades svårt för flera år sedan. Kantonfurste Persal vägrade betala läkarvård (\"bara en gruvarbetare\"). Soffia betalade anonymt för läkning i Cermira. Dubbel-Orm överlevde men blev puckelryggig - därav öknamnet.\r\n\r\nHan vet inte vem som räddade honom, bara att \"någon från Cermira\" betalade. När en budbärare från Vitterdal bad om information om gruvorna i utbyte mot fortsatt stöd, accepterade han.\r\n\r\n## Varför väl placerad\r\n\r\nRampor är Västmarks gruvcenter och hem åt en stor tirakisk population. Dubbel-Orm arbetar bland tiraker och hör deras planer. Kantonfurste Persal och Nihtor Wekzi (tirakisk ledare) kämpar om makten i Västmark.\r\n\r\n## Rapporterar\r\n\r\n- Maktkampen Persal vs Nihtor Wekzi\r\n- Tirakernas planer (militära rörelser, rekrytering)\r\n- Gruvproduktion (ökad produktion kan betyda krigsförberedelser)\r\n- Tirakskt inflytande i regionen\r\n\r\n## Kontaktmetod\r\n\r\nBrevduva (sällan, 2-3 gånger per år). Dubbel-Orm rapporterar endast när något viktigt händer.\r\n\r\n## Lojalitet\r\n\r\n**Mycket hög.** Dubbel-Orm är tacksam för att någon brydde sig när Kantonfursten vägrade. Han litar på \"folk från norr\" mer än sin egen regerare.\r",
+      "källa": "EM-R001"
+    },
     {
       "namn": "Abir Hasan Ben Amih Jaakoh",
       "bild": null,
@@ -20,7 +44,8 @@ var wikiData = {
       "plats": "Cermiras skogar",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# ADISA\n\n**Häxa i Cermiras skogar**\n\n## GRUNDINFO\n\n- **Ras:** Människa (häxa)\n- **Status:** Levande\n- **Första fas:** Fas 2 (Jakten på Ibran)\n- **Roll:** Mystisk vägvisare\n\n## BAKGRUND\n\nAdisa är en häxa som lever ensam i Cermiras djupa skogar. Hon har förmågan att känna magiska och demoniska essenser.\n\n## KRITISKA HÄNDELSER\n\n### Mötet i skogen (Fas 2)\n**Selektivt mottagande:**\n- Släppte in Gordon, Umnatak och Kazrik i sin stuga\n- Vägrade släppa in Zentri - kände demonessensen i ringen\n- Första tydliga tecknet att något var fel med Zentri\n\n**Varning:**\n- Indirekt varning om demonisk närvaro\n- Gav inte explicit information men handling talade tydligt\n\n## KARAKTÄRSDRAG\n\n- **Känslig för magi:** Känner essenser\n- **Försiktig:** Skyddar sitt territorium\n- **Mystisk:** Talar inte alltid rakt ut\n- **Selektiv:** Hjälper vissa men inte alla\n\n## RELATIONER\n\n### Accepterade\n- **Gordon, Umnatak, Kazrik:** Släppte in dem\n\n### Avvisade\n- **Zentri:** Kände demonen\n\n## BETYDELSE\n\nAdisa var första externa bekräftelsen att något var fel med Zentri. Hennes avvisande borde ha varit tydligare varning.\n\n## NUVARANDE SITUATION\n\nAdisa lever fortfarande i sina skogar, potentiellt medveten om kampanjens utveckling.\n\n## SL-ANTECKNINGAR\n\n- Kan kontaktas för hjälp med demonologi\n- Känner Mitheras makter?\n- Potentiell informationskälla\n- Representerar naturmagi vs demonisk"
+      "beskrivning": "# ADISA\n\n**Häxa i Cermiras skogar**\n\n## GRUNDINFO\n\n- **Ras:** Människa (häxa)\n- **Status:** Levande\n- **Första fas:** Fas 2 (Jakten på Ibran)\n- **Roll:** Mystisk vägvisare\n\n## BAKGRUND\n\nAdisa är en häxa som lever ensam i Cermiras djupa skogar. Hon har förmågan att känna magiska och demoniska essenser.\n\n## KRITISKA HÄNDELSER\n\n### Mötet i skogen (Fas 2)\n**Selektivt mottagande:**\n- Släppte in Gordon, Umnatak och Kazrik i sin stuga\n- Vägrade släppa in Zentri - kände demonessensen i ringen\n- Första tydliga tecknet att något var fel med Zentri\n\n**Varning:**\n- Indirekt varning om demonisk närvaro\n- Gav inte explicit information men handling talade tydligt\n\n## KARAKTÄRSDRAG\n\n- **Känslig för magi:** Känner essenser\n- **Försiktig:** Skyddar sitt territorium\n- **Mystisk:** Talar inte alltid rakt ut\n- **Selektiv:** Hjälper vissa men inte alla\n\n## RELATIONER\n\n### Accepterade\n- **Gordon, Umnatak, Kazrik:** Släppte in dem\n\n### Avvisade\n- **Zentri:** Kände demonen\n\n## BETYDELSE\n\nAdisa var första externa bekräftelsen att något var fel med Zentri. Hennes avvisande borde ha varit tydligare varning.\n\n## NUVARANDE SITUATION\n\nAdisa lever fortfarande i sina skogar, potentiellt medveten om kampanjens utveckling.\n\n## SL-ANTECKNINGAR\n\n- Kan kontaktas för hjälp med demonologi\n- Känner Mitheras makter?\n- Potentiell informationskälla\n- Representerar naturmagi vs demonisk",
+      "roll": "Mystisk allierad"
     },
     {
       "namn": "Aisha bint-Najib",
@@ -42,29 +67,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# ALARIC\n**Signalist i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Signalist\n- **Ansvar:** Signaler och kommunikation i strid\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Koordinerade kommunikation vid Tirakgraven."
-    },
-    {
-      "namn": "Kommendör Aldrich Järnkors",
-      "bild": "kom_aldritch.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "död",
-      "plats": "Raunflodens strand",
-      "fraktion": "Arvorns Hammare",
-      "kapitel": null,
-      "beskrivning": "# KOMMENDÖR ALDRICH JÄRNKORS ⚔️\n\n**Kommendör i Arvorns Hammare, föll i strid vid Raunflodens strand**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Död\n- **Första fas:** Fas 8 (omnämnd)\n- **Roll:** Antagonist, förföljare\n- **Död:** Episk strid vid Raunflodens strand\n\n## BAKGRUND\n\nAldrich Järnkors var kommendör i Arvorns Hammare och tidigare kollega till Corvus Askhår. Han ledde jakten på Corvus med 7 tempelriddare.\n\n## KRITISKA HÄNDELSER\n\n### Efter Corvus vändning (Fas 8)\n- Tilldelad att jaga Corvus\n- 7 tempelriddare under hans kommando\n- Trodde att Corvus var kidnappad/kontrollerad av kättare\n\n### Evakueringen (Fas 9)\n- Jagade gruppen genom Drunok\n- Gruppen undvek honom genom Corvus insiderkunskap\n\n### DÖDEN - Raunflodens strand\n- Mötte gruppen i episk konfrontation vid Raunflodens strand\n- Integritet i strid till slutet\n- Föll när Systrarna ingrep i striden\n- Död av högt pris i kampen\n\n## KARAKTÄRSDRAG\n\n- **Fanatisk:** Tro på ordenens mission\n- **Kompetent:** Vald för uppgiften av en anledning\n- **Felaktig övertygelse:** Trodde Corvus var kontrollerad, inte vänd\n- **Hedersam:** Integritet även i nederlag\n\n## RELATIONER\n\n### Arvorns Hammare\n- **Corvus Askhår:** Före detta kollega, senare motståndare\n- **7 tempelriddare:** Hans styrka\n\n### Gruppen\n- **Huvudmål:** Corvus\n- **Kollateral:** Resten av gruppen som \"kättare\"\n\n## NUVARANDE SITUATION\n\nDöd. Hans kampen mot gruppen avslutas vid Raunflodens strand.\n\n## SL-ANTECKNINGAR\n\n- Respektabel antagonist med egen agenda\n- Föll för sin övertygelse\n- Systrarna ingrep i det kritiska mötet\n- Episk strid markerade en vändpunkt i kampanjen"
-    },
-    {
-      "namn": "Kommendör Reval",
-      "bild": "arvorns.png",
-      "ras": "Människa",
-      "titel": "Kommendör i Arvorns Hammare",
-      "status": "levande",
-      "plats": "Jargien (på väg till Vargnäset)",
-      "fraktion": "Arvorns Hammare",
-      "kapitel": "Kapitel 4",
-      "beskrivning": "# KOMMENDÖR REVAL\n**Kommendör i Arvorns Hammare - transporterar mystisk fånge**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Titel:** Kommendör\n- **Fraktion:** Arvorns Hammare (Daakkyrkans militanta orden)\n- **Status:** Levande\n- **Plats:** Jargien, på väg till Vargnäset\n- **Kapitel:** Kapitel 4 (Jargien)\n\n## BESKRIVNING\nEn reslig man klädd i svart rustning med röda inslag och en mantel prydd med Daaksymbolen. Ledare för ett dussin soldater som eskorterade en tungt bevakad vagn med en kvinnlig fånge.\n\n## KARAKTÄRSDRAG\n- **Auktoritär:** Kall auktoritet\n- **Metodisk:** Systematisk genomsökning av karavanen\n- **Känslokall:** Uttryckslöst ansikte även vid rop från fången\n- **Disciplinerad:** Håller sina män i stram ordning\n\n## KRITISKA HÄNDELSER\n\n### Mötet med Dorins karavan (Dag 13)\n**Inspektion:**\n- Stoppade karavanen för inspektion\n- \\\"På kejsarens och Daaks uppdrag\\\"\n- Systematisk genomsökning efter \\\"förbjuden aktivitet\\\"\n- Männen genomsökte vagnarna (lönnfack räddade situationen)\n\n**Fångtransporten:**\n- Eskorterade vagn med kvinnlig fånge\n- Vagn isolerad med tjocka tyger över gallerfönster\n- Soldaterna nervösa (mer än vanlig pliktuppfyllelse)\n\n**Fångens rop:**\n- Kvinna skriker på hjälp från vagnen\n- \\\"Hon ljuger! De är inte från templet! De tog mig från—\\\" (avbruten)\n- Reval: \\\"En farlig häxa med förmågan att förvränga sinnen\\\"\n- Zentri kände hur något pulserade mot hans hud vid vagnen\n\n**Avslutning:**\n- Efter inspektion: \\\"Var på er vakt när ni närmar er Vargnäset\\\"\n- \\\"Det finns... ohälsosamma element i trakten\\\"\n- Tog en sidoväg mot okänt mål\n\n## FRÅGETECKEN\n\n### Fångens identitet\n- Vem är kvinnan?\n- Varför till Vargnäset istället för större stad?\n- Verklig häxa eller oskyldig?\n- Zentri kände magisk närvaro - vad betydde det?\n\n### Revals uppdrag\n- Legitim Arvorns Hammare-operation?\n- Eller något mer sinistert?\n- Varför så nervösa soldater?\n- Koppling till försvinnandena Jakob berättade om?\n\n### Den grå gestalten\nDirekt efter mötet observerade den grå gestalten gruppen. Samband?\n\n## BETYDELSE\n**Mystik:**\nMötet väckte fler frågor än svar. Något var fel med transporten, men gruppen kunde inte ingripa i Jargien.\n\n**Varning:**\nRevals kommentar om \\\"ohälsosamma element\\\" kring Vargnäset förebådade kommande faror.\n\n## RELATIONER\n- **Arvorns Hammare:** Kommendör\n- **12 soldater:** Hans trupp\n- **Okänd kvinnlig fånge:** Transporterar\n- **Dorin Kallhammare:** Diplomatisk interaktion\n- **Gruppen:** Misstänksam observation\n\n## SL-ANTECKNINGAR\n- Potentiell återkommande antagonist\n- Fången kan vara viktig senare\n- Koppling till Vargnäsets mysterier?\n- Legitimt Daakkyrkan eller korrupt operation?\n- Zentris magiska känsla - vad var det?"
+      "beskrivning": "# ALARIC\n**Signalist i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Signalist\n- **Ansvar:** Signaler och kommunikation i strid\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Koordinerade kommunikation vid Tirakgraven.",
+      "roll": "Signalist"
     },
     {
       "namn": "Ali ibn-Yusuf",
@@ -86,7 +90,8 @@ var wikiData = {
       "plats": "Tirakgraven",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# ALISTAIR BÅGSKYTT ⚔️\n**Fallen långbågsskytt**\n\n## GRUNDINFO\n- **Roll:** Långbågsskytt och scout\n- **Specialitet:** Precisionsskott\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
+      "beskrivning": "# ALISTAIR BÅGSKYTT ⚔️\n**Fallen långbågsskytt**\n\n## GRUNDINFO\n- **Roll:** Långbågsskytt och scout\n- **Specialitet:** Precisionsskott\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven.",
+      "roll": "Långbågsskytt och scout"
     },
     {
       "namn": "Alma Smedjans",
@@ -97,42 +102,20 @@ var wikiData = {
       "plats": "Haraziz Krack, Caserion",
       "fraktion": "Lady Soffias informationsnätverk",
       "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# ALMA SMEDJANS\n\n**Roll:** Smedsänka (säljer mat till soldater vid garnisonsporten)\n**Plats:** Haraziz Krack (2000 inv, garnisonsstad, krigsflotta), Caserion\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nAlmas man dog i smedjan under tillverkning av dvärgvapen. Den caseriska staten vägrade att ge kompensation till änkan. Soffia skickade pengar anonymt för att rädda Alma från fattigdom. Alma vet inte vem som hjälpte henne, bara att \"någon norrifrån\" brydde sig.\n\n## Roll i nätverket\n\nAlma säljer mat (bröd, korv, öl) till soldater vid garnisonsporten i Haraziz Krack. Soldater pratar fritt med henne - hon är \"bara en fattig änka\" som ingen tänker på. Hon ser vilka fartyg som anlöper krigshamnen, hör soldatrykten om kommande operationer, och noterar när dvärgvapen-tillverkningen ökar (krigsförberedelser).\n\n## Rapporterar\n\n- Krigsflottans rörelser (vilka fartyg seglar ut, åt vilket håll)\n- Dvärgvapen-tillverkning (ökad produktion = krig förestår?)\n- Soldatrykten (moral, klagomål, planerade operationer)\n- Cirefaliska befälhavares besök\n\n## Kontaktmetod\n\nBrevduva (sällan, oregelbundet - 2-4 gånger per år). Almas rapporter är kortfattade men värdefulla.\n\n## Lojalitet\n\n**Hög.** Alma är tacksam för att någon brydde sig när hennes man dog och staten vände ryggen åt henne. Hon rapporterar inte för pengar, utan av lojalitet."
+      "beskrivning": "# ALMA SMEDJANS\n\n**Roll:** Smedsänka (säljer mat till soldater vid garnisonsporten)\n**Plats:** Haraziz Krack (2000 inv, garnisonsstad, krigsflotta), Caserion\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nAlmas man dog i smedjan under tillverkning av dvärgvapen. Den caseriska staten vägrade att ge kompensation till änkan. Soffia skickade pengar anonymt för att rädda Alma från fattigdom. Alma vet inte vem som hjälpte henne, bara att \"någon norrifrån\" brydde sig.\n\n## Roll i nätverket\n\nAlma säljer mat (bröd, korv, öl) till soldater vid garnisonsporten i Haraziz Krack. Soldater pratar fritt med henne - hon är \"bara en fattig änka\" som ingen tänker på. Hon ser vilka fartyg som anlöper krigshamnen, hör soldatrykten om kommande operationer, och noterar när dvärgvapen-tillverkningen ökar (krigsförberedelser).\n\n## Rapporterar\n\n- Krigsflottans rörelser (vilka fartyg seglar ut, åt vilket håll)\n- Dvärgvapen-tillverkning (ökad produktion = krig förestår?)\n- Soldatrykten (moral, klagomål, planerade operationer)\n- Cirefaliska befälhavares besök\n\n## Kontaktmetod\n\nBrevduva (sällan, oregelbundet - 2-4 gånger per år). Almas rapporter är kortfattade men värdefulla.\n\n## Lojalitet\n\n**Hög.** Alma är tacksam för att någon brydde sig när hennes man dog och staten vände ryggen åt henne. Hon rapporterar inte för pengar, utan av lojalitet.",
+      "källa": "EM-R001"
     },
     {
-      "namn": "Pertil Fiskaren",
-      "bild": "pertil-fiskaren.png",
-      "ras": "Människa",
-      "titel": "Fiskare",
-      "status": "död",
-      "plats": "Frisänkan",
-      "fraktion": null,
-      "kapitel": "Kapitel 1",
-      "beskrivning": "# PERTIL FISKAREN\n**Oskyldig offer i Frisänkan**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Fiskare\n- **Status:** Död (mördad)\n- **Plats:** Frisänkan\n- **Kapitel:** Kapitel 1\n\n## BESKRIVNING\nPertil var en enkel fiskare som levde vid viken i Frisänkan. Han hade inget av värde.\n\n## MORDET\nTamron/Ibran (den tirakiska shamanen överta gen av demonen Urkhath) mördade Pertil och hans gravida fru utan någon tydlig anledning. Morden verkade meningslösa och brutala - antingen var det Ibrans mörka natur som tagit kontroll, eller så behövde demonen mer kraft.\n\n**Omständigheter:**\n- Mördad i sitt hem vid viken\n- Tillsammans med sin gravida fru\n- Två dagar innan gruppen nådde Frisänkan\n\n## VITTNESUPPGIFTER\n**Kapten Benne Tok** berättade: \"En främmande man kom genom här för två dagar sedan. Mörk, stor. Tirak, tror jag. Han bad om vatten vid Pertil Fiskarens hus vid viken.\"\n\n## KOPPLINGAR\n- **Pertils fru:** Mördad tillsammans med honom\n- **Tamron/Ibran:** Mördare\n- **Kapten Benne Tok:** Rapporterade mordet"
-    },
-    {
-      "namn": "Pertils fru",
-      "bild": "pertils-fru.png",
-      "ras": "Människa",
+      "namn": "Alokhara",
+      "bild": "alokhara.png",
+      "ras": "Okänd",
       "titel": null,
-      "status": "död",
-      "plats": "Frisänkan",
-      "fraktion": null,
-      "kapitel": "Kapitel 1",
-      "beskrivning": "# PERTILS FRU\n**Gravid offer i Frisänkan**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Död (mördad)\n- **Plats:** Frisänkan\n- **Kapitel:** Kapitel 1\n- **Familj:** Gift med Pertil Fiskaren\n\n## BESKRIVNING\nPertils fru var gravid med deras första barn när hon mördades.\n\n## MORDET\nMördad av Tamron/Ibran tillsammans med sin man. Hon bar deras första barn. Mordet var meningslöst brutalt - ett oskyl digt offer för demonens mörker.\n\n## TRAGEDI\nHennes död och deras oföddas död representerar den mänskliga kostnaden av demonens frigörelse. Två liv (snart tre) utplånade utan anledning.\n\n## KOPPLINGAR\n- **Pertil Fiskaren:** Man (död)\n- **Tamron/Ibran:** Mördare\n- **Kapten Benne Tok:** Rapporterade mordet"
-    },
-    {
-      "namn": "Prins Yelgotha av det Första Hovet",
-      "bild": "yelgotha.png",
-      "ras": "Alv",
-      "titel": "Prins av det Första Hovet / \"Älvakungen\" (Själabäraren)",
       "status": "levande",
-      "plats": "Älvakungens Sal, Mithera",
-      "fraktion": "Det Första Hovet (Månskenshovet innan splittringen)",
-      "kapitel": "Kapitel 9",
-      "detaljsida": "masterplot/masterplot.html",
-      "beskrivning": "# PRINS YELGOTHA AV DET FÖRSTA HOVET\n**Den Frusna Prinsen - Portalväktaren mellan världarna**\n\n## GRUNDINFO\n- **Titel:** Prins av det Första Hovet (Månskenshovet innan splittringen)\n- **Ras:** Skugglandsfurste/Alv (forntida)\n- **Status:** Levande (väckt av hjältarna i Kapitel 9)\n- **Ålder:** Urgammal (frusen i 700 år, årtusenden gammal)\n- **Plats:** Älvakungens Sal, Mithera\n\n## BAKGRUND\nYelgotha var prins av det Första Hovet innan Månskenshovet splittrades. För 700 år sedan frystes han i en ispelare i Den Frusna Katedralen. Hans isfängslande försvagade gränsen mellan Mundana och Skugglandet.\n\nUnder Tirakernas Krig (för ~9000 år sedan) tjänstgjorde **Vinterglöd som hans page**. När Vinterglöd senare svek sina allierade och började tjäna demonen Urkhath, blev det ett svek även mot Yelgotha som hans herre.\n\n## ÄLVAKUNGENS SAL (KAPITEL 9)\n\n**Väckandet:**\nHjältarna hittade och väckte Yelgotha ur hans isfängelse. Han såg direkt genom dem:\n\n*\"Fem kroppar men sex själar. Ni bär den sjätte inom er. I er skuld. I er saknad. I ert misslyckande.\"*\n\n**Sanningens pris:**\nYelgotha tvingade varje person att avslöja sin SANNA anledning till att vara där. Han krävde tre offer (tid, värme, säkerhet) och gav fem varningar om Skugglandet:\n\n- Vinterglöd väntar - var hans page en gång\n- Zentri är delad i tre delar (kropp, själ, minne)\n- Tiden där är inte tid här\n- Lita på ingenting utom er skuld\n- Det finns alltid en utväg - men aldrig den ni tror\n\n**Hans sista ord:**\n*\"När ni möter Vinterglöd, säg att Yelgotha skickade er. Han var min page en gång.\"*\n\n**OBS:** Gruppen använde ALDRIG denna information. De nämnde aldrig Yelgothas namn till VinterGlöd i Kapitel 10 - en kritisk oanvänd plottråd.\n\n## \"ÄLVAKUNGEN\" - SJÄLABÄRAREN\n\n**Coloniskt namn:** \"Älvakungen\" var INTE en separat varelse - det var det **coloniska namnet** för Yelgotha själv. På coloniska betyder det \"Själabärare\" eller \"Portal-väktare\" - en beskrivning av hans ROLL.\n\n**Sanning:** Yelgotha var en colonisk själssamlare som arbetade för VinterGlöd. Hans uppgift var att samla offer från de som ville passera till Skugglandet.\n\n### De fem stora offren för passage\n\nEfter de tre första offren krävde Yelgotha fem STORA offer för passage till Skugglandet:\n\n1. **Thrakka:** Offrade sina traumatiska minnen (gladiatoråren, slaveriet, smärtan)\n2. **Umnatak:** Offrade sin säkerhet/trygghet\n3. **Gordon:** Offrade sin generositet\n4. **Arcadius/Corvus:** Offrade sin skuld - skapade ett bokstavligt **hål i bröstet**\n5. **Kazrik:** Offrade sin ambition/girighet\n\n**Konsekvenser:**\n- Varje offer lämnade ett **tomrum** i offrarens själ\n- Arcadius mest påverkad: hålet i bröstet med en tråd som ledde bort\n- Offren gick INTE till alvkungens välsignelse - de gick till VinterGlöd\n- Senare upptäcktes att offren användes för att **försvaga gränsen** mellan världarna\n\n## KOPPLING TILL KUBERON\n\nDet finns teorier om att Yelgotha är **Kuberons själ eller essens** - den tredje manifestationen:\n\n- **Kuberon** = Balansen/Mellanfas\n- **Skymning** = Mörk aspekt (Urkhath-korruption)\n- **Vinterglöd** = Ljus aspekt (Ånger/upprättelse)\n- **Yelgotha** = Själen/Essensen?\n\nOm detta stämmer kan återföreningen av dessa manifestationer vara nyckeln till att återställa gränsen mellan världarna och befria Zentri.\n\n## KARAKTÄRSDRAG\n- **Allvetande:** Ser sanningar andra döljer\n- **Forntida visdom:** Årtusenden gammal\n- **Portalväktare:** Bevakaren mellan Mundana och Skugglandet\n- **Vägvisare:** Hjälpte de sex vandrarna (profetian uppfylld)\n\n## BETYDELSE FÖR KAMPANJEN\n\n- Yelgothas väckande öppnade porten till Skugglandet\n- Hans namn öppnar dörrar hos Vinterglöd (gammal lojalitet)\n- Hans isfängslande försvagade gränsen mellan världarna i 700 år\n- Han kan vara nyckeln till att återförena Kuberon-manifestationerna\n- Gav hjältarna Vandrarnas Märke (kan kontaktas igen)\n- Hans varningar om Zentris tre delar var avgörande för räddningen\n\n## RELATIONER\n\n- **Vinterglöd:** Tidigare hans page, senare svikare - men fortfarande bunden av gammal lojalitet\n- **Kuberon:** Möjligen samma väsen (olika manifestationer)\n- **Hjältarna:** De sex vandrarna som väckte honom och uppfyllde profetian\n- **Zentri:** Den sjätte själen som vandrarna bar inom sig\n\n## SL-ANTECKNINGAR\n\n- Kopplingen till VinterGlöd ANVÄNDES ALDRIG i Kapitel 10 - gruppen nämnde aldrig hans namn (oanvänd plottråd)\n- Profetian om sex vandrare var nyckeln till Skugglandet\n- Hans relation till Kuberon bör utforskas vidare\n- Representerar forntida magi, visdom och kosmisk balans"
+      "plats": "Muhad",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# ALOKHARA\n**Invånare i Muhad**\n\n## GRUNDINFO\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Amina bint-Farid",
@@ -209,7 +192,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Zayed-familjen",
       "kapitel": null,
-      "beskrivning": "# AMIRA BINT-ZAYED\n\n**Medlem av Zayed-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Handelsman, diplomat eller informant\n\n## BAKGRUND\nAmira tillhör den inflytelserika Zayed-familjen i Muhad. Hon kan vara handelsman, diplomat eller informatör.\n\n## I KAMPANJEN\n- Fas 3: Möttes i Muhad\n- Potentiell allierad eller kontakt\n\n## SL-ANTECKNINGAR\n- Familjeband ger inflytande\n- Kan öppna dörrar politiskt\n- Potentiell informationskälla"
+      "beskrivning": "# AMIRA BINT-ZAYED\n\n**Medlem av Zayed-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Handelsman, diplomat eller informant\n\n## BAKGRUND\nAmira tillhör den inflytelserika Zayed-familjen i Muhad. Hon kan vara handelsman, diplomat eller informatör.\n\n## I KAMPANJEN\n- Fas 3: Möttes i Muhad\n- Potentiell allierad eller kontakt\n\n## SL-ANTECKNINGAR\n- Familjeband ger inflytande\n- Kan öppna dörrar politiskt\n- Potentiell informationskälla",
+      "roll": "Handelsman eller informant"
     },
     {
       "namn": "Anna Stenmark",
@@ -245,6 +229,18 @@ var wikiData = {
       "beskrivning": "# Arimar Khard\n**Muhads utsände i Daval (Jargien).** Bor i borgliknande palats, skyddas av 100 muhadinska livvakter. Representerar Muhads intressen i fiendelandet."
     },
     {
+      "namn": "Arvorns Hammare-representant",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Resan Hem - Scenario 3",
+      "fraktion": "Arvorns Hammare",
+      "kapitel": null,
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# ARVORNS HAMMARE-REPRESENTANT\n**Representant för Arvorns Hammare**\n\n## GRUNDINFO\n- **Fraktion:** Arvorns Hammare\n- **Kontext:** Scenario 3 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 3): Representant för Arvorns Hammare, möjligen relaterat till deras samröre med Systrarna.\n\n## SL-ANTECKNINGAR\nArvorns Hammare nämndes som en fraktion med kopplingar till Systrarna och desertörerna som anföll Vargnäset.",
+      "roll": "Representant"
+    },
+    {
       "namn": "Astrid Björnsdotter",
       "bild": null,
       "ras": "Människa",
@@ -256,17 +252,6 @@ var wikiData = {
       "beskrivning": "# Astrid Björnsdotter\n\n**Bergviks ekonomiska motor - ansvarig för sågverket och timmerproduktion.**\n\nUtan Astrids såg och hennes järnhårda disciplin skulle byns timmerexport halveras. Hon vet det, och alla andra vet det också.\n\n**Utseende:** Kraftig, sågspån i håret, blick som kan stoppa en oxe."
     },
     {
-      "namn": "Båg-Pieter",
-      "bild": "båg_pieter.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Lundnäs",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# BÅG-PIETER\n**Lundnäs främste jägare**\n\n## GRUNDINFO\n- **Yrke:** En av Lundnäs främste jägare\n- **Påverkan:** Har ej påverkats så mycket av pärlorna\n- **Observation:** Har märkt djurens udda beteende under Regnsynd-händelserna\n- **Särskilda Drag:** Lite udda person\n\n## I KAMPANJEN\nRegnsynd-äventyret: Erfaren jägare som kan ge information om djurens konstiga beteende.\n\n## SL-ANTECKNINGAR\nBåg-Pieter är tillräckligt erfaren och märklig för att inte påverkas lika kraftigt av pärlorna som andra, men hans kunskap om djur gör att han observerat deras udda beteende under krisen."
-    },
-    {
       "namn": "Bartol",
       "bild": "bartol.png",
       "ras": "Människa",
@@ -275,7 +260,20 @@ var wikiData = {
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# BARTOL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
+      "beskrivning": "# BARTOL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim.",
+      "roll": "Obestämd"
+    },
+    {
+      "namn": "Beef",
+      "bild": "beef.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Lundnäs",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# BEEF\n**NPC i Lundnäs**\n\n## GRUNDINFO\n- **Plats:** Lundnäs\n- **Särskilda Drag:** Öknamn \"Beef\" tyder på stor/stark person\n\n## I KAMPANJEN\nRegnsynd-äventyret: NPC i Lundnäs.\n\n## SL-ANTECKNINGAR\nExakt roll okänd. Öknamnet \"Beef\" antyder möjligen en stor, stark person.",
+      "roll": "Okänd"
     },
     {
       "namn": "Bei Amin Ben Lahwan",
@@ -319,7 +317,8 @@ var wikiData = {
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# BERAK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
+      "beskrivning": "# BERAK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Beric Brorson",
@@ -330,7 +329,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# BERIC BRORSON\n**Scout i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Scout och överlevnadsexpert\n- **Specialitet:** Navigation i ogästvänliga miljöer\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Spaning vid Tirakgraven."
+      "beskrivning": "# BERIC BRORSON\n**Scout i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Scout och överlevnadsexpert\n- **Specialitet:** Navigation i ogästvänliga miljöer\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Spaning vid Tirakgraven.",
+      "roll": "Scout och överlevnadsexpert"
     },
     {
       "namn": "Berta 'Flodkvinna' Eriksdotter",
@@ -344,17 +344,6 @@ var wikiData = {
       "beskrivning": "# BERTA \"FLODKVINNA\" ERIKSDOTTER\n**Kapten på Strömjungfrun**\n\n## GRUNDINFO\n- **Titel:** Kapten\n- **Smeknamn:** Flodkvinna\n- **Ras:** Människa\n- **Kön:** Kvinna\n- **Yrke:** Flodbåtskapten\n- **Fartyg:** Strömjungfrun\n- **Status:** Levande\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nBerta \"Flodkvinna\" Eriksdotter är en erfaren kvinnlig kapten med djup kunskap om flodernas rörelser och strömmar. Hennes smeknamn \"Flodkvinna\" speglar hennes exceptionella skicklighet i att navigera på älvar och floder.\n\n## EVAKUERINGEN FRÅN VARGNÄSET\nUnder evakueringen från Vargnäset (Fas 7) ledde Berta Strömjungfrun och räddade 12 flyktingar från farozonen. Hennes expertis och lugn under press var avgörande.\n\n### Besättning\n- Kapten Berta \"Flodkvinna\" Eriksdotter\n- Inga Bredaxel (besättningsmedlem)\n\n## KARAKTÄR\n- Expert på flodnavigering\n- Lugn under press\n- Modig och pålitlig\n- Skicklig ledare\n\n## KOPPLINGAR\n- **Fartyg:** Strömjungfrun\n- **Besättning:** Inga Bredaxel\n- **Händelse:** Evakuering från Vargnäset\n- **Passagerare:** 12 flyktingar\n- **Relaterade fartyg:** Rimfrosten, Månljuset\n- **Fas:** 7"
     },
     {
-      "namn": "Borga Stenhands",
-      "bild": "borga-stenhands.png",
-      "ras": "Dvärg",
-      "titel": "Gruvarbetare",
-      "status": "levande",
-      "plats": "Jarnthol",
-      "fraktion": null,
-      "kapitel": "Kapitel 4",
-      "beskrivning": "# BORGA STENHANDS\n**Gammal gruvarbetare i Jarnthol**\n\n## GRUNDINFO\n- **Ras:** Dvärg\n- **Yrke:** Gruvarbetare\n- **Status:** Levande\n- **Plats:** Jarnthol (gruvutpost)\n- **Kapitel:** Kapitel 4\n\n## BESKRIVNING\nEn gammal gruvarbetare i Jarnthol. En av de sista som såg prospektören Griknar Granitson före hans försvinnande.\n\n## VITTNESUPPGIFTER\nBorga är rädd och skakad efter händelserna i gruvan. Han berättar för dem som pressar honom att de hörde **röster i mörkret** innan Griknar försvann. Hans vittnesmål avslöjar att något onaturligt härskar i de gamla gruvgångarna.\n\n## KOPPLINGAR\n- **Grimdal Tungöga:** Värdshuvärd i Jarnthol\n- **Griknar Granitson:** Försvunnen prospektör\n- **Rådslingan:** Skuggvarelse i gruvan"
-    },
-    {
       "namn": "Björn Hammarsmed",
       "bild": "bjorn-hammarsmed.png",
       "ras": "Människa",
@@ -366,6 +355,17 @@ var wikiData = {
       "beskrivning": "# BJÖRN HAMMARSMED\n**Ung smed från Bergvik**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** Ung (20-25 år)\n- **Yrke:** Smed\n- **Status:** Levande\n- **Plats:** Bergvik (senare Grensfortet)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nBjörn Hammarsmed är en ung smed från Bergvik med ärrade händer - tecken på hans yrke och erfarenhet vid städet.\n\n## ANSLUTNING TILL GRENSFORTET\nDag 4 av resan till Grensfortet (14:e Tretoria, Astrio) anslöt sig Björn tillsammans med stenbrytarna Lars och Erik från Bergvik. Han såg möjligheten att bidra med sina smedskunskaper till återuppbyggnaden av det gamla fortet.\n\n## FÄRDIGHETER\n- Smedja och metallarbete\n- Verktygsreparation\n- Vapenunderhåll\n\n## ROLL PÅ GRENSFORTET\nSom en av få med smedskunskaper blev Björn ovärderlig för fortets återuppbyggnad och underhåll av utrustning och vapen.\n\n## KOPPLINGAR\n- **Bergvik:** Hemby\n- **Grensfortet:** Ny bosättning\n- **Lars & Erik:** Anslöt samtidigt från Bergvik"
     },
     {
+      "namn": "Borga Stenhands",
+      "bild": "borga-stenhands.png",
+      "ras": "Dvärg",
+      "titel": "Gruvarbetare",
+      "status": "levande",
+      "plats": "Jarnthol",
+      "fraktion": null,
+      "kapitel": "Kapitel 4",
+      "beskrivning": "# BORGA STENHANDS\n**Gammal gruvarbetare i Jarnthol**\n\n## GRUNDINFO\n- **Ras:** Dvärg\n- **Yrke:** Gruvarbetare\n- **Status:** Levande\n- **Plats:** Jarnthol (gruvutpost)\n- **Kapitel:** Kapitel 4\n\n## BESKRIVNING\nEn gammal gruvarbetare i Jarnthol. En av de sista som såg prospektören Griknar Granitson före hans försvinnande.\n\n## VITTNESUPPGIFTER\nBorga är rädd och skakad efter händelserna i gruvan. Han berättar för dem som pressar honom att de hörde **röster i mörkret** innan Griknar försvann. Hans vittnesmål avslöjar att något onaturligt härskar i de gamla gruvgångarna.\n\n## KOPPLINGAR\n- **Grimdal Tungöga:** Värdshuvärd i Jarnthol\n- **Griknar Granitson:** Försvunnen prospektör\n- **Rådslingan:** Skuggvarelse i gruvan"
+    },
+    {
       "namn": "Branar Tirakson",
       "bild": "branar-tirakson.png",
       "ras": "Tirak",
@@ -374,7 +374,19 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# BRANAR TIRAKSON\n**Försvarsspecialist i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Ras:** Tirak\n- **Roll:** Försvarsspecialist\n- **Utrustning:** Stridshammare och stor rundsköld\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Försvarade vid Tirakgraven."
+      "beskrivning": "# BRANAR TIRAKSON\n**Försvarsspecialist i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Ras:** Tirak\n- **Roll:** Försvarsspecialist\n- **Utrustning:** Stridshammare och stor rundsköld\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Försvarade vid Tirakgraven.",
+      "roll": "Försvarsspecialist"
+    },
+    {
+      "namn": "Brigga Kyllo",
+      "bild": "brigga_kyllo.png",
+      "ras": "Människa",
+      "titel": "Jeorgs högra hand",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# BRIGGA KYLLO\n**Jeorgs högra hand på Spegelmåne**\n\n## GRUNDINFO\n- **Position:** Jeorg Rasks högra hand\n- **Ras:** Troligen asharier\n- **Kön:** Kvinna\n- **Ålder:** Ung\n- **Fartyg:** Spegelmåne\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nEn ung mystisk kvinna som tjänstgör som kapten Jeorg Rasks högra hand ombord på Spegelmåne.\n\n## KARAKTÄR\n- Mystisk\n- Ung men pålitlig nog att vara kaptens högra hand\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask (hans högra hand)"
     },
     {
       "namn": "Broder Tomas",
@@ -407,7 +419,20 @@ var wikiData = {
       "plats": "Vargnäset",
       "fraktion": "Vargnäsets invånare",
       "kapitel": null,
-      "beskrivning": "# BRYNJAR\n**Smed och krigare**\n\n## GRUNDINFO\n- **Yrke:** Smed\n- **Roll i strid:** Fördelar ut förstärkta vapen, stridsmässigt värdefull i närstrid\n- **Position:** Torget och centrum (Kazriks/Umnataks zon)\n- **Specialitet:** Vapentillverkning och närstrid\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Försvarade Vargnäset, tillhandahöll förstärkta vapen till försvararna.\n\n## SL-ANTECKNINGAR\nBrynjar är inte bara en skicklig smed utan också en värdefull krigare. Hans förstärkta vapen och närstridskompetens är avgörande för byns försvar."
+      "beskrivning": "# BRYNJAR\n**Smed och krigare**\n\n## GRUNDINFO\n- **Yrke:** Smed\n- **Roll i strid:** Fördelar ut förstärkta vapen, stridsmässigt värdefull i närstrid\n- **Position:** Torget och centrum (Kazriks/Umnataks zon)\n- **Specialitet:** Vapentillverkning och närstrid\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Försvarade Vargnäset, tillhandahöll förstärkta vapen till försvararna.\n\n## SL-ANTECKNINGAR\nBrynjar är inte bara en skicklig smed utan också en värdefull krigare. Hans förstärkta vapen och närstridskompetens är avgörande för byns försvar.",
+      "roll": "Smed"
+    },
+    {
+      "namn": "Båg-Pieter",
+      "bild": "båg_pieter.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Lundnäs",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "# BÅG-PIETER\n**Lundnäs främste jägare**\n\n## GRUNDINFO\n- **Yrke:** En av Lundnäs främste jägare\n- **Påverkan:** Har ej påverkats så mycket av pärlorna\n- **Observation:** Har märkt djurens udda beteende under Regnsynd-händelserna\n- **Särskilda Drag:** Lite udda person\n\n## I KAMPANJEN\nRegnsynd-äventyret: Erfaren jägare som kan ge information om djurens konstiga beteende.\n\n## SL-ANTECKNINGAR\nBåg-Pieter är tillräckligt erfaren och märklig för att inte påverkas lika kraftigt av pärlorna som andra, men hans kunskap om djur gör att han observerat deras udda beteende under krisen.",
+      "roll": "Jägare"
     },
     {
       "namn": "Daela Häxmästare",
@@ -418,7 +443,8 @@ var wikiData = {
       "plats": "Tirakgraven",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# DAELA HÄXMÄSTARE ⚔️\n**Fallen antimagispecialist**\n\n## GRUNDINFO\n- **Roll:** Antimagispecialist\n- **Specialitet:** Identifiera och avvärja magi\n- **Särskilda Drag:** Svart\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
+      "beskrivning": "# DAELA HÄXMÄSTARE ⚔️\n**Fallen antimagispecialist**\n\n## GRUNDINFO\n- **Roll:** Antimagispecialist\n- **Specialitet:** Identifiera och avvärja magi\n- **Särskilda Drag:** Svart\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven.",
+      "roll": "Antimagispecialist"
     },
     {
       "namn": "Dain Stenyxa",
@@ -440,7 +466,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# DARIAN DEN SNABBE\n**Kavalleri i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Tungt kavalleri\n- **Specialitet:** Lanscharge mot fiendestridslinjer\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Kavalleriattacker vid Tirakgraven."
+      "beskrivning": "# DARIAN DEN SNABBE\n**Kavalleri i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Tungt kavalleri\n- **Specialitet:** Lanscharge mot fiendestridslinjer\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Kavalleriattacker vid Tirakgraven.",
+      "roll": "Tungt kavalleri"
     },
     {
       "namn": "Darim al-Fazul",
@@ -466,6 +493,17 @@ var wikiData = {
       "roll": "Guide"
     },
     {
+      "namn": "Dask Ymer",
+      "bild": "Dask_Ymer.png",
+      "ras": "Okänd",
+      "titel": "Timmerman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# DASK YMER\n**Timmerman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Timmerman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nTimmerman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
+    },
+    {
       "namn": "Demonen Urkhath",
       "bild": "urkhath.png",
       "ras": "Intelligent monster",
@@ -474,8 +512,9 @@ var wikiData = {
       "plats": "Skugglandet/mellan planen",
       "fraktion": "Ingen",
       "kapitel": null,
+      "beskrivning": "# DEMONEN URKHATH\n\n**Urgammal demon, kampanjens primära antagonist**\n\n## GRUNDINFO\n\n- **Ras:** Demon\n- **Status:** Delvis fri\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Primär antagonist\n\n## BAKGRUND\n\nUrkhath är en urgammal demon som för årtusenden sedan försegslades av tirakstammen under shamanen Ibran Anderyttare. Demonen begravdes i Tirakgraven med bindningsföremål för att hålla den fängslad.\n\n### Försegling\n- Fängslad för årtusenden\n- Bevakad av tirakstammen\n- Bindningsföremål höll den i schack\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n**Frigörelse:**\n- Migor Trollkunnigs utgrävning bröt förseglingen\n- Zentri stal silverringen med del av demonens essens\n- Ibran/Tamron stal bindningsföremålen (för att skydda dem)\n- Demonen delvis frigjord, sände chockvågor genom Mundana\n\n### Efter frigörelse\n- Började påverka Zentri genom ringen\n- Drömmar och visioner\n- Stärkte greppet vid varje kris\n\n### Vargnäset (Fas 6)\n**Zentris fall:**\n- I panik accepterade Zentri demonens erbjudande om makt\n- Zentri kastades in i Skugglandet\n- Urkhath använder nu Zentri som ankare mellan planen\n\n## NUVARANDE TILLSTÅND\n\n### Delvis fri\nDemonen är inte helt fri men har betydligt större makt än tidigare:\n- Använder Zentri som ankare mellan planen\n- Håller Zentri delad i tre delar (kropp, själ, minne)\n- Arbetar för fullständig befrielse\n\n### I Skugglandet\nDemonen verkar genom Lord Vinterglöd och andra agenter i Skugglandet.\n\n## KARAKTÄRSDRAG\n\n- **Tålamod:** Väntade årtusenden, kan vänta mer\n- **Manipulativ:** Lockade Zentri genom rädsla\n- **Mäktig:** Även delvis fri är den farlig\n\n## RELATIONER\n\n### Offer\n- **Zentri Bredarsson:** Primärt ankare och offer\n\n### Fiender\n- **Gruppen:** Söker befria Zentri\n- **Ibran Anderyttare:** Ursprunglig fångvaktare\n- **Tirakerna:** Förseglare\n\n## FARA\n\nUrkhath representerar kampanjens största hot. Om demonen helt frigörs kan konsekvenserna vara katastrofala för Mundana.\n\n## SL-ANTECKNINGAR\n\n- Kazriks demonologikunskap kan vara nyckel\n- Zentris räddning = att bryta demonens ankare\n- Ulzaks profetia: \"Spegeln kan krossas utan att förstöra det den reflekterar\"\n- Fullständig frigörelse skulle vara kampanjens ultimata misslyckande",
       "detaljsida": "masterplot/masterplot.html",
-      "beskrivning": "# DEMONEN URKHATH\n\n**Urgammal demon, kampanjens primära antagonist**\n\n## GRUNDINFO\n\n- **Ras:** Demon\n- **Status:** Delvis fri\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Primär antagonist\n\n## BAKGRUND\n\nUrkhath är en urgammal demon som för årtusenden sedan försegslades av tirakstammen under shamanen Ibran Anderyttare. Demonen begravdes i Tirakgraven med bindningsföremål för att hålla den fängslad.\n\n### Försegling\n- Fängslad för årtusenden\n- Bevakad av tirakstammen\n- Bindningsföremål höll den i schack\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n**Frigörelse:**\n- Migor Trollkunnigs utgrävning bröt förseglingen\n- Zentri stal silverringen med del av demonens essens\n- Ibran/Tamron stal bindningsföremålen (för att skydda dem)\n- Demonen delvis frigjord, sände chockvågor genom Mundana\n\n### Efter frigörelse\n- Började påverka Zentri genom ringen\n- Drömmar och visioner\n- Stärkte greppet vid varje kris\n\n### Vargnäset (Fas 6)\n**Zentris fall:**\n- I panik accepterade Zentri demonens erbjudande om makt\n- Zentri kastades in i Skugglandet\n- Urkhath använder nu Zentri som ankare mellan planen\n\n## NUVARANDE TILLSTÅND\n\n### Delvis fri\nDemonen är inte helt fri men har betydligt större makt än tidigare:\n- Använder Zentri som ankare mellan planen\n- Håller Zentri delad i tre delar (kropp, själ, minne)\n- Arbetar för fullständig befrielse\n\n### I Skugglandet\nDemonen verkar genom Lord Vinterglöd och andra agenter i Skugglandet.\n\n## KARAKTÄRSDRAG\n\n- **Tålamod:** Väntade årtusenden, kan vänta mer\n- **Manipulativ:** Lockade Zentri genom rädsla\n- **Mäktig:** Även delvis fri är den farlig\n\n## RELATIONER\n\n### Offer\n- **Zentri Bredarsson:** Primärt ankare och offer\n\n### Fiender\n- **Gruppen:** Söker befria Zentri\n- **Ibran Anderyttare:** Ursprunglig fångvaktare\n- **Tirakerna:** Förseglare\n\n## FARA\n\nUrkhath representerar kampanjens största hot. Om demonen helt frigörs kan konsekvenserna vara katastrofala för Mundana.\n\n## SL-ANTECKNINGAR\n\n- Kazriks demonologikunskap kan vara nyckel\n- Zentris räddning = att bryta demonens ankare\n- Ulzaks profetia: \"Spegeln kan krossas utan att förstöra det den reflekterar\"\n- Fullständig frigörelse skulle vara kampanjens ultimata misslyckande"
+      "roll": "Primär antagonist"
     },
     {
       "namn": "Den blinda spåkvinnan",
@@ -489,17 +528,6 @@ var wikiData = {
       "beskrivning": "# DEN BLINDA SPÅKVINNAN (†)\n**Spåkvinna i Ravnovo - arresterad och avrättad för häxeri**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** Gammal\n- **Yrke:** Spåkvinna och örtförsäljare\n- **Särskilda drag:** Blind, magisk känsla\n- **Status:** Död (bränd för häxeri)\n- **Plats:** Ravnovo marknad, Jargien\n- **Kapitel:** Kapitel 4 (Jargien)\n\n## BESKRIVNING\nEn gammal kvinna som sålde örter och amuletter på marknaden i Ravnovo. Trots sin blindhet kunde hon \\\"se\\\" magiska essenser och märken på människor.\n\n## KRITISKA HÄNDELSER\n\n### Mötet på marknaden\n**Kände igen Zentri:**\n- \\\"Jag känner dig, enögde magiker. Du bär ett märke, liksom jag.\\\"\n- Kände igen förluster: \\\"Alla vi som förlorat något bär ett tecken\\\"\n- Zentri: förlorat öga men vunnit insikt\n- Hon: förlorat syn men kan se framtiden\n\n**Gåvan:**\n- Gav Zentri en cirkelformad träamulett\n- \\\"För krigaren från öster. Bär detta över ditt hjärta.\\\"\n- \\\"När drömmen kommer åter, låt inte dess röst nå in.\\\"\n- Skydd mot demonisk påverkan\n- Priset: \\\"Redan betalt\\\" (mystiskt)\n\n### Arrestering och död\n**Anklagelser:**\n- Prästen anklagade henne för häxeri\n- \\\"Hon har förhäxat böndernas boskap!\\\"\n- \\\"Hon har talat med en främmande tunga!\\\"\n- \\\"Hon har sett utan ögon!\\\"\n\n**Avrättning:**\n- Arresterad av Daakkyrkans vakter\n- Troligen bränd på bål\n- Gruppen kunde inte ingripa (Jargiens lagar)\n\n## KARAKTÄRSDRAG\n- **Seende:** Blind men magiskt känslig\n- **Vis:** Förstod Zentris situation\n- **Generös:** Gav amuletten utan betalning\n- **Offer:** Visste riskerna med sin gåva\n\n## BETYDELSE\n**Amuletten:**\nSkyddet hon gav Zentri visade sig kritiskt - amuletten höll demonrösten på avstånd under flera viktiga ögonblick.\n\n**Varning:**\nHennes öde påminde gruppen om Jargiens farliga vidskepelse och Daakkyrkans makt.\n\n## SL-ANTECKNINGAR\n- Visste hon mer om Zentris framtid?\n- Varför sa hon priset var \\\"redan betalt\\\"?\n- Symboliken i ögonbindel/ögonlapp\n- Kunde hennes verkliga magi ha räddat henne - eller var hennes offer avsiktligt?"
     },
     {
-      "namn": "Dhormel",
-      "bild": "dhormel.png",
-      "ras": "Troll",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Sydväst om Lundnäs",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# DHORMEL\n**Grottroll sydväst om Lundnäs**\n\n## GRUNDINFO\n- **Ras:** Grottroll\n- **Hemvist:** Grotta sydväst om Lundnäs\n- **Särskilda Drag:** Stort och farligt\n\n## I KAMPANJEN\nRegnsynd-äventyret: Grottroll som spelarna kan stöta på i området kring Lundnäs.\n\n## SL-ANTECKNINGAR\nEn bit sydväst om byn Lundnäs bor grottrollet Dhormel. Eventuellt hot för resande i området."
-    },
-    {
       "namn": "Dezerteuren",
       "bild": null,
       "ras": "Människa",
@@ -509,6 +537,18 @@ var wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 8.5",
       "beskrivning": "# Dezerteuren\n\n**EXTREMT KÄNSLIG NPC - Desertör från Mörkerhundarna.**\n\nInte en vanlig desertör - utan från **Nattgardet** i Damarien, storfurste Thamas Vitfjäders fruktade elitstyrka 'Mörkerhundarna.' Han deserterade för tre år sedan efter att ha vägrat delta i 'storfurstens vinskörd' - brutala utrensningar av misstänkta dissidenter.\n\n**Varför farligt:** Om han hittas kan hans familj avrättas. 'Avrättning i tredje led.' Mörkerhundarnas ledare Marok Svärdshand är hemligt en helmgast (vandöd).\n\n**Utseende:** Konstant på sin vakt. Mager av dålig kost. Ögon som aldrig vilar.\n\n**Koppling:** Gordons bror Ethan tjänstgör i Damarien."
+    },
+    {
+      "namn": "Dhormel",
+      "bild": "dhormel.png",
+      "ras": "Troll",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Sydväst om Lundnäs",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "# DHORMEL\n**Grottroll sydväst om Lundnäs**\n\n## GRUNDINFO\n- **Ras:** Grottroll\n- **Hemvist:** Grotta sydväst om Lundnäs\n- **Särskilda Drag:** Stort och farligt\n\n## I KAMPANJEN\nRegnsynd-äventyret: Grottroll som spelarna kan stöta på i området kring Lundnäs.\n\n## SL-ANTECKNINGAR\nEn bit sydväst om byn Lundnäs bor grottrollet Dhormel. Eventuellt hot för resande i området.",
+      "roll": "Grottroll"
     },
     {
       "namn": "Dimgumman",
@@ -522,19 +562,6 @@ var wikiData = {
       "beskrivning": "# DIMGUMMAN\n\n**En gestalt som ingen kan finna**\n\n## Rykten\n\nFolk har sett rök från en stuga nära Mithera-gränsen - men ingen har hittat den. 'Dimgumman', säger de.\n\n## Vad hon vet\n\nHon har sett något i Mithera som gruppen behöver veta, och hon söker kontakt genom drömmar.\n\n## Mysterium\n\nAdisa vet mer om henne - men delar hon informationen?\n\n## Natur\n\nÄr hon människa? Ande? Något annat? Ingen vet."
     },
     {
-      "namn": "Ditte Lundbäck",
-      "bild": null,
-      "ras": "Människa",
-      "ålder": "24 år",
-      "titel": "Tjänsteflicka och budbärare",
-      "status": "levande",
-      "plats": "Mitrahus, Vitterdal",
-      "fraktion": "Lady Soffias hushåll",
-      "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# DITTE LUNDBÄCK\n\n**Tjänsteflicka åt Lady Soffia av Vitterdal**\n\nDitte är en 24-årig cermirisk tjänsteflicka som springer ärenden åt Lady Soffia i Vitterdal och Mitrahus. Hon är extremt lojal och tacksam efter att Soffia räddade hennes familj från svält för 6 år sedan.\n\n## Roll\n- Budbärare och springer ärenden i Vitterdal\n- Hanterar brevduvor (matar, tränar, skickar meddelanden)\n- Bär meddelanden mellan Soffia och lokala kontakter\n- Diskreta uppdrag och inhandlingar\n\n## Kunskap om nätverket\nDitte känner **INTE** till Soffias spionnätverk. Hon ser att Soffia \"känner alla\" och \"vet mycket\", men tror bara att hon är en vanlig tjänsteflicka. Detta skyddar henne - om hon gripas kan hon inte avslöja något.\n\n## Personlighet\n- Trogen som en hund - skulle aldrig svika Soffia\n- Nyfiken men disciplinerad - vet när hon inte ska fråga\n- Pratglad med andra tjänare men tystlåten om Soffias ärenden\n- Ser upp till Soffia som förebild\n\n**Lojalitet:** Absolut (familj räddad från svält)"
-    },
-    {
       "namn": "Disa Trofast",
       "bild": null,
       "ras": "Människa",
@@ -543,20 +570,21 @@ var wikiData = {
       "plats": "Jarla, Asharien",
       "fraktion": "Lady Soffias informationsnätverk",
       "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# DISA TROFAST\n\n**Roll:** Serveringsbiträde vid värdshuset Vita Hjorten\n**Plats:** Jarla, Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** Tyst och diskret servitris\n\n## Bakgrund\n\nDisa har arbetat på Vita Hjorten i tre år. Värdshuset är känt som den plats där cirefaliska diplomater, köpmän och ombud bor när de besöker Jarla. Hon är \"osynlig\" - folk talar fritt eftersom tjänare inte förväntas lyssna. Till skillnad från de flesta serveringsbiträden kan Disa läsa och skriva (hennes far var skrivare).\n\nDisas bror mördades av Skrået (lönnmördargillen i Jarla). Soffia hjälpte henne fly och hitta nytt arbete. Disa är djupt tacksam och rapporterar allt hon hör om cirefaliskt inflytande i Jarla.\n\n## Spionaktivitet\n\n- Lyssnar på cirefaliska diplomaters samtal vid middagar och vinkällare\n- Läser brevpost som lämnats på värdshuset (ibland \"av misstag\" öppnad)\n- Noterar vilka cirefaliska officerare besöker Jarla och hur länge de stannar\n- Observerar när Jeskia av Nejas (Handelshus Nejas ledare) träffar cirefalier privat\n\n## Rapporterar till Soffia\n\n- Cirefaliska militära rörelser (officerare, rekrytering, truppförflyttningar)\n- Planerar Cirefa militär närvaro i Asharien?\n- Rykten om Chetos nästa drag (nya reformer? Krav på Frijarl Todor?)\n- Nejas-möten med cirefaliska handelshus\n\n## Kontaktmetod\n\nBrev gömda i leveranser av vitvin till Vitterdals ambassad i Jarla. Rapporterar varje månad.\n\n## Lojalitet\n\n**Mycket hög.** Disa hatar Skrået och cirefaliskt inflytande i Jarla. Hon ser Soffia som någon som bryr sig om rättvisa."
+      "beskrivning": "# DISA TROFAST\n\n**Roll:** Serveringsbiträde vid värdshuset Vita Hjorten\n**Plats:** Jarla, Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** Tyst och diskret servitris\n\n## Bakgrund\n\nDisa har arbetat på Vita Hjorten i tre år. Värdshuset är känt som den plats där cirefaliska diplomater, köpmän och ombud bor när de besöker Jarla. Hon är \"osynlig\" - folk talar fritt eftersom tjänare inte förväntas lyssna. Till skillnad från de flesta serveringsbiträden kan Disa läsa och skriva (hennes far var skrivare).\n\nDisas bror mördades av Skrået (lönnmördargillen i Jarla). Soffia hjälpte henne fly och hitta nytt arbete. Disa är djupt tacksam och rapporterar allt hon hör om cirefaliskt inflytande i Jarla.\n\n## Spionaktivitet\n\n- Lyssnar på cirefaliska diplomaters samtal vid middagar och vinkällare\n- Läser brevpost som lämnats på värdshuset (ibland \"av misstag\" öppnad)\n- Noterar vilka cirefaliska officerare besöker Jarla och hur länge de stannar\n- Observerar när Jeskia av Nejas (Handelshus Nejas ledare) träffar cirefalier privat\n\n## Rapporterar till Soffia\n\n- Cirefaliska militära rörelser (officerare, rekrytering, truppförflyttningar)\n- Planerar Cirefa militär närvaro i Asharien?\n- Rykten om Chetos nästa drag (nya reformer? Krav på Frijarl Todor?)\n- Nejas-möten med cirefaliska handelshus\n\n## Kontaktmetod\n\nBrev gömda i leveranser av vitvin till Vitterdals ambassad i Jarla. Rapporterar varje månad.\n\n## Lojalitet\n\n**Mycket hög.** Disa hatar Skrået och cirefaliskt inflytande i Jarla. Hon ser Soffia som någon som bryr sig om rättvisa.",
+      "källa": "EM-R001"
     },
     {
-      "namn": "\"Dubbel-Orm\"",
+      "namn": "Ditte Lundbäck",
       "bild": null,
       "ras": "Människa",
-      "titel": "Gruvarbetare",
+      "titel": "Tjänsteflicka och budbärare",
       "status": "levande",
-      "plats": "Rampor, Västmark",
-      "fraktion": "Lady Soffias informationsnätverk",
+      "plats": "Mitrahus, Vitterdal",
+      "fraktion": "Lady Soffias hushåll",
       "kapitel": null,
+      "beskrivning": "# DITTE LUNDBÄCK\n\n**Tjänsteflicka åt Lady Soffia av Vitterdal**\n\nDitte är en 24-årig cermirisk tjänsteflicka som springer ärenden åt Lady Soffia i Vitterdal och Mitrahus. Hon är extremt lojal och tacksam efter att Soffia räddade hennes familj från svält för 6 år sedan.\n\n## Roll\n- Budbärare och springer ärenden i Vitterdal\n- Hanterar brevduvor (matar, tränar, skickar meddelanden)\n- Bär meddelanden mellan Soffia och lokala kontakter\n- Diskreta uppdrag och inhandlingar\n\n## Kunskap om nätverket\nDitte känner **INTE** till Soffias spionnätverk. Hon ser att Soffia \"känner alla\" och \"vet mycket\", men tror bara att hon är en vanlig tjänsteflicka. Detta skyddar henne - om hon gripas kan hon inte avslöja något.\n\n## Personlighet\n- Trogen som en hund - skulle aldrig svika Soffia\n- Nyfiken men disciplinerad - vet när hon inte ska fråga\n- Pratglad med andra tjänare men tystlåten om Soffias ärenden\n- Ser upp till Soffia som förebild\n\n**Lojalitet:** Absolut (familj räddad från svält)",
       "källa": "EM-R001",
-      "beskrivning": "# \"DUBBEL-ORM\"\n\n**Namn:** \"Dubbel-Orm\" (öknamn - riktigt namn okänt)\n**Roll:** Gruvarbetare (arbetar bland tiraker)\n**Plats:** Rampor (7000 inv, gruvor, tiraker), Västmark\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nDubbel-Orm kollapsade i gruvan och skadades svårt för flera år sedan. Kantonfurste Persal vägrade betala läkarvård (\"bara en gruvarbetare\"). Soffia betalade anonymt för läkning i Cermira. Dubbel-Orm överlevde men blev puckelryggig - därav öknamnet.\n\nHan vet inte vem som räddade honom, bara att \"någon från Cermira\" betalade. När en budbärare från Vitterdal bad om information om gruvorna i utbyte mot fortsatt stöd, accepterade han.\n\n## Varför väl placerad\n\nRampor är Västmarks gruvcenter och hem åt en stor tirakisk population. Dubbel-Orm arbetar bland tiraker och hör deras planer. Kantonfurste Persal och Nihtor Wekzi (tirakisk ledare) kämpar om makten i Västmark.\n\n## Rapporterar\n\n- Maktkampen Persal vs Nihtor Wekzi\n- Tirakernas planer (militära rörelser, rekrytering)\n- Gruvproduktion (ökad produktion kan betyda krigsförberedelser)\n- Tirakskt inflytande i regionen\n\n## Kontaktmetod\n\nBrevduva (sällan, 2-3 gånger per år). Dubbel-Orm rapporterar endast när något viktigt händer.\n\n## Lojalitet\n\n**Mycket hög.** Dubbel-Orm är tacksam för att någon brydde sig när Kantonfursten vägrade. Han litar på \"folk från norr\" mer än sin egen regerare."
+      "ålder": "24 år"
     },
     {
       "namn": "Dorian Sproll",
@@ -567,7 +595,8 @@ var wikiData = {
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# DORIAN SPROLL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim."
+      "beskrivning": "# DORIAN SPROLL\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Dorin Kallhammare",
@@ -581,18 +610,6 @@ var wikiData = {
       "beskrivning": "# DORIN KALLHAMMARE\n**Dvärgisk karavanledare genom Jargien**\n\n## GRUNDINFO\n- **Ras:** Dvärg\n- **Yrke:** Karavanledare\n- **Affiliation:** Durikars handelslinje\n- **Status:** Okänd\n- **Plats:** Jargien (15-dagarsresan)\n- **Kapitel:** Kapitel 4 (Jargien)\n\n## BESKRIVNING\nDorin Kallhammare är en erfaren dvärgisk karavanledare som ledde Gordon, Umnatak, Kazrik, Zentri och Hagge genom Jargiens snötäckta provinser under femton dagar.\n\n## KARAKTÄRSDRAG\n- **Erfaren:** Känner handelsvägarna väl\n- **Diplomatisk:** Hanterar vaktposter och tullar smidigt\n- **Pragmatisk:** Har mutor redo när behövs\n- **Försiktig:** Varnar för Daakkyrkans faror\n- **Kunnig:** Känner Jargiens hierarkier och seder\n\n## KRITISKA HÄNDELSER\n\n### 15-dagarsresan genom Jargien\n**Ledare och guide:**\n- Ledde karavanen från dvärgarnas berg till Vargnäset\n- Följde Durikars handelslinje\n- Navigerade genom Jargiens komplexa tullar och vaktposter\n\n**Råd och varningar:**\n- \\\"Håll era tungor i styr och era kappor dragna\\\"\n- \\\"Låt mig sköta pratandet\\\" vid vaktposter\n- Varnade för Daakkyrkans inkvisitorer\n- \\\"Nämn inte ett ord om resan genom Tarkas\\\"\n\n**Kris vid Ravnovo:**\n- Såg den blinda spåkvinnan arresteras\n- Manade gruppen att lämna snabbt\n- \\\"Vi måste härifrån innan någon kopplar er till henne\\\"\n\n**Möte med Arvorns Hammare:**\n- Diplomatisk hantering av Kommendör Reval\n- \\\"Vi lever i fredlig samexistens med det glorvördiga kejsardömet\\\"\n- Stoppade gruppen från att ingripa med fången\n\n**Vid Vargnäset:**\n- Levererade gruppen säkert till destinationen\n- Erbjöd säker passage vidare när vägen fri\n\n## BETYDELSE\nDorin var nyckeln till att gruppen säkert kunde korsa Jargien. Hans kunskap om lokala seder, kontakter och erfarenhet skyddade dem från Daakkyrkans uppmärksamhet.\n\n## RELATIONER\n- **Gordon:** Ofta rid framme tillsammans, delade historier\n- **Kazrik:** Professionell respekt mellan dvärgar\n- **Umnatak, Zentri, Hagge:** Beskyddade resenärer\n- **Eira Holm:** Affärskontakt i Vargnäset\n\n## SL-ANTECKNINGAR\n- Pålitlig NPC för framtida resor genom Jargien\n- Känner handelsrutter och kontakter\n- Vet nu gruppens hemligheter (Tarkas, magi)\n- Potentiell allierad eller informationskälla"
     },
     {
-      "namn": "\"Dubbel-Orm\"",
-      "bild": null,
-      "ras": "Människa",
-      "titel": "Gruvarbetare",
-      "status": "levande",
-      "plats": "Rampor, Västmark",
-      "fraktion": "Lady Soffias informationsnätverk",
-      "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# \"DUBBEL-ORM\"\n**Gruvarbetare, Rampor**\n\n## GRUNDINFO\n- **Namn:** \"Dubbel-Orm\" (öknamn)\n- **Ras:** Människa (västmarkisk)\n- **Roll:** Gruvarbetare (arbetar bland tiraker)\n- **Plats:** Rampor (7000 inv, gruvor, tiraker), Västmark\n- **Status:** Levande (puckelryggig)\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nDubbel-Orm kollapsade i gruvan och skadades svårt. Kantonfurste Persal vägrade betala läkarvård. Soffia betalade anonymt för läkning i Cermira. Han överlevde men blev puckelryggig.\n\n## RAPPORTERAR\n- Maktkampen Persal vs Nihtor Wekzi\n- Tirakernas planer\n- Gruvproduktion (militär användning?)\n- Spänningar i Rampor\n\n## KONTAKTMETOD\nBrevduva (sällan, 2-3 gånger/år).\n\n## LOJALITET\nMycket hög (livet räddat)"
-    },
-    {
       "namn": "Dorn Stenbärare",
       "bild": null,
       "ras": "Människa",
@@ -601,19 +618,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# DORN STENBÄRARE\n**Försvarsspecialist i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Försvarsspecialist\n- **Utrustning:** Stor sköld och harnesk\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Försvarade vid Tirakgraven."
-    },
-    {
-      "namn": "Dubbel-Orm",
-      "bild": null,
-      "ras": "Människa",
-      "titel": "Gruvarbetare",
-      "status": "levande",
-      "plats": "Rampor, Västmark",
-      "fraktion": "Lady Soffias informationsnätverk",
-      "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# DUBBEL-ORM\n**Gruvarbetare i Rampor, Västmark**\n\n## GRUNDINFO\n- **Ras:** Människa (cermirisk)\n- **Titel:** Gruvarbetare\n- **Öknamn:** \"Dubbel-Orm\" (pga puckelrygg från gruvskada)\n- **Arbetsplats:** Gruvorna i Rampor (7000 inv)\n- **Plats:** Rampor, Västmark\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nDubbel-Orm kollapsade i gruvan för 7 år sedan och skadades svårt. Kantonfurste Persal vägrade betala läkarvård för en \"simpel gruvarbetare\". Soffia betalade anonymt för läkning i Cermira. Han överlevde men blev puckelryggig (därav öknamnet \"Dubbel-Orm\"). Kantonfursten vet inte vem som betalade, men Dubbel-Orm vet sanningen.\n\n## VARFÖR VÄL PLACERAD\n- Arbetar direkt bland tiraker i gruvorna\n- Hör tirakernas planer och politiska diskussioner\n- Tillgång till gruvproduktionsdata (viktigt för militär planering)\n- Insyn i maktkampen mellan Kantonfurste Persal och Nihtor Wekzi\n\n## RAPPORTERAR\n- Maktkampen Persal vs Nihtor Wekzi (tirak-fraktion)\n- Tirakernas politiska planer i Västmark\n- Gruvproduktion (järn, silver, andra metaller)\n- Militära förflyttningar genom Rampor\n\n## KONTAKTMETOD\nBrevduva magiskt styrd. Rapporterar sällan (2-3 gånger/år) pga svår tillgång till duvslag i Rampor.\n\n## LOJALITET\nMycket hög (livet räddat, skuld till Soffia)"
+      "beskrivning": "# DORN STENBÄRARE\n**Försvarsspecialist i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Försvarsspecialist\n- **Utrustning:** Stor sköld och harnesk\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Försvarade vid Tirakgraven.",
+      "roll": "Försvarsspecialist"
     },
     {
       "namn": "Dr. Yusuf al-Mansur",
@@ -624,7 +630,20 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
-      "beskrivning": "# DR. YUSUF AL-MANSUR\n**Läkare och helare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Titel:** Doktor\n- **Yrke:** Läkare och helare\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nDr. Yusuf al-Mansur är en vis och omtänksam läkare. Han är mycket erfaren och kunnig inom medicin.\n\n## KUNSKAPER & FÄRDIGHETER\nDr. Yusuf är expert på:\n- Medicinsk vård\n- Healing av sårade\n- Kunskap om legender\n- Örter och mediciner\n- Elixir och tinktur\n\n## ARBETSUPPGIFTER\nSom läkare:\n- Vårdar sårade\n- Ger medicinsk behandling\n- Förbereder mediciner och elixir\n- Delar kunskap om legender\n- Helar sjukdomar\n\n## VIKTIGA HÄNDELSER\nUnder karavanresan:\n- Gav Laila al-Jen en elixir\n- Vårdade sårade efter rövarattacken\n- Deltog i Laila al-Jens karavanresa\n\n## KARAKTÄR\n- Vis och erfaren\n- Omtänksam\n- Kunnig läkare\n- Respekterad\n\n## KOPPLINGAR\n- **Yrke:** Läkare och helare\n- **Arbetsgivare:** Laila al-Jen (under karavanresan)\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
+      "beskrivning": "# DR. YUSUF AL-MANSUR\n**Läkare och helare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Titel:** Doktor\n- **Yrke:** Läkare och helare\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nDr. Yusuf al-Mansur är en vis och omtänksam läkare. Han är mycket erfaren och kunnig inom medicin.\n\n## KUNSKAPER & FÄRDIGHETER\nDr. Yusuf är expert på:\n- Medicinsk vård\n- Healing av sårade\n- Kunskap om legender\n- Örter och mediciner\n- Elixir och tinktur\n\n## ARBETSUPPGIFTER\nSom läkare:\n- Vårdar sårade\n- Ger medicinsk behandling\n- Förbereder mediciner och elixir\n- Delar kunskap om legender\n- Helar sjukdomar\n\n## VIKTIGA HÄNDELSER\nUnder karavanresan:\n- Gav Laila al-Jen en elixir\n- Vårdade sårade efter rövarattacken\n- Deltog i Laila al-Jens karavanresa\n\n## KARAKTÄR\n- Vis och erfaren\n- Omtänksam\n- Kunnig läkare\n- Respekterad\n\n## KOPPLINGAR\n- **Yrke:** Läkare och helare\n- **Arbetsgivare:** Laila al-Jen (under karavanresan)\n- **Plats:** Jen, Muhad\n- **Fas:** 3",
+      "roll": "Läkare, alkemist"
+    },
+    {
+      "namn": "Dubbel-Orm",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Gruvarbetare",
+      "status": "levande",
+      "plats": "Rampor, Västmark",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "beskrivning": "\r\n> **⚠️ DUBBLETT UPPTÄCKT VID MIGRERING:** Det finns TRE separata poster för \"Dubbel-Orm\" (gruvarbetare, Rampor) i källdatan, med olika detaljnivå men samma person: undefined, undefined, undefined. Ingen är raderad — Johan bör läsa alla tre och slå ihop till en kanonisk version.\r\n\r\n# DUBBEL-ORM\r\n**Gruvarbetare i Rampor, Västmark**\r\n\r\n## GRUNDINFO\r\n- **Ras:** Människa (cermirisk)\r\n- **Titel:** Gruvarbetare\r\n- **Öknamn:** \"Dubbel-Orm\" (pga puckelrygg från gruvskada)\r\n- **Arbetsplats:** Gruvorna i Rampor (7000 inv)\r\n- **Plats:** Rampor, Västmark\r\n- **Status:** Levande\r\n- **Fraktion:** Lady Soffias informationsnätverk\r\n- **Källa:** EM-R001\r\n\r\n## BAKGRUND\r\nDubbel-Orm kollapsade i gruvan för 7 år sedan och skadades svårt. Kantonfurste Persal vägrade betala läkarvård för en \"simpel gruvarbetare\". Soffia betalade anonymt för läkning i Cermira. Han överlevde men blev puckelryggig (därav öknamnet \"Dubbel-Orm\"). Kantonfursten vet inte vem som betalade, men Dubbel-Orm vet sanningen.\r\n\r\n## VARFÖR VÄL PLACERAD\r\n- Arbetar direkt bland tiraker i gruvorna\r\n- Hör tirakernas planer och politiska diskussioner\r\n- Tillgång till gruvproduktionsdata (viktigt för militär planering)\r\n- Insyn i maktkampen mellan Kantonfurste Persal och Nihtor Wekzi\r\n\r\n## RAPPORTERAR\r\n- Maktkampen Persal vs Nihtor Wekzi (tirak-fraktion)\r\n- Tirakernas politiska planer i Västmark\r\n- Gruvproduktion (järn, silver, andra metaller)\r\n- Militära förflyttningar genom Rampor\r\n\r\n## KONTAKTMETOD\r\nBrevduva magiskt styrd. Rapporterar sällan (2-3 gånger/år) pga svår tillgång till duvslag i Rampor.\r\n\r\n## LOJALITET\r\nMycket hög (livet räddat, skuld till Soffia)\r",
+      "källa": "EM-R001"
     },
     {
       "namn": "Eira Holm",
@@ -635,7 +654,8 @@ var wikiData = {
       "plats": "Grensfortet",
       "fraktion": "Flyktingar från Vargnäset",
       "kapitel": null,
-      "beskrivning": "# EIRA HOLM\n\n**Ledare för Vargnäsets 50 överlevande flyktingar**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 9 (Evakueringen)\n- **Roll:** Civil ledare, allierad\n\n## BAKGRUND\n\nEira Holm var en av Vargnäsets bybor som såg både Zentris blodsmagiska attack och Sankt Astrids korsfästelse. Hon steg fram som naturlig ledare när evakueringen började.\n\n## KRITISKA HÄNDELSER\n\n### Evakueringen (Fas 9)\n**Flykt från Vargnäset:**\n- 50 bybor evakuerades\n- Eira koordinerade med Gordon\n- 41 överlevde resan till Grensfortet\n\n### Grensfortet\n- Etablerade flyktinggruppen\n- Lady Soffia skickade förnödenheter\n- Gruppen lämnade dem för att gå till Skugglandet\n\n## KARAKTÄRSDRAG\n\n- **Naturlig ledare:** Steg fram i krisen\n- **Pragmatisk:** Höll moralen uppe\n- **Lojal:** Gentemot gruppen som räddade dem\n\n## RELATIONER\n\n### Räddare\n- **Gordon och gruppen:** Ledde evakueringen\n- **Lady Soffia:** Skickade stöd\n\n### Flyktingar\n- **41 överlevande:** Hennes ansvar\n\n## NUVARANDE SITUATION\n\nEira leder de 41 överlevande i Grensfortet medan gruppen är i Skugglandet. De är ensamma och utsatta.\n\n## SL-ANTECKNINGAR\n\n- Flyktingarna är utsatta utan gruppen\n- Kan bli mål för Arvorns Hammare\n- Eira kan behöva försvara gruppen vid återkomst\n- Moralisk vikt - gruppen är ansvariga för dessa liv"
+      "beskrivning": "# EIRA HOLM\n\n**Ledare för Vargnäsets 50 överlevande flyktingar**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 9 (Evakueringen)\n- **Roll:** Civil ledare, allierad\n\n## BAKGRUND\n\nEira Holm var en av Vargnäsets bybor som såg både Zentris blodsmagiska attack och Sankt Astrids korsfästelse. Hon steg fram som naturlig ledare när evakueringen började.\n\n## KRITISKA HÄNDELSER\n\n### Evakueringen (Fas 9)\n**Flykt från Vargnäset:**\n- 50 bybor evakuerades\n- Eira koordinerade med Gordon\n- 41 överlevde resan till Grensfortet\n\n### Grensfortet\n- Etablerade flyktinggruppen\n- Lady Soffia skickade förnödenheter\n- Gruppen lämnade dem för att gå till Skugglandet\n\n## KARAKTÄRSDRAG\n\n- **Naturlig ledare:** Steg fram i krisen\n- **Pragmatisk:** Höll moralen uppe\n- **Lojal:** Gentemot gruppen som räddade dem\n\n## RELATIONER\n\n### Räddare\n- **Gordon och gruppen:** Ledde evakueringen\n- **Lady Soffia:** Skickade stöd\n\n### Flyktingar\n- **41 överlevande:** Hennes ansvar\n\n## NUVARANDE SITUATION\n\nEira leder de 41 överlevande i Grensfortet medan gruppen är i Skugglandet. De är ensamma och utsatta.\n\n## SL-ANTECKNINGAR\n\n- Flyktingarna är utsatta utan gruppen\n- Kan bli mål för Arvorns Hammare\n- Eira kan behöva försvara gruppen vid återkomst\n- Moralisk vikt - gruppen är ansvariga för dessa liv",
+      "roll": "Ledare för flyktinggruppen"
     },
     {
       "namn": "Elara can De Mediva",
@@ -646,17 +666,32 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# ELARA CAN DE MEDIVA\n**Magisk scout i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Ras:** Pyaralv\n- **Roll:** Scout med magiska förmågor\n- **Utrustning:** Noloinbåge\n- **Särskilda Drag:** Fuskar i magi\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Spaning och magi vid Tirakgraven."
+      "beskrivning": "# ELARA CAN DE MEDIVA\n**Magisk scout i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Ras:** Pyaralv\n- **Roll:** Scout med magiska förmågor\n- **Utrustning:** Noloinbåge\n- **Särskilda Drag:** Fuskar i magi\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Spaning och magi vid Tirakgraven.",
+      "roll": "Scout med magiska förmågor"
     },
     {
-      "namn": "Elira \\\"Sirenen\\\"",
+      "namn": "Elira \"Sirenen\"",
+      "bild": null,
       "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# ELIRA \"SIRENEN\"\n**Sångerska och scout i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Sångerska, underhållare och scout\n- **Utrustning:** Hornbåge\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Underhöll och spe jade vid Tirakgraven."
+      "beskrivning": "# ELIRA \"SIRENEN\"\n**Sångerska och scout i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Sångerska, underhållare och scout\n- **Utrustning:** Hornbåge\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Underhöll och spe jade vid Tirakgraven.",
+      "roll": "Sångerska, underhållare och scout"
+    },
+    {
+      "namn": "Eloise",
+      "bild": "Eloise.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Tuzan Rim",
+      "fraktion": "Oberoende",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# ELOISE\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes under resan i Tuzan Rim.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Elsa Hällström",
@@ -668,17 +703,6 @@ var wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 8",
       "beskrivning": "# ELSA HÄLLSTRÖM\n**34-årig kvinna från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 34 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nElsa Hällström är hustru till Magnus Hällström och mor till Klas (7 år). En av de 41 flyktingar som evakuerades från Vargnäset.\n\n## FAMILJ\n- **Make:** Magnus Hällström (37 år, jägare)\n- **Son:** Klas Hällström (7 år)\n\n## ROLL UNDER EVAKUERINGEN\nUnder flykten från Vargnäset blev Elsa ett viktigt stöd för Anna Stenmark, som hade förlorat sin dotter Helena på dag 3. Elsas medkänsla och stabila närvaro hjälpte Anna att fortsätta framåt trots hennes djupa trauma.\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Stödde andra mödrar under den svåra färden\n- Skyddade sin son Klas genom prövningarna\n\n## KARAKTÄR\n- Stabil och omtänksam\n- Praktisk och hjälpsam\n- Stark under press\n\n## KOPPLINGAR\n- **Magnus Hällström:** Make\n- **Klas Hällström:** Son\n- **Anna Stenmark:** Stödde under evakueringen"
-    },
-    {
-      "namn": "Eloise",
-      "bild": "Eloise.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Tuzan Rim",
-      "fraktion": "Oberoende",
-      "kapitel": "Kapitel 2",
-      "beskrivning": "# ELOISE\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 2: Möttes under resan i Tuzan Rim."
     },
     {
       "namn": "Enarmade Gunnar",
@@ -703,6 +727,40 @@ var wikiData = {
       "beskrivning": "# Enöga Klas\n\n**Navigator och djupvattenfiskare i Frisänkan.**\n\nFörlorade ett öga i en storm för femton år sedan. Bäste navigatören i byn, kan läsa vind och ström som andra läser text. Vägrar prata om vad han sett ute på sjön under nätterna.\n\n**Utseende:** Ögonlapp av svärtat läder, skägg som vind och salt format.\n\n**Hemlighet:** Har sett något i sjön - ljus, rörelser, kanske en gestalt. Dricker mer på de kvällar han fiskat sent."
     },
     {
+      "namn": "Erik Bergsson",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Bergvik",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# ERIK BERGSSON\n**Stenbrytare från Bergvik**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Stenbrytare\n- **Status:** Levande\n- **Plats:** Bergvik (senare Grensfortet)\n- **Kapitel:** Kapitel 8\n- **Familj:** Bror till Lars Bergsson\n\n## BESKRIVNING\nErik Bergsson är en erfaren stenbrytare från Bergvik. Tillsammans med sin bror Lars besitter han djup kunskap om sten och bergarbete.\n\n## ANSLUTNING TILL GRENSFORTET\nDag 4 av resan till Grensfortet (14:e Tretoria, Astrio) anslöt sig Erik och hans bror Lars från Bergvik. Båda bröderna är stenbrytare med exceptionell kunskap.\n\n**Skordas observation:**\n\"Lars och Erik - stenbrytare, bröder. Pratade om stenar som vänner. Dårar eller experter. Ibland samma sak.\"\n\n## EXPERTIS\nErik och Lars har ovanlig förståelse för sten:\n- Kan läsa bergformationer\n- Förstår stenens egenskaper\n- Expert på stenbrytning och stenarbete\n- Pratar om stenar med passion och respekt\n\n## ROLL PÅ GRENSFORTET\nSom stenbrytarexperter blev bröderna Bergsson ovärderliga för:\n- Stenbrytning för byggnadsm aterial\n- Bedömning av fortets grundfundament\n- Reparation av stenstrukturer\n- Rådgivning om befästningar\n\n## KARAKTÄR\n- Passionerad om sitt yrke\n- Djup respekt för sten och berg\n- Nära band med sin bror\n- Praktisk och yrkesskicklig\n\n## KOPPLINGAR\n- **Bergvik:** Hemstad\n- **Lars Bergsson:** Bror och arbetspartner\n- **Grensfortet:** Ny bosättning\n- **Björn Hammarsmed:** Anslöt samtidigt\n- **Dain Stenyxa:** Samarbetar med dvärgbyggaren"
+    },
+    {
+      "namn": "Erik Björkgren",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# ERIK BJÖRKGREN\n**13-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 13 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n13-årig pojke från Vargnäset. Son till Nils Björkgren, bror till Astrid och Lilla-Maja. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Lilla-Maja Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Ervin Stigfinnare",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Guide och alv-tolk",
+      "status": "levande",
+      "plats": "Nada, Asharien",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "beskrivning": "# ERVIN STIGFINNARE\n\n**Roll:** Guide och alv-tolk\n**Plats:** Nada (800 inv, port till Sunariskogen), Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nErvins dotter försvann i Sunariskogen för 4 år sedan. Han sökte desperat men kunde inte hitta henne - alverna i skogen lät honom inte passera. Soffia skickade Syster Mirelle som hjälpte söka och förhandlade med alverna. Dottern fanns levande hos alverna (de hade tagit hand om henne efter att hon gått vilse).\n\nErvin är djupt tacksam och rapporterar allt han hör om alvernas rörelser, Frijarl Lomins beslut, och örthandel i Nada.\n\n## Varför väl placerad\n\nNada är den enda porten till Sunariskogen, hem åt Sanari-alverna. Ervin är en av få människor som kan kommunicera med alverna. Han hör rykten från resande, ser vilka köpmän handlar med alverna, och noterar militära rörelser nära skogen.\n\n## Rapporterar\n\n- Alvernas rörelser (sanari-alverna är viktiga i EON-världen)\n- Frijarl Lomins beslut (Nadas ledare)\n- Örthandel (alvernas örter kan vara magiska eller militärt värdefulla)\n- Resande som söker tillträde till Sunariskogen\n\n## Kontaktmetod\n\nRapporterar till Syster Mirelle vid hennes besök (oregelbundet, 1-2 gånger per år).\n\n## Lojalitet\n\n**Mycket hög.** Ervin är tacksam för att Soffia (via Mirelle) räddade hans dotter. Han skulle göra vad som helst för att återgälda.",
+      "källa": "EM-R001"
+    },
+    {
       "namn": "Esma Randarrohästare",
       "bild": "esma.png",
       "ras": "Människa",
@@ -711,7 +769,8 @@ var wikiData = {
       "plats": "Frostnymfen",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 8",
-      "beskrivning": "# ESMA RANDARROHÄSTARE\n**Hästtränare på Frostnymfen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Hästtränare\n- **Plats:** Frostnymfen (flodpråm)\n- **Status:** Levande\n\n## BESKRIVNING\nEsma är en kraftig kvinna som dirigerar lastningen av hästar med van hand. Hon känner igen Vitterdals sätt att träna hästar.\n\n## I KAMPANJEN\nFas 8 (Evakueringen): Möttes på Frostnymfen. Kände igen Hagge som Lady Soffias son. Erbjöd värdefull information om situationen i Vitterdal och en möjlig förrädare bland Lady Soffias rådgivare. Erbjöd sig att följa med som guide genom genvägar i Vitterdal.\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Relation:** Känner igen Hagge, lojalitet till Lady Soffia\n- **Kunskap:** Genvägar genom Vitterdal"
+      "beskrivning": "# ESMA RANDARROHÄSTARE\n**Hästtränare på Frostnymfen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Hästtränare\n- **Plats:** Frostnymfen (flodpråm)\n- **Status:** Levande\n\n## BESKRIVNING\nEsma är en kraftig kvinna som dirigerar lastningen av hästar med van hand. Hon känner igen Vitterdals sätt att träna hästar.\n\n## I KAMPANJEN\nFas 8 (Evakueringen): Möttes på Frostnymfen. Kände igen Hagge som Lady Soffias son. Erbjöd värdefull information om situationen i Vitterdal och en möjlig förrädare bland Lady Soffias rådgivare. Erbjöd sig att följa med som guide genom genvägar i Vitterdal.\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Relation:** Känner igen Hagge, lojalitet till Lady Soffia\n- **Kunskap:** Genvägar genom Vitterdal",
+      "roll": "Okänd"
     },
     {
       "namn": "Esmeralda de Vries",
@@ -733,19 +792,7 @@ var wikiData = {
       "plats": "Damarien (på flykt)",
       "fraktion": null,
       "kapitel": "Efter Kapitel 10",
-      "beskrivning": "# ETHAN NAHRZEZIA\n**Gordons yngre bror - desillusionerad desertör på flykt**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Före detta soldat (Bronshjälmarna), nu desertör\n- **Hemort:** Vambolien\n- **Nuvarande plats:** Damarien (på flykt)\n- **Status:** Levande, jagad\n- **Första omnämnande:** Fas 9\n\n## BESKRIVNING\nEthan Nahrzezia är Gordons yngre bror som lämnade familjegården i Vambolien för att söka äventyr och ära. Inspirerad av berättelserna om sin storebror Gordons bedrifter - kampen mot gripar, ökendrakar och banditer - beslutade sig Ethan för att bevisa sig själv.\n\n## VÄRVING OCH RESA\nFör tre veckor sedan (före fas 9) lämnade Ethan gården mitt i natten med orden: *\"Om Gordon kan slåss mot drakar, kan jag slåss mot människor\"*. Han tog värvning med **Kapten Mordicus Helgas Bronshjälmar**, ett soldkompani som skulle österut över havet till Damarien, där Storfursten rustar för krig.\n\n## VAD SOM HÄNDE I DAMARIEN\nEthan anlände till Damarien med Bronshjälmarna. Där såg han **något** som skrämde honom tillräckligt för att bryta hans idealism och få honom att desertera:\n\n*Exakt vad han såg är okänt, men det förändrade honom fundamentalt. Margaret hade rätt att vara rädd - \"människors ondska\" var värre än någon drake.*\n\nEfter att ha bevittnat detta flydde Ethan från kompaniet och deserterade. Han är nu på flykt i eller nära Damarien.\n\n## NUVARANDE SITUATION\n**STATUS:** Desillusionerad desertör på flykt\n\n**JAGAD AV:**\n- Damariska soldater (desertering = dödsstraff)\n- Möjligen andra (beroende på vad han såg)\n\n**TILLSTÅND:**\n- Traumatiserad men fortfarande sig själv\n- Har förlorat sin idealism\n- På flykt för sitt liv\n- Position okänd (för både förföljare och Gordon)\n\n## KARAKTÄR (FÖRE DAMARIEN)\n- Modig och hängiven\n- Inspirerad av sin storebror Gordon\n- Söker äventyr och bevisande\n- Impulsiv (for mitt i natten)\n- **Naiv om \"människors ondska\"**\n\n## KARAKTÄR (EFTER DAMARIEN)\n- Desillusionerad och skrämd\n- Traumatiserad av vad han sett\n- Förstår nu varför Gordon flydde hemmet\n- Kämpar för överlevnad\n\n## FAMILJERELATIONER\n- **Gordon Nahrzezia:** Storebror, förebild och inspiration - nu Ethans enda hopp?\n- **Oliver Nahrzezia:** Bror som är rasande över Ethans beslut\n- **Margaret Nahrzezia:** Mor som är dödsrädd för sin son\n\n## MODERNS ORO\nMargaret skrev till Gordon: *\"Efter att ha hört om dina segrar mot monster, skrämmer det mig mer att Ethan ska möta människors ondska.\"*\n\nHon hade rätt. Nu är Ethan förlorad i ett främmande land, jagad och traumatiserad.\n\nMargaret ber Gordon använda sina kontakter för att ta reda på var Ethan är och rädda honom.\n\n## GORDONS DETOUR\n**AKTIVERAS:** Efter Zentri-räddningen (Kapitel 10-11)\n\n**TRIGGER:** Brev från Margaret, rykte om desertör från Bronshjälmarna, eller annan information når Gordon\n\n**UPPDRAG:** Gordon måste spåra, hitta och rädda sin bror innan det är för sent\n\n**STAKES:** \n- Om Gordon kommer för sent: död, fångad, eller värre\n- Personligt drama: Gordons rykte inspirerade Ethan till detta\n- Familjeband på spel\n\n## ROLL I KAMPANJEN\n**Personligt drama för Gordon:**\nEthan representerar konsekvenserna av Gordons heroism. Hans segrar och rykte inspirerade hans yngre bror att söka sig till kriget - och nu betalar Ethan priset.\n\n**Koppling till Damarien:**\nIntroducerar Damarien och dess faror personligt för Gordon. Vad Ethan såg (flexibelt - kan vara vandöd-armé, Xinu-ritual, krigsbrott, eller annat) kopplar till större kampanjhot.\n\n**Sekventiell sidoquest:**\nEfter att ha räddat Zentri får Gordon chansen (eller tvingas) att rädda sin egen bror. Familj vs. plikt. Skuld vs. ansvar.\n\n## KOPPLINGAR\n- **Familj:** Nahrzezia-familjen, Vambolien\n- **Före detta militär:** Bronshjälmarna under Kapten Mordicus Helga (deserterad)\n- **Plats:** Damarien (på flykt, exakt position okänd)\n- **Relation:** Gordons yngre bror\n- **Hot:** Damariska militären + möjligen Xinukulten/andra\n- **Framtid:** Räddas av Gordon? Dö? Något värre?\n\n## FRAMTIDA POTENTIALER\n**Om räddad:**\n- Traumatiserad men tacksamfull\n- Kan följa med gruppen eller återvända hem\n- Vittne till Damariens ondska\n- Fördjupad relation med Gordon\n\n**Om för sent:**\n- Död (permanent förlust, familjens förtroende borta)\n- Fångad (gisslan, framtida räddning)\n- Förvandlad till vandöd (måste \"dödas\" av Gordon senare)\n- Rekryterad av Xinukulten (bror blir fiende)\n\n**Flexibelt beslutas under kampanj**\n\n---\n\n## SPELLEDARREFERENS\n**Detaljerat scenario:** `master/ethan-scenario-detour.md`\n\nInnehåller:\n- Flexibla alternativ för vad Ethan såg (vandöd-armé, ritual, krigsbrott, etc.)\n- Triggers och timing för detour\n- Geografiska placeringsalternativ\n- Räddnings-/konfrontationsscenarier (jakt-climax, gömställe, fälla, etc.)\n- Stakes och misslyckande-konsekvenser\n- Integration med större kampanj\n\n**Damarien-kontext:** `master/damarien-politiska-läget.md` (Ariandra = Xinu-inkarnation, vandöd-armé, etc.)"
-    },
-    {
-      "namn": "Ervin Stigfinnare",
-      "bild": null,
-      "ras": "Människa",
-      "titel": "Guide och alv-tolk",
-      "status": "levande",
-      "plats": "Nada, Asharien",
-      "fraktion": "Lady Soffias informationsnätverk",
-      "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# ERVIN STIGFINNARE\n\n**Roll:** Guide och alv-tolk\n**Plats:** Nada (800 inv, port till Sunariskogen), Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nErvins dotter försvann i Sunariskogen för 4 år sedan. Han sökte desperat men kunde inte hitta henne - alverna i skogen lät honom inte passera. Soffia skickade Syster Mirelle som hjälpte söka och förhandlade med alverna. Dottern fanns levande hos alverna (de hade tagit hand om henne efter att hon gått vilse).\n\nErvin är djupt tacksam och rapporterar allt han hör om alvernas rörelser, Frijarl Lomins beslut, och örthandel i Nada.\n\n## Varför väl placerad\n\nNada är den enda porten till Sunariskogen, hem åt Sanari-alverna. Ervin är en av få människor som kan kommunicera med alverna. Han hör rykten från resande, ser vilka köpmän handlar med alverna, och noterar militära rörelser nära skogen.\n\n## Rapporterar\n\n- Alvernas rörelser (sanari-alverna är viktiga i EON-världen)\n- Frijarl Lomins beslut (Nadas ledare)\n- Örthandel (alvernas örter kan vara magiska eller militärt värdefulla)\n- Resande som söker tillträde till Sunariskogen\n\n## Kontaktmetod\n\nRapporterar till Syster Mirelle vid hennes besök (oregelbundet, 1-2 gånger per år).\n\n## Lojalitet\n\n**Mycket hög.** Ervin är tacksam för att Soffia (via Mirelle) räddade hans dotter. Han skulle göra vad som helst för att återgälda."
+      "beskrivning": "# ETHAN NAHRZEZIA\n**Gordons yngre bror - desillusionerad desertör på flykt**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Före detta soldat (Bronshjälmarna), nu desertör\n- **Hemort:** Vambolien\n- **Nuvarande plats:** Damarien (på flykt)\n- **Status:** Levande, jagad\n- **Första omnämnande:** Fas 9\n\n## BESKRIVNING\nEthan Nahrzezia är Gordons yngre bror som lämnade familjegården i Vambolien för att söka äventyr och ära. Inspirerad av berättelserna om sin storebror Gordons bedrifter - kampen mot gripar, ökendrakar och banditer - beslutade sig Ethan för att bevisa sig själv.\n\n## VÄRVING OCH RESA\nFör tre veckor sedan (före fas 9) lämnade Ethan gården mitt i natten med orden: *\"Om Gordon kan slåss mot drakar, kan jag slåss mot människor\"*. Han tog värvning med **Kapten Mordicus Helgas Bronshjälmar**, ett soldkompani som skulle österut över havet till Damarien, där Storfursten rustar för krig.\n\n## VAD SOM HÄNDE I DAMARIEN\nEthan anlände till Damarien med Bronshjälmarna. Där såg han **något** som skrämde honom tillräckligt för att bryta hans idealism och få honom att desertera:\n\n*Exakt vad han såg är okänt, men det förändrade honom fundamentalt. Margaret hade rätt att vara rädd - \"människors ondska\" var värre än någon drake.*\n\nEfter att ha bevittnat detta flydde Ethan från kompaniet och deserterade. Han är nu på flykt i eller nära Damarien.\n\n## NUVARANDE SITUATION\n**STATUS:** Desillusionerad desertör på flykt\n\n**JAGAD AV:**\n- Damariska soldater (desertering = dödsstraff)\n- Möjligen andra (beroende på vad han såg)\n\n**TILLSTÅND:**\n- Traumatiserad men fortfarande sig själv\n- Har förlorat sin idealism\n- På flykt för sitt liv\n- Position okänd (för både förföljare och Gordon)\n\n## KARAKTÄR (FÖRE DAMARIEN)\n- Modig och hängiven\n- Inspirerad av sin storebror Gordon\n- Söker äventyr och bevisande\n- Impulsiv (for mitt i natten)\n- **Naiv om \"människors ondska\"**\n\n## KARAKTÄR (EFTER DAMARIEN)\n- Desillusionerad och skrämd\n- Traumatiserad av vad han sett\n- Förstår nu varför Gordon flydde hemmet\n- Kämpar för överlevnad\n\n## FAMILJERELATIONER\n- **Gordon Nahrzezia:** Storebror, förebild och inspiration - nu Ethans enda hopp?\n- **Oliver Nahrzezia:** Bror som är rasande över Ethans beslut\n- **Margaret Nahrzezia:** Mor som är dödsrädd för sin son\n\n## MODERNS ORO\nMargaret skrev till Gordon: *\"Efter att ha hört om dina segrar mot monster, skrämmer det mig mer att Ethan ska möta människors ondska.\"*\n\nHon hade rätt. Nu är Ethan förlorad i ett främmande land, jagad och traumatiserad.\n\nMargaret ber Gordon använda sina kontakter för att ta reda på var Ethan är och rädda honom.\n\n## GORDONS DETOUR\n**AKTIVERAS:** Efter Zentri-räddningen (Kapitel 10-11)\n\n**TRIGGER:** Brev från Margaret, rykte om desertör från Bronshjälmarna, eller annan information når Gordon\n\n**UPPDRAG:** Gordon måste spåra, hitta och rädda sin bror innan det är för sent\n\n**STAKES:** \n- Om Gordon kommer för sent: död, fångad, eller värre\n- Personligt drama: Gordons rykte inspirerade Ethan till detta\n- Familjeband på spel\n\n## ROLL I KAMPANJEN\n**Personligt drama för Gordon:**\nEthan representerar konsekvenserna av Gordons heroism. Hans segrar och rykte inspirerade hans yngre bror att söka sig till kriget - och nu betalar Ethan priset.\n\n**Koppling till Damarien:**\nIntroducerar Damarien och dess faror personligt för Gordon. Vad Ethan såg (flexibelt - kan vara vandöd-armé, Xinu-ritual, krigsbrott, eller annat) kopplar till större kampanjhot.\n\n**Sekventiell sidoquest:**\nEfter att ha räddat Zentri får Gordon chansen (eller tvingas) att rädda sin egen bror. Familj vs. plikt. Skuld vs. ansvar.\n\n## KOPPLINGAR\n- **Familj:** Nahrzezia-familjen, Vambolien\n- **Före detta militär:** Bronshjälmarna under Kapten Mordicus Helga (deserterad)\n- **Plats:** Damarien (på flykt, exakt position okänd)\n- **Relation:** Gordons yngre bror\n- **Hot:** Damariska militären + möjligen Xinukulten/andra\n- **Framtid:** Räddas av Gordon? Dö? Något värre?\n\n## FRAMTIDA POTENTIALER\n**Om räddad:**\n- Traumatiserad men tacksamfull\n- Kan följa med gruppen eller återvända hem\n- Vittne till Damariens ondska\n- Fördjupad relation med Gordon\n\n**Om för sent:**\n- Död (permanent förlust, familjens förtroende borta)\n- Fångad (gisslan, framtida räddning)\n- Förvandlad till vandöd (måste \"dödas\" av Gordon senare)\n- Rekryterad av Xinukulten (bror blir fiende)\n\n**Flexibelt beslutas under kampanj**\n\n---\n\n## SPELLEDARREFERENS\n**Detaljerat scenario:** undefined\n\nInnehåller:\n- Flexibla alternativ för vad Ethan såg (vandöd-armé, ritual, krigsbrott, etc.)\n- Triggers och timing för detour\n- Geografiska placeringsalternativ\n- Räddnings-/konfrontationsscenarier (jakt-climax, gömställe, fälla, etc.)\n- Stakes och misslyckande-konsekvenser\n- Integration med större kampanj\n\n**Damarien-kontext:** undefined (Ariandra = Xinu-inkarnation, vandöd-armé, etc.)"
     },
     {
       "namn": "Evelina Fältsyster",
@@ -756,7 +803,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# EVELINA FÄLTSYSTER\n**Medic i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Medic och sjuksköterska\n- **Ansvar:** Vårdar skadade kamrater\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Vårdade sårade vid Tirakgraven."
+      "beskrivning": "# EVELINA FÄLTSYSTER\n**Medic i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Medic och sjuksköterska\n- **Ansvar:** Vårdar skadade kamrater\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Vårdade sårade vid Tirakgraven.",
+      "roll": "Medic och sjuksköterska"
     },
     {
       "namn": "Fadil ibn-Yusuf",
@@ -767,7 +815,8 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
-      "beskrivning": "# FADIL IBN-YUSUF\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nFadil ibn-Yusuf är en ung, muskulös mûhadisk krigare med mörkt hår. Han bär traditionell vaktdräkt med spjut och sköld, och rör sig med en utbildad soldats precision.\n\n## BAKGRUND\nFadil har tränat som krigare och livvakt från ung ålder. Trots sin ungdom har han redan tjänstgjort för flera rika familjer i Jen och visat sig vara mycket pålitlig.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Patrullerar och bevakar entrén\n- Säkerhetsarbete\n- Tränad livvakt\n\n## KARAKTÄR\n- Ung men erfaren\n- Vaksam och uppmärksam\n- Atletisk och vältränad\n- Pålitlig och trogen sin arbetsgivare\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
+      "beskrivning": "# FADIL IBN-YUSUF\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nFadil ibn-Yusuf är en ung, muskulös mûhadisk krigare med mörkt hår. Han bär traditionell vaktdräkt med spjut och sköld, och rör sig med en utbildad soldats precision.\n\n## BAKGRUND\nFadil har tränat som krigare och livvakt från ung ålder. Trots sin ungdom har han redan tjänstgjort för flera rika familjer i Jen och visat sig vara mycket pålitlig.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Patrullerar och bevakar entrén\n- Säkerhetsarbete\n- Tränad livvakt\n\n## KARAKTÄR\n- Ung men erfaren\n- Vaksam och uppmärksam\n- Atletisk och vältränad\n- Pålitlig och trogen sin arbetsgivare\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3",
+      "roll": "Obestämd"
     },
     {
       "namn": "Fahad al-Khouri",
@@ -778,7 +827,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Khouri-familjen",
       "kapitel": null,
-      "beskrivning": "# FAHAD AL-KHOURI\n**Handelsman i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Handelsman\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Del av handelsnätverket.\n\n## SL-ANTECKNINGAR\nKontakt för handel och information."
+      "beskrivning": "# FAHAD AL-KHOURI\n**Handelsman i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Handelsman\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Del av handelsnätverket.\n\n## SL-ANTECKNINGAR\nKontakt för handel och information.",
+      "roll": "Handelsman"
     },
     {
       "namn": "Farid al-Malik",
@@ -789,7 +839,19 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": "Malik-familjen",
       "kapitel": null,
-      "beskrivning": "# FARID AL-MALIK\n\n**Handelsman i Jen, Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Jen, Muhad\n- **Roll:** Handelsman, möjligen kopplad till slavhandel\n\n## BAKGRUND\nFarid al-Malik är kopplad till Malik-familjen i Jen. Under den alkemiska ritualen där Hagge och Laila al-Jen möttes attackerade \"Maliks hejdukar\" - Farid kan vara kopplad till denna attack.\n\n## I KAMPANJEN\n- Fas 3: Attackerade eller hade kontakt under Hagges befrielse\n- Möjlig antagonist eller komplex figur\n\n## SL-ANTECKNINGAR\n- Koppling till slavhandeln i Jen\n- Potentiell framtida antagonist\n- Kan kräva hämnd för händelserna"
+      "beskrivning": "# FARID AL-MALIK\n\n**Handelsman i Jen, Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Jen, Muhad\n- **Roll:** Handelsman, möjligen kopplad till slavhandel\n\n## BAKGRUND\nFarid al-Malik är kopplad till Malik-familjen i Jen. Under den alkemiska ritualen där Hagge och Laila al-Jen möttes attackerade \"Maliks hejdukar\" - Farid kan vara kopplad till denna attack.\n\n## I KAMPANJEN\n- Fas 3: Attackerade eller hade kontakt under Hagges befrielse\n- Möjlig antagonist eller komplex figur\n\n## SL-ANTECKNINGAR\n- Koppling till slavhandeln i Jen\n- Potentiell framtida antagonist\n- Kan kräva hämnd för händelserna",
+      "roll": "Handelsman/Slavhandlare"
+    },
+    {
+      "namn": "Faster Solveig",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (flyktinggrupp)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# FASTER SOLVEIG\n**Läskunnig informatör och dokumentansvarig**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 64 år\n- **Yrke:** Läskunnig, Informatör, Dokumentansvarig\n- **Status:** Levande\n- **Plats:** Vargnäset (bland flyktinggruppen)\n- **Första omnämnande:** Kapitel 8\n\n## BESKRIVNING\nFaster Solveig är Vargnäsets enda invånare som kan läsa flytande. Hon förvarade byns dokument och fungerade som informatör och historiebevarare.\n\n## UNIKA KUNSKAPER\nSolveig har ovärderlig kunskap om:\n- **Zentris försvinnande:** Har utvecklat teorier baserat på gamla texter och dokument\n- **Byns historia:** Känner till alla släktskap och historiska händelser\n- **Läskonst:** Enda som kan tolka skrivna dokument\n- **Magisk historia:** Känner till regionens magiska bakgrund genom gamla skrifter\n\n## ROLL I EVAKUERINGEN\n**Kapitel 8:** Under den desperata flykten från Vargnäset:\n- Förvarade och bar byns viktigaste dokument\n- Fungerade som rådgivare till **Eira Holm** (byäldsten)\n- Reste ombord på **Rimfrosten** med ledarna och viktigaste familjerna\n- Teoretiserade om Zentris försvinnande baserat på sina kunskaper\n\n## VÄRDE FÖR GRUPPEN\nBetraktad som en av de mest värdefulla överlevande (⭐):\n- Kan forska om Zentri\n- Har kunskap om regional magi och historia\n- Ovärderlig informatör\n- Kan läsa gamla texter och kartor\n\n## KARAKTÄR\n- Bildad och erfaren\n- Bevarar kunskap\n- Analytisk tänkare\n- Lugn under press\n- Respekterad av alla i byn\n\n## KOPPLINGAR\n- **Grupp:** Vargnäsets överlevande (39 flyktingar)\n- **Skepp:** Rimfrosten (Kapten Nils \"Järnhand\" Gromsson)\n- **Ledare:** Tillsammans med Eira Holm, Ingvild, Tomas Järnhjälm\n- **Potential:** Kan hjälpa gruppen förstå Zentris försvinnande"
     },
     {
       "namn": "Fatima bint-Ali",
@@ -822,7 +884,32 @@ var wikiData = {
       "plats": "Jarla",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# FHE EHDSIM\n**Örthandlare i Jarla**\n\n## GRUNDINFO\n- **Verksamhet:** Äger örtabod på Sjömansvägen i Jarla\n- **Specialitet:** Örter, blommor och preparat\n- **Anläggning:** Butik med laboratorium där han tillverkar sina preparat\n- **Särskilda Drag:** Förvarar syraflaskor under disken som försvar\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Har koppling till äventyret \"Maktens skugga\".\n\n## SL-ANTECKNINGAR\nHans örtabod har en bedövande doft av hundratals blandade örter. Inne finns burkar och flaskor med underliga etiketter. Under sängen i sovrummet finns en låst låda med en ledtråd (N) till äventyret Maktens skugga. Hans personliga tillgångar (14 gulden och 12 silverdaler) gömmer han i madrassen."
+      "beskrivning": "# FHE EHDSIM\n**Örthandlare i Jarla**\n\n## GRUNDINFO\n- **Verksamhet:** Äger örtabod på Sjömansvägen i Jarla\n- **Specialitet:** Örter, blommor och preparat\n- **Anläggning:** Butik med laboratorium där han tillverkar sina preparat\n- **Särskilda Drag:** Förvarar syraflaskor under disken som försvar\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Har koppling till äventyret \"Maktens skugga\".\n\n## SL-ANTECKNINGAR\nHans örtabod har en bedövande doft av hundratals blandade örter. Inne finns burkar och flaskor med underliga etiketter. Under sängen i sovrummet finns en låst låda med en ledtråd (N) till äventyret Maktens skugga. Hans personliga tillgångar (14 gulden och 12 silverdaler) gömmer han i madrassen.",
+      "roll": "Örthandlare"
+    },
+    {
+      "namn": "Flodsköldpaddan",
+      "bild": null,
+      "ras": "Varelse",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Raunfloden",
+      "fraktion": "Okänd",
+      "kapitel": null,
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# FLODSKÖLDPADDAN\n**Flodsköldpadda i Raunfloden**\n\n## GRUNDINFO\n- **Typ:** Flodsköldpadda (stor varelse)\n- **Habitat:** Raunfloden\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 4): Varelse som spelarna möter i eller vid Raunfloden.\n\n## SL-ANTECKNINGAR\nEn flodsköldpadda av betydande storlek som förekommer i Scenario 4.",
+      "roll": "Varelse"
+    },
+    {
+      "namn": "Fredricca",
+      "bild": "fredricca.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Skogen väster om Lundnäs",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "# HÄXAN FREDRICCA\n**Godmodig häxa i skogen**\n\n## GRUNDINFO\n- **Hemvist:** Stuga i skogen väster om Lundnäs\n- **Ålder:** Medelålders kvinna\n- **Livsstil:** Lever i harmoni med naturen, undviker människor\n- **Sällskap:** Bor med sina katter\n- **Kunskap:** Duktig på örter och trollkonster\n- **Trädgård:** Örtagård och trädgårdsland (drabbades av regnet)\n- **Pärlpåverkan:** Har inte påverkats så kraftigt, men har känt av dem\n\n## I KAMPANJEN\nRegnsynd-äventyret: Godmodig häxa som kan ge information och hjälp.\n\n## SL-ANTECKNINGAR\nFredricca är en godmodig person trots att hon kallas \"häxa\". Hon tycker om att leva i harmoni med naturen och har djup kunskap om örter och trollkonster. Hennes motstånd mot pärlpåverkan visar hennes styrka. Hon kan vara en värdefull allierad för rollpersonerna.",
+      "roll": "Häxa"
     },
     {
       "namn": "Gamle Sigurd",
@@ -850,14 +937,14 @@ var wikiData = {
       "namn": "Gardar \"Falköga\"",
       "bild": null,
       "ras": "Människa",
-      "ålder": "42 år",
       "titel": "Livvakt och handgången man",
       "status": "levande",
       "plats": "Mitrahus, Vitterdal",
       "fraktion": "Lady Soffias hushåll",
       "kapitel": null,
+      "beskrivning": "# GARDAR \"FALKÖGA\"\n\n**Livvakt åt Lady Soffia av Vitterdal**\n\nGardar är en 42-årig före detta soldat från Egisborgs garde som nu tjänar som Lady Soffias personliga livvakt. Hans tillnamn \"Falköga\" kommer från hans skarpa observation och förmåga att upptäcka hot tidigt.\n\n## Bakgrund\nTjänstgjorde i 15 år vid Egisborgs garde, ett av Cermiras viktigaste fästen. För 8 år sedan sårades han allvarligt i en gränsstrid - en pil träffade vänster axel och han förlorade rörligheten delvis. Gardeskommendanten ville pensionera honom utan pension, men Soffia ordnade arbete som livvakt och betalade för läkarvård som återställde armen.\n\n## Roll\n- Beskyddar Soffia vid resor och möten\n- Eskortering till Cermira stad och farliga platser\n- Säkerhetsgranskare - kontrollerar besökare till Mitrahus\n- Diskret muskel - \"övertygar\" folk när Soffia behöver det\n- Kurir för känsliga meddelanden\n- Vaktar Soffias privatrum och duvslag\n\n## Kunskap om nätverket\nGardar **känner till** att Soffias spionnätverk finns. Han vet att Helga Järnoxen och Syster Mirelle är del av det, men känner INTE till specifika kunskapare eller detaljer (need-to-know basis). Han vet att brevduvorna är viktiga men tror bara att de är väl tränade, inte magiska.\n\n## Förmågor\n- Expert på observation och riskbedömning\n- Kunnig i svärd, sköld, och närkamp\n- Läser människor - ser när någon ljuger\n- Diskret och professionell\n\n## Personlighet\n- Lugn och metodisk - agerar sällan i affekt\n- Lojal till döden\n- Minimal talare - säger bara vad som behövs\n- Misstänksam mot främlingar - alla är hot tills motsatsen bevisats\n\n**Lojalitet:** Absolut (liv och heder räddad)",
       "källa": "EM-R001",
-      "beskrivning": "# GARDAR \"FALKÖGA\"\n\n**Livvakt åt Lady Soffia av Vitterdal**\n\nGardar är en 42-årig före detta soldat från Egisborgs garde som nu tjänar som Lady Soffias personliga livvakt. Hans tillnamn \"Falköga\" kommer från hans skarpa observation och förmåga att upptäcka hot tidigt.\n\n## Bakgrund\nTjänstgjorde i 15 år vid Egisborgs garde, ett av Cermiras viktigaste fästen. För 8 år sedan sårades han allvarligt i en gränsstrid - en pil träffade vänster axel och han förlorade rörligheten delvis. Gardeskommendanten ville pensionera honom utan pension, men Soffia ordnade arbete som livvakt och betalade för läkarvård som återställde armen.\n\n## Roll\n- Beskyddar Soffia vid resor och möten\n- Eskortering till Cermira stad och farliga platser\n- Säkerhetsgranskare - kontrollerar besökare till Mitrahus\n- Diskret muskel - \"övertygar\" folk när Soffia behöver det\n- Kurir för känsliga meddelanden\n- Vaktar Soffias privatrum och duvslag\n\n## Kunskap om nätverket\nGardar **känner till** att Soffias spionnätverk finns. Han vet att Helga Järnoxen och Syster Mirelle är del av det, men känner INTE till specifika kunskapare eller detaljer (need-to-know basis). Han vet att brevduvorna är viktiga men tror bara att de är väl tränade, inte magiska.\n\n## Förmågor\n- Expert på observation och riskbedömning\n- Kunnig i svärd, sköld, och närkamp\n- Läser människor - ser när någon ljuger\n- Diskret och professionell\n\n## Personlighet\n- Lugn och metodisk - agerar sällan i affekt\n- Lojal till döden\n- Minimal talare - säger bara vad som behövs\n- Misstänksam mot främlingar - alla är hot tills motsatsen bevisats\n\n**Lojalitet:** Absolut (liv och heder räddad)"
+      "ålder": "42 år"
     },
     {
       "namn": "Garsten \"Soppsleven\" Tretre",
@@ -868,7 +955,8 @@ var wikiData = {
       "plats": "Frostnymfen (flodpråm)",
       "fraktion": "Lady Soffias tjänare",
       "kapitel": "Kapitel 8",
-      "beskrivning": "# GARSTEN \"SOPPSLEVEN\" TRETRE\n**Kock på Frostnymfen**\n\n## GRUNDINFO\n- **Yrke:** Kock\n- **Arbetsplats:** Frostnymfen (tirakisk flodpråm)\n- **Öknamn:** \"Soppsleven\"\n- **Status:** Levande\n- **Arbetsgivare:** Kapten Nilmar / Lady Soffia\n\n## BESKRIVNING\nGarsten är Frostnymfens pratsamme kock och ryktesspridare. Han är känd för att alltid veta de senaste ryktena och sprida skvaller medan han lagar mat.\n\n## KARAKTÄR OCH PERSONLIGHET\n- Mycket pratsam och sällskaplig\n- Ivrig ryktesspridare\n- Delar gärna information vid måltider\n- Blir extra pratsam efter några bägare\n- Färgstark berättare\n\n## ROLL OMBORD\nSom kock på Frostnymfen:\n- Lagar alla måltider åt besättning och passagerare\n- Serverar te och mat under resan\n- Fungerar som informationskälla om händelser längs floden\n- Sprider rykten om Kärlingarnas män, magiska krafter och politiska intriger\n\n## RYKTEN HAN SPRIDER\nGarsten är känd för att delge information om:\n- Kärlingarnas män som patrullerar floden\n- Mystiska händelser i Vitterdal\n- Lady Soffias situation\n- Förädare bland rådgivarna\n- Vintervargarna vid Vitterdals gränser\n\n## I KAMPANJEN\nFas 8 (Evakueringen): Kock och besättningsmedlem på Frostnymfen under resan till Vitterdal. En viktig informationskälla för gruppen.\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Kapten:** Nilmar\n- **Arbetsgivare:** Lady Soffia (indirekt)\n- **Medbesättning:** Selene, Burhak, Laszlo, Esma"
+      "beskrivning": "# GARSTEN \"SOPPSLEVEN\" TRETRE\n**Kock på Frostnymfen**\n\n## GRUNDINFO\n- **Yrke:** Kock\n- **Arbetsplats:** Frostnymfen (tirakisk flodpråm)\n- **Öknamn:** \"Soppsleven\"\n- **Status:** Levande\n- **Arbetsgivare:** Kapten Nilmar / Lady Soffia\n\n## BESKRIVNING\nGarsten är Frostnymfens pratsamme kock och ryktesspridare. Han är känd för att alltid veta de senaste ryktena och sprida skvaller medan han lagar mat.\n\n## KARAKTÄR OCH PERSONLIGHET\n- Mycket pratsam och sällskaplig\n- Ivrig ryktesspridare\n- Delar gärna information vid måltider\n- Blir extra pratsam efter några bägare\n- Färgstark berättare\n\n## ROLL OMBORD\nSom kock på Frostnymfen:\n- Lagar alla måltider åt besättning och passagerare\n- Serverar te och mat under resan\n- Fungerar som informationskälla om händelser längs floden\n- Sprider rykten om Kärlingarnas män, magiska krafter och politiska intriger\n\n## RYKTEN HAN SPRIDER\nGarsten är känd för att delge information om:\n- Kärlingarnas män som patrullerar floden\n- Mystiska händelser i Vitterdal\n- Lady Soffias situation\n- Förädare bland rådgivarna\n- Vintervargarna vid Vitterdals gränser\n\n## I KAMPANJEN\nFas 8 (Evakueringen): Kock och besättningsmedlem på Frostnymfen under resan till Vitterdal. En viktig informationskälla för gruppen.\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Kapten:** Nilmar\n- **Arbetsgivare:** Lady Soffia (indirekt)\n- **Medbesättning:** Selene, Burhak, Laszlo, Esma",
+      "roll": "Okänd"
     },
     {
       "namn": "Gavric",
@@ -879,7 +967,8 @@ var wikiData = {
       "plats": "Tirakgraven",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# GAVRIC ⚔️\n**Fallen tungt bepansrad krigare**\n\n## GRUNDINFO\n- **Roll:** Tungt bepansrad stridande\n- **Utrustning:** Tung rustning och stridshammare\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
+      "beskrivning": "# GAVRIC ⚔️\n**Fallen tungt bepansrad krigare**\n\n## GRUNDINFO\n- **Roll:** Tungt bepansrad stridande\n- **Utrustning:** Tung rustning och stridshammare\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven.",
+      "roll": "Tungt bepansrad stridande"
     },
     {
       "namn": "Gazroz Tzerion",
@@ -890,7 +979,8 @@ var wikiData = {
       "plats": "Tirakgraven",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# GAZROZ TZERION ⚔️\n**Fallen flerspråkig krigare**\n\n## GRUNDINFO\n- **Ras:** Cirefalier\n- **Roll:** Flerspråkig stridande\n- **Bakgrund:** Son till handelsman, talar många språk\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
+      "beskrivning": "# GAZROZ TZERION ⚔️\n**Fallen flerspråkig krigare**\n\n## GRUNDINFO\n- **Ras:** Cirefalier\n- **Roll:** Flerspråkig stridande\n- **Bakgrund:** Son till handelsman, talar många språk\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven.",
+      "roll": "Flerspråkig stridande"
     },
     {
       "namn": "Gekthath av Wezi",
@@ -901,7 +991,8 @@ var wikiData = {
       "plats": "Jarla",
       "fraktion": "Handelshuset Wezi",
       "kapitel": null,
-      "beskrivning": "# GEKTHATH AV WEZI\n**Köpman och rådman i Jarla**\n\n## GRUNDINFO\n- **Position:** Rådman i Jarlas råd (en av 10 köpmän)\n- **Handelshus:** Handelshuset Wezi\n- **Flotta:** Äger gul- och blåmålade flodbåtar (mest synliga i hamnen)\n- **Inflytande:** Medlem i stadens styrande råd\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. En av stadens inflytelserika köpmän.\n\n## SL-ANTECKNINGAR\nHandelshuset Wezis båtar är de mest iögonfallande i Jarlas hamn med sina gula och blå färger. Som rådman har han rösträtt i stadens viktigaste beslut."
+      "beskrivning": "# GEKTHATH AV WEZI\n**Köpman och rådman i Jarla**\n\n## GRUNDINFO\n- **Position:** Rådman i Jarlas råd (en av 10 köpmän)\n- **Handelshus:** Handelshuset Wezi\n- **Flotta:** Äger gul- och blåmålade flodbåtar (mest synliga i hamnen)\n- **Inflytande:** Medlem i stadens styrande råd\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. En av stadens inflytelserika köpmän.\n\n## SL-ANTECKNINGAR\nHandelshuset Wezis båtar är de mest iögonfallande i Jarlas hamn med sina gula och blå färger. Som rådman har han rösträtt i stadens viktigaste beslut.",
+      "roll": "Köpman och rådman"
     },
     {
       "namn": "Gerrick",
@@ -934,7 +1025,20 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Nur-familjen",
       "kapitel": null,
-      "beskrivning": "# GHALIB AL-NUR\n**Medlem av Nur-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Obestämd\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.\n\n## SL-ANTECKNINGAR\nKontakt i Muhad."
+      "beskrivning": "# GHALIB AL-NUR\n**Medlem av Nur-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Obestämd\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.\n\n## SL-ANTECKNINGAR\nKontakt i Muhad.",
+      "roll": "Obestämd"
+    },
+    {
+      "namn": "Gina Bryggvakt",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Värdshusvärdens dotter",
+      "status": "levande",
+      "plats": "Västerbrygga, Soldarn",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "beskrivning": "# GINA BRYGGVAKT\n\n**Roll:** Värdshusvärdens dotter (serverar soldater)\n**Plats:** Västerbrygga (500 inv, militär utpost), Soldarn\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nGinas bror deserterade från hertig Larnbrous här för flera år sedan. Han väntades bli hängd. Soffia ordnade för att han skulle \"försvinna\" norrut till Vitterdal och få nytt liv under falskt namn. Familjen tror att han dog, men Gina vet sanningen - Soffia räddade honom.\n\n## Varför väl placerad\n\nVästerbrygga är en militär utpost i Soldarn, nära gränsen mot Västmark där tiraker ofta anfaller. Ginas familj driver värdshuset där soldater från hertig Larnbrous här samlats. Soldater pratar fritt när de dricker - Gina hör allt.\n\n## Rapporterar\n\n- Soldatrykten (moral, klagomål, planerade operationer)\n- Tiraköverfallens frekvens (ökar de? Vart attackerar de?)\n- Hertig Larnbrous militära planer\n- Rekrytering och truppförflyttningar\n\n## Kontaktmetod\n\nBrevduva via handelskaravaner norrut (var 3:e månad).\n\n## Lojalitet\n\n**Mycket hög.** Gina är tacksam för att hennes bror lever och har en ny chans. Hon rapporterar allt hon hör.",
+      "källa": "EM-R001"
     },
     {
       "namn": "Gransen",
@@ -948,17 +1052,6 @@ var wikiData = {
       "beskrivning": "# Gransen\n\n**Halvgalen eller halvsanningssägare - Frisänkans byoriginal.**\n\nPåstår sig kunna 'prata med fiskarna.' Folk skrattar, men hans fiskelycka är oförklarligt god. Bor i utkanten i ett hus som lutar så mycket att det borde ha fallit.\n\n**Mysterium:** Hans förmåga att hitta fisk gränsar till det övernaturliga. Ger oväntat exakta förutsägelser om väder."
     },
     {
-      "namn": "Grimdal Tungöga",
-      "bild": null,
-      "ras": "Dvärg",
-      "titel": "Värdshuvärd",
-      "status": "levande",
-      "plats": "Jarnthol",
-      "fraktion": null,
-      "kapitel": "Kapitel 4",
-      "beskrivning": "# GRIMDAL TUNGÖGA\n**Ärrad värdshuvärd i Jarnthol**\n\n## GRUNDINFO\n- **Ras:** Dvärg\n- **Yrke:** Värdshuvärd\n- **Status:** Levande\n- **Plats:** Jarnthol (gruvutpost)\n- **Kapitel:** Kapitel 4\n\n## BESKRIVNING\nGrimdal Tungöga driver värdshuset i Jarnthol. Han är en ärrad dvärg, misstänksam mot främlingar.\n\n## VAD HAN VET (men döljer)\n- Griknar Granitson upptäckte en gammal **förseglad gruvgång** och bröt sigillet\n- Avfärdade först ryktena om förbannelse som skrämselprat\n- När gruvarbetare började försvinna insåg han att något var fel\n- Har sett **skuggor röra sig i gruvan**\n- Har förbjudit arbetarna från att gå dit\n- Hört **gammalt dvärgiska viskningar** från de gamla tunnlarna\n- Tror att Rådslingan vaktar något viktigt - misstänker hemlig skatt eller dvärgtempel\n- Läst inskriptioner på en stenobelisk nära gruvan (kunde inte förstå hela texten)\n\n## VAD HAN BERÄTTAR\nGrimdal låtsas vara ovetande och säger att \"Griknar säkert gick vilse eller föll i en dålig schakt.\"\n\nHan kan erkänna att folk försvunnit tidigare, men menar att det bara är \"dåliga gruvförhållanden\".\n\nOm spelarna pressar honom med hot eller dvärgisk hederskodex kan han ge dem en grov karta över gruvan och erkänna att något där inne är fel.\n\n## KOPPLINGAR\n- **Borga Stenhands:** Gruvarbetare som var med Griknar\n- **Griknar Granitson:** Försvunnen prospektör\n- **Rådslingan:** Skuggvarelse i gruvan\n- **Konrad:** Handelsman i Jarnthol"
-    },
-    {
       "namn": "Griknar Granitson",
       "bild": null,
       "ras": "Dvärg",
@@ -970,15 +1063,15 @@ var wikiData = {
       "beskrivning": "# GRIKNAR GRANITSON\n**Försvunnen prospektör**\n\n## GRUNDINFO\n- **Ras:** Dvärg\n- **Yrke:** Prospektör\n- **Status:** Död/försvunnen\n- **Plats:** Jarnthol (gruvutpost)\n- **Kapitel:** Kapitel 4\n\n## BESKRIVNING\nGriknar var en dvärgisk prospektör som letade efter nya fyndigheter i Jarnthol-området.\n\n## KRITISK HÄNDELSE\nGriknar upptäckte en gammal **förseglad gruvgång** och bröt sigillet. Detta väckte **Rådslingan** - en skuggformad varelse som är resultatet av en uråldrig förbannelse.\n\n## FÖRSVINNANDET\nFör några dagar sedan försvann Griknar efter att ha gått in i den nyöppnade gruvgången. Flera gruvarbetare, inklusive **Borga Stenhands**, var med honom och hörde **röster i mörkret** innan han försvann.\n\nGruvarbetare vägrar nu gå tillbaka till platsen - något skrämmer dem.\n\n## FÖRKOLNADE ANTECKNINGAR\nBland spillrorna i gruvan kan spelarna hitta Griknars delvis förkolnade anteckningsbok med fragment om hans upptäckt.\n\n## KOPPLINGAR\n- **Grimdal Tungöga:** Värdshuvärd som vet mer än han säger\n- **Borga Stenhands:** Såg Griknar senast\n- **Rådslingan:** Orsaken till hans försvinnande"
     },
     {
-      "namn": "Gråben",
+      "namn": "Grimdal Tungöga",
       "bild": null,
-      "ras": "Tirak",
-      "titel": "Förvisad eremit",
+      "ras": "Dvärg",
+      "titel": "Värdshuvärd",
       "status": "levande",
-      "plats": "Bergen vid Grensfortet",
+      "plats": "Jarnthol",
       "fraktion": null,
-      "kapitel": "Kapitel 10",
-      "beskrivning": "# GRÅBEN\n\n**Gammal tirak, förvisad och ensam**\n\n## Bakgrund\n\nEn gammal tirak som bott i bergen nära Grensfortet i årtionden. Förvisad från sin stam för ett brott han vägrar nämna.\n\n## Nuvarande situation\n\nDyker upp vid fortet och ber om hjälp mot något som hotar honom. Han har kunskap om området som kan vara ovärderlig - men kan man lita på en tirak?\n\n## Potential\n\nKan bli en värdefull allierad med kunskap om bergen och Mithera-gränsen. Eller en fälla."
+      "kapitel": "Kapitel 4",
+      "beskrivning": "# GRIMDAL TUNGÖGA\n**Ärrad värdshuvärd i Jarnthol**\n\n## GRUNDINFO\n- **Ras:** Dvärg\n- **Yrke:** Värdshuvärd\n- **Status:** Levande\n- **Plats:** Jarnthol (gruvutpost)\n- **Kapitel:** Kapitel 4\n\n## BESKRIVNING\nGrimdal Tungöga driver värdshuset i Jarnthol. Han är en ärrad dvärg, misstänksam mot främlingar.\n\n## VAD HAN VET (men döljer)\n- Griknar Granitson upptäckte en gammal **förseglad gruvgång** och bröt sigillet\n- Avfärdade först ryktena om förbannelse som skrämselprat\n- När gruvarbetare började försvinna insåg han att något var fel\n- Har sett **skuggor röra sig i gruvan**\n- Har förbjudit arbetarna från att gå dit\n- Hört **gammalt dvärgiska viskningar** från de gamla tunnlarna\n- Tror att Rådslingan vaktar något viktigt - misstänker hemlig skatt eller dvärgtempel\n- Läst inskriptioner på en stenobelisk nära gruvan (kunde inte förstå hela texten)\n\n## VAD HAN BERÄTTAR\nGrimdal låtsas vara ovetande och säger att \"Griknar säkert gick vilse eller föll i en dålig schakt.\"\n\nHan kan erkänna att folk försvunnit tidigare, men menar att det bara är \"dåliga gruvförhållanden\".\n\nOm spelarna pressar honom med hot eller dvärgisk hederskodex kan han ge dem en grov karta över gruvan och erkänna att något där inne är fel.\n\n## KOPPLINGAR\n- **Borga Stenhands:** Gruvarbetare som var med Griknar\n- **Griknar Granitson:** Försvunnen prospektör\n- **Rådslingan:** Skuggvarelse i gruvan\n- **Konrad:** Handelsman i Jarnthol"
     },
     {
       "namn": "Grimme Jansen",
@@ -992,6 +1085,29 @@ var wikiData = {
       "beskrivning": "# Grimme Jansen\n\n**Ensam jägare i skogarna nära Bergvik.**\n\nSäljer pälsar och kött till Bergvik. Duktig, pålitlig, fullständigt tyst om sitt förflutna. Lämnade Drunok för tjugo år sedan.\n\n**Hemlighet:** En tatuering på höger underarm döljer han alltid. Varg-Mika har sett den en gång och sagt inget."
     },
     {
+      "namn": "Gripvibe",
+      "bild": "gripvibe.png",
+      "ras": "Okänd",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Lundnäs-området",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# GRIPVIBE\n**Varelse i Lundnäs-området**\n\n## GRUNDINFO\n- **Plats:** Lundnäs-området\n- **Namn:** \"Grip-\" antyder möjlig koppling till griparna (griffins) i äventyret\n\n## I KAMPANJEN\nRegnsynd-äventyret: Möjligen kopplad till de galna gripar som dräpte fader Rubiel.\n\n## SL-ANTECKNINGAR\nNamnet antyder koppling till griparna (griffins) som blev galna av pärlorna och dödade fader Rubiel på gravgården.",
+      "roll": "Okänd"
+    },
+    {
+      "namn": "Gråben",
+      "bild": null,
+      "ras": "Tirak",
+      "titel": "Förvisad eremit",
+      "status": "levande",
+      "plats": "Bergen vid Grensfortet",
+      "fraktion": null,
+      "kapitel": "Kapitel 10",
+      "beskrivning": "# GRÅBEN\n\n**Gammal tirak, förvisad och ensam**\n\n## Bakgrund\n\nEn gammal tirak som bott i bergen nära Grensfortet i årtionden. Förvisad från sin stam för ett brott han vägrar nämna.\n\n## Nuvarande situation\n\nDyker upp vid fortet och ber om hjälp mot något som hotar honom. Han har kunskap om området som kan vara ovärderlig - men kan man lita på en tirak?\n\n## Potential\n\nKan bli en värdefull allierad med kunskap om bergen och Mithera-gränsen. Eller en fälla."
+    },
+    {
       "namn": "Gumman Ragnhild",
       "bild": null,
       "ras": "Människa",
@@ -1003,19 +1119,19 @@ var wikiData = {
       "beskrivning": "# GUMMAN RAGNHILD\n**73-årig fd. barnmorska och läkare från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 73 år\n- **Yrke:** Fd. barnmorska och byläkare\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nGumman Ragnhild är den äldsta av de evakuerade från Vargnäset. Trots sin höga ålder är hon fortfarande byns primära läkare och det medicinska stödet för flyktingarna.\n\n## ROLL UNDER EVAKUERINGEN\nUnder den fem dagar långa flykten från Vargnäset var Gumman Ragnhild ovärderlig:\n- Vårdade de sjuka och skadade\n- Behandlade Gammal-Eriks frostfeber (kunde inte rädda honom)\n- Försökte trösta Anna Stenmark efter Helenas död\n- Höll modet uppe med sin erfarenhet och lugn\n\n## MEDICINSKA KUNSKAPER\n- Barnmorska (förlöst generationer av Vargnäsetbarn)\n- Örtmedicin och traditionell läkekonst\n- Sårvård och bensättning\n- Sjukdomsdiagnostik\n\n## KARAKTÄR\n- Bestämd och erfaren\n- Varm men pragmatisk\n- Respekterad av alla i byn\n- Stark trots hög ålder\n\n## EVAKUERINGEN\n- En av 41 överlevande från Vargnäset\n- Medicinsk ansvarig under flykten\n- Såg tre människor dö på vägen (Gammal-Erik, Helena Stenmark, en tredje)\n\n## KOPPLINGAR\n- **Gammal-Erik:** Försökte rädda honom från frostfeber\n- **Anna Stenmark:** Tröstade efter Helenas död\n- **Vargnäset:** Byns läkare i generationer"
     },
     {
-      "namn": "Gina Bryggvakt",
-      "bild": null,
+      "namn": "Gustav Stenmark",
+      "bild": "gustav-stenmark.png",
       "ras": "Människa",
-      "titel": "Värdshusvärdens dotter",
+      "titel": null,
       "status": "levande",
-      "plats": "Västerbrygga, Soldarn",
-      "fraktion": "Lady Soffias informationsnätverk",
-      "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# GINA BRYGGVAKT\n\n**Roll:** Värdshusvärdens dotter (serverar soldater)\n**Plats:** Västerbrygga (500 inv, militär utpost), Soldarn\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nGinas bror deserterade från hertig Larnbrous här för flera år sedan. Han väntades bli hängd. Soffia ordnade för att han skulle \"försvinna\" norrut till Vitterdal och få nytt liv under falskt namn. Familjen tror att han dog, men Gina vet sanningen - Soffia räddade honom.\n\n## Varför väl placerad\n\nVästerbrygga är en militär utpost i Soldarn, nära gränsen mot Västmark där tiraker ofta anfaller. Ginas familj driver värdshuset där soldater från hertig Larnbrous här samlats. Soldater pratar fritt när de dricker - Gina hör allt.\n\n## Rapporterar\n\n- Soldatrykten (moral, klagomål, planerade operationer)\n- Tiraköverfallens frekvens (ökar de? Vart attackerar de?)\n- Hertig Larnbrous militära planer\n- Rekrytering och truppförflyttningar\n\n## Kontaktmetod\n\nBrevduva via handelskaravaner norrut (var 3:e månad).\n\n## Lojalitet\n\n**Mycket hög.** Gina är tacksam för att hennes bror lever och har en ny chans. Hon rapporterar allt hon hör."
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# GUSTAV STENMARK\n**4-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 4 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n4-årig pojke från Vargnäset. Son till Olof Stenmark. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Olof Stenmark\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
     },
     {
-      "namn": "Hadrian \\\"Hagge\\\" av Vitterdal",
+      "namn": "Hadrian \"Hagge\" av Vitterdal",
+      "bild": "hagge3.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
@@ -1023,7 +1139,7 @@ var wikiData = {
       "fraktion": "Jarladömet Vitterdal",
       "kapitel": null,
       "beskrivning": "# HADRIAN \"HAGGE\" AV VITTERDAL\n\n**Jarl av Vitterdal, gruppens huvudsakliga uppdragsgivare**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande, jarl av Vitterdal\n- **Första fas:** Fas 3 (Muhad)\n- **Roll:** Huvudsaklig uppdragsgivare och allierad\n\n## BAKGRUND\n\nHagge är yngre sonen i huset Vitterdal, aldrig förberedd för ledarskap. Hans äldre bror Talarra skulle ärva jarladömet, men anklagade Hagge för förräderi på falska grunder.\n\n### Förvisning och slaveri\n- Förvisad från Vitterdal av sin bror Talarra\n- Tillfångatagen av pirater\n- Såld som slav i Jen, Muhad\n\n## VIKTIGA HÄNDELSER\n\n### Muhad (Fas 3)\n**Befrielsen:**\n- Gruppen anlitades av Lady Soffia för att hitta och befria honom\n- Laila al-Jen krävde att Hagge gav henne ett barn som pris för frihet\n- Under den alkemiska ritualen skyddade gruppen paret\n\n### Jargien - 15-dagarsresan (Kapitel 4)\n\n**Återhämtning från slaveri:**\n- Invirad i björnfäll som dolde hans adliga hållning\n- Satt stadigt i sadeln trots haltande rytm\n- Kroppen inte helt återhämtad från slaveriets påfrestningar\n- Höll slagsvärd (lån från befriares förråd) i skida på ryggen\n- Alltid beredd, alltid vaksam\n- \\\"Befrielse innebär inte frihet från gamla instinkter\\\"\n\n**Kunskap om Jargien:**\n- Påpekade att jargisk vinter inte är lika extrem som cermiransk\n- Beskrev böndernas liv: tätt packade med boskap i samma utrymmen\n- Regional kunskap om klimat och kultur\n\n**Rädsla för tempelriddare (Dag 13):**\n- Tvingades stå ansikte mot ansikte med Arvorns Hammare under inspektion\n- Behöll lugn fasad trots inre rädsla\n- Gordon såg dold rädsla i hans ögon\n- Tempelriddare kunde känna igen förrymd slav från Cermira\n- Riskerade återfångande\n\n**Strategisk bedömning:**\n- Vid fångtransporten: Utbytte blick med Gordon om att ingripa\n- Rörde omärkligt på huvudet - tyst råd att INTE ingripa\n- Efteråt: \\\"Det där var ingen vanlig fångtransport. Jag har sett tillräckligt av slaveri för att känna igen någon som förs mot sin vilja\\\"\n- Hans erfarenhet av slaveri gav unik insikt\n\n**Återfinnande sig själv:**\nResan genom Jargien var en prövning - chans att visa sitt värde för de som räddat honom. Bit för bit började han återfinna sig själv, på väg mot sitt hem och sin framtid som jarl.\n\n### Återkomst till Vitterdal (Fas 7)\n- Talarra var redan död när Hagge återvände\n- Lantrådet sammankallat för att bekräfta arvinge\n- Officiellt erkänd som jarl av Vitterdal\n\n### Belöningar till gruppen\nHagge gav omfattande belöningar till sina räddare:\n\n**Titlar och privilegier:**\n- Gordon: \"Kapten av Vitterdals Hederskompani\"\n- Alla: Skattefrihet och hus på Mitrahus mark\n- Option: Äganderätt till Grensfortet (om renoverat)\n\n## KARAKTÄRSDRAG\n\n- **Oväntat ledarskap:** Tvingades växa in i rollen\n- **Tacksam:** Djupt tacksam mot gruppen som räddade honom\n- **Försiktig härskare:** Medveten om sina begränsningar\n\n## RELATIONER\n\n### Familj\n- **Lady Soffia:** Hans mor, tidigare de facto härskare\n- **Talarra:** Äldre bror (död) som förvisade honom\n- **Barnet med Laila:** Efterlämnat i Muhad\n\n### Gruppen\n- **Alla spelarkaraktärer:** Djup tacksamhetsskuld\n\n### Komplicerat\n- **Laila al-Jen:** Barnets mor, slavhandlare i Jen\n\n## NUVARANDE SITUATION\n\nHagge styr nu Vitterdal och är gruppens viktigaste allierade. Hans position är fortfarande utsatt politiskt.\n\n## SL-ANTECKNINGAR\n\n- Kan användas för att ge gruppen uppdrag\n- Hans tacksamhet är genuin men politiken i Vitterdal är komplex\n- Barnet i Muhad kan bli framtida komplikation\n- Grensfortet-alternativet ger gruppen potential bas",
-      "bild": "hagge3.png"
+      "roll": "Jarl, huvudsaklig uppdragsgivare"
     },
     {
       "namn": "Hakim al-Rashid",
@@ -1034,7 +1150,7 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
-      "beskrivning": "# HAKIM AL-RASHID\n**Stadshållare av Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Titel:** Stadshållare av Jen\n- **Yrke:** Stadens högsta administrativa tjänsteman\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nHakim al-Rashid är stadshållare av Jen, utsedd av kefal Khabi Jaakoh för att sköta stadens dagliga administration. Han fungerar som kefalens förlängda arm i Jen och hanterar handelsfrågor, tullärenden och civil ordning medan Jaakoh styr det bredare Ziu-området.\n\n## KARAKTÄR\n- Ståtlig man\n- Utstrålar auktoritet och visdom\n- Extremt inflytelserik i Jens dagliga politik\n- Respekterad av handlare och frukad av tjuvar\n- Lojal mot Jaakoh men med egna ambitioner\n\n## MAKT OCH INFLYTANDE\nSom stadshållare har Hakim al-Rashid:\n- Daglig administrativ kontroll över Jen\n- Ansvar för tull, handel och civil ordning\n- Rapporterar direkt till kefal Khabi Jaakoh\n- Avgörande inflytande över handelstillstånd och marknadsregler\n- Kommando över stadsvakten\n\n## RELATIONER\n- **Kefal Khabi Jaakoh:** Hakim tjänar under Jaakoh och genomför kefalens vilja i Jen\n- **Slakten Samjed:** Spänningar — Samjed ser Hakim som ett hinder\n\n## KOPPLINGAR\n- **Position:** Stadshållare av Jen (under kefal Khabi Jaakoh)\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
+      "beskrivning": "# HAKIM AL-RASHID\n**Stadshållare av Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Titel:** Stadshållare av Jen\n- **Yrke:** Stadens högsta administrativa tjänsteman\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nHakim al-Rashid är stadshållare av Jen, utsedd av kefal Khabi Jaakoh för att sköta stadens dagliga administration. Han fungerar som kefalens förlängda arm i Jen och hanterar handelsfrågor, tullärenden och civil ordning medan Jaakoh styr det bredare Ziu-området.\n\n## KARAKTÄR\n- Ståtlig man\n- Utstrålar auktoritet och visdom\n- Extremt inflytelserik i Jens dagliga politik\n- Respekterad av handlare och fruktad av tjuvar\n- Lojal mot Jaakoh men med egna ambitioner\n\n## MAKT OCH INFLYTANDE\nSom stadshållare har Hakim al-Rashid:\n- Daglig administrativ kontroll över Jen\n- Ansvar för tull, handel och civil ordning\n- Rapporterar direkt till kefal Khabi Jaakoh\n- Avgörande inflytande över handelstillstånd och marknadsregler\n- Kommando över stadsvakten\n\n## RELATIONER\n- **Kefal Khabi Jaakoh:** Hakim tjänar under Jaakoh och genomför kefalens vilja i Jen\n- **Slakten Samjed:** Spänningar — Samjed ser Hakim som ett hinder\n\n## KOPPLINGAR\n- **Position:** Stadshållare av Jen (under kefal Khabi Jaakoh)\n- **Plats:** Jen, Muhad\n- **Fas:** 3\n\n> **Notering (migrering):** Denna not använder Jekyll-versionens fylligare brödtext\n> (samma datum, aug 2026, som wiki_data.js — men mer komplett: inkluderar relationen\n> till Khabi Jaakoh som saknades i JS-filens förkortade sammanfattning). Den gamla\n> vault-kopian hade en äldre titel (\"Kefal av Jen\", före retconen till \"Stadshållare\")."
     },
     {
       "namn": "Halinor",
@@ -1067,7 +1183,8 @@ var wikiData = {
       "plats": "Vargnäset",
       "fraktion": "Desertörer (anlitad av Systrarna)",
       "kapitel": null,
-      "beskrivning": "# HALRIK KORD\n**Disciplinerad desertörledare**\n\n## GRUNDINFO\n- **Roll:** Ledare för tredje vågen desertörer (7 man)\n- **Uppdragsgivare:** Anlitad av \"kvinnorna med silverringar\" (Systrarna)\n- **Mål:** Fånga Zentri och ringen\n- **Taktik:** Koordinerad framryckning under skydd av kaos\n- **Specialenheter:** Två \"spårhundar\" med silvernät som söker specifikt Zentri\n- **Beteende:** Väntar tills kaos utbrutit, fokuserad och metodisk\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ledde huvudanfallet på Vargnäset i syfte att fånga Zentri.\n\n## SL-ANTECKNINGAR\nHalrik är disciplinerad och strategisk, till skillnad från de andra desertörledarna. Han arbetar för Systrarna och har specifikt uppdrag att fånga Zentri och silverringen. Hans \"spårhundar\" har silvermanschetter och silvernät som reagerar på magi. Om tillfångatagen kan han avslöja samröre mellan Systrarna och Arvorns Hammare."
+      "beskrivning": "# HALRIK KORD\n**Disciplinerad desertörledare**\n\n## GRUNDINFO\n- **Roll:** Ledare för tredje vågen desertörer (7 man)\n- **Uppdragsgivare:** Anlitad av \"kvinnorna med silverringar\" (Systrarna)\n- **Mål:** Fånga Zentri och ringen\n- **Taktik:** Koordinerad framryckning under skydd av kaos\n- **Specialenheter:** Två \"spårhundar\" med silvernät som söker specifikt Zentri\n- **Beteende:** Väntar tills kaos utbrutit, fokuserad och metodisk\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ledde huvudanfallet på Vargnäset i syfte att fånga Zentri.\n\n## SL-ANTECKNINGAR\nHalrik är disciplinerad och strategisk, till skillnad från de andra desertörledarna. Han arbetar för Systrarna och har specifikt uppdrag att fånga Zentri och silverringen. Hans \"spårhundar\" har silvermanschetter och silvernät som reagerar på magi. Om tillfångatagen kan han avslöja samröre mellan Systrarna och Arvorns Hammare.",
+      "roll": "Desertörledare"
     },
     {
       "namn": "Halvdan Kolare",
@@ -1089,7 +1206,8 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": "Hamnmyndigheten",
       "kapitel": null,
-      "beskrivning": "# HAMNMÄKLAREN\n**Hamnmäklare i Jen, Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Jen hamn, Muhad\n- **Roll:** Hamnmäklare - handlar tullar och tillstånd\n\n## I KAMPANJEN\nFas 3: Möttes i hamnen. Kan underlätta skepp handel.\n\n## SL-ANTECKNINGAR\nKan mutas för tillstånd eller information."
+      "beskrivning": "# HAMNMÄKLAREN\n**Hamnmäklare i Jen, Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Jen hamn, Muhad\n- **Roll:** Hamnmäklare - handlar tullar och tillstånd\n\n## I KAMPANJEN\nFas 3: Möttes i hamnen. Kan underlätta skepp handel.\n\n## SL-ANTECKNINGAR\nKan mutas för tillstånd eller information.",
+      "roll": "Hamnmäklare"
     },
     {
       "namn": "Hamnmästaren",
@@ -1100,7 +1218,8 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": "Hamnmyndigheten",
       "kapitel": null,
-      "beskrivning": "# HAMNMÄSTAREN\n**Hamnmästare i Jen, Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Jen hamn, Muhad\n- **Roll:** Hamnmästare - övervakar hamnen\n\n## I KAMPANJEN\nFas 3: Möttes i hamnen. Auktoritet över hamnen.\n\n## SL-ANTECKNINGAR\nViktigt kontakt för hamnverksamhet."
+      "beskrivning": "# HAMNMÄSTAREN\n**Hamnmästare i Jen, Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Jen hamn, Muhad\n- **Roll:** Hamnmästare - övervakar hamnen\n\n## I KAMPANJEN\nFas 3: Möttes i hamnen. Auktoritet över hamnen.\n\n## SL-ANTECKNINGAR\nViktigt kontakt för hamnverksamhet.",
+      "roll": "Hamnmästare"
     },
     {
       "namn": "Harald Vädermästare",
@@ -1111,7 +1230,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# HARALD VÄDERMÄSTARE\n**Vädermagiker i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Taktisk vädermagiker\n- **Ansvar:** Manipulera väderförhållanden för taktiska fördelar\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Använde vädermagi vid Tirakgraven."
+      "beskrivning": "# HARALD VÄDERMÄSTARE\n**Vädermagiker i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Taktisk vädermagiker\n- **Ansvar:** Manipulera väderförhållanden för taktiska fördelar\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Använde vädermagi vid Tirakgraven.",
+      "roll": "Taktisk vädermagiker"
     },
     {
       "namn": "Harun al-Farid",
@@ -1177,7 +1297,8 @@ var wikiData = {
       "plats": "Jarla",
       "fraktion": "Todor Felkes palatsgarde",
       "kapitel": null,
-      "beskrivning": "# HEMKHATH THOKK\n**Kapten för frijarlen Todor Felkes palatsgarde**\n\n## GRUNDINFO\n- **Ras:** Tirake\n- **Position:** Kapten för den inre bevakningen av Todor Felkes palats\n- **Styrkor:** Garde på 40 välrustade soldater\n- **Lojalitet:** Extremt lojal mot frijarlen Todor Felkes\n- **Rykte:** Känd för sin brutalitet\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Ansvarar för palatsets inre säkerhet.\n\n## SL-ANTECKNINGAR\nHemkhath Thokk kompletterar vaktkapten Vomdals yttre bevakning med sin inre palatsgarde. Uppdelningen mellan yttre och inre säkerhet tyder på paranoia hos frijarlen.\n\nEnligt senare händelser (jarla_nu_text.txt) har Hemkhath Thokk gett order om att fängsla alla misstänkta förrädare, vilket bidragit till stadens alltmer brutala atmosfär under Todor Felkes paranoida styre."
+      "beskrivning": "# HEMKHATH THOKK\n**Kapten för frijarlen Todor Felkes palatsgarde**\n\n## GRUNDINFO\n- **Ras:** Tirake\n- **Position:** Kapten för den inre bevakningen av Todor Felkes palats\n- **Styrkor:** Garde på 40 välrustade soldater\n- **Lojalitet:** Extremt lojal mot frijarlen Todor Felkes\n- **Rykte:** Känd för sin brutalitet\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Ansvarar för palatsets inre säkerhet.\n\n## SL-ANTECKNINGAR\nHemkhath Thokk kompletterar vaktkapten Vomdals yttre bevakning med sin inre palatsgarde. Uppdelningen mellan yttre och inre säkerhet tyder på paranoia hos frijarlen.\n\nEnligt senare händelser (jarla_nu_text.txt) har Hemkhath Thokk gett order om att fängsla alla misstänkta förrädare, vilket bidragit till stadens alltmer brutala atmosfär under Todor Felkes paranoida styre.",
+      "roll": "Kapten för palatsgarde"
     },
     {
       "namn": "Herr Thall Spjut av Lundnäs",
@@ -1188,7 +1309,8 @@ var wikiData = {
       "plats": "Lundnäs",
       "fraktion": "Baron Semuels tjänst",
       "kapitel": null,
-      "beskrivning": "# HERR THALL SPJUT AV LUNDNÄS\n**Baronens riddare och fogde**\n\n## GRUNDINFO\n- **Position:** Baron Semuels egen riddare\n- **Ansvar:** Ansvarig för lag och ordning i Lundnäs\n- **Befäl:** Leder den lilla vaktstyrkan\n- **Titel:** Fogde över Lundnäs län\n- **Tillstånd:** Plågas av dunkande huvudvärk (pärlpåverkan)\n\n## I KAMPANJEN\nRegnsynd-äventyret: Ansvarig för lag och ordning i Lundnäs under krisen.\n\n## SL-ANTECKNINGAR\nHerr Thall försöker hålla god min utåt trots att han plågas av huvudvärk från pärlpåverkan. Som baronens fogde har han både militärt och civilt ansvar för området."
+      "beskrivning": "# HERR THALL SPJUT AV LUNDNÄS\n**Baronens riddare och fogde**\n\n## GRUNDINFO\n- **Position:** Baron Semuels egen riddare\n- **Ansvar:** Ansvarig för lag och ordning i Lundnäs\n- **Befäl:** Leder den lilla vaktstyrkan\n- **Titel:** Fogde över Lundnäs län\n- **Tillstånd:** Plågas av dunkande huvudvärk (pärlpåverkan)\n\n## I KAMPANJEN\nRegnsynd-äventyret: Ansvarig för lag och ordning i Lundnäs under krisen.\n\n## SL-ANTECKNINGAR\nHerr Thall försöker hålla god min utåt trots att han plågas av huvudvärk från pärlpåverkan. Som baronens fogde har han både militärt och civilt ansvar för området.",
+      "roll": "Riddare och fogde"
     },
     {
       "namn": "Hunter",
@@ -1199,18 +1321,8 @@ var wikiData = {
       "plats": "Okänd",
       "fraktion": "Magiekrjägare",
       "kapitel": null,
-      "beskrivning": "# HUNTER\n**Magiekrjägare**\n\n## GRUNDINFO\n- **Yrke:** Magiekrjägare\n- **Status:** Fiende\n- **Fraktion:** Magiekrjägare (troligen Arvorns Hammare eller liknande)\n\n## BESKRIVNING\nBilden visar en av de magiekrjägare som anföll Zentri med silvernät. Dessa jägare är specialiserade på att fånga och eliminera magianvändare.\n\n## UTRUSTNING\n- **Silvernät:** Specialdesignat för att fånga magiker\n- **Vapen:** Utrustade för strid mot magianvändare\n\n## I KAMPANJEN\nDe magiekrjägare som använder silvernät för att fånga magiker som Zentri. Del av de grupper som jagar magianvändare.\n\n## SL-ANTECKNINGAR\nRepresenterar den typ av magiekrjägare som gruppen kan möta. Silvernätet är en specialiserad taktik för att neutralisera magiker."
-    },
-    {
-      "namn": "Fredricca",
-      "bild": "fredricca.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Skogen väster om Lundnäs",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# HÄXAN FREDRICCA\n**Godmodig häxa i skogen**\n\n## GRUNDINFO\n- **Hemvist:** Stuga i skogen väster om Lundnäs\n- **Ålder:** Medelålders kvinna\n- **Livsstil:** Lever i harmoni med naturen, undviker människor\n- **Sällskap:** Bor med sina katter\n- **Kunskap:** Duktig på örter och trollkonster\n- **Trädgård:** Örtagård och trädgårdsland (drabbades av regnet)\n- **Pärlpåverkan:** Har inte påverkats så kraftigt, men har känt av dem\n\n## I KAMPANJEN\nRegnsynd-äventyret: Godmodig häxa som kan ge information och hjälp.\n\n## SL-ANTECKNINGAR\nFredricca är en godmodig person trots att hon kallas \"häxa\". Hon tycker om att leva i harmoni med naturen och har djup kunskap om örter och trollkonster. Hennes motstånd mot pärlpåverkan visar hennes styrka. Hon kan vara en värdefull allierad för rollpersonerna."
+      "beskrivning": "# HUNTER\n**Magiekrjägare**\n\n## GRUNDINFO\n- **Yrke:** Magiekrjägare\n- **Status:** Fiende\n- **Fraktion:** Magiekrjägare (troligen Arvorns Hammare eller liknande)\n\n## BESKRIVNING\nBilden visar en av de magiekrjägare som anföll Zentri med silvernät. Dessa jägare är specialiserade på att fånga och eliminera magianvändare.\n\n## UTRUSTNING\n- **Silvernät:** Specialdesignat för att fånga magiker\n- **Vapen:** Utrustade för strid mot magianvändare\n\n## I KAMPANJEN\nDe magiekrjägare som använder silvernät för att fånga magiker som Zentri. Del av de grupper som jagar magianvändare.\n\n## SL-ANTECKNINGAR\nRepresenterar den typ av magiekrjägare som gruppen kan möta. Silvernätet är en specialiserad taktik för att neutralisera magiker.",
+      "roll": "Jägare"
     },
     {
       "namn": "Ibrahim al-Dawood",
@@ -1221,7 +1333,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Dawood-familjen",
       "kapitel": null,
-      "beskrivning": "# IBRAHIM AL-DAWOOD\n**Medlem av Dawood-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# IBRAHIM AL-DAWOOD\n**Medlem av Dawood-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Ibran Anderyttare",
@@ -1232,7 +1345,8 @@ var wikiData = {
       "plats": "Okänd",
       "fraktion": "Tirakstammen (väktare)",
       "kapitel": null,
-      "beskrivning": "# IBRAN ANDERYTTARE\n\n**Urgammal tirak-schaman, demonens ursprungliga fångvaktare**\n\n## GRUNDINFO\n\n- **Ras:** Tirak (själ i 13-årig pojkkropp)\n- **Status:** Okänd lokalisering\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Mystisk figur, potentiell allierad\n\n## BAKGRUND\n\nIbran Anderyttare var tirakstammens schaman som för årtusenden sedan förseglade demonen Urkhath. När försegling bröts överförde han sin själ till en ung pojke (Tamron) för att fortsätta bevaka demonen.\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n- Bevakade graven\n- När förseglingen bröts överförde han sin själ\n- Tog kontroll över Tamrons kropp\n\n### Jakten (Fas 2)\n- Gruppen spårade honom genom Cermiras skogar\n- Vid Grensfortet bröt en del av demonen sig fri\n\n### Efter Grensfortet\n- Status okänd\n- Fortfarande ute i världen någonstans\n\n## KARAKTÄRSDRAG\n\n- **Urgammal visdom:** Årtusenden gammal\n- **Besatt av uppdrag:** Måste stoppa demonen\n- **Desperata metoder:** Stjäl barns kropp för att fortsätta\n\n## RELATIONER\n\n### Uppdrag\n- **Demonen Urkhath:** Livslångt (årtusenden) uppdrag att bevaka\n\n### Offer\n- **Tamron:** 13-årig pojke vars kropp togs\n\n### Gruppen\n- **Komplex:** De jagade honom, men båda vill stoppa demonen\n\n## NUVARANDE SITUATION\n\nIbrans plats är okänd. Han kan fortfarande vara ute och försöka stoppa demonen, eller ha misslyckats.\n\n## SL-ANTECKNINGAR\n\n- Potentiell allierad mot demonen\n- Kan ha kunskap om hur Zentri kan räddas\n- Moraliskt komplex - stjäl barns kropp för \"gott\" syfte\n- Kan dyka upp vid kritiskt ögonblick"
+      "beskrivning": "# IBRAN ANDERYTTARE\n\n**Urgammal tirak-schaman, demonens ursprungliga fångvaktare**\n\n## GRUNDINFO\n\n- **Ras:** Tirak (själ i 13-årig pojkkropp)\n- **Status:** Okänd lokalisering\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Mystisk figur, potentiell allierad\n\n## BAKGRUND\n\nIbran Anderyttare var tirakstammens schaman som för årtusenden sedan förseglade demonen Urkhath. När försegling bröts överförde han sin själ till en ung pojke (Tamron) för att fortsätta bevaka demonen.\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n- Bevakade graven\n- När förseglingen bröts överförde han sin själ\n- Tog kontroll över Tamrons kropp\n\n### Jakten (Fas 2)\n- Gruppen spårade honom genom Cermiras skogar\n- Vid Grensfortet bröt en del av demonen sig fri\n\n### Efter Grensfortet\n- Status okänd\n- Fortfarande ute i världen någonstans\n\n## KARAKTÄRSDRAG\n\n- **Urgammal visdom:** Årtusenden gammal\n- **Besatt av uppdrag:** Måste stoppa demonen\n- **Desperata metoder:** Stjäl barns kropp för att fortsätta\n\n## RELATIONER\n\n### Uppdrag\n- **Demonen Urkhath:** Livslångt (årtusenden) uppdrag att bevaka\n\n### Offer\n- **Tamron:** 13-årig pojke vars kropp togs\n\n### Gruppen\n- **Komplex:** De jagade honom, men båda vill stoppa demonen\n\n## NUVARANDE SITUATION\n\nIbrans plats är okänd. Han kan fortfarande vara ute och försöka stoppa demonen, eller ha misslyckats.\n\n## SL-ANTECKNINGAR\n\n- Potentiell allierad mot demonen\n- Kan ha kunskap om hur Zentri kan räddas\n- Moraliskt komplex - stjäl barns kropp för \"gott\" syfte\n- Kan dyka upp vid kritiskt ögonblick",
+      "roll": "Mystisk figur - demonens ursprungliga fångvaktare"
     },
     {
       "namn": "Inga Bredaxel",
@@ -1254,7 +1368,8 @@ var wikiData = {
       "plats": "Vargnäset",
       "fraktion": "Vargnäsets invånare",
       "kapitel": null,
-      "beskrivning": "# INGVILD\n**Läkare och akutvårdsansvarig**\n\n## GRUNDINFO\n- **Roll:** Leder akutvård under striden\n- **Verksamhet:** Har sjukstuga i värdshuset\n- **Specialitet:** Medicinsk vård och kirurgi\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ansvarade för akutvård under anfallet på Vargnäset.\n\n## SL-ANTECKNINGAR\nIngvild driver sjukstugan i värdshuset och är ansvarig för att ta hand om skadade under striden. En viktig del av byns överlevnad."
+      "beskrivning": "# INGVILD\n**Läkare och akutvårdsansvarig**\n\n## GRUNDINFO\n- **Roll:** Leder akutvård under striden\n- **Verksamhet:** Har sjukstuga i värdshuset\n- **Specialitet:** Medicinsk vård och kirurgi\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ansvarade för akutvård under anfallet på Vargnäset.\n\n## SL-ANTECKNINGAR\nIngvild driver sjukstugan i värdshuset och är ansvarig för att ta hand om skadade under striden. En viktig del av byns överlevnad.",
+      "roll": "Läkare"
     },
     {
       "namn": "Isla",
@@ -1265,7 +1380,8 @@ var wikiData = {
       "plats": "Tuzan Rim",
       "fraktion": "Den Dolda Dolken (värdshus)",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# ISLA\n**Glädjeflicka på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Yrke:** Glädjeflicka\n- **Arbetsplats:** Den Dolda Dolken (värdshus i Tuzan Rim)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BESKRIVNING\nIsla är en karismatisk och insiktsfull glädjeflicka som arbetar på värdshuset \"Den Dolda Dolken\" i Tuzan Rim. Hon har levt ett hårt liv men har utvecklat styrka och oberoende genom åren.\n\n## BAKGRUND\nIsla växte upp under svåra omständigheter och har arbetat som glädjeflicka för att överleva. Under årens lopp har hon lärt sig att navigera genom de komplicerade sociala dynamikerna på värdshuset och utvecklat en förmåga att läsa människor och deras känslor.\n\n## PERSONLIGHETSDRAG\n- **Empatisk och insiktsfull:** Naturlig förmåga att läsa av människor och deras känslor, använder detta för att skydda sig själv och ge tröst\n- **Oberoende och stark:** Behåller stark vilja och självständighet trots utmaningar, inte rädd för att stå upp för sig själv\n- **Charmig och karismatisk:** Använder sin charm för att navigera sociala situationer och få andra att känna sig välkomna\n\n## SÄRSKILDA DRAG\n### Mystiska Tatueringar\nIsla bär intrikata tatueringar längs sina armar som hon beskriver som en karta över hennes liv och erfarenheter. Varje tatuering representerar en viktig händelse eller person som har format henne.\n\n### Sång och Poesi\nUtöver sitt arbete är Isla känd för sin vackra sångröst och förmåga att improvisera poesi. Hon uppträder ibland spontant på värdshuset till stor glädje för gästerna.\n\n### Hemlig Kunskap\nUnder åren på \"Den Dolda Dolken\" har Isla samlat hemligheter och rykten från stadens mörkare hörn. Hon delar sällan denna kunskap, men när hon gör det är det alltid med beräknad effekt.\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim på värdshuset \"Den Dolda Dolken\".\n\n## SL-ANTECKNINGAR\nIsla kan vara en värdefull informationskälla om spelarna vinner hennes förtroende. Hennes kunskap om stadens hemligheter och rykten kan vara avgörande för rätt pris eller tjänst."
+      "beskrivning": "# ISLA\n**Glädjeflicka på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Yrke:** Glädjeflicka\n- **Arbetsplats:** Den Dolda Dolken (värdshus i Tuzan Rim)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BESKRIVNING\nIsla är en karismatisk och insiktsfull glädjeflicka som arbetar på värdshuset \"Den Dolda Dolken\" i Tuzan Rim. Hon har levt ett hårt liv men har utvecklat styrka och oberoende genom åren.\n\n## BAKGRUND\nIsla växte upp under svåra omständigheter och har arbetat som glädjeflicka för att överleva. Under årens lopp har hon lärt sig att navigera genom de komplicerade sociala dynamikerna på värdshuset och utvecklat en förmåga att läsa människor och deras känslor.\n\n## PERSONLIGHETSDRAG\n- **Empatisk och insiktsfull:** Naturlig förmåga att läsa av människor och deras känslor, använder detta för att skydda sig själv och ge tröst\n- **Oberoende och stark:** Behåller stark vilja och självständighet trots utmaningar, inte rädd för att stå upp för sig själv\n- **Charmig och karismatisk:** Använder sin charm för att navigera sociala situationer och få andra att känna sig välkomna\n\n## SÄRSKILDA DRAG\n### Mystiska Tatueringar\nIsla bär intrikata tatueringar längs sina armar som hon beskriver som en karta över hennes liv och erfarenheter. Varje tatuering representerar en viktig händelse eller person som har format henne.\n\n### Sång och Poesi\nUtöver sitt arbete är Isla känd för sin vackra sångröst och förmåga att improvisera poesi. Hon uppträder ibland spontant på värdshuset till stor glädje för gästerna.\n\n### Hemlig Kunskap\nUnder åren på \"Den Dolda Dolken\" har Isla samlat hemligheter och rykten från stadens mörkare hörn. Hon delar sällan denna kunskap, men när hon gör det är det alltid med beräknad effekt.\n\n## I KAMPANJEN\nFas 2: Möttes i Tuzan Rim på värdshuset \"Den Dolda Dolken\".\n\n## SL-ANTECKNINGAR\nIsla kan vara en värdefull informationskälla om spelarna vinner hennes förtroende. Hennes kunskap om stadens hemligheter och rykten kan vara avgörande för rätt pris eller tjänst.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Isolde Eldkonstnär",
@@ -1276,7 +1392,8 @@ var wikiData = {
       "plats": "Tirakgraven",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# ISOLDE ELDKONSTNÄR ⚔️\n**Fallen eldmagiker**\n\n## GRUNDINFO\n- **Roll:** Eldmagiker\n- **Utrustning:** Stav\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
+      "beskrivning": "# ISOLDE ELDKONSTNÄR ⚔️\n**Fallen eldmagiker**\n\n## GRUNDINFO\n- **Roll:** Eldmagiker\n- **Utrustning:** Stav\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven.",
+      "roll": "Eldmagiker"
     },
     {
       "namn": "Ivon Barsk",
@@ -1287,7 +1404,8 @@ var wikiData = {
       "plats": "Havet (utanför Lundnäs)",
       "fraktion": "Pirater",
       "kapitel": "Kapitel 3",
-      "beskrivning": "# IVON BARSK\n**Piratkapten**\n\n## GRUNDINFO\n- **Titel:** Piratkapten\n- **Status:** Fiende\n- **Fraktion:** Pirater\n- **Plats:** Havet utanför Lundnäs\n\n## BESKRIVNING\nIvon Barsk är kapten över det piratskepp som anföll Spegelmåne utanför Lundnäs. Hans efternamn \"Barsk\" (gruff/harsh) speglar hans hårda karaktär som pirat.\n\n## I KAMPANJEN\nKapitel 3: Anföll fartyget Spegelmåne utanför Lundnäs med sitt piratskepp.\n\n## KOPPLINGAR\n- **Anfallet:** Spegelmåne utanför Lundnäs\n- **Målfartyg:** Spegelmåne (kapten Jeorg Rask)\n- **Plats:** Havet vid Lundnäs\n\n## SL-ANTECKNINGAR\nEn farlig piratkapten som hotade Spegelmåne och dess besättning. Trots att Spegelmåne har rykte om att aldrig ha fallit i piraternas händer, gjorde Ivon Barsk ett försök."
+      "beskrivning": "# IVON BARSK\n**Piratkapten**\n\n## GRUNDINFO\n- **Titel:** Piratkapten\n- **Status:** Fiende\n- **Fraktion:** Pirater\n- **Plats:** Havet utanför Lundnäs\n\n## BESKRIVNING\nIvon Barsk är kapten över det piratskepp som anföll Spegelmåne utanför Lundnäs. Hans efternamn \"Barsk\" (gruff/harsh) speglar hans hårda karaktär som pirat.\n\n## I KAMPANJEN\nKapitel 3: Anföll fartyget Spegelmåne utanför Lundnäs med sitt piratskepp.\n\n## KOPPLINGAR\n- **Anfallet:** Spegelmåne utanför Lundnäs\n- **Målfartyg:** Spegelmåne (kapten Jeorg Rask)\n- **Plats:** Havet vid Lundnäs\n\n## SL-ANTECKNINGAR\nEn farlig piratkapten som hotade Spegelmåne och dess besättning. Trots att Spegelmåne har rykte om att aldrig ha fallit i piraternas händer, gjorde Ivon Barsk ett försök.",
+      "roll": "Okänd"
     },
     {
       "namn": "Jaela Härlig",
@@ -1298,7 +1416,8 @@ var wikiData = {
       "plats": "Tirakgraven",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# JAELA HÄRLIG ⚔️\n**Fallen vanar-krigare**\n\n## GRUNDINFO\n- **Ras:** Vanar\n- **Roll:** Stridande\n- **Utrustning:** Stridsklubba, sköld, armborst\n- **Särskilda Drag:** Tjock, rakat på ena sidan\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven."
+      "beskrivning": "# JAELA HÄRLIG ⚔️\n**Fallen vanar-krigare**\n\n## GRUNDINFO\n- **Ras:** Vanar\n- **Roll:** Stridande\n- **Utrustning:** Stridsklubba, sköld, armborst\n- **Särskilda Drag:** Tjock, rakat på ena sidan\n- **Status:** Omkommen vid Tirakgraven\n\n## I KAMPANJEN\nFas 1: Föll vid Tirakgraven.",
+      "roll": "Stridande"
     },
     {
       "namn": "Jakob",
@@ -1320,7 +1439,8 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
-      "beskrivning": "# JAMAL IBN-MUSTAFA\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nJamal ibn-Mustafa är en robust man i fyrtioårsåldern med kort svart hår och en vältränad kroppsbyggnad. Han bär en enkel, men funktionell uniform.\n\n## BAKGRUND\nJamal har tidigare arbetat som soldat och har stor erfarenhet av strid och säkerhetsarbete. Han är mycket erfaren inom militära operationer.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Ser till att ingen obehörig kommer nära\n- Säkerhetsarbete\n- Patrullering\n\n## KARAKTÄR\n- Robust och vältränad\n- Lojal och vaksam\n- Stor erfarenhet av strid\n- Tidigare soldat\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
+      "beskrivning": "# JAMAL IBN-MUSTAFA\n**Vakt hos Laila al-Jen**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Vakt\n- **Arbetsgivare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nJamal ibn-Mustafa är en robust man i fyrtioårsåldern med kort svart hår och en vältränad kroppsbyggnad. Han bär en enkel, men funktionell uniform.\n\n## BAKGRUND\nJamal har tidigare arbetat som soldat och har stor erfarenhet av strid och säkerhetsarbete. Han är mycket erfaren inom militära operationer.\n\n## ARBETSUPPGIFTER\nSom vakt:\n- Skyddar Lailas hem\n- Ser till att ingen obehörig kommer nära\n- Säkerhetsarbete\n- Patrullering\n\n## KARAKTÄR\n- Robust och vältränad\n- Lojal och vaksam\n- Stor erfarenhet av strid\n- Tidigare soldat\n\n## KOPPLINGAR\n- **Arbetsgivare:** Laila al-Jen\n- **Position:** Vakt\n- **Chef:** Rashid ibn-Khalid (vaktkapten)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3",
+      "roll": "Snickare, hantverkare"
     },
     {
       "namn": "Jamil al-Baz",
@@ -1331,7 +1451,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Baz-familjen",
       "kapitel": null,
-      "beskrivning": "# JAMIL AL-BAZ\n**Medlem av Baz-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# JAMIL AL-BAZ\n**Medlem av Baz-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Jeorg Rask",
@@ -1345,59 +1466,16 @@ var wikiData = {
       "beskrivning": "# JEORG RASK\n**Kapten och ägare av Spegelmåne**\n\n## GRUNDINFO\n- **Titel:** Kapten och ägare av Spegelmåne\n- **Ras:** Asharier\n- **Ålder:** 50+ år\n- **Yrke:** Sjökapten\n- **Fartyg:** Spegelmåne (ombyggd vågridare)\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BAKGRUND\nVäderbiten veteran som kan sjön på sina fem fingrar.\n\n**Karriär:**\n- Fd. uppskattad sjöfarare i ashariska sjöförsvaret\n- Fd. lärare på Camards Marinkåristakademi\n- Vid 50 års ålder sadlade om till civil tjänst\n- Tjänstgjorde som styrman i handelshuset Wezi\n- Köpte och rustade upp Spegelmåne (tidigare nästan vrak)\n- Driver nu charterresor runt Mundana, ofta för olika handelshus\n\n## BESKRIVNING\nKapten Rask är känd som en pålitlig och framför allt kompetent man när det gäller försvar av last och besättning. Hans forna tid som marinkårist har satt sina spår, och han väljer alltid kunniga före detta soldater som vakter ombord på resorna.\n\n## SPECIALITET\n**Försvar och säkerhet:**\n- Van vid Korsarkriget (piratverksamhet kring Asharien och Soldarn)\n- Angripen många gånger men har aldrig kapitulerat\n- Hans skepp har aldrig fallit i piraternas händer - vilket retar gallfeber på piraterna\n\n## KARAKTÄR\n- Pålitlig och kompetent\n- Professionell\n- Erfaren och väderbiten\n- Omsorgsfull om passagerare och last\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne (ägare)\n- **Högra hand:** Brigga Kyllo\n- **Styrman:** Malvono Järvik\n- **Besättning:** Dask Ymer (timmerman), Yvan Krell, Rikke Lorm, Jorn Halgon\n- **Fd. arbetsgivare:** Ashariska sjöförsvaret, Camards Marinkåristakademi, Handelshuset Wezi"
     },
     {
-      "namn": "Malvono Järvik",
-      "bild": "malvono.png",
-      "ras": "Okänd",
-      "titel": "Styrman",
-      "status": "levande",
-      "plats": "Spegelmåne",
-      "fraktion": null,
-      "kapitel": "Kapitel 3",
-      "beskrivning": "# MALVONO JÄRVIK\n**Styrman på Spegelmåne**\n\n## GRUNDINFO\n- **Titel:** Styrman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nStyrman på den ombyggda vågridaren Spegelmåne under kapten Jeorg Rask.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
-    },
-    {
-      "namn": "Brigga Kyllo",
-      "bild": "brigga_kyllo.png",
+      "namn": "Jeskia av Nejas",
+      "bild": "JeskiaavNejas.png",
       "ras": "Människa",
-      "titel": "Jeorgs högra hand",
-      "status": "levande",
-      "plats": "Spegelmåne",
-      "fraktion": null,
-      "kapitel": "Kapitel 3",
-      "beskrivning": "# BRIGGA KYLLO\n**Jeorgs högra hand på Spegelmåne**\n\n## GRUNDINFO\n- **Position:** Jeorg Rasks högra hand\n- **Ras:** Troligen asharier\n- **Kön:** Kvinna\n- **Ålder:** Ung\n- **Fartyg:** Spegelmåne\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nEn ung mystisk kvinna som tjänstgör som kapten Jeorg Rasks högra hand ombord på Spegelmåne.\n\n## KARAKTÄR\n- Mystisk\n- Ung men pålitlig nog att vara kaptens högra hand\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask (hans högra hand)"
-    },
-    {
-      "namn": "Dask Ymer",
-      "bild": "Dask_Ymer.png",
-      "ras": "Okänd",
-      "titel": "Timmerman",
-      "status": "levande",
-      "plats": "Spegelmåne",
-      "fraktion": null,
-      "kapitel": "Kapitel 3",
-      "beskrivning": "# DASK YMER\n**Timmerman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Timmerman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nTimmerman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
-    },
-    {
-      "namn": "Yvan Krell",
-      "bild": "yvan_krell.png",
-      "ras": "Okänd",
-      "titel": "Sjöman",
-      "status": "levande",
-      "plats": "Spegelmåne",
-      "fraktion": null,
-      "kapitel": "Kapitel 3",
-      "beskrivning": "# YVAN KRELL\n**Sjöman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Sjöman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nSjöman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
-    },
-    {
-      "namn": "Rikke Lorm",
-      "bild": "Rikke_Lorm.png",
-      "ras": "Okänd",
-      "titel": "Sjöman",
-      "status": "levande",
-      "plats": "Spegelmåne",
-      "fraktion": null,
-      "kapitel": "Kapitel 3",
-      "beskrivning": "# RIKKE LORM\n**Sjöman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Sjöman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nSjöman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
+      "titel": null,
+      "status": "okänd",
+      "plats": "Jarla",
+      "fraktion": "Handelshuset Nejas",
+      "kapitel": null,
+      "beskrivning": "# JESKIA AV NEJAS\n**Köpman och rådman i Jarla**\n\n## GRUNDINFO\n- **Position:** Rådman i Jarlas råd (en av 10 köpmän)\n- **Handelshus:** Handelshuset Nejas\n- **Inflytande:** Medlem i stadens styrande råd\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. En av stadens inflytelserika köpmän.\n\n## SL-ANTECKNINGAR\nEnligt senare händelser (jarla_nu_text.txt) har Handelshuset Nejas stärkt sitt grepp över staden genom att manipulera anklagelser mot Handelshuset Ramiz och använda Skrået (lönnmördargille) för att eliminera konkurrenter. Handelshuset Nejas blev det ledande handelshuset i Jarla.",
+      "roll": "Köpman och rådman"
     },
     {
       "namn": "Jonna Sköldbärare",
@@ -1411,28 +1489,6 @@ var wikiData = {
       "beskrivning": "# JONNA SKÖLDBÄRARE\n**38-årig fd. gränsvakt och garnisonsbefäl från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 38 år\n- **Yrke:** Fd. gränsvakt och garnisonsbefäl\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nJonna Sköldbärare är en erfaren militär från Vargnäset. Som fd. gränsvakt och garnisonsbefäl har hon omfattande erfarenhet av försvar och taktik.\n\n## ROLL PÅ GRENSFORTET\nPå Grensfortet fungerar Jonna som garnisonsbefäl under Gordons ledning. Hennes militära erfarenhet är ovärderlig för fortets försvar.\n\n## KARAKTÄR\n- Professionell och disciplinerad\n- Erfaren i försvar och taktik\n- Stark ledare\n- Lojal men kritisk\n\n## MILITÄR BAKGRUND\n- Fd. gränsvakt (patrullerat Vargnäsets gränser)\n- Garnisonsbefäl (ledde lokala försvarsstyrkor)\n- Stridstränad och taktiskt kunnig\n- Har lett män i strid\n\n## EVAKUERINGEN\n- En av 41 överlevande från Vargnäset\n- Hjälpte organisera försvaret under flykten\n- Källa till militär kompetens för gruppen\n\n## SL-ANTECKNINGAR\nJonna kan vara både en tillgång och en utmaning - hon respekterar kompetens men ifrågasätter beslut hon anser felaktiga. Gordon måste bevisa sitt ledarskap för att vinna hennes fulla förtroende.\n\n## KOPPLINGAR\n- **Gordon:** Samarbetar under, rapporterar till\n- **Tomas Järnhjälm:** Kollega i försvarsarbetet\n- **Grensfortet:** Garnisonsbefäl"
     },
     {
-      "namn": "Jorn Halgon",
-      "bild": "jorn_halgon.png",
-      "ras": "Okänd",
-      "titel": "Gammal sjöman",
-      "status": "levande",
-      "plats": "Spegelmåne",
-      "fraktion": null,
-      "kapitel": "Kapitel 3",
-      "beskrivning": "# JORN HALGON\n**Gammal sjöman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Sjöman\n- **Beskrivning:** Gammal sjöman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nGammal sjöman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
-    },
-    {
-      "namn": "Jeskia av Nejas",
-      "bild": "JeskiaavNejas.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Jarla",
-      "fraktion": "Handelshuset Nejas",
-      "kapitel": null,
-      "beskrivning": "# JESKIA AV NEJAS\n**Köpman och rådman i Jarla**\n\n## GRUNDINFO\n- **Position:** Rådman i Jarlas råd (en av 10 köpmän)\n- **Handelshus:** Handelshuset Nejas\n- **Inflytande:** Medlem i stadens styrande råd\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. En av stadens inflytelserika köpmän.\n\n## SL-ANTECKNINGAR\nEnligt senare händelser (jarla_nu_text.txt) har Handelshuset Nejas stärkt sitt grepp över staden genom att manipulera anklagelser mot Handelshuset Ramiz och använda Skrået (lönnmördargille) för att eliminera konkurrenter. Handelshuset Nejas blev det ledande handelshuset i Jarla."
-    },
-    {
       "namn": "Joran",
       "bild": null,
       "ras": "Människa",
@@ -1444,6 +1500,17 @@ var wikiData = {
       "beskrivning": "# JORAN\n**Tyst sjöman och stamgäst**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Sjöman\n- **Stamlokal:** Den Gyldene Ankaret\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nJoran är en tyst sjöman som praktiskt taget bor på Den Gyldene Ankaret. Han säger sällan något men observerar allt som händer på värdshuset.\n\n## KARAKTÄR\n- Mycket tystlåten\n- Extremt observant\n- Stamgäst på värdshuset\n- Vet mycket om hamnens händelser\n\n## VÄRDE SOM INFORMATIONSKÄLLA\nTrots (eller tack vare) sin tystlåtenhet observerar Joran allt som händer. För de som kan få honom att prata kan han vara en värdefull källa till information om sjöfart, hamnen och Tuzan Rims maritima verksamhet.\n\n## KOPPLINGAR\n- **Stamlokal:** Den Gyldene Ankaret\n- **Arbetsgivare/värd:** Bartol\n- **Yrke:** Sjöman\n- **Plats:** Tuzan Rim, hamnen\n- **Fas:** 3"
     },
     {
+      "namn": "Jorn Halgon",
+      "bild": "jorn_halgon.png",
+      "ras": "Okänd",
+      "titel": "Gammal sjöman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# JORN HALGON\n**Gammal sjöman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Sjöman\n- **Beskrivning:** Gammal sjöman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nGammal sjöman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
+    },
+    {
       "namn": "Jossan Fallvind",
       "bild": "jossan.png",
       "ras": "Människa",
@@ -1452,7 +1519,8 @@ var wikiData = {
       "plats": "Vargnäset (evakuerad)",
       "fraktion": "Vargnäsets invånare",
       "kapitel": "Kapitel 8",
-      "beskrivning": "# JOSSAN FALLVIND\n**Utmärkt bågskytt från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande (evakuerad)\n- **Plats:** Vargnäset → Vitterdal → Grensfortet\n- **Kapitel:** Kapitel 7-8\n- **Specialitet:** Utmärkt bågskytt\n- **Personlighet:** Stolt, ogillar att behöva hjälp\n\n## VARGNÄSETS FÖRSVAR (Kapitel 7)\n- **Position:** 3-4 bågskyttar på taken och höjderna\n- **Förmåga:** Kan identifiera fiendens ledare\n- **Roll i försvaret:** Del av Zentris zon (taken och höjderna)\n- Försvarade Vargnäset från taken, identifierade fientliga ledare\n\n## EVAKUERINGEN (Kapitel 8)\nEvakuerad med de 41 överlevande från Vargnäset. Hatade att behöva gruppens hjälp - stolthet och självständighet gjorde det svårt att acceptera räddning. Men hon följde med. Som Skorda Bergsdotter noterade: \"Hat är bättre än apati. Hat håller dig varm.\"\n\n## RESAN TILL GRENSFORTET (Kapitel 8.5)\nDeltog i resan från Vitterdal till Grensfortet. Höll sig i utkanten av gruppen, irriterad på glädjen i Bergvik. Hennes hat och stolthet höll henne fokuserad.\n\n## KARAKTÄRSDRAG\n- **Stolt:** Ogillar att behöva hjälp\n- **Skicklig:** En av byns bästa bågskyttar\n- **Driven:** Hat och stolthet ger henne energi\n- **Överlevare:** Tog sig genom evakueringen och resan\n\n## SL-ANTECKNINGAR\nJossan är en av byns bästa bågskyttar med viktigt uppdrag att hålla höjderna under försvar. Hennes stolthet och självständighet gör henne till en komplex karaktär - svår att arbeta med men pålitlig i strid."
+      "beskrivning": "# JOSSAN FALLVIND\n**Utmärkt bågskytt från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande (evakuerad)\n- **Plats:** Vargnäset → Vitterdal → Grensfortet\n- **Kapitel:** Kapitel 7-8\n- **Specialitet:** Utmärkt bågskytt\n- **Personlighet:** Stolt, ogillar att behöva hjälp\n\n## VARGNÄSETS FÖRSVAR (Kapitel 7)\n- **Position:** 3-4 bågskyttar på taken och höjderna\n- **Förmåga:** Kan identifiera fiendens ledare\n- **Roll i försvaret:** Del av Zentris zon (taken och höjderna)\n- Försvarade Vargnäset från taken, identifierade fientliga ledare\n\n## EVAKUERINGEN (Kapitel 8)\nEvakuerad med de 41 överlevande från Vargnäset. Hatade att behöva gruppens hjälp - stolthet och självständighet gjorde det svårt att acceptera räddning. Men hon följde med. Som Skorda Bergsdotter noterade: \"Hat är bättre än apati. Hat håller dig varm.\"\n\n## RESAN TILL GRENSFORTET (Kapitel 8.5)\nDeltog i resan från Vitterdal till Grensfortet. Höll sig i utkanten av gruppen, irriterad på glädjen i Bergvik. Hennes hat och stolthet höll henne fokuserad.\n\n## KARAKTÄRSDRAG\n- **Stolt:** Ogillar att behöva hjälp\n- **Skicklig:** En av byns bästa bågskyttar\n- **Driven:** Hat och stolthet ger henne energi\n- **Överlevare:** Tog sig genom evakueringen och resan\n\n## SL-ANTECKNINGAR\nJossan är en av byns bästa bågskyttar med viktigt uppdrag att hålla höjderna under försvar. Hennes stolthet och självständighet gör henne till en komplex karaktär - svår att arbeta med men pålitlig i strid.",
+      "roll": "Bågskytt"
     },
     {
       "namn": "Justus Tullskrivare",
@@ -1463,8 +1531,8 @@ var wikiData = {
       "plats": "Remzian Krack, Caserion",
       "fraktion": "Lady Soffias informationsnätverk",
       "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# JUSTUS TULLSKRIVARE\n\n**Roll:** Tullkontors skrivbiträde\n**Plats:** Remzian Krack (6000 inv, Svarta fortet, Raunfloden-tullar), Caserion\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nJustus syster såldes som slavinna till Cirefa för 8 år sedan (caserisk lag tillåter slaveri i cirefaliska kolonier). Justus var desperat men maktlös. Soffia köpte fri henne via mellanhand och ordnade arbete i Vitterdal. Justus vet att \"någon från Cermira\" räddade hans syster och har lovat att hjälpa.\n\n## Varför väl placerad\n\nRemzian Krack är Caserions viktigaste handelsutpost längs Raunfloden. Alla fartyg som seglar uppströms mot Cermira måste passera här och betala tull. Justus arbetar på tullkontoret och ser ALLA fraktsedlar.\n\n## Rapporterar\n\n- Tullavgifter på Raunfloden (ökade tullar kan skada Vitterdals handel)\n- Vilka fartyg passerar (militära transporter? Truppförflyttningar?)\n- Cirefaliska militära transporter\n- Handelsmönster (ökad vapen-export? Guld-transport?)\n\n## Kontaktmetod\n\nBrevduva med kodade tullrapporter (var 2:a månad). Justus skriver \"tullrapporter\" som ser ut som administrativa dokument men innehåller kodad information.\n\n## Lojalitet\n\n**Mycket hög.** Justus syster är fri och lever ett gott liv i Vitterdal. Han rapporterar allt han ser."
+      "beskrivning": "# JUSTUS TULLSKRIVARE\n\n**Roll:** Tullkontors skrivbiträde\n**Plats:** Remzian Krack (6000 inv, Svarta fortet, Raunfloden-tullar), Caserion\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nJustus syster såldes som slavinna till Cirefa för 8 år sedan (caserisk lag tillåter slaveri i cirefaliska kolonier). Justus var desperat men maktlös. Soffia köpte fri henne via mellanhand och ordnade arbete i Vitterdal. Justus vet att \"någon från Cermira\" räddade hans syster och har lovat att hjälpa.\n\n## Varför väl placerad\n\nRemzian Krack är Caserions viktigaste handelsutpost längs Raunfloden. Alla fartyg som seglar uppströms mot Cermira måste passera här och betala tull. Justus arbetar på tullkontoret och ser ALLA fraktsedlar.\n\n## Rapporterar\n\n- Tullavgifter på Raunfloden (ökade tullar kan skada Vitterdals handel)\n- Vilka fartyg passerar (militära transporter? Truppförflyttningar?)\n- Cirefaliska militära transporter\n- Handelsmönster (ökad vapen-export? Guld-transport?)\n\n## Kontaktmetod\n\nBrevduva med kodade tullrapporter (var 2:a månad). Justus skriver \"tullrapporter\" som ser ut som administrativa dokument men innehåller kodad information.\n\n## Lojalitet\n\n**Mycket hög.** Justus syster är fri och lever ett gott liv i Vitterdal. Han rapporterar allt han ser.",
+      "källa": "EM-R001"
     },
     {
       "namn": "Kaelar Stålsvärd",
@@ -1475,7 +1543,8 @@ var wikiData = {
       "plats": "Vitterdal",
       "fraktion": "Jarladömet Vitterdal",
       "kapitel": null,
-      "beskrivning": "# KAELAR STÅLSVÄRD\n\n**Kapten för Hagges hussoldate, tidigare ledare för legosoldatkompaniet \"Stålsvärds Kavalerister\"**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Allierad, militär ledare\n\n## BAKGRUND\n\nKaelar ledde legosoldatkompaniet \"Stålsvärds Kavalerister\" som bevakade Tirakgravens utgrävning. Efter de traumatiska händelserna där utvecklade han alkoholproblem.\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n- Ledde bevakningsstyrkan\n- Såg demonen delvis frigöras\n- Förlorade kontroll när Ibran/Tamron stal bindningsföremålen (för att skydda dem)\n\n### Efter Tirakgraven\n- Utvecklade alkoholproblem\n- Kavalerister upplöstes eller spreds\n\n### Vitterdal (Fas 7)\n- Övervann sitt alkoholproblem\n- Accepterade fast anställning hos Hagge\n- Nu kapten för hussoldate\n\n## KARAKTÄRSDRAG\n\n- **Erfaren officer:** Decennier som legosoldat\n- **Kämpar med demon:** Övervann alkoholism\n- **Lojal:** När han väl lovar, håller han\n\n## RELATIONER\n\n### Nuvarande\n- **Hagge:** Arbetsgivare och jarl\n- **Gordon och gruppen:** Tidigare soldatkamrater\n\n### Tidigare\n- **Stålsvärds Kavalerister:** Hans före detta kompani\n- **Serafina Eldstav:** Förrådare\n\n## NUVARANDE SITUATION\n\nKaelar har hittat stabilitet som Hagges huskapten i Vitterdal. Han har återtagit sin militära skicklighet och är en pålitlig allierad.\n\n## SL-ANTECKNINGAR\n\n- Kan användas som militär rådgivare\n- Hans förflutna med alkoholism ger djup\n- Kopplingen till Tirakgraven kan aktiveras senare"
+      "beskrivning": "# KAELAR STÅLSVÄRD\n\n**Kapten för Hagges hussoldate, tidigare ledare för legosoldatkompaniet \"Stålsvärds Kavalerister\"**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Allierad, militär ledare\n\n## BAKGRUND\n\nKaelar ledde legosoldatkompaniet \"Stålsvärds Kavalerister\" som bevakade Tirakgravens utgrävning. Efter de traumatiska händelserna där utvecklade han alkoholproblem.\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n- Ledde bevakningsstyrkan\n- Såg demonen delvis frigöras\n- Förlorade kontroll när Ibran/Tamron stal bindningsföremålen (för att skydda dem)\n\n### Efter Tirakgraven\n- Utvecklade alkoholproblem\n- Kavalerister upplöstes eller spreds\n\n### Vitterdal (Fas 7)\n- Övervann sitt alkoholproblem\n- Accepterade fast anställning hos Hagge\n- Nu kapten för hussoldate\n\n## KARAKTÄRSDRAG\n\n- **Erfaren officer:** Decennier som legosoldat\n- **Kämpar med demon:** Övervann alkoholism\n- **Lojal:** När han väl lovar, håller han\n\n## RELATIONER\n\n### Nuvarande\n- **Hagge:** Arbetsgivare och jarl\n- **Gordon och gruppen:** Tidigare soldatkamrater\n\n### Tidigare\n- **Stålsvärds Kavalerister:** Hans före detta kompani\n- **Serafina Eldstav:** Förrådare\n\n## NUVARANDE SITUATION\n\nKaelar har hittat stabilitet som Hagges huskapten i Vitterdal. Han har återtagit sin militära skicklighet och är en pålitlig allierad.\n\n## SL-ANTECKNINGAR\n\n- Kan användas som militär rådgivare\n- Hans förflutna med alkoholism ger djup\n- Kopplingen till Tirakgraven kan aktiveras senare",
+      "roll": "Kapten för Hagges hussoldate"
     },
     {
       "namn": "Kaelthar Klerk",
@@ -1486,7 +1555,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# KAELTHAR KLERK\n**Stridande i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Ras:** Cirefalier\n- **Roll:** Stridande\n- **Utrustning:** Yxa, sköld\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Stred vid Tirakgraven."
+      "beskrivning": "# KAELTHAR KLERK\n**Stridande i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Ras:** Cirefalier\n- **Roll:** Stridande\n- **Utrustning:** Yxa, sköld\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Stred vid Tirakgraven.",
+      "roll": "Stridande"
     },
     {
       "namn": "Kairkhan Nayman",
@@ -1508,7 +1578,8 @@ var wikiData = {
       "plats": "Vargnäset",
       "fraktion": "Desertörer",
       "kapitel": null,
-      "beskrivning": "# KALD SILVERMASK\n**Desertörledare**\n\n## GRUNDINFO\n- **Roll:** Ledare för första vågen desertörer (5 man)\n- **Specialitet:** Bågskyttar\n- **Status:** Död (dog vid anfallet mot Vargnäset)\n- **Taktik:** Avleda och starta bränder, fokuserar på nordvästra palissaden\n- **Svaghet:** Återvänder till skogen vid betydande motstånd\n- **Beteende:** Förblir på avstånd, skjuter brinnande pilar, undviker direkt konfrontation\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ledde första vågen i anfallet på Vargnäset. Dog under anfallet.\n\n## SL-ANTECKNINGAR\nKald var en taktisk ledare som föredrog avståndsstrid. Han använde brandpilar för att skapa kaos och avleda försvaret."
+      "beskrivning": "# KALD SILVERMASK\n**Desertörledare**\n\n## GRUNDINFO\n- **Roll:** Ledare för första vågen desertörer (5 man)\n- **Specialitet:** Bågskyttar\n- **Status:** Död (dog vid anfallet mot Vargnäset)\n- **Taktik:** Avleda och starta bränder, fokuserar på nordvästra palissaden\n- **Svaghet:** Återvänder till skogen vid betydande motstånd\n- **Beteende:** Förblir på avstånd, skjuter brinnande pilar, undviker direkt konfrontation\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ledde första vågen i anfallet på Vargnäset. Dog under anfallet.\n\n## SL-ANTECKNINGAR\nKald var en taktisk ledare som föredrog avståndsstrid. Han använde brandpilar för att skapa kaos och avleda försvaret.",
+      "roll": "Desertörledare"
     },
     {
       "namn": "Kapten Eamon",
@@ -1533,6 +1604,18 @@ var wikiData = {
       "beskrivning": "# KAPTEN MORDICUS HELGA\n**Ledare för Bronshjälmarna**\n\n## GRUNDINFO\n- **Namn:** Mordicus Helga\n- **Titel:** Kapten\n- **Ras:** Människa\n- **Kön:** Kvinna\n- **Yrke:** Militärkapten\n- **Kompani:** Bronshjälmarna\n- **Destination:** Damarien\n- **Status:** Levande\n- **Första omnämnande:** Fas 9\n\n## BESKRIVNING\nKapten Mordicus Helga är ledaren för **Bronshjälmarna**, ett soldkompani som värvar unga män och kvinnor för tjänst i Damarien. Kompaniet ska österut över havet där Storfursten rustar för krig.\n\n## BRONSHJÄLMARNA\nBronshjälmarna är tydligen ett välkänt soldkompani som tar värvning av unga äventyrssökare. Bland deras nyrekryterade finns Ethan Nahrzezia, som inspirerad av sin brors bedrifter sökte sig till militärtjänst.\n\n## DESTINATION OCH UPPDRAG\nKompaniet ska:\n- Österut över havet till **Damarien**\n- Tjänstgöra där Storfursten rustar för krig\n- Detta är ett farligt uppdrag som oroar familjer som Margarets\n\n## ROLL I KAMPANJEN\nKapten Helga är en indirekt men viktig figur - hon har värvar Ethan Nahrzezia, vilket skapar personligt drama för Gordon. Margarets brev ber Gordon använda sina kontakter för att hitta sin bror, vilket potentiellt kan leda till möte med Kapten Helga.\n\n## KOPPLINGAR\n- **Militärkompani:** Bronshjälmarna\n- **Rekryt:** Ethan Nahrzezia\n- **Destination:** Damarien (Storfurstens krig)\n- **Relation:** Indirekt kopplad till Gordon genom hans bror"
     },
     {
+      "namn": "Kapten Nilmar \"Isnavigatorn\"",
+      "bild": "nilmar1.png",
+      "ras": "Tirak",
+      "titel": "Kapten på Frostnymfen",
+      "status": "levande",
+      "plats": "Frostnymfen (Raunfloden)",
+      "fraktion": "Lady Soffias nätverk",
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# KAPTEN NILMAR \"ISNAVIGATORN\"\n**Tirakisk flodpråmskapten, lojal till Lady Soffia**\n\n## GRUNDINFO\n- **Ras:** Tirak (stor build)\n- **Titel:** Kapten på Frostnymfen\n- **Smeknamn:** \"Isnavigatorn\"\n- **Fartyg:** Frostnymfen (18-meter flodpråm)\n- **Status:** Levande\n\n## UTSEENDE\n- Imponerande tirakisk man med stor kroppsbyggnad\n- Väderbit ansikte med frostspår i skägget\n- **Vänsteröronen saknas** (gammal förfrysningsskada)\n- Stadig, kommandogivande röst\n\n## EXPERTIS\nNilmar är mästare på att navigera Raunflodens farliga vatten:\n- Nästan övernaturlig känsla för flodens strömmar\n- Navigerar mellan isflak innan de syns\n- Extrem precision i trånga passager\n- Expert på isbrytning\n\n## LOJALITET\nTjänar Lady Soffia, del av hennes motståndsnätverk:\n- Transporterar viktiga personer i hemlighet\n- Betrodd med känsliga uppdrag\n- Arbetar nära Selene \"Silveröga\"\n\n## I KAMPANJEN\n**Fas 8:** Transporterade gruppen mot Vitterdal:\n- Navigerade genom saboterade isbarriärer\n- Undvek Systrarna och kungens patrullers ljussignaler\n- Lämnade gruppen vid forsen, lovade möta dem senare\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Underbefäl:** Selene \"Silveröga\"\n- **Uppdragsgivare:** Lady Soffia av Vitterdal",
+      "roll": "Okänd"
+    },
+    {
       "namn": "Karim al-Jafar",
       "bild": "karim-al-jafar.png",
       "ras": "Människa",
@@ -1552,7 +1635,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# KARIM BERÄTTAREN\n\n**Berättare och historiesamlare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Berättare, muntlig historiker\n\n## BAKGRUND\nKarim är känd i Muhad för sina berättelser och sagor. Han samlar historier från resande och delar dem på basarer och värdshus.\n\n## I KAMPANJEN\n- Fas 3: Möttes i Muhad\n- Potentiell informationskälla om regionen\n\n## SL-ANTECKNINGAR\n- Vet många hemligheter dolda i berättelser\n- Kan ge ledtrådar genom sagor\n- Kontakt för information om Muhad"
+      "beskrivning": "# KARIM BERÄTTAREN\n\n**Berättare och historiesamlare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Berättare, muntlig historiker\n\n## BAKGRUND\nKarim är känd i Muhad för sina berättelser och sagor. Han samlar historier från resande och delar dem på basarer och värdshus.\n\n## I KAMPANJEN\n- Fas 3: Möttes i Muhad\n- Potentiell informationskälla om regionen\n\n## SL-ANTECKNINGAR\n- Vet många hemligheter dolda i berättelser\n- Kan ge ledtrådar genom sagor\n- Kontakt för information om Muhad",
+      "roll": "Berättare, informationskälla"
     },
     {
       "namn": "Karim ibn-Hassan",
@@ -1632,6 +1716,18 @@ var wikiData = {
       "beskrivning": "# Khabin Ben Kemal\n**Utropare vid slavauktionerna på Järntorget i Jen.** Hans röst ekar över slavmarknaden när han presenterar dagens 'varor' för köparna."
     },
     {
+      "namn": "Khalid al-Tamir",
+      "bild": "Khalid_al-Tamir.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Muhad",
+      "fraktion": "Tamir-familjen",
+      "kapitel": null,
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# KHALID AL-TAMIR\n**Medlem av Tamir-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
+    },
+    {
       "namn": "Khalid ibn-Mustafa",
       "bild": "Khalid_al-Tamir.png",
       "ras": "Människa",
@@ -1643,6 +1739,17 @@ var wikiData = {
       "beskrivning": "# KHALID IBN-MUSTAFA\n**Transaktionsansvarig på slavkontoret**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Transaktionsansvarig\n- **Arbetsplats:** Huvudkontoret för Slavregistrering och Transaktioner\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nKhalid ibn-Mustafa är en ung man med en vänlig uppsyn och ett noggrant sinne för detaljer. Han bär alltid prydliga kläder och är mycket organiserad.\n\n## BAKGRUND\nKhalid är nyanställd men har snabbt visat sig vara mycket kompetent och pålitlig i sitt arbete.\n\n## ARBETSUPPGIFTER\nSom transaktionsansvarig:\n- Bokför köp och försäljningar\n- Utfärdar slavcertifikat\n- Hanterar transaktionsdokumentation\n- Säkerställer noggrannhet\n\n## KARAKTÄR\n- Ung och ny\n- Vänlig uppsyn\n- Noggrant sinne för detaljer\n- Mycket organiserad\n- Kompetent och pålitlig\n\n## KOPPLINGAR\n- **Arbetsplats:** Huvudkontoret för Slavregistrering\n- **Position:** Transaktionsansvarig\n- **Chef:** Amir ibn-Farouk\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
+      "namn": "Klas Hällström",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# KLAS HÄLLSTRÖM\n**7-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 7 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n7-årig pojke från Vargnäset. Son till Magnus Hällström. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Magnus Hällström\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
       "namn": "Kolaren Svart-Erik",
       "bild": null,
       "ras": "Människa",
@@ -1652,6 +1759,29 @@ var wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 8.5",
       "beskrivning": "# Kolaren Svart-Erik\n\n**Bergviks kolbrännare, bor vid kolmilan utanför byn.**\n\nHud, kläder och hår permanent grå-svarta av kolstoft. Folk viskar att han sett De förändrade på nära håll. Han pratar om det efter tillräckligt med öl - men versionen ändras varje gång.\n\n**Konflikt:** Vill expandera kolmilan men det kräver skog som timmerhuggarna ser som sin."
+    },
+    {
+      "namn": "Kommendör Aldrich Järnkors",
+      "bild": "kom_aldritch.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "död",
+      "plats": "Raunflodens strand",
+      "fraktion": "Arvorns Hammare",
+      "kapitel": null,
+      "beskrivning": "# KOMMENDÖR ALDRICH JÄRNKORS ⚔️\n\n**Kommendör i Arvorns Hammare, föll i strid vid Raunflodens strand**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Död\n- **Första fas:** Fas 8 (omnämnd)\n- **Roll:** Antagonist, förföljare\n- **Död:** Episk strid vid Raunflodens strand\n\n## BAKGRUND\n\nAldrich Järnkors var kommendör i Arvorns Hammare och tidigare kollega till Corvus Askhår. Han ledde jakten på Corvus med 7 tempelriddare.\n\n## KRITISKA HÄNDELSER\n\n### Efter Corvus vändning (Fas 8)\n- Tilldelad att jaga Corvus\n- 7 tempelriddare under hans kommando\n- Trodde att Corvus var kidnappad/kontrollerad av kättare\n\n### Evakueringen (Fas 9)\n- Jagade gruppen genom Drunok\n- Gruppen undvek honom genom Corvus insiderkunskap\n\n### DÖDEN - Raunflodens strand\n- Mötte gruppen i episk konfrontation vid Raunflodens strand\n- Integritet i strid till slutet\n- Föll när Systrarna ingrep i striden\n- Död av högt pris i kampen\n\n## KARAKTÄRSDRAG\n\n- **Fanatisk:** Tro på ordenens mission\n- **Kompetent:** Vald för uppgiften av en anledning\n- **Felaktig övertygelse:** Trodde Corvus var kontrollerad, inte vänd\n- **Hedersam:** Integritet även i nederlag\n\n## RELATIONER\n\n### Arvorns Hammare\n- **Corvus Askhår:** Före detta kollega, senare motståndare\n- **7 tempelriddare:** Hans styrka\n\n### Gruppen\n- **Huvudmål:** Corvus\n- **Kollateral:** Resten av gruppen som \"kättare\"\n\n## NUVARANDE SITUATION\n\nDöd. Hans kampen mot gruppen avslutas vid Raunflodens strand.\n\n## SL-ANTECKNINGAR\n\n- Respektabel antagonist med egen agenda\n- Föll för sin övertygelse\n- Systrarna ingrep i det kritiska mötet\n- Episk strid markerade en vändpunkt i kampanjen",
+      "roll": "Antagonist - föll i strid"
+    },
+    {
+      "namn": "Kommendör Reval",
+      "bild": "arvorns.png",
+      "ras": "Människa",
+      "titel": "Kommendör i Arvorns Hammare",
+      "status": "levande",
+      "plats": "Jargien (på väg till Vargnäset)",
+      "fraktion": "Arvorns Hammare",
+      "kapitel": "Kapitel 4",
+      "beskrivning": "# KOMMENDÖR REVAL\n**Kommendör i Arvorns Hammare - transporterar mystisk fånge**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Titel:** Kommendör\n- **Fraktion:** Arvorns Hammare (Daakkyrkans militanta orden)\n- **Status:** Levande\n- **Plats:** Jargien, på väg till Vargnäset\n- **Kapitel:** Kapitel 4 (Jargien)\n\n## BESKRIVNING\nEn reslig man klädd i svart rustning med röda inslag och en mantel prydd med Daaksymbolen. Ledare för ett dussin soldater som eskorterade en tungt bevakad vagn med en kvinnlig fånge.\n\n## KARAKTÄRSDRAG\n- **Auktoritär:** Kall auktoritet\n- **Metodisk:** Systematisk genomsökning av karavanen\n- **Känslokall:** Uttryckslöst ansikte även vid rop från fången\n- **Disciplinerad:** Håller sina män i stram ordning\n\n## KRITISKA HÄNDELSER\n\n### Mötet med Dorins karavan (Dag 13)\n**Inspektion:**\n- Stoppade karavanen för inspektion\n- \\\"På kejsarens och Daaks uppdrag\\\"\n- Systematisk genomsökning efter \\\"förbjuden aktivitet\\\"\n- Männen genomsökte vagnarna (lönnfack räddade situationen)\n\n**Fångtransporten:**\n- Eskorterade vagn med kvinnlig fånge\n- Vagn isolerad med tjocka tyger över gallerfönster\n- Soldaterna nervösa (mer än vanlig pliktuppfyllelse)\n\n**Fångens rop:**\n- Kvinna skriker på hjälp från vagnen\n- \\\"Hon ljuger! De är inte från templet! De tog mig från—\\\" (avbruten)\n- Reval: \\\"En farlig häxa med förmågan att förvränga sinnen\\\"\n- Zentri kände hur något pulserade mot hans hud vid vagnen\n\n**Avslutning:**\n- Efter inspektion: \\\"Var på er vakt när ni närmar er Vargnäset\\\"\n- \\\"Det finns... ohälsosamma element i trakten\\\"\n- Tog en sidoväg mot okänt mål\n\n## FRÅGETECKEN\n\n### Fångens identitet\n- Vem är kvinnan?\n- Varför till Vargnäset istället för större stad?\n- Verklig häxa eller oskyldig?\n- Zentri kände magisk närvaro - vad betydde det?\n\n### Revals uppdrag\n- Legitim Arvorns Hammare-operation?\n- Eller något mer sinistert?\n- Varför så nervösa soldater?\n- Koppling till försvinnandena Jakob berättade om?\n\n### Den grå gestalten\nDirekt efter mötet observerade den grå gestalten gruppen. Samband?\n\n## BETYDELSE\n**Mystik:**\nMötet väckte fler frågor än svar. Något var fel med transporten, men gruppen kunde inte ingripa i Jargien.\n\n**Varning:**\nRevals kommentar om \\\"ohälsosamma element\\\" kring Vargnäset förebådade kommande faror.\n\n## RELATIONER\n- **Arvorns Hammare:** Kommendör\n- **12 soldater:** Hans trupp\n- **Okänd kvinnlig fånge:** Transporterar\n- **Dorin Kallhammare:** Diplomatisk interaktion\n- **Gruppen:** Misstänksam observation\n\n## SL-ANTECKNINGAR\n- Potentiell återkommande antagonist\n- Fången kan vara viktig senare\n- Koppling till Vargnäsets mysterier?\n- Legitimt Daakkyrkan eller korrupt operation?\n- Zentris magiska känsla - vad var det?"
     },
     {
       "namn": "Konrad",
@@ -1706,7 +1836,8 @@ var wikiData = {
       "plats": "Jaktar demonspår",
       "fraktion": "Systrarna (Zorian-orden)",
       "kapitel": null,
-      "beskrivning": "# LADY ISADORA\n\n**Den mörkhåriga systern i Zorian-orden, jagar demonspår**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Utseende:** Mörkt hår\n- **Särskilt drag:** Den av systrarna som fortfarande kan se\n- **Status:** Levande, aktiv jakt\n- **Första fas:** Fas 6 (Vargnäset)\n- **Roll:** Antagonist, förföljare\n\n## BAKGRUND\n\nLady Isadora är medlem av \"Systrarna\" - Zorian-ordens specialjägare som spårar demonisk aktivitet. Hon är den mörkhåriga systern och till skillnad från sina kollegor har hon fortfarande sin syn intakt.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset (Fas 6)\n**Jakten på Zentri:**\n- Ledde attack för att fånga Zentri\n- Kände demonessensen i ringen\n- Såg Zentris blodsmagiska attack\n- Förlorade jakten när Zentri försvann\n\n### Efter Zentris försvinnande\n- Fortsätter spåra demonaktivitet\n- Observerar gruppen på avstånd\n- Väntar på rätt tillfälle\n\n## KARAKTÄRSDRAG\n\n- **Methodisk:** Spårar tålmodigt\n- **Fanatisk:** Zorian-ordens uppdrag är heligt\n- **Intelligent:** Mer sofistikerad än Arvorns Hammare\n- **Tålmodig:** Väntar på rätt ögonblick\n- **Seende:** Till skillnad från vissa andra systrar kan hon fortfarande se\n\n## RELATIONER\n\n### Zorian-orden\n- **Syster Moira:** Jagtkollega\n- **Systrarna:** Elitorden\n\n### Jagtoffer\n- **Zentri:** Primärt mål (nu försvunnen)\n- **Gruppen:** Sekundära mål/observationsobjekt\n\n## NUVARANDE SITUATION\n\nIsadora fortsätter jaga demonspår medan gruppen är i Skugglandet. Hon observerar och samlar information.\n\n## SL-ANTECKNINGAR\n\n- Mer sofistikerad antagonist än Arvorns Hammare\n- Arbetar med finesse, inte brutalitet\n- Kan bli allierad mot demonen eller fortsatt fiende\n- Väntar på att gruppen återvänder med Zentri\n- Den mörkhåriga systern som fortfarande kan se - viktig distinktion"
+      "beskrivning": "# LADY ISADORA\n\n**Den mörkhåriga systern i Zorian-orden, jagar demonspår**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Utseende:** Mörkt hår\n- **Särskilt drag:** Den av systrarna som fortfarande kan se\n- **Status:** Levande, aktiv jakt\n- **Första fas:** Fas 6 (Vargnäset)\n- **Roll:** Antagonist, förföljare\n\n## BAKGRUND\n\nLady Isadora är medlem av \"Systrarna\" - Zorian-ordens specialjägare som spårar demonisk aktivitet. Hon är den mörkhåriga systern och till skillnad från sina kollegor har hon fortfarande sin syn intakt.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset (Fas 6)\n**Jakten på Zentri:**\n- Ledde attack för att fånga Zentri\n- Kände demonessensen i ringen\n- Såg Zentris blodsmagiska attack\n- Förlorade jakten när Zentri försvann\n\n### Efter Zentris försvinnande\n- Fortsätter spåra demonaktivitet\n- Observerar gruppen på avstånd\n- Väntar på rätt tillfälle\n\n## KARAKTÄRSDRAG\n\n- **Methodisk:** Spårar tålmodigt\n- **Fanatisk:** Zorian-ordens uppdrag är heligt\n- **Intelligent:** Mer sofistikerad än Arvorns Hammare\n- **Tålmodig:** Väntar på rätt ögonblick\n- **Seende:** Till skillnad från vissa andra systrar kan hon fortfarande se\n\n## RELATIONER\n\n### Zorian-orden\n- **Syster Moira:** Jagtkollega\n- **Systrarna:** Elitorden\n\n### Jagtoffer\n- **Zentri:** Primärt mål (nu försvunnen)\n- **Gruppen:** Sekundära mål/observationsobjekt\n\n## NUVARANDE SITUATION\n\nIsadora fortsätter jaga demonspår medan gruppen är i Skugglandet. Hon observerar och samlar information.\n\n## SL-ANTECKNINGAR\n\n- Mer sofistikerad antagonist än Arvorns Hammare\n- Arbetar med finesse, inte brutalitet\n- Kan bli allierad mot demonen eller fortsatt fiende\n- Väntar på att gruppen återvänder med Zentri\n- Den mörkhåriga systern som fortfarande kan se - viktig distinktion",
+      "roll": "Antagonist - jagar demonringen"
     },
     {
       "namn": "Lady Soffia av Vitterdal",
@@ -1717,7 +1848,8 @@ var wikiData = {
       "plats": "Vitterdal",
       "fraktion": "Jarladömet Vitterdal",
       "kapitel": null,
-      "beskrivning": "# LADY SOFFIA AV VITTERDAL\n\n**Hagges mor, tidigare de facto härskare av Vitterdal**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 3 (arrangerade uppdraget)\n- **Roll:** Politisk aktör, gruppens ursprungliga kontakt\n\n## BAKGRUND\n\nLady Soffia var Vitterdals verkliga härskare under Talarras formella styre. När hennes yngre son Hagge förvisades och försvann, arrangerade hon i hemlighet hans räddning.\n\n## VIKTIGA HÄNDELSER\n\n### Anlitande av gruppen (Fas 3)\n- Kontaktade gruppen för att hitta och befria Hagge\n- Kände till hans slaveri i Muhad\n- Säkrade resurser för räddningen\n\n### Hagges återkomst (Fas 7)\n- Överlycklig över sonens återkomst\n- Stöttade hans legitimering som jarl\n- Säkrade jarladömets framtid\n\n### Sändande av Thrakka (Fas 6)\n- Skickade Thrakka som förstärkning till gruppen\n- Visade fortsatt engagemang för deras säkerhet\n\n## KARAKTÄRSDRAG\n\n- **Politiskt skicklig:** Manövrerade i det komplexa hovet\n- **Beskyddande mor:** Allt för sina söner\n- **Strategisk:** Långsiktig planering\n\n## RELATIONER\n\n### Familj\n- **Hagge:** Yngre son, nu jarl\n- **Talarra:** Äldre son (död)\n\n### Gruppen\n- **Ursprunglig uppdragsgivare:** Etablerade kontakten\n- **Fortsatt allierad:** Sänt förnödenheter till Grensfortet\n\n## NUVARANDE SITUATION\n\nLady Soffia fortsätter vara inflytelserik i Vitterdals politik, stödjande Hagges styre bakom kulisserna.\n\n## SL-ANTECKNINGAR\n\n- Kan användas för politiska intriger\n- Har långtgående kontakter\n- Hennes motiv är alltid kopplat till Vitterdals bästa\n- **[Se hennes kompletta informationsnätverk](soffias-natverk.html)** - 20 kunskapare över hela Mundana"
+      "beskrivning": "# LADY SOFFIA AV VITTERDAL\n\n**Hagges mor, tidigare de facto härskare av Vitterdal**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 3 (arrangerade uppdraget)\n- **Roll:** Politisk aktör, gruppens ursprungliga kontakt\n\n## BAKGRUND\n\nLady Soffia var Vitterdals verkliga härskare under Talarras formella styre. När hennes yngre son Hagge förvisades och försvann, arrangerade hon i hemlighet hans räddning.\n\n## VIKTIGA HÄNDELSER\n\n### Anlitande av gruppen (Fas 3)\n- Kontaktade gruppen för att hitta och befria Hagge\n- Kände till hans slaveri i Muhad\n- Säkrade resurser för räddningen\n\n### Hagges återkomst (Fas 7)\n- Överlycklig över sonens återkomst\n- Stöttade hans legitimering som jarl\n- Säkrade jarladömets framtid\n\n### Sändande av Thrakka (Fas 6)\n- Skickade Thrakka som förstärkning till gruppen\n- Visade fortsatt engagemang för deras säkerhet\n\n## KARAKTÄRSDRAG\n\n- **Politiskt skicklig:** Manövrerade i det komplexa hovet\n- **Beskyddande mor:** Allt för sina söner\n- **Strategisk:** Långsiktig planering\n\n## RELATIONER\n\n### Familj\n- **Hagge:** Yngre son, nu jarl\n- **Talarra:** Äldre son (död)\n\n### Gruppen\n- **Ursprunglig uppdragsgivare:** Etablerade kontakten\n- **Fortsatt allierad:** Sänt förnödenheter till Grensfortet\n\n## NUVARANDE SITUATION\n\nLady Soffia fortsätter vara inflytelserik i Vitterdals politik, stödjande Hagges styre bakom kulisserna.\n\n## SL-ANTECKNINGAR\n\n- Kan användas för politiska intriger\n- Har långtgående kontakter\n- Hennes motiv är alltid kopplat till Vitterdals bästa\n- **[Se hennes kompletta informationsnätverk](soffias-natverk.html)** - 20 kunskapare över hela Mundana",
+      "roll": "Hagges mor, tidigare de facto härskare"
     },
     {
       "namn": "Laila al-Jen",
@@ -1728,7 +1860,8 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": "Slavhandlare i Jen",
       "kapitel": null,
-      "beskrivning": "# LAILA AL-JEN\n\n**Slavhandlare i Jen, Muhad - barnets mor**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 3 (Muhad)\n- **Roll:** Komplicerad figur - antagonist och allierad\n\n## BAKGRUND\n\nLaila al-Jen är en slavhandlare verksam i staden Jen i Muhad. Hon höll Hagge som slav.\n\n## KRITISKA HÄNDELSER\n\n### Muhad (Fas 3)\n**Hagges befrielse:**\n- Ägde Hagge som slav\n- Krävde att Hagge skulle ge henne ett barn som pris för frihet\n- Gruppen skyddade paret under den alkemiska ritualen\n- Malik (före detta arbetsgivare?) attackerade under akten\n\n### Efter Muhads händelser\n- Barnet lämnades i Jen med Laila\n- Hagge återvände till Vitterdal\n\n## KARAKTÄRSDRAG\n\n- **Pragmatisk:** Krävde barn som pris\n- **Sårbar:** Ville ha barn på sina villkor\n- **Komplex:** Både offer och förövare\n\n## RELATIONER\n\n### Barnet\n- **Hagge:** Barnets far, slaveri-offer\n- **Barnet:** Uppväxer i Jen\n\n### Handel\n- **Slavhandel i Jen:** Hennes verksamhet\n\n## NUVARANDE SITUATION\n\nLaila lever i Jen med barnet. Hennes framtida handlingar är okända - kan bli allierad eller antagonist beroende på omständigheter.\n\n## SL-ANTECKNINGAR\n\n- Barnet kan bli framtida komplikation\n- Laila kan kräva något av Hagge/gruppen senare\n- Moraliskt komplex situation - slavhandlare men också mänsklig\n- Kan användas för Muhad-relaterade äventyr"
+      "beskrivning": "# LAILA AL-JEN\n\n**Slavhandlare i Jen, Muhad - barnets mor**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande\n- **Första fas:** Fas 3 (Muhad)\n- **Roll:** Komplicerad figur - antagonist och allierad\n\n## BAKGRUND\n\nLaila al-Jen är en slavhandlare verksam i staden Jen i Muhad. Hon höll Hagge som slav.\n\n## KRITISKA HÄNDELSER\n\n### Muhad (Fas 3)\n**Hagges befrielse:**\n- Ägde Hagge som slav\n- Krävde att Hagge skulle ge henne ett barn som pris för frihet\n- Gruppen skyddade paret under den alkemiska ritualen\n- Malik (före detta arbetsgivare?) attackerade under akten\n\n### Efter Muhads händelser\n- Barnet lämnades i Jen med Laila\n- Hagge återvände till Vitterdal\n\n## KARAKTÄRSDRAG\n\n- **Pragmatisk:** Krävde barn som pris\n- **Sårbar:** Ville ha barn på sina villkor\n- **Komplex:** Både offer och förövare\n\n## RELATIONER\n\n### Barnet\n- **Hagge:** Barnets far, slaveri-offer\n- **Barnet:** Uppväxer i Jen\n\n### Handel\n- **Slavhandel i Jen:** Hennes verksamhet\n\n## NUVARANDE SITUATION\n\nLaila lever i Jen med barnet. Hennes framtida handlingar är okända - kan bli allierad eller antagonist beroende på omständigheter.\n\n## SL-ANTECKNINGAR\n\n- Barnet kan bli framtida komplikation\n- Laila kan kräva något av Hagge/gruppen senare\n- Moraliskt komplex situation - slavhandlare men också mänsklig\n- Kan användas för Muhad-relaterade äventyr",
+      "roll": "Komplicerad antagonist/allierad"
     },
     {
       "namn": "Laila bint-Ali",
@@ -1753,17 +1886,6 @@ var wikiData = {
       "beskrivning": "# LAILA BINT-FARID\n**Ägare av Tysta Källan**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Värdshusägare\n- **Arbetsplats:** Tysta Källan\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nLaila bint-Farid är en vänlig och andlig kvinna med en lugnande närvaro. Hon driver Tysta Källan, en fridfull vinstuga nära Jens tempel.\n\n## VERKSAMHET\nLaila driver sitt värdshus med:\n- Andlig och lugn atmosfär\n- Fokus på meditation och ro\n- Vegetariska rätter och örtteer\n- Enkeltmen elegant inredning\n\n### Värdshuset\nTysta Källan är känt för:\n- Stillhet och eftertanke\n- Inomhusfontän med porlande vatten\n- Lugnande färger och mjuka kuddar\n- Lärda och andliga sökare som gäster\n\n## KARAKTÄR\n- Vänlig och andlig\n- Lugnande närvaro\n- Skapar atmosfär av frid\n- Respekterad av de andliga\n\n## KOPPLINGAR\n- **Arbetsplats:** Tysta Källan\n- **Plats:** Jen, nära templen\n- **Fas:** 3"
     },
     {
-      "namn": "Lars Bergsson",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Bergvik",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# LARS BERGSSON\n**Stenbrytare från Bergvik**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Stenbrytare\n- **Status:** Levande\n- **Plats:** Bergvik (senare Grensfortet)\n- **Kapitel:** Kapitel 8\n- **Familj:** Bror till Erik Bergsson\n\n## BESKRIVNING\nLars Bergsson är en erfaren stenbrytare från Bergvik. Tillsammans med sin bror Erik besitter han djup kunskap om sten och bergarbete.\n\n## ANSLUTNING TILL GRENSFORTET\nDag 4 av resan till Grensfortet (14:e Tretoria, Astrio) anslöt sig Lars och hans bror Erik från Bergvik. Båda bröderna är stenbrytare med exceptionell kunskap.\n\n**Skordas observation:**\n\"Lars och Erik - stenbrytare, bröder. Pratade om stenar som vänner. Dårar eller experter. Ibland samma sak.\"\n\n## EXPERTIS\nLars och Erik har ovanlig förståelse för sten:\n- Kan läsa bergformationer\n- Förstår stenens egenskaper\n- Expert på stenbrytning och stenarbete\n- Pratar om stenar med passion och respekt\n\n## I BERGVIK\nDag 4 vid kvällsplanering sågs Dain Stenyxa rita och diskutera med stenbrytarna Lars och Erik. Dvärgbyggaren och bröderna utbytte expertis om stenarbete och fortifikationer.\n\n## ROLL PÅ GRENSFORTET\nSom stenbrytarexperter blev bröderna Bergsson ovärderliga för:\n- Stenbrytning för byggnadsma terial\n- Bedömning av fortets grundfundament\n- Reparation av stenstrukturer\n- Rådgivning om befästningar\n\n## KARAKTÄR\n- Passionerad om sitt yrke\n- Djup respekt för sten och berg\n- Nära band med sin bror\n- Praktisk och yrkesskicklig\n\n## KOPPLINGAR\n- **Bergvik:** Hemstad\n- **Erik Bergsson:** Bror och arbetspartner\n- **Grensfortet:** Ny bosättning\n- **Björn Hammarsmed:** Anslöt samtidigt\n- **Dain Stenyxa:** Samarbetar med dvärgbyggaren\n- **Kazrik och Thrakka:** Sågs planera logistik tillsammans"
-    },
-    {
       "namn": "Lars 'Silkeskägg' Nordahl",
       "bild": "kapten_silkeskegg.png",
       "ras": "Människa",
@@ -1773,6 +1895,17 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# LARS \"SILKESKÄGG\" NORDAHL (†)\n**Kapten på Månljuset**\n\n## GRUNDINFO\n- **Titel:** Kapten\n- **Smeknamn:** Silkeskägg\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Flodbåtskapten\n- **Fartyg:** Månljuset\n- **Status:** Död\n- **Dödsorsak:** Dödad under myteri\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nLars \"Silkeskägg\" Nordahl var den ursprungliga kaptenen på Månljuset. Han var känd för sitt välansade skägg som gav honom smeknamnet \"Silkeskägg\".\n\n## TRAGEDI UNDER EVAKUERINGEN\nUnder evakueringen från Vargnäset (Fas 7) bröt ett myteri ut ombord på Månljuset. I det kaos som följde dödades kapten Lars. Det exakta förloppet är oklart, men händelsen tvingade Gordon Nahrzezia att ta över befälet på fartyget.\n\n### Muteriet\n- Orsaken till myteriet är oklar\n- Både kapten Lars och Tant Hildur dog under händelserna\n- Gordon tvingades ta kommando i krisen\n- Trots tragedin lyckades 11 flyktingar räddas\n\n## BETYDELSE\nLars död representerar en av kampanjens mörkaste stunder - en räddningsoperation som skulle rädda liv drabbades av internt våld.\n\n## KOPPLINGAR\n- **Fartyg:** Månljuset\n- **Händelse:** Myteri under evakuering från Vargnäset\n- **Efterträdare:** Gordon Nahrzezia (tog över befälet)\n- **Andra offer:** Tant Hildur\n- **Fas:** 7"
+    },
+    {
+      "namn": "Lars Bergsson",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Bergvik",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# LARS BERGSSON\n**Stenbrytare från Bergvik**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Stenbrytare\n- **Status:** Levande\n- **Plats:** Bergvik (senare Grensfortet)\n- **Kapitel:** Kapitel 8\n- **Familj:** Bror till Erik Bergsson\n\n## BESKRIVNING\nLars Bergsson är en erfaren stenbrytare från Bergvik. Tillsammans med sin bror Erik besitter han djup kunskap om sten och bergarbete.\n\n## ANSLUTNING TILL GRENSFORTET\nDag 4 av resan till Grensfortet (14:e Tretoria, Astrio) anslöt sig Lars och hans bror Erik från Bergvik. Båda bröderna är stenbrytare med exceptionell kunskap.\n\n**Skordas observation:**\n\"Lars och Erik - stenbrytare, bröder. Pratade om stenar som vänner. Dårar eller experter. Ibland samma sak.\"\n\n## EXPERTIS\nLars och Erik har ovanlig förståelse för sten:\n- Kan läsa bergformationer\n- Förstår stenens egenskaper\n- Expert på stenbrytning och stenarbete\n- Pratar om stenar med passion och respekt\n\n## I BERGVIK\nDag 4 vid kvällsplanering sågs Dain Stenyxa rita och diskutera med stenbrytarna Lars och Erik. Dvärgbyggaren och bröderna utbytte expertis om stenarbete och fortifikationer.\n\n## ROLL PÅ GRENSFORTET\nSom stenbrytarexperter blev bröderna Bergsson ovärderliga för:\n- Stenbrytning för byggnadsma terial\n- Bedömning av fortets grundfundament\n- Reparation av stenstrukturer\n- Rådgivning om befästningar\n\n## KARAKTÄR\n- Passionerad om sitt yrke\n- Djup respekt för sten och berg\n- Nära band med sin bror\n- Praktisk och yrkesskicklig\n\n## KOPPLINGAR\n- **Bergvik:** Hemstad\n- **Erik Bergsson:** Bror och arbetspartner\n- **Grensfortet:** Ny bosättning\n- **Björn Hammarsmed:** Anslöt samtidigt\n- **Dain Stenyxa:** Samarbetar med dvärgbyggaren\n- **Kazrik och Thrakka:** Sågs planera logistik tillsammans"
     },
     {
       "namn": "Layla bint-Hassan",
@@ -1838,7 +1971,30 @@ var wikiData = {
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# LIA\n**Serveringspersonal på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Serveringspersonal\n- **Arbetsplats:** Den Dolda Dolken (värdshus)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BAKGRUND\nLia växte upp i en familj av skådespelare och lärde sig tidigt att underhålla och fängsla publik. Hennes uppväxt gav henne unika färdigheter som nu tjänar henne väl i värdshusverksamheten.\n\n## KARAKTÄR\nLia är en ung, observant och karismatisk kvinna med stor anpassningsförmåga. Hon är:\n- **Observant:** Kan läsa av människor väl\n- **Karismatisk:** Fängslande personlighet från skådespelarfamiljen\n- **Anpassningsbar:** Hanterar olika typer av gäster med lätthet\n- **Skicklig dansare:** Underhåller ibland på värdshuset\n- **Vänlig och hjälpsam:** Särskilt mot generösa gäster\n\n## ROLL PÅ DEN DOLDA DOLKEN\n- Serveringspersonal\n- Potentiell informationskälla (hör mycket genom sitt arbete)\n- Underhållare vid speciella tillfällen\n\n## I KAMPANJEN\nFas 2 (Kapitel 2): Möttes på Den Dolda Dolken i Tuzan Rim under karavanresan."
+      "beskrivning": "# LIA\n**Serveringspersonal på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Serveringspersonal\n- **Arbetsplats:** Den Dolda Dolken (värdshus)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BAKGRUND\nLia växte upp i en familj av skådespelare och lärde sig tidigt att underhålla och fängsla publik. Hennes uppväxt gav henne unika färdigheter som nu tjänar henne väl i värdshusverksamheten.\n\n## KARAKTÄR\nLia är en ung, observant och karismatisk kvinna med stor anpassningsförmåga. Hon är:\n- **Observant:** Kan läsa av människor väl\n- **Karismatisk:** Fängslande personlighet från skådespelarfamiljen\n- **Anpassningsbar:** Hanterar olika typer av gäster med lätthet\n- **Skicklig dansare:** Underhåller ibland på värdshuset\n- **Vänlig och hjälpsam:** Särskilt mot generösa gäster\n\n## ROLL PÅ DEN DOLDA DOLKEN\n- Serveringspersonal\n- Potentiell informationskälla (hör mycket genom sitt arbete)\n- Underhållare vid speciella tillfällen\n\n## I KAMPANJEN\nFas 2 (Kapitel 2): Möttes på Den Dolda Dolken i Tuzan Rim under karavanresan.",
+      "roll": "Obestämd"
+    },
+    {
+      "namn": "Lilla-Maja Björkgren",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# LILLA-MAJA BJÖRKGREN\r\n**8-årig flicka från Vargnäset**\r\n\r\n## GRUNDINFO\r\n- **Ras:** Människa\r\n- **Ålder:** 8 år\r\n- **Status:** Levande\r\n- **Plats:** Vargnäset (evakuerad)\r\n- **Kapitel:** Kapitel 8\r\n- **Yrke:** Barn från Vargnäset\r\n\r\n## BESKRIVNING\r\n8-årig flicka från Vargnäset. Dotter till Nils Björkgren, syster till Astrid och Erik. Evakuerad med de 41 överlevande.\r\n\r\n## FAMILJ\r\n- **Far:** Nils Björkgren\r\n- **Syskon:** Astrid Björkgren, Erik Björkgren\r\n\r\n## EVAKUERINGEN\r\n- Evakuerad från Vargnäset med 41 överlevande\r\n- Del av den större gruppen civila flyktingar\r"
+    },
+    {
+      "namn": "Lilla-Maja Björkgren",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# LILLA-MAJA BJÖRKGREN\n**8-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 8 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n8-årig flicka från Vargnäset. Dotter till Nils Björkgren, syster till Astrid och Erik. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Erik Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
     },
     {
       "namn": "Lille Per",
@@ -1860,8 +2016,8 @@ var wikiData = {
       "plats": "Camard, Asharien",
       "fraktion": "Lady Soffias informationsnätverk",
       "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# LINNA BLEKGATAN\n\n**Roll:** Tvättflicka hos överjarlen Anstir Tyldons hushåll\n**Plats:** Camard (20000 inv, huvudstad), Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nLinnas man dog skuldsatt till Handelshus Temiranz för 6 år sedan. Handelshuset hotade att sälja Linna som slavinna för att täcka skulden. Soffia betalade skulden via mellanhand och Linna vet att \"någon från norr\" räddade henne. När en budbärare bad om hjälp i utbyte, accepterade hon.\n\n## Varför väl placerad\n\nLinna tvättar linne för överjarlen Anstir Tyldons hushåll i Camard, Ashariens huvudstad. Tvätterskor är OSYNLIGA - adeln pratar fritt när hon hämtar/lämnar linne. Hon hör privata samtal om Landsrådets beslut, maktkampen mellan Handelshus Temiranz och Handelshus Ziliz, och politiska intriger.\n\n## Rapporterar\n\n- Landsrådets beslut (lagar, tullar, militära beslut)\n- Överjarl Tyldons gäster (vilka adelsmän besöker honom privat?)\n- Rykten om Temiranz vs Ziliz (handelshusmaktkamp)\n- Politiska spänningar i Asharien\n\n## Kontaktmetod\n\nKodade lappar i tvättbalar till resande köpmän norrut (var 3:e månad).\n\n## Lojalitet\n\n**Hög.** Linna är tacksam för att hon inte såldes som slavinna. Hon rapporterar vad hon hör."
+      "beskrivning": "# LINNA BLEKGATAN\n\n**Roll:** Tvättflicka hos överjarlen Anstir Tyldons hushåll\n**Plats:** Camard (20000 inv, huvudstad), Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nLinnas man dog skuldsatt till Handelshus Temiranz för 6 år sedan. Handelshuset hotade att sälja Linna som slavinna för att täcka skulden. Soffia betalade skulden via mellanhand och Linna vet att \"någon från norr\" räddade henne. När en budbärare bad om hjälp i utbyte, accepterade hon.\n\n## Varför väl placerad\n\nLinna tvättar linne för överjarlen Anstir Tyldons hushåll i Camard, Ashariens huvudstad. Tvätterskor är OSYNLIGA - adeln pratar fritt när hon hämtar/lämnar linne. Hon hör privata samtal om Landsrådets beslut, maktkampen mellan Handelshus Temiranz och Handelshus Ziliz, och politiska intriger.\n\n## Rapporterar\n\n- Landsrådets beslut (lagar, tullar, militära beslut)\n- Överjarl Tyldons gäster (vilka adelsmän besöker honom privat?)\n- Rykten om Temiranz vs Ziliz (handelshusmaktkamp)\n- Politiska spänningar i Asharien\n\n## Kontaktmetod\n\nKodade lappar i tvättbalar till resande köpmän norrut (var 3:e månad).\n\n## Lojalitet\n\n**Hög.** Linna är tacksam för att hon inte såldes som slavinna. Hon rapporterar vad hon hör.",
+      "källa": "EM-R001"
     },
     {
       "namn": "Lord Vinterglöd",
@@ -1872,8 +2028,9 @@ var wikiData = {
       "plats": "Frostspiran, Skugglandet",
       "fraktion": "Neutral (tidigare Yelgothas tjänare)",
       "kapitel": "Kapitel 10",
+      "beskrivning": "# LORD VINTERGLÖD\n\n**Colonisk själssamlare - Fri men ensam**\n\n## GRUNDINFO\n\n- **Ras:** Colonisk själssamlare (förvrängd varelse)\n- **Status:** Levande, FRI från eden\n- **Första fas:** Fas 10 (omnämnd)\n- **Fas 11:** Konfrontation i Frostspiran\n- **Roll:** Zentris fångvaktare (förut), nu fri\n\n## BAKGRUND\n\nLord VinterGlöd var en gång människa - Prins Yelgothas page för hundratals år sedan. Hans syster dog i de varma källorna i Mithera. Han blev till halvblod mellan människa och skuggvarelse, senare förvrängd till colonisk själssamlare.\n\n### Personlig tragedi\n- **Systern:** Dog i de varma källorna (termalchock)\n- **Förvandling:** Blev skuggvarelse av sorg, sedan själssamlare\n- **Eden:** Bunden av ed att bevara Zentri\n\n## KRITISKA HÄNDELSER\n\n### Skugglandet - Gruppens Ankomst (Kapitel 10)\n**Genom portalen:**\n- Gruppen tog sig in genom det blå ljuset i coloniska korridoren\n- Mötte iskristallväktare som besegrades snabbt\n- Fann Zentris kropp i sarkofagen (nedre tornet)\n\n**Frostspiran:**\n- Gruppen klättrade spiraltrappan uppåt\n- Såg Gråtonen (själsfärjan) på vägen\n\n**VinterGlöds Hov:**\n- Högt upp väntade VinterGlöd med sitt hov\n- Han frös ner sitt eget hov - ville prata privat\n- Gruppen nämnde INTE Yelgotha (visste inte kopplingen)\n\n### Samtalet med Gruppen\nVinterGlöd avslöjade:\n- *\"Zentri är separerad. Kropp i sarkofagen. Själ i kristallpelaren högst upp.\"*\n- *\"Jag är bunden av ed att bevara honom.\"* (gjord för länge sedan till någon)\n- *\"Jag vill bli fri.\"* (trött, resignerad, kanske hoppfull)\n\n**Gruppen lät passera:**\n- Ingen strid\n- VinterGlöd släppte dem förbi\n- Tystnad, is, och årtusenden av ensamhet\n\n### Kristallrummet och Befrielsen\n**Instruktioner:**\n- VinterGlöd gav instruktioner om hur kristallen skulle krossas\n- Genom sång och resonans (colonisk magi)\n- Gordon sjöng och kristallen svarade\n\n**Gråtonens roll:**\n- När kristallen bröts bar Gråtonen Zentris själ ner till kroppen\n- Återföreningen genomfördes i sarkofagrummet\n\n**Eden bryter:**\nNär Zentri återförenades - **VinterGlöds ed bröts.**\n\nHan hade bevarat Zentri som lovat.\n\nNu var han fri.\n\n### Efter Befrielsen\n**Gruppen nämnde ALDRIG Yelgotha:**\n- De visste inte att Yelgotha var VinterGlöds forne herre\n- Ingen stark relation byggdes\n\n**VinterGlöd stannade:**\n- Fri från eden\n- Men stannade i Skugglandet\n- Ensam, som alltid\n- Kanske för att det är allt han känner nu\n\n## KARAKTÄRSDRAG\n\n- **Tragisk:** Förlorade sin syster, formades av sorg\n- **Bunden:** Höll eden i århundraden trots längtan efter frihet\n- **Trött:** Årtusenden av ensamhet\n- **Resignerad:** Accepterat sitt öde\n- **Ensam:** Även fri, stannar han i Skugglandet\n\n## RELATIONER\n\n### Förflutna\n- **Prins Yelgotha:** Var hans page, eden till honom?\n- **Systern:** Hennes död formade honom\n\n### Nuvarande\n- **Zentri Bredarsson:** Höll fången, nu fri\n- **Demonen Urkhath:** Oklar koppling\n- **Gruppen:** Passerade utan strid, släpptes förbi\n\n## NUVARANDE SITUATION\n\n**Plats:** Frostspiran, Skugglandet\n**Status:** FRI från eden\n**Eden:** Bruten när Zentri återförenades\n**Framtid:** Oklar - stannade i Skugglandet\n\n## FRÅGOR\n\n- Varför stannade han när han blev fri?\n- Vad är hans relation till Urkhath egentligen?\n- Kan han lämna Skugglandet om han vill?\n- Finns det en framtid för honom utanför ensamheten?\n\n## SL-ANTECKNINGAR\n\n- Tragisk figur mer än skurk\n- Eden till Yelgotha (troligt)\n- Hjälpte gruppen trots att han inte behövde\n- Symboliserar ensamhet och plikten över frihet\n- Potentiell allierad i framtiden?\n- Yelgotha-kopplingen utnyttjades aldrig",
       "detaljsida": "masterplot/masterplot.html",
-      "beskrivning": "# LORD VINTERGLÖD\n\n**Colonisk själssamlare - Fri men ensam**\n\n## GRUNDINFO\n\n- **Ras:** Colonisk själssamlare (förvrängd varelse)\n- **Status:** Levande, FRI från eden\n- **Första fas:** Fas 10 (omnämnd)\n- **Fas 11:** Konfrontation i Frostspiran\n- **Roll:** Zentris fångvaktare (förut), nu fri\n\n## BAKGRUND\n\nLord VinterGlöd var en gång människa - Prins Yelgothas page för hundratals år sedan. Hans syster dog i de varma källorna i Mithera. Han blev till halvblod mellan människa och skuggvarelse, senare förvrängd till colonisk själssamlare.\n\n### Personlig tragedi\n- **Systern:** Dog i de varma källorna (termalchock)\n- **Förvandling:** Blev skuggvarelse av sorg, sedan själssamlare\n- **Eden:** Bunden av ed att bevara Zentri\n\n## KRITISKA HÄNDELSER\n\n### Skugglandet - Gruppens Ankomst (Kapitel 10)\n**Genom portalen:**\n- Gruppen tog sig in genom det blå ljuset i coloniska korridoren\n- Mötte iskristallväktare som besegrades snabbt\n- Fann Zentris kropp i sarkofagen (nedre tornet)\n\n**Frostspiran:**\n- Gruppen klättrade spiraltrappan uppåt\n- Såg Gråtonen (själsfärjan) på vägen\n\n**VinterGlöds Hov:**\n- Högt upp väntade VinterGlöd med sitt hov\n- Han frös ner sitt eget hov - ville prata privat\n- Gruppen nämnde INTE Yelgotha (visste inte kopplingen)\n\n### Samtalet med Gruppen\nVinterGlöd avslöjade:\n- *\"Zentri är separerad. Kropp i sarkofagen. Själ i kristallpelaren högst upp.\"*\n- *\"Jag är bunden av ed att bevara honom.\"* (gjord för länge sedan till någon)\n- *\"Jag vill bli fri.\"* (trött, resignerad, kanske hoppfull)\n\n**Gruppen lät passera:**\n- Ingen strid\n- VinterGlöd släppte dem förbi\n- Tystnad, is, och årtusenden av ensamhet\n\n### Kristallrummet och Befrielsen\n**Instruktioner:**\n- VinterGlöd gav instruktioner om hur kristallen skulle krossas\n- Genom sång och resonans (colonisk magi)\n- Gordon sjöng och kristallen svarade\n\n**Gråtonens roll:**\n- När kristallen bröts bar Gråtonen Zentris själ ner till kroppen\n- Återföreningen genomfördes i sarkofagrummet\n\n**Eden bryter:**\nNär Zentri återförenades - **VinterGlöds ed bröts.**\n\nHan hade bevarat Zentri som lovat.\n\nNu var han fri.\n\n### Efter Befrielsen\n**Gruppen nämnde ALDRIG Yelgotha:**\n- De visste inte att Yelgotha var VinterGlöds forne herre\n- Ingen stark relation byggdes\n\n**VinterGlöd stannade:**\n- Fri från eden\n- Men stannade i Skugglandet\n- Ensam, som alltid\n- Kanske för att det är allt han känner nu\n\n## KARAKTÄRSDRAG\n\n- **Tragisk:** Förlorade sin syster, formades av sorg\n- **Bunden:** Höll eden i århundraden trots längtan efter frihet\n- **Trött:** Årtusenden av ensamhet\n- **Resignerad:** Accepterat sitt öde\n- **Ensam:** Även fri, stannar han i Skugglandet\n\n## RELATIONER\n\n### Förflutna\n- **Prins Yelgotha:** Var hans page, eden till honom?\n- **Systern:** Hennes död formade honom\n\n### Nuvarande\n- **Zentri Bredarsson:** Höll fången, nu fri\n- **Demonen Urkhath:** Oklar koppling\n- **Gruppen:** Passerade utan strid, släpptes förbi\n\n## NUVARANDE SITUATION\n\n**Plats:** Frostspiran, Skugglandet\n**Status:** FRI från eden\n**Eden:** Bruten när Zentri återförenades\n**Framtid:** Oklar - stannade i Skugglandet\n\n## FRÅGOR\n\n- Varför stannade han när han blev fri?\n- Vad är hans relation till Urkhath egentligen?\n- Kan han lämna Skugglandet om han vill?\n- Finns det en framtid för honom utanför ensamheten?\n\n## SL-ANTECKNINGAR\n\n- Tragisk figur mer än skurk\n- Eden till Yelgotha (troligt)\n- Hjälpte gruppen trots att han inte behövde\n- Symboliserar ensamhet och plikten över frihet\n- Potentiell allierad i framtiden?\n- Yelgotha-kopplingen utnyttjades aldrig"
+      "roll": "Antagonist - håller Zentri fången"
     },
     {
       "namn": "Lubna bint-Malik",
@@ -1920,6 +2077,17 @@ var wikiData = {
       "beskrivning": "# MALIK AL-ZAHIR\n**Mäktig slavhandlare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Slavhandlare\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nMalik Al-Zahir är en mäktig affärsman och slavhandlare i Jen. Han kontrollerar en stor del av slavhandeln i staden och har ett omfattande nätverk av agenter som köper och transporterar slavar från fjärran länder.\n\n## VERKSAMHET\nMaliks slavhandelsimperium:\n- Kontrollerar stor del av slavhandeln i Jen\n- Omfattande nätverk av agenter\n- Köper och transporterar slavar från fjärran länder\n- Välorganiserad slavmarknad\n\n## METOD\nHans slavmarknad är:\n- En av de största i Jen\n- Mycket välorganiserad\n- Slavar säljs till högstbjudande\n- Effektivt driven\n\n## KARAKTÄR\n- Grym och effektiv\n- Mäktig affärsman\n- Kontrollerande\n- Fruktad\n\n## KOPPLINGAR\n- **Verksamhet:** Slavhandel\n- **Plats:** Jen, slavmarknaden\n- **Fas:** 3"
     },
     {
+      "namn": "Malvono Järvik",
+      "bild": "malvono.png",
+      "ras": "Okänd",
+      "titel": "Styrman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# MALVONO JÄRVIK\n**Styrman på Spegelmåne**\n\n## GRUNDINFO\n- **Titel:** Styrman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nStyrman på den ombyggda vågridaren Spegelmåne under kapten Jeorg Rask.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
+    },
+    {
       "namn": "Margaret Nahrzezia",
       "bild": null,
       "ras": "Människa",
@@ -1931,6 +2099,40 @@ var wikiData = {
       "beskrivning": "# MARGARET NAHRZEZIA\n**Gordons mor**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Kvinna\n- **Plats:** Vambolien (familjegården Nahrzezia)\n- **Status:** Levande\n- **Första omnämnande:** Fas 9\n\n## BESKRIVNING\nMargaret Nahrzezia är Gordons mor som bor kvar på familjegården i Vambolien. Hon är en mor som känner både stolthet och oro över sina söners öden.\n\n## KARAKTÄR\n- Stolt över Gordons bedrifter\n- Djupt orolig för sina söner\n- Längtar efter sin son Gordon\n- Skriver kärleksfulla brev\n\n## FAMILJESITUATION\nMargaret hanterar en komplex familjesituation:\n- **Gordon:** Borta på äventyr i många år, hans bedrifter når hem genom handelsresande\n- **Ethan:** Nyligen lämnat för att bli soldat (värvad av Kapten Mordicus Helgas Bronshjälmar)\n- **Oliver:** Kvar hemma men bitter och överarbetad\n\n## MODERNS DILEMMA\nMargaret balanserar stolthet över Gordons bedrifter med oro för konsekvenserna - Ethans beslut att följa i sin brors fotspår och Olivers bitterhet över att vara den som stannade.\n\n## BREV TILL GORDON\nI Fas 9, precis innan gruppen begav sig från Vitterdal till Vargnäset, skickade Margaret ett kärleksfullt brev till Gordon. Brevet uttrycker hennes stolthet, oro för Ethan som värvats som soldat, och hennes längtan att få se Gordon igen.\n\n**Se fullständigt brev:** [Brev från Hemlandet](../fluff/resedagbocker.html)\n\n## ROLL I KAMPANJEN\nMargarets brev skapar ett personligt dilemma för Gordon - hans framgång har oavsiktligt drivit hans yngre bror till krig. Moderns begäran om hjälp krockar med Gordons pågående uppdrag att rädda Zentri.\n\n## KOPPLINGAR\n- **Familj:** Nahrzezia-familjen, Vambolien\n- **Söner:** Gordon, Ethan, Oliver\n- **Plats:** Familjegården i Vambolien"
     },
     {
+      "namn": "Margareta Lindkvist",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# MARGARETA LINDKVIST\r\n**9-årig flicka från Vargnäset**\r\n\r\n## GRUNDINFO\r\n- **Ras:** Människa\r\n- **Ålder:** 9 år\r\n- **Status:** Levande\r\n- **Plats:** Vargnäset (evakuerad)\r\n- **Kapitel:** Kapitel 8\r\n- **Yrke:** Barn från Vargnäset\r\n\r\n## BESKRIVNING\r\n9-årig flicka från Vargnäset. Syster till Johan. Evakuerad med de 41 överlevande.\r\n\r\n## FAMILJ\r\n- **Syster:** Johan Lindkvist\r\n\r\n## EVAKUERINGEN\r\n- Evakuerad från Vargnäset med 41 överlevande\r\n- Del av den större gruppen civila flyktingar\r"
+    },
+    {
+      "namn": "Margareta Lindkvist",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# MARGARETA LINDKVIST\n**9-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 9 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n9-årig flicka från Vargnäset. Syster till Johan. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Syster:** Johan Lindkvist\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Marta \"Tvätterskorna\"",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Tvättflicka i adelskvarteren",
+      "status": "levande",
+      "plats": "Cermira stad",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "beskrivning": "# MARTA \"TVÄTTERSKORNA\"\n\n**Namn:** Marta \"Tvätterskorna\"\n**Roll:** Tvättflicka i adelskvarteren\n**Plats:** Cermira stad (7000 invånare, huvudstad)\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** Enkel tvätterska som hämtar/lämnar linne hos adelsfamiljer\n\n## Bakgrund\n\nFör 8 år sedan var Marta skuldsatt till ett spelarhelge efter att hennes man dog i hamnolycka. Hon skulle sälja sin dotter till bordell för att betala skulden. Soffia betalade skulden anonymt via mellanhand och ordnade arbete åt dottern i Mitrahus (Vitterdal). Marta vet inte vem som hjälpte henne, bara att \"en dam från norr\" sa att hon skulle \"hålla öronen öppna\".\n\n## Varför väl placerad\n\nTvätterskor är OSYNLIGA - adeln pratar fritt när hon hämtar linne. Marta tvättar för 15+ adelshushåll i Cermira, inklusive landsrådsmedlemmar och officerare. Hon hör privata samtal om politik, tullar, guldhandel och militära planer.\n\n## Rapporterar\n\n- Landsrådets diskussioner (hörd genom fönster/tjänare)\n- Vilka adelsfamiljer möts privat (hemliga möten)\n- Rykten om tullar och guldhandel\n- Militära förflyttningar (hörd från officerares hustrur)\n\n## Kontaktmetod\n\nKodade lappar gömda i tvättbalar till Vitterdals handelshus (varje månad).\n\n## Lojalitet\n\n**Mycket hög.** Marta är tacksam för att hennes dotter räddades från bordell. Hon rapporterar allt hon hör.",
+      "källa": "EM-R001"
+    },
+    {
       "namn": "Marvo \"Isfingrarna\"",
       "bild": "marvo.png",
       "ras": "Människa",
@@ -1939,7 +2141,8 @@ var wikiData = {
       "plats": "Frostnymfen (Raunfloden)",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 8",
-      "beskrivning": "# MARVO \"ISFINGRARNA\"\n**Gammal isjägare och besättningsman på Frostnymfen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Smeknamn:** \"Isfingrarna\"\n- **Yrke:** Isjägare, besättningsman\n- **Fartyg:** Frostnymfen\n- **Plats:** Raunfloden-området\n- **Status:** Levande\n- **Ålder:** Gammal (tillbringat hela sitt liv vid Raunfloden)\n\n## EXPERTIS\nMarvo är en veteran vid Raunflodens isiga vatten med unik specialkunskap:\n- **Isexpert:** Kan känna igen svaga punkter i is\n- **Erfaren isjägare:** Hela sitt liv vid Raunfloden\n- **Flodkunnig:** Känner flodens alla vägar och faror\n- **Överlevnadsexpert:** Veterankunskap om vinterförhållanden\n\n## KARAKTÄR\nEn gammal, väderbitad man formad av ett liv vid den kalla floden. Hans smeknamn \"Isfingrarna\" kommer från hans nästan övernaturliga förmåga att läsa isens tillstånd.\n\n## ROLL PÅ FROSTNYMFEN\n- Besättningsman\n- Isexpert (värdefull under vinterresor)\n- Rådgivare om isförhållanden och faror\n\n## I KAMPANJEN\nFas 8 (Kapitel 8 - Evakueringen): Besättningsman på Frostnymfen under evakueringsresan genom Drunok."
+      "beskrivning": "# MARVO \"ISFINGRARNA\"\n**Gammal isjägare och besättningsman på Frostnymfen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Smeknamn:** \"Isfingrarna\"\n- **Yrke:** Isjägare, besättningsman\n- **Fartyg:** Frostnymfen\n- **Plats:** Raunfloden-området\n- **Status:** Levande\n- **Ålder:** Gammal (tillbringat hela sitt liv vid Raunfloden)\n\n## EXPERTIS\nMarvo är en veteran vid Raunflodens isiga vatten med unik specialkunskap:\n- **Isexpert:** Kan känna igen svaga punkter i is\n- **Erfaren isjägare:** Hela sitt liv vid Raunfloden\n- **Flodkunnig:** Känner flodens alla vägar och faror\n- **Överlevnadsexpert:** Veterankunskap om vinterförhållanden\n\n## KARAKTÄR\nEn gammal, väderbitad man formad av ett liv vid den kalla floden. Hans smeknamn \"Isfingrarna\" kommer från hans nästan övernaturliga förmåga att läsa isens tillstånd.\n\n## ROLL PÅ FROSTNYMFEN\n- Besättningsman\n- Isexpert (värdefull under vinterresor)\n- Rådgivare om isförhållanden och faror\n\n## I KAMPANJEN\nFas 8 (Kapitel 8 - Evakueringen): Besättningsman på Frostnymfen under evakueringsresan genom Drunok.",
+      "roll": "Okänd"
     },
     {
       "namn": "Megir Stegsson",
@@ -1950,7 +2153,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# MEGIR STEGSSON\n**Stridande i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Stridande\n- **Utrustning:** Svärd, sköld\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Stred vid Tirakgraven."
+      "beskrivning": "# MEGIR STEGSSON\n**Stridande i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Stridande\n- **Utrustning:** Svärd, sköld\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Stred vid Tirakgraven.",
+      "roll": "Stridande"
     },
     {
       "namn": "Mera Flint",
@@ -1972,7 +2176,8 @@ var wikiData = {
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# MEREK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
+      "beskrivning": "# MEREK\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Mhim Matruk Wolani",
@@ -1994,7 +2199,8 @@ var wikiData = {
       "plats": "Okänd",
       "fraktion": "Oberoende forskare",
       "kapitel": null,
-      "beskrivning": "# MIGOR TROLLKUNNIG\n\n**Arkeolog och forskare, ledde Tirakgravens utgrävning**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Okänd\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Katalysator - startade kampanjen oavsiktligt\n\n## BAKGRUND\n\nMigor Trollkunnig är en arkeolog och forskare som specialiserat sig på urgamla gravar och försvunna kulturer. Han ledde utgrävningen av Tirakgraven.\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n**Utgrävningen:**\n- Anlitade Stålsvärds Kavalerister för bevakning\n- Bröt oavsiktligt demonens försegling\n- Såg katastrofens början\n\n### Efter katastrofen\n- Status okänd\n- Flydde troligen från platsen\n\n## KARAKTÄRSDRAG\n\n- **Vetenskapligt nyfiken:** Drivs av upptäckter\n- **Naiv:** Förstod inte faror med tirakgraven\n- **Ansvarig:** Hans nyfikenhet startade kampanjen\n\n## RELATIONER\n\n### Professionellt\n- **Kaelar Stålsvärd:** Anlitade för bevakning\n\n### Konsekvenser\n- **Demonen Urkhath:** Befriade oavsiktligt\n\n## NUVARANDE SITUATION\n\nMigors plats är okänd. Han kan ha överlevt eller dött i kaoset vid Tirakgraven.\n\n## SL-ANTECKNINGAR\n\n- Potentiell informationskälla om graven\n- Kan dyka upp senare, förföljd av konsekvenser\n- Hans anteckningar kan vara värdefulla\n- Representerar faran med okontrollerad nyfikenhet"
+      "beskrivning": "# MIGOR TROLLKUNNIG\n\n**Arkeolog och forskare, ledde Tirakgravens utgrävning**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Okänd\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Katalysator - startade kampanjen oavsiktligt\n\n## BAKGRUND\n\nMigor Trollkunnig är en arkeolog och forskare som specialiserat sig på urgamla gravar och försvunna kulturer. Han ledde utgrävningen av Tirakgraven.\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n**Utgrävningen:**\n- Anlitade Stålsvärds Kavalerister för bevakning\n- Bröt oavsiktligt demonens försegling\n- Såg katastrofens början\n\n### Efter katastrofen\n- Status okänd\n- Flydde troligen från platsen\n\n## KARAKTÄRSDRAG\n\n- **Vetenskapligt nyfiken:** Drivs av upptäckter\n- **Naiv:** Förstod inte faror med tirakgraven\n- **Ansvarig:** Hans nyfikenhet startade kampanjen\n\n## RELATIONER\n\n### Professionellt\n- **Kaelar Stålsvärd:** Anlitade för bevakning\n\n### Konsekvenser\n- **Demonen Urkhath:** Befriade oavsiktligt\n\n## NUVARANDE SITUATION\n\nMigors plats är okänd. Han kan ha överlevt eller dött i kaoset vid Tirakgraven.\n\n## SL-ANTECKNINGAR\n\n- Potentiell informationskälla om graven\n- Kan dyka upp senare, förföljd av konsekvenser\n- Hans anteckningar kan vara värdefulla\n- Representerar faran med okontrollerad nyfikenhet",
+      "roll": "Oavsiktlig katalysator för kampanjen"
     },
     {
       "namn": "Mikor \"den fantastiska\"",
@@ -2005,7 +2211,8 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# MIKOR \"DEN FANTASTISKA\"\n**Magiker, Guide och Charmör i Jen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Smeknamn:** \"Den fantastiska\"\n- **Yrken:** Magiker, Guide, Charmör\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n\n## BESKRIVNING\nMikor är en karismatisk och mångsidig man som opererar i Jens livliga gator. Han kallar sig själv \"Mikor den fantastiska\" och arbetar som magiker (uppträdande trollkarl), guide för besökare, och allmän charmör.\n\n## MÅNGA KVALITETER\nMikor är en man med många talanger:\n- **Magiker:** Uppträdande trollkarl med imponerande tricks\n- **Guide:** Känner Jen väl och kan visa besökare runt\n- **Charmör:** Karismatisk och övertygande personlighet\n- **Underhållare:** Fängslar publik med berättelser och trolleri\n- **Opportunist:** Ser alltid möjligheter att tjäna pengar\n\n## KARAKTÄR\nMikor är en charmerande men moraliskt tvivelaktig figur:\n- **Karismatisk:** Kan övertyga och charma de flesta\n- **Opportunistisk:** Utnyttjar situationer för egen vinning\n- **Underhållande:** Rolig och fängslande sällskap\n- **Opålitlig:** Har inga starka moraliska principer\n- **Överlevare:** Anpassar sig efter omständigheterna\n\n## MORALISK KOMPASS\nEn man med många kvaliteter men utan någon större moral. Mikor gör vad som tjänar honom bäst i stunden, oavsett om det är moraliskt rätt eller fel.\n\n## VERKSAMHET I JEN\n- Uppträder som trollkarl på marknadsplatser\n- Erbjuder guidetjänster till besökare\n- Charmar sig till förmåner och pengar\n- Potentiell informationskälla (mot betalning)\n\n## I KAMPANJEN\nFas 2-3 (Kapitel 2): Möttes i Jen/Muhad-området. En färgstark lokal karaktär."
+      "beskrivning": "# MIKOR \"DEN FANTASTISKA\"\n**Magiker, Guide och Charmör i Jen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Smeknamn:** \"Den fantastiska\"\n- **Yrken:** Magiker, Guide, Charmör\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n\n## BESKRIVNING\nMikor är en karismatisk och mångsidig man som opererar i Jens livliga gator. Han kallar sig själv \"Mikor den fantastiska\" och arbetar som magiker (uppträdande trollkarl), guide för besökare, och allmän charmör.\n\n## MÅNGA KVALITETER\nMikor är en man med många talanger:\n- **Magiker:** Uppträdande trollkarl med imponerande tricks\n- **Guide:** Känner Jen väl och kan visa besökare runt\n- **Charmör:** Karismatisk och övertygande personlighet\n- **Underhållare:** Fängslar publik med berättelser och trolleri\n- **Opportunist:** Ser alltid möjligheter att tjäna pengar\n\n## KARAKTÄR\nMikor är en charmerande men moraliskt tvivelaktig figur:\n- **Karismatisk:** Kan övertyga och charma de flesta\n- **Opportunistisk:** Utnyttjar situationer för egen vinning\n- **Underhållande:** Rolig och fängslande sällskap\n- **Opålitlig:** Har inga starka moraliska principer\n- **Överlevare:** Anpassar sig efter omständigheterna\n\n## MORALISK KOMPASS\nEn man med många kvaliteter men utan någon större moral. Mikor gör vad som tjänar honom bäst i stunden, oavsett om det är moraliskt rätt eller fel.\n\n## VERKSAMHET I JEN\n- Uppträder som trollkarl på marknadsplatser\n- Erbjuder guidetjänster till besökare\n- Charmar sig till förmåner och pengar\n- Potentiell informationskälla (mot betalning)\n\n## I KAMPANJEN\nFas 2-3 (Kapitel 2): Möttes i Jen/Muhad-området. En färgstark lokal karaktär.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Mira bint-Salim",
@@ -2020,14 +2227,15 @@ var wikiData = {
     },
     {
       "namn": "Mira",
-      "bild": null,
+      "bild": "Amira_bint-Zayed.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Muhad",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# MIRA\n\n**Kock i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Kock, driver värdshus eller matstånd\n\n## BAKGRUND\nMira är känd för sin matlagning i Muhad. Hennes värdshus eller matstånd är mötesplats för resande.\n\n## I KAMPANJEN\n- Fas 3: Möttes i Muhad\n- Eventuell källa för rykten och information\n\n## SL-ANTECKNINGAR\n- Människor pratar vid matbordet\n- Vet vad som händer i staden\n- Kan ge information mot mat eller betalning"
+      "beskrivning": "# MIRA\n\n**Kock i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Kock, driver värdshus eller matstånd\n\n## BAKGRUND\nMira är känd för sin matlagning i Muhad. Hennes värdshus eller matstånd är mötesplats för resande.\n\n## I KAMPANJEN\n- Fas 3: Möttes i Muhad\n- Eventuell källa för rykten och information\n\n## SL-ANTECKNINGAR\n- Människor pratar vid matbordet\n- Vet vad som händer i staden\n- Kan ge information mot mat eller betalning",
+      "roll": "Kock, matlagare"
     },
     {
       "namn": "Mirelle",
@@ -2041,29 +2249,28 @@ var wikiData = {
       "beskrivning": "# MIRELLE\n**Kock på Den Gyldene Ankaret**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Kvinna\n- **Yrke:** Kock\n- **Arbetsplats:** Den Gyldene Ankaret\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nMirelle är värdhusets skickliga kock, känd för sina havsfångsträtter och traditionella sjömansmat. Hon lagar mat åt sjöfolk, köpmän och resenärer som besöker Den Gyldene Ankaret.\n\n## SPECIALITET\nMirelles matlagning fokuserar på:\n- Havsfångsträtter\n- Traditionell sjömansmat\n- Färsk fisk från hamnen\n- Välkryddade rätter\n\n## KARAKTÄR\n- Skicklig kock\n- Stolt över sina rätter\n- Känner sjömännens smakönskemål\n- Professionell och pålitlig\n\n## KOPPLINGAR\n- **Arbetsplats:** Den Gyldene Ankaret\n- **Arbetsgivare:** Bartol\n- **Plats:** Tuzan Rim, vid hamnen\n- **Fas:** 3"
     },
     {
-      "namn": "Marta \"Tvätterskorna\"",
+      "namn": "Mivell Thamrin",
       "bild": null,
       "ras": "Människa",
-      "titel": "Tvättflicka i adelskvarteren",
+      "titel": null,
       "status": "levande",
-      "plats": "Cermira stad",
-      "fraktion": "Lady Soffias informationsnätverk",
+      "plats": "Tuzan Rim",
+      "fraktion": null,
       "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# MARTA \"TVÄTTERSKORNA\"\n\n**Namn:** Marta \"Tvätterskorna\"\n**Roll:** Tvättflicka i adelskvarteren\n**Plats:** Cermira stad (7000 invånare, huvudstad)\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** Enkel tvätterska som hämtar/lämnar linne hos adelsfamiljer\n\n## Bakgrund\n\nFör 8 år sedan var Marta skuldsatt till ett spelarhelge efter att hennes man dog i hamnolycka. Hon skulle sälja sin dotter till bordell för att betala skulden. Soffia betalade skulden anonymt via mellanhand och ordnade arbete åt dottern i Mitrahus (Vitterdal). Marta vet inte vem som hjälpte henne, bara att \"en dam från norr\" sa att hon skulle \"hålla öronen öppna\".\n\n## Varför väl placerad\n\nTvätterskor är OSYNLIGA - adeln pratar fritt när hon hämtar linne. Marta tvättar för 15+ adelshushåll i Cermira, inklusive landsrådsmedlemmar och officerare. Hon hör privata samtal om politik, tullar, guldhandel och militära planer.\n\n## Rapporterar\n\n- Landsrådets diskussioner (hörd genom fönster/tjänare)\n- Vilka adelsfamiljer möts privat (hemliga möten)\n- Rykten om tullar och guldhandel\n- Militära förflyttningar (hörd från officerares hustrur)\n\n## Kontaktmetod\n\nKodade lappar gömda i tvättbalar till Vitterdals handelshus (varje månad).\n\n## Lojalitet\n\n**Mycket hög.** Marta är tacksam för att hennes dotter räddades från bordell. Hon rapporterar allt hon hör."
+      "beskrivning": "# MIVELL THAMRIN\n**Ledare för Samoriska templet**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Tempelled are\n- **Religion:** Samoriska läran\n- **Arbetsplats:** Samoriska templet i Tuzan Rim\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nMivell Thamrin är ledaren för det samoriska templet i Tuzan Rim. Samorismen är stark i Asharien men förföljd i vissa regioner, vilket gör Mivells position både viktig och potentiellt farlig.\n\n## SAMORISKA LÄRAN I TUZAN RIM\nSom tempell edare är Mivell ansvarig för:\n- Religiösa ceremonier\n- Vägledning till troende\n- Bevarande av samorisk lära\n- Skydd av trossamfundet\n\n## KARAKTÄR\n- Andlig ledare\n- Modig (att leda samoriskt tempel kan vara farligt)\n- Vis och kunnig i läran\n- Respekterad av de troende\n\n## BETYDELSE FÖR KAMPANJEN\nSom ledare för ett samoriskt tempel i Tuzan Rim kan Mivell ha varit en viktig kontakt för gruppen, särskilt för information om religionspolitik och lokala förhållanden.\n\n## KOPPLINGAR\n- **Plats:** Tuzan Rim\n- **Religion:** Samoriska läran\n- **Arbetsplats:** Samoriska templet\n- **Fas:** 3"
     },
     {
       "namn": "Moder Elin",
       "bild": null,
       "ras": "Människa",
-      "ålder": "60+",
       "titel": "Pensionerad köksförestånderska",
       "status": "levande",
       "plats": "Sankt Kira, Cermira",
       "fraktion": "Lady Soffias informationsnätverk",
       "kapitel": null,
+      "beskrivning": "# MODER ELIN\n\n**Roll:** Pensionerad köksförestånderska\n**Plats:** Sankt Kira (12000 invånare inkl. pilgrimer, pilgrimsort), Cermira\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** \"Hjälper till lite\" i pilgrimshusets kök\n\n## Bakgrund\n\nFörestånderska i 20 år men anklagades felaktigt för stöld av silverfat för 6 år sedan. En yngre rival ville ha hennes position och planterade bevis. Soffia skickade Syster Mirelle som \"vittnade\" om den verkliga tjuven. Elin klarades men tvingades gå i pension ändå. Hon vet att \"en dam från norr\" räddat hennes heder och rapporterar till Syster Mirelle.\n\n## Varför väl placerad\n\nSankt Kira är en viktig pilgrimsort där pilgrimer från HELA Mundana passerar genom. Moder Elin arbetar i pilgrimshusets kök och hör rykten från resande köpmän, präster, och adel som reser \"inkognito\". Hon känner alla lokala värdshus och krögare.\n\n\"Gammal kvinna\" - folk pratar öppet framför henne eftersom hon anses ofarlig.\n\n## Rapporterar\n\n- Vilka adelsmän reser söderut mot Jarla (hemliga resor? Diplomati?)\n- Rykten från pilgrimer om krig/politik/handel\n- Landvägstrafik (karavaner, militära rörelser)\n- Cirefaliska pilgrimer (spioner?)\n\n## Kontaktmetod\n\nRapporterar till Syster Mirelle vid hennes besök (3-4 gånger per år).\n\n## Lojalitet\n\n**Mycket hög.** Moder Elin är tacksam för att hennes heder räddades. Hon rapporterar allt hon hör.",
       "källa": "EM-R001",
-      "beskrivning": "# MODER ELIN\n\n**Roll:** Pensionerad köksförestånderska\n**Plats:** Sankt Kira (12000 invånare inkl. pilgrimer, pilgrimsort), Cermira\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** \"Hjälper till lite\" i pilgrimshusets kök\n\n## Bakgrund\n\nFörestånderska i 20 år men anklagades felaktigt för stöld av silverfat för 6 år sedan. En yngre rival ville ha hennes position och planterade bevis. Soffia skickade Syster Mirelle som \"vittnade\" om den verkliga tjuven. Elin klarades men tvingades gå i pension ändå. Hon vet att \"en dam från norr\" räddat hennes heder och rapporterar till Syster Mirelle.\n\n## Varför väl placerad\n\nSankt Kira är en viktig pilgrimsort där pilgrimer från HELA Mundana passerar genom. Moder Elin arbetar i pilgrimshusets kök och hör rykten från resande köpmän, präster, och adel som reser \"inkognito\". Hon känner alla lokala värdshus och krögare.\n\n\"Gammal kvinna\" - folk pratar öppet framför henne eftersom hon anses ofarlig.\n\n## Rapporterar\n\n- Vilka adelsmän reser söderut mot Jarla (hemliga resor? Diplomati?)\n- Rykten från pilgrimer om krig/politik/handel\n- Landvägstrafik (karavaner, militära rörelser)\n- Cirefaliska pilgrimer (spioner?)\n\n## Kontaktmetod\n\nRapporterar till Syster Mirelle vid hennes besök (3-4 gånger per år).\n\n## Lojalitet\n\n**Mycket hög.** Moder Elin är tacksam för att hennes heder räddades. Hon rapporterar allt hon hör."
+      "ålder": "60+"
     },
     {
       "namn": "Moder Sala",
@@ -2074,19 +2281,8 @@ var wikiData = {
       "plats": "Hadarlon, Soldarn",
       "fraktion": "Lady Soffias informationsnätverk",
       "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# MODER SALA\n\n**Roll:** Bibliotekets städerska\n**Plats:** Hadarlon (2000 inv, f.d. huvudstad, bibliotek), Soldarn\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nSala åtalades för stöld av ett forntida kodex från Hadarlons berömda bibliotek. Hon var oskyldig - den verkliga tjuven var en korrupt Zoriánmunk som ville sälja kodexet på svarta marknaden. Soffia skickade Syster Mirelle som vittnade om den verkliga tjuven. Sala klarades och munken fängslades.\n\nSala är djupt tacksam och rapporterar till Syster Mirelle om Zoriánordens aktivitet och vad forskare söker i biblioteket.\n\n## Varför väl placerad\n\nHadarlon är Soldarns f.d. huvudstad och hem åt ett av Mundanas viktigaste bibliotek. Zoriánorden (kunskaps- och magiorden) är aktiv här. Sala städar biblioteket och ser vilka forskare söker vilka böcker, hör samtal mellan Zoriánmunkar, och noterar hertig Yssecs besök.\n\n## Rapporterar\n\n- Zoriánordens aktivitet (vad forskar de om?)\n- Vad forskare söker i biblioteket (militära texter? Magiska formulär?)\n- Hertig Yssecs planer (Soldarns ledare)\n- Ovanliga besökare från andra länder\n\n## Kontaktmetod\n\nRapporterar till Syster Mirelle vid hennes besök (oregelbundet, 1-2 gånger per år).\n\n## Lojalitet\n\n**Mycket hög.** Sala är tacksam för att hennes heder räddades och den korrupta munken avslöjades."
-    },
-    {
-      "namn": "Mivell Thamrin",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Tuzan Rim",
-      "fraktion": null,
-      "kapitel": null,
-      "beskrivning": "# MIVELL THAMRIN\n**Ledare för Samoriska templet**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Tempelled are\n- **Religion:** Samoriska läran\n- **Arbetsplats:** Samoriska templet i Tuzan Rim\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nMivell Thamrin är ledaren för det samoriska templet i Tuzan Rim. Samorismen är stark i Asharien men förföljd i vissa regioner, vilket gör Mivells position både viktig och potentiellt farlig.\n\n## SAMORISKA LÄRAN I TUZAN RIM\nSom tempell edare är Mivell ansvarig för:\n- Religiösa ceremonier\n- Vägledning till troende\n- Bevarande av samorisk lära\n- Skydd av trossamfundet\n\n## KARAKTÄR\n- Andlig ledare\n- Modig (att leda samoriskt tempel kan vara farligt)\n- Vis och kunnig i läran\n- Respekterad av de troende\n\n## BETYDELSE FÖR KAMPANJEN\nSom ledare för ett samoriskt tempel i Tuzan Rim kan Mivell ha varit en viktig kontakt för gruppen, särskilt för information om religionspolitik och lokala förhållanden.\n\n## KOPPLINGAR\n- **Plats:** Tuzan Rim\n- **Religion:** Samoriska läran\n- **Arbetsplats:** Samoriska templet\n- **Fas:** 3"
+      "beskrivning": "# MODER SALA\n\n**Roll:** Bibliotekets städerska\n**Plats:** Hadarlon (2000 inv, f.d. huvudstad, bibliotek), Soldarn\n**Fraktion:** Lady Soffias informationsnätverk\n\n## Bakgrund\n\nSala åtalades för stöld av ett forntida kodex från Hadarlons berömda bibliotek. Hon var oskyldig - den verkliga tjuven var en korrupt Zoriánmunk som ville sälja kodexet på svarta marknaden. Soffia skickade Syster Mirelle som vittnade om den verkliga tjuven. Sala klarades och munken fängslades.\n\nSala är djupt tacksam och rapporterar till Syster Mirelle om Zoriánordens aktivitet och vad forskare söker i biblioteket.\n\n## Varför väl placerad\n\nHadarlon är Soldarns f.d. huvudstad och hem åt ett av Mundanas viktigaste bibliotek. Zoriánorden (kunskaps- och magiorden) är aktiv här. Sala städar biblioteket och ser vilka forskare söker vilka böcker, hör samtal mellan Zoriánmunkar, och noterar hertig Yssecs besök.\n\n## Rapporterar\n\n- Zoriánordens aktivitet (vad forskar de om?)\n- Vad forskare söker i biblioteket (militära texter? Magiska formulär?)\n- Hertig Yssecs planer (Soldarns ledare)\n- Ovanliga besökare från andra länder\n\n## Kontaktmetod\n\nRapporterar till Syster Mirelle vid hennes besök (oregelbundet, 1-2 gånger per år).\n\n## Lojalitet\n\n**Mycket hög.** Sala är tacksam för att hennes heder räddades och den korrupta munken avslöjades.",
+      "källa": "EM-R001"
     },
     {
       "namn": "Morfar Ulf",
@@ -2108,7 +2304,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# MORWEN BORTBYTING\n**Närstridskämpe i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Närstridskämpe\n- **Utrustning:** Yxa och stridshammare\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Kämpade vid Tirakgraven."
+      "beskrivning": "# MORWEN BORTBYTING\n**Närstridskämpe i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Närstridskämpe\n- **Utrustning:** Yxa och stridshammare\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Kämpade vid Tirakgraven.",
+      "roll": "Närstridskämpe"
     },
     {
       "namn": "Muna al-Sharif",
@@ -2119,7 +2316,19 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Sharif-familjen",
       "kapitel": null,
-      "beskrivning": "# MUNA AL-SHARIF\n**Medlem av Sharif-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# MUNA AL-SHARIF\n**Medlem av Sharif-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
+    },
+    {
+      "namn": "Märta (Systkonen)",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Grens Baroneri",
+      "fraktion": null,
+      "kapitel": null,
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# Märta (Systkonen)\n**Örtsamlare**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Kvinna\n- **Titel:** Örtsamlare\n- **Plats:** Grens Baroneri\n- **Status:** Levande\n\n## BESKRIVNING\nMärta är en örtsamlare i 60-årsåldern som lever i Grens Baroneris vildmark tillsammans med sitt syskon Sten. Tillsammans kallas de \"Systkonen\". Adisa besöker dem regelbundet och Märta känner alla stigar och hemliga platser i trakten.\n\n## KARAKTÄR & UTSEENDE\n- I 60-årsåldern\n- Syskon med Sten\n- Kallas \"Systkonen\" tillsammans med Sten\n- Adisa besöker dem regelbundet\n- Vet alla stigar i trakten\n\n## RELATIONER\nLever med sitt syskon Sten i vildmarken. Deras kontakt med Adisa (häxan) ger dem en särskild ställning i traktens informella nätverk. Märta är den mer pratglada av de två och fungerar som deras kontakt med omvärlden."
     },
     {
       "namn": "Nadir al-Said",
@@ -2130,7 +2339,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Said-familjen",
       "kapitel": null,
-      "beskrivning": "# NADIR AL-SAID\n**Medlem av Said-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# NADIR AL-SAID\n**Medlem av Said-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Naila bint-Zahir",
@@ -2155,29 +2365,6 @@ var wikiData = {
       "beskrivning": "# Nawan Ben Hayel\n**'Underbarnet från Quaran' -- berömd Razdo-mästare.** Razdo är Muhads förnämsta brädspel som även används för formella dueller. Nawan åtnjuter celebritetstatus i hela Muhad."
     },
     {
-      "namn": "Neta Båtbyggare",
-      "bild": null,
-      "ras": "Människa",
-      "titel": "Skeppsbyggare",
-      "status": "levande",
-      "plats": "Frisänkan",
-      "fraktion": null,
-      "kapitel": "Kapitel 1",
-      "beskrivning": "# Neta Båtbyggare\n\n**Frisänkans enda skeppsbyggare.**\n\nIngen ny båt sjösätts utan Netas godkännande. Envis och perfektionist - har vägrat godkänna båtar som andra tyckt var 'nog bra.'\n\n**Utseende:** Breda axlar, händer fulla av tjära och splitter.\n\n**Egenhet:** Pratar med båtarna medan hon bygger dem. 'Vart vill du?' frågar hon plankan innan hon spikar."
-    },
-    {
-      "namn": "Nils",
-      "bild": null,
-      "ras": "Människa",
-      "titel": "Stallmästare",
-      "status": "levande",
-      "plats": "Arlon, Drunok",
-      "fraktion": "Lady Soffias informationsnätverk",
-      "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# STALLPOJKE NILS\n**Stallmästare vid kungens stall, Arlon**\n\n## GRUNDINFO\n- **Namn:** Nils (stallpojke)\n- **Ras:** Människa (drunokisk)\n- **Roll:** Stallmästare vid kungens stall\n- **Plats:** Arlon (5000 inv, huvudstad, kung Gahallan III), Drunok\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nNils far avrättades för desertering. Familjen utarmades. Soffia ordnade lärlingskap i kungsstallet för Nils. Han vet inte vem som hjälpte.\n\n## RAPPORTERAR\n- Kungens militära planer mot Jargien\n- Budbärare som besöker kungens hov\n- Jargiska legationens aktivitet\n- Hästbeställningar (krigsförberedelser?)\n\n## KONTAKTMETOD\nBrevduva (magiskt styrd). Rapporterar var 3:e månad.\n\n## LOJALITET\nHög"
-    },
-    {
       "namn": "Nekromantikern",
       "bild": null,
       "ras": "Okänd",
@@ -2189,15 +2376,15 @@ var wikiData = {
       "beskrivning": "# NEKROMANTIKERN\n**Mörk magiker besegrad vid Tarkas**\n\n## GRUNDINFO\n- **Ras:** Okänd\n- **Titel:** Nekromantiker\n- **Status:** Död (besegrad av gruppen)\n- **Plats:** Karavanleden genom Tarkas\n- **Kapitel:** Kapitel 3\n\n## BAKGRUND\nNekromantikern färdades med en massiv karavan genom Tarkas när gruppen stötte på honom under sin vandring genom den askbeströdda ödemarken.\n\n## FÖRHÄXNINGEN AV UMNATAK\nEn natt red **Umnatak** ut för att speja på karavanen. Han återvände skadad och förhäxad:\n- Febersjuk, svett rann från pannan\n- Ögonen vilda och oroliga\n- Muttrade om mörka skuggor och viskar från döda\n\nGruppen spårade förbannelsens källa till nekromantikern som färdades med en patrull från karavanen.\n\n## KONFRONTATIONEN\n**Patrullen:** Gruppen besegrade först en patrull av soldater som verkade döva för lidande - som om de redan var halvdöda.\n\n**Lägret:** Vid nekromantikers läger fann gruppen:\n- **Förbjudna skrifter om nekromanti** - ritualer, besvärjelser, instruktioner för att binda själar\n- En **mystisk amulett** av okänt ursprung (pulserande med mörk energi)\n- En **dolk** med inskriptioner - troligen ritualvapen\n\n**Döden:** Nekromantikern besegrades av gruppen.\n\n## EFTERSPEL\nMed hjälp av nekromantikers egna skrifter lyckades gruppen bryta Umnataks förbannelse. Hans feber sjönk och viskningen i huvudet tystnade.\n\n## KOPPLINGAR\n- **Offer:** Umnatak (förhäxad, sedan friad)\n- **Plats:** Karavanleden genom Tarkas\n- **Kapitel:** Kapitel 3 (Tarkas-äventyret)"
     },
     {
-      "namn": "Kapten Nilmar \"Isnavigatorn\"",
-      "bild": "nilmar1.png",
-      "ras": "Tirak",
-      "titel": "Kapten på Frostnymfen",
+      "namn": "Neta Båtbyggare",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Skeppsbyggare",
       "status": "levande",
-      "plats": "Frostnymfen (Raunfloden)",
-      "fraktion": "Lady Soffias nätverk",
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# KAPTEN NILMAR \"ISNAVIGATORN\"\n**Tirakisk flodpråmskapten, lojal till Lady Soffia**\n\n## GRUNDINFO\n- **Ras:** Tirak (stor build)\n- **Titel:** Kapten på Frostnymfen\n- **Smeknamn:** \"Isnavigatorn\"\n- **Fartyg:** Frostnymfen (18-meter flodpråm)\n- **Status:** Levande\n\n## UTSEENDE\n- Imponerande tirakisk man med stor kroppsbyggnad\n- Väderbit ansikte med frostspår i skägget\n- **Vänsteröronen saknas** (gammal förfrysningsskada)\n- Stadig, kommandogivande röst\n\n## EXPERTIS\nNilmar är mästare på att navigera Raunflodens farliga vatten:\n- Nästan övernaturlig känsla för flodens strömmar\n- Navigerar mellan isflak innan de syns\n- Extrem precision i trånga passager\n- Expert på isbrytning\n\n## LOJALITET\nTjänar Lady Soffia, del av hennes motståndsnätverk:\n- Transporterar viktiga personer i hemlighet\n- Betrodd med känsliga uppdrag\n- Arbetar nära Selene \"Silveröga\"\n\n## I KAMPANJEN\n**Fas 8:** Transporterade gruppen mot Vitterdal:\n- Navigerade genom saboterade isbarriärer\n- Undvek Systrarna och kungens patrullers ljussignaler\n- Lämnade gruppen vid forsen, lovade möta dem senare\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Underbefäl:** Selene \"Silveröga\"\n- **Uppdragsgivare:** Lady Soffia av Vitterdal"
+      "plats": "Frisänkan",
+      "fraktion": null,
+      "kapitel": "Kapitel 1",
+      "beskrivning": "# Neta Båtbyggare\n\n**Frisänkans enda skeppsbyggare.**\n\nIngen ny båt sjösätts utan Netas godkännande. Envis och perfektionist - har vägrat godkänna båtar som andra tyckt var 'nog bra.'\n\n**Utseende:** Breda axlar, händer fulla av tjära och splitter.\n\n**Egenhet:** Pratar med båtarna medan hon bygger dem. 'Vart vill du?' frågar hon plankan innan hon spikar."
     },
     {
       "namn": "Nils 'Järnhand' Gromsson",
@@ -2209,6 +2396,18 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# NILS \"JÄRNHAND\" GROMSSON\n**Kapten på Rimfrosten**\n\n## GRUNDINFO\n- **Titel:** Kapten\n- **Smeknamn:** Järnhand\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Flodbåtskapten\n- **Fartyg:** Rimfrosten\n- **Status:** Levande\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nNils \"Järnhand\" Gromsson är en erfaren kapten känd för sin fasta hand och pålitlighet. Hans smeknamn \"Järnhand\" tyder på hans strikta men rättvisa ledarskap.\n\n## EVAKUERINGEN FRÅN VARGNÄSET\nUnder den kritiska evakueringen från Vargnäset (Fas 7) ledde Nils Rimfrosten och tog säkert ombord 19 flyktingar. Hans ledarskap och erfarenhet var avgörande för räddningsoperationen.\n\n### Besättning\n- Kapten Nils \"Järnhand\" Gromsson\n- 2 besättningsmedlemmar\n\n## KARAKTÄR\n- Pålitlig och erfaren\n- Strikt men rättvis ledare\n- Fast hand i kris\n- Modig under press\n\n## KOPPLINGAR\n- **Fartyg:** Rimfrosten\n- **Händelse:** Evakuering från Vargnäset\n- **Passagerare:** 19 flyktingar\n- **Relaterade fartyg:** Strömjungfrun, Månljuset\n- **Fas:** 7"
+    },
+    {
+      "namn": "Nils",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Stallmästare",
+      "status": "levande",
+      "plats": "Arlon, Drunok",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "beskrivning": "# STALLPOJKE NILS\n**Stallmästare vid kungens stall, Arlon**\n\n## GRUNDINFO\n- **Namn:** Nils (stallpojke)\n- **Ras:** Människa (drunokisk)\n- **Roll:** Stallmästare vid kungens stall\n- **Plats:** Arlon (5000 inv, huvudstad, kung Gahallan III), Drunok\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nNils far avrättades för desertering. Familjen utarmades. Soffia ordnade lärlingskap i kungsstallet för Nils. Han vet inte vem som hjälpte.\n\n## RAPPORTERAR\n- Kungens militära planer mot Jargien\n- Budbärare som besöker kungens hov\n- Jargiska legationens aktivitet\n- Hästbeställningar (krigsförberedelser?)\n\n## KONTAKTMETOD\nBrevduva (magiskt styrd). Rapporterar var 3:e månad.\n\n## LOJALITET\nHög",
+      "källa": "EM-R001"
     },
     {
       "namn": "Nocturne",
@@ -2266,17 +2465,6 @@ var wikiData = {
       "beskrivning": "# OLAV MURKROSS\n**Gammal soldat från Bergvik**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** ~50-60 år\n- **Bakgrund:** F.d. soldat\n- **Status:** Levande\n- **Plats:** Bergvik (senare Grensfortet)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nOlav Murkross är en gammal soldat bosatt i Bergvik. Trots att han nu lever ett stillsamt liv bär han tydliga spår av sin tid i krig.\n\n## MÖTET I BERGVIK\nDag 4 av resan till Grensfortet (14:e Tretoria, Astrio) när gruppen nådde Bergvik drog Olav Arcadius åt sidan. Två gamla soldater som kände igen varandra.\n\nDe hade långa tysta samtal. Soldater pratar bäst utan ord. Murkross hade sett samma skit som Arcadius. Det syntes i ögonen.\n\n## KARAKTÄR\n- **Erfaren:** Veteransoldat med många strider bakom sig\n- **Tystlåten:** Kommunicerar genom närvaro snarare än ord\n- **Förståelse:** Känner igen andra som sett krigets helvete\n- **Ögonen:** Bär spår av det han upplevt\n\n## KOPPLING TILL ARCADIUS\nOlav och Arcadius delade en omedelbar förståelse - två män som båda sett hemska saker i krig. Deras tysta samtal i Bergvik var fulla av ömsesidig respekt och delad erfarenhet.\n\n## KOPPLINGAR\n- **Plats:** Bergvik\n- **Arcadius:** Igenkänning mellan gamla soldater\n- **Grensfortet:** Följde med vid återuppbyggnad"
     },
     {
-      "namn": "Olof Stenmark",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# OLOF STENMARK\n**29-årig far från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 29 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nOlof Stenmark är en 29-årig far och make som kämpar för att hålla sin familj samman efter den tragiska förlusten av sin dotter Helena under evakueringen från Vargnäset.\n\n## FAMILJ\n- **Hustru:** Anna Stenmark (26 år, djupt traumatiserad)\n- **Barn:** \n  - Gustav Stenmark (4 år, levande, ängslig)\n  - Helena Stenmark (2 år, död dag 3)\n\n## SITUATION\nOlof bär en dubbel börda:\n1. **Sorgen över Helenas död** - Han måste bearbeta sin egen sorg över förlusten av sin tvååriga dotter\n2. **Familjens sammanhållning** - Hans hustru Anna är så traumatiserad att hon knappt fungerar, vilket tvingar Olof att vara stark för både henne och Gustav\n\n## ROLL I FAMILJEN\nOlof har blivit familjens ankare:\n- Tröstar och skyddar Gustav som klamrar sig fast vid honom\n- Försöker nå sin tillbakadragna hustru Anna\n- Måste vara stark trots egen sorg\n- Ansvarig för familjens överlevnad under flykten\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Förlorade dottern Helena på dag 3\n- Kämpar för att hålla kvarvarande familj vid liv och vid hopp"
-    },
-    {
       "namn": "Oliver Nahrzezia",
       "bild": null,
       "ras": "Människa",
@@ -2288,6 +2476,17 @@ var wikiData = {
       "beskrivning": "# OLIVER NAHRZEZIA\n**Gordons bror, stannar kvar på gården**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Bonde\n- **Plats:** Vambolien (familjegården Nahrzezia)\n- **Status:** Levande\n- **Första omnämnande:** Fas 9\n\n## BESKRIVNING\nOliver Nahrzezia är Gordons bror som valt att stanna kvar hemma på familjegården i Vambolien. Till skillnad från sina bröder Gordon och Ethan som sökt äventyr, har Oliver tagit ansvar för gården och familjen.\n\n## KARAKTÄR\n- Plikttrogen och ansvarsfull\n- Bitter över att vara den som stannade\n- Arbetar hårt (från gryning till skymning)\n- Rasande på sina bröders val\n\n## REAKTION PÅ ETHANS BESLUT\nNär Ethan lämnade gården för att ta värvning blev Oliver rasande och utbrast: *\"Nu ska lillebror också spela hjälte och lämna oss!\"*\n\nEnligt Margaret arbetar Oliver nu från gryning till skymning *\"som om han försöker bevisa att någon Nahrzezia stannade hemma.\"*\n\n## FAMILJERELATIONER\n- **Gordon Nahrzezia:** Bror som lämnade för äventyr\n- **Ethan Nahrzezia:** Yngre bror som nu också lämnat\n- **Margaret Nahrzezia:** Mor som förlitar sig på Oliver\n\n## KONFLIKT\nOliver bär tydligt på bitterhet och känslor av övergivenhet. Han har offrat sina egna drömmar för att ta hand om gården medan hans bröder söker ära och äventyr. Hans hårda arbete verkar vara både plikt och ett sätt att bevisa sitt värde.\n\n## ROLL I KAMPANJEN\nOliver representerar konsekvenserna av Gordons val - någon måste stanna hemma och ta ansvar. Hans bitterhet och hårda arbete visar priset som familjen betalar för Gordons och Ethans äventyr.\n\n## KOPPLINGAR\n- **Familj:** Nahrzezia-familjen, Vambolien\n- **Plats:** Familjegården i Vambolien\n- **Relation:** Gordons bror"
     },
     {
+      "namn": "Olof Stenmark",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# OLOF STENMARK\n**29-årig far från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 29 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n\n## BESKRIVNING\nOlof Stenmark är en 29-årig far och make som kämpar för att hålla sin familj samman efter den tragiska förlusten av sin dotter Helena under evakueringen från Vargnäset.\n\n## FAMILJ\n- **Hustru:** Anna Stenmark (26 år, djupt traumatiserad)\n- **Barn:** \n  - Gustav Stenmark (4 år, levande, ängslig)\n  - Helena Stenmark (2 år, död dag 3)\n\n## SITUATION\nOlof bär en dubbel börda:\n1. **Sorgen över Helenas död** - Han måste bearbeta sin egen sorg över förlusten av sin tvååriga dotter\n2. **Familjens sammanhållning** - Hans hustru Anna är så traumatiserad att hon knappt fungerar, vilket tvingar Olof att vara stark för både henne och Gustav\n\n## ROLL I FAMILJEN\nOlof har blivit familjens ankare:\n- Tröstar och skyddar Gustav som klamrar sig fast vid honom\n- Försöker nå sin tillbakadragna hustru Anna\n- Måste vara stark trots egen sorg\n- Ansvarig för familjens överlevnad under flykten\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Förlorade dottern Helena på dag 3\n- Kämpar för att hålla kvarvarande familj vid liv och vid hopp"
+    },
+    {
       "namn": "Omar al-Kazim",
       "bild": "Omar_al-Kazim.png",
       "ras": "Människa",
@@ -2296,7 +2495,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Kazim-familjen",
       "kapitel": null,
-      "beskrivning": "# OMAR AL-KAZIM\n**Medlem av Kazim-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# OMAR AL-KAZIM\n**Medlem av Kazim-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Omar ibn-Salim",
@@ -2318,7 +2518,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# OMAR\n**Oud-spelare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Musiker, spelar oud\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Underhåller på värdshus eller basarer.\n\n## SL-ANTECKNINGAR\nMusiker hör rykten och berättelser."
+      "beskrivning": "# OMAR\n**Oud-spelare i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n- **Roll:** Musiker, spelar oud\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Underhåller på värdshus eller basarer.\n\n## SL-ANTECKNINGAR\nMusiker hör rykten och berättelser.",
+      "roll": "Musiker (oud-spelare)"
     },
     {
       "namn": "Orm Sjöberg",
@@ -2330,6 +2531,41 @@ var wikiData = {
       "fraktion": null,
       "kapitel": "Kapitel 1",
       "beskrivning": "# Orm Sjöberg\n\n**Driver Frisänkans rökeri tillsammans med sin fru Tilda.**\n\nOrm kan arbeta en hel dag utan att yttra ett ord. Stor, långsam, ögon som ser utan att döma. Händer som doftar rök oavsett hur mycket han tvättar. Rökeriet är livsviktigt - utan det överlever byn inte vintern."
+    },
+    {
+      "namn": "Pertil Fiskaren",
+      "bild": "pertil-fiskaren.png",
+      "ras": "Människa",
+      "titel": "Fiskare",
+      "status": "död",
+      "plats": "Frisänkan",
+      "fraktion": null,
+      "kapitel": "Kapitel 1",
+      "beskrivning": "# PERTIL FISKAREN\n**Oskyldig offer i Frisänkan**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Fiskare\n- **Status:** Död (mördad)\n- **Plats:** Frisänkan\n- **Kapitel:** Kapitel 1\n\n## BESKRIVNING\nPertil var en enkel fiskare som levde vid viken i Frisänkan. Han hade inget av värde.\n\n## MORDET\nTamron/Ibran (den tirakiska shamanen överta gen av demonen Urkhath) mördade Pertil och hans gravida fru utan någon tydlig anledning. Morden verkade meningslösa och brutala - antingen var det Ibrans mörka natur som tagit kontroll, eller så behövde demonen mer kraft.\n\n**Omständigheter:**\n- Mördad i sitt hem vid viken\n- Tillsammans med sin gravida fru\n- Två dagar innan gruppen nådde Frisänkan\n\n## VITTNESUPPGIFTER\n**Kapten Benne Tok** berättade: \"En främmande man kom genom här för två dagar sedan. Mörk, stor. Tirak, tror jag. Han bad om vatten vid Pertil Fiskarens hus vid viken.\"\n\n## KOPPLINGAR\n- **Pertils fru:** Mördad tillsammans med honom\n- **Tamron/Ibran:** Mördare\n- **Kapten Benne Tok:** Rapporterade mordet"
+    },
+    {
+      "namn": "Pertils fru",
+      "bild": "pertils-fru.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "död",
+      "plats": "Frisänkan",
+      "fraktion": null,
+      "kapitel": "Kapitel 1",
+      "beskrivning": "# PERTILS FRU\n**Gravid offer i Frisänkan**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Död (mördad)\n- **Plats:** Frisänkan\n- **Kapitel:** Kapitel 1\n- **Familj:** Gift med Pertil Fiskaren\n\n## BESKRIVNING\nPertils fru var gravid med deras första barn när hon mördades.\n\n## MORDET\nMördad av Tamron/Ibran tillsammans med sin man. Hon bar deras första barn. Mordet var meningslöst brutalt - ett oskyl digt offer för demonens mörker.\n\n## TRAGEDI\nHennes död och deras oföddas död representerar den mänskliga kostnaden av demonens frigörelse. Två liv (snart tre) utplånade utan anledning.\n\n## KOPPLINGAR\n- **Pertil Fiskaren:** Man (död)\n- **Tamron/Ibran:** Mördare\n- **Kapten Benne Tok:** Rapporterade mordet"
+    },
+    {
+      "namn": "Prins Yelgotha av det Första Hovet",
+      "bild": "yelgotha.png",
+      "ras": "Alv",
+      "titel": "Prins av det Första Hovet / \"Älvakungen\" (Själabäraren)",
+      "status": "levande",
+      "plats": "Älvakungens Sal, Mithera",
+      "fraktion": "Det Första Hovet (Månskenshovet innan splittringen)",
+      "kapitel": "Kapitel 9",
+      "beskrivning": "# PRINS YELGOTHA AV DET FÖRSTA HOVET\n**Den Frusna Prinsen - Portalväktaren mellan världarna**\n\n## GRUNDINFO\n- **Titel:** Prins av det Första Hovet (Månskenshovet innan splittringen)\n- **Ras:** Skugglandsfurste/Alv (forntida)\n- **Status:** Levande (väckt av hjältarna i Kapitel 9)\n- **Ålder:** Urgammal (frusen i 700 år, årtusenden gammal)\n- **Plats:** Älvakungens Sal, Mithera\n\n## BAKGRUND\nYelgotha var prins av det Första Hovet innan Månskenshovet splittrades. För 700 år sedan frystes han i en ispelare i Den Frusna Katedralen. Hans isfängslande försvagade gränsen mellan Mundana och Skugglandet.\n\nUnder Tirakernas Krig (för ~9000 år sedan) tjänstgjorde **Vinterglöd som hans page**. När Vinterglöd senare svek sina allierade och började tjäna demonen Urkhath, blev det ett svek även mot Yelgotha som hans herre.\n\n## ÄLVAKUNGENS SAL (KAPITEL 9)\n\n**Väckandet:**\nHjältarna hittade och väckte Yelgotha ur hans isfängelse. Han såg direkt genom dem:\n\n*\"Fem kroppar men sex själar. Ni bär den sjätte inom er. I er skuld. I er saknad. I ert misslyckande.\"*\n\n**Sanningens pris:**\nYelgotha tvingade varje person att avslöja sin SANNA anledning till att vara där. Han krävde tre offer (tid, värme, säkerhet) och gav fem varningar om Skugglandet:\n\n- Vinterglöd väntar - var hans page en gång\n- Zentri är delad i tre delar (kropp, själ, minne)\n- Tiden där är inte tid här\n- Lita på ingenting utom er skuld\n- Det finns alltid en utväg - men aldrig den ni tror\n\n**Hans sista ord:**\n*\"När ni möter Vinterglöd, säg att Yelgotha skickade er. Han var min page en gång.\"*\n\n**OBS:** Gruppen använde ALDRIG denna information. De nämnde aldrig Yelgothas namn till VinterGlöd i Kapitel 10 - en kritisk oanvänd plottråd.\n\n## \"ÄLVAKUNGEN\" - SJÄLABÄRAREN\n\n**Coloniskt namn:** \"Älvakungen\" var INTE en separat varelse - det var det **coloniska namnet** för Yelgotha själv. På coloniska betyder det \"Själabärare\" eller \"Portal-väktare\" - en beskrivning av hans ROLL.\n\n**Sanning:** Yelgotha var en colonisk själssamlare som arbetade för VinterGlöd. Hans uppgift var att samla offer från de som ville passera till Skugglandet.\n\n### De fem stora offren för passage\n\nEfter de tre första offren krävde Yelgotha fem STORA offer för passage till Skugglandet:\n\n1. **Thrakka:** Offrade sina traumatiska minnen (gladiatoråren, slaveriet, smärtan)\n2. **Umnatak:** Offrade sin säkerhet/trygghet\n3. **Gordon:** Offrade sin generositet\n4. **Arcadius/Corvus:** Offrade sin skuld - skapade ett bokstavligt **hål i bröstet**\n5. **Kazrik:** Offrade sin ambition/girighet\n\n**Konsekvenser:**\n- Varje offer lämnade ett **tomrum** i offrarens själ\n- Arcadius mest påverkad: hålet i bröstet med en tråd som ledde bort\n- Offren gick INTE till alvkungens välsignelse - de gick till VinterGlöd\n- Senare upptäcktes att offren användes för att **försvaga gränsen** mellan världarna\n\n## KOPPLING TILL KUBERON\n\nDet finns teorier om att Yelgotha är **Kuberons själ eller essens** - den tredje manifestationen:\n\n- **Kuberon** = Balansen/Mellanfas\n- **Skymning** = Mörk aspekt (Urkhath-korruption)\n- **Vinterglöd** = Ljus aspekt (Ånger/upprättelse)\n- **Yelgotha** = Själen/Essensen?\n\nOm detta stämmer kan återföreningen av dessa manifestationer vara nyckeln till att återställa gränsen mellan världarna och befria Zentri.\n\n## KARAKTÄRSDRAG\n- **Allvetande:** Ser sanningar andra döljer\n- **Forntida visdom:** Årtusenden gammal\n- **Portalväktare:** Bevakaren mellan Mundana och Skugglandet\n- **Vägvisare:** Hjälpte de sex vandrarna (profetian uppfylld)\n\n## BETYDELSE FÖR KAMPANJEN\n\n- Yelgothas väckande öppnade porten till Skugglandet\n- Hans namn öppnar dörrar hos Vinterglöd (gammal lojalitet)\n- Hans isfängslande försvagade gränsen mellan världarna i 700 år\n- Han kan vara nyckeln till att återförena Kuberon-manifestationerna\n- Gav hjältarna Vandrarnas Märke (kan kontaktas igen)\n- Hans varningar om Zentris tre delar var avgörande för räddningen\n\n## RELATIONER\n\n- **Vinterglöd:** Tidigare hans page, senare svikare - men fortfarande bunden av gammal lojalitet\n- **Kuberon:** Möjligen samma väsen (olika manifestationer)\n- **Hjältarna:** De sex vandrarna som väckte honom och uppfyllde profetian\n- **Zentri:** Den sjätte själen som vandrarna bar inom sig\n\n## SL-ANTECKNINGAR\n\n- Kopplingen till VinterGlöd ANVÄNDES ALDRIG i Kapitel 10 - gruppen nämnde aldrig hans namn (oanvänd plottråd)\n- Profetian om sex vandrare var nyckeln till Skugglandet\n- Hans relation till Kuberon bör utforskas vidare\n- Representerar forntida magi, visdom och kosmisk balans",
+      "detaljsida": "masterplot/masterplot.html",
+      "roll": "Portalväktare till Skugglandet"
     },
     {
       "namn": "Ragna Klokhand",
@@ -2351,7 +2587,8 @@ var wikiData = {
       "plats": "Lundnäs",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# RAGNAR FISKARE\n**Fiskare i Lundnäs**\n\n## GRUNDINFO\n- **Yrke:** Fiskare i Lundnäs\n- **Bakgrund:** Fick upp de mystiska pärlorna i sin fångst en vecka före äventyret Regnsynd\n- **Status vid äventyret:** Bedrövad och lätt förvirrad, dränker sina sorger i billig öl på Lundnäs gästgiveri\n\n## I KAMPANJEN\nRegnsynd-äventyret: Nyckelperson som hittade pärlorna som orsakade problemen i Lundnäs.\n\n## SL-ANTECKNINGAR\nRagnar var fiskaren vars fångst av de förbann added pärlorna satte igång hela Regnsynd-äventyrtet. När pårlorna väl avlägsnades blev han så glad att han gav bort sin brännvin till hjältarna, \"för han behöver det inte längre\"."
+      "beskrivning": "# RAGNAR FISKARE\n**Fiskare i Lundnäs**\n\n## GRUNDINFO\n- **Yrke:** Fiskare i Lundnäs\n- **Bakgrund:** Fick upp de mystiska pärlorna i sin fångst en vecka före äventyret Regnsynd\n- **Status vid äventyret:** Bedrövad och lätt förvirrad, dränker sina sorger i billig öl på Lundnäs gästgiveri\n\n## I KAMPANJEN\nRegnsynd-äventyret: Nyckelperson som hittade pärlorna som orsakade problemen i Lundnäs.\n\n## SL-ANTECKNINGAR\nRagnar var fiskaren vars fångst av de förbann added pärlorna satte igång hela Regnsynd-äventyrtet. När pårlorna väl avlägsnades blev han så glad att han gav bort sin brännvin till hjältarna, \"för han behöver det inte längre\".",
+      "roll": "Fiskare"
     },
     {
       "namn": "Ragnar",
@@ -2384,7 +2621,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Ghedi-familjen",
       "kapitel": null,
-      "beskrivning": "# RASHAN AL-GHEDI\n**Medlem av Ghedi-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# RASHAN AL-GHEDI\n**Medlem av Ghedi-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Rashid ibn-Farid",
@@ -2410,14 +2648,15 @@ var wikiData = {
     },
     {
       "namn": "Rashid ibn-Khalid",
-      "bild": null,
+      "bild": "rashid.png",
       "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Muhad",
       "fraktion": "Sjöfarare",
       "kapitel": null,
-      "beskrivning": "# RASHID IBN-KHALID\n\n**Skeppskapten i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Skeppskapten\n\n## BAKGRUND\nKapten Rashid är en erfaren sjöfarare i Muhad, kännare av de farliga vattnen.\n\n## I KAMPANJEN\nMöttes under Fas 3 (Muhad). Potentiell kontakt för sjöresor eller information om hamnen.\n\n## SL-ANTECKNINGAR\n- Kan användas för framtida sjöresor\n- Känner hamnen och dess hemligheter"
+      "beskrivning": "# RASHID IBN-KHALID\n\n**Skeppskapten i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Muhad\n- **Roll:** Skeppskapten\n\n## BAKGRUND\nKapten Rashid är en erfaren sjöfarare i Muhad, kännare av de farliga vattnen.\n\n## I KAMPANJEN\nMöttes under Fas 3 (Muhad). Potentiell kontakt för sjöresor eller information om hamnen.\n\n## SL-ANTECKNINGAR\n- Kan användas för framtida sjöresor\n- Känner hamnen och dess hemligheter",
+      "roll": "Skeppskapten"
     },
     {
       "namn": "Raziq al-Nur",
@@ -2450,7 +2689,8 @@ var wikiData = {
       "plats": "Jarla",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# RENNIL\n**Före detta legoknekt, nu värdshusvärd**\n\n## GRUNDINFO\n- **Nuvarande Yrke:** Värdshusvärd på Vita gåsen i Jarla\n- **Bakgrund:** Före detta legoknekt (legosoldier)\n- **Familj:** Bror till Nero (skum hästhandlare)\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Driver värdshuset Vita gåsen.\n\n## SL-ANTECKNINGAR\nÖvergång från legokne to värdshusvärd antyder troligen kampanjerfarenhet. Hans bror Nero beskrivs som \"skum\", vilket kan indikera att familjen har kopplingar till mindre lagliga verksamheter."
+      "beskrivning": "# RENNIL\n**Före detta legoknekt, nu värdshusvärd**\n\n## GRUNDINFO\n- **Nuvarande Yrke:** Värdshusvärd på Vita gåsen i Jarla\n- **Bakgrund:** Före detta legoknekt (legosoldier)\n- **Familj:** Bror till Nero (skum hästhandlare)\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Driver värdshuset Vita gåsen.\n\n## SL-ANTECKNINGAR\nÖvergång från legokne to värdshusvärd antyder troligen kampanjerfarenhet. Hans bror Nero beskrivs som \"skum\", vilket kan indikera att familjen har kopplingar till mindre lagliga verksamheter.",
+      "roll": "Värdshusvärd"
     },
     {
       "namn": "Riddar Warg Spegelsköld",
@@ -2461,7 +2701,19 @@ var wikiData = {
       "plats": "Lundnäs",
       "fraktion": "Zoriánorden",
       "kapitel": null,
-      "beskrivning": "# RIDDAR WARG SPEGELSKÖLD\n**Fanatisk zoriánriddare**\n\n## GRUNDINFO\n- **Orden:** Zoriánriddare\n- **Uppdrag:** Kom till Lundnäs på fader Rubiels begäran\n- **Väpnare:** Oke (död när äventyret börjar)\n- **Påverkan:** Kraftigt påverkad av en pärla, lider av paranoia\n- **Tillstånd:** Överdriven misstänksamhet och aggression, ser häxor och kättare överallt\n\n## I KAMPANJEN\nRegnsynd-äventyret: Fanatisk riddare som blivit farligt påverkad av pärlorna.\n\n## SL-ANTECKNINGAR\nRiddar Warg hade ursprungligen med sig väpnaren Oke, men Oke dog i skogen utanför Lundnäs. Riddar Warg har en pärla i sin ägo vilket resulterat i svår paranoia. Han har mer eller mindre glömt bort att han har pärlan i sitt fördunklade tillstånd. Hans aggressive beteende och misstänksamhet gör honom farlig för oskyldiga."
+      "beskrivning": "# RIDDAR WARG SPEGELSKÖLD\n**Fanatisk zoriánriddare**\n\n## GRUNDINFO\n- **Orden:** Zoriánriddare\n- **Uppdrag:** Kom till Lundnäs på fader Rubiels begäran\n- **Väpnare:** Oke (död när äventyret börjar)\n- **Påverkan:** Kraftigt påverkad av en pärla, lider av paranoia\n- **Tillstånd:** Överdriven misstänksamhet och aggression, ser häxor och kättare överallt\n\n## I KAMPANJEN\nRegnsynd-äventyret: Fanatisk riddare som blivit farligt påverkad av pärlorna.\n\n## SL-ANTECKNINGAR\nRiddar Warg hade ursprungligen med sig väpnaren Oke, men Oke dog i skogen utanför Lundnäs. Riddar Warg har en pärla i sin ägo vilket resulterat i svår paranoia. Han har mer eller mindre glömt bort att han har pärlan i sitt fördunklade tillstånd. Hans aggressive beteende och misstänksamhet gör honom farlig för oskyldiga.",
+      "roll": "Riddare"
+    },
+    {
+      "namn": "Rikke Lorm",
+      "bild": "Rikke_Lorm.png",
+      "ras": "Okänd",
+      "titel": "Sjöman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# RIKKE LORM\n**Sjöman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Sjöman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nSjöman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
     },
     {
       "namn": "Rimklo",
@@ -2494,7 +2746,8 @@ var wikiData = {
       "plats": "Den Dolda Dolken, Tuzan Rim",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# RORIK\n**Kock på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Kock\n- **Plats:** Den Dolda Dolken, Tuzan Rim\n- **Anställningstid:** Har jobbat på värdshuset i många år\n\n## UTSEENDE & PERSONLIGHET\n- **Kroppsbyggnad:** Stor som ett hus\n- **Temperament:** Snäll och skygg\n- **Beskyddande:** Blir mycket arg om någon behandlar Lia eller Isla dåligt\n\n## RELATIONER\n- **Sylva:** Arbetsgivare (värdshusägare)\n- **Lia & Isla:** Beskyddar dem starkt\n\n## I KAMPANJEN\n**Kapitel 2 - Muhad:** Träffades på Den Dolda Dolken i Tuzan Rim. Trots sin imponerande storlek är han varsam och vänlig, men visar en annan sida om någon hotar de han bryr sig om.\n\n## SL-ANTECKNINGAR\nLojal anställd och pålitlig beskyddare av värdshuspersonalen. Hans fysiska närvaro och skyddande natur gör honom till en viktig tillgång för Sylva."
+      "beskrivning": "# RORIK\n**Kock på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Kock\n- **Plats:** Den Dolda Dolken, Tuzan Rim\n- **Anställningstid:** Har jobbat på värdshuset i många år\n\n## UTSEENDE & PERSONLIGHET\n- **Kroppsbyggnad:** Stor som ett hus\n- **Temperament:** Snäll och skygg\n- **Beskyddande:** Blir mycket arg om någon behandlar Lia eller Isla dåligt\n\n## RELATIONER\n- **Sylva:** Arbetsgivare (värdshusägare)\n- **Lia & Isla:** Beskyddar dem starkt\n\n## I KAMPANJEN\n**Kapitel 2 - Muhad:** Träffades på Den Dolda Dolken i Tuzan Rim. Trots sin imponerande storlek är han varsam och vänlig, men visar en annan sida om någon hotar de han bryr sig om.\n\n## SL-ANTECKNINGAR\nLojal anställd och pålitlig beskyddare av värdshuspersonalen. Hans fysiska närvaro och skyddande natur gör honom till en viktig tillgång för Sylva.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Runo Silvertråd",
@@ -2505,8 +2758,8 @@ var wikiData = {
       "plats": "Jarla, Asharien",
       "fraktion": "Lady Soffias informationsnätverk",
       "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# RUNO SILVERTRÅD\n\n**Roll:** Juvelerare och köpman av fina metaller\n**Plats:** Jarla, Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** Oberoende hantverkare, ärlig och diskret\n\n## Bakgrund\n\nRuno driver en liten men välrenommerad juvelerares verkstad i Jarlas köpmannskvarter. Han är känd för diskret hantverk och säljer smycken till stadens rika köpmän, adelsmän och cirefaliska diplomater. Folk pratar öppet framför honom eftersom \"hantverkare inte bryr sig om politik\".\n\nRunos familj hotades av konkurs för 5 år sedan efter att Handelshus Nejas (som nu dominerar Jarla) bojkottade deras verkstad. Soffia betalade deras skulder via mellanhand och ordnade nya kunder. Runo är tacksam och rapporterar allt han hör.\n\n## Spionaktivitet\n\n- Lyssnar på privata samtal i rika hushåll när han levererar smycken\n- Noterar **stora silverköp** (militära förberedelser? Bestickningar?)\n- Spårar **guldflöden** mellan Handelshus Nejas och cirefaliska konton\n- Känner till vilka cirefaliska familjer köper fastigheter i Jarla\n\n## Rapporterar till Soffia\n\n- Vilka cirefalier investerar i Jarla-egendom\n- Storköp av vapen/rustningar genom smidesgillet\n- Ekonomiska förbindelser mellan Handelshus Nejas och Cirefa\n- Betalningar för \"reformer\" (mutpengar till Frijarl Todor Fete)\n\n## Kontaktmetod\n\nKod-smycke levererat till Vitterdals handelshus i Jarla (varannan månad).\n\n## Lojalitet\n\n**Hög.** Runo är tacksam för att hans familj räddades från konkurs."
+      "beskrivning": "# RUNO SILVERTRÅD\n\n**Roll:** Juvelerare och köpman av fina metaller\n**Plats:** Jarla, Asharien\n**Fraktion:** Lady Soffias informationsnätverk\n**Täckmantel:** Oberoende hantverkare, ärlig och diskret\n\n## Bakgrund\n\nRuno driver en liten men välrenommerad juvelerares verkstad i Jarlas köpmannskvarter. Han är känd för diskret hantverk och säljer smycken till stadens rika köpmän, adelsmän och cirefaliska diplomater. Folk pratar öppet framför honom eftersom \"hantverkare inte bryr sig om politik\".\n\nRunos familj hotades av konkurs för 5 år sedan efter att Handelshus Nejas (som nu dominerar Jarla) bojkottade deras verkstad. Soffia betalade deras skulder via mellanhand och ordnade nya kunder. Runo är tacksam och rapporterar allt han hör.\n\n## Spionaktivitet\n\n- Lyssnar på privata samtal i rika hushåll när han levererar smycken\n- Noterar **stora silverköp** (militära förberedelser? Bestickningar?)\n- Spårar **guldflöden** mellan Handelshus Nejas och cirefaliska konton\n- Känner till vilka cirefaliska familjer köper fastigheter i Jarla\n\n## Rapporterar till Soffia\n\n- Vilka cirefalier investerar i Jarla-egendom\n- Storköp av vapen/rustningar genom smidesgillet\n- Ekonomiska förbindelser mellan Handelshus Nejas och Cirefa\n- Betalningar för \"reformer\" (mutpengar till Frijarl Todor Fete)\n\n## Kontaktmetod\n\nKod-smycke levererat till Vitterdals handelshus i Jarla (varannan månad).\n\n## Lojalitet\n\n**Hög.** Runo är tacksam för att hans familj räddades från konkurs.",
+      "källa": "EM-R001"
     },
     {
       "namn": "Rådslingan",
@@ -2531,6 +2784,17 @@ var wikiData = {
       "beskrivning": "# Sabera\n**Drog- och giftmästare i Muhad.** Ryktas vara allierad med mörka krafter. Expert på allt som rör gifter, droger och berusningsmedel."
     },
     {
+      "namn": "Saga",
+      "bild": "saga.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (flyktinggrupp)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# SAGA\n**Ung häxa med naturmagi**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 19 år\n- **Yrke:** Utvecklar naturmagi\n- **Status:** Levande\n- **Plats:** Vargnäset (bland flyktinggruppen)\n- **Första omnämnande:** Kapitel 8\n\n## BESKRIVNING\nSaga är en 19-årig flicka från Vargnäset som utvecklade naturmagi efter det trauma hon upplevde under Arvorns Hammares ockupation.\n\n## MAGISKA FÖRMÅGOR\nEfter traumat vaknade Sagas naturmagi:\n- **Kommunikation med döda:** Kan höra och tala med de döda\n- **Väderkänslighet:** Känner av väderförändringar\n- **Naturkoppling:** Växande koppling till naturen\n\n## ROLL I EVAKUERINGEN\n**Kapitel 8:** Under den desperata 5-dagarsflykten från Vargnäset:\n- **Dag 3:** Efter Helena Stenmarks och Gammal-Eriks död började Saga kommunicera med de döda\n- Skrämde först flyktinggruppen med sina förmågor\n- Gav sedan hopp genom att visa vägen\n- Kommunicerade med **Umnatak** om andevärlden\n\n## FRAMTIDA POTENTIAL\nSaga betraktas som en av de mest värdefulla överlevande:\n- Kan utvecklas till kraftfull naturmagiker\n- Potentiell allierad för gruppen\n- Unik förmåga att kommunicera med döda\n\n## KARAKTÄR\n- Traumatiserad men stark\n- Rädd för sina egna krafter\n- Vill hjälpa andra\n- Växer in i sin roll som magikanvändare\n\n## KOPPLINGAR\n- **Grupp:** Vargnäsets överlevande (39 flyktingar)\n- **Skepp:** Strömjungfrun (Kapten Berta)\n- **Relation:** Umnatak (lärde henne om andevärlden)"
+    },
+    {
       "namn": "Salma bint-Hafiz",
       "bild": "Salma_bint-Hafiz.png",
       "ras": "Människa",
@@ -2539,7 +2803,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Hafiz-familjen",
       "kapitel": null,
-      "beskrivning": "# SALMA BINT-HAFIZ\n**Medlem av Hafiz-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# SALMA BINT-HAFIZ\n**Medlem av Hafiz-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Samir ibn-Rashid",
@@ -2553,6 +2818,18 @@ var wikiData = {
       "beskrivning": "# SAMIR IBN-RASHID\n**Kökshjälp på Kamelens Oas**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Yrke:** Kökshjälp\n- **Arbetsplats:** Kamelens Oas\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nSamir ibn-Rashid arbetar som kökshjälp på Kamelens Oas under ledning av sin moster Leyla al-Malik. Han lär sig matlagningskonsten från henne.\n\n## FAMILJ\nSamir är systerson till Leyla al-Malik, värdshusägaren och kocken. Han har vuxit upp i familjens tradition av matlagning.\n\n## ARBETSUPPGIFTER\nSom kökshjälp:\n- Assisterar Leyla i köket\n- Förbereder ingredienser\n- Lär sig familjens receptböcker\n- Hjälper till med alla köksarbeten\n\n## KOPPLINGAR\n- **Arbetsplats:** Kamelens Oas\n- **Moster:** Leyla al-Malik\n- **Arbetsgivare:** Farid & Leyla al-Malik\n- **Kollegor:** Tariq, Amira, Youssef, Naila\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
+      "namn": "Sankt Astrid",
+      "bild": "kullendorff_Innocent_12-year-old_girl_with_gentle_compassiona_26e9414b-fa9f-4add-ae2d-b64ee159f5f5_0.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "död",
+      "plats": "Vargnäset",
+      "fraktion": "Vargnäsets bybor",
+      "kapitel": null,
+      "beskrivning": "# SANKT ASTRID\n\n**12-årig martyr från Vargnäset**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Ålder:** 12 år (vid död)\n- **Status:** Död - Martyr\n- **Första fas:** Fas 8 (Vargnäsets andra besök)\n- **Roll:** Katalysator för Corvus vändning\n\n## BAKGRUND\n\nAstrid var en 12-årig flicka från Vargnäset som levde ett vanligt bybarnsliv innan Arvorns Hammare ockuperade byn.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset - Ockupationen (Fas 8)\n**Lögnen:**\n- Arvorns Hammare förhörde byborna om \"magiska händelser\"\n- Astrid ljög för att skydda spelarna\n\n**Korsfästelsen:**\n- Corvus Askhår korsfäste henne enligt ordensdoktrin\n- Hennes blod vägrade frysa trots vinterkölden (gudomligt tecken)\n- Hennes sista ord var förlåtelse\n\n**Uppenbarelsen:**\n- I det ögonblicket fick Corvus gudomlig uppenbarelse från Daak\n- 23 års övertygelse krossades\n- Corvus insåg att han kanske dödat oskyldiga i decennier\n\n## BETYDELSE\n\nAstrids död blev vändpunkten för Corvus Askhår och indirekt räddade gruppen. Hennes förlåtelse och det gudomliga tecknet bevisade att Arvorns Hammares doktrin var felaktig.\n\n## KARAKTÄRSDRAG\n\n- **Modig:** Ljög för att skydda främlingar\n- **Förlåtande:** Hennes sista ord var förlåtelse\n- **Oskyldig:** 12-årig flicka\n\n## RELATIONER\n\n### Påverkade\n- **Corvus Askhår:** Hennes död förändrade honom totalt\n- **Gruppen:** Hon dog för att skydda dem\n\n### Byn\n- **Vargnäsets bybor:** Hennes folk\n\n## EFTERMÄLE\n\nGruppen minns henne som \"Sankt Astrid\" - ett barn vars offer och förlåtelse förändrade allt.\n\n## SL-ANTECKNINGAR\n\n- Symbol för kampanjens moraliska komplexitet\n- Hennes ande kan dyka upp i Skugglandet till Corvus\n- Hennes offer väger tungt på gruppens samvete\n- Representerar oskyldiga offer för fanatism",
+      "roll": "Martyr - katalysator för Corvus vändning"
+    },
+    {
       "namn": "Sarrius",
       "bild": null,
       "ras": "Människa",
@@ -2564,15 +2841,16 @@ var wikiData = {
       "beskrivning": "# Sarrius\n**Jargisk slavhandlare och monsterjägare verksam i Jen.** Handlar med både slavar och exotiska monster. En farlig och hänsynslös affärsman från Jargien."
     },
     {
-      "namn": "Sankt Astrid",
-      "bild": "kullendorff_Innocent_12-year-old_girl_with_gentle_compassiona_26e9414b-fa9f-4add-ae2d-b64ee159f5f5_0.png",
+      "namn": "Scout",
+      "bild": null,
       "ras": "Människa",
       "titel": null,
-      "status": "död",
-      "plats": "Vargnäset",
-      "fraktion": "Vargnäsets bybor",
+      "status": "okänd",
+      "plats": "Resan Hem - Scenario 3",
+      "fraktion": "Okänd",
       "kapitel": null,
-      "beskrivning": "# SANKT ASTRID\n\n**12-årig martyr från Vargnäset**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Ålder:** 12 år (vid död)\n- **Status:** Död - Martyr\n- **Första fas:** Fas 8 (Vargnäsets andra besök)\n- **Roll:** Katalysator för Corvus vändning\n\n## BAKGRUND\n\nAstrid var en 12-årig flicka från Vargnäset som levde ett vanligt bybarnsliv innan Arvorns Hammare ockuperade byn.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset - Ockupationen (Fas 8)\n**Lögnen:**\n- Arvorns Hammare förhörde byborna om \"magiska händelser\"\n- Astrid ljög för att skydda spelarna\n\n**Korsfästelsen:**\n- Corvus Askhår korsfäste henne enligt ordensdoktrin\n- Hennes blod vägrade frysa trots vinterkölden (gudomligt tecken)\n- Hennes sista ord var förlåtelse\n\n**Uppenbarelsen:**\n- I det ögonblicket fick Corvus gudomlig uppenbarelse från Daak\n- 23 års övertygelse krossades\n- Corvus insåg att han kanske dödat oskyldiga i decennier\n\n## BETYDELSE\n\nAstrids död blev vändpunkten för Corvus Askhår och indirekt räddade gruppen. Hennes förlåtelse och det gudomliga tecknet bevisade att Arvorns Hammares doktrin var felaktig.\n\n## KARAKTÄRSDRAG\n\n- **Modig:** Ljög för att skydda främlingar\n- **Förlåtande:** Hennes sista ord var förlåtelse\n- **Oskyldig:** 12-årig flicka\n\n## RELATIONER\n\n### Påverkade\n- **Corvus Askhår:** Hennes död förändrade honom totalt\n- **Gruppen:** Hon dog för att skydda dem\n\n### Byn\n- **Vargnäsets bybor:** Hennes folk\n\n## EFTERMÄLE\n\nGruppen minns henne som \"Sankt Astrid\" - ett barn vars offer och förlåtelse förändrade allt.\n\n## SL-ANTECKNINGAR\n\n- Symbol för kampanjens moraliska komplexitet\n- Hennes ande kan dyka upp i Skugglandet till Corvus\n- Hennes offer väger tungt på gruppens samvete\n- Representerar oskyldiga offer för fanatism"
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# SCOUT\n**Scout i Scenario 3**\n\n## GRUNDINFO\n- **Roll:** Scout/Spejare\n- **Kontext:** Scenario 3 på Resan Hem\n\n## I KAMPANJEN\nFas 7 (Resan Hem - Scenario 3): Scout som spelarna möter.\n\n## SL-ANTECKNINGAR\nTroligen en spejare eller spanare som spelarna stöter på under resan hem.",
+      "roll": "Scout"
     },
     {
       "namn": "Selene \"Silveröga\" Kazarov",
@@ -2583,7 +2861,8 @@ var wikiData = {
       "plats": "Frostnymfen (Raunfloden)",
       "fraktion": "Lady Soffias nätverk",
       "kapitel": "Kapitel 8",
-      "beskrivning": "# SELENE \"SILVERÖGA\" KAZAROV\n**Asharisk spejare och underbefäl, informant till Lady Soffia**\n\n## GRUNDINFO\n- **Ras:** Asharier\n- **Ålder:** 40-årsåldern\n- **Titel:** Underbefäl på Frostnymfen\n- **Smeknamn:** \"Silveröga\"\n- **Status:** Levande\n\n## UTSEENDE\n- **Konstgjort silveröga** (höger öga)\n- Silverögat reflekterar ljus på särskilt sätt\n- Vaksam hållning\n\n## ROLL\n**Den vaksamma spejaren:**\n- Underbefäl till Kapten Nilmar\n- Sköter rekognoscering och säkerhet\n- Iakttar främlingar misstänksamt\n- Extremt lojal mot Nilmar\n\n## HEMLIGA VERKSAMHET\n- Informant åt Lady Soffia i flera år\n- Hemlig medlem i nätverk som hjälper förföljda fly\n- Kontakter längs hela Raunfloden\n- Känner igen Hagge genom beskrivningar\n\n## I KAMPANJEN\n**Fas 8:** Under transporten mot Vitterdal varnade gruppen, rekognoscerade, gav sigill för nätverket.\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Kapten:** Nilmar\n- **Informant till:** Lady Soffia"
+      "beskrivning": "# SELENE \"SILVERÖGA\" KAZAROV\n**Asharisk spejare och underbefäl, informant till Lady Soffia**\n\n## GRUNDINFO\n- **Ras:** Asharier\n- **Ålder:** 40-årsåldern\n- **Titel:** Underbefäl på Frostnymfen\n- **Smeknamn:** \"Silveröga\"\n- **Status:** Levande\n\n## UTSEENDE\n- **Konstgjort silveröga** (höger öga)\n- Silverögat reflekterar ljus på särskilt sätt\n- Vaksam hållning\n\n## ROLL\n**Den vaksamma spejaren:**\n- Underbefäl till Kapten Nilmar\n- Sköter rekognoscering och säkerhet\n- Iakttar främlingar misstänksamt\n- Extremt lojal mot Nilmar\n\n## HEMLIGA VERKSAMHET\n- Informant åt Lady Soffia i flera år\n- Hemlig medlem i nätverk som hjälper förföljda fly\n- Kontakter längs hela Raunfloden\n- Känner igen Hagge genom beskrivningar\n\n## I KAMPANJEN\n**Fas 8:** Under transporten mot Vitterdal varnade gruppen, rekognoscerade, gav sigill för nätverket.\n\n## KOPPLINGAR\n- **Fartyg:** Frostnymfen\n- **Kapten:** Nilmar\n- **Informant till:** Lady Soffia",
+      "roll": "Underbefäl på Frostnymfen, informant"
     },
     {
       "namn": "Selim ibn-Rashid",
@@ -2594,7 +2873,8 @@ var wikiData = {
       "plats": "Jen, Muhad",
       "fraktion": null,
       "kapitel": null,
-      "beskrivning": "# SELIM IBN-RASHID\n**Slav och bärare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Status:** Slav\n- **Yrke:** Bärare\n- **Ägare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nSelim ibn-Rashid är en ung man i tjugoårsåldern med kort, lockigt hår och en smidig kroppsbyggnad. Han är klädd i enkla, men rena kläder.\n\n## BAKGRUND\nSelim köptes tillsammans med Kasim och arbetar också som bärare. Han är snabbtänkt och anpassar sig lätt till olika uppgifter, vilket gör honom värdefull i hushållet.\n\n## ARBETSUPPGIFTER\nSom bärare:\n- Bär Laila i palankin\n- Anpassar sig till olika uppgifter\n- Fysiskt arbete\n- Flexibla arbetsuppgifter\n\n## KARAKTÄR\n- Ung och smidig\n- Snabbtänkt\n- Anpassningsbar\n- Värdefull i hushållet\n\n## KOPPLINGAR\n- **Ägare:** Laila al-Jen\n- **Arbetsuppgift:** Bärare\n- **Kollega:** Kasim ibn-Farid (medarbetare som bärare)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3"
+      "beskrivning": "# SELIM IBN-RASHID\n**Slav och bärare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Status:** Slav\n- **Yrke:** Bärare\n- **Ägare:** Laila al-Jen\n- **Plats:** Jen, Muhad\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nSelim ibn-Rashid är en ung man i tjugoårsåldern med kort, lockigt hår och en smidig kroppsbyggnad. Han är klädd i enkla, men rena kläder.\n\n## BAKGRUND\nSelim köptes tillsammans med Kasim och arbetar också som bärare. Han är snabbtänkt och anpassar sig lätt till olika uppgifter, vilket gör honom värdefull i hushållet.\n\n## ARBETSUPPGIFTER\nSom bärare:\n- Bär Laila i palankin\n- Anpassar sig till olika uppgifter\n- Fysiskt arbete\n- Flexibla arbetsuppgifter\n\n## KARAKTÄR\n- Ung och smidig\n- Snabbtänkt\n- Anpassningsbar\n- Värdefull i hushållet\n\n## KOPPLINGAR\n- **Ägare:** Laila al-Jen\n- **Arbetsuppgift:** Bärare\n- **Kollega:** Kasim ibn-Farid (medarbetare som bärare)\n- **Plats:** Jen, Lailas hem\n- **Fas:** 3",
+      "roll": "Obestämd"
     },
     {
       "namn": "Serafina Eldstav",
@@ -2605,18 +2885,8 @@ var wikiData = {
       "plats": "Okänd",
       "fraktion": "Sanari-alverna",
       "kapitel": null,
-      "beskrivning": "# SERAFINA ELDSTAV\n\n**Thismalv (Sanari-alv), före detta second-in-command för Stålsvärds Kavalerister**\n\n## GRUNDINFO\n\n- **Ras:** Thismalv (Sanari-alv)\n- **Status:** Försvunnen\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Komplex antagonist\n\n## BAKGRUND\n\nSerafina var second-in-command för legosoldatkompaniet \"Stålsvärds Kavalerister\" under Tirakgravens utgrävning. Hon hade blivit förvisad från Sanari-alvernas samhälle 10 år tidigare.\n\n### Hemligheten\nSerafina hade inga föremål från tirakgraven - Ibran/Tamron stal dem alla. Men efter striden vid Grensfortet tog hon hand om de återtagna föremålen. Hon agerade på eget initiativ i hopp om att kunna köpa tillbaka sin plats bland Sanari-alverna - utan att alverna bett om det.\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n- Deltog som second-in-command för Stålsvärds Kavalerister\n- Tog INGA föremål vid graven (Ibran/Tamron stal dem)\n\n### Grensfortet (Fas 1)\n- Red ikapp gruppen och deltog i striden mot Urkhaths manifestation\n- Tog hand om de återtagna föremålen efter striden\n- Reste med föremålen till Sanari-alverna (eget initiativ)\n\n## KARAKTÄRSDRAG\n\n- **Driven av längtan:** Ville återförenas med sitt folk\n- **Delade lojaliteter:** Mellan kompaniet och alverna\n- **Modig eller desperat:** Tog föremålen på eget initiativ efter Grensfortet\n\n## RELATIONER\n\n### Kavalerister\n- **Kaelar Stålsvärd:** Tidigare befälhavare, förrådde honom\n\n### Alverna\n- **Sanari-alverna:** Förvisad från, försökte återvinna acceptans\n\n## NUVARANDE SITUATION\n\nSerafina tog föremålen efter striden vid Grensfortet och reste till Sanari-alverna på eget initiativ. Hennes öde är okänt - det är möjligt att alverna tog emot henne, eller att de förrådde henne.\n\n## SL-ANTECKNINGAR\n\n- Potentiell framtida antagonist eller tragisk figur\n- Bindningsföremålens plats är okänd\n- Kan dyka upp senare i kampanjen\n- Hennes förvisning och desperata handling skapar intressant moralisk komplexitet"
-    },
-    {
-      "namn": "Saga",
-      "bild": "saga.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (flyktinggrupp)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# SAGA\n**Ung häxa med naturmagi**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 19 år\n- **Yrke:** Utvecklar naturmagi\n- **Status:** Levande\n- **Plats:** Vargnäset (bland flyktinggruppen)\n- **Första omnämnande:** Kapitel 8\n\n## BESKRIVNING\nSaga är en 19-årig flicka från Vargnäset som utvecklade naturmagi efter det trauma hon upplevde under Arvorns Hammares ockupation.\n\n## MAGISKA FÖRMÅGOR\nEfter traumat vaknade Sagas naturmagi:\n- **Kommunikation med döda:** Kan höra och tala med de döda\n- **Väderkänslighet:** Känner av väderförändringar\n- **Naturkoppling:** Växande koppling till naturen\n\n## ROLL I EVAKUERINGEN\n**Kapitel 8:** Under den desperata 5-dagarsflykten från Vargnäset:\n- **Dag 3:** Efter Helena Stenmarks och Gammal-Eriks död började Saga kommunicera med de döda\n- Skrämde först flyktinggruppen med sina förmågor\n- Gav sedan hopp genom att visa vägen\n- Kommunicerade med **Umnatak** om andevärlden\n\n## FRAMTIDA POTENTIAL\nSaga betraktas som en av de mest värdefulla överlevande:\n- Kan utvecklas till kraftfull naturmagiker\n- Potentiell allierad för gruppen\n- Unik förmåga att kommunicera med döda\n\n## KARAKTÄR\n- Traumatiserad men stark\n- Rädd för sina egna krafter\n- Vill hjälpa andra\n- Växer in i sin roll som magikanvändare\n\n## KOPPLINGAR\n- **Grupp:** Vargnäsets överlevande (39 flyktingar)\n- **Skepp:** Strömjungfrun (Kapten Berta)\n- **Relation:** Umnatak (lärde henne om andevärlden)"
+      "beskrivning": "# SERAFINA ELDSTAV\n\n**Thismalv (Sanari-alv), före detta second-in-command för Stålsvärds Kavalerister**\n\n## GRUNDINFO\n\n- **Ras:** Thismalv (Sanari-alv)\n- **Status:** Försvunnen\n- **Första fas:** Fas 1 (Tirakgraven)\n- **Roll:** Komplex antagonist\n\n## BAKGRUND\n\nSerafina var second-in-command för legosoldatkompaniet \"Stålsvärds Kavalerister\" under Tirakgravens utgrävning. Hon hade blivit förvisad från Sanari-alvernas samhälle 10 år tidigare.\n\n### Hemligheten\nSerafina hade inga föremål från tirakgraven - Ibran/Tamron stal dem alla. Men efter striden vid Grensfortet tog hon hand om de återtagna föremålen. Hon agerade på eget initiativ i hopp om att kunna köpa tillbaka sin plats bland Sanari-alverna - utan att alverna bett om det.\n\n## KRITISKA HÄNDELSER\n\n### Tirakgraven (Fas 1)\n- Deltog som second-in-command för Stålsvärds Kavalerister\n- Tog INGA föremål vid graven (Ibran/Tamron stal dem)\n\n### Grensfortet (Fas 1)\n- Red ikapp gruppen och deltog i striden mot Urkhaths manifestation\n- Tog hand om de återtagna föremålen efter striden\n- Reste med föremålen till Sanari-alverna (eget initiativ)\n\n## KARAKTÄRSDRAG\n\n- **Driven av längtan:** Ville återförenas med sitt folk\n- **Delade lojaliteter:** Mellan kompaniet och alverna\n- **Modig eller desperat:** Tog föremålen på eget initiativ efter Grensfortet\n\n## RELATIONER\n\n### Kavalerister\n- **Kaelar Stålsvärd:** Tidigare befälhavare, förrådde honom\n\n### Alverna\n- **Sanari-alverna:** Förvisad från, försökte återvinna acceptans\n\n## NUVARANDE SITUATION\n\nSerafina tog föremålen efter striden vid Grensfortet och reste till Sanari-alverna på eget initiativ. Hennes öde är okänt - det är möjligt att alverna tog emot henne, eller att de förrådde henne.\n\n## SL-ANTECKNINGAR\n\n- Potentiell framtida antagonist eller tragisk figur\n- Bindningsföremålens plats är okänd\n- Kan dyka upp senare i kampanjen\n- Hennes förvisning och desperata handling skapar intressant moralisk komplexitet",
+      "roll": "Komplex antagonist - tog föremål efter Grensfortet"
     },
     {
       "namn": "Shamir Tarim Uzun ben Isma'il",
@@ -2641,6 +2911,28 @@ var wikiData = {
       "beskrivning": "# SHEIKH NABIL\n**Eremit vid ökenoas**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Man\n- **Titel:** Sheikh\n- **Yrke:** Eremit\n- **Plats:** Muhad, gömd oas i öknen\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nSheikh Nabil är en eremit som lever vid en gömd oas i öknen. Han är vis och delar kunskap med resande.\n\n## KUNSKAPER\nSheikh Nabil har kunskap om:\n- Öknens faror\n- Visdom och andlighet\n- Varningar om kommande hot\n- Legender och profetior\n- Öknens hemligheter\n\n## MÖTESPLATS\nSheikh Nabil möter resande vid:\n- Den gömda oasen (Dag 3 av karavanresan)\n- Delar visdom och varningar\n- Ger råd till karavaner\n\n## BUDSKAP\nHans budskap inkluderar:\n- Visdom om öknens faror\n- Möjliga varningar\n- Andlig vägledning\n- Kunskap om regionen\n\n## KARAKTÄR\n- Vis och erfaren\n- Eremit\n- Delar visdom\n- Mystisk\n\n## VIKTIGA HÄNDELSER\nUnder Laila al-Jens karavanresa:\n- Mötte karavanen vid oasen\n- Delade varningar\n- Samtalade med Selim ibn-Rashid (observerat av Umnatak)\n\n## KOPPLINGAR\n- **Yrke:** Eremit\n- **Bostad:** Gömd oas i öknen\n- **Plats:** Muhad, ökenregioner\n- **Fas:** 3"
     },
     {
+      "namn": "Sigrid Falkemo",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# SIGRID FALKEMO\r\n**6-årig flicka från Vargnäset**\r\n\r\n## GRUNDINFO\r\n- **Ras:** Människa\r\n- **Ålder:** 6 år\r\n- **Status:** Levande\r\n- **Plats:** Vargnäset (evakuerad)\r\n- **Kapitel:** Kapitel 8\r\n- **Yrke:** Barn från Vargnäset\r\n\r\n## BESKRIVNING\r\n6-årig flicka från Vargnäset. Dotter till Gunnar Falkemo, syster till Torkel. Evakuerad med de 41 överlevande.\r\n\r\n## FAMILJ\r\n- **Far:** Gunnar Falkemo\r\n- **Syster:** Torkel Falkemo\r\n\r\n## EVAKUERINGEN\r\n- Evakuerad från Vargnäset med 41 överlevande\r\n- Del av den större gruppen civila flyktingar\r"
+    },
+    {
+      "namn": "Sigrid Falkemo",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# SIGRID FALKEMO\n**6-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 6 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n6-årig flicka från Vargnäset. Dotter till Gunnar Falkemo, syster till Torkel. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Torkel Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
       "namn": "Silverfot",
       "bild": null,
       "ras": "Monster",
@@ -2650,6 +2942,28 @@ var wikiData = {
       "fraktion": null,
       "kapitel": null,
       "beskrivning": "# SILVERFOT\n**Vintervargens alfahanne**\n\n## GRUNDINFO\n- **Ras:** Vintervarg (talande varg)\n- **Kön:** Man\n- **Titel:** Alfahanne\n- **Plats:** Djupa Mithera\n- **Status:** Levande\n- **Första omnämnande:** Fas 10\n\n## BESKRIVNING\nSilverfot är alfahannen i en flock vintervargar som patrullerar i Djupa Mithera. Vintervargar är intelligenta, talande varelser som organiserar sig i hierarkiska flockar.\n\n## KARAKTÄR\n- Stolt och värdighetsmedveten\n- Intelligent och strategisk\n- Hård men rättvis\n- Skyddar sitt revir med beslutsamhet\n\n## TERRITORIUM OCH MOTIVATION\nSilverfot och hans flock beskyddar sitt revir från istroll och andra inkräktare. Han är territoriell men kan respektera de som visar styrka och respekt.\n\n- **Revir:** Delar av Djupa Mithera\n- **Fiender:** Istroll som inkräktar på territoriet\n- **Allianser:** Kan bli allierad med de som visar respekt\n\n## KUNSKAP\nSilverfot har djup kunskap om de **gamla stigarna** - de vägar som fanns innan Mitheraskogens geografi började förändras. Denna kunskap kan vara värdefull för resenärer.\n\n## FÖRHANDLING\nFör att vinna Silverfots hjälp krävs:\n- **Respekt** - visa att man förstår flockhierarkin\n- **Kött** - praktisk betalning\n- **Inga hot** - hantera mötet med värdighet\n\nOm rätt hanterad kan Silverfot och hans flock bli värdefulla allierade.\n\n## ROLL I KAMPANJEN\nSilverfot kan erbjuda vägledning genom Djupa Mithera baserat på kunskap om de gamla stigarna. Hans flock kan också ge beskydd mot andra faror.\n\n## KOPPLINGER\n- **Flock:** Leder en vintervargflock i Mithera\n- **Territorium:** Djupa Mithera\n- **Fiender:** Istroll"
+    },
+    {
+      "namn": "Sjödöda Titanen",
+      "bild": "skuggtitan.png",
+      "ras": "Monster",
+      "titel": "Boss i Skugglandet",
+      "status": "levande",
+      "plats": "Skugglandet (sjö)",
+      "fraktion": null,
+      "kapitel": "Kapitel 10",
+      "beskrivning": "# SJÖDÖDA TITANEN\r\n\r\n**Boss-strid i Skugglandet**\r\n\r\n## Framträdandet\r\n\r\nFrån sjön, hundra meter bort, stiger något upp.\r\n\r\nLångsamt.\r\n\r\nFörst ser de bara siluetten - en pyramid av lemmar och kroppar som reser sig mot den grå himlen. Tre meter. Fyra. Fem.\r\n\r\nVatten forsar från den. Men det är inte bara vatten - det är **MINNEN av vatten**, ekon av drunkning, skrik som fastnat i lungor.\r\n\r\nSex huvuden. Eller kanske bara ett huvud med sex ansikten. Svårt att säga. Alla stirrar åt olika håll utom två - de fixerar gruppen.\r\n\r\nFyra armar. Två tjocka som trädstammar. Två tunna som spindellår. Händerna FEL - någon har tre fingrar, någon åtta.\r\n\r\nDet går. Mot dem. Varje steg skakar marken. Det dryper. Lämnar pölar av... något... som ångar i kylan.\r\n\r\nTrettio meter bort stannar det.\r\n\r\nEtt av ansiktena öppnar munnen. Vatten rinner ut. Sedan orden:\r\n\r\n*\"Varmt. Ni är... varma.\"*\r\n\r\nTjugo meter.\r\n\r\n*\"Jag var kald. Så länge. I vattnet.\"*\r\n\r\nTio meter.\r\n\r\nAlla sex ansikten viskar nu, förskjutet:\r\n\r\n*\"Ge mig er värme.\"*\r\n\r\n## EON-STATS: SJÖDÖDA TITANEN\r\n\r\n### Grundvärden\r\n- **KP:** 120 (massiv)\r\n- **Storlek:** Enorm (5 meter hög)\r\n- **STY:** 22 (övermänsklig)\r\n- **SMI:** 10 (långsam men räckvidd kompenserar)\r\n- **INT:** 8 (rovdjursinstinkt + hat)\r\n- **PSY:** 16 (mentalt motstånd)\r\n\r\n### Skydd\r\n- **Naturligt pansar:** 8 (tjock, vattendränkt massa)\r\n- **Svag punkt:** Ansiktena - 0 pansar om träffade direkt\r\n\r\n### Färdigheter\r\n- **Närstrid:** Ob4T6 (kraftfull men inte snabb)\r\n- **Undvika:** Ob2T6 (stor, långsam)\r\n- **Greppa:** Ob5T6 (fyra armar!)\r\n\r\n### Attacker\r\n\r\n**1. Slagsmål (Tjocka armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 4T6+8 (BRUTALT)\r\n- Räckvidd: 4 meter\r\n- Kan slå TVÅ mål om de står nära varandra\r\n\r\n**2. Spetsiga fingrar (Tunna armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 3T6+4\r\n- Räckvidd: 5 meter\r\n- Penetrerar pansar (räkna som -4 pansar)\r\n\r\n**3. Greppattack**\r\n- Anfallsslag: Ob5T6 (alla fyra armar används)\r\n- Om träff: Offret greppat\r\n- Automatisk skada 2T6+4 per runda (krossning)\r\n- Kräver STY-tävling för att bryta sig loss (Ob5T6 vs Ob5T6)\r\n\r\n**4. Dränkning**\r\n- Om offret greppat i 2+ rundor\r\n- Titanen trycker ansiktet mot offrets mun\r\n- Börjar fylla offret med ruttet vatten\r\n- Kväver på 1T4 rundor om inte befriat\r\n\r\n### Särskilda Förmågor\r\n\r\n**Vattendränkt massa**\r\n- Hugg-/stickvapen: Halv skada (blöt, svampig)\r\n- Kross-/slagvapen: Full skada\r\n- Eld: Dubbel skada\r\n"
+    },
+    {
+      "namn": "Skorda Bergsdotter",
+      "bild": "skorda.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# SKORDA BERGSDOTTER\n**Cynisk överlevare från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad till Grensfortet)\n- **Kapitel:** Kapitel 8\n- **Personlighet:** Cynisk, pessimistisk, brutalt ärlig\n\n## BESKRIVNING\nSkorda Bergsdotter är en erfaren överlevare från Vargnäset med ett cyniskt och pessimistiskt synsätt på tillvaron. Hon ser världen utan illusi oner - överlevnad före allt.\n\n## RESAN TILL GRENSFORTET\nSkorda var narratören av \"Resan till Grensfortet\" - hennes berättelse fångade gruppens resa från Vitterdal (11:e Tretoria) till Grensfortet (16:e Tretoria, Bio) med brutal ärlighet.\n\n**Hennes stil:**\n- Korta, klippande meningar\n- Brutalt ärlig observation\n- Ingen romantisering\n- \"Döden enkel. Livet komplicerat.\"\n\n## KARAKTÄR\n- **Cynisk realist:** \"Storm kommer alltid efter stillhet\"\n- **Pessimistisk:** \"Bygga något eller dö. Troligen båda.\"\n- **Empatisk trots cynism:** Satt med Eira när hon skakade, sa inget, bara fanns där\n- **Observant:** Märkte alla detaljer - viltspår, folks rädsla, underliggande spänningar\n\n## NYCKELCITAT\n- \"Skuld dödar folk långsammare än knivar men lika säkert\"\n- \"Hat är bättre än apati. Hat håller dig varm\"\n- \"Soldater pratar bäst utan ord\"\n- \"Oddsen? Usla. Men överlevt värre.\"\n\n## OBSERVATIONER UNDER RESAN\nSkorda noterade:\n- Eiras försämrade mentala tillstånd\n- Arcadius inre kamp med sin tro\n- Ragnar s fascination för Thrakka\n- Sten Knotbindares ensamhet och skuld\n- De goda jaktmarkerna runt Grensfortet\n\n## KOPPLINGAR\n- **Vargnäset:** Hemby (evakuerad)\n- **Eira Holm:** Vän, oroar sig för hennes mentala tillstånd\n- **Grensfortet:** Ny bosättning\n- **Gruppen:** En av 17 flyktingar på resan"
     },
     {
       "namn": "Soraya al-Majid",
@@ -2663,15 +2977,15 @@ var wikiData = {
       "beskrivning": "# SORAYA AL-MAJID\n**Berömd klädskapare**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Klädskapare\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nSoraya al-Majid är en berömd klädskapare känd för sina extravaganta kreationer. Hennes mode är mycket eftertraktat bland stadens elit. Hon är en kvinna omgiven av tyger och mönster, med en kreativ gnista i ögonen.\n\n## VERKSAMHET\nSoraya skapar:\n- Extravaganta klädkreationer\n- Exklusiva mode för stadens elit\n- Unika designlösningar\n- Eftertraktade skapelser\n\n## KARAKTÄR\n- Kreativ och innovativ\n- Omgiven av tyger och mönster\n- Kreativ gnista\n- Mycket eftertraktad\n\n## KOPPLINGAR\n- **Yrke:** Klädskapare\n- **Kunder:** Stadens elit\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
-      "namn": "Faster Solveig",
+      "namn": "Sten (Systkonen)",
       "bild": null,
       "ras": "Människa",
       "titel": null,
       "status": "levande",
-      "plats": "Vargnäset (flyktinggrupp)",
+      "plats": "Grens Baroneri",
       "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# FASTER SOLVEIG\n**Läskunnig informatör och dokumentansvarig**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 64 år\n- **Yrke:** Läskunnig, Informatör, Dokumentansvarig\n- **Status:** Levande\n- **Plats:** Vargnäset (bland flyktinggruppen)\n- **Första omnämnande:** Kapitel 8\n\n## BESKRIVNING\nFaster Solveig är Vargnäsets enda invånare som kan läsa flytande. Hon förvarade byns dokument och fungerade som informatör och historiebevarare.\n\n## UNIKA KUNSKAPER\nSolveig har ovärderlig kunskap om:\n- **Zentris försvinnande:** Har utvecklat teorier baserat på gamla texter och dokument\n- **Byns historia:** Känner till alla släktskap och historiska händelser\n- **Läskonst:** Enda som kan tolka skrivna dokument\n- **Magisk historia:** Känner till regionens magiska bakgrund genom gamla skrifter\n\n## ROLL I EVAKUERINGEN\n**Kapitel 8:** Under den desperata flykten från Vargnäset:\n- Förvarade och bar byns viktigaste dokument\n- Fungerade som rådgivare till **Eira Holm** (byäldsten)\n- Reste ombord på **Rimfrosten** med ledarna och viktigaste familjerna\n- Teoretiserade om Zentris försvinnande baserat på sina kunskaper\n\n## VÄRDE FÖR GRUPPEN\nBetraktad som en av de mest värdefulla överlevande (⭐):\n- Kan forska om Zentri\n- Har kunskap om regional magi och historia\n- Ovärderlig informatör\n- Kan läsa gamla texter och kartor\n\n## KARAKTÄR\n- Bildad och erfaren\n- Bevarar kunskap\n- Analytisk tänkare\n- Lugn under press\n- Respekterad av alla i byn\n\n## KOPPLINGAR\n- **Grupp:** Vargnäsets överlevande (39 flyktingar)\n- **Skepp:** Rimfrosten (Kapten Nils \"Järnhand\" Gromsson)\n- **Ledare:** Tillsammans med Eira Holm, Ingvild, Tomas Järnhjälm\n- **Potential:** Kan hjälpa gruppen förstå Zentris försvinnande"
+      "kapitel": null,
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# Sten (Systkonen)\n**Örtsamlare**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Titel:** Örtsamlare\n- **Plats:** Grens Baroneri\n- **Status:** Levande\n\n## BESKRIVNING\nSten är en örtsamlare i 60-årsåldern som lever i Grens Baroneris vildmark tillsammans med sitt syskon Märta. Han är den tystlåtna halvan av \"Systkonen\" - han lyssnar mer än han pratar och observerar mer än han agerar.\n\n## KARAKTÄR & UTSEENDE\n- I 60-årsåldern\n- Syskon med Märta\n- Kallas \"Systkonen\" tillsammans med Märta\n- Tystlåten och lyssnande\n- Observant och eftertänksam\n\n## RELATIONER\nLever med sitt syskon Märta. Där Märta pratar är Sten tyst och lyssnar. Tillsammans tar de emot besök från Adisa och känner till traktens hemligheter. Sten bidrar med sin tysta observation och eftertänksamhet."
     },
     {
       "namn": "Sten Knotbindare",
@@ -2715,18 +3029,20 @@ var wikiData = {
       "plats": "Cermira stad, Månsjöns hamn",
       "fraktion": "Lady Soffias informationsnätverk",
       "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# SVEN HAMMARHAND\n**Hamnararbetare och lastkontrollant, Cermira stad**\n\n## GRUNDINFO\n- **Ras:** Människa (cermirisk)\n- **Roll:** Hamnararbetare och lastkontrollant\n- **Täckmantel:** Hamnarbetare som \"skriver rätt vad som lastas\"\n- **Arbetsplats:** Cermiras hamn, Månsjön\n- **Plats:** Cermira stad (7000 invånare, huvudstad)\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nSvens bror dog i gruvras i Vitterdal för 5 år sedan och lämnade efter sig hustru + 3 barn. Soffia såg till att familjen fick pension och att barnen fick lärlingskap. Sven vet att \"Lady Soffia hjälpte min brors familj\" och är djupt tacksam. Han kan läsa och skriva (ovanligt för hamnarbetare).\n\n## VARFÖR VÄL PLACERAD\n- Ser ALLA fartyg som anlöper Cermiras hamn vid Månsjön\n- Vet vad som lastas/lossas (vapen, trupper, guld)\n- Hör sjömäns rykten från andra städer\n- Kan läsa fraktsedlar och se ovanliga laster\n\n## RAPPORTERAR\n- Vilka fartyg kommer från Jarla/Asharien\n- Ovanliga laster (militära, smuggel)\n- Guldtransporter som passerar hamnen\n- Rykten från sjömän om andra hamnar\n\n## KONTAKTMETOD\n\"Inventarielistor\" till Vitterdals handelshus (kodade rapporter). Rapporterar varannan månad.\n\n## LOJALITET\nHög (brors familj räddad från fattigdom)"
+      "beskrivning": "# SVEN HAMMARHAND\n**Hamnararbetare och lastkontrollant, Cermira stad**\n\n## GRUNDINFO\n- **Ras:** Människa (cermirisk)\n- **Roll:** Hamnararbetare och lastkontrollant\n- **Täckmantel:** Hamnarbetare som \"skriver rätt vad som lastas\"\n- **Arbetsplats:** Cermiras hamn, Månsjön\n- **Plats:** Cermira stad (7000 invånare, huvudstad)\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nSvens bror dog i gruvras i Vitterdal för 5 år sedan och lämnade efter sig hustru + 3 barn. Soffia såg till att familjen fick pension och att barnen fick lärlingskap. Sven vet att \"Lady Soffia hjälpte min brors familj\" och är djupt tacksam. Han kan läsa och skriva (ovanligt för hamnarbetare).\n\n## VARFÖR VÄL PLACERAD\n- Ser ALLA fartyg som anlöper Cermiras hamn vid Månsjön\n- Vet vad som lastas/lossas (vapen, trupper, guld)\n- Hör sjömäns rykten från andra städer\n- Kan läsa fraktsedlar och se ovanliga laster\n\n## RAPPORTERAR\n- Vilka fartyg kommer från Jarla/Asharien\n- Ovanliga laster (militära, smuggel)\n- Guldtransporter som passerar hamnen\n- Rykten från sjömän om andra hamnar\n\n## KONTAKTMETOD\n\"Inventarielistor\" till Vitterdals handelshus (kodade rapporter). Rapporterar varannan månad.\n\n## LOJALITET\nHög (brors familj räddad från fattigdom)",
+      "källa": "EM-R001"
     },
     {
-      "namn": "Sylas \\\"Eldvakten\\\"",
+      "namn": "Sylas \"Eldvakten\"",
+      "bild": null,
       "ras": "Människa",
       "titel": null,
       "status": "levande",
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# SYLAS \"ELDVAKTEN\"\n**Vaktmästare i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Vaktmästare och brandbekämpare\n- **Ansvar:** Lägersäkerhet\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Bevakade lägret vid Tirakgraven."
+      "beskrivning": "# SYLAS \"ELDVAKTEN\"\n**Vaktmästare i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Vaktmästare och brandbekämpare\n- **Ansvar:** Lägersäkerhet\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Bevakade lägret vid Tirakgraven.",
+      "roll": "Vaktmästare och brandbekämpare"
     },
     {
       "namn": "Sylva",
@@ -2737,7 +3053,31 @@ var wikiData = {
       "plats": "Tuzan Rim",
       "fraktion": "Oberoende",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# SYLVA\n**Ägare och värdinna på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Värdshusvä rdinna och ägare\n- **Värdshus:** \"Den Dolda Dolken\" (ljusskygg del av Tuzan Rim)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BAKGRUND\nSylva kommer från en familj av köpmän i en större handelsstad. Hon lärde sig tidigt konsten att förhandla och bedöma människor. Efter en katastrofal affärsuppgörelse som nästan kostade henne livet, flydde hon och använde sina besparingar för att starta nytt liv. Hon köpte \"Den Dolda Dolken\" där hon kunde tillämpa sina färdigheter i en mindre officiell miljö.\n\n## KARAKTÄR\n- **Beräknande och listig:** Utmärkt på att hålla koll på detaljer och förutse problem\n- **Skyddande:** Ser till sina gästers och anställdas väl, vårdar stark lojalitet\n- **Reserverad:** Privat till sin natur, delar sällan personlig historia\n- **Flerspråkig:** Talar flera språk flytande\n\n## INTRESSANTA DRAG\n- Förkärlek för antikviteter (samlar och visar upp i privata rum)\n- Etablerat förståelse med lokala lagvaktare\n- Underhåller informationsnätverk om potentiella hot\n\n## DEN DOLDA DOLKEN\nVärdshuset ligger gömt i mörk gränd med diskret dolk som markering:\n- Halvmörkt, rökfyllt, tunga draperier\n- Privata bås för diskreta möten\n- Strikt regler (förbud mot öppna strider)\n- Hemligt rum under baren (flyktväg)\n\n## PERSONAL\n- Merek (bartender, före detta sjöman)\n- Lia (serveringspersonal, från skådespelarfamilj)\n- Diskret bevakning och övervakning\n\n## I KAMPANJEN\nFas 2-5 (Kapitel 2): Möttes på Den Dolda Dolken under karavanresan. Perfekt plats för hemliga möten och diskreta affärer."
+      "beskrivning": "# SYLVA\n**Ägare och värdinna på Den Dolda Dolken**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Värdshusvä rdinna och ägare\n- **Värdshus:** \"Den Dolda Dolken\" (ljusskygg del av Tuzan Rim)\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n\n## BAKGRUND\nSylva kommer från en familj av köpmän i en större handelsstad. Hon lärde sig tidigt konsten att förhandla och bedöma människor. Efter en katastrofal affärsuppgörelse som nästan kostade henne livet, flydde hon och använde sina besparingar för att starta nytt liv. Hon köpte \"Den Dolda Dolken\" där hon kunde tillämpa sina färdigheter i en mindre officiell miljö.\n\n## KARAKTÄR\n- **Beräknande och listig:** Utmärkt på att hålla koll på detaljer och förutse problem\n- **Skyddande:** Ser till sina gästers och anställdas väl, vårdar stark lojalitet\n- **Reserverad:** Privat till sin natur, delar sällan personlig historia\n- **Flerspråkig:** Talar flera språk flytande\n\n## INTRESSANTA DRAG\n- Förkärlek för antikviteter (samlar och visar upp i privata rum)\n- Etablerat förståelse med lokala lagvaktare\n- Underhåller informationsnätverk om potentiella hot\n\n## DEN DOLDA DOLKEN\nVärdshuset ligger gömt i mörk gränd med diskret dolk som markering:\n- Halvmörkt, rökfyllt, tunga draperier\n- Privata bås för diskreta möten\n- Strikt regler (förbud mot öppna strider)\n- Hemligt rum under baren (flyktväg)\n\n## PERSONAL\n- Merek (bartender, före detta sjöman)\n- Lia (serveringspersonal, från skådespelarfamilj)\n- Diskret bevakning och övervakning\n\n## I KAMPANJEN\nFas 2-5 (Kapitel 2): Möttes på Den Dolda Dolken under karavanresan. Perfekt plats för hemliga möten och diskreta affärer.",
+      "roll": "Obestämd"
+    },
+    {
+      "namn": "Syster Mirelle",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Vandringsprästerska (Daak)",
+      "status": "levande",
+      "plats": "Vandrande (Cermira, Drunok)",
+      "fraktion": "Daakkyrkan",
+      "kapitel": "Kapitel 6",
+      "beskrivning": "# SYSTER MIRELLE\n\n**Vandringsprästerska och del av Soffias nätverk**\n\n## Bakgrund\n\nFör 20 år sedan var hon en ung änka med tre barn och skulder till fel människor. Lady Soffia betalade skulderna. Barnen fick utbildning. Mirelle fann sin kallelse till Daak - och sin tacksamhetsskuld till Soffia.\n\n## Roll\n\nReser mellan byar i Cermira och delar av Drunok för att predika, viga, och ge sista smörjelsen. Välkommen överallt - ingen misstänker en prästinna.\n\n## Hemlighet\n\nDel av Soffias informationsnätverk. Döende människor erkänner saker på dödsbädden. Biktande syndare avslöjar hemligheter. Mirelle samlar allt - men berättar aldrig allt. Vissa hemligheter är för heliga.\n\n## Relation till Soffia\n\nSkulden är betald tusen gånger om, men Mirelle fortsätter av lojalitet. Soffia respekterar hennes omdöme om vad som är viktigt att dela.\n\n## Säkerhet\n\nNär Mirelle kommer till Mitrahus stannar hon på Järnoxen. Hon och Helga utbyter information innan Soffia får höra - separation för säkerhet."
+    },
+    {
+      "namn": "Syster Moira",
+      "bild": "syster1.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Jaktar demonspår",
+      "fraktion": "Systrarna (Zorian-orden)",
+      "kapitel": null,
+      "beskrivning": "# SYSTER MOIRA\n\n**Syster i Zorian-orden, Isadoras partner**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande, aktiv jakt\n- **Första fas:** Fas 6 (Vargnäset)\n- **Roll:** Antagonist, förföljare\n\n## BAKGRUND\n\nSyster Moira arbetar tillsammans med Lady Isadora i Zorian-ordens specialenhet som jagar demonisk aktivitet.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset (Fas 6)\n- Deltog i attacken för att fånga Zentri\n- Såg blodsmagin och Zentris försvinnande\n- Fortsätter jakten\n\n### Efter Zentris försvinnande\n- Observerar gruppen\n- Samlar information om demonaktivitet\n\n## KARAKTÄRSDRAG\n\n- **Lojal partner:** Arbetar nära Isadora\n- **Disciplinerad:** Zorian-ordens träning\n- **Tålmodig jägare:** Väntar på rätt tillfälle\n\n## RELATIONER\n\n### Zorian-orden\n- **Lady Isadora:** Jagtkollega och partner\n- **Systrarna:** Elitorden\n\n### Jagtoffer\n- **Zentri:** Primärt mål\n- **Gruppen:** Observation\n\n## NUVARANDE SITUATION\n\nMoira fortsätter arbeta med Isadora, observerar situation medan gruppen är i Skugglandet.\n\n## SL-ANTECKNINGAR\n\n- Partner till Isadora, fungerar som team\n- Mindre framträdande men lika farlig\n- Del av Systr arnas mer sofistikerade metodik",
+      "roll": "Antagonist - jagar demonringen"
     },
     {
       "namn": "Systkonen Märta",
@@ -2762,26 +3102,16 @@ var wikiData = {
       "beskrivning": "# Systkonen Sten\n\n**Tyst örtsamlare som bor med sin syster Märta halvvägs mellan Frisänkan och Bergvik.**\n\nSten och Märta har bott tillsammans hela livet. Där Märta pratar, lyssnar Sten. Men hans tystnad ska inte förväxlas med dumhet - han ser och hör mer än de flesta.\n\n**Utseende:** Runt ansikte, lugna ögon. Identisk med sin syster Märta.\n\n**Vad han vet:** Lika mycket som Märta om skogens hemligheter, men delar det sällan."
     },
     {
-      "namn": "Syster Mirelle",
-      "bild": null,
-      "ras": "Människa",
-      "titel": "Vandringsprästerska (Daak)",
-      "status": "levande",
-      "plats": "Vandrande (Cermira, Drunok)",
-      "fraktion": "Daakkyrkan",
-      "kapitel": "Kapitel 6",
-      "beskrivning": "# SYSTER MIRELLE\n\n**Vandringsprästerska och del av Soffias nätverk**\n\n## Bakgrund\n\nFör 20 år sedan var hon en ung änka med tre barn och skulder till fel människor. Lady Soffia betalade skulderna. Barnen fick utbildning. Mirelle fann sin kallelse till Daak - och sin tacksamhetsskuld till Soffia.\n\n## Roll\n\nReser mellan byar i Cermira och delar av Drunok för att predika, viga, och ge sista smörjelsen. Välkommen överallt - ingen misstänker en prästinna.\n\n## Hemlighet\n\nDel av Soffias informationsnätverk. Döende människor erkänner saker på dödsbädden. Biktande syndare avslöjar hemligheter. Mirelle samlar allt - men berättar aldrig allt. Vissa hemligheter är för heliga.\n\n## Relation till Soffia\n\nSkulden är betald tusen gånger om, men Mirelle fortsätter av lojalitet. Soffia respekterar hennes omdöme om vad som är viktigt att dela.\n\n## Säkerhet\n\nNär Mirelle kommer till Mitrahus stannar hon på Järnoxen. Hon och Helga utbyter information innan Soffia får höra - separation för säkerhet."
-    },
-    {
-      "namn": "Syster Moira",
-      "bild": "syster1.png",
+      "namn": "Systrarna i Lundnäs",
+      "bild": "systrar.png",
       "ras": "Människa",
       "titel": null,
-      "status": "levande",
-      "plats": "Jaktar demonspår",
-      "fraktion": "Systrarna (Zorian-orden)",
+      "status": "okänd",
+      "plats": "Lundnäs",
+      "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# SYSTER MOIRA\n\n**Syster i Zorian-orden, Isadoras partner**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Levande, aktiv jakt\n- **Första fas:** Fas 6 (Vargnäset)\n- **Roll:** Antagonist, förföljare\n\n## BAKGRUND\n\nSyster Moira arbetar tillsammans med Lady Isadora i Zorian-ordens specialenhet som jagar demonisk aktivitet.\n\n## KRITISKA HÄNDELSER\n\n### Vargnäset (Fas 6)\n- Deltog i attacken för att fånga Zentri\n- Såg blodsmagin och Zentris försvinnande\n- Fortsätter jakten\n\n### Efter Zentris försvinnande\n- Observerar gruppen\n- Samlar information om demonaktivitet\n\n## KARAKTÄRSDRAG\n\n- **Lojal partner:** Arbetar nära Isadora\n- **Disciplinerad:** Zorian-ordens träning\n- **Tålmodig jägare:** Väntar på rätt tillfälle\n\n## RELATIONER\n\n### Zorian-orden\n- **Lady Isadora:** Jagtkollega och partner\n- **Systrarna:** Elitorden\n\n### Jagtoffer\n- **Zentri:** Primärt mål\n- **Gruppen:** Observation\n\n## NUVARANDE SITUATION\n\nMoira fortsätter arbeta med Isadora, observerar situation medan gruppen är i Skugglandet.\n\n## SL-ANTECKNINGAR\n\n- Partner till Isadora, fungerar som team\n- Mindre framträdande men lika farlig\n- Del av Systr arnas mer sofistikerade metodik"
+      "beskrivning": "\n> **Notering (migrering):** Denna NPC fanns bara i den övergivna Jekyll-wikin\n> (undefined), inte i undefined. Tillagd vid\n> Obsidian-migreringen 2026-09-05.\n\n# SYSTRARNA I LUNDNÄS\n**Systrar i Lundnäs**\n\n## GRUNDINFO\n- **Plats:** Lundnäs\n- **Antal:** Flera systrar (bildnamn i plural)\n\n## I KAMPANJEN\nRegnsynd-äventyret: Grupp av systrar i Lundnäs.\n\n## SL-ANTECKNINGAR\nBildnamnet \"systrar.png\" (sisters) antyder att detta representerar flera kvinnliga karaktärer, möjligen släktingar eller medlemmar i en grupp.",
+      "roll": "Okänd"
     },
     {
       "namn": "Talarra av Vitterdal",
@@ -2792,7 +3122,19 @@ var wikiData = {
       "plats": "Vitterdal (före detta)",
       "fraktion": "Jarladömet Vitterdal (före detta)",
       "kapitel": null,
-      "beskrivning": "# TALARRA AV VITTERDAL\n\n**Före detta jarl av Vitterdal, Hagges äldre bror**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Död (innan Hagges återkomst)\n- **Första fas:** Fas 3 (omnämnd)\n- **Roll:** Tidigare antagonist, katalysator\n\n## BAKGRUND\n\nTalarra var äldre bror och tronarvinge till Vitterdals jarladöme. Han anklagade Hagge för förräderi på falska grunder och förvisade honom.\n\n## KRITISKA HÄNDELSER\n\n### Hagges förvisning (före kampanjen)\n- Anklagade Hagge för förräderi (falskt)\n- Förvisade sin yngre bror\n- Detta ledde till Hagges slaveri\n\n### Hans död (före Fas 7)\n- Dog innan Hagges återkomst\n- Omständigheter okända\n- Redan begravd när gruppen kom till Vitterdal\n\n## KARAKTÄRSDRAG\n\n- **Paranoid?** Såg Hagge som hot\n- **Maktlysten?** Ville säkra sin position\n- **Okänd sanning:** Vi vet inte hela historien\n\n## RELATIONER\n\n### Familj\n- **Hagge:** Yngre bror, förvisade honom\n- **Lady Soffia:** Mor\n\n## BETYDELSE\n\nTalarras handlingar startade händelsekedjan som ledde till gruppens uppdrag i Muhad. Hans död banade väg för Hagges legitima styre.\n\n## SL-ANTECKNINGAR\n\n- Död före kampanjens huvudhändelser\n- Hans motiv förblir delvis okända\n- Var han verkligen skurk eller fanns legitimate skäl?\n- Hans död var bekväm - för bekväm?\n- Potentiellt mysterium om omständigheterna"
+      "beskrivning": "# TALARRA AV VITTERDAL\n\n**Före detta jarl av Vitterdal, Hagges äldre bror**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Status:** Död (innan Hagges återkomst)\n- **Första fas:** Fas 3 (omnämnd)\n- **Roll:** Tidigare antagonist, katalysator\n\n## BAKGRUND\n\nTalarra var äldre bror och tronarvinge till Vitterdals jarladöme. Han anklagade Hagge för förräderi på falska grunder och förvisade honom.\n\n## KRITISKA HÄNDELSER\n\n### Hagges förvisning (före kampanjen)\n- Anklagade Hagge för förräderi (falskt)\n- Förvisade sin yngre bror\n- Detta ledde till Hagges slaveri\n\n### Hans död (före Fas 7)\n- Dog innan Hagges återkomst\n- Omständigheter okända\n- Redan begravd när gruppen kom till Vitterdal\n\n## KARAKTÄRSDRAG\n\n- **Paranoid?** Såg Hagge som hot\n- **Maktlysten?** Ville säkra sin position\n- **Okänd sanning:** Vi vet inte hela historien\n\n## RELATIONER\n\n### Familj\n- **Hagge:** Yngre bror, förvisade honom\n- **Lady Soffia:** Mor\n\n## BETYDELSE\n\nTalarras handlingar startade händelsekedjan som ledde till gruppens uppdrag i Muhad. Hans död banade väg för Hagges legitima styre.\n\n## SL-ANTECKNINGAR\n\n- Död före kampanjens huvudhändelser\n- Hans motiv förblir delvis okända\n- Var han verkligen skurk eller fanns legitimate skäl?\n- Hans död var bekväm - för bekväm?\n- Potentiellt mysterium om omständigheterna",
+      "roll": "Tidigare antagonist - Hagges bror"
+    },
+    {
+      "namn": "Tamron",
+      "bild": "timronochtamron.png",
+      "ras": "Människa",
+      "titel": "Lärling till Migor Trollkunnig",
+      "status": "okänd",
+      "plats": "Okänd (kropp övertagen av Ibran Anderyttare)",
+      "fraktion": "Tirakgraven-expeditionen",
+      "kapitel": "Prolog",
+      "beskrivning": "# TAMRON\n**13-årig lärling, kropp övertagen av Ibran Anderyttare**\n\n## GRUNDINFO\n- **Ålder:** 13 år\n- **Ras:** Människa\n- **Roll:** Lärling till Migor Trollkunnig\n- **Status:** Kropp övertagen av urgammal tirak-schaman\n- **Tvillingbror:** Timron (†)\n\n## BAKGRUND\nTamron var en av två tvillingbröder som tjänstgjorde som lärlingar till Migor Trollkunnig under utgrävningen av tirakgraven. Han var en lovande ung man med framtiden framför sig.\n\n## TRAGISK ÖDE\nNär tirakgravens förseglingen bröts och demonen Urkhath delvis befriades, tog den urgamla tirak-schamanen Ibran Anderyttare över Tamrons kropp för att kunna fortsätta sin eviga vakt över demonen. I Ibrans desperata försök att stoppa demonens frigörelse dödade han Tamrons tvillingbror Timron och flydde med bindningsföremålen.\n\n## NUVARANDE SITUATION\nTamrons kropp lever fortfarande, men hans själ är antingen fördriven eller begravd djupt under Ibran Anderyttares urgamla medvetande. En 13-årig pojkes kropp bär nu tusenårig visdom och desperation.\n\n## RELATIONER\n- **Timron:** Tvillingbror (dödad av Ibran/Tamron)\n- **Migor Trollkunnig:** Mästare och mentor\n- **Ibran Anderyttare:** Tirak-schaman som tagit över hans kropp\n\n## BETYDELSE\nTamrons öde representerar kampanjens moraliska komplexitet - är det försvarbart att offra en oskyldig pojke för att stoppa en demon? Ibran/Tamron är både fiende och potentiell allierad.\n\n## SL-ANTECKNINGAR\n- Finns möjlighet att rädda Tamrons själ?\n- Kan användas för moraliska dilemman\n- Representerar oskyldig offer i större konflikt"
     },
     {
       "namn": "Tant Hildur",
@@ -2825,7 +3167,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Jabbar-familjen",
       "kapitel": null,
-      "beskrivning": "# TARIQ AL-JABBAR\n**Medlem av Jabbar-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# TARIQ AL-JABBAR\n**Medlem av Jabbar-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Tariq ibn-Fahim",
@@ -2836,7 +3179,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Fahim-familjen",
       "kapitel": null,
-      "beskrivning": "# TARIQ IBN-FAHIM\n**Medlem av Fahim-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Möjligen kopplad till karavanhandel."
+      "beskrivning": "# TARIQ IBN-FAHIM\n**Medlem av Fahim-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad. Möjligen kopplad till karavanhandel.",
+      "roll": "Karavanledare eller handelsman"
     },
     {
       "namn": "Tariq ibn-Salim",
@@ -2858,7 +3202,20 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# THALIA SKOGSLÖPARE\n**Scout i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Scout, expert på spaning\n- **Utrustning:** Stridssvärd, dolk, liten rundsköld\n- **Status:** Aktiv (efter Tirakgraven)\n\n## I KAMPANJEN\nFas 1: Del av Stålsvärds Kavalerister vid Tirakgraven."
+      "beskrivning": "# THALIA SKOGSLÖPARE\n**Scout i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Scout, expert på spaning\n- **Utrustning:** Stridssvärd, dolk, liten rundsköld\n- **Status:** Aktiv (efter Tirakgraven)\n\n## I KAMPANJEN\nFas 1: Del av Stålsvärds Kavalerister vid Tirakgraven.",
+      "roll": "Scout, expert på spaning"
+    },
+    {
+      "namn": "Thalorin Sigrd",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Före detta Stålsvärds Kavalerister",
+      "fraktion": "Stålsvärds Kavalerister",
+      "kapitel": null,
+      "beskrivning": "# THALORIN SIGRD\n**Banerkrigare i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Banerkrigare\n- **Specialitet:** Strid med baner och standar\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Bar banér vid Tirakgraven.",
+      "roll": "Banerkrigare"
     },
     {
       "namn": "Thamz",
@@ -2872,17 +3229,6 @@ var wikiData = {
       "beskrivning": "# Thamz\n**Tirakisk slavhandlare i Jen.** Beskriven som 'okänt vidrig'. En av de mer frånstötande figurerna på Järntorgets slavmarknad."
     },
     {
-      "namn": "Thalorin Sigrd",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Före detta Stålsvärds Kavalerister",
-      "fraktion": "Stålsvärds Kavalerister",
-      "kapitel": null,
-      "beskrivning": "# THALORIN SIGRD\n**Banerkrigare i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Banerkrigare\n- **Specialitet:** Strid med baner och standar\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Bar banér vid Tirakgraven."
-    },
-    {
       "namn": "Thom",
       "bild": "thom.png",
       "ras": "Människa",
@@ -2891,7 +3237,8 @@ var wikiData = {
       "plats": "Lundnäs",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# THOM\n**NPC i Lundnäs**\n\n## GRUNDINFO\n- **Plats:** Lundnäs\n\n## I KAMPANJEN\nRegnsynd-äventyret: NPC i Lundnäs.\n\n## SL-ANTECKNINGAR\nExakt roll okänd."
+      "beskrivning": "# THOM\n**NPC i Lundnäs**\n\n## GRUNDINFO\n- **Plats:** Lundnäs\n\n## I KAMPANJEN\nRegnsynd-äventyret: NPC i Lundnäs.\n\n## SL-ANTECKNINGAR\nExakt roll okänd.",
+      "roll": "Okänd"
     },
     {
       "namn": "Thrain av Morgonen",
@@ -2902,63 +3249,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# THRAIN AV MORGONEN\n**Stridande i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Stridande\n- **Särskilda Drag:** Samoriman, albino\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Kämpade vid Tirakgraven."
-    },
-    {
-      "namn": "Tjelvar Hovsmide",
-      "bild": "tjelvar.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Före detta Stålsvärds Kavalerister",
-      "fraktion": "Stålsvärds Kavalerister",
-      "kapitel": null,
-      "beskrivning": "# TJELVAR HOVSMIDE\n**Vapensmed i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Vapensmed och rustningsmästare\n- **Ansvar:** Underhåll av utrustning och lägrets säkerhet\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Höll utrustningen i ordning vid Tirakgraven."
-    },
-    {
-      "namn": "Tobin",
-      "bild": "tobin.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Tuzan Rim",
-      "fraktion": "Oberoende",
-      "kapitel": null,
-      "beskrivning": "# TOBIN\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan."
-    },
-    {
-      "namn": "Tomas Järnhjälm",
-      "bild": "tomas_hjelm.png",
-      "ras": "Människa",
-      "titel": "Försvarsansvarig",
-      "status": "levande",
-      "plats": "Bergvik",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# TOMAS JÄRNHJÄLM\n**Veteransoldat och försvarsansvarig**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** ~42 år\n- **Bakgrund:** F.d. infanterist, veteransoldat\n- **Status:** Levande\n- **Plats:** Bergvik (senare Grensfortet)\n- **Kapitel:** Kapitel 8\n- **Roll:** Försvarsansvarig\n\n## BESKRIVNING\nTomas Järnhjälm är en erfaren veteransoldat från Bergvik. Hans namngivande järnhjälm (Pv:8, BRYT:14) är både skydd och symbol för hans militära bakgrund.\n\n## EGENSKAPER & FÄRDIGHETER\n**Fysiska egenskaper:**\n- STY 15, TÅL 15 - exceptionellt stark och uthållig\n- RÖR 12, PER 13 - bra reflexer och uppfattning\n- PSY 11, VIL 14 - stark vilja\n\n**Stridsfärdigheter:**\n- Yxa 15 (expert)\n- Sköld 14\n- Undvika 13\n- Stridsvana 15 (erfaren veteran)\n\n**Andra färdigheter:**\n- Krigsföring 13 (taktisk kunskap)\n- Härda ut 15 (extremt uthållig)\n- Speja 12\n- Träarbete 14\n\n## RESAN TILL GRENSFORTET\nDag 4 i Bergvik (14:e Tretoria) deltog Tomas i kvällsplaneringen med Gordon om försvar. Han är en naturlig ledare för defensive åtgärder och fortifikationer.\n\n## ROLL PÅ GRENSFORTET\nSom försvarsansvarig är Tomas Järnhjälm central för:\n- Planering av fortets försvar\n- Träning av försvarare\n- Taktisk rådgivning\n- Byggande av befästningar\n\n## UTRUSTNING\n- **Stridsyxa** (H+Ob2T6)\n- **Järnhjälm** (Pv:8, BRYT:14) - namngivare\n- **Sköld**\n\n## KARAKTÄR\n- Erfaren och pålitlig\n- Taktiskt kunnig\n- Stark ledare\n- Praktisk problemlösare\n\n## KOPPLINGAR\n- **Bergvik:** Hemstad\n- **Gordon:** Samarbetar om försvarsplanering\n- **Grensfortet:** Ny bosättning, försvarsansvarig"
-    },
-    {
-      "namn": "Tomas Segelmakar",
-      "bild": null,
-      "ras": "Människa",
-      "titel": "Segelmakarelev",
-      "status": "levande",
-      "plats": "Tuzan Rim, Asharien",
-      "fraktion": "Lady Soffias informationsnätverk",
-      "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# TOMAS SEGELMAKAR\n**Segelmakarelev vid örlogsvarvet, Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa (asharisk)\n- **Roll:** Segelmakarelev vid örlogsvarvet\n- **Arbetsplats:** Tuzan Rims örlogshamn\n- **Plats:** Tuzan Rim (2000 invånare, örlogshamn), Asharien\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nTomas far anklagades för sabotage av örlogsflottans segel för 3 år sedan. Soffia ordnade bevis för hans oskuld via mellanhand. Far klarades och familjen återfick sitt heder.\n\n## VARFÖR VÄL PLACERAD\n- Arbetar direkt med örlogsflottans segel\n- Ser vilka fartyg som förs och vilka som returnerar\n- Hör soldaternas och sjömännens samtal\n- Känner till örlogsflottans förberedelser\n\n## RAPPORTERAR\n- Örlogsflottans rörelser (vilka fartyg mobiliseras)\n- Cirefaliske köpmannen El Benurs planer och kontakter\n- Militära förberedelser i Tuzan Rim\n- Nya segel-beställningar (indikerar flottexpansion)\n\n## KONTAKTMETOD\nBrevduva (magiskt styrd). Rapporterar var 2:a månad.\n\n## LOJALITET\nMycket hög (far räddad från avrättning)"
-    },
-    {
-      "namn": "Tamron",
-      "bild": "timronochtamron.png",
-      "ras": "Människa",
-      "titel": "Lärling till Migor Trollkunnig",
-      "status": "okänd",
-      "plats": "Okänd (kropp övertagen av Ibran Anderyttare)",
-      "fraktion": "Tirakgraven-expeditionen",
-      "kapitel": "Prolog",
-      "beskrivning": "# TAMRON\n**13-årig lärling, kropp övertagen av Ibran Anderyttare**\n\n## GRUNDINFO\n- **Ålder:** 13 år\n- **Ras:** Människa\n- **Roll:** Lärling till Migor Trollkunnig\n- **Status:** Kropp övertagen av urgammal tirak-schaman\n- **Tvillingbror:** Timron (†)\n\n## BAKGRUND\nTamron var en av två tvillingbröder som tjänstgjorde som lärlingar till Migor Trollkunnig under utgrävningen av tirakgraven. Han var en lovande ung man med framtiden framför sig.\n\n## TRAGISK ÖDE\nNär tirakgravens förseglingen bröts och demonen Urkhath delvis befriades, tog den urgamla tirak-schamanen Ibran Anderyttare över Tamrons kropp för att kunna fortsätta sin eviga vakt över demonen. I Ibrans desperata försök att stoppa demonens frigörelse dödade han Tamrons tvillingbror Timron och flydde med bindningsföremålen.\n\n## NUVARANDE SITUATION\nTamrons kropp lever fortfarande, men hans själ är antingen fördriven eller begravd djupt under Ibran Anderyttares urgamla medvetande. En 13-årig pojkes kropp bär nu tusenårig visdom och desperation.\n\n## RELATIONER\n- **Timron:** Tvillingbror (dödad av Ibran/Tamron)\n- **Migor Trollkunnig:** Mästare och mentor\n- **Ibran Anderyttare:** Tirak-schaman som tagit över hans kropp\n\n## BETYDELSE\nTamrons öde representerar kampanjens moraliska komplexitet - är det försvarbart att offra en oskyldig pojke för att stoppa en demon? Ibran/Tamron är både fiende och potentiell allierad.\n\n## SL-ANTECKNINGAR\n- Finns möjlighet att rädda Tamrons själ?\n- Kan användas för moraliska dilemman\n- Representerar oskyldig offer i större konflikt"
+      "beskrivning": "# THRAIN AV MORGONEN\n**Stridande i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Stridande\n- **Särskilda Drag:** Samoriman, albino\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Kämpade vid Tirakgraven.",
+      "roll": "Stridande"
     },
     {
       "namn": "Tilda Sjöberg",
@@ -2983,6 +3275,86 @@ var wikiData = {
       "beskrivning": "# TIMRON (†)\n**13-årig lärling, mördad av sin besatte tvillingbror**\n\n## GRUNDINFO\n- **Ålder:** 13 år (vid död)\n- **Ras:** Människa\n- **Roll:** Lärling till Migor Trollkunnig\n- **Status:** Död\n- **Tvillingbror:** Tamron\n\n## BAKGRUND\nTimron var en av två tvillingbröder som tjänstgjorde som lärlingar till Migor Trollkunnig under utgrävningen av tirakgraven. Tillsammans med sin bror Tamron skulle han lära sig de lärdes vägar.\n\n## TRAGISK DÖD\nNär tirakgravens förseglingen bröts tog den urgamla tirak-schamanen Ibran Anderyttare över Timrons tvillingbror Tamrons kropp. I sin desperation att stoppa demonens frigörelse dödade Ibran/Tamron Timron för att kunna fly med bindningsföremålen.\n\nTimron dog genom sin egen tvillingbrors hand - eller snarare genom den urgamla själ som hade tagit över hans brors kropp.\n\n## BETYDELSE\nTimrons död är en av kampanjens första tragedier - ett oskyldigt barn som dödades i ett årtusenden gammalt krig mellan schaman och demon. Hans död understryker priset för demonens partiella frigörelse och Ibrans desperata metoder.\n\n## RELATIONER\n- **Tamron:** Tvillingbror (vars kropp blev hans baneman)\n- **Migor Trollkunnig:** Mästare och mentor\n- **Ibran Anderyttare:** Tirak-schaman som dödade honom\n\n## SL-ANTECKNINGAR\n- Symbol för oskyldiga offer i större konflikt\n- Hans död kan väga tungt på Ibran/Tamron\n- Representerar den tragiska kostnaden av gamla förbannelser"
     },
     {
+      "namn": "Tjelvar Hovsmide",
+      "bild": "tjelvar.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Före detta Stålsvärds Kavalerister",
+      "fraktion": "Stålsvärds Kavalerister",
+      "kapitel": null,
+      "beskrivning": "# TJELVAR HOVSMIDE\n**Vapensmed i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Vapensmed och rustningsmästare\n- **Ansvar:** Underhåll av utrustning och lägrets säkerhet\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Höll utrustningen i ordning vid Tirakgraven.",
+      "roll": "Vapensmed och rustningsmästare"
+    },
+    {
+      "namn": "Tobin",
+      "bild": "tobin.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Tuzan Rim",
+      "fraktion": "Oberoende",
+      "kapitel": null,
+      "beskrivning": "# TOBIN\n**Invånare i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Tuzan Rim\n\n## I KAMPANJEN\nFas 5: Möttes under karavanresan.",
+      "roll": "Obestämd"
+    },
+    {
+      "namn": "Tomas Järnhjälm",
+      "bild": "tomas_hjelm.png",
+      "ras": "Människa",
+      "titel": "Försvarsansvarig",
+      "status": "levande",
+      "plats": "Bergvik",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# TOMAS JÄRNHJÄLM\n**Veteransoldat och försvarsansvarig**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** ~42 år\n- **Bakgrund:** F.d. infanterist, veteransoldat\n- **Status:** Levande\n- **Plats:** Bergvik (senare Grensfortet)\n- **Kapitel:** Kapitel 8\n- **Roll:** Försvarsansvarig\n\n## BESKRIVNING\nTomas Järnhjälm är en erfaren veteransoldat från Bergvik. Hans namngivande järnhjälm (Pv:8, BRYT:14) är både skydd och symbol för hans militära bakgrund.\n\n## EGENSKAPER & FÄRDIGHETER\n**Fysiska egenskaper:**\n- STY 15, TÅL 15 - exceptionellt stark och uthållig\n- RÖR 12, PER 13 - bra reflexer och uppfattning\n- PSY 11, VIL 14 - stark vilja\n\n**Stridsfärdigheter:**\n- Yxa 15 (expert)\n- Sköld 14\n- Undvika 13\n- Stridsvana 15 (erfaren veteran)\n\n**Andra färdigheter:**\n- Krigsföring 13 (taktisk kunskap)\n- Härda ut 15 (extremt uthållig)\n- Speja 12\n- Träarbete 14\n\n## RESAN TILL GRENSFORTET\nDag 4 i Bergvik (14:e Tretoria) deltog Tomas i kvällsplaneringen med Gordon om försvar. Han är en naturlig ledare för defensive åtgärder och fortifikationer.\n\n## ROLL PÅ GRENSFORTET\nSom försvarsansvarig är Tomas Järnhjälm central för:\n- Planering av fortets försvar\n- Träning av försvarare\n- Taktisk rådgivning\n- Byggande av befästningar\n\n## UTRUSTNING\n- **Stridsyxa** (H+Ob2T6)\n- **Järnhjälm** (Pv:8, BRYT:14) - namngivare\n- **Sköld**\n\n## KARAKTÄR\n- Erfaren och pålitlig\n- Taktiskt kunnig\n- Stark ledare\n- Praktisk problemlösare\n\n## KOPPLINGAR\n- **Bergvik:** Hemstad\n- **Gordon:** Samarbetar om försvarsplanering\n- **Grensfortet:** Ny bosättning, försvarsansvarig"
+    },
+    {
+      "namn": "Tomas Segelmakar",
+      "bild": null,
+      "ras": "Människa",
+      "titel": "Segelmakarelev",
+      "status": "levande",
+      "plats": "Tuzan Rim, Asharien",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "beskrivning": "# TOMAS SEGELMAKAR\n**Segelmakarelev vid örlogsvarvet, Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa (asharisk)\n- **Roll:** Segelmakarelev vid örlogsvarvet\n- **Arbetsplats:** Tuzan Rims örlogshamn\n- **Plats:** Tuzan Rim (2000 invånare, örlogshamn), Asharien\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nTomas far anklagades för sabotage av örlogsflottans segel för 3 år sedan. Soffia ordnade bevis för hans oskuld via mellanhand. Far klarades och familjen återfick sitt heder.\n\n## VARFÖR VÄL PLACERAD\n- Arbetar direkt med örlogsflottans segel\n- Ser vilka fartyg som förs och vilka som returnerar\n- Hör soldaternas och sjömännens samtal\n- Känner till örlogsflottans förberedelser\n\n## RAPPORTERAR\n- Örlogsflottans rörelser (vilka fartyg mobiliseras)\n- Cirefaliske köpmannen El Benurs planer och kontakter\n- Militära förberedelser i Tuzan Rim\n- Nya segel-beställningar (indikerar flottexpansion)\n\n## KONTAKTMETOD\nBrevduva (magiskt styrd). Rapporterar var 2:a månad.\n\n## LOJALITET\nMycket hög (far räddad från avrättning)",
+      "källa": "EM-R001"
+    },
+    {
+      "namn": "Torkel Falkemo",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# TORKEL FALKEMO\r\n**11-årig pojke från Vargnäset**\r\n\r\n## GRUNDINFO\r\n- **Ras:** Människa\r\n- **Ålder:** 11 år\r\n- **Status:** Levande\r\n- **Plats:** Vargnäset (evakuerad)\r\n- **Kapitel:** Kapitel 8\r\n- **Yrke:** Barn från Vargnäset\r\n\r\n## BESKRIVNING\r\n11-årig pojke från Vargnäset. Son till Gunnar Falkemo, bror till Sigrid. Evakuerad med de 41 överlevande.\r\n\r\n## FAMILJ\r\n- **Far:** Gunnar Falkemo\r\n- **Syster:** Sigrid Falkemo\r\n\r\n## EVAKUERINGEN\r\n- Evakuerad från Vargnäset med 41 överlevande\r\n- Del av den större gruppen civila flyktingar\r"
+    },
+    {
+      "namn": "Torkel Falkemo",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Vargnäset (evakuerad)",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# TORKEL FALKEMO\n**11-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 11 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n11-årig pojke från Vargnäset. Son till Gunnar Falkemo, bror till Sigrid. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Sigrid Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
+    },
+    {
+      "namn": "Torkel Skogsson",
+      "bild": null,
+      "ras": "Människa",
+      "titel": null,
+      "status": "levande",
+      "plats": "Bergvik",
+      "fraktion": null,
+      "kapitel": "Kapitel 8",
+      "beskrivning": "# TORKEL SKOGSSON\n**Värd i Bergvik**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Bergvik\n- **Kapitel:** Kapitel 8\n- **Roll:** Invånare/värd i Bergvik\n\n## BESKRIVNING\nTorkel Skogsson mötte gruppen när de anlände till Bergvik under resan till Grensfortet (14:e Tretoria, Astrio). Han väntade på dem med ett stort leende - för stort. Desperat eller falskt. Troligen båda.\n\n## RESAN TILL GRENSFORTET (DAG 4)\nNär gruppen nådde Bergvik vid middagstid stod Torkel och väntade. Hans alltför entusiastiska välkomnande förrådde en viss desperation - kanske ensamhet, kanske oro för byns framtid, eller kanske bara hopp om hjälp och sällskap i svåra tider.\n\nBergvik bjöd på varm mat och färskt bröd. Folk log för första gången på veckor. Tre nya invånare anslöt till Grensfort-gruppen här: Björn Hammarsmed, Lars och Erik Bergsson (stenbrytarbröder).\n\n## KARAKTÄR\n- **Entusiastisk:** Stort välkomnande\n- **Desperat:** Leendet för stort, för falskt\n- **Ensam:** Behövde sällskap eller hjälp\n\n## OBSERVATIONER\nSkorda Bergsdotter noterade Torkels desperata leende - ett tecken på de svåra tider som drabbat även Bergvik. Trots detta bjöd byn på generös gästfrihet.\n\n## SL-ANTECKNINGAR\nTorkel representerar de små byarnas desperation i regionen - isolering, osäkerhet, och hopp om att nya inflyttare kan stärka gemenskapen."
+    },
+    {
       "namn": "Tormund Rimskägg",
       "bild": null,
       "ras": "Människa",
@@ -2991,20 +3363,21 @@ var wikiData = {
       "plats": "Den Sista Jägarstugan, Mithera",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# TORMUND RIMSKÄGG\n\n**Eremitjägare i Mithera, 40 år i skogen**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Ålder:** Gammal\n- **Status:** Levande\n- **Första fas:** Fas 10 (Mithera)\n- **Roll:** Vägvisare och varning om Mitheras faror\n\n## BAKGRUND\n\nTormund Rimskägg har bott i Mithera-skogen i 40 år, lever som eremitjägare. Han vet skogens hemligheter och faror.\n\n### Personlig tragedi\n- Såg sin son försvinna när kartor ljög\n- Därför varnar han andra\n\n## KRITISKA HÄNDELSER\n\n### Mithera (Fas 10)\n**Mötet vid Den Sista Jägarstugan:**\n\n**Varningar:**\n- *\"Kartor ljuger - skogen byter plats på landmärken.\"*\n- Varnade för varma källor\n- Varnade för snökatter\n- Berättade om silverfanfarer i fjärran\n\n**Hjälp:**\n- Sålde isspett för att upptäcka frusna vattendrag\n- Gav praktisk överlevnadskunskap\n\n## KARAKTÄRSDRAG\n\n- **Erfaren:** 40 år i Mithera\n- **Försiktig:** Varnar andra\n- **Traumatiserad:** Sonens försvinnande präglar honom\n- **Hjälpsam:** Trots allt hjälper han resande\n\n## RELATIONER\n\n### Förlust\n- **Son:** Försvann när kartorna ljög\n\n### Gruppen\n- **Vägvisare:** Gav avgörande information\n\n## BETYDELSE\n\nTormunds varningar om kartorna, källorna och snökatter var avgörande för gruppens överlevnad i Mithera.\n\n## NUVARANDE SITUATION\n\nTormund lever kvar i sin stuga, varnar andra resande om skogens faror.\n\n## SL-ANTECKNINGAR\n\n- Symbol för Mitheras fara - även erfarna kan förlora allt\n- Hans son kan dyka upp i Skugglandet?\n- Potentiell räddare om gruppen återvänder skadade\n- Vet mer om Mithera än de flesta levande"
+      "beskrivning": "# TORMUND RIMSKÄGG\n\n**Eremitjägare i Mithera, 40 år i skogen**\n\n## GRUNDINFO\n\n- **Ras:** Människa\n- **Ålder:** Gammal\n- **Status:** Levande\n- **Första fas:** Fas 10 (Mithera)\n- **Roll:** Vägvisare och varning om Mitheras faror\n\n## BAKGRUND\n\nTormund Rimskägg har bott i Mithera-skogen i 40 år, lever som eremitjägare. Han vet skogens hemligheter och faror.\n\n### Personlig tragedi\n- Såg sin son försvinna när kartor ljög\n- Därför varnar han andra\n\n## KRITISKA HÄNDELSER\n\n### Mithera (Fas 10)\n**Mötet vid Den Sista Jägarstugan:**\n\n**Varningar:**\n- *\"Kartor ljuger - skogen byter plats på landmärken.\"*\n- Varnade för varma källor\n- Varnade för snökatter\n- Berättade om silverfanfarer i fjärran\n\n**Hjälp:**\n- Sålde isspett för att upptäcka frusna vattendrag\n- Gav praktisk överlevnadskunskap\n\n## KARAKTÄRSDRAG\n\n- **Erfaren:** 40 år i Mithera\n- **Försiktig:** Varnar andra\n- **Traumatiserad:** Sonens försvinnande präglar honom\n- **Hjälpsam:** Trots allt hjälper han resande\n\n## RELATIONER\n\n### Förlust\n- **Son:** Försvann när kartorna ljög\n\n### Gruppen\n- **Vägvisare:** Gav avgörande information\n\n## BETYDELSE\n\nTormunds varningar om kartorna, källorna och snökatter var avgörande för gruppens överlevnad i Mithera.\n\n## NUVARANDE SITUATION\n\nTormund lever kvar i sin stuga, varnar andra resande om skogens faror.\n\n## SL-ANTECKNINGAR\n\n- Symbol för Mitheras fara - även erfarna kan förlora allt\n- Hans son kan dyka upp i Skugglandet?\n- Potentiell räddare om gruppen återvänder skadade\n- Vet mer om Mithera än de flesta levande",
+      "roll": "Vägvisare och varning"
     },
     {
       "namn": "Torsten",
       "bild": null,
       "ras": "Människa",
-      "ålder": "~20 år",
       "titel": "Stallmästare",
       "status": "levande",
       "plats": "Sunnanmark (Äppelby), Cermira",
       "fraktion": "Lady Soffias informationsnätverk",
       "kapitel": null,
+      "beskrivning": "# TORSTEN STALLPOJKE\n**Stallmästare i jarlens stall, Sunnanmark**\n\n## GRUNDINFO\n- **Namn:** Torsten (inget efternamn känt)\n- **Ras:** Människa (cermirisk)\n- **Ålder:** ~20 år\n- **Roll:** Stallmästare i jarlens stall\n- **Täckmantel:** Vanlig stallpojke\n- **Arbetsplats:** Äppelby jarls huvudstall, Sunnanmark\n- **Plats:** Sunnanmark (Äppelby), Ätten Kärlings säte, södra Cermira\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nTorstens syster våldtogs av en Kärling-man för 4 år sedan. Ingen brydde sig - \"bara en bondflicka\". Soffia hörde via Helga och ordnade diskret för systern att få arbete i Mitrahus och läkarvård. Torsten vet att \"Lady Soffia räddade min syster\" och hatar Kärlingarna. Han arbetar i deras stall men rapporterar allt.\n\n## VARFÖR VÄL PLACERAD\n- Stallpojkar är OSYNLIGA - adeln pratar fritt vid stallet\n- Hör när jarlen/söner diskuterar militära planer\n- Ser vilka budbärare som kommer/går\n- Känner till truppsmobilisering (hästar beställs)\n\n## RAPPORTERAR\n- Kärlingarnas krigsmobilisering\n- Vilka allierade de kontaktar\n- Attacker mot Asharien/Jargien\n- När jarlen reser till Cermira för att pressa landsrådet\n\n## KONTAKTMETOD\nRapporter gömda i hölaster norrut till Vitterdal. Rapporterar varje månad.\n\n## LOJALITET\nMycket hög (syster räddad från övergrepp, hatar Kärlingarna)",
       "källa": "EM-R001",
-      "beskrivning": "# TORSTEN STALLPOJKE\n**Stallmästare i jarlens stall, Sunnanmark**\n\n## GRUNDINFO\n- **Namn:** Torsten (inget efternamn känt)\n- **Ras:** Människa (cermirisk)\n- **Ålder:** ~20 år\n- **Roll:** Stallmästare i jarlens stall\n- **Täckmantel:** Vanlig stallpojke\n- **Arbetsplats:** Äppelby jarls huvudstall, Sunnanmark\n- **Plats:** Sunnanmark (Äppelby), Ätten Kärlings säte, södra Cermira\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nTorstens syster våldtogs av en Kärling-man för 4 år sedan. Ingen brydde sig - \"bara en bondflicka\". Soffia hörde via Helga och ordnade diskret för systern att få arbete i Mitrahus och läkarvård. Torsten vet att \"Lady Soffia räddade min syster\" och hatar Kärlingarna. Han arbetar i deras stall men rapporterar allt.\n\n## VARFÖR VÄL PLACERAD\n- Stallpojkar är OSYNLIGA - adeln pratar fritt vid stallet\n- Hör när jarlen/söner diskuterar militära planer\n- Ser vilka budbärare som kommer/går\n- Känner till truppsmobilisering (hästar beställs)\n\n## RAPPORTERAR\n- Kärlingarnas krigsmobilisering\n- Vilka allierade de kontaktar\n- Attacker mot Asharien/Jargien\n- När jarlen reser till Cermira för att pressa landsrådet\n\n## KONTAKTMETOD\nRapporter gömda i hölaster norrut till Vitterdal. Rapporterar varje månad.\n\n## LOJALITET\nMycket hög (syster räddad från övergrepp, hatar Kärlingarna)"
+      "ålder": "~20 år"
     },
     {
       "namn": "Trollbinderskan Rut",
@@ -3037,7 +3410,8 @@ var wikiData = {
       "plats": "Lundnäs",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# TURAM\n**Gästgivare på Vansnäs Gästgiveri**\n\n## GRUNDINFO\n- **Verksamhet:** Driver Vansnäs Gästgiveri (Lundnäs enda värdshus med övernattning)\n- **Relation:** Gammal vän till kapten Jeorg Rask\n- **Karaktär:** Gästvänlig och pratsam\n- **Ekonomi:** Kassakistan är sinande, välkomnar gäster varmt\n\n## I KAMPANJEN\nRegnsynd-äventyret: Värden på gästgiveriet där rollpersonerna kan övernatta.\n\n## SL-ANTECKNINGAR\nTuram är en gammal vän till kapten Rask, vilket kan ge rollpersonerna förmånsbehandling. Han har inte sett gäster på ett tag när äventyret börjar, så sällskapet är ett välbehövligt avbrott. Han tar hand om gästernas blöta kläder och ser till att de blir torra, och tender en rejäl brasa i den öppna spisen."
+      "beskrivning": "# TURAM\n**Gästgivare på Vansnäs Gästgiveri**\n\n## GRUNDINFO\n- **Verksamhet:** Driver Vansnäs Gästgiveri (Lundnäs enda värdshus med övernattning)\n- **Relation:** Gammal vän till kapten Jeorg Rask\n- **Karaktär:** Gästvänlig och pratsam\n- **Ekonomi:** Kassakistan är sinande, välkomnar gäster varmt\n\n## I KAMPANJEN\nRegnsynd-äventyret: Värden på gästgiveriet där rollpersonerna kan övernatta.\n\n## SL-ANTECKNINGAR\nTuram är en gammal vän till kapten Rask, vilket kan ge rollpersonerna förmånsbehandling. Han har inte sett gäster på ett tag när äventyret börjar, så sällskapet är ett välbehövligt avbrott. Han tar hand om gästernas blöta kläder och ser till att de blir torra, och tender en rejäl brasa i den öppna spisen.",
+      "roll": "Gästgivare"
     },
     {
       "namn": "Tussie",
@@ -3070,7 +3444,8 @@ var wikiData = {
       "plats": "Grensfortet (i Umnataks kropp)",
       "fraktion": "Tirakstammen",
       "kapitel": "Kapitel 10",
-      "beskrivning": "# ULZAK\n\n**Tirak-schaman - PERMANENT i Umnataks kropp**\n\n## GRUNDINFO\n\n- **Ras:** Tirak\n- **Status:** Levande (PERMANENT i Umnataks kropp)\n- **Första fas:** Fängslad i meteoritjärnskniv (generationer)\n- **Fas 10:** Befriad till Umnataks kropp när Umnatak offrade sig\n- **Nuvarande:** Permanent gäst i Umnataks kropp\n- **Roll:** Shamansk gäst, kontrollerare av Umnataks kropp\n- **Spelas av:** Christofer (som \"Ulzak i kroppen\")\n\n## BAKGRUND\n\nUlzak är en urgammal tirak-schaman med djup kunskap om andar, demoner och Skugglandet. I generationer var han fängslad i meteoritjärnskniven som Thrakka bär.\n\n## KRITISKA HÄNDELSER\n\n### Titanstriden (Kapitel 10)\n**Umnataks Offer:**\nNär Umnatak offrade sig för att krossa titanens kärna och befria sex själar, tvingades Ulzak TILLBAKA till Umnataks tomma kropp. Umnatak drogs IN I KNIVEN istället.\n\n**Rollbyte:**\n- Ulzak befriad från kniven efter generationer\n- Umnatak fängslad i kniven (nytt fängelse)\n- Ulzak permanent gäst i Umnataks kropp\n- INGEN återvändo - detta är permanent\n\n### Trådbrottet (Kapitel 10)\nUlzak använde meteoritjärnskniven för att kapa Arcadius tråd till det blå ljuset i den coloniska korridoren. Kniven var det enda som kunde skära tråden mellan världarna.\n\n### Zentris Befrielse (Kapitel 10 - Final)\nUlzak var närvarande genom hela räddningsoperationen i Frostspiran, redo att stödja gruppen med schamanistisk kunskap.\n\n## KARAKTÄRSDRAG\n\n- **Urgammal:** Fängslad i generationer\n- **Vis:** Djup kunskap om andevärld, demoner, Skugglandet\n- **Tacksam:** Befriad efter så lång fångenskap\n- **Erfaren:** Känd med demonologi och andeplanet\n- **Permanent gäst:** Kan aldrig lämna Umnataks kropp\n\n## RELATIONER\n\n### Umnatak\n- **Offer:** Umnatak offrade sig för att befria Ulzak\n- **Rollbyte:** Ulzak nu i kroppen, Umnatak i kniven\n- **Permanent:** Ingen väg tillbaka\n\n### Thrakka\n- **Knivbärare:** Thrakka bär kniven där Ulzak bodde (nu Umnataks hem)\n- **Vaktar ringen:** Thrakka vaktar kniven med Urkhaths ring bunden till den\n\n### Gruppen\n- **Allierad:** Stödjer gruppen med schamanistisk kunskap\n- **Medlem:** Nu permanent del av gruppen genom Umnataks kropp\n\n## NUVARANDE SITUATION\n\n**Plats:** Grensfortet (högsommar)\n**Status:** PERMANENT i Umnataks kropp\n**Kroppen:** Utmattad efter Skugglandets strapatser\n**Kniven:** Nu Umnataks hem (med Urkhaths ring bunden till den)\n\n## KONSEKVENSER\n\n- Christofer spelar nu BÅDE \"Ulzak i kroppen\" OCH \"Umnatak i kniven\"\n- Ulzak kan aldrig lämna kroppen\n- Umnatak kan aldrig lämna kniven\n- Detta är det permanenta priset för Zentris räddning\n- Kroppen dräneras av Ulzaks närvaro\n\n## SL-ANTECKNINGAR\n\n- Permanent förändring - ingen återvändo\n- Schamanistisk kunskap nu direkt tillgänglig för gruppen\n- Umnataks offer gav Ulzak frihet efter generationer\n- Symboliserar kampanjens tema: offer och pris för räddning\n- Christofer spelar dubbel roll: kropp och kniv"
+      "beskrivning": "# ULZAK\n\n**Tirak-schaman - PERMANENT i Umnataks kropp**\n\n## GRUNDINFO\n\n- **Ras:** Tirak\n- **Status:** Levande (PERMANENT i Umnataks kropp)\n- **Första fas:** Fängslad i meteoritjärnskniv (generationer)\n- **Fas 10:** Befriad till Umnataks kropp när Umnatak offrade sig\n- **Nuvarande:** Permanent gäst i Umnataks kropp\n- **Roll:** Shamansk gäst, kontrollerare av Umnataks kropp\n- **Spelas av:** Christofer (som \"Ulzak i kroppen\")\n\n## BAKGRUND\n\nUlzak är en urgammal tirak-schaman med djup kunskap om andar, demoner och Skugglandet. I generationer var han fängslad i meteoritjärnskniven som Thrakka bär.\n\n## KRITISKA HÄNDELSER\n\n### Titanstriden (Kapitel 10)\n**Umnataks Offer:**\nNär Umnatak offrade sig för att krossa titanens kärna och befria sex själar, tvingades Ulzak TILLBAKA till Umnataks tomma kropp. Umnatak drogs IN I KNIVEN istället.\n\n**Rollbyte:**\n- Ulzak befriad från kniven efter generationer\n- Umnatak fängslad i kniven (nytt fängelse)\n- Ulzak permanent gäst i Umnataks kropp\n- INGEN återvändo - detta är permanent\n\n### Trådbrottet (Kapitel 10)\nUlzak använde meteoritjärnskniven för att kapa Arcadius tråd till det blå ljuset i den coloniska korridoren. Kniven var det enda som kunde skära tråden mellan världarna.\n\n### Zentris Befrielse (Kapitel 10 - Final)\nUlzak var närvarande genom hela räddningsoperationen i Frostspiran, redo att stödja gruppen med schamanistisk kunskap.\n\n## KARAKTÄRSDRAG\n\n- **Urgammal:** Fängslad i generationer\n- **Vis:** Djup kunskap om andevärld, demoner, Skugglandet\n- **Tacksam:** Befriad efter så lång fångenskap\n- **Erfaren:** Känd med demonologi och andeplanet\n- **Permanent gäst:** Kan aldrig lämna Umnataks kropp\n\n## RELATIONER\n\n### Umnatak\n- **Offer:** Umnatak offrade sig för att befria Ulzak\n- **Rollbyte:** Ulzak nu i kroppen, Umnatak i kniven\n- **Permanent:** Ingen väg tillbaka\n\n### Thrakka\n- **Knivbärare:** Thrakka bär kniven där Ulzak bodde (nu Umnataks hem)\n- **Vaktar ringen:** Thrakka vaktar kniven med Urkhaths ring bunden till den\n\n### Gruppen\n- **Allierad:** Stödjer gruppen med schamanistisk kunskap\n- **Medlem:** Nu permanent del av gruppen genom Umnataks kropp\n\n## NUVARANDE SITUATION\n\n**Plats:** Grensfortet (högsommar)\n**Status:** PERMANENT i Umnataks kropp\n**Kroppen:** Utmattad efter Skugglandets strapatser\n**Kniven:** Nu Umnataks hem (med Urkhaths ring bunden till den)\n\n## KONSEKVENSER\n\n- Christofer spelar nu BÅDE \"Ulzak i kroppen\" OCH \"Umnatak i kniven\"\n- Ulzak kan aldrig lämna kroppen\n- Umnatak kan aldrig lämna kniven\n- Detta är det permanenta priset för Zentris räddning\n- Kroppen dräneras av Ulzaks närvaro\n\n## SL-ANTECKNINGAR\n\n- Permanent förändring - ingen återvändo\n- Schamanistisk kunskap nu direkt tillgänglig för gruppen\n- Umnataks offer gav Ulzak frihet efter generationer\n- Symboliserar kampanjens tema: offer och pris för räddning\n- Christofer spelar dubbel roll: kropp och kniv",
+      "roll": "Mentor och profet"
     },
     {
       "namn": "Umar al-Rashid",
@@ -3092,7 +3467,20 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# VALTHOR BANERBÄRARE\n**Banerbärare i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Banerbärare och moralansvarig\n- **Ansvar:** Gruppens fana och allmän springpojke\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Höll moralen uppe vid Tirakgraven."
+      "beskrivning": "# VALTHOR BANERBÄRARE\n**Banerbärare i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Banerbärare och moralansvarig\n- **Ansvar:** Gruppens fana och allmän springpojke\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Höll moralen uppe vid Tirakgraven.",
+      "roll": "Banerbärare och moralansvarig"
+    },
+    {
+      "namn": "Valyra Nattöga",
+      "bild": "Valyra_Nattöga.png",
+      "ras": "Människa",
+      "titel": null,
+      "status": "okänd",
+      "plats": "Vargnäset",
+      "fraktion": "Desertörer",
+      "kapitel": null,
+      "beskrivning": "# VALYRA NATTÖGA\n**Desertörledare och skogslöpare**\n\n## GRUNDINFO\n- **Roll:** Ledare för andra vågen desertörer (8 man)\n- **Specialitet:** Skogslöpare\n- **Taktik:** Infiltrera från öst och väst över svaga punkter i palissaden\n- **Svaghet:** Oorganiserade i närstrid, föredrar smygattacker\n- **Beteende:** Leder grupper över palissaden på olika punkter, plötsliga attacker\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ledde andra vågen i anfallet på Vargnäset med infiltrationstaktik.\n\n## SL-ANTECKNINGAR\nValyra är expert på smygattacker och använder skogslöparstyrkor för att infiltrera försvaret. Hennes styrkor är farliga i överraskningsanfall men sämre i organiserad närstrid.",
+      "roll": "Desertörledare"
     },
     {
       "namn": "Varen Kolsten",
@@ -3104,17 +3492,6 @@ var wikiData = {
       "fraktion": "F.d. Nattgardet",
       "kapitel": "Kapitel 10",
       "beskrivning": "# VAREN KOLSTEN\n\n**Flytt soldat som gömmer sig för sitt förflutna**\n\n## Bakgrund\n\nEn man som gömt sig i skogarna i tre år - en desertör från **Nattgardet**, storfurste Thamas Vitfjäders fruktade elitstyrka i Damarien (kallade 'Mörkerhundarna').\n\n## Varför han flydde\n\nVägrade delta i 'storfurstens vinskörd' - en brutal utrensning av en hel by. Hans samvete tillät det inte.\n\n## Faran\n\nOm Damarien får veta var han är kan hans familj avrättas ('avrättning i tredje led' - föräldrar, syskon, barn). Nattgardets ledare **Marok Svärdshand** är känd för att aldrig ge upp jakten på desertörer.\n\n## Koppling till kampanjen\n\nGordons bror Ethan tjänstgör i Damarien. Vad händer om han hör talas om detta?"
-    },
-    {
-      "namn": "Valyra Nattöga",
-      "bild": "Valyra_Nattöga.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "okänd",
-      "plats": "Vargnäset",
-      "fraktion": "Desertörer",
-      "kapitel": null,
-      "beskrivning": "# VALYRA NATTÖGA\n**Desertörledare och skogslöpare**\n\n## GRUNDINFO\n- **Roll:** Ledare för andra vågen desertörer (8 man)\n- **Specialitet:** Skogslöpare\n- **Taktik:** Infiltrera från öst och väst över svaga punkter i palissaden\n- **Svaghet:** Oorganiserade i närstrid, föredrar smygattacker\n- **Beteende:** Leder grupper över palissaden på olika punkter, plötsliga attacker\n\n## I KAMPANJEN\nFas 7 (Resan Hem): Ledde andra vågen i anfallet på Vargnäset med infiltrationstaktik.\n\n## SL-ANTECKNINGAR\nValyra är expert på smygattacker och använder skogslöparstyrkor för att infiltrera försvaret. Hennes styrkor är farliga i överraskningsanfall men sämre i organiserad närstrid."
     },
     {
       "namn": "Varg-Mika",
@@ -3136,7 +3513,8 @@ var wikiData = {
       "plats": "Före detta Stålsvärds Kavalerister",
       "fraktion": "Stålsvärds Kavalerister",
       "kapitel": null,
-      "beskrivning": "# VARIA SKYDDSVÄKTARE\n**Bågskytt i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Bågskytt och närstridskämpe\n- **Utrustning:** Seleinebåge, stridssvärd, liten sköld\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Stred vid Tirakgraven."
+      "beskrivning": "# VARIA SKYDDSVÄKTARE\n**Bågskytt i Stålsvärds Kavalerister**\n\n## GRUNDINFO\n- **Roll:** Bågskytt och närstridskämpe\n- **Utrustning:** Seleinebåge, stridssvärd, liten sköld\n- **Status:** Aktiv\n\n## I KAMPANJEN\nFas 1: Stred vid Tirakgraven.",
+      "roll": "Bågskytt och närstridskämpe"
     },
     {
       "namn": "Velissa",
@@ -3169,7 +3547,8 @@ var wikiData = {
       "plats": "Mithera-skogen",
       "fraktion": "Kuberons härolder",
       "kapitel": null,
-      "beskrivning": "# VITFLÄCK\n\n**Talande snökatt, Kuberons härold - tre meter från nos till svans**\n\n## GRUNDINFO\n\n- **Ras:** Snökatt (magisk varelse)\n- **Status:** Levande\n- **Första fas:** Fas 10 (Mithera)\n- **Roll:** Mystisk vägvisare och informant\n\n## BESKRIVNING\n\nVitfläck är en enorm snökatt - tre meter från nos till svans, med bärnstensögon och tre rader tänder. Han är en av Kuberons härolder och kan tala.\n\n## KRITISKA HÄNDELSER\n\n### Mithera (Fas 10)\n**Mötet vid De Varma Källorna:**\n\n**Hans bedömning av gruppen:**\n- **Gordon:** *\"Du luktar ansvar för döda barn. Intressant parfym.\"*\n- **Umnatak:** *\"Andevandrare! Din sort smakar konstigt.\"*\n- **Thrakka:** *\"Blod på sand, publiken jublar. Du har dödat för sport.\"*\n- **Kazrik:** *\"Ord, ord, ord. Du luktar pergament och bläck. Tråkigt.\"*\n- **Corvus:** *\"Två namn, två själar, två skulder. Du måste smaka FASCINERANDE.\"*\n\n**Information om Zentri:**\n- *\"Han gick österut med demonen i hasorna. Såg honom gråta silverfärger.\"*\n\n**Hans varning:**\n- *\"Ni kommer dö, vet ni. Inte idag, inte av mig, men snart.\"*\n\n## KARAKTÄRSDRAG\n\n- **Ser sanningar:** Känner personers essens\n- **Mystisk:** Talar i gåtor\n- **Kuberon-bunden:** Tjänare till gudomlig kraft\n- **Nio själar:** *\"Jag har nio själar. Du skulle gå vilse i mig.\"* (till Umnatak)\n\n## RELATIONER\n\n### Gudomliga\n- **Kuberon:** Hans herre\n\n### Gruppen\n- **Observatör:** Bedömde deras essenser\n- **Informant:** Gav information om Zentri\n\n## BETYDELSE\n\nVitfläck gav gruppen avgörande information om Zentri och bekräftade deras respektive essenser genom sina observationer.\n\n## SL-ANTECKNINGAR\n\n- Kan dyka upp igen i Mithera\n- Vet mer än han säger\n- Hans varning om död kan vara profetia\n- Representerar Mitheras magiska natur"
+      "beskrivning": "# VITFLÄCK\n\n**Talande snökatt, Kuberons härold - tre meter från nos till svans**\n\n## GRUNDINFO\n\n- **Ras:** Snökatt (magisk varelse)\n- **Status:** Levande\n- **Första fas:** Fas 10 (Mithera)\n- **Roll:** Mystisk vägvisare och informant\n\n## BESKRIVNING\n\nVitfläck är en enorm snökatt - tre meter från nos till svans, med bärnstensögon och tre rader tänder. Han är en av Kuberons härolder och kan tala.\n\n## KRITISKA HÄNDELSER\n\n### Mithera (Fas 10)\n**Mötet vid De Varma Källorna:**\n\n**Hans bedömning av gruppen:**\n- **Gordon:** *\"Du luktar ansvar för döda barn. Intressant parfym.\"*\n- **Umnatak:** *\"Andevandrare! Din sort smakar konstigt.\"*\n- **Thrakka:** *\"Blod på sand, publiken jublar. Du har dödat för sport.\"*\n- **Kazrik:** *\"Ord, ord, ord. Du luktar pergament och bläck. Tråkigt.\"*\n- **Corvus:** *\"Två namn, två själar, två skulder. Du måste smaka FASCINERANDE.\"*\n\n**Information om Zentri:**\n- *\"Han gick österut med demonen i hasorna. Såg honom gråta silverfärger.\"*\n\n**Hans varning:**\n- *\"Ni kommer dö, vet ni. Inte idag, inte av mig, men snart.\"*\n\n## KARAKTÄRSDRAG\n\n- **Ser sanningar:** Känner personers essens\n- **Mystisk:** Talar i gåtor\n- **Kuberon-bunden:** Tjänare till gudomlig kraft\n- **Nio själar:** *\"Jag har nio själar. Du skulle gå vilse i mig.\"* (till Umnatak)\n\n## RELATIONER\n\n### Gudomliga\n- **Kuberon:** Hans herre\n\n### Gruppen\n- **Observatör:** Bedömde deras essenser\n- **Informant:** Gav information om Zentri\n\n## BETYDELSE\n\nVitfläck gav gruppen avgörande information om Zentri och bekräftade deras respektive essenser genom sina observationer.\n\n## SL-ANTECKNINGAR\n\n- Kan dyka upp igen i Mithera\n- Vet mer än han säger\n- Hans varning om död kan vara profetia\n- Representerar Mitheras magiska natur",
+      "roll": "Mystisk vägvisare"
     },
     {
       "namn": "Vomdal",
@@ -3180,7 +3559,8 @@ var wikiData = {
       "plats": "Jarla",
       "fraktion": "Jarlas stadsvakt",
       "kapitel": null,
-      "beskrivning": "# VOMDAL\n**Jarlas vaktkapten**\n\n## GRUNDINFO\n- **Position:** Vaktkapten för Jarlas stadsvakt\n- **Styrkor:** Befäl över 120 stadsvakter totalt\n- **Ansvar:** Bevakning av staden och yttre bevakningen av Todor Felkes palats\n- **Organisation:**\n  - 4 patruller på murarna samtidigt\n  - Extra vakter i torn som står på vakt konstant\n  - 4 ytterligare patruller i högkvarteret som kan rycka ut vid behov\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Ansvarar för stadens säkerhet.\n\n## SL-ANTECKNINGAR\nVomdal sköter den yttre säkerheten kring frijarlen Todor Felkes palats, medan tiraken Hemkhath Thokk ansvarar för den inre bevakningen med sitt garde på 40 välrustade soldater. Denna uppdelning visar en viss osäkerhet/misstro i maktstrukturen.\n\nEnligt senare händelser (jarla_nu_text.txt) har stadsvakten blivit alltmer brutal under order från Todor Felkes närmaste män, med order att fängsla alla misstänkta förrädare."
+      "beskrivning": "# VOMDAL\n**Jarlas vaktkapten**\n\n## GRUNDINFO\n- **Position:** Vaktkapten för Jarlas stadsvakt\n- **Styrkor:** Befäl över 120 stadsvakter totalt\n- **Ansvar:** Bevakning av staden och yttre bevakningen av Todor Felkes palats\n- **Organisation:**\n  - 4 patruller på murarna samtidigt\n  - Extra vakter i torn som står på vakt konstant\n  - 4 ytterligare patruller i högkvarteret som kan rycka ut vid behov\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. Ansvarar för stadens säkerhet.\n\n## SL-ANTECKNINGAR\nVomdal sköter den yttre säkerheten kring frijarlen Todor Felkes palats, medan tiraken Hemkhath Thokk ansvarar för den inre bevakningen med sitt garde på 40 välrustade soldater. Denna uppdelning visar en viss osäkerhet/misstro i maktstrukturen.\n\nEnligt senare händelser (jarla_nu_text.txt) har stadsvakten blivit alltmer brutal under order från Todor Felkes närmaste män, med order att fängsla alla misstänkta förrädare.",
+      "roll": "Vaktkapten"
     },
     {
       "namn": "Wahan Ru",
@@ -3235,7 +3615,8 @@ var wikiData = {
       "plats": "Muhad",
       "fraktion": "Farouk-familjen",
       "kapitel": null,
-      "beskrivning": "# YASMINA AL-FAROUK\n**Medlem av Farouk-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad."
+      "beskrivning": "# YASMINA AL-FAROUK\n**Medlem av Farouk-familjen i Muhad**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Plats:** Muhad\n\n## I KAMPANJEN\nFas 3: Möttes i Muhad.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Yennara av Boca",
@@ -3246,7 +3627,8 @@ var wikiData = {
       "plats": "Jarla",
       "fraktion": "Oberoende",
       "kapitel": null,
-      "beskrivning": "# YENNARA AV BOCA\n**Köpman och rådman i Jarla**\n\n## GRUNDINFO\n- **Position:** Rådman i Jarlas råd (en av 10 köpmän)\n- **Inflytande:** Medlem i stadens styrande råd\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. En av stadens inflytelserika köpmän.\n\n## SL-ANTECKNINGAR\nEn av de oberoende köpmännen i rådet, inte direkt kopplad till de stora handelshus som Ramiz, Nejas eller Wezi."
+      "beskrivning": "# YENNARA AV BOCA\n**Köpman och rådman i Jarla**\n\n## GRUNDINFO\n- **Position:** Rådman i Jarlas råd (en av 10 köpmän)\n- **Inflytande:** Medlem i stadens styrande råd\n\n## I KAMPANJEN\nFas 3: NPC i Jarla. En av stadens inflytelserika köpmän.\n\n## SL-ANTECKNINGAR\nEn av de oberoende köpmännen i rådet, inte direkt kopplad till de stora handelshus som Ramiz, Nejas eller Wezi.",
+      "roll": "Köpman och rådman"
     },
     {
       "namn": "Ylva",
@@ -3257,7 +3639,8 @@ var wikiData = {
       "plats": "Bergspass nära Vitterdal",
       "fraktion": "Anslöt sig till hjältarna",
       "kapitel": "Kapitel 6",
-      "beskrivning": "# YLVA (†)\n**Ung jägare från Vargnäset, fallen i Kärlingarnas bakhåll**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** Ung flicka\n- **Yrke:** Jägare (försörjde mor och syster)\n- **Status:** Död\n- **Dödsorsak:** Armborstskodd från Kärlingarnas män\n- **Dödsplats:** Bergspass nära Vitterdal\n- **Grav:** Stenhög i passet\n\n## BAKGRUND\nYlva var en skicklig jägare från Vargnäset som försörjde sin mor och syster genom jakt. Hon hade en gång följt en älg i tre dagar för att få mat till sin sjuka syster. När hjältarna reste från Vargnäset beslutade hon sig för att följa med, driven av drömmar om att se något av världen utanför sin by.\n\n## DEN SISTA STRIDEN\nI bergspasset nära Vitterdal föll gruppen i ett bakhåll av Kärlingarnas män. Ylva försökte ta skydd men träffades av ett armborstskodd. Kazrik arbetade febrilt för att rädda henne, men skadan var för svår - lodet hade träffat där inget läkemedel kunde hjälpa.\n\n### Hennes sista ord\nI dödens närhet, med Hagge vid sin sida, viskade Ylva:\n*\"Jag försökte ta mig i skydd. Trodde jag kunde vara till hjälp.\"*\n\nHennes allra sista ord var en varning:\n*\"De vet... mer än de borde... om er alla...\"*\n\nDessa ord avslöjade att Kärlingarnas bakhåll inte var slumpmässigt - någon hade berättat för dem var gruppen skulle vara.\n\n## HEDERSBETYGELSER\n\n### Thrakkas hyllning\nThrakka Järnhanden, annars hård som granit, knäböjde vid Ylvas sida och sa:\n*\"Du dog med heder, jägare. Mahktah kommer minnas ditt mod.\"*\n\nDetta var en ovanlig ära från tiraken - att erkänna en ung människas mod som jämlik.\n\n### Begravning\nGruppen reste en grav av stenar över henne i passet. Det var det minsta de kunde göra för flickan som dog för att hon råkat befinna sig i närheten av dem Kärlingarna jagade.\n\n## HAGGES SKULD OCH SORG\nHagge bär tung skuld för Ylvas död. Han förstod att hon inte var målet - Kärlingarna sökte honom och Thrakka. Ylva var bara i vägen, ett oskyldigt offer i en jakt som inte var hennes.\n\nHan tänkte på hennes mor och syster som nu skulle vänta förgäves, och insåg att någon måste berätta för dem - men det skulle inte bli han. Hans resa ledde åt ett annat håll.\n\n## VITTERDALS SKUGGA\nYlva dog precis innan gruppen nådde Vitterdal, där Hagge mötte sin mor Lady Soffia vid Mitrahus portar. I stunden av återförening med sin mor kunde Hagge bara tänka på Ylvas kropp under sin stenhög, och hur lätt det kunde ha varit han själv.\n\n## BETYDELSE\nYlvas död representerar flera viktiga teman:\n- **Oskyldiga offer:** Hon dog inte för sina egna val, utan för att hon råkade vara nära dem som var måltavlor\n- **Priset för äventyr:** Hennes dröm om att se världen slutade i en kall grav\n- **Förräderi:** Hennes sista ord antyder att någon berättade för Kärlingarna var gruppen skulle vara\n- **Skuld och ansvar:** Hagge och de andra bär vetskapen om att hon dog för deras skull\n\n## RELATIONER\n- **Mor och syster:** I Vargnäset, väntande på någon som aldrig kommer hem\n- **Hagge:** Bär djup skuld för hennes död\n- **Kazrik:** Försökte desperat rädda henne\n- **Thrakka:** Visade henne ovanlig heder i döden\n- **Hjältarna:** Hon följde dem mot sitt öde\n\n## SL-ANTECKNINGAR\n- Ylvas sista ord om \"de vet mer än de borde\" är viktig ledtråd om spion/förrädare\n- Hennes mor och syster kan dyka upp senare i kampanjen\n- Hagges skuld kan användas för karaktärsutveckling\n- Stenhögen i passet kan bli en plats för reflektion\n- Thrakkas hedersbetygelse visar tirakens mjukare sida"
+      "beskrivning": "# YLVA (†)\n**Ung jägare från Vargnäset, fallen i Kärlingarnas bakhåll**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** Ung flicka\n- **Yrke:** Jägare (försörjde mor och syster)\n- **Status:** Död\n- **Dödsorsak:** Armborstskodd från Kärlingarnas män\n- **Dödsplats:** Bergspass nära Vitterdal\n- **Grav:** Stenhög i passet\n\n## BAKGRUND\nYlva var en skicklig jägare från Vargnäset som försörjde sin mor och syster genom jakt. Hon hade en gång följt en älg i tre dagar för att få mat till sin sjuka syster. När hjältarna reste från Vargnäset beslutade hon sig för att följa med, driven av drömmar om att se något av världen utanför sin by.\n\n## DEN SISTA STRIDEN\nI bergspasset nära Vitterdal föll gruppen i ett bakhåll av Kärlingarnas män. Ylva försökte ta skydd men träffades av ett armborstskodd. Kazrik arbetade febrilt för att rädda henne, men skadan var för svår - lodet hade träffat där inget läkemedel kunde hjälpa.\n\n### Hennes sista ord\nI dödens närhet, med Hagge vid sin sida, viskade Ylva:\n*\"Jag försökte ta mig i skydd. Trodde jag kunde vara till hjälp.\"*\n\nHennes allra sista ord var en varning:\n*\"De vet... mer än de borde... om er alla...\"*\n\nDessa ord avslöjade att Kärlingarnas bakhåll inte var slumpmässigt - någon hade berättat för dem var gruppen skulle vara.\n\n## HEDERSBETYGELSER\n\n### Thrakkas hyllning\nThrakka Järnhanden, annars hård som granit, knäböjde vid Ylvas sida och sa:\n*\"Du dog med heder, jägare. Mahktah kommer minnas ditt mod.\"*\n\nDetta var en ovanlig ära från tiraken - att erkänna en ung människas mod som jämlik.\n\n### Begravning\nGruppen reste en grav av stenar över henne i passet. Det var det minsta de kunde göra för flickan som dog för att hon råkat befinna sig i närheten av dem Kärlingarna jagade.\n\n## HAGGES SKULD OCH SORG\nHagge bär tung skuld för Ylvas död. Han förstod att hon inte var målet - Kärlingarna sökte honom och Thrakka. Ylva var bara i vägen, ett oskyldigt offer i en jakt som inte var hennes.\n\nHan tänkte på hennes mor och syster som nu skulle vänta förgäves, och insåg att någon måste berätta för dem - men det skulle inte bli han. Hans resa ledde åt ett annat håll.\n\n## VITTERDALS SKUGGA\nYlva dog precis innan gruppen nådde Vitterdal, där Hagge mötte sin mor Lady Soffia vid Mitrahus portar. I stunden av återförening med sin mor kunde Hagge bara tänka på Ylvas kropp under sin stenhög, och hur lätt det kunde ha varit han själv.\n\n## BETYDELSE\nYlvas död representerar flera viktiga teman:\n- **Oskyldiga offer:** Hon dog inte för sina egna val, utan för att hon råkade vara nära dem som var måltavlor\n- **Priset för äventyr:** Hennes dröm om att se världen slutade i en kall grav\n- **Förräderi:** Hennes sista ord antyder att någon berättade för Kärlingarna var gruppen skulle vara\n- **Skuld och ansvar:** Hagge och de andra bär vetskapen om att hon dog för deras skull\n\n## RELATIONER\n- **Mor och syster:** I Vargnäset, väntande på någon som aldrig kommer hem\n- **Hagge:** Bär djup skuld för hennes död\n- **Kazrik:** Försökte desperat rädda henne\n- **Thrakka:** Visade henne ovanlig heder i döden\n- **Hjältarna:** Hon följde dem mot sitt öde\n\n## SL-ANTECKNINGAR\n- Ylvas sista ord om \"de vet mer än de borde\" är viktig ledtråd om spion/förrädare\n- Hennes mor och syster kan dyka upp senare i kampanjen\n- Hagges skuld kan användas för karaktärsutveckling\n- Stenhögen i passet kan bli en plats för reflektion\n- Thrakkas hedersbetygelse visar tirakens mjukare sida",
+      "roll": "Okänd"
     },
     {
       "namn": "Youssef al-Najjar",
@@ -3279,7 +3662,19 @@ var wikiData = {
       "plats": "Frostnymfen (Raunfloden)",
       "fraktion": "Lady Soffias nätverk",
       "kapitel": "Kapitel 8",
-      "beskrivning": "# YRKA YRKO\n**Tvillingar på Frostnymfen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Relation:** Tvillingar (Yrka och Yrko)\n- **Roll:** Besättningsmedlemmar på Frostnymfen\n- **Fartyg:** Frostnymfen under Kapten Nilmar\n- **Status:** Levande\n\n## BESKRIVNING\nYrka och Yrko är tvillingar som tjänstgör ombord på flodpråmen Frostnymfen. De är del av Lady Soffias nätverk och hjälper till med fartygets dagliga drift under resan uppför Raunfloden mot Vitterdal.\n\n## KARAKTÄR OCH REAKTIONER\nTvillingarna visar tecken på nervositet när faror uppstår. Under Dag 3 av resan, när mystiska ljussignaler från Systrarna sågs längs floden, blev Yrka och Yrko synbart oroliga - ett tecken på deras medvetenhet om de faror som lurar längs Raunfloden.\n\n## RELATIONER\n- **Kapten Nilmar:** Deras kapten\n- **Selene \"Silveröga\":** Underbefäl på fartyget\n- **Övriga besättning:** Burhak, Laszlo, Garsten, Esma, Marvo\n- **Lady Soffia:** Del av hennes nätverk\n\n## I KAMPANJEN\n**Kapitel 8 - Evakueringen:** Var ombord på Frostnymfen under den farliga resan uppför Raunfloden mot Vitterdal. Bidrog till fartygets drift under flera kritiska situationer.\n\n## SL-ANTECKNINGAR\nTvillingarnas nervositet kan användas som indikator när faror närmar sig. De känner floden och dess faror väl."
+      "beskrivning": "# YRKA YRKO\n**Tvillingar på Frostnymfen**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Relation:** Tvillingar (Yrka och Yrko)\n- **Roll:** Besättningsmedlemmar på Frostnymfen\n- **Fartyg:** Frostnymfen under Kapten Nilmar\n- **Status:** Levande\n\n## BESKRIVNING\nYrka och Yrko är tvillingar som tjänstgör ombord på flodpråmen Frostnymfen. De är del av Lady Soffias nätverk och hjälper till med fartygets dagliga drift under resan uppför Raunfloden mot Vitterdal.\n\n## KARAKTÄR OCH REAKTIONER\nTvillingarna visar tecken på nervositet när faror uppstår. Under Dag 3 av resan, när mystiska ljussignaler från Systrarna sågs längs floden, blev Yrka och Yrko synbart oroliga - ett tecken på deras medvetenhet om de faror som lurar längs Raunfloden.\n\n## RELATIONER\n- **Kapten Nilmar:** Deras kapten\n- **Selene \"Silveröga\":** Underbefäl på fartyget\n- **Övriga besättning:** Burhak, Laszlo, Garsten, Esma, Marvo\n- **Lady Soffia:** Del av hennes nätverk\n\n## I KAMPANJEN\n**Kapitel 8 - Evakueringen:** Var ombord på Frostnymfen under den farliga resan uppför Raunfloden mot Vitterdal. Bidrog till fartygets drift under flera kritiska situationer.\n\n## SL-ANTECKNINGAR\nTvillingarnas nervositet kan användas som indikator när faror närmar sig. De känner floden och dess faror väl.",
+      "roll": "Okänd"
+    },
+    {
+      "namn": "Yvan Krell",
+      "bild": "yvan_krell.png",
+      "ras": "Okänd",
+      "titel": "Sjöman",
+      "status": "levande",
+      "plats": "Spegelmåne",
+      "fraktion": null,
+      "kapitel": "Kapitel 3",
+      "beskrivning": "# YVAN KRELL\n**Sjöman på Spegelmåne**\n\n## GRUNDINFO\n- **Yrke:** Sjöman\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask\n- **Status:** Levande\n- **Första omnämnande:** Kapitel 3\n\n## BESKRIVNING\nSjöman på fartyget Spegelmåne.\n\n## KOPPLINGAR\n- **Fartyg:** Spegelmåne\n- **Kapten:** Jeorg Rask"
     },
     {
       "namn": "Zahra bint-Hassan",
@@ -3301,7 +3696,8 @@ var wikiData = {
       "plats": "Öknen utanför Jen",
       "fraktion": "Demoniska krafter",
       "kapitel": "Kapitel 2",
-      "beskrivning": "# ZAIRGAZ (†)\n**Frammanad demon**\n\n## GRUNDINFO\n- **Typ:** Frammanad demon\n- **Status:** Dräpt av hjältarna\n- **Plats:** Öknen utanför Jen, Muhad\n- **Kapitel:** Kapitel 2\n\n## BESKRIVNING\nZairgaz var en demon som frammanats i ökenområdet utanför Jen. Dess sanna natur och syfte förblir oklart, men demonen utgjorde ett direkt hot mot hjältarna eller deras intressen i regionen.\n\n## KONFRONTATION\nI öknen utanför Jen mötte hjältarna Zairgaz i strid. Trots demonens övernaturliga krafter lyckades gruppen besegra och dräpa varelsen.\n\n## BETYDELSE\nZairgaz var en av de tidiga tecknen på demonisk aktivitet i kampanjen, vilket förebådade de större hot som skulle komma senare. Hjältarnas seger visade deras förmåga att hantera övernaturliga fiender redan i kampanjens tidiga skeden.\n\n## I KAMPANJEN\n**Kapitel 2 - Muhad:** Frammanad och konfronterad i öknen utanför Jen. Dräpt av hjältarna.\n\n## SL-ANTECKNINGAR\nEn tidig demonstration av demonisk närvaro i världen. Kan ha kopplingar till större demoniska planer eller frammanare i regionen."
+      "beskrivning": "# ZAIRGAZ (†)\n**Frammanad demon**\n\n## GRUNDINFO\n- **Typ:** Frammanad demon\n- **Status:** Dräpt av hjältarna\n- **Plats:** Öknen utanför Jen, Muhad\n- **Kapitel:** Kapitel 2\n\n## BESKRIVNING\nZairgaz var en demon som frammanats i ökenområdet utanför Jen. Dess sanna natur och syfte förblir oklart, men demonen utgjorde ett direkt hot mot hjältarna eller deras intressen i regionen.\n\n## KONFRONTATION\nI öknen utanför Jen mötte hjältarna Zairgaz i strid. Trots demonens övernaturliga krafter lyckades gruppen besegra och dräpa varelsen.\n\n## BETYDELSE\nZairgaz var en av de tidiga tecknen på demonisk aktivitet i kampanjen, vilket förebådade de större hot som skulle komma senare. Hjältarnas seger visade deras förmåga att hantera övernaturliga fiender redan i kampanjens tidiga skeden.\n\n## I KAMPANJEN\n**Kapitel 2 - Muhad:** Frammanad och konfronterad i öknen utanför Jen. Dräpt av hjältarna.\n\n## SL-ANTECKNINGAR\nEn tidig demonstration av demonisk närvaro i världen. Kan ha kopplingar till större demoniska planer eller frammanare i regionen.",
+      "roll": "Obestämd"
     },
     {
       "namn": "Zan Fjädertunga",
@@ -3315,18 +3711,6 @@ var wikiData = {
       "beskrivning": "# ZAN FJÄDERTUNGA\n**Gatumusikant i Tuzan Rim**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Kön:** Man\n- **Yrke:** Gatumusikant\n- **Plats:** Tuzan Rim\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nZan Fjädertunga är en gatumusikant som uppträder på Tuzan Rims gator. Hans smeknamn \"Fjädertunga\" antyder att han har en lätt och skicklig sångröst.\n\n## VERKSAMHET\nSom gatumusikant:\n- Spelar musik på gatorna\n- Underhåller förbipasserande\n- Samlar in mynt från åhörare\n- Sprider nyheter och rykten genom sång\n\n## KARAKTÄR\n- Talangfull musikant\n- Lätt och behaglig röst\n- Känner till mycket som händer i staden\n- Populär bland lokalbefolkningen\n\n## VÄRDE SOM INFORMATIONSKÄLLA\nGatumusikanter som Zan hör mycket av vad som händer i staden och kan vara värdefulla källor till rykten och information.\n\n## KOPPLINGAR\n- **Plats:** Tuzan Rim\n- **Yrke:** Musikant\n- **Fas:** 3"
     },
     {
-      "namn": "Zara",
-      "bild": null,
-      "ras": "Människa",
-      "titel": "Köksflicka",
-      "status": "levande",
-      "plats": "Sor, Jargien",
-      "fraktion": "Lady Soffias informationsnätverk",
-      "kapitel": null,
-      "källa": "EM-R001",
-      "beskrivning": "# ZARA\n**Köksflicka i Sor, Jargien**\n\n## GRUNDINFO\n- **Ras:** Människa (jargisk)\n- **Titel:** Köksflicka\n- **Arbetsplats:** Rikaste grisfarm-ägaren i Sor (1200 inv, Sorskinkan)\n- **Plats:** Sor, Jargien\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nZaras bror falskt anklagad för grisstöld av grisfarm-ägaren (skulle hängas enligt jargisk lag). Soffia skickade Syster Mirelle som \"vittnade\" om den verkliga tjuven. Bror klarades och släpptes fri. Zara vet inte vem som hjälpte, bara att \"en nunna från norr\" kom och räddade hennes bror.\n\n## VARFÖR VÄL PLACERAD\n- Arbetar i köket hos Sors rikaste grisfarm-ägare\n- Hör samtal om livsmedelsproduktion till jargiska armén\n- Sor är känt för Sorskinkan (levereras till jargiska militära förläggningar)\n- Ser militära inköpsorder och transportscheman\n\n## RAPPORTERAR\n- Livsmedelsproduktion till jargiska armén (hur mycket mat skickas?)\n- Jargiska militära rörelser nära gränsen (ökad efterfrågan = truppförflyttningar)\n- Planer för militär expansion (hörd från militära köpare)\n\n## KONTAKTMETOD\nRapporterar till Syster Mirelle vid hennes sällsynta besök till Sor (1 gång/år). Mirelle presenterar sig som \"vandrande nunna\".\n\n## LOJALITET\nMycket hög (bror räddad från avrättning)"
-    },
-    {
       "namn": "Zara al-Min",
       "bild": "Zara.png",
       "ras": "Människa",
@@ -3338,169 +3722,17 @@ var wikiData = {
       "beskrivning": "# ZARA AL-MIN\n**Ägare av Månskärets Gömställe**\n\n## GRUNDINFO\n- **Ras:** Mûhadier\n- **Kön:** Kvinna\n- **Yrke:** Värdshusägare\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Status:** Levande\n- **Första omnämnande:** Fas 3\n\n## BESKRIVNING\nZara al-Min är en klok och diskret kvinna som driver Månskärets Gömställe, ett värdshus känt för sin mystiska atmosfär och diskreta tjänster.\n\n## VERKSAMHET\nZara driver sitt värdshus med:\n- Fokus på diskretion och privatliv\n- Mystisk och hemlighetsfull stämning\n- Hemliga möten och affärer\n- Professionell och diskret service\n\n## PERSONAL\nZara arbetar med flera anställda:\n- Rashid ibn-Farouk (bartender)\n- Amina bint-Salim (serverare)\n- Hassan al-Rashid (kock)\n- Laila bint-Ali (städare)\n\n## KARAKTÄR\n- Klok och erfaren\n- Extremt diskret\n- Professionell\n- Skapar säker miljö för hemliga möten\n\n## KOPPLINGAR\n- **Arbetsplats:** Månskärets Gömställe\n- **Plats:** Jen, Muhad\n- **Fas:** 3"
     },
     {
-      "namn": "Sjödöda Titanen",
-      "bild": "skuggtitan.png",
-      "ras": "Monster",
-      "titel": "Boss i Skugglandet",
-      "status": "levande",
-      "plats": "Skugglandet (sjö)",
-      "fraktion": null,
-      "kapitel": "Kapitel 10",
-      "beskrivning": "# SJÖDÖDA TITANEN\r\n\r\n**Boss-strid i Skugglandet**\r\n\r\n## Framträdandet\r\n\r\nFrån sjön, hundra meter bort, stiger något upp.\r\n\r\nLångsamt.\r\n\r\nFörst ser de bara siluetten - en pyramid av lemmar och kroppar som reser sig mot den grå himlen. Tre meter. Fyra. Fem.\r\n\r\nVatten forsar från den. Men det är inte bara vatten - det är **MINNEN av vatten**, ekon av drunkning, skrik som fastnat i lungor.\r\n\r\nSex huvuden. Eller kanske bara ett huvud med sex ansikten. Svårt att säga. Alla stirrar åt olika håll utom två - de fixerar gruppen.\r\n\r\nFyra armar. Två tjocka som trädstammar. Två tunna som spindellår. Händerna FEL - någon har tre fingrar, någon åtta.\r\n\r\nDet går. Mot dem. Varje steg skakar marken. Det dryper. Lämnar pölar av... något... som ångar i kylan.\r\n\r\nTrettio meter bort stannar det.\r\n\r\nEtt av ansiktena öppnar munnen. Vatten rinner ut. Sedan orden:\r\n\r\n*\"Varmt. Ni är... varma.\"*\r\n\r\nTjugo meter.\r\n\r\n*\"Jag var kald. Så länge. I vattnet.\"*\r\n\r\nTio meter.\r\n\r\nAlla sex ansikten viskar nu, förskjutet:\r\n\r\n*\"Ge mig er värme.\"*\r\n\r\n## EON-STATS: SJÖDÖDA TITANEN\r\n\r\n### Grundvärden\r\n- **KP:** 120 (massiv)\r\n- **Storlek:** Enorm (5 meter hög)\r\n- **STY:** 22 (övermänsklig)\r\n- **SMI:** 10 (långsam men räckvidd kompenserar)\r\n- **INT:** 8 (rovdjursinstinkt + hat)\r\n- **PSY:** 16 (mentalt motstånd)\r\n\r\n### Skydd\r\n- **Naturligt pansar:** 8 (tjock, vattendränkt massa)\r\n- **Svag punkt:** Ansiktena - 0 pansar om träffade direkt\r\n\r\n### Färdigheter\r\n- **Närstrid:** Ob4T6 (kraftfull men inte snabb)\r\n- **Undvika:** Ob2T6 (stor, långsam)\r\n- **Greppa:** Ob5T6 (fyra armar!)\r\n\r\n### Attacker\r\n\r\n**1. Slagsmål (Tjocka armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 4T6+8 (BRUTALT)\r\n- Räckvidd: 4 meter\r\n- Kan slå TVÅ mål om de står nära varandra\r\n\r\n**2. Spetsiga fingrar (Tunna armar)**\r\n- Anfallsslag: Ob4T6\r\n- Skada: 3T6+4\r\n- Räckvidd: 5 meter\r\n- Penetrerar pansar (räkna som -4 pansar)\r\n\r\n**3. Greppattack**\r\n- Anfallsslag: Ob5T6 (alla fyra armar används)\r\n- Om träff: Offret greppat\r\n- Automatisk skada 2T6+4 per runda (krossning)\r\n- Kräver STY-tävling för att bryta sig loss (Ob5T6 vs Ob5T6)\r\n\r\n**4. Dränkning**\r\n- Om offret greppat i 2+ rundor\r\n- Titanen trycker ansiktet mot offrets mun\r\n- Börjar fylla offret med ruttet vatten\r\n- Kväver på 1T4 rundor om inte befriat\r\n\r\n### Särskilda Förmågor\r\n\r\n**Vattendränkt massa**\r\n- Hugg-/stickvapen: Halv skada (blöt, svampig)\r\n- Kross-/slagvapen: Full skada\r\n- Eld: Dubbel skada\r\n"
-    },
-    {
-      "namn": "Erik Bergsson",
-      "bild": null,
+      "namn": "Zara",
+      "bild": "Zara.png",
       "ras": "Människa",
-      "titel": null,
+      "titel": "Köksflicka",
       "status": "levande",
-      "plats": "Bergvik",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# ERIK BERGSSON\n**Stenbrytare från Bergvik**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Yrke:** Stenbrytare\n- **Status:** Levande\n- **Plats:** Bergvik (senare Grensfortet)\n- **Kapitel:** Kapitel 8\n- **Familj:** Bror till Lars Bergsson\n\n## BESKRIVNING\nErik Bergsson är en erfaren stenbrytare från Bergvik. Tillsammans med sin bror Lars besitter han djup kunskap om sten och bergarbete.\n\n## ANSLUTNING TILL GRENSFORTET\nDag 4 av resan till Grensfortet (14:e Tretoria, Astrio) anslöt sig Erik och hans bror Lars från Bergvik. Båda bröderna är stenbrytare med exceptionell kunskap.\n\n**Skordas observation:**\n\"Lars och Erik - stenbrytare, bröder. Pratade om stenar som vänner. Dårar eller experter. Ibland samma sak.\"\n\n## EXPERTIS\nErik och Lars har ovanlig förståelse för sten:\n- Kan läsa bergformationer\n- Förstår stenens egenskaper\n- Expert på stenbrytning och stenarbete\n- Pratar om stenar med passion och respekt\n\n## ROLL PÅ GRENSFORTET\nSom stenbrytarexperter blev bröderna Bergsson ovärderliga för:\n- Stenbrytning för byggnadsm aterial\n- Bedömning av fortets grundfundament\n- Reparation av stenstrukturer\n- Rådgivning om befästningar\n\n## KARAKTÄR\n- Passionerad om sitt yrke\n- Djup respekt för sten och berg\n- Nära band med sin bror\n- Praktisk och yrkesskicklig\n\n## KOPPLINGAR\n- **Bergvik:** Hemstad\n- **Lars Bergsson:** Bror och arbetspartner\n- **Grensfortet:** Ny bosättning\n- **Björn Hammarsmed:** Anslöt samtidigt\n- **Dain Stenyxa:** Samarbetar med dvärgbyggaren"
-    },
-    {
-      "namn": "Erik Björkgren",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# ERIK BJÖRKGREN\n**13-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 13 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n13-årig pojke från Vargnäset. Son till Nils Björkgren, bror till Astrid och Lilla-Maja. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Lilla-Maja Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Lilla-Maja Björkgren",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# LILLA-MAJA BJÖRKGREN\n**8-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 8 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n8-årig flicka från Vargnäset. Dotter till Nils Björkgren, syster till Astrid och Erik. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Erik Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Margareta Lindkvist",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# MARGARETA LINDKVIST\n**9-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 9 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n9-årig flicka från Vargnäset. Syster till Johan. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Syster:** Johan Lindkvist\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Torkel Falkemo",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# TORKEL FALKEMO\n**11-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 11 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n11-årig pojke från Vargnäset. Son till Gunnar Falkemo, bror till Sigrid. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Sigrid Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Sigrid Falkemo",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# SIGRID FALKEMO\n**6-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 6 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n6-årig flicka från Vargnäset. Dotter till Gunnar Falkemo, syster till Torkel. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Torkel Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Klas Hällström",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# KLAS HÄLLSTRÖM\n**7-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 7 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n7-årig pojke från Vargnäset. Son till Magnus Hällström. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Magnus Hällström\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Gustav Stenmark",
-      "bild": "gustav-stenmark.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# GUSTAV STENMARK\n**4-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 4 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n4-årig pojke från Vargnäset. Son till Olof Stenmark. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Olof Stenmark\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Lilla-Maja Björkgren",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# LILLA-MAJA BJÖRKGREN\n**8-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 8 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n8-årig flicka från Vargnäset. Dotter till Nils Björkgren, syster till Astrid och Erik. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Nils Björkgren\n- **Syskon:** Astrid Björkgren, Erik Björkgren\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Margareta Lindkvist",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# MARGARETA LINDKVIST\n**9-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 9 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n9-årig flicka från Vargnäset. Syster till Johan. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Syster:** Johan Lindkvist\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Torkel Falkemo",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# TORKEL FALKEMO\n**11-årig pojke från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 11 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n11-årig pojke från Vargnäset. Son till Gunnar Falkemo, bror till Sigrid. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Sigrid Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Sigrid Falkemo",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# SIGRID FALKEMO\n**6-årig flicka från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Ålder:** 6 år\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad)\n- **Kapitel:** Kapitel 8\n- **Yrke:** Barn från Vargnäset\n\n## BESKRIVNING\n6-årig flicka från Vargnäset. Dotter till Gunnar Falkemo, syster till Torkel. Evakuerad med de 41 överlevande.\n\n## FAMILJ\n- **Far:** Gunnar Falkemo\n- **Syster:** Torkel Falkemo\n\n## EVAKUERINGEN\n- Evakuerad från Vargnäset med 41 överlevande\n- Del av den större gruppen civila flyktingar"
-    },
-    {
-      "namn": "Skorda Bergsdotter",
-      "bild": "skorda.png",
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Vargnäset (evakuerad)",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# SKORDA BERGSDOTTER\n**Cynisk överlevare från Vargnäset**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Vargnäset (evakuerad till Grensfortet)\n- **Kapitel:** Kapitel 8\n- **Personlighet:** Cynisk, pessimistisk, brutalt ärlig\n\n## BESKRIVNING\nSkorda Bergsdotter är en erfaren överlevare från Vargnäset med ett cyniskt och pessimistiskt synsätt på tillvaron. Hon ser världen utan illusi oner - överlevnad före allt.\n\n## RESAN TILL GRENSFORTET\nSkorda var narratören av \"Resan till Grensfortet\" - hennes berättelse fångade gruppens resa från Vitterdal (11:e Tretoria) till Grensfortet (16:e Tretoria, Bio) med brutal ärlighet.\n\n**Hennes stil:**\n- Korta, klippande meningar\n- Brutalt ärlig observation\n- Ingen romantisering\n- \"Döden enkel. Livet komplicerat.\"\n\n## KARAKTÄR\n- **Cynisk realist:** \"Storm kommer alltid efter stillhet\"\n- **Pessimistisk:** \"Bygga något eller dö. Troligen båda.\"\n- **Empatisk trots cynism:** Satt med Eira när hon skakade, sa inget, bara fanns där\n- **Observant:** Märkte alla detaljer - viltspår, folks rädsla, underliggande spänningar\n\n## NYCKELCITAT\n- \"Skuld dödar folk långsammare än knivar men lika säkert\"\n- \"Hat är bättre än apati. Hat håller dig varm\"\n- \"Soldater pratar bäst utan ord\"\n- \"Oddsen? Usla. Men överlevt värre.\"\n\n## OBSERVATIONER UNDER RESAN\nSkorda noterade:\n- Eiras försämrade mentala tillstånd\n- Arcadius inre kamp med sin tro\n- Ragnar s fascination för Thrakka\n- Sten Knotbindares ensamhet och skuld\n- De goda jaktmarkerna runt Grensfortet\n\n## KOPPLINGAR\n- **Vargnäset:** Hemby (evakuerad)\n- **Eira Holm:** Vän, oroar sig för hennes mentala tillstånd\n- **Grensfortet:** Ny bosättning\n- **Gruppen:** En av 17 flyktingar på resan"
-    },
-    {
-      "namn": "Torkel Skogsson",
-      "bild": null,
-      "ras": "Människa",
-      "titel": null,
-      "status": "levande",
-      "plats": "Bergvik",
-      "fraktion": null,
-      "kapitel": "Kapitel 8",
-      "beskrivning": "# TORKEL SKOGSSON\n**Värd i Bergvik**\n\n## GRUNDINFO\n- **Ras:** Människa\n- **Status:** Levande\n- **Plats:** Bergvik\n- **Kapitel:** Kapitel 8\n- **Roll:** Invånare/värd i Bergvik\n\n## BESKRIVNING\nTorkel Skogsson mötte gruppen när de anlände till Bergvik under resan till Grensfortet (14:e Tretoria, Astrio). Han väntade på dem med ett stort leende - för stort. Desperat eller falskt. Troligen båda.\n\n## RESAN TILL GRENSFORTET (DAG 4)\nNär gruppen nådde Bergvik vid middagstid stod Torkel och väntade. Hans alltför entusiastiska välkomnande förrådde en viss desperation - kanske ensamhet, kanske oro för byns framtid, eller kanske bara hopp om hjälp och sällskap i svåra tider.\n\nBergvik bjöd på varm mat och färskt bröd. Folk log för första gången på veckor. Tre nya invånare anslöt till Grensfort-gruppen här: Björn Hammarsmed, Lars och Erik Bergsson (stenbrytarbröder).\n\n## KARAKTÄR\n- **Entusiastisk:** Stort välkomnande\n- **Desperat:** Leendet för stort, för falskt\n- **Ensam:** Behövde sällskap eller hjälp\n\n## OBSERVATIONER\nSkorda Bergsdotter noterade Torkels desperata leende - ett tecken på de svåra tider som drabbat även Bergvik. Trots detta bjöd byn på generös gästfrihet.\n\n## SL-ANTECKNINGAR\nTorkel representerar de små byarnas desperation i regionen - isolering, osäkerhet, och hopp om att nya inflyttare kan stärka gemenskapen."
+      "plats": "Sor, Jargien",
+      "fraktion": "Lady Soffias informationsnätverk",
+      "kapitel": null,
+      "beskrivning": "# ZARA\n**Köksflicka i Sor, Jargien**\n\n## GRUNDINFO\n- **Ras:** Människa (jargisk)\n- **Titel:** Köksflicka\n- **Arbetsplats:** Rikaste grisfarm-ägaren i Sor (1200 inv, Sorskinkan)\n- **Plats:** Sor, Jargien\n- **Status:** Levande\n- **Fraktion:** Lady Soffias informationsnätverk\n- **Källa:** EM-R001\n\n## BAKGRUND\nZaras bror falskt anklagad för grisstöld av grisfarm-ägaren (skulle hängas enligt jargisk lag). Soffia skickade Syster Mirelle som \"vittnade\" om den verkliga tjuven. Bror klarades och släpptes fri. Zara vet inte vem som hjälpte, bara att \"en nunna från norr\" kom och räddade hennes bror.\n\n## VARFÖR VÄL PLACERAD\n- Arbetar i köket hos Sors rikaste grisfarm-ägare\n- Hör samtal om livsmedelsproduktion till jargiska armén\n- Sor är känt för Sorskinkan (levereras till jargiska militära förläggningar)\n- Ser militära inköpsorder och transportscheman\n\n## RAPPORTERAR\n- Livsmedelsproduktion till jargiska armén (hur mycket mat skickas?)\n- Jargiska militära rörelser nära gränsen (ökad efterfrågan = truppförflyttningar)\n- Planer för militär expansion (hörd från militära köpare)\n\n## KONTAKTMETOD\nRapporterar till Syster Mirelle vid hennes sällsynta besök till Sor (1 gång/år). Mirelle presenterar sig som \"vandrande nunna\".\n\n## LOJALITET\nMycket hög (bror räddad från avrättning)",
+      "källa": "EM-R001",
+      "roll": "Obestämd"
     },
     {
       "namn": "Änke-Margit",
@@ -3514,383 +3746,487 @@ var wikiData = {
       "beskrivning": "# Änke-Margit\n\n**Bergviks starkaste kvinna - tog mannens timmervagn efter hans död.**\n\nHennes man dog i en skogsolycka. Margit tog hans timmervagn och har drivit den ensam i tio år. Starkare än de flesta män i byn. Bakar också det bästa brödet i Bergvik.\n\n**Utseende:** Bredaxlad, grova händer, kort hår av praktiska skäl."
     }
   ],
-  "platser": [
+  platser: [
     {
       "namn": "Abhan-hir-renk-Ghor",
       "typ": "Dvärgfäste",
       "region": "Tarkas/Jargien gräns",
-      "beskrivning": "# ABHAN-HIR-RENK-GHOR\n**Dvärgfästet där Kazriks berömmelse uppenbarades**\n\n## GRUNDINFO\n- **Typ:** Dvärgfäste\n- **Läge:** Gräns mellan Tarkas ödemark och Jargien\n- **Betydelse:** Första säkra hamnen efter skeppsbrottet\n- **Kultur:** Dvärgisk, handelsinriktad\n\n## HISTORIA\nEfter den långa vandringen genom Tarkas ödemark nådde gruppen slutligen dvärgfästet Abhan-hir-renk-Ghor i Fas 4. Här fick de mat, logi och vila.\n\n## VIKTIGA HÄNDELSER\n**Kazriks upptäckt:** I fästet upptäckte Kazrik att hans dagböcker och reseberättelser hade blivit populära böcker - \"Kazriks resor\" - och att han hade vunnit berömmelse som lärd man och äventyrare.\n\n**Karavananslutning:** Från fästet anslöt gruppen till en handelskaravan för säker passage genom Jargiens vinterlandskap.\n\n## KOPPLINGAR\n- **Relaterade platser:** Tarkas, Jargien\n- **Viktiga NPCs:** Kazrik (blev berömd här)"
-    },
-    {
-      "namn": "Åderbjörkslunden",
-      "typ": "Mystisk lund",
-      "region": "Skugglandet",
-      "beskrivning": "# ÅDERBJÖRKSLUNDEN\n**Mystisk lund i Skugglandet**\n\n## GRUNDINFO\n- **Typ:** Magisk björklund\n- **Region:** Skugglandet\n- **Karaktär:** Mystisk, magiskt laddad plats\n- **Betydelse:** Viktig plats i nuvarande äventyr\n\n## HISTORIA\nÅderbjörkslunden är en mystisk björklund i Skugglandet där viktiga händelser utspelar sig i rollpersonernas försök att rädda Zentri.\n\n## VIKTIGA HÄNDELSER\n**Fas 11:**\n- Plats för viktiga händelser i det pågående räddningsuppdraget\n- Detaljerad beskrivning finns i äventyrsmaterialet\n\n## KOPPLINGAR\n- **Relaterade platser:** Skugglandet, Älvakungens sal\n- **Pågående äventyr:** \"Rädda Zentri\""
-    },
-    {
-      "namn": "Älvakungens sal",
-      "typ": "Magisk sal och portal",
-      "region": "Skugglandet",
-      "beskrivning": "# ÄLVAKUNGENS SAL\n**Portal mellan Mundana och Skugglandet**\n\n## GRUNDINFO\n- **Typ:** Magisk sal och portalplats\n- **Härskare:** Älvakungen Yelgotha\n- **Funktion:** Portal och passage mellan världarna\n- **Karaktär:** Magisk, alvisk, gränsen mellan dimensioner\n- **Betydelse:** Enda kända vägen in och ut ur Skugglandet\n\n## HISTORIA\nÄlvakungens sal är den mystiska plats där Älvakungen Yelgotha bevakar portalen mellan Mundana och Skugglandet. För att ta sig till Skugglandet och rädda Zentri måste rollpersonerna passera genom denna sal och förhandla med Älvakungen.\n\n## VIKTIGA HÄNDELSER\n**Fas 11:**\n- Rollpersonerna mötte Älvakungen Yelgotha här\n- Förhandlade om passage till Skugglandet\n- Tog sig igenom portalen\n\n## VIKTIGA NPCS\n- **Älvakungen Yelgotha:** Portalens väktare, kontrollerar passage\n\n## KOPPLINGAR\n- **Relaterade platser:** Skugglandet, Mithera\n- **Funktion:** Portal och övergång"
+      "beskrivning": "# ABHAN-HIR-RENK-GHOR\n**Dvärgfästet där Kazriks berömmelse uppenbarades**\n\n## GRUNDINFO\n- **Typ:** Dvärgfäste\n- **Läge:** Gräns mellan Tarkas ödemark och Jargien\n- **Betydelse:** Första säkra hamnen efter skeppsbrottet\n- **Kultur:** Dvärgisk, handelsinriktad\n\n## HISTORIA\nEfter den långa vandringen genom Tarkas ödemark nådde gruppen slutligen dvärgfästet Abhan-hir-renk-Ghor i Fas 4. Här fick de mat, logi och vila.\n\n## VIKTIGA HÄNDELSER\n**Kazriks upptäckt:** I fästet upptäckte Kazrik att hans dagböcker och reseberättelser hade blivit populära böcker - \"Kazriks resor\" - och att han hade vunnit berömmelse som lärd man och äventyrare.\n\n**Karavananslutning:** Från fästet anslöt gruppen till en handelskaravan för säker passage genom Jargiens vinterlandskap.\n\n## KOPPLINGAR\n- **Relaterade platser:** Tarkas, Jargien\n- **Viktiga NPCs:** Kazrik (blev berömd här)",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Asharien",
       "typ": "Region",
       "region": "Östra Mundana",
-      "beskrivning": "# ASHARIEN\n**Asharisk kulturregion**\n\n## GRUNDINFO\n- **Typ:** Stor kulturregion\n- **Karaktär:** Asharisk kultur, handelsstäder\n- **Klimat:** Varmt, delvis öken\n- **Grannregioner:** Soldarn, Muhad\n\n## HISTORIA\nGruppen passerade genom Asharien under sin resa till och från Muhad i Fas 3-5. Regionen är känd för sin ashariska kultur och sina handelsstäder.\n\n## KULTUR\n- Asharisk språk och traditioner\n- Handelsinriktad ekonomi\n- Kopplingar till Muhad och ökenregionerna\n\n## KOPPLINGAR\n- **Relaterade platser:** Muhad, Soldarn, Raunfloden\n- **Kultur:** Asharisk (samma som Zentri)"
+      "beskrivning": "# ASHARIEN\n**Asharisk kulturregion**\n\n## GRUNDINFO\n- **Typ:** Stor kulturregion\n- **Karaktär:** Asharisk kultur, handelsstäder\n- **Klimat:** Varmt, delvis öken\n- **Grannregioner:** Soldarn, Muhad\n\n## HISTORIA\nGruppen passerade genom Asharien under sin resa till och från Muhad i Fas 3-5. Regionen är känd för sin ashariska kultur och sina handelsstäder.\n\n## KULTUR\n- Asharisk språk och traditioner\n- Handelsinriktad ekonomi\n- Kopplingar till Muhad och ökenregionerna\n\n## KOPPLINGAR\n- **Relaterade platser:** Muhad, Soldarn, Raunfloden\n- **Kultur:** Asharisk (samma som Zentri)",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Cermira",
       "typ": "Region och land",
       "region": "Västra Mundana",
-      "beskrivning": "# CERMIRA\n**Rollpersonernas hemland**\n\n## GRUNDINFO\n- **Typ:** Land och region\n- **Karaktär:** Temperat klimat, västlig kultur\n- **Relation till kampanjen:** Rollpersonernas ursprung och destination\n- **Gräns:** Gränsar mot Mithera i öster\n\n## HISTORIA\nCermira är det land varifrån många av rollpersonerna kommer och dit de försöker återvända genom kampanjen. Kampanjen började vid gränsen mellan Cermira och Mithera.\n\n## VIKTIGA PLATSER I ELLER NÄRA CERMIRA\n- **Grensfortet:** Gränsbefästning mellan Cermira och Mithera\n- **Vitterdal:** Hagges hemtrakt (Lady Soffia är från här)\n\n## RELATION TILL KAMPANJEN\nKampanjen började med uppdrag från Cermira, och rollpersonerna har rest långt österut (till Muhad) för att sedan resa tillbaka västerut mot hemmet. Den nuvarande omvägen via Skugglandet för att rädda Zentri försenar hemfärden.\n\n## KOPPLINGAR\n- **Relaterade platser:** Grensfortet, Vitterdal, Mithera (grannland)\n- **NPCs från Cermira:** Flera rollpersoner och NPCs"
+      "beskrivning": "# CERMIRA\n**Rollpersonernas hemland**\n\n## GRUNDINFO\n- **Typ:** Land och region\n- **Karaktär:** Temperat klimat, västlig kultur\n- **Relation till kampanjen:** Rollpersonernas ursprung och destination\n- **Gräns:** Gränsar mot Mithera i öster\n\n## HISTORIA\nCermira är det land varifrån många av rollpersonerna kommer och dit de försöker återvända genom kampanjen. Kampanjen började vid gränsen mellan Cermira och Mithera.\n\n## VIKTIGA PLATSER I ELLER NÄRA CERMIRA\n- **Grensfortet:** Gränsbefästning mellan Cermira och Mithera\n- **Vitterdal:** Hagges hemtrakt (Lady Soffia är från här)\n\n## RELATION TILL KAMPANJEN\nKampanjen började med uppdrag från Cermira, och rollpersonerna har rest långt österut (till Muhad) för att sedan resa tillbaka västerut mot hemmet. Den nuvarande omvägen via Skugglandet för att rädda Zentri försenar hemfärden.\n\n## KOPPLINGAR\n- **Relaterade platser:** Grensfortet, Vitterdal, Mithera (grannland)\n- **NPCs från Cermira:** Flera rollpersoner och NPCs",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "De Varma Källorna",
       "typ": "Naturlig fara",
       "region": "Mithera-skogen",
-      "beskrivning": "# DE VARMA KÄLLORNA\n**Dödsfälla förklädd till räddning**\n\n## GRUNDINFO\n- **Typ:** Magiska termiska källor\n- **Läge:** Djupt inne i Mithera-skogen\n- **Karaktär:** Sju ångande pooler\n- **Fara:** Sex av sju pooler dödar genom termalchock\n\n## BESKRIVNING\nÅngande pooler som ser ut som välkomna varmkällor i den kalla skogen. Offret känner bara njutning medan kroppen långsamt dör. Ben från tidigare offer ligger synliga i poolernas botten.\n\n## LÖSNINGEN\n- Pool #7 bar en colonisk runa (identifierad av Kazrik)\n- Den säkra poolen läkte och gav köldresistens\n- Umnatak hörde andarnas varningar om faran\n\n## VISION\nI den säkra poolen såg gruppen en vision: Sex ljuspunkter och en sjunde som väntar (profetia om sex vandrare och Zentri).\n\n## KOPPLINGAR\n- **Relaterade NPCs:** Vitfläck (nämnde att Vinterglöds syster dog här)\n- **Relaterade platser:** Mithera, Åderbjörkslunden"
+      "beskrivning": "# DE VARMA KÄLLORNA\n**Dödsfälla förklädd till räddning**\n\n## GRUNDINFO\n- **Typ:** Magiska termiska källor\n- **Läge:** Djupt inne i Mithera-skogen\n- **Karaktär:** Sju ångande pooler\n- **Fara:** Sex av sju pooler dödar genom termalchock\n\n## BESKRIVNING\nÅngande pooler som ser ut som välkomna varmkällor i den kalla skogen. Offret känner bara njutning medan kroppen långsamt dör. Ben från tidigare offer ligger synliga i poolernas botten.\n\n## LÖSNINGEN\n- Pool #7 bar en colonisk runa (identifierad av Kazrik)\n- Den säkra poolen läkte och gav köldresistens\n- Umnatak hörde andarnas varningar om faran\n\n## VISION\nI den säkra poolen såg gruppen en vision: Sex ljuspunkter och en sjunde som väntar (profetia om sex vandrare och Zentri).\n\n## KOPPLINGAR\n- **Relaterade NPCs:** Vitfläck (nämnde att Vinterglöds syster dog här)\n- **Relaterade platser:** Mithera, Åderbjörkslunden",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Den Brinnande Skatten",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# DEN BRINNANDE SKATTEN\n**Pirat- och äventyrstema**\n\n## GRUNDINFO\n- **Typ:** Sjömanstaverna\n- **Plats:** Nära hamnen, Jen, Muhad\n- **Ägare:** Kapten Eamon (pensionerad sjökapten)\n- **Tema:** Pirater och äventyr\n\n## BESKRIVNING\nDen Brinnande Skatten ligger nära hamnen och är en favorit bland sjömän och äventyrare. Väggarna är täckta med kartor, skeppsrattar och flaggor från avlägsna länder. Lanternor och ljusstakar kastar ett varmt sken över det mörka träet och rustika möblerna.\n\n## ÄGARE\n**Kapten Eamon** är en pensionerad sjökapten med många historier att berätta. Hans levnadsöde som sjöfarare genomsyrar hela etablissemanget.\n\n## SPECIALITETER\n- **Fisk- och skaldjursrätter** - Färskt från havet\n- **Stark rom** - För erfarna sjömän\n- **Exotiska fruktjuicer** - Från fjärran länder\n\n## ATMOSFÄR\nRå och äventyrlig, fylld med historier om hav och land. Sjömän delar sina berättelser och drömmer om skatter.\n\n## BETYDELSE FÖR KAMPANJEN\nEn viktig plats för gruppen att möta sjöfarare, höra om färdvägar och kanske få information om Spegelmåne och andra fartyg.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Kapten Eamon\n- **Fas:** 3"
+      "beskrivning": "# DEN BRINNANDE SKATTEN\n**Pirat- och äventyrstema**\n\n## GRUNDINFO\n- **Typ:** Sjömanstaverna\n- **Plats:** Nära hamnen, Jen, Muhad\n- **Ägare:** Kapten Eamon (pensionerad sjökapten)\n- **Tema:** Pirater och äventyr\n\n## BESKRIVNING\nDen Brinnande Skatten ligger nära hamnen och är en favorit bland sjömän och äventyrare. Väggarna är täckta med kartor, skeppsrattar och flaggor från avlägsna länder. Lanternor och ljusstakar kastar ett varmt sken över det mörka träet och rustika möblerna.\n\n## ÄGARE\n**Kapten Eamon** är en pensionerad sjökapten med många historier att berätta. Hans levnadsöde som sjöfarare genomsyrar hela etablissemanget.\n\n## SPECIALITETER\n- **Fisk- och skaldjursrätter** - Färskt från havet\n- **Stark rom** - För erfarna sjömän\n- **Exotiska fruktjuicer** - Från fjärran länder\n\n## ATMOSFÄR\nRå och äventyrlig, fylld med historier om hav och land. Sjömän delar sina berättelser och drömmer om skatter.\n\n## BETYDELSE FÖR KAMPANJEN\nEn viktig plats för gruppen att möta sjöfarare, höra om färdvägar och kanske få information om Spegelmåne och andra fartyg.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Kapten Eamon\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Den Dolda Dolken",
       "typ": "Värdshus",
       "region": "Tuzan Rim",
-      "beskrivning": "# DEN DOLDA DOLKEN\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Ägare:** Sylva\n- **Atmosfär:** Något skum, blandad klientel\n\n## BESKRIVNING\nDen Dolda Dolken är ett värdshus i Tuzan Rim känt för sin något tvivelaktiga rykte. Namnet antyder dolda avsikter och hemliga affärer.\n\n## PERSONAL\n\n### Sylva (Ägare)\nSylva driver värdshuset med en fast hand. Hon känner till mycket av vad som händer i Tuzan Rims undre värld.\n\n### Merek (Bartender)\nEn erfaren bartender som håller ordning i lokalen och ser till att gästerna håller sig i schack.\n\n### Lia (Serverare)\nLia serverar mat och dryck till gästerna. Hon är observant och fångar upp mycket av vad som sägs vid borden.\n\n### Isla (Glädjeflicka)\nIsla arbetar på värdshuset och underhåller gäster. Hon har en syster, Tussie.\n\n### Tussie (Islas syster)\nTussie är Islas yngre syster som också hjälper till på värdshuset.\n\n## BETYDELSE FÖR KAMPANJEN\nDen Dolda Dolken var en av de platser i Tuzan Rim där gruppen kunde samla information om smugglare, pirater och andra skumma gestalter under Fas 3.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Ägare:** Sylva\n- **Personal:** Merek, Lia, Isla, Tussie\n- **Fas:** 3"
+      "beskrivning": "# DEN DOLDA DOLKEN\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Ägare:** Sylva\n- **Atmosfär:** Något skum, blandad klientel\n\n## BESKRIVNING\nDen Dolda Dolken är ett värdshus i Tuzan Rim känt för sin något tvivelaktiga rykte. Namnet antyder dolda avsikter och hemliga affärer.\n\n## PERSONAL\n\n### Sylva (Ägare)\nSylva driver värdshuset med en fast hand. Hon känner till mycket av vad som händer i Tuzan Rims undre värld.\n\n### Merek (Bartender)\nEn erfaren bartender som håller ordning i lokalen och ser till att gästerna håller sig i schack.\n\n### Lia (Serverare)\nLia serverar mat och dryck till gästerna. Hon är observant och fångar upp mycket av vad som sägs vid borden.\n\n### Isla (Glädjeflicka)\nIsla arbetar på värdshuset och underhåller gäster. Hon har en syster, Tussie.\n\n### Tussie (Islas syster)\nTussie är Islas yngre syster som också hjälper till på värdshuset.\n\n## BETYDELSE FÖR KAMPANJEN\nDen Dolda Dolken var en av de platser i Tuzan Rim där gruppen kunde samla information om smugglare, pirater och andra skumma gestalter under Fas 3.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Ägare:** Sylva\n- **Personal:** Merek, Lia, Isla, Tussie\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Den Gyldene Ankaret",
       "typ": "Värdshus",
       "region": "Tuzan Rim",
-      "beskrivning": "# DEN GYLDENE ANKARET\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Ägare:** Bartol\n- **Atmosfär:** Respektabel, populär bland sjömän\n\n## BESKRIVNING\nDen Gyldene Ankaret är ett väletablerat värdshus beläget nära hamnen i Tuzan Rim. Namnet och läget gör det populärt bland sjöfolk och handelsmän.\n\n## PERSONAL\n\n### Bartol (Värdshusvärd)\nBartol är en pålitlig värdshusvärd som driver etablissemanget med stort engagemang. Han känner väl till hamnenss liv och rörelser.\n\n### Mirelle (Kock)\nMirelle är värdhusets skickliga kock, känd för sina havsfångsträtter och traditionella sjömansmat.\n\n### Joran (Stamgäst)\nEn tyst sjöman som praktiskt taget bor på Den Gyldene Ankaret. Han säger sällan något men observerar allt som händer.\n\n## ATMOSFÄR\nEtt respektabelt etablissemang där sjöfolk, köpmän och resenärer kan äta god mat, dricka öl och utbyta nyheter från havet.\n\n## BETYDELSE FÖR KAMPANJEN\nDen Gyldene Ankaret var en viktig informationskälla under gruppens tid i Tuzan Rim (Fas 3). Här kunde de samla information om sjöfart, handelsleder och hamnaktiviteter.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Ägare:** Bartol\n- **Personal:** Mirelle, Joran (stamgäst)\n- **Fas:** 3"
+      "beskrivning": "# DEN GYLDENE ANKARET\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Ägare:** Bartol\n- **Atmosfär:** Respektabel, populär bland sjömän\n\n## BESKRIVNING\nDen Gyldene Ankaret är ett väletablerat värdshus beläget nära hamnen i Tuzan Rim. Namnet och läget gör det populärt bland sjöfolk och handelsmän.\n\n## PERSONAL\n\n### Bartol (Värdshusvärd)\nBartol är en pålitlig värdshusvärd som driver etablissemanget med stort engagemang. Han känner väl till hamnenss liv och rörelser.\n\n### Mirelle (Kock)\nMirelle är värdhusets skickliga kock, känd för sina havsfångsträtter och traditionella sjömansmat.\n\n### Joran (Stamgäst)\nEn tyst sjöman som praktiskt taget bor på Den Gyldene Ankaret. Han säger sällan något men observerar allt som händer.\n\n## ATMOSFÄR\nEtt respektabelt etablissemang där sjöfolk, köpmän och resenärer kan äta god mat, dricka öl och utbyta nyheter från havet.\n\n## BETYDELSE FÖR KAMPANJEN\nDen Gyldene Ankaret var en viktig informationskälla under gruppens tid i Tuzan Rim (Fas 3). Här kunde de samla information om sjöfart, handelsleder och hamnaktiviteter.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Ägare:** Bartol\n- **Personal:** Mirelle, Joran (stamgäst)\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Den Gyldene Dromedaren",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# DEN GYLDENE DROMEDAREN\n**Lyxig ökenoas i Jen**\n\n## GRUNDINFO\n- **Typ:** Exklusivt värdshus\n- **Plats:** Handelsdistriktet, Jen, Muhad\n- **Ägare:** Karim al-Jafar\n- **Tema:** Lyxig ökenoas\n\n## BESKRIVNING\nDen Gyldene Dromedaren är ett exklusivt värdshus beläget i handelsdistriktet i Jen. Dess interiör är prydd med dyrbara mattor, silkestyger och exotiska växter. Färgglada lyktor kastar ett varmt sken över de vackert snidade möblerna, och en liten fontän i mitten av rummet sprider en svalkande dimma.\n\n## ÄGARE\n**Karim al-Jafar** är en vänlig men affärsmässig köpman som driver värdshuset med professionalism och stil.\n\n## SPECIALITETER\n- **Saffransris** - Doftande och smakfullt tillagat\n- **Lammgrytor** - Traditionellt ökenrecept\n- **Importerat vin** - Från de bästa vingårdarna\n\n## ATMOSFÄR\nAvslappnad men exklusiv, ofta fylld med rika köpmän och deras gäster. Ett ställe där affärsuppgörelser genomförs över god mat och dryck.\n\n## BETYDELSE FÖR KAMPANJEN\nEtt möjligt ställe för gruppen att möta inflytelserika handelsmän och samla information om Jens ekonomiska och politiska landskap under Fas 3.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Karim al-Jafar\n- **Fas:** 3"
+      "beskrivning": "# DEN GYLDENE DROMEDAREN\n**Lyxig ökenoas i Jen**\n\n## GRUNDINFO\n- **Typ:** Exklusivt värdshus\n- **Plats:** Handelsdistriktet, Jen, Muhad\n- **Ägare:** Karim al-Jafar\n- **Tema:** Lyxig ökenoas\n\n## BESKRIVNING\nDen Gyldene Dromedaren är ett exklusivt värdshus beläget i handelsdistriktet i Jen. Dess interiör är prydd med dyrbara mattor, silkestyger och exotiska växter. Färgglada lyktor kastar ett varmt sken över de vackert snidade möblerna, och en liten fontän i mitten av rummet sprider en svalkande dimma.\n\n## ÄGARE\n**Karim al-Jafar** är en vänlig men affärsmässig köpman som driver värdshuset med professionalism och stil.\n\n## SPECIALITETER\n- **Saffransris** - Doftande och smakfullt tillagat\n- **Lammgrytor** - Traditionellt ökenrecept\n- **Importerat vin** - Från de bästa vingårdarna\n\n## ATMOSFÄR\nAvslappnad men exklusiv, ofta fylld med rika köpmän och deras gäster. Ett ställe där affärsuppgörelser genomförs över god mat och dryck.\n\n## BETYDELSE FÖR KAMPANJEN\nEtt möjligt ställe för gruppen att möta inflytelserika handelsmän och samla information om Jens ekonomiska och politiska landskap under Fas 3.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Karim al-Jafar\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Den Gyllene Gryningen",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# DEN GYLLENE GRYNINGEN\n**Elegant och sofistikerat**\n\n## GRUNDINFO\n- **Typ:** Exklusivt värdshus\n- **Plats:** Jen, Muhad\n- **Ägare:** Esmeralda de Vries\n- **Tema:** Lyx och elegans\n\n## BESKRIVNING\nDen Gyllene Gryningen är ett elegant värdshus som lockar stadens elit. Inredningen är lyxig med marmor, sammet och kristallkronor. Värdshuset är känt för sin utmärkta service och sina finare rätter.\n\n## ÄGARE\n**Esmeralda de Vries** är en sofistikerad kvinna med smak för det bästa. Hon driver etablissemanget med högsta standard.\n\n## SPECIALITETER\n- **Fine dining-meny** - Lokala och internationella rätter av högsta klass\n- **Årgångsviner** - Från de bästa vingårdarna\n- **Exklusiva desserter** - Konstnärligt presenterade\n\n## ATMOSFÄR\nFörfinad och elegant, perfekt för affärsmöten och högtidliga tillfällen. Endast de rikaste och mest inflytelserika besöker denna plats.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde möta Jens elit, inklusive rika handelsmän och möjligen Laila al-Jen och hennes umgängeskrets.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Esmeralda de Vries\n- **Fas:** 3"
+      "beskrivning": "# DEN GYLLENE GRYNINGEN\n**Elegant och sofistikerat**\n\n## GRUNDINFO\n- **Typ:** Exklusivt värdshus\n- **Plats:** Jen, Muhad\n- **Ägare:** Esmeralda de Vries\n- **Tema:** Lyx och elegans\n\n## BESKRIVNING\nDen Gyllene Gryningen är ett elegant värdshus som lockar stadens elit. Inredningen är lyxig med marmor, sammet och kristallkronor. Värdshuset är känt för sin utmärkta service och sina finare rätter.\n\n## ÄGARE\n**Esmeralda de Vries** är en sofistikerad kvinna med smak för det bästa. Hon driver etablissemanget med högsta standard.\n\n## SPECIALITETER\n- **Fine dining-meny** - Lokala och internationella rätter av högsta klass\n- **Årgångsviner** - Från de bästa vingårdarna\n- **Exklusiva desserter** - Konstnärligt presenterade\n\n## ATMOSFÄR\nFörfinad och elegant, perfekt för affärsmöten och högtidliga tillfällen. Endast de rikaste och mest inflytelserika besöker denna plats.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde möta Jens elit, inklusive rika handelsmän och möjligen Laila al-Jen och hennes umgängeskrets.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Esmeralda de Vries\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Den Klara Källan",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# DEN KLARA KÄLLAN\n**Hälsoinriktad och naturinspirerad**\n\n## GRUNDINFO\n- **Typ:** Hälsovinstuga\n- **Plats:** Nära helgedomar, Jen, Muhad\n- **Ägare:** Harun al-Farid\n- **Tema:** Hälsa och välbefinnande\n\n## BESKRIVNING\nDen Klara Källan ligger nära stadens helgedomar och fokuserar på hälsa och välbefinnande. Inredningen är enkel men vacker, med naturliga material och mycket grönska.\n\n## ÄGARE\n**Harun al-Farid** är en hälsoentusiast och herbalist med djup kunskap om läkande örter och hälsosam kost.\n\n## SPECIALITETER\n- **Hälsosamma vegetariska rätter** - Näringsrika och balanserade\n- **Frukt- och grönsaksjuicer** - Färskpressade\n- **Örtteer** - Med läkande egenskaper\n\n## ATMOSFÄR\nFridfull och upplyftande, idealisk för de som söker avkoppling och återhämtning. Ett ställe för att återfå balans.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde återhämta sig efter strapatserna, få läkande örtteer och råd om hälsa.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Harun al-Farid\n- **Fas:** 3"
+      "beskrivning": "# DEN KLARA KÄLLAN\n**Hälsoinriktad och naturinspirerad**\n\n## GRUNDINFO\n- **Typ:** Hälsovinstuga\n- **Plats:** Nära helgedomar, Jen, Muhad\n- **Ägare:** Harun al-Farid\n- **Tema:** Hälsa och välbefinnande\n\n## BESKRIVNING\nDen Klara Källan ligger nära stadens helgedomar och fokuserar på hälsa och välbefinnande. Inredningen är enkel men vacker, med naturliga material och mycket grönska.\n\n## ÄGARE\n**Harun al-Farid** är en hälsoentusiast och herbalist med djup kunskap om läkande örter och hälsosam kost.\n\n## SPECIALITETER\n- **Hälsosamma vegetariska rätter** - Näringsrika och balanserade\n- **Frukt- och grönsaksjuicer** - Färskpressade\n- **Örtteer** - Med läkande egenskaper\n\n## ATMOSFÄR\nFridfull och upplyftande, idealisk för de som söker avkoppling och återhämtning. Ett ställe för att återfå balans.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde återhämta sig efter strapatserna, få läkande örtteer och råd om hälsa.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Harun al-Farid\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Den Svävande Albatrossen",
       "typ": "Värdshus",
       "region": "Tuzan Rim",
-      "beskrivning": "# DEN SVÄVANDE ALBATROSSEN\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Atmosfär:** Livlig, sjömanstema, musik\n\n## BESKRIVNING\nDen Svävande Albatrossen är ett livligt värdshus i Tuzan Rim där sjöfolk samlas för att dricka, sjunga och dela historier från havet. Albatross-temat genomsyrar dekorationen med sjökort, fågelbilder och nautiska detaljer.\n\n## PERSONAL\n\n### Halmar (Bartender)\nHalmar är en erfaren bartender (möjligen samma Halmar som arbetar på Krökta Kompassen?) som håller ordning på de ibland bråkiga gästerna.\n\n### Velissa (Sångerska)\nVelissa underhåller gästerna med sjömansvisor och romantiska ballader. Hennes röst lockar många besökare till etablissemanget.\n\n### Gerrick (Piratstamgäst)\nGerrick är en notorisk piratstamgäst som ofta ses här. Han har många spännande (om än tvivelaktiga) historier att dela.\n\n## ATMOSFÄR\nEtt bullrigt och glatt ställe där sjömän sjunger, skrattar och delar äventyr. Musik och sång är centralt för atmosfären.\n\n## BETYDELSE FÖR KAMPANJEN\nDen Svävande Albatrossen var ett ställe där gruppen kunde möta sjöfolk, pirater och smugglare under sin tid i Tuzan Rim (Fas 3). Velissas sång och Gerricks historier kunde ge värdefull information.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Personal:** Halmar, Velissa, Gerrick\n- **Fas:** 3"
+      "beskrivning": "# DEN SVÄVANDE ALBATROSSEN\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Atmosfär:** Livlig, sjömanstema, musik\n\n## BESKRIVNING\nDen Svävande Albatrossen är ett livligt värdshus i Tuzan Rim där sjöfolk samlas för att dricka, sjunga och dela historier från havet. Albatross-temat genomsyrar dekorationen med sjökort, fågelbilder och nautiska detaljer.\n\n## PERSONAL\n\n### Halmar (Bartender)\nHalmar är en erfaren bartender (möjligen samma Halmar som arbetar på Krökta Kompassen?) som håller ordning på de ibland bråkiga gästerna.\n\n### Velissa (Sångerska)\nVelissa underhåller gästerna med sjömansvisor och romantiska ballader. Hennes röst lockar många besökare till etablissemanget.\n\n### Gerrick (Piratstamgäst)\nGerrick är en notorisk piratstamgäst som ofta ses här. Han har många spännande (om än tvivelaktiga) historier att dela.\n\n## ATMOSFÄR\nEtt bullrigt och glatt ställe där sjömän sjunger, skrattar och delar äventyr. Musik och sång är centralt för atmosfären.\n\n## BETYDELSE FÖR KAMPANJEN\nDen Svävande Albatrossen var ett ställe där gruppen kunde möta sjöfolk, pirater och smugglare under sin tid i Tuzan Rim (Fas 3). Velissas sång och Gerricks historier kunde ge värdefull information.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Personal:** Halmar, Velissa, Gerrick\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Den Svävande Fenixen",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# DEN SVÄVANDE FENIXEN\n**Mystisk och exotisk**\n\n## GRUNDINFO\n- **Typ:** Mystisk bar\n- **Plats:** Jen, Muhad\n- **Ägare:** Raziq al-Nur\n- **Tema:** Mystisk och förtrollande\n\n## BESKRIVNING\nDen Svävande Fenixen är känd för sin mystiska atmosfär och sina exotiska drinkar. Väggarna är täckta med gobelänger och antika artefakter, och rummet är fyllt med rökelse som ger en dimmig och förtrollande känsla. Små, intima bås ger besökarna möjlighet till diskreta samtal.\n\n## ÄGARE\n**Raziq al-Nur** är en gåtfull man med ett mörkt förflutet. Han driver värdshuset med ett aura av hemlighet.\n\n## SPECIALITETER\n- **Kryddade likörer** - Exotiska blandningar\n- **Fruktcocktails** - Färgglada och unika\n- **Små tapasrätter** - Perfekta att njuta med drinkar\n\n## ATMOSFÄR\nMystisk och intim, ofta besökt av äventyrare och de som söker diskretion. Ett ställe för hemliga möten och gåtfulla affärer.\n\n## BETYDELSE FÖR KAMPANJEN\nEn perfekt plats för gruppen att möta informanter, spioner och andra som opererar i skuggorna av Jens samhälle.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Raziq al-Nur\n- **Fas:** 3"
+      "beskrivning": "# DEN SVÄVANDE FENIXEN\n**Mystisk och exotisk**\n\n## GRUNDINFO\n- **Typ:** Mystisk bar\n- **Plats:** Jen, Muhad\n- **Ägare:** Raziq al-Nur\n- **Tema:** Mystisk och förtrollande\n\n## BESKRIVNING\nDen Svävande Fenixen är känd för sin mystiska atmosfär och sina exotiska drinkar. Väggarna är täckta med gobelänger och antika artefakter, och rummet är fyllt med rökelse som ger en dimmig och förtrollande känsla. Små, intima bås ger besökarna möjlighet till diskreta samtal.\n\n## ÄGARE\n**Raziq al-Nur** är en gåtfull man med ett mörkt förflutet. Han driver värdshuset med ett aura av hemlighet.\n\n## SPECIALITETER\n- **Kryddade likörer** - Exotiska blandningar\n- **Fruktcocktails** - Färgglada och unika\n- **Små tapasrätter** - Perfekta att njuta med drinkar\n\n## ATMOSFÄR\nMystisk och intim, ofta besökt av äventyrare och de som söker diskretion. Ett ställe för hemliga möten och gåtfulla affärer.\n\n## BETYDELSE FÖR KAMPANJEN\nEn perfekt plats för gruppen att möta informanter, spioner och andra som opererar i skuggorna av Jens samhälle.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Raziq al-Nur\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Drunok",
       "typ": "Region",
       "region": "Centrala Mundana",
-      "beskrivning": "# DRUNOK\n**Region på flyktvägen**\n\n## GRUNDINFO\n- **Typ:** Region\n- **Karaktär:** Skogsland\n- **Betydelse:** Del av evakueringsrutten\n\n## HISTORIA\nUnder evakueringen av Vargnäsets flyktingar (Fas 9) planerade Corvus en rutt genom Drunok för att undvika jargiska styrkor och Arvorns Hammare.\n\n## STRATEGISK BETYDELSE\n- Färre patruller än huvudvägarna\n- Svårare terräng som gynnade flyktinggruppen\n- Del av Corvus korrupta kontaktnätverk\n\n## KOPPLINGAR\n- **Relaterade platser:** Vargnäset, Grensfortet, Jargien\n- **Relaterade händelser:** Evakueringen (Fas 9)"
+      "beskrivning": "# DRUNOK\n**Region på flyktvägen**\n\n## GRUNDINFO\n- **Typ:** Region\n- **Karaktär:** Skogsland\n- **Betydelse:** Del av evakueringsrutten\n\n## HISTORIA\nUnder evakueringen av Vargnäsets flyktingar (Fas 9) planerade Corvus en rutt genom Drunok för att undvika jargiska styrkor och Arvorns Hammare.\n\n## STRATEGISK BETYDELSE\n- Färre patruller än huvudvägarna\n- Svårare terräng som gynnade flyktinggruppen\n- Del av Corvus korrupta kontaktnätverk\n\n## KOPPLINGAR\n- **Relaterade platser:** Vargnäset, Grensfortet, Jargien\n- **Relaterade händelser:** Evakueringen (Fas 9)",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Frisänkan",
       "typ": "By",
       "region": "Gränstrakterna mellan Cermira och Mithera",
-      "beskrivning": "# FRISÄNKAN\n**By på Tamron/Ibrans flyktväg**\n\n## GRUNDINFO\n- **Typ:** Liten by\n- **Läge:** Mellan Tirakgraven och Grensfortet\n- **Betydelse:** Mördad fiskare och hans fru - spår efter Tamron/Ibran\n\n## HISTORIA\nUnder jakten på Tamron/Ibran (Fas 2) stötte rollpersonerna på byn Frisänkan. Här hade Tamron/Ibran dödat en fiskare och hans fru - tydliga tecken på demonens växande inflytande.\n\n## HÄNDELSER\n**Fas 2 (Jakten på Tamron/Ibran):** Mord på fiskare och hustru. Spåren ledde gruppen vidare mot Grensfortet.\n\n## KOPPLINGAR\n- **Relaterade NPCs:** Tamron/Ibran Anderyttare\n- **Relaterade platser:** Grensfortet, Tirakgraven"
+      "beskrivning": "# FRISÄNKAN\n**By på Tamron/Ibrans flyktväg**\n\n## GRUNDINFO\n- **Typ:** Liten by\n- **Läge:** Mellan Tirakgraven och Grensfortet\n- **Betydelse:** Mördad fiskare och hans fru - spår efter Tamron/Ibran\n\n## HISTORIA\nUnder jakten på Tamron/Ibran (Fas 2) stötte rollpersonerna på byn Frisänkan. Här hade Tamron/Ibran dödat en fiskare och hans fru - tydliga tecken på demonens växande inflytande.\n\n## HÄNDELSER\n**Fas 2 (Jakten på Tamron/Ibran):** Mord på fiskare och hustru. Spåren ledde gruppen vidare mot Grensfortet.\n\n## KOPPLINGAR\n- **Relaterade NPCs:** Tamron/Ibran Anderyttare\n- **Relaterade platser:** Grensfortet, Tirakgraven",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Frostnymf",
       "typ": "Fartyg",
       "region": "Raunfloden, Drunok",
-      "beskrivning": "# FROSTNYMF\n**Specialbyggd tirakisk flodpråm för vinterfärd**\n\n## GRUNDINFO\n- **Typ:** Anpassad flodpråm\n- **Längd:** 18 meter\n- **Bredd:** 8 meter\n- **Djupgående:** 1,1 meter\n- **Dräktighet:** Cirka 40 läster\n- **Lastkapacitet:** Cirka 80 ton\n- **Kapten:** Nilmar \"Isnavigator\" Gromsk (tirak)\n- **Specialisering:** Hästtransport och isnavigering\n- **Första omnämnande:** Fas 5\n\n## BESKRIVNING\nFrostnymf är en specialbyggd flodpråm anpassad för vinterfärd på Raunfloden, målad i mörkt trä med diskreta ränder i isblått och grått. Fartyget är konstruerat för att navigera genom isflak och transportera hästar säkert. Båtens förstärkta stäv är försedd med järnbeslag som formar ett mönster likt frostblommor. Två triangelformade latinsegel och långa åror längs relingarna vittnar om båtens robusthet. Mittendelen av däcket är förstärkt och anpassad för hästar, med spiltor och halvhöga skiljeväggar i massiv ek.\n\n## SPECIALANPASSNINGAR\n\n### För Vinternavigering\n- **Isbrytande förstärkt stäv:** Gjord av järnbeslaget ek, designad för att bryta genom tunnare is\n- **Innovativt värmesystem:** Heta stenar i vattenkar under däck håller kölen isfri\n- **Extraförstärkt styråra:** Utformad med tirakiska runor för kontroll i starka strömmar\n- **Sidoroder:** Komplement till styråran för manövrering i trånga passager\n- **Inhuggna djupmarkeringar:** I fören hjälper dem se vattendjupet\n\n### För Hästtransport\n- **Förstärkt mittdäck:** Speciellt stabilt underlag för hästarna\n- **Avdelat hästutrymme:** 6x5 meter med spiltor och förankringsmöjligheter\n- **Vattenränna och fodertråg:** Längs ena relingen\n- **Halvhöga skiljeväggar:** Mellan hästarna för att undvika panik och skador\n\n### Tirakiska Inslag\n- **Mahktah-symboler:** Diskret insnidade i masten för beskydd\n- **Anpassad kajuta för Nilmar:** Med högre takhöjd (tiraker är större)\n- **Extraförstärkta pollare:** Längs sidorna för draglina\n- **Specialutformade stakningsstänger:** Förvarade längs relingen\n\n## KAPTEN & BESÄTTNING (8 PERSONER)\n\n### Nilmar \"Isnavigator\" Gromsk (Tirak) - Kapten/Navigatör\nEn fåordig men mycket skicklig tirakisk kapten med exceptionell förmåga att navigera genom farliga isflak och vinterförhållanden på Raunfloden. Väderbitet ansikte, saknar vänsterörat från en gammal förfrysningsskada. Hans smeknamn \"Isnavigator\" säger allt om hans specialitet. Tjänar Lady Soffia och är en agent i hennes nätverk.\n\n### Selene \"Silveröga\" Kazarov (Asharier) - Underbefäl & Informant\nEn asharisk kvinna i 40-årsåldern med ett konstgjort silveröga (höger). Vaksam spejare som i flera år fungerat som informant åt Lady Soffia. Hemlig medlem i nätverk som hjälper förföljda att fly. Extremt lojal mot Nilmar men misstänksam mot främlingar. Visade särskilt intresse för Hagge under resan och kände till hans betydelse för Vitterdals framtid.\n\n### Esma Randarrohästare (Människa) - Djurskötare/Stallmästare\nEn kraftig kvinna med flätat hår. Expert på hästtransport och känner igen Vitterdals sätt att träna hästar. Identifierade Hagge som Lady Soffias son genom sitt kunnande om Vitterdals hästar. Erbjöd sig att följa gruppen som guide när de skulle fortsätta till fots.\n\n### Garsten \"Soppsleven\" Tretre (Människa) - Kock\nFrostnymfens pratsamme kock och ivrig ryktesspridare. Spridit viktig information om Kärlingarnas män, Systrarna och situationen i Vitterdal. Känd för att berätta mycket skvaller, speciellt efter tredje bägaren vin.\n\n### Burhak \"Daggryningen\" (Okänd ras) - Roddare\nEn mystisk roddare med ljus hud och minimal klädsel trots kylan. Sjunger lågmält på ett främmande språk medan han arbetar. Hans sång verkar ha en dämpad effekt på fartygets ljud i vattnet. Extremt skicklig roddare.\n\n### Laszlo (Människa) - Roddare\nEn kortväxt man med enorm överkropp. Överraskande ljus röst för sin fysiska storlek. Expert på att lasta förnödenheter och reparera båten. Hjälpte till att reparera Frostnymfens skrov när det skadades av isflak.\n\n### Marvo \"Isfingrarna\" (Människa) - Isexpert\nBesättningsmedlem specialiserad på att känna igen isens svagaste punkter och navigera isformationer. Hans förmåga att läsa isen är avgörande för säker navigering genom Raunflodens vinteris. Varnade gruppen om att isen blev tunnare när de närmade sig området med varmare källflöden.\n\n### Yrka och Yrko (Tvillingar) - Roddare\nTvå skickliga och nervösa besättningsmedlemmar. Deltog i kontroll av förtöjningar och navigering. Upptäckte de mystiska ljussignalerna längs flodens norra strand på den tredje dagen av resan. Gav Umnatak en mystisk påse örter \"för skydd mot andevärldens faror\" vid farväl.\n\n## VIKTIGA HÄNDELSER\n\n### Dag 1-2: Avgång från Jarla och Isbarriären\nFartyget kastar loss från kajen i Jarla. Den förstärkta stäven börjar metodiskt arbeta sig genom den tunna morgonisen. Nilmar navigerar med nästan övernaturlig känsla för flodens strömmar. På dag två möter fartyget en massiv isbarriär - uppbyggd och inte naturlig. Besättningen och spelarna samarbetar för att forcera barriären med Burhak och Laszlos specialverktyg och Marvo identifiering av svaga punkter.\n\n### Dag 3: Mystiska Ljussignaler och Spaning\nNatten sänker sig och en serie blinkande ljus ses från båda stränderna - tirakiska spaningssignaler anpassade för Systrarna. Selene och Nilmar diskuterar intensivt och pekar mot ljusen. Tvillingarna Yrka och Yrko verkar mycket nervösa. En pil slår ner i masten som en varning. Thrakka känner igen signalsystemet från sin tirakiska bakgrund.\n\n### Dag 4: Övergiven Handelsstation och Patrull\nFrostnymfen glider in mot en liten brygga vid en övergivet handelsstation för att vänta ut dagen. Nilmar förklarar att det är för riskabelt att fortsätta dagtid. Selene och Burhak rekognoscerar området. Under eftermiddagen närmar sig en mindre patrullbåt som genomsöker området. Ett större isflak skadar Frostnymfens skrov - Laszlo behöver hjälp med att reparera båten under tystnad. Dokument avslöjar att kungens män specifikt söker Thrakka och Hagge.\n\n### Dag 5: Den Isproppsade Forsen och Farväl\nTidigt på morgonen når fartyget forsområdet där enorma isformationer skapat en labyrint. Nilmar samlar alla på däck - \"Vi kan inte fortsätta med Frostnymfen. Forsen är för farlig.\" Han föreslår att gruppen fortsätter till fots medan han tar båten på en längre men säkrare rutt. Esma erbjuder sig att följa som guide. Selene ger gruppen ett specialtillverkat sigill. Tvillingarna ger örter till Umnatak. Marvo varnar om att följa inte huvudvägarna - Kärlingarnas vargmän patrullerar dygnet runt.\n\n## BETYDELSE FÖR KAMPANJEN\nFrostnymf var gruppens kritiska transport mot Vitterdal under Fas 5. Den farliga färden genom is och vinterförhållanden, kombinerat med förföljelsen av Systrarna och kungens män, gjorde resan till en av kampanjens mest spännande och avgörande momento. Fartyget fungerade både som säker transportväg och som plattform för att möta allierade (Esma) och motståndare (Systrarna). Farväl vid bifloden markerade övergången från flodtransport till landbaserad färd mot Vitterdal.\n\n## KOPPLINGAR\n- **Kapten:** Nilmar \"Isnavigator\" Gromsk\n- **Besättning:** Selene \"Silveröga\" Kazarov, Esma Randarrohästare, Garsten \"Soppsleven\" Tretre, Burhak \"Daggryningen\", Laszlo, Marvo \"Isfingrarna\", Yrka och Yrko\n- **Passagerare:** Gruppen - Gordon (Calle), Thrakka (Andreas), Umnatak (Christofer), Kazrik (Jonas), Corvus (Daniel), Hagge (Fas 5)\n- **Region:** Raunfloden, Drunok\n- **Fraktioner:** Lady Soffias nätverk, Frostnymf-besättning\n- **Motsatta krafter:** Systrarna, Kärlingarnas män, Kungens män\n- **Fas:** 5"
-    },
-    {
-      "namn": "Gränstrakterna mellan Cermira och Mithera",
-      "typ": "Region",
-      "region": "Gräns Cermira/Mithera",
-      "beskrivning": "# GRÄNSTRAKTERNA MELLAN CERMIRA OCH MITHERA\n**Där kampanjen började**\n\n## GRUNDINFO\n- **Typ:** Gränsregion\n- **Karaktär:** Vildmark, arkeologiska platser\n- **Betydelse:** Kampanjens startpunkt\n- **Viktiga platser:** Tirakgraven, Grensfortet\n\n## HISTORIA\nKampanjen började i denna gränsregion där rollpersonerna (Gordon, Zentri, Umnatak, Kazrik) tjänstgjorde som legoknektar i Stålsvärds Kavalerister. De kontrakterades av Migor Trollkunnig för att bevaka en arkeologisk utgrävning vid Tirakgraven.\n\n## VIKTIGA HÄNDELSER\n**Fas 1:** Tirakgraven och demonens partiella frigörelse  \n**Fas 2:** Jakten på Tamron/Ibran, slutade vid Grensfortet\n\n## POLITISK SITUATION\n- Gräns mellan två nationer\n- Militär närvaro från båda sidor\n- Arkeologiska intressen\n- Senare (Fas 7+): Grensfortet överlåts till gruppen\n\n## KOPPLINGAR\n- **Relaterade platser:** Tirakgraven, Grensfortet, Cermira, Mithera\n- **NPCs:** Tirakstammen, Migor Trollkunnig"
+      "beskrivning": "# FROSTNYMF\n**Specialbyggd tirakisk flodpråm för vinterfärd**\n\n## GRUNDINFO\n- **Typ:** Anpassad flodpråm\n- **Längd:** 18 meter\n- **Bredd:** 8 meter\n- **Djupgående:** 1,1 meter\n- **Dräktighet:** Cirka 40 läster\n- **Lastkapacitet:** Cirka 80 ton\n- **Kapten:** Nilmar \"Isnavigator\" Gromsk (tirak)\n- **Specialisering:** Hästtransport och isnavigering\n- **Första omnämnande:** Fas 5\n\n## BESKRIVNING\nFrostnymf är en specialbyggd flodpråm anpassad för vinterfärd på Raunfloden, målad i mörkt trä med diskreta ränder i isblått och grått. Fartyget är konstruerat för att navigera genom isflak och transportera hästar säkert. Båtens förstärkta stäv är försedd med järnbeslag som formar ett mönster likt frostblommor. Två triangelformade latinsegel och långa åror längs relingarna vittnar om båtens robusthet. Mittendelen av däcket är förstärkt och anpassad för hästar, med spiltor och halvhöga skiljeväggar i massiv ek.\n\n## SPECIALANPASSNINGAR\n\n### För Vinternavigering\n- **Isbrytande förstärkt stäv:** Gjord av järnbeslaget ek, designad för att bryta genom tunnare is\n- **Innovativt värmesystem:** Heta stenar i vattenkar under däck håller kölen isfri\n- **Extraförstärkt styråra:** Utformad med tirakiska runor för kontroll i starka strömmar\n- **Sidoroder:** Komplement till styråran för manövrering i trånga passager\n- **Inhuggna djupmarkeringar:** I fören hjälper dem se vattendjupet\n\n### För Hästtransport\n- **Förstärkt mittdäck:** Speciellt stabilt underlag för hästarna\n- **Avdelat hästutrymme:** 6x5 meter med spiltor och förankringsmöjligheter\n- **Vattenränna och fodertråg:** Längs ena relingen\n- **Halvhöga skiljeväggar:** Mellan hästarna för att undvika panik och skador\n\n### Tirakiska Inslag\n- **Mahktah-symboler:** Diskret insnidade i masten för beskydd\n- **Anpassad kajuta för Nilmar:** Med högre takhöjd (tiraker är större)\n- **Extraförstärkta pollare:** Längs sidorna för draglina\n- **Specialutformade stakningsstänger:** Förvarade längs relingen\n\n## KAPTEN & BESÄTTNING (8 PERSONER)\n\n### Nilmar \"Isnavigator\" Gromsk (Tirak) - Kapten/Navigatör\nEn fåordig men mycket skicklig tirakisk kapten med exceptionell förmåga att navigera genom farliga isflak och vinterförhållanden på Raunfloden. Väderbitet ansikte, saknar vänsterörat från en gammal förfrysningsskada. Hans smeknamn \"Isnavigator\" säger allt om hans specialitet. Tjänar Lady Soffia och är en agent i hennes nätverk.\n\n### Selene \"Silveröga\" Kazarov (Asharier) - Underbefäl & Informant\nEn asharisk kvinna i 40-årsåldern med ett konstgjort silveröga (höger). Vaksam spejare som i flera år fungerat som informant åt Lady Soffia. Hemlig medlem i nätverk som hjälper förföljda att fly. Extremt lojal mot Nilmar men misstänksam mot främlingar. Visade särskilt intresse för Hagge under resan och kände till hans betydelse för Vitterdals framtid.\n\n### Esma Randarrohästare (Människa) - Djurskötare/Stallmästare\nEn kraftig kvinna med flätat hår. Expert på hästtransport och känner igen Vitterdals sätt att träna hästar. Identifierade Hagge som Lady Soffias son genom sitt kunnande om Vitterdals hästar. Erbjöd sig att följa gruppen som guide när de skulle fortsätta till fots.\n\n### Garsten \"Soppsleven\" Tretre (Människa) - Kock\nFrostnymfens pratsamme kock och ivrig ryktesspridare. Spridit viktig information om Kärlingarnas män, Systrarna och situationen i Vitterdal. Känd för att berätta mycket skvaller, speciellt efter tredje bägaren vin.\n\n### Burhak \"Daggryningen\" (Okänd ras) - Roddare\nEn mystisk roddare med ljus hud och minimal klädsel trots kylan. Sjunger lågmält på ett främmande språk medan han arbetar. Hans sång verkar ha en dämpad effekt på fartygets ljud i vattnet. Extremt skicklig roddare.\n\n### Laszlo (Människa) - Roddare\nEn kortväxt man med enorm överkropp. Överraskande ljus röst för sin fysiska storlek. Expert på att lasta förnödenheter och reparera båten. Hjälpte till att reparera Frostnymfens skrov när det skadades av isflak.\n\n### Marvo \"Isfingrarna\" (Människa) - Isexpert\nBesättningsmedlem specialiserad på att känna igen isens svagaste punkter och navigera isformationer. Hans förmåga att läsa isen är avgörande för säker navigering genom Raunflodens vinteris. Varnade gruppen om att isen blev tunnare när de närmade sig området med varmare källflöden.\n\n### Yrka och Yrko (Tvillingar) - Roddare\nTvå skickliga och nervösa besättningsmedlemmar. Deltog i kontroll av förtöjningar och navigering. Upptäckte de mystiska ljussignalerna längs flodens norra strand på den tredje dagen av resan. Gav Umnatak en mystisk påse örter \"för skydd mot andevärldens faror\" vid farväl.\n\n## VIKTIGA HÄNDELSER\n\n### Dag 1-2: Avgång från Jarla och Isbarriären\nFartyget kastar loss från kajen i Jarla. Den förstärkta stäven börjar metodiskt arbeta sig genom den tunna morgonisen. Nilmar navigerar med nästan övernaturlig känsla för flodens strömmar. På dag två möter fartyget en massiv isbarriär - uppbyggd och inte naturlig. Besättningen och spelarna samarbetar för att forcera barriären med Burhak och Laszlos specialverktyg och Marvo identifiering av svaga punkter.\n\n### Dag 3: Mystiska Ljussignaler och Spaning\nNatten sänker sig och en serie blinkande ljus ses från båda stränderna - tirakiska spaningssignaler anpassade för Systrarna. Selene och Nilmar diskuterar intensivt och pekar mot ljusen. Tvillingarna Yrka och Yrko verkar mycket nervösa. En pil slår ner i masten som en varning. Thrakka känner igen signalsystemet från sin tirakiska bakgrund.\n\n### Dag 4: Övergiven Handelsstation och Patrull\nFrostnymfen glider in mot en liten brygga vid en övergivet handelsstation för att vänta ut dagen. Nilmar förklarar att det är för riskabelt att fortsätta dagtid. Selene och Burhak rekognoscerar området. Under eftermiddagen närmar sig en mindre patrullbåt som genomsöker området. Ett större isflak skadar Frostnymfens skrov - Laszlo behöver hjälp med att reparera båten under tystnad. Dokument avslöjar att kungens män specifikt söker Thrakka och Hagge.\n\n### Dag 5: Den Isproppsade Forsen och Farväl\nTidigt på morgonen når fartyget forsområdet där enorma isformationer skapat en labyrint. Nilmar samlar alla på däck - \"Vi kan inte fortsätta med Frostnymfen. Forsen är för farlig.\" Han föreslår att gruppen fortsätter till fots medan han tar båten på en längre men säkrare rutt. Esma erbjuder sig att följa som guide. Selene ger gruppen ett specialtillverkat sigill. Tvillingarna ger örter till Umnatak. Marvo varnar om att följa inte huvudvägarna - Kärlingarnas vargmän patrullerar dygnet runt.\n\n## BETYDELSE FÖR KAMPANJEN\nFrostnymf var gruppens kritiska transport mot Vitterdal under Fas 5. Den farliga färden genom is och vinterförhållanden, kombinerat med förföljelsen av Systrarna och kungens män, gjorde resan till en av kampanjens mest spännande och avgörande momento. Fartyget fungerade både som säker transportväg och som plattform för att möta allierade (Esma) och motståndare (Systrarna). Farväl vid bifloden markerade övergången från flodtransport till landbaserad färd mot Vitterdal.\n\n## KOPPLINGAR\n- **Kapten:** Nilmar \"Isnavigator\" Gromsk\n- **Besättning:** Selene \"Silveröga\" Kazarov, Esma Randarrohästare, Garsten \"Soppsleven\" Tretre, Burhak \"Daggryningen\", Laszlo, Marvo \"Isfingrarna\", Yrka och Yrko\n- **Passagerare:** Gruppen - Gordon (Calle), Thrakka (Andreas), Umnatak (Christofer), Kazrik (Jonas), Corvus (Daniel), Hagge (Fas 5)\n- **Region:** Raunfloden, Drunok\n- **Fraktioner:** Lady Soffias nätverk, Frostnymf-besättning\n- **Motsatta krafter:** Systrarna, Kärlingarnas män, Kungens män\n- **Fas:** 5",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Grensfortet",
       "typ": "Militär befästning",
       "region": "Gränstrakterna mellan Cermira och Mithera",
-      "beskrivning": "# GRENSFORTET\n**Gränsbefästning där kampanjen började**\n\n## GRUNDINFO\n- **Typ:** Militär befästning\n- **Läge:** Gränsen mellan Cermira och Mithera\n- **Funktion:** Bevakningsfort och utgångspunkt för uppdrag\n- **Betydelse:** Kampanjens startpunkt\n\n## HISTORIA\nGrensfortet är den militära befästning där rollpersonerna först samlades och fick sitt uppdrag att undersöka Tirakgraven.\n\n## VIKTIGA HÄNDELSER\n**Fas 1:**\n- Rollpersonerna träffade Migor Trollkunnig här\n- Fick uppdraget att undersöka Tirakgraven\n- Stålsvärds Kavalerister rekryterades för uppdraget\n\n## KOPPLINGAR\n- **NPCs:** Migor Trollkunnig\n- **Relaterade platser:** Tirakgraven"
+      "beskrivning": "# GRENSFORTET\n**Gränsbefästning där kampanjen började**\n\n## GRUNDINFO\n- **Typ:** Militär befästning\n- **Läge:** Gränsen mellan Cermira och Mithera\n- **Funktion:** Bevakningsfort och utgångspunkt för uppdrag\n- **Betydelse:** Kampanjens startpunkt\n\n## HISTORIA\nGrensfortet är den militära befästning där rollpersonerna först samlades och fick sitt uppdrag att undersöka Tirakgraven.\n\n## VIKTIGA HÄNDELSER\n**Fas 1:**\n- Rollpersonerna träffade Migor Trollkunnig här\n- Fick uppdraget att undersöka Tirakgraven\n- Stålsvärds Kavalerister rekryterades för uppdraget\n\n## KOPPLINGAR\n- **NPCs:** Migor Trollkunnig\n- **Relaterade platser:** Tirakgraven",
+      "kapitel": null,
+      "bild": null
+    },
+    {
+      "namn": "Gränstrakterna mellan Cermira och Mithera",
+      "typ": "Region",
+      "region": "Gräns Cermira/Mithera",
+      "beskrivning": "# GRÄNSTRAKTERNA MELLAN CERMIRA OCH MITHERA\n**Där kampanjen började**\n\n## GRUNDINFO\n- **Typ:** Gränsregion\n- **Karaktär:** Vildmark, arkeologiska platser\n- **Betydelse:** Kampanjens startpunkt\n- **Viktiga platser:** Tirakgraven, Grensfortet\n\n## HISTORIA\nKampanjen började i denna gränsregion där rollpersonerna (Gordon, Zentri, Umnatak, Kazrik) tjänstgjorde som legoknektar i Stålsvärds Kavalerister. De kontrakterades av Migor Trollkunnig för att bevaka en arkeologisk utgrävning vid Tirakgraven.\n\n## VIKTIGA HÄNDELSER\n**Fas 1:** Tirakgraven och demonens partiella frigörelse  \n**Fas 2:** Jakten på Tamron/Ibran, slutade vid Grensfortet\n\n## POLITISK SITUATION\n- Gräns mellan två nationer\n- Militär närvaro från båda sidor\n- Arkeologiska intressen\n- Senare (Fas 7+): Grensfortet överlåts till gruppen\n\n## KOPPLINGAR\n- **Relaterade platser:** Tirakgraven, Grensfortet, Cermira, Mithera\n- **NPCs:** Tirakstammen, Migor Trollkunnig",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Iskvarnsbryggan",
       "typ": "Flodbrygga",
       "region": "Cermira",
+      "beskrivning": "Flodbrygga vid Raunfloden.\n\n**Geografisk situation:** 200m öppen mark från skog till flodkant.\n\n**Betydelse:** Mötesplats för pråmarna under evakueringen. Plats för dramatisk konfrontation - Lady Isadora och Syster Moira (Systrarna) observerade här.\n\n**Händelse:** Gruppen och de 41 flyktingarna från Vargnäset mötte pråmarna här (Rimfrosten, Strömjungfrun, Månljuset).",
       "kapitel": "Kapitel 8",
-      "bild": null,
-      "beskrivning": "Flodbrygga vid Raunfloden.\n\n**Geografisk situation:** 200m öppen mark från skog till flodkant.\n\n**Betydelse:** Mötesplats för pråmarna under evakueringen. Plats för dramatisk konfrontation - Lady Isadora och Syster Moira (Systrarna) observerade här.\n\n**Händelse:** Gruppen och de 41 flyktingarna från Vargnäset mötte pråmarna här (Rimfrosten, Strömjungfrun, Månljuset)."
+      "bild": null
     },
     {
       "namn": "Jargien",
       "typ": "Kejsardöme/Region",
       "region": "Centrala Mundana",
-      "beskrivning": "# JARGIEN\n**Det jargiska kejsardömet**\n\n## GRUNDINFO\n- **Typ:** Stort kejsardöme\n- **Karaktär:** Vinterland, handelskaravaner\n- **Kultur:** Jargisk, byråkratisk kejsardömestruktur\n- **Betydelse:** Passage på hemvägen från Tarkas\n\n## HISTORIA\nGruppen passerade genom Jargien under Fas 5 på sin hemresa från Tarkas. De anslöt sig till en handelskaravan för säker passage genom det vintriga landskapet.\n\n## VIKTIGA HÄNDELSER\n**Fas 5 (Vinterstormen):** \n- Karavanen fastnade i veckor under en massiv vinterstorm\n- Rollpersonerna hjälpte till med jakt och försvar\n- Räddade handelsmän från vargangrepp\n- Säkrade förnödenheter för gruppen\n\n## KOPPLINGAR\n- **Relaterade platser:** Abhan-hir-renk-Ghor (ingång), Cermira (destination)\n- **Relaterade regioner:** Tarkas, Drunok"
-    },
-    {
-      "namn": "Jarnthol",
-      "typ": "Gruvutpost",
-      "region": "Jargien",
-      "kapitel": "Kapitel 4",
-      "bild": null,
-      "beskrivning": "# JARNTHOL\n**Förbannad gruvutpost i bergen**\n\n## GRUNDINFO\n- **Typ:** Gruvutpost\n- **Region:** Jargien, bergig dalgång\n- **Kapitel:** Kapitel 4\n- **Karaktär:** Enslig och isolerad, hemsökt av förbannelse\n\n## BESKRIVNING\nJarnthol är ingen riktig by - bara en ensam värdshusbyggnad i mörkt trä, en grovhuggen handelsbod, och några skjul och förråd för de arbetare och resande som tar sig hit. Bakom byggnaderna gapar gruvmynningar där gamla schakt och timrade gruvgångar stirrar ut över dalen som svarta ögonhålor i berget.\n\n**Atmosfär:**\n- Bitande kall vintermiljö\n- Snön ligger djup och orörd runt utposten\n- Tung stillhet - inget fågelkvitter, inga tecken på djurliv\n- Bara vinden som sveper in genom skrevorna i bergen\n- Känsla av att något ser på en från skuggorna\n\n## VIKTIGA BYGGNADER\n**Värdshuset:** Drivet av Grimdal Tungöga. Ljus i fönstren och rökstrimma från skorstenen - tecken på liv.\n\n**Gruvorna:** Gamla schakt och timrade gruvgångar. En av gruvgångarna var **förseglad** tills prospektören Griknar Granitson bröt sigillet och väckte Rådslingan.\n\n## FÖRBANNELSEN\nNär Griknar bröt sigillet på den gamla gruvgången väcktes **Rådslingan** - en uråldrig skuggformad varelse skapad som väktare. Varelsen är resultatet av en förbannelse kopplad till dvärgar vars namn utplånats från historien.\n\n**Händelser:**\n- Griknar försvann i gruvan\n- Gruvarbetare hörde **röster i mörkret**\n- Arbetare vägrar gå tillbaka - något skrämmer dem\n- Grimdal Tungöga har sett skuggor röra sig i gruvan\n\n## LÖSNINGEN\nGruppen (särskilt Umnatak) genomförde en ritual på bergstoppen ovanför gruvan för att **återställa de utplånade dvärgarnas namn** och erkänna sviket mot dem. Detta släppte de bundna själarna fria och bröt förbannelsen.\n\n**Umnataks genombrott:** Under ritualen upplevde Umnatak stark koppling till andeplanet - början på hans formella utövande av schamanistiska färdigheter.\n\n## VIKTIGA NPCS\n- **Grimdal Tungöga:** Värdshuvärd, vet mer än han säger\n- **Griknar Granitson:** Försvunnen prospektör som väckte förbannelsen\n- **Borga Stenhands:** Gruvarbetare, såg Griknar senast\n- **Konrad:** Handelsman, känner till rykten om skuggor\n- **Rådslingan:** Skuggvarelse (nu upplöst)\n\n## KOPPLINGAR\n- **Region:** Jargien\n- **Händelse:** Rådslingan-äventyret (Kapitel 4)\n- **Karaktärsutveckling:** Umnataks schamanistiska genombrott"
+      "beskrivning": "# JARGIEN\n**Det jargiska kejsardömet**\n\n## GRUNDINFO\n- **Typ:** Stort kejsardöme\n- **Karaktär:** Vinterland, handelskaravaner\n- **Kultur:** Jargisk, byråkratisk kejsardömestruktur\n- **Betydelse:** Passage på hemvägen från Tarkas\n\n## HISTORIA\nGruppen passerade genom Jargien under Fas 5 på sin hemresa från Tarkas. De anslöt sig till en handelskaravan för säker passage genom det vintriga landskapet.\n\n## VIKTIGA HÄNDELSER\n**Fas 5 (Vinterstormen):** \n- Karavanen fastnade i veckor under en massiv vinterstorm\n- Rollpersonerna hjälpte till med jakt och försvar\n- Räddade handelsmän från vargangrepp\n- Säkrade förnödenheter för gruppen\n\n## KOPPLINGAR\n- **Relaterade platser:** Abhan-hir-renk-Ghor (ingång), Cermira (destination)\n- **Relaterade regioner:** Tarkas, Drunok",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Jarla",
       "typ": "Fristad",
       "region": "Asharien",
-      "beskrivning": "# JARLA\n**Fristad med politiska intriger**\n\n## GRUNDINFO\n- **Typ:** Fristad (självstyrande stad)\n- **Region:** Asharien, vid Raunfloden\n- **Invånare:** Ca 1600 personer (mestadels asharer)\n- **Styre:** Frijarl Todor Felkes + råd med 20 medlemmar\n- **Karaktär:** Rumlarställe med olaglig handel och skumraskaffärer\n\n## POLITISK STRUKTUR\n**Rådet (20 medlemmar):**\n- Predent Primon (samoriman)\n- 3 stormän (Ghelon Felkes, Len Keasto, Nentarin Naluni)\n- 10 köpmän (inkl. Gekthath av Wezi, Jeskia av Nejas, Yennara av Boca)\n- 6 inflytelserika hantverkare\n\n**Säkerhet:**\n- Vaktkapten Vomdal: Yttre bevakning (120 stadsvakter)\n- Hemkhath Thokk: Inre palatsgarde (40 soldater)\n\n## HISTORIA OCH UTVECKLING\nNär rollpersonerna först besökte Jarla var staden relativt stabil. Efter sex månaders frånvaro hade situationen förändrats drastiskt:\n\n**Politisk kris:**\n- Frijarl Todor Felkes blev paranoid och isolerad\n- Handelshuset Ramiz anklagades för förräderi\n- Handelshuset Nejas stärkte sitt grepp genom Skrået (lönnmördargille)\n- Brutal stadsvakt under Hemkhath Thokks ledning\n\n**Ekonomisk nedgång:**\n- Höjda skatter\n- Höga matpriser\n- Färre handlare vågar sig in i staden\n\n## VIKTIGA NPCS\n- Todor Felkes (Frijarl)\n- Vomdal (Vaktkapten)\n- Hemkhath Thokk (Palatsgarde-kapten)\n- Gekthath av Wezi (Köpman, råd)\n- Jeskia av Nejas (Köpman, råd)\n- Yennara av Boca (Köpman, råd)\n- Fhe Ehdsim (Örthandlare)\n- Rennil (Värdshusvärd, Vita gåsen)\n\n## KOPPLINGAR\n- **Fraktioner:** Handelshuset Nejas, Handelshuset Ramiz, Skrået, Tjuvgillet Skuggväktarna\n- **Relaterade platser:** Raunfloden"
+      "beskrivning": "# JARLA\n**Fristad med politiska intriger**\n\n## GRUNDINFO\n- **Typ:** Fristad (självstyrande stad)\n- **Region:** Asharien, vid Raunfloden\n- **Invånare:** Ca 1600 personer (mestadels asharer)\n- **Styre:** Frijarl Todor Felkes + råd med 20 medlemmar\n- **Karaktär:** Rumlarställe med olaglig handel och skumraskaffärer\n\n## POLITISK STRUKTUR\n**Rådet (20 medlemmar):**\n- Predent Primon (samoriman)\n- 3 stormän (Ghelon Felkes, Len Keasto, Nentarin Naluni)\n- 10 köpmän (inkl. Gekthath av Wezi, Jeskia av Nejas, Yennara av Boca)\n- 6 inflytelserika hantverkare\n\n**Säkerhet:**\n- Vaktkapten Vomdal: Yttre bevakning (120 stadsvakter)\n- Hemkhath Thokk: Inre palatsgarde (40 soldater)\n\n## HISTORIA OCH UTVECKLING\nNär rollpersonerna först besökte Jarla var staden relativt stabil. Efter sex månaders frånvaro hade situationen förändrats drastiskt:\n\n**Politisk kris:**\n- Frijarl Todor Felkes blev paranoid och isolerad\n- Handelshuset Ramiz anklagades för förräderi\n- Handelshuset Nejas stärkte sitt grepp genom Skrået (lönnmördargille)\n- Brutal stadsvakt under Hemkhath Thokks ledning\n\n**Ekonomisk nedgång:**\n- Höjda skatter\n- Höga matpriser\n- Färre handlare vågar sig in i staden\n\n## VIKTIGA NPCS\n- Todor Felkes (Frijarl)\n- Vomdal (Vaktkapten)\n- Hemkhath Thokk (Palatsgarde-kapten)\n- Gekthath av Wezi (Köpman, råd)\n- Jeskia av Nejas (Köpman, råd)\n- Yennara av Boca (Köpman, råd)\n- Fhe Ehdsim (Örthandlare)\n- Rennil (Värdshusvärd, Vita gåsen)\n\n## KOPPLINGAR\n- **Fraktioner:** Handelshuset Nejas, Handelshuset Ramiz, Skrået, Tjuvgillet Skuggväktarna\n- **Relaterade platser:** Raunfloden",
+      "kapitel": null,
+      "bild": null
+    },
+    {
+      "namn": "Jarnthol",
+      "typ": "Gruvutpost",
+      "region": "Jargien",
+      "beskrivning": "# JARNTHOL\n**Förbannad gruvutpost i bergen**\n\n## GRUNDINFO\n- **Typ:** Gruvutpost\n- **Region:** Jargien, bergig dalgång\n- **Kapitel:** Kapitel 4\n- **Karaktär:** Enslig och isolerad, hemsökt av förbannelse\n\n## BESKRIVNING\nJarnthol är ingen riktig by - bara en ensam värdshusbyggnad i mörkt trä, en grovhuggen handelsbod, och några skjul och förråd för de arbetare och resande som tar sig hit. Bakom byggnaderna gapar gruvmynningar där gamla schakt och timrade gruvgångar stirrar ut över dalen som svarta ögonhålor i berget.\n\n**Atmosfär:**\n- Bitande kall vintermiljö\n- Snön ligger djup och orörd runt utposten\n- Tung stillhet - inget fågelkvitter, inga tecken på djurliv\n- Bara vinden som sveper in genom skrevorna i bergen\n- Känsla av att något ser på en från skuggorna\n\n## VIKTIGA BYGGNADER\n**Värdshuset:** Drivet av Grimdal Tungöga. Ljus i fönstren och rökstrimma från skorstenen - tecken på liv.\n\n**Gruvorna:** Gamla schakt och timrade gruvgångar. En av gruvgångarna var **förseglad** tills prospektören Griknar Granitson bröt sigillet och väckte Rådslingan.\n\n## FÖRBANNELSEN\nNär Griknar bröt sigillet på den gamla gruvgången väcktes **Rådslingan** - en uråldrig skuggformad varelse skapad som väktare. Varelsen är resultatet av en förbannelse kopplad till dvärgar vars namn utplånats från historien.\n\n**Händelser:**\n- Griknar försvann i gruvan\n- Gruvarbetare hörde **röster i mörkret**\n- Arbetare vägrar gå tillbaka - något skrämmer dem\n- Grimdal Tungöga har sett skuggor röra sig i gruvan\n\n## LÖSNINGEN\nGruppen (särskilt Umnatak) genomförde en ritual på bergstoppen ovanför gruvan för att **återställa de utplånade dvärgarnas namn** och erkänna sviket mot dem. Detta släppte de bundna själarna fria och bröt förbannelsen.\n\n**Umnataks genombrott:** Under ritualen upplevde Umnatak stark koppling till andeplanet - början på hans formella utövande av schamanistiska färdigheter.\n\n## VIKTIGA NPCS\n- **Grimdal Tungöga:** Värdshuvärd, vet mer än han säger\n- **Griknar Granitson:** Försvunnen prospektör som väckte förbannelsen\n- **Borga Stenhands:** Gruvarbetare, såg Griknar senast\n- **Konrad:** Handelsman, känner till rykten om skuggor\n- **Rådslingan:** Skuggvarelse (nu upplöst)\n\n## KOPPLINGAR\n- **Region:** Jargien\n- **Händelse:** Rådslingan-äventyret (Kapitel 4)\n- **Karaktärsutveckling:** Umnataks schamanistiska genombrott",
+      "kapitel": "Kapitel 4",
+      "bild": null
     },
     {
       "namn": "Jen",
       "typ": "Stad",
       "region": "Muhad",
+      "beskrivning": "Storslagen handelsstad och Muhads huvudstad med strategisk hamn. Enda hamn öppen för utlänningar i ökenriket.\n\n**Områden:**\n- **Hamnområdet** - Livlig handelshamn\n- **Marknadsplatsen** - Inkl. Kryddmarknaden med exotiska kryddor från Xian och Cirha\n- **Slavmarknaden** - Stor öppen plats omgiven av höga vita murar\n- **Huvudkontoret för Slavregistrering och Transaktioner** - Centralt beläget, tre våningar vit ökenarkitektur med mosaiker. Avdelningar: Registrering, Transaktioner, Inspektörernas kontor, Arkiv (klimatkontrollerat)\n- **Handelsdistriktet** - Lyxiga etablissemang som Den Gyldene Dromedaren\n- **Bostadsområden** - Från lyxvillor (Laila al-Jens residens) till slumområden\n- **Tempel och helgedomar**\n- **Fängelset**\n\n**Viktiga NPCs:** Malik Al-Zahir (huvudslavhandlare), Rashan al-Ghedi (stadsvakt kapten), Laila al-Jen (adelskvinna), Hagge (slav hos Laila), många kryddhandlare och värdshusägare.",
       "kapitel": "Kapitel 2",
       "bild": null,
-      "detaljsida": "platser/jen.html",
-      "beskrivning": "Storslagen handelsstad och Muhads huvudstad med strategisk hamn. Enda hamn öppen för utlänningar i ökenriket.\n\n**Områden:**\n- **Hamnområdet** - Livlig handelshamn\n- **Marknadsplatsen** - Inkl. Kryddmarknaden med exotiska kryddor från Xian och Cirha\n- **Slavmarknaden** - Stor öppen plats omgiven av höga vita murar\n- **Huvudkontoret för Slavregistrering och Transaktioner** - Centralt beläget, tre våningar vit ökenarkitektur med mosaiker. Avdelningar: Registrering, Transaktioner, Inspektörernas kontor, Arkiv (klimatkontrollerat)\n- **Handelsdistriktet** - Lyxiga etablissemang som Den Gyldene Dromedaren\n- **Bostadsområden** - Från lyxvillor (Laila al-Jens residens) till slumområden\n- **Tempel och helgedomar**\n- **Fängelset**\n\n**Viktiga NPCs:** Malik Al-Zahir (huvudslavhandlare), Rashan al-Ghedi (stadsvakt kapten), Laila al-Jen (adelskvinna), Hagge (slav hos Laila), många kryddhandlare och värdshusägare."
+      "detaljsida": "platser/jen.html"
     },
     {
       "namn": "Kamelens Oas",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# KAMELENS OAS\n**Fridfullt värdshus med innergård**\n\n## GRUNDINFO\n- **Typ:** Värdshus för övernattning\n- **Plats:** Lugnt bostadsområde nära templen, Jen, Muhad\n- **Ägare:** Farid al-Malik & Leyla al-Malik\n- **Tema:** Fridfull oas\n\n## BESKRIVNING\nKamelens Oas är ett fridfullt värdshus beläget i ett lugnt bostadsområde nära stadens tempel och helgedomar. Det är känt för sin avkopplande atmosfär och vackra innergård med en liten fontän och flera palmer.\n\n### Innergården\nEn central del av värdshuset, innergården är fylld med frodig grönska, blommor och skuggande palmer. En liten fontän med klart, porlande vatten står i mitten och ger en lugnande bakgrundssymfoni.\n\n## ÄGARE\n\n### Farid al-Malik\nFarid är en vänlig och omtänksam man i femtioårsåldern med gråsprängda hårlockar och ett ständigt leende på läpparna. Han har tagit över Kamelens Oas efter sin far och har djup kunskap om stadens historia. Han är också en skicklig kamelförare och organiserar ibland kamelsafarier.\n\n### Leyla al-Malik\nLeyla är en varm och moderlig kvinna i fyrtioårsåldern känd för sina utsökta måltider. Hon kommer från en familj av skickliga kockar och hennes specialiteter inkluderar traditionella ökenrätter och läckra bakverk.\n\n## PERSONAL\n\n### Tariq ibn-Salim (Receptionist)\nEn ung man i tjugoårsåldern med alltid vänlig uppsyn. Han är mycket kunnig om staden och dess sevärdheter och hjälper gärna gästerna.\n\n### Amira bint-Hassan (Städare)\nEn kvinna i trettioårsåldern, effektiv och noggrann. Hon ser till att värdshuset alltid är rent och välkomnande.\n\n### Youssef al-Najjar (Underhållsman)\nEn robust man i fyrtioårsåldern, skicklig hantverkare som ser till att allt fungerar perfekt.\n\n### Naila bint-Zahir (Serveringspersonal)\nEn ung kvinna i tjugoårsåldern med glad och energisk personlighet. Hon älskar att prata med gästerna.\n\n### Samir ibn-Rashid (Kökshjälp)\nLeylas systerson, en tonårspojke entusiastisk över att lära sig matlagningens konst.\n\n## RUM & FACILITETER\n- **Enkelrum:** 2 mysiga rum med utsikt över innergården\n- **Dubbelrum:** 3 rum med antingen två enkelsängar eller dubbelsäng\n- **Familjerum:** 1 rymligt rum med plats för familjer\n- **Matsal:** Stort öppet rum med långbord där måltider serveras\n- **Innergård med fontän:** Central plats för avkoppling\n- **Trädgård:** Liten trädgård med blommor och örter\n- **Gemensamt badrum:** Med duschkabiner och toaletter\n\n## BETYDELSE FÖR KAMPANJEN\nKamelens Oas var troligen en av platserna där gruppen kunde bo bekvämt under sin vistelse i Jen, njuta av god mat och planera sina nästa steg.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Farid & Leyla al-Malik\n- **Personal:** Tariq, Amira, Youssef, Naila, Samir\n- **Fas:** 3"
+      "beskrivning": "# KAMELENS OAS\n**Fridfullt värdshus med innergård**\n\n## GRUNDINFO\n- **Typ:** Värdshus för övernattning\n- **Plats:** Lugnt bostadsområde nära templen, Jen, Muhad\n- **Ägare:** Farid al-Malik & Leyla al-Malik\n- **Tema:** Fridfull oas\n\n## BESKRIVNING\nKamelens Oas är ett fridfullt värdshus beläget i ett lugnt bostadsområde nära stadens tempel och helgedomar. Det är känt för sin avkopplande atmosfär och vackra innergård med en liten fontän och flera palmer.\n\n### Innergården\nEn central del av värdshuset, innergården är fylld med frodig grönska, blommor och skuggande palmer. En liten fontän med klart, porlande vatten står i mitten och ger en lugnande bakgrundssymfoni.\n\n## ÄGARE\n\n### Farid al-Malik\nFarid är en vänlig och omtänksam man i femtioårsåldern med gråsprängda hårlockar och ett ständigt leende på läpparna. Han har tagit över Kamelens Oas efter sin far och har djup kunskap om stadens historia. Han är också en skicklig kamelförare och organiserar ibland kamelsafarier.\n\n### Leyla al-Malik\nLeyla är en varm och moderlig kvinna i fyrtioårsåldern känd för sina utsökta måltider. Hon kommer från en familj av skickliga kockar och hennes specialiteter inkluderar traditionella ökenrätter och läckra bakverk.\n\n## PERSONAL\n\n### Tariq ibn-Salim (Receptionist)\nEn ung man i tjugoårsåldern med alltid vänlig uppsyn. Han är mycket kunnig om staden och dess sevärdheter och hjälper gärna gästerna.\n\n### Amira bint-Hassan (Städare)\nEn kvinna i trettioårsåldern, effektiv och noggrann. Hon ser till att värdshuset alltid är rent och välkomnande.\n\n### Youssef al-Najjar (Underhållsman)\nEn robust man i fyrtioårsåldern, skicklig hantverkare som ser till att allt fungerar perfekt.\n\n### Naila bint-Zahir (Serveringspersonal)\nEn ung kvinna i tjugoårsåldern med glad och energisk personlighet. Hon älskar att prata med gästerna.\n\n### Samir ibn-Rashid (Kökshjälp)\nLeylas systerson, en tonårspojke entusiastisk över att lära sig matlagningens konst.\n\n## RUM & FACILITETER\n- **Enkelrum:** 2 mysiga rum med utsikt över innergården\n- **Dubbelrum:** 3 rum med antingen två enkelsängar eller dubbelsäng\n- **Familjerum:** 1 rymligt rum med plats för familjer\n- **Matsal:** Stort öppet rum med långbord där måltider serveras\n- **Innergård med fontän:** Central plats för avkoppling\n- **Trädgård:** Liten trädgård med blommor och örter\n- **Gemensamt badrum:** Med duschkabiner och toaletter\n\n## BETYDELSE FÖR KAMPANJEN\nKamelens Oas var troligen en av platserna där gruppen kunde bo bekvämt under sin vistelse i Jen, njuta av god mat och planera sina nästa steg.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Farid & Leyla al-Malik\n- **Personal:** Tariq, Amira, Youssef, Naila, Samir\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Khazimbergen",
       "typ": "Bergskedja",
       "region": "Centrala Mundana",
-      "beskrivning": "# KHAZIMBERGEN\n**Dvärgisk bergskedja**\n\n## GRUNDINFO\n- **Typ:** Bergskedja\n- **Karaktär:** Höga berg, forntida dvärgstäder\n- **Kultur:** Dvärgisk, många övergivna städer\n- **Faror:** Monster, forntida magiska försvar\n\n## HISTORIA\nKhazimbergen är en bergskedja känd för sina dvärgiska städer och ruiner. Rollpersonerna besökte området i Fas 6 när de utforskade Tarkas.\n\n## VIKTIGA PLATSER\n- **Tarkas:** Övergivna dvärgruiner\n\n## KOPPLINGAR\n- **Relaterade platser:** Tarkas"
+      "beskrivning": "# KHAZIMBERGEN\n**Dvärgisk bergskedja**\n\n## GRUNDINFO\n- **Typ:** Bergskedja\n- **Karaktär:** Höga berg, forntida dvärgstäder\n- **Kultur:** Dvärgisk, många övergivna städer\n- **Faror:** Monster, forntida magiska försvar\n\n## HISTORIA\nKhazimbergen är en bergskedja känd för sina dvärgiska städer och ruiner. Rollpersonerna besökte området i Fas 6 när de utforskade Tarkas.\n\n## VIKTIGA PLATSER\n- **Tarkas:** Övergivna dvärgruiner\n\n## KOPPLINGAR\n- **Relaterade platser:** Tarkas",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Krökta Kompassen",
       "typ": "Värdshus",
       "region": "Tuzan Rim",
-      "beskrivning": "# KRÖKTA KOMPASSEN\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Ägare:** Eloise\n- **Personal:** Halmar (bartender)\n\n## BESKRIVNING\nKrökta Kompassen är ett välbesökt värdshus beläget i Tuzan Rim. Lokalen har en mysig och välkomnande atmosfär som lockar både resenärer och lokalbefolkning.\n\n## FLOORPLAN\nVärdshuset har en speciell design med ett hemligt rum bakom en bokhylla. Detta dolda utrymme har använts för diskreta möten och affärsuppgörelser.\n\n### Huvudutrymmen\n- **Matsal/Bar:** Huvudrummet där gäster samlas\n- **Kök:** Där Eloise och personalen förbereder maten\n- **Gästrum:** Flera rum för övernattande gäster\n- **Hemligt rum:** Bakom bokhyllan, endast känt av Eloise och vissa betrodda gäster\n\n## PERSONAL\n\n### Eloise (Ägare)\nVärdshuset drivs av den karismatiska Eloise som är känd för sin gästfrihet och diskreta hantering av känsliga angelägenheter.\n\n### Halmar (Bartender)\nHalmar är en pålitlig bartender som håller koll på gästerna och ser till att atmosfären förblir trivsam.\n\n## BETYDELSE FÖR KAMPANJEN\nGruppen besökte Krökta Kompassen under sin tid i Tuzan Rim (Fas 3). Det hemliga rummet kan ha använts för viktiga möten eller informationsutbyte.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Ägare:** Eloise\n- **Personal:** Halmar\n- **Fas:** 3"
+      "beskrivning": "# KRÖKTA KOMPASSEN\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Ägare:** Eloise\n- **Personal:** Halmar (bartender)\n\n## BESKRIVNING\nKrökta Kompassen är ett välbesökt värdshus beläget i Tuzan Rim. Lokalen har en mysig och välkomnande atmosfär som lockar både resenärer och lokalbefolkning.\n\n## FLOORPLAN\nVärdshuset har en speciell design med ett hemligt rum bakom en bokhylla. Detta dolda utrymme har använts för diskreta möten och affärsuppgörelser.\n\n### Huvudutrymmen\n- **Matsal/Bar:** Huvudrummet där gäster samlas\n- **Kök:** Där Eloise och personalen förbereder maten\n- **Gästrum:** Flera rum för övernattande gäster\n- **Hemligt rum:** Bakom bokhyllan, endast känt av Eloise och vissa betrodda gäster\n\n## PERSONAL\n\n### Eloise (Ägare)\nVärdshuset drivs av den karismatiska Eloise som är känd för sin gästfrihet och diskreta hantering av känsliga angelägenheter.\n\n### Halmar (Bartender)\nHalmar är en pålitlig bartender som håller koll på gästerna och ser till att atmosfären förblir trivsam.\n\n## BETYDELSE FÖR KAMPANJEN\nGruppen besökte Krökta Kompassen under sin tid i Tuzan Rim (Fas 3). Det hemliga rummet kan ha använts för viktiga möten eller informationsutbyte.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Ägare:** Eloise\n- **Personal:** Halmar\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Lejonets Bröl",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# LEJONETS BRÖL\n**Ljudlig och livlig**\n\n## GRUNDINFO\n- **Typ:** Livlig taverna\n- **Plats:** Jen, Muhad\n- **Ägare:** Umar al-Rashid\n- **Tema:** Festlig och bullrig\n\n## BESKRIVNING\nLejonets Bröl är ett livligt värdshus där musiken alltid spelar och skratten aldrig dör ut. Väggarna är täckta med troféer från djur och vapen, och borden är robusta nog att tåla även de vildaste festligheterna. En scen i hörnet rymmer ofta lokala band och underhållare.\n\n## ÄGARE\n**Umar al-Rashid** är en jovialisk man med en stor röst och ett ännu större hjärta. Han älskar när gästerna har roligt.\n\n## SPECIALITETER\n- **Kryddiga köttgrytor** - Värmande och mättande\n- **Öl från lokala bryggerier** - Fräscht och gott\n- **Stora bägare med vin** - För de som vill fira\n\n## ATMOSFÄR\nBullrig och festlig, perfekt för de som vill fira eller glömma sina bekymmer. Musik, dans och höga röster fyller luften.\n\n## BETYDELSE FÖR KAMPANJEN\nEtt ställe där gruppen kunde koppla av, festa och kanske få höra lokala rykten och skvaller i den lösa atmosfären.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Umar al-Rashid\n- **Fas:** 3"
+      "beskrivning": "# LEJONETS BRÖL\n**Ljudlig och livlig**\n\n## GRUNDINFO\n- **Typ:** Livlig taverna\n- **Plats:** Jen, Muhad\n- **Ägare:** Umar al-Rashid\n- **Tema:** Festlig och bullrig\n\n## BESKRIVNING\nLejonets Bröl är ett livligt värdshus där musiken alltid spelar och skratten aldrig dör ut. Väggarna är täckta med troféer från djur och vapen, och borden är robusta nog att tåla även de vildaste festligheterna. En scen i hörnet rymmer ofta lokala band och underhållare.\n\n## ÄGARE\n**Umar al-Rashid** är en jovialisk man med en stor röst och ett ännu större hjärta. Han älskar när gästerna har roligt.\n\n## SPECIALITETER\n- **Kryddiga köttgrytor** - Värmande och mättande\n- **Öl från lokala bryggerier** - Fräscht och gott\n- **Stora bägare med vin** - För de som vill fira\n\n## ATMOSFÄR\nBullrig och festlig, perfekt för de som vill fira eller glömma sina bekymmer. Musik, dans och höga röster fyller luften.\n\n## BETYDELSE FÖR KAMPANJEN\nEtt ställe där gruppen kunde koppla av, festa och kanske få höra lokala rykten och skvaller i den lösa atmosfären.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Umar al-Rashid\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Lundnäs",
       "typ": "Skogsby",
       "region": "Soldarn",
-      "beskrivning": "# LUNDNÄS\n**Skogsby drabbad av magiska pärlor**\n\n## GRUNDINFO\n- **Typ:** Skogsby med ca 1600 invånare\n- **Region:** Soldarn, vid Raunfloden\n- **Styre:** Baron Semuel Leijon av Lundnäs, fogde Herr Thall Spjut\n- **Karaktär:** Typisk skogsby med växtvärk\n\n## HISTORIA OCH KRIS\nLundnäs drabbades av en kris när mystiska pärlor påverkade både människor och djur i området. Fiskaren Ragnar drog upp pärlorna i sin fångst, vilket satte igång en kedja av händelser.\n\n## PÄRLORNAS PÅVERKAN\n- Galna gripar dödade fader Rubiel på gravgården\n- Befolkningen påverkades mentalt (paranoia, huvudvärk, förvirring)\n- Djur uppvisade udda beteende\n- Riddar Warg Spegelsköld blev farligt paranoid\n\n## VIKTIGA BYGGNADER\n- **Vansnäs Gästgiveri:** Värdshus med övernattning (Turam, gästgivare)\n- **Samoritemplet:** Tidigare skött av fader Rubiel\n- **Godset Leijonsborg:** Baronens stensborg (enda stenbyggnaden)\n- **Handelsboden:** Drivs av Vanna Rosenkind\n- **Garnisonen och häktet:** Små vaktstyrkan\n- **Häxan Fredriccas stuga:** I skogen väster om byn\n\n## VIKTIGA NPCS\n**Offer för pärlorna:**\n- Ragnar Fiskare (hittade pärlorna)\n- Riddar Warg Spegelsköld (paranoid)\n- Baron Semuel Leijon (sjuk, yrande)\n- Fader Rubiel (död, dräpt av gripar)\n\n**Hjälpare:**\n- Båg-Pieter (jägare, resisterade pärlpåverkan)\n- Häxan Fredricca (hjälpte med sin kunskap)\n- Herr Thall Spjut (fogde, höll ordning trots huvudvärk)\n- Turam (gästgivare)\n\n## KOPPLINGAR\n- **Äventyr:** Regnsynd (köpäventyr)\n- **Relaterade platser:** Raunfloden"
-    },
-    {
-      "namn": "Månljuset",
-      "typ": "Fartyg",
-      "region": "Vargnäset evakuering",
-      "beskrivning": "# MÅNLJUSET\n**Evakueringsfartyg drabbat av myteri**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Ursprunglig kapten:** Lars \"Silkeskägg\" Nordahl (†)\n- **Nuvarande befälhavare:** Gordon Nahrzezia\n- **Besättning:** Sten Knotbindare + andra\n- **Passagerare:** 11 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nMånljuset var det tredje och mest dramatiska av evakueringsfartygen från Vargnäset. Ursprungligen under befäl av kapten Lars \"Silkeskägg\" Nordahl, drabbades fartyget av ett tragiskt myteri där både kaptenen och Tant Hildur dog. Gordon Nahrzezia tvingades ta över befälet.\n\n## URSPRUNGLIG KAPTEN\n\n### Lars \"Silkeskägg\" Nordahl (†)\nDen ursprungliga kaptenen på Månljuset, känd för sitt välansade skägg som gav honom smeknamnet \"Silkeskägg\". Han dog under mute\n\nriet ombord på fartyget.\n\n## NUVARANDE BEFÄLHAVARE\n\n### Gordon Nahrzezia\nGordon, en av gruppens medlemmar (cirefalisk legosoldat spelad av Calle), tvingades ta över befälet på Månljuset efter att kapten Lars dödades i myteriet. Detta var en kritisk situation där Gordons ledarskapsförmåga sattes på prov.\n\n## BESÄTTNING\n\n### Sten Knotbindare\nEn pålitlig besättningsmedlem som blev kvar och hjälpte Gordon att styra fartyget efter myteriet.\n\n## TRAGISKA HÄNDELSER\n\n### Muteriet\nUnder evakueringen bröt ett myteri ut ombord på Månljuset. Det exakta förloppet är oklart, men både kapten Lars \"Silkeskägg\" Nordahl och Tant Hildur dog under händelserna.\n\n### Tant Hildur (†)\nEn av passagerarna som dog under myteriet. Hennes död var en av de tragiska förlusterna under evakueringen.\n\n### Gordons Övertagande\nI krisens mitt tvingades Gordon ta över befälet på fartyget och säkerställa att de återstående 11 flyktingarna kom till säkerhet.\n\n## EVAKUERINGEN\n\n### Passagerare\nTrots myteriet lyckades Månljuset transportera 11 flyktingar från Vargnäset till säkerhet.\n\n## BETYDELSE FÖR KAMPANJEN\nMånljuset representerar en av kampanjens mörkaste stunder - evakueringen som skulle rädda liv drabbades av internt våld och förlust. Gordons förmåga att ta kommando i krisen visade hans ledarskap, men priset var högt med två dödsoffer.\n\nDetta var också den tredje evakueringsbåten, och tillsammans med Rimfrosten och Strömjungfrun räddades totalt 41 flyktingar från Vargnäset.\n\n## KOPPLINGAR\n- **Ursprunglig kapten:** Lars \"Silkeskägg\" Nordahl (†)\n- **Nuvarande befälhavare:** Gordon Nahrzezia\n- **Besättning:** Sten Knotbindare\n- **Passagerare:** 11 flyktingar från Vargnäset\n- **Dödsoffer:** Kapten Lars, Tant Hildur\n- **Relaterade fartyg:** Rimfrosten, Strömjungfrun\n- **Händelse:** Evakuering från Vargnäset, myteri\n- **Fas:** 7"
-    },
-    {
-      "namn": "Månskärets Gömställe",
-      "typ": "Värdshus",
-      "region": "Jen, Muhad",
-      "beskrivning": "# MÅNSKÄRETS GÖMSTÄLLE\n**Exklusivt och mystiskt**\n\n## GRUNDINFO\n- **Typ:** Exklusivt värdshus\n- **Plats:** Undangömd gränd i handelsdistriktet, Jen, Muhad\n- **Ägare:** Zara al-Min\n- **Tema:** Mysterium och diskretion\n\n## BESKRIVNING\nMånskärets Gömställe är ett exklusivt och mystiskt värdshus beläget i en undangömd gränd i handelsdistriktet. Värdshuset är inrett med mörka träslag, exotiska textilier och dimmad belysning som ger en intim atmosfär. Här bor många av stadens äventyrare och mystiker.\n\n### Särskilda Rum\n- **Bar/Lounge:** Bekvämt rum med mjuka soffor, mörka väggar och dimmad belysning\n- **Bibliotek:** Litet rum fyllt med böcker, pergament och kartor\n- **Undangömd Innergård:** En liten, avskild innergård för privata stunder\n\n## ÄGARE\n\n### Zara al-Min\nEn gåtfull kvinna i fyrtioårsåldern med långt, svart hår och intensiv blick. Hon klär sig i mörka, flödande kläder och bär smycken med mystiska symboler. Zara har studerat magi och ockultism och har många hemliga kontakter. Hon är känd för sin diskretion och förmåga att ordna saker bakom kulisserna.\n\n## PERSONAL\n\n### Rashid ibn-Farouk (Receptionist och Bartender)\nEn ung man med charmerande leende och vänligt uppträdande. Han känner till många av stadens hemligheter.\n\n### Amina bint-Salim (Städare)\nEn tystlåten kvinna i trettioårsåldern, diskret och lojal mot Zara. Ser till att värdshuset alltid är i perfekt skick.\n\n### Hassan al-Rashid (Kökshjälp och Underhållsman)\nEn kraftig man i fyrtioårsåldern med bred kunskap om både matlagning och reparationer.\n\n### Laila bint-Ali (Serveringspersonal)\nEn ung kvinna med sprudlande humör som drömmer om att öppna sitt eget värdshus.\n\n## RUM & FACILITETER\n- **Enkelrum:** 3 små men bekväma rum\n- **Dubbelrum:** 4 rymligare rum\n- **Svit:** 1 lyxigt rum med sittgrupp\n- **Bar/Lounge:** För drinkar och socialt umgänge\n- **Bibliotek:** För studier och läsning\n- **Gemensamma badrum:** Välskötta med lyxiga badprodukter\n- **Undangömd innergård:** För privat avkoppling\n\n## BETYDELSE FÖR KAMPANJEN\nMånskärets Gömställe var perfekt för gruppen om de sökte diskretion under sin vistelse i Jen. Zaras kontakter kunde ge tillgång till hemlig information och mystiska tjänster.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Zara al-Min\n- **Personal:** Rashid ibn-Farouk, Amina bint-Salim, Hassan al-Rashid, Laila bint-Ali\n- **Fas:** 3"
+      "beskrivning": "# LUNDNÄS\n**Skogsby drabbad av magiska pärlor**\n\n## GRUNDINFO\n- **Typ:** Skogsby med ca 1600 invånare\n- **Region:** Soldarn, vid Raunfloden\n- **Styre:** Baron Semuel Leijon av Lundnäs, fogde Herr Thall Spjut\n- **Karaktär:** Typisk skogsby med växtvärk\n\n## HISTORIA OCH KRIS\nLundnäs drabbades av en kris när mystiska pärlor påverkade både människor och djur i området. Fiskaren Ragnar drog upp pärlorna i sin fångst, vilket satte igång en kedja av händelser.\n\n## PÄRLORNAS PÅVERKAN\n- Galna gripar dödade fader Rubiel på gravgården\n- Befolkningen påverkades mentalt (paranoia, huvudvärk, förvirring)\n- Djur uppvisade udda beteende\n- Riddar Warg Spegelsköld blev farligt paranoid\n\n## VIKTIGA BYGGNADER\n- **Vansnäs Gästgiveri:** Värdshus med övernattning (Turam, gästgivare)\n- **Samoritemplet:** Tidigare skött av fader Rubiel\n- **Godset Leijonsborg:** Baronens stensborg (enda stenbyggnaden)\n- **Handelsboden:** Drivs av Vanna Rosenkind\n- **Garnisonen och häktet:** Små vaktstyrkan\n- **Häxan Fredriccas stuga:** I skogen väster om byn\n\n## VIKTIGA NPCS\n**Offer för pärlorna:**\n- Ragnar Fiskare (hittade pärlorna)\n- Riddar Warg Spegelsköld (paranoid)\n- Baron Semuel Leijon (sjuk, yrande)\n- Fader Rubiel (död, dräpt av gripar)\n\n**Hjälpare:**\n- Båg-Pieter (jägare, resisterade pärlpåverkan)\n- Häxan Fredricca (hjälpte med sin kunskap)\n- Herr Thall Spjut (fogde, höll ordning trots huvudvärk)\n- Turam (gästgivare)\n\n## KOPPLINGAR\n- **Äventyr:** Regnsynd (köpäventyr)\n- **Relaterade platser:** Raunfloden",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Mithera",
       "typ": "Skog och region",
       "region": "Nordliga skogsområden",
-      "beskrivning": "# MITHERA\n**Skogsområde på vägen till Skugglandet**\n\n## GRUNDINFO\n- **Typ:** Omfattande skogsområde\n- **Karaktär:** Tät skog med mystiska och farliga element\n- **Betydelse:** Transitområde på vägen till Skugglandet\n- **Atmosfär:** Mörk, mystisk, ibland hotfull\n\n## HISTORIA\nMithera är det skogsområde som rollpersonerna genomkorsade i Fas 10 på sin resa för att nå Skugglandet och rädda Zentri.\n\n## VIKTIGA HÄNDELSER\n**Fas 10: Genom Mithera**\n- Rollpersonerna reste genom de täta skogarna\n- Mötte olika utmaningar och faror\n- Närmade sig portalen till Skugglandet vid Älvakungen Yelgothas domäner\n\n## MILJÖBESKRIVNINGAR\nOmfattande miljöbeskrivningar finns dokumenterade för olika delar av Mithera, inklusive:\n- Skogsvägar och stigar\n- Nattliga läger\n- Faror i skogen\n\n## KOPPLINGAR\n- **Relaterade platser:** Skugglandet (destination), Åderbjörkslunden\n- **NPCs:** Älvakungen Yelgotha (portalväktare)"
+      "beskrivning": "# MITHERA\n**Skogsområde på vägen till Skugglandet**\n\n## GRUNDINFO\n- **Typ:** Omfattande skogsområde\n- **Karaktär:** Tät skog med mystiska och farliga element\n- **Betydelse:** Transitområde på vägen till Skugglandet\n- **Atmosfär:** Mörk, mystisk, ibland hotfull\n\n## HISTORIA\nMithera är det skogsområde som rollpersonerna genomkorsade i Fas 10 på sin resa för att nå Skugglandet och rädda Zentri.\n\n## VIKTIGA HÄNDELSER\n**Fas 10: Genom Mithera**\n- Rollpersonerna reste genom de täta skogarna\n- Mötte olika utmaningar och faror\n- Närmade sig portalen till Skugglandet vid Älvakungen Yelgothas domäner\n\n## MILJÖBESKRIVNINGAR\nOmfattande miljöbeskrivningar finns dokumenterade för olika delar av Mithera, inklusive:\n- Skogsvägar och stigar\n- Nattliga läger\n- Faror i skogen\n\n## KOPPLINGAR\n- **Relaterade platser:** Skugglandet (destination), Åderbjörkslunden\n- **NPCs:** Älvakungen Yelgotha (portalväktare)",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Mitrahus",
       "typ": "Hall/Gods",
       "region": "Vitterdal, Cermira",
-      "beskrivning": "# MITRAHUS\n**Hagges hall i Vitterdal**\n\n## GRUNDINFO\n- **Typ:** Jarlshall och gods\n- **Ägare:** Hagge av Vitterdal (ny jarl)\n- **Region:** Vitterdal, Cermira\n- **Betydelse:** Belöningsceremoni och gruppens nya bas\n\n## HISTORIA\nMitrahus är Hagge av Vitterdals hall och gods i Vitterdal. Efter att gruppen framgångsrikt levererade Hagge hem arrangerades en formell belöningsceremoni i Mitrahus stora hall.\n\n## BELÖNINGSCEREMONI (FAS 7)\nHagge utdelade generösa belöningar till gruppen:\n- **Gordon:** Kaptenssymbol och titel \"Kapten av Vitterdals Hederskompani\"\n- **Umnatak:** Ceremoniell jaktkniv och livslångt jaktprivilegium\n- **Kazrik:** Handelsrättigheter och erkännande som lärd man\n- **Thrakka:** Formellt välkommen som gruppens medlem\n- **Alla:** Skattefrihet, hus på Mitrahus mark, option på Grensfortet\n\n## NUVARANDE STATUS\n- Kaelar Stålsvärd accepterade tjänst som Hagges kapten\n- Flyktingarna från Vargnäset huseras i Grensfortet (del av godset)\n- Gruppen har permanenta boenden här\n\n## KOPPLINGAR\n- **NPCs:** Hagge av Vitterdal, Lady Soffia, Kaelar Stålsvärd\n- **Relaterade platser:** Vitterdal, Grensfortet"
+      "beskrivning": "# MITRAHUS\n**Hagges hall i Vitterdal**\n\n## GRUNDINFO\n- **Typ:** Jarlshall och gods\n- **Ägare:** Hagge av Vitterdal (ny jarl)\n- **Region:** Vitterdal, Cermira\n- **Betydelse:** Belöningsceremoni och gruppens nya bas\n\n## HISTORIA\nMitrahus är Hagge av Vitterdals hall och gods i Vitterdal. Efter att gruppen framgångsrikt levererade Hagge hem arrangerades en formell belöningsceremoni i Mitrahus stora hall.\n\n## BELÖNINGSCEREMONI (FAS 7)\nHagge utdelade generösa belöningar till gruppen:\n- **Gordon:** Kaptenssymbol och titel \"Kapten av Vitterdals Hederskompani\"\n- **Umnatak:** Ceremoniell jaktkniv och livslångt jaktprivilegium\n- **Kazrik:** Handelsrättigheter och erkännande som lärd man\n- **Thrakka:** Formellt välkommen som gruppens medlem\n- **Alla:** Skattefrihet, hus på Mitrahus mark, option på Grensfortet\n\n## NUVARANDE STATUS\n- Kaelar Stålsvärd accepterade tjänst som Hagges kapten\n- Flyktingarna från Vargnäset huseras i Grensfortet (del av godset)\n- Gruppen har permanenta boenden här\n\n## KOPPLINGAR\n- **NPCs:** Hagge av Vitterdal, Lady Soffia, Kaelar Stålsvärd\n- **Relaterade platser:** Vitterdal, Grensfortet",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Muhad",
       "typ": "Region",
       "region": "Östra Mundana",
-      "beskrivning": "# MUHAD\n**Ökenregion med asharis ka kultur**\n\n## GRUNDINFO\n- **Typ:** Region och kulturområde\n- **Karaktär:** Öken, asharisk kultur, handelsstäder\n- **Huvudstad:** Jen (hamnstad)\n- **Kultur:** Asharisk, handelsinriktad, slavhandel förekommer\n- **Betydelse:** Hem för Hagge av Vitterdal i flera år\n\n## HISTORIA\nMuhad är den ökenregion där rollpersonerna spenderade betydande tid (Fas 3-5) när de sökte efter och hittade Hagge av Vitterdal. Hagge hade bott här och fått en son med slavhandlaren Laila al-Jen.\n\n## VIKTIGA STÄDER\n- **Jen:** Hamnstad där Hagge hittades\n\n## FRAKTIONER OCH MAKT\n- Olika handelshus kontrollerar handel och politik\n- Slavhandel är en betydande ekonomisk faktor\n- Komplexa maktstrukturer och allianser\n\n## VIKTIGA NPCS (33 st från Muhad)\nRollpersonerna mötte många lokala invånare, inklusive:\n- **Laila al-Jen:** Slavhandlare, Hagges före detta älskarinna\n- **Handelsmän:** Amira bint-Zayed, Fahad al-Khouri, Farid al-Malik, Ghalib al-Nur\n- **Lokala:** Dr. Yusuf, Karim Berättaren, och många fler\n\n## KOPPLINGAR\n- **Viktiga NPCs:** Hagge av Vitterdal, Laila al-Jen\n- **Relaterade platser:** Jen (huvudstad)"
+      "beskrivning": "# MUHAD\n**Ökenregion med asharis ka kultur**\n\n## GRUNDINFO\n- **Typ:** Region och kulturområde\n- **Karaktär:** Öken, asharisk kultur, handelsstäder\n- **Huvudstad:** Jen (hamnstad)\n- **Kultur:** Asharisk, handelsinriktad, slavhandel förekommer\n- **Betydelse:** Hem för Hagge av Vitterdal i flera år\n\n## HISTORIA\nMuhad är den ökenregion där rollpersonerna spenderade betydande tid (Fas 3-5) när de sökte efter och hittade Hagge av Vitterdal. Hagge hade bott här och fått en son med slavhandlaren Laila al-Jen.\n\n## VIKTIGA STÄDER\n- **Jen:** Hamnstad där Hagge hittades\n\n## FRAKTIONER OCH MAKT\n- Olika handelshus kontrollerar handel och politik\n- Slavhandel är en betydande ekonomisk faktor\n- Komplexa maktstrukturer och allianser\n\n## VIKTIGA NPCS (33 st från Muhad)\nRollpersonerna mötte många lokala invånare, inklusive:\n- **Laila al-Jen:** Slavhandlare, Hagges före detta älskarinna\n- **Handelsmän:** Amira bint-Zayed, Fahad al-Khouri, Farid al-Malik, Ghalib al-Nur\n- **Lokala:** Dr. Yusuf, Karim Berättaren, och många fler\n\n## KOPPLINGAR\n- **Viktiga NPCs:** Hagge av Vitterdal, Laila al-Jen\n- **Relaterade platser:** Jen (huvudstad)",
+      "kapitel": null,
+      "bild": null
     },
     {
-      "namn": "Ödlefolkets ruiner",
-      "bild": null,
-      "typ": "Uråldriga ruiner",
-      "region": "Tarkas",
-      "kapitel": "Kapitel 3",
-      "beskrivning": "# ÖDLEFOLKETS RUINER\n**Uråldrig ruin vid Tarkas kust**\n\n## GRUNDINFO\n- **Typ:** Uråldriga ruiner\n- **Plats:** Tarkas södra kust\n- **Ursprung:** Utdött ödlefolk\n- **Status:** Delvis kollapsad\n- **Kapitel:** Kapitel 3\n\n## UPPTÄCKTEN\nEfter vulkanutbrottet som krossade gruppens skepp och flera dagars vandring genom den askbeströdda ödemarken stötte gruppen på dessa ruiner - nyligen blottlagda av vulkanutbrottet.\n\n## ARKITEKTUREN\nRuinen avslöjade spår efter ett sedan länge **utdött ödlefolk** som en gång konstruerat massiva humanoida **golems** för okända syften.\n\n**Strukturen:**\n- Stora stenblock med främmande inskriptioner\n- Korridorer byggda för varelser större än människor\n- Väggmålningar föreställande reptilliknande humanoider\n- Massiva salar med högt i tak\n\n## GOLEMSEN\n\n### De Två Mindre Golemsen\nNär gruppen undersökte ruinen väckte de oavsiktligt två stenliknande golems - humanoida figurer av massiv sten som började röra sig med skrapande ljud. Gruppen lyckades med nöd och näppe **undvika** dem genom att smyga förbi medan golemsen patrullerade korridorerna.\n\n### Den Kolossala Golemen\nDjupare in i komplexet nådde gruppen en massiv sal där **den kolossala golemen** väntade - ödlefolkets mästerverk, en uråldrig vaktare byggd för att stå i evighet.\n\n**Beskrivning:**\n- Tre gånger en människas höjd\n- Kropp av massiv sten, ogenomtränglig för vanliga vapen\n- Rörde sig långsamt men med fruktansvärd kraft\n- Ögon som lyste med eld inifrån\n\n## DEN DRAMATISKA KONFRONTATIONEN\n\n### Zentris Skada\nUnder flykten från golemen började ruinen skaka. **Zentri** försökte använda magi för att skydda gruppen när en kollapsande pelare sprack ovanför honom.\n\nEn **stensplitter från den kollapsande pelaren** träffade honom i ansiktet och förstörde hans **vänstra öga**. Hans **mantel förstördes permanent** i samma sekvens.\n\n### Flykten\nGruppen insåg att direkt strid var hopplös. I desperationen upptäckte **Kazrik** en serie **antika spakar** längs ena väggen - troligen kontrollmekanismer för ruinens gamla system.\n\nGenom att dra spakarna i rätt ordning utlöste de en **kontrollerad kollaps**:\n- Pelarna började ge vika\n- Taket mullrade\n- Stenblock föll från väggarna\n\nMed nöd och näppe flydde gruppen medan det kolossala monstret begravdes under stenmassorna.\n\n## BETYDELSE\nRuinerna gav gruppen deras första direkta möte med de **uråldriga civilisationerna** som en gång härskade i Mundana. Ödlefolkets teknologi för att skapa golems var långt överlägsen allt de sett tidigare.\n\n**Priset var högt:** Zentri förlorade sitt vänstra öga och sin mantel - skador som skulle följa honom resten av kampanjen.\n\n## KOPPLINGAR\n- **Händelser:** Vulkanutbrottet vid Tarkas, Zentris skada\n- **NPCs:** Zentri (förlorade vänstra ögat), Kazrik (hittade spakarna)\n- **Kapitel:** Kapitel 3 (Tarkas-äventyret)"
+      "namn": "Månljuset",
+      "typ": "Fartyg",
+      "region": "Vargnäset evakuering",
+      "beskrivning": "# MÅNLJUSET\n**Evakueringsfartyg drabbat av myteri**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Ursprunglig kapten:** Lars \"Silkeskägg\" Nordahl (†)\n- **Nuvarande befälhavare:** Gordon Nahrzezia\n- **Besättning:** Sten Knotbindare + andra\n- **Passagerare:** 11 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nMånljuset var det tredje och mest dramatiska av evakueringsfartygen från Vargnäset. Ursprungligen under befäl av kapten Lars \"Silkeskägg\" Nordahl, drabbades fartyget av ett tragiskt myteri där både kaptenen och Tant Hildur dog. Gordon Nahrzezia tvingades ta över befälet.\n\n## URSPRUNGLIG KAPTEN\n\n### Lars \"Silkeskägg\" Nordahl (†)\nDen ursprungliga kaptenen på Månljuset, känd för sitt välansade skägg som gav honom smeknamnet \"Silkeskägg\". Han dog under mute\n\nriet ombord på fartyget.\n\n## NUVARANDE BEFÄLHAVARE\n\n### Gordon Nahrzezia\nGordon, en av gruppens medlemmar (cirefalisk legosoldat spelad av Calle), tvingades ta över befälet på Månljuset efter att kapten Lars dödades i myteriet. Detta var en kritisk situation där Gordons ledarskapsförmåga sattes på prov.\n\n## BESÄTTNING\n\n### Sten Knotbindare\nEn pålitlig besättningsmedlem som blev kvar och hjälpte Gordon att styra fartyget efter myteriet.\n\n## TRAGISKA HÄNDELSER\n\n### Muteriet\nUnder evakueringen bröt ett myteri ut ombord på Månljuset. Det exakta förloppet är oklart, men både kapten Lars \"Silkeskägg\" Nordahl och Tant Hildur dog under händelserna.\n\n### Tant Hildur (†)\nEn av passagerarna som dog under myteriet. Hennes död var en av de tragiska förlusterna under evakueringen.\n\n### Gordons Övertagande\nI krisens mitt tvingades Gordon ta över befälet på fartyget och säkerställa att de återstående 11 flyktingarna kom till säkerhet.\n\n## EVAKUERINGEN\n\n### Passagerare\nTrots myteriet lyckades Månljuset transportera 11 flyktingar från Vargnäset till säkerhet.\n\n## BETYDELSE FÖR KAMPANJEN\nMånljuset representerar en av kampanjens mörkaste stunder - evakueringen som skulle rädda liv drabbades av internt våld och förlust. Gordons förmåga att ta kommando i krisen visade hans ledarskap, men priset var högt med två dödsoffer.\n\nDetta var också den tredje evakueringsbåten, och tillsammans med Rimfrosten och Strömjungfrun räddades totalt 41 flyktingar från Vargnäset.\n\n## KOPPLINGAR\n- **Ursprunglig kapten:** Lars \"Silkeskägg\" Nordahl (†)\n- **Nuvarande befälhavare:** Gordon Nahrzezia\n- **Besättning:** Sten Knotbindare\n- **Passagerare:** 11 flyktingar från Vargnäset\n- **Dödsoffer:** Kapten Lars, Tant Hildur\n- **Relaterade fartyg:** Rimfrosten, Strömjungfrun\n- **Händelse:** Evakuering från Vargnäset, myteri\n- **Fas:** 7",
+      "kapitel": null,
+      "bild": null
     },
     {
-      "namn": "Ökendyrets Ro",
+      "namn": "Månskärets Gömställe",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# ÖKENDYRETS RO\n**Rustik ökentaverna**\n\n## GRUNDINFO\n- **Typ:** Rustik taverna\n- **Plats:** Utkanten av bostadsområdena, Jen, Muhad\n- **Ägare:** Fatima bint-Ali\n- **Tema:** Enkel och inbjudande\n\n## BESKRIVNING\nÖkendyrets Ro ligger i utkanten av bostadsområdena i Jen och har en enkel men inbjudande atmosfär. Väggarna är av grovt huggna stenar, och möblerna är robusta och slitstarka. Eldstaden sprakar och fyller rummet med värme, och doften av grillat kött ligger tung i luften.\n\n## ÄGARE\n**Fatima bint-Ali** är en barsk men rättvis kvinna med ett stort hjärta. Hon driver värdshuset med omsorg om sina gäster.\n\n## SPECIALITETER\n- **Grillade köttspett** - Välkryddade och perfekt grillad\n- **Hemlagad flatbröd** - Bakat färskt varje dag\n- **Starkt kryddat te** - En lokal specialitet\n\n## ATMOSFÄR\nFamiljär och gemytlig, ofta besökt av lokala arbetare och resande handelsmän. Ett ställe där man känner sig välkommen oavsett stånd.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde få en mer autentisk bild av vardagslivet i Jen och prata med vanligt folk snarare än eliten.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Fatima bint-Ali\n- **Fas:** 3"
+      "beskrivning": "# MÅNSKÄRETS GÖMSTÄLLE\n**Exklusivt och mystiskt**\n\n## GRUNDINFO\n- **Typ:** Exklusivt värdshus\n- **Plats:** Undangömd gränd i handelsdistriktet, Jen, Muhad\n- **Ägare:** Zara al-Min\n- **Tema:** Mysterium och diskretion\n\n## BESKRIVNING\nMånskärets Gömställe är ett exklusivt och mystiskt värdshus beläget i en undangömd gränd i handelsdistriktet. Värdshuset är inrett med mörka träslag, exotiska textilier och dimmad belysning som ger en intim atmosfär. Här bor många av stadens äventyrare och mystiker.\n\n### Särskilda Rum\n- **Bar/Lounge:** Bekvämt rum med mjuka soffor, mörka väggar och dimmad belysning\n- **Bibliotek:** Litet rum fyllt med böcker, pergament och kartor\n- **Undangömd Innergård:** En liten, avskild innergård för privata stunder\n\n## ÄGARE\n\n### Zara al-Min\nEn gåtfull kvinna i fyrtioårsåldern med långt, svart hår och intensiv blick. Hon klär sig i mörka, flödande kläder och bär smycken med mystiska symboler. Zara har studerat magi och ockultism och har många hemliga kontakter. Hon är känd för sin diskretion och förmåga att ordna saker bakom kulisserna.\n\n## PERSONAL\n\n### Rashid ibn-Farouk (Receptionist och Bartender)\nEn ung man med charmerande leende och vänligt uppträdande. Han känner till många av stadens hemligheter.\n\n### Amina bint-Salim (Städare)\nEn tystlåten kvinna i trettioårsåldern, diskret och lojal mot Zara. Ser till att värdshuset alltid är i perfekt skick.\n\n### Hassan al-Rashid (Kökshjälp och Underhållsman)\nEn kraftig man i fyrtioårsåldern med bred kunskap om både matlagning och reparationer.\n\n### Laila bint-Ali (Serveringspersonal)\nEn ung kvinna med sprudlande humör som drömmer om att öppna sitt eget värdshus.\n\n## RUM & FACILITETER\n- **Enkelrum:** 3 små men bekväma rum\n- **Dubbelrum:** 4 rymligare rum\n- **Svit:** 1 lyxigt rum med sittgrupp\n- **Bar/Lounge:** För drinkar och socialt umgänge\n- **Bibliotek:** För studier och läsning\n- **Gemensamma badrum:** Välskötta med lyxiga badprodukter\n- **Undangömd innergård:** För privat avkoppling\n\n## BETYDELSE FÖR KAMPANJEN\nMånskärets Gömställe var perfekt för gruppen om de sökte diskretion under sin vistelse i Jen. Zaras kontakter kunde ge tillgång till hemlig information och mystiska tjänster.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Zara al-Min\n- **Personal:** Rashid ibn-Farouk, Amina bint-Salim, Hassan al-Rashid, Laila bint-Ali\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Raunfloden",
       "typ": "Flod",
       "region": "Asharien/Soldarn",
-      "beskrivning": "# RAUNFLODEN\n**Stor flod genom Asharien**\n\n## GRUNDINFO\n- **Typ:** Stor flod\n- **Karaktär:** Slingrande, viktig handelsled\n- **Betydelse:** Transportled och naturlig gräns\n- **Städer vid floden:** Jarla, Lundnäs\n\n## HISTORIA\nRaunfloden är en viktig flod som rollpersonerna passerat flera gånger under sina resor. Flera viktiga städer och händelser är kopplade till floden.\n\n## VIKTIGA PLATSER VID RAUNFLODEN\n- **Jarla:** Fristad vid Raunflodens södra strand\n- **Lundnäs:** Skogsby där Regnsynd-händelserna utspelades\n\n## HÄNDELSER\n**Scenario 4 (Resan Hem):** Rollpersonerna hade äventyr vid Raunfloden, mötte NPCs som Nilmar, Ylva, och Flodsköldpaddan.\n\n## KOPPLINGAR\n- **Relaterade platser:** Jarla, Lundnäs\n- **NPCs:** Många NPCs från städerna vid floden"
+      "beskrivning": "# RAUNFLODEN\n**Stor flod genom Asharien**\n\n## GRUNDINFO\n- **Typ:** Stor flod\n- **Karaktär:** Slingrande, viktig handelsled\n- **Betydelse:** Transportled och naturlig gräns\n- **Städer vid floden:** Jarla, Lundnäs\n\n## HISTORIA\nRaunfloden är en viktig flod som rollpersonerna passerat flera gånger under sina resor. Flera viktiga städer och händelser är kopplade till floden.\n\n## VIKTIGA PLATSER VID RAUNFLODEN\n- **Jarla:** Fristad vid Raunflodens södra strand\n- **Lundnäs:** Skogsby där Regnsynd-händelserna utspelades\n\n## HÄNDELSER\n**Scenario 4 (Resan Hem):** Rollpersonerna hade äventyr vid Raunfloden, mötte NPCs som Nilmar, Ylva, och Flodsköldpaddan.\n\n## KOPPLINGAR\n- **Relaterade platser:** Jarla, Lundnäs\n- **NPCs:** Många NPCs från städerna vid floden",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Rimfrosten",
       "typ": "Fartyg",
       "region": "Vargnäset evakuering",
-      "beskrivning": "# RIMFROSTEN\n**Evakueringsfartyg från Vargnäset**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Kapten:** Nils \"Järnhand\" Gromsson\n- **Besättning:** Kapten + 2 besättningsmedlemmar\n- **Passagerare:** 19 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nRimfrosten var ett av de tre fartyg som användes för evakueringen av 41 flyktingar från Vargnäset efter de katastrofala händelserna där. Fartyget leddes av den pålitlige kaptenen Nils \"Järnhand\" Gromsson.\n\n## KAPTEN & BESÄTTNING\n\n### Nils \"Järnhand\" Gromsson\nEn erfaren kapten känd för sin fasta hand och pålitlighet. Hans smeknamn \"Järnhand\" tyder på hans strikta men rättvisa ledarskap.\n\n### Besättning\n2 erfarna besättningsmedlemmar som assisterade kaptenen under den kritiska evakueringen.\n\n## EVAKUERINGEN FRÅN VARGNÄSET\n\n### Passagerare\nRimfrosten tog ombord 19 av de 41 flyktingar som behövde evakueras från Vargnäset efter Zentris försvinnande och de övernaturliga händelserna.\n\n### Destination\nFartyget transporterade flyktingarna till säkerhet, troligen till Grensfortet eller annan säker hamn.\n\n## BETYDELSE FÖR KAMPANJEN\nRimfrosten var en av tre båtar (tillsammans med Strömjungfrun och Månljuset) som räddade livet på 41 människor från Vargnäset. Evakueringen var en viktig humanitär insats efter de tragiska händelserna i Fas 7.\n\n## KOPPLINGAR\n- **Kapten:** Nils \"Järnhand\" Gromsson\n- **Passagerare:** 19 flyktingar från Vargnäset\n- **Relaterade fartyg:** Strömjungfrun, Månljuset\n- **Händelse:** Evakuering från Vargnäset\n- **Fas:** 7"
+      "beskrivning": "# RIMFROSTEN\n**Evakueringsfartyg från Vargnäset**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Kapten:** Nils \"Järnhand\" Gromsson\n- **Besättning:** Kapten + 2 besättningsmedlemmar\n- **Passagerare:** 19 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nRimfrosten var ett av de tre fartyg som användes för evakueringen av 41 flyktingar från Vargnäset efter de katastrofala händelserna där. Fartyget leddes av den pålitlige kaptenen Nils \"Järnhand\" Gromsson.\n\n## KAPTEN & BESÄTTNING\n\n### Nils \"Järnhand\" Gromsson\nEn erfaren kapten känd för sin fasta hand och pålitlighet. Hans smeknamn \"Järnhand\" tyder på hans strikta men rättvisa ledarskap.\n\n### Besättning\n2 erfarna besättningsmedlemmar som assisterade kaptenen under den kritiska evakueringen.\n\n## EVAKUERINGEN FRÅN VARGNÄSET\n\n### Passagerare\nRimfrosten tog ombord 19 av de 41 flyktingar som behövde evakueras från Vargnäset efter Zentris försvinnande och de övernaturliga händelserna.\n\n### Destination\nFartyget transporterade flyktingarna till säkerhet, troligen till Grensfortet eller annan säker hamn.\n\n## BETYDELSE FÖR KAMPANJEN\nRimfrosten var en av tre båtar (tillsammans med Strömjungfrun och Månljuset) som räddade livet på 41 människor från Vargnäset. Evakueringen var en viktig humanitär insats efter de tragiska händelserna i Fas 7.\n\n## KOPPLINGAR\n- **Kapten:** Nils \"Järnhand\" Gromsson\n- **Passagerare:** 19 flyktingar från Vargnäset\n- **Relaterade fartyg:** Strömjungfrun, Månljuset\n- **Händelse:** Evakuering från Vargnäset\n- **Fas:** 7",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Rödskäggs Tillflykt",
       "typ": "Dolt handelsläger",
       "region": "Cermira",
+      "beskrivning": "Gömd vik vid inflöde till Raunfloden, 25 km norr om Vargnäset.\n\n**Karaktär:** Temporärt läger för smugglare och korrupta köpmän.\n\n**Befolkning:** 15-20 personer vintertid.\n\n**Lägerchefen:** Gunvald 'Rödskägg' Korshamn - fd. legitim köpman utpressad av korrupta tjänstemän.\n\n**Betydelse:** Mötesplats för att boka pråmar under evakueringen från Vargnäset.",
       "kapitel": "Kapitel 8",
-      "bild": null,
-      "beskrivning": "Gömd vik vid inflöde till Raunfloden, 25 km norr om Vargnäset.\n\n**Karaktär:** Temporärt läger för smugglare och korrupta köpmän.\n\n**Befolkning:** 15-20 personer vintertid.\n\n**Lägerchefen:** Gunvald 'Rödskägg' Korshamn - fd. legitim köpman utpressad av korrupta tjänstemän.\n\n**Betydelse:** Mötesplats för att boka pråmar under evakueringen från Vargnäset."
+      "bild": null
     },
     {
       "namn": "Sanari-alvernas Rike",
       "typ": "Alvisk region",
       "region": "Okänd (mystisk)",
-      "beskrivning": "# SANARI-ALVERNAS RIKE\n**De mystiska alvernas hemland**\n\n## GRUNDINFO\n- **Typ:** Alviskt rike\n- **Härskare:** Sanari-alvernas ledare (okänd)\n- **Relation:** Serafina Eldstav reste hit på eget initiativ med artefakter\n- **Status:** Inte besökt av gruppen\n\n## HISTORIA\nSanari-alverna kände av störningen från Tirakgraven men visste inte vad som hänt. Ibran/Tamron stal föremålen från graven, men de återtogs vid Grensfortet. Serafina tog sedan hand om föremålen och reste hit på eget initiativ i hopp om att köpa tillbaka sin plats efter 10 års förvisning.\n\n## BETYDELSE\n- Sanari-alverna har möjligen de artefakter som höll demonen Urkhath fången\n- Deras motiv och planer är okända\n- Serafina agerade på eget initiativ, inte som deras agent\n\n## MYSTERIER\n- Var ligger riket?\n- Vad vill Sanari-alverna med artefakterna?\n- Vilken roll spelar de i kampanjen?\n\n## KOPPLINGAR\n- **NPCs:** Serafina Eldstav, Sanari-alverna (omnämnda)\n- **Artefakter:** Bindningsföremål från Tirakgraven\n- **Hot:** Demonen Urkhath"
+      "beskrivning": "# SANARI-ALVERNAS RIKE\n**De mystiska alvernas hemland**\n\n## GRUNDINFO\n- **Typ:** Alviskt rike\n- **Härskare:** Sanari-alvernas ledare (okänd)\n- **Relation:** Serafina Eldstav reste hit på eget initiativ med artefakter\n- **Status:** Inte besökt av gruppen\n\n## HISTORIA\nSanari-alverna kände av störningen från Tirakgraven men visste inte vad som hänt. Ibran/Tamron stal föremålen från graven, men de återtogs vid Grensfortet. Serafina tog sedan hand om föremålen och reste hit på eget initiativ i hopp om att köpa tillbaka sin plats efter 10 års förvisning.\n\n## BETYDELSE\n- Sanari-alverna har möjligen de artefakter som höll demonen Urkhath fången\n- Deras motiv och planer är okända\n- Serafina agerade på eget initiativ, inte som deras agent\n\n## MYSTERIER\n- Var ligger riket?\n- Vad vill Sanari-alverna med artefakterna?\n- Vilken roll spelar de i kampanjen?\n\n## KOPPLINGAR\n- **NPCs:** Serafina Eldstav, Sanari-alverna (omnämnda)\n- **Artefakter:** Bindningsföremål från Tirakgraven\n- **Hot:** Demonen Urkhath",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Sandens Sång",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# SANDENS SÅNG\n**Traditionell ökenoas**\n\n## GRUNDINFO\n- **Typ:** Traditionell ökentaverna\n- **Plats:** Jen, Muhad\n- **Ägare:** Amina bint-Khalid\n- **Tema:** Autentisk ökenoas\n\n## BESKRIVNING\nSandens Sång är en traditionell ökentaverna som är inredd som en oas med palmträd, fontäner och mjuka mattor. Gästerna sitter på kuddar runt låga bord och njuter av den avkopplande atmosfären.\n\n## ÄGARE\n**Amina bint-Khalid** är en varm och välkomnande kvinna som älskar att berätta historier om öknen och dess legender.\n\n## SPECIALITETER\n- **Falafel** - Krispiga och välkryddade\n- **Hummus** - Krämig och smakfull\n- **Kamelmjölk** - Traditionell ökendr yck\n- **Dadelvin** - Söt och läskande\n\n## ATMOSFÄR\nAvslappnad och inbjudande, ofta fylld med musik och dans. Ett ställe där man kan uppleva äkta ökenkult ur.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde njuta av autentisk ökenkultur, höra traditionella berättelser och kanske lära sig om öknens hemligheter.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Amina bint-Khalid\n- **Fas:** 3"
+      "beskrivning": "# SANDENS SÅNG\n**Traditionell ökenoas**\n\n## GRUNDINFO\n- **Typ:** Traditionell ökentaverna\n- **Plats:** Jen, Muhad\n- **Ägare:** Amina bint-Khalid\n- **Tema:** Autentisk ökenoas\n\n## BESKRIVNING\nSandens Sång är en traditionell ökentaverna som är inredd som en oas med palmträd, fontäner och mjuka mattor. Gästerna sitter på kuddar runt låga bord och njuter av den avkopplande atmosfären.\n\n## ÄGARE\n**Amina bint-Khalid** är en varm och välkomnande kvinna som älskar att berätta historier om öknen och dess legender.\n\n## SPECIALITETER\n- **Falafel** - Krispiga och välkryddade\n- **Hummus** - Krämig och smakfull\n- **Kamelmjölk** - Traditionell ökendr yck\n- **Dadelvin** - Söt och läskande\n\n## ATMOSFÄR\nAvslappnad och inbjudande, ofta fylld med musik och dans. Ett ställe där man kan uppleva äkta ökenkult ur.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde njuta av autentisk ökenkultur, höra traditionella berättelser och kanske lära sig om öknens hemligheter.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Amina bint-Khalid\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Sanningens Ljus",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# SANNINGENS LJUS\n**Ljust och luftigt**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Nära marknadsplatsen, Jen, Muhad\n- **Ägare:** Nadir\n- **Tema:** Ljus och kunskap\n\n## BESKRIVNING\nSanningens Ljus är ett värdshus som ligger nära stadens marknadsplats. Det är känt för sin ljusa och luftiga interiör med stora fönster som släpper in mycket dagsljus. Värdshuset är populärt bland köpmän och lärda som besöker Jen.\n\n## ÄGARE\n\n### Nadir\nEn pensionerad lärd man som älskar att dela med sig av sina historier och kunskaper. Hans passion för lärdom och sanning genomsyrar hela etablissemanget.\n\n## ATMOSFÄR\nEtt ställe för intellektuella samtal, diskussioner om filosofi och vetenskap. Dagsljuset och den öppna atmosfären skapar en känsla av ärlighet och transparens.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde möta lärda män och kvinnor, diskutera historiska händelser och kanske få värdefull kunskap om regionen och dess mysterier.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Nadir\n- **Fas:** 3"
+      "beskrivning": "# SANNINGENS LJUS\n**Ljust och luftigt**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Nära marknadsplatsen, Jen, Muhad\n- **Ägare:** Nadir\n- **Tema:** Ljus och kunskap\n\n## BESKRIVNING\nSanningens Ljus är ett värdshus som ligger nära stadens marknadsplats. Det är känt för sin ljusa och luftiga interiör med stora fönster som släpper in mycket dagsljus. Värdshuset är populärt bland köpmän och lärda som besöker Jen.\n\n## ÄGARE\n\n### Nadir\nEn pensionerad lärd man som älskar att dela med sig av sina historier och kunskaper. Hans passion för lärdom och sanning genomsyrar hela etablissemanget.\n\n## ATMOSFÄR\nEtt ställe för intellektuella samtal, diskussioner om filosofi och vetenskap. Dagsljuset och den öppna atmosfären skapar en känsla av ärlighet och transparens.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde möta lärda män och kvinnor, diskutera historiska händelser och kanske få värdefull kunskap om regionen och dess mysterier.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Nadir\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Silverskum",
       "typ": "Fartyg",
       "region": "Raunfloden/Drunok",
-      "beskrivning": "# SILVERSKUM\n**Fartyg på Raunfloden**\n\n## GRUNDINFO\n- **Typ:** Flodbåt\n- **Region:** Raunfloden/Drunok\n- **Första omnämnande:** Fas 5\n\n## BESKRIVNING\nSilverskum är ett fartyg som omnämnts i samband med färder på Raunfloden. Detaljerad information om fartygets kapten, besättning och specifika roll i kampanjen är begränsad.\n\n## BETYDELSE FÖR KAMPANJEN\nSilverskum verkar ha varit ett av de fartyg som trafikerade Raunfloden under kampanjens händelser, möjligen en del av det större nätverket av handels- och passagerarfartyg i regionen.\n\n## KOPPLINGAR\n- **Region:** Raunfloden\n- **Fas:** 5 (cirka)\n- **Relaterade fartyg:** Frostnymf, Spegelmåne, Månljuset, Rimfrosten, Strömjungfrun"
+      "beskrivning": "# SILVERSKUM\n**Fartyg på Raunfloden**\n\n## GRUNDINFO\n- **Typ:** Flodbåt\n- **Region:** Raunfloden/Drunok\n- **Första omnämnande:** Fas 5\n\n## BESKRIVNING\nSilverskum är ett fartyg som omnämnts i samband med färder på Raunfloden. Detaljerad information om fartygets kapten, besättning och specifika roll i kampanjen är begränsad.\n\n## BETYDELSE FÖR KAMPANJEN\nSilverskum verkar ha varit ett av de fartyg som trafikerade Raunfloden under kampanjens händelser, möjligen en del av det större nätverket av handels- och passagerarfartyg i regionen.\n\n## KOPPLINGAR\n- **Region:** Raunfloden\n- **Fas:** 5 (cirka)\n- **Relaterade fartyg:** Frostnymf, Spegelmåne, Månljuset, Rimfrosten, Strömjungfrun",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Skugglandet",
       "typ": "Andeplan/Parallell dimension",
       "region": "Utanför Mundana",
-      "beskrivning": "# SKUGGLANDET\n**Andeplan där Zentri hålls fången**\n\n## GRUNDINFO\n- **Typ:** Andeplan/Parallell dimension\n- **Härskare:** Lord Vinterglöd (nuvarande antagonist)\n- **Karaktär:** Mörk, kall, farlig dimension\n- **Tillträde:** Via portal bevakad av Älvakungen Yelgotha\n- **Betydelse:** Zentris fängelse, kampanjens nuvarande fokus\n\n## HISTORIA\nSkugglandet är den parallella dimension där Zentri Bredarsson hålls fångad. Rollpersonerna har tagit sig in i Skugglandet i Fas 11 för att rädda honom.\n\n## VIKTIGA HÄNDELSER\n**Fas 11: Skugglandet**\n- Rollpersonerna tog sig in via Älvakungen Yelgothas portal\n- Mötte Lord Vinterglöd och hans styrkor\n- Pågående konflikt för att rädda Zentri\n\n## VIKTIGA PLATSER I SKUGGLANDET\n- **Älvakungens sal:** Portal och mötesplats\n- **Åderbjörkslunden:** Viktig plats i Skugglandet\n- **Lord Vinterglöds domäner:** Fiendens territorium\n\n## VIKTIGA NPCS\n- **Lord Vinterglöd:** Nuvarande antagonist\n- **Älvakungen Yelgotha:** Portalväktare\n- **Vitfläck:** Talande snökatt, Kuberons budbärare (mötte rollpersonerna här)\n\n## KOPPLINGAR\n- **Relaterade platser:** Mithera (ingång), Älvakungens sal, Åderbjörkslunden\n- **Relaterade NPCs:** Zentri (fångad här), Lord Vinterglöd, Älvakungen Yelgotha"
+      "beskrivning": "# SKUGGLANDET\n**Andeplan där Zentri hålls fången**\n\n## GRUNDINFO\n- **Typ:** Andeplan/Parallell dimension\n- **Härskare:** Lord Vinterglöd (nuvarande antagonist)\n- **Karaktär:** Mörk, kall, farlig dimension\n- **Tillträde:** Via portal bevakad av Älvakungen Yelgotha\n- **Betydelse:** Zentris fängelse, kampanjens nuvarande fokus\n\n## HISTORIA\nSkugglandet är den parallella dimension där Zentri Bredarsson hålls fångad. Rollpersonerna har tagit sig in i Skugglandet i Fas 11 för att rädda honom.\n\n## VIKTIGA HÄNDELSER\n**Fas 11: Skugglandet**\n- Rollpersonerna tog sig in via Älvakungen Yelgothas portal\n- Mötte Lord Vinterglöd och hans styrkor\n- Pågående konflikt för att rädda Zentri\n\n## VIKTIGA PLATSER I SKUGGLANDET\n- **Älvakungens sal:** Portal och mötesplats\n- **Åderbjörkslunden:** Viktig plats i Skugglandet\n- **Lord Vinterglöds domäner:** Fiendens territorium\n\n## VIKTIGA NPCS\n- **Lord Vinterglöd:** Nuvarande antagonist\n- **Älvakungen Yelgotha:** Portalväktare\n- **Vitfläck:** Talande snökatt, Kuberons budbärare (mötte rollpersonerna här)\n\n## KOPPLINGAR\n- **Relaterade platser:** Mithera (ingång), Älvakungens sal, Åderbjörkslunden\n- **Relaterade NPCs:** Zentri (fångad här), Lord Vinterglöd, Älvakungen Yelgotha",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Skuggornas Viloplats",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# SKUGGORNAS VILOPLATS\n**Mörk och mystisk**\n\n## GRUNDINFO\n- **Typ:** Skum taverna\n- **Plats:** Stadens skuggiga kvarter, Jen, Muhad\n- **Ägare:** Nocturne\n- **Tema:** Hemlighet och mysterium\n\n## BESKRIVNING\nSkuggornas Viloplats ligger i stadens skuggiga kvarter och är känd för sin dämpade belysning och mystiska atmosfär. Interiören är dekorerad med mörka träslag och röda sammetstyger, och svaga ljus skapar en hemlighetsfull stämning.\n\n## ÄGARE\n**Nocturne** är en gåtfull figur som sällan visar sitt ansikte. Få vet vem som verkligen driver etablissemanget.\n\n## SPECIALITETER\n- **Mörka ales** - Starka och bittra\n- **Kryddiga rätter** - Med hemliga ingredienser\n- **Mystiska elixirer** - Med okända effekter\n\n## ATMOSFÄR\nDämpad och hemlighetsfull, idealisk för hemliga möten och skumma affärer. De som besöker denna plats söker diskretion.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde möta informanter från undre världen, smugglare och andra som opererar i skuggorna. Möjligen kopplat till Malik Al-Zahirs nätverk.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Nocturne\n- **Fas:** 3"
+      "beskrivning": "# SKUGGORNAS VILOPLATS\n**Mörk och mystisk**\n\n## GRUNDINFO\n- **Typ:** Skum taverna\n- **Plats:** Stadens skuggiga kvarter, Jen, Muhad\n- **Ägare:** Nocturne\n- **Tema:** Hemlighet och mysterium\n\n## BESKRIVNING\nSkuggornas Viloplats ligger i stadens skuggiga kvarter och är känd för sin dämpade belysning och mystiska atmosfär. Interiören är dekorerad med mörka träslag och röda sammetstyger, och svaga ljus skapar en hemlighetsfull stämning.\n\n## ÄGARE\n**Nocturne** är en gåtfull figur som sällan visar sitt ansikte. Få vet vem som verkligen driver etablissemanget.\n\n## SPECIALITETER\n- **Mörka ales** - Starka och bittra\n- **Kryddiga rätter** - Med hemliga ingredienser\n- **Mystiska elixirer** - Med okända effekter\n\n## ATMOSFÄR\nDämpad och hemlighetsfull, idealisk för hemliga möten och skumma affärer. De som besöker denna plats söker diskretion.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde möta informanter från undre världen, smugglare och andra som opererar i skuggorna. Möjligen kopplat till Malik Al-Zahirs nätverk.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Nocturne\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Soldarn",
       "typ": "Region",
       "region": "Östra Mundana",
-      "beskrivning": "# SOLDARN\n**Region vid Asharien**\n\n## GRUNDINFO\n- **Typ:** Region\n- **Läge:** Östra Mundana\n- **Grannregioner:** Asharien\n\n## HISTORIA\nSoldarn är en region i östra Mundana, nära Asharien. Regionen har nämnts i samband med kampanjens geografiska kontext.\n\n## KOPPLINGAR\n- **Relaterade platser:** Asharien, Raunfloden"
+      "beskrivning": "# SOLDARN\n**Region vid Asharien**\n\n## GRUNDINFO\n- **Typ:** Region\n- **Läge:** Östra Mundana\n- **Grannregioner:** Asharien\n\n## HISTORIA\nSoldarn är en region i östra Mundana, nära Asharien. Regionen har nämnts i samband med kampanjens geografiska kontext.\n\n## KOPPLINGAR\n- **Relaterade platser:** Asharien, Raunfloden",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Spegelmåne",
       "typ": "Fartyg",
       "region": "Havet",
+      "beskrivning": "Ombyggd vågridare för last + passagerare.\n\n**Kapten:** Jeorg Rask (asharier, fd. marinkåristakademi-lärare)\n\n**Rykte:** Billigt vrakliknande skepp upprustat med stor händighet. Aldrig fallit i piraternas händer trots många angrepp under Korsarkriget.\n\n**Besättning:** Malvono Järvik (styrman), Brigga Kyllo (Jeorgs högra hand), Dask Ymer (timmerman), Yvan Krell, Rikke Lorm, Jorn Halgon (sjömän).\n\n**Specialitet:** Kapten Rask väljer fd. soldater som vakter, expert på att försvara last och besättning.",
       "kapitel": "Kapitel 3",
-      "bild": null,
-      "beskrivning": "Ombyggd vågridare för last + passagerare.\n\n**Kapten:** Jeorg Rask (asharier, fd. marinkåristakademi-lärare)\n\n**Rykte:** Billigt vrakliknande skepp upprustat med stor händighet. Aldrig fallit i piraternas händer trots många angrepp under Korsarkriget.\n\n**Besättning:** Malvono Järvik (styrman), Brigga Kyllo (Jeorgs högra hand), Dask Ymer (timmerman), Yvan Krell, Rikke Lorm, Jorn Halgon (sjömän).\n\n**Specialitet:** Kapten Rask väljer fd. soldater som vakter, expert på att försvara last och besättning."
+      "bild": null
     },
     {
       "namn": "Spegelvända Fortet",
       "typ": "Domän i Skugglandet",
       "region": "Skugglandet",
-      "beskrivning": "# SPEGELVÄNDA FORTET\n**Lord Vinterglöds domän**\n\n## GRUNDINFO\n- **Typ:** Förvrängd version av Grensfortet\n- **Härskare:** Lord Vinterglöd (halvblod människa/skuggvarelse)\n- **Läge:** Skugglandet\n- **Betydelse:** Zentri hålls här fången\n\n## BESKRIVNING\nEn spegelvänd och förvrängd version av Grensfortet i Skugglandet. Perspektiv och geometri fungerar inte som i den vanliga världen.\n\n## LORD VINTERGLÖD\n**Tidigare:** Människa  \n**Tragedi:** Hans syster dog i De Varma Källorna  \n**Koppling:** Var Älvafurst Yelgothas page för länge sedan\n\n## NUVARANDE SITUATION\nGruppen söker Vinterglöds domän för att rädda Zentris tre delar:\n- **Kroppen** vinns genom styrka\n- **Själen** vinns genom list\n- **Minnet** vinns genom offer\n\n## ÄLVAFURSTENS RÅD\nFurst Yelgotha sa: *\"När ni möter Vinterglöd, säg att Yelgotha sände er. Han var min page en gång.\"*\n\n## KOPPLINGAR\n- **Relaterade NPCs:** Lord Vinterglöd, Zentri Bredarsson, Demonen Urkhath\n- **Relaterade platser:** Skugglandet, Grensfortet, Älvakungen Sal"
+      "beskrivning": "# SPEGELVÄNDA FORTET\n**Lord Vinterglöds domän**\n\n## GRUNDINFO\n- **Typ:** Förvrängd version av Grensfortet\n- **Härskare:** Lord Vinterglöd (halvblod människa/skuggvarelse)\n- **Läge:** Skugglandet\n- **Betydelse:** Zentri hålls här fången\n\n## BESKRIVNING\nEn spegelvänd och förvrängd version av Grensfortet i Skugglandet. Perspektiv och geometri fungerar inte som i den vanliga världen.\n\n## LORD VINTERGLÖD\n**Tidigare:** Människa  \n**Tragedi:** Hans syster dog i De Varma Källorna  \n**Koppling:** Var Älvafurst Yelgothas page för länge sedan\n\n## NUVARANDE SITUATION\nGruppen söker Vinterglöds domän för att rädda Zentris tre delar:\n- **Kroppen** vinns genom styrka\n- **Själen** vinns genom list\n- **Minnet** vinns genom offer\n\n## ÄLVAFURSTENS RÅD\nFurst Yelgotha sa: *\"När ni möter Vinterglöd, säg att Yelgotha sände er. Han var min page en gång.\"*\n\n## KOPPLINGAR\n- **Relaterade NPCs:** Lord Vinterglöd, Zentri Bredarsson, Demonen Urkhath\n- **Relaterade platser:** Skugglandet, Grensfortet, Älvakungen Sal",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Strömjungfrun",
       "typ": "Fartyg",
       "region": "Vargnäset evakuering",
-      "beskrivning": "# STRÖMJUNGFRUN\n**Evakueringsfartyg från Vargnäset**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Kapten:** Berta \"Flodkvinna\" Eriksdotter\n- **Besättning:** Kapten + Inga Bredaxel\n- **Passagerare:** 12 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nStrömjungfrun var det andra av tre fartyg som användes för evakueringen från Vargnäset. Fartyget leddes av den kunniga kaptenen Berta \"Flodkvinna\" Eriksdotter.\n\n## KAPTEN & BESÄTTNING\n\n### Berta \"Flodkvinna\" Eriksdotter\nEn erfaren kvinnlig kapten med djup kunskap om flodernas rörelser och strömmar. Hennes smeknamn \"Flodkvinna\" speglar hennes exceptionella skicklighet i att navigera på älvar och floder.\n\n### Inga Bredaxel\nEn pålitlig besättningsmedlem som assisterade Berta under evakueringen. Hennes efternamn antyder en stark och kapabel person.\n\n## EVAKUERINGEN FRÅN VARGNÄSET\n\n### Passagerare\nStrömjungfrun tog ombord 12 av de 41 flyktingar som evakuerades från Vargnäset efter de katastrofala händelserna.\n\n### Destination\nFartyget transporterade flyktingarna till säkerhet, troligen till Grensfortet eller annan säker hamn.\n\n## BETYDELSE FÖR KAMPANJEN\nStrömjungfrun var en del av den livräddande evakueringsoperationen från Vargnäset i Fas 7. Tillsammans med Rimfrosten och Månljuset räddades 41 människor från farozonen.\n\n## KOPPLINGAR\n- **Kapten:** Berta \"Flodkvinna\" Eriksdotter\n- **Besättning:** Inga Bredaxel\n- **Passagerare:** 12 flyktingar från Vargnäset\n- **Relaterade fartyg:** Rimfrosten, Månljuset\n- **Händelse:** Evakuering från Vargnäset\n- **Fas:** 7"
+      "beskrivning": "# STRÖMJUNGFRUN\n**Evakueringsfartyg från Vargnäset**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Kapten:** Berta \"Flodkvinna\" Eriksdotter\n- **Besättning:** Kapten + Inga Bredaxel\n- **Passagerare:** 12 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nStrömjungfrun var det andra av tre fartyg som användes för evakueringen från Vargnäset. Fartyget leddes av den kunniga kaptenen Berta \"Flodkvinna\" Eriksdotter.\n\n## KAPTEN & BESÄTTNING\n\n### Berta \"Flodkvinna\" Eriksdotter\nEn erfaren kvinnlig kapten med djup kunskap om flodernas rörelser och strömmar. Hennes smeknamn \"Flodkvinna\" speglar hennes exceptionella skicklighet i att navigera på älvar och floder.\n\n### Inga Bredaxel\nEn pålitlig besättningsmedlem som assisterade Berta under evakueringen. Hennes efternamn antyder en stark och kapabel person.\n\n## EVAKUERINGEN FRÅN VARGNÄSET\n\n### Passagerare\nStrömjungfrun tog ombord 12 av de 41 flyktingar som evakuerades från Vargnäset efter de katastrofala händelserna.\n\n### Destination\nFartyget transporterade flyktingarna till säkerhet, troligen till Grensfortet eller annan säker hamn.\n\n## BETYDELSE FÖR KAMPANJEN\nStrömjungfrun var en del av den livräddande evakueringsoperationen från Vargnäset i Fas 7. Tillsammans med Rimfrosten och Månljuset räddades 41 människor från farozonen.\n\n## KOPPLINGAR\n- **Kapten:** Berta \"Flodkvinna\" Eriksdotter\n- **Besättning:** Inga Bredaxel\n- **Passagerare:** 12 flyktingar från Vargnäset\n- **Relaterade fartyg:** Rimfrosten, Månljuset\n- **Händelse:** Evakuering från Vargnäset\n- **Fas:** 7",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Tarkas",
       "typ": "Dvärgruiner",
       "region": "Khazimbergen",
-      "beskrivning": "# TARKAS\n**Övergivna dvärgruiner med forntida faror**\n\n## GRUNDINFO\n- **Typ:** Övergivna dvärgruiner\n- **Region:** Khazimbergen\n- **Status:** Farlig, delvis utforskad\n- **Karaktär:** Forntida dvärgstad med magiska försvar och monster\n\n## HISTORIA\nTarkas var en gång en mäktig dvärgstad i Khazimbergen. När rollpersonerna besökte ruinerna i Fas 6 mötte de både forntida magiska försvar och farliga varelser.\n\n## VIKTIGA HÄNDELSER\n**Fas 6: Tarkas**\n- Rollpersonerna utforskade de övergivna dvärgiska ruinerna\n- Mötte forntida faror och magiska försvar\n- Upptäckte ledtrådar om kampanjens större mysterier\n\n## KOPPLINGAR\n- **Relaterade platser:** Khazimbergen (bergskedja)"
+      "beskrivning": "# TARKAS\n**Övergivna dvärgruiner med forntida faror**\n\n## GRUNDINFO\n- **Typ:** Övergivna dvärgruiner\n- **Region:** Khazimbergen\n- **Status:** Farlig, delvis utforskad\n- **Karaktär:** Forntida dvärgstad med magiska försvar och monster\n\n## HISTORIA\nTarkas var en gång en mäktig dvärgstad i Khazimbergen. När rollpersonerna besökte ruinerna i Fas 6 mötte de både forntida magiska försvar och farliga varelser.\n\n## VIKTIGA HÄNDELSER\n**Fas 6: Tarkas**\n- Rollpersonerna utforskade de övergivna dvärgiska ruinerna\n- Mötte forntida faror och magiska försvar\n- Upptäckte ledtrådar om kampanjens större mysterier\n\n## KOPPLINGAR\n- **Relaterade platser:** Khazimbergen (bergskedja)",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Tirakgraven",
       "typ": "Fornlämning/Grav",
       "region": "Gränstrakterna mellan Cermira och Mithera",
-      "beskrivning": "# TIRAKGRAVEN\n**Demonens fängelse och kampanjens start**\n\n## GRUNDINFO\n- **Typ:** Urgammal grav och fängelse\n- **Läge:** Gränstrakterna mellan Cermira och Mithera\n- **Status:** Demonen Urkhath har vaknat och flytt\n- **Betydelse:** Kampanjens startpunkt\n\n## HISTORIA\nTirakgraven var fängelset där demonen Urkhath hölls inspärrad i tusentals år. När rollpersonerna anlände till platsen i Fas 1 vaknade demonen och bröt sig fri.\n\n## VIKTIGA HÄNDELSER\n**Fas 1: Tirakgraven och Demonens Väckande**\n- Rollpersonerna skickades hit av Migor Trollkunnig\n- Demonen Urkhath vaknade och flydde\n- Stålsvärds Kavalerister förlorade flera medlemmar här:\n  - Daela Häxmästare (antimagispecialist)\n  - Gavric (tungt bepansrad krigare)\n  - Isolde Eldkonstnär (eldmagiker)\n  - Jaela Härlig (vanar-krigare)\n\n## KOPPLINGAR\n- **NPCs som dog här:** Daela, Gavric, Isolde, Jaela\n- **NPCs som överlevde:** Dorn Stenbärare, Kaelar Stålsvärd, Serafina\n- **Relaterade platser:** Grensfortet (närmaste befästning)"
+      "beskrivning": "# TIRAKGRAVEN\n**Demonens fängelse och kampanjens start**\n\n## GRUNDINFO\n- **Typ:** Urgammal grav och fängelse\n- **Läge:** Gränstrakterna mellan Cermira och Mithera\n- **Status:** Demonen Urkhath har vaknat och flytt\n- **Betydelse:** Kampanjens startpunkt\n\n## HISTORIA\nTirakgraven var fängelset där demonen Urkhath hölls inspärrad i tusentals år. När rollpersonerna anlände till platsen i Fas 1 vaknade demonen och bröt sig fri.\n\n## VIKTIGA HÄNDELSER\n**Fas 1: Tirakgraven och Demonens Väckande**\n- Rollpersonerna skickades hit av Migor Trollkunnig\n- Demonen Urkhath vaknade och flydde\n- Stålsvärds Kavalerister förlorade flera medlemmar här:\n  - Daela Häxmästare (antimagispecialist)\n  - Gavric (tungt bepansrad krigare)\n  - Isolde Eldkonstnär (eldmagiker)\n  - Jaela Härlig (vanar-krigare)\n\n## KOPPLINGAR\n- **NPCs som dog här:** Daela, Gavric, Isolde, Jaela\n- **NPCs som överlevde:** Dorn Stenbärare, Kaelar Stålsvärd, Serafina\n- **Relaterade platser:** Grensfortet (närmaste befästning)",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Tormunds Stuga",
       "typ": "Eremitbostad",
       "region": "Mithera-skogen (västra randen)",
-      "beskrivning": "# TORMUNDS STUGA\n**Den sista jägarstugan**\n\n## GRUNDINFO\n- **Typ:** Isolerad jägarstuga\n- **Läge:** Västra randen av Mithera-skogen\n- **Ägare:** Tormund Rimskägg (eremitjägare)\n- **Betydelse:** Första landmärket i Mithera\n\n## BESKRIVNING\nEn liten stuga som lutar sig mot en väldig gran, vars grenar bildat ett naturligt tak över torvtaket. Byggd av timmer så gammalt att det blivit nästan svart, täckt av is som får strukturen att glittra. Runt stugan hänger märkliga troféer: djurskallar, björnklor och en mystisk vinge.\n\n## TORMUND RIMSKÄGG\nEremitjägare som bott i skogen i 40 år. Varnade gruppen om Mitheras faror:\n- *\"Kartor ljuger - skogen byter plats på landmärken\"*\n- Sålde isspett för att upptäcka frusna vattendrag\n- Berättade om varma källor och silverfanfarer\n\n**Hemlighet:** Tormunds son försvann när kartorna ljög.\n\n## KOPPLINGAR\n- **NPCs:** Tormund Rimskägg\n- **Relaterade platser:** Mithera, De Varma Källorna"
+      "beskrivning": "# TORMUNDS STUGA\n**Den sista jägarstugan**\n\n## GRUNDINFO\n- **Typ:** Isolerad jägarstuga\n- **Läge:** Västra randen av Mithera-skogen\n- **Ägare:** Tormund Rimskägg (eremitjägare)\n- **Betydelse:** Första landmärket i Mithera\n\n## BESKRIVNING\nEn liten stuga som lutar sig mot en väldig gran, vars grenar bildat ett naturligt tak över torvtaket. Byggd av timmer så gammalt att det blivit nästan svart, täckt av is som får strukturen att glittra. Runt stugan hänger märkliga troféer: djurskallar, björnklor och en mystisk vinge.\n\n## TORMUND RIMSKÄGG\nEremitjägare som bott i skogen i 40 år. Varnade gruppen om Mitheras faror:\n- *\"Kartor ljuger - skogen byter plats på landmärken\"*\n- Sålde isspett för att upptäcka frusna vattendrag\n- Berättade om varma källor och silverfanfarer\n\n**Hemlighet:** Tormunds son försvann när kartorna ljög.\n\n## KOPPLINGAR\n- **NPCs:** Tormund Rimskägg\n- **Relaterade platser:** Mithera, De Varma Källorna",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Tredelningen",
       "typ": "Vägkorsning/Landmärke",
       "region": "Mithera-skogen",
-      "beskrivning": "# TREDELNINGEN\n**Det första stora valet i Mithera**\n\n## GRUNDINFO\n- **Typ:** Vägkorsning markerad av tre megaliter\n- **Läge:** Mithera-skogen\n- **Betydelse:** Avgörande vägval med olika konsekvenser\n\n## BESKRIVNING\nVid korsvägen mellan tre urgamla megaliter stod gruppen inför sitt första avgörande val i Mithera. Tre vägar ledde i olika riktningar, var och en med sina faror:\n\n## DE TRE VÄGARNA\n- **Vänster:** Mot Vixharzivas domän (drake-territorium)\n- **Mitten:** Kortaste vägen (istroll-marker)\n- **Höger:** Tålamodets stig (längre men okänd)\n\n## KOPPLINGAR\n- **Relaterade platser:** Mithera, De Varma Källorna\n- **Relaterad fas:** Fas 10 (Genom Mithera)"
+      "beskrivning": "# TREDELNINGEN\n**Det första stora valet i Mithera**\n\n## GRUNDINFO\n- **Typ:** Vägkorsning markerad av tre megaliter\n- **Läge:** Mithera-skogen\n- **Betydelse:** Avgörande vägval med olika konsekvenser\n\n## BESKRIVNING\nVid korsvägen mellan tre urgamla megaliter stod gruppen inför sitt första avgörande val i Mithera. Tre vägar ledde i olika riktningar, var och en med sina faror:\n\n## DE TRE VÄGARNA\n- **Vänster:** Mot Vixharzivas domän (drake-territorium)\n- **Mitten:** Kortaste vägen (istroll-marker)\n- **Höger:** Tålamodets stig (längre men okänd)\n\n## KOPPLINGAR\n- **Relaterade platser:** Mithera, De Varma Källorna\n- **Relaterad fas:** Fas 10 (Genom Mithera)",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Tuzan Rim",
       "typ": "Hamnstad",
       "region": "Kusten",
-      "beskrivning": "# TUZAN RIM\n**Hamnstad där rollpersonerna passerade**\n\n## GRUNDINFO\n- **Typ:** Hamnstad\n- **Karaktär:** Livlig kuststad med handel och sjöfart\n- **Betydelse:** Viktig transitpunkt för rollpersonerna\n\n## HISTORIA\nTuzan Rim är en hamnstad där rollpersonerna passerade under sina resor. Staden har en levande hamn och aktiv handel.\n\n## VIKTIGA NPCS\nRollpersonerna mötte flera lokala invånare:\n- Bartol, Berak, Dorian, Eloise, Isla, Lia, Merek, Rorik, Sylva, Tobin\n\n## KOPPLINGAR\n- **Relaterade områden:** Kusten, sjöfartsvägar"
+      "beskrivning": "# TUZAN RIM\n**Hamnstad där rollpersonerna passerade**\n\n## GRUNDINFO\n- **Typ:** Hamnstad\n- **Karaktär:** Livlig kuststad med handel och sjöfart\n- **Betydelse:** Viktig transitpunkt för rollpersonerna\n\n## HISTORIA\nTuzan Rim är en hamnstad där rollpersonerna passerade under sina resor. Staden har en levande hamn och aktiv handel.\n\n## VIKTIGA NPCS\nRollpersonerna mötte flera lokala invånare:\n- Bartol, Berak, Dorian, Eloise, Isla, Lia, Merek, Rorik, Sylva, Tobin\n\n## KOPPLINGAR\n- **Relaterade områden:** Kusten, sjöfartsvägar",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Tysta Källan",
       "typ": "Värdshus",
       "region": "Jen, Muhad",
-      "beskrivning": "# TYSTA KÄLLAN\n**Tyst och meditativ**\n\n## GRUNDINFO\n- **Typ:** Fridfull vinstuga\n- **Plats:** Nära stadens tempel, Jen, Muhad\n- **Ägare:** Laila bint-Farid\n- **Tema:** Meditation och ro\n\n## BESKRIVNING\nTysta Källan är en lugn och fridfull vinstuga belägen nära stadens tempel. Här är interiören enkel men elegant, med lugnande färger och mjuka kuddar. En liten inomhusfontän ger en stilla bakgrundsmusik av rinnande vatten.\n\n## ÄGARE\n**Laila bint-Farid** är en vänlig och andlig kvinna med en lugnande närvaro som skapar en atmosfär av frid.\n\n## SPECIALITETER\n- **Vegetariska rätter** - Näringsrika och smakfulla\n- **Lokala viner** - Noggrant utvalda\n- **Örtteer** - Med läkande egenskaper\n\n## ATMOSFÄR\nStillhet och eftertanke, ofta besökt av lärda och de som söker andlig ro. Ett ställe för kontemplation och reflektion.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde finna frid efter intensiva äventyr, möta andliga vägledare och diskutera filosofiska frågor.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Laila bint-Farid\n- **Fas:** 3"
+      "beskrivning": "# TYSTA KÄLLAN\n**Tyst och meditativ**\n\n## GRUNDINFO\n- **Typ:** Fridfull vinstuga\n- **Plats:** Nära stadens tempel, Jen, Muhad\n- **Ägare:** Laila bint-Farid\n- **Tema:** Meditation och ro\n\n## BESKRIVNING\nTysta Källan är en lugn och fridfull vinstuga belägen nära stadens tempel. Här är interiören enkel men elegant, med lugnande färger och mjuka kuddar. En liten inomhusfontän ger en stilla bakgrundsmusik av rinnande vatten.\n\n## ÄGARE\n**Laila bint-Farid** är en vänlig och andlig kvinna med en lugnande närvaro som skapar en atmosfär av frid.\n\n## SPECIALITETER\n- **Vegetariska rätter** - Näringsrika och smakfulla\n- **Lokala viner** - Noggrant utvalda\n- **Örtteer** - Med läkande egenskaper\n\n## ATMOSFÄR\nStillhet och eftertanke, ofta besökt av lärda och de som söker andlig ro. Ett ställe för kontemplation och reflektion.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde finna frid efter intensiva äventyr, möta andliga vägledare och diskutera filosofiska frågor.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Laila bint-Farid\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Vansnäs Gästgiveri",
       "typ": "Värdshus",
       "region": "Lundnäs, Muhad",
-      "beskrivning": "# VANSNÄS GÄSTGIVERI\n**Trivsamt värdshus i Lundnäs**\n\n## GRUNDINFO\n- **Typ:** Värdshus/gästgiveri\n- **Plats:** Lundnäs, Muhad\n- **Byggnad:** Timmerstockar med snedtak av halm, ett plan\n- **Karaktär:** Hemtrevlig och ombonad atmosfär\n\n## BESKRIVNING\nVansnäs Gästgiveri i Lundnäs är en trivsam byggnad byggd av timmerstockar med ett snedtak av halm. Hela byggnaden är i ett plan och innehåller en matsal och sovutrymmen.\n\n## MATSALEN\nMatsalen är upplyst av oljelampor som sitter på borden. Gobelänger pryder väggarna och uppstoppade djurhuvuden hänger över dörrarna. I matsalen finns flera långbord med tillhörande väggbänkar och i mitten står runda träbord omgivna av pallar. Längs med norra väggen dominerar en enorm öppen spis, vilket bidrar till en varm och välkomnande atmosfär, särskilt under regniga dagar.\n\n## SOVUTRYMMEN\nVärdshuset erbjuder olika sovutrymmen:\n- **1 dubbelrum** (upptaget av Zoriánriddaren Warg Spegelsköld och hans väpnare)\n- **2 små enkelrum**\n- **1 större sovsal**\n\nRummen är spartanskt inredda men hålls med god renlighet. Varje rum är utrustat med:\n- En oljelampa\n- En låg stol\n- En extra filt\n- Potta under sängen för nödfall\n\nSmå fönster med luckor skyddar mot det ständiga regnet. Det robusta halmtaket säkerställer att det inte finns några läckor trots det ihållande dåliga vädret. Det massiva trägolvet är välnött.\n\n## GÄSTER\n- **Zoriánriddare Warg Spegelsköld** och hans väpnare (dubbelrum)\n\n## KOPPLINGAR\n- **NPCs:** Warg Spegelsköld\n- **Region:** Lundnäs, Muhad\n- **Relaterat äventyr:** Regniga synden"
+      "beskrivning": "# VANSNÄS GÄSTGIVERI\n**Trivsamt värdshus i Lundnäs**\n\n## GRUNDINFO\n- **Typ:** Värdshus/gästgiveri\n- **Plats:** Lundnäs, Muhad\n- **Byggnad:** Timmerstockar med snedtak av halm, ett plan\n- **Karaktär:** Hemtrevlig och ombonad atmosfär\n\n## BESKRIVNING\nVansnäs Gästgiveri i Lundnäs är en trivsam byggnad byggd av timmerstockar med ett snedtak av halm. Hela byggnaden är i ett plan och innehåller en matsal och sovutrymmen.\n\n## MATSALEN\nMatsalen är upplyst av oljelampor som sitter på borden. Gobelänger pryder väggarna och uppstoppade djurhuvuden hänger över dörrarna. I matsalen finns flera långbord med tillhörande väggbänkar och i mitten står runda träbord omgivna av pallar. Längs med norra väggen dominerar en enorm öppen spis, vilket bidrar till en varm och välkomnande atmosfär, särskilt under regniga dagar.\n\n## SOVUTRYMMEN\nVärdshuset erbjuder olika sovutrymmen:\n- **1 dubbelrum** (upptaget av Zoriánriddaren Warg Spegelsköld och hans väpnare)\n- **2 små enkelrum**\n- **1 större sovsal**\n\nRummen är spartanskt inredda men hålls med god renlighet. Varje rum är utrustat med:\n- En oljelampa\n- En låg stol\n- En extra filt\n- Potta under sängen för nödfall\n\nSmå fönster med luckor skyddar mot det ständiga regnet. Det robusta halmtaket säkerställer att det inte finns några läckor trots det ihållande dåliga vädret. Det massiva trägolvet är välnött.\n\n## GÄSTER\n- **Zoriánriddare Warg Spegelsköld** och hans väpnare (dubbelrum)\n\n## KOPPLINGAR\n- **NPCs:** Warg Spegelsköld\n- **Region:** Lundnäs, Muhad\n- **Relaterat äventyr:** Regniga synden",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Vargnäset",
       "typ": "By",
       "region": "Mellan Muhad och Cermira",
-      "beskrivning": "# VARGNÄSET\n**By som försvarades mot desertörer**\n\n## GRUNDINFO\n- **Typ:** By med palissad\n- **Region:** På resan hem från Muhad till Cermira\n- **Försvar:** Träpalissad, organiserat försvarsystem\n- **Karaktär:** Lantlig by som blev slagfält\n\n## HISTORIA\nVargnäset blev platsen för en avgörande strid när desertörer under ledning av Kald Silvermask, Valyra Nattöga och Halrik Kord anföll byn i syfte att fånga Zentri och silverringen.\n\n## VIKTIGA HÄNDELSER\n**Fas 7: Första besöket och försvaret**\n- Rollpersonerna anlände till byn\n- Tre vågor av desertörer anföll:\n  - Första vågen (Kald Silvermask): 5 bågskyttar med brandpilar\n  - Andra vågen (Valyra Nattöga): 8 skogslöpare, infiltration\n  - Tredje vågen (Halrik Kord): 7 disciplinerade krigare + \"spårhundar\" som sökte Zentri\n- Byn försvarades framgångsrikt av rollpersonerna och byinvånare\n- Flera byggnader brann under striden\n\n**Fas 8: Andra besöket**\n- Rollpersonerna återvände till Vargnäset\n\n**OCKUPATION AV ARVORNS HAMMARE (Kapitel 7):**\n\nByn ockuperades under 'magisk kontaminationsundersökning'. Arvorns Hammare systematiskt utrotade 160+ bybor.\n\n**Sankt Astrid-händelsen:** 12-årig flicka (Ragnars flickvän) korsfästes för att ha ljugit för att skydda gruppen. Hennes martyrskap gav Corvus Askhar en gudomlig uppenbarelse från Daak som krossade hans 23 års religiösa övertygelse.\n\n**EVAKUERINGEN (Kapitel 8):**\n\n- **Evakuerade:** 50 bybor evakuerades\n- **Överlevande:** 41 personer kom fram till säkerhet\n- **Döda under resan:** Gubben Torsten (dag 2), Helena Stenmark 2 år (dag 3), Gammal-Erik 74 år (dag 3), Tant Hildur 66 år (under revolt på Månljuset)\n\n**Ledare:** Eira Holm (fd. spejare, sammanbrott dag 3), Ingvild (värdshusvärdinnan/läkare), Tomas Järnhjälm (försvarsansvarig), Jonna Sköldbärare (fd. gränsvakt).\n\n**Pråmar:** Rimfrosten (Nils Järnhand Gromsson), Strömjungfrun (Berta Flodkvinna), Månljuset (Lars Silkeskägg - förrädarkapten dödad av Halvdan Kolare).\n\n**Viktiga händelser:**\n- Revolten på Månljuset när Halvdan Kolare dödade förrädaren Silkeskägg\n- Mötet vid Iskvarnsbryggan - Systrarna (Lady Isadora, Syster Moira) observerade\n- 41 överlevande anlände Vitterdal\n\n## FÖRSVARSSTRUKTUR\n**Stridszoner:**\n- Yttre palissaden (Gordons zon)\n- Taken och höjderna (Zentris zon)\n- Torget och centrum (Kazriks/Umnataks zon)\n\n**Nyckelbyggnader:**\n- Värdshuset (Ingvilds sjukstuga)\n- Smedjan (Brynjars verkstad)\n- Brunnen (vattenkälla för brandbekämpning)\n- Kapellet (symboler lika silverringen)\n\n## VIKTIGA NPCS\n**Försvarare:**\n- Brynjar (Smed)\n- Jossan (Bågskytt)\n- Eira (Koordinator)\n- Ingvild (Akutvård)\n- Tomas Järnhjälm (Försvarare)\n- Hunter (Jägare)\n\n**Angripare:**\n- Kald Silvermask (Desertörledare)\n- Valyra Nattöga (Desertörledare)\n- Halrik Kord (Desertörledare, anlitad av Systrarna)\n\n## KOPPLINGAR\n- **Fraktioner:** Systrarna (anlitade Halrik Kord), Arvorns Hammare\n- **Relaterade platser:** På resvägen mellan Muhad och Cermira"
+      "beskrivning": "# VARGNÄSET\n**By som försvarades mot desertörer**\n\n## GRUNDINFO\n- **Typ:** By med palissad\n- **Region:** På resan hem från Muhad till Cermira\n- **Försvar:** Träpalissad, organiserat försvarsystem\n- **Karaktär:** Lantlig by som blev slagfält\n\n## HISTORIA\nVargnäset blev platsen för en avgörande strid när desertörer under ledning av Kald Silvermask, Valyra Nattöga och Halrik Kord anföll byn i syfte att fånga Zentri och silverringen.\n\n## VIKTIGA HÄNDELSER\n**Fas 7: Första besöket och försvaret**\n- Rollpersonerna anlände till byn\n- Tre vågor av desertörer anföll:\n  - Första vågen (Kald Silvermask): 5 bågskyttar med brandpilar\n  - Andra vågen (Valyra Nattöga): 8 skogslöpare, infiltration\n  - Tredje vågen (Halrik Kord): 7 disciplinerade krigare + \"spårhundar\" som sökte Zentri\n- Byn försvarades framgångsrikt av rollpersonerna och byinvånare\n- Flera byggnader brann under striden\n\n**Fas 8: Andra besöket**\n- Rollpersonerna återvände till Vargnäset\n\n**OCKUPATION AV ARVORNS HAMMARE (Kapitel 7):**\n\nByn ockuperades under 'magisk kontaminationsundersökning'. Arvorns Hammare systematiskt utrotade 160+ bybor.\n\n**Sankt Astrid-händelsen:** 12-årig flicka (Ragnars flickvän) korsfästes för att ha ljugit för att skydda gruppen. Hennes martyrskap gav Corvus Askhar en gudomlig uppenbarelse från Daak som krossade hans 23 års religiösa övertygelse.\n\n**EVAKUERINGEN (Kapitel 8):**\n\n- **Evakuerade:** 50 bybor evakuerades\n- **Överlevande:** 41 personer kom fram till säkerhet\n- **Döda under resan:** Gubben Torsten (dag 2), Helena Stenmark 2 år (dag 3), Gammal-Erik 74 år (dag 3), Tant Hildur 66 år (under revolt på Månljuset)\n\n**Ledare:** Eira Holm (fd. spejare, sammanbrott dag 3), Ingvild (värdshusvärdinnan/läkare), Tomas Järnhjälm (försvarsansvarig), Jonna Sköldbärare (fd. gränsvakt).\n\n**Pråmar:** Rimfrosten (Nils Järnhand Gromsson), Strömjungfrun (Berta Flodkvinna), Månljuset (Lars Silkeskägg - förrädarkapten dödad av Halvdan Kolare).\n\n**Viktiga händelser:**\n- Revolten på Månljuset när Halvdan Kolare dödade förrädaren Silkeskägg\n- Mötet vid Iskvarnsbryggan - Systrarna (Lady Isadora, Syster Moira) observerade\n- 41 överlevande anlände Vitterdal\n\n## FÖRSVARSSTRUKTUR\n**Stridszoner:**\n- Yttre palissaden (Gordons zon)\n- Taken och höjderna (Zentris zon)\n- Torget och centrum (Kazriks/Umnataks zon)\n\n**Nyckelbyggnader:**\n- Värdshuset (Ingvilds sjukstuga)\n- Smedjan (Brynjars verkstad)\n- Brunnen (vattenkälla för brandbekämpning)\n- Kapellet (symboler lika silverringen)\n\n## VIKTIGA NPCS\n**Försvarare:**\n- Brynjar (Smed)\n- Jossan (Bågskytt)\n- Eira (Koordinator)\n- Ingvild (Akutvård)\n- Tomas Järnhjälm (Försvarare)\n- Hunter (Jägare)\n\n**Angripare:**\n- Kald Silvermask (Desertörledare)\n- Valyra Nattöga (Desertörledare)\n- Halrik Kord (Desertörledare, anlitad av Systrarna)\n\n## KOPPLINGAR\n- **Fraktioner:** Systrarna (anlitade Halrik Kord), Arvorns Hammare\n- **Relaterade platser:** På resvägen mellan Muhad och Cermira",
+      "kapitel": null,
+      "bild": null
     },
     {
       "namn": "Vitterdal",
       "typ": "Region/Område",
       "region": "Cermira",
-      "beskrivning": "# VITTERDAL\n**Hagges och Lady Soffias hemtrakt**\n\n## GRUNDINFO\n- **Typ:** Dal/område i Cermira\n- **Betydelse:** Hem för Hagge av Vitterdal och Lady Soffia\n- **Relation:** Hagges son Talarra var döende, vilket ledde till uppdraget\n\n## HISTORIA\nVitterdal är den plats varifrån Hagge av Vitterdal och hans familj kommer. När Hagges äldste son Talarra blev döende skickade Lady Soffia (Hagges mor) efter hjälp, vilket blev orsaken till att rollpersonerna fick uppdraget att hitta Hagge i Muhad.\n\n## VIKTIGA PERSONER FRÅN VITTERDAL\n- **Hagge av Vitterdal:** Den nya jarlen\n- **Lady Soffia av Vitterdal:** Hagges mor\n- **Talarra av Vitterdal:** Hagges äldste son (var döende i Fas 3)\n\n## KOPPLINGAR\n- **NPCs:** Hagge, Lady Soffia, Talarra\n- **Region:** Cermira"
+      "beskrivning": "# VITTERDAL\n**Hagges och Lady Soffias hemtrakt**\n\n## GRUNDINFO\n- **Typ:** Dal/område i Cermira\n- **Betydelse:** Hem för Hagge av Vitterdal och Lady Soffia\n- **Relation:** Hagges son Talarra var döende, vilket ledde till uppdraget\n\n## HISTORIA\nVitterdal är den plats varifrån Hagge av Vitterdal och hans familj kommer. När Hagges äldste son Talarra blev döende skickade Lady Soffia (Hagges mor) efter hjälp, vilket blev orsaken till att rollpersonerna fick uppdraget att hitta Hagge i Muhad.\n\n## VIKTIGA PERSONER FRÅN VITTERDAL\n- **Hagge av Vitterdal:** Den nya jarlen\n- **Lady Soffia av Vitterdal:** Hagges mor\n- **Talarra av Vitterdal:** Hagges äldste son (var döende i Fas 3)\n\n## KOPPLINGAR\n- **NPCs:** Hagge, Lady Soffia, Talarra\n- **Region:** Cermira",
+      "kapitel": null,
+      "bild": null
+    },
+    {
+      "namn": "Älvakungens sal",
+      "typ": "Magisk sal och portal",
+      "region": "Skugglandet",
+      "beskrivning": "# ÄLVAKUNGENS SAL\n**Portal mellan Mundana och Skugglandet**\n\n## GRUNDINFO\n- **Typ:** Magisk sal och portalplats\n- **Härskare:** Älvakungen Yelgotha\n- **Funktion:** Portal och passage mellan världarna\n- **Karaktär:** Magisk, alvisk, gränsen mellan dimensioner\n- **Betydelse:** Enda kända vägen in och ut ur Skugglandet\n\n## HISTORIA\nÄlvakungens sal är den mystiska plats där Älvakungen Yelgotha bevakar portalen mellan Mundana och Skugglandet. För att ta sig till Skugglandet och rädda Zentri måste rollpersonerna passera genom denna sal och förhandla med Älvakungen.\n\n## VIKTIGA HÄNDELSER\n**Fas 11:**\n- Rollpersonerna mötte Älvakungen Yelgotha här\n- Förhandlade om passage till Skugglandet\n- Tog sig igenom portalen\n\n## VIKTIGA NPCS\n- **Älvakungen Yelgotha:** Portalens väktare, kontrollerar passage\n\n## KOPPLINGAR\n- **Relaterade platser:** Skugglandet, Mithera\n- **Funktion:** Portal och övergång",
+      "kapitel": null,
+      "bild": null
+    },
+    {
+      "namn": "Åderbjörkslunden",
+      "typ": "Mystisk lund",
+      "region": "Skugglandet",
+      "beskrivning": "# ÅDERBJÖRKSLUNDEN\n**Mystisk lund i Skugglandet**\n\n## GRUNDINFO\n- **Typ:** Magisk björklund\n- **Region:** Skugglandet\n- **Karaktär:** Mystisk, magiskt laddad plats\n- **Betydelse:** Viktig plats i nuvarande äventyr\n\n## HISTORIA\nÅderbjörkslunden är en mystisk björklund i Skugglandet där viktiga händelser utspelar sig i rollpersonernas försök att rädda Zentri.\n\n## VIKTIGA HÄNDELSER\n**Fas 11:**\n- Plats för viktiga händelser i det pågående räddningsuppdraget\n- Detaljerad beskrivning finns i äventyrsmaterialet\n\n## KOPPLINGAR\n- **Relaterade platser:** Skugglandet, Älvakungens sal\n- **Pågående äventyr:** \"Rädda Zentri\"",
+      "kapitel": null,
+      "bild": null
+    },
+    {
+      "namn": "Ödlefolkets ruiner",
+      "typ": "Uråldriga ruiner",
+      "region": "Tarkas",
+      "beskrivning": "# ÖDLEFOLKETS RUINER\n**Uråldrig ruin vid Tarkas kust**\n\n## GRUNDINFO\n- **Typ:** Uråldriga ruiner\n- **Plats:** Tarkas södra kust\n- **Ursprung:** Utdött ödlefolk\n- **Status:** Delvis kollapsad\n- **Kapitel:** Kapitel 3\n\n## UPPTÄCKTEN\nEfter vulkanutbrottet som krossade gruppens skepp och flera dagars vandring genom den askbeströdda ödemarken stötte gruppen på dessa ruiner - nyligen blottlagda av vulkanutbrottet.\n\n## ARKITEKTUREN\nRuinen avslöjade spår efter ett sedan länge **utdött ödlefolk** som en gång konstruerat massiva humanoida **golems** för okända syften.\n\n**Strukturen:**\n- Stora stenblock med främmande inskriptioner\n- Korridorer byggda för varelser större än människor\n- Väggmålningar föreställande reptilliknande humanoider\n- Massiva salar med högt i tak\n\n## GOLEMSEN\n\n### De Två Mindre Golemsen\nNär gruppen undersökte ruinen väckte de oavsiktligt två stenliknande golems - humanoida figurer av massiv sten som började röra sig med skrapande ljud. Gruppen lyckades med nöd och näppe **undvika** dem genom att smyga förbi medan golemsen patrullerade korridorerna.\n\n### Den Kolossala Golemen\nDjupare in i komplexet nådde gruppen en massiv sal där **den kolossala golemen** väntade - ödlefolkets mästerverk, en uråldrig vaktare byggd för att stå i evighet.\n\n**Beskrivning:**\n- Tre gånger en människas höjd\n- Kropp av massiv sten, ogenomtränglig för vanliga vapen\n- Rörde sig långsamt men med fruktansvärd kraft\n- Ögon som lyste med eld inifrån\n\n## DEN DRAMATISKA KONFRONTATIONEN\n\n### Zentris Skada\nUnder flykten från golemen började ruinen skaka. **Zentri** försökte använda magi för att skydda gruppen när en kollapsande pelare sprack ovanför honom.\n\nEn **stensplitter från den kollapsande pelaren** träffade honom i ansiktet och förstörde hans **vänstra öga**. Hans **mantel förstördes permanent** i samma sekvens.\n\n### Flykten\nGruppen insåg att direkt strid var hopplös. I desperationen upptäckte **Kazrik** en serie **antika spakar** längs ena väggen - troligen kontrollmekanismer för ruinens gamla system.\n\nGenom att dra spakarna i rätt ordning utlöste de en **kontrollerad kollaps**:\n- Pelarna började ge vika\n- Taket mullrade\n- Stenblock föll från väggarna\n\nMed nöd och näppe flydde gruppen medan det kolossala monstret begravdes under stenmassorna.\n\n## BETYDELSE\nRuinerna gav gruppen deras första direkta möte med de **uråldriga civilisationerna** som en gång härskade i Mundana. Ödlefolkets teknologi för att skapa golems var långt överlägsen allt de sett tidigare.\n\n**Priset var högt:** Zentri förlorade sitt vänstra öga och sin mantel - skador som skulle följa honom resten av kampanjen.\n\n## KOPPLINGAR\n- **Händelser:** Vulkanutbrottet vid Tarkas, Zentris skada\n- **NPCs:** Zentri (förlorade vänstra ögat), Kazrik (hittade spakarna)\n- **Kapitel:** Kapitel 3 (Tarkas-äventyret)",
+      "kapitel": "Kapitel 3",
+      "bild": null
+    },
+    {
+      "namn": "Ökendyrets Ro",
+      "typ": "Värdshus",
+      "region": "Jen, Muhad",
+      "beskrivning": "# ÖKENDYRETS RO\n**Rustik ökentaverna**\n\n## GRUNDINFO\n- **Typ:** Rustik taverna\n- **Plats:** Utkanten av bostadsområdena, Jen, Muhad\n- **Ägare:** Fatima bint-Ali\n- **Tema:** Enkel och inbjudande\n\n## BESKRIVNING\nÖkendyrets Ro ligger i utkanten av bostadsområdena i Jen och har en enkel men inbjudande atmosfär. Väggarna är av grovt huggna stenar, och möblerna är robusta och slitstarka. Eldstaden sprakar och fyller rummet med värme, och doften av grillat kött ligger tung i luften.\n\n## ÄGARE\n**Fatima bint-Ali** är en barsk men rättvis kvinna med ett stort hjärta. Hon driver värdshuset med omsorg om sina gäster.\n\n## SPECIALITETER\n- **Grillade köttspett** - Välkryddade och perfekt grillad\n- **Hemlagad flatbröd** - Bakat färskt varje dag\n- **Starkt kryddat te** - En lokal specialitet\n\n## ATMOSFÄR\nFamiljär och gemytlig, ofta besökt av lokala arbetare och resande handelsmän. Ett ställe där man känner sig välkommen oavsett stånd.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde få en mer autentisk bild av vardagslivet i Jen och prata med vanligt folk snarare än eliten.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Fatima bint-Ali\n- **Fas:** 3",
+      "kapitel": null,
+      "bild": null
     }
   ],
-  "kapitel": [
-    {
-      "nummer": "0",
-      "titel": "Prolog: Tirakgraven och Demonens Väckande",
-      "status": "avslutad",
-      "plats": "Gränstrakterna mellan Cermira och Mithera",
-      "datum": "Kampanjstart"
-    },
+  kapitel: [
     {
       "nummer": "1",
       "titel": "Kapitel 1: Jakten på Tamron/Ibran",
       "status": "avslutad",
       "plats": "Genom Cermiras skogar mot Grensfortet",
       "datum": "Efter Tirakgraven"
+    },
+    {
+      "nummer": "10",
+      "titel": "Kapitel 10: Skugglandet och Zentris Befrielse",
+      "status": "avslutad",
+      "plats": "Skugglandet → Grensfortet (högsommar)",
+      "datum": "Bok 1 avslutad - Zentri räddad"
     },
     {
       "nummer": "2",
@@ -3949,11 +4285,11 @@ var wikiData = {
       "datum": null
     },
     {
-      "nummer": "10",
-      "titel": "Kapitel 10: Skugglandet och Zentris Befrielse",
+      "nummer": "0",
+      "titel": "Prolog: Tirakgraven och Demonens Väckande",
       "status": "avslutad",
-      "plats": "Skugglandet → Grensfortet (högsommar)",
-      "datum": "Bok 1 avslutad - Zentri räddad"
+      "plats": "Gränstrakterna mellan Cermira och Mithera",
+      "datum": "Kampanjstart"
     }
   ]
 };

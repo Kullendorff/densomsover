@@ -1,5 +1,40 @@
 # EON Kampanjwiki - Projektinstruktioner
 
+## ⚠️ OBSIDIAN-MIGRERING (2026-09-05) — LÄS DETTA FÖRST, DET ÖVERSTYR RESTEN AV FILEN
+
+Projektet har fått ett Obsidian-vault ovanpå repo-roten. **`wiki/` är nu SINGLE SOURCE
+OF TRUTH för NPCs, platser, fraktioner, kapitel, sessioner och rollpersoner** — inte
+`master/wiki_data.js` och inte `fraktioner_data.js`.
+
+**Ny arbetsgång:**
+- **Redigera en NPC/plats/fraktion?** → Redigera motsvarande fil i `wiki/Personer/`,
+  `wiki/Platser/`, `wiki/Fraktioner/` (Obsidian-notering med YAML-frontmatter).
+  **Redigera ALDRIG `master/wiki_data.js` eller `fraktioner_data.js` för hand** —
+  de är GENERERADE och en pre-commit-hook blockerar commits om de inte matchar `wiki/`.
+- **Efter redigering, bygg om dashboard-datan:**
+  ```
+  node bygg/bygg-wiki-data.js
+  ```
+  Detta läser om `wiki/**/*.md` och skriver `master/wiki_data.js` + `fraktioner_data.js`.
+- **Lägga till en ny NPC?** Skapa en ny fil i `wiki/Personer/` (mall finns i
+  `wiki/_Mallar/Mall - NPC.md`), kör sedan bygget. `eon-npc-adder`-skillen och
+  `eon-data-guardian`-agentens gamla "hitta alfabetisk plats med grep + Edit i JS"-metod
+  är **obsolet** — en ny NPC är en ny fil, ingen JSON-kirurgi.
+- **Wiki-länkar:** Noterna i `wiki/` använder `[[Namn]]`-länkar mellan NPCs, platser och
+  fraktioner. Bygget stripper automatiskt `[[Namn]]`/`[[Namn|Visning]]` tillbaka till
+  ren text i den genererade JS-filen (dashboarden känner inte till Obsidian-syntax).
+- **Aktuellt antal:** 327 NPCs, 58 platser, 45 fraktioner, 11 kapitel (INTE 292 som
+  anges längre ner i denna fil — den siffran är föråldrad).
+- Gammalt material (Jekyll-wikin i `kampanjwiki/_npcs` m.fl., den tidigare separata
+  Obsidian-vaulten) ligger arkiverat i `_ARKIV/` (gitignored) — rör inte, men radera inte
+  heller utan att fråga Johan.
+- Resten av denna fil (`master/wiki_data.js` som "centraliserad databas",
+  `eon-npc-adder`/`eon-data-guardian`s grep+Edit-metod, kommandona under "Vanliga
+  kommandon") beskriver den GAMLA arbetsgången. Den är kvar av historiska skäl men
+  **följ INTE den** för att redigera kampanjdata — bygg-kommandot ovan gäller.
+
+---
+
 ## 🎯 BÖRJA HÄR: Läs _index.md FÖRST!
 
 **KRITISKT:** Innan du gör NÅGOT i detta projekt, läs `_index.md` först.

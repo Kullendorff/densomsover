@@ -1,0 +1,29 @@
+{
+  "attachmentFolderPath": "kampanjwiki/assets/images",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "wiki/Personer",
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    ".git",
+    ".claude",
+    ".agents",
+    ".codex",
+    ".tmp.driveupload",
+    "kampanjwiki/_site",
+    "kampanjwiki/_layouts",
+    "kampanjwiki/_includes",
+    "Eon SL/hemsidan",
+    "arkiv",
+    "_ARKIV",
+    "EON för alla",
+    "node_modules",
+    "dashboard",
+    "masterplot",
+    "fluff",
+    "guider",
+    "platser",
+    "midjourney",
+    "kapitel",
+    "sessioner"
+  ]
+}

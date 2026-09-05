@@ -35,16 +35,24 @@ EM-[TYP][NR]_namn.md
 
 ## 📁 MAPPSTRUKTUR
 
+**⚠️ Förenklad 2026-09-05:** De sju typmapparna (`lander/`, `stader/`, `platser/`,
+`regioner/`, `organisationer/`, `foremal/`, `npcs/`) är borttagna — Johan tyckte det var
+för knökigt att hitta i. `Klart/` innehåller nu bara den **presentabla HTML- (eller
+PDF-)versionen** av varje färdigt projekt — inte markdown. Alla `.md`-dokument
+(sammanfattning, STATUS, NOTES, research, utkast) bor kvar i respektive `projekt/`-mapp,
+även efter att projektet är klart. Kodningssystemet (EM-L001/S001/O001 etc.) i
+filnamnet räcker för att se vad det är.
+
 ```
 Eget Material/
 ├── CLAUDE.md                # 🎯 DU ÄR HÄR - instruktioner
 ├── _index.md                # Katalog över allt material
 │
-├── projekt/                 # 🆕 PÅGÅENDE PROJEKT
+├── projekt/                 # PÅGÅENDE PROJEKT (arbetsyta, flyttas inte bort efter avslut)
 │   └── EM-L001_landnamn/
 │       ├── STATUS.md        # Projektstatus, fas-tracking
 │       ├── NOTES.md         # Vision, frågor, anteckningar
-│       ├── landnamn.md      # 📄 Sammanfattning (all info för NotebookLM)
+│       ├── landnamn.md      # 📄 Sammanfattning (all info för NotebookLM) — KOPIERAS till Klart/ vid avslut
 │       ├── research/        # Research-data från NotebookLM
 │       │   ├── geografi.md
 │       │   ├── kultur.md
@@ -53,20 +61,13 @@ Eget Material/
 │           ├── v1_översikt.md
 │           └── v2_komplett.md
 │
-├── lander/                  # FÄRDIGA Länder
-│   └── EM-L001_namn.md
-├── stader/                  # FÄRDIGA Städer
-│   └── EM-S001_namn.md
-├── platser/                 # FÄRDIGA Specifika platser
-│   └── EM-P001_namn.md
-├── regioner/                # FÄRDIGA Regioner
-│   └── EM-R001_namn.md
-├── organisationer/          # FÄRDIGA Organisationer/gillen
-│   └── EM-O001_namn.md
-├── foremal/                 # FÄRDIGA Magiska/speciella föremål
-│   └── EM-F001_namn.md
-├── npcs/                    # FÄRDIGA NPCs
-│   └── EM-N001_namn.md
+├── Klart/                   # FÄRDIGA HTML/PDF-versioner, en enda flat mapp, INGEN .md här
+│   ├── EM-L001_muhad.html
+│   ├── EM-S001_jen.html
+│   ├── EM-S002_mithrahus.html
+│   ├── EM-R001_vitterdal-baronieriet.html
+│   ├── EM-R002_grensfortet.html
+│   └── EM-O001_legokompaniet.html (+ _spelare.html)
 │
 └── mallar/                  # Malldokument
     ├── mall-land.md
@@ -86,7 +87,8 @@ Eget Material/
 Material som tar flera sessioner att skapa hanteras i `projekt/`-mappen med strukturerad progress-tracking.
 
 **Två arbetsflöden:**
-1. **Snabba tillägg** (1 session, enkla NPCs/platser): Hoppa direkt till `npcs/` eller `platser/`
+1. **Snabba tillägg** (1 session, enkla NPCs/platser): Skriv `.md` i `projekt/EM-XXX_namn/`,
+   generera en HTML-version om det är värt att visa upp, lägg den i `Klart/`
 2. **Projekt** (flersessions, komplexa land/städer/organisationer): Använd `projekt/`-struktur
 
 ### Projektstruktur
@@ -100,8 +102,10 @@ Material som tar flera sessioner att skapa hanteras i `projekt/`-mappen med stru
 
 **Workflow:**
 1. Skapa projekt i `projekt/EM-XXX_namn/`
-2. Arbeta genom 7 faser
-3. När klar: Flytta till slutmapp (`lander/`, `stader/`, etc.)
+2. Arbeta genom 7 faser — alla `.md`-filer (sammanfattning, STATUS, NOTES, research, utkast)
+   stannar i projektmappen för gott, även efter avslut
+3. När klar: bygg/kopiera en HTML-version (t.ex. `[projektnamn].html`) till
+   `Klart/EM-XXX_namn.html` — det är den enda filen som lämnar `projekt/`
 4. Uppdatera `_index.md`
 
 ### Session-briefing

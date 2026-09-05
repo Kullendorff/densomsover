@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Förläningen Grensfortet - EON Kampanjmaterial</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #f4e8d8;
+            color: #3d2817;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .page-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 4rem 3rem;
+            background: #faf6f0;
+            box-shadow: 0 0 40px rgba(61, 40, 23, 0.15);
+            border: 1px solid #d4c4b0;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            border-bottom: 3px double #8b6f47;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #6d5d4b;
+            margin-bottom: 1rem;
+        }
+
+        .meta {
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            color: #8b6f47;
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        nav {
+            background: #f0e6d6;
+            border: 1px solid #d4c4b0;
+            padding: 1rem;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 1.5rem;
+        }
+
+        nav a {
+            color: #704214;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.3rem 0.5rem;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        nav a:hover {
+            background: #e8dcc8;
+            color: #2c1810;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2c1810;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8b6f47;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #3d2817;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #704214;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* Atmosphere quote */
+        .atmosphere {
+            background: #f0e6d6;
+            border-left: 4px solid #8b6f47;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #5d4d3b;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Drop cap for long atmospheric texts */
+        .atmosphere-long p:first-of-type::first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            line-height: 0.7;
+            margin: 0.05rem 0.2rem -0.1rem 0;
+            color: #704214;
+            font-style: normal;
+            padding-top: 0.15rem;
+        }
+
+        .atmosphere:not(.atmosphere-long) strong:first-of-type {
+            font-weight: 600;
+            color: #704214;
+            font-style: normal;
+        }
+
+        /* Info box */
+        .info-box {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: inset 0 0 10px rgba(139, 111, 71, 0.1);
+            border-radius: 4px;
+        }
+
+        .info-box strong {
+            color: #704214;
+            font-weight: 600;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background: #f9e6e0;
+            border: 2px solid #a85442;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .warning-box strong {
+            color: #8b2e1f;
+            font-weight: 700;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin: 0.6rem 0;
+        }
+
+        /* NPC Card */
+        .npc-card {
+            background: #f0e6d6;
+            border: 2px solid #8b6f47;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+
+        .npc-card h4 {
+            color: #704214;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .npc-meta {
+            color: #8b6f47;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+            font-style: italic;
+        }
+
+        /* Campaign hook */
+        .hook-card {
+            background: #faf0e6;
+            border: 2px solid #b8985e;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(61, 40, 23, 0.1);
+        }
+
+        .hook-card h4 {
+            color: #704214;
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #ffffff;
+            border: 2px solid #d4c4b0;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #d4c4b0;
+        }
+
+        th {
+            background: #f0e6d6;
+            color: #2c1810;
+            font-weight: 700;
+        }
+
+        tr:hover {
+            background: #faf6f0;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 3px double #8b6f47;
+            padding-top: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            color: #6d5d4b;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        /* Divider */
+        .divider {
+            text-align: center;
+            margin: 2rem 0;
+            color: #8b6f47;
+            font-size: 1.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-container {
+                margin: 0;
+                padding: 2rem 1.5rem;
+                border: none;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header -->
+        <header>
+            <h1>Förläningen Grensfortet</h1>
+            <div class="subtitle">Förläningen vid världens ände</div>
+            <div class="meta">
+                📍 Gränsen Cermira/Mithera • 👥 ~180 invånare • ⚔️ Vasallförläning under Vitterdal
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">← Dashboard</a></li>
+                <li><a href="#oversikt">Översikt</a></li>
+                <li><a href="#grensfortet">Grensfortet</a></li>
+                <li><a href="#bergvik">Bergvik</a></li>
+                <li><a href="#frisankan">Frisänkan</a></li>
+                <li><a href="#npcs">Viktiga NPCs</a></li>
+                <li><a href="#ekonomi">Ekonomi</a></li>
+                <li><a href="#styra">Att Styra Förläningen</a></li>
+                <li><a href="#militar">Militärt Styre</a></li>
+                <li><a href="#trakten">Trakten</a></li>
+                <li><a href="#hot">Hot & Mysterier</a></li>
+                <li><a href="#hooks">Kampanjhooks</a></li>
+            </ul>
+        </nav>
+
+        <!-- Long Atmospheric Introduction -->
+        <section class="section">
+            <div class="atmosphere atmosphere-long" style="font-size: 1rem; line-height: 1.9; padding: 2rem 2.5rem; margin: 2rem 0 3rem 0;">
+                <p>Gordon hade varit borta i en vecka. Fortet hade varit utan dem i sex månader.</p>
+
+                <p>Han förstod det inte förrän de red upp längs vägen och såg vad som hade förändrats. Murarna var reparerade - inte provisoriskt som när de lämnade, utan ordentligt, med ny sten och fogbruk. Det trasiga tornet i öster hade fått ett tak. Rök steg från tre olika skorstenar istället för en. Och vid porten stod vakter han inte kände igen, män och kvinnor i pälskappor som stirrade på dem med en blandning av lättnad och misstro.</p>
+
+                <p>"Sex månader," sa Umnatak tyst bredvid honom. Schamanens röst var märkligt hes. "För oss var det dagar. För dem..."</p>
+
+                <p>Han behövde inte avsluta meningen. Gordon såg det i Eiras ansikte när hon kom ut genom porten. Hon hade varit gammal när de lämnade - nu såg hon urgammal ut. Rynkorna hade djupnat. Håret hade vitnat ytterligare. Men ögonen var desamma: trötta, fasta, vägrande att ge upp.</p>
+
+                <p>"Ni kom tillbaka," sa hon. Rösten darrade, bara lite. "Vi visste inte... vi hoppades, men vi visste inte."</p>
+
+                <p>Bakom henne hade folk samlats. Gordon kände igen några - Jonna Sköldbärare, Tomas Järnhjälm, Morfar Ulf som stödde sig mot en käpp. Men det fanns nya ansikten också. Barn som vuxit. En kvinna med ett ärr över kinden som inte funnits där förut. En man med en tom ärm där en arm borde vara.</p>
+
+                <p>Sex månader. En vinter. Vad hade hänt här medan de vandrade genom Skugglandet?</p>
+
+                <p>Zentri red bredvid honom, tyst sedan de lämnade portalen. Han hade varit fången i månader - eller var det år? Tiden i Skugglandet följde inte vanliga regler. Nu stirrade han på fortet med ögon som sett för mycket, och Gordon undrade vad han tänkte. Om han ens kunde tänka normalt längre.</p>
+
+                <p>"Mycket har hänt," sa Eira, som om hon läste hans tankar. "Xian-Li kan berätta. Och Adisa - hon har väntat på er. Hon sa att ni skulle komma tillbaka när sommaren var som varmast." Ett nästan-leende. "Hon hade rätt. Som alltid."</p>
+
+                <p>Gordon steg av hästen. Marken kändes konstig under hans fötter - för stabil, för verklig efter veckorna i Skugglandet. Han såg sig omkring på det fort han lämnat som en ruin och som nu var... ett hem? En fästning? Något mittemellan.</p>
+
+                <p>"Berätta allt," sa han. "Från början."</p>
+
+                <p>Eira nickade. "Det blir en lång berättelse. Kom in. Det finns mat, och öl, och eldstäder som faktiskt fungerar nu." Hon vände sig mot porten, stannade, såg tillbaka. "Välkomna hem, mina herrar. Vi har hållit ert fort åt er. Nu får ni se om ni kan behålla det."</p>
+            </div>
+        </section>
+
+        <!-- Översikt -->
+        <section id="oversikt" class="section">
+            <h2>Översikt</h2>
+
+            <p><strong>Förläningen Grensfortet</strong> är en liten förläning vid gränsen mellan Cermira och det demonhärjade Mithera. Området kontrolleras av spelarna som vasaller under Jarl Hagge av Vitterdal, och består av det urgamla Grensfortet samt byarna Bergvik och Frisänkan. Det är en gränsmark i ordets sannaste bemärkelse - mellan civilisation och vildmark, mellan det kända och det okända, mellan människors värld och något mycket äldre.</p>
+
+            <div class="info-box">
+                <strong>Förläningstyp:</strong> Gränsförläning (Vasalltjänst)<br>
+                <strong>Lensherre:</strong> Jarl Hagge av Vitterdal<br>
+                <strong>Vasaller:</strong> Gordon, Umnatak, Kazrik, Zentri, Arcadius<br>
+                <strong>Total befolkning:</strong> ~120 invånare<br>
+                <strong>Status:</strong> Juli/Augusti, efter spelarnas återkomst från Skugglandet
+            </div>
+
+            <p>Sedan gruppen bemannade fortet med flyktingar från Vargnäset har en bräcklig civilisation börjat ta form. Men allt är inte som det verkar. Vilt undviker området i stor båge. Onaturlig kyla blåser från öster. Och i bergen nära fortet bor en häxa som enligt dvärgen Dain är "äldre än dvärgar".</p>
+
+            <h3>Geografisk kontext</h3>
+
+            <div class="atmosphere">
+                <strong>Kölden är inte naturlig här.</strong> Den blåser från Mithera, från det land där kryotropi - köldmagi - genomsyrar allt. Träden böjer sig bort från bergen i öster som om de flyr från något. Snön ligger tjock sju månader om året, och jorden ger inget frivilligt. De som bor här har lärt sig att ta vad de kan - timmer från skogarna, fisk från sjöarna, vilt från jaktmarkerna som är märkligt rika, för rika, som om naturen kompenserar för något annat som fattas.
+            </div>
+
+            <p>Området ligger i kuperad ängsmark vid gränsen till Mithera. Enligt NotebookLM-researchm är Cermira tempererat med kalla vintrar, men gränsregionen är extremt kylig på grund av Mitheras magiska inflytande. <strong>De förändrade</strong> - människor infekterade av ett artefakt sedan Ramdor 2601 e.D. - vandrar genom Mithera med okänd agenda och utgör ett ständigt hot.</p>
+        </section>
+
+        <!-- Grensfortet -->
+        <section id="grensfortet" class="section">
+            <h2>Grensfortet</h2>
+
+            <div class="atmosphere">
+                <strong>Det är ingen mänsklig borg.</strong> Det förstod Gordon första gången han såg den - de gotiska spirorna, den eleganta arkitekturen, vägen som slingrade sig upp genom klippan som om den vuxit ur berget självt. Dain kallade det "dvärggrund" men skakade på huvudet. "Inte vårt arbete. Äldre." Tornen reser sig mot himlen i former som trotsar sunt förnuft, vackra och hotfulla på samma gång. Vid foten gapar en mörk ingång rakt in i berget, och ingen har ännu vågat utforska vad som finns innanför.
+            </div>
+
+            <div class="info-box">
+                <strong>Typ:</strong> Herresäte, nyligen renoverat<br>
+                <strong>Befolkning:</strong> 22 permanenta invånare<br>
+                <strong>Ledning:</strong> Eira Holm (daglig drift), Xian-Li (administration), Skorda Bergsdotter (praktiskt)<br>
+                <strong>Läge:</strong> Bergssida vid gränsen mot Mithera
+            </div>
+
+            <h3>Struktur och atmosfär</h3>
+            <ul>
+                <li><strong>Höga torn:</strong> Flera torn, några trasiga, elegant gotisk arkitektur</li>
+                <li><strong>Kapelltorn:</strong> Utan symbol - okänd ursprunglig religiös tillhörighet</li>
+                <li><strong>Murar:</strong> Stenmurar, delvis renoverade av dvärgbyggare</li>
+                <li><strong>Matsalen:</strong> Ekar tomt, har "fel känsla"</li>
+                <li><strong>Kapellet:</strong> Där Arcadius lade sin Daak-medaljong - den försvann nästa morgon</li>
+                <li><strong>Bergsportal:</strong> Mörk ingång i klippan vid fortets fot - outforskad</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>ÖVERNATURLIGA FENOMEN:</strong><br>
+                • <strong>Onaturlig kyla:</strong> Vind från Mithera som "biter genom allt"<br>
+                • <strong>Vilt undviker området:</strong> Alla spår går runt fortet i stor båge<br>
+                • <strong>Arcadius hund morrade:</strong> Värre än vid häxstugan<br>
+                • <strong>Isjättens döttrar:</strong> 3-meter höga isfigurer vandrar nätterna<br>
+                • <strong>Träddansare:</strong> Träd som flyttar sig långsamt<br>
+                • <strong>Ekospöken:</strong> Ljud upprepas timmar senare
+            </div>
+
+            <h3>Befolkning</h3>
+            <p>Fortet bebos huvudsakligen av flyktingar från Vargnäset - extrema Daak-fundamentalister som förlorat allt till De förändrade. De är traumatiserade, misstänksamma mot magi, och djupt religiösa. Detta skapar spänningar med Adisa (häxan), Zentri (krigarmagikern) och Xian-Li (den dolde magikern).</p>
+
+            <h4>De 6 månadernas händelser (under spelarnas frånvaro):</h4>
+            <ul>
+                <li><strong>Mars-April:</strong> Grundläggande fortifikationer, Xian-Li anlände diskret</li>
+                <li><strong>Maj-Juni:</strong> Adisa återkom, religiös konflikt med flyktingarna, Bärnsäl dödade 2 jägare</li>
+                <li><strong>Juli:</strong> Kungliga inspektörer accepterade förläningen, formellt erkännande</li>
+            </ul>
+        </section>
+
+        <!-- Bergvik -->
+        <section id="bergvik" class="section">
+            <h2>Bergvik</h2>
+
+            <div class="atmosphere">
+                <strong>Yxorna ekar genom dalen från gryning till skymning.</strong> Bergvik är en by av hårt arbetande människor som aldrig bad om en lord men fick en ändå - och till deras egen förvåning är de nöjda med det. Sågen skriker när timret kapas. Oxar drar tunga vagnar längs den leriga vägen. Kolmilan ryker i horisonten, och i kvällningen fylls det lilla värdshuset med skratt och stark sprit. De är enkla människor med enkla liv, och de har bestämt sig för att de nya herrarna på fortet är värda att lita på. Det återstår att se om de har rätt.
+            </div>
+
+            <div class="info-box">
+                <strong>Typ:</strong> Jordbruksby och timmersamhälle<br>
+                <strong>Befolkning:</strong> 80-100 invånare<br>
+                <strong>Karaktär:</strong> Lojala, traditionellt feodala<br>
+                <strong>Religion:</strong> Daaktro (traditionell)<br>
+                <strong>Ekonomiskt bidrag:</strong> 16-23 Bas/år
+            </div>
+
+            <h3>Sinnesintryck</h3>
+            <p><strong>Syn:</strong> Timmervagnar dragna av oxar på lervägar. Sågverket med dess staplar av plankor. Barn som leker bland sågspånshögar. Kolmilans rök som stiger mot himlen. Små stenhus med halmtak i en dal omgiven av skog.</p>
+            <p><strong>Ljud:</strong> Yxor som ekar genom dalen - en ständig, rytmisk puls. Sågen som skriker. Smällar från smedjan. Barn som skrattar.</p>
+            <p><strong>Lukt:</strong> Färskt sågspån - den dominerande lukten. Kolmilans sötaktiga rök. Bröd från Änke-Margits bakugn. Djurstallarnas jordiga odör.</p>
+
+            <h3>Byggnader och platser</h3>
+
+            <h4>Sågverket (Astrids domän)</h4>
+            <p>Bergviks viktigaste byggnad. Sågen drivs av vattenkraft från bäcken och kan kapa virke i imponerande hastighet. Astrid Björnsdotter regerar här med järnhand - hennes schema är lag, hennes kvalitetskrav kompromisslösa. Golvet är täckt av sågspån så tjockt att barn gräver tunnlar i det.</p>
+
+            <h4>Smedjan</h4>
+            <p>Normalt Björn Hammarsmeds domän, men han tillbringar mycket tid på Grensfortet. I hans frånvaro sköter hans lärling grundläggande reparationer. Enkel men funktionell - en ässja, ett städ, en vattentunna.</p>
+
+            <h4>Daak-kyrkan</h4>
+            <p>En liten stenkyrka med ett klocktorn som sällan ringer. Enkel men omhändertagen. Bergviks tro är traditionell och oproblematisk - kontrasten till Frisänkans samoriska tempel är total.</p>
+
+            <h4>Kolmilan</h4>
+            <p>Utanför byn, en halvtimmes vandring in i skogen. En rykande kolmila som aldrig verkar släckas helt. Svart-Eriks stuga ligger intill - liten, mörk, full av kolstoft. Han vill expandera, men timmerhuggarna protesterar.</p>
+
+            <h4>Ragna Klokhands stuga</h4>
+            <p>Byns läkare bor i en stuga med torkade örter i varje fönster. Luktar starkt av salvor och tinkturer. Hit kommer alla med ont i kroppen, och de flesta går därifrån bättre.</p>
+
+            <div class="divider">&#10044; &#10044; &#10044;</div>
+
+            <h3>Invånare</h3>
+
+            <h4>Ledare och nyckelpersoner</h4>
+
+            <div class="npc-card">
+                <h4>Torkel Skogsson</h4>
+                <div class="npc-meta">Byäldste, timmerhuggare | Man | 50-tal</div>
+                <p>Det var Torkel som väntade på evakueringskaravanen med sitt alltför stora leende. Under desperation och falskhet ligger genuint hopp - Bergvik behövde verkligen en lord. Stor, kraftig, yxman i kropp och själ. Respekterad av alla i byn.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Astrid Björnsdotter</h4>
+                <div class="npc-meta">Såg-mästare, ansvarig timmerproduktion | Kvinna | 40-tal</div>
+                <p>Bergviks ekonomiska motor. Utan Astrids såg och hennes järnhårda disciplin skulle byns timmerexport halveras. Hon vet det, och alla andra vet det också. Kraftig, sågspån i håret, blick som kan stoppa en oxe.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Olav Järnhand</h4>
+                <div class="npc-meta">Jägarmästare, f.d. soldat | Man | 50-tal</div>
+                <p>Olav har sett krig och valt jakt istället. Smeknamnet "Järnhand" kommer från hans grepp - han kan greppa en yxa så hårt att träet spricker. Kan mobilisera 5-10 stridsdugliga från Bergvik om hotet är verkligt. Väderbitna drag, ärr på vänster kind, rör sig tyst för sin storlek.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Ragna Klokhand</h4>
+                <div class="npc-meta">Bykvinna, läkare | Kvinna | 50-tal</div>
+                <p>Ragna botar det som kan botas och tröstar det som inte kan. Örter och erfarenhet, inte magi - men hennes händer är trygga och hennes diagnoser oftast rätta. Smala glasögon (ovanligt - en gåva från en resande köpman), händer som luktar kamomillja. <em>"Du ska vila, och det är inte en förfrågan."</em></p>
+            </div>
+
+            <h4>Kopplade till Grensfortet</h4>
+
+            <div class="npc-card">
+                <h4>Olav Murkross</h4>
+                <div class="npc-meta">Gammal soldat | Man | 60-tal</div>
+                <p>Murkross drog Arcadius åt sidan vid karavanens ankomst. "Gamla soldater. Kände igen varandra." Bor kvar i Bergvik men besöker fortet regelbundet. Vet mer om Arvorns Hammare än han låtsas.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Björn Hammarsmed</h4>
+                <div class="npc-meta">Smed (pendlar Bergvik/Grensfortet) | Man | 20-tal</div>
+                <p>Ung, ärrade händer, skicklig. Byns ende smed, nu delad mellan Bergvik och fortet.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Lars &amp; Erik Bergsson</h4>
+                <div class="npc-meta">Stenbrytare (nu på Grensfortet) | Män, bröder | 30-tal</div>
+                <p>Lars pratar om stenar som vänner. Erik pratar om allt annat. Anslöt Grensfortet som specialister.</p>
+            </div>
+
+            <h4>Timmerhuggare</h4>
+
+            <div class="npc-card">
+                <h4>Bror &amp; Stig Tallgren</h4>
+                <div class="npc-meta">Timmerhuggare, rivaliserande tvillingar | Män | 30-tal</div>
+                <p>Rivaliserande tvillingar som tävlar om allt - vem som fäller flest träd, vem som dricker mest, vem som vinner Astrid Björnsdotters hjärta. Bror är explosiv och högljudd. Stig är beräknande och tyst. Identiska: rödblonda, breda axlar, skägg. Bror har ett ärr på hakan, Stig en ring i örat.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Änke-Margit</h4>
+                <div class="npc-meta">Timmerhuggare och körare | Kvinna | 50-tal</div>
+                <p>Hennes man dog i en skogscolycka. Margit tog hans timmervagn och har drivit den ensam i tio år. Starkare än de flesta män i byn, och ingen kommenterar det längre. Bakar också det bästa brödet i Bergvik.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Ull Björnsson</h4>
+                <div class="npc-meta">Pensionerad timmerhuggare, lärare | Man | 60-tal</div>
+                <p>Förlorade tre fingrar i en sågolycka. Kan inte hugga längre men lär ut tekniker till de unga. Bästa jakthistorierna vid kvällselden. Ljuger definitivt ibland, men ingen säger det.</p>
+            </div>
+
+            <h4>Jägare</h4>
+
+            <div class="npc-card">
+                <h4>Varg-Mika</h4>
+                <div class="npc-meta">Jägare och spårare | Kvinna | 40-tal</div>
+                <p>Kallas "Varg-Mika" för att hon en gång dödade en varg med bara händerna. Sanningen är mer komplicerad - vargen var skadad, hon var desperat, det hela var mer kaotiskt slagsmål i leran. Men legenden lever, och Mika korrigerar ingen. Bästa spåraren i byn efter Olav Järnhand.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Lille Per</h4>
+                <div class="npc-meta">Jägare och bärare | Man | 30-tal</div>
+                <p>Ironiskt namn - Per är stor som ett hus. Kan bära hem en hel älg ensam. Snäll som en valp och ungefär lika klumpig inomhus. Rädd för mörkret. Två meter lång, bred som en oxe, med ett barns ansikte ovanpå det hela.</p>
+            </div>
+
+            <h4>Speciella invånare</h4>
+
+            <div class="npc-card">
+                <h4>Kolaren Svart-Erik</h4>
+                <div class="npc-meta">Kolbrännare | Man | 50-tal</div>
+                <p>Bor vid sin kolmila utanför byn. Hud, kläder och hår permanent grå-svarta av kolstoft. Folk viskar att han har sett De förändrade på nära håll. Han pratar om det efter tillräckligt med öl - men versionen ändras varje gång. Vill expandera kolmilan, vilket skapar konflikt med timmerhuggarna.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Trollbinderskan Rut</h4>
+                <div class="npc-meta">Folktrosmedicin | Kvinna | 70-tal</div>
+                <p>Inte en häxa som Adisa - Rut saknar verklig magi. Men hon kan "binda bort" småkrämpor med ramsor, örter och ritualer som gått i arv i generationer. Krokig, vithårig, alltid en korg med örter. Har ett öga på Grensfortets märkligheter och en gränslös nyfikenhet. Vet om Adisa och respekterar henne djupt.</p>
+            </div>
+
+            <div class="divider">&#10044; &#10044; &#10044;</div>
+
+            <h3>Lokala konflikter</h3>
+
+            <div class="hook-card">
+                <h4>Skogsrätten</h4>
+                <div class="npc-meta">Allvarlighet: Medel (ekonomisk)</div>
+                <p>Vem äger rätten att hugga var? Gränserna var otydliga när Grensfortet var övergivet. Nu när förläningen finns formellt uppstår frågan: tillhör skogen Bergvik, fortet, eller kronan? Torkel vill ha klarhet. Astrid vill ha garantier för sågverkets behov.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>Kolmilefejden</h4>
+                <div class="npc-meta">Allvarlighet: Låg (lokalt gnat)</div>
+                <p>Svart-Erik vill expandera sin kolmila, men det kräver träd som timmerhuggarna ser som "sina." Bror Tallgren har gjort det klart att "den som rör mina träd får med mig att göra." Erik ignorerar hoten lugnt. Kan lösas av en lord som drar gränser - men fel beslut skapar en fiende.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>Vägen till fortet</h4>
+                <div class="npc-meta">Allvarlighet: Medel (praktisk)</div>
+                <p>Vägen mellan Bergvik och Grensfortet behöver underhållas. Bergvik anser att det är fortets ansvar. Fortet anser att det är böndernas dagsverkeansvar. Vårfloden förstör delar av vägen varje år.</p>
+            </div>
+        </section>
+
+        <!-- Frisänkan -->
+        <section id="frisankan" class="section">
+            <h2>Frisänkan</h2>
+
+            <div class="atmosphere">
+                <strong>De litar inte på dig förrän du bevisat dig värdig.</strong> Frisänkan är en by av envisa fiskare och bönder som har klarat sig själva i generationer och inte ser någon anledning att ändra på det. De betalar sin skatt - motvilligt - och i gengäld förväntar de sig att bli lämnade ifred. Morgondimman rullar in från sjön varje gryning medan Vidars samoriska psalmer ekar mellan husen. Gamla nät hänger och torkar. Barn leker på bryggan. Och i byns utkant står ett litet tempel till en gud som skulle ge dödsstraff i Jargien.
+            </div>
+
+            <div class="info-box">
+                <strong>Typ:</strong> Fiskeby med samoriskt tempel<br>
+                <strong>Befolkning:</strong> 60-80 invånare<br>
+                <strong>Karaktär:</strong> Anti-feodala, självständiga, pragmatiska<br>
+                <strong>Religion:</strong> Samorisk tro (präst Vidar)<br>
+                <strong>Ekonomiskt bidrag:</strong> 2-8 Bas/år (motvilliga)
+            </div>
+
+            <div class="warning-box">
+                <strong>RELIGIÖS KONFLIKT:</strong><br>
+                Frisänkan betalar tionde till Vidar (samorisk präst), inte till Daak-kyrkan. Om detta upptäcks av kyrkliga myndigheter kan det bli allvarliga konsekvenser. Samtidigt är Grensfortets flyktingar extrema Daak-fundamentalister som ser all samorisk tro som kätteri.
+            </div>
+
+            <h3>Sinnesintryck</h3>
+            <p><strong>Syn:</strong> Fiskebåtar med namn efter döda släktingar dragna upp på stranden. Nät som hänger och torkar mellan husens gavlar. En enkel träpalissad. Röken från skorstenarna stiger rakt upp i den stilla luften.</p>
+            <p><strong>Ljud:</strong> Vidars samoriska psalmer i gryningen, lågmälda och sorgliga. Barn som leker på bryggan. Vågornas kluckande mot båtbottnar. Måsar som skriker.</p>
+            <p><strong>Lukt:</strong> Rökta pälsar och torkad fisk. Salt från sjön blandat med vedeldsdoft. Örter från Vidars tempel.</p>
+
+            <h3>Byggnader och platser</h3>
+
+            <h4>Vidars Tempel</h4>
+            <p>En enkel, liten träbyggnad med samoriska symboler skurna i dörrposterna. Inuti: en cirkel av stenar, torkade örter i taket, och en evig eld som Vidar aldrig låter slockna. Luktar rökelse och gammal skog. En krutdurk om Daak-kyrkan får reda på att tionde betalas hit.</p>
+
+            <h4>Bryggan</h4>
+            <p>Byns hjärta. En lång träbrygga ut i sjön där fiskebåtarna förtöjs. Barn leker här, gamla sitter och tittar, och alla de viktiga samtalen sker på bryggan snarare än i något hus. Neta Båtbyggare har sin verkstad i ena änden.</p>
+
+            <h4>Rökeriet (Tilda och Orms)</h4>
+            <p>En lång, låg byggnad som alltid ryker. Här röks fisk och kött för vinterförvaring. Rökeriet är livsviktigt - utan det överlever byn inte vintern.</p>
+
+            <h4>Halinors Hus</h4>
+            <p>Inget speciellt utseendemässigt - samma enkla konstruktion som de andra. Men dit man går med tvister, frågor och bekymmer. Alltid en gryta på elden. Alltid ett rakt svar.</p>
+
+            <h4>Palissaden</h4>
+            <p>Enkel träpalissad, mest för att hålla vildsvin och vargar ute. Benne Tok har förstärkt portarna sedan Grensfortet bemannades. <em>"Bättre ha en port och inte behöva den."</em></p>
+
+            <h4>Pertils Hus vid Viken</h4>
+            <div class="warning-box">
+                <strong>ETABLERAD TRAGEDI (Kapitel 1):</strong><br>
+                <strong>Pertil Fiskaren</strong> och hans gravida fru mördades av Ibran/Tamron - den demonbesatte shamanen - när han flydde genom byn. Huset vid viken står fortfarande tomt. Näten hänger kvar på tork. Båten ligger uppdragen på stranden. Ingen har rört dem.<br><br>
+                <em>"Han bad om vatten vid Pertil Fiskarens hus vid viken. Pertil är död nu. Hans fru också. Hon... hon bar deras första barn."</em> — Benne Tok
+            </div>
+
+            <div class="divider">&#10044; &#10044; &#10044;</div>
+
+            <h3>Invånare</h3>
+
+            <h4>Ledare och nyckelpersoner</h4>
+
+            <div class="npc-card">
+                <h4>Halinor</h4>
+                <div class="npc-meta">Byäldste, informell ledare | Kvinna | 60-tal</div>
+                <p>Rak och ärlig till gränsen för oförskämdhet. Halinor har lett Frisänkan genom magra och feta år, och hennes ord väger tungt. Det var hon som mötte evakueringskaravanen med <em>"Bevisa er värda först"</em> - inte ett avvisande, utan en ärlig uppmaning. Väderbiten, gråhårig, ögon som genomskådar lögner.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Benne Tok</h4>
+                <div class="npc-meta">Vaktkapten | Man | 50-tal</div>
+                <p><em>"Gordon. Vi minns. Både bra och dåligt."</em> Med de orden sammanfattade Benne Frisänkans hela relation till äventyrarna. Grodliknande utseende med uttryckslöst ansikte. Paddliknande drag, bred mun, potthjälm som alltid sitter lite snett. Respekterad inte för charm utan för beslutsamhet.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Vidar Solvandrar</h4>
+                <div class="npc-meta">Samorisk präst, andlig ledare | Man | 40-tal</div>
+                <p>Byns samvete. Vidar erbjuder vägledning åt alla som söker den, oavsett tro. <em>"Du bär bördor,"</em> sa han till Arcadius - och det var allt som behövdes. Full samorisk skrud, mjukt ansikte, vänliga ögon. Gör pilgrimsvandring till Flodkällan en gång om året. Hans existens är en krutdurk om Daak-kyrkan får reda på tiondesituationen.</p>
+            </div>
+
+            <h4>Jägare och fiskare</h4>
+
+            <div class="npc-card">
+                <h4>Mera Flint</h4>
+                <div class="npc-meta">Jägarmästare | Kvinna | 30-tal</div>
+                <p>Bästa skottet i byn och den som tränar de unga i jaktkonst. Tar inga genvägar och accepterar inga ursäkter. Hennes jaktmarker överlappar med Grensfortets - en gräns som ännu inte dragits tydligt. Smal, senig, alltid en pilbåge inom räckhåll.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Rollo av Flod</h4>
+                <div class="npc-meta">Huvudfiskare | Man | 40-tal</div>
+                <p>Rollos arbete säkerställer att Frisänkan inte svälter. Tystlåten på land men helt annorlunda ute på sjön - där sjunger han gamla visor och pratar med vattnet. Hans båt heter "Signe" efter hans döda mor.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Enöga Klas</h4>
+                <div class="npc-meta">Navigator, djupvattenfiskare | Man | 50-tal</div>
+                <p>Förlorade ett öga i en storm för femton år sedan. Bäste navigatören i byn, kan läsa vind och ström som andra läser text. Vägrar prata om vad han sett ute på sjön under nätterna. Ögonlapp av svärtat läder, skägg som vind och salt format. Dricker mer på de kvällar han fiskat sent.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Gamle Sigurd</h4>
+                <div class="npc-meta">Pensionerad fiskare, byns minne | Man | 70+</div>
+                <p>Äldste invånaren i Frisänkan. Sigurd minns "förr i tiden" när Grensfortet var bemannat - inte av dagens herrar utan av de som var där innan. Sitter på bryggan varje kväll och berättar. Minns att Grensfortet övergavs <em>"mitt i vintern, utan förvarning"</em> och att <em>"saker gick fel i skogen"</em> efteråt. Vet mer än han berättar vid första mötet.</p>
+            </div>
+
+            <h4>Hantverkare</h4>
+
+            <div class="npc-card">
+                <h4>Anya Väv</h4>
+                <div class="npc-meta">Textilansvarig, berättartradition | Kvinna | 40-tal</div>
+                <p>Hjärtat i byns sociala liv. Anyas hus är samlingspunkt för kvinnor och barn - inte bara för vävning utan för berättelser, skvaller och gemenskap. Vet allt som händer i byn, ofta före Halinor. Runda kinder, händer som aldrig vilar, alltid spindel eller vävskyttel i handen.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Neta Båtbyggare</h4>
+                <div class="npc-meta">Byns enda skeppsbyggare | Kvinna | 45</div>
+                <p>Ingen ny båt sjösätts utan Netas godkännande, och hon har vägrat godkänna båtar som andra tyckt var "nog bra." Breda axlar, händer fulla av tjära och splitter. Pratar med båtarna medan hon bygger dem - verkliga samtal. <em>"Vart vill du?"</em> frågar hon plankan innan hon spikar.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Kopparsansen</h4>
+                <div class="npc-meta">Metallreparatör | Man | 60-tal</div>
+                <p>Ingen vet hans riktiga namn. Allt han lagar börjar med koppar - fat, grytor, verktyg, vapen. Ryktas vara en förrymd från Jargien. Frågar man får man inget svar, bara en tyst blick och sedan tillbaka till arbetet. Mager, lång, brännskador på underarmarna. Reagerar märkbart om jargiskt tal hörs.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Tilda &amp; Orm Sjöberg</h4>
+                <div class="npc-meta">Rökeriägare | Kvinna/Man, gifta | 40-tal</div>
+                <p>Orm kan arbeta en hel dag utan att yttra ett ord. Tilda kompenserar genom att prata för fyra. Deras rökeri är livsviktigt - utan det överlever byn inte vintern. Tre vuxna barn som alla fiskar. Tilda svarar på allt, även frågor ställda till Orm. Orm nickar.</p>
+            </div>
+
+            <h4>Speciella invånare</h4>
+
+            <div class="npc-card">
+                <h4>Stum-Maja</h4>
+                <div class="npc-meta">Dykare | Kvinna | 20-tal</div>
+                <p>Född stum men bättre under vatten än någon annan i byn. Kan stanna under ytan längre än vad som borde vara möjligt. Kommunicerar med tecken och skriver i sand. Säger sig ha sett "sjöjungfrun" - en gestalt under vattnet. Enöga Klas nickar när hon berättar det. Sjöbottnen döljer saker - gamla stenar med ristningar, föremål som inte borde finnas.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Gransen</h4>
+                <div class="npc-meta">Fiskare, byoriginal | Man | 40-tal</div>
+                <p>Halvgalen eller halvsanningssägare - byborna vet inte vilket. Påstår sig kunna "prata med fiskarna." Folk skrattar, men hans fiskelycka är oförklarligt god. Bor i utkanten i ett hus som lutar så mycket att det borde ha fallit. Ger oväntat exakta förutsägelser om väder.</p>
+            </div>
+
+            <div class="divider">&#10044; &#10044; &#10044;</div>
+
+            <h3>Lokala konflikter</h3>
+
+            <div class="hook-card">
+                <h4>Tiondefrågan</h4>
+                <div class="npc-meta">Allvarlighet: Hög (potentiellt förödande)</div>
+                <p>Vidar samlar tionde som egentligen borde gå till Daak-kyrkan. Om kyrkan får reda på detta kan konsekvenserna bli allvarliga: interdikt, böter, eller värre. Och om Grensfortets Daak-fundamentalister upptäcker det...</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>Ungdomsflykt</h4>
+                <div class="npc-meta">Allvarlighet: Medel (långsiktigt hot)</div>
+                <p>De unga vill till Vitterdal för bättre liv. Vem ska fiska, reparera båtarna, ta hand om de gamla? Neta Båtbyggare har ingen lärling, och det oroar henne mer än hon visar.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>Jaktmarksgränsen</h4>
+                <div class="npc-meta">Allvarlighet: Låg-Medel (gnagande irritation)</div>
+                <p>Mera Flints jaktmarker och Grensfortets jaktmarker har aldrig haft en tydlig gräns. Ännu har ingen skjutit den andres byte, men det är en tidsfråga.</p>
+            </div>
+
+            <h3>Relation till spelarna</h3>
+            <p>Benne Toks ord vid spelarnas återkomst: <em>"Gordon. Vi minns. Både bra och dåligt."</em></p>
+            <ul>
+                <li><strong>Det dåliga:</strong> Morden som hände när shamanen kom - gruppen jagade honom men kunde inte rädda Pertil</li>
+                <li><strong>Det bra:</strong> Gruppen stannade, visade respekt, fortsatte jakten</li>
+            </ul>
+        </section>
+
+        <!-- Trakten -->
+        <section id="trakten" class="section">
+            <h2>Trakten kring Grensfortet</h2>
+
+            <div class="atmosphere">
+                <strong>Inte alla lever i byarna.</strong> I skogarna och bergen kring Bergvik, Frisänkan och Grensfortet bor en handfull människor - och annat - som valt ensamheten eller drivits till den. Och i trakten finns platser som folk undviker, platser som folk söker, och platser som ingen hittar två gånger.
+            </div>
+
+            <h3>Solo-invånare</h3>
+
+            <h4>Jägare och skogsfolk</h4>
+
+            <div class="npc-card">
+                <h4>Grimme Jansen</h4>
+                <div class="npc-meta">Ensam jägare | Man | 50-tal | Stuga 2 timmar från Bergvik</div>
+                <p>Säljer pälsar och kött till Bergvik. Duktig, pålitlig, och fullständigt tyst om sitt förflutna. Lämnade Drunok för tjugo år sedan och har inte sagt varför. En tatuering på höger underarm döljer han alltid. Varg-Mika har sett den en gång och sagt inget.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Systkonen Märta &amp; Sten</h4>
+                <div class="npc-meta">Örtsamlare | Kvinna/Man, syskon | 60-tal | Stuga halvvägs mellan byarna</div>
+                <p>Syskon som aldrig gift sig och aldrig lämnat trakten. Samlar örter och svamp som de byter mot nödvändigheter. Adisa besöker dem ibland - de tre dricker te och pratar om saker som ingen annan förstår. Skogen mellan byarna har ingen hemligheter för dem.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Trädklättraren ("Ekansen")</h4>
+                <div class="npc-meta">Mystisk ensling | Man (antas) | Ålder okänd | Jätteek i skogen</div>
+                <p>Ingen vet vad han heter eller var han kommer ifrån. Bor i en koja högt uppe i en enorm gammal ek. Klättrar ner ibland för att byta kött mot verktyg. Pratar aldrig. De som sett honom nära beskriver läderartad hud, långa fingrar, och ögon som inte blinkar i normal takt. Trollbinderskan Rut säger att <em>"ekar inte låter vem som helst bo i dem."</em></p>
+            </div>
+
+            <h4>Eremiter och udda existenser</h4>
+
+            <div class="npc-card">
+                <h4>Broder Tomas</h4>
+                <div class="npc-meta">F.d. Daak-präst, eremit | Man | 40-tal | Grotta i bergen</div>
+                <p>Före detta Daak-präst som "förlorade sin tro." Lever som eremit med utsikt över dalen. Kan läsa och skriva - ovärderligt i en trakt där de flesta inte kan. Skriver dagbok, brev till ingen, kommentarer om världen. Hans dagböcker är en guldgruva av information om trakten under tjugo år.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Gråben</h4>
+                <div class="npc-meta">Förvisad tirak | Man | Gammal | Berget nära Grensfortet</div>
+                <p>En gammal tirak förvisad från sin stam för något han vägrar prata om. Handlar ibland med byarna - pälsar mot metall. Levererar sällsynta pälsar av arter jägarna inte känner igen. Var jagar han? I Mithera? Den enda tiraken i trakten förutom Thrakka - och de har ännu inte mötts.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Dimgumman</h4>
+                <div class="npc-meta">Mystisk vaktare | Kvinna (antas) | Ålder okänd | Nära Mithera-gränsen</div>
+                <p>Mer rykte än person. Folk har sett rök från en stuga i dimman nära gränsen, men ingen har hittat den. Adisa vet troligen mer men säger inget. Vidar Solvandrar har nämnt henne i en bön: <em>"för henne som vaktar trösklarna."</em> Hon har sett något i Mithera som Grensfortets herrar behöver veta.</p>
+            </div>
+
+            <h4>Före detta soldater</h4>
+
+            <div class="npc-card">
+                <h4>Enarmade Gunnar</h4>
+                <div class="npc-meta">Veteran | Man | 60-tal | Stuga vid sjön nära Frisänkan</div>
+                <p>Förlorade armen i ett krig han sällan namnger. Fiskar med ena handen med förvånansvärd skicklighet. Barn som vågar besöka honom belönas med krigshistorier och hemgjorda fiskkrokar. Rollo av Flod förser honom med fisk vid dåligt väder. Han och Enöga Klas dricker ibland ihop - två halva män som bildar ett helt samtal.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Dezerteuren</h4>
+                <div class="npc-meta">Flykting från Nattgardet | Man | 30-tal | Gömmer sig i skogarna</div>
+                <div class="warning-box" style="margin-top: 0.5rem;">
+                    <strong>EXTREMT KÄNSLIG NPC:</strong> Desertör från <strong>Nattgardet</strong> i Damarien - storfurste Thamas Vitfjäders fruktade elitstyrka "Mörkerhundarna." Flydde efter att ha vägrat delta i "storfurstens vinskörd" (brutala utrensningar). Om han hittas kan hans familj avrättas i tredje led. Mörkerhundarnas ledare Marok Svärdshand är hemligt en helmgast (vandöd).<br><br>
+                    <strong>Koppling:</strong> Gordons bror Ethan tjänstgör i Damarien.
+                </div>
+            </div>
+
+            <div class="divider">&#10044; &#10044; &#10044;</div>
+
+            <h3>Platser i trakten</h3>
+
+            <h4>Mellan byarna</h4>
+
+            <div class="info-box">
+                <strong>Korsvägskrogen</strong> - Fallfärdig rastplats vid vägskälet mellan Bergvik, Frisänkan och Grensfortet. Taket håller fortfarande. Väggarna klottrade med resenärers meddelanden, vissa färska. Naturlig mötesplats och bra ställe för hemliga möten.
+            </div>
+
+            <div class="info-box">
+                <strong>Trollstenen</strong> - Enorm, mossbevuxen sten med märkliga ristningar som inte liknar något känt språk. Ristningarna ser annorlunda ut beroende på ljus och vinkel. Vissa hävdar att nya ristningar dykt upp. <em>"Något sover under Trollstenen"</em> - gamla berättelser om en bunden varelse.
+            </div>
+
+            <div class="info-box">
+                <strong>Svältbacken</strong> - Kulle där hungersnödens offer begravdes generationer sedan. Gräset alltid grönare. På hösten lyser fosforescerande svampar - barn kallar dem "de dödas lampor." Någon har grävt här med redskap. Vem, och varför?
+            </div>
+
+            <h4>Vid Mithera-gränsen</h4>
+
+            <div class="info-box">
+                <strong>Gråvargens Pass</strong> - Enklaste vägen in i Mithera. Namngiven efter en legendarisk varg - stor som en häst. Vinternätter hör man ylanden. Gruppen har troligen passerat här under Kapitel 9-10.
+            </div>
+
+            <div class="info-box">
+                <strong>De Sju Stenarna</strong> - Cirkel av resta stenar, var och en dubbelt manshög. Ingen vet vem som reste dem - inte ens Dain Stenyxa. <em>"Inte dvärgar. Vi bygger inte cirklar."</em> Vid solnedgång kastar stenarna skuggor som inte pekar i rätt riktning.
+            </div>
+
+            <div class="info-box">
+                <strong>Issjön</strong> - Liten, rund sjö som aldrig fryser. Vattnet kristallklart. Djur dricker inte ur den. Stum-Maja dök här en gång och vägrade dyka igen. Vattnet smakar ingenting - som om det aldrig varit i kontakt med omvärlden. Något ligger på botten.
+            </div>
+
+            <h4>Dolda platser</h4>
+
+            <div class="info-box">
+                <strong>Den Övergivna Gruvan</strong> - Gammal dvärggruva i bergen. Ingången delvis rasad men passabel. Dain vet om den men har inte nämnt det. Luften oväntat varm. Djupare in hörs ljud. <em>"Gamla verktyg."</em> Paus. <em>"Gamla misstag."</em>
+            </div>
+
+            <div class="info-box">
+                <strong>Flodkällan</strong> - Helig plats för de samoriska. Vidar gör pilgrimsvandring hit årligen. Vattnet bubblar ur berget genom en spricka som liknar ett ansikte. Området runt källan är tyst på ett onaturligt sätt. Örter med ovanliga egenskaper växer här.
+            </div>
+
+            <div class="divider">&#10044; &#10044; &#10044;</div>
+
+            <h3>Rykten och legender</h3>
+
+            <ol>
+                <li><strong>"Grensfortet är byggt på en grav"</strong> - En alvprins begravdes här. Dvärgarna vet mer men pratar inte.</li>
+                <li><strong>"Adisa är 300 år gammal"</strong> - Dain sa "äldre än dvärgar." Ingen vet. Adisa svarar inte.</li>
+                <li><strong>"Något sover under Trollstenen"</strong> - Ristningarna förändras. Någon reagerar på närvaro.</li>
+                <li><strong>"Mitheras vargar tar barn"</strong> - Inga barn har försvunnit. Men Gråben har sett vintervargarna jaga - och de jagar inte bara djur.</li>
+                <li><strong>"Den sista dvärgkungen vilar i berget"</strong> - Fästet Methras-Renk-Drezin är nära. Dain går inte dit. <em>"Vissa gravar ska förbli slutna."</em></li>
+            </ol>
+
+            <h4>Lokala sägner</h4>
+            <ul>
+                <li><strong>Vinterns första natt:</strong> Den som är ute den natten ser sin egen död. Alla stannar inne. Alltid.</li>
+                <li><strong>Sjöjungfrun i Frisänkan:</strong> En drunknad flicka som drar ner fiskare. Stum-Maja säger att hon sett henne. Enöga Klas nickar.</li>
+                <li><strong>Ekansens hemlighet:</strong> Varför bor Trädklättraren i sin ek? Vad flyr han från - eller vad vaktar han?</li>
+            </ul>
+
+            <div class="divider">&#10044; &#10044; &#10044;</div>
+
+            <h3>Handelsvägar</h3>
+            <table>
+                <tr>
+                    <th>Rutt</th>
+                    <th>Varor</th>
+                    <th>Restid</th>
+                </tr>
+                <tr>
+                    <td>Bergvik &rarr; Vitterdal</td>
+                    <td>Timmer, kol, pälsar</td>
+                    <td>4 dagar</td>
+                </tr>
+                <tr>
+                    <td>Frisänkan &rarr; Vitterdal</td>
+                    <td>Fisk, rökt kött</td>
+                    <td>5 dagar</td>
+                </tr>
+                <tr>
+                    <td>Grensfortet &rarr; Vitterdal</td>
+                    <td>Sällsynta pälsar, viltjakt</td>
+                    <td>6 dagar</td>
+                </tr>
+            </table>
+
+            <h3>Årstider</h3>
+
+            <div class="info-box">
+                <strong>Vinter (nov-apr):</strong> Snö täcker allt. Fortet isoleras 2-3 månader. Vägarna stängs. Hungertid. Sjön fryser (utom Issjön). Mithera-gränsen "kryper närmare."<br><br>
+                <strong>Vår (apr-maj):</strong> Snösmältning, floden svämmar, vägarna lervälling. Första handelskontakterna. Sjukdomar och hunger.<br><br>
+                <strong>Sommar (jun-sep):</strong> Intensivt arbete. Bästa reseperioden. Byggnation, handel, jakt dygnet runt. Mithera "mildare" men aldrig säkert.<br><br>
+                <strong>Höst (sep-nov):</strong> Sista chansen att fylla förråden. Bästa pälsarna. Rökeriet går dygnet runt. Nervositet inför vintern.
+            </div>
+        </section>
+
+        <!-- Viktiga NPCs -->
+        <section id="npcs" class="section">
+            <h2>Viktiga NPCs</h2>
+
+            <div class="atmosphere">
+                <strong>Dessa är de som håller förläningen vid liv.</strong> Eira som bär skulden för alla hon inte kunde rädda. Skorda som aldrig ler men alltid levererar. Xian-Li som döljer sina hemligheter bakom poetiska ord. Adisa som vet mer än någon borde veta. De är inte hjältar - de är överlevare, och i Förläningen Grensfortet är det samma sak.
+            </div>
+
+            <h3>Grensfortets ledning</h3>
+
+            <div class="npc-card">
+                <h4>Eira Holm</h4>
+                <div class="npc-meta">Byäldste, huvudledare | Människa (drunokier) | 55 år</div>
+                <p><strong>Bakgrund:</strong> F.d. byäldste från Vargnäset. Ledde de 50 överlevande flyktingarna till Grensfortet efter evakueringen. Bär en tung börda av skuld för alla hon inte kunde rädda.</p>
+                <p><strong>Roll:</strong> Ansvarar för daglig drift, arbetsfördelning, skatteuppbörd. Organiserade allt under spelarnas frånvaro med Xian-Lis hjälp.</p>
+                <p><strong>Personlighet:</strong> Alltmer skakig av trauma men vägrar ge upp. Tar ansvar även när hon tvivlar på sig själv.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Skorda Bergsdotter</h4>
+                <div class="npc-meta">Jägare, praktiskt stöd | Människa (drunokier) | 45 år</div>
+                <p><strong>Bakgrund:</strong> Ensamvarg från Vargnäset. Berättarröst i Kapitel 8.5 - hennes cyniska perspektiv färgade hela resan till fortet.</p>
+                <p><strong>Roll:</strong> Bor på fortet men spenderar mycket tid solo i skogen. Ansvarar för jakt, spanar, organiserar jakten som ger 8-12 Bas/år i export. Håller sig helst undan folk.</p>
+                <p><strong>Personlighet:</strong> Rå realist. Ler aldrig. Säger sanningen även när ingen vill höra den. <em>"Det som folk inte förstår är att överlevnad inte handlar om styrka. Det handlar om att vakna nästa morgon."</em></p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Xian-Li</h4>
+                <div class="npc-meta">Sung-diplomat | Människa (Sung) | ~35 år</div>
+                <p><strong>Officiell roll:</strong> Diplomatisk rådgivare och filosof från Sung. Hjälper med administration och krönikeföring.</p>
+                <p><strong>Dold identitet:</strong> Skicklig magiker (pneumotropi) och kampmunk. Följer Thrakka av okänd anledning.</p>
+                <p><strong>Insats:</strong> Hjälpte hemligt driva bort Bärnsälen som dödade två jägare. Medierar mellan flyktingarna och Adisa.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Adisa</h4>
+                <div class="npc-meta">Häxan | Ålder okänd ("äldre än dvärgar")</div>
+                <p><strong>Boplats:</strong> Stugan i gläntan, en halv dagsmarch västerut - nära nog att söka hjälp, långt nog att undvika sanningen. Träden runt stugan är "för gamla, för tysta".</p>
+                <p><strong>Roll:</strong> Informell rådgivare. Ger magiskt skydd, läker sjuka, har kunskap om Mithera.</p>
+                <p><strong>Konflikt:</strong> Flyktingarna fruktar henne som "demonisk". Hon bevisade sin godhet genom att läka sjuka barn, men misstron är djup.</p>
+                <p><strong>Mysterium:</strong> Dain Stenyxas ord: <em>"Äldre än dvärgar. Hon är inte vad hon verkar."</em> Vad betyder det?</p>
+            </div>
+
+            <div class="divider">❖ ❖ ❖</div>
+
+            <h3>Militärt befäl</h3>
+
+            <div class="npc-card">
+                <h4>Jonna Sköldbärare</h4>
+                <div class="npc-meta">F.d. gränsvakt, garnisonsbefäl | Människa | 38 år</div>
+                <p><strong>Roll:</strong> Militärt befäl över fortets försvar. Skötte säkerheten under spelarnas frånvaro.</p>
+                <p><strong>Förmåga:</strong> Erfaren gränsvakt med kunskap om områdets hot.</p>
+            </div>
+
+            <div class="npc-card">
+                <h4>Tomas Järnhjälm</h4>
+                <div class="npc-meta">F.d. infanterist, försvarschef | Människa | 42 år</div>
+                <p><strong>Roll:</strong> Ansvarar för fortets fysiska försvar och träning av värnpliktiga.</p>
+            </div>
+        </section>
+
+        <!-- Att styra förläningen -->
+        <section id="styra" class="section">
+            <h2>Att Styra Förläningen</h2>
+
+            <div class="atmosphere">
+                <strong>En förläning styrs inte med svärd utan med penna, förhandling och närvaro.</strong> Gordon hade trott att äga mark betydde frihet. Istället betydde det ansvar - ändlösa beslut om vem som får hugga vilken skog, hur mycket tionde som ska betalas, vad som händer när två bönder slåss om en gränspåle. Kazrik hade skrattat första gången Gordon klagade. "Välkommen till verkligheten, soldat. Krig är enkelt. Fred är svårt."
+            </div>
+
+            <h3>Dagliga göromål</h3>
+            <p>En förläningsherre förväntas vara <em>närvarande</em>. Det räcker inte att äga marken - du måste synas.</p>
+
+            <ul>
+                <li><strong>Morgonrapport:</strong> Eira (eller den som sköter daglig drift) rapporterar nattens händelser, arbetsläget, eventuella problem</li>
+                <li><strong>Domsrätt:</strong> Mindre tvister avgörs av herren - gränsbråk, stöld, slagsmål. Större brott rapporteras till Vitterdal</li>
+                <li><strong>Besökare:</strong> Handelsmän, budbärare, tiggare, klagande bönder - alla vill ha herrens tid</li>
+                <li><strong>Inspektion:</strong> Regelbundna rundor i fortet, byarna, jaktmarkerna. Folk måste se att herren bryr sig</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>DELEGATION:</strong> Spelarna behöver inte göra allt själva. Det är därför de har:<br>
+                • <strong>Eira Holm</strong> - Daglig drift, förråd, arbetsfördelning<br>
+                • <strong>Jonna Sköldbärare</strong> - Militärt befäl, vakter, patrullerare<br>
+                • <strong>Skorda Bergsdotter</strong> - Jakt, spaning, skogsinventering<br>
+                • <strong>Xian-Li</strong> - Bokföring, korrespondens, diplomati<br><br>
+                Men: <strong>Besluten</strong> måste fattas av herrarna. Delegation utan övervakning leder till kaos.
+            </div>
+
+            <h3>Veckovis</h3>
+            <ul>
+                <li><strong>Rådsmöte:</strong> Eira, Jonna, eventuellt byäldstena samlas för att diskutera läget</li>
+                <li><strong>Skatteuppbörd:</strong> Under säsong - bönder levererar sin del av skörden/jakten</li>
+                <li><strong>Patrullrapporter:</strong> Jonna rapporterar vad patrullerna sett - spår, rykten, hot</li>
+                <li><strong>Byggnadsarbete:</strong> Vad har gjorts? Vad behöver göras? Dagsverken att fördela</li>
+            </ul>
+
+            <h3>Säsongsansvar</h3>
+
+            <h4>Vår (Mars-Maj)</h4>
+            <ul>
+                <li>Inventera vinterförråden - vad överlevde?</li>
+                <li>Reparera vinterskador på byggnader och vägar</li>
+                <li>Första handelskaravanerna - beställ det som saknas</li>
+                <li>Planering av sommarens arbete (dagsverken)</li>
+            </ul>
+
+            <h4>Sommar (Juni-Augusti)</h4>
+            <ul>
+                <li>Intensivt arbete - timmer, fiske, byggnation</li>
+                <li>Handelsperiod - köpmän kommer och går</li>
+                <li>Eventuella besök från Vitterdal eller kungliga inspektörer</li>
+                <li>Militär träning av värnpliktiga</li>
+            </ul>
+
+            <h4>Höst (September-November)</h4>
+            <ul>
+                <li>Skatteuppbörd - huvudperioden för tionde</li>
+                <li>Slakt och konservering - förråden måste fyllas</li>
+                <li>Sista chansen för handel innan vintern</li>
+                <li>Jaktsäsong - organisera jaktlag, fördela byten</li>
+            </ul>
+
+            <h4>Vinter (December-Februari)</h4>
+            <ul>
+                <li>Övervaka förråden - ransonering vid behov</li>
+                <li>Underhåll och reparationer inomhus</li>
+                <li>Rättskipning och dispytlösning (folk har tid att bråka)</li>
+                <li>Planering för nästa år</li>
+            </ul>
+
+            <h3>Rättskipning</h3>
+            <p>Som förläningsherrar har spelarna <strong>låg domsrätt</strong> - rätten att döma i mindre mål.</p>
+
+            <div class="info-box">
+                <strong>Låg domsrätt (spelarna dömer):</strong><br>
+                • Gränstvister mellan bönder<br>
+                • Mindre stöld (under 10 silver)<br>
+                • Slagsmål utan dödlig utgång<br>
+                • Skadegörelse på egendom<br>
+                • Arbetsvägrande dagsverken<br><br>
+                <strong>Straff de kan utdöma:</strong> Böter, piskrapp, fotstock, extra dagsverken, förvisning från förläningen
+            </div>
+
+            <div class="warning-box">
+                <strong>Hög domsrätt (Vitterdal dömer):</strong><br>
+                • Mord och dråp<br>
+                • Grov stöld (över 10 silver)<br>
+                • Våldtäkt<br>
+                • Förräderi mot herren<br>
+                • Kätteri (teoretiskt)<br><br>
+                Spelarna <strong>måste</strong> rapportera dessa brott till Jarl Hagge. Att döma själva i dessa mål är att överskrida sin befogenhet.
+            </div>
+
+            <h3>Dagsverken</h3>
+            <p>Varje <strong>ofri bonde</strong> är skyldig 80 dagsverken per år till sin herre. Detta är gratis arbetskraft som kan användas till:</p>
+
+            <ul>
+                <li><strong>Vägunderhåll:</strong> Vägen till Vitterdal måste hållas farbar</li>
+                <li><strong>Byggnation:</strong> Reparera fortet, bygga nya hus</li>
+                <li><strong>Skogsröjning:</strong> Utöka odlingsbar mark</li>
+                <li><strong>Dikning:</strong> Dränera våtmarker</li>
+                <li><strong>Vedhuggning:</strong> Bränsle till vintern</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>Tillgängliga dagsverken:</strong><br>
+                • Frisänkan (36 ofria): 2 880 dagsverken/år<br>
+                • Bergvik (27 ofria): 2 160 dagsverken/år<br>
+                • <strong>Totalt:</strong> 5 040 dagsverken/år<br><br>
+                <strong>OBS:</strong> Dagsverken kan inte "sparas" - använd dem eller förlora dem. Att kräva mer än 80 dagar är tyranni och skapar missnöje.
+            </div>
+
+            <h3>Relationer med byarna</h3>
+
+            <h4>Bergvik - "Vi behövde en lord"</h4>
+            <p>Lojala och tacksamma. De uppskattar att någon tar ansvar. <strong>Risk:</strong> Om spelarna ignorerar dem eller missbrukar förtroendet vänder de sig till Vitterdal för hjälp.</p>
+
+            <h4>Frisänkan - "Vi klarar oss själva"</h4>
+            <p>Motvilliga skattebetalare. De accepterar herrskapet men förväntar sig att bli lämnade ifred. <strong>Risk:</strong> Om spelarna pressar för hårt eller blandar sig i deras religion kan det bli öppet motstånd.</p>
+
+            <h3>Vad kan gå fel?</h3>
+
+            <ul>
+                <li><strong>Misskötta skatterna:</strong> Vitterdal skickar inspektörer, ifrågasätter kompetensen</li>
+                <li><strong>Ignorera tvister:</strong> Folk tar lagen i egna händer, blodsfeider</li>
+                <li><strong>Överutnyttja dagsverken:</strong> Bönderna klagar till Vitterdal, uppror</li>
+                <li><strong>Försumma försvaret:</strong> Nästa hot finner fortet oförberett</li>
+                <li><strong>Religiös konflikt:</strong> Daak-fundamentalisterna attackerar Frisänkans tempel</li>
+                <li><strong>Ekonomisk kollaps:</strong> Lyx-underskottet tvingar spelarna att sänka levnadsstandarden eller skuldsätta sig</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>RÅDET:</strong> Spelarna äger inte förläningen - de <strong>håller</strong> den åt Jarl Hagge. Om de missköter sig kan han återkalla den. De är vasaller, inte kungar.
+            </div>
+        </section>
+
+        <!-- Militärt styre -->
+        <section id="militar" class="section">
+            <h2>Militärt Styre & Legosoldater</h2>
+
+            <div class="atmosphere">
+                <strong>Att bli krigsherre kräver mer än mod - det kräver silver, logistik och järnhård disciplin.</strong> Gordon hade sett kompanier splittras inifrån, inte av fiendesvärd utan av hungriga magar och utebliven sold. Kazrik hade varnat honom: "En soldat som inte får betalt är en bandit som väntar på tillfälle." Nu, med ett fort att försvara och en gräns mot demoner att bevaka, började han förstå vad det innebar att leda mer än en handfull.
+            </div>
+
+            <h3>Organisation och Befälsordning</h3>
+            <p>I Mundanas legoknektskompanier tillämpas en strikt hierarki där befordran sker genom beprövad duglighet:</p>
+
+            <ul>
+                <li><strong>Menig:</strong> Kan lyda order och hantera sitt vapen</li>
+                <li><strong>Korpral (Gruppbefäl):</strong> Ansvarar för ~10 man. Kräver <em>Krigsföring</em> (Ob3T6) och <em>Ledarskap</em> (Ob3T6)</li>
+                <li><strong>Sergeant (Plutonbefäl):</strong> Ansvarar för 20-40 man. Kräver <em>Krigsföring</em> (Ob3T6) och <em>Ledarskap</em> (Ob4T6)</li>
+                <li><strong>Löjtnant/Kapten:</strong> Kompanibefälhavare. Kräver <em>Krigsföring</em> (Ob4T6) och <em>Ledarskap</em> (Ob4T6)</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>GORDON SOM BEFÄL:</strong> Gordon har erfarenhet som legosoldat men har han färdigheterna för att leda? Ob4T6 i Ledarskap är svårt - misslyckande under strid kan betyda att enheten blir "oordnad" eller flyr.
+            </div>
+
+            <h3>Kostnader och Sold</h3>
+            <p>En legosoldat lever inte på patriotism. Han lever på mat, sold och löften om byte.</p>
+
+            <div class="info-box">
+                <strong>ÅRSKOSTNAD PER SOLDAT:</strong><br>
+                • <strong>Sold:</strong> ~3 Bas/år (1 080 silver)<br>
+                • <strong>Betalningskrav:</strong> Minst 75% måste betalas i <em>Basvaror</em> (mat, utrustning) - mynt mättar ingen<br>
+                • Officerare och specialister: 50% i Bas räcker<br><br>
+                <strong>PRAKTISKT:</strong> Räkna ~1 000 silver per soldat för ett års kontrakt (inklusive mat och utrustning).
+            </div>
+
+            <div class="warning-box">
+                <strong>GRENSFORTETS NUVARANDE STYRKA:</strong><br>
+                Fortet har ~20 väpnade (vakter + värnpliktiga). Om Gordon vill ha en <em>professionell</em> garnison på 20 man kostar det:<br>
+                • 20 × 3 Bas = <strong>60 Bas/år</strong> (21 600 silver)<br>
+                • Förläningens totala inkomst: ~60 Bas/år<br><br>
+                <strong>Slutsats:</strong> Hela förläningens överskott skulle gå till soldater. Ingen mat, inga reparationer, ingenting annat.
+            </div>
+
+            <h3>Krigsbyten och Andelar</h3>
+            <p>Legosoldater kräver ofta en andel i krigsbytet utöver solden:</p>
+
+            <ul>
+                <li><strong>Standard:</strong> Krigsherren/uppdragsgivaren tar 50% av plundrat byte</li>
+                <li><strong>Andelar:</strong> Resten delas - 1 andel per soldat, 2 för sergeanter, 3 för specialister, 4 för officerare</li>
+                <li><strong>Risk:</strong> Om bytet är magert - missnöje, desertering, myteri</li>
+            </ul>
+
+            <h3>Enheter och Strid</h3>
+            <p>I större strider delas soldater in i <strong>enheter</strong> om minst 20 man av samma trupptyp:</p>
+
+            <div class="info-box">
+                <strong>TYPISKA VÄRDEN (Legoknektar):</strong><br>
+                • Stridsskicklighet (Ss): 12<br>
+                • Offensivt Värde (OV): 12<br>
+                • Defensivt Värde (DV): varierar med rustning<br>
+                • Moral: 11<br><br>
+                <strong>Specialister:</strong> Bågskyttar, kavalleri och belägringsspecialister har andra värden och kostar mer.
+            </div>
+
+            <h3>Logistik och Tross</h3>
+            <p>En armé marscherar på sin mage. Utan fungerande tross svälter soldaterna inom veckor.</p>
+
+            <ul>
+                <li><strong>Soldatens kapacitet:</strong> Bär mat för ~15 dagar (1/24 Bas)</li>
+                <li><strong>Ryttare:</strong> Bär mat för ~30 dagar (1/12 Bas)</li>
+                <li><strong>Oxdragen kärra:</strong> Bär 2 Bas - nog för 2 soldater i ett år, eller 48 soldater i 15 dagar</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>SPECIALISTER ATT ÖVERVÄGA:</strong><br>
+                • <strong>Fältmedikus:</strong> 70 silver/vecka - halverar döda/skadade<br>
+                • <strong>Kock:</strong> 30 silver/vecka - bättre mat = bättre moral<br>
+                • <strong>Stigfinnare:</strong> 30 silver/vecka - undvik bakhåll, hitta lägerplatser
+            </div>
+
+            <h3>Rekrytering</h3>
+            <p>Legosoldater hittas i hamnstäder och militära knutpunkter. I en hamnstad söker ca 10 × hamnens storlek sjömän och krigare hyra varje vecka.</p>
+
+            <div class="warning-box">
+                <strong>VAR FÖRSIKTIG MED:</strong><br>
+                • <strong>Desertörer:</strong> Billiga men riskabla - de lämnade sin förra herre av en anledning<br>
+                • <strong>Banditer:</strong> Vana vid våld men svåra att disciplinera<br>
+                • <strong>Idealister:</strong> Billiga men flyr när det blir svårt<br><br>
+                <strong>Bästa rekryterna:</strong> Veteraner från upplösta kompanier, yngre söner till soldatfamiljer, bönder som vill bort.
+            </div>
+
+            <h3>Gordons alternativ</h3>
+
+            <h4>Alternativ 1: Värnplikt (billigast)</h4>
+            <p>Fortsätt med nuvarande system - värnpliktiga bönder som roterar vakttjänst. Kostar nästan inget men ger amatörer, inte soldater.</p>
+
+            <h4>Alternativ 2: Liten professionell kärna</h4>
+            <p>Anställ 5-10 professionella soldater som kärna. Kostar 15-30 Bas/år. De tränar värnpliktiga och leder försvaret vid hot.</p>
+
+            <h4>Alternativ 3: Legosoldatkompani med Grensfortet som bas</h4>
+            <p>Gordons plan: En aktiv legosoldatstyrka som använder fortet som hemmahamn men ofta är ute på uppdrag. Inkomsterna från uppdrag finansierar styrkan - fortet behöver bara bära kostnaden för vinterkvarter.</p>
+
+            <div class="info-box">
+                <strong>GRENSFORTETS KAPACITET:</strong><br>
+                Ett litet stentorn har SMB (Största Möjliga Bemanning) på <strong>28-36 personer</strong>.<br>
+                Ett porttorn kan hysa upp till 120.<br><br>
+                <strong>Grensfortet:</strong> Med befintlig personal (~12-15 personer) finns plats för <strong>15-20 legosoldater</strong> under vintern utan att bygga baracker.
+            </div>
+
+            <h3>Gordons Legokompani - Detaljerad Kalkyl</h3>
+
+            <h4>Minsta livskraftiga storlek</h4>
+            <p>En <strong>pluton om 20 man</strong> är minimum för att tas på allvar som militärt förband. Mindre grupper räknas som "följe" eller "vaktstyrka" och får sällan riktiga uppdrag.</p>
+
+            <h4>Vecko- och årskostnader</h4>
+            <div class="info-box">
+                <strong>SOLD PER SOLDAT:</strong> 20 silver/vecka<br>
+                <strong>Krav:</strong> Minst 75% måste betalas i Basvaror (mat, bränsle, utrustning)<br><br>
+
+                <strong>20 SOLDATER:</strong><br>
+                • 20 × 20 silver × 52 veckor = <strong>20 800 silver/år</strong> (~58 Bas)<br><br>
+
+                <strong>SPECIALISTER (rekommenderat):</strong><br>
+                • Fältskär: 160 silver/månad = 1 920 silver/år<br>
+                • Kock: 30 silver/vecka = 1 560 silver/år<br>
+                • <strong>Totalt specialister:</strong> 3 480 silver/år (~10 Bas)<br><br>
+
+                <strong>TOTAL ÅRSKOSTNAD (20 man + specialister):</strong><br>
+                ~24 300 silver/år = <strong>~68 Bas/år</strong>
+            </div>
+
+            <h4>Affärsmodellen: Uppdrag betalar</h4>
+            <p>Nyckeln är att <strong>uppdragsgivaren betalar solden</strong> när kompaniet är i fält. Gordon behöver bara finansiera:</p>
+
+            <ul>
+                <li><strong>Vinterkvarter</strong> (3-4 månader): ~17-23 Bas</li>
+                <li><strong>Mellan uppdrag</strong>: Varierar beroende på hur snabbt nya kontrakt hittas</li>
+                <li><strong>Utrustningsunderhåll</strong>: Ingår i veckosolden</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>EKONOMISK VERKLIGHET:</strong><br>
+                • Förläningens överskott: ~7-10 Bas/år<br>
+                • Vinterkvarter för 20 man: ~17-23 Bas<br><br>
+                <strong>UNDERSKOTT:</strong> Gordon behöver <strong>7-13 Bas extra</strong> bara för att hålla styrkan över vintern.<br><br>
+                <strong>Lösningar:</strong><br>
+                • Spara från uppdragsintäkter (krigsbyten)<br>
+                • Ta vinteruppdrag (vaktkontrakt i städer)<br>
+                • Reducera styrkan under vinter (permittera halva plutonen)<br>
+                • <strong>Jarl Hagge finansierar</strong> (se nedan - han SER detta som en investering)
+            </div>
+
+            <h4>Vinterkvarter i Cermira</h4>
+            <p>Cermiras "extremt hårda vintrar" gör förberedelser till en fråga om liv och död:</p>
+
+            <ul>
+                <li><strong>Vinterkläder:</strong> 7-8 kg per man - utan dem riskerar soldater umbärandet "Köld"</li>
+                <li><strong>Förråd:</strong> Måste fyllas före vintern - vårvinter är svältperiod</li>
+                <li><strong>Mat:</strong> Cermirisk fettkaka och tjälknöl (energirikt, lång hållbarhet)</li>
+                <li><strong>Hygien:</strong> Farsotrisk om den eftersätts i trånga kvarter</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>BRISTFÄLLIG FÖRSÖRJNING:</strong><br>
+                Gordon KAN spara pengar genom att ge soldaterna mindre mat/sämre villkor.<br>
+                <strong>Kräver:</strong> Ledarskapsslag (svårighet varierar)<br>
+                <strong>Misslyckande:</strong> Umbärandet "Låg moral" (Ob4T6) → desertering, myteri
+            </div>
+
+            <h4>Faciliteter som behövs</h4>
+            <p>För att driva kompaniet från Grensfortet krävs:</p>
+
+            <ul>
+                <li><strong>Kök och förråd:</strong> ✓ Finns (källare/bottenvåning)</li>
+                <li><strong>Vapenförråd:</strong> ✓ Finns (behöver utökas)</li>
+                <li><strong>Smedja:</strong> ⚠ Behövs för reparationer - Olav kan hantera enklare</li>
+                <li><strong>Stall:</strong> ⚠ Begränsat - häst kostar 2 Bas/år, stridshäst 4 Bas/år</li>
+                <li><strong>Träningsområde:</strong> ✓ Borggården fungerar för daglig exercis</li>
+            </ul>
+
+            <h4>Kontraktsstruktur</h4>
+            <div class="info-box">
+                <strong>NÄR GORDON TAR UPPDRAG:</strong><br>
+                • <strong>Uppdragsgivaren betalar:</strong> Sold + mat under kontraktstiden<br>
+                • <strong>Gordon betalar:</strong> Ur krigskassan om de opererar självständigt<br><br>
+
+                <strong>KRIGSBYTE:</strong><br>
+                • Gordon (krigsherre): 50% av allt byte<br>
+                • Resten delas: 1 andel/menig, 2/korpral, 3/specialist, 4/officer<br><br>
+
+                <strong>Exempel:</strong> 1000 silver i byte → Gordon får 500, resten (500) delas på ~24 andelar ≈ 21 silver per menig
+            </div>
+
+            <h3>Rekommendation: Uppstart steg för steg</h3>
+
+            <div class="info-box">
+                <strong>ÅR 1 - ETABLERING:</strong><br>
+                1. Rekrytera 10-12 soldater (halv pluton)<br>
+                2. Ta småuppdrag: karavaneskort, vaktkontrakt<br>
+                3. Bygg rykte och krigskassa<br>
+                4. Kostnad: ~35 Bas/år (förläning + sparande täcker knappt)<br><br>
+
+                <strong>ÅR 2 - EXPANSION:</strong><br>
+                1. Utöka till full pluton (20 man)<br>
+                2. Ta större uppdrag: fälttåg, belägringar<br>
+                3. Anställ fältskär och kock<br>
+                4. Kostnad: ~68 Bas/år (kräver framgångsrika uppdrag)<br><br>
+
+                <strong>ÅR 3+ - KOMPANI:</strong><br>
+                1. Eventuell expansion till 40-60 man<br>
+                2. Kräver löjtnant/kapten-rang (Ob4T6 Krigsföring + Ledarskap)<br>
+                3. Kostnad: 130-200 Bas/år (helt beroende av kontrakt)
+            </div>
+
+            <div class="warning-box">
+                <strong>RISKER ATT ÖVERVÄGA:</strong><br>
+                • <strong>Inga uppdrag:</strong> Soldater utan sold deserterar eller plundrar<br>
+                • <strong>Förluster i fält:</strong> Döda/skadade måste ersättas - rekrytering kostar<br>
+                • <strong>Dåligt rykte:</strong> Misslyckade uppdrag = inga nya kontrakt<br>
+                • <strong>Intern konflikt:</strong> Soldater som anser sig orättvist behandlade
+            </div>
+
+            <h3>Jarl Hagges stöd</h3>
+
+            <div class="atmosphere">
+                <strong>Hagge kan framstå som generös. Men han är realist.</strong> Han vet att Vitterdals guldrikedomar gör honom till en politisk måltavla - och politiska måltavlor blir ofta militära måltavlor. Så han bygger för framtiden.
+            </div>
+
+            <p>Varje "gåva" Hagge ger är en <strong>investering i Vitterdals säkerhet</strong>:</p>
+
+            <ul>
+                <li><strong>Livsskuld:</strong> Gruppen räddade hans liv. Han litar blint på dem - men förtroende utan resurser är värdelöst.</li>
+                <li><strong>Skattefriheten:</strong> Han gav dem skattefrihet <em>specifikt</em> för att de ska kunna bygga upp sig.</li>
+                <li><strong>Grensfortet:</strong> En bas vid Mithera-gränsen, bemannad av lojala veteraner.</li>
+                <li><strong>Guld har han:</strong> Vitterdal är inte fattigt - Hagge kan finansiera utan att blinka.</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>SAMMA STRATEGI SOM DVÄRGAVTALET:</strong><br>
+                Kazrik fick det att framstå som att Klan Ghor vann förhandlingen - och det gjorde de. Men Hagge fick något viktigare: <em>ett löfte</em>.<br><br>
+                Dvärgar bryter inte löften. Gordons veteraner sviker inte den som räddade dem från Skugglandet.<br><br>
+                <strong>Om skit träffar fläkten</strong> - om Hertig Bernard marscherar, om Kung Vidkun skickar soldater, om mördaren som tog Talarra försöker igen - då har Hagge inte bara hussoldater. Han har dvärgar som håller ord och veteraner som överlevt demoner.
+            </div>
+
+            <div class="info-box">
+                <strong>VAD DETTA BETYDER I PRAKTIKEN:</strong><br>
+                • <strong>Vinterfinansiering:</strong> Hagge kan täcka underskottet (~10-15 Bas) utan att blinka<br>
+                • <strong>Utrustning:</strong> Vitterdals vapenförråd och smedja står till förfogande<br>
+                • <strong>Rekrytering:</strong> Hagges namn öppnar dörrar - "Jarlen av Vitterdals män"<br>
+                • <strong>Uppdrag:</strong> Hagge kan förmedla kontrakt från andra adelsmän<br><br>
+                <strong>MOTPRESTATION:</strong> När Hagge kallar, kommer Gordon. Det är det outtalade avtalet.
+            </div>
+
+            <div class="warning-box">
+                <strong>POLITISK VERKLIGHET:</strong><br>
+                Gordon leder kompaniet, men alla vet vem som egentligen står bakom. Detta är både en styrka (legitimitet, resurser) och en begränsning (inte helt självständig). Kompaniet blir i praktiken <strong>"Vitterdals Vargar"</strong> eller liknande - en halv-officiell styrka under jarlens beskydd.
+            </div>
+        </section>
+
+        <!-- Ekonomi -->
+        <section id="ekonomi" class="section">
+            <h2>Ekonomi</h2>
+
+            <div class="atmosphere">
+                <strong>Guld mäts inte bara i mynt här.</strong> En Bas är 360 silver - nog för att försörja en bonde ett helt år. En Lyx är 720 silver - smycken, fina kläder, statusvaror som ingen i Förläningen Grensfortet egentligen har råd med. Siffrorna på pappret ser bra ut: överskott, tillväxt, potential. Men siffrorna berättar inte om vintrarna som tar förråden, om vargarna som tar boskapen, om kylan som tar de svaga.
+            </div>
+
+            <div class="info-box">
+                <strong>Enheter (Riddaren-regler):</strong><br>
+                <strong>1 Bas</strong> = 360 silver = försörjer en bonde i ett år<br>
+                <strong>1 Lyx</strong> = 720 silver = statusvaror (smycken, fina kläder, kvalitetsvapen)
+            </div>
+
+            <h3>Årligt resultat</h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Bas</th>
+                    <th>Lyx</th>
+                </tr>
+                <tr>
+                    <td><strong>Inkomster</strong></td>
+                    <td>34-42</td>
+                    <td>4-7</td>
+                </tr>
+                <tr>
+                    <td><strong>Utgifter</strong></td>
+                    <td>27-32</td>
+                    <td>11</td>
+                </tr>
+                <tr style="background: #f0e6d6;">
+                    <td><strong>NETTO</strong></td>
+                    <td><strong>+2 till +15</strong></td>
+                    <td><strong>-4 till -7</strong></td>
+                </tr>
+            </table>
+
+            <p><strong>Status:</strong> Måttligt Bas-överskott men <strong>Lyx-underskott</strong>. Vasallerna kan inte upprätthålla "Gott leverne" (2 Bas + 2 Lyx per person) utan att antingen sälja Bas, sänka standarden, eller etablera handelsvägar för att köpa Lyx.</p>
+
+            <h3>Militär kapacitet</h3>
+            <table>
+                <tr>
+                    <th>Styrka</th>
+                    <th>Antal</th>
+                    <th>Kostnad</th>
+                </tr>
+                <tr>
+                    <td>Tränad kärna (Vargnäset)</td>
+                    <td>8</td>
+                    <td>6-8 Bas/år</td>
+                </tr>
+                <tr>
+                    <td>Värnplikt vid hot</td>
+                    <td>~20</td>
+                    <td>Gratis (max 40 dagar/år)</td>
+                </tr>
+                <tr>
+                    <td><strong>Total mobilisering</strong></td>
+                    <td><strong>~35</strong></td>
+                    <td>Tillfälligt</td>
+                </tr>
+            </table>
+
+            <p><strong>Gordons vision:</strong> Ett legokompani på 20-30 soldater kräver 60-90 Bas/år. Nuvarande kapacitet: 5-15% av målet.</p>
+        </section>
+
+        <!-- Hot & Mysterier -->
+        <section id="hot" class="section">
+            <h2>Hot & Mysterier</h2>
+
+            <div class="atmosphere">
+                <strong>Det som lurar i mörkret vet att ni har kommit.</strong> Vintervargarna från Mithera är dubbelt så stora som vanliga. Bärnsälen - björnliknande med tentakler - dödade två jägare innan Xian-Li drev bort den. Isjättens döttrar vandrar nätterna som tre meter höga isfigurer. Och i fortet självt försvinner saker - Arcadius Daak-medaljong, ljud som upprepas timmar senare, en känsla av att någon alltid tittar.
+            </div>
+
+            <h3>Externa hot</h3>
+
+            <div class="warning-box">
+                <strong>FRÅN MITHERA:</strong><br>
+                • <strong>Vintervargarna:</strong> Dubbelt så stora som vanliga vargar<br>
+                • <strong>Bärnsäl:</strong> Björnliknande med tentakler - dödade 2 jägare<br>
+                • <strong>De förändrade:</strong> Infekterade människor med okänd agenda<br>
+                • <strong>Onaturlig kyla:</strong> Kryotropi (köldmagi) som genomsyrar allt
+            </div>
+
+            <h3>Interna spänningar</h3>
+            <ul>
+                <li><strong>Religiös konflikt:</strong> Daak-fundamentalister (fortet) vs Samorisk tro (Frisänkan)</li>
+                <li><strong>Magisk misstro:</strong> Flyktingar vs Adisa/Zentri/Xian-Li</li>
+                <li><strong>Tiondefrågan:</strong> Frisänkan betalar till Vidar, inte Daak-kyrkan</li>
+                <li><strong>Administrativ svaghet:</strong> Ingen professionell fogde eller skrivare</li>
+            </ul>
+
+            <h3>Olösta mysterier</h3>
+            <ul>
+                <li><strong>"Fortet är byggt på en grav":</strong> Folket säger att en alvprins begravdes här</li>
+                <li><strong>Adisas ålder:</strong> "Äldre än dvärgar" - vad betyder det?</li>
+                <li><strong>Försvunna föremål:</strong> Arcadius medaljong, kanske annat</li>
+                <li><strong>Bergsportalen:</strong> Den mörka ingången vid fortets fot - vad finns innanför?</li>
+                <li><strong>Varför undviker vilt området?:</strong> Alla spår går runt fortet i stor båge</li>
+            </ul>
+        </section>
+
+        <!-- Kampanjhooks -->
+        <section id="hooks" class="section">
+            <h2>Kampanjhooks</h2>
+
+            <div class="atmosphere">
+                <strong>Varje fråga har ett svar, men inte alla svar är vad ni vill höra.</strong> Fortet döljer hemligheter i sina murar. Mithera skickar sina monster. Byarna kräver rättvisa och beskydd. Och någonstans, i mörkret under bergen eller i skogen vid gränsen, väntar sanningen om vad detta ställe egentligen är.
+            </div>
+
+            <div class="hook-card">
+                <h4>1. Den försvunna jägaren</h4>
+                <div class="npc-meta">Typ: Utforskning, Mystery | Svårighetsgrad: Låg-Medium</div>
+                <p><strong>Hook:</strong> En jägare från Bergvik hittas inte efter en jakttur nära Mithera-gränsen. Hans kamrater hittade hans läger - men inga spår av kamp, inget blod, bara tomma skogsmarker och en känsla av att någon tittat på dem.</p>
+                <p><strong>Konsekvenser:</strong> Kan leda till upptäckt av De förändrade, ett monster, eller något värre.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>2. Tiondeinspektören</h4>
+                <div class="npc-meta">Typ: Politisk, Social | Svårighetsgrad: Medium</div>
+                <p><strong>Hook:</strong> Daak-kyrkan skickar en inspektör för att "verifiera tiondeuppbörden" i regionen. Om han upptäcker att Frisänkan betalar till en samorisk präst istället för kyrkan, blir det allvarliga konsekvenser.</p>
+                <p><strong>Utmaningar:</strong> Hantera inspektören, skydda Frisänkan, balansera religiösa spänningar.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>3. Bergsportalen</h4>
+                <div class="npc-meta">Typ: Utforskning, Dungeon | Svårighetsgrad: Hög</div>
+                <p><strong>Hook:</strong> Den mörka ingången vid fortets fot har alltid varit stängd - men nu har någon eller något öppnat den. Ljud hörs inifrån. Dain vägrar gå nära och säger bara: "Det som är därinne är inte för människor."</p>
+                <p><strong>Vad finns inuti:</strong> Dvärgisk gruva? Portal? Något äldre?</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>4. Gråben ber om hjälp</h4>
+                <div class="npc-meta">Typ: Diplomati, Mystery | Svårighetsgrad: Medium</div>
+                <p><strong>Hook:</strong> En gammal tirak dyker upp vid fortet - Gråben, förvisad från sin stam för ett brott han vägrar nämna. Han har bott i bergen i årtionden och ber nu om hjälp mot något som hotar honom. Litar gruppen på en tirak?</p>
+                <p><strong>Potential:</strong> Allierad med kunskap om området, eller en fälla.</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>5. Deserteuren från Nattgardet</h4>
+                <div class="npc-meta">Typ: Mystery, Moral dilemma | Svårighetsgrad: Medium-Hög</div>
+                <p><strong>Hook:</strong> En man som gömt sig i skogarna i tre år upptäcks av jägare - en desertör från <strong>Nattgardet</strong>, storfurste Thamas Vitfjäders fruktade elitstyrka i Damarien. Han flydde efter att ha vägrat delta i "storfurstens vinskörd" - en brutal utrensning av en hel by.</p>
+                <p><strong>Fara:</strong> Om Damarien får veta var han är kan hans familj avrättas ("avrättning i tredje led"). Nattgardets ledare Marok Svärdshand är känd för att aldrig ge upp jakten på desertörer.</p>
+                <p><strong>Koppling:</strong> Gordons bror Ethan tjänstgör i Damarien. Vad händer om han hör talas om detta?</p>
+            </div>
+
+            <div class="hook-card">
+                <h4>6. Dimgumman</h4>
+                <div class="npc-meta">Typ: Mystery, Supernatural | Svårighetsgrad: Medium-Hög</div>
+                <p><strong>Hook:</strong> Folk har sett rök från en stuga nära Mithera-gränsen - men ingen har hittat den. Dimgumman, säger de. Hon har sett något i Mithera som gruppen behöver veta, och hon söker kontakt genom drömmar.</p>
+                <p><strong>Adisa vet mer:</strong> Men delar hon informationen?</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p><strong>Förläningen Grensfortet</strong> - EON Kampanjmaterial</p>
+            <p>Kod: EM-R002 | Version: 4.0 (Fullständig)</p>
+            <p>Senast uppdaterad: 2026-02-16</p>
+            <p>Underlyder: Vitterdal-baronieriet (EM-R001) under Jarl Hagge</p>
+        </footer>
+    </div>
+</body>
+</html>

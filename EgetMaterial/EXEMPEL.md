@@ -19,7 +19,7 @@ Vad vet vi om mûhadier? Beskriv deras typiska livslängd, utseende, och kultur.
 ## Steg 2: Kopiera Mall
 
 ```bash
-cp mallar/mall-stad.md stader/EM-S001_handelsstad-al-khamsin.md
+cp mallar/mall-stad.md projekt/EM-S001_handelsstad-al-khamsin/handelsstad-al-khamsin.md
 ```
 
 ## Steg 3: Fyll I Mall

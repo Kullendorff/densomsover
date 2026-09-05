@@ -6,362 +6,116 @@
 
 ---
 
-## 📊 STATISTIK
+## 📊 STATUS (uppdaterad 2026-09-05)
 
-### Färdigt material
-- **Länder:** 1 (EM-L001 Muhad)
-- **Städer:** 2 (EM-S001 Jen, EM-S002 Mithrahus/Vitterdal)
-- **Platser:** 0
-- **Regioner:** 2 (EM-R001 Vitterdal, EM-R002 Förläningen Grensfortet)
-- **Organisationer:** 0
-- **Föremål:** 0
-- **NPCs:** 0
-- **Totalt färdigt:** 5
+**Allt existerande material är klart.** Inget projekt är just nu pågående — de sex
+projekt som finns i `projekt/` visar alla Fas 7/7 (KLAR) i sina STATUS.md-filer.
+(Denna katalog sa tidigare att Legokompaniet låg på 15%/Fas 1 — det var föråldrat,
+projektets egen STATUS.md visade redan Fas 7/7. Lita på STATUS.md i respektive
+projektmapp, inte på gamla sammanfattningar här.)
 
-### Pågående projekt
-- **Aktiva projekt:** 1
-- **I fas 1 (Syfte & Koncept):** 1
-- **I fas 2 (Research):** 0
-- **I fas 3-5 (Skrivande):** 0
-- **I fas 6 (Validering):** 0
+**Mappstruktur förenklad 2026-09-05:** alla sju typmappar (lander/, stader/, platser/,
+regioner/, organisationer/, foremal/, npcs/) är borttagna. `Klart/` innehåller bara
+HTML-versionerna — presentabla, redo att visa upp. All markdown (sammanfattning, STATUS,
+NOTES, research, utkast) bor i respektive `projekt/`-mapp, kvar även efter avslut.
 
-**Senast uppdaterad:** 2026-08-25 (EM-R002 klar, EM-O001 pågående)
+---
+
+## ✅ KLART (`Klart/` — HTML, inget markdown)
+
+| Fil | Typ | Vad | Kampanjstatus | Källa (.md) |
+|---|---|---|---|---|
+| `EM-L001_muhad.html` | Land | Muhad (Gudalandet), ~1,2 milj. invånare, teokrati | Besökt Kapitel 2 (Jen/Ziu) | `projekt/EM-L001_muhad/muhad.md` |
+| `EM-S001_jen.html` | Stad | Jen, Muhads handels-/slavhandelsstad, ~100k inv. | Besökt Kapitel 2 | `projekt/EM-S001_jen/jen.md` |
+| `EM-S002_mithrahus.html` | Stad | Mithrahus/Vitterdal, gruvstad + Guldlägret | Besökt Kap. 5, 6, 7 — gruppens hembas | `projekt/EM-S002_vitterdal-mithrahus/mithrahus.md` |
+| `EM-R001_vitterdal-baronieriet.html` | Region | Vitterdal-baronieriet, jarladöme (Hagge är jarl) | Aktivt använt (Kapitel 6+) | `projekt/EM-R001_vitterdal-baronieriet/vitterdal-baronieriet.md` |
+| `EM-R002_grensfortet.html` | Region | Förläningen Grensfortet, spelarnas vasallförläning | Aktivt använt (Kap. 1, 5, 9–10) | `projekt/EM-R002_grensfortet/grensfortet.md` |
+| `EM-O001_legokompaniet.html` + `_spelare.html` | Organisation | Guide + katalog över legokompanier i Mundana | Kampanjspecifikt (Gordons ev. kompani) | `projekt/EM-O001_legokompaniet/legokompaniet.md` |
+
+Se respektive projektmapp i `projekt/` för research, utkast och detaljerad historik
+bakom varje färdig fil. `EM-R001_vitterdal-baronieriet/` har även 5 äldre
+designutkast (`poc-1-modern-dark.html` m.fl.) — kvar som historik, inte i `Klart/`.
 
 ---
 
 ## 🔄 PÅGÅENDE PROJEKT
 
-*Projekt i `projekt/`-mappen som inte är färdiga ännu.*
-
-### EM-O001: Legokompaniet - Guide & Katalog
-- **Typ:** Organisationsguide + Kompanikatalog
-- **Fas:** 1 av 7 (Syfte & Koncept klar → Fas 2 Research nästa)
-- **Progress:** 15%
-- **Status:** Projektmapp skapad, vision definierad, redo för research
-- **Nästa:** NotebookLM-queries (Krigsherren, befintliga kompanier, ekonomi)
-
-**Innehåll:**
-- Del 1: Guide - Livet i ett legokompani (det lilla kompaniet, 10-50 man)
-- Del 2: Guide - Att leda ett kompani (befälshavarens perspektiv)
-- Del 3: Gordons kompani (kampanjspecifikt - hur startar gruppen ett?)
-- Del 4: Kompanikatalog - Befintliga kompanier i Mundana
-
-**Frågor till Johan (innan Fas 3):**
-- Gordons tidigare kompaninamn (om det finns)?
-- Startar kompaniet i Bok 2 eller bara bakgrundsidé?
-- Vilken region ska vara bas initialt?
-
-**För att se status på pågående projekt:**
-```python
-Task(
-  subagent_type="eon-projekt-tracker",
-  prompt="Fortsätt med [projektnamn]"
-)
-```
-
-EM-R002 Förläningen Grensfortet är klar (fas 7/7) — se sektionen REGIONER nedan.
+*Inga just nu.* Alla sex existerande projekt i `projekt/` är avslutade (Fas 7/7).
 
 ---
 
-## 🌍 LÄNDER
+## 📋 KOMMANDE MATERIAL (PLANERAT, ej påbörjat)
 
-### EM-L001: Muhad (Gudalandet) ✅
-- **Region:** Västlanden (västra Mundana)
-- **Storlek:** ~1 200 000 invånare (~325 000 km2)
-- **Styre:** Teokrati (Mhim = gudahärskare)
-- **Status:** Kampanjaktivt material, kanoniskt
-- **Kampanjstatus:** Besökt i Kapitel 2 (Jen/Ziu)
-- **Fil:** `lander/EM-L001_muhad.md`
-- **HTML:** `projekt/EM-L001_muhad/muhad.html`
-- **Validerat:** 2026-02-28 (korsvaliderad mot EM-S001 Jen + NotebookLM)
-
-**Innehåller:**
-- Komplett geografi, klimat, naturresurser, farliga varelser
-- Full historia (grundande ~1399 f.D. till nutid 2967 e.D.)
-- Styre, politik, rättssystem (Fata'a), 6 nyckelkefaler
-- Befolkning, kultur, religion (Mhimrätten), ceremonier
-- Ekonomi, handel, slaveri (~120 000 slavar)
-- Militär (granascher, nattdräpare, slavarmé, flotta)
-- Magi (selenotropi, Juubuls lärjungar, Gharbawi)
-- 7 städer (Alkarzan, Tabbah, Kaal, Melucka, Quaran, Jen, m.fl.)
-- Nomadfolk (Savakunnerna, östzhaner, Tarkas)
-- 20+ NPCs, 5+ kampanjhooks
-- Avvikelser dokumenterade (delat Ziu-styre, Al-Hafizun, Jen ~100k)
-
----
-
-## 🏙️ STÄDER
-
-### EM-S001: Jen (Handelsstaden) ✅
-- **Land:** Muhad (Ziu-halvön)
-- **Storlek:** ~100 000 invånare (kampanjanpassning)
-- **Typ:** Hamnstad, handelsstad, slavhandelscentrum
-- **Status:** Kampanjaktivt material, kanoniskt
-- **Kampanjstatus:** Besökt i Kapitel 2
-- **Fil:** `stader/EM-S001_jen.md`
-- **HTML:** `projekt/EM-S001_jen/jen.html`
-- **Validerat:** 2026-02-28 (korsvaliderad mot EM-L001 Muhad + NotebookLM)
-
-**Innehåller:**
-- Komplett geografi, historia, styre/lag, kultur, religion, ekonomi, slaveri, militär
-- 10 stadsdelar med platser och NPCs
-- 90+ NPCs, 7 fraktioner med intern struktur
-- 12 nyckel-NPCs med personlighet och dialog
-- Kanalprojektet, kampanjhooks
-- Avvikelser dokumenterade (befolkning, delat styre, Al-Hafizun)
-
-### EM-S002: Mithrahus / Vitterdal (Gruvstaden) ✅
-- **Land:** Cermira (nordvästra hörnet)
-- **Storlek:** ~1 200 invånare permanent + Guldlägret (~100-200, växande)
-- **Typ:** Gruvstad, jarladöme-huvudort, terrasserad bergsstad
-- **Status:** Kampanjaktivt material, kanoniskt
-- **Kampanjstatus:** Besökt i Kapitel 5, 6, 7 (gruppens hembas)
-- **Fil:** `stader/EM-S002_mithrahus.md`
-- **Projektmapp:** `projekt/EM-S002_vitterdal-mithrahus/`
-- **Validerat:** 2026-03-01 (mot EM-R001 + NotebookLM + kampanjkrönika)
-
-**Innehåller:**
-- 5 stadsdelar (Mitrahus, Övre, Nedre, Gruv, Guldlägret)
-- 16+ NPCs (ledare, militär, civila, handelshus, Guldlägret)
-- Guldruschen och provisoriska bosättningen (sommar, vintern kommer)
-- Ekonomi, styre, fraktioner, religion, kultur
-- 7 stämningstexter, 6 kampanjhooks, ASCII-karta
-- Kampanjspecifik sektion (avtagbar)
-- Expanderat material i EM-R001 (region) för fullständig data
-
----
-
-## 📍 PLATSER
-
-*Inga platser skapade ännu.*
-
-**Exempel:**
-```markdown
-### EM-P001: De Svarta Cisternerna
-- **Region:** Muhads öken
-- **Typ:** Ruin (gammalt vattenreservoar)
-- **Fara-nivå:** Medium
-- **Status:** Generiskt, delbart
-- **Kampanjstatus:** Ej använt i kampanj
-```
-
----
-
-## 🗺️ REGIONER
-
-### EM-R001: Vitterdal-baronieriet ✅
-- **Land:** Cermira (nordvästra hörnet)
-- **Typ:** Jarladöme med gruvstad
-- **Klimat:** Extremt kallt, bergstrakter
-- **Befolkning:** ~2250 (människor + dvärgar)
-- **Status:** Kampanjspecifikt (Hagge som jarl, gruppens bas)
-- **Kampanjstatus:** Aktivt använt (Kapitel 6+)
-- **HTML:** `projekt/EM-R001_vitterdal-baronieriet/vitterdal-baronieriet.html`
-- **Validerat:** 2026-02-02
-
-**Innehåller:**
-- Komplett geografi och klimat
-- Historia (Colonisk → Asharisk → nutid)
-- Mitrahus (stad och borg)
-- Stålsvärds Kavalerister (officiell roster)
-- Förläningen Grensfortet (ledarskap: Eira, Xian-Li, Skorda)
-- 6 kampanjhooks
-- 20 Midjourney-prompts
-
----
-
-### EM-R002: Förläningen Grensfortet ✅
-- **Land:** Cermira (gränsen mot Mithera)
-- **Typ:** Vasallförläning under Vitterdal
-- **Klimat:** Kallt, bergstrakter vid Mitheraskogen
-- **Befolkning:** ~180 (Grensfortet + byarna Bergvik och Frisänkan)
-- **Status:** Kampanjspecifikt (spelarnas förläning)
-- **Kampanjstatus:** Aktivt använt (Kapitel 1, 5, 9-10)
-- **HTML:** `projekt/EM-R002_grensfortet/grensfortet.html`
-- **Validerat:** 2026-03-01
-
-**Innehåller:**
-- Komplett geografi (fort + två byar)
-- Ekonomi (Bas/Lyx-system, dagsverken, tionde)
-- Militärkapacitet (legokompani under Gordon)
-- NPCs (Eira, Skorda, Xian-Li, Adisa, m.fl.)
-- Kampanjhooks
-
----
-
-## 🏛️ ORGANISATIONER
-
-### EM-O001: Legokompaniet - Guide & Katalog 🔄 (Pågående)
-- **Typ:** Sourcebook (Guide + Katalog)
-- **Region:** Hela Mundana (fokus Cermira/Mithera initialt)
-- **Status:** Under produktion (Fas 1 klar)
-- **Kampanjstatus:** Kampanjspecifikt (Gordon & gruppen som potentiella kompanichefer)
-
-**Exempel:**
-```markdown
-### EM-O001: Skugghandelns Gille
-- **Typ:** Smugglarnätverk
-- **Region:** Muhad (städer)
-- **Medlemmar:** ~500
-- **Status:** Generiskt, delbart
-- **Kampanjstatus:** Ej använt i kampanj
-```
-
----
-
-## ⚔️ FÖREMÅL
-
-*Inga föremål skapade ännu.*
-
-**Exempel:**
-```markdown
-### EM-F001: Sandridarnas Mantel
-- **Typ:** Magisk mantel
-- **Kraft:** Skydd mot sand och sol
-- **Raritet:** Sällsynt
-- **Status:** Generiskt, delbart
-- **Kampanjstatus:** Ej använt i kampanj
-```
-
----
-
-## 👤 NPCS
-
-*Inga NPCs skapade ännu.*
-
-**Exempel:**
-```markdown
-### EM-N001: Al-Rashid ibn Khalid
-- **Ras:** Mûhadier
-- **Ålder:** 45 år
-- **Roll:** Karavanledare
-- **Plats:** Oasstaden Al-Nur
-- **Status:** Generiskt, delbart
-- **Kampanjstatus:** Ej använt i kampanj
-```
+- [ ] EM-L002: Momolan (matriarkalt grannland söder om Muhad)
+- [ ] EM-O002: Juubuls lärjungar (nekromanti-orden i Melûcka)
+- [ ] EM-P001: Dalkhrekni (ruinstad med orakel i Tarkas)
+- [ ] EM-O003: Savakunnerna (nomadkonfederation i Tarkas)
 
 ---
 
 ## 📌 KAMPANJIMPORTERAT MATERIAL
 
-*Material som importerats till kampanjens wiki_data.js*
-
-**Format:**
-```markdown
-### EM-XXX: Namn
-- **Importdatum:** YYYY-MM-DD
-- **Kapitel:** Kapitel X
-- **Användning:** [Hur det används i kampanjen]
-```
-
-*Inget material importerat ännu.*
+*Material som importerats till kampanjens `wiki_data.js`* (spårbart via fält
+`källa: "EM-XXX"`). *Inget importerat ännu.*
 
 ---
 
 ## 🔖 STATUSFÖRKLARING
 
-### Generiskt, delbart
-- Materialet följer officiell EON-kanon
-- Validerat via NotebookLM
-- Inga kampanj-spoilers
-- Kan delas med andra spelledare
-
-### Kampanjspecifikt
-- Innehåller kampanjdetaljer i separat sektion
-- Kan göras delbart genom att ta bort kampanjsektion
-
-### Importerat till kampanj
-- Finns i `master/wiki_data.js`
-- Används aktivt i kampanjen
-- Har fält `källa: "EM-XXX"` för spårbarhet
-
----
-
-## 📋 KOMMANDE MATERIAL (PLANERAT)
-
-**Planerade projekt (i prioritetsordning):**
-- [x] EM-S001: Jen (Muhads rikaste handelsstad) -- **KLAR**
-- [x] EM-L001: Muhad (Gudalandet) -- **KLAR**
-- [ ] EM-L002: Momolan (matriarkalt grannland söder om Muhad)
-
-**Framtida idéer:**
-- [ ] EM-O001: Juubuls lärjungar (nekromanti-orden i Melûcka)
-- [ ] EM-P001: Dalkhrekni (ruinstad med orakel i Tarkas)
-- [ ] EM-O002: Savakunnerna (nomadkonfederation i Tarkas)
+- **Generiskt, delbart** — följer officiell EON-kanon, validerat via NotebookLM, inga
+  kampanj-spoilers, kan delas med andra spelledare
+- **Kampanjspecifikt** — innehåller kampanjdetaljer i separat sektion, kan göras
+  delbart genom att ta bort den sektionen
+- **Importerat till kampanj** — finns i `master/wiki_data.js`, används aktivt
 
 ---
 
 ## ❓ HJÄLP
 
-### Starta nytt projekt
+### Starta nytt material
 
-**Snabbt (1 session, enkel NPC/plats):**
-1. Kopiera mall direkt till slutmapp
-2. Skriv, validera, klar
+**Snabbt (1 session, enkel NPC/plats):** skriv `.md` i en ny `projekt/`-mapp, lägg en
+HTML-version i `Klart/` om det är värt att visa upp.
 
-**Projekt (flersessions, komplex):**
+**Projekt (flersessions, komplext):**
 ```python
-# Använd eon-material-fas1 skill
 Skill(skill="eon-material-fas1")
 # Följt av: "Skapa nytt land i Muhad"
 ```
-
-**Output:**
-- Projektmapp i `projekt/`
-- STATUS.md (fas-tracking)
-- NOTES.md (vision, frågor)
-- Nästa steg (fas 2: Research)
+Output: projektmapp i `projekt/` med STATUS.md + NOTES.md, redo för Fas 2 (Research).
 
 ### Fortsätt pågående projekt
-
 ```python
-# Använd eon-projekt-tracker för session-briefing
-Task(
-  subagent_type="eon-projekt-tracker",
-  prompt="Fortsätt med [projektnamn eller kod]"
-)
+Task(subagent_type="eon-projekt-tracker", prompt="Fortsätt med [projektnamn eller kod]")
 ```
 
-**Output:**
-- Var du är (fas, progress)
-- Vad som återstår
-- 3-5 konkreta nästa steg
-
 ### Validera färdigt material
-
 ```python
-# Använd eon-material-validering skill
 Skill(skill="eon-material-validering")
 # Följt av: projektkod eller filnamn
 ```
 
-**Output:**
-- Validering mot NotebookLM + kampanjdata
-- Konflikter/varningar/godkänd
-- Lösningsalternativ vid konflikter
-
 ### Importera till kampanj
-
 ```python
-# Använd eon-data-guardian agent
 Task(
   subagent_type="eon-data-guardian",
-  prompt="Importera EM-XXX från Eget Material/ till master/wiki_data.js. Lägg till källa: 'EM-XXX'."
+  prompt="Importera EM-XXX från EgetMaterial/Klart/ till wiki/Personer (eller Platser/Fraktioner). Lägg till källa: 'EM-XXX'."
 )
 ```
+Kom ihåg: sedan Obsidian-migreringen (se `CURRENT_STATE.md`, 2026-09-05) är `wiki/` master,
+inte `master/wiki_data.js` direkt — importera dit, kör sedan `node bygg/bygg-wiki-data.js`.
 
 ### Arbetsordning (7 faser)
-
 1. **Syfte & Koncept** → Vision, frågor (`eon-material-fas1`)
 2. **Research** → NotebookLM-queries (`eon-material-fas2-research`)
 3. **Grundstruktur** → Översikt, geografi
 4. **Kärnan** → Historia, styre, befolkning
 5. **Detaljer** → Städer, NPCs, kampanjhooks
 6. **Validering** → Faktagranskning (`eon-material-validering`)
-7. **Avslut** → Flytta till slutmapp, uppdatera index
+7. **Avslut** → Bygg en HTML-version, lägg den i `Klart/`, uppdatera detta index
 
 **Läs `CLAUDE.md` för detaljerad information!**
 
 ---
 
-**Senast uppdaterad:** 2026-08-25
+**Senast uppdaterad:** 2026-09-05
