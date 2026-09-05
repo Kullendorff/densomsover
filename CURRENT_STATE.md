@@ -1,5 +1,84 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
+## Datum: 2026-09-05
+
+## Status: OBSIDIAN-MIGRERING GENOMFÖRD (på gren `obsidian-vault`, ej mergad till main)
+
+**NYTT (2026-09-05) — natt-session, Johan sov, agent jobbade autonomt enligt godkänd plan:**
+- **Obsidian-vault** skapat ovanpå repo-roten (`D:\rollspel\EON` = vault). Ny mapp `wiki/`
+  är nu SINGLE SOURCE OF TRUTH för NPCs/platser/fraktioner/kapitel/sessioner/rollpersoner:
+  - `wiki/Personer/` — 327 NPC-noter (317 ur gamla `wiki_data.js` + 10 som bara fanns i
+    den övergivna Jekyll-wikin `kampanjwiki/_npcs`)
+  - `wiki/Platser/` — 58, `wiki/Fraktioner/` — 48 (45 ur JS + 3 handelshus som bara
+    fanns i Jekyll-wikin, se nedan), `wiki/Kapitel/` — 11, `wiki/Sessioner/` — 11,
+    `wiki/Rollpersoner/` — 6
+  - Alla noter har YAML-frontmatter + `[[wiki-länkar]]` mellan varandra (2329 länkar
+    tillagda i brödtext, se `bygg/bygg-wiki-data.js` och migreringsplanen)
+- **`master/wiki_data.js` + `fraktioner_data.js` är nu GENERERADE**, inte handredigerade.
+  `node bygg/bygg-wiki-data.js` bygger om dem ur `wiki/`. Round-trip verifierad
+  byte-semantiskt exakt mot originalet innan mergen (317/58/11/45, noll skillnader).
+  Pre-commit-hooken (`.git/hooks/pre-commit`) blockerar nu commits om JS-filerna
+  redigerats direkt istället för via `wiki/`.
+- **Två buggar hittade och fixade under slutverifieringen** (efter att kärnmigreringen
+  först rapporterades klar):
+  1. En "no data loss"-kontroll av `wiki/Fraktioner/` mot den gamla vaulten visade att
+     3 handelshus — **Al-Zahir, Banu Qadisha, Bayt Al-Laila** (centrala i Hagges
+     frigivningshandling i Muhad, Fas 3) — bara fanns i Jekyll-wikin och missats av
+     Etapp 3:s NPC-fokuserade jämförelse. Skapade som nya noter i `wiki/Fraktioner/`.
+  2. Faktisk rendering av dashboarden i Chrome visade att `[[wiki-länkar]]` läckte ut
+     som rå text i NPC-modalernas beskrivning (t.ex. "Andligt överhuvud i [[Jen]]").
+     `bygg/bygg-wiki-data.js` strippade bara länkar i enstaka frontmatter-fält
+     (plats/fraktion), inte i löpande brödtext. Fixat med en ny `stripAllLinks()`
+     som körs på hela `beskrivning`-fältet för NPCs, platser och fraktioner.
+  Slutgiltiga siffror efter fixarna: **327 npcs, 58 platser, 48 fraktioner, 11 kapitel**
+  — verifierat med `node bygg/bygg-wiki-data.js --check` och en riktig Chrome-rendering
+  av både dashboarden och `kapitel/kapitel-4-jargien.html` (noll konsolfel).
+- **Dashboarden (`index.html`) är OFÖRÄNDRAD** — läser samma `master/wiki_data.js` som
+  förut, bara byggkedjan bakom filen är ny.
+- **Gammalt material arkiverat i `_ARKIV/`** (gitignored, INTE raderat — Johan bad
+  uttryckligen om att inget skulle raderas under natten): Jekyll-wikin
+  (`kampanjwiki/_npcs` m.fl.), den tidigare separata Obsidian-vaulten
+  (`C:\Users\kulle\Obsidian\Vault\10_Rollspel\EON`, verifierat att 238 av dess 239
+  NPC-filer var rena dubbletter av Jekyll-versionen — bara `hakim-al-rashid.md` hade
+  unikt innehåll, som räddades in), gamla backup-filer, döda Python/JS-skript.
+- **Uppföljning samma natt (efter att Johan vaknade till/svarade):** Johan godkände
+  radering av den bekräftat redundanta delen av `_ARKIV/` (~379 MB): `jekyll-wiki/`,
+  `jekyll-build-site/`, `drive-sync-skrap/`, `backupfiler/`, `doda-skript/`,
+  `lostfiler/`, `gammal-vault-eon/Fluff/`. Innan `jekyll-wiki/` raderades matchades de
+  tre tidigare "för tvetydiga att mergea"-NPC:erna (`amina.md`, `fatima-bint.md`,
+  `layla-bint.md`) entydigt mot **Amina bint-Farid**, **Fatima bint-Ali**,
+  **Layla bint-Hussein** via identiska bildfilnamn (amina_muhad.png, fatima_bint.png,
+  layla.bint2.png) — alias tillagda, sedan raderat. Kvar i `_ARKIV/`: bara
+  `gammal-vault-eon/` (minus Fluff) — dess `Projekt/` och `SL/` är INTE jämförda mot
+  `EgetMaterial/` och rördes inte. Se `_ARKIV/⚠️ LÄS DETTA.md` för fullständig logg.
+- **Kända datakvalitetsproblem hittade under migreringen (flaggade i noterna, EJ
+  åtgärdade — kräver Johans beslut):**
+  - "Dubbel-Orm" (gruvarbetare, Rampor) finns som TRE separata poster i källdatan med
+    olika detaljnivå men samma person: `wiki/Personer/Dubbel-Orm.md`,
+    `-Dubbel-Orm-.md`, `-Dubbel-Orm- (Rampor).md`
+  - 4 evakuerade Vargnäset-invånare (Lilla-Maja Björkgren, Margareta Lindkvist, Sigrid
+    Falkemo, Torkel Falkemo) finns som 2 identiska dubbletter var — fanns redan i
+    ORIGINAL wiki_data.js, inte introducerat av migreringen
+  - 3 NPCs kunde INTE mergas automatiskt pga tvetydighet (generisk "Amina"/"Fatima
+    bint"/"Layla bint" i gamla Jekyll-filer matchar flera specifika namngivna NPCs i
+    wiki_data.js — troligen föråldrade förlagor till senare uppsplittrade karaktärer)
+  - De 6 spelarkaraktärernas Jekyll-bios (`wiki/Rollpersoner/`) var skrivna FÖRE
+    Bok 1-finalen — status/plats i frontmatter är korrigerad till aktuell kanon
+    (Grensfortet/Mundana, Umnatak permanent i kniven, Zentri räddad), men källtextens
+    BRÖDTEXT kan fortfarande referera till "vi är i Skugglandet"
+- **EJ gjort ännu (nästa steg, se plan i `~/.claude/plans/jag-skulle-vilja-g-ra-flickering-treehouse.md`):**
+  - Gren `obsidian-vault` är INTE mergad till `main` — Johan bör granska diffen först
+  - `.obsidian/`-konfiguration skapad (excluded files, mallar, Dataview-queries i
+    `wiki/_Vyer.md`) men Dataview-PLUGINEN måste installeras manuellt i appen
+    (Inställningar → Community plugins → sök "Dataview" → Installera)
+  - EgetMaterial/, Eon SL/, midjourney/, fluff/ är INTE konverterade till Obsidian-noter
+    (medvetet avgränsat till kärndata i natt, se plan)
+  - `.agents/`, `.codex/` (speglingar av `.claude/agents` och `.claude/skills` i andra
+    format) är INTE uppdaterade med den nya arbetsgången — bara `.claude/` och
+    CLAUDE.md/AGENTS.md är patchade
+
+---
+
 ## Datum: 2026-02-03
 
 ## Status: BOK 1 AVSLUTAD! 🎯 Zentri Räddad från Skugglandet
@@ -252,7 +331,7 @@
 ### Session-filer
 | Fil | Beskrivning |
 |-----|-------------|
-| `sessioner/frostspiran_final.html` | **NÄSTA SESSION** |
+| `sessioner/frostspiran_final.html` | **SPELAD** (2026-02-03, Bok 1 slut) |
 | `guider/vinterglod_guide.html` | VinterGlöd SL-guide |
 | `sessioner/arkiv/zentri-rescue/` | Tidigare sessionsplan |
 

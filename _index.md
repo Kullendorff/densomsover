@@ -41,7 +41,8 @@
 ```
 1. Läs master/character_reference.md FÖRST (karaktärsfakta, kön, alias)
 2. Uppdatera master/kampanjkrönika.md (kronologisk tidslinje)
-3. Synka master/wiki_data.js om nödvändigt (dashboard-data)
+3. Uppdatera/skapa noten i wiki/Personer/ eller wiki/Platser/ eller wiki/Fraktioner/
+4. Kör: node bygg/bygg-wiki-data.js  (regenererar master/wiki_data.js + fraktioner_data.js)
 ```
 
 ### 🎨 Generera bilder?
@@ -55,11 +56,21 @@
 
 ## SINGLE SOURCE OF TRUTH
 
+**⚠️ Sedan Obsidian-migreringen (2026-09-05):** NPC/plats/fraktion-data bor i
+`wiki/` (Obsidian-noter) och `master/wiki_data.js` + `fraktioner_data.js` är
+GENERERADE ur den mappen. Redigera noterna i `wiki/`, kör sedan
+`node bygg/bygg-wiki-data.js`. Redigera aldrig JS-filerna direkt.
+
 | Data | Fil | Beskrivning |
 |------|-----|-------------|
 | **Vad har hänt?** | `master/kampanjkrönika.md` | Kronologisk tidslinje från start till nu |
 | **Vem är vem?** | `master/character_reference.md` | Karaktärsfakta, kön, alias, pronomen |
-| **NPC/Plats-data** | `master/wiki_data.js` | Dashboard-databas (genererad från krönika) |
+| **NPCs** | `wiki/Personer/*.md` | 327 st. Obsidian-noter, MASTER. `master/wiki_data.js` genereras härifrån |
+| **Platser** | `wiki/Platser/*.md` | 58 st. MASTER |
+| **Fraktioner** | `wiki/Fraktioner/*.md` | 45 st. MASTER (`fraktioner_data.js` genereras härifrån) |
+| **Sessioner** | `wiki/Sessioner/*.md` | 11 st. Sessionshistorik med länkade NPCs/platser/fraktioner |
+| **Rollpersoner** | `wiki/Rollpersoner/*.md` | 6 st. Spelarnas karaktärer |
+| **Dashboard-data (genererad)** | `master/wiki_data.js`, `fraktioner_data.js` | Byggs av `node bygg/bygg-wiki-data.js` — redigera aldrig för hand |
 | **Kampanjplot** | `master/masterplot.md` | Övergripande storyline och master-plot |
 | **EON-regler** | NotebookLM (extern) | Officiellt regelbok & världsbeskrivning (se CLAUDE.md) |
 
@@ -74,10 +85,19 @@ EON/
 ├── CURRENT_STATE.md             # Nuvarande arbetsläge
 ├── index.html                   # Dashboard (HTML)
 │
-├── master/                      # 📚 SINGLE SOURCE OF TRUTH
+├── wiki/                        # 📚 Obsidian-vault, MASTER för NPC/plats/fraktion-data
+│   ├── Personer/                # 327 NPC-noter
+│   ├── Platser/                 # 58 plats-noter
+│   ├── Fraktioner/              # 45 fraktions-noter
+│   ├── Kapitel/, Sessioner/, Rollpersoner/
+│   └── _Mallar/                 # Mallar för nya noter
+├── bygg/
+│   └── bygg-wiki-data.js        # wiki/ -> master/wiki_data.js + fraktioner_data.js
+│
+├── master/
 │   ├── kampanjkrönika.md        # Tidslinje (MASTER)
 │   ├── character_reference.md   # Karaktärsfakta (MASTER)
-│   ├── wiki_data.js             # Dashboard-data
+│   ├── wiki_data.js             # GENERERAD — kör bygg/bygg-wiki-data.js, redigera ej
 │   └── masterplot.md            # Kampanjplot
 │
 ├── sessioner/                   # 🎲 SESSION-PLANERING
@@ -120,6 +140,9 @@ EON/
 - `Eon SL/` - Källdokument, läs bara om du behöver specifik bakgrund
 - `midjourney/` - Bildprompts, inte kampanjfakta
 - `arkiv/brainstorm/` - Gamla idéer, outdated
+- `_ARKIV/` - Övergivet material från Obsidian-migreringen (gammal Jekyll-wiki, gammal
+  separat vault, backup-filer, döda skript). Gitignored. Rör inte, radera inte utan
+  att fråga Johan — han ska gå igenom det manuellt.
 
 **Dessa filer är ej längre i bruk:**
 - `kampanj_masterplot.md` (BORTTAGEN - använd `master/masterplot.md`)

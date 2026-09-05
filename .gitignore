@@ -72,3 +72,13 @@ Eon SL/hemsidan/
 # Arkiverade filer (gamla versioner, skräp)
 # ============================================
 arkiv/
+_ARKIV/
+
+# ============================================
+# Obsidian — churn-filer som inte ska delas mellan maskiner
+# (.obsidian/app.json, community-plugins.json, templates.json m.fl. delas MED avsikt)
+# ============================================
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/

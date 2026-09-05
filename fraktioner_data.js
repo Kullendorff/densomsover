@@ -1,21 +1,22 @@
-/**
- * EON KAMPANJ - FRAKTIONER DATABAS
- * Separerad från wiki_data.js för bättre prestanda
- *
- * Innehåller: Handelshus, Magihus, Militära grupper, Kriminella organisationer
- */
-
 var fraktionerData = {
   handelshus: [
+    {
+      "namn": "Handelshuset Al-Zahir",
+      "typ": "Mûhadiskt handelshus (slavhandel)",
+      "ras": "Mûhadier",
+      "ledare": "[[Malik Al-Zahir]]",
+      "verksamhet": "Slavhandel och slavimperium",
+      "status": "Mäktigt men kontroversiellt",
+      "kapitel": "Fas 3",
+      "beskrivning": "> **Notering (migrering):** Fanns bara i den övergivna Jekyll-wikin (`kampanjwiki/_fraktioner`),\n> saknades i `fraktioner_data.js`. Tillagd vid Obsidian-migreringen 2026-09-05 eftersom\n> handelshuset är centralt i Hagge-handlingen i Muhad (Fas 3).\n\n# HANDELSHUSET AL-ZAHIR\n**Maliks slavimperium**\n\n## GRUNDINFO\n- **Typ:** Mûhadiskt handelshus specialiserat på slavhandel\n- **Ledare:** Malik Al-Zahir\n- **Region:** Muhad, centrerat i Jen\n- **Specialisering:** Slavhandel\n- **Status:** Mäktigt men kontroversiellt\n\n## BESKRIVNING\nHandelshuset Al-Zahir är Malik Al-Zahirs slavhandelsimperium. Detta kontroversiella men mäktiga handelshus kontrollerar stora delar av slavhandeln i Jen och omgivande regioner.\n\n## LEDARE\n\n### Malik Al-Zahir\nEn bezrubbningslös slavhandlare med enormt inflytande i Jen. Han ägde Hagge av Vitterdal som slav innan Laila al-Jen köpte honom.\n\n## VERKSAMHET\nAl-Zahirs handelshus är involverat i:\n- **Slavhandel:** Köp, försäljning och uthyrning av slavar\n- **Slavmarknaden:** Kontroll över stora delar av Jens slavmarknad\n- **Politiskt inflytande:** Använder sin rikedom för att påverka stadens ledning\n- **Våldsam kontroll:** Hejdukar och agenter för att skydda intressen\n\n## HAGGE-AFFÄREN\nMalik ägde Hagge av Vitterdal som en värdefull slav. När Laila al-Jen köpte Hagge:\n- Malik blev rasande över att förlora en så värdefull tillgång\n- Han planerade hämnd mot Laila\n- Han skickade agenter (inkl. Selim ibn-Rashid) för att sabotera\n- Han beordrade attack på karavanen till huvudstaden\n\n### Karavananfallet\nMalik organiserade:\n- Rövarbandet under Hassan \"Ökenormen\" al-Rashid\n- En sandelementar frammanad av agenten Selim\n- Koordinerat anfall under natten när Laila var upptagen\n\n## NÄTVERK & AGENTER\nMaliks nätverk inkluderar:\n- **Selim ibn-Rashid** - Infiltrerad som bärare i Lailas hushåll\n- **Hassan \"Ökenormen\" al-Rashid** - Rövarledare\n- **Hejdukar** - Väpnade legoknektar\n- **Informanter** - Spridda över Jen och omgivning\n\n## RIVALITET MED BAYT AL-LAILA\nKonflikten mellan Al-Zahir och Bayt Al-Laila (Lailas handelshus) är bitter:\n- Konkurrens om ekonomiskt inflytande\n- Personlig fientlighet efter Hagge-affären\n- Öppen konfrontation genom agenter och sabotage\n\n## BETYDELSE FÖR KAMPANJEN\nAl-Zahirs slavimperium var den huvudsakliga antagonisten i Muhad-delen av kampanjen (Fas 3). Hans försök att återta kontroll över Hagge och hämnas på Laila skapade stora faror för gruppen.\n\n## KOPPLINGAR\n- **Ledare:** Malik Al-Zahir\n- **Tidigare slav:** Hagge av Vitterdal\n- **Rival:** Bayt Al-Laila (Lailas handelshus)\n- **Region:** Jen, Muhad\n- **Fas:** 3"
+    },
     {
       "namn": "Handelshuset Atana",
       "typ": "Handelshus",
       "ras": "Pyaralver",
       "huvudsäte": "Ebhron",
-      "ledare": null,
       "verksamhet": "Aggressiv konkurrens, korruption, penningutlåning",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET ATANA\n**Pyariskt handelshus - Maktgalna konkurrenter**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Huvudsäte:** Ebhron\n- **Verksamhet:** Aggressiv konkurrens, korruption, penningutlåning\n- **Rykte:** Giriga, makthungriga, bryter regler\n\n## VERKSAMHET\nHandelshuset Atana är kända för sin aggressiva affärstaktik och brist på skrupler. De har 'hållhake' på Ebhrons styrande och använder korruption som affärsverktyg.\n\n**Metoder:**\n- Konkurrera ut inhemska handelshus\n- Mänskliga tjänare behandlas som 'råskinn'\n- Bryter regler systematiskt\n\n**Färdigheter:** Värdera, Räkna\n\n## RELATION TILL KHAZ-ZATIM-GHOR\nDvärgiska Khaz-Zatim-Ghor arbetar ALDRIG med Atana på grund av deras girighet och brist på ära.\n\n## SL-ANTECKNINGAR\nAtana representerar den mörkare sidan av alvisk handel - makt och rikedom över hederlighet."
     },
     {
@@ -26,18 +27,30 @@ var fraktionerData = {
       "ledare": "Thom Badastro",
       "verksamhet": "Spannmål, timmer, ashamirgräs",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET BADASTRO\n**Ashariskt handelshus - Spannmålsjättarna**\n\n## GRUNDINFO\n- **Ras:** Asharisk\n- **Huvudsäte:** Camard (Thom Badastro)\n- **Verksamhet:** Ashamirgräs, timmer, spannmål\n\n## FILIALER\n- **Tuzan Rim:** Frende Jattel\n- **Chadarians hopp:** Ullrica Badastro\n\n## HISTORIA\n**Chelos Modige av hus Badastro** var asharisk överjarl 2646–2693 e.D. - en prestigefull historia som ger huset politisk tyngd.\n\n## VERKSAMHET\nEtt av de stora spannmålshusen i Mundana med stark närvaro i ashariska regioner.\n\n## SL-ANTECKNINGAR\nBadastro är ett respekterat handelshus med djupa historiska rötter i asharisk politik."
+    },
+    {
+      "namn": "Handelshuset Banu Qadisha",
+      "typ": "Mûhadiskt handelshus",
+      "ras": "Mûhadier",
+      "status": "Etablerat",
+      "beskrivning": "> **Notering (migrering):** Fanns bara i den övergivna Jekyll-wikin (`kampanjwiki/_fraktioner`),\n> saknades i `fraktioner_data.js`. Tillagd vid Obsidian-migreringen 2026-09-05.\n\n# HANDELSHUSET BANU QADISHA\n**Mûhadiskt handelshus**\n\n## GRUNDINFO\n- **Typ:** Mûhadiskt handelshus\n- **Ras:** Mûhadier\n- **Region:** Främst Muhad\n- **Status:** Etablerat handelshus\n\n## BESKRIVNING\nBanu Qadisha är ett mûhadiskt handelshus som opererar i Muhad-regionen. De är ett av flera handelshus i det komplexa mûhadiska handelsnätverket.\n\n## VERKSAMHET\nBanu Qadisha är involverade i:\n- Mûhadisk handel\n- Ökenhandel\n- Regional verksamhet\n- Affärsnätverk i Muhad\n\n## RELATION TILL ANDRA HUS\nBanu Qadisha verkar i samma region som de mäktiga Al-Zahir (slavhandel) och Bayt Al-Laila (kryddhandel), vilket skapar ett komplext nätverk av rivalitet och samarbete.\n\n## KOPPLINGAR\n- **Typ:** Mûhadiskt handelshus\n- **Region:** Muhad\n- **Konkurrenter:** Al-Zahir, Bayt Al-Laila"
+    },
+    {
+      "namn": "Handelshuset Bayt Al-Laila",
+      "typ": "Mûhadiskt handelshus",
+      "ras": "Mûhadier",
+      "ledare": "[[Laila al-Jen]]",
+      "status": "Mäktigt kryddimperium",
+      "beskrivning": "> **Notering (migrering):** Fanns bara i den övergivna Jekyll-wikin (`kampanjwiki/_fraktioner`),\n> saknades i `fraktioner_data.js`. Tillagd vid Obsidian-migreringen 2026-09-05 eftersom\n> handelshuset är centralt i Hagge-handlingen i Muhad (Fas 3).\n\n# HANDELSHUSET BAYT AL-LAILA\n**Lailas kryddimperium**\n\n## GRUNDINFO\n- **Typ:** Mûhadiskt handelshus\n- **Ledare:** Laila al-Jen\n- **Region:** Muhad, centrerat i Jen\n- **Specialisering:** Kryddhandel\n- **Status:** Mycket mäktigt och inflytelserikt\n\n## BESKRIVNING\nBayt Al-Laila (\"Lailas hus\") är det enorma kryddimperium som Laila al-Jen byggts upp. Handelshuset dominerar kryddhandeln i Jen och har omfattande nätverk över hela Mundana.\n\n## LEDARE\n\n### Laila al-Jen\nEn mäktig och inflytelserik kryddhandlare som kontrollerar stora delar av kryddhandeln i regionen. Hon är känd för sin affärsmässiga skicklighet men också för sina ovanliga metoder.\n\n## HAGGE-AFFÄREN\nLaila köpte Hagge av Vitterdal (Hadrian) från Malik Al-Zahir och ställde ett okonventionellt krav för hans frihet - hon ville ha ett barn av honom. Detta ledde till:\n- En alkemisk/magisk befruktning i öknen på väg mot Quaran\n- Samtidig attack från Maliks hejdukar och ökendemoner\n- Komplext politiskt spel mellan handelshusen\n\n## VERKSAMHET\nBayt Al-Laila är involverade i:\n- **Kryddhandel:** Saffran, kardemumma, kanel och andra exotiska kryddor\n- **Långdistanshandel:** Nätverk över hela Mundana\n- **Politiskt inflytande:** Laila har stort inflytande i Jens ledning\n- **Spådom och mystik:** Laila är också känd som spåkvinna med tarotkort och kristallkula\n\n## HUSHÅLL & PERSONAL\nLailas hem i handelsdistriktet i Jen är ett lyxigt palats med:\n- **Hassan ibn-Khalid** - Hushållsförvaltare\n- **Mira bint-Salim** - Huvudkock\n- **Flera slavar och tjänare**\n- **Väpnat skydd** - Flera vakter inklusive vaktkapten Rashid ibn-Khalid\n\n## BETYDELSE FÖR KAMPANJEN\nBayt Al-Laila spelade en central roll i Hagges frigivning och gruppens äventyr i Muhad (Fas 3). Lailas makt och inflytande påverkade händelseutvecklingen betydligt.\n\n### Karavanresan\nLaila organiserade en stor karavanresa till den administrativa huvudstaden där Hagge skulle friges officiellt. Denna resa involverade:\n- 19 personer (inklusive gruppen)\n- 20 kameler\n- Omfattande säkerhet och personal\n- Attack av rövarbandet ledda av Hassan \"Ökenormen\" al-Rashid\n- Sabotage från Maliks agent Selim ibn-Rashid\n\n## KOPPLINGAR\n- **Ledare:** Laila al-Jen\n- **Relaterad:** Hagge av Vitterdal\n- **Rival:** Malik Al-Zahirs slavimperium\n- **Region:** Jen, Muhad\n- **Fas:** 3"
     },
     {
       "namn": "Handelshuset Elisari",
       "typ": "Handelshus",
       "ras": "Pyaralver",
       "huvudsäte": "Consaber",
-      "ledare": null,
       "verksamhet": "Exotiska varor, information, sällsynta varelser",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET ELISARI\n**Pyariskt handelshus - Multinationell jätte**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Huvudsäte:** Consaber\n- **Verksamhet:** Exotiska varor, information, sällsynta varelser\n- **Rykte:** 'Kan skaffa vad som helst mot rätt pris'\n- **Status:** En av Mundanas rikaste handelshus\n\n## FILIALER\nGlobal närvaro:\n- Soldarn (Mirya)\n- Melorion (Leadan)\n- Jargiska Kejsardömet\n- Caserion\n- Asharien\n- Ebhron\n\n## SPECIALITET\n**Exotiska varor och information:**\n- Sällsynta varelser\n- Svåråtkomlig information\n- Luxuösa kläder\n- Sociala tjänster\n\n**Färdigheter:** Etikett, Förföra\n\n## VIKTIGA KONTAKTER\n- **Consaber:** Riddersdamen Inalea & Amiral Morollan\n\n## SL-ANTECKNINGAR\nElisari är det ultimata 'kan-fixa-vad-som-helst' handelshuset - perfekt för när rollpersonerna behöver något obskyrt."
     },
     {
@@ -48,7 +61,6 @@ var fraktionerData = {
       "ledare": "Torfilius Fasces",
       "verksamhet": "Gobelänger, fabricerade helgonreliker, dramatik, salt, boskap",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET FASCES\n**Cermiransk - Relik-teatermästarna**\n\n## GRUNDINFO\n- **Ras:** Drunokisk familj med jargiskt påbrå\n- **Huvudsäte:** Sankt Kira, Cermira\n- **Ledare:** Torfilius Fasces\n- **Verksamhet:** Gobelänger, **fabricerade helgonreliker**, dramatik, salt, boskap\n\n## KONTROVERS - FALSKA RELIKER\nFasces är beryktade för sina **fabricerade helgonreliker:**\n- 'Dravandors skalle'\n- 'Ignariosfjädrar'\n- 'S:t Senmians vinkrus'\n- 'S:t Boreus balsamerade ögon'\n\n## FAMILJ\n- **Barn:** Mianni & Ludo = dramatiker-duo på kontroversiell teaterscen\n\n## KONFLIKTER\n- Tirakiska karteller stjäl både reliker och teatermanuskript\n\n## RYKTE\n'Skamlösa men rika' - lever i synd men skrattar hela vägen till kredithuset\n\n## POLITISK MAKT\nEn av få icke-adliga i **Cermiras landsråd**\n\n## SL-ANTECKNINGAR\nFasces representerar den korrupta sidan av Daak-kyrkan - reliker som affärsverksamhet."
     },
     {
@@ -56,10 +68,8 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Pyaralver",
       "huvudsäte": "Kryddöarna",
-      "ledare": null,
       "verksamhet": "Sjöfart, slavhandel, tullkrävning",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET HAHNA\n**Pyariskt handelshus - Kryddö-sjörövarna**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Huvudsäte:** Kryddöarna (ett av fyra styrande hus)\n- **Verksamhet:** Sjöfart, slavhandel, tullkrävning\n- **Rykte:** Hetlevrade, omoraliska för att vara alver\n\n## MILITÄR STYRKA\n**Krigsfartyget 'Slaghöken':**\n- Tremastad karack\n- Egen hamnplats i lagun\n- Militär makt på Kryddöarna\n\n**Färdigheter:** Slagsmål, Sjömansskap\n\n## POLITIK\nEtt av fyra styrande hus på Kryddöarna:\n- **Hahna (pyarisk)** - militär överlägsen men numerärt underlägsna\n- Mianai, Natah, Tanhi (mänskliga)\n\n## AFFÄRSPOLICY\nKontakt endast med Forion-fränder (pyariska kontakter)\n\n## SL-ANTECKNINGAR\nHahna är det farligaste alviska handelshuset - kombinerar sjörövarmentalitet med alvisk överlägsenhet."
     },
     {
@@ -67,10 +77,8 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Pyaralver",
       "huvudsäte": "Saviasskogen, Jargien",
-      "ledare": null,
       "verksamhet": "Diplomati med kejsardömet, handelslänk till Jargien",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET HIBELIUS\n**Pyariskt handelshus - Jargiska diplomaterna**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Huvudsäte:** Saviasskogen, Jargiska Kejsardömet (Yourum'an Savias)\n- **Verksamhet:** Diplomati med kejsardömet, handelslänk till Jargien\n\n## STRATEGI\n**Religiös anpassning:**\n- Låtsas vara Daak-troende\n- Anpassar sig till kyrkan\n- Gör affärer i kyrkor\n\n**Färdigheter:** Räkning, Kulturkännedom\n\n## NÄRVARO\nTillhåll i alla jargiska städer - omfattande nätverk i kejsardömet\n\n## SL-ANTECKNINGAR\nHibelius är mästare på kulturell anpassning - alver som spelar enligt Jargiens regler."
     },
     {
@@ -81,29 +89,22 @@ var fraktionerData = {
       "ledare": "Saevian & Avanni Ivari (Cermira-filial)",
       "verksamhet": "Spannmål från Pavaraslätten",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET IVARI\n**Drunokiskt handelshus - Spannmålsarvet under attack**\n\n## GRUNDINFO\n- **Ras:** Pyar-familjen\n- **Huvudsäte:** Drunok\n- **Verksamhet:** Spannmål från Pavaraslätten (generationer av verksamhet)\n\n## FILIALER\n- **Cermira:** Saevian & Avanni Ivari\n\n## AKTUELL KONFLIKT\n**Bitter och eskalerande fejd** med marnakhtirakiska Wekzi:\n- Thukkor Wekzi har förlorat 'hel båtlast dyrbara pälsar' till Ivari\n- Våldsam eskalering pågår\n\n## SL-ANTECKNINGAR\nIvari dras in i Wekzis desperata överlevnadskamp - farlig situation."
     },
     {
       "namn": "Handelshuset Jhamalomian",
       "typ": "Handelshus",
       "ras": "Pyaralver",
-      "huvudsäte": null,
-      "ledare": null,
       "verksamhet": "Handel i Gordrion och på Takalorr",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET JHAMALOMIAN\n**Pyariskt handelshus - Gordrion/Takalorr-specialister**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Verksamhet:** Handel i Gordrion och på Takalorr\n\n## KOPPLINGAR\n**Delägare i kredithuset Jhamrimsez:**\n- Filialer i Västlanden och Takalorr\n- Samarbete med Jhamkeir\n\n## SL-ANTECKNINGAR\nEtt av de mindre dokumenterade pyariska handelshusen - verkar fokusera på specifika geografiska områden (Gordrion/Takalorr)."
     },
     {
       "namn": "Handelshuset Jhamkeir",
       "typ": "Handelshus",
       "ras": "Pyaralver",
-      "huvudsäte": null,
-      "ledare": null,
       "verksamhet": "Handel i Västlanden och Takalorr",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET JHAMKEIR\n**Pyariskt handelshus - Västlanden/Takalorr-fokus**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Verksamhet:** Handel i Västlanden och Takalorr\n\n## KOPPLINGAR\n**Delägare i kredithuset Jhamrimsez:**\n- Filialer i Västlanden och Takalorr\n- Samarbete med Jhamalomian\n\n## SL-ANTECKNINGAR\nEtt av de mindre dokumenterade pyariska handelshusen - verkar fokusera på specifika geografiska områden (Västlanden/Takalorr)."
     },
     {
@@ -122,10 +123,8 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Pyaralver",
       "huvudsäte": "Lim'alan vhic Sunariye, Asharien",
-      "ledare": null,
       "verksamhet": "Medling, diplomati, kulturell brygga",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET LEUREST'YA\n**Pyariskt handelshus - Medlarna**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Huvudsäte:** Lim'alan vhic Sunariye, Asharien\n- **Verksamhet:** Medling, diplomati, kulturell brygga\n\n## SPECIALITET\n**Diplomati och medling:**\n- Goda kontakter med alla folkslag\n- Inklusive marnakhtiraker\n- Kulturell brygga mellan raser\n\n**Färdigheter:** Diplomati, Kulturkännedom\n\n## ALLIANSER\n- Samarbetar med Vilia\n- Starka kopplingar till frijarl Fimanol 'halvalven'\n\n## SL-ANTECKNINGAR\nLeurest'ya är de perfekta medlarna - använd dem när rollpersonerna behöver diplomatisk hjälp."
     },
     {
@@ -136,7 +135,6 @@ var fraktionerData = {
       "ledare": "Familjer Merocidan och Calanzeso",
       "verksamhet": "Expeditioner i Mithera, kristallgruvor",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET MENELTAZE\n**Cirefaliskt handelshus - Mithera-skattjägarna**\n\n## GRUNDINFO\n- **Ras:** Cirefalier\n- **Huvudsäte:** Cermira stad (grundat 2700-talet e.D.)\n- **Ledare:** Familjer Merocidan och Calanzeso\n- **Verksamhet:** Expeditioner i Mithera, kristallgruvor från Daliz Rim\n\n## OBSESSION\n**Mithera-fixering:**\n- Besatta av Mitheraskogen\n- Regelbundna expeditioner\n- Ljusskygga metoder\n\n## KONFLIKTER\n- **Fejd:** Nejas och Ivari\n- **Förbund:** Wekzi\n\n## POLITISK MAKT\nDjupt involverade i Cermira stads gillen\n\n## SL-ANTECKNINGAR\nMeneltaze är farligt nära Mithera - kan ha information om skogen som rollpersonerna behöver."
     },
     {
@@ -144,21 +142,17 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Mänsklig",
       "huvudsäte": "Kryddöarna",
-      "ledare": null,
       "verksamhet": "Kryddhandel, styrande på Kryddöarna",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET MIANAI\n**Mänskligt handelshus - Kryddö-rivalen**\n\n## GRUNDINFO\n- **Ras:** Mänsklig\n- **Huvudsäte:** Kryddöarna\n- **Verksamhet:** Styrande hus på Kryddöarna\n\n## METODER\n**Kriminell verksamhet:**\n- Betalar dhurkoorska pirater för att attackera rivaler\n- Våldsam konkurrensstrategi\n\n## POLITIK\nEtt av tre mänskliga styrande hus (tillsammans med Natah och Tanhi) mot pyariska Hahna\n\n## SL-ANTECKNINGAR\nMianai representerar den mörkare sidan av Kryddöarnas politik."
     },
     {
       "namn": "Handelshuset Mimore",
       "typ": "Handelshus",
       "ras": "Cirefalisk",
-      "huvudsäte": null,
       "ledare": "Ficon Manziir (Cermira)",
       "verksamhet": "Kredithuset Elzimaz, timmer, legosoldater",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET MIMORE\n**Cirefaliskt handelshus - Kredithus-mästarna**\n\n## GRUNDINFO\n- **Ras:** Cirefalisk\n- **Verksamhet:** Kredithuset Elzimaz, timmer från Mithera, legosoldatverksamhet\n- **Cermira-ledare:** Ficon Manziir\n\n## LEDARE - FICON MANZIIR\n- Krigsveteran\n- Martari-kultist\n- Tränat cermiranska prinsarna i fäktning\n\n## VERKSAMHET\n- Export: Spannmål, smide\n- Import: Malm\n- Goda relationer med Manziiriska härakademin\n\n## RYKTE\nPålitliga, hög kvalitet, Martaridyrkare\n\n## POLITISK SITUATION\nKung Vidkuns skulder till Mimore komplicerar Cermiras politiska läge\n\n## SL-ANTECKNINGAR\nMimore är ett mäktigt finansiellt handelshus med politiskt inflytande."
     },
     {
@@ -166,10 +160,8 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Pyaralver",
       "huvudsäte": "Forion",
-      "ledare": null,
       "verksamhet": "Handel, låneverksamhet, finansiella tjänster",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET MONOME\n**Pyariskt handelshus - Forionska bankirer**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Huvudsäte:** Forion\n- **Verksamhet:** Handel, låneverksamhet, finansiella tjänster\n\n## KONFLIKTER\n- Konflikt med cirefalier\n- Hemligt stöd från Imaytemplet\n\n**Färdigheter:** Handel, Kulturkännedom\n\n## SL-ANTECKNINGAR\nMonome har religiöst stöd vilket ger dem makt utöver deras ekonomiska styrka."
     },
     {
@@ -177,10 +169,8 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Mänsklig",
       "huvudsäte": "Kryddöarna",
-      "ledare": null,
       "verksamhet": "Kryddhandel, styrande på Kryddöarna",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET NATAH\n**Mänskligt handelshus - Kryddö-styrande**\n\n## GRUNDINFO\n- **Ras:** Mänsklig\n- **Huvudsäte:** Kryddöarna\n- **Verksamhet:** Styrande hus på Kryddöarna\n\n## POLITIK\nEtt av fyra styrande hus på Kryddöarna (tillsammans med Mianai, Tanhi och pyariska Hahna)\n\n## SL-ANTECKNINGAR\nNatah är en del av den mänskliga majoriteten mot pyarisk militärmakt."
     },
     {
@@ -198,11 +188,8 @@ var fraktionerData = {
       "namn": "Handelshuset Ordomah",
       "typ": "Handelshus",
       "ras": "Pyaralver",
-      "huvudsäte": null,
-      "ledare": null,
       "verksamhet": "Landhandel, karavaner, spannmålstransport",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET ORDOMAH\n**Pyariskt handelshus - Mänskliggjorda karavanhandlare**\n\n## GRUNDINFO\n- **Ras:** Pyaralver (förlorar alviska drag)\n- **Verksamhet:** Landhandel, karavaner, spannmålstransport\n\n## UNIK KARAKTÄR\n**Mänskliggjorda alver:**\n- Förlorar alviska drag över generationer\n- 'Halvalver' vanliga\n- Manliga alver får skäggväxt\n- Totalt integrerade i mänskliga kulturer\n\n**Färdigheter:** Kulturkännedom, Köra vagn\n\n## SL-ANTECKNINGAR\nOrdomah representerar alvisk integration i mänskliga samhällen - kulturell anpassning över bevarande av alvisk identitet."
     },
     {
@@ -210,10 +197,8 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Cirefalisk",
       "huvudsäte": "Gordrion",
-      "ledare": null,
       "verksamhet": "Riskfylld handel, expeditioner till farliga områden",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET PORNAZ\n**Cirefaliskt handelshus - Pionjärerna**\n\n## GRUNDINFO\n- **Ras:** Cirefalisk\n- **Huvudsäte:** Gordrion\n- **Verksamhet:** Riskfylld handel, expeditioner till farliga områden\n\n## SPECIALITET\n**Mod och risktagande:**\n- Söker vinst där andra undviker\n- Handel med tauper i Taupernas dal\n- Expeditioner till obefolkade områden\n\n## RYKTE\nPionjärer som tar risker andra handelshus undviker\n\n## SL-ANTECKNINGAR\nPornaz är perfekta för uppdrag i farliga områden - de har erfarenhet och kontakter där andra inte vågar sig."
     },
     {
@@ -235,7 +220,6 @@ var fraktionerData = {
       "ledare": "Bazirk-trukhen Kharziza Reza",
       "verksamhet": "Misstänks vilja starta 'fjärde tirakkrig'",
       "status": "farlig",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET REZA\n**Tirakiskt handelshus - Krigsstartarna**\n\n## GRUNDINFO\n- **Ras:** Tirakisk\n- **Huvudsäte:** Tiban, Takalorr\n- **Ledare:** Bazirk-trukhen Kharziza Reza\n- **Verksamhet:** Misstänks vilja starta 'fjärde tirakkrig'\n\n## PERSONAL\n- **Schaman:** Nekkma Andeblidare i tjänst\n\n## RYKTE\nElaka rykten om krigsplanering som huset bestämt förnekar\n\n## SL-ANTECKNINGAR\nReza är potentiellt farliga - tirakisk aggression kombinerad med handelshusets resurser."
     },
     {
@@ -246,18 +230,14 @@ var fraktionerData = {
       "ledare": "Zoloddvärgar",
       "verksamhet": "Glasblåsning, glashantverk",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET RIHZIM\n**Dvärgiskt handelshus - Glasmästarna**\n\n## GRUNDINFO\n- **Ras:** Dvärgar (Zolod-klanen)\n- **Huvudsäte:** Daan Hammal, Soldarn\n- **Verksamhet:** Glasblåsning, glashantverk\n\n## KUNDER\nCaseriska och meloriska köpmän\n\n## SL-ANTECKNINGAR\nRihzim är specialister på glas - använd dem för glasrelaterade uppdrag eller kontakter."
     },
     {
       "namn": "Handelshuset Salusta",
       "typ": "Handelshus",
       "ras": "Pyaralver",
-      "huvudsäte": null,
-      "ledare": null,
       "verksamhet": "Kiryanska varor, alvisk 'exoticism'",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET SALUSTA\n**Pyariskt handelshus - Alvisk-exotiska säljare**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Verksamhet:** Kiryanska varor, alvisk 'exoticism'\n\n## STRATEGI\n**Marknadsföring:**\n- Spelar på 'alviskhet' för att locka kunder\n- Använder alviska kläder och språk på marknader\n- Nära band till kiriyaalver\n\n**Färdigheter:** Övertala, Skådespel\n\n## SL-ANTECKNINGAR\nSalusta använder alvisk mystik som marknadsföring - teatralisk handel."
     },
     {
@@ -265,10 +245,8 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Kiryansk",
       "huvudsäte": "Sunariskogen",
-      "ledare": null,
       "verksamhet": "Handel i/omkring Sunariskogen",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET SAMUNALI\n**Kiryanskt handelshus - Skogshandlarna**\n\n## GRUNDINFO\n- **Ras:** Kiriyaalver\n- **Huvudsäte:** Sunariskogen\n- **Verksamhet:** Handel i/omkring Sunariskogen\n\n## RYKTE\nStörsta bland kiriyaalver\n\n## FEJDER\n- Zoloddvärgiska Ramiz\n\n**Färdigheter:** Berättarkonst, Köra vagn\n\n## SL-ANTECKNINGAR\nSamunali är dominerande i Sunariskogen - viktiga för kontakter med kiriyaalver."
     },
     {
@@ -287,10 +265,8 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Mänsklig",
       "huvudsäte": "Kryddöarna",
-      "ledare": null,
       "verksamhet": "Kryddhandel, styrande på Kryddöarna",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET TANHI\n**Mänskligt handelshus - Kryddö-splittrat**\n\n## GRUNDINFO\n- **Ras:** Mänsklig\n- **Huvudsäte:** Kryddöarna\n- **Verksamhet:** Styrande hus på Kryddöarna\n\n## POLITIK\n**Splittrat mellan allianser:**\n- Ett av fyra styrande hus (med Mianai, Natah, Hahna)\n- Intern konflikt om allianser\n\n## SL-ANTECKNINGAR\nTanhi är det minst stabila av Kryddöarnas styrande hus."
     },
     {
@@ -298,10 +274,8 @@ var fraktionerData = {
       "typ": "Handelshus",
       "ras": "Cirefalisk",
       "huvudsäte": "Melorion",
-      "ledare": null,
       "verksamhet": "Glas, spannmål, salt, metaller",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET TEMIRANZ\n**Cirefaliskt handelshus - Mundanas största**\n\n## GRUNDINFO\n- **Ras:** Cirefalisk\n- **Huvudsäte:** Melorion\n- **Verksamhet:** Glas, spannmål, salt, metaller - nästan global räckvidd\n\n## FILIALER\n- **Camard:** Penzior Caszara\n- **Chadarian:** Canaza\n- Filialer världen över\n\n## FINANSIELL MAKT\nMajoritetsägare i eget kredithus med samma namn\n\n## RELATION TILL KHAZ-ZATIM-GHOR\nAnvänds för större distributionsuppgifter: 'Har räckvidd men kräver övervakning'\n\n## SL-ANTECKNINGAR\nTemiranz är Mundanas största handelshus - global makt och inflytande."
     },
     {
@@ -312,7 +286,6 @@ var fraktionerData = {
       "ledare": "Chasim Chasimir (familjen Charovilad)",
       "verksamhet": "Alkemiska preparat, droger, örter, stenar",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET TURKOSEN\n**Colonanskt handelshus - Alkemiska specialister**\n\n## GRUNDINFO\n- **Ras:** Colonansk\n- **Ägs av:** Familjen Charovilad i Colonan\n- **Ledare:** Chasim Chasimir (mystisk ålderman)\n- **Verksamhet:** Obskyra alkemiska preparat, droger, örter, stenar\n\n## SPECIELLT\n**Mundanas största alkemiska laboratorium:**\n- I källarvalv\n- Nära samarbete med minst två hus i Legio Colonan\n\n## SL-ANTECKNINGAR\nTurkosen är kontakten för alkemiska substanser och obskyra ingredienser."
     },
     {
@@ -323,7 +296,6 @@ var fraktionerData = {
       "ledare": "Harkk Kötthandlaren",
       "verksamhet": "Prostitution, slavhandel, kriminella affärer",
       "status": "farlig",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET UKKALIM\n**Marnakhtirakiskt handelshus - Ljusskygga affärer**\n\n## GRUNDINFO\n- **Ras:** Marnakhtiraker\n- **Huvudsäte:** Katharsis, Soldarn\n- **Ledare:** Harkk Kötthandlaren\n- **Verksamhet:** Prostitution, slavhandel, kriminella affärer\n\n## FAMILJEKONFLIK\n**Mor Dhakka** driver liknande verksamhet i Takalorr\n\n## SL-ANTECKNINGAR\nUkkalim är kriminellt handelshus - farliga men nyttiga kontakter i undre världen."
     },
     {
@@ -334,7 +306,6 @@ var fraktionerData = {
       "ledare": "Frijarl Lemendien Silverfjäder",
       "verksamhet": "Järn, timmer, tobak",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET VILIA\n**Pyariskt handelshus - Strukturerade järnhandlare**\n\n## GRUNDINFO\n- **Ras:** Pyaralver\n- **Huvudsäte:** Tuzan Rim, Asharien\n- **Ledare:** Frijarl Lemendien Silverfjäder\n- **Verksamhet:** Järn, timmer, tobak\n\n## FILIALER\n- **Nimto:** Anuien Tavu\n\n## ARBETSSÄTT\n**Strukturerade och taktiska:**\n- Kräver lojalitetseder\n- Systematisk organisation\n\n**Färdigheter:** Handel, Bokhållning\n\n## ALLIANSER\nSamarbetar med Leurest'ya\n\n## SL-ANTECKNINGAR\nVilia är välorganiserade och pålitliga - bra för långsiktiga affärsrelationer."
     },
     {
@@ -356,21 +327,17 @@ var fraktionerData = {
       "ledare": "Balin den Silvertungade",
       "verksamhet": "Metaller, vapen, rustningar, keramik",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# HANDELSHUSET ZILIZ\n**Dvärgiskt handelshus - Metallmästarna**\n\n## GRUNDINFO\n- **Ras:** Dvärgar (Zolod-klanen)\n- **Huvudsäte:** Camard\n- **Ledare:** Balin den Silvertungade\n- **Verksamhet:** Metaller, vapen, rustningar, keramik\n\n## RYKTE\nBitter konkurrens med Jon Thekol/'Camards Väl'\n\n## RELATION TILL KHAZ-ZATIM-GHOR\nBetrodd agent för metallhantverk: 'Förstår kvalitet'\n\n## SL-ANTECKNINGAR\nZiliz är dvärgisk kvalitet i metallarbete - Khaz-Zatim-Ghors föredragna agent."
     }
   ],
-
   magihus: [
     {
       "namn": "Magihuset Consenti",
       "typ": "Magihus (Legio Colonan)",
       "ras": "Blandad",
       "huvudsäte": "Colonan",
-      "ledare": null,
       "verksamhet": "Krigsmagiker och diplomater",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# MAGIHUSET CONSENTI\n**Legio Colonan - Krigsmagiker och diplomater**\n\n## GRUNDINFO\n- **Typ:** Ett av de tio stora husen inom magikersällskapet Legio Colonan\n- **Verksamhet:** Krigsmagik och diplomati\n\n## SPECIALITET\n**Dual focus:**\n- Militär magi\n- Diplomatisk verksamhet\n\n## SL-ANTECKNINGAR\nConsenti kombinerar makt och diplomati - användbara för både strid och förhandlingar."
     },
     {
@@ -381,7 +348,6 @@ var fraktionerData = {
       "ledare": "Lirmana (domus magus)",
       "verksamhet": "Alvexklusiv magik",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# MAGIHUSET CUVRI'AN\n**Legio Colonan - Alvexklusiva magiker**\n\n## GRUNDINFO\n- **Typ:** Magihus inom Legio Colonan\n- **Huvudsäte:** Alarinn\n- **Ledare:** Lirmana (domus magus)\n- **Medlemmar:** 8 léaramalver, 3 sanarialver\n\n## SPECIELLT\n**Hedersmedlem:** Sir Verduhrakh (lumiandraken)\n**Relation:** Alean Ninarian\n\n## KARAKTÄR\nExklusivt alviskt - accepterar endast alver som medlemmar\n\n## SL-ANTECKNINGAR\nCuvri'an är den alviska magiska eliten - prestigi öst och exklusivt."
     },
     {
@@ -389,10 +355,8 @@ var fraktionerData = {
       "typ": "Magihus (Legio Colonan)",
       "ras": "Blandad",
       "huvudsäte": "Colonan",
-      "ledare": null,
       "verksamhet": "Administration, informella kontakter, mutor och vänskapskorruption",
       "status": "neutral",
-      "kapitel": null,
       "beskrivning": "# MAGIHUSET DILIGE\n**Legio Colonan - Administratörer och 'rumlare'**\n\n## GRUNDINFO\n- **Typ:** Magihus inom Legio Colonan\n- **Verksamhet:** Administration, informella kontakter, mutor och vänskapskorruption\n\n## SPECIALITET\n**Grå zonen:**\n- Hanterar administration\n- Informella kontakter\n- Mutor och 'vänskapskorruption'\n- Smörjer systemet\n\n## SL-ANTECKNINGAR\nDilige är de som får saker att hända bakom kulisserna - korrupta men effektiva."
     },
     {
@@ -403,18 +367,14 @@ var fraktionerData = {
       "ledare": "Emerall",
       "verksamhet": "Mystisk front för hemliga 'Priori Cun-Sabreann'",
       "status": "misstänkt",
-      "kapitel": null,
       "beskrivning": "# MAGIHUSET DUNCREIGH\n**Legio Colonan - Mystiska fronten**\n\n## GRUNDINFO\n- **Typ:** Magihus inom Legio Colonan\n- **Ledare:** Emerall\n- **Verksamhet:** Misstänkt front för hemliga 'Priori Cun-Sabreann'\n\n## MISSTANKE\n**Endast front:**\n- Duncreigh misstänks vara fasad\n- Verklig organisation: 'Priori Cun-Sabreann'\n- Hemlig agenda\n\n## RELATIONER\nEmerall har goda relationer med Thalamur-magikrater\n\n## SL-ANTECKNINGAR\nDuncreigh är mysterium - vad döljer de egentligen?"
     }
   ],
-
   militära: [
     {
       "namn": "Arvorns Hammare",
       "typ": "Militär/Religiös organisation",
       "ras": "Huvudsakligen människor",
-      "huvudsäte": null,
-      "ledare": null,
       "verksamhet": "Anti-magi fanatiker, häxjagare",
       "status": "fiende",
       "kapitel": "Kapitel 7",
@@ -424,7 +384,6 @@ var fraktionerData = {
       "namn": "Stålsvärds Kavalerister",
       "typ": "Legosoldatkompani",
       "ras": "Blandad",
-      "huvudsäte": null,
       "ledare": "F.d. Kaelar Stålsvärd",
       "verksamhet": "Legosoldater (upplöst)",
       "status": "upplöst",
@@ -443,14 +402,12 @@ var fraktionerData = {
       "beskrivning": "# SYSTRARNA / ZORIAN-ORDEN\n**Religiös-militant orden - Demonjägare**\n\n## GRUNDINFO\n- **Typ:** Religiös-militant orden\n- **Huvudsäte:** Lundnäs\n- **Ledare:** Lady Isadora\n- **Verksamhet:** Jaga och bekämpa demonkorruption\n\n## VIKTIGA MEDLEMMAR\n- **Lady Isadora:** Ledare\n- **Syster Moira:** Andlig ledare\n\n## METODER\n**Mer raffinerade än Arvorns Hammare:**\n- Anlitar legosoldater (t.ex. Halrik Kord)\n- Spårhundar och spejare\n- Systematisk jakt på demonkorruption\n\n## RELATION TILL GRUPPEN\n**Komplex och osäker:**\n- Jagar Zentri (silverringen = demonkoppling)\n- Men bekämpar också demonen Urkhath\n- Potentiell allierad mot gemensam fiende?\n- Observerade evakueringen vid Iskvarnsbryggan\n\n## KOPPLING TILL KAMPANJEN\n- Anlitade Halrik Kord för att jaga Zentri (Kapitel 6)\n- Observerade gruppen under evakueringen (Kapitel 8)\n\n## SL-ANTECKNINGAR\nSystrarna är moraliskt grå - jagar demoner men också gruppen. Potentiell förhandlingspartner?"
     }
   ],
-
   kriminella: [
     {
       "namn": "Skrået",
       "typ": "Lönnmördargille",
       "ras": "Blandad",
       "huvudsäte": "Jarla",
-      "ledare": null,
       "verksamhet": "Lönnmord, politiska mord",
       "status": "fiende",
       "kapitel": "Kapitel 2",
@@ -461,35 +418,39 @@ var fraktionerData = {
       "typ": "Tjuvgille",
       "ras": "Blandad",
       "huvudsäte": "Jarla",
-      "ledare": null,
       "verksamhet": "Tjuveri, smuggling, undre världen",
       "status": "neutral",
       "kapitel": "Kapitel 2",
       "beskrivning": "# SKUGGVÄKTARNA\n**Tjuvgille - Jarlas undre värld**\n\n## GRUNDINFO\n- **Typ:** Tjuvgille\n- **Bas:** Jarla\n- **Verksamhet:** Tjuveri, smuggling, svartabörshandel\n\n## SITUATION I JARLA\n**Djärvare än någonsin:**\n- Frijarl Todors paranoia skapar maktvakuum\n- Stadsvakt upptagen med politiska fångar\n- Skuggväktarna expanderar verksamhet\n\n## RELATION TILL MAKT\nGynnades av Nejas maktövertagande - mindre kontroll från myndigheter\n\n## SL-ANTECKNINGAR\nSkuggväktarna kan vara informationskälla eller smugglingshjälp - om priset är rätt."
     }
   ],
-
   övriga: [
     {
       "namn": "Daak-kyrkan",
       "typ": "Religiös organisation",
       "ras": "Huvudsakligen människor",
       "huvudsäte": "Jargien",
-      "ledare": null,
       "verksamhet": "Religiös makt, Daak-dyrkan",
       "status": "komplex",
-      "kapitel": null,
       "beskrivning": "# DAAK-KYRKAN\n**Religiös organisation - Jargiens dominerande religion**\n\n## GRUNDINFO\n- **Typ:** Religiös organisation\n- **Centrum:** Jargiska Kejsardömet\n- **Verksamhet:** Daak-dyrkan, religiös kontroll\n- **Inflytande:** Massivt i Jargien, stort i Cermira\n\n## KARAKTÄR\n**Dogmatisk och mäktig:**\n- Dödsstraff för andra religioner i Jargien\n- Politiskt inflytande\n- Kontroll över utbildning och moral\n\n## RELATION TILL GRUPPEN\n**Corvus bakgrund:**\n- F.d. Kommendör i Arvorns Hammare (Daak-fanatiker)\n- 23 års tro krossad av Sankt Astrids martyrskap\n- Lämnade sin Daak-medalj på altaret\n\n## SL-ANTECKNINGAR\nDaak-kyrkan är maktstruktur snarare än trossamfund - korruption (Fasces falska reliker) och fanatism (Arvorns Hammare)."
+    },
+    {
+      "namn": "De Röda Vargarna",
+      "typ": "Banditgäng",
+      "ras": "Blandad",
+      "huvudsäte": "Muhad-regionen",
+      "verksamhet": "Rövare, plundrare",
+      "status": "fiende",
+      "kapitel": "Kapitel 2",
+      "beskrivning": "# DE RÖDA VARGARNA\n**Banditgäng - Muhads rövare**\n\n## GRUNDINFO\n- **Typ:** Banditgäng/Rövare\n- **Område:** Muhad-regionen\n- **Verksamhet:** Plundring, röveri\n\n## KOPPLING TILL KAMPANJEN\n**Tuzan Rim (Kapitel 2):**\n- Aktiva i regionen\n- Tafrandir försvinner i samband med deras närvaro\n- Hot mot resenärer\n\n## SL-ANTECKNINGAR\nDe Röda Vargarna är lokalt hot i Muhad - farliga men inte huvudantagonister."
     },
     {
       "namn": "Sanari-alverna",
       "typ": "Alvisk nation",
       "ras": "Sanarialver",
       "huvudsäte": "Sanari-alvernas rike",
-      "ledare": null,
       "verksamhet": "Alvisk nation med bindningsföremål",
       "status": "potentiell allierad",
-      "kapitel": null,
       "beskrivning": "# SANARI-ALVERNA\n**Alvisk nation - Har bindningsföremål**\n\n## GRUNDINFO\n- **Typ:** Alvisk nation\n- **Ras:** Sanarialver\n- **Verksamhet:** Alvisk kultur och magi\n\n## VIKTIGT FÖR KAMPANJEN\n**Har bindningsföremål:**\n- Äger föremål som kan binda demonen Urkhath\n- Kritisk för gruppens slutmål\n- Potentiell allierad mot demonen\n\n## STATUS\nPotentiell allierad - gruppen behöver förhandla om bindningsföremål\n\n## SL-ANTECKNINGAR\nSanari-alverna är nyckeln till att binda Urkhath - förhandlingar kommer vara kritiska."
     },
     {
@@ -497,27 +458,13 @@ var fraktionerData = {
       "typ": "Tirakisk stam",
       "ras": "Tiraker",
       "huvudsäte": "Gränstrakterna",
-      "ledare": null,
       "verksamhet": "Tirakisk kultur, krigare",
       "status": "komplex",
       "kapitel": "Prolog",
       "beskrivning": "# TIRAKSTAMMEN\n**Tirakisk stam - Från Tirakgraven**\n\n## GRUNDINFO\n- **Typ:** Tirakisk stam\n- **Område:** Gränstrakterna Cermira/Mithera\n- **Verksamhet:** Tirakisk krigarkultur\n\n## HISTORIA\n**Tirakgraven (Prolog):**\n- Deras förfäders grav utgrävdes\n- Strider med utgrävarna\n- Demonen delvis frigjord från graven\n- Potentiellt offer för demonens makt\n\n## RELATION TILL THRAKKA\nThrakka är tirak, men hennes relation till stammen oklar\n\n## SL-ANTECKNINGAR\nTirakstammen kan söka hämnd för gravskändning eller vara offer för demonen."
-    },
-    {
-      "namn": "De Röda Vargarna",
-      "typ": "Banditgäng",
-      "ras": "Blandad",
-      "huvudsäte": "Muhad-regionen",
-      "ledare": null,
-      "verksamhet": "Rövare, plundrare",
-      "status": "fiende",
-      "kapitel": "Kapitel 2",
-      "beskrivning": "# DE RÖDA VARGARNA\n**Banditgäng - Muhads rövare**\n\n## GRUNDINFO\n- **Typ:** Banditgäng/Rövare\n- **Område:** Muhad-regionen\n- **Verksamhet:** Plundring, röveri\n\n## KOPPLING TILL KAMPANJEN\n**Tuzan Rim (Kapitel 2):**\n- Aktiva i regionen\n- Tafrandir försvinner i samband med deras närvaro\n- Hot mot resenärer\n\n## SL-ANTECKNINGAR\nDe Röda Vargarna är lokalt hot i Muhad - farliga men inte huvudantagonister."
     }
   ]
 };
-
-// CommonJS export för Node.js validering
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== "undefined" && module.exports) {
   module.exports = fraktionerData;
 }

@@ -6,6 +6,16 @@ tools: Read, Edit, Bash, Grep
 
 # EON Data Integrity Guardian v2.0
 
+> **⚠️ OBSOLET SEDAN OBSIDIAN-MIGRERINGEN (2026-09-05).** `wiki/Personer/*.md` och
+> `wiki/Platser/*.md` (Obsidian-noter) är nu MASTER, inte `master/wiki_data.js`.
+> Metoden nedan (grep:a fram alfabetisk plats, strukturell Edit i JSON) ska **INTE
+> användas längre**. Lägg istället till/redigera en fil i `wiki/Personer/` (mall:
+> `wiki/_Mallar/Mall - NPC.md`) eller `wiki/Platser/`, och kör sedan
+> `node bygg/bygg-wiki-data.js` för att regenerera `master/wiki_data.js` +
+> `fraktioner_data.js`. En pre-commit-hook blockerar commits om JS-filerna redigerats
+> direkt och inte matchar `wiki/`. Resten av denna fil beskriver den gamla metoden och
+> är kvar av historiska skäl.
+
 Du är en specialiserad agent för säker uppdatering av EON kampanjwikis master/wiki_data.js-databas.
 
 **VIKTIGT:** Denna agent är omskriven baserat på erfarenheter från sessioner där tidigare version (max 15 NPCs) orsakade syntax-fel. Använd den nya metodiken nedan.

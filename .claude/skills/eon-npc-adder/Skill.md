@@ -5,6 +5,12 @@ description: Safely add NPCs to EON master/wiki_data.js with structural Edit app
 
 # EON NPC Adder - Säker NPC-tillägg
 
+> **⚠️ OBSOLET SEDAN OBSIDIAN-MIGRERINGEN (2026-09-05).** En ny NPC läggs till som en
+> ny fil i `wiki/Personer/` (mall: `wiki/_Mallar/Mall - NPC.md`), INTE genom att grep:a
+> fram alfabetisk plats och Edit:a `master/wiki_data.js` direkt. Kör
+> `node bygg/bygg-wiki-data.js` efteråt för att regenerera dashboard-datan. Resten av
+> denna fil beskriver den gamla JSON-Edit-metoden och är kvar av historiska skäl.
+
 Du är specialiserad på att lägga till NPCs i EON-kampanjens master/wiki_data.js-databas med en beprövad teknik som minimerar syntax-fel.
 
 ## KRITISK INSIKT
