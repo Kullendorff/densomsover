@@ -1,0 +1,82 @@
+/* Gravens Arv — components.css
+   Header, brödsmulor, statusrad, sektionsrubrik, datarader, sök/filter,
+   boxar, modal, footer. Se designspec.md avsnitt 5.
+   Kräver base.css (tokens + reset) laddad först. */
+
+/* --- 5.1 Header --- */
+.chrome { background: var(--chrome); color: var(--on-chrome); }
+.chrome__row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 26px; padding-block: 14px; }
+.wordmark { font: 500 14px/1 var(--font-mono); letter-spacing: .2em; text-transform: uppercase; color: var(--on-chrome); margin-right: auto; }
+.nav { display: flex; flex-wrap: wrap; gap: 4px 20px; font: 400 12px/1.6 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
+.nav a { color: var(--on-chrome-dim); }
+.nav a:hover, .nav a[aria-current] { color: var(--on-chrome); }
+
+.crumbs { background: var(--surface-alt); border-bottom: 1px solid var(--rule); font: 400 11px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+.crumbs .wrap { padding-block: 10px; }
+.crumbs a:hover { color: var(--accent-hover); }
+
+/* --- 5.2 Statusrad --- */
+.statusbar { background: var(--surface-alt); border-bottom: 1px solid var(--rule); }
+.statusbar__row { display: flex; flex-wrap: wrap; gap: 14px 44px; padding-block: 20px; }
+.stat__label { display: block; font: 400 11px/1 var(--font-mono); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-muted); }
+.stat__value { display: block; margin-top: 4px; font: 400 15px/1.3 var(--font-mono); }
+
+/* --- 5.3 Sektionsrubrik --- */
+.section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 2px solid var(--rule-strong); padding-bottom: 8px; }
+.section-head h2 { margin: 0; font: 600 clamp(20px, 2.4vw, 26px)/1.2 var(--font-ui); letter-spacing: -0.01em; }
+.section-head .meta { font: 400 11px/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-muted); }
+
+/* --- 5.4 Datarader (bärande mönster) --- */
+.rows { list-style: none; margin: 22px 0 0; padding: 0; }
+.row { display: grid; gap: 6px 14px; align-items: baseline; padding: 11px 6px; border-bottom: 1px solid var(--rule-soft); }
+.row:hover { background: var(--hover); }
+.row__nr    { font: 400 12px/1.4 var(--font-mono); color: var(--ink-faint); }
+.row__title { font: 500 16px/1.4 var(--font-ui); }
+.row__meta  { font: 400 12px/1.4 var(--font-mono); color: var(--ink-muted); }
+.row__status{ font: 400 11px/1.4 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; text-align: right; color: var(--on-chrome-dim); }
+.row__status--aktiv { color: var(--accent); }
+
+.row--kapitel { grid-template-columns: 34px minmax(0,1.1fr) minmax(0,1fr) 78px; }
+.row--npc     { grid-template-columns: minmax(0,1.4fr) minmax(0,.8fr) minmax(0,1fr) minmax(0,1fr) 78px; }
+.row--simple  { grid-template-columns: minmax(0,1fr) auto; justify-content: space-between; }
+
+@media (max-width: 640px) {
+  .row--kapitel, .row--npc { grid-template-columns: 1fr auto !important; }
+  .row__meta:nth-of-type(n+2) { display: none; }
+}
+
+/* Statusord i klartext ("Pågår", "Klart", "Död", "Försvunnen") — inte färgade prickar
+   eller emoji. Endast "Pågår"/"Försvunnen" får .row__status--aktiv (--accent). */
+
+/* --- 5.5 Sök och filter --- */
+.search { display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--rule); padding: 11px 14px; }
+.search input {
+  flex: 1 1 auto; min-width: 0; width: 100%;
+  background: transparent; border: 0; outline: none;
+  font: 400 15px/1.4 var(--font-ui); color: var(--ink);
+}
+.search input:focus-visible { outline: none; }
+.search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.chip { background: transparent; border: 1px solid var(--rule); padding: 6px 12px; font: 400 12px/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-muted); cursor: pointer; }
+.chip:hover { background: var(--hover); color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--chrome); border-color: var(--chrome); color: var(--on-chrome); }
+.result-count { margin: 12px 0 0; font: 400 11px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+
+/* --- 5.6 Boxar --- */
+.box { background: var(--surface); border: 1px solid var(--rule); padding: 18px 20px; margin: 20px 0; }
+.box__label { font: 400 11px/1 var(--font-mono); letter-spacing: .16em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 8px; display: block; }
+.box--warning { border-color: var(--accent); }
+.box--warning .box__label { color: var(--accent); }
+.box--quote { background: transparent; border: 0; border-left: 2px solid var(--rule); padding: 4px 0 4px 20px; font: italic 400 20px/1.7 var(--font-prose); color: var(--ink-secondary); }
+
+/* --- 5.7 Modal --- */
+.modal { background: var(--surface); border: 1px solid var(--rule); box-shadow: 0 24px 60px rgba(30,29,26,.28); max-width: 720px; width: min(92vw, 720px); max-height: 85vh; overflow: auto; padding: 28px; }
+.modal::backdrop, .overlay { background: rgba(30,29,26,.55); }
+.modal__close { background: none; border: 0; color: var(--ink-muted); font-size: 22px; line-height: 1; cursor: pointer; padding: 4px; }
+.modal__close:hover { color: var(--ink); }
+
+/* --- 5.8 Footer --- */
+.footer { background: var(--chrome); color: var(--on-chrome-dim); }
+.footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; padding-block: 20px; font: 400 11px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }

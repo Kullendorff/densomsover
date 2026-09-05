@@ -1,0 +1,106 @@
+/* Gravens Arv — base.css
+   Tokens, reset, typografi, länkar. Se designspec.md avsnitt 1–4.
+   Laddas FÖRE components.css. */
+
+:root {
+  /* Ytor */
+  --bg:            #eceae2;  /* sidbakgrund */
+  --surface:       #f6f5f0;  /* input, boxar, tabellyta */
+  --surface-alt:   #dedbd0;  /* statusrad, tabellhuvud */
+  --chrome:        #1e1d1a;  /* header, footer */
+
+  /* Text */
+  --ink:           #1e1d1a;  /* primär text */
+  --ink-secondary: #4a473f;  /* löptext i sekundär kontext */
+  --ink-muted:     #7c786d;  /* metadata, etiketter */
+  --ink-faint:     #8a867a;  /* radnummer, svag metadata */
+  --on-chrome:     #eceae2;  /* text på mörk krom */
+  --on-chrome-dim: #9d9a90;  /* inaktiv nav på mörk krom */
+
+  /* Linjer */
+  --rule-strong:   #1e1d1a;  /* 2px under rubriker */
+  --rule:          #c9c5b8;  /* ramar */
+  --rule-soft:     #d5d1c4;  /* raddelare */
+  --hover:         #e3e0d5;  /* radhover */
+
+  /* Accent – används sparsamt */
+  --accent:        #a8451f;  /* pågående, aktiv, varning */
+  --accent-hover:  #7a3c14;  /* länk-hover */
+
+  /* Typsnitt */
+  --font-ui:    'Archivo', system-ui, sans-serif;
+  --font-mono:  'IBM Plex Mono', ui-monospace, monospace;
+  --font-prose: 'Newsreader', Georgia, serif;
+}
+
+/* Accentregler: --accent betyder "kräver uppmärksamhet" (pågående, aktiv, död/försvunnen,
+   fel). Aldrig dekorativt, aldrig som bakgrund på stora ytor. */
+
+/* --- Reset --- */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-ui);
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+h1, h2, h3, h4, p, ol, ul, dl, figure { margin: 0; }
+ol, ul { padding: 0; list-style: none; }
+
+/* --- Layout --- */
+.wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-inline: clamp(14px, 3vw, 36px);
+}
+
+/* --- Länkar --- */
+a { color: var(--ink); text-decoration: none; }
+a:hover { color: var(--accent-hover); }
+.prose a { text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+.prose a:hover { text-decoration-color: var(--accent-hover); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* --- Typografiskala (designspec.md §3.1) --- */
+.prose {
+  font-family: var(--font-prose);
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 68ch;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+.prose--secondary {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink-secondary);
+}
+.prose--lead > p:first-of-type::first-letter {
+  float: left;
+  font: 400 3.4em/0.78 var(--font-prose);
+  margin: .06em .12em 0 0;
+  color: var(--accent);
+}
+.eyebrow {
+  font: 400 11px/1 var(--font-mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+h1.page-title {
+  font: 600 clamp(30px, 5vw, 46px)/1.15 var(--font-ui);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.subtitle {
+  font: 400 16px/1.5 var(--font-ui);
+  color: var(--ink-muted);
+}
+blockquote.quote {
+  font: italic 400 20px/1.7 var(--font-prose);
+  color: var(--ink-secondary);
+  margin: 0;
+}

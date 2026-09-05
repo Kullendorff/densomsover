@@ -1,0 +1,64 @@
+/* Gravens Arv — pages.css
+   Fåtal sidspecifika undantag. Se designspec.md avsnitt 1.1.
+   Kräver base.css + components.css laddade först. */
+
+/* --- Prosa-rubriker och listor i läsvyn (kapitel, fluff) --- */
+.prose h2 {
+  font: 600 clamp(20px, 2.4vw, 26px)/1.2 var(--font-ui);
+  letter-spacing: -0.01em;
+  border-bottom: 2px solid var(--rule-strong);
+  padding-bottom: 8px;
+  margin-top: 2.2em;
+  margin-bottom: 1em;
+  color: var(--ink);
+}
+.prose h3 {
+  font: 600 18px/1.3 var(--font-ui);
+  margin-top: 1.8em;
+  margin-bottom: .7em;
+  color: var(--ink);
+}
+.prose h4 {
+  font: 500 16px/1.3 var(--font-ui);
+  margin-top: 1.4em;
+  margin-bottom: .5em;
+  color: var(--ink-secondary);
+}
+.prose p { margin-bottom: 1.2em; }
+.prose ul, .prose ol { margin: 1em 0 1.5em 1.4em; list-style: revert; }
+.prose li { margin-bottom: .4em; }
+.prose strong { color: var(--ink); font-weight: 600; }
+.prose em { font-style: italic; color: var(--ink-secondary); }
+.prose hr { border: none; border-top: 1px solid var(--rule-soft); margin: 2.5em 0; }
+.prose .box p:last-child { margin-bottom: 0; }
+.prose .box--quote p { margin-bottom: .6em; }
+.prose .box--quote p:last-child { margin-bottom: 0; }
+
+/* Entity-länkar (NPC/plats/fraktion), auto-infogade av kapitel-linkify.js.
+   En enda accentfärg i systemet — ingen typkodning med separata färger längre. */
+.entity-link, .entity-npc, .entity-plats, .entity-fraktion {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 3px;
+}
+.entity-link:hover, .entity-npc:hover, .entity-plats:hover, .entity-fraktion:hover {
+  color: var(--accent-hover);
+  text-decoration-color: var(--accent-hover);
+}
+
+/* --- Läsvy (kapitel, fluff): enkolumnig, smalare än sajtens standardbredd --- */
+.read-view { max-width: 68ch; padding-block: clamp(24px, 4vw, 44px) 72px; }
+.read-view__article { margin-top: clamp(24px, 4vw, 40px); max-width: none; }
+
+/* --- Kapitelpager (föregående/nästa) --- */
+.chapter-pager { margin-top: clamp(28px, 5vw, 56px); }
+.chapter-pager .row__meta { white-space: nowrap; }
+
+/* --- Avslutningsrad (centrerad stämningstext i slutet av ett kapitel) --- */
+.chapter-close {
+  text-align: center;
+  margin-top: 3em;
+  font-style: italic;
+  color: var(--ink-muted);
+}
