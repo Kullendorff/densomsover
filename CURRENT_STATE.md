@@ -1,8 +1,37 @@
 # CURRENT STATE: Gravens Arv Kampanjwiki
 
+## Datum: 2026-09-06
+
+## Status: DESIGNMIGRERING PÅBÖRJAD — ETAPP 0 KLAR (delad CSS-grund + pilotkonvertering)
+
+**NYTT (2026-09-06):** Designspecifikationen `designspec.md` granskades mot repot (54
+HTML-filer, ~12 000 rader inline-CSS, 32 duplicerade `:root`-tokenset — betydligt större
+scope än specens ~20-filers antagande). Omarbetad plan i
+`~/.claude/plans/titta-p-hur-du-federated-marble.md` skalar om till kärnsajten (~25 filer)
+i etapper, med genererade sidor via `bygg/` istället för handredigering.
+
+- **Förarbete:** `mcpServers.obsidian` i `.claude.json` moderniserad till multi-vault-syntax
+  (`eon` → `wiki/`, `starwars`, personliga vaulten pausad). Den döda EON-kopian i
+  `C:\Users\kulle\Obsidian\Vault\10_Rollspel\EON\` (450 filer, oanvänd sedan innan juni
+  2026) raderad och ersatt med en pekarnot. Global `CLAUDE.md`/`/obsidian`-skillen
+  uppdaterade i enlighet.
+- **Etapp 0 klar:** `assets/css/{base,components,pages}.css` skapade enligt designspec.md
+  §2–5. `kapitel/kapitel-9-mithera.html` konverterad helt till läsvyn som pilot — eget
+  `<style>`-block (239 rader) borttaget, verifierat i Chrome med noll konsolfel.
+  Sidoeffekt: den trasiga `../wiki_data.js`-sökvägen (filen finns bara i `master/`) fixad
+  på den sidan, vilket gjorde att auto-länkningen (428 entiteter) fungerade för första
+  gången.
+- **Lokalt grenläge städat:** lokal `main` låg långt efter (`ac0356e`) trots att PR #51
+  redan var mergad på GitHub (`fdfd3c7`). Fast-forwardad. Arbete sker nu direkt på `main`
+  per plan (varje etapp committas komplett, publiceras direkt på Pages).
+- **Nästa steg:** Etapp 1 (bygg om `index.html`, hash-routing, ta bort trasig
+  `handleUrlParams()`).
+
+---
+
 ## Datum: 2026-09-05
 
-## Status: OBSIDIAN-MIGRERING GENOMFÖRD (på gren `obsidian-vault`, ej mergad till main)
+## Status: OBSIDIAN-MIGRERING GENOMFÖRD OCH MERGAD TILL MAIN (PR #51, `fdfd3c7`)
 
 **NYTT (2026-09-05) — natt-session, Johan sov, agent jobbade autonomt enligt godkänd plan:**
 - **Obsidian-vault** skapat ovanpå repo-roten (`D:\rollspel\EON` = vault). Ny mapp `wiki/`
@@ -48,20 +77,34 @@
   tre tidigare "för tvetydiga att mergea"-NPC:erna (`amina.md`, `fatima-bint.md`,
   `layla-bint.md`) entydigt mot **Amina bint-Farid**, **Fatima bint-Ali**,
   **Layla bint-Hussein** via identiska bildfilnamn (amina_muhad.png, fatima_bint.png,
-  layla.bint2.png) — alias tillagda, sedan raderat. Kvar i `_ARKIV/`: bara
-  `gammal-vault-eon/` (minus Fluff) — dess `Projekt/` och `SL/` är INTE jämförda mot
-  `EgetMaterial/` och rördes inte. Se `_ARKIV/⚠️ LÄS DETTA.md` för fullständig logg.
-- **Kända datakvalitetsproblem hittade under migreringen (flaggade i noterna, EJ
-  åtgärdade — kräver Johans beslut):**
+  layla.bint2.png) — alias tillagda, sedan raderat.
+- **Resten av `_ARKIV/` verifierat och raderat också** (samma natt, efter ytterligare
+  kontroll): `gammal-vault-eon/SL/` (51 filer, 50 byte-identiska med `Eon SL/`/`master/`,
+  den enda avvikande redan räddad som `Eon SL/femte-fasen-resan-till-vitterdal.md`) och
+  `gammal-vault-eon/Projekt/` (alla filer identiska med eller ÄLDRE utkast av de
+  aktuella `EgetMaterial/projekt/`-versionerna). **`_ARKIV/` innehåller nu bara en
+  README som förklarar historiken — inget gammalt material kvar.** Originalet av den
+  separata Obsidian-vaulten finns fortfarande orört i
+  `C:\Users\kulle\Obsidian\Vault\10_Rollspel\EON\` (bara kopian här togs bort).
+- **`EgetMaterial/` omstrukturerat på Johans begäran:** de sju typmapparna borttagna.
+  `Klart/` = flat mapp med bara de 7 färdiga HTML-versionerna. All markdown bor
+  permanent i `projekt/EM-XXX_namn/`, även efter avslut. **Inget EgetMaterial-projekt
+  pågår just nu — alla sex befintliga (Muhad, Jen, Mithrahus, Vitterdal-baronieriet,
+  Grensfortet, Legokompaniet) är klara** (den gamla `_index.md` sa felaktigt att
+  Legokompaniet bara var 15 % klart — rättat).
+- **Allt committat, pushat och mergat till `main`** (`9945dd1` hela migreringen, 699
+  filer · `30da1e4` tog bort ett oklart inslaget nyårsmeny-material:
+  `nyarsmeny/index.html` + `arkiv/icke-kampanj/matrecept/nyarsmeny_2025*.md`,
+  personligt matrecept utan koppling till kampanjen · `fdfd3c7` mergecommit, PR #51).
+  `main` och `obsidian-vault` är nu identiska.
+- **Kända datakvalitetsproblem (flaggade i noterna, EJ åtgärdade — kräver Johans
+  beslut):**
   - "Dubbel-Orm" (gruvarbetare, Rampor) finns som TRE separata poster i källdatan med
     olika detaljnivå men samma person: `wiki/Personer/Dubbel-Orm.md`,
     `-Dubbel-Orm-.md`, `-Dubbel-Orm- (Rampor).md`
   - 4 evakuerade Vargnäset-invånare (Lilla-Maja Björkgren, Margareta Lindkvist, Sigrid
     Falkemo, Torkel Falkemo) finns som 2 identiska dubbletter var — fanns redan i
     ORIGINAL wiki_data.js, inte introducerat av migreringen
-  - 3 NPCs kunde INTE mergas automatiskt pga tvetydighet (generisk "Amina"/"Fatima
-    bint"/"Layla bint" i gamla Jekyll-filer matchar flera specifika namngivna NPCs i
-    wiki_data.js — troligen föråldrade förlagor till senare uppsplittrade karaktärer)
   - De 6 spelarkaraktärernas Jekyll-bios (`wiki/Rollpersoner/`) var skrivna FÖRE
     Bok 1-finalen — status/plats i frontmatter är korrigerad till aktuell kanon
     (Grensfortet/Mundana, Umnatak permanent i kniven, Zentri räddad), men källtextens

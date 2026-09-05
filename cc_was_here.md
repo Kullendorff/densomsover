@@ -48,6 +48,59 @@
     Amina bint-Farid, fatima-bint.md → Fatima bint-Ali, layla-bint.md → Layla
     bint-Hussein — alias tillagda innan radering) godkände han radering av ~379 MB:
     `_ARKIV/jekyll-wiki/`, `jekyll-build-site/`, `drive-sync-skrap/`, `backupfiler/`,
-    `doda-skript/`, `lostfiler/`, `gammal-vault-eon/Fluff/`. Kvar i `_ARKIV/`:
-    `gammal-vault-eon/Projekt/` och `SL/` — INTE jämförda mot `EgetMaterial/`, rör inte
-    utan att kolla först.
+    `doda-skript/`, `lostfiler/`, `gammal-vault-eon/Fluff/`.
+  - **Resten av `_ARKIV/` verifierat och raderat också:** `gammal-vault-eon/SL/`
+    (51 filer — 50 byte-identiska med `Eon SL/`/`master/`, den enda avvikande
+    `claude.md` redan omdöpt+räddad som `Eon SL/femte-fasen-resan-till-vitterdal.md`)
+    och `gammal-vault-eon/Projekt/` (alla filer identiska med eller ÄLDRE utkast av
+    `EgetMaterial/projekt/`-versionerna, t.ex. saknade "Guldruschen"-handlingen och
+    KANON-STATUS-blocket som redan lagts till i de aktuella filerna). **`_ARKIV/` är
+    nu bara en README som förklarar historiken — allt gammalt är borta.** Originalet
+    av den separata Obsidian-vaulten finns fortfarande orört kvar i
+    `C:\Users\kulle\Obsidian\Vault\10_Rollspel\EON\` (bara kopian här togs bort).
+  - **`EgetMaterial/` omstrukturerat på Johans begäran** ("för knökigt", "bara dumpa
+    allt KLART i en mapp"): de sju typmapparna (`lander/`, `stader/`, `platser/`,
+    `regioner/`, `organisationer/`, `foremal/`, `npcs/`) borttagna. Ny modell:
+    `Klart/` = en flat mapp med BARA de färdiga HTML-versionerna (7 filer: Muhad, Jen,
+    Mithrahus, Vitterdal-baronieriet, Grensfortet, Legokompaniet + spelarversion),
+    all markdown (sammanfattning/STATUS/NOTES/research/utkast) bor permanent i
+    `projekt/EM-XXX_namn/` även efter avslut. En tom kvarleva-mapp
+    `projekt/EM-R002_grens-baroneri/` (från en gammal merge, redan tom) städades bort.
+    **Bonusfynd:** `_index.md` var föråldrad — påstod Legokompaniet låg på 15 %/Fas 1,
+    men dess egen STATUS.md visade Fas 7/7 KLAR. Rättat: **inget EgetMaterial-projekt
+    är just nu pågående, alla sex befintliga är klara.** CLAUDE.md/_index.md/README.md/
+    EXEMPEL.md i `EgetMaterial/` uppdaterade till den nya strukturen.
+  - **Allt committat och pushat till `origin/obsidian-vault`** (ny gren på GitHub,
+    `main` fortfarande helt orörd):
+    - `9945dd1` — hela migreringen, 699 filer (undantog medvetet två filer som redan
+      låg lösa innan sessionen och inte hör hit: `nyarsmeny/index.html` och
+      `Gravens_Arv_konceptalbum_POC.md`, Johans konceptalbum)
+    - `30da1e4` — tog sedan bort `nyarsmeny/index.html` OCH två upptäckta
+      nyårsmeny-recept (`arkiv/icke-kampanj/matrecept/nyarsmeny_2025*.md`) på Johans
+      begäran ("ingen aning varför det hamnade där") — personligt matrecept, inget
+      med kampanjen att göra. Rörde inte `meny6_saltimbocca.md` i samma mapp.
+  - **Nästa session:** `obsidian-vault` väntar fortfarande på merge till `main` —
+    Johan har inte bett om det än. GitHub föreslår PR-länk om han vill granska där.
+
+- **2026-09-06 — Designmigrering (designspec.md → omarbetad plan), Etapp 0 klar.**
+  `obsidian-vault` mergades till `main` via PR #51 (`fdfd3c7`) under sessionen — inte av
+  mig, men bekräftat och lokal `main` fast-forwardad till den (låg kvar på `ac0356e`).
+  Full plan i `~/.claude/plans/titta-p-hur-du-federated-marble.md` (se "✅ Etapp 0"-status
+  där för detaljer).
+  - **Förarbete:** Obsidian-MCP:n (`.claude.json`) moderniserad till multi-vault
+    (`eon=D:\rollspel\EON`, `starwars=...`), personliga vaulten pausad (reversibelt).
+    Döda EON-kopian i `C:\Users\kulle\Obsidian\Vault\10_Rollspel\EON\` (450 filer, orörd
+    sedan innan juni 2026) raderad, ersatt med `_FLYTTAD.md`-pekarnot. **Kräver omstart av
+    Claude Code** för att MCP-servern ska ladda om — inte gjort än denna session.
+  - **Etapp 0:** `assets/css/{base,components,pages}.css` skapade. Pilot:
+    `kapitel/kapitel-9-mithera.html` konverterad till läsvyn, gammalt `<style>`-block
+    (239 rader) borttaget. Verifierat i Chrome (lokal http.server på port 8743 — `file://`
+    blockeras av claude-in-chrome-tillägget) med noll konsolfel, `:focus-visible` synlig,
+    inga fasta pixelbredder. Bifynd: `../wiki_data.js`-sökvägen på den sidan var trasig
+    (filen finns bara i `master/`) — fixad, auto-länkning fungerar nu (428 entiteter).
+  - `resize_window`-verktyget satte inte faktisk viewport i den här Chrome-miljön
+    (innerWidth låste sig på 1709px oavsett begärd storlek) — 360px-testet gjordes därför
+    via CSS-granskning (inga fasta px-bredder utöver `.wrap`s `max-width`) istället för
+    visuellt. Flagga om exakt mobilrendering behöver verifieras senare.
+  - **Nästa session:** Etapp 1 (bygg om `index.html`, hash-routing, ta bort trasig
+    `handleUrlParams()` och `showModal()`-referensen, fixa `npc-count`).
