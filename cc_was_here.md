@@ -269,3 +269,56 @@
   - **Nästa session:** EgetMaterial-dedup + konvertering, ELLER börja på den
     riktiga örter→wiki/-migreringen som Johan bad om ("en enskild punkt på
     agendan") — fråga honom vilket han vill prioritera.
+
+- **2026-09-06 (samma dag, fortsättning 5) — Örter → wiki/-migreringen genomförd
+  på riktigt.** Johan valde denna framför EgetMaterial-dedup/bilder. Plan mode
+  användes (tre parallella Explore-agenter mot wiki-konventioner, bygg-pipelinen,
+  och register.js) innan implementation, plan sparad i samma planfil under en ny
+  rubrik "## Örter → wiki/-migrering".
+  - **123 örter** extraherade ur `orter.html`s `herbsData`-JS-objekt (eval:ades
+    lokalt, tryggt trusted data vi själva skrev) till egna Obsidian-noter i nya
+    `wiki/Örter/` + ny mall `wiki/_Mallar/Mall - Ört.md`. Frontmatter:
+    `typ/namn/region/växtplats/pris/tillredning/färdighet/kampanj/tags`.
+  - **`bygg/lib/wiki-model.js`** fick ett fjärde `buildModel()`-block (örter) —
+    **INTE** tillagt i `master/wiki_data.js` (fanns aldrig där, påverkar inte
+    `kontinuitet.html`s räkning).
+  - **`bygg/bygg-sidor.js`** fick en ny post i `pages`-arrayen → genererar
+    `register/orter.html` + `data/orter.json`, ingen ny klientkod behövdes
+    (`register.js` är helt konfigurationsstyrt).
+  - **Två RIKTIGA buggar hittade under Chrome-verifiering** (inte
+    testmiljö-brus den här gången):
+    1. Mina första `gift`/`kampanjkopplad`-fält var `"Ja"/"Nej"`-strängar —
+       `register.js`s `distinctSorted()` renderar en chip per unikt värde UTAN
+       att visa vilken filtergrupp den hör till, så två Ja/Nej-par blev
+       fyra identiska, omöjliga att skilja åt chips. Fixat genom att byta till
+       självbeskrivande värden (`"Gift"`/`null`, `"Kampanjkoppling"`/`null`) —
+       `null` filtreras bort av `distinctSorted` så bara den sanna halvan får
+       en chip. Databaserad fix, ingen ändring i `register.js` behövdes för
+       just detta.
+    2. `register.js`s `matchesSearch()` sökte bara i kolumner med
+       `role: title|meta` — men sökfältets placeholder-text ("Sök efter ört,
+       **effekt**, region…", kopierad rakt av från originalsidan) lovade sök i
+       effekttexten, som ligger i `beskrivning`, inte en synlig kolumn. Fixat
+       i `assets/js/register.js` (delad av ALLA fyra registersidor) genom att
+       lägga till `item.beskrivning` i sök-haystacken — en generell förbättring,
+       inte en engångshack, gynnar NPC/plats/fraktion-sök också.
+  - **`bygg/bygg-index.js`**: la till Örter-raden i `registerRowsHtml`-arrayen
+    med levande antal, tog bort den handskrivna `<li>` som legat utanför
+    `<!--BYGG:REGISTER-ROWS-->`-markören i `index.html` sedan innan
+    designmigreringen (hårdkodat "123", pekade på gamla `orter.html`).
+  - **`assets/css/pages.css`**: `.row--ort` + mobil-override, två rader enligt
+    `.row--plats`/`.row--fraktion`-mönstret.
+  - **Gamla `D:\rollspel\EON\orter.html` raderad.** Grep bekräftade inga andra
+    kodreferenser till den (bara `Startsida förslag C.dc.html`, en död
+    referensmockup utanför scope).
+  - **Datakontroll (inte stickprov):** 123 totalt, 13 gift, 7 kampanjkopplade,
+    11 regioner med exakt de radantal som fanns i originalets `herbsData` —
+    verifierat programmatiskt före OCH efter varje bygg-körning.
+  - **Bifynd, inte åtgärdat:** originalsidans statistikruta påstod "86
+    Kampanjspecifika & Klassiska" — verklig `kampanj`-tagg-räkning är bara 7.
+    Ännu ett exempel på hårdkodad, drivande siffra (samma sjukdom som
+    NPC-antalet var innan designmigreringen). Den gamla siffran finns inte
+    kvar någonstans nu eftersom hela sidan är genererad.
+  - Alla tre `--check` gröna, allt committat och pushat till `main`, live.
+  - **Nästa session:** EgetMaterial-dedup (design orörd, bara dubbletter bort)
+    eller bilder — båda uppskjutna, se planfilens "Uppskjutet"-sektion.

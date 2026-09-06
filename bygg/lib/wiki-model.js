@@ -122,6 +122,21 @@ function buildModel(wikiDir) {
     return k;
   });
 
+  const ortNotes = readNotes(path.join(wikiDir, 'Örter'));
+  const orter = ortNotes.map(({ fields, body }) => {
+    const o = {};
+    o.namn = fields.namn;
+    o.region = fields.region ?? null;
+    o.växtplats = fields.växtplats ?? null;
+    o.pris = fields.pris ?? null;
+    o.tillredning = fields.tillredning ?? null;
+    o.färdighet = fields.färdighet ?? null;
+    o.kampanj = fields.kampanj ? stripLink(fields.kampanj) : null;
+    o.tags = Array.isArray(fields.tags) ? fields.tags : [];
+    o.beskrivning = stripAllLinks(body.replace(/\n$/, ''));
+    return o;
+  });
+
   const fraktionNotes = readNotes(path.join(wikiDir, 'Fraktioner'));
   const fraktionerByKategori = {};
   for (const { fields, body } of fraktionNotes) {
@@ -144,7 +159,7 @@ function buildModel(wikiDir) {
     .filter(k => fraktionerByKategori[k])
     .flatMap(k => fraktionerByKategori[k]);
 
-  return { npcs, platser, kapitel, fraktionerByKategori, fraktioner };
+  return { npcs, platser, kapitel, fraktionerByKategori, fraktioner, orter };
 }
 
 module.exports = {

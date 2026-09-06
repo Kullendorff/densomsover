@@ -93,13 +93,14 @@
   color: var(--ink-muted);
 }
 
-/* --- Register (npcer/platser/fraktioner): ytterligare radformer utöver
+/* --- Register (npcer/platser/fraktioner/örter): ytterligare radformer utöver
    .row--kapitel/.row--npc i components.css --- */
 .row--plats     { grid-template-columns: minmax(0,1.4fr) minmax(0,.8fr) minmax(0,1fr); }
 .row--fraktion  { grid-template-columns: minmax(0,1.4fr) minmax(0,.8fr) minmax(0,.8fr) 78px; }
+.row--ort       { grid-template-columns: minmax(0,1.4fr) minmax(0,.8fr) minmax(0,1.2fr); }
 
 @media (max-width: 640px) {
-  .row--plats, .row--fraktion { grid-template-columns: 1fr auto !important; }
+  .row--plats, .row--fraktion, .row--ort { grid-template-columns: 1fr auto !important; }
 }
 
 .chip--clear { color: var(--ink-muted); }

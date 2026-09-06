@@ -14,7 +14,7 @@ const WIKI = path.join(ROOT, 'wiki');
 const INDEX_PATH = path.join(ROOT, 'index.html');
 const checkMode = process.argv.includes('--check');
 
-const { npcs, platser, kapitel, fraktionerByKategori } = buildModel(WIKI);
+const { npcs, platser, kapitel, fraktionerByKategori, orter } = buildModel(WIKI);
 const fraktionerCount = Object.values(fraktionerByKategori).flat().length;
 
 // Kapitel-HTML-filerna byter inte namn ofta — liten stabil tabell istället för att
@@ -87,6 +87,7 @@ const registerRowsHtml = [
   { titel: 'NPC:er', antal: npcs.length, href: 'register/npcer.html' },
   { titel: 'Platser', antal: platser.length, href: 'register/platser.html' },
   { titel: 'Fraktioner', antal: fraktionerCount, href: 'register/fraktioner.html' },
+  { titel: 'Örter & droger', antal: orter.length, href: 'register/orter.html' },
 ].map(r => `          <li><a class="row row--simple" href="${r.href}">
             <span class="row__title">${r.titel}</span>
             <span class="row__meta">${r.antal}</span>

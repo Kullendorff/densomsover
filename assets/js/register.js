@@ -65,6 +65,7 @@
     const haystacks = CONFIG.columns
       .filter(c => c.role === 'title' || c.role === 'meta')
       .map(c => item[c.key])
+      .concat(item.beskrivning) // sök träffar även löptexten, inte bara synliga kolumner
       .filter(Boolean)
       .join(' ')
       .toLowerCase();

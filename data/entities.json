@@ -2163,5 +2163,620 @@
     "namn": "Tirakstammen",
     "typ": "fraktion",
     "slug": "tirakstammen"
+  },
+  {
+    "namn": "Adlig Lättja (Aristokratens Vila)",
+    "typ": "ort",
+    "slug": "adlig-lattja-aristokratens-vila"
+  },
+  {
+    "namn": "Alvgräs",
+    "typ": "ort",
+    "slug": "alvgras"
+  },
+  {
+    "namn": "Alvsorg",
+    "typ": "ort",
+    "slug": "alvsorg"
+  },
+  {
+    "namn": "Anatel",
+    "typ": "ort",
+    "slug": "anatel"
+  },
+  {
+    "namn": "Andevandrare (Schamanens Ledstjärna)",
+    "typ": "ort",
+    "slug": "andevandrare-schamanens-ledstjarna"
+  },
+  {
+    "namn": "Andeviska (Schamanens Tystnad)",
+    "typ": "ort",
+    "slug": "andeviska-schamanens-tystnad"
+  },
+  {
+    "namn": "Arenans Raseri (Gladiatorvatten)",
+    "typ": "ort",
+    "slug": "arenans-raseri-gladiatorvatten"
+  },
+  {
+    "namn": "Asharisk brandmåra",
+    "typ": "ort",
+    "slug": "asharisk-brandmara"
+  },
+  {
+    "namn": "Askero",
+    "typ": "ort",
+    "slug": "askero"
+  },
+  {
+    "namn": "Aspharotblomma",
+    "typ": "ort",
+    "slug": "aspharotblomma"
+  },
+  {
+    "namn": "Belladonna",
+    "typ": "ort",
+    "slug": "belladonna"
+  },
+  {
+    "namn": "Benrot",
+    "typ": "ort",
+    "slug": "benrot"
+  },
+  {
+    "namn": "Bergslök",
+    "typ": "ort",
+    "slug": "bergslok"
+  },
+  {
+    "namn": "Bistört (Hrokk)",
+    "typ": "ort",
+    "slug": "bistort-hrokk"
+  },
+  {
+    "namn": "Bitter vattenört",
+    "typ": "ort",
+    "slug": "bitter-vattenort"
+  },
+  {
+    "namn": "Björnmossa",
+    "typ": "ort",
+    "slug": "bjornmossa"
+  },
+  {
+    "namn": "Blodbota",
+    "typ": "ort",
+    "slug": "blodbota"
+  },
+  {
+    "namn": "Blodfeber-röt (Spikklubba-variant)",
+    "typ": "ort",
+    "slug": "blodfeber-rot-spikklubba-variant"
+  },
+  {
+    "namn": "Blodsvalg (Guerras Styrka)",
+    "typ": "ort",
+    "slug": "blodsvalg-guerras-styrka"
+  },
+  {
+    "namn": "Blågräs",
+    "typ": "ort",
+    "slug": "blagras"
+  },
+  {
+    "namn": "Daggkrona",
+    "typ": "ort",
+    "slug": "daggkrona"
+  },
+  {
+    "namn": "Demagora",
+    "typ": "ort",
+    "slug": "demagora"
+  },
+  {
+    "namn": "Demondimma",
+    "typ": "ort",
+    "slug": "demondimma"
+  },
+  {
+    "namn": "Dimvävarens Spindelnät",
+    "typ": "ort",
+    "slug": "dimvavarens-spindelnat"
+  },
+  {
+    "namn": "Djuphavsanemon",
+    "typ": "ort",
+    "slug": "djuphavsanemon"
+  },
+  {
+    "namn": "Domarens Sanning",
+    "typ": "ort",
+    "slug": "domarens-sanning"
+  },
+  {
+    "namn": "Dunna",
+    "typ": "ort",
+    "slug": "dunna"
+  },
+  {
+    "namn": "Ekmåra",
+    "typ": "ort",
+    "slug": "ekmara"
+  },
+  {
+    "namn": "Eldfot",
+    "typ": "ort",
+    "slug": "eldfot"
+  },
+  {
+    "namn": "Falsk jordsvamp",
+    "typ": "ort",
+    "slug": "falsk-jordsvamp"
+  },
+  {
+    "namn": "Fingerbunke",
+    "typ": "ort",
+    "slug": "fingerbunke"
+  },
+  {
+    "namn": "Firegloens Svamp",
+    "typ": "ort",
+    "slug": "firegloens-svamp"
+  },
+  {
+    "namn": "Flamskott",
+    "typ": "ort",
+    "slug": "flamskott"
+  },
+  {
+    "namn": "Fredriccas Öga (Häxört)",
+    "typ": "ort",
+    "slug": "fredriccas-oga-haxort"
+  },
+  {
+    "namn": "Frostlav (Adisas Gärda)",
+    "typ": "ort",
+    "slug": "frostlav-adisas-garda"
+  },
+  {
+    "namn": "Frostspirens Is (Vinterglöds Tår)",
+    "typ": "ort",
+    "slug": "frostspirens-is-vinterglods-tar"
+  },
+  {
+    "namn": "Grenbringel",
+    "typ": "ort",
+    "slug": "grenbringel"
+  },
+  {
+    "namn": "Grottgastruts (Dvärgbröd)",
+    "typ": "ort",
+    "slug": "grottgastruts-dvargbrod"
+  },
+  {
+    "namn": "Gränsfortets Bark",
+    "typ": "ort",
+    "slug": "gransfortets-bark"
+  },
+  {
+    "namn": "Grå tveblading (Älskogsört)",
+    "typ": "ort",
+    "slug": "gra-tveblading-alskogsort"
+  },
+  {
+    "namn": "Gul läkemalva",
+    "typ": "ort",
+    "slug": "gul-lakemalva"
+  },
+  {
+    "namn": "Gurdstyrka",
+    "typ": "ort",
+    "slug": "gurdstyrka"
+  },
+  {
+    "namn": "Havsnåd (Sjömannens Vän)",
+    "typ": "ort",
+    "slug": "havsnad-sjomannens-van"
+  },
+  {
+    "namn": "Hingstpåle (Filippaört)",
+    "typ": "ort",
+    "slug": "hingstpale-filippaort"
+  },
+  {
+    "namn": "Honungsklocka",
+    "typ": "ort",
+    "slug": "honungsklocka"
+  },
+  {
+    "namn": "Ilieteblad (Bronsblad)",
+    "typ": "ort",
+    "slug": "ilieteblad-bronsblad"
+  },
+  {
+    "namn": "Isfrostkristall (Kryotropisk svamp)",
+    "typ": "ort",
+    "slug": "isfrostkristall-kryotropisk-svamp"
+  },
+  {
+    "namn": "Jens Nattstjärna",
+    "typ": "ort",
+    "slug": "jens-nattstjarna"
+  },
+  {
+    "namn": "Järnkyssenblomma",
+    "typ": "ort",
+    "slug": "jarnkyssenblomma"
+  },
+  {
+    "namn": "Kamelens Tunga",
+    "typ": "ort",
+    "slug": "kamelens-tunga"
+  },
+  {
+    "namn": "Kejsarens Mod",
+    "typ": "ort",
+    "slug": "kejsarens-mod"
+  },
+  {
+    "namn": "Kiriyaört",
+    "typ": "ort",
+    "slug": "kiriyaort"
+  },
+  {
+    "namn": "Korallblod",
+    "typ": "ort",
+    "slug": "korallblod"
+  },
+  {
+    "namn": "Korruptionens Pollen",
+    "typ": "ort",
+    "slug": "korruptionens-pollen"
+  },
+  {
+    "namn": "Kungslykta",
+    "typ": "ort",
+    "slug": "kungslykta"
+  },
+  {
+    "namn": "Kvällsvart (Nattskadessyster)",
+    "typ": "ort",
+    "slug": "kvallsvart-nattskadessyster"
+  },
+  {
+    "namn": "Kärleksfloka",
+    "typ": "ort",
+    "slug": "karleksfloka"
+  },
+  {
+    "namn": "Lavasalvia",
+    "typ": "ort",
+    "slug": "lavasalvia"
+  },
+  {
+    "namn": "Legionärens Plåster",
+    "typ": "ort",
+    "slug": "legionarens-plaster"
+  },
+  {
+    "namn": "Lögnare (Dvärgros)",
+    "typ": "ort",
+    "slug": "lognare-dvargros"
+  },
+  {
+    "namn": "Lûhamin",
+    "typ": "ort",
+    "slug": "l-hamin"
+  },
+  {
+    "namn": "Mahktahs Eld",
+    "typ": "ort",
+    "slug": "mahktahs-eld"
+  },
+  {
+    "namn": "Midvinterört",
+    "typ": "ort",
+    "slug": "midvinterort"
+  },
+  {
+    "namn": "Muhads Månblomma",
+    "typ": "ort",
+    "slug": "muhads-manblomma"
+  },
+  {
+    "namn": "Månhäva",
+    "typ": "ort",
+    "slug": "manhava"
+  },
+  {
+    "namn": "Mörkermossa (Klan Ghors Gåva)",
+    "typ": "ort",
+    "slug": "morkermossa-klan-ghors-gava"
+  },
+  {
+    "namn": "Mûhadinsk vallmo",
+    "typ": "ort",
+    "slug": "m-hadinsk-vallmo"
+  },
+  {
+    "namn": "Naken flenört",
+    "typ": "ort",
+    "slug": "naken-flenort"
+  },
+  {
+    "namn": "Nekropolensblod (Nobundusros)",
+    "typ": "ort",
+    "slug": "nekropolensblod-nobundusros"
+  },
+  {
+    "namn": "Odelgräs",
+    "typ": "ort",
+    "slug": "odelgras"
+  },
+  {
+    "namn": "Ondreva",
+    "typ": "ort",
+    "slug": "ondreva"
+  },
+  {
+    "namn": "Ormtunga",
+    "typ": "ort",
+    "slug": "ormtunga"
+  },
+  {
+    "namn": "Rimfrostlav (Glytemossa/Vätteskägg)",
+    "typ": "ort",
+    "slug": "rimfrostlav-glytemossa-vatteskagg"
+  },
+  {
+    "namn": "Ryttarblad (Alvmynta)",
+    "typ": "ort",
+    "slug": "ryttarblad-alvmynta"
+  },
+  {
+    "namn": "Röd jordklöver",
+    "typ": "ort",
+    "slug": "rod-jordklover"
+  },
+  {
+    "namn": "Rödklocka",
+    "typ": "ort",
+    "slug": "rodklocka"
+  },
+  {
+    "namn": "Rökelsegräs (Harambuske)",
+    "typ": "ort",
+    "slug": "rokelsegras-harambuske"
+  },
+  {
+    "namn": "Rökpurpur (Mudelört)",
+    "typ": "ort",
+    "slug": "rokpurpur-mudelort"
+  },
+  {
+    "namn": "Sanaris Gåva (Stjärnblomma)",
+    "typ": "ort",
+    "slug": "sanaris-gava-stjarnblomma"
+  },
+  {
+    "namn": "Silverlöv (Mitheras Gåva)",
+    "typ": "ort",
+    "slug": "silverlov-mitheras-gava"
+  },
+  {
+    "namn": "Silverört",
+    "typ": "ort",
+    "slug": "silverort"
+  },
+  {
+    "namn": "Själaröta (Andeförtärare)",
+    "typ": "ort",
+    "slug": "sjalarota-andefortarare"
+  },
+  {
+    "namn": "Självhela",
+    "typ": "ort",
+    "slug": "sjalvhela"
+  },
+  {
+    "namn": "Skuggblomma (Intets Ros)",
+    "typ": "ort",
+    "slug": "skuggblomma-intets-ros"
+  },
+  {
+    "namn": "Skuggblomma (Nattskugge-lilja)",
+    "typ": "ort",
+    "slug": "skuggblomma-nattskugge-lilja"
+  },
+  {
+    "namn": "Skuggflodens Tång",
+    "typ": "ort",
+    "slug": "skuggflodens-tang"
+  },
+  {
+    "namn": "Slagruna (Amilith)",
+    "typ": "ort",
+    "slug": "slagruna-amilith"
+  },
+  {
+    "namn": "Slavmarknadens Gift (Tystnadsdroppen)",
+    "typ": "ort",
+    "slug": "slavmarknadens-gift-tystnadsdroppen"
+  },
+  {
+    "namn": "Slögräs (Åkerdryga)",
+    "typ": "ort",
+    "slug": "slogras-akerdryga"
+  },
+  {
+    "namn": "Småborre",
+    "typ": "ort",
+    "slug": "smaborre"
+  },
+  {
+    "namn": "Solkärna",
+    "typ": "ort",
+    "slug": "solkarna"
+  },
+  {
+    "namn": "Stenblommans Extrakt",
+    "typ": "ort",
+    "slug": "stenblommans-extrakt"
+  },
+  {
+    "namn": "Stenlav",
+    "typ": "ort",
+    "slug": "stenlav"
+  },
+  {
+    "namn": "Stor mjuknäva",
+    "typ": "ort",
+    "slug": "stor-mjuknava"
+  },
+  {
+    "namn": "Stormvarnarens Svamp",
+    "typ": "ort",
+    "slug": "stormvarnarens-svamp"
+  },
+  {
+    "namn": "Svart läkemalva",
+    "typ": "ort",
+    "slug": "svart-lakemalva"
+  },
+  {
+    "namn": "Svartrot",
+    "typ": "ort",
+    "slug": "svartrot"
+  },
+  {
+    "namn": "Svavelgräs",
+    "typ": "ort",
+    "slug": "svavelgras"
+  },
+  {
+    "namn": "Sårläka",
+    "typ": "ort",
+    "slug": "sarlaka"
+  },
+  {
+    "namn": "Tandbär",
+    "typ": "ort",
+    "slug": "tandbar"
+  },
+  {
+    "namn": "Tarkas Lavakrydda",
+    "typ": "ort",
+    "slug": "tarkas-lavakrydda"
+  },
+  {
+    "namn": "Thónbuske",
+    "typ": "ort",
+    "slug": "th-nbuske"
+  },
+  {
+    "namn": "Tjuvens Dimma",
+    "typ": "ort",
+    "slug": "tjuvens-dimma"
+  },
+  {
+    "namn": "Tusenårslövet",
+    "typ": "ort",
+    "slug": "tusenarslovet"
+  },
+  {
+    "namn": "Ulvbane (Vargörtens Blod)",
+    "typ": "ort",
+    "slug": "ulvbane-vargortens-blod"
+  },
+  {
+    "namn": "Urkhaths Törnrot",
+    "typ": "ort",
+    "slug": "urkhaths-tornrot"
+  },
+  {
+    "namn": "Vallört",
+    "typ": "ort",
+    "slug": "vallort"
+  },
+  {
+    "namn": "Vandringssav",
+    "typ": "ort",
+    "slug": "vandringssav"
+  },
+  {
+    "namn": "Vargnäsetsalvia",
+    "typ": "ort",
+    "slug": "vargnasetsalvia"
+  },
+  {
+    "namn": "Vargört",
+    "typ": "ort",
+    "slug": "vargort"
+  },
+  {
+    "namn": "Vattuklocka",
+    "typ": "ort",
+    "slug": "vattuklocka"
+  },
+  {
+    "namn": "Vildjordrot",
+    "typ": "ort",
+    "slug": "vildjordrot"
+  },
+  {
+    "namn": "Vildvippa (Kozinn)",
+    "typ": "ort",
+    "slug": "vildvippa-kozinn"
+  },
+  {
+    "namn": "Vindbär",
+    "typ": "ort",
+    "slug": "vindbar"
+  },
+  {
+    "namn": "Vinterraseri (Flugsvamp)",
+    "typ": "ort",
+    "slug": "vinterraseri-flugsvamp"
+  },
+  {
+    "namn": "Vitterdals Lilja (Soffiablomman)",
+    "typ": "ort",
+    "slug": "vitterdals-lilja-soffiablomman"
+  },
+  {
+    "namn": "Yelgothas Tår (Portalört)",
+    "typ": "ort",
+    "slug": "yelgothas-tar-portalort"
+  },
+  {
+    "namn": "Yusufis Livselixir",
+    "typ": "ort",
+    "slug": "yusufis-livselixir"
+  },
+  {
+    "namn": "Zollobarträd",
+    "typ": "ort",
+    "slug": "zollobartrad"
+  },
+  {
+    "namn": "Ökenrosett",
+    "typ": "ort",
+    "slug": "okenrosett"
+  },
+  {
+    "namn": "Ökenrot",
+    "typ": "ort",
+    "slug": "okenrot"
+  },
+  {
+    "namn": "Ökensol (Solskiva)",
+    "typ": "ort",
+    "slug": "okensol-solskiva"
+  },
+  {
+    "namn": "Ökenviper (Sandormens Kött)",
+    "typ": "ort",
+    "slug": "okenviper-sandormens-kott"
   }
 ]

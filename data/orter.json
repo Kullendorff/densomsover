@@ -1,0 +1,1990 @@
+[
+  {
+    "namn": "Adlig Lättja (Aristokratens Vila)",
+    "region": "Jargien",
+    "växtplats": "Privata trädgårdar i Jargien, sommar (Ob3T6)",
+    "pris": "35 silver",
+    "tillredning": "Bladen röks eller infunderas i te",
+    "färdighet": "Alkemi eller Etikett",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Euforisk avslappning 2-3 timmar. -Ob1T6 VIL. Beroendeframkallande",
+    "slug": "adlig-lattja-aristokratens-vila",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Alvgräs",
+    "region": "Alv/Sunari",
+    "växtplats": "Unik för Sunari (Ob2T6)",
+    "pris": "25 silver",
+    "tillredning": "Torkas och rullas, röks som tobak",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Drog - liknar alkoholrus (TÅL). Ob5T6 Långtidsutmattning/5 min. Starkt beroendeframkallande",
+    "slug": "alvgras",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Alvsorg",
+    "region": "Alv/Sunari",
+    "växtplats": "Unik för Sunari, sommar (Ob4T6)",
+    "pris": "100 silver",
+    "tillredning": "Svart blomma, lugnande medel framställs",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Ob5T6 Långtidsutmattning. Svårt TÅL-slag (Ob4T6) eller djup sömn 1T6+4 timmar",
+    "slug": "alvsorg",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Anatel",
+    "region": "Skogar",
+    "växtplats": "Blandskog (Ob2T6)",
+    "pris": "35 silver",
+    "tillredning": "Rötterna krossas och kokas till brungrumlig brygd",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Bedövande: -Ob1T6 Chockslag 15 min. Bieffekt: Ob5T6 Långtidsutmattning",
+    "slug": "anatel",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Andevandrare (Schamanens Ledstjärna)",
+    "region": "Tirak",
+    "växtplats": "Heliga platser i tiraklander (Ob5T6)",
+    "pris": "90 silver",
+    "tillredning": "Blommorna röks under ritual",
+    "färdighet": "Rituallära",
+    "kampanj": "Umnatak",
+    "tags": [
+      "ört",
+      "kampanj"
+    ],
+    "beskrivning": "–Ob2T6 vid schamanistiska ritualer. Tillgång till andeplanet Ob1T6 timmar",
+    "slug": "andevandrare-schamanens-ledstjarna",
+    "gift": null,
+    "kampanjkopplad": "Kampanjkoppling"
+  },
+  {
+    "namn": "Andeviska (Schamanens Tystnad)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Mitheras magiska lundar, sommarnätter (Ob5T6)",
+    "pris": "80 silver",
+    "tillredning": "Blommorna torkas och röks i ritual",
+    "färdighet": "Rituallära eller Alkemi",
+    "kampanj": "Umnatak",
+    "tags": [
+      "ört",
+      "kampanj"
+    ],
+    "beskrivning": "–Ob1T6 vid Ritualslag för andekommunikation. Hallucinationer Ob1T6 timmar. Beroenderisk",
+    "slug": "andeviska-schamanens-tystnad",
+    "gift": null,
+    "kampanjkopplad": "Kampanjkoppling"
+  },
+  {
+    "namn": "Arenans Raseri (Gladiatorvatten)",
+    "region": "Jargien",
+    "växtplats": "Stadsrädgårdar i Jargien, sommar (Ob4T6)",
+    "pris": "60 silver",
+    "tillredning": "Rötterna mals och blandas med vin",
+    "färdighet": "Alkemi eller Krigare",
+    "kampanj": "Thrakka",
+    "tags": [
+      "ört",
+      "kampanj"
+    ],
+    "beskrivning": "+Ob1T6 Styrka, -Ob1T6 Chockslag i 1 timme. Efteråt: +Ob1T6 Utmattning",
+    "slug": "arenans-raseri-gladiatorvatten",
+    "gift": null,
+    "kampanjkopplad": "Kampanjkoppling"
+  },
+  {
+    "namn": "Asharisk brandmåra",
+    "region": "Skogar",
+    "växtplats": "Blandskog (Ob5T6)",
+    "pris": "150 silver",
+    "tillredning": "Röda blommor, rötterna kokas",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Sövande. Mycket svårt TÅL-slag (Ob5T6) eller sömn inom 20 min. Bieffekt: sömnighet",
+    "slug": "asharisk-brandmara",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Askero",
+    "region": "Tarkas",
+    "växtplats": "Nekropolen Nobundus, natt (Ob3T6)",
+    "pris": "30 silver",
+    "tillredning": "Bryggs som te eller mals till tinktur",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "–1T6 Utmattning och –Ob1T6 mot Ångest",
+    "slug": "askero",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Aspharotblomma",
+    "region": "Tarkas",
+    "växtplats": "Områden med magistormar, höst (Ob5T6)",
+    "pris": "60 silver",
+    "tillredning": "Bränns som rökelse eller mals och blandas i dryck",
+    "färdighet": "Ritualkunskap eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "–Ob1T6 vid Ritualslag under en timme. Risk för beroende",
+    "slug": "aspharotblomma",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Belladonna",
+    "region": "Skogar",
+    "växtplats": "Lövskogar, sommar (Ob3T6)",
+    "pris": "20 silver",
+    "tillredning": "Svarta bär infunderas",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Smärtstillande: helar Ob2T6 Smärta. Bieffekt: huvudvärk och yrsel",
+    "slug": "belladonna",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Benrot",
+    "region": "Stora Slätterna",
+    "växtplats": "Busklandskap (Ob3T6)",
+    "pris": "Ovanlig",
+    "tillredning": "Skärs ut till figuriner och symboler",
+    "färdighet": "Hantverk eller Rituallära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Används för att helga gudarna och vid offer",
+    "slug": "benrot",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Bergslök",
+    "region": "Stora Slätterna",
+    "växtplats": "Hedar (Ob1T6)",
+    "pris": "Vanlig",
+    "tillredning": "Matlagningslök",
+    "färdighet": "Matlagning",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Läker tillagad 1 smärta och 1 utmattning",
+    "slug": "bergslok",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Bistört (Hrokk)",
+    "region": "Tirak",
+    "växtplats": "Unik för Takalorr (Ob2T6)",
+    "pris": "110 silver",
+    "tillredning": "Dekokt på 50-65 cm hög ört med ljusgula blommor",
+    "färdighet": "Växtlära eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Bedövande + Aggression. -Ob1T6 Aggression, -Ob1T6 Chockslag. Dubbel Stridsutmattning. Beroendeframkallande",
+    "slug": "bistort-hrokk",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Bitter vattenört",
+    "region": "Stora Slätterna",
+    "växtplats": "Insjöar, sommar/höst (Ob2T6)",
+    "pris": "Vanlig",
+    "tillredning": "Frön används i bröd",
+    "färdighet": "Växtlära eller Matlagning",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Gör bröd hållbart. Lugnar: -1T6 utmattning, +Ob1T6 mot Aggression",
+    "slug": "bitter-vattenort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Björnmossa",
+    "region": "Cermira/Mithera",
+    "växtplats": "Gamla skogar i Cermira, året runt (Ob2T6)",
+    "pris": "20 silver",
+    "tillredning": "Mossan tuggas rå eller kokas till gröt",
+    "färdighet": "Överlevnad eller Matlagning",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Mättar hunger Ob1T6 dagar, +1 Styrka i 1 timme",
+    "slug": "bjornmossa",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Blodbota",
+    "region": "Skogar",
+    "växtplats": "Blandskog (Ob5T6)",
+    "pris": "200 silver",
+    "tillredning": "Rötter kokas, dricks varmt",
+    "färdighet": "Alkemi eller Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Blodbildande: Ob3T6 blodförlust försvinner på 30 min. Bieffekt: Ob2T6 Utmattning",
+    "slug": "blodbota",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Blodfeber-röt (Spikklubba-variant)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Våtmarker och fuktiga sänkor i södra Mithera (Ob3T6)",
+    "pris": "15-25 silver",
+    "tillredning": "Kokas till brygd eller tuggas rå (smakar avskyvärt bittert)",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Ökar kroppsvärme (+2T6 timmar kyla-motstånd). +2 STY, +2 TÅL i 3T6 timmar. Ingen trötthet 1T6+6 timmar. +1T6 mot Rädsla. NACKDEL: Efter -3 STY, -3 TÅL, total utmattning 2T6 timmar. FARA: Risk hjärtattack vid ansträngning (TÅL Ob4T6 eller 1T6 Trauma)",
+    "slug": "blodfeber-rot-spikklubba-variant",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Blodsvalg (Guerras Styrka)",
+    "region": "Tirak",
+    "växtplats": "Tirakiska stäpper, sommar (Ob4T6)",
+    "pris": "60 silver",
+    "tillredning": "Rötterna tuggas rå före strid",
+    "färdighet": "Överlevnad eller Krigarkonst",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "-Ob2T6 Chockslag, +Ob1T6 Styrka i första striden. Efteråt: +Ob2T6 Utmattning",
+    "slug": "blodsvalg-guerras-styrka",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Blågräs",
+    "region": "Skogar",
+    "växtplats": "Blandskog (Ob4T6)",
+    "pris": "50 silver",
+    "tillredning": "Dekokt på blåfärgat fältgräs",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Lugnande (1T6 Långtidsutmattning). Hallucinogen: PSY Ob3T6 eller verklighetsförvrängning",
+    "slug": "blagras",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Daggkrona",
+    "region": "Tarkas",
+    "växtplats": "Fuktiga områden nära Piralberget, vår (Ob3T6)",
+    "pris": "30 silver",
+    "tillredning": "Blommorna mals och blandas med vatten för rening",
+    "färdighet": "Växtlära eller Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Rensar orenheter och förhindrar sjukdom vid vattenintag",
+    "slug": "daggkrona",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Demagora",
+    "region": "Skogar",
+    "växtplats": "Lövskog, höst (Ob3T6)",
+    "pris": "20 silver",
+    "tillredning": "Gulvit svamp torkas, pulvriseras, blandas i svinfett till pasta",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Helande: Trauma och Smärta läks dubbelt så snabbt (stryks på var 6:e timme)",
+    "slug": "demagora",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Demondimma",
+    "region": "Skugglandet",
+    "växtplats": "Nära portaler till Skugglandet (Ob5T6)",
+    "pris": "110 silver",
+    "tillredning": "Sporer samlas och inandas",
+    "färdighet": "Svartkonst eller Spåkonst",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Visioner av Skugglandet Ob1T6 timmar. +Ob1T6 spå. Ob1T6 förvirring efteråt",
+    "slug": "demondimma",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Dimvävarens Spindelnät",
+    "region": "Alv/Sunari",
+    "växtplats": "Alvernas hemliga lundar (Ob5T6)",
+    "pris": "80 silver",
+    "tillredning": "Nätet väves till bandage",
+    "färdighet": "Medicin eller Handarbete",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Bandage helar +Ob1T6 extra Trauma/dag. Förhindrar ärr",
+    "slug": "dimvavarens-spindelnat",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Djuphavsanemon",
+    "region": "Hav/Kust",
+    "växtplats": "Djupa vatten, sällsynt (Ob5T6)",
+    "pris": "80 silver",
+    "tillredning": "Gift extraheras från tentaklerna",
+    "färdighet": "Giftlära",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Paralys Ob2T6 timmar vid hudkontakt. TÅL Ob4T6",
+    "slug": "djuphavsanemon",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Domarens Sanning",
+    "region": "Jargien",
+    "växtplats": "Tempelträdgårdar, vår (Ob5T6)",
+    "pris": "95 silver",
+    "tillredning": "Avkok dricks av förhörsoffret",
+    "färdighet": "Förhör eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "+Ob3T6 för offret att ljuga i Ob1T6 timmar",
+    "slug": "domarens-sanning",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Dunna",
+    "region": "Hav/Kust",
+    "växtplats": "Tempererad regnskog, sommar/höst (Ob4T6)",
+    "pris": "140 silver",
+    "tillredning": "Dekokt på vitgrön mossa",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Uppiggande: -Ob1T6 Marsch/Rida. Ingen riktig sömn. Dubbel vätske-/matbehov i 1T6 dagar",
+    "slug": "dunna",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Ekmåra",
+    "region": "Skogar",
+    "växtplats": "Lövskog, sommar (Ob4T6)",
+    "pris": "5 silver",
+    "tillredning": "Dekokt på ormbunksliknande växt",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Hämmande: +Ob2T6 mot Alkoholist-regeln i Ob1T6+6 timmar",
+    "slug": "ekmara",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Eldfot",
+    "region": "Stora Slätterna",
+    "växtplats": "Träsk (Ob5T6)",
+    "pris": "Sällsynt",
+    "tillredning": "Rödbrun rotväxt från Kagamarken",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Uppvärmande, nedkylning +Ob2T6 svårare, men utmattande: +1 utmattning",
+    "slug": "eldfot",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Falsk jordsvamp",
+    "region": "Skogar",
+    "växtplats": "Barrskog, höst (Ob5T6)",
+    "pris": "140 silver",
+    "tillredning": "Grön svamp hackas, blandas med sprit och kalkrik jord, torkas",
+    "färdighet": "Alkemi eller Giftlära",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Hallucinogen: Dövhet efter 1T6 timmar, varar 1T6+6 timmar",
+    "slug": "falsk-jordsvamp",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Fingerbunke",
+    "region": "Hav/Kust",
+    "växtplats": "Tropisk regnskog (Ob3T6)",
+    "pris": "25 silver",
+    "tillredning": "Dekokt på blad från frodig buske med blåröda bär",
+    "färdighet": "Medicin eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Helande: Ob1T6 Trauma och Smärta, max 1/läkeperiod",
+    "slug": "fingerbunke",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Firegloens Svamp",
+    "region": "Dvärg/Underjord",
+    "växtplats": "Nära underjordiska lavaflöden (Ob5T6)",
+    "pris": "70 silver",
+    "tillredning": "Torkas och mals",
+    "färdighet": "Smide eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Eld tänds med pulvret brinner hett (+1T6 eldskada) men kortare",
+    "slug": "firegloens-svamp",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Flamskott",
+    "region": "Tarkas",
+    "växtplats": "Nära vulkaner, året runt (Ob4T6)",
+    "pris": "40 silver",
+    "tillredning": "Blomman krossas för att frigöra värme och eld",
+    "färdighet": "Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Startar eldar i svåra förhållanden (+1T6 Eldstart)",
+    "slug": "flamskott",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Fredriccas Öga (Häxört)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Lövskogar (kräver häxunderhållet område), vår (Ob5T6)",
+    "pris": "70 silver",
+    "tillredning": "Hela växten torkas, pulvriseras, blandas med honung",
+    "färdighet": "Rituallära eller Spåkonst",
+    "kampanj": "Häxan Fredricca",
+    "tags": [
+      "ört",
+      "kampanj"
+    ],
+    "beskrivning": "–Ob2T6 vid slag för att upptäcka demonisk/magisk närvaro i Ob1T6 timmar",
+    "slug": "fredriccas-oga-haxort",
+    "gift": null,
+    "kampanjkopplad": "Kampanjkoppling"
+  },
+  {
+    "namn": "Frostlav (Adisas Gärda)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Bergssidor i Cermira, vinter (Ob3T6)",
+    "pris": "35 silver",
+    "tillredning": "Torkas och mals till pulver, blandas med varmt vatten",
+    "färdighet": "Växtlära eller Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "-Ob2T6 på Utmattning från kyla. Höjer kroppsvärme i 4 timmar",
+    "slug": "frostlav-adisas-garda",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Frostspirens Is (Vinterglöds Tår)",
+    "region": "Skugglandet",
+    "växtplats": "Lord Vinterglöds domäner (Ob6T6)",
+    "pris": "Osäljbar",
+    "tillredning": "Smälts och dricks (extremt farligt)",
+    "färdighet": "Svartkonst",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Immunitet mot kyla 1 dygn. PRIS: Ob1T6 permanent Utmattning",
+    "slug": "frostspirens-is-vinterglods-tar",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Grenbringel",
+    "region": "Stora Slätterna",
+    "växtplats": "Hedar, sommar (Ob4T6)",
+    "pris": "Ovanlig",
+    "tillredning": "Torkade blad röks",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Euforisk stämning. Aggression, Dansa, Förföra och Sjunga –Ob1T6 under 3-4 timmar. Beroendeframkallande",
+    "slug": "grenbringel",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Grottgastruts (Dvärgbröd)",
+    "region": "Dvärg/Underjord",
+    "växtplats": "Djupa tunnlar, alltid (Ob2T6)",
+    "pris": "10 silver",
+    "tillredning": "Svampen kokas eller steks",
+    "färdighet": "Matlagning eller Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Ersätter daglig kost. +1 Uthållighet under jord",
+    "slug": "grottgastruts-dvargbrod",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Gränsfortets Bark",
+    "region": "Cermira/Mithera",
+    "växtplats": "Området runt Gränsfortet, året runt (Ob3T6)",
+    "pris": "30 silver",
+    "tillredning": "Barken kokas, avkok dricks varmt",
+    "färdighet": "Växtlära eller Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "-Ob1T6 Chockslag i 2 timmar. Dövar Skugglandet-påverkan",
+    "slug": "gransfortets-bark",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Grå tveblading (Älskogsört)",
+    "region": "Skogar",
+    "växtplats": "Lövskog, sommar (Ob1T6)",
+    "pris": "5 silver",
+    "tillredning": "Bladen förtärs",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Preventivmedel: +Ob2T6 svårighet att bli gravid i Ob1T6 timmar",
+    "slug": "gra-tveblading-alskogsort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Gul läkemalva",
+    "region": "Hav/Kust",
+    "växtplats": "Unik för de cirefaliska öarna, ej vinter (Ob3T6)",
+    "pris": "20 silver",
+    "tillredning": "Dekokt på rötter eller infusion på blad/blommor",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Antiseptisk: 1T6 Smärta men -Ob1T6 infektionsrisk",
+    "slug": "gul-lakemalva",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Gurdstyrka",
+    "region": "Tirak",
+    "växtplats": "Slagfält och tirakläger (Ob3T6)",
+    "pris": "30 silver",
+    "tillredning": "Bladen kokas med kött",
+    "färdighet": "Matlagning eller Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "+Ob1T6 extra Smärta-läkning vid vila. Stärker immunförsvar",
+    "slug": "gurdstyrka",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Havsnåd (Sjömannens Vän)",
+    "region": "Hav/Kust",
+    "växtplats": "Klippiga kuster, alltid (Ob2T6)",
+    "pris": "15 silver",
+    "tillredning": "Algen äts rå eller torkas",
+    "färdighet": "Överlevnad eller Sjöfarande",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "-Ob2T6 mot sjösjuka. Förebygger skörbjugg",
+    "slug": "havsnad-sjomannens-van",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Hingstpåle (Filippaört)",
+    "region": "Stora Slätterna",
+    "växtplats": "Slättland, sommar (Ob4T6)",
+    "pris": "Ovanlig",
+    "tillredning": "Görs till fet salva, smörjs runt könsorgan",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Ökad lust: -Ob2T6 Amor",
+    "slug": "hingstpale-filippaort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Honungsklocka",
+    "region": "Stora Slätterna",
+    "växtplats": "Öppna landskap, sommar (Ob1T6)",
+    "pris": "Vanlig",
+    "tillredning": "Gul blomma, sötning för mat",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Ger hallucinationer vid stor dos (bra för schamaner)",
+    "slug": "honungsklocka",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Ilieteblad (Bronsblad)",
+    "region": "Skogar",
+    "växtplats": "Lövskog, sommar (Ob3T6)",
+    "pris": "25 silver",
+    "tillredning": "Bronsfärgade blad tuggas",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Sinnesstärkande: -Ob1T6 SYN/HÖR/Söka/Speja i 15 min. Bieffekt: Ob3T6 Långtidsutmattning",
+    "slug": "ilieteblad-bronsblad",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Isfrostkristall (Kryotropisk svamp)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Djupaste delarna av Mithera där kryotropi är starkast (Ob6T6)",
+    "pris": "50-100 silver",
+    "tillredning": "Äts färsk (förlorar effekt vid torkning), smakar som mint-is",
+    "färdighet": "Växtlära eller Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Immun mot naturlig kyla i 1T6+3 timmar. Andetag blir frostigt (lätt köldskada). Huden blekvit och kall (skrämmer varelser). +1T6 mot kryotropiska besvärjelser. NACKDEL: Extremt törstig. FARA: Överdos = kroppen fryser inifrån (1T6 Trauma/timme)",
+    "slug": "isfrostkristall-kryotropisk-svamp",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Jens Nattstjärna",
+    "region": "Muhad/Öken",
+    "växtplats": "Kryddmarknaderna i Jen (Ob2T6)",
+    "pris": "18 silver",
+    "tillredning": "Mals och blandas med kaffe eller te",
+    "färdighet": "Matlagning eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Uppiggande. -Ob1T6 Utmattning. Sömnlöshet 8 timmar",
+    "slug": "jens-nattstjarna",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Järnkyssenblomma",
+    "region": "Dvärg/Underjord",
+    "växtplats": "Underjordiska sjöar (Ob4T6)",
+    "pris": "45 silver",
+    "tillredning": "Blommorna pressas till olja",
+    "färdighet": "Smide eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Rustningsolja - förebygger rost i 1 månad",
+    "slug": "jarnkyssenblomma",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Kamelens Tunga",
+    "region": "Muhad/Öken",
+    "växtplats": "Oaser i Muhad, året runt (Ob2T6)",
+    "pris": "12 silver",
+    "tillredning": "Bladen tuggas direkt",
+    "färdighet": "Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Släcker törst - ingen vätska behövs i Ob1T6 timmar",
+    "slug": "kamelens-tunga",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Kejsarens Mod",
+    "region": "Jargien",
+    "växtplats": "Kejserliga trädgårdar, sommar (Ob5T6)",
+    "pris": "85 silver",
+    "tillredning": "Bladen kokas med vin och honung",
+    "färdighet": "Alkemi eller Ledarskap",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "–Ob1T6 vid Ledarskapsslag i 1 timme. –Ob1T6 mot skrämma. Risk för övermod",
+    "slug": "kejsarens-mod",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Kiriyaört",
+    "region": "Alv/Sunari",
+    "växtplats": "Unik för Sunari, sommar (Ob4T6)",
+    "pris": "100 silver",
+    "tillredning": "Gul ört torkas till läkedrog",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Helande: 1T6 Trauma och 2T6 Smärta varannan timme i 8 timmar (totalt 4T6 Trauma, 8T6 Smärta)",
+    "slug": "kiriyaort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Korallblod",
+    "region": "Hav/Kust",
+    "växtplats": "Tropiska rev, sommar (Ob4T6)",
+    "pris": "50 silver",
+    "tillredning": "Extraheras från levande korall, kokas",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Helar Ob1T6+1 Smärta från sjötrauma. Motgift mot manetgift",
+    "slug": "korallblod",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Korruptionens Pollen",
+    "region": "Skugglandet",
+    "växtplats": "Skugglandets nära skogar (Ob4T6)",
+    "pris": "65 silver",
+    "tillredning": "Samlas och förseglas i glas",
+    "färdighet": "Giftlära eller Svartkonst",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Kastat i ansiktet: +Ob2T6 alla PSY-slag i 1 timme. Mardrömmar",
+    "slug": "korruptionens-pollen",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Kungslykta",
+    "region": "Stora Slätterna",
+    "växtplats": "Hälleberg, vår/sommar (Ob4T6)",
+    "pris": "120 silver",
+    "tillredning": "Ljusgul saft från fruktkapseln blandas med alkohol",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Drog: Balansnedsättande. +Ob1T6 Rörelse-/Vapenfärdigheter i 1 timme",
+    "slug": "kungslykta",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Kvällsvart (Nattskadessyster)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Fuktiga dalar, höst (Ob4T6)",
+    "pris": "45 silver",
+    "tillredning": "Bären pressas till tjära",
+    "färdighet": "Alkemi eller Giftlära",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Sövande - offret sover Ob2T6 timmar. TÅL Ob3T6 för att vakna",
+    "slug": "kvallsvart-nattskadessyster",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Kärleksfloka",
+    "region": "Skogar",
+    "växtplats": "Lövskog, vår/sommar (Ob3T6)",
+    "pris": "10 silver",
+    "tillredning": "Bakas i bröd eller blandas i dryck",
+    "färdighet": "Matlagning eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Lusthöjande: -Ob1T6 Amor i 1T6+2 timmar",
+    "slug": "karleksfloka",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Lavasalvia",
+    "region": "Tarkas",
+    "växtplats": "Nära aktiva vulkaner, sommar (Ob5T6)",
+    "pris": "75 silver",
+    "tillredning": "Bladen tuggas direkt eller används i te",
+    "färdighet": "Överlevnad eller Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Höjer Smärttröskeln (–Ob1T6 Chockslag) under en strid",
+    "slug": "lavasalvia",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Legionärens Plåster",
+    "region": "Jargien",
+    "växtplats": "Jargiens slätter, sommar (Ob2T6)",
+    "pris": "15 silver",
+    "tillredning": "Bladen krossas och läggs direkt på sår",
+    "färdighet": "Medicin eller Krigskonst",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "-Ob2T6 Blödningstakt för nästa slag",
+    "slug": "legionarens-plaster",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Lögnare (Dvärgros)",
+    "region": "Stora Slätterna",
+    "växtplats": "Kullar (Ob5T6)",
+    "pris": "Sällsynt",
+    "tillredning": "Bronsfärgad ros, bladen blandas med sprit, honung och arsenik",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "+Ob2T6 att ljuga under 1T6 timmar",
+    "slug": "lognare-dvargros",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Lûhamin",
+    "region": "Muhad/Öken",
+    "växtplats": "Stenöken, höst (Ob4T6)",
+    "pris": "80 silver",
+    "tillredning": "Koncentrerad lûhamin blandas i vin",
+    "färdighet": "Alkemi eller Giftlära",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Symptomframkallande: Lungpestsymptom inom 1T6 timmar, avtar efter 1T6+2 timmar",
+    "slug": "l-hamin",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Mahktahs Eld",
+    "region": "Tirak",
+    "växtplats": "Vulkaniska områden (Ob5T6)",
+    "pris": "85 silver",
+    "tillredning": "Pulvriseras och äts med blod",
+    "färdighet": "Krigarkonst eller Rituallära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "–Ob1T6 vid stridsrelaterade slag i 1 strid. +Ob1T6 vid sociala slag. Ökad Aggression",
+    "slug": "mahktahs-eld",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Midvinterört",
+    "region": "Skogar",
+    "växtplats": "Barrskog, vinter (Ob5T6)",
+    "pris": "450 silver",
+    "tillredning": "Varm dekokt av mörkgrön klubbformad knopp",
+    "färdighet": "Alkemi eller Rituallära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Hallucinogen: PSY Ob3T6 eller katatonisk skräck. Vanlig i Xinu-kulten",
+    "slug": "midvinterort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Muhads Månblomma",
+    "region": "Muhad/Öken",
+    "växtplats": "Jens trädgårdar, natt/sommar (Ob4T6)",
+    "pris": "55 silver",
+    "tillredning": "Kronbladen infunderas i vin",
+    "färdighet": "Alkemi eller Förföra",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "-Ob2T6 VIL mot förförelse. Afrodisiakum",
+    "slug": "muhads-manblomma",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Månhäva",
+    "region": "Tarkas",
+    "växtplats": "Övergivna nekropoler, natt (Ob5T6)",
+    "pris": "90 silver",
+    "tillredning": "Bladen bränns och inandas som rök",
+    "färdighet": "Ritualkunskap eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Ger visioner och –Ob1T6 vid Ritualslag, men risk för Ob1T6 förvirring efteråt",
+    "slug": "manhava",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Mörkermossa (Klan Ghors Gåva)",
+    "region": "Dvärg/Underjord",
+    "växtplats": "Djupa grottor, alltid (Ob3T6)",
+    "pris": "35 silver",
+    "tillredning": "Mossan äts rå eller bryggs",
+    "färdighet": "Växtlära eller Gruvdrift",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Mörkerseende i 4 timmar",
+    "slug": "morkermossa-klan-ghors-gava",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Mûhadinsk vallmo",
+    "region": "Muhad/Öken",
+    "växtplats": "Stenöken (Ob3T6)",
+    "pris": "20 silver",
+    "tillredning": "Fruktsaften blandas med vin",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Drog: Som alkohol (TÅL). Ob3T6 Utmattning men helar Ob1T6 Smärta. Beroendeframkallande",
+    "slug": "m-hadinsk-vallmo",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Naken flenört",
+    "region": "Stora Slätterna",
+    "växtplats": "Busklandskap, sommar (Ob2T6)",
+    "pris": "Vanlig",
+    "tillredning": "Infusion på växt utan rötter",
+    "färdighet": "Medicin eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Smärtstillande på sår. Helar Ob1T6+3 Smärta",
+    "slug": "naken-flenort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Nekropolensblod (Nobundusros)",
+    "region": "Muhad/Öken",
+    "växtplats": "Nekropolen Nobundus i Tarkas, natt (Ob6T6)",
+    "pris": "130 silver",
+    "tillredning": "Blommornas nektar samlas och bevaras i mörker",
+    "färdighet": "Rituallära eller Nekromantik",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "+Ob1T6 mot odöd påverkan. Synlig för andar i 1 timme",
+    "slug": "nekropolensblod-nobundusros",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Odelgräs",
+    "region": "Stora Slätterna",
+    "växtplats": "Slättland, vår/sommar (Ob1T6)",
+    "pris": "Vanlig",
+    "tillredning": "Läggs med kött, matvaror eller på sår",
+    "färdighet": "Överlevnad eller Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Håller saker rena och motverkar förruttnelse",
+    "slug": "odelgras",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Ondreva",
+    "region": "Stora Slätterna",
+    "växtplats": "Slättland (Ob3T6)",
+    "pris": "Ovanlig",
+    "tillredning": "Safterna stryks på vapen eller blandas med mat",
+    "färdighet": "Giftlära eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Orsakar Ob1T6 Trauma varannan timme i tre timmar. Kraftiga kräkningar",
+    "slug": "ondreva",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Ormtunga",
+    "region": "Skogar",
+    "växtplats": "Barrskog, sommar/höst (Ob4T6)",
+    "pris": "80 silver",
+    "tillredning": "Gulbruna rötter i matlagning",
+    "färdighet": "Giftlära",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Symptomframkallande: Giftig. Magvredsymptom. Lätt TÅL (Ob2T6) halvera Långtidsutmattning",
+    "slug": "ormtunga",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Rimfrostlav (Glytemossa/Vätteskägg)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Djupare in i Mithera, urgamla träd nära kryotropiska områden (Ob4T6)",
+    "pris": "20-40 silver",
+    "tillredning": "Torkas, malas till pulver, blandas med varmt vatten eller inandas som rök",
+    "färdighet": "Schamanism eller Rituallära",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "kampanj"
+    ],
+    "beskrivning": "Djup trance och andligt öppnande. -Ob1T6 på Schamanism-slag. Intensiva visioner. NACKDEL: Medvetslös i 2T6 timmar. FARA: Kan fastna i trance permanent",
+    "slug": "rimfrostlav-glytemossa-vatteskagg",
+    "gift": null,
+    "kampanjkopplad": "Kampanjkoppling"
+  },
+  {
+    "namn": "Ryttarblad (Alvmynta)",
+    "region": "Stora Slätterna",
+    "växtplats": "Hedar (Ob2T6)",
+    "pris": "Vanlig",
+    "tillredning": "Används som krydda",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Uppiggande: -Ob1T6 utmattning",
+    "slug": "ryttarblad-alvmynta",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Röd jordklöver",
+    "region": "Stora Slätterna",
+    "växtplats": "Våtmark, höst (Ob3T6)",
+    "pris": "Ovanlig",
+    "tillredning": "Koncentrat av maskangripen jordklöver",
+    "färdighet": "Alkemi eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Blodåterbildande: återställer Ob1T6 blodförlust",
+    "slug": "rod-jordklover",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Rödklocka",
+    "region": "Muhad/Öken",
+    "växtplats": "Klippöken, sommar (Ob2T6)",
+    "pris": "8 silver",
+    "tillredning": "Koncentrat av små röda klockblommor",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Uppiggande: Återfår 1T6 Långtidsutmattning (botar huvudvärk)",
+    "slug": "rodklocka",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Rökelsegräs (Harambuske)",
+    "region": "Muhad/Öken",
+    "växtplats": "Bergsområden i Muhad, höst (Ob3T6)",
+    "pris": "30 silver",
+    "tillredning": "Torkas och bränns som rökelse",
+    "färdighet": "Medicin eller Rituallära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "+Ob1T6 mot sjukdomssmittor i Ob1T6 timmar",
+    "slug": "rokelsegras-harambuske",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Rökpurpur (Mudelört)",
+    "region": "Stora Slätterna",
+    "växtplats": "Slättland, sommar (Ob2T6)",
+    "pris": "Vanlig",
+    "tillredning": "Torkas, mals och röks",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Liknar alkohol. Beroendeframkallande",
+    "slug": "rokpurpur-mudelort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Sanaris Gåva (Stjärnblomma)",
+    "region": "Alv/Sunari",
+    "växtplats": "Endast i Sanari-alvernas skogar, vår (Ob6T6)",
+    "pris": "150 silver",
+    "tillredning": "Kronbladen äts färska under fullmåne",
+    "färdighet": "Magi eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "–Ob2T6 vid Magislag i 1 timme. +Ob1T6 synnedsättning i 1 dygn (endast magikunniga)",
+    "slug": "sanaris-gava-stjarnblomma",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Silverlöv (Mitheras Gåva)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Åderbjörkslunden i Mithera (Ob6T6)",
+    "pris": "120 silver",
+    "tillredning": "Bladen pressas färska till saft",
+    "färdighet": "Växtlära eller Magi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Helar Ob2T6 Trauma. +Ob1T6 mot mörk magi i 1 timme",
+    "slug": "silverlov-mitheras-gava",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Silverört",
+    "region": "Hav/Kust",
+    "växtplats": "Tempererad regnskog, vår (Ob4T6)",
+    "pris": "200 silver",
+    "tillredning": "Knoppar kokas med honung och hönsblod till buljong",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Sövande: TÅL Ob3T6 (+Ob1T6/dubbeldos). Perfekt=dåsig. Lyckat=sömn 1T6+8h. Misslyckat=koma 2T6+16h. Fummel=syrebrist",
+    "slug": "silverort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Själaröta (Andeförtärare)",
+    "region": "Skugglandet",
+    "växtplats": "Gamla slagfält, döda städer (Ob5T6)",
+    "pris": "150 silver",
+    "tillredning": "Svampen torkas och pulvriseras",
+    "färdighet": "Alkemi eller Rituallära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Blockerar andekommunikation 1 dygn. Ingen dröm i 3 dygn",
+    "slug": "sjalarota-andefortarare",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Självhela",
+    "region": "Stora Slätterna",
+    "växtplats": "Slättland, sommar (Ob2T6)",
+    "pris": "Vanlig",
+    "tillredning": "Pressas till saft, stryks på förband",
+    "färdighet": "Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Sänker blödningstakt med Ob2T6",
+    "slug": "sjalvhela",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Skuggblomma (Intets Ros)",
+    "region": "Skugglandet",
+    "växtplats": "Endast i Skugglandet (Ob6T6)",
+    "pris": "200 silver (om säljbar)",
+    "tillredning": "Kronbladen konsumeras direkt (farligt)",
+    "färdighet": "Svartkonst eller Rituallära",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Synlig för skuggväsen, –Ob1T6 vid kommunikation med dem. RISK: Ob1T6 permanent VIL-skada vid TÅL Ob4T6",
+    "slug": "skuggblomma-intets-ros",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Skuggblomma (Nattskugge-lilja)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Mörka gläntor djupt in i Mithera, nära skuggfolkets platser. Blommar bara i fullmåne (Ob5T6)",
+    "pris": "40-80 silver",
+    "tillredning": "Kronbladen torkas och röks, eller läggs under tungan",
+    "färdighet": "Alkemi eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Ignorera 3 kryss Smärta i 2T6 timmar. Bedövande och lugnande. Drömliknande tillstånd. Öppnar sinnet för skuggplanet (se andar och skuggvarelser). NACKDEL: Beroendeframkallande. FARA: Överdos = koma 1T6 dagar",
+    "slug": "skuggblomma-nattskugge-lilja",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Skuggflodens Tång",
+    "region": "Hav/Kust",
+    "växtplats": "Flodmynningar i Asharien, sommar (Ob3T6)",
+    "pris": "25 silver",
+    "tillredning": "Torkas och bränns",
+    "färdighet": "Sjöfarande eller Djurkännedom",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Röken avskräcker sjömonster i Ob1T6 timmar",
+    "slug": "skuggflodens-tang",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Slagruna (Amilith)",
+    "region": "Stora Slätterna",
+    "växtplats": "Tundra (Ob5T6)",
+    "pris": "Sällsynt",
+    "tillredning": "Grå lav kokas och förtärs",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Höjer smärttröskeln: –Ob2T6 Chockslag under en timme. Höjer Aggression vid beroende",
+    "slug": "slagruna-amilith",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Slavmarknadens Gift (Tystnadsdroppen)",
+    "region": "Muhad/Öken",
+    "växtplats": "Hemlig odling i Jen (Ob5T6)",
+    "pris": "90 silver",
+    "tillredning": "Sav från stammen utvinns, koncentreras",
+    "färdighet": "Giftlära eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Offret kan inte tala i Ob2T6 timmar. TÅL Ob4T6",
+    "slug": "slavmarknadens-gift-tystnadsdroppen",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Slögräs (Åkerdryga)",
+    "region": "Stora Slätterna",
+    "växtplats": "Slättland, höst (Ob5T6)",
+    "pris": "Sällsynt",
+    "tillredning": "Bakas till bröd",
+    "färdighet": "Matlagning eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Inmundigande sänker VIL med Ob3T6 under 1T6+1 timmar. Offret blir lojt och viljelöst",
+    "slug": "slogras-akerdryga",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Småborre",
+    "region": "Stora Slätterna",
+    "växtplats": "Busklandskap, vår/sommar (Ob2T6)",
+    "pris": "Vanlig",
+    "tillredning": "Fothög växt med grå blad",
+    "färdighet": "Medicin eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Helar 1T6 Smärta (men hälften bara temporärt)",
+    "slug": "smaborre",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Solkärna",
+    "region": "Tarkas",
+    "växtplats": "Öppna sanddyner, sommar (Ob3T6)",
+    "pris": "15 silver",
+    "tillredning": "Blombladen torkas och bryggs som te",
+    "färdighet": "Växtlära eller Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Återställer –Ob1T6 Utmattning och värmer kroppen i två timmar",
+    "slug": "solkarna",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Stenblommans Extrakt",
+    "region": "Dvärg/Underjord",
+    "växtplats": "Mineralrika grottor (Ob4T6)",
+    "pris": "55 silver",
+    "tillredning": "Kristaller mals och blandas med vatten",
+    "färdighet": "Alkemi eller Gruvdrift",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "+Ob1T6 TÅL mot gifter i 1 dygn. Hårdare ben",
+    "slug": "stenblommans-extrakt",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Stenlav",
+    "region": "Tarkas",
+    "växtplats": "Basaltstenar i fuktiga områden, höst (Ob3T6)",
+    "pris": "20 silver",
+    "tillredning": "Krossas och blandas med vatten till en pasta",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "+1T6 Näring och –Ob1T6 på Hungerslag",
+    "slug": "stenlav",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Stor mjuknäva",
+    "region": "Stora Slätterna",
+    "växtplats": "Kullar, vår (Ob2T6)",
+    "pris": "Vanlig",
+    "tillredning": "Se naken flenört",
+    "färdighet": "Medicin eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Smärtstillande (se naken flenört)",
+    "slug": "stor-mjuknava",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Stormvarnarens Svamp",
+    "region": "Hav/Kust",
+    "växtplats": "Drivved och vrak, alltid (Ob3T6)",
+    "pris": "30 silver",
+    "tillredning": "Svampen observeras (inte konsumeras)",
+    "färdighet": "Växtlära eller Sjöfarande",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Ändrar färg 6-12 timmar före storm. Blå=lugnt, Grön=vind, Röd=storm",
+    "slug": "stormvarnarens-svamp",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Svart läkemalva",
+    "region": "Hav/Kust",
+    "växtplats": "Unik för de Meloriska öarna, ej vinter (Ob4T6)",
+    "pris": "50 silver",
+    "tillredning": "Dekokt på rötter eller infusion på blad/blommor",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Antiseptisk: 1T6 Smärta men -Ob2T6 infektionsrisk",
+    "slug": "svart-lakemalva",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Svartrot",
+    "region": "Stora Slätterna",
+    "växtplats": "Busklandskap (Ob5T6)",
+    "pris": "Sällsynt",
+    "tillredning": "Blandas med vätska och arsenik",
+    "färdighet": "Alkemi eller Giftlära",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Intagande ger minnesförlust för de senaste Ob5T6 timmarna. Svår huvudvärk, Ob5T6 utmattning",
+    "slug": "svartrot",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Svavelgräs",
+    "region": "Tarkas",
+    "växtplats": "Svavelrika områden, året runt (Ob4T6)",
+    "pris": "25 silver",
+    "tillredning": "Extrakt framställs genom kokning och silning",
+    "färdighet": "Alkemi eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Motgift ger –Ob2T6 på vissa milda gifter",
+    "slug": "svavelgras",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Sårläka",
+    "region": "Skogar",
+    "växtplats": "Blandskog, sommar (Ob2T6)",
+    "pris": "20 silver",
+    "tillredning": "Pressas till växtsaft för förband",
+    "färdighet": "Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Blodstillande: Sänker Blödningstakten med Ob2T6",
+    "slug": "sarlaka",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Tandbär",
+    "region": "Muhad/Öken",
+    "växtplats": "Stenöken, höst/vinter (Ob2T6)",
+    "pris": "7 silver",
+    "tillredning": "Svarta bär äts råa",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Preventivmedel: Som grå tveblading",
+    "slug": "tandbar",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Tarkas Lavakrydda",
+    "region": "Muhad/Öken",
+    "växtplats": "Vulkanområden i Tarkas, året runt (Ob4T6)",
+    "pris": "40 silver",
+    "tillredning": "Mals och används som krydda",
+    "färdighet": "Matlagning",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "+Ob1T6 mot kyla. Mat håller sig Ob1T6 dagar längre",
+    "slug": "tarkas-lavakrydda",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Thónbuske",
+    "region": "Tarkas",
+    "växtplats": "Lavafält och grusplatåer, året runt (Ob2T6)",
+    "pris": "15 silver",
+    "tillredning": "Bladen torkas och bryggs som te",
+    "färdighet": "Växtlära eller Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "–Ob1T6 Utmattning. –Ob1T6 vid slag mot Tålighet i 1T6 timmar",
+    "slug": "th-nbuske",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Tjuvens Dimma",
+    "region": "Jargien",
+    "växtplats": "Mörka gränder i jargiska städer (Ob4T6)",
+    "pris": "50 silver",
+    "tillredning": "Mossan torkas och bränns",
+    "färdighet": "Smyga eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Tjock rök (5m radie), +Ob2T6 att se igenom i 10 minuter",
+    "slug": "tjuvens-dimma",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Tusenårslövet",
+    "region": "Alv/Sunari",
+    "växtplats": "Urgamla alvskogar (Ob5T6)",
+    "pris": "100 silver",
+    "tillredning": "Löven bereds i en veckolång process",
+    "färdighet": "Alkemi eller Magi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Saktar åldrande: 1 dos = 1 år längre liv. Max 10 doser/livstid",
+    "slug": "tusenarslovet",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Ulvbane (Vargörtens Blod)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Cermiras djupa skogar, höst (Ob4T6)",
+    "pris": "50 silver",
+    "tillredning": "Rötterna kokas i 3 timmar, avkok koncentreras",
+    "färdighet": "Växtlära eller Jakt",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Rovdjur undviker bäraren i Ob1T6 timmar. -Ob1T6 Djurhantering mot predatorer",
+    "slug": "ulvbane-vargortens-blod",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Urkhaths Törnrot",
+    "region": "Skugglandet",
+    "växtplats": "Platser där demoner vandrat (Ob6T6)",
+    "pris": "Osäljbar",
+    "tillredning": "Rötterna bränns i demonritual",
+    "färdighet": "Demonologi eller Svartkonst",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "–Ob2T6 vid demonbindande ritualer. FARA: Attraherar demonisk uppmärksamhet",
+    "slug": "urkhaths-tornrot",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Vallört",
+    "region": "Stora Slätterna",
+    "växtplats": "Slättland, sommar (Ob2T6)",
+    "pris": "Vanlig",
+    "tillredning": "Dekokt",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Helar 1T6+1 Trauma",
+    "slug": "vallort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Vandringssav",
+    "region": "Hav/Kust",
+    "växtplats": "Tempererad regnskog, ej vinter (Ob4T6)",
+    "pris": "90 silver",
+    "tillredning": "Sav från pomeransträdet kokas och spädes (0,25 liter)",
+    "färdighet": "Överlevnad eller Matlagning",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Hungerstillande: Mättnad 1 dygn. Stryker Trauma från svältreglerna",
+    "slug": "vandringssav",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Vargnäsetsalvia",
+    "region": "Cermira/Mithera",
+    "växtplats": "Runt Vargnäset, sommar (Ob2T6)",
+    "pris": "15 silver",
+    "tillredning": "Bladen torkas och läggs på sår",
+    "färdighet": "Medicin eller Växtlära",
+    "kampanj": "Ingvild",
+    "tags": [
+      "ört",
+      "kampanj"
+    ],
+    "beskrivning": "Snabbar upp läkningen. Antiseptisk - förhindrar infektion",
+    "slug": "vargnasetsalvia",
+    "gift": null,
+    "kampanjkopplad": "Kampanjkoppling"
+  },
+  {
+    "namn": "Vargört",
+    "region": "Stora Slätterna",
+    "växtplats": "Slättland, höst (Ob2T6)",
+    "pris": "Vanlig",
+    "tillredning": "Stryks utanför tält",
+    "färdighet": "Överlevnad eller Rituallära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Motar bort djur och andar",
+    "slug": "vargort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Vattuklocka",
+    "region": "Alv/Sunari",
+    "växtplats": "Unik för Sunari, vår (Ob3T6)",
+    "pris": "50 silver",
+    "tillredning": "Purpurfärgat sekret från trattformad blomma",
+    "färdighet": "Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Hallucinogen: TÅL Ob4T6 eller syner/hägringar i 1T6×10 min",
+    "slug": "vattuklocka",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Vildjordrot",
+    "region": "Tarkas",
+    "växtplats": "Uttorkade flodbäddar, sommar (Ob2T6)",
+    "pris": "15 silver",
+    "tillredning": "Kokas eller äts rå",
+    "färdighet": "Matlagning eller Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Återställer +1T6 Hungerslag och –Ob1T6 vid Uthållighetsslag",
+    "slug": "vildjordrot",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Vildvippa (Kozinn)",
+    "region": "Skogar",
+    "växtplats": "Lövskog, sommar (Ob3T6)",
+    "pris": "45 silver",
+    "tillredning": "Dekokt på vitfärgad blomma",
+    "färdighet": "Medicin eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Helande: 1 Trauma + 2 Smärta/timme i 4 timmar (totalt 4 Trauma, 8 Smärta)",
+    "slug": "vildvippa-kozinn",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Vindbär",
+    "region": "Tarkas",
+    "växtplats": "Klippiga sluttningar, vår/höst (Ob2T6)",
+    "pris": "12 silver",
+    "tillredning": "Äts råa eller blandas i gröt",
+    "färdighet": "Matlagning eller Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "–Ob1T6 vid Förflyttningsslag under en dagsmarsch",
+    "slug": "vindbar",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Vinterraseri (Flugsvamp)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Vanlig i hela Mithera, särskilt mellersta delarna (Ob2T6)",
+    "pris": "5-10 silver",
+    "tillredning": "Äts färsk eller torkad, kan brygas som te",
+    "färdighet": "Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Kraftigt rusgivande och hallucinogen. Ignorera 2 kryss Smärta i 1T6 timmar. Bygger aggression och blodtörst. FARA: Tappar hämningar, kan attackera vänner. Överdos = hjärtproblem",
+    "slug": "vinterraseri-flugsvamp",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Vitterdals Lilja (Soffiablomman)",
+    "region": "Cermira/Mithera",
+    "växtplats": "Trädgårdar i Vitterdal, vår/sommar (Ob3T6)",
+    "pris": "40 silver",
+    "tillredning": "Blommorna infunderas i olja för massage",
+    "färdighet": "Medicin eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "-Ob2T6 Smärta efter 1 timmes behandling. Lugnande",
+    "slug": "vitterdals-lilja-soffiablomman",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Yelgothas Tår (Portalört)",
+    "region": "Alv/Sunari",
+    "växtplats": "Nära portaler mellan världar (Ob6T6)",
+    "pris": "180 silver (osäljbar)",
+    "tillredning": "Dropparna absorberas genom huden",
+    "färdighet": "Portalmagi eller Rituallära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Passage genom magiska barriärer. –Ob2T6 vid portalresning. ENGÅNGS",
+    "slug": "yelgothas-tar-portalort",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Yusufis Livselixir",
+    "region": "Muhad/Öken",
+    "växtplats": "Hemlig blandning från Jens kryddmarknader (Ob4T6)",
+    "pris": "100 silver",
+    "tillredning": "Komplex blandning av 7 örter, kokas under fullmåne",
+    "färdighet": "Alkemi eller Medicin",
+    "kampanj": "Dr. Yusuf",
+    "tags": [
+      "ört",
+      "kampanj"
+    ],
+    "beskrivning": "Helar Ob1T6+2 Trauma, Ob1T6 Smärta, Ob1T6 Blodförlust",
+    "slug": "yusufis-livselixir",
+    "gift": null,
+    "kampanjkopplad": "Kampanjkoppling"
+  },
+  {
+    "namn": "Zollobarträd",
+    "region": "Tarkas",
+    "växtplats": "Klippkanter i Ghaldenruinerna, vinter (Ob4T6)",
+    "pris": "35 silver",
+    "tillredning": "Barken torkas och mals till pulver för salva",
+    "färdighet": "Alkemi eller Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Snabbar upp läkningen under en dag",
+    "slug": "zollobartrad",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Ökenrosett",
+    "region": "Tarkas",
+    "växtplats": "Sanddyner och klippor, vår/sommar (Ob3T6)",
+    "pris": "20 silver",
+    "tillredning": "Bladen pressas för att extrahera vätskan",
+    "färdighet": "Överlevnad",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Läker Ob1T6 utmattning orsakad av uttorkning",
+    "slug": "okenrosett",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Ökenrot",
+    "region": "Muhad/Öken",
+    "växtplats": "Sandöken (Ob5T6)",
+    "pris": "50 silver",
+    "tillredning": "Rötter hackas, kokas med tran och kalvblod, blandas i mat/vin",
+    "färdighet": "Giftlära eller Alkemi",
+    "kampanj": null,
+    "tags": [
+      "ört",
+      "gift"
+    ],
+    "beskrivning": "Hungerframkallande: +Ob1T6 på allt i 2T6+6 timmar",
+    "slug": "okenrot",
+    "gift": "Gift",
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Ökensol (Solskiva)",
+    "region": "Muhad/Öken",
+    "växtplats": "Östra ökenområdena, sommar (Ob3T6)",
+    "pris": "25 silver",
+    "tillredning": "Blommorna torkas och mals till pulver",
+    "färdighet": "Överlevnad eller Växtlära",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "-Ob2T6 mot värmeslag/uttorkning. +Ob1T6 Uthållighet i hetta",
+    "slug": "okensol-solskiva",
+    "gift": null,
+    "kampanjkopplad": null
+  },
+  {
+    "namn": "Ökenviper (Sandormens Kött)",
+    "region": "Muhad/Öken",
+    "växtplats": "Djupa ökendalarna, sommar (Ob5T6)",
+    "pris": "75 silver",
+    "tillredning": "Rötterna extraheras och blandas med fett till salva",
+    "färdighet": "Giftlära eller Medicin",
+    "kampanj": null,
+    "tags": [
+      "ört"
+    ],
+    "beskrivning": "Motgift mot orm-/skorpiongifter. -Ob2T6 giftmotstånd inom 10 min",
+    "slug": "okenviper-sandormens-kott",
+    "gift": null,
+    "kampanjkopplad": null
+  }
+]

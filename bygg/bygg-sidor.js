@@ -15,7 +15,7 @@ const WIKI = path.join(ROOT, 'wiki');
 const args = process.argv.slice(2);
 const checkMode = args.includes('--check');
 
-const { npcs, platser, fraktioner } = buildModel(WIKI);
+const { npcs, platser, fraktioner, orter } = buildModel(WIKI);
 
 // ---------- Region-härledning (portad från gamla index.html:s extractRegion) ----------
 function extractRegion(plats) {
@@ -47,12 +47,24 @@ function withSlugs(items) {
 const npcsWithSlug = withSlugs(npcs).map(n => ({ ...n, _region: extractRegion(n.plats) }));
 const platserWithSlug = withSlugs(platser);
 const fraktionerWithSlug = withSlugs(fraktioner);
+// gift/kampanjkopplad är deriverade skalära fält för registrets filterchips - register.js
+// matchar bara skalära fält rakt av, taggarrayen i sig är inte filtrerbar. Självbeskrivande
+// värden (inte "Ja"/"Nej") eftersom distinctSorted() renderar en chip per unikt värde PER
+// filternyckel utan att visa vilken filtergrupp den hör till - två "Ja"/"Nej"-par skulle bli
+// omöjliga att skilja åt i UI:t. null/falsy filtreras bort av distinctSorted, så den "icke
+// sanna" halvan blir helt enkelt ingen chip alls.
+const orterWithSlug = withSlugs(orter).map(o => ({
+  ...o,
+  gift: o.tags.includes('gift') ? 'Gift' : null,
+  kampanjkopplad: o.tags.includes('kampanj') ? 'Kampanjkoppling' : null,
+}));
 
 // ---------- data/entities.json: lätt uppslagstabell för kapitel-linkify.js ----------
 const entities = [
   ...npcsWithSlug.map(n => ({ namn: n.namn, typ: 'npc', slug: n.slug })),
   ...platserWithSlug.map(p => ({ namn: p.namn, typ: 'plats', slug: p.slug })),
   ...fraktionerWithSlug.map(f => ({ namn: f.namn, typ: 'fraktion', slug: f.slug })),
+  ...orterWithSlug.map(o => ({ namn: o.namn, typ: 'ort', slug: o.slug })),
 ].filter(e => e.namn);
 
 // ---------- HTML-mall för en registersida ----------
@@ -215,6 +227,36 @@ const pages = [
         { key: 'verksamhet', label: 'Verksamhet' },
         { key: 'status', label: 'Status' },
         { key: 'kapitel', label: 'Första omnämnande' },
+      ],
+    },
+  },
+  {
+    file: 'orter.html',
+    dataFile: 'orter.json',
+    dataVarName: 'REGISTER_DATA',
+    data: orterWithSlug,
+    opts: {
+      type: 'ort',
+      title: 'Örter, droger & gifter',
+      searchPlaceholder: 'Sök efter ört, effekt, region…',
+      rowClass: 'row--ort',
+      columns: [
+        { key: 'namn', role: 'title' },
+        { key: 'region', role: 'meta' },
+        { key: 'växtplats', role: 'meta' },
+      ],
+      filters: [
+        { key: 'region', label: 'Region' },
+        { key: 'gift', label: 'Gift' },
+        { key: 'kampanjkopplad', label: 'Kampanjkoppling' },
+      ],
+      detailFields: [
+        { key: 'region', label: 'Region' },
+        { key: 'växtplats', label: 'Växtplats' },
+        { key: 'pris', label: 'Pris' },
+        { key: 'tillredning', label: 'Tillredning' },
+        { key: 'färdighet', label: 'Färdighet' },
+        { key: 'kampanj', label: 'Kampanjkoppling' },
       ],
     },
   },
