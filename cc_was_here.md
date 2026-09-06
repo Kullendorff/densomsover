@@ -151,3 +151,37 @@
     `bygg-index.js --check`, samma mönster som steg 1b för `bygg-wiki-data.js`.
   - **Nästa session:** Etapp 3 (kapitel/fluff → läsvyn, 19 filer kvar av 11+8,
     kapitel-9 är redan piloten/mallen). Se planen för fullständig lista.
+
+- **2026-09-06 (samma dag, fortsättning 2) — Etapp 3 klar och pushad (commit
+  `22ab90f`), live på Pages.** Alla 19 återstående kapitel/fluff-filer konverterade
+  till läsvyn.
+  - **10 kapitelsidor** (prolog + 1-8, 10) konverterade via ett scratchpad-script
+    (`convert-kapitel.js`, ej incheckat — engångsverktyg) som extraherar
+    header/meta/prose, mappar `.info-box`→`.box`/`.box--warning` och `.quote`→
+    `.box--quote`, och bygger den nya sidmallen. Verifierat strukturellt (samma
+    antal `<p>`/`<hr>`/`<li>`/`<h2>`/`<h3>`/`<strong>` som originalet — de enda
+    `<strong>`-avvikelserna var exakt de 3 header-etiketterna per fil som blev
+    till den oformaterade sammanfattningsraden) och visuellt i Chrome, inkl.
+    kapitel-10 (1207 rader, största filen).
+  - **8 fluff-sidor** konverterade — mycket mer heterogen struktur än kapitel
+    (sånger/dikter/dagböcker/recept/fragment/fältrapporter), så varje fil fick
+    sin egen driver-fil ovanpå delade hjälpfunktioner (`convert-fluff.js`, även
+    den ej incheckad). Alla verifierade med samma strukturella diff-metod +
+    Chrome. Detaljer i planfilen om vilken struktur som mappades till vad.
+  - **Bugg hittad under arbetet:** `prose--lead`-klassen (versal-anfang på
+    första stycket) gav fel resultat på fluff-sidor där en diktrad råkade bli
+    "första stycket" istället för inledande brödtext — togs bort från
+    fluff-mallen (kapitel behåller den, funkar rätt där).
+  - **Testmiljö-kvirkar denna session** (bekräftat brus, inte kod-buggar):
+    CDP `Page.captureScreenshot` timear ibland ut (~30s) på annars fungerande
+    sidor — bara att köra screenshot-anropet igen. `/tmp/`-sökvägar i Node
+    (körd via Git Bash) mappar INTE till samma plats som bash egna `/tmp/` —
+    skriv alltid till en `./relativ-fil.html` i scriptets egen mapp istället,
+    annars "skrivs" filen till ingenstans utan felmeddelande.
+  - Efter denna etapp: 27 HTML-filer kvar med eget `<style>`-block (ner från
+    52 vid start). Alla i EgetMaterial/ (17, väntar på dedup-beslut Klart/ vs
+    projekt/) eller Etapp 4-kärnsidor (orter.html 1632 rader, masterplot.html,
+    kontinuitet.html, sessioner/, guider/, platser/jen.html,
+    soffias-natverk.html).
+  - **Nästa session:** Etapp 4 (övriga kärnsidor) eller EgetMaterial-dedup +
+    konvertering, se planfilen `~/.claude/plans/titta-p-hur-du-federated-marble.md`.
