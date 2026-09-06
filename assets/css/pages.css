@@ -30,6 +30,15 @@
 .prose strong { color: var(--ink); font-weight: 600; }
 .prose em { font-style: italic; color: var(--ink-secondary); }
 .prose hr { border: none; border-top: 1px solid var(--rule-soft); margin: 2.5em 0; }
+.prose pre {
+  font: 400 13px/1.7 var(--font-mono);
+  color: var(--ink-secondary);
+  overflow-x: auto;
+  margin: 1.5em 0;
+  padding: 16px 20px;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+}
 .prose .box p:last-child { margin-bottom: 0; }
 .prose .box--quote p { margin-bottom: .6em; }
 .prose .box--quote p:last-child { margin-bottom: 0; }

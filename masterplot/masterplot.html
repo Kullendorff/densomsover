@@ -1,605 +1,63 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gravens Arv - Masterplot</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --gold: #ffa500;
-            --bg-dark: #0a0a0a;
-            --bg-card: #1a1a1a;
-            --bg-elevated: #2a2a2a;
-            --text-primary: #e0e0e0;
-            --text-secondary: #b0b0b0;
-            --border-subtle: #333;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-elevated) 100%);
-            border-bottom: 3px solid var(--flame-orange);
-            padding: 3rem 2rem;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(255, 107, 74, 0.3);
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--deep-red));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-            text-shadow: 0 0 30px rgba(255, 107, 74, 0.5);
-        }
-
-        .header .subtitle {
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-            font-style: italic;
-        }
-
-        .header .meta {
-            margin-top: 1rem;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .header .meta-item {
-            background: var(--bg-card);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            border: 1px solid var(--border-subtle);
-            font-size: 0.9rem;
-        }
-
-        .header .meta-item strong {
-            color: var(--flame-orange);
-        }
-
-        /* Container */
-        .container {
-            display: flex;
-            max-width: 1800px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        /* Sidebar Navigation */
-        .sidebar {
-            width: 280px;
-            position: sticky;
-            top: 200px;
-            height: fit-content;
-            background: var(--bg-card);
-            border-right: 2px solid var(--flame-orange);
-            padding: 2rem 1rem;
-            overflow-y: auto;
-            max-height: calc(100vh - 220px);
-        }
-
-        .sidebar h3 {
-            color: var(--flame-orange);
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .sidebar nav ul {
-            list-style: none;
-        }
-
-        .sidebar nav ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .sidebar nav ul li a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            display: block;
-            padding: 0.5rem 0.75rem;
-            border-radius: 4px;
-            transition: all 0.3s;
-            font-size: 0.95rem;
-        }
-
-        .sidebar nav ul li a:hover,
-        .sidebar nav ul li a.active {
-            background: var(--bg-elevated);
-            color: var(--flame-orange);
-            padding-left: 1.25rem;
-        }
-
-        .sidebar nav ul ul {
-            margin-left: 1rem;
-            margin-top: 0.5rem;
-        }
-
-        .sidebar nav ul ul li a {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
-        /* Main Content */
-        .main-content {
-            flex: 1;
-            padding: 2rem;
-            padding-left: 3rem;
-        }
-
-        /* Sections */
-        .section {
-            margin-bottom: 4rem;
-            scroll-margin-top: 180px;
-        }
-
-        .section h2 {
-            font-size: 2.5rem;
-            color: var(--flame-orange);
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--flame-orange);
-            padding-bottom: 0.5rem;
-        }
-
-        .section h3 {
-            font-size: 1.8rem;
-            color: var(--mystic-purple);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .section h4 {
-            font-size: 1.3rem;
-            color: var(--gold);
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-        }
-
-        /* Hero Image */
-        .hero-image {
-            width: 100%;
-            height: 400px;
-            background: var(--bg-elevated);
-            border: 2px solid var(--flame-orange);
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(255, 107, 74, 0.1), rgba(168, 85, 168, 0.1));
-        }
-
-        .hero-image .placeholder {
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-            font-style: italic;
-            z-index: 1;
-        }
-
-        /* Section Images */
-        .section-image {
-            width: 100%;
-            max-width: 800px;
-            height: 300px;
-            background: var(--bg-card);
-            border: 2px solid var(--mystic-purple);
-            border-radius: 8px;
-            margin: 2rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .section-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(168, 85, 168, 0.1), rgba(212, 83, 77, 0.1));
-        }
-
-        .section-image .placeholder {
-            color: var(--text-secondary);
-            font-style: italic;
-            z-index: 1;
-        }
-
-        /* Timeline */
-        .timeline {
-            position: relative;
-            padding: 2rem 0;
-            margin: 2rem 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50px;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(180deg, var(--flame-orange), var(--mystic-purple));
-        }
-
-        .timeline-item {
-            position: relative;
-            padding-left: 100px;
-            margin-bottom: 2rem;
-        }
-
-        .timeline-marker {
-            position: absolute;
-            left: 38px;
-            top: 0;
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            background: var(--flame-orange);
-            border: 3px solid var(--bg-dark);
-            box-shadow: 0 0 20px rgba(255, 107, 74, 0.5);
-        }
-
-        .timeline-date {
-            color: var(--gold);
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-content {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 3px solid var(--flame-orange);
-        }
-
-        /* Character Cards */
-        .character-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .character-card {
-            background: var(--bg-card);
-            border: 2px solid var(--mystic-purple);
-            border-radius: 12px;
-            padding: 1.5rem;
-            transition: all 0.3s;
-        }
-
-        .character-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(168, 85, 168, 0.3);
-            border-color: var(--flame-orange);
-        }
-
-        .character-card h4 {
-            color: var(--flame-orange);
-            font-size: 1.5rem;
-            margin-top: 0;
-            margin-bottom: 0.5rem;
-        }
-
-        .character-card .subtitle {
-            color: var(--mystic-purple);
-            font-style: italic;
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-        }
-
-        .character-card .trait {
-            background: var(--bg-elevated);
-            padding: 0.4rem 0.8rem;
-            border-radius: 4px;
-            display: inline-block;
-            margin: 0.3rem 0.3rem 0.3rem 0;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
-        /* Info Boxes */
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--gold);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.warning {
-            border-left-color: var(--deep-red);
-            background: rgba(212, 83, 77, 0.1);
-        }
-
-        .info-box.important {
-            border-left-color: var(--flame-orange);
-            background: rgba(255, 107, 74, 0.1);
-        }
-
-        .info-box h4 {
-            margin-top: 0;
-            color: var(--gold);
-        }
-
-        .info-box.warning h4 {
-            color: var(--deep-red);
-        }
-
-        .info-box.important h4 {
-            color: var(--flame-orange);
-        }
-
-        /* Cosmology Diagram */
-        .cosmology-diagram {
-            background: var(--bg-elevated);
-            border: 2px solid var(--mystic-purple);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2rem 0;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-            line-height: 1.8;
-            overflow-x: auto;
-        }
-
-        .cosmology-diagram pre {
-            color: var(--text-primary);
-        }
-
-        /* Acts Structure */
-        .acts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .act-card {
-            background: linear-gradient(135deg, var(--bg-card), var(--bg-elevated));
-            border: 2px solid var(--flame-orange);
-            border-radius: 12px;
-            padding: 1.5rem;
-        }
-
-        .act-card h4 {
-            color: var(--flame-orange);
-            font-size: 1.3rem;
-            margin-top: 0;
-        }
-
-        .act-card ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .act-card ul li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid var(--border-subtle);
-        }
-
-        .act-card ul li:last-child {
-            border-bottom: none;
-        }
-
-        .act-card ul li::before {
-            content: '⚔';
-            color: var(--flame-orange);
-            margin-right: 0.5rem;
-        }
-
-        /* Quote Boxes */
-        .quote-box {
-            background: var(--bg-elevated);
-            border-left: 4px solid var(--mystic-purple);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-        }
-
-        .quote-box::before {
-            content: '"';
-            font-size: 3rem;
-            color: var(--mystic-purple);
-            opacity: 0.3;
-            line-height: 0;
-        }
-
-        /* Responsive */
-        @media (max-width: 1200px) {
-            .sidebar {
-                position: relative;
-                top: 0;
-                width: 100%;
-                border-right: none;
-                border-bottom: 2px solid var(--flame-orange);
-                max-height: none;
-            }
-
-            .container {
-                flex-direction: column;
-            }
-
-            .main-content {
-                padding-left: 2rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-
-            .header .meta {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            .section h2 {
-                font-size: 2rem;
-            }
-
-            .character-grid,
-            .acts-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .timeline::before {
-                left: 20px;
-            }
-
-            .timeline-item {
-                padding-left: 60px;
-            }
-
-            .timeline-marker {
-                left: 8px;
-            }
-        }
-
-        /* Scroll behavior */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Selection */
-        ::selection {
-            background: var(--flame-orange);
-            color: var(--bg-dark);
-        }
-
-        /* Back Button */
-        .back-button {
-            position: fixed;
-            top: 2rem;
-            right: 2rem;
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            z-index: 200;
-            transition: all 0.3s;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            box-shadow: 0 4px 12px rgba(255, 107, 74, 0.3);
-        }
-
-        .back-button:hover {
-            background: var(--deep-red);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(255, 107, 74, 0.4);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masterplot – Gravens Arv</title>
+<meta name="description" content="Komplett masterplot: kosmologi, historisk tidslinje, Urkhath, viktiga NPCs, kampanjstruktur och möjliga utgångar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <a href="../index.html" class="back-button">← Tillbaka till Dashboard</a>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html" aria-current="page">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
+    </nav>
+  </div>
+</header>
 
-    <header class="header">
-        <h1>⚔ Gravens Arv ⚔</h1>
-        <p class="subtitle">Komplett Masterplot - Demonfurstens Uppvaknande</p>
-        <div class="meta">
-            <div class="meta-item"><strong>Antagonist:</strong> Urkhath, Demonfursten</div>
-            <div class="meta-item"><strong>Nuvarande fas:</strong> Kapitel 10 - Skugglandet</div>
-            <div class="meta-item"><strong>Kampanjår:</strong> 2967 e.D.</div>
-            <div class="meta-item"><strong>Nästa Mörker:</strong> År 2999 e.D. (32 år kvar!)</div>
-        </div>
-    </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <span>Masterplot</span></div>
+</div>
 
-    <div class="container">
-        <aside class="sidebar">
-            <h3>Navigation</h3>
-            <nav>
-                <ul>
-                    <li><a href="#kosmologi">Kosmologisk Grund</a></li>
-                    <li><a href="#historia">Historisk Tidslinje</a>
-                        <ul>
-                            <li><a href="#forsta-bindningen">Första Bindningen</a></li>
-                            <li><a href="#tirakernas-krig">Tirakernas Krig</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#urkhath">Urkhath - Huvudantagonisten</a></li>
-                    <li><a href="#npcs">Viktiga NPCs</a>
-                        <ul>
-                            <li><a href="#kuberon">Kuberon</a></li>
-                            <li><a href="#yelgotha">Yelgotha</a></li>
-                            <li><a href="#vinterglod">Vinterglöd</a></li>
-                            <li><a href="#skymning">Skymning</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#kampanjstruktur">Kampanjstruktur (5 Akter)</a></li>
-                    <li><a href="#thrakka">Thrakka & Mahktahkulten</a></li>
-                    <li><a href="#utgangar">Möjliga Utgångar</a></li>
-                </ul>
-            </nav>
-        </aside>
+<main class="wrap read-view">
+  <p class="eyebrow">SL</p>
+  <h1 class="page-title">Masterplot</h1>
+  <p class="subtitle">Demonfurstens Uppvaknande</p>
 
-        <main class="main-content">
-            <!-- Hero Image -->
-            <div class="hero-image">
-                <img src="../kampanjwiki/assets/images/masterplot/hero_skugglandet_urkhath.png" alt="Skugglandet & Demonfurstens Makt" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
+  <article class="prose read-view__article" style="margin-top: clamp(24px, 4vw, 40px);">
+<div class="box box--warning">
+<div class="modal-row"><span class="box__label">Antagonist</span><span>Urkhath, Demonfursten</span></div>
+<div class="modal-row"><span class="box__label">Nuvarande fas</span><span>Kapitel 10 - Skugglandet</span></div>
+<div class="modal-row"><span class="box__label">Kampanjår</span><span>2967 e.D.</span></div>
+<div class="modal-row"><span class="box__label">Nästa Mörker</span><span>År 2999 e.D. (32 år kvar!)</span></div>
+</div>
 
-            <!-- Kosmologi Section -->
-            <section id="kosmologi" class="section">
-                <h2>⚡ Kosmologisk Grund</h2>
+<p class="eyebrow">Snabbnav: <a href="#kosmologi">Kosmologisk Grund</a> · <a href="#historia">Historisk Tidslinje</a> · <a href="#urkhath">Urkhath</a> · <a href="#npcs">Viktiga NPCs</a> · <a href="#kampanjstruktur">Kampanjstruktur</a> · <a href="#thrakka">Thrakka &amp; Mahktahkulten</a> · <a href="#utgangar">Möjliga Utgångar</a></p>
 
-                <div class="info-box important">
-                    <h4>KRITISK TIDSFRIST</h4>
-                    <p><strong>Nästa Mörker kommer år 2999 e.D. - om endast 32 år!</strong></p>
-                    <p>Detta är varför Urkhath mobiliserar NU. Han vill vara fri när portarna mellan planen öppnas så han kan leda invasionen som en av Mörkrets huvudfurstar.</p>
-                </div>
+<img src="../kampanjwiki/assets/images/masterplot/hero_skugglandet_urkhath.png" alt="Skugglandet & Demonfurstens Makt">
 
-                <h3>De Tre Världarna och Aeons Dröm</h3>
+<h2 id="kosmologi">Kosmologisk Grund</h2>
 
-                <div class="cosmology-diagram">
-                    <pre>
+<div class="box box--warning">
+<span class="box__label">KRITISK TIDSFRIST</span>
+<p><strong>Nästa Mörker kommer år 2999 e.D. - om endast 32 år!</strong></p>
+<p>Detta är varför Urkhath mobiliserar NU. Han vill vara fri när portarna mellan planen öppnas så han kan leda invasionen som en av Mörkrets huvudfurstar.</p>
+</div>
+
+<h3>De Tre Världarna och Aeons Dröm</h3>
+
+<pre>
 AEON (Tidens Väsen - drömmer hela skapelsen)
          │
          │ fängslad i bur av grundkrafter
@@ -607,191 +65,151 @@ AEON (Tidens Väsen - drömmer hela skapelsen)
 ┌─────────────────────────────────────────┐
 │            HANS DRÖMMAR                 │
 │                                         │
-│   <strong style="color: var(--flame-orange);">MUNDANA</strong> (Fysiska världen)             │
+│   <strong>MUNDANA</strong> (Fysiska världen)             │
 │       ↕ <em>Gränsen (Mithera)</em>               │
-│   <strong style="color: var(--mystic-purple);">SKUGGLANDET</strong> (Drömarnas värld)         │
+│   <strong>SKUGGLANDET</strong> (Drömarnas värld)         │
 │       ↕ <em>Intigheten (Verklighet upplöses)</em>│
-│   <strong style="color: var(--deep-red);">UNDERJORDEN/AKERVIDDERNA</strong>              │
+│   <strong>UNDERJORDEN/AKERVIDDERNA</strong>              │
 │       (Demonernas ursprung)             │
 │                                         │
 └─────────────────────────────────────────┘
-                    </pre>
-                </div>
+</pre>
 
-                <div class="section-image">
-                    <img src="../kampanjwiki/assets/images/masterplot/aeon_skapelsen.png" alt="Aeon drömmer skapelsen" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                </div>
+<img src="../kampanjwiki/assets/images/masterplot/aeon_skapelsen.png" alt="Aeon drömmer skapelsen">
 
-                <h3>Eonerna & Mörkret</h3>
+<h3>Eonerna & Mörkret</h3>
 
-                <p><strong>Varje eon = 10,000 år</strong> (Aeons dröm delas i cykler)</p>
+<p><strong>Varje eon = 10,000 år</strong> (Aeons dröm delas i cykler)</p>
 
-                <p>I slutet av varje eon kommer <strong>Mörkret</strong> (även kallat <em>Peripetier</em>):</p>
-                <ul>
-                    <li>Portarna mellan planen blir svaga</li>
-                    <li>Demoner och mörka gudar invaderar Mundana</li>
-                    <li>De besegrade gudarna mobiliserar sina förkämpar (dödliga varelser)</li>
-                    <li>Kamp avgör nästa eons härskare</li>
-                </ul>
+<p>I slutet av varje eon kommer <strong>Mörkret</strong> (även kallat <em>Peripetier</em>):</p>
+<ul>
+    <li>Portarna mellan planen blir svaga</li>
+    <li>Demoner och mörka gudar invaderar Mundana</li>
+    <li>De besegrade gudarna mobiliserar sina förkämpar (dödliga varelser)</li>
+    <li>Kamp avgör nästa eons härskare</li>
+</ul>
 
-                <div class="info-box">
-                    <h4>Nuvarande Eon</h4>
-                    <p><strong>År 2967 e.D. = år 9,967 av aktuell eon</strong></p>
-                    <p>Endast 32 år kvar till nästa Mörker!</p>
-                    <p>Därför mobiliserar Urkhath NU - han vill vara FRI när portarna öppnas.</p>
-                </div>
+<div class="box">
+<span class="box__label">Nuvarande Eon</span>
+<p><strong>År 2967 e.D. = år 9,967 av aktuell eon</strong></p>
+<p>Endast 32 år kvar till nästa Mörker!</p>
+<p>Därför mobiliserar Urkhath NU - han vill vara FRI när portarna öppnas.</p>
+</div>
 
-                <h3>Förra Mörkret (år 7032-7002 f.D.)</h3>
+<h3>Förra Mörkret (år 7032-7002 f.D.)</h3>
 
-                <p>Under det senaste Mörkret invaderade mäktiga demonfurstar Mundana:</p>
-                <ul>
-                    <li><strong>Vhigilah</strong> - "Dvärgbane"</li>
-                    <li><strong>Uvithaan</strong> - Mörk gud</li>
-                    <li><strong>Thanata</strong> - Dödens furste</li>
-                    <li><strong>Urkhath</strong> - Hungerns furste</li>
-                </ul>
+<p>Under det senaste Mörkret invaderade mäktiga demonfurstar Mundana:</p>
+<ul>
+    <li><strong>Vhigilah</strong> - "Dvärgbane"</li>
+    <li><strong>Uvithaan</strong> - Mörk gud</li>
+    <li><strong>Thanata</strong> - Dödens furste</li>
+    <li><strong>Urkhath</strong> - Hungerns furste</li>
+</ul>
 
-                <p>De besegrades av hjältarna <strong>Kung Karmath av Zargan</strong> och <strong>Storkung Khshathra av Kiaz</strong>, men Urkhath kunde bara bindas - inte förgöras.</p>
-            </section>
+<p>De besegrades av hjältarna <strong>Kung Karmath av Zargan</strong> och <strong>Storkung Khshathra av Kiaz</strong>, men Urkhath kunde bara bindas - inte förgöras.</p>
 
-            <!-- Historia Section -->
-            <section id="historia" class="section">
-                <h2>📜 Historisk Tidslinje</h2>
+<h2 id="historia">Historisk Tidslinje</h2>
 
-                <div class="section-image">
-                    <img src="../kampanjwiki/assets/images/masterplot/tirakernas_krig.png" alt="Tirakernas Krig" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                </div>
+<img src="../kampanjwiki/assets/images/masterplot/tirakernas_krig.png" alt="Tirakernas Krig">
 
-                <div class="timeline">
-                    <div class="timeline-item" id="forsta-bindningen">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">År 7032-7002 f.D. (ca 10,000 år sedan)</div>
-                        <div class="timeline-content">
-                            <h4>Mörkrets Invasion</h4>
-                            <p>Portarna mellan planen öppnas. Urkhath och andra demonfurstar attackerar Mundana och Skugglandet samtidigt.</p>
-                        </div>
-                    </div>
+<div class="box" id="forsta-bindningen">
+<span class="box__label">År 7032-7002 f.D. (ca 10,000 år sedan)</span>
+<p><strong>Mörkrets Invasion</strong></p>
+<p>Portarna mellan planen öppnas. Urkhath och andra demonfurstar attackerar Mundana och Skugglandet samtidigt.</p>
+</div>
 
-                    <div class="timeline-item" id="tirakernas-krig">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">År 7032-7002 f.D.</div>
-                        <div class="timeline-content">
-                            <h4>Tirakernas Krig</h4>
-                            <p><strong>Storkung Khshathra av Kiaz</strong> leder tirakerna mot Urkhath.</p>
-                            <p><strong>Kung Karmath av Zargan</strong> leder människorna.</p>
-                            <p><strong>Ashael den Rena</strong> (Radh-Kamras härskare) samordnar försvaret.</p>
-                            <p><strong>Vinterglöd</strong>, page åt Prins Yelgotha, <em>sviker sina allierade</em> och börjar tjäna Urkhath.</p>
-                        </div>
-                    </div>
+<div class="box" id="tirakernas-krig">
+<span class="box__label">År 7032-7002 f.D.</span>
+<p><strong>Tirakernas Krig</strong></p>
+<p><strong>Storkung Khshathra av Kiaz</strong> leder tirakerna mot Urkhath.</p>
+<p><strong>Kung Karmath av Zargan</strong> leder människorna.</p>
+<p><strong>Ashael den Rena</strong> (Radh-Kamras härskare) samordnar försvaret.</p>
+<p><strong>Vinterglöd</strong>, page åt Prins Yelgotha, <em>sviker sina allierade</em> och börjar tjäna Urkhath.</p>
+</div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">År 7002 f.D.</div>
-                        <div class="timeline-content">
-                            <h4>Den Dubbla Bindningen</h4>
-                            <p>Urkhath bindas <strong>samtidigt</strong> i både Mundana och Skugglandet:</p>
-                            <ul>
-                                <li><strong>Mundana:</strong> 7 Stenstoder fängslat hans essens</li>
-                                <li><strong>Skugglandet:</strong> Bindning vid Intigheten (världarnas gräns)</li>
-                            </ul>
-                            <p><strong>Vinterglöd</strong> blir kvar som vakthållare i Skugglandet - 9000 år av ånger börjar.</p>
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">År 7002 f.D.</span>
+<p><strong>Den Dubbla Bindningen</strong></p>
+<p>Urkhath bindas <strong>samtidigt</strong> i både Mundana och Skugglandet:</p>
+<ul>
+    <li><strong>Mundana:</strong> 7 Stenstoder fängslat hans essens</li>
+    <li><strong>Skugglandet:</strong> Bindning vid Intigheten (världarnas gräns)</li>
+</ul>
+<p><strong>Vinterglöd</strong> blir kvar som vakthållare i Skugglandet - 9000 år av ånger börjar.</p>
+</div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">År ~2200 e.D. (700 år sedan)</div>
-                        <div class="timeline-content">
-                            <h4>Yelgotha Frysas</h4>
-                            <p><strong>Prins Yelgotha</strong> av det Första Hovet (Månskenshovet innan splittringen) frysas i is i Mithera.</p>
-                            <p>Gränsen mellan Mundana och Skugglandet försvagades vid hans fängslande.</p>
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">År ~2200 e.D. (700 år sedan)</span>
+<p><strong>Yelgotha Frysas</strong></p>
+<p><strong>Prins Yelgotha</strong> av det Första Hovet (Månskenshovet innan splittringen) frysas i is i Mithera.</p>
+<p>Gränsen mellan Mundana och Skugglandet försvagades vid hans fängslande.</p>
+</div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">År 2967 e.D. - KAMPANJENS START</div>
-                        <div class="timeline-content">
-                            <h4>Prolog: Tirakgraven</h4>
-                            <p>Gruppen hittar <strong>Zentriringen</strong> (fragment av Urkhath) i en tirakgrav.</p>
-                            <p>Första stenstoden förstörs → Urkhath börjar vakna.</p>
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">År 2967 e.D. - KAMPANJENS START</span>
+<p><strong>Prolog: Tirakgraven</strong></p>
+<p>Gruppen hittar <strong>Zentriringen</strong> (fragment av Urkhath) i en tirakgrav.</p>
+<p>Första stenstoden förstörs → Urkhath börjar vakna.</p>
+</div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">År 2967 e.D. - Kapitel 9</div>
-                        <div class="timeline-content">
-                            <h4>Yelgotha Väcks</h4>
-                            <p>Gruppen hittar och väcker <strong>Yelgotha</strong> ur hans isfängelse i Mithera.</p>
-                            <p>Hans sista ord: <em>"När ni möter Vinterglöd, säg att Yelgotha skickade er. Han var min page en gång."</em></p>
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">År 2967 e.D. - Kapitel 9</span>
+<p><strong>Yelgotha Väcks</strong></p>
+<p>Gruppen hittar och väcker <strong>Yelgotha</strong> ur hans isfängelse i Mithera.</p>
+<p>Hans sista ord: <em>"När ni möter Vinterglöd, säg att Yelgotha skickade er. Han var min page en gång."</em></p>
+</div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">År 2967 e.D. - Kapitel 10 (NU)</div>
-                        <div class="timeline-content">
-                            <h4>Skugglandet & Vinterglöd</h4>
-                            <p>Gruppen befinner sig i Skugglandet.</p>
-                            <p><strong>Nästa möte:</strong> Vinterglöd i Spegelvända Fortet.</p>
-                            <p><strong>Möjlighet:</strong> Återförena de tre manifestationerna (Kuberon + Skymning + Vinterglöd?)</p>
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">År 2967 e.D. - Kapitel 10 (NU)</span>
+<p><strong>Skugglandet & Vinterglöd</strong></p>
+<p>Gruppen befinner sig i Skugglandet.</p>
+<p><strong>Nästa möte:</strong> Vinterglöd i Spegelvända Fortet.</p>
+<p><strong>Möjlighet:</strong> Återförena de tre manifestationerna (Kuberon + Skymning + Vinterglöd?)</p>
+</div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">År 2999 e.D. (32 ÅR FRAMÅT)</div>
-                        <div class="timeline-content">
-                            <h4 style="color: var(--deep-red);">NÄSTA MÖRKER</h4>
-                            <p><strong>DEADLINE:</strong> Om Urkhath inte stoppas före år 2999 e.D., kommer han att leda nästa invasion och förgöra båda världarna.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<div class="box">
+<span class="box__label">År 2999 e.D. (32 ÅR FRAMÅT)</span>
+<p><strong>NÄSTA MÖRKER</strong></p>
+<p><strong>DEADLINE:</strong> Om Urkhath inte stoppas före år 2999 e.D., kommer han att leda nästa invasion och förgöra båda världarna.</p>
+</div>
 
-            <!-- Urkhath Section -->
-            <section id="urkhath" class="section">
-                <h2>💀 Urkhath - Huvudantagonisten</h2>
+<h2 id="urkhath">Urkhath - Huvudantagonisten</h2>
 
-                <div class="section-image">
-                    <img src="../kampanjwiki/assets/images/masterplot/urkhath_demon.png" alt="Urkhath Demonfurste" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                </div>
+<img src="../kampanjwiki/assets/images/masterplot/urkhath_demon.png" alt="Urkhath Demonfurste">
 
-                <h3>Ursprung och Natur</h3>
+<h3>Ursprung och Natur</h3>
 
-                <div class="info-box warning">
-                    <h4>Vem är Urkhath?</h4>
-                    <p><strong>Uråldrig demonfurste</strong> från Underjorden/Akervidderna</p>
-                    <p>Jämförbar med <strong>Ahriman</strong> (Mörkrets Furste), <strong>Vhigilah</strong> (Dvärgbane), eller <strong>Malgoarh</strong></p>
-                    <p>En av de mäktigaste som någonsin hotat Mundana</p>
-                </div>
+<div class="box box--warning">
+<span class="box__label">Vem är Urkhath?</span>
+<p><strong>Uråldrig demonfurste</strong> från Underjorden/Akervidderna</p>
+<p>Jämförbar med <strong>Ahriman</strong> (Mörkrets Furste), <strong>Vhigilah</strong> (Dvärgbane), eller <strong>Malgoarh</strong></p>
+<p>En av de mäktigaste som någonsin hotat Mundana</p>
+</div>
 
-                <h4>Hans Essens</h4>
-                <ul>
-                    <li><strong>Hunger personifierad</strong> - han är inte bara ond, han ÄR hungern själv</li>
-                    <li><strong>Köld och längtan</strong> - därav kryotropi (frysande kraft)</li>
-                    <li><strong>Omöjlig att förgöra</strong> - kan bara bindas</li>
-                    <li><strong>Splittrad essens</strong> - kan dela sig själv i fragment men förbli sammanhängande</li>
-                </ul>
+<h4>Hans Essens</h4>
+<ul>
+    <li><strong>Hunger personifierad</strong> - han är inte bara ond, han ÄR hungern själv</li>
+    <li><strong>Köld och längtan</strong> - därav kryotropi (frysande kraft)</li>
+    <li><strong>Omöjlig att förgöra</strong> - kan bara bindas</li>
+    <li><strong>Splittrad essens</strong> - kan dela sig själv i fragment men förbli sammanhängande</li>
+</ul>
 
-                <h4>Hans Verkliga Hot</h4>
-                <p>Stark nog att påverka <strong>BÅDA Mundana och Skugglandet samtidigt</strong></p>
-                <p>Varje fragment bär hans vilja - även små bitar (som Zentriringen) kan påverka bäraren.</p>
+<h4>Hans Verkliga Hot</h4>
+<p>Stark nog att påverka <strong>BÅDA Mundana och Skugglandet samtidigt</strong></p>
+<p>Varje fragment bär hans vilja - även små bitar (som Zentriringen) kan påverka bäraren.</p>
 
-                <h3>Hans Ultimata Mål</h3>
-                <ol>
-                    <li>Bryta fri från bindningen (BÅDA världarna)</li>
-                    <li>Leda nästa Mörker (år 2999 e.D.) som en av huvuddemonfurstarna</li>
-                    <li>Sluka och kontrollera båda världarna</li>
-                    <li>Uppnå herravälde över nästa eon</li>
-                </ol>
+<h3>Hans Ultimata Mål</h3>
+<ol>
+    <li>Bryta fri från bindningen (BÅDA världarna)</li>
+    <li>Leda nästa Mörker (år 2999 e.D.) som en av huvuddemonfurstarna</li>
+    <li>Sluka och kontrollera båda världarna</li>
+    <li>Uppnå herravälde över nästa eon</li>
+</ol>
 
-                <h3>Urkhaths Nuvarande Plan (Dubbel Attack)</h3>
+<h3>Urkhaths Nuvarande Plan (Dubbel Attack)</h3>
 
-                <div class="cosmology-diagram">
-                    <pre>
-<strong style="color: var(--flame-orange);">MUNDANA-ATTACK:</strong>
+<pre>
+<strong>MUNDANA-ATTACK:</strong>
   ↓
 Zentriringen → Zentri (Bärare)
   ↓
@@ -799,7 +217,7 @@ Skugglandet tar Zentri
   ↓
 <em>Fragmentet återvänder till Skugglandet</em>
 
-<strong style="color: var(--mystic-purple);">SKUGGLANDET-ATTACK:</strong>
+<strong>SKUGGLANDET-ATTACK:</strong>
   ↓
 Skymning/Avatar vaknar
   ↓
@@ -807,419 +225,332 @@ Försöker korruptera Kuberon
   ↓
 <em>Om lyckad: Gränsen kollapsar</em>
 
-<strong style="color: var(--deep-red);">KOMBINERAD EFFEKT:</strong>
+<strong>KOMBINERAD EFFEKT:</strong>
 Båda bindningarna bryts → Urkhath fri i båda världarna
-                    </pre>
-                </div>
-            </section>
+</pre>
 
-            <!-- NPCs Section -->
-            <section id="npcs" class="section">
-                <h2>👥 Viktiga NPCs</h2>
+<h2 id="npcs">Viktiga NPCs</h2>
 
-                <div class="character-grid">
-                    <div class="character-card" id="kuberon">
-                        <h4>Kuberon</h4>
-                        <p class="subtitle">Balansens Väktare</p>
-                        <p><strong>Roll:</strong> Neutralt väsen som vaktar gränsen mellan Mundana och Skugglandet</p>
-                        <p><strong>Manifestationer:</strong> Kuberon kan vara samma väsen som Skymning och Vinterglöd - tre aspekter av samma entitet:</p>
-                        <div class="trait">Kuberon = Balans/Mellanfas</div>
-                        <div class="trait">Skymning = Mörk aspekt (Urkhath-korruption)</div>
-                        <div class="trait">Vinterglöd = Ljus aspekt (Ånger/upprättelse)</div>
-                        <p><strong>Möjlighet:</strong> Om alla tre återförenas kan de återställa gränsens balans.</p>
-                    </div>
+<div class="box" id="kuberon">
+<span class="box__label">Kuberon</span>
+<p class="subtitle">Balansens Väktare</p>
+<p><strong>Roll:</strong> Neutralt väsen som vaktar gränsen mellan Mundana och Skugglandet</p>
+<p><strong>Manifestationer:</strong> Kuberon kan vara samma väsen som Skymning och Vinterglöd - tre aspekter av samma entitet:</p>
+<p><strong>Möjlighet:</strong> Om alla tre återförenas kan de återställa gränsens balans.</p>
+<p class="prose--secondary">Kuberon = Balans/Mellanfas · Skymning = Mörk aspekt (Urkhath-korruption) · Vinterglöd = Ljus aspekt (Ånger/upprättelse)</p>
+</div>
 
-                    <div class="character-card" id="yelgotha">
-                        <h4>Yelgotha</h4>
-                        <p class="subtitle">Den Frusna Prinsen</p>
-                        <p><strong>Titel:</strong> Prins av det Första Hovet (Månskenshovet innan splittringen)</p>
-                        <p><strong>Historia:</strong> Frusen i 700 år i en ispelare i Mithera</p>
-                        <p><strong>Relation till Vinterglöd:</strong> Vinterglöd var hans page under Tirakernas Krig</p>
-                        <p><strong>Väckt av gruppen:</strong> Kapitel 9, gav 5 varningar om Skugglandet</p>
-                        <p><strong>Hans sista ord:</strong> <em>"När ni möter Vinterglöd, säg att Yelgotha skickade er. Han var min page en gång."</em></p>
-                        <div class="trait">Möjligen Kuberons själ/essens</div>
-                        <div class="trait">Tredje manifestationen?</div>
-                    </div>
+<div class="box" id="yelgotha">
+<span class="box__label">Yelgotha</span>
+<p class="subtitle">Den Frusna Prinsen</p>
+<p><strong>Titel:</strong> Prins av det Första Hovet (Månskenshovet innan splittringen)</p>
+<p><strong>Historia:</strong> Frusen i 700 år i en ispelare i Mithera</p>
+<p><strong>Relation till Vinterglöd:</strong> Vinterglöd var hans page under Tirakernas Krig</p>
+<p><strong>Väckt av gruppen:</strong> Kapitel 9, gav 5 varningar om Skugglandet</p>
+<p><strong>Hans sista ord:</strong> <em>"När ni möter Vinterglöd, säg att Yelgotha skickade er. Han var min page en gång."</em></p>
+<p class="prose--secondary">Möjligen Kuberons själ/essens · Tredje manifestationen?</p>
+</div>
 
-                    <div class="character-card" id="vinterglod">
-                        <h4>Vinterglöd</h4>
-                        <p class="subtitle">Den Motvillige Tjänaren</p>
-                        <p><strong>Historia:</strong> Skugglandsfurste som tjänade som page åt Prins Yelgotha</p>
-                        <p><strong>Sveket:</strong> Under Tirakernas Krig svek han sina allierade och började tjäna Urkhath</p>
-                        <p><strong>Tragedi:</strong> Hans syster dog vid "de varma källorna" - möjligen relaterat till hans svek</p>
-                        <p><strong>9000 år av ånger:</strong> Vakthållare över Urkhaths bindning i Skugglandet</p>
-                        <p><strong>Nuvarande motivation:</strong> Desperata söker upprättelse och förlåtelse</p>
-                        <div class="trait">Ej ond - bara bruten</div>
-                        <div class="trait">Vill hjälpa gruppen</div>
-                        <div class="trait">Bär enorm skuld</div>
-                        <p><a href="../guider/vinterglod_guide.html" style="color: var(--ice-blue);">→ Fullständig SL-guide</a></p>
-                    </div>
+<div class="box" id="vinterglod">
+<span class="box__label">Vinterglöd</span>
+<p class="subtitle">Den Motvillige Tjänaren</p>
+<p><strong>Historia:</strong> Skugglandsfurste som tjänade som page åt Prins Yelgotha</p>
+<p><strong>Sveket:</strong> Under Tirakernas Krig svek han sina allierade och började tjäna Urkhath</p>
+<p><strong>Tragedi:</strong> Hans syster dog vid "de varma källorna" - möjligen relaterat till hans svek</p>
+<p><strong>9000 år av ånger:</strong> Vakthållare över Urkhaths bindning i Skugglandet</p>
+<p><strong>Nuvarande motivation:</strong> Desperata söker upprättelse och förlåtelse</p>
+<p><a href="../guider/vinterglod_guide.html">→ Fullständig SL-guide</a></p>
+<p class="prose--secondary">Ej ond - bara bruten · Vill hjälpa gruppen · Bär enorm skuld</p>
+</div>
 
-                    <div class="character-card" id="skymning">
-                        <h4>Skymning</h4>
-                        <p class="subtitle">Urkhaths Avatar</p>
-                        <p><strong>Natur:</strong> Fragment/avatar av Urkhath själv</p>
-                        <p><strong>Plats:</strong> Aktiv i Skugglandet</p>
-                        <p><strong>Mål:</strong> Korruptera Kuberon och bryta gränsen mellan världarna</p>
-                        <p><strong>Koppling:</strong> Möjligen Kuberons mörka aspekt - skapad när Urkhath försökte korruptera honom</p>
-                        <div class="trait">Direkt förlängning av Urkhath</div>
-                        <div class="trait">Manipulativ och farlig</div>
-                        <div class="trait">Kan inte förhandlas med</div>
-                    </div>
-                </div>
+<div class="box" id="skymning">
+<span class="box__label">Skymning</span>
+<p class="subtitle">Urkhaths Avatar</p>
+<p><strong>Natur:</strong> Fragment/avatar av Urkhath själv</p>
+<p><strong>Plats:</strong> Aktiv i Skugglandet</p>
+<p><strong>Mål:</strong> Korruptera Kuberon och bryta gränsen mellan världarna</p>
+<p><strong>Koppling:</strong> Möjligen Kuberons mörka aspekt - skapad när Urkhath försökte korruptera honom</p>
+<p class="prose--secondary">Direkt förlängning av Urkhath · Manipulativ och farlig · Kan inte förhandlas med</p>
+</div>
 
-                <div class="section-image">
-                    <img src="../kampanjwiki/assets/images/masterplot/vinterglod_anger.png" alt="Vinterglöd i ånger" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                </div>
-            </section>
+<img src="../kampanjwiki/assets/images/masterplot/vinterglod_anger.png" alt="Vinterglöd i ånger">
 
-            <!-- Kampanjstruktur Section -->
-            <section id="kampanjstruktur" class="section">
-                <h2>⚔ Kampanjstruktur - 5 Akter</h2>
+<h2 id="kampanjstruktur">Kampanjstruktur - 5 Akter</h2>
 
-                <div class="acts-grid">
-                    <div class="act-card">
-                        <h4>Akt 1: Upptäckten</h4>
-                        <p><strong>Status:</strong> ✅ Avklarad</p>
-                        <ul>
-                            <li>Hitta Zentriringen</li>
-                            <li>Första stenstoden förstörs</li>
-                            <li>Zentri kidnappas</li>
-                            <li>Jakten börjar</li>
-                        </ul>
-                    </div>
+<div class="box">
+<span class="box__label">Akt 1: Upptäckten</span>
+<p><strong>Status:</strong> Avklarad</p>
+<ul>
+    <li>Hitta Zentriringen</li>
+    <li>Första stenstoden förstörs</li>
+    <li>Zentri kidnappas</li>
+    <li>Jakten börjar</li>
+</ul>
+</div>
 
-                    <div class="act-card">
-                        <h4>Akt 2: Jakten</h4>
-                        <p><strong>Status:</strong> ✅ Avklarad</p>
-                        <ul>
-                            <li>Resa genom Muhad, Jargien, Vargnäset</li>
-                            <li>Samla ledtrådar om Urkhath</li>
-                            <li>Hitta första allierade</li>
-                            <li>Upptäck stenstodens natur</li>
-                        </ul>
-                    </div>
+<div class="box">
+<span class="box__label">Akt 2: Jakten</span>
+<p><strong>Status:</strong> Avklarad</p>
+<ul>
+    <li>Resa genom Muhad, Jargien, Vargnäset</li>
+    <li>Samla ledtrådar om Urkhath</li>
+    <li>Hitta första allierade</li>
+    <li>Upptäck stenstodens natur</li>
+</ul>
+</div>
 
-                    <div class="act-card">
-                        <h4>Akt 3: Allianserna</h4>
-                        <p><strong>Status:</strong> 🔄 Pågående</p>
-                        <ul>
-                            <li>Väcka Yelgotha (✅ Klar)</li>
-                            <li>Alliera med Vinterglöd (🔄 Nästa session)</li>
-                            <li>Kontakta Sanari-alverna</li>
-                            <li>Samarbeta med dvärgklan Drezin</li>
-                            <li>Återförena Kuberon-manifestationerna?</li>
-                        </ul>
-                    </div>
+<div class="box">
+<span class="box__label">Akt 3: Allianserna</span>
+<p><strong>Status:</strong> Pågående</p>
+<ul>
+    <li>Väcka Yelgotha (Klar)</li>
+    <li>Alliera med Vinterglöd (Nästa session)</li>
+    <li>Kontakta Sanari-alverna</li>
+    <li>Samarbeta med dvärgklan Drezin</li>
+    <li>Återförena Kuberon-manifestationerna?</li>
+</ul>
+</div>
 
-                    <div class="act-card">
-                        <h4>Akt 4: Stormen</h4>
-                        <p><strong>Status:</strong> ⏳ Kommande</p>
-                        <ul>
-                            <li>Urkhath bryter nästan fri</li>
-                            <li>Världarna börjar kollapsa in i varandra</li>
-                            <li>Rädda Zentri från Skugglandet</li>
-                            <li>Samla alla fragment</li>
-                            <li>Förbered sista striden</li>
-                        </ul>
-                    </div>
+<div class="box">
+<span class="box__label">Akt 4: Stormen</span>
+<p><strong>Status:</strong> Kommande</p>
+<ul>
+    <li>Urkhath bryter nästan fri</li>
+    <li>Världarna börjar kollapsa in i varandra</li>
+    <li>Rädda Zentri från Skugglandet</li>
+    <li>Samla alla fragment</li>
+    <li>Förbered sista striden</li>
+</ul>
+</div>
 
-                    <div class="act-card">
-                        <h4>Akt 5: Upplösningen</h4>
-                        <p><strong>Status:</strong> ⏳ Kommande</p>
-                        <ul>
-                            <li>Konfrontation med Urkhath</li>
-                            <li>Binda demonen i båda världarna</li>
-                            <li>Återställ gränsen</li>
-                            <li>Rädda Zentri (eller säg farväl)</li>
-                            <li>Bestäm världarnas öde</li>
-                        </ul>
-                    </div>
-                </div>
+<div class="box">
+<span class="box__label">Akt 5: Upplösningen</span>
+<p><strong>Status:</strong> Kommande</p>
+<ul>
+    <li>Konfrontation med Urkhath</li>
+    <li>Binda demonen i båda världarna</li>
+    <li>Återställ gränsen</li>
+    <li>Rädda Zentri (eller säg farväl)</li>
+    <li>Bestäm världarnas öde</li>
+</ul>
+</div>
 
-                <div class="info-box important">
-                    <h4>Kritiska Vägval</h4>
-                    <p><strong>Lita på Vinterglöd?</strong> Han svek en gång - kan han litas på nu?</p>
-                    <p><strong>Samarbeta med alver?</strong> (Konflikt med Thrakkas tro)</p>
-                    <p><strong>Offra Zentri?</strong> Kan vara nödvändigt för att binda Urkhath</p>
-                    <p><strong>Återförena manifestationerna?</strong> Riskabelt men kanske nödvändigt</p>
-                </div>
-            </section>
+<div class="box box--warning">
+<span class="box__label">Kritiska Vägval</span>
+<p><strong>Lita på Vinterglöd?</strong> Han svek en gång - kan han litas på nu?</p>
+<p><strong>Samarbeta med alver?</strong> (Konflikt med Thrakkas tro)</p>
+<p><strong>Offra Zentri?</strong> Kan vara nödvändigt för att binda Urkhath</p>
+<p><strong>Återförena manifestationerna?</strong> Riskabelt men kanske nödvändigt</p>
+</div>
 
-            <!-- Thrakka Section -->
-            <section id="thrakka" class="section">
-                <h2>🔥 Thrakka & Mahktahkulten</h2>
+<h2 id="thrakka">Thrakka & Mahktahkulten</h2>
 
-                <div class="section-image">
-                    <img src="../kampanjwiki/assets/images/masterplot/thrakka_bon.png" alt="Thrakka ber till Mahktah" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
-                </div>
+<img src="../kampanjwiki/assets/images/masterplot/thrakka_bon.png" alt="Thrakka ber till Mahktah">
 
-                <h3>Mahktahkultens Grundprinciper</h3>
+<h3>Mahktahkultens Grundprinciper</h3>
 
-                <div class="info-box">
-                    <h4>Mahktah - "Den Mörka Gudinnan"</h4>
-                    <p>Tirakernas gudom, dyrkas genom <strong>schamaner</strong> som talar med <strong>dwarkkas</strong> (andar som tjänar Mahktah).</p>
-                </div>
+<div class="box">
+<span class="box__label">Mahktah - "Den Mörka Gudinnan"</span>
+<p>Tirakernas gudom, dyrkas genom <strong>schamaner</strong> som talar med <strong>dwarkkas</strong> (andar som tjänar Mahktah).</p>
+</div>
 
-                <h4>Kärnvärderingar:</h4>
-                <ol>
-                    <li><strong>Den starkes rätt</strong> - Styrka och mod värderas högst</li>
-                    <li><strong>Mod framför seger</strong> - Viktigare att kämpa modigt än att vinna</li>
-                    <li><strong>Feghet är oförlåtligt</strong> - Värsta synden</li>
-                    <li><strong>Okamratlighet är oförlåtligt</strong> - Svek accepteras aldrig</li>
-                    <li><strong style="color: var(--deep-red);">STRÄNGT FÖRBUD MOT DEMONER</strong> - "Det är strängt förbjudet att ha något som helst samröre med demoner"</li>
-                </ol>
+<h4>Kärnvärderingar:</h4>
+<ol>
+    <li><strong>Den starkes rätt</strong> - Styrka och mod värderas högst</li>
+    <li><strong>Mod framför seger</strong> - Viktigare att kämpa modigt än att vinna</li>
+    <li><strong>Feghet är oförlåtligt</strong> - Värsta synden</li>
+    <li><strong>Okamratlighet är oförlåtligt</strong> - Svek accepteras aldrig</li>
+    <li><strong>STRÄNGT FÖRBUD MOT DEMONER</strong> - "Det är strängt förbjudet att ha något som helst samröre med demoner"</li>
+</ol>
 
-                <h3>Thrakkas Religiösa Konflikter i Skugglandet</h3>
+<h3>Thrakkas Religiösa Konflikter i Skugglandet</h3>
 
-                <div class="character-grid">
-                    <div class="character-card">
-                        <h4>Konflikt 1: Demonens Närvaro</h4>
-                        <p><strong>Problemet:</strong> Urkhath är en DEMON. Mahktahkulten förbjuder STRÄNGT allt samröre.</p>
-                        <p><strong>Thrakkas reaktion:</strong></p>
-                        <ul>
-                            <li>Extremt fientlig mot allt demoniskt</li>
-                            <li>Vill KROSSA Urkhath utan kompromiss</li>
-                            <li>Misstänksam mot Zentri (bar demonringen)</li>
-                            <li>Misstänksam mot Vinterglöd (tjänade demonen)</li>
-                        </ul>
-                        <div class="quote-box">
-                            "En demon! Mahktah förbannar alla som tjänar mörkrets furstar. Zentri, hur kunde du BÄRA en sådan sak? Och du, Vinterglöd - du SVEK ditt folk för denna vederstygglighet!"
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">Konflikt 1: Demonens Närvaro</span>
+<p><strong>Problemet:</strong> Urkhath är en DEMON. Mahktahkulten förbjuder STRÄNGT allt samröre.</p>
+<p><strong>Thrakkas reaktion:</strong></p>
+<ul>
+    <li>Extremt fientlig mot allt demoniskt</li>
+    <li>Vill KROSSA Urkhath utan kompromiss</li>
+    <li>Misstänksam mot Zentri (bar demonringen)</li>
+    <li>Misstänksam mot Vinterglöd (tjänade demonen)</li>
+</ul>
+<blockquote class="box--quote">"En demon! Mahktah förbannar alla som tjänar mörkrets furstar. Zentri, hur kunde du BÄRA en sådan sak? Och du, Vinterglöd - du SVEK ditt folk för denna vederstygglighet!"</blockquote>
+</div>
 
-                    <div class="character-card">
-                        <h4>Konflikt 2: Skugglandet som Andeplan</h4>
-                        <p><strong>Insikten:</strong> Skugglandet är nära andeplanet där tirakiska schamaner vandrar.</p>
-                        <p><strong>Thrakkas upplevelse:</strong></p>
-                        <ul>
-                            <li>Känner igen platsen från schamaners berättelser</li>
-                            <li>Ser dwarkkas (andar) som hon aldrig sett i Mundana</li>
-                            <li>Känner Mahktahs närvaro starkare här</li>
-                            <li>Respekterar platsen som helig mark</li>
-                        </ul>
-                        <div class="quote-box">
-                            "Vänta. Jag känner... andar här. Dwarkkas. De bevagar denna plats. Mahktah, Den Mörka, hör din dotter. Jag vandrar på andegränsen."
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">Konflikt 2: Skugglandet som Andeplan</span>
+<p><strong>Insikten:</strong> Skugglandet är nära andeplanet där tirakiska schamaner vandrar.</p>
+<p><strong>Thrakkas upplevelse:</strong></p>
+<ul>
+    <li>Känner igen platsen från schamaners berättelser</li>
+    <li>Ser dwarkkas (andar) som hon aldrig sett i Mundana</li>
+    <li>Känner Mahktahs närvaro starkare här</li>
+    <li>Respekterar platsen som helig mark</li>
+</ul>
+<blockquote class="box--quote">"Vänta. Jag känner... andar här. Dwarkkas. De bevagar denna plats. Mahktah, Den Mörka, hör din dotter. Jag vandrar på andegränsen."</blockquote>
+</div>
 
-                    <div class="character-card">
-                        <h4>Konflikt 3: Vinterglöds Svek</h4>
-                        <p><strong>Dubbelt fördömligt:</strong></p>
-                        <ol>
-                            <li>Han svek sina egna (okamratlighet = oförlåtligt)</li>
-                            <li>Han tjänade en demon (strängt förbjudet)</li>
-                        </ol>
-                        <p><strong>Möjlig utveckling:</strong></p>
-                        <ul>
-                            <li>Mahktah värderar MOD - om Vinterglöd visar mod nu</li>
-                            <li>Mahktah accepterar GOTTGÖRELSE - om han verkligen ångrar sig</li>
-                            <li>Den starkes rätt - om han är stark nog att hjälpa</li>
-                        </ul>
-                        <div class="quote-box">
-                            "Nio tusen år av ånger... Mahktah värderar mod, inte ånger. Vad har du GJORT för att gottgöra?"
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">Konflikt 3: Vinterglöds Svek</span>
+<p><strong>Dubbelt fördömligt:</strong></p>
+<ol>
+    <li>Han svek sina egna (okamratlighet = oförlåtligt)</li>
+    <li>Han tjänade en demon (strängt förbjudet)</li>
+</ol>
+<p><strong>Möjlig utveckling:</strong></p>
+<ul>
+    <li>Mahktah värderar MOD - om Vinterglöd visar mod nu</li>
+    <li>Mahktah accepterar GOTTGÖRELSE - om han verkligen ångrar sig</li>
+    <li>Den starkes rätt - om han är stark nog att hjälpa</li>
+</ul>
+<blockquote class="box--quote">"Nio tusen år av ånger... Mahktah värderar mod, inte ånger. Vad har du GJORT för att gottgöra?"</blockquote>
+</div>
 
-                    <div class="character-card">
-                        <h4>Konflikt 4: Samarbete med Alver</h4>
-                        <p><strong>Enormt problem:</strong> Enligt tirakisk tradition är alver <strong>korrumperade tiraker</strong> som torterades av demoner.</p>
-                        <p><strong>Thrakkas dilemma:</strong></p>
-                        <ul>
-                            <li>Alverna är "demonernas verktyg"</li>
-                            <li>Men Sanari-alverna har bindningsföremål</li>
-                            <li>Måste välja: ideologisk renhet eller praktisk seger</li>
-                        </ul>
-                        <p><strong>Möjlig lösning:</strong> Mahktah värderar <em>målet</em> - besegra demonen - över metoderna.</p>
-                    </div>
-                </div>
+<div class="box">
+<span class="box__label">Konflikt 4: Samarbete med Alver</span>
+<p><strong>Enormt problem:</strong> Enligt tirakisk tradition är alver <strong>korrumperade tiraker</strong> som torterades av demoner.</p>
+<p><strong>Thrakkas dilemma:</strong></p>
+<ul>
+    <li>Alverna är "demonernas verktyg"</li>
+    <li>Men Sanari-alverna har bindningsföremål</li>
+    <li>Måste välja: ideologisk renhet eller praktisk seger</li>
+</ul>
+<p><strong>Möjlig lösning:</strong> Mahktah värderar <em>målet</em> - besegra demonen - över metoderna.</p>
+</div>
 
-                <h3>Thrakkas Karaktärsutveckling</h3>
+<h3>Thrakkas Karaktärsutveckling</h3>
 
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">Fas 1: Rigid Tro</div>
-                        <div class="timeline-content">
-                            <p>Allt är svart eller vitt. Regler är absoluta. Demoner = döda. Svikare = döda. Alver = onda.</p>
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">Fas 1: Rigid Tro</span>
+<p>Allt är svart eller vitt. Regler är absoluta. Demoner = döda. Svikare = döda. Alver = onda.</p>
+</div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">Fas 2: Testad Tro (NUVARANDE)</div>
-                        <div class="timeline-content">
-                            <p>Måste acceptera kompromisser. Samarbeta med Vinterglöd? Lita på alver? Inre kamp mellan ideologi och överlevnad.</p>
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">Fas 2: Testad Tro (NUVARANDE)</span>
+<p>Måste acceptera kompromisser. Samarbeta med Vinterglöd? Lita på alver? Inre kamp mellan ideologi och överlevnad.</p>
+</div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">Fas 3: Mogen Tro</div>
-                        <div class="timeline-content">
-                            <p>Förstår att MOD och MÅL väger tyngre än regler. Mahktah värderar den som kämpar modigt, även med tvivelaktiga allierade.</p>
-                        </div>
-                    </div>
+<div class="box">
+<span class="box__label">Fas 3: Mogen Tro</span>
+<p>Förstår att MOD och MÅL väger tyngre än regler. Mahktah värderar den som kämpar modigt, även med tvivelaktiga allierade.</p>
+</div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-date">Fas 4: Slutprov</div>
-                        <div class="timeline-content">
-                            <p>Möjligt hjälteoffer för att besegra Urkhath. Mahktah ser den som faller modigt i strid mot demoner som den mest hedervärda av alla.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<div class="box">
+<span class="box__label">Fas 4: Slutprov</span>
+<p>Möjligt hjälteoffer för att besegra Urkhath. Mahktah ser den som faller modigt i strid mot demoner som den mest hedervärda av alla.</p>
+</div>
 
-            <!-- Utgångar Section -->
-            <section id="utgangar" class="section">
-                <h2>🎲 Möjliga Utgångar</h2>
+<h2 id="utgangar">Möjliga Utgångar</h2>
 
-                <div class="acts-grid">
-                    <div class="act-card">
-                        <h4>Seger</h4>
-                        <p><strong>Urkhath bindas på nytt</strong></p>
-                        <ul>
-                            <li>Båda bindningarna återställda</li>
-                            <li>Zentri räddad (kanske)</li>
-                            <li>Världarna separerade</li>
-                            <li>Fred i 10,000 år (till nästa Mörker)</li>
-                        </ul>
-                        <p><strong>Pris:</strong> Möjliga offer krävs (Vinterglöd? Thrakka? Kuberon?)</p>
-                    </div>
+<div class="box">
+<span class="box__label">Seger</span>
+<p><strong>Urkhath bindas på nytt</strong></p>
+<ul>
+    <li>Båda bindningarna återställda</li>
+    <li>Zentri räddad (kanske)</li>
+    <li>Världarna separerade</li>
+    <li>Fred i 10,000 år (till nästa Mörker)</li>
+</ul>
+<p><strong>Pris:</strong> Möjliga offer krävs (Vinterglöd? Thrakka? Kuberon?)</p>
+</div>
 
-                    <div class="act-card">
-                        <h4>Tragedi</h4>
-                        <p><strong>Urkhath bryter fri</strong></p>
-                        <ul>
-                            <li>Båda världarna kollapsar</li>
-                            <li>Zentri förlorad till demonen</li>
-                            <li>Mörkret kommer tidigt</li>
-                            <li>Apokalyptisk slutstrid</li>
-                        </ul>
-                        <p><strong>Möjlig räddning:</strong> Hjälteoffer kan skapa ny bindning</p>
-                    </div>
+<div class="box">
+<span class="box__label">Tragedi</span>
+<p><strong>Urkhath bryter fri</strong></p>
+<ul>
+    <li>Båda världarna kollapsar</li>
+    <li>Zentri förlorad till demonen</li>
+    <li>Mörkret kommer tidigt</li>
+    <li>Apokalyptisk slutstrid</li>
+</ul>
+<p><strong>Möjlig räddning:</strong> Hjälteoffer kan skapa ny bindning</p>
+</div>
 
-                    <div class="act-card">
-                        <h4>Kompromiss</h4>
-                        <p><strong>Delvis seger</strong></p>
-                        <ul>
-                            <li>Urkhath bunden i en värld, inte båda</li>
-                            <li>Zentri delvis korrupterad</li>
-                            <li>Gränsen instabil</li>
-                            <li>Temporär lösning</li>
-                        </ul>
-                        <p><strong>Konsekvens:</strong> Problemet skjuts fram, men världen räddas (för nu)</p>
-                    </div>
+<div class="box">
+<span class="box__label">Kompromiss</span>
+<p><strong>Delvis seger</strong></p>
+<ul>
+    <li>Urkhath bunden i en värld, inte båda</li>
+    <li>Zentri delvis korrupterad</li>
+    <li>Gränsen instabil</li>
+    <li>Temporär lösning</li>
+</ul>
+<p><strong>Konsekvens:</strong> Problemet skjuts fram, men världen räddas (för nu)</p>
+</div>
 
-                    <div class="act-card">
-                        <h4>Hybris</h4>
-                        <p><strong>Gruppen försöker kontrollera Urkhath</strong></p>
-                        <ul>
-                            <li>Använda Zentriringen som verktyg</li>
-                            <li>Försöka binda demonen till sin vilja</li>
-                            <li>Korruption sprider sig</li>
-                            <li>Nya antagonister skapas</li>
-                        </ul>
-                        <p><strong>Risk:</strong> Bli det man slåss mot</p>
-                    </div>
+<div class="box">
+<span class="box__label">Hybris</span>
+<p><strong>Gruppen försöker kontrollera Urkhath</strong></p>
+<ul>
+    <li>Använda Zentriringen som verktyg</li>
+    <li>Försöka binda demonen till sin vilja</li>
+    <li>Korruption sprider sig</li>
+    <li>Nya antagonister skapas</li>
+</ul>
+<p><strong>Risk:</strong> Bli det man slåss mot</p>
+</div>
 
-                    <div class="act-card">
-                        <h4>Hjälteoffer</h4>
-                        <p><strong>Ultimat uppoffring</strong></p>
-                        <ul>
-                            <li>En (eller flera) karaktärer offrar sig</li>
-                            <li>Blir själva den nya bindningen</li>
-                            <li>Urkhath fängslad för evigt</li>
-                            <li>Världarna räddade</li>
-                        </ul>
-                        <p><strong>Episk slutsats:</strong> Legendarisk status, sånger i 1000 år</p>
-                    </div>
-                </div>
+<div class="box">
+<span class="box__label">Hjälteoffer</span>
+<p><strong>Ultimat uppoffring</strong></p>
+<ul>
+    <li>En (eller flera) karaktärer offrar sig</li>
+    <li>Blir själva den nya bindningen</li>
+    <li>Urkhath fängslad för evigt</li>
+    <li>Världarna räddade</li>
+</ul>
+<p><strong>Episk slutsats:</strong> Legendarisk status, sånger i 1000 år</p>
+</div>
 
-                <div class="info-box important">
-                    <h4>Faktorer som påverkar utgången</h4>
-                    <ul>
-                        <li>Hur många allierade gruppen samlar</li>
-                        <li>Om de litar på Vinterglöd</li>
-                        <li>Om de återförenar Kuberon-manifestationerna</li>
-                        <li>Om de hittar alla stenstoder</li>
-                        <li>Hur de hanterar Zentri (rädda eller offra?)</li>
-                        <li>Thrakkas religiösa val (kompromiss eller ideologisk renhet?)</li>
-                    </ul>
-                </div>
-            </section>
+<div class="box box--warning">
+<span class="box__label">Faktorer som påverkar utgången</span>
+<ul>
+    <li>Hur många allierade gruppen samlar</li>
+    <li>Om de litar på Vinterglöd</li>
+    <li>Om de återförenar Kuberon-manifestationerna</li>
+    <li>Om de hittar alla stenstoder</li>
+    <li>Hur de hanterar Zentri (rädda eller offra?)</li>
+    <li>Thrakkas religiösa val (kompromiss eller ideologisk renhet?)</li>
+</ul>
+</div>
 
-            <!-- Slutsektion -->
-            <section class="section">
-                <h2>🎯 Sammanfattning</h2>
+<h2>Sammanfattning</h2>
 
-                <div class="info-box important">
-                    <h4>Detta är en episk kampanj som binder samman:</h4>
-                    <ul>
-                        <li>✅ EON:s officiella kosmologi (Aeon, eonerna, Mörkret)</li>
-                        <li>✅ Urgammal historia (Tirakernas Krig, 9000 år sedan)</li>
-                        <li>✅ Personliga tragedier (Vinterglöd, Zentri, Yelgotha)</li>
-                        <li>✅ Världshotande fara (Urkhath, nästa Mörker om 32 år)</li>
-                        <li>✅ Kosmisk skala (två världar måste räddas samtidigt)</li>
-                        <li>✅ Moraliska val (offer, allianser, förlåtelse)</li>
-                        <li>✅ Religiös dimension (Thrakkas tro vs kompromisser)</li>
-                    </ul>
-                </div>
+<div class="box box--warning">
+<span class="box__label">Detta är en episk kampanj som binder samman:</span>
+<ul>
+    <li>EON:s officiella kosmologi (Aeon, eonerna, Mörkret)</li>
+    <li>Urgammal historia (Tirakernas Krig, 9000 år sedan)</li>
+    <li>Personliga tragedier (Vinterglöd, Zentri, Yelgotha)</li>
+    <li>Världshotande fara (Urkhath, nästa Mörker om 32 år)</li>
+    <li>Kosmisk skala (två världar måste räddas samtidigt)</li>
+    <li>Moraliska val (offer, allianser, förlåtelse)</li>
+    <li>Religiös dimension (Thrakkas tro vs kompromisser)</li>
+</ul>
+</div>
 
-                <p style="text-align: center; font-size: 1.5rem; color: var(--flame-orange); margin-top: 2rem;">
-                    <strong>Nästa möte med Vinterglöd blir NYCKELMOMENTET där allt börjar klarna för spelarna.</strong>
-                </p>
+<p><strong>Nästa möte med Vinterglöd blir NYCKELMOMENTET där allt börjar klarna för spelarna.</strong></p>
 
-                <p style="text-align: center; font-size: 2rem; margin-top: 2rem;">
-                    🎲 🐉 ❄️ 🔥
-                </p>
+<p class="note">Dokumentet baserat på: KOMPLETT_MASTERPLOT.md<br>
+Källa: kampanj_masterplot.md, 5024_legenderhemligheter.txt, skugglandet_kosmologi_alternativ.md,<br>
+kampanjkrönika.md, 070 Mahktahkulten.md</p>
+  </article>
 
-                <p style="text-align: center; color: var(--text-secondary); margin-top: 2rem; font-style: italic;">
-                    Dokumentet baserat på: KOMPLETT_MASTERPLOT.md<br>
-                    Källa: kampanj_masterplot.md, 5024_legenderhemligheter.txt, skugglandet_kosmologi_alternativ.md,<br>
-                    kampanjkrönika.md, 070 Mahktahkulten.md
-                </p>
-            </section>
-        </main>
-    </div>
+  <nav class="chapter-pager rows" aria-label="Sessionsnavigering">
+    <a class="row row--simple" href="../sessioner/index.html">
+      <span class="row__meta">← Tillbaka</span>
+      <span class="row__title">Sessioner</span>
+    </a>
+  </nav>
+</main>
 
-    <script>
-        // Smooth scroll active link highlighting
-        const sections = document.querySelectorAll('.section');
-        const navLinks = document.querySelectorAll('.sidebar nav a');
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
 
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-    </script>
+<script src="../kapitel/kapitel-linkify.js"></script>
 </body>
 </html>
