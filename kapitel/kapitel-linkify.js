@@ -8,9 +8,11 @@ const REGISTER_FILE = { npc: 'npcer.html', plats: 'platser.html', fraktion: 'fra
 
 // document.currentScript är bara giltig under skriptets EGEN synkrona körning — måste
 // sparas här, innan vi går in i den asynkrona DOMContentLoaded-callbacken där den blir null.
-// Sökväg räknas ut relativt till SKRIPTETS egen URL, inte den anropande sidans — fungerar
-// oavsett om det är kapitel/ eller fluff/ som laddar filen.
+// Sökvägar räknas ut relativt till SKRIPTETS egen URL (alltid kapitel/kapitel-linkify.js),
+// inte den anropande sidans — fungerar oavsett hur djupt sidan som laddar filen ligger
+// (kapitel/, fluff/, eller rotnivå som soffias-natverk.html).
 const DATA_URL = new URL('../data/entities.json', document.currentScript.src).href;
+const REGISTER_BASE = new URL('../register/', document.currentScript.src).href;
 
 document.addEventListener('DOMContentLoaded', function () {
     fetch(DATA_URL)
@@ -108,7 +110,7 @@ function linkifyText(text, entityMap) {
 
         const link = document.createElement('a');
         const file = REGISTER_FILE[match.entity.typ];
-        link.href = `../register/${file}#${match.entity.typ}/${match.entity.slug}`;
+        link.href = `${REGISTER_BASE}${file}#${match.entity.typ}/${match.entity.slug}`;
         link.textContent = match.original;
         link.className = 'entity-link entity-' + match.entity.typ;
         link.title = `Visa ${match.entity.typ === 'npc' ? 'NPC' : match.entity.typ === 'plats' ? 'plats' : 'fraktion'}: ${match.entity.namn}`;

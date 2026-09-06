@@ -1,593 +1,326 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lady Soffias Informationsnätverk | EON Kampanj</title>
-    <style>
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --gold: #ffa500;
-            --bg-dark: #0a0a0a;
-            --bg-card: #1a1a1a;
-            --text-primary: #e0e0e0;
-            --text-secondary: #b0b0b0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a0a0a 100%);
-            color: var(--text-primary);
-            line-height: 1.7;
-            padding: 2rem;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .nav-back {
-            margin-bottom: 2rem;
-        }
-
-        .nav-back a {
-            color: var(--flame-orange);
-            text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.3s;
-        }
-
-        .nav-back a:hover {
-            color: var(--gold);
-        }
-
-        .header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 2px solid var(--flame-orange);
-            margin-bottom: 3rem;
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            color: var(--flame-orange);
-            text-shadow: 0 0 20px rgba(255, 107, 74, 0.5);
-            margin-bottom: 1rem;
-        }
-
-        .header .subtitle {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-
-        .meta-info {
-            background: var(--bg-card);
-            border-left: 4px solid var(--mystic-purple);
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            border-radius: 4px;
-        }
-
-        .meta-info h3 {
-            color: var(--mystic-purple);
-            margin-bottom: 1rem;
-        }
-
-        .meta-info ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .meta-info li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .meta-info li:before {
-            content: "▸";
-            position: absolute;
-            left: 0;
-            color: var(--flame-orange);
-        }
-
-        .section {
-            margin-bottom: 3rem;
-        }
-
-        .section h2 {
-            font-size: 2rem;
-            color: var(--flame-orange);
-            border-bottom: 1px solid var(--flame-orange);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .section h3 {
-            font-size: 1.5rem;
-            color: var(--gold);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .person-card {
-            background: var(--bg-card);
-            border-left: 3px solid var(--mystic-purple);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 4px;
-        }
-
-        .person-card h4 {
-            color: var(--flame-orange);
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .person-card .role {
-            color: var(--gold);
-            font-style: italic;
-            margin-bottom: 1rem;
-        }
-
-        .person-card .location {
-            color: var(--mystic-purple);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .person-card p {
-            margin-bottom: 0.8rem;
-        }
-
-        .person-card ul {
-            margin-left: 1.5rem;
-            margin-bottom: 0.8rem;
-        }
-
-        .person-card li {
-            margin-bottom: 0.3rem;
-        }
-
-        .loyalty {
-            display: inline-block;
-            background: rgba(255, 107, 74, 0.2);
-            color: var(--flame-orange);
-            padding: 0.3rem 0.8rem;
-            border-radius: 3px;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        .knows-network {
-            display: inline-block;
-            background: rgba(168, 85, 168, 0.2);
-            color: var(--mystic-purple);
-            padding: 0.3rem 0.8rem;
-            border-radius: 3px;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-            margin-left: 0.5rem;
-        }
-
-        .warning-box {
-            background: rgba(212, 83, 77, 0.1);
-            border: 2px solid var(--deep-red);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .warning-box h3 {
-            color: var(--deep-red);
-            margin-bottom: 1rem;
-        }
-
-        .stats {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 4px;
-            margin-bottom: 2rem;
-        }
-
-        .stats h3 {
-            color: var(--flame-orange);
-            margin-bottom: 1rem;
-        }
-
-        .stats .stat-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-
-        .stats .stat-item {
-            text-align: center;
-            padding: 1rem;
-            background: rgba(255, 107, 74, 0.1);
-            border-radius: 4px;
-        }
-
-        .stats .stat-number {
-            font-size: 2rem;
-            color: var(--flame-orange);
-            font-weight: bold;
-        }
-
-        .stats .stat-label {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        /* Entity links */
-        .npc-link {
-            color: var(--flame-orange);
-            text-decoration: none;
-            border-bottom: 1px dotted var(--flame-orange);
-            cursor: pointer;
-        }
-
-        .npc-link:hover {
-            color: var(--gold);
-            border-bottom-color: var(--gold);
-        }
-
-        .place-link {
-            color: var(--mystic-purple);
-            text-decoration: none;
-            border-bottom: 1px dotted var(--mystic-purple);
-        }
-
-        .place-link:hover {
-            color: var(--gold);
-            border-bottom-color: var(--gold);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lady Soffias Informationsnätverk – Gravens Arv</title>
+<meta name="description" content="Lady Soffias informella informationsnätverk över Mundana — 21 personer i tio regioner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
 </head>
 <body>
-    <div class="container">
-        <div class="nav-back">
-            <a href="index.html">← Tillbaka till Dashboard</a>
-        </div>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="index.html#kampanjen">Kampanjen</a>
+      <a href="index.html#register">Register</a>
+      <a href="index.html#eget">Eget material</a>
+      <a href="sessioner/index.html">SL</a>
+      <a href="fluff/index.html">Fluff</a>
+    </nav>
+  </div>
+</header>
 
-        <div class="header">
-            <h1>Lady Soffias Informationsnätverk</h1>
-            <div class="subtitle">"Ingen organisation. Inga namn. Inga möten. Bara lojalitet."</div>
-        </div>
+<div class="crumbs">
+  <div class="wrap"><a href="index.html">Start</a> / <span>Lady Soffias Informationsnätverk</span></div>
+</div>
 
-        <div class="stats">
-            <h3>Nätverkets Omfattning</h3>
-            <div class="stat-grid">
-                <div class="stat-item">
-                    <div class="stat-number">20</div>
-                    <div class="stat-label">Totalt personer</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">3</div>
-                    <div class="stat-label">Känner till nätverket</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">10</div>
-                    <div class="stat-label">Länder/regioner</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">0</div>
-                    <div class="stat-label">Vet om magin</div>
-                </div>
-            </div>
-        </div>
+<main class="wrap read-view">
+  <p class="eyebrow">SL</p>
+  <h1 class="page-title">Lady Soffias Informationsnätverk</h1>
+  <p class="subtitle">"Ingen organisation. Inga namn. Inga möten. Bara lojalitet."</p>
 
-        <div class="meta-info">
-            <h3>Hur Nätverket Fungerar</h3>
-            <ul>
+  <article class="prose read-view__article" style="margin-top: clamp(24px, 4vw, 40px);">
+<h2>Nätverkets Omfattning</h2>
+<div style="display:flex; flex-wrap:wrap; gap:14px 44px; margin: 16px 0 24px;"><div class="stat"><span class="stat__label">Totalt personer</span><span class="stat__value">20</span></div><div class="stat"><span class="stat__label">Känner till nätverket</span><span class="stat__value">3</span></div><div class="stat"><span class="stat__label">Länder/regioner</span><span class="stat__value">10</span></div><div class="stat"><span class="stat__label">Vet om magin</span><span class="stat__value">0</span></div></div>
+
+        <div class="box" style="margin-top: 16px;">
+  <span class="box__label">Hur Nätverket Fungerar</span>
+  <ul style="margin: 8px 0 0 20px;">
                 <li><strong>Ingen organisation:</strong> Inga namn, inga möten, inga bevis</li>
                 <li><strong>Baserat på lojalitet:</strong> Soffia hjälper folk (betalar skulder, ordnar arbete, skyddar familjer) - de hjälper henne tillbaka</li>
                 <li><strong>Soffia samordnar allt:</strong> Hon är den enda som ser hela bilden</li>
                 <li><strong>Brevduvor med magiskt stöd:</strong> Tränade att flyga till specifika personer, hittar mottagare även om de flyttat (magisk bindning)</li>
             </ul>
-        </div>
+</div>
 
-        <div class="warning-box">
-            <h3>🔒 Hemlighållande</h3>
-            <p><strong>De 16 kunskaparna:</strong> Känner INTE till varandra. Tror att de rapporterar ENDAST till Soffia. Detta skyddar nätverket - ingen kan avslöja vad de inte vet om.</p>
+        <div class="box box--warning" style="margin-top: 16px;">
+  <span class="box__label">Hemlighållande</span>
+  <p><strong>De 16 kunskaparna:</strong> Känner INTE till varandra. Tror att de rapporterar ENDAST till Soffia. Detta skyddar nätverket - ingen kan avslöja vad de inte vet om.</p>
             <p><strong>INGEN vet om magin</strong> - inte ens Helga, Mirelle eller Gardar. De tror bara att Soffia är "fantastisk på att träna duvor".</p>
-        </div>
+</div>
 
-        <!-- NÄTVERKETS KÄRNA -->
-        <div class="section">
-            <h2>🔥 Nätverkets Kärna</h2>
+        
+        <div>
+            <h2>Nätverkets Kärna</h2>
             <p>Endast tre personer känner till att nätverket finns:</p>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Helga Järnoxen</span></h4>
-                <div class="role">Värdshusvärd i Mitrahus</div>
-                <div class="location">📍 "Järnoxens Vila", Mitrahus, Vitterdal</div>
-                <p>Soffia och Helga växte upp tillsammans innan Soffia gifte in sig i adeln. Barndomsvänner sedan 40+ år tillbaka. Helga är den enda som får kalla Soffia "Fia".</p>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Helga Järnoxen</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Värdshusvärd i Mitrahus</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">"Järnoxens Vila", Mitrahus, Vitterdal</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Soffia och Helga växte upp tillsammans innan Soffia gifte in sig i adeln. Barndomsvänner sedan 40+ år tillbaka. Helga är den enda som får kalla Soffia "Fia".</p>
                 <p><strong>Roll i nätverket:</strong></p>
                 <ul>
                     <li>Samordnare för Vitterdal/Cermira</li>
                     <li>Samlar information från värdshuset och lokala informanter</li>
                     <li>Mellanhänder - många kunskapare rapporterar via Helga</li>
-                </ul>
-                <span class="loyalty">Lojalitet: Absolut (vänskap)</span>
-                <span class="knows-network">✓ Känner till nätverket</span>
-            </div>
+                </ul></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Absolut (vänskap) · Känner till nätverket</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Syster Mirelle</span></h4>
-                <div class="role">Vandringsprästerska för Daak</div>
-                <div class="location">📍 Resande (Cermira, Drunok, Jargien)</div>
-                <p>Soffia räddade Mirelle för 20 år sedan. Som vandringspräst kan hon röra sig fritt mellan städer och länder utan misstankar.</p>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Syster Mirelle</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Vandringsprästerska för Daak</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Resande (Cermira, Drunok, Jargien)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Soffia räddade Mirelle för 20 år sedan. Som vandringspräst kan hon röra sig fritt mellan städer och länder utan misstankar.</p>
                 <p><strong>Roll i nätverket:</strong></p>
                 <ul>
                     <li>Resande samordnare - samlar information längs sina resvägar</li>
                     <li>Mellanhänder för avlägsna platser (Jargien, Drunok)</li>
                     <li>Diskret kurir under täckmantel av religösa uppdrag</li>
-                </ul>
-                <span class="loyalty">Lojalitet: Mycket hög (skuld)</span>
-                <span class="knows-network">✓ Känner till nätverket</span>
-            </div>
+                </ul></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (skuld) · Känner till nätverket</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Gardar "Falköga"</span></h4>
-                <div class="role">Livvakt och handgången man</div>
-                <div class="location">📍 Mitrahus, Vitterdal</div>
-                <p>42-årig före detta garde från Egisborgs fäste. Sårades allvarligt för 8 år sedan - Soffia ordnade arbete som livvakt och betalade läkarvård. Skarpsynt observatör (därav "Falköga").</p>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Gardar "Falköga"</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Livvakt och handgången man</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Mitrahus, Vitterdal</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>42-årig före detta garde från Egisborgs fäste. Sårades allvarligt för 8 år sedan - Soffia ordnade arbete som livvakt och betalade läkarvård. Skarpsynt observatör (därav "Falköga").</p>
                 <p><strong>Roll i nätverket:</strong></p>
                 <ul>
                     <li>Beskyddar Soffia vid resor och möten</li>
                     <li>Säkerhetsgranskare - kontrollerar besökare</li>
                     <li>Diskret muskel - "övertygar" folk när Soffia behöver det</li>
                     <li>Kurir för känsliga meddelanden</li>
-                </ul>
-                <span class="loyalty">Lojalitet: Absolut (liv räddat)</span>
-                <span class="knows-network">✓ Känner till nätverket</span>
-            </div>
+                </ul></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Absolut (liv räddat) · Känner till nätverket</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Selene "Silveröga" Kazarov</span></h4>
-                <div class="role">Underbefäl på Frostnymfen, flodspion</div>
-                <div class="location">📍 Raunfloden (resande)</div>
-                <p>~45-årig asharisk kvinna med konstgjort silveröga (höger). Underbefäl under kapten Nilmar på flodpråmen Frostnymfen. Har i flera år fungerat som Soffias informant längs Raunfloden.</p>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Selene "Silveröga" Kazarov</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Underbefäl på Frostnymfen, flodspion</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Raunfloden (resande)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>~45-årig asharisk kvinna med konstgjort silveröga (höger). Underbefäl under kapten Nilmar på flodpråmen Frostnymfen. Har i flera år fungerat som Soffias informant längs Raunfloden.</p>
                 <p><strong>Roll i nätverket:</strong></p>
                 <ul>
                     <li>Informant längs Raunfloden - rapporterar trafik, patrullering, rykten</li>
                     <li>Hemlig medlem i nätverk som hjälper förföljda fly</li>
                     <li>Kontakter längs hela Raunfloden</li>
                     <li>Delar ut sigill till betrodda allierade</li>
-                </ul>
-                <span class="loyalty">Lojalitet: Mycket hög (lång tjänst)</span>
-                <span class="knows-network">✓ Känner till nätverket</span>
-            </div>
+                </ul></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (lång tjänst) · Känner till nätverket</p>
+</div>
         </div>
 
-        <!-- PERSONLIGA TJÄNARE -->
-        <div class="section">
-            <h2>👥 Soffias Personliga Tjänare</h2>
+        
+        <div>
+            <h2>Soffias Personliga Tjänare</h2>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Ditte Lundbäck</span></h4>
-                <div class="role">Tjänsteflicka och budbärare</div>
-                <div class="location">📍 Mitrahus, Vitterdal</div>
-                <p>24-årig cermirisk tjänsteflicka. Soffia räddade hennes familj från svält för 6 år sedan.</p>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Ditte Lundbäck</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Tjänsteflicka och budbärare</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Mitrahus, Vitterdal</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>24-årig cermirisk tjänsteflicka. Soffia räddade hennes familj från svält för 6 år sedan.</p>
                 <p><strong>Vad hon gör:</strong></p>
                 <ul>
                     <li>Springer ärenden i Vitterdal och Mitrahus</li>
                     <li>Bär meddelanden mellan Soffia och lokala kontakter</li>
                     <li>Hanterar brevduvor (matar, tränar, skickar meddelanden)</li>
                 </ul>
-                <p><strong>⚠️ Känner INTE till nätverket</strong> - Beskyddad av okunnighet. Ser bara att Soffia "känner alla" och "vet mycket".</p>
-                <span class="loyalty">Lojalitet: Absolut (familj räddad)</span>
-            </div>
+                <p><strong>Känner INTE till nätverket</strong> - Beskyddad av okunnighet. Ser bara att Soffia "känner alla" och "vet mycket".</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Absolut (familj räddad)</p>
+</div>
         </div>
 
-        <!-- CERMIRA -->
-        <div class="section">
-            <h2>🏰 Cermira-nätverket</h2>
+        
+        <div>
+            <h2>Cermira-nätverket</h2>
             <p>Soffias hemregion där nätverket är starkast. 4 kunskapare i strategiskt viktiga städer.</p>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Marta "Tvätterskorna"</span></h4>
-                <div class="role">Tvättflicka i adelskvarteren</div>
-                <div class="location">📍 Cermira stad, Huvudstaden (7000 inv)</div>
-                <p>Skuldsatt efter mans död, skulle sälja dotter till bordell. Soffia betalade skulden anonymt och ordnade arbete åt dottern.</p>
-                <p><strong>Rapporterar:</strong> Landsrådets diskussioner, adelsfamiljers hemliga möten, rykten om tullar och guldhandel, militära förflyttningar.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (dotter räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Marta "Tvätterskorna"</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Tvättflicka i adelskvarteren</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Cermira stad, Huvudstaden (7000 inv)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Skuldsatt efter mans död, skulle sälja dotter till bordell. Soffia betalade skulden anonymt och ordnade arbete åt dottern.</p>
+                <p><strong>Rapporterar:</strong> Landsrådets diskussioner, adelsfamiljers hemliga möten, rykten om tullar och guldhandel, militära förflyttningar.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (dotter räddad)</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Sven Hammarhand</span></h4>
-                <div class="role">Hamnararbetare och lastkontrollant</div>
-                <div class="location">📍 Cermira stad, Månsjöns hamn</div>
-                <p>Bror dog i gruvras i Vitterdal. Soffia såg till att familjen fick pension och barnen lärlingskap. Kan läsa och skriva (ovanligt för hamnarbetare).</p>
-                <p><strong>Rapporterar:</strong> Vilka fartyg från Jarla/Asharien, ovanliga laster (militära, smuggel), guldtransporter, sjömäns rykten.</p>
-                <span class="loyalty">Lojalitet: Hög (brors familj räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Sven Hammarhand</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Hamnararbetare och lastkontrollant</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Cermira stad, Månsjöns hamn</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Bror dog i gruvras i Vitterdal. Soffia såg till att familjen fick pension och barnen lärlingskap. Kan läsa och skriva (ovanligt för hamnarbetare).</p>
+                <p><strong>Rapporterar:</strong> Vilka fartyg från Jarla/Asharien, ovanliga laster (militära, smuggel), guldtransporter, sjömäns rykten.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Hög (brors familj räddad)</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Moder Elin</span></h4>
-                <div class="role">Pensionerad köksförestånderska</div>
-                <div class="location">📍 Sankt Kira, Pilgrimsort (12000 inv)</div>
-                <p>Anklagades felaktigt för stöld av silverfat. Soffia skickade Syster Mirelle som vittnade om verkliga tjuven. Elin klarades men tvingades pensionera sig.</p>
-                <p><strong>Rapporterar:</strong> Adelsmän som reser söderut mot Jarla, rykten från pilgrimer, landvägstrafik, cirefaliska pilgrimer (spioner?).</p>
-                <span class="loyalty">Lojalitet: Mycket hög (heder räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Moder Elin</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Pensionerad köksförestånderska</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Sankt Kira, Pilgrimsort (12000 inv)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Anklagades felaktigt för stöld av silverfat. Soffia skickade Syster Mirelle som vittnade om verkliga tjuven. Elin klarades men tvingades pensionera sig.</p>
+                <p><strong>Rapporterar:</strong> Adelsmän som reser söderut mot Jarla, rykten från pilgrimer, landvägstrafik, cirefaliska pilgrimer (spioner?).</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (heder räddad)</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Torsten Stallpojke</span></h4>
-                <div class="role">Stallmästare i jarlens stall</div>
-                <div class="location">📍 Sunnanmark (Äppelby), Ätten Kärlings säte</div>
-                <p>Syster våldtogs av Kärling-man. Ingen brydde sig. Soffia ordnade för systern att få arbete i Mitrahus och läkarvård. Torsten hatar Kärlingarna.</p>
-                <p><strong>Rapporterar:</strong> Kärlingarnas krigsmobilisering, vilka allierade de kontaktar, attacker mot Asharien/Jargien, när jarlen reser till Cermira.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (syster räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Torsten Stallpojke</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Stallmästare i jarlens stall</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Sunnanmark (Äppelby), Ätten Kärlings säte</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Syster våldtogs av Kärling-man. Ingen brydde sig. Soffia ordnade för systern att få arbete i Mitrahus och läkarvård. Torsten hatar Kärlingarna.</p>
+                <p><strong>Rapporterar:</strong> Kärlingarnas krigsmobilisering, vilka allierade de kontaktar, attacker mot Asharien/Jargien, när jarlen reser till Cermira.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (syster räddad)</p>
+</div>
         </div>
 
-        <!-- JARLA -->
-        <div class="section">
-            <h2>🏜️ Jarla-nätverket (Asharien)</h2>
+        
+        <div>
+            <h2>Jarla-nätverket (Asharien)</h2>
             <p>Viktigt för att övervaka cirefaliskt inflytande och handelshuset Nejas dominans. 2 kunskapare.</p>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Runo Silvertråd</span></h4>
-                <div class="role">Juvelerare och köpman</div>
-                <div class="location">📍 Jarla, Asharien</div>
-                <p>Liten men välrenommerad juvelerares verkstad. Soffia räddade familjen från konkurs för 5 år sedan. Folk pratar öppet framför honom - "hantverkare bryr sig inte om politik".</p>
-                <p><strong>Rapporterar:</strong> Vilka cirefalier investerar i Jarla-egendom, storköp av vapen/rustningar, ekonomiska förbindelser Nejas-Cirefa, betalningar för "reformer".</p>
-                <span class="loyalty">Lojalitet: Hög (familj räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Runo Silvertråd</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Juvelerare och köpman</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Jarla, Asharien</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Liten men välrenommerad juvelerares verkstad. Soffia räddade familjen från konkurs för 5 år sedan. Folk pratar öppet framför honom - "hantverkare bryr sig inte om politik".</p>
+                <p><strong>Rapporterar:</strong> Vilka cirefalier investerar i Jarla-egendom, storköp av vapen/rustningar, ekonomiska förbindelser Nejas-Cirefa, betalningar för "reformer".</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Hög (familj räddad)</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Disa Trofast</span></h4>
-                <div class="role">Serveringsbiträde</div>
-                <div class="location">📍 Vita Hjorten, Jarla</div>
-                <p>Arbetar på värdshus där cirefaliska diplomater bor. Bror mördades av Skrået, Soffia hjälpte henne fly. Kan läsa och skriva (far var skrivare).</p>
-                <p><strong>Rapporterar:</strong> Cirefaliska militära rörelser, planerar Cirefa militär närvaro i Asharien?, Chetos nästa drag, Nejas-möten med cirefalier.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (bror mördad, fick fly)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Disa Trofast</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Serveringsbiträde</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Vita Hjorten, Jarla</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Arbetar på värdshus där cirefaliska diplomater bor. Bror mördades av Skrået, Soffia hjälpte henne fly. Kan läsa och skriva (far var skrivare).</p>
+                <p><strong>Rapporterar:</strong> Cirefaliska militära rörelser, planerar Cirefa militär närvaro i Asharien?, Chetos nästa drag, Nejas-möten med cirefalier.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (bror mördad, fick fly)</p>
+</div>
         </div>
 
-        <!-- UTVIDGAT NÄTVERK -->
-        <div class="section">
-            <h2>🌍 Utvidgat Nätverk</h2>
+        
+        <div>
+            <h2>Utvidgat Nätverk</h2>
             <p>Enskilda kunskapare i 10 strategiskt viktiga städer över hela Mundana. Rapporterar mer sällan men ger viktiga insikter om regional politik.</p>
 
             <h3>Asharien (3 städer)</h3>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Linna Blekgatan</span></h4>
-                <div class="role">Tvättflicka</div>
-                <div class="location">📍 Camard, Asharien (20000 inv, huvudstad)</div>
-                <p>Mans skulder till Handelshus Temiranz. Soffia betalade skulden för 6 år sedan.</p>
-                <p><strong>Rapporterar:</strong> Landsrådets beslut, överjarl Tyldons gäster, rykten om Temiranz vs Ziliz.</p>
-                <span class="loyalty">Lojalitet: Hög</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Linna Blekgatan</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Tvättflicka</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Camard, Asharien (20000 inv, huvudstad)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Mans skulder till Handelshus Temiranz. Soffia betalade skulden för 6 år sedan.</p>
+                <p><strong>Rapporterar:</strong> Landsrådets beslut, överjarl Tyldons gäster, rykten om Temiranz vs Ziliz.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Hög</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Ervin Stigfinnare</span></h4>
-                <div class="role">Guide och alv-tolk</div>
-                <div class="location">📍 Nada, Asharien (800 inv, port till Sunariskogen)</div>
-                <p>Dotter försvann i Sunariskogen. Soffia skickade Syster Mirelle som hjälpte söka - fann henne levande hos alverna.</p>
-                <p><strong>Rapporterar:</strong> Alvernas rörelser, frijarl Lomins beslut, örthandel.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (dotter räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Ervin Stigfinnare</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Guide och alv-tolk</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Nada, Asharien (800 inv, port till Sunariskogen)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Dotter försvann i Sunariskogen. Soffia skickade Syster Mirelle som hjälpte söka - fann henne levande hos alverna.</p>
+                <p><strong>Rapporterar:</strong> Alvernas rörelser, frijarl Lomins beslut, örthandel.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (dotter räddad)</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Tomas Segelmakar</span></h4>
-                <div class="role">Segelmakarelev</div>
-                <div class="location">📍 Tuzan Rim, Asharien (2000 inv, örlogshamn)</div>
-                <p>Far anklagad för sabotage av örlogsflottans segel. Soffia ordnade bevis för hans oskuld.</p>
-                <p><strong>Rapporterar:</strong> Örlogsflottans rörelser, cirefaliske köpmannen El Benurs planer.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (far räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Tomas Segelmakar</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Segelmakarelev</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Tuzan Rim, Asharien (2000 inv, örlogshamn)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Far anklagad för sabotage av örlogsflottans segel. Soffia ordnade bevis för hans oskuld.</p>
+                <p><strong>Rapporterar:</strong> Örlogsflottans rörelser, cirefaliske köpmannen El Benurs planer.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (far räddad)</p>
+</div>
 
             <h3>Soldarn (2 städer)</h3>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Gina Bryggvakt</span></h4>
-                <div class="role">Värdshusvärdens dotter</div>
-                <div class="location">📍 Västerbrygga, Soldarn (500 inv, militär utpost)</div>
-                <p>Bror deserterade från hertig Larnbrous här. Soffia ordnade för att han skulle "försvinna" norrut och få nytt liv.</p>
-                <p><strong>Rapporterar:</strong> Soldatrykten, tiraköverfallens frekvens, hertig Larnbrous militära planer.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (bror räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Gina Bryggvakt</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Värdshusvärdens dotter</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Västerbrygga, Soldarn (500 inv, militär utpost)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Bror deserterade från hertig Larnbrous här. Soffia ordnade för att han skulle "försvinna" norrut och få nytt liv.</p>
+                <p><strong>Rapporterar:</strong> Soldatrykten, tiraköverfallens frekvens, hertig Larnbrous militära planer.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (bror räddad)</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Moder Sala</span></h4>
-                <div class="role">Bibliotekets städerska</div>
-                <div class="location">📍 Hadarlon, Soldarn (2000 inv, f.d. huvudstad, bibliotek)</div>
-                <p>Åtalad för stöld av forntida kodex. Soffia skickade Syster Mirelle som vittnade om verkliga tjuven (Zoriánmunk).</p>
-                <p><strong>Rapporterar:</strong> Zoriánordens aktivitet, vad forskare söker i biblioteket, hertig Yssecs planer.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (heder räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Moder Sala</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Bibliotekets städerska</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Hadarlon, Soldarn (2000 inv, f.d. huvudstad, bibliotek)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Åtalad för stöld av forntida kodex. Soffia skickade Syster Mirelle som vittnade om verkliga tjuven (Zoriánmunk).</p>
+                <p><strong>Rapporterar:</strong> Zoriánordens aktivitet, vad forskare söker i biblioteket, hertig Yssecs planer.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (heder räddad)</p>
+</div>
 
             <h3>Västmark (1 stad)</h3>
 
-            <div class="person-card">
-                <h4>"Dubbel-Orm"</h4>
-                <div class="role">Gruvarbetare</div>
-                <div class="location">📍 Rampor, Västmark (7000 inv, gruvor, tiraker)</div>
-                <p>Kollapsade i gruvan och skadades svårt. Kantonfurste Persal vägrade läkarvård. Soffia betalade anonymt för läkning. Överlevde men blev puckelryggig.</p>
-                <p><strong>Rapporterar:</strong> Maktkampen Persal vs Nihtor Wekzi, tirakernas planer, gruvproduktion.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (livet räddat)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">"Dubbel-Orm"</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Gruvarbetare</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Rampor, Västmark (7000 inv, gruvor, tiraker)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Kollapsade i gruvan och skadades svårt. Kantonfurste Persal vägrade läkarvård. Soffia betalade anonymt för läkning. Överlevde men blev puckelryggig.</p>
+                <p><strong>Rapporterar:</strong> Maktkampen Persal vs Nihtor Wekzi, tirakernas planer, gruvproduktion.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (livet räddat)</p>
+</div>
 
             <h3>Caserion (2 städer)</h3>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Justus Tullskrivare</span></h4>
-                <div class="role">Tullkontors skrivbiträde</div>
-                <div class="location">📍 Remzian Krack, Caserion (6000 inv, svarta fortet)</div>
-                <p>Syster såldes som slavinna till Cirefa. Soffia köpte fri henne och ordnade arbete i Vitterdal.</p>
-                <p><strong>Rapporterar:</strong> Tullavgifter på Raunfloden, vilka fartyg passerar, cirefaliska militära transporter.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (syster friköpt)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Justus Tullskrivare</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Tullkontors skrivbiträde</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Remzian Krack, Caserion (6000 inv, svarta fortet)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Syster såldes som slavinna till Cirefa. Soffia köpte fri henne och ordnade arbete i Vitterdal.</p>
+                <p><strong>Rapporterar:</strong> Tullavgifter på Raunfloden, vilka fartyg passerar, cirefaliska militära transporter.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (syster friköpt)</p>
+</div>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Alma Smedjans</span></h4>
-                <div class="role">Smedsänka</div>
-                <div class="location">📍 Haraziz Krack, Caserion (2000 inv, garnisonsstad)</div>
-                <p>Man dog i smedjan (dvärgvapen-tillverkning). Caseriska staten vägrade kompensation. Soffia skickade pengar anonymt.</p>
-                <p><strong>Rapporterar:</strong> Krigsflottans rörelser, dvärgvapen-tillverkning, soldatrykten.</p>
-                <span class="loyalty">Lojalitet: Hög</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Alma Smedjans</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Smedsänka</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Haraziz Krack, Caserion (2000 inv, garnisonsstad)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Man dog i smedjan (dvärgvapen-tillverkning). Caseriska staten vägrade kompensation. Soffia skickade pengar anonymt.</p>
+                <p><strong>Rapporterar:</strong> Krigsflottans rörelser, dvärgvapen-tillverkning, soldatrykten.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Hög</p>
+</div>
 
             <h3>Drunok (1 stad)</h3>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Stallpojke Nils</span></h4>
-                <div class="role">Stallmästare vid kungens stall</div>
-                <div class="location">📍 Arlon, Drunok (5000 inv, huvudstad)</div>
-                <p>Far avrättad för desertering. Familjen utarmades. Soffia ordnade lärlingskap i kungsstallet. Han vet inte vem som hjälpte.</p>
-                <p><strong>Rapporterar:</strong> Kungens militära planer mot Jargien, budbärare, jargiska legationens aktivitet.</p>
-                <span class="loyalty">Lojalitet: Hög</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Stallpojke Nils</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Stallmästare vid kungens stall</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Arlon, Drunok (5000 inv, huvudstad)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Far avrättad för desertering. Familjen utarmades. Soffia ordnade lärlingskap i kungsstallet. Han vet inte vem som hjälpte.</p>
+                <p><strong>Rapporterar:</strong> Kungens militära planer mot Jargien, budbärare, jargiska legationens aktivitet.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Hög</p>
+</div>
 
             <h3>Jargien (1 stad)</h3>
 
-            <div class="person-card">
-                <h4><span class="npc-link">Köksflicka Zara</span></h4>
-                <div class="role">Kökshjälp</div>
-                <div class="location">📍 Sor, Jargien (1200 inv, grisfarmar)</div>
-                <p>Bror falskt anklagad för grisstöld (skulle hängas). Soffia skickade Syster Mirelle som vittnade om verkliga tjuven.</p>
-                <p><strong>Rapporterar:</strong> Livsmedelsproduktion till jargiska armén, jargiska militära rörelser nära gränsen.</p>
-                <span class="loyalty">Lojalitet: Mycket hög (bror räddad)</span>
-            </div>
+            <div class="box">
+  <h4 style="margin: 0 0 2px; font: 500 16px/1.4 var(--font-ui); color: var(--ink);">Köksflicka Zara</h4>
+  <p class="prose--secondary" style="margin: 0 0 4px; font-style: italic; max-width: none;">Kökshjälp</p>
+  <p class="eyebrow" style="margin: 0 0 10px;">Sor, Jargien (1200 inv, grisfarmar)</p>
+  <div class="prose prose--secondary" style="max-width: none;"><p>Bror falskt anklagad för grisstöld (skulle hängas). Soffia skickade Syster Mirelle som vittnade om verkliga tjuven.</p>
+                <p><strong>Rapporterar:</strong> Livsmedelsproduktion till jargiska armén, jargiska militära rörelser nära gränsen.</p></div>
+  <p class="prose--secondary" style="margin-top: 10px; max-width: none;">Lojalitet: Mycket hög (bror räddad)</p>
+</div>
         </div>
+  </article>
+</main>
 
-    </div>
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
 
-    <script>
-        // Add NPC links functionality (same as kapitel pages)
-        document.addEventListener('DOMContentLoaded', function() {
-            const npcLinks = document.querySelectorAll('.npc-link');
-            npcLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const npcName = this.textContent.trim();
-                    const encodedName = encodeURIComponent(npcName.toLowerCase());
-                    window.location.href = `index.html#npc-${encodedName}`;
-                });
-            });
-
-            const placeLinks = document.querySelectorAll('.place-link');
-            placeLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    const placeName = this.textContent.trim();
-                    const encodedName = encodeURIComponent(placeName.toLowerCase());
-                    window.location.href = `index.html#plats-${encodedName}`;
-                });
-            });
-        });
-    </script>
+<script src="kapitel/kapitel-linkify.js"></script>
 </body>
 </html>

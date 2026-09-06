@@ -1,543 +1,177 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontinuitetsöversikt - Gravens Arv</title>
-    <style>
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --gold: #ffa500;
-            --bg-dark: #0a0a0a;
-            --bg-card: #1a1a1a;
-            --text-primary: #e0e0e0;
-            --text-secondary: #b0b0b0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a0a0a 100%);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 20px;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            margin-bottom: 40px;
-            border-bottom: 2px solid var(--flame-orange);
-        }
-
-        h1 {
-            font-size: 3em;
-            color: var(--flame-orange);
-            text-shadow: 0 0 20px rgba(255, 107, 74, 0.5);
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 2em;
-            color: var(--mystic-purple);
-            margin-bottom: 20px;
-            border-left: 4px solid var(--mystic-purple);
-            padding-left: 15px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            color: var(--gold);
-            margin-bottom: 15px;
-        }
-
-        .subtitle {
-            color: var(--text-secondary);
-            font-style: italic;
-        }
-
-        .back-nav {
-            display: inline-block;
-            margin-bottom: 20px;
-            padding: 10px 20px;
-            background: var(--bg-card);
-            border: 1px solid var(--flame-orange);
-            border-radius: 5px;
-            color: var(--flame-orange);
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .back-nav:hover {
-            background: var(--flame-orange);
-            color: var(--bg-dark);
-            box-shadow: 0 0 15px rgba(255, 107, 74, 0.5);
-        }
-
-        .score-section {
-            background: var(--bg-card);
-            border: 2px solid var(--flame-orange);
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            text-align: center;
-            box-shadow: 0 0 20px rgba(255, 107, 74, 0.3);
-        }
-
-        .score-value {
-            font-size: 4em;
-            font-weight: bold;
-            color: var(--flame-orange);
-            text-shadow: 0 0 30px rgba(255, 107, 74, 0.8);
-            margin: 20px 0;
-        }
-
-        .score-bar {
-            width: 100%;
-            height: 30px;
-            background: var(--bg-dark);
-            border-radius: 15px;
-            overflow: hidden;
-            margin: 20px 0;
-            border: 1px solid var(--flame-orange);
-        }
-
-        .score-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--deep-red) 0%, var(--flame-orange) 50%, var(--gold) 100%);
-            transition: width 1s ease-out;
-            box-shadow: 0 0 20px rgba(255, 107, 74, 0.6);
-        }
-
-        .section {
-            background: var(--bg-card);
-            border: 1px solid var(--mystic-purple);
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .validation-list {
-            list-style: none;
-            margin: 15px 0;
-        }
-
-        .validation-list li {
-            padding: 12px;
-            margin: 8px 0;
-            border-radius: 5px;
-            border-left: 4px solid;
-            transition: all 0.3s;
-        }
-
-        .validation-list li:hover {
-            transform: translateX(5px);
-        }
-
-        .ok {
-            background: rgba(46, 204, 113, 0.1);
-            border-color: #2ecc71;
-            color: #2ecc71;
-        }
-
-        .warning {
-            background: rgba(255, 165, 0, 0.1);
-            border-color: var(--gold);
-            color: var(--gold);
-        }
-
-        .error {
-            background: rgba(212, 83, 77, 0.1);
-            border-color: var(--deep-red);
-            color: var(--deep-red);
-        }
-
-        .conflicts-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-
-        .conflicts-table th {
-            background: var(--bg-dark);
-            color: var(--flame-orange);
-            padding: 12px;
-            text-align: left;
-            border-bottom: 2px solid var(--flame-orange);
-        }
-
-        .conflicts-table td {
-            padding: 12px;
-            border-bottom: 1px solid rgba(255, 107, 74, 0.2);
-        }
-
-        .conflicts-table tr:hover {
-            background: rgba(255, 107, 74, 0.05);
-        }
-
-        .btn {
-            padding: 8px 16px;
-            background: var(--mystic-purple);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-family: 'Georgia', serif;
-        }
-
-        .btn:hover {
-            background: var(--flame-orange);
-            box-shadow: 0 0 15px rgba(255, 107, 74, 0.5);
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin: 15px 0;
-        }
-
-        .stat-card {
-            background: var(--bg-dark);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid var(--mystic-purple);
-            text-align: center;
-            transition: all 0.3s;
-        }
-
-        .stat-card:hover {
-            border-color: var(--flame-orange);
-            box-shadow: 0 0 20px rgba(255, 107, 74, 0.3);
-            transform: translateY(-5px);
-        }
-
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: bold;
-            color: var(--flame-orange);
-            margin: 10px 0;
-        }
-
-        .stat-label {
-            color: var(--text-secondary);
-            font-size: 0.9em;
-        }
-
-        .timestamp {
-            color: var(--text-secondary);
-            font-size: 0.85em;
-            font-style: italic;
-            margin-top: 10px;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.85em;
-            font-weight: bold;
-            margin: 0 5px;
-        }
-
-        .badge-ok {
-            background: #2ecc71;
-            color: white;
-        }
-
-        .badge-warning {
-            background: var(--gold);
-            color: var(--bg-dark);
-        }
-
-        .badge-error {
-            background: var(--deep-red);
-            color: white;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 50px;
-            border-top: 1px solid var(--flame-orange);
-            color: var(--text-secondary);
-            font-size: 0.9em;
-        }
-
-        .no-conflicts {
-            text-align: center;
-            padding: 30px;
-            color: #2ecc71;
-            font-size: 1.2em;
-        }
-
-        .refresh-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background: var(--flame-orange);
-            border: none;
-            border-radius: 50%;
-            color: white;
-            font-size: 1.5em;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(255, 107, 74, 0.5);
-            transition: all 0.3s;
-        }
-
-        .refresh-btn:hover {
-            transform: rotate(180deg);
-            box-shadow: 0 6px 20px rgba(255, 107, 74, 0.8);
-        }
-
-        .info-box {
-            background: rgba(168, 85, 168, 0.1);
-            border: 1px solid var(--mystic-purple);
-            border-radius: 8px;
-            padding: 15px;
-            margin: 15px 0;
-        }
-
-        .info-box strong {
-            color: var(--mystic-purple);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontinuitetsöversikt – Gravens Arv</title>
+<meta name="description" content="Automatisk validering av kampanjdata: kontinuitetspoäng, systemvalideringar och databasstatistik.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-nav">← Tillbaka till Dashboard</a>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="index.html#kampanjen">Kampanjen</a>
+      <a href="index.html#register">Register</a>
+      <a href="index.html#eget">Eget material</a>
+      <a href="sessioner/index.html">SL</a>
+      <a href="fluff/index.html">Fluff</a>
+    </nav>
+  </div>
+</header>
 
-        <header>
-            <h1>⚔️ Kontinuitetsöversikt ⚔️</h1>
-            <p class="subtitle">Kampanjkontinuitet för "Gravens Arv"</p>
-            <p class="timestamp" id="lastUpdate">Senast uppdaterad: Laddar...</p>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="index.html">Start</a> / <span>Kontinuitet</span></div>
+</div>
 
-        <!-- Score Section -->
-        <div class="score-section">
-            <h3>Kontinuitetspoäng</h3>
-            <div class="score-value" id="scoreValue">--</div>
-            <div class="score-bar">
-                <div class="score-fill" id="scoreFill" style="width: 0%"></div>
-            </div>
-            <p class="subtitle">Baserat på validering av kampanjdata, källor och cross-referenser</p>
-        </div>
+<main class="wrap" style="padding-block: clamp(24px, 4vw, 44px) 72px;">
+  <p class="eyebrow">SL</p>
+  <h1 class="page-title">Kontinuitetsöversikt</h1>
+  <p class="subtitle" id="lastUpdate">Senast uppdaterad: laddar…</p>
 
-        <!-- Validations Section -->
-        <div class="section">
-            <h2>🔍 Systemvalideringar</h2>
-            <ul class="validation-list" id="validationList">
-                <li class="ok">✅ Laddar valideringar...</li>
-            </ul>
-        </div>
+  <div class="box" style="margin-top: clamp(24px, 4vw, 44px); text-align: center;">
+    <span class="box__label">Kontinuitetspoäng</span>
+    <div style="font: 600 48px/1 var(--font-ui); margin: 8px 0;" id="scoreValue">--</div>
+    <div class="score-bar"><div class="score-fill" id="scoreFill" style="width: 0%"></div></div>
+    <p class="prose--secondary" style="margin: 12px 0 0; max-width: none;">Baserat på validering av kampanjdata, källor och cross-referenser.</p>
+  </div>
 
-        <!-- Conflicts Section -->
-        <div class="section">
-            <h2>⚠️ Aktiva Konflikter</h2>
-            <div id="conflictsContainer">
-                <p class="timestamp">Analyserar konflikter...</p>
-            </div>
-        </div>
+  <div class="section-head" style="margin-top: clamp(28px, 4vw, 44px);">
+    <h2>Systemvalideringar</h2>
+  </div>
+  <ol class="rows" id="validationList">
+    <li class="row row--simple"><span class="row__title">Laddar valideringar…</span></li>
+  </ol>
 
-        <!-- Database Stats Section -->
-        <div class="section">
-            <h2>📊 Databasstatistik</h2>
-            <div class="stats-grid" id="statsGrid">
-                <!-- Stats will be populated here -->
-            </div>
-        </div>
+  <div class="section-head" style="margin-top: clamp(28px, 4vw, 44px);">
+    <h2>Aktiva konflikter</h2>
+  </div>
+  <div id="conflictsContainer" style="margin-top: 16px;">
+    <p class="prose--secondary" style="max-width: none;">Analyserar konflikter…</p>
+  </div>
 
-        <!-- Learnings Section -->
-        <div class="section">
-            <h2>🧠 Kontinuitetsregler</h2>
-            <div class="info-box">
-                <p><strong>Learnings-kategorier dokumenterade:</strong></p>
-                <ul style="margin: 10px 0; padding-left: 30px;">
-                    <li>wiki_data.js validering</li>
-                    <li>Agent-användning (eon-npc-adder vs eon-data-guardian)</li>
-                    <li>Kampanjkrönika som master source</li>
-                    <li>Geografi: Distanser och resvägar</li>
-                    <li>Tidslinje: Händelseordning</li>
-                    <li>Relationer: NPC-kontinuitet</li>
-                    <li>Status-ändringar: Levande/Död</li>
-                    <li>Världsbygge: Fluff-kontinuitet</li>
-                    <li>Stilguide: Narrativ kontinuitet</li>
-                </ul>
-                <p class="timestamp">Se <code>.claude/memory/learnings.md</code> för detaljer</p>
-            </div>
-        </div>
+  <div class="section-head" style="margin-top: clamp(28px, 4vw, 44px);">
+    <h2>Databasstatistik</h2>
+  </div>
+  <div class="stat-grid" id="statsGrid"></div>
 
-        <footer>
-            <p>EON Kampanjwiki - "Gravens Arv"</p>
-            <p>Kontinuitetssystem implementerat 2026-01-22</p>
-        </footer>
-    </div>
+  <div class="section-head" style="margin-top: clamp(28px, 4vw, 44px);">
+    <h2>Kontinuitetsregler</h2>
+  </div>
+  <div class="box" style="margin-top: 16px;">
+    <span class="box__label">Learnings-kategorier dokumenterade</span>
+    <ul style="margin: 10px 0 0 20px;">
+      <li>wiki_data.js validering</li>
+      <li>Agent-användning (eon-npc-adder vs eon-data-guardian)</li>
+      <li>Kampanjkrönika som master source</li>
+      <li>Geografi: Distanser och resvägar</li>
+      <li>Tidslinje: Händelseordning</li>
+      <li>Relationer: NPC-kontinuitet</li>
+      <li>Status-ändringar: Levande/Död</li>
+      <li>Världsbygge: Fluff-kontinuitet</li>
+      <li>Stilguide: Narrativ kontinuitet</li>
+    </ul>
+    <p class="prose--secondary" style="margin: 12px 0 0; max-width: none;">Se <code>.claude/memory/learnings.md</code> för detaljer.</p>
+  </div>
+</main>
 
-    <button class="refresh-btn" onclick="loadData()" title="Uppdatera data">↻</button>
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+    <span style="margin-left: auto;"><button id="refreshBtn" class="chip" type="button">Uppdatera</button></span>
+  </div>
+</footer>
 
-    <script>
-        // Load wiki_data.js for statistics
-        const script = document.createElement('script');
-        script.src = 'master/wiki_data.js';
-        script.onload = function() {
-            loadData();
-        };
-        document.head.appendChild(script);
+<script src="master/wiki_data.js"></script>
+<script>
+  function loadData() {
+    document.getElementById('lastUpdate').textContent =
+      'Senast uppdaterad: ' + new Date().toLocaleString('sv-SE');
 
-        function loadData() {
-            console.log('Laddar kontinuitetsdata...');
+    if (typeof wikiData === 'undefined') {
+      console.error('wiki_data.js inte laddad ännu');
+      setTimeout(loadData, 1000);
+      return;
+    }
+    calculateScore();
+    populateValidations();
+    populateConflicts();
+    populateStats();
+  }
 
-            // Update timestamp
-            document.getElementById('lastUpdate').textContent =
-                'Senast uppdaterad: ' + new Date().toLocaleString('sv-SE');
+  function calculateScore() {
+    let score = 100;
+    const npcsWithoutImages = wikiData.npcs.filter(npc => !npc.bild).length;
+    score -= Math.min(npcsWithoutImages * 0.05, 10);
+    const placesWithoutImages = wikiData.platser.filter(p => !p.bild).length;
+    score -= Math.min(placesWithoutImages * 0.1, 5);
+    score = Math.max(Math.round(score), 0);
 
-            // Calculate score and populate data
-            if (typeof wikiData !== 'undefined') {
-                calculateScore();
-                populateValidations();
-                populateConflicts();
-                populateStats();
-            } else {
-                console.error('wiki_data.js inte laddad ännu');
-                setTimeout(loadData, 1000); // Retry after 1 second
-            }
-        }
+    document.getElementById('scoreValue').textContent = score + '/100';
+    const fill = document.getElementById('scoreFill');
+    fill.style.width = score + '%';
+    fill.classList.toggle('score-fill--warn', score < 80);
+  }
 
-        function calculateScore() {
-            // Simple scoring algorithm
-            let score = 100;
-            let penalties = [];
+  function populateValidations() {
+    const validations = [
+      { warn: false, text: 'wiki_data.js syntax: OK (laddat i browser)' },
+      { warn: false, text: `NPCs i databas: ${wikiData.npcs.length} st` },
+      { warn: false, text: `Platser i databas: ${wikiData.platser.length} st` },
+      { warn: false, text: `Kapitel dokumenterade: ${wikiData.kapitel.length} st` },
+      { warn: false, text: 'Learnings.md: 16 kategorier dokumenterade' },
+      { warn: true, text: `NPCs utan bilder: ${wikiData.npcs.filter(n => !n.bild).length} st` },
+      { warn: true, text: `Platser utan bilder: ${wikiData.platser.filter(p => !p.bild).length} st` },
+    ];
+    document.getElementById('validationList').innerHTML = validations.map(v => `
+      <li class="row row--simple">
+        <span class="row__title">${v.text}</span>
+        <span class="row__status${v.warn ? ' row__status--aktiv' : ''}">${v.warn ? 'Varning' : 'OK'}</span>
+      </li>
+    `).join('');
+  }
 
-            // Check NPCs without images (-0.05 per missing)
-            const npcsWithoutImages = wikiData.npcs.filter(npc => !npc.bild).length;
-            const imagePenalty = Math.min(npcsWithoutImages * 0.05, 10);
-            score -= imagePenalty;
-            if (imagePenalty > 0) {
-                penalties.push(`NPCs utan bilder: -${imagePenalty.toFixed(1)}`);
-            }
+  function populateConflicts() {
+    const conflicts = [];
+    const container = document.getElementById('conflictsContainer');
+    if (conflicts.length === 0) {
+      container.innerHTML = '<p class="prose--secondary" style="max-width:none;">Inga kända konflikter detekterade.</p>';
+      return;
+    }
+    container.innerHTML = `<ol class="rows">${conflicts.map(c => `
+      <li class="row row--simple"><span class="row__title">${c.npc}</span><span class="row__meta">${c.source1} vs ${c.source2}</span></li>
+    `).join('')}</ol>`;
+  }
 
-            // Check places without images (-0.1 per missing)
-            const placesWithoutImages = wikiData.platser.filter(plats => !plats.bild).length;
-            const placePenalty = Math.min(placesWithoutImages * 0.1, 5);
-            score -= placePenalty;
-            if (placePenalty > 0) {
-                penalties.push(`Platser utan bilder: -${placePenalty.toFixed(1)}`);
-            }
+  function populateStats() {
+    const npcsWithImages = wikiData.npcs.filter(n => n.bild).length;
+    const placesWithImages = wikiData.platser.filter(p => p.bild).length;
+    const kapitelSidor = 11;
+    const stats = [
+      { number: wikiData.npcs.length, label: 'Totalt NPC:er' },
+      { number: npcsWithImages, label: 'NPC:er med bilder' },
+      { number: wikiData.npcs.length - npcsWithImages, label: 'NPC:er utan bilder' },
+      { number: wikiData.platser.length, label: 'Totalt platser' },
+      { number: placesWithImages, label: 'Platser med bilder' },
+      { number: wikiData.platser.length - placesWithImages, label: 'Platser utan bilder' },
+      { number: wikiData.kapitel.length, label: 'Kapitel dokumenterade' },
+      { number: kapitelSidor, label: 'Kapitel-HTML-sidor' },
+      { number: 16, label: 'Learnings-kategorier' },
+    ];
+    document.getElementById('statsGrid').innerHTML = stats.map(s => `
+      <div class="stat"><span class="stat__label">${s.label}</span><span class="stat__value">${s.number}</span></div>
+    `).join('');
+  }
 
-            // Round score
-            score = Math.max(Math.round(score), 0);
-
-            // Update UI
-            document.getElementById('scoreValue').textContent = score + '/100';
-            document.getElementById('scoreFill').style.width = score + '%';
-
-            console.log('Kontinuitetspoäng:', score, 'Avdrag:', penalties);
-        }
-
-        function populateValidations() {
-            const validations = [
-                { status: 'ok', text: '✅ wiki_data.js syntax: OK (laddat i browser)' },
-                { status: 'ok', text: `✅ NPCs i databas: ${wikiData.npcs.length} st` },
-                { status: 'ok', text: `✅ Platser i databas: ${wikiData.platser.length} st` },
-                { status: 'ok', text: `✅ Kapitel dokumenterade: ${wikiData.kapitel.length} st` },
-                { status: 'ok', text: '✅ Learnings.md: 15 kategorier dokumenterade' },
-                { status: 'warning', text: `⚠️ NPCs utan bilder: ${wikiData.npcs.filter(npc => !npc.bild).length} st` },
-                { status: 'warning', text: `⚠️ Platser utan bilder: ${wikiData.platser.filter(plats => !plats.bild).length} st` },
-                { status: 'warning', text: '⚠️ Saknade kapitel-sidor: 6 st (4, 5, 6, 7, 8, 10)' }
-            ];
-
-            const listHtml = validations.map(v =>
-                `<li class="${v.status}">${v.text}</li>`
-            ).join('');
-
-            document.getElementById('validationList').innerHTML = listHtml;
-        }
-
-        function populateConflicts() {
-            // Example conflicts - in real implementation, this would analyze actual data
-            const conflicts = [
-                // Example: { npc: 'Silvius', source1: 'wiki: levande', source2: 'Kapitel 9: död', fix: 'Rätta wiki_data.js' }
-            ];
-
-            const container = document.getElementById('conflictsContainer');
-
-            if (conflicts.length === 0) {
-                container.innerHTML = '<p class="no-conflicts">✅ Inga kända konflikter detekterade!</p>';
-            } else {
-                const tableHtml = `
-                    <table class="conflicts-table">
-                        <thead>
-                            <tr>
-                                <th>NPC/Element</th>
-                                <th>Källa 1</th>
-                                <th>Källa 2</th>
-                                <th>Åtgärd</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${conflicts.map(c => `
-                                <tr>
-                                    <td><strong>${c.npc}</strong></td>
-                                    <td>${c.source1}</td>
-                                    <td>${c.source2}</td>
-                                    <td><button class="btn" onclick="alert('${c.fix}')">${c.fix}</button></td>
-                                </tr>
-                            `).join('')}
-                        </tbody>
-                    </table>
-                `;
-                container.innerHTML = tableHtml;
-            }
-        }
-
-        function populateStats() {
-            const npcsWithImages = wikiData.npcs.filter(npc => npc.bild).length;
-            const npcsWithoutImages = wikiData.npcs.length - npcsWithImages;
-            const placesWithImages = wikiData.platser.filter(plats => plats.bild).length;
-            const placesWithoutImages = wikiData.platser.length - placesWithImages;
-
-            const stats = [
-                { number: wikiData.npcs.length, label: 'Totalt NPCs', badge: 'ok' },
-                { number: npcsWithImages, label: 'NPCs med bilder', badge: 'ok' },
-                { number: npcsWithoutImages, label: 'NPCs utan bilder', badge: 'warning' },
-                { number: wikiData.platser.length, label: 'Totalt Platser', badge: 'ok' },
-                { number: placesWithImages, label: 'Platser med bilder', badge: 'ok' },
-                { number: placesWithoutImages, label: 'Platser utan bilder', badge: 'warning' },
-                { number: wikiData.kapitel.length, label: 'Kapitel dokumenterade', badge: 'ok' },
-                { number: 5, label: 'Kapitel HTML-sidor', badge: 'warning' },
-                { number: 15, label: 'Learnings-kategorier', badge: 'ok' }
-            ];
-
-            const statsHtml = stats.map(s => `
-                <div class="stat-card">
-                    <div class="stat-number">${s.number}</div>
-                    <div class="stat-label">${s.label}</div>
-                    <span class="badge badge-${s.badge}">${s.badge === 'ok' ? 'OK' : 'Varning'}</span>
-                </div>
-            `).join('');
-
-            document.getElementById('statsGrid').innerHTML = statsHtml;
-        }
-
-        // Auto-refresh every 5 minutes
-        setInterval(loadData, 5 * 60 * 1000);
-    </script>
+  document.getElementById('refreshBtn').addEventListener('click', loadData);
+  window.addEventListener('DOMContentLoaded', loadData);
+  setInterval(loadData, 5 * 60 * 1000);
+</script>
 </body>
 </html>
