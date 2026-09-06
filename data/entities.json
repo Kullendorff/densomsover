@@ -1,0 +1,2167 @@
+[
+  {
+    "namn": "\"Dubbel-Orm\"",
+    "typ": "npc",
+    "slug": "dubbel-orm"
+  },
+  {
+    "namn": "\"Dubbel-Orm\"",
+    "typ": "npc",
+    "slug": "dubbel-orm-2"
+  },
+  {
+    "namn": "Abir Hasan Ben Amih Jaakoh",
+    "typ": "npc",
+    "slug": "abir-hasan-ben-amih-jaakoh"
+  },
+  {
+    "namn": "Adisa",
+    "typ": "npc",
+    "slug": "adisa"
+  },
+  {
+    "namn": "Aisha bint-Najib",
+    "typ": "npc",
+    "slug": "aisha-bint-najib"
+  },
+  {
+    "namn": "Alaric",
+    "typ": "npc",
+    "slug": "alaric"
+  },
+  {
+    "namn": "Ali ibn-Yusuf",
+    "typ": "npc",
+    "slug": "ali-ibn-yusuf"
+  },
+  {
+    "namn": "Alistair Bågskytt",
+    "typ": "npc",
+    "slug": "alistair-bagskytt"
+  },
+  {
+    "namn": "Alma Smedjans",
+    "typ": "npc",
+    "slug": "alma-smedjans"
+  },
+  {
+    "namn": "Alokhara",
+    "typ": "npc",
+    "slug": "alokhara"
+  },
+  {
+    "namn": "Amina bint-Farid",
+    "typ": "npc",
+    "slug": "amina-bint-farid"
+  },
+  {
+    "namn": "Amina bint-Khalid",
+    "typ": "npc",
+    "slug": "amina-bint-khalid"
+  },
+  {
+    "namn": "Amina bint-Rashid",
+    "typ": "npc",
+    "slug": "amina-bint-rashid"
+  },
+  {
+    "namn": "Amina bint-Salim",
+    "typ": "npc",
+    "slug": "amina-bint-salim"
+  },
+  {
+    "namn": "Amir ibn-Farouk",
+    "typ": "npc",
+    "slug": "amir-ibn-farouk"
+  },
+  {
+    "namn": "Amira bint-Hassan",
+    "typ": "npc",
+    "slug": "amira-bint-hassan"
+  },
+  {
+    "namn": "Amira bint-Zayed",
+    "typ": "npc",
+    "slug": "amira-bint-zayed"
+  },
+  {
+    "namn": "Anna Stenmark",
+    "typ": "npc",
+    "slug": "anna-stenmark"
+  },
+  {
+    "namn": "Anya Väv",
+    "typ": "npc",
+    "slug": "anya-vav"
+  },
+  {
+    "namn": "Arimar Khard",
+    "typ": "npc",
+    "slug": "arimar-khard"
+  },
+  {
+    "namn": "Arvorns Hammare-representant",
+    "typ": "npc",
+    "slug": "arvorns-hammare-representant"
+  },
+  {
+    "namn": "Astrid Björnsdotter",
+    "typ": "npc",
+    "slug": "astrid-bjornsdotter"
+  },
+  {
+    "namn": "Bartol",
+    "typ": "npc",
+    "slug": "bartol"
+  },
+  {
+    "namn": "Beef",
+    "typ": "npc",
+    "slug": "beef"
+  },
+  {
+    "namn": "Bei Amin Ben Lahwan",
+    "typ": "npc",
+    "slug": "bei-amin-ben-lahwan"
+  },
+  {
+    "namn": "Ben-Bannar Barada",
+    "typ": "npc",
+    "slug": "ben-bannar-barada"
+  },
+  {
+    "namn": "Benne Tok",
+    "typ": "npc",
+    "slug": "benne-tok"
+  },
+  {
+    "namn": "Berak",
+    "typ": "npc",
+    "slug": "berak"
+  },
+  {
+    "namn": "Beric Brorson",
+    "typ": "npc",
+    "slug": "beric-brorson"
+  },
+  {
+    "namn": "Berta 'Flodkvinna' Eriksdotter",
+    "typ": "npc",
+    "slug": "berta-flodkvinna-eriksdotter"
+  },
+  {
+    "namn": "Björn Hammarsmed",
+    "typ": "npc",
+    "slug": "bjorn-hammarsmed"
+  },
+  {
+    "namn": "Borga Stenhands",
+    "typ": "npc",
+    "slug": "borga-stenhands"
+  },
+  {
+    "namn": "Branar Tirakson",
+    "typ": "npc",
+    "slug": "branar-tirakson"
+  },
+  {
+    "namn": "Brigga Kyllo",
+    "typ": "npc",
+    "slug": "brigga-kyllo"
+  },
+  {
+    "namn": "Broder Tomas",
+    "typ": "npc",
+    "slug": "broder-tomas"
+  },
+  {
+    "namn": "Bror Tallgren",
+    "typ": "npc",
+    "slug": "bror-tallgren"
+  },
+  {
+    "namn": "Brynjar",
+    "typ": "npc",
+    "slug": "brynjar"
+  },
+  {
+    "namn": "Båg-Pieter",
+    "typ": "npc",
+    "slug": "bag-pieter"
+  },
+  {
+    "namn": "Daela Häxmästare",
+    "typ": "npc",
+    "slug": "daela-haxmastare"
+  },
+  {
+    "namn": "Dain Stenyxa",
+    "typ": "npc",
+    "slug": "dain-stenyxa"
+  },
+  {
+    "namn": "Darian den Snabbe",
+    "typ": "npc",
+    "slug": "darian-den-snabbe"
+  },
+  {
+    "namn": "Darim al-Fazul",
+    "typ": "npc",
+    "slug": "darim-al-fazul"
+  },
+  {
+    "namn": "Darina",
+    "typ": "npc",
+    "slug": "darina"
+  },
+  {
+    "namn": "Dask Ymer",
+    "typ": "npc",
+    "slug": "dask-ymer"
+  },
+  {
+    "namn": "Demonen Urkhath",
+    "typ": "npc",
+    "slug": "demonen-urkhath"
+  },
+  {
+    "namn": "Den blinda spåkvinnan",
+    "typ": "npc",
+    "slug": "den-blinda-spakvinnan"
+  },
+  {
+    "namn": "Dezerteuren",
+    "typ": "npc",
+    "slug": "dezerteuren"
+  },
+  {
+    "namn": "Dhormel",
+    "typ": "npc",
+    "slug": "dhormel"
+  },
+  {
+    "namn": "Dimgumman",
+    "typ": "npc",
+    "slug": "dimgumman"
+  },
+  {
+    "namn": "Disa Trofast",
+    "typ": "npc",
+    "slug": "disa-trofast"
+  },
+  {
+    "namn": "Ditte Lundbäck",
+    "typ": "npc",
+    "slug": "ditte-lundback"
+  },
+  {
+    "namn": "Dorian Sproll",
+    "typ": "npc",
+    "slug": "dorian-sproll"
+  },
+  {
+    "namn": "Dorin Kallhammare",
+    "typ": "npc",
+    "slug": "dorin-kallhammare"
+  },
+  {
+    "namn": "Dorn Stenbärare",
+    "typ": "npc",
+    "slug": "dorn-stenbarare"
+  },
+  {
+    "namn": "Dr. Yusuf al-Mansur",
+    "typ": "npc",
+    "slug": "dr-yusuf-al-mansur"
+  },
+  {
+    "namn": "Dubbel-Orm",
+    "typ": "npc",
+    "slug": "dubbel-orm-3"
+  },
+  {
+    "namn": "Eira Holm",
+    "typ": "npc",
+    "slug": "eira-holm"
+  },
+  {
+    "namn": "Elara can De Mediva",
+    "typ": "npc",
+    "slug": "elara-can-de-mediva"
+  },
+  {
+    "namn": "Elira \"Sirenen\"",
+    "typ": "npc",
+    "slug": "elira-sirenen"
+  },
+  {
+    "namn": "Eloise",
+    "typ": "npc",
+    "slug": "eloise"
+  },
+  {
+    "namn": "Elsa Hällström",
+    "typ": "npc",
+    "slug": "elsa-hallstrom"
+  },
+  {
+    "namn": "Enarmade Gunnar",
+    "typ": "npc",
+    "slug": "enarmade-gunnar"
+  },
+  {
+    "namn": "Enöga Klas",
+    "typ": "npc",
+    "slug": "enoga-klas"
+  },
+  {
+    "namn": "Erik Bergsson",
+    "typ": "npc",
+    "slug": "erik-bergsson"
+  },
+  {
+    "namn": "Erik Björkgren",
+    "typ": "npc",
+    "slug": "erik-bjorkgren"
+  },
+  {
+    "namn": "Ervin Stigfinnare",
+    "typ": "npc",
+    "slug": "ervin-stigfinnare"
+  },
+  {
+    "namn": "Esma Randarrohästare",
+    "typ": "npc",
+    "slug": "esma-randarrohastare"
+  },
+  {
+    "namn": "Esmeralda de Vries",
+    "typ": "npc",
+    "slug": "esmeralda-de-vries"
+  },
+  {
+    "namn": "Ethan Nahrzezia",
+    "typ": "npc",
+    "slug": "ethan-nahrzezia"
+  },
+  {
+    "namn": "Evelina Fältsyster",
+    "typ": "npc",
+    "slug": "evelina-faltsyster"
+  },
+  {
+    "namn": "Fadil ibn-Yusuf",
+    "typ": "npc",
+    "slug": "fadil-ibn-yusuf"
+  },
+  {
+    "namn": "Fahad al-Khouri",
+    "typ": "npc",
+    "slug": "fahad-al-khouri"
+  },
+  {
+    "namn": "Farid al-Malik",
+    "typ": "npc",
+    "slug": "farid-al-malik"
+  },
+  {
+    "namn": "Faster Solveig",
+    "typ": "npc",
+    "slug": "faster-solveig"
+  },
+  {
+    "namn": "Fatima bint-Ali",
+    "typ": "npc",
+    "slug": "fatima-bint-ali"
+  },
+  {
+    "namn": "Fatima bint-Salim",
+    "typ": "npc",
+    "slug": "fatima-bint-salim"
+  },
+  {
+    "namn": "Fhe Ehdsim",
+    "typ": "npc",
+    "slug": "fhe-ehdsim"
+  },
+  {
+    "namn": "Flodsköldpaddan",
+    "typ": "npc",
+    "slug": "flodskoldpaddan"
+  },
+  {
+    "namn": "Fredricca",
+    "typ": "npc",
+    "slug": "fredricca"
+  },
+  {
+    "namn": "Gamle Sigurd",
+    "typ": "npc",
+    "slug": "gamle-sigurd"
+  },
+  {
+    "namn": "Gammal-Erik",
+    "typ": "npc",
+    "slug": "gammal-erik"
+  },
+  {
+    "namn": "Gardar \"Falköga\"",
+    "typ": "npc",
+    "slug": "gardar-falkoga"
+  },
+  {
+    "namn": "Garsten \"Soppsleven\" Tretre",
+    "typ": "npc",
+    "slug": "garsten-soppsleven-tretre"
+  },
+  {
+    "namn": "Gavric",
+    "typ": "npc",
+    "slug": "gavric"
+  },
+  {
+    "namn": "Gazroz Tzerion",
+    "typ": "npc",
+    "slug": "gazroz-tzerion"
+  },
+  {
+    "namn": "Gekthath av Wezi",
+    "typ": "npc",
+    "slug": "gekthath-av-wezi"
+  },
+  {
+    "namn": "Gerrick",
+    "typ": "npc",
+    "slug": "gerrick"
+  },
+  {
+    "namn": "Ghabel ben Taghob",
+    "typ": "npc",
+    "slug": "ghabel-ben-taghob"
+  },
+  {
+    "namn": "Ghalib al-Nur",
+    "typ": "npc",
+    "slug": "ghalib-al-nur"
+  },
+  {
+    "namn": "Gina Bryggvakt",
+    "typ": "npc",
+    "slug": "gina-bryggvakt"
+  },
+  {
+    "namn": "Gransen",
+    "typ": "npc",
+    "slug": "gransen"
+  },
+  {
+    "namn": "Griknar Granitson",
+    "typ": "npc",
+    "slug": "griknar-granitson"
+  },
+  {
+    "namn": "Grimdal Tungöga",
+    "typ": "npc",
+    "slug": "grimdal-tungoga"
+  },
+  {
+    "namn": "Grimme Jansen",
+    "typ": "npc",
+    "slug": "grimme-jansen"
+  },
+  {
+    "namn": "Gripvibe",
+    "typ": "npc",
+    "slug": "gripvibe"
+  },
+  {
+    "namn": "Gråben",
+    "typ": "npc",
+    "slug": "graben"
+  },
+  {
+    "namn": "Gumman Ragnhild",
+    "typ": "npc",
+    "slug": "gumman-ragnhild"
+  },
+  {
+    "namn": "Gustav Stenmark",
+    "typ": "npc",
+    "slug": "gustav-stenmark"
+  },
+  {
+    "namn": "Hadrian \"Hagge\" av Vitterdal",
+    "typ": "npc",
+    "slug": "hadrian-hagge-av-vitterdal"
+  },
+  {
+    "namn": "Hakim al-Rashid",
+    "typ": "npc",
+    "slug": "hakim-al-rashid"
+  },
+  {
+    "namn": "Halinor",
+    "typ": "npc",
+    "slug": "halinor"
+  },
+  {
+    "namn": "Halmar",
+    "typ": "npc",
+    "slug": "halmar"
+  },
+  {
+    "namn": "Halrik Kord",
+    "typ": "npc",
+    "slug": "halrik-kord"
+  },
+  {
+    "namn": "Halvdan Kolare",
+    "typ": "npc",
+    "slug": "halvdan-kolare"
+  },
+  {
+    "namn": "Hamnmäklaren",
+    "typ": "npc",
+    "slug": "hamnmaklaren"
+  },
+  {
+    "namn": "Hamnmästaren",
+    "typ": "npc",
+    "slug": "hamnmastaren"
+  },
+  {
+    "namn": "Harald Vädermästare",
+    "typ": "npc",
+    "slug": "harald-vadermastare"
+  },
+  {
+    "namn": "Harun al-Farid",
+    "typ": "npc",
+    "slug": "harun-al-farid"
+  },
+  {
+    "namn": "Hassan al-Rashid",
+    "typ": "npc",
+    "slug": "hassan-al-rashid"
+  },
+  {
+    "namn": "Hassan ibn-Khalid",
+    "typ": "npc",
+    "slug": "hassan-ibn-khalid"
+  },
+  {
+    "namn": "Helena Stenmark",
+    "typ": "npc",
+    "slug": "helena-stenmark"
+  },
+  {
+    "namn": "Helga \"Storhuvud\" Järnoxen",
+    "typ": "npc",
+    "slug": "helga-storhuvud-jarnoxen"
+  },
+  {
+    "namn": "Hemkhath Thokk",
+    "typ": "npc",
+    "slug": "hemkhath-thokk"
+  },
+  {
+    "namn": "Herr Thall Spjut av Lundnäs",
+    "typ": "npc",
+    "slug": "herr-thall-spjut-av-lundnas"
+  },
+  {
+    "namn": "Hunter",
+    "typ": "npc",
+    "slug": "hunter"
+  },
+  {
+    "namn": "Ibrahim al-Dawood",
+    "typ": "npc",
+    "slug": "ibrahim-al-dawood"
+  },
+  {
+    "namn": "Ibran Anderyttare",
+    "typ": "npc",
+    "slug": "ibran-anderyttare"
+  },
+  {
+    "namn": "Inga Bredaxel",
+    "typ": "npc",
+    "slug": "inga-bredaxel"
+  },
+  {
+    "namn": "Ingvild",
+    "typ": "npc",
+    "slug": "ingvild"
+  },
+  {
+    "namn": "Isla",
+    "typ": "npc",
+    "slug": "isla"
+  },
+  {
+    "namn": "Isolde Eldkonstnär",
+    "typ": "npc",
+    "slug": "isolde-eldkonstnar"
+  },
+  {
+    "namn": "Ivon Barsk",
+    "typ": "npc",
+    "slug": "ivon-barsk"
+  },
+  {
+    "namn": "Jaela Härlig",
+    "typ": "npc",
+    "slug": "jaela-harlig"
+  },
+  {
+    "namn": "Jakob",
+    "typ": "npc",
+    "slug": "jakob"
+  },
+  {
+    "namn": "Jamal ibn-Mustafa",
+    "typ": "npc",
+    "slug": "jamal-ibn-mustafa"
+  },
+  {
+    "namn": "Jamil al-Baz",
+    "typ": "npc",
+    "slug": "jamil-al-baz"
+  },
+  {
+    "namn": "Jeorg Rask",
+    "typ": "npc",
+    "slug": "jeorg-rask"
+  },
+  {
+    "namn": "Jeskia av Nejas",
+    "typ": "npc",
+    "slug": "jeskia-av-nejas"
+  },
+  {
+    "namn": "Jonna Sköldbärare",
+    "typ": "npc",
+    "slug": "jonna-skoldbarare"
+  },
+  {
+    "namn": "Joran",
+    "typ": "npc",
+    "slug": "joran"
+  },
+  {
+    "namn": "Jorn Halgon",
+    "typ": "npc",
+    "slug": "jorn-halgon"
+  },
+  {
+    "namn": "Jossan Fallvind",
+    "typ": "npc",
+    "slug": "jossan-fallvind"
+  },
+  {
+    "namn": "Justus Tullskrivare",
+    "typ": "npc",
+    "slug": "justus-tullskrivare"
+  },
+  {
+    "namn": "Kaelar Stålsvärd",
+    "typ": "npc",
+    "slug": "kaelar-stalsvard"
+  },
+  {
+    "namn": "Kaelthar Klerk",
+    "typ": "npc",
+    "slug": "kaelthar-klerk"
+  },
+  {
+    "namn": "Kairkhan Nayman",
+    "typ": "npc",
+    "slug": "kairkhan-nayman"
+  },
+  {
+    "namn": "Kald Silvermask",
+    "typ": "npc",
+    "slug": "kald-silvermask"
+  },
+  {
+    "namn": "Kapten Eamon",
+    "typ": "npc",
+    "slug": "kapten-eamon"
+  },
+  {
+    "namn": "Kapten Mordicus Helga",
+    "typ": "npc",
+    "slug": "kapten-mordicus-helga"
+  },
+  {
+    "namn": "Kapten Nilmar \"Isnavigatorn\"",
+    "typ": "npc",
+    "slug": "kapten-nilmar-isnavigatorn"
+  },
+  {
+    "namn": "Karim al-Jafar",
+    "typ": "npc",
+    "slug": "karim-al-jafar"
+  },
+  {
+    "namn": "Karim Berättaren",
+    "typ": "npc",
+    "slug": "karim-berattaren"
+  },
+  {
+    "namn": "Karim ibn-Hassan",
+    "typ": "npc",
+    "slug": "karim-ibn-hassan"
+  },
+  {
+    "namn": "Kasim ibn-Farid",
+    "typ": "npc",
+    "slug": "kasim-ibn-farid"
+  },
+  {
+    "namn": "Kefal Isma'il IV",
+    "typ": "npc",
+    "slug": "kefal-isma-il-iv"
+  },
+  {
+    "namn": "Kefal Khabi Jaakoh",
+    "typ": "npc",
+    "slug": "kefal-khabi-jaakoh"
+  },
+  {
+    "namn": "Kefal Marammar den vise",
+    "typ": "npc",
+    "slug": "kefal-marammar-den-vise"
+  },
+  {
+    "namn": "Kefal Salodan den store",
+    "typ": "npc",
+    "slug": "kefal-salodan-den-store"
+  },
+  {
+    "namn": "Khabin Ben Kemal",
+    "typ": "npc",
+    "slug": "khabin-ben-kemal"
+  },
+  {
+    "namn": "Khalid al-Tamir",
+    "typ": "npc",
+    "slug": "khalid-al-tamir"
+  },
+  {
+    "namn": "Khalid ibn-Mustafa",
+    "typ": "npc",
+    "slug": "khalid-ibn-mustafa"
+  },
+  {
+    "namn": "Klas Hällström",
+    "typ": "npc",
+    "slug": "klas-hallstrom"
+  },
+  {
+    "namn": "Kolaren Svart-Erik",
+    "typ": "npc",
+    "slug": "kolaren-svart-erik"
+  },
+  {
+    "namn": "Kommendör Aldrich Järnkors",
+    "typ": "npc",
+    "slug": "kommendor-aldrich-jarnkors"
+  },
+  {
+    "namn": "Kommendör Reval",
+    "typ": "npc",
+    "slug": "kommendor-reval"
+  },
+  {
+    "namn": "Konrad",
+    "typ": "npc",
+    "slug": "konrad"
+  },
+  {
+    "namn": "Kopparsansen",
+    "typ": "npc",
+    "slug": "kopparsansen"
+  },
+  {
+    "namn": "Krake Fiskare",
+    "typ": "npc",
+    "slug": "krake-fiskare"
+  },
+  {
+    "namn": "Kuchlug",
+    "typ": "npc",
+    "slug": "kuchlug"
+  },
+  {
+    "namn": "Lady Isadora",
+    "typ": "npc",
+    "slug": "lady-isadora"
+  },
+  {
+    "namn": "Lady Soffia av Vitterdal",
+    "typ": "npc",
+    "slug": "lady-soffia-av-vitterdal"
+  },
+  {
+    "namn": "Laila al-Jen",
+    "typ": "npc",
+    "slug": "laila-al-jen"
+  },
+  {
+    "namn": "Laila bint-Ali",
+    "typ": "npc",
+    "slug": "laila-bint-ali"
+  },
+  {
+    "namn": "Laila bint-Farid",
+    "typ": "npc",
+    "slug": "laila-bint-farid"
+  },
+  {
+    "namn": "Lars 'Silkeskägg' Nordahl",
+    "typ": "npc",
+    "slug": "lars-silkeskagg-nordahl"
+  },
+  {
+    "namn": "Lars Bergsson",
+    "typ": "npc",
+    "slug": "lars-bergsson"
+  },
+  {
+    "namn": "Layla bint-Hassan",
+    "typ": "npc",
+    "slug": "layla-bint-hassan"
+  },
+  {
+    "namn": "Layla bint-Hussein",
+    "typ": "npc",
+    "slug": "layla-bint-hussein"
+  },
+  {
+    "namn": "Layla bint-Karim",
+    "typ": "npc",
+    "slug": "layla-bint-karim"
+  },
+  {
+    "namn": "Lera Skuggskeppare",
+    "typ": "npc",
+    "slug": "lera-skuggskeppare"
+  },
+  {
+    "namn": "Leyla al-Malik",
+    "typ": "npc",
+    "slug": "leyla-al-malik"
+  },
+  {
+    "namn": "Lia",
+    "typ": "npc",
+    "slug": "lia"
+  },
+  {
+    "namn": "Lilla-Maja Björkgren",
+    "typ": "npc",
+    "slug": "lilla-maja-bjorkgren"
+  },
+  {
+    "namn": "Lilla-Maja Björkgren",
+    "typ": "npc",
+    "slug": "lilla-maja-bjorkgren-2"
+  },
+  {
+    "namn": "Lille Per",
+    "typ": "npc",
+    "slug": "lille-per"
+  },
+  {
+    "namn": "Linna Blekgatan",
+    "typ": "npc",
+    "slug": "linna-blekgatan"
+  },
+  {
+    "namn": "Lord Vinterglöd",
+    "typ": "npc",
+    "slug": "lord-vinterglod"
+  },
+  {
+    "namn": "Lubna bint-Malik",
+    "typ": "npc",
+    "slug": "lubna-bint-malik"
+  },
+  {
+    "namn": "Madrianna",
+    "typ": "npc",
+    "slug": "madrianna"
+  },
+  {
+    "namn": "Magnus Hällström",
+    "typ": "npc",
+    "slug": "magnus-hallstrom"
+  },
+  {
+    "namn": "Malik Al-Zahir",
+    "typ": "npc",
+    "slug": "malik-al-zahir"
+  },
+  {
+    "namn": "Malvono Järvik",
+    "typ": "npc",
+    "slug": "malvono-jarvik"
+  },
+  {
+    "namn": "Margaret Nahrzezia",
+    "typ": "npc",
+    "slug": "margaret-nahrzezia"
+  },
+  {
+    "namn": "Margareta Lindkvist",
+    "typ": "npc",
+    "slug": "margareta-lindkvist"
+  },
+  {
+    "namn": "Margareta Lindkvist",
+    "typ": "npc",
+    "slug": "margareta-lindkvist-2"
+  },
+  {
+    "namn": "Marta \"Tvätterskorna\"",
+    "typ": "npc",
+    "slug": "marta-tvatterskorna"
+  },
+  {
+    "namn": "Marvo \"Isfingrarna\"",
+    "typ": "npc",
+    "slug": "marvo-isfingrarna"
+  },
+  {
+    "namn": "Megir Stegsson",
+    "typ": "npc",
+    "slug": "megir-stegsson"
+  },
+  {
+    "namn": "Mera Flint",
+    "typ": "npc",
+    "slug": "mera-flint"
+  },
+  {
+    "namn": "Merek",
+    "typ": "npc",
+    "slug": "merek"
+  },
+  {
+    "namn": "Mhim Matruk Wolani",
+    "typ": "npc",
+    "slug": "mhim-matruk-wolani"
+  },
+  {
+    "namn": "Migor Trollkunnig",
+    "typ": "npc",
+    "slug": "migor-trollkunnig"
+  },
+  {
+    "namn": "Mikor \"den fantastiska\"",
+    "typ": "npc",
+    "slug": "mikor-den-fantastiska"
+  },
+  {
+    "namn": "Mira bint-Salim",
+    "typ": "npc",
+    "slug": "mira-bint-salim"
+  },
+  {
+    "namn": "Mira",
+    "typ": "npc",
+    "slug": "mira"
+  },
+  {
+    "namn": "Mirelle",
+    "typ": "npc",
+    "slug": "mirelle"
+  },
+  {
+    "namn": "Mivell Thamrin",
+    "typ": "npc",
+    "slug": "mivell-thamrin"
+  },
+  {
+    "namn": "Moder Elin",
+    "typ": "npc",
+    "slug": "moder-elin"
+  },
+  {
+    "namn": "Moder Sala",
+    "typ": "npc",
+    "slug": "moder-sala"
+  },
+  {
+    "namn": "Morfar Ulf",
+    "typ": "npc",
+    "slug": "morfar-ulf"
+  },
+  {
+    "namn": "Morwen Bortbyting",
+    "typ": "npc",
+    "slug": "morwen-bortbyting"
+  },
+  {
+    "namn": "Muna al-Sharif",
+    "typ": "npc",
+    "slug": "muna-al-sharif"
+  },
+  {
+    "namn": "Märta (Systkonen)",
+    "typ": "npc",
+    "slug": "marta-systkonen"
+  },
+  {
+    "namn": "Nadir al-Said",
+    "typ": "npc",
+    "slug": "nadir-al-said"
+  },
+  {
+    "namn": "Naila bint-Zahir",
+    "typ": "npc",
+    "slug": "naila-bint-zahir"
+  },
+  {
+    "namn": "Nawan Ben Hayel",
+    "typ": "npc",
+    "slug": "nawan-ben-hayel"
+  },
+  {
+    "namn": "Nekromantikern",
+    "typ": "npc",
+    "slug": "nekromantikern"
+  },
+  {
+    "namn": "Neta Båtbyggare",
+    "typ": "npc",
+    "slug": "neta-batbyggare"
+  },
+  {
+    "namn": "Nils 'Järnhand' Gromsson",
+    "typ": "npc",
+    "slug": "nils-jarnhand-gromsson"
+  },
+  {
+    "namn": "Nils",
+    "typ": "npc",
+    "slug": "nils"
+  },
+  {
+    "namn": "Nocturne",
+    "typ": "npc",
+    "slug": "nocturne"
+  },
+  {
+    "namn": "Noma Sullel",
+    "typ": "npc",
+    "slug": "noma-sullel"
+  },
+  {
+    "namn": "Nur",
+    "typ": "npc",
+    "slug": "nur"
+  },
+  {
+    "namn": "Olav Järnhand",
+    "typ": "npc",
+    "slug": "olav-jarnhand"
+  },
+  {
+    "namn": "Olav Murkross",
+    "typ": "npc",
+    "slug": "olav-murkross"
+  },
+  {
+    "namn": "Oliver Nahrzezia",
+    "typ": "npc",
+    "slug": "oliver-nahrzezia"
+  },
+  {
+    "namn": "Olof Stenmark",
+    "typ": "npc",
+    "slug": "olof-stenmark"
+  },
+  {
+    "namn": "Omar al-Kazim",
+    "typ": "npc",
+    "slug": "omar-al-kazim"
+  },
+  {
+    "namn": "Omar ibn-Salim",
+    "typ": "npc",
+    "slug": "omar-ibn-salim"
+  },
+  {
+    "namn": "Omar",
+    "typ": "npc",
+    "slug": "omar"
+  },
+  {
+    "namn": "Orm Sjöberg",
+    "typ": "npc",
+    "slug": "orm-sjoberg"
+  },
+  {
+    "namn": "Pertil Fiskaren",
+    "typ": "npc",
+    "slug": "pertil-fiskaren"
+  },
+  {
+    "namn": "Pertils fru",
+    "typ": "npc",
+    "slug": "pertils-fru"
+  },
+  {
+    "namn": "Prins Yelgotha av det Första Hovet",
+    "typ": "npc",
+    "slug": "prins-yelgotha-av-det-forsta-hovet"
+  },
+  {
+    "namn": "Ragna Klokhand",
+    "typ": "npc",
+    "slug": "ragna-klokhand"
+  },
+  {
+    "namn": "Ragnar Fiskare",
+    "typ": "npc",
+    "slug": "ragnar-fiskare"
+  },
+  {
+    "namn": "Ragnar",
+    "typ": "npc",
+    "slug": "ragnar"
+  },
+  {
+    "namn": "Raheb Ab-Radi Samjed",
+    "typ": "npc",
+    "slug": "raheb-ab-radi-samjed"
+  },
+  {
+    "namn": "Rashan al-Ghedi",
+    "typ": "npc",
+    "slug": "rashan-al-ghedi"
+  },
+  {
+    "namn": "Rashid ibn-Farid",
+    "typ": "npc",
+    "slug": "rashid-ibn-farid"
+  },
+  {
+    "namn": "Rashid ibn-Farouk",
+    "typ": "npc",
+    "slug": "rashid-ibn-farouk"
+  },
+  {
+    "namn": "Rashid ibn-Khalid",
+    "typ": "npc",
+    "slug": "rashid-ibn-khalid"
+  },
+  {
+    "namn": "Raziq al-Nur",
+    "typ": "npc",
+    "slug": "raziq-al-nur"
+  },
+  {
+    "namn": "Relwan Jaakoh",
+    "typ": "npc",
+    "slug": "relwan-jaakoh"
+  },
+  {
+    "namn": "Rennil",
+    "typ": "npc",
+    "slug": "rennil"
+  },
+  {
+    "namn": "Riddar Warg Spegelsköld",
+    "typ": "npc",
+    "slug": "riddar-warg-spegelskold"
+  },
+  {
+    "namn": "Rikke Lorm",
+    "typ": "npc",
+    "slug": "rikke-lorm"
+  },
+  {
+    "namn": "Rimklo",
+    "typ": "npc",
+    "slug": "rimklo"
+  },
+  {
+    "namn": "Rollo av Flod",
+    "typ": "npc",
+    "slug": "rollo-av-flod"
+  },
+  {
+    "namn": "Rorik",
+    "typ": "npc",
+    "slug": "rorik"
+  },
+  {
+    "namn": "Runo Silvertråd",
+    "typ": "npc",
+    "slug": "runo-silvertrad"
+  },
+  {
+    "namn": "Rådslingan",
+    "typ": "npc",
+    "slug": "radslingan"
+  },
+  {
+    "namn": "Sabera",
+    "typ": "npc",
+    "slug": "sabera"
+  },
+  {
+    "namn": "Saga",
+    "typ": "npc",
+    "slug": "saga"
+  },
+  {
+    "namn": "Salma bint-Hafiz",
+    "typ": "npc",
+    "slug": "salma-bint-hafiz"
+  },
+  {
+    "namn": "Samir ibn-Rashid",
+    "typ": "npc",
+    "slug": "samir-ibn-rashid"
+  },
+  {
+    "namn": "Sankt Astrid",
+    "typ": "npc",
+    "slug": "sankt-astrid"
+  },
+  {
+    "namn": "Sarrius",
+    "typ": "npc",
+    "slug": "sarrius"
+  },
+  {
+    "namn": "Scout",
+    "typ": "npc",
+    "slug": "scout"
+  },
+  {
+    "namn": "Selene \"Silveröga\" Kazarov",
+    "typ": "npc",
+    "slug": "selene-silveroga-kazarov"
+  },
+  {
+    "namn": "Selim ibn-Rashid",
+    "typ": "npc",
+    "slug": "selim-ibn-rashid"
+  },
+  {
+    "namn": "Serafina Eldstav",
+    "typ": "npc",
+    "slug": "serafina-eldstav"
+  },
+  {
+    "namn": "Shamir Tarim Uzun ben Isma'il",
+    "typ": "npc",
+    "slug": "shamir-tarim-uzun-ben-isma-il"
+  },
+  {
+    "namn": "Sheikh Nabil",
+    "typ": "npc",
+    "slug": "sheikh-nabil"
+  },
+  {
+    "namn": "Sigrid Falkemo",
+    "typ": "npc",
+    "slug": "sigrid-falkemo"
+  },
+  {
+    "namn": "Sigrid Falkemo",
+    "typ": "npc",
+    "slug": "sigrid-falkemo-2"
+  },
+  {
+    "namn": "Silverfot",
+    "typ": "npc",
+    "slug": "silverfot"
+  },
+  {
+    "namn": "Sjödöda Titanen",
+    "typ": "npc",
+    "slug": "sjododa-titanen"
+  },
+  {
+    "namn": "Skorda Bergsdotter",
+    "typ": "npc",
+    "slug": "skorda-bergsdotter"
+  },
+  {
+    "namn": "Soraya al-Majid",
+    "typ": "npc",
+    "slug": "soraya-al-majid"
+  },
+  {
+    "namn": "Sten (Systkonen)",
+    "typ": "npc",
+    "slug": "sten-systkonen"
+  },
+  {
+    "namn": "Sten Knotbindare",
+    "typ": "npc",
+    "slug": "sten-knotbindare"
+  },
+  {
+    "namn": "Stig Tallgren",
+    "typ": "npc",
+    "slug": "stig-tallgren"
+  },
+  {
+    "namn": "Stum-Maja",
+    "typ": "npc",
+    "slug": "stum-maja"
+  },
+  {
+    "namn": "Sven Hammarhand",
+    "typ": "npc",
+    "slug": "sven-hammarhand"
+  },
+  {
+    "namn": "Sylas \"Eldvakten\"",
+    "typ": "npc",
+    "slug": "sylas-eldvakten"
+  },
+  {
+    "namn": "Sylva",
+    "typ": "npc",
+    "slug": "sylva"
+  },
+  {
+    "namn": "Syster Mirelle",
+    "typ": "npc",
+    "slug": "syster-mirelle"
+  },
+  {
+    "namn": "Syster Moira",
+    "typ": "npc",
+    "slug": "syster-moira"
+  },
+  {
+    "namn": "Systkonen Märta",
+    "typ": "npc",
+    "slug": "systkonen-marta"
+  },
+  {
+    "namn": "Systkonen Sten",
+    "typ": "npc",
+    "slug": "systkonen-sten"
+  },
+  {
+    "namn": "Systrarna i Lundnäs",
+    "typ": "npc",
+    "slug": "systrarna-i-lundnas"
+  },
+  {
+    "namn": "Talarra av Vitterdal",
+    "typ": "npc",
+    "slug": "talarra-av-vitterdal"
+  },
+  {
+    "namn": "Tamron",
+    "typ": "npc",
+    "slug": "tamron"
+  },
+  {
+    "namn": "Tant Hildur",
+    "typ": "npc",
+    "slug": "tant-hildur"
+  },
+  {
+    "namn": "Tarek Halvhand",
+    "typ": "npc",
+    "slug": "tarek-halvhand"
+  },
+  {
+    "namn": "Tariq al-Jabbar",
+    "typ": "npc",
+    "slug": "tariq-al-jabbar"
+  },
+  {
+    "namn": "Tariq ibn-Fahim",
+    "typ": "npc",
+    "slug": "tariq-ibn-fahim"
+  },
+  {
+    "namn": "Tariq ibn-Salim",
+    "typ": "npc",
+    "slug": "tariq-ibn-salim"
+  },
+  {
+    "namn": "Thalia Skogslöpare",
+    "typ": "npc",
+    "slug": "thalia-skogslopare"
+  },
+  {
+    "namn": "Thalorin Sigrd",
+    "typ": "npc",
+    "slug": "thalorin-sigrd"
+  },
+  {
+    "namn": "Thamz",
+    "typ": "npc",
+    "slug": "thamz"
+  },
+  {
+    "namn": "Thom",
+    "typ": "npc",
+    "slug": "thom"
+  },
+  {
+    "namn": "Thrain av Morgonen",
+    "typ": "npc",
+    "slug": "thrain-av-morgonen"
+  },
+  {
+    "namn": "Tilda Sjöberg",
+    "typ": "npc",
+    "slug": "tilda-sjoberg"
+  },
+  {
+    "namn": "Timron",
+    "typ": "npc",
+    "slug": "timron"
+  },
+  {
+    "namn": "Tjelvar Hovsmide",
+    "typ": "npc",
+    "slug": "tjelvar-hovsmide"
+  },
+  {
+    "namn": "Tobin",
+    "typ": "npc",
+    "slug": "tobin"
+  },
+  {
+    "namn": "Tomas Järnhjälm",
+    "typ": "npc",
+    "slug": "tomas-jarnhjalm"
+  },
+  {
+    "namn": "Tomas Segelmakar",
+    "typ": "npc",
+    "slug": "tomas-segelmakar"
+  },
+  {
+    "namn": "Torkel Falkemo",
+    "typ": "npc",
+    "slug": "torkel-falkemo"
+  },
+  {
+    "namn": "Torkel Falkemo",
+    "typ": "npc",
+    "slug": "torkel-falkemo-2"
+  },
+  {
+    "namn": "Torkel Skogsson",
+    "typ": "npc",
+    "slug": "torkel-skogsson"
+  },
+  {
+    "namn": "Tormund Rimskägg",
+    "typ": "npc",
+    "slug": "tormund-rimskagg"
+  },
+  {
+    "namn": "Torsten",
+    "typ": "npc",
+    "slug": "torsten"
+  },
+  {
+    "namn": "Trollbinderskan Rut",
+    "typ": "npc",
+    "slug": "trollbinderskan-rut"
+  },
+  {
+    "namn": "Trädklättraren",
+    "typ": "npc",
+    "slug": "tradklattraren"
+  },
+  {
+    "namn": "Turam",
+    "typ": "npc",
+    "slug": "turam"
+  },
+  {
+    "namn": "Tussie",
+    "typ": "npc",
+    "slug": "tussie"
+  },
+  {
+    "namn": "Ull Björnsson",
+    "typ": "npc",
+    "slug": "ull-bjornsson"
+  },
+  {
+    "namn": "Ulzak",
+    "typ": "npc",
+    "slug": "ulzak"
+  },
+  {
+    "namn": "Umar al-Rashid",
+    "typ": "npc",
+    "slug": "umar-al-rashid"
+  },
+  {
+    "namn": "Valthor Banerbärare",
+    "typ": "npc",
+    "slug": "valthor-banerbarare"
+  },
+  {
+    "namn": "Valyra Nattöga",
+    "typ": "npc",
+    "slug": "valyra-nattoga"
+  },
+  {
+    "namn": "Varen Kolsten",
+    "typ": "npc",
+    "slug": "varen-kolsten"
+  },
+  {
+    "namn": "Varg-Mika",
+    "typ": "npc",
+    "slug": "varg-mika"
+  },
+  {
+    "namn": "Varia Skyddsväktare",
+    "typ": "npc",
+    "slug": "varia-skyddsvaktare"
+  },
+  {
+    "namn": "Velissa",
+    "typ": "npc",
+    "slug": "velissa"
+  },
+  {
+    "namn": "Vidar Solvandrar",
+    "typ": "npc",
+    "slug": "vidar-solvandrar"
+  },
+  {
+    "namn": "Vitfläck",
+    "typ": "npc",
+    "slug": "vitflack"
+  },
+  {
+    "namn": "Vomdal",
+    "typ": "npc",
+    "slug": "vomdal"
+  },
+  {
+    "namn": "Wahan Ru",
+    "typ": "npc",
+    "slug": "wahan-ru"
+  },
+  {
+    "namn": "Warg Spegelsköld",
+    "typ": "npc",
+    "slug": "warg-spegelskold"
+  },
+  {
+    "namn": "Xian-Li",
+    "typ": "npc",
+    "slug": "xian-li"
+  },
+  {
+    "namn": "Yasir ibn-Farid",
+    "typ": "npc",
+    "slug": "yasir-ibn-farid"
+  },
+  {
+    "namn": "Yasmina al-Farouk",
+    "typ": "npc",
+    "slug": "yasmina-al-farouk"
+  },
+  {
+    "namn": "Yennara av Boca",
+    "typ": "npc",
+    "slug": "yennara-av-boca"
+  },
+  {
+    "namn": "Ylva",
+    "typ": "npc",
+    "slug": "ylva"
+  },
+  {
+    "namn": "Youssef al-Najjar",
+    "typ": "npc",
+    "slug": "youssef-al-najjar"
+  },
+  {
+    "namn": "Yrka Yrko",
+    "typ": "npc",
+    "slug": "yrka-yrko"
+  },
+  {
+    "namn": "Yvan Krell",
+    "typ": "npc",
+    "slug": "yvan-krell"
+  },
+  {
+    "namn": "Zahra bint-Hassan",
+    "typ": "npc",
+    "slug": "zahra-bint-hassan"
+  },
+  {
+    "namn": "Zairgaz",
+    "typ": "npc",
+    "slug": "zairgaz"
+  },
+  {
+    "namn": "Zan Fjädertunga",
+    "typ": "npc",
+    "slug": "zan-fjadertunga"
+  },
+  {
+    "namn": "Zara al-Min",
+    "typ": "npc",
+    "slug": "zara-al-min"
+  },
+  {
+    "namn": "Zara",
+    "typ": "npc",
+    "slug": "zara"
+  },
+  {
+    "namn": "Änke-Margit",
+    "typ": "npc",
+    "slug": "anke-margit"
+  },
+  {
+    "namn": "Abhan-hir-renk-Ghor",
+    "typ": "plats",
+    "slug": "abhan-hir-renk-ghor"
+  },
+  {
+    "namn": "Asharien",
+    "typ": "plats",
+    "slug": "asharien"
+  },
+  {
+    "namn": "Cermira",
+    "typ": "plats",
+    "slug": "cermira"
+  },
+  {
+    "namn": "De Varma Källorna",
+    "typ": "plats",
+    "slug": "de-varma-kallorna"
+  },
+  {
+    "namn": "Den Brinnande Skatten",
+    "typ": "plats",
+    "slug": "den-brinnande-skatten"
+  },
+  {
+    "namn": "Den Dolda Dolken",
+    "typ": "plats",
+    "slug": "den-dolda-dolken"
+  },
+  {
+    "namn": "Den Gyldene Ankaret",
+    "typ": "plats",
+    "slug": "den-gyldene-ankaret"
+  },
+  {
+    "namn": "Den Gyldene Dromedaren",
+    "typ": "plats",
+    "slug": "den-gyldene-dromedaren"
+  },
+  {
+    "namn": "Den Gyllene Gryningen",
+    "typ": "plats",
+    "slug": "den-gyllene-gryningen"
+  },
+  {
+    "namn": "Den Klara Källan",
+    "typ": "plats",
+    "slug": "den-klara-kallan"
+  },
+  {
+    "namn": "Den Svävande Albatrossen",
+    "typ": "plats",
+    "slug": "den-svavande-albatrossen"
+  },
+  {
+    "namn": "Den Svävande Fenixen",
+    "typ": "plats",
+    "slug": "den-svavande-fenixen"
+  },
+  {
+    "namn": "Drunok",
+    "typ": "plats",
+    "slug": "drunok"
+  },
+  {
+    "namn": "Frisänkan",
+    "typ": "plats",
+    "slug": "frisankan"
+  },
+  {
+    "namn": "Frostnymf",
+    "typ": "plats",
+    "slug": "frostnymf"
+  },
+  {
+    "namn": "Grensfortet",
+    "typ": "plats",
+    "slug": "grensfortet"
+  },
+  {
+    "namn": "Gränstrakterna mellan Cermira och Mithera",
+    "typ": "plats",
+    "slug": "granstrakterna-mellan-cermira-och-mithera"
+  },
+  {
+    "namn": "Iskvarnsbryggan",
+    "typ": "plats",
+    "slug": "iskvarnsbryggan"
+  },
+  {
+    "namn": "Jargien",
+    "typ": "plats",
+    "slug": "jargien"
+  },
+  {
+    "namn": "Jarla",
+    "typ": "plats",
+    "slug": "jarla"
+  },
+  {
+    "namn": "Jarnthol",
+    "typ": "plats",
+    "slug": "jarnthol"
+  },
+  {
+    "namn": "Jen",
+    "typ": "plats",
+    "slug": "jen"
+  },
+  {
+    "namn": "Kamelens Oas",
+    "typ": "plats",
+    "slug": "kamelens-oas"
+  },
+  {
+    "namn": "Khazimbergen",
+    "typ": "plats",
+    "slug": "khazimbergen"
+  },
+  {
+    "namn": "Krökta Kompassen",
+    "typ": "plats",
+    "slug": "krokta-kompassen"
+  },
+  {
+    "namn": "Lejonets Bröl",
+    "typ": "plats",
+    "slug": "lejonets-brol"
+  },
+  {
+    "namn": "Lundnäs",
+    "typ": "plats",
+    "slug": "lundnas"
+  },
+  {
+    "namn": "Mithera",
+    "typ": "plats",
+    "slug": "mithera"
+  },
+  {
+    "namn": "Mitrahus",
+    "typ": "plats",
+    "slug": "mitrahus"
+  },
+  {
+    "namn": "Muhad",
+    "typ": "plats",
+    "slug": "muhad"
+  },
+  {
+    "namn": "Månljuset",
+    "typ": "plats",
+    "slug": "manljuset"
+  },
+  {
+    "namn": "Månskärets Gömställe",
+    "typ": "plats",
+    "slug": "manskarets-gomstalle"
+  },
+  {
+    "namn": "Raunfloden",
+    "typ": "plats",
+    "slug": "raunfloden"
+  },
+  {
+    "namn": "Rimfrosten",
+    "typ": "plats",
+    "slug": "rimfrosten"
+  },
+  {
+    "namn": "Rödskäggs Tillflykt",
+    "typ": "plats",
+    "slug": "rodskaggs-tillflykt"
+  },
+  {
+    "namn": "Sanari-alvernas Rike",
+    "typ": "plats",
+    "slug": "sanari-alvernas-rike"
+  },
+  {
+    "namn": "Sandens Sång",
+    "typ": "plats",
+    "slug": "sandens-sang"
+  },
+  {
+    "namn": "Sanningens Ljus",
+    "typ": "plats",
+    "slug": "sanningens-ljus"
+  },
+  {
+    "namn": "Silverskum",
+    "typ": "plats",
+    "slug": "silverskum"
+  },
+  {
+    "namn": "Skugglandet",
+    "typ": "plats",
+    "slug": "skugglandet"
+  },
+  {
+    "namn": "Skuggornas Viloplats",
+    "typ": "plats",
+    "slug": "skuggornas-viloplats"
+  },
+  {
+    "namn": "Soldarn",
+    "typ": "plats",
+    "slug": "soldarn"
+  },
+  {
+    "namn": "Spegelmåne",
+    "typ": "plats",
+    "slug": "spegelmane"
+  },
+  {
+    "namn": "Spegelvända Fortet",
+    "typ": "plats",
+    "slug": "spegelvanda-fortet"
+  },
+  {
+    "namn": "Strömjungfrun",
+    "typ": "plats",
+    "slug": "stromjungfrun"
+  },
+  {
+    "namn": "Tarkas",
+    "typ": "plats",
+    "slug": "tarkas"
+  },
+  {
+    "namn": "Tirakgraven",
+    "typ": "plats",
+    "slug": "tirakgraven"
+  },
+  {
+    "namn": "Tormunds Stuga",
+    "typ": "plats",
+    "slug": "tormunds-stuga"
+  },
+  {
+    "namn": "Tredelningen",
+    "typ": "plats",
+    "slug": "tredelningen"
+  },
+  {
+    "namn": "Tuzan Rim",
+    "typ": "plats",
+    "slug": "tuzan-rim"
+  },
+  {
+    "namn": "Tysta Källan",
+    "typ": "plats",
+    "slug": "tysta-kallan"
+  },
+  {
+    "namn": "Vansnäs Gästgiveri",
+    "typ": "plats",
+    "slug": "vansnas-gastgiveri"
+  },
+  {
+    "namn": "Vargnäset",
+    "typ": "plats",
+    "slug": "vargnaset"
+  },
+  {
+    "namn": "Vitterdal",
+    "typ": "plats",
+    "slug": "vitterdal"
+  },
+  {
+    "namn": "Älvakungens sal",
+    "typ": "plats",
+    "slug": "alvakungens-sal"
+  },
+  {
+    "namn": "Åderbjörkslunden",
+    "typ": "plats",
+    "slug": "aderbjorkslunden"
+  },
+  {
+    "namn": "Ödlefolkets ruiner",
+    "typ": "plats",
+    "slug": "odlefolkets-ruiner"
+  },
+  {
+    "namn": "Ökendyrets Ro",
+    "typ": "plats",
+    "slug": "okendyrets-ro"
+  },
+  {
+    "namn": "Handelshuset Al-Zahir",
+    "typ": "fraktion",
+    "slug": "handelshuset-al-zahir"
+  },
+  {
+    "namn": "Handelshuset Atana",
+    "typ": "fraktion",
+    "slug": "handelshuset-atana"
+  },
+  {
+    "namn": "Handelshuset Badastro",
+    "typ": "fraktion",
+    "slug": "handelshuset-badastro"
+  },
+  {
+    "namn": "Handelshuset Banu Qadisha",
+    "typ": "fraktion",
+    "slug": "handelshuset-banu-qadisha"
+  },
+  {
+    "namn": "Handelshuset Bayt Al-Laila",
+    "typ": "fraktion",
+    "slug": "handelshuset-bayt-al-laila"
+  },
+  {
+    "namn": "Handelshuset Elisari",
+    "typ": "fraktion",
+    "slug": "handelshuset-elisari"
+  },
+  {
+    "namn": "Handelshuset Fasces",
+    "typ": "fraktion",
+    "slug": "handelshuset-fasces"
+  },
+  {
+    "namn": "Handelshuset Hahna",
+    "typ": "fraktion",
+    "slug": "handelshuset-hahna"
+  },
+  {
+    "namn": "Handelshuset Hibelius",
+    "typ": "fraktion",
+    "slug": "handelshuset-hibelius"
+  },
+  {
+    "namn": "Handelshuset Ivari",
+    "typ": "fraktion",
+    "slug": "handelshuset-ivari"
+  },
+  {
+    "namn": "Handelshuset Jhamalomian",
+    "typ": "fraktion",
+    "slug": "handelshuset-jhamalomian"
+  },
+  {
+    "namn": "Handelshuset Jhamkeir",
+    "typ": "fraktion",
+    "slug": "handelshuset-jhamkeir"
+  },
+  {
+    "namn": "Handelshuset Khaz-Zatim-Ghor",
+    "typ": "fraktion",
+    "slug": "handelshuset-khaz-zatim-ghor"
+  },
+  {
+    "namn": "Handelshuset Leurest'ya",
+    "typ": "fraktion",
+    "slug": "handelshuset-leurest-ya"
+  },
+  {
+    "namn": "Handelshuset Meneltaze",
+    "typ": "fraktion",
+    "slug": "handelshuset-meneltaze"
+  },
+  {
+    "namn": "Handelshuset Mianai",
+    "typ": "fraktion",
+    "slug": "handelshuset-mianai"
+  },
+  {
+    "namn": "Handelshuset Mimore",
+    "typ": "fraktion",
+    "slug": "handelshuset-mimore"
+  },
+  {
+    "namn": "Handelshuset Monome",
+    "typ": "fraktion",
+    "slug": "handelshuset-monome"
+  },
+  {
+    "namn": "Handelshuset Natah",
+    "typ": "fraktion",
+    "slug": "handelshuset-natah"
+  },
+  {
+    "namn": "Handelshuset Nejas",
+    "typ": "fraktion",
+    "slug": "handelshuset-nejas"
+  },
+  {
+    "namn": "Handelshuset Ordomah",
+    "typ": "fraktion",
+    "slug": "handelshuset-ordomah"
+  },
+  {
+    "namn": "Handelshuset Pornaz",
+    "typ": "fraktion",
+    "slug": "handelshuset-pornaz"
+  },
+  {
+    "namn": "Handelshuset Ramiz",
+    "typ": "fraktion",
+    "slug": "handelshuset-ramiz"
+  },
+  {
+    "namn": "Handelshuset Reza",
+    "typ": "fraktion",
+    "slug": "handelshuset-reza"
+  },
+  {
+    "namn": "Handelshuset Rihzim",
+    "typ": "fraktion",
+    "slug": "handelshuset-rihzim"
+  },
+  {
+    "namn": "Handelshuset Salusta",
+    "typ": "fraktion",
+    "slug": "handelshuset-salusta"
+  },
+  {
+    "namn": "Handelshuset Samunali",
+    "typ": "fraktion",
+    "slug": "handelshuset-samunali"
+  },
+  {
+    "namn": "Handelshuset Solmarin",
+    "typ": "fraktion",
+    "slug": "handelshuset-solmarin"
+  },
+  {
+    "namn": "Handelshuset Tanhi",
+    "typ": "fraktion",
+    "slug": "handelshuset-tanhi"
+  },
+  {
+    "namn": "Handelshuset Temiranz",
+    "typ": "fraktion",
+    "slug": "handelshuset-temiranz"
+  },
+  {
+    "namn": "Handelshuset Turkosen",
+    "typ": "fraktion",
+    "slug": "handelshuset-turkosen"
+  },
+  {
+    "namn": "Handelshuset Ukkalim",
+    "typ": "fraktion",
+    "slug": "handelshuset-ukkalim"
+  },
+  {
+    "namn": "Handelshuset Vilia",
+    "typ": "fraktion",
+    "slug": "handelshuset-vilia"
+  },
+  {
+    "namn": "Handelshuset Wekzi",
+    "typ": "fraktion",
+    "slug": "handelshuset-wekzi"
+  },
+  {
+    "namn": "Handelshuset Ziliz",
+    "typ": "fraktion",
+    "slug": "handelshuset-ziliz"
+  },
+  {
+    "namn": "Magihuset Consenti",
+    "typ": "fraktion",
+    "slug": "magihuset-consenti"
+  },
+  {
+    "namn": "Magihuset Cuvri'an",
+    "typ": "fraktion",
+    "slug": "magihuset-cuvri-an"
+  },
+  {
+    "namn": "Magihuset Dilige",
+    "typ": "fraktion",
+    "slug": "magihuset-dilige"
+  },
+  {
+    "namn": "Magihuset Duncreigh",
+    "typ": "fraktion",
+    "slug": "magihuset-duncreigh"
+  },
+  {
+    "namn": "Arvorns Hammare",
+    "typ": "fraktion",
+    "slug": "arvorns-hammare"
+  },
+  {
+    "namn": "Stålsvärds Kavalerister",
+    "typ": "fraktion",
+    "slug": "stalsvards-kavalerister"
+  },
+  {
+    "namn": "Systrarna / Zorian-orden",
+    "typ": "fraktion",
+    "slug": "systrarna-zorian-orden"
+  },
+  {
+    "namn": "Skrået",
+    "typ": "fraktion",
+    "slug": "skraet"
+  },
+  {
+    "namn": "Skuggväktarna",
+    "typ": "fraktion",
+    "slug": "skuggvaktarna"
+  },
+  {
+    "namn": "Daak-kyrkan",
+    "typ": "fraktion",
+    "slug": "daak-kyrkan"
+  },
+  {
+    "namn": "De Röda Vargarna",
+    "typ": "fraktion",
+    "slug": "de-roda-vargarna"
+  },
+  {
+    "namn": "Sanari-alverna",
+    "typ": "fraktion",
+    "slug": "sanari-alverna"
+  },
+  {
+    "namn": "Tirakstammen",
+    "typ": "fraktion",
+    "slug": "tirakstammen"
+  }
+]

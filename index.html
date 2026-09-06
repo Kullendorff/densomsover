@@ -1,1755 +1,270 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gravens Arv - Kampanjdashboard</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 400px;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(10,10,10,0.9)), url('dashboard/hero-bg.png') center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border-bottom: 3px solid var(--flame-orange);
-            position: relative;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            max-width: 700px;
-        }
-
-        /* Stats Cards */
-        .stats-container {
-            max-width: 1400px;
-            margin: -60px auto 2rem;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            position: relative;
-            z-index: 10;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, var(--bg-card), var(--bg-darker));
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            border-left: 4px solid var(--flame-orange);
-        }
-
-        .stat-card.purple { border-left-color: var(--mystic-purple); }
-        .stat-card.gold { border-left-color: var(--gold); }
-        .stat-card.red { border-left-color: var(--deep-red); }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .stat-value {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin: 0.5rem 0;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .stat-card.purple .stat-value {
-            background: linear-gradient(135deg, var(--mystic-purple), var(--shadow-purple));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .stat-card.gold .stat-value {
-            background: linear-gradient(135deg, var(--gold), var(--dark-gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .stat-card.red .stat-value {
-            background: linear-gradient(135deg, var(--deep-red), var(--flame-orange));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Navigation */
-        .nav {
-            max-width: 1400px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-            display: flex;
-            gap: 1rem;
-            border-bottom: 2px solid var(--border);
-            overflow: visible;
-        }
-
-        .nav-btn {
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            padding: 1rem 1.5rem;
-            cursor: pointer;
-            font-size: 0.95rem;
-            transition: all 0.3s;
-            border-bottom: 3px solid transparent;
-            white-space: nowrap;
-        }
-
-        .nav-btn:hover {
-            color: var(--text-primary);
-            background: var(--bg-hover);
-        }
-
-        .nav-btn.active {
-            color: var(--flame-orange);
-            border-bottom-color: var(--flame-orange);
-        }
-
-        /* Dropdown Navigation */
-        .nav-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .nav-dropdown-content {
-            display: none;
-            position: absolute;
-            background: var(--bg-card);
-            min-width: 200px;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            z-index: 100;
-            top: 100%;
-            left: 0;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .nav-dropdown:hover .nav-dropdown-content {
-            display: block;
-        }
-
-        .nav-dropdown-content button {
-            display: block;
-            width: 100%;
-            padding: 0.75rem 1rem;
-            background: none;
-            border: none;
-            color: var(--text-secondary);
-            text-align: left;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 0.95rem;
-            border-radius: 0;
-        }
-
-        .nav-dropdown-content button:first-child {
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-
-        .nav-dropdown-content button:last-child {
-            border-bottom-left-radius: 8px;
-            border-bottom-right-radius: 8px;
-        }
-
-        .nav-dropdown-content button:hover {
-            background: var(--bg-hover);
-            color: var(--flame-orange);
-        }
-
-        /* Main Content */
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .section {
-            display: none;
-        }
-
-        .section.active {
-            display: block;
-        }
-
-        /* Search & Filter Bar */
-        .search-filter-bar {
-            margin-bottom: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .search-box {
-            position: relative;
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 1rem 1rem 1rem 3rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            color: var(--text-primary);
-            font-size: 1rem;
-        }
-
-        .search-box::before {
-            content: "🔍";
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .filter-tags {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .filter-tag {
-            padding: 0.5rem 1rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-            font-size: 0.9rem;
-        }
-
-        .filter-tag:hover {
-            background: var(--bg-hover);
-        }
-
-        .filter-tag.active {
-            background: var(--flame-orange);
-            border-color: var(--flame-orange);
-            color: white;
-        }
-
-        .filter-section {
-            margin-bottom: 1rem;
-        }
-
-        .filter-section h4 {
-            color: var(--gold);
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-
-        /* Cards Grid */
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: all 0.3s;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .card:hover {
-            background: var(--bg-hover);
-            border-color: var(--flame-orange);
-            transform: translateY(-2px);
-        }
-
-        .card h3 {
-            color: var(--gold);
-            margin-bottom: 0.75rem;
-            font-size: 1.2rem;
-        }
-
-        .card-meta {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 0.75rem;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            background: rgba(255, 107, 74, 0.2);
-            color: var(--flame-orange);
-            padding: 0.25rem 0.75rem;
-            border-radius: 12px;
-            font-size: 0.85rem;
-            border: 1px solid rgba(255, 107, 74, 0.3);
-        }
-
-        .tag.purple {
-            background: rgba(168, 85, 168, 0.2);
-            color: var(--mystic-purple);
-            border-color: rgba(168, 85, 168, 0.3);
-        }
-
-        .tag.gold {
-            background: rgba(255, 165, 0, 0.2);
-            color: var(--gold);
-            border-color: rgba(255, 165, 0, 0.3);
-        }
-
-        .tag.green {
-            background: rgba(46, 213, 115, 0.2);
-            color: #2ed573;
-            border-color: rgba(46, 213, 115, 0.3);
-        }
-
-        .tag.red {
-            background: rgba(212, 83, 77, 0.2);
-            color: var(--deep-red);
-            border-color: rgba(212, 83, 77, 0.3);
-        }
-
-        .card-info {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        /* Card Image Preview */
-        .card-image-preview {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--gold);
-            opacity: 0.9;
-            transition: all 0.3s;
-        }
-
-        .card:hover .card-image-preview {
-            opacity: 1;
-            border-color: var(--flame-orange);
-            transform: scale(1.1);
-        }
-
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            overflow: auto;
-        }
-
-        .modal.active {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .modal-content {
-            background: var(--bg-card);
-            border: 2px solid var(--flame-orange);
-            border-radius: 12px;
-            padding: 2rem;
-            max-width: 800px;
-            width: 90%;
-            max-height: 80vh;
-            overflow-y: auto;
-            position: relative;
-        }
-
-        .modal-beskrivning {
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 2px solid var(--border);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .modal-beskrivning h1,
-        .modal-beskrivning h2,
-        .modal-beskrivning h3 {
-            color: var(--gold);
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .modal-beskrivning strong {
-            color: var(--flame-orange);
-        }
-
-        .modal-beskrivning p {
-            margin-bottom: 1rem;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: var(--deep-red);
-            border: none;
-            color: white;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.5rem;
-            line-height: 1;
-        }
-
-        .modal-close:hover {
-            background: var(--flame-orange);
-        }
-
-        .modal h2 {
-            color: var(--gold);
-            margin-bottom: 1rem;
-            padding-right: 40px;
-        }
-
-        .modal-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .modal-row:last-child {
-            border-bottom: none;
-        }
-
-        .modal-label {
-            color: var(--text-secondary);
-            font-weight: 500;
-        }
-
-        .modal-value {
-            color: var(--text-primary);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .stats-container {
-                grid-template-columns: 1fr;
-                margin-top: 2rem;
-            }
-
-            .nav {
-                flex-wrap: wrap;
-                overflow: visible;
-            }
-
-            .cards-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Special: Player Characters */
-        .player-card {
-            border-left: 4px solid var(--gold);
-        }
-
-        .player-card.forsvunnen {
-            border-left-color: var(--deep-red);
-            opacity: 0.8;
-        }
-
-        /* Timeline (for chapters) */
-        .timeline {
-            position: relative;
-            padding-left: 2rem;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(180deg, var(--flame-orange), var(--mystic-purple));
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2rem;
-            padding-left: 2rem;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -2.5rem;
-            top: 0.5rem;
-            width: 12px;
-            height: 12px;
-            background: var(--bg-card);
-            border: 3px solid var(--gold);
-            border-radius: 50%;
-        }
-
-        .timeline-item.current::before {
-            background: var(--flame-orange);
-            box-shadow: 0 0 20px var(--flame-orange);
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        .timeline-item h3 {
-            color: var(--gold);
-            margin-bottom: 0.5rem;
-        }
-
-        .timeline-item .meta {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .kapitel-link {
-            display: inline-block;
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--deep-red));
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .kapitel-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(255, 107, 74, 0.4);
-        }
-
-        /* Loading state */
-        .loading {
-            text-align: center;
-            padding: 3rem;
-            color: var(--text-secondary);
-        }
-
-        /* Lightbox */
-        .lightbox {
-            display: none;
-            position: fixed;
-            z-index: 2000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-        }
-
-        .lightbox.active {
-            display: flex;
-        }
-
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            object-fit: contain;
-            border: 3px solid var(--gold);
-            border-radius: 8px;
-            box-shadow: 0 0 50px rgba(255, 165, 0, 0.3);
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            background: var(--bg-card);
-            border: 2px solid var(--gold);
-            color: var(--text-primary);
-            font-size: 2rem;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s;
-        }
-
-        .lightbox-close:hover {
-            background: var(--flame-orange);
-            border-color: var(--flame-orange);
-            transform: rotate(90deg);
-        }
-
-        /* Modal Image Clickable */
-        .modal-image-clickable {
-            cursor: zoom-in;
-            transition: all 0.3s;
-        }
-
-        .modal-image-clickable:hover {
-            opacity: 0.9;
-            transform: scale(1.02);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gravens Arv – Kampanjwiki</title>
+<meta name="description" content="Gravens Arv: EON-kampanjwiki med kapitelhistorik, NPC-register, platser, fraktioner och eget material.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Gravens Arv</h1>
-        <p>Bok 1 Avslutad · Zentri räddad från Skugglandet · Grensfortet, högsommar</p>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="#register">Register</a>
+      <a href="#eget">Eget material</a>
+      <a href="sessioner/index.html">SL</a>
+      <a href="fluff/index.html">Fluff</a>
+    </nav>
+  </div>
+</header>
+
+<div class="statusbar">
+  <div class="wrap statusbar__row">
+    <div class="stat"><span class="stat__label">Status</span><span class="stat__value">Bok 1 avslutad</span></div>
+    <div class="stat"><span class="stat__label">Nu</span><span class="stat__value">Grensfortet, högsommar</span></div>
+    <div class="stat"><span class="stat__label">Pågående kapitel</span><span class="stat__value"><!--BYGG:STAT-PAGAENDE-->
+          Bok 2 väntar
+        <!--/BYGG:STAT-PAGAENDE--></span></div>
+    <div class="stat"><span class="stat__label">Registret</span><span class="stat__value"><!--BYGG:STAT-NPCCOUNT-->
+          327 NPC:er
+        <!--/BYGG:STAT-NPCCOUNT--></span></div>
+  </div>
+</div>
+
+<main class="wrap home-grid">
+  <section id="kampanjen" class="home-main">
+    <div class="section-head">
+      <h2>Kampanjen</h2>
+      <span class="meta"><!--BYGG:KAPITEL-META-->
+11 kapitel · alla avslutade
+        <!--/BYGG:KAPITEL-META--></span>
     </div>
 
-    <!-- Stats Cards -->
-    <div class="stats-container">
-        <div class="stat-card">
-            <div class="stat-label">Bok 1</div>
-            <div class="stat-value">✓</div>
-            <div class="stat-label">Avslutad</div>
-        </div>
+    <p class="prose prose--secondary" style="margin: 20px 0 0; max-width: 64ch;">
+      Bok 1 är avslutad. Gruppen räddade Zentri ur Skugglandet, band Urkhaths ring till
+      meteoritjärnskniven (med Umnatak som permanent ankare och Ulzak i hans kropp), och
+      är tillbaka i Grensfortet efter månader av tidsförskjutning. Nästa steg är
+      förläningen och planeringen av Bok 2 — ringen måste förstöras permanent innan
+      Urkhath återvänder.
+    </p>
 
-        <div class="stat-card purple">
-            <div class="stat-label">Plats</div>
-            <div class="stat-value">Grensfortet</div>
-            <div class="stat-label">Högsommar</div>
-        </div>
+    <ol class="rows">
+<!--BYGG:KAPITEL-ROWS-->
+          <li><a class="row row--kapitel" href="kapitel/prolog-tirakgraven.html">
+            <span class="row__nr">00</span>
+            <span class="row__title">Tirakgraven och Demonens Väckande</span>
+            <span class="row__meta">Gränstrakterna mellan Cermira och Mithera</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-1-jakten.html">
+            <span class="row__nr">01</span>
+            <span class="row__title">Jakten på Tamron/Ibran</span>
+            <span class="row__meta">Genom Cermiras skogar mot Grensfortet</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-2-muhad.html">
+            <span class="row__nr">02</span>
+            <span class="row__title">Uppdraget att hitta Hagge</span>
+            <span class="row__meta">Från Jarla till Jen i Muhad</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-3-tarkas.html">
+            <span class="row__nr">03</span>
+            <span class="row__title">Skeppsbrottet och Tarkas</span>
+            <span class="row__meta">Tarkas kust och ökenlandskap</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-4-jargien.html">
+            <span class="row__nr">04</span>
+            <span class="row__title">Genom Jargien mot hemmet</span>
+            <span class="row__meta">Jargiska kejsardömet</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-5-vargnaset.html">
+            <span class="row__nr">05</span>
+            <span class="row__title">Vargnäset - Första besöket</span>
+            <span class="row__meta">Byn Vargnäset, nära Cermiras gräns</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-6-vitterdal.html">
+            <span class="row__nr">06</span>
+            <span class="row__title">Återkomst till Vitterdal</span>
+            <span class="row__meta">Vitterdal, Cermira</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-7-vargnaset.html">
+            <span class="row__nr">07</span>
+            <span class="row__title">Vargnäset - Ockupationen</span>
+            <span class="row__meta">Vargnäset, nu ockuperat</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-8-evakueringen.html">
+            <span class="row__nr">08</span>
+            <span class="row__title">Evakueringen</span>
+            <span class="row__meta">Flykt mot säkerhet genom Drunok</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-9-mithera.html">
+            <span class="row__nr">09</span>
+            <span class="row__title">Genom Mithera</span>
+            <span class="row__meta">Mithera-skogen, från Grensfortet till Skugglandet</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+          <li><a class="row row--kapitel" href="kapitel/kapitel-10-skugglandet.html">
+            <span class="row__nr">10</span>
+            <span class="row__title">Skugglandet och Zentris Befrielse</span>
+            <span class="row__meta">Skugglandet → Grensfortet (högsommar)</span>
+            <span class="row__status">Klart</span>
+          </a></li>
+        <!--/BYGG:KAPITEL-ROWS-->
+    </ol>
 
-        <div class="stat-card gold">
-            <div class="stat-label">Spelarkaraktärer</div>
-            <div class="stat-value">7</div>
-            <div class="stat-label">Zentri + Ulzak</div>
-        </div>
-
-        <div class="stat-card red">
-            <div class="stat-label">NPCs</div>
-            <div class="stat-value" id="npc-count">240</div>
-            <div class="stat-label">Katalogiserade</div>
-        </div>
+    <div class="section-head" style="margin-top: clamp(28px, 5vw, 56px);">
+      <h2>Rollpersoner</h2>
+      <span class="meta"><!--BYGG:ROLLPERSONER-META-->
+6 aktiva
+        <!--/BYGG:ROLLPERSONER-META--></span>
     </div>
-
-    <!-- Navigation -->
-    <div class="nav">
-        <button class="nav-btn active" onclick="showSection('kapitel')">Kapitel</button>
-
-        <div class="nav-dropdown">
-            <button class="nav-btn">Wiki ▼</button>
-            <div class="nav-dropdown-content">
-                <button onclick="showSection('players')">Spelarkaraktärer</button>
-                <button onclick="showSection('npcs')">NPCs</button>
-                <button onclick="showSection('platser')">Platser</button>
-                <button onclick="showSection('fraktioner')">Fraktioner</button>
-                <button onclick="window.location.href='orter.html'">Örter & Droger</button>
-            </div>
-        </div>
-
-        <div class="nav-dropdown">
-            <button class="nav-btn">Eget Material ▼</button>
-            <div class="nav-dropdown-content">
-                <button onclick="showSection('eget-material')">Översikt</button>
-                <button onclick="window.location.href='EgetMaterial/projekt/EM-L001_muhad/muhad.html'">Muhad (Gudalandet)</button>
-                <button onclick="window.location.href='EgetMaterial/projekt/EM-S001_jen/jen.html'">Jen (Handelsstaden)</button>
-                <button onclick="window.location.href='EgetMaterial/projekt/EM-R001_vitterdal-baronieriet/vitterdal-baronieriet.html'">Vitterdal-baronieriet</button>
-                <button onclick="window.location.href='EgetMaterial/projekt/EM-R002_grens-baroneri/grens-baroneri.html'">Förläningen Grensfortet</button>
-            </div>
-        </div>
-
-        <a href="sessioner/index.html" class="nav-btn" style="text-decoration: none;">Sessioner</a>
-        <a href="fluff/index.html" class="nav-btn" style="text-decoration: none;">Fluff</a>
-        <a href="masterplot/masterplot.html" class="nav-btn" style="text-decoration: none;">Masterplot</a>
-        <a href="kontinuitet.html" class="nav-btn" style="text-decoration: none;">Kontinuitet</a>
-    </div>
-
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Kapitel Section -->
-        <div id="kapitel" class="section active">
-            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Kampanjhistorik</h2>
-            <div class="timeline" id="timeline-container"></div>
-        </div>
-
-        <!-- Players Section -->
-        <div id="players" class="section">
-            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Spelarkaraktärer</h2>
-            <div class="cards-grid" id="players-container"></div>
-        </div>
-
-        <!-- NPCs Section -->
-        <div id="npcs" class="section">
-            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">NPCs</h2>
-
-            <div class="search-filter-bar">
-                <div class="search-box">
-                    <input type="text" id="npc-search" placeholder="Sök NPCs...">
-                </div>
-
-                <div class="filter-section">
-                    <h4>Region</h4>
-                    <div class="filter-tags" id="region-filters"></div>
-                </div>
-
-                <div class="filter-section">
-                    <h4>Status</h4>
-                    <div class="filter-tags" id="status-filters"></div>
-                </div>
-
-                <div class="filter-section">
-                    <h4>Ras</h4>
-                    <div class="filter-tags" id="ras-filters"></div>
-                </div>
-            </div>
-
-            <div class="cards-grid" id="npcs-container"></div>
-        </div>
-
-        <!-- Platser Section -->
-        <div id="platser" class="section">
-            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Platser</h2>
-
-            <div class="search-filter-bar">
-                <div class="search-box">
-                    <input type="text" id="plats-search" placeholder="Sök platser...">
-                </div>
-
-                <div class="filter-section">
-                    <h4>Region</h4>
-                    <div class="filter-tags" id="plats-region-filters"></div>
-                </div>
-
-                <div class="filter-section">
-                    <h4>Typ</h4>
-                    <div class="filter-tags" id="typ-filters"></div>
-                </div>
-            </div>
-
-            <div class="cards-grid" id="platser-container"></div>
-        </div>
-
-        <!-- Fraktioner Section -->
-        <div id="fraktioner" class="section">
-            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">Fraktioner</h2>
-
-            <div class="search-filter-bar">
-                <div class="search-box">
-                    <input type="text" id="fraktion-search" placeholder="Sök fraktioner...">
-                </div>
-
-                <div class="filter-section">
-                    <h4>Typ</h4>
-                    <div class="filter-tags" id="fraktion-typ-filters"></div>
-                </div>
-
-                <div class="filter-section">
-                    <h4>Ras</h4>
-                    <div class="filter-tags" id="fraktion-ras-filters"></div>
-                </div>
-
-                <div class="filter-section">
-                    <h4>Status</h4>
-                    <div class="filter-tags" id="fraktion-status-filters"></div>
-                </div>
-            </div>
-
-            <div class="cards-grid" id="fraktioner-container"></div>
-        </div>
-
-        <!-- Eget Material Section -->
-        <div id="eget-material" class="section">
-            <h2 style="color: var(--gold); margin-bottom: 1.5rem;">📚 Eget Material</h2>
-
-            <div style="max-width: 900px; margin: 0 auto 2rem;">
-                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
-                    Detta är egenskapat material för EON-världen som följer officiella regler och kan delas med andra spelledare.
-                    Allt material är validerat mot EON-kanon via NotebookLM och kan importeras till kampanjens wiki vid behov.
-                </p>
-            </div>
-
-            <div style="max-width: 1200px; margin: 0 auto;">
-                <h3 style="color: var(--flame-orange); margin-bottom: 1rem;">📂 Pågående Projekt</h3>
-
-                <div style="display: grid; gap: 1.5rem; margin-bottom: 3rem;">
-                    <!-- Vitterdal-baronieriet -->
-                    <div class="card" style="cursor: pointer;" onclick="window.location.href='EgetMaterial/projekt/EM-R001_vitterdal-baronieriet/vitterdal-baronieriet.html'">
-                        <div style="display: flex; align-items: start; gap: 1.5rem;">
-                            <div style="flex-shrink: 0; font-size: 2.5rem;">🏰</div>
-                            <div style="flex-grow: 1;">
-                                <h3 style="color: var(--flame-orange); margin-bottom: 0.5rem;">
-                                    EM-R001: Vitterdal-baronieriet
-                                </h3>
-                                <p style="color: var(--text-secondary); margin-bottom: 0.75rem; font-size: 0.95rem;">
-                                    <strong>Typ:</strong> Region (baronieriet + huvudstad) •
-                                    <strong>Status:</strong> <span style="color: var(--gold);">✅ Komplett</span>
-                                </p>
-                                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
-                                    Nordvästra Cermira. Baronieriet Vitterdal med huvudstaden Mitrahus,
-                                    jarladöme styrt av Hagge. Guldgruvor, dvärgavtal med Klan Ghor,
-                                    och handelskonflikter mellan Nejas och Wekzi. Inkluderar Grensfortet,
-                                    Frisänkan och Bergvik.
-                                </p>
-                                <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                                    <span style="background: rgba(168, 85, 168, 0.2); color: var(--mystic-purple); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Cermira</span>
-                                    <span style="background: rgba(255, 107, 74, 0.2); color: var(--flame-orange); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Kampanjaktivt</span>
-                                    <span style="background: rgba(255, 165, 0, 0.2); color: var(--gold); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">7 faser klara</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Förläningen Grensfortet -->
-                    <div class="card" style="cursor: pointer;" onclick="window.location.href='EgetMaterial/projekt/EM-R002_grens-baroneri/grens-baroneri.html'">
-                        <div style="display: flex; align-items: start; gap: 1.5rem;">
-                            <div style="flex-shrink: 0; font-size: 2.5rem;">⚔️</div>
-                            <div style="flex-grow: 1;">
-                                <h3 style="color: var(--flame-orange); margin-bottom: 0.5rem;">
-                                    EM-R002: Förläningen Grensfortet
-                                </h3>
-                                <p style="color: var(--text-secondary); margin-bottom: 0.75rem; font-size: 0.95rem;">
-                                    <strong>Typ:</strong> Förläning (fort + byar) •
-                                    <strong>Status:</strong> <span style="color: var(--gold);">✅ Komplett</span>
-                                </p>
-                                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
-                                    Spelarnas förläning vid Mithera-gränsen. Grensfortet med byarna Bergvik och Frisänkan.
-                                    Förläningsstyrning, militärt kommando, legosoldatkompani. Hagges strategiska investering
-                                    i en lojal reservstyrka.
-                                </p>
-                                <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                                    <span style="background: rgba(168, 85, 168, 0.2); color: var(--mystic-purple); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Cermira</span>
-                                    <span style="background: rgba(255, 107, 74, 0.2); color: var(--flame-orange); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Spelarnas bas</span>
-                                    <span style="background: rgba(255, 165, 0, 0.2); color: var(--gold); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Legokompani</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h3 style="color: var(--flame-orange); margin-bottom: 1rem;">📖 Färdiga Material</h3>
-                <div style="display: grid; gap: 1.5rem; margin-bottom: 3rem;">
-                    <!-- Muhad -->
-                    <div class="card" style="cursor: pointer;" onclick="window.location.href='EgetMaterial/projekt/EM-L001_muhad/muhad.html'">
-                        <div style="display: flex; align-items: start; gap: 1.5rem;">
-                            <div style="flex-shrink: 0; font-size: 2.5rem;">🏜️</div>
-                            <div style="flex-grow: 1;">
-                                <h3 style="color: var(--flame-orange); margin-bottom: 0.5rem;">
-                                    EM-L001: Muhad (Gudalandet)
-                                </h3>
-                                <p style="color: var(--text-secondary); margin-bottom: 0.75rem; font-size: 0.95rem;">
-                                    <strong>Typ:</strong> Land •
-                                    <strong>Status:</strong> <span style="color: var(--gold);">✅ Komplett</span>
-                                </p>
-                                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
-                                    Teokratiskt rike styrt av gudahärskaren Mhim. ~1,2 miljoner invånare, ~120 000 slavar.
-                                    Komplett med geografi, historia, styre, religion, militär (granascher, nattdräpare),
-                                    7 städer (Alkarzan, Tabbah, Kaal, Melucka, Quaran, Jen), nomadfolk och 20+ NPCs.
-                                </p>
-                                <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                                    <span style="background: rgba(168, 85, 168, 0.2); color: var(--mystic-purple); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Västlanden</span>
-                                    <span style="background: rgba(255, 107, 74, 0.2); color: var(--flame-orange); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Kampanjaktivt</span>
-                                    <span style="background: rgba(255, 165, 0, 0.2); color: var(--gold); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">896 rader</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Jen -->
-                    <div class="card" style="cursor: pointer;" onclick="window.location.href='EgetMaterial/projekt/EM-S001_jen/jen.html'">
-                        <div style="display: flex; align-items: start; gap: 1.5rem;">
-                            <div style="flex-shrink: 0; font-size: 2.5rem;">⚓</div>
-                            <div style="flex-grow: 1;">
-                                <h3 style="color: var(--flame-orange); margin-bottom: 0.5rem;">
-                                    EM-S001: Jen (Handelsstaden)
-                                </h3>
-                                <p style="color: var(--text-secondary); margin-bottom: 0.75rem; font-size: 0.95rem;">
-                                    <strong>Typ:</strong> Stad •
-                                    <strong>Status:</strong> <span style="color: var(--gold);">✅ Komplett</span>
-                                </p>
-                                <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
-                                    Muhads rikaste stad, ~100 000 invånare. Enda hamnen öppen för utlänningar.
-                                    10 stadsdelar, 90+ NPCs, 7 fraktioner, slavhandel (Järntorget),
-                                    kryddmarknaden, kanalprojektet. Besökt i Kapitel 2.
-                                </p>
-                                <div style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                                    <span style="background: rgba(168, 85, 168, 0.2); color: var(--mystic-purple); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Muhad/Ziu</span>
-                                    <span style="background: rgba(255, 107, 74, 0.2); color: var(--flame-orange); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Kampanjaktivt</span>
-                                    <span style="background: rgba(255, 165, 0, 0.2); color: var(--gold); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.85rem;">Korsvaliderad</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()">×</button>
-            <div id="modal-body"></div>
-        </div>
-    </div>
-
-    <!-- Lightbox for full-size images -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <button class="lightbox-close" onclick="closeLightbox()">×</button>
-        <img id="lightbox-image" src="" alt="Full size image">
-    </div>
-
-    <script src="./master/wiki_data.js"></script>
-    <script src="./fraktioner_data.js"></script>
-    <script>
-        // Data
-        let allNpcs = [];
-        let allPlatser = [];
-        let filteredNpcs = [];
-        let filteredPlatser = [];
-        let activeFilters = {
-            region: [],
-            status: [],
-            ras: [],
-            typ: [],
-            fraktionTyp: [],
-            fraktionRas: [],
-            fraktionStatus: []
-        };
-
-        // Load data
-        function init() {
-            if (typeof wikiData === 'undefined') {
-                document.getElementById('npcs-container').innerHTML = '<div class="loading">Laddar data...</div>';
-                return;
-            }
-
-            allNpcs = wikiData.npcs || [];
-            allPlatser = wikiData.platser || [];
-            filteredNpcs = [...allNpcs];
-            filteredPlatser = [...allPlatser];
-
-            renderKapitel();
-            renderPlayers();
-            renderNpcs();
-            renderPlatser();
-            renderFraktioner();
-            setupFilters();
-            setupSearch();
-
-            // Hantera URL-parametrar för att öppna modaler från kapitelsidor
-            handleUrlParams();
-        }
-
-        // Hantera URL-parametrar (?modal=npc&name=Gordon%20Nahrzezia)
-        function handleUrlParams() {
-            const params = new URLSearchParams(window.location.search);
-            const modalType = params.get('modal');
-            const name = params.get('name');
-
-            if (!modalType || !name) return;
-
-            console.log('handleUrlParams:', modalType, name);
-
-            // Rensa URL:en utan att ladda om sidan
-            window.history.replaceState({}, document.title, window.location.pathname);
-
-            // Vänta lite längre för att säkerställa att allt är renderat
-            setTimeout(() => {
-                if (modalType === 'npc') {
-                    const npc = allNpcs.find(n => n.namn.toLowerCase() === name.toLowerCase());
-                    console.log('Hittad NPC:', npc);
-                    if (npc) {
-                        // Växla till NPCs-sektionen
-                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-                        document.querySelector('[data-section="npcs"]').classList.add('active');
-                        document.getElementById('npcs').classList.add('active');
-                        // Öppna modal
-                        showModal(npc);
-                    }
-                } else if (modalType === 'plats') {
-                    const plats = allPlatser.find(p => p.namn.toLowerCase() === name.toLowerCase());
-                    console.log('Hittad plats:', plats);
-                    if (plats) {
-                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-                        document.querySelector('[data-section="platser"]').classList.add('active');
-                        document.getElementById('platser').classList.add('active');
-                        showPlatsModal(plats);
-                    }
-                } else if (modalType === 'fraktion') {
-                    const fraktion = allFraktioner.find(f => f.namn.toLowerCase() === name.toLowerCase());
-                    console.log('Hittad fraktion:', fraktion);
-                    if (fraktion) {
-                        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-                        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-                        document.querySelector('[data-section="fraktioner"]').classList.add('active');
-                        document.getElementById('fraktioner').classList.add('active');
-                        showFraktionModal(fraktion);
-                    }
-                }
-            }, 300);
-        }
-
-        // Kapitel data
-        const kapitel = [
-            {nummer: "Prolog", titel: "Tirakgraven", plats: "Gränstrakterna Cermira/Mithera", status: "avslutad", beskrivning: "Gruppen vaknar fängslade i demonfursten Tiraks grav."},
-            {nummer: 1, titel: "Jakten", plats: "Cermiras skogar → Grensfortet", status: "avslutad", beskrivning: "Jakten på Tamron/Ibran genom Cermiras skogar."},
-            {nummer: 2, titel: "Muhad", plats: "Jarla → Jen, Muhad", status: "avslutad", beskrivning: "Uppdraget att hitta Hagge leder till Muhad."},
-            {nummer: 3, titel: "Tarkas", plats: "Tarkas kust och ökenlandskap", status: "avslutad", beskrivning: "Skeppsbrottet och äventyr i Tarkas."},
-            {nummer: 4, titel: "Jargien", plats: "Jargiska kejsardömet", status: "avslutad", beskrivning: "Genom Jargien mot hemmet."},
-            {nummer: 5, titel: "Vargnäset", plats: "Byn Vargnäset", status: "avslutad", beskrivning: "Första besöket i Vargnäset, Zentris försvinnande."},
-            {nummer: 6, titel: "Vitterdal", plats: "Vitterdal, Cermira", status: "avslutad", beskrivning: "Återkomst till Vitterdal och belöning."},
-            {nummer: 7, titel: "Vargnäset igen", plats: "Vargnäset (ockuperat)", status: "avslutad", beskrivning: "Tillbaka till Vargnäset - nu ockuperat."},
-            {nummer: 8, titel: "Evakueringen", plats: "Flykt genom Drunok", status: "avslutad", beskrivning: "Evakuering med 50 civila."},
-            {nummer: 9, titel: "Mithera", plats: "Mithera-skogen", status: "avslutad", beskrivning: "Genom Mithera mot Skugglandet."},
-            {nummer: 10, titel: "Skugglandet", plats: "Skugglandets förvrängda verklighet", status: "pågående", beskrivning: "Gruppen söker Zentri i Skugglandet."}
-        ];
-
-        // Players data
-        const players = [
-            {namn: "Gordon Nahrzezia", spelare: "Calle", ras: "Cirefalier", klass: "Legosoldat", alder: "~30 år", status: "Aktiv", plats: "Skugglandet"},
-            {namn: "Thrakka Järnhanden", spelare: "Andreas", ras: "Tirak", klass: "Gladiator/Livvakt", status: "Aktiv", plats: "Skugglandet"},
-            {namn: "Umnatak", spelare: "Christofer", ras: "Auser", klass: "Spejare/Schaman", status: "Aktiv", plats: "Skugglandet"},
-            {namn: "Kazrik klan Ghor", spelare: "Jonas", ras: "Dvärg", klass: "Författare (\"Den resande\")", status: "Aktiv", plats: "Skugglandet"},
-            {namn: "Corvus Askhar", spelare: "Daniel", ras: "Människa", klass: "F.d. Kommendör Arvorns Hammare", alder: "31 år", status: "Aktiv", plats: "Skugglandet"},
-            {namn: "Zentri Bredarsson", spelare: "Andreas (f.d.)", ras: "Asharier", klass: "Köpmansson/Krigarmagiker", status: "Försvunnen", plats: "Skugglandet (fången)"}
-        ];
-
-        // Fraktioner data - loaded from fraktioner_data.js
-        let allFraktioner = [];
-        let filteredFraktioner = [];
-
-        // Flatten fraktioner_data structure
-        if (typeof fraktionerData !== 'undefined') {
-            allFraktioner = [
-                ...fraktionerData.handelshus,
-                ...fraktionerData.magihus,
-                ...fraktionerData.militära,
-                ...fraktionerData.kriminella,
-                ...fraktionerData.övriga
-            ];
-            filteredFraktioner = allFraktioner;
-        }
-
-        // Kapitelsidor som finns (nummer → filnamn)
-        // Stödjer både gammal (1-11) och ny (0-10) numrering
-        const kapitelSidor = {
-            '0': 'prolog-tirakgraven.html',
-            '1': 'kapitel-1-jakten.html',
-            '2': 'kapitel-2-muhad.html',
-            '3': 'kapitel-3-tarkas.html',
-            '4': 'kapitel-4-jargien.html',
-            '5': 'kapitel-5-vargnaset.html',
-            '6': 'kapitel-6-vitterdal.html',
-            '7': 'kapitel-7-vargnaset.html',
-            '8': 'kapitel-8-evakueringen.html',
-            '9': 'kapitel-9-mithera.html',
-            '10': 'kapitel-10-skugglandet.html'
-        };
-
-        // Fallback-mappning för titlar (om nummer inte matchar)
-        const kapitelTitelSidor = {
-            'Tirakgraven': 'prolog-tirakgraven.html',
-            'Jakten': 'kapitel-1-jakten.html',
-            'Muhad': 'kapitel-2-muhad.html',
-            'Tarkas': 'kapitel-3-tarkas.html',
-            'Jargien': 'kapitel-4-jargien.html',
-            'Första besöket': 'kapitel-5-vargnaset.html',
-            'Vitterdal': 'kapitel-6-vitterdal.html',
-            'Ockupationen': 'kapitel-7-vargnaset.html',
-            'Evakueringen': 'kapitel-8-evakueringen.html',
-            'Mithera': 'kapitel-9-mithera.html',
-            'Skugglandet': 'kapitel-10-skugglandet.html'
-        };
-
-        function renderKapitel() {
-            const container = document.getElementById('timeline-container');
-            container.innerHTML = kapitel.map((k, i) => {
-                // Försök matcha på nummer först, sedan på titel
-                let harSida = kapitelSidor[k.nummer];
-                if (!harSida) {
-                    // Fallback: kolla om titeln innehåller ett känt kapitelnamn
-                    for (const [nyckel, fil] of Object.entries(kapitelTitelSidor)) {
-                        if (k.titel && k.titel.includes(nyckel)) {
-                            harSida = fil;
-                            break;
-                        }
-                    }
-                }
-                const sidlank = harSida ? `<a href="kapitel/${harSida}" class="kapitel-link">📖 Läs kapitlet</a>` : '';
-                return `
-                <div class="timeline-item ${k.status === 'pågående' ? 'current' : ''}">
-                    <h3>${k.titel}</h3>
-                    <div class="meta">${k.plats} | Status: ${k.status}</div>
-                    <p>${k.beskrivning}</p>
-                    ${sidlank}
-                </div>
-            `}).join('');
-        }
-
-        function renderPlayers() {
-            const container = document.getElementById('players-container');
-            container.innerHTML = players.map(p => `
-                <div class="card player-card ${p.status === 'Försvunnen' ? 'forsvunnen' : ''}" onclick='showPlayerModal(${JSON.stringify(p)})'>
-                    <h3>${p.namn}</h3>
-                    <div class="card-meta">
-                        <span class="tag gold">${p.spelare}</span>
-                        <span class="tag purple">${p.ras}</span>
-                        <span class="tag ${p.status === 'Försvunnen' ? 'red' : 'green'}">${p.status}</span>
-                    </div>
-                    <div class="card-info">
-                        <strong>${p.klass}</strong>${p.alder ? ` · ${p.alder}` : ''}<br>
-                        📍 ${p.plats}
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function renderNpcs() {
-            const container = document.getElementById('npcs-container');
-            const npcs = filteredNpcs;
-
-            if (npcs.length === 0) {
-                container.innerHTML = '<div class="loading">Inga NPCs matchade din sökning</div>';
-                return;
-            }
-
-            container.innerHTML = npcs.map(npc => {
-                const bildUrl = npc.bild ? `./kampanjwiki/assets/images/npcs/${npc.bild}` : null;
-                return `
-                <div class="card" onclick='showNpcModal(${JSON.stringify(npc).replace(/'/g, "&#39;")})'>
-                    ${bildUrl ? `<img src="${bildUrl}" alt="${npc.namn}" class="card-image-preview">` : ''}
-                    <h3>${npc.namn}</h3>
-                    <div class="card-meta">
-                        ${npc.ras ? `<span class="tag purple">${npc.ras}</span>` : ''}
-                        ${npc.status ? `<span class="tag ${getStatusColor(npc.status)}">${npc.status}</span>` : ''}
-                        ${npc.plats ? `<span class="tag gold">📍 ${npc.plats}</span>` : ''}
-                    </div>
-                    <div class="card-info">
-                        ${npc.fraktion ? `⚔️ ${npc.fraktion}` : 'Ingen fraktion'}
-                    </div>
-                </div>
-                `;
-            }).join('');
-
-            document.getElementById('npc-count').textContent = npcs.length;
-        }
-
-        function renderPlatser() {
-            const container = document.getElementById('platser-container');
-            const platser = filteredPlatser;
-
-            if (platser.length === 0) {
-                container.innerHTML = '<div class="loading">Inga platser matchade din sökning</div>';
-                return;
-            }
-
-            container.innerHTML = platser.map(plats => `
-                <div class="card" onclick='showPlatsModal(${JSON.stringify(plats).replace(/'/g, "&#39;")})'>
-                    <h3>${plats.namn}</h3>
-                    <div class="card-meta">
-                        ${plats.typ ? `<span class="tag purple">${plats.typ}</span>` : ''}
-                        ${plats.region ? `<span class="tag gold">📍 ${plats.region}</span>` : ''}
-                    </div>
-                    <div class="card-info">
-                        ${plats.beskrivning ? stripMarkdown(plats.beskrivning).substring(0, 100) + '...' : ''}
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function renderFraktioner() {
-            const container = document.getElementById('fraktioner-container');
-            const fraktioner = filteredFraktioner;
-
-            if (fraktioner.length === 0) {
-                container.innerHTML = '<div class="loading">Inga fraktioner matchade din sökning</div>';
-                return;
-            }
-
-            container.innerHTML = fraktioner.map(f => `
-                <div class="card" onclick='showFraktionModal(${JSON.stringify(f).replace(/'/g, "&#39;")})'>
-                    <h3>${f.namn}</h3>
-                    <div class="card-meta">
-                        ${f.typ ? `<span class="tag purple">${f.typ}</span>` : ''}
-                        ${f.ras ? `<span class="tag gold">${f.ras}</span>` : ''}
-                        ${f.status ? `<span class="tag ${getFraktionColor(f.status)}">${f.status}</span>` : ''}
-                    </div>
-                    <div class="card-info">
-                        ${f.ledare ? `👤 ${f.ledare}` : ''}
-                        ${f.huvudsäte ? `<br>🏰 ${f.huvudsäte}` : ''}
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        // Rensa markdown-syntax för kortförhandsvisningar
-        function stripMarkdown(text) {
-            if (!text) return '';
-            return text
-                .replace(/#{1,6}\s*/g, '')           // Ta bort # rubriker
-                .replace(/\*\*(.*?)\*\*/g, '$1')     // Ta bort **bold**
-                .replace(/\*(.*?)\*/g, '$1')         // Ta bort *italic*
-                .replace(/`(.*?)`/g, '$1')           // Ta bort `code`
-                .replace(/\[(.*?)\]\(.*?\)/g, '$1')  // Ta bort [text](url)
-                .replace(/^[-*]\s*/gm, '')           // Ta bort listor
-                .replace(/\n+/g, ' ')                // Ersätt radbrytningar med mellanslag
-                .trim();
-        }
-
-        function getStatusColor(status) {
-            if (!status) return '';
-            const s = status.toLowerCase();
-            if (s.includes('död')) return 'red';
-            if (s.includes('försvunnen')) return 'red';
-            if (s.includes('levande')) return 'green';
-            return '';
-        }
-
-        function getFraktionColor(status) {
-            if (status === 'Fiende') return 'red';
-            if (status === 'Allierad') return 'green';
-            if (status === 'Potentiell allierad') return 'gold';
-            return 'purple';
-        }
-
-        function setupFilters() {
-            // Extract unique values
-            const regioner = [...new Set(allNpcs.map(n => extractRegion(n.plats)).filter(r => r))];
-            const statuses = [...new Set(allNpcs.map(n => n.status).filter(s => s))];
-            const raser = [...new Set(allNpcs.map(n => n.ras).filter(r => r))];
-            const typer = [...new Set(allPlatser.map(p => p.typ).filter(t => t))];
-            const platsRegioner = [...new Set(allPlatser.map(p => p.region).filter(r => r))];
-            const fraktionTyper = [...new Set(allFraktioner.map(f => f.typ).filter(t => t))];
-            const fraktionRaser = [...new Set(allFraktioner.map(f => f.ras).filter(r => r))];
-            const fraktionStatuses = [...new Set(allFraktioner.map(f => f.status).filter(s => s))];
-
-            // Render region filters
-            document.getElementById('region-filters').innerHTML = regioner.sort().map(r =>
-                `<span class="filter-tag" data-filter="region" data-value="${r}">${r}</span>`
-            ).join('');
-
-            // Render status filters
-            document.getElementById('status-filters').innerHTML = statuses.sort().map(s =>
-                `<span class="filter-tag" data-filter="status" data-value="${s}">${s}</span>`
-            ).join('');
-
-            // Render ras filters
-            document.getElementById('ras-filters').innerHTML = raser.sort().map(r =>
-                `<span class="filter-tag" data-filter="ras" data-value="${r}">${r}</span>`
-            ).join('');
-
-            // Render plats region filters
-            document.getElementById('plats-region-filters').innerHTML = platsRegioner.sort().map(r =>
-                `<span class="filter-tag" data-filter="plats-region" data-value="${r}">${r}</span>`
-            ).join('');
-
-            // Render typ filters
-            document.getElementById('typ-filters').innerHTML = typer.sort().map(t =>
-                `<span class="filter-tag" data-filter="typ" data-value="${t}">${t}</span>`
-            ).join('');
-
-            // Render fraktion typ filters
-            document.getElementById('fraktion-typ-filters').innerHTML = fraktionTyper.sort().map(t =>
-                `<span class="filter-tag" data-filter="fraktion-typ" data-value="${t}">${t}</span>`
-            ).join('');
-
-            // Render fraktion ras filters
-            document.getElementById('fraktion-ras-filters').innerHTML = fraktionRaser.sort().map(r =>
-                `<span class="filter-tag" data-filter="fraktion-ras" data-value="${r}">${r}</span>`
-            ).join('');
-
-            // Render fraktion status filters
-            document.getElementById('fraktion-status-filters').innerHTML = fraktionStatuses.sort().map(s =>
-                `<span class="filter-tag" data-filter="fraktion-status" data-value="${s}">${s}</span>`
-            ).join('');
-
-            // Add click handlers
-            document.querySelectorAll('.filter-tag').forEach(tag => {
-                tag.addEventListener('click', handleFilterClick);
-            });
-        }
-
-        function extractRegion(plats) {
-            if (!plats) return null;
-            if (plats.includes('Muhad') || plats.includes('Jen')) return 'Muhad';
-            if (plats.includes('Cermira')) return 'Cermira';
-            if (plats.includes('Mithera')) return 'Mithera';
-            if (plats.includes('Tarkas')) return 'Tarkas';
-            if (plats.includes('Skugglandet')) return 'Skugglandet';
-            if (plats.includes('Vargnäset')) return 'Vargnäset';
-            if (plats.includes('Vitterdal')) return 'Vitterdal';
-            if (plats.includes('Tuzan Rim')) return 'Tuzan Rim';
-            if (plats.includes('Jarla')) return 'Jarla';
-            return 'Övriga';
-        }
-
-        function handleFilterClick(e) {
-            const tag = e.target;
-            const filterType = tag.dataset.filter;
-            const value = tag.dataset.value;
-
-            tag.classList.toggle('active');
-
-            if (filterType === 'plats-region') {
-                if (tag.classList.contains('active')) {
-                    activeFilters.platsRegion = activeFilters.platsRegion || [];
-                    activeFilters.platsRegion.push(value);
-                } else {
-                    activeFilters.platsRegion = (activeFilters.platsRegion || []).filter(v => v !== value);
-                }
-                applyPlatsFilters();
-            } else if (filterType === 'typ') {
-                if (tag.classList.contains('active')) {
-                    activeFilters.typ = activeFilters.typ || [];
-                    activeFilters.typ.push(value);
-                } else {
-                    activeFilters.typ = (activeFilters.typ || []).filter(v => v !== value);
-                }
-                applyPlatsFilters();
-            } else if (filterType === 'fraktion-typ') {
-                if (tag.classList.contains('active')) {
-                    activeFilters.fraktionTyp = activeFilters.fraktionTyp || [];
-                    activeFilters.fraktionTyp.push(value);
-                } else {
-                    activeFilters.fraktionTyp = (activeFilters.fraktionTyp || []).filter(v => v !== value);
-                }
-                applyFraktionFilters();
-            } else if (filterType === 'fraktion-ras') {
-                if (tag.classList.contains('active')) {
-                    activeFilters.fraktionRas = activeFilters.fraktionRas || [];
-                    activeFilters.fraktionRas.push(value);
-                } else {
-                    activeFilters.fraktionRas = (activeFilters.fraktionRas || []).filter(v => v !== value);
-                }
-                applyFraktionFilters();
-            } else if (filterType === 'fraktion-status') {
-                if (tag.classList.contains('active')) {
-                    activeFilters.fraktionStatus = activeFilters.fraktionStatus || [];
-                    activeFilters.fraktionStatus.push(value);
-                } else {
-                    activeFilters.fraktionStatus = (activeFilters.fraktionStatus || []).filter(v => v !== value);
-                }
-                applyFraktionFilters();
-            } else {
-                if (tag.classList.contains('active')) {
-                    activeFilters[filterType].push(value);
-                } else {
-                    activeFilters[filterType] = activeFilters[filterType].filter(v => v !== value);
-                }
-                applyNpcFilters();
-            }
-        }
-
-        function applyNpcFilters() {
-            const searchQuery = document.getElementById('npc-search').value.toLowerCase();
-
-            filteredNpcs = allNpcs.filter(npc => {
-                // Search filter
-                if (searchQuery && !npc.namn.toLowerCase().includes(searchQuery)) {
-                    return false;
-                }
-
-                // Region filter
-                if (activeFilters.region.length > 0) {
-                    const npcRegion = extractRegion(npc.plats);
-                    if (!activeFilters.region.includes(npcRegion)) return false;
-                }
-
-                // Status filter
-                if (activeFilters.status.length > 0) {
-                    if (!activeFilters.status.includes(npc.status)) return false;
-                }
-
-                // Ras filter
-                if (activeFilters.ras.length > 0) {
-                    if (!activeFilters.ras.includes(npc.ras)) return false;
-                }
-
-                return true;
-            });
-
-            renderNpcs();
-        }
-
-        function applyPlatsFilters() {
-            const searchQuery = document.getElementById('plats-search').value.toLowerCase();
-
-            filteredPlatser = allPlatser.filter(plats => {
-                // Search filter
-                if (searchQuery && !plats.namn.toLowerCase().includes(searchQuery)) {
-                    return false;
-                }
-
-                // Region filter
-                if (activeFilters.platsRegion && activeFilters.platsRegion.length > 0) {
-                    if (!activeFilters.platsRegion.includes(plats.region)) return false;
-                }
-
-                // Typ filter
-                if (activeFilters.typ && activeFilters.typ.length > 0) {
-                    if (!activeFilters.typ.includes(plats.typ)) return false;
-                }
-
-                return true;
-            });
-
-            renderPlatser();
-        }
-
-        function applyFraktionFilters() {
-            const searchQuery = document.getElementById('fraktion-search').value.toLowerCase();
-
-            filteredFraktioner = allFraktioner.filter(fraktion => {
-                // Search filter
-                if (searchQuery && !fraktion.namn.toLowerCase().includes(searchQuery)) {
-                    return false;
-                }
-
-                // Typ filter
-                if (activeFilters.fraktionTyp && activeFilters.fraktionTyp.length > 0) {
-                    if (!activeFilters.fraktionTyp.includes(fraktion.typ)) return false;
-                }
-
-                // Ras filter
-                if (activeFilters.fraktionRas && activeFilters.fraktionRas.length > 0) {
-                    if (!activeFilters.fraktionRas.includes(fraktion.ras)) return false;
-                }
-
-                // Status filter
-                if (activeFilters.fraktionStatus && activeFilters.fraktionStatus.length > 0) {
-                    if (!activeFilters.fraktionStatus.includes(fraktion.status)) return false;
-                }
-
-                return true;
-            });
-
-            renderFraktioner();
-        }
-
-        function setupSearch() {
-            document.getElementById('npc-search').addEventListener('input', applyNpcFilters);
-            document.getElementById('plats-search').addEventListener('input', applyPlatsFilters);
-            document.getElementById('fraktion-search').addEventListener('input', applyFraktionFilters);
-        }
-
-        function showPlayerModal(player) {
-            const modal = document.getElementById('modal');
-            const body = document.getElementById('modal-body');
-
-            body.innerHTML = `
-                <h2>${player.namn}</h2>
-                <div class="modal-row">
-                    <span class="modal-label">Spelare:</span>
-                    <span class="modal-value">${player.spelare}</span>
-                </div>
-                <div class="modal-row">
-                    <span class="modal-label">Ras:</span>
-                    <span class="modal-value">${player.ras}</span>
-                </div>
-                <div class="modal-row">
-                    <span class="modal-label">Klass:</span>
-                    <span class="modal-value">${player.klass}</span>
-                </div>
-                ${player.alder ? `<div class="modal-row">
-                    <span class="modal-label">Ålder:</span>
-                    <span class="modal-value">${player.alder}</span>
-                </div>` : ''}
-                <div class="modal-row">
-                    <span class="modal-label">Status:</span>
-                    <span class="modal-value">${player.status}</span>
-                </div>
-                <div class="modal-row">
-                    <span class="modal-label">Plats:</span>
-                    <span class="modal-value">${player.plats}</span>
-                </div>
-            `;
-
-            modal.classList.add('active');
-        }
-
-        function showNpcModal(npc) {
-            const modal = document.getElementById('modal');
-            const body = document.getElementById('modal-body');
-
-            // Convert markdown to basic HTML
-            let beskrivning = '';
-            if (npc.beskrivning) {
-                beskrivning = npc.beskrivning
-                    .replace(/### (.*?)$/gm, '<h3>$1</h3>')
-                    .replace(/## (.*?)$/gm, '<h2>$1</h2>')
-                    .replace(/# (.*?)$/gm, '<h1>$1</h1>')
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" style="color: var(--flame-orange); text-decoration: underline;">$1</a>')
-                    .replace(/\n\n/g, '</p><p>')
-                    .replace(/^(.*)$/gm, '<p>$1</p>');
-            }
-
-            // Image path
-            const bildUrl = npc.bild ? `./kampanjwiki/assets/images/npcs/${npc.bild}` : null;
-
-            body.innerHTML = `
-                ${bildUrl ? `<img src="${bildUrl}" alt="${npc.namn}" class="modal-image-clickable" onclick="event.stopPropagation(); showLightbox('${bildUrl}')" style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px; float: right; margin-left: 1rem; margin-bottom: 1rem; border: 2px solid var(--gold);">` : ''}
-                <h2>${npc.namn}</h2>
-                ${npc.titel ? `<div class="modal-row">
-                    <span class="modal-label">Titel:</span>
-                    <span class="modal-value">${npc.titel}</span>
-                </div>` : ''}
-                ${npc.ras ? `<div class="modal-row">
-                    <span class="modal-label">Ras:</span>
-                    <span class="modal-value">${npc.ras}</span>
-                </div>` : ''}
-                ${npc.status ? `<div class="modal-row">
-                    <span class="modal-label">Status:</span>
-                    <span class="modal-value">${npc.status}</span>
-                </div>` : ''}
-                ${npc.plats ? `<div class="modal-row">
-                    <span class="modal-label">Plats:</span>
-                    <span class="modal-value">${npc.plats}</span>
-                </div>` : ''}
-                ${npc.fraktion ? `<div class="modal-row">
-                    <span class="modal-label">Fraktion:</span>
-                    <span class="modal-value">${npc.fraktion}</span>
-                </div>` : ''}
-                ${npc.kapitel ? `<div class="modal-row">
-                    <span class="modal-label">Första omnämnande:</span>
-                    <span class="modal-value">${npc.kapitel}</span>
-                </div>` : ''}
-                ${beskrivning ? `<div class="modal-beskrivning">${beskrivning}</div>` : ''}
-                ${npc.detaljsida ? `
-                    <div style="margin-top: 2rem; text-align: center;">
-                        <a href="${npc.detaljsida}"
-                           style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--flame-orange), var(--deep-red)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid var(--gold);"
-                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(255, 107, 74, 0.5)';"
-                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-                            📖 Läs mer om ${npc.namn}
-                        </a>
-                    </div>
-                ` : ''}
-            `;
-
-            modal.classList.add('active');
-        }
-
-        function showPlatsModal(plats) {
-            const modal = document.getElementById('modal');
-            const body = document.getElementById('modal-body');
-
-            // Convert markdown to basic HTML
-            let beskrivning = '';
-            if (plats.beskrivning) {
-                beskrivning = plats.beskrivning
-                    .replace(/### (.*?)$/gm, '<h3>$1</h3>')
-                    .replace(/## (.*?)$/gm, '<h2>$1</h2>')
-                    .replace(/# (.*?)$/gm, '<h1>$1</h1>')
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" style="color: var(--flame-orange); text-decoration: underline;">$1</a>')
-                    .replace(/\n\n/g, '</p><p>')
-                    .replace(/^(.*)$/gm, '<p>$1</p>');
-            }
-
-            body.innerHTML = `
-                <h2>${plats.namn}</h2>
-                ${plats.typ ? `<div class="modal-row">
-                    <span class="modal-label">Typ:</span>
-                    <span class="modal-value">${plats.typ}</span>
-                </div>` : ''}
-                ${plats.region ? `<div class="modal-row">
-                    <span class="modal-label">Region:</span>
-                    <span class="modal-value">${plats.region}</span>
-                </div>` : ''}
-                ${beskrivning ? `<div class="modal-beskrivning">${beskrivning}</div>` : ''}
-                ${plats.detaljsida ? `
-                    <div style="margin-top: 2rem; text-align: center;">
-                        <a href="${plats.detaljsida}"
-                           style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--flame-orange), var(--deep-red)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid var(--gold);"
-                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(255, 107, 74, 0.5)';"
-                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-                            📖 Läs mer om ${plats.namn}
-                        </a>
-                    </div>
-                ` : ''}
-            `;
-
-            modal.classList.add('active');
-        }
-
-        function showFraktionModal(fraktion) {
-            const modal = document.getElementById('modal');
-            const body = document.getElementById('modal-body');
-
-            // Convert markdown to basic HTML
-            let beskrivning = '';
-            if (fraktion.beskrivning) {
-                beskrivning = fraktion.beskrivning
-                    .replace(/### (.*?)$/gm, '<h3>$1</h3>')
-                    .replace(/## (.*?)$/gm, '<h2>$1</h2>')
-                    .replace(/# (.*?)$/gm, '<h1>$1</h1>')
-                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" style="color: var(--flame-orange); text-decoration: underline;">$1</a>')
-                    .replace(/\n\n/g, '</p><p>')
-                    .replace(/^(.*)$/gm, '<p>$1</p>');
-            }
-
-            body.innerHTML = `
-                <h2>${fraktion.namn}</h2>
-                ${fraktion.typ ? `<div class="modal-row">
-                    <span class="modal-label">Typ:</span>
-                    <span class="modal-value">${fraktion.typ}</span>
-                </div>` : ''}
-                ${fraktion.ras ? `<div class="modal-row">
-                    <span class="modal-label">Ras:</span>
-                    <span class="modal-value">${fraktion.ras}</span>
-                </div>` : ''}
-                ${fraktion.huvudsäte ? `<div class="modal-row">
-                    <span class="modal-label">Huvudsäte:</span>
-                    <span class="modal-value">${fraktion.huvudsäte}</span>
-                </div>` : ''}
-                ${fraktion.ledare ? `<div class="modal-row">
-                    <span class="modal-label">Ledare:</span>
-                    <span class="modal-value">${fraktion.ledare}</span>
-                </div>` : ''}
-                ${fraktion.verksamhet ? `<div class="modal-row">
-                    <span class="modal-label">Verksamhet:</span>
-                    <span class="modal-value">${fraktion.verksamhet}</span>
-                </div>` : ''}
-                ${fraktion.status ? `<div class="modal-row">
-                    <span class="modal-label">Status:</span>
-                    <span class="modal-value">${fraktion.status}</span>
-                </div>` : ''}
-                ${fraktion.kapitel ? `<div class="modal-row">
-                    <span class="modal-label">Första omnämnande:</span>
-                    <span class="modal-value">${fraktion.kapitel}</span>
-                </div>` : ''}
-                ${beskrivning ? `<div class="modal-beskrivning">${beskrivning}</div>` : ''}
-                ${fraktion.detaljsida ? `
-                    <div style="margin-top: 2rem; text-align: center;">
-                        <a href="${fraktion.detaljsida}"
-                           style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, var(--flame-orange), var(--deep-red)); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; border: 2px solid var(--gold);"
-                           onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 20px rgba(255, 107, 74, 0.5)';"
-                           onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-                            📖 Läs mer om ${fraktion.namn}
-                        </a>
-                    </div>
-                ` : ''}
-            `;
-
-            modal.classList.add('active');
-        }
-
-        function closeModal() {
-            document.getElementById('modal').classList.remove('active');
-        }
-
-        function showLightbox(imageUrl) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImage = document.getElementById('lightbox-image');
-            lightboxImage.src = imageUrl;
-            lightbox.classList.add('active');
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.remove('active');
-        }
-
-        function showSection(sectionId) {
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-
-            document.getElementById(sectionId).classList.add('active');
-            event.target.classList.add('active');
-        }
-
-        // Close modal on outside click
-        document.getElementById('modal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeModal();
-            }
-        });
-
-        // Close lightbox on outside click (handled by onclick in HTML)
-        // Prevent image click from closing lightbox
-        document.addEventListener('DOMContentLoaded', function() {
-            const lightboxImage = document.getElementById('lightbox-image');
-            if (lightboxImage) {
-                lightboxImage.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                });
-            }
-        });
-
-        // Close lightbox with ESC key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closeLightbox();
-                closeModal();
-            }
-        });
-
-        // Initialize on load
-        window.addEventListener('DOMContentLoaded', init);
-    </script>
+    <ol class="rows">
+<!--BYGG:ROLLPERSONER-ROWS-->
+      <li><div class="row row--rollperson">
+        <span class="row__title">Corvus Askhår / &quot;Arcadius&quot;</span>
+        <span class="row__meta">Människa · Spelare: Daniel</span>
+        <span class="row__status">Aktiv</span>
+      </div></li>
+      <li><div class="row row--rollperson">
+        <span class="row__title">Gordon Nahrzezia</span>
+        <span class="row__meta">Cirefalier · Spelare: Calle</span>
+        <span class="row__status">Aktiv</span>
+      </div></li>
+      <li><div class="row row--rollperson">
+        <span class="row__title">Kazrik klan Ghor</span>
+        <span class="row__meta">Dvärg · Spelare: Jonas</span>
+        <span class="row__status">Aktiv</span>
+      </div></li>
+      <li><div class="row row--rollperson">
+        <span class="row__title">Thrakka &quot;Järnhanden&quot;</span>
+        <span class="row__meta">Tirak · Spelare: Andreas</span>
+        <span class="row__status">Aktiv</span>
+      </div></li>
+      <li><div class="row row--rollperson">
+        <span class="row__title">Umnatak</span>
+        <span class="row__meta">Auser · Spelare: Christofer</span>
+        <span class="row__status">Permanent förändrad</span>
+      </div></li>
+      <li><div class="row row--rollperson">
+        <span class="row__title">Zentri Bredarsson</span>
+        <span class="row__meta">Asharier · Spelare: Andreas</span>
+        <span class="row__status">Räddad</span>
+      </div></li>
+        <!--/BYGG:ROLLPERSONER-ROWS-->
+    </ol>
+  </section>
+
+  <aside class="home-aside">
+    <section id="register">
+      <div class="section-head"><h2>Registret</h2></div>
+      <form class="search" action="register/npcer.html" method="get" style="margin-top: 16px;">
+        <input type="search" name="q" placeholder="Sök namn, plats, fraktion…">
+      </form>
+      <ol class="rows">
+<!--BYGG:REGISTER-ROWS-->
+          <li><a class="row row--simple" href="register/npcer.html">
+            <span class="row__title">NPC:er</span>
+            <span class="row__meta">327</span>
+          </a></li>
+          <li><a class="row row--simple" href="register/platser.html">
+            <span class="row__title">Platser</span>
+            <span class="row__meta">58</span>
+          </a></li>
+          <li><a class="row row--simple" href="register/fraktioner.html">
+            <span class="row__title">Fraktioner</span>
+            <span class="row__meta">48</span>
+          </a></li>
+        <!--/BYGG:REGISTER-ROWS-->
+        <li><a class="row row--simple" href="orter.html">
+          <span class="row__title">Örter &amp; droger</span>
+          <span class="row__meta">123</span>
+        </a></li>
+      </ol>
+    </section>
+
+    <section id="eget">
+      <div class="section-head"><h2>Eget material</h2></div>
+      <ul class="rows" style="display: flex; flex-direction: column; gap: 16px;">
+        <li><a href="EgetMaterial/Klart/EM-L001_muhad.html" style="display: block;">
+          <span class="eyebrow">EM-L001</span>
+          <span class="row__title" style="display: block; margin-top: 2px;">Muhad (Gudalandet)</span>
+          <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Teokratiskt rike styrt av gudahärskaren Mhim. ~1,2 miljoner invånare, sju städer.</span>
+        </a></li>
+        <li><a href="EgetMaterial/Klart/EM-S001_jen.html" style="display: block;">
+          <span class="eyebrow">EM-S001</span>
+          <span class="row__title" style="display: block; margin-top: 2px;">Jen (Handelsstaden)</span>
+          <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Muhads rikaste stad, ~100 000 invånare. Kryddmarknad, slavhandel, kanalprojekt.</span>
+        </a></li>
+        <li><a href="EgetMaterial/Klart/EM-S002_mithrahus.html" style="display: block;">
+          <span class="eyebrow">EM-S002</span>
+          <span class="row__title" style="display: block; margin-top: 2px;">Mithrahus (Vitterdal)</span>
+          <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Gruvstad och Guldlägret — gruppens hembas. Besökt Kapitel 5, 6, 7.</span>
+        </a></li>
+        <li><a href="EgetMaterial/Klart/EM-R001_vitterdal-baronieriet.html" style="display: block;">
+          <span class="eyebrow">EM-R001</span>
+          <span class="row__title" style="display: block; margin-top: 2px;">Vitterdal-baronieriet</span>
+          <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Nordvästra Cermira, jarladöme styrt av Hagge. Guldgruvor och dvärgavtal.</span>
+        </a></li>
+        <li><a href="EgetMaterial/Klart/EM-R002_grensfortet.html" style="display: block;">
+          <span class="eyebrow">EM-R002</span>
+          <span class="row__title" style="display: block; margin-top: 2px;">Förläningen Grensfortet</span>
+          <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Spelarnas förläning vid Mithera-gränsen, med Bergvik och Frisänkan.</span>
+        </a></li>
+        <li><a href="EgetMaterial/Klart/EM-O001_legokompaniet.html" style="display: block;">
+          <span class="eyebrow">EM-O001</span>
+          <span class="row__title" style="display: block; margin-top: 2px;">Legokompaniet</span>
+          <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Guide och katalog över legokompanier i Mundana, Gordons eventuella kompani.</span>
+        </a></li>
+      </ul>
+    </section>
+
+    <section id="sl-fluff">
+      <div class="section-head"><h2>SL &amp; fluff</h2></div>
+      <ol class="rows">
+        <li><a class="row row--simple" href="sessioner/index.html">
+          <span class="row__title">Sessioner &amp; sessionsplaner</span>
+          <span class="row__meta">SL</span>
+        </a></li>
+        <li><a class="row row--simple" href="masterplot/masterplot.html">
+          <span class="row__title">Masterplot</span>
+          <span class="row__meta">SL</span>
+        </a></li>
+        <li><a class="row row--simple" href="kontinuitet.html">
+          <span class="row__title">Kontinuitet</span>
+          <span class="row__meta">SL</span>
+        </a></li>
+        <li><a class="row row--simple" href="fluff/index.html">
+          <span class="row__title">Sånger, fragment, dagböcker</span>
+          <span class="row__meta">Fluff</span>
+        </a></li>
+        <li><a class="row row--simple" href="fluff/kokbok.html">
+          <span class="row__title">Kokbok från Mundana</span>
+          <span class="row__meta">Fluff</span>
+        </a></li>
+      </ol>
+    </section>
+  </aside>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
 </body>
 </html>

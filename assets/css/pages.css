@@ -62,3 +62,41 @@
   font-style: italic;
   color: var(--ink-muted);
 }
+
+/* --- Register (npcer/platser/fraktioner): ytterligare radformer utöver
+   .row--kapitel/.row--npc i components.css --- */
+.row--plats     { grid-template-columns: minmax(0,1.4fr) minmax(0,.8fr) minmax(0,1fr); }
+.row--fraktion  { grid-template-columns: minmax(0,1.4fr) minmax(0,.8fr) minmax(0,.8fr) 78px; }
+
+@media (max-width: 640px) {
+  .row--plats, .row--fraktion { grid-template-columns: 1fr auto !important; }
+}
+
+.chip--clear { color: var(--ink-muted); }
+
+/* --- Startsida: rutnät + rollpersoner-rad --- */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: clamp(28px, 4vw, 52px);
+  align-items: start;
+  padding-block: clamp(24px, 4vw, 44px) 72px;
+}
+.home-main { grid-column: span 2; min-width: 0; }
+.home-aside { min-width: 0; display: flex; flex-direction: column; gap: clamp(28px, 4vw, 44px); }
+.row--rollperson { grid-template-columns: minmax(0,1.2fr) minmax(0,1fr) 78px; }
+@media (max-width: 640px) {
+  .row--rollperson { grid-template-columns: 1fr auto !important; }
+}
+
+/* Detaljfält i registrets modal (namn/värde-rader innan beskrivningstexten) */
+.modal-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--rule-soft);
+  font: 400 14px/1.4 var(--font-ui);
+}
+.modal-row:last-child { border-bottom: none; }
+.modal-row .box__label { flex-shrink: 0; margin-bottom: 0; }

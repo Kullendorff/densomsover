@@ -1,0 +1,525 @@
+[
+  {
+    "namn": "Abhan-hir-renk-Ghor",
+    "typ": "Dvärgfäste",
+    "region": "Tarkas/Jargien gräns",
+    "beskrivning": "# ABHAN-HIR-RENK-GHOR\n**Dvärgfästet där Kazriks berömmelse uppenbarades**\n\n## GRUNDINFO\n- **Typ:** Dvärgfäste\n- **Läge:** Gräns mellan Tarkas ödemark och Jargien\n- **Betydelse:** Första säkra hamnen efter skeppsbrottet\n- **Kultur:** Dvärgisk, handelsinriktad\n\n## HISTORIA\nEfter den långa vandringen genom Tarkas ödemark nådde gruppen slutligen dvärgfästet Abhan-hir-renk-Ghor i Fas 4. Här fick de mat, logi och vila.\n\n## VIKTIGA HÄNDELSER\n**Kazriks upptäckt:** I fästet upptäckte Kazrik att hans dagböcker och reseberättelser hade blivit populära böcker - \"Kazriks resor\" - och att han hade vunnit berömmelse som lärd man och äventyrare.\n\n**Karavananslutning:** Från fästet anslöt gruppen till en handelskaravan för säker passage genom Jargiens vinterlandskap.\n\n## KOPPLINGAR\n- **Relaterade platser:** Tarkas, Jargien\n- **Viktiga NPCs:** Kazrik (blev berömd här)",
+    "kapitel": null,
+    "bild": null,
+    "slug": "abhan-hir-renk-ghor"
+  },
+  {
+    "namn": "Asharien",
+    "typ": "Region",
+    "region": "Östra Mundana",
+    "beskrivning": "# ASHARIEN\n**Asharisk kulturregion**\n\n## GRUNDINFO\n- **Typ:** Stor kulturregion\n- **Karaktär:** Asharisk kultur, handelsstäder\n- **Klimat:** Varmt, delvis öken\n- **Grannregioner:** Soldarn, Muhad\n\n## HISTORIA\nGruppen passerade genom Asharien under sin resa till och från Muhad i Fas 3-5. Regionen är känd för sin ashariska kultur och sina handelsstäder.\n\n## KULTUR\n- Asharisk språk och traditioner\n- Handelsinriktad ekonomi\n- Kopplingar till Muhad och ökenregionerna\n\n## KOPPLINGAR\n- **Relaterade platser:** Muhad, Soldarn, Raunfloden\n- **Kultur:** Asharisk (samma som Zentri)",
+    "kapitel": null,
+    "bild": null,
+    "slug": "asharien"
+  },
+  {
+    "namn": "Cermira",
+    "typ": "Region och land",
+    "region": "Västra Mundana",
+    "beskrivning": "# CERMIRA\n**Rollpersonernas hemland**\n\n## GRUNDINFO\n- **Typ:** Land och region\n- **Karaktär:** Temperat klimat, västlig kultur\n- **Relation till kampanjen:** Rollpersonernas ursprung och destination\n- **Gräns:** Gränsar mot Mithera i öster\n\n## HISTORIA\nCermira är det land varifrån många av rollpersonerna kommer och dit de försöker återvända genom kampanjen. Kampanjen började vid gränsen mellan Cermira och Mithera.\n\n## VIKTIGA PLATSER I ELLER NÄRA CERMIRA\n- **Grensfortet:** Gränsbefästning mellan Cermira och Mithera\n- **Vitterdal:** Hagges hemtrakt (Lady Soffia är från här)\n\n## RELATION TILL KAMPANJEN\nKampanjen började med uppdrag från Cermira, och rollpersonerna har rest långt österut (till Muhad) för att sedan resa tillbaka västerut mot hemmet. Den nuvarande omvägen via Skugglandet för att rädda Zentri försenar hemfärden.\n\n## KOPPLINGAR\n- **Relaterade platser:** Grensfortet, Vitterdal, Mithera (grannland)\n- **NPCs från Cermira:** Flera rollpersoner och NPCs",
+    "kapitel": null,
+    "bild": null,
+    "slug": "cermira"
+  },
+  {
+    "namn": "De Varma Källorna",
+    "typ": "Naturlig fara",
+    "region": "Mithera-skogen",
+    "beskrivning": "# DE VARMA KÄLLORNA\n**Dödsfälla förklädd till räddning**\n\n## GRUNDINFO\n- **Typ:** Magiska termiska källor\n- **Läge:** Djupt inne i Mithera-skogen\n- **Karaktär:** Sju ångande pooler\n- **Fara:** Sex av sju pooler dödar genom termalchock\n\n## BESKRIVNING\nÅngande pooler som ser ut som välkomna varmkällor i den kalla skogen. Offret känner bara njutning medan kroppen långsamt dör. Ben från tidigare offer ligger synliga i poolernas botten.\n\n## LÖSNINGEN\n- Pool #7 bar en colonisk runa (identifierad av Kazrik)\n- Den säkra poolen läkte och gav köldresistens\n- Umnatak hörde andarnas varningar om faran\n\n## VISION\nI den säkra poolen såg gruppen en vision: Sex ljuspunkter och en sjunde som väntar (profetia om sex vandrare och Zentri).\n\n## KOPPLINGAR\n- **Relaterade NPCs:** Vitfläck (nämnde att Vinterglöds syster dog här)\n- **Relaterade platser:** Mithera, Åderbjörkslunden",
+    "kapitel": null,
+    "bild": null,
+    "slug": "de-varma-kallorna"
+  },
+  {
+    "namn": "Den Brinnande Skatten",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# DEN BRINNANDE SKATTEN\n**Pirat- och äventyrstema**\n\n## GRUNDINFO\n- **Typ:** Sjömanstaverna\n- **Plats:** Nära hamnen, Jen, Muhad\n- **Ägare:** Kapten Eamon (pensionerad sjökapten)\n- **Tema:** Pirater och äventyr\n\n## BESKRIVNING\nDen Brinnande Skatten ligger nära hamnen och är en favorit bland sjömän och äventyrare. Väggarna är täckta med kartor, skeppsrattar och flaggor från avlägsna länder. Lanternor och ljusstakar kastar ett varmt sken över det mörka träet och rustika möblerna.\n\n## ÄGARE\n**Kapten Eamon** är en pensionerad sjökapten med många historier att berätta. Hans levnadsöde som sjöfarare genomsyrar hela etablissemanget.\n\n## SPECIALITETER\n- **Fisk- och skaldjursrätter** - Färskt från havet\n- **Stark rom** - För erfarna sjömän\n- **Exotiska fruktjuicer** - Från fjärran länder\n\n## ATMOSFÄR\nRå och äventyrlig, fylld med historier om hav och land. Sjömän delar sina berättelser och drömmer om skatter.\n\n## BETYDELSE FÖR KAMPANJEN\nEn viktig plats för gruppen att möta sjöfarare, höra om färdvägar och kanske få information om Spegelmåne och andra fartyg.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Kapten Eamon\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "den-brinnande-skatten"
+  },
+  {
+    "namn": "Den Dolda Dolken",
+    "typ": "Värdshus",
+    "region": "Tuzan Rim",
+    "beskrivning": "# DEN DOLDA DOLKEN\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Ägare:** Sylva\n- **Atmosfär:** Något skum, blandad klientel\n\n## BESKRIVNING\nDen Dolda Dolken är ett värdshus i Tuzan Rim känt för sin något tvivelaktiga rykte. Namnet antyder dolda avsikter och hemliga affärer.\n\n## PERSONAL\n\n### Sylva (Ägare)\nSylva driver värdshuset med en fast hand. Hon känner till mycket av vad som händer i Tuzan Rims undre värld.\n\n### Merek (Bartender)\nEn erfaren bartender som håller ordning i lokalen och ser till att gästerna håller sig i schack.\n\n### Lia (Serverare)\nLia serverar mat och dryck till gästerna. Hon är observant och fångar upp mycket av vad som sägs vid borden.\n\n### Isla (Glädjeflicka)\nIsla arbetar på värdshuset och underhåller gäster. Hon har en syster, Tussie.\n\n### Tussie (Islas syster)\nTussie är Islas yngre syster som också hjälper till på värdshuset.\n\n## BETYDELSE FÖR KAMPANJEN\nDen Dolda Dolken var en av de platser i Tuzan Rim där gruppen kunde samla information om smugglare, pirater och andra skumma gestalter under Fas 3.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Ägare:** Sylva\n- **Personal:** Merek, Lia, Isla, Tussie\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "den-dolda-dolken"
+  },
+  {
+    "namn": "Den Gyldene Ankaret",
+    "typ": "Värdshus",
+    "region": "Tuzan Rim",
+    "beskrivning": "# DEN GYLDENE ANKARET\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Ägare:** Bartol\n- **Atmosfär:** Respektabel, populär bland sjömän\n\n## BESKRIVNING\nDen Gyldene Ankaret är ett väletablerat värdshus beläget nära hamnen i Tuzan Rim. Namnet och läget gör det populärt bland sjöfolk och handelsmän.\n\n## PERSONAL\n\n### Bartol (Värdshusvärd)\nBartol är en pålitlig värdshusvärd som driver etablissemanget med stort engagemang. Han känner väl till hamnenss liv och rörelser.\n\n### Mirelle (Kock)\nMirelle är värdhusets skickliga kock, känd för sina havsfångsträtter och traditionella sjömansmat.\n\n### Joran (Stamgäst)\nEn tyst sjöman som praktiskt taget bor på Den Gyldene Ankaret. Han säger sällan något men observerar allt som händer.\n\n## ATMOSFÄR\nEtt respektabelt etablissemang där sjöfolk, köpmän och resenärer kan äta god mat, dricka öl och utbyta nyheter från havet.\n\n## BETYDELSE FÖR KAMPANJEN\nDen Gyldene Ankaret var en viktig informationskälla under gruppens tid i Tuzan Rim (Fas 3). Här kunde de samla information om sjöfart, handelsleder och hamnaktiviteter.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Ägare:** Bartol\n- **Personal:** Mirelle, Joran (stamgäst)\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "den-gyldene-ankaret"
+  },
+  {
+    "namn": "Den Gyldene Dromedaren",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# DEN GYLDENE DROMEDAREN\n**Lyxig ökenoas i Jen**\n\n## GRUNDINFO\n- **Typ:** Exklusivt värdshus\n- **Plats:** Handelsdistriktet, Jen, Muhad\n- **Ägare:** Karim al-Jafar\n- **Tema:** Lyxig ökenoas\n\n## BESKRIVNING\nDen Gyldene Dromedaren är ett exklusivt värdshus beläget i handelsdistriktet i Jen. Dess interiör är prydd med dyrbara mattor, silkestyger och exotiska växter. Färgglada lyktor kastar ett varmt sken över de vackert snidade möblerna, och en liten fontän i mitten av rummet sprider en svalkande dimma.\n\n## ÄGARE\n**Karim al-Jafar** är en vänlig men affärsmässig köpman som driver värdshuset med professionalism och stil.\n\n## SPECIALITETER\n- **Saffransris** - Doftande och smakfullt tillagat\n- **Lammgrytor** - Traditionellt ökenrecept\n- **Importerat vin** - Från de bästa vingårdarna\n\n## ATMOSFÄR\nAvslappnad men exklusiv, ofta fylld med rika köpmän och deras gäster. Ett ställe där affärsuppgörelser genomförs över god mat och dryck.\n\n## BETYDELSE FÖR KAMPANJEN\nEtt möjligt ställe för gruppen att möta inflytelserika handelsmän och samla information om Jens ekonomiska och politiska landskap under Fas 3.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Karim al-Jafar\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "den-gyldene-dromedaren"
+  },
+  {
+    "namn": "Den Gyllene Gryningen",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# DEN GYLLENE GRYNINGEN\n**Elegant och sofistikerat**\n\n## GRUNDINFO\n- **Typ:** Exklusivt värdshus\n- **Plats:** Jen, Muhad\n- **Ägare:** Esmeralda de Vries\n- **Tema:** Lyx och elegans\n\n## BESKRIVNING\nDen Gyllene Gryningen är ett elegant värdshus som lockar stadens elit. Inredningen är lyxig med marmor, sammet och kristallkronor. Värdshuset är känt för sin utmärkta service och sina finare rätter.\n\n## ÄGARE\n**Esmeralda de Vries** är en sofistikerad kvinna med smak för det bästa. Hon driver etablissemanget med högsta standard.\n\n## SPECIALITETER\n- **Fine dining-meny** - Lokala och internationella rätter av högsta klass\n- **Årgångsviner** - Från de bästa vingårdarna\n- **Exklusiva desserter** - Konstnärligt presenterade\n\n## ATMOSFÄR\nFörfinad och elegant, perfekt för affärsmöten och högtidliga tillfällen. Endast de rikaste och mest inflytelserika besöker denna plats.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde möta Jens elit, inklusive rika handelsmän och möjligen Laila al-Jen och hennes umgängeskrets.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Esmeralda de Vries\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "den-gyllene-gryningen"
+  },
+  {
+    "namn": "Den Klara Källan",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# DEN KLARA KÄLLAN\n**Hälsoinriktad och naturinspirerad**\n\n## GRUNDINFO\n- **Typ:** Hälsovinstuga\n- **Plats:** Nära helgedomar, Jen, Muhad\n- **Ägare:** Harun al-Farid\n- **Tema:** Hälsa och välbefinnande\n\n## BESKRIVNING\nDen Klara Källan ligger nära stadens helgedomar och fokuserar på hälsa och välbefinnande. Inredningen är enkel men vacker, med naturliga material och mycket grönska.\n\n## ÄGARE\n**Harun al-Farid** är en hälsoentusiast och herbalist med djup kunskap om läkande örter och hälsosam kost.\n\n## SPECIALITETER\n- **Hälsosamma vegetariska rätter** - Näringsrika och balanserade\n- **Frukt- och grönsaksjuicer** - Färskpressade\n- **Örtteer** - Med läkande egenskaper\n\n## ATMOSFÄR\nFridfull och upplyftande, idealisk för de som söker avkoppling och återhämtning. Ett ställe för att återfå balans.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde återhämta sig efter strapatserna, få läkande örtteer och råd om hälsa.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Harun al-Farid\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "den-klara-kallan"
+  },
+  {
+    "namn": "Den Svävande Albatrossen",
+    "typ": "Värdshus",
+    "region": "Tuzan Rim",
+    "beskrivning": "# DEN SVÄVANDE ALBATROSSEN\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Atmosfär:** Livlig, sjömanstema, musik\n\n## BESKRIVNING\nDen Svävande Albatrossen är ett livligt värdshus i Tuzan Rim där sjöfolk samlas för att dricka, sjunga och dela historier från havet. Albatross-temat genomsyrar dekorationen med sjökort, fågelbilder och nautiska detaljer.\n\n## PERSONAL\n\n### Halmar (Bartender)\nHalmar är en erfaren bartender (möjligen samma Halmar som arbetar på Krökta Kompassen?) som håller ordning på de ibland bråkiga gästerna.\n\n### Velissa (Sångerska)\nVelissa underhåller gästerna med sjömansvisor och romantiska ballader. Hennes röst lockar många besökare till etablissemanget.\n\n### Gerrick (Piratstamgäst)\nGerrick är en notorisk piratstamgäst som ofta ses här. Han har många spännande (om än tvivelaktiga) historier att dela.\n\n## ATMOSFÄR\nEtt bullrigt och glatt ställe där sjömän sjunger, skrattar och delar äventyr. Musik och sång är centralt för atmosfären.\n\n## BETYDELSE FÖR KAMPANJEN\nDen Svävande Albatrossen var ett ställe där gruppen kunde möta sjöfolk, pirater och smugglare under sin tid i Tuzan Rim (Fas 3). Velissas sång och Gerricks historier kunde ge värdefull information.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Personal:** Halmar, Velissa, Gerrick\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "den-svavande-albatrossen"
+  },
+  {
+    "namn": "Den Svävande Fenixen",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# DEN SVÄVANDE FENIXEN\n**Mystisk och exotisk**\n\n## GRUNDINFO\n- **Typ:** Mystisk bar\n- **Plats:** Jen, Muhad\n- **Ägare:** Raziq al-Nur\n- **Tema:** Mystisk och förtrollande\n\n## BESKRIVNING\nDen Svävande Fenixen är känd för sin mystiska atmosfär och sina exotiska drinkar. Väggarna är täckta med gobelänger och antika artefakter, och rummet är fyllt med rökelse som ger en dimmig och förtrollande känsla. Små, intima bås ger besökarna möjlighet till diskreta samtal.\n\n## ÄGARE\n**Raziq al-Nur** är en gåtfull man med ett mörkt förflutet. Han driver värdshuset med ett aura av hemlighet.\n\n## SPECIALITETER\n- **Kryddade likörer** - Exotiska blandningar\n- **Fruktcocktails** - Färgglada och unika\n- **Små tapasrätter** - Perfekta att njuta med drinkar\n\n## ATMOSFÄR\nMystisk och intim, ofta besökt av äventyrare och de som söker diskretion. Ett ställe för hemliga möten och gåtfulla affärer.\n\n## BETYDELSE FÖR KAMPANJEN\nEn perfekt plats för gruppen att möta informanter, spioner och andra som opererar i skuggorna av Jens samhälle.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Raziq al-Nur\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "den-svavande-fenixen"
+  },
+  {
+    "namn": "Drunok",
+    "typ": "Region",
+    "region": "Centrala Mundana",
+    "beskrivning": "# DRUNOK\n**Region på flyktvägen**\n\n## GRUNDINFO\n- **Typ:** Region\n- **Karaktär:** Skogsland\n- **Betydelse:** Del av evakueringsrutten\n\n## HISTORIA\nUnder evakueringen av Vargnäsets flyktingar (Fas 9) planerade Corvus en rutt genom Drunok för att undvika jargiska styrkor och Arvorns Hammare.\n\n## STRATEGISK BETYDELSE\n- Färre patruller än huvudvägarna\n- Svårare terräng som gynnade flyktinggruppen\n- Del av Corvus korrupta kontaktnätverk\n\n## KOPPLINGAR\n- **Relaterade platser:** Vargnäset, Grensfortet, Jargien\n- **Relaterade händelser:** Evakueringen (Fas 9)",
+    "kapitel": null,
+    "bild": null,
+    "slug": "drunok"
+  },
+  {
+    "namn": "Frisänkan",
+    "typ": "By",
+    "region": "Gränstrakterna mellan Cermira och Mithera",
+    "beskrivning": "# FRISÄNKAN\n**By på Tamron/Ibrans flyktväg**\n\n## GRUNDINFO\n- **Typ:** Liten by\n- **Läge:** Mellan Tirakgraven och Grensfortet\n- **Betydelse:** Mördad fiskare och hans fru - spår efter Tamron/Ibran\n\n## HISTORIA\nUnder jakten på Tamron/Ibran (Fas 2) stötte rollpersonerna på byn Frisänkan. Här hade Tamron/Ibran dödat en fiskare och hans fru - tydliga tecken på demonens växande inflytande.\n\n## HÄNDELSER\n**Fas 2 (Jakten på Tamron/Ibran):** Mord på fiskare och hustru. Spåren ledde gruppen vidare mot Grensfortet.\n\n## KOPPLINGAR\n- **Relaterade NPCs:** Tamron/Ibran Anderyttare\n- **Relaterade platser:** Grensfortet, Tirakgraven",
+    "kapitel": null,
+    "bild": null,
+    "slug": "frisankan"
+  },
+  {
+    "namn": "Frostnymf",
+    "typ": "Fartyg",
+    "region": "Raunfloden, Drunok",
+    "beskrivning": "# FROSTNYMF\n**Specialbyggd tirakisk flodpråm för vinterfärd**\n\n## GRUNDINFO\n- **Typ:** Anpassad flodpråm\n- **Längd:** 18 meter\n- **Bredd:** 8 meter\n- **Djupgående:** 1,1 meter\n- **Dräktighet:** Cirka 40 läster\n- **Lastkapacitet:** Cirka 80 ton\n- **Kapten:** Nilmar \"Isnavigator\" Gromsk (tirak)\n- **Specialisering:** Hästtransport och isnavigering\n- **Första omnämnande:** Fas 5\n\n## BESKRIVNING\nFrostnymf är en specialbyggd flodpråm anpassad för vinterfärd på Raunfloden, målad i mörkt trä med diskreta ränder i isblått och grått. Fartyget är konstruerat för att navigera genom isflak och transportera hästar säkert. Båtens förstärkta stäv är försedd med järnbeslag som formar ett mönster likt frostblommor. Två triangelformade latinsegel och långa åror längs relingarna vittnar om båtens robusthet. Mittendelen av däcket är förstärkt och anpassad för hästar, med spiltor och halvhöga skiljeväggar i massiv ek.\n\n## SPECIALANPASSNINGAR\n\n### För Vinternavigering\n- **Isbrytande förstärkt stäv:** Gjord av järnbeslaget ek, designad för att bryta genom tunnare is\n- **Innovativt värmesystem:** Heta stenar i vattenkar under däck håller kölen isfri\n- **Extraförstärkt styråra:** Utformad med tirakiska runor för kontroll i starka strömmar\n- **Sidoroder:** Komplement till styråran för manövrering i trånga passager\n- **Inhuggna djupmarkeringar:** I fören hjälper dem se vattendjupet\n\n### För Hästtransport\n- **Förstärkt mittdäck:** Speciellt stabilt underlag för hästarna\n- **Avdelat hästutrymme:** 6x5 meter med spiltor och förankringsmöjligheter\n- **Vattenränna och fodertråg:** Längs ena relingen\n- **Halvhöga skiljeväggar:** Mellan hästarna för att undvika panik och skador\n\n### Tirakiska Inslag\n- **Mahktah-symboler:** Diskret insnidade i masten för beskydd\n- **Anpassad kajuta för Nilmar:** Med högre takhöjd (tiraker är större)\n- **Extraförstärkta pollare:** Längs sidorna för draglina\n- **Specialutformade stakningsstänger:** Förvarade längs relingen\n\n## KAPTEN & BESÄTTNING (8 PERSONER)\n\n### Nilmar \"Isnavigator\" Gromsk (Tirak) - Kapten/Navigatör\nEn fåordig men mycket skicklig tirakisk kapten med exceptionell förmåga att navigera genom farliga isflak och vinterförhållanden på Raunfloden. Väderbitet ansikte, saknar vänsterörat från en gammal förfrysningsskada. Hans smeknamn \"Isnavigator\" säger allt om hans specialitet. Tjänar Lady Soffia och är en agent i hennes nätverk.\n\n### Selene \"Silveröga\" Kazarov (Asharier) - Underbefäl & Informant\nEn asharisk kvinna i 40-årsåldern med ett konstgjort silveröga (höger). Vaksam spejare som i flera år fungerat som informant åt Lady Soffia. Hemlig medlem i nätverk som hjälper förföljda att fly. Extremt lojal mot Nilmar men misstänksam mot främlingar. Visade särskilt intresse för Hagge under resan och kände till hans betydelse för Vitterdals framtid.\n\n### Esma Randarrohästare (Människa) - Djurskötare/Stallmästare\nEn kraftig kvinna med flätat hår. Expert på hästtransport och känner igen Vitterdals sätt att träna hästar. Identifierade Hagge som Lady Soffias son genom sitt kunnande om Vitterdals hästar. Erbjöd sig att följa gruppen som guide när de skulle fortsätta till fots.\n\n### Garsten \"Soppsleven\" Tretre (Människa) - Kock\nFrostnymfens pratsamme kock och ivrig ryktesspridare. Spridit viktig information om Kärlingarnas män, Systrarna och situationen i Vitterdal. Känd för att berätta mycket skvaller, speciellt efter tredje bägaren vin.\n\n### Burhak \"Daggryningen\" (Okänd ras) - Roddare\nEn mystisk roddare med ljus hud och minimal klädsel trots kylan. Sjunger lågmält på ett främmande språk medan han arbetar. Hans sång verkar ha en dämpad effekt på fartygets ljud i vattnet. Extremt skicklig roddare.\n\n### Laszlo (Människa) - Roddare\nEn kortväxt man med enorm överkropp. Överraskande ljus röst för sin fysiska storlek. Expert på att lasta förnödenheter och reparera båten. Hjälpte till att reparera Frostnymfens skrov när det skadades av isflak.\n\n### Marvo \"Isfingrarna\" (Människa) - Isexpert\nBesättningsmedlem specialiserad på att känna igen isens svagaste punkter och navigera isformationer. Hans förmåga att läsa isen är avgörande för säker navigering genom Raunflodens vinteris. Varnade gruppen om att isen blev tunnare när de närmade sig området med varmare källflöden.\n\n### Yrka och Yrko (Tvillingar) - Roddare\nTvå skickliga och nervösa besättningsmedlemmar. Deltog i kontroll av förtöjningar och navigering. Upptäckte de mystiska ljussignalerna längs flodens norra strand på den tredje dagen av resan. Gav Umnatak en mystisk påse örter \"för skydd mot andevärldens faror\" vid farväl.\n\n## VIKTIGA HÄNDELSER\n\n### Dag 1-2: Avgång från Jarla och Isbarriären\nFartyget kastar loss från kajen i Jarla. Den förstärkta stäven börjar metodiskt arbeta sig genom den tunna morgonisen. Nilmar navigerar med nästan övernaturlig känsla för flodens strömmar. På dag två möter fartyget en massiv isbarriär - uppbyggd och inte naturlig. Besättningen och spelarna samarbetar för att forcera barriären med Burhak och Laszlos specialverktyg och Marvo identifiering av svaga punkter.\n\n### Dag 3: Mystiska Ljussignaler och Spaning\nNatten sänker sig och en serie blinkande ljus ses från båda stränderna - tirakiska spaningssignaler anpassade för Systrarna. Selene och Nilmar diskuterar intensivt och pekar mot ljusen. Tvillingarna Yrka och Yrko verkar mycket nervösa. En pil slår ner i masten som en varning. Thrakka känner igen signalsystemet från sin tirakiska bakgrund.\n\n### Dag 4: Övergiven Handelsstation och Patrull\nFrostnymfen glider in mot en liten brygga vid en övergivet handelsstation för att vänta ut dagen. Nilmar förklarar att det är för riskabelt att fortsätta dagtid. Selene och Burhak rekognoscerar området. Under eftermiddagen närmar sig en mindre patrullbåt som genomsöker området. Ett större isflak skadar Frostnymfens skrov - Laszlo behöver hjälp med att reparera båten under tystnad. Dokument avslöjar att kungens män specifikt söker Thrakka och Hagge.\n\n### Dag 5: Den Isproppsade Forsen och Farväl\nTidigt på morgonen når fartyget forsområdet där enorma isformationer skapat en labyrint. Nilmar samlar alla på däck - \"Vi kan inte fortsätta med Frostnymfen. Forsen är för farlig.\" Han föreslår att gruppen fortsätter till fots medan han tar båten på en längre men säkrare rutt. Esma erbjuder sig att följa som guide. Selene ger gruppen ett specialtillverkat sigill. Tvillingarna ger örter till Umnatak. Marvo varnar om att följa inte huvudvägarna - Kärlingarnas vargmän patrullerar dygnet runt.\n\n## BETYDELSE FÖR KAMPANJEN\nFrostnymf var gruppens kritiska transport mot Vitterdal under Fas 5. Den farliga färden genom is och vinterförhållanden, kombinerat med förföljelsen av Systrarna och kungens män, gjorde resan till en av kampanjens mest spännande och avgörande momento. Fartyget fungerade både som säker transportväg och som plattform för att möta allierade (Esma) och motståndare (Systrarna). Farväl vid bifloden markerade övergången från flodtransport till landbaserad färd mot Vitterdal.\n\n## KOPPLINGAR\n- **Kapten:** Nilmar \"Isnavigator\" Gromsk\n- **Besättning:** Selene \"Silveröga\" Kazarov, Esma Randarrohästare, Garsten \"Soppsleven\" Tretre, Burhak \"Daggryningen\", Laszlo, Marvo \"Isfingrarna\", Yrka och Yrko\n- **Passagerare:** Gruppen - Gordon (Calle), Thrakka (Andreas), Umnatak (Christofer), Kazrik (Jonas), Corvus (Daniel), Hagge (Fas 5)\n- **Region:** Raunfloden, Drunok\n- **Fraktioner:** Lady Soffias nätverk, Frostnymf-besättning\n- **Motsatta krafter:** Systrarna, Kärlingarnas män, Kungens män\n- **Fas:** 5",
+    "kapitel": null,
+    "bild": null,
+    "slug": "frostnymf"
+  },
+  {
+    "namn": "Grensfortet",
+    "typ": "Militär befästning",
+    "region": "Gränstrakterna mellan Cermira och Mithera",
+    "beskrivning": "# GRENSFORTET\n**Gränsbefästning där kampanjen började**\n\n## GRUNDINFO\n- **Typ:** Militär befästning\n- **Läge:** Gränsen mellan Cermira och Mithera\n- **Funktion:** Bevakningsfort och utgångspunkt för uppdrag\n- **Betydelse:** Kampanjens startpunkt\n\n## HISTORIA\nGrensfortet är den militära befästning där rollpersonerna först samlades och fick sitt uppdrag att undersöka Tirakgraven.\n\n## VIKTIGA HÄNDELSER\n**Fas 1:**\n- Rollpersonerna träffade Migor Trollkunnig här\n- Fick uppdraget att undersöka Tirakgraven\n- Stålsvärds Kavalerister rekryterades för uppdraget\n\n## KOPPLINGAR\n- **NPCs:** Migor Trollkunnig\n- **Relaterade platser:** Tirakgraven",
+    "kapitel": null,
+    "bild": null,
+    "slug": "grensfortet"
+  },
+  {
+    "namn": "Gränstrakterna mellan Cermira och Mithera",
+    "typ": "Region",
+    "region": "Gräns Cermira/Mithera",
+    "beskrivning": "# GRÄNSTRAKTERNA MELLAN CERMIRA OCH MITHERA\n**Där kampanjen började**\n\n## GRUNDINFO\n- **Typ:** Gränsregion\n- **Karaktär:** Vildmark, arkeologiska platser\n- **Betydelse:** Kampanjens startpunkt\n- **Viktiga platser:** Tirakgraven, Grensfortet\n\n## HISTORIA\nKampanjen började i denna gränsregion där rollpersonerna (Gordon, Zentri, Umnatak, Kazrik) tjänstgjorde som legoknektar i Stålsvärds Kavalerister. De kontrakterades av Migor Trollkunnig för att bevaka en arkeologisk utgrävning vid Tirakgraven.\n\n## VIKTIGA HÄNDELSER\n**Fas 1:** Tirakgraven och demonens partiella frigörelse  \n**Fas 2:** Jakten på Tamron/Ibran, slutade vid Grensfortet\n\n## POLITISK SITUATION\n- Gräns mellan två nationer\n- Militär närvaro från båda sidor\n- Arkeologiska intressen\n- Senare (Fas 7+): Grensfortet överlåts till gruppen\n\n## KOPPLINGAR\n- **Relaterade platser:** Tirakgraven, Grensfortet, Cermira, Mithera\n- **NPCs:** Tirakstammen, Migor Trollkunnig",
+    "kapitel": null,
+    "bild": null,
+    "slug": "granstrakterna-mellan-cermira-och-mithera"
+  },
+  {
+    "namn": "Iskvarnsbryggan",
+    "typ": "Flodbrygga",
+    "region": "Cermira",
+    "beskrivning": "Flodbrygga vid Raunfloden.\n\n**Geografisk situation:** 200m öppen mark från skog till flodkant.\n\n**Betydelse:** Mötesplats för pråmarna under evakueringen. Plats för dramatisk konfrontation - Lady Isadora och Syster Moira (Systrarna) observerade här.\n\n**Händelse:** Gruppen och de 41 flyktingarna från Vargnäset mötte pråmarna här (Rimfrosten, Strömjungfrun, Månljuset).",
+    "kapitel": "Kapitel 8",
+    "bild": null,
+    "slug": "iskvarnsbryggan"
+  },
+  {
+    "namn": "Jargien",
+    "typ": "Kejsardöme/Region",
+    "region": "Centrala Mundana",
+    "beskrivning": "# JARGIEN\n**Det jargiska kejsardömet**\n\n## GRUNDINFO\n- **Typ:** Stort kejsardöme\n- **Karaktär:** Vinterland, handelskaravaner\n- **Kultur:** Jargisk, byråkratisk kejsardömestruktur\n- **Betydelse:** Passage på hemvägen från Tarkas\n\n## HISTORIA\nGruppen passerade genom Jargien under Fas 5 på sin hemresa från Tarkas. De anslöt sig till en handelskaravan för säker passage genom det vintriga landskapet.\n\n## VIKTIGA HÄNDELSER\n**Fas 5 (Vinterstormen):** \n- Karavanen fastnade i veckor under en massiv vinterstorm\n- Rollpersonerna hjälpte till med jakt och försvar\n- Räddade handelsmän från vargangrepp\n- Säkrade förnödenheter för gruppen\n\n## KOPPLINGAR\n- **Relaterade platser:** Abhan-hir-renk-Ghor (ingång), Cermira (destination)\n- **Relaterade regioner:** Tarkas, Drunok",
+    "kapitel": null,
+    "bild": null,
+    "slug": "jargien"
+  },
+  {
+    "namn": "Jarla",
+    "typ": "Fristad",
+    "region": "Asharien",
+    "beskrivning": "# JARLA\n**Fristad med politiska intriger**\n\n## GRUNDINFO\n- **Typ:** Fristad (självstyrande stad)\n- **Region:** Asharien, vid Raunfloden\n- **Invånare:** Ca 1600 personer (mestadels asharer)\n- **Styre:** Frijarl Todor Felkes + råd med 20 medlemmar\n- **Karaktär:** Rumlarställe med olaglig handel och skumraskaffärer\n\n## POLITISK STRUKTUR\n**Rådet (20 medlemmar):**\n- Predent Primon (samoriman)\n- 3 stormän (Ghelon Felkes, Len Keasto, Nentarin Naluni)\n- 10 köpmän (inkl. Gekthath av Wezi, Jeskia av Nejas, Yennara av Boca)\n- 6 inflytelserika hantverkare\n\n**Säkerhet:**\n- Vaktkapten Vomdal: Yttre bevakning (120 stadsvakter)\n- Hemkhath Thokk: Inre palatsgarde (40 soldater)\n\n## HISTORIA OCH UTVECKLING\nNär rollpersonerna först besökte Jarla var staden relativt stabil. Efter sex månaders frånvaro hade situationen förändrats drastiskt:\n\n**Politisk kris:**\n- Frijarl Todor Felkes blev paranoid och isolerad\n- Handelshuset Ramiz anklagades för förräderi\n- Handelshuset Nejas stärkte sitt grepp genom Skrået (lönnmördargille)\n- Brutal stadsvakt under Hemkhath Thokks ledning\n\n**Ekonomisk nedgång:**\n- Höjda skatter\n- Höga matpriser\n- Färre handlare vågar sig in i staden\n\n## VIKTIGA NPCS\n- Todor Felkes (Frijarl)\n- Vomdal (Vaktkapten)\n- Hemkhath Thokk (Palatsgarde-kapten)\n- Gekthath av Wezi (Köpman, råd)\n- Jeskia av Nejas (Köpman, råd)\n- Yennara av Boca (Köpman, råd)\n- Fhe Ehdsim (Örthandlare)\n- Rennil (Värdshusvärd, Vita gåsen)\n\n## KOPPLINGAR\n- **Fraktioner:** Handelshuset Nejas, Handelshuset Ramiz, Skrået, Tjuvgillet Skuggväktarna\n- **Relaterade platser:** Raunfloden",
+    "kapitel": null,
+    "bild": null,
+    "slug": "jarla"
+  },
+  {
+    "namn": "Jarnthol",
+    "typ": "Gruvutpost",
+    "region": "Jargien",
+    "beskrivning": "# JARNTHOL\n**Förbannad gruvutpost i bergen**\n\n## GRUNDINFO\n- **Typ:** Gruvutpost\n- **Region:** Jargien, bergig dalgång\n- **Kapitel:** Kapitel 4\n- **Karaktär:** Enslig och isolerad, hemsökt av förbannelse\n\n## BESKRIVNING\nJarnthol är ingen riktig by - bara en ensam värdshusbyggnad i mörkt trä, en grovhuggen handelsbod, och några skjul och förråd för de arbetare och resande som tar sig hit. Bakom byggnaderna gapar gruvmynningar där gamla schakt och timrade gruvgångar stirrar ut över dalen som svarta ögonhålor i berget.\n\n**Atmosfär:**\n- Bitande kall vintermiljö\n- Snön ligger djup och orörd runt utposten\n- Tung stillhet - inget fågelkvitter, inga tecken på djurliv\n- Bara vinden som sveper in genom skrevorna i bergen\n- Känsla av att något ser på en från skuggorna\n\n## VIKTIGA BYGGNADER\n**Värdshuset:** Drivet av Grimdal Tungöga. Ljus i fönstren och rökstrimma från skorstenen - tecken på liv.\n\n**Gruvorna:** Gamla schakt och timrade gruvgångar. En av gruvgångarna var **förseglad** tills prospektören Griknar Granitson bröt sigillet och väckte Rådslingan.\n\n## FÖRBANNELSEN\nNär Griknar bröt sigillet på den gamla gruvgången väcktes **Rådslingan** - en uråldrig skuggformad varelse skapad som väktare. Varelsen är resultatet av en förbannelse kopplad till dvärgar vars namn utplånats från historien.\n\n**Händelser:**\n- Griknar försvann i gruvan\n- Gruvarbetare hörde **röster i mörkret**\n- Arbetare vägrar gå tillbaka - något skrämmer dem\n- Grimdal Tungöga har sett skuggor röra sig i gruvan\n\n## LÖSNINGEN\nGruppen (särskilt Umnatak) genomförde en ritual på bergstoppen ovanför gruvan för att **återställa de utplånade dvärgarnas namn** och erkänna sviket mot dem. Detta släppte de bundna själarna fria och bröt förbannelsen.\n\n**Umnataks genombrott:** Under ritualen upplevde Umnatak stark koppling till andeplanet - början på hans formella utövande av schamanistiska färdigheter.\n\n## VIKTIGA NPCS\n- **Grimdal Tungöga:** Värdshuvärd, vet mer än han säger\n- **Griknar Granitson:** Försvunnen prospektör som väckte förbannelsen\n- **Borga Stenhands:** Gruvarbetare, såg Griknar senast\n- **Konrad:** Handelsman, känner till rykten om skuggor\n- **Rådslingan:** Skuggvarelse (nu upplöst)\n\n## KOPPLINGAR\n- **Region:** Jargien\n- **Händelse:** Rådslingan-äventyret (Kapitel 4)\n- **Karaktärsutveckling:** Umnataks schamanistiska genombrott",
+    "kapitel": "Kapitel 4",
+    "bild": null,
+    "slug": "jarnthol"
+  },
+  {
+    "namn": "Jen",
+    "typ": "Stad",
+    "region": "Muhad",
+    "beskrivning": "Storslagen handelsstad och Muhads huvudstad med strategisk hamn. Enda hamn öppen för utlänningar i ökenriket.\n\n**Områden:**\n- **Hamnområdet** - Livlig handelshamn\n- **Marknadsplatsen** - Inkl. Kryddmarknaden med exotiska kryddor från Xian och Cirha\n- **Slavmarknaden** - Stor öppen plats omgiven av höga vita murar\n- **Huvudkontoret för Slavregistrering och Transaktioner** - Centralt beläget, tre våningar vit ökenarkitektur med mosaiker. Avdelningar: Registrering, Transaktioner, Inspektörernas kontor, Arkiv (klimatkontrollerat)\n- **Handelsdistriktet** - Lyxiga etablissemang som Den Gyldene Dromedaren\n- **Bostadsområden** - Från lyxvillor (Laila al-Jens residens) till slumområden\n- **Tempel och helgedomar**\n- **Fängelset**\n\n**Viktiga NPCs:** Malik Al-Zahir (huvudslavhandlare), Rashan al-Ghedi (stadsvakt kapten), Laila al-Jen (adelskvinna), Hagge (slav hos Laila), många kryddhandlare och värdshusägare.",
+    "kapitel": "Kapitel 2",
+    "bild": null,
+    "detaljsida": "platser/jen.html",
+    "slug": "jen"
+  },
+  {
+    "namn": "Kamelens Oas",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# KAMELENS OAS\n**Fridfullt värdshus med innergård**\n\n## GRUNDINFO\n- **Typ:** Värdshus för övernattning\n- **Plats:** Lugnt bostadsområde nära templen, Jen, Muhad\n- **Ägare:** Farid al-Malik & Leyla al-Malik\n- **Tema:** Fridfull oas\n\n## BESKRIVNING\nKamelens Oas är ett fridfullt värdshus beläget i ett lugnt bostadsområde nära stadens tempel och helgedomar. Det är känt för sin avkopplande atmosfär och vackra innergård med en liten fontän och flera palmer.\n\n### Innergården\nEn central del av värdshuset, innergården är fylld med frodig grönska, blommor och skuggande palmer. En liten fontän med klart, porlande vatten står i mitten och ger en lugnande bakgrundssymfoni.\n\n## ÄGARE\n\n### Farid al-Malik\nFarid är en vänlig och omtänksam man i femtioårsåldern med gråsprängda hårlockar och ett ständigt leende på läpparna. Han har tagit över Kamelens Oas efter sin far och har djup kunskap om stadens historia. Han är också en skicklig kamelförare och organiserar ibland kamelsafarier.\n\n### Leyla al-Malik\nLeyla är en varm och moderlig kvinna i fyrtioårsåldern känd för sina utsökta måltider. Hon kommer från en familj av skickliga kockar och hennes specialiteter inkluderar traditionella ökenrätter och läckra bakverk.\n\n## PERSONAL\n\n### Tariq ibn-Salim (Receptionist)\nEn ung man i tjugoårsåldern med alltid vänlig uppsyn. Han är mycket kunnig om staden och dess sevärdheter och hjälper gärna gästerna.\n\n### Amira bint-Hassan (Städare)\nEn kvinna i trettioårsåldern, effektiv och noggrann. Hon ser till att värdshuset alltid är rent och välkomnande.\n\n### Youssef al-Najjar (Underhållsman)\nEn robust man i fyrtioårsåldern, skicklig hantverkare som ser till att allt fungerar perfekt.\n\n### Naila bint-Zahir (Serveringspersonal)\nEn ung kvinna i tjugoårsåldern med glad och energisk personlighet. Hon älskar att prata med gästerna.\n\n### Samir ibn-Rashid (Kökshjälp)\nLeylas systerson, en tonårspojke entusiastisk över att lära sig matlagningens konst.\n\n## RUM & FACILITETER\n- **Enkelrum:** 2 mysiga rum med utsikt över innergården\n- **Dubbelrum:** 3 rum med antingen två enkelsängar eller dubbelsäng\n- **Familjerum:** 1 rymligt rum med plats för familjer\n- **Matsal:** Stort öppet rum med långbord där måltider serveras\n- **Innergård med fontän:** Central plats för avkoppling\n- **Trädgård:** Liten trädgård med blommor och örter\n- **Gemensamt badrum:** Med duschkabiner och toaletter\n\n## BETYDELSE FÖR KAMPANJEN\nKamelens Oas var troligen en av platserna där gruppen kunde bo bekvämt under sin vistelse i Jen, njuta av god mat och planera sina nästa steg.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Farid & Leyla al-Malik\n- **Personal:** Tariq, Amira, Youssef, Naila, Samir\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "kamelens-oas"
+  },
+  {
+    "namn": "Khazimbergen",
+    "typ": "Bergskedja",
+    "region": "Centrala Mundana",
+    "beskrivning": "# KHAZIMBERGEN\n**Dvärgisk bergskedja**\n\n## GRUNDINFO\n- **Typ:** Bergskedja\n- **Karaktär:** Höga berg, forntida dvärgstäder\n- **Kultur:** Dvärgisk, många övergivna städer\n- **Faror:** Monster, forntida magiska försvar\n\n## HISTORIA\nKhazimbergen är en bergskedja känd för sina dvärgiska städer och ruiner. Rollpersonerna besökte området i Fas 6 när de utforskade Tarkas.\n\n## VIKTIGA PLATSER\n- **Tarkas:** Övergivna dvärgruiner\n\n## KOPPLINGAR\n- **Relaterade platser:** Tarkas",
+    "kapitel": null,
+    "bild": null,
+    "slug": "khazimbergen"
+  },
+  {
+    "namn": "Krökta Kompassen",
+    "typ": "Värdshus",
+    "region": "Tuzan Rim",
+    "beskrivning": "# KRÖKTA KOMPASSEN\n**Värdshus i Tuzan Rim**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Tuzan Rim\n- **Ägare:** Eloise\n- **Personal:** Halmar (bartender)\n\n## BESKRIVNING\nKrökta Kompassen är ett välbesökt värdshus beläget i Tuzan Rim. Lokalen har en mysig och välkomnande atmosfär som lockar både resenärer och lokalbefolkning.\n\n## FLOORPLAN\nVärdshuset har en speciell design med ett hemligt rum bakom en bokhylla. Detta dolda utrymme har använts för diskreta möten och affärsuppgörelser.\n\n### Huvudutrymmen\n- **Matsal/Bar:** Huvudrummet där gäster samlas\n- **Kök:** Där Eloise och personalen förbereder maten\n- **Gästrum:** Flera rum för övernattande gäster\n- **Hemligt rum:** Bakom bokhyllan, endast känt av Eloise och vissa betrodda gäster\n\n## PERSONAL\n\n### Eloise (Ägare)\nVärdshuset drivs av den karismatiska Eloise som är känd för sin gästfrihet och diskreta hantering av känsliga angelägenheter.\n\n### Halmar (Bartender)\nHalmar är en pålitlig bartender som håller koll på gästerna och ser till att atmosfären förblir trivsam.\n\n## BETYDELSE FÖR KAMPANJEN\nGruppen besökte Krökta Kompassen under sin tid i Tuzan Rim (Fas 3). Det hemliga rummet kan ha använts för viktiga möten eller informationsutbyte.\n\n## KOPPLINGAR\n- **Region:** Tuzan Rim\n- **Ägare:** Eloise\n- **Personal:** Halmar\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "krokta-kompassen"
+  },
+  {
+    "namn": "Lejonets Bröl",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# LEJONETS BRÖL\n**Ljudlig och livlig**\n\n## GRUNDINFO\n- **Typ:** Livlig taverna\n- **Plats:** Jen, Muhad\n- **Ägare:** Umar al-Rashid\n- **Tema:** Festlig och bullrig\n\n## BESKRIVNING\nLejonets Bröl är ett livligt värdshus där musiken alltid spelar och skratten aldrig dör ut. Väggarna är täckta med troféer från djur och vapen, och borden är robusta nog att tåla även de vildaste festligheterna. En scen i hörnet rymmer ofta lokala band och underhållare.\n\n## ÄGARE\n**Umar al-Rashid** är en jovialisk man med en stor röst och ett ännu större hjärta. Han älskar när gästerna har roligt.\n\n## SPECIALITETER\n- **Kryddiga köttgrytor** - Värmande och mättande\n- **Öl från lokala bryggerier** - Fräscht och gott\n- **Stora bägare med vin** - För de som vill fira\n\n## ATMOSFÄR\nBullrig och festlig, perfekt för de som vill fira eller glömma sina bekymmer. Musik, dans och höga röster fyller luften.\n\n## BETYDELSE FÖR KAMPANJEN\nEtt ställe där gruppen kunde koppla av, festa och kanske få höra lokala rykten och skvaller i den lösa atmosfären.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Umar al-Rashid\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "lejonets-brol"
+  },
+  {
+    "namn": "Lundnäs",
+    "typ": "Skogsby",
+    "region": "Soldarn",
+    "beskrivning": "# LUNDNÄS\n**Skogsby drabbad av magiska pärlor**\n\n## GRUNDINFO\n- **Typ:** Skogsby med ca 1600 invånare\n- **Region:** Soldarn, vid Raunfloden\n- **Styre:** Baron Semuel Leijon av Lundnäs, fogde Herr Thall Spjut\n- **Karaktär:** Typisk skogsby med växtvärk\n\n## HISTORIA OCH KRIS\nLundnäs drabbades av en kris när mystiska pärlor påverkade både människor och djur i området. Fiskaren Ragnar drog upp pärlorna i sin fångst, vilket satte igång en kedja av händelser.\n\n## PÄRLORNAS PÅVERKAN\n- Galna gripar dödade fader Rubiel på gravgården\n- Befolkningen påverkades mentalt (paranoia, huvudvärk, förvirring)\n- Djur uppvisade udda beteende\n- Riddar Warg Spegelsköld blev farligt paranoid\n\n## VIKTIGA BYGGNADER\n- **Vansnäs Gästgiveri:** Värdshus med övernattning (Turam, gästgivare)\n- **Samoritemplet:** Tidigare skött av fader Rubiel\n- **Godset Leijonsborg:** Baronens stensborg (enda stenbyggnaden)\n- **Handelsboden:** Drivs av Vanna Rosenkind\n- **Garnisonen och häktet:** Små vaktstyrkan\n- **Häxan Fredriccas stuga:** I skogen väster om byn\n\n## VIKTIGA NPCS\n**Offer för pärlorna:**\n- Ragnar Fiskare (hittade pärlorna)\n- Riddar Warg Spegelsköld (paranoid)\n- Baron Semuel Leijon (sjuk, yrande)\n- Fader Rubiel (död, dräpt av gripar)\n\n**Hjälpare:**\n- Båg-Pieter (jägare, resisterade pärlpåverkan)\n- Häxan Fredricca (hjälpte med sin kunskap)\n- Herr Thall Spjut (fogde, höll ordning trots huvudvärk)\n- Turam (gästgivare)\n\n## KOPPLINGAR\n- **Äventyr:** Regnsynd (köpäventyr)\n- **Relaterade platser:** Raunfloden",
+    "kapitel": null,
+    "bild": null,
+    "slug": "lundnas"
+  },
+  {
+    "namn": "Mithera",
+    "typ": "Skog och region",
+    "region": "Nordliga skogsområden",
+    "beskrivning": "# MITHERA\n**Skogsområde på vägen till Skugglandet**\n\n## GRUNDINFO\n- **Typ:** Omfattande skogsområde\n- **Karaktär:** Tät skog med mystiska och farliga element\n- **Betydelse:** Transitområde på vägen till Skugglandet\n- **Atmosfär:** Mörk, mystisk, ibland hotfull\n\n## HISTORIA\nMithera är det skogsområde som rollpersonerna genomkorsade i Fas 10 på sin resa för att nå Skugglandet och rädda Zentri.\n\n## VIKTIGA HÄNDELSER\n**Fas 10: Genom Mithera**\n- Rollpersonerna reste genom de täta skogarna\n- Mötte olika utmaningar och faror\n- Närmade sig portalen till Skugglandet vid Älvakungen Yelgothas domäner\n\n## MILJÖBESKRIVNINGAR\nOmfattande miljöbeskrivningar finns dokumenterade för olika delar av Mithera, inklusive:\n- Skogsvägar och stigar\n- Nattliga läger\n- Faror i skogen\n\n## KOPPLINGAR\n- **Relaterade platser:** Skugglandet (destination), Åderbjörkslunden\n- **NPCs:** Älvakungen Yelgotha (portalväktare)",
+    "kapitel": null,
+    "bild": null,
+    "slug": "mithera"
+  },
+  {
+    "namn": "Mitrahus",
+    "typ": "Hall/Gods",
+    "region": "Vitterdal, Cermira",
+    "beskrivning": "# MITRAHUS\n**Hagges hall i Vitterdal**\n\n## GRUNDINFO\n- **Typ:** Jarlshall och gods\n- **Ägare:** Hagge av Vitterdal (ny jarl)\n- **Region:** Vitterdal, Cermira\n- **Betydelse:** Belöningsceremoni och gruppens nya bas\n\n## HISTORIA\nMitrahus är Hagge av Vitterdals hall och gods i Vitterdal. Efter att gruppen framgångsrikt levererade Hagge hem arrangerades en formell belöningsceremoni i Mitrahus stora hall.\n\n## BELÖNINGSCEREMONI (FAS 7)\nHagge utdelade generösa belöningar till gruppen:\n- **Gordon:** Kaptenssymbol och titel \"Kapten av Vitterdals Hederskompani\"\n- **Umnatak:** Ceremoniell jaktkniv och livslångt jaktprivilegium\n- **Kazrik:** Handelsrättigheter och erkännande som lärd man\n- **Thrakka:** Formellt välkommen som gruppens medlem\n- **Alla:** Skattefrihet, hus på Mitrahus mark, option på Grensfortet\n\n## NUVARANDE STATUS\n- Kaelar Stålsvärd accepterade tjänst som Hagges kapten\n- Flyktingarna från Vargnäset huseras i Grensfortet (del av godset)\n- Gruppen har permanenta boenden här\n\n## KOPPLINGAR\n- **NPCs:** Hagge av Vitterdal, Lady Soffia, Kaelar Stålsvärd\n- **Relaterade platser:** Vitterdal, Grensfortet",
+    "kapitel": null,
+    "bild": null,
+    "slug": "mitrahus"
+  },
+  {
+    "namn": "Muhad",
+    "typ": "Region",
+    "region": "Östra Mundana",
+    "beskrivning": "# MUHAD\n**Ökenregion med asharis ka kultur**\n\n## GRUNDINFO\n- **Typ:** Region och kulturområde\n- **Karaktär:** Öken, asharisk kultur, handelsstäder\n- **Huvudstad:** Jen (hamnstad)\n- **Kultur:** Asharisk, handelsinriktad, slavhandel förekommer\n- **Betydelse:** Hem för Hagge av Vitterdal i flera år\n\n## HISTORIA\nMuhad är den ökenregion där rollpersonerna spenderade betydande tid (Fas 3-5) när de sökte efter och hittade Hagge av Vitterdal. Hagge hade bott här och fått en son med slavhandlaren Laila al-Jen.\n\n## VIKTIGA STÄDER\n- **Jen:** Hamnstad där Hagge hittades\n\n## FRAKTIONER OCH MAKT\n- Olika handelshus kontrollerar handel och politik\n- Slavhandel är en betydande ekonomisk faktor\n- Komplexa maktstrukturer och allianser\n\n## VIKTIGA NPCS (33 st från Muhad)\nRollpersonerna mötte många lokala invånare, inklusive:\n- **Laila al-Jen:** Slavhandlare, Hagges före detta älskarinna\n- **Handelsmän:** Amira bint-Zayed, Fahad al-Khouri, Farid al-Malik, Ghalib al-Nur\n- **Lokala:** Dr. Yusuf, Karim Berättaren, och många fler\n\n## KOPPLINGAR\n- **Viktiga NPCs:** Hagge av Vitterdal, Laila al-Jen\n- **Relaterade platser:** Jen (huvudstad)",
+    "kapitel": null,
+    "bild": null,
+    "slug": "muhad"
+  },
+  {
+    "namn": "Månljuset",
+    "typ": "Fartyg",
+    "region": "Vargnäset evakuering",
+    "beskrivning": "# MÅNLJUSET\n**Evakueringsfartyg drabbat av myteri**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Ursprunglig kapten:** Lars \"Silkeskägg\" Nordahl (†)\n- **Nuvarande befälhavare:** Gordon Nahrzezia\n- **Besättning:** Sten Knotbindare + andra\n- **Passagerare:** 11 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nMånljuset var det tredje och mest dramatiska av evakueringsfartygen från Vargnäset. Ursprungligen under befäl av kapten Lars \"Silkeskägg\" Nordahl, drabbades fartyget av ett tragiskt myteri där både kaptenen och Tant Hildur dog. Gordon Nahrzezia tvingades ta över befälet.\n\n## URSPRUNGLIG KAPTEN\n\n### Lars \"Silkeskägg\" Nordahl (†)\nDen ursprungliga kaptenen på Månljuset, känd för sitt välansade skägg som gav honom smeknamnet \"Silkeskägg\". Han dog under mute\n\nriet ombord på fartyget.\n\n## NUVARANDE BEFÄLHAVARE\n\n### Gordon Nahrzezia\nGordon, en av gruppens medlemmar (cirefalisk legosoldat spelad av Calle), tvingades ta över befälet på Månljuset efter att kapten Lars dödades i myteriet. Detta var en kritisk situation där Gordons ledarskapsförmåga sattes på prov.\n\n## BESÄTTNING\n\n### Sten Knotbindare\nEn pålitlig besättningsmedlem som blev kvar och hjälpte Gordon att styra fartyget efter myteriet.\n\n## TRAGISKA HÄNDELSER\n\n### Muteriet\nUnder evakueringen bröt ett myteri ut ombord på Månljuset. Det exakta förloppet är oklart, men både kapten Lars \"Silkeskägg\" Nordahl och Tant Hildur dog under händelserna.\n\n### Tant Hildur (†)\nEn av passagerarna som dog under myteriet. Hennes död var en av de tragiska förlusterna under evakueringen.\n\n### Gordons Övertagande\nI krisens mitt tvingades Gordon ta över befälet på fartyget och säkerställa att de återstående 11 flyktingarna kom till säkerhet.\n\n## EVAKUERINGEN\n\n### Passagerare\nTrots myteriet lyckades Månljuset transportera 11 flyktingar från Vargnäset till säkerhet.\n\n## BETYDELSE FÖR KAMPANJEN\nMånljuset representerar en av kampanjens mörkaste stunder - evakueringen som skulle rädda liv drabbades av internt våld och förlust. Gordons förmåga att ta kommando i krisen visade hans ledarskap, men priset var högt med två dödsoffer.\n\nDetta var också den tredje evakueringsbåten, och tillsammans med Rimfrosten och Strömjungfrun räddades totalt 41 flyktingar från Vargnäset.\n\n## KOPPLINGAR\n- **Ursprunglig kapten:** Lars \"Silkeskägg\" Nordahl (†)\n- **Nuvarande befälhavare:** Gordon Nahrzezia\n- **Besättning:** Sten Knotbindare\n- **Passagerare:** 11 flyktingar från Vargnäset\n- **Dödsoffer:** Kapten Lars, Tant Hildur\n- **Relaterade fartyg:** Rimfrosten, Strömjungfrun\n- **Händelse:** Evakuering från Vargnäset, myteri\n- **Fas:** 7",
+    "kapitel": null,
+    "bild": null,
+    "slug": "manljuset"
+  },
+  {
+    "namn": "Månskärets Gömställe",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# MÅNSKÄRETS GÖMSTÄLLE\n**Exklusivt och mystiskt**\n\n## GRUNDINFO\n- **Typ:** Exklusivt värdshus\n- **Plats:** Undangömd gränd i handelsdistriktet, Jen, Muhad\n- **Ägare:** Zara al-Min\n- **Tema:** Mysterium och diskretion\n\n## BESKRIVNING\nMånskärets Gömställe är ett exklusivt och mystiskt värdshus beläget i en undangömd gränd i handelsdistriktet. Värdshuset är inrett med mörka träslag, exotiska textilier och dimmad belysning som ger en intim atmosfär. Här bor många av stadens äventyrare och mystiker.\n\n### Särskilda Rum\n- **Bar/Lounge:** Bekvämt rum med mjuka soffor, mörka väggar och dimmad belysning\n- **Bibliotek:** Litet rum fyllt med böcker, pergament och kartor\n- **Undangömd Innergård:** En liten, avskild innergård för privata stunder\n\n## ÄGARE\n\n### Zara al-Min\nEn gåtfull kvinna i fyrtioårsåldern med långt, svart hår och intensiv blick. Hon klär sig i mörka, flödande kläder och bär smycken med mystiska symboler. Zara har studerat magi och ockultism och har många hemliga kontakter. Hon är känd för sin diskretion och förmåga att ordna saker bakom kulisserna.\n\n## PERSONAL\n\n### Rashid ibn-Farouk (Receptionist och Bartender)\nEn ung man med charmerande leende och vänligt uppträdande. Han känner till många av stadens hemligheter.\n\n### Amina bint-Salim (Städare)\nEn tystlåten kvinna i trettioårsåldern, diskret och lojal mot Zara. Ser till att värdshuset alltid är i perfekt skick.\n\n### Hassan al-Rashid (Kökshjälp och Underhållsman)\nEn kraftig man i fyrtioårsåldern med bred kunskap om både matlagning och reparationer.\n\n### Laila bint-Ali (Serveringspersonal)\nEn ung kvinna med sprudlande humör som drömmer om att öppna sitt eget värdshus.\n\n## RUM & FACILITETER\n- **Enkelrum:** 3 små men bekväma rum\n- **Dubbelrum:** 4 rymligare rum\n- **Svit:** 1 lyxigt rum med sittgrupp\n- **Bar/Lounge:** För drinkar och socialt umgänge\n- **Bibliotek:** För studier och läsning\n- **Gemensamma badrum:** Välskötta med lyxiga badprodukter\n- **Undangömd innergård:** För privat avkoppling\n\n## BETYDELSE FÖR KAMPANJEN\nMånskärets Gömställe var perfekt för gruppen om de sökte diskretion under sin vistelse i Jen. Zaras kontakter kunde ge tillgång till hemlig information och mystiska tjänster.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Zara al-Min\n- **Personal:** Rashid ibn-Farouk, Amina bint-Salim, Hassan al-Rashid, Laila bint-Ali\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "manskarets-gomstalle"
+  },
+  {
+    "namn": "Raunfloden",
+    "typ": "Flod",
+    "region": "Asharien/Soldarn",
+    "beskrivning": "# RAUNFLODEN\n**Stor flod genom Asharien**\n\n## GRUNDINFO\n- **Typ:** Stor flod\n- **Karaktär:** Slingrande, viktig handelsled\n- **Betydelse:** Transportled och naturlig gräns\n- **Städer vid floden:** Jarla, Lundnäs\n\n## HISTORIA\nRaunfloden är en viktig flod som rollpersonerna passerat flera gånger under sina resor. Flera viktiga städer och händelser är kopplade till floden.\n\n## VIKTIGA PLATSER VID RAUNFLODEN\n- **Jarla:** Fristad vid Raunflodens södra strand\n- **Lundnäs:** Skogsby där Regnsynd-händelserna utspelades\n\n## HÄNDELSER\n**Scenario 4 (Resan Hem):** Rollpersonerna hade äventyr vid Raunfloden, mötte NPCs som Nilmar, Ylva, och Flodsköldpaddan.\n\n## KOPPLINGAR\n- **Relaterade platser:** Jarla, Lundnäs\n- **NPCs:** Många NPCs från städerna vid floden",
+    "kapitel": null,
+    "bild": null,
+    "slug": "raunfloden"
+  },
+  {
+    "namn": "Rimfrosten",
+    "typ": "Fartyg",
+    "region": "Vargnäset evakuering",
+    "beskrivning": "# RIMFROSTEN\n**Evakueringsfartyg från Vargnäset**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Kapten:** Nils \"Järnhand\" Gromsson\n- **Besättning:** Kapten + 2 besättningsmedlemmar\n- **Passagerare:** 19 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nRimfrosten var ett av de tre fartyg som användes för evakueringen av 41 flyktingar från Vargnäset efter de katastrofala händelserna där. Fartyget leddes av den pålitlige kaptenen Nils \"Järnhand\" Gromsson.\n\n## KAPTEN & BESÄTTNING\n\n### Nils \"Järnhand\" Gromsson\nEn erfaren kapten känd för sin fasta hand och pålitlighet. Hans smeknamn \"Järnhand\" tyder på hans strikta men rättvisa ledarskap.\n\n### Besättning\n2 erfarna besättningsmedlemmar som assisterade kaptenen under den kritiska evakueringen.\n\n## EVAKUERINGEN FRÅN VARGNÄSET\n\n### Passagerare\nRimfrosten tog ombord 19 av de 41 flyktingar som behövde evakueras från Vargnäset efter Zentris försvinnande och de övernaturliga händelserna.\n\n### Destination\nFartyget transporterade flyktingarna till säkerhet, troligen till Grensfortet eller annan säker hamn.\n\n## BETYDELSE FÖR KAMPANJEN\nRimfrosten var en av tre båtar (tillsammans med Strömjungfrun och Månljuset) som räddade livet på 41 människor från Vargnäset. Evakueringen var en viktig humanitär insats efter de tragiska händelserna i Fas 7.\n\n## KOPPLINGAR\n- **Kapten:** Nils \"Järnhand\" Gromsson\n- **Passagerare:** 19 flyktingar från Vargnäset\n- **Relaterade fartyg:** Strömjungfrun, Månljuset\n- **Händelse:** Evakuering från Vargnäset\n- **Fas:** 7",
+    "kapitel": null,
+    "bild": null,
+    "slug": "rimfrosten"
+  },
+  {
+    "namn": "Rödskäggs Tillflykt",
+    "typ": "Dolt handelsläger",
+    "region": "Cermira",
+    "beskrivning": "Gömd vik vid inflöde till Raunfloden, 25 km norr om Vargnäset.\n\n**Karaktär:** Temporärt läger för smugglare och korrupta köpmän.\n\n**Befolkning:** 15-20 personer vintertid.\n\n**Lägerchefen:** Gunvald 'Rödskägg' Korshamn - fd. legitim köpman utpressad av korrupta tjänstemän.\n\n**Betydelse:** Mötesplats för att boka pråmar under evakueringen från Vargnäset.",
+    "kapitel": "Kapitel 8",
+    "bild": null,
+    "slug": "rodskaggs-tillflykt"
+  },
+  {
+    "namn": "Sanari-alvernas Rike",
+    "typ": "Alvisk region",
+    "region": "Okänd (mystisk)",
+    "beskrivning": "# SANARI-ALVERNAS RIKE\n**De mystiska alvernas hemland**\n\n## GRUNDINFO\n- **Typ:** Alviskt rike\n- **Härskare:** Sanari-alvernas ledare (okänd)\n- **Relation:** Serafina Eldstav reste hit på eget initiativ med artefakter\n- **Status:** Inte besökt av gruppen\n\n## HISTORIA\nSanari-alverna kände av störningen från Tirakgraven men visste inte vad som hänt. Ibran/Tamron stal föremålen från graven, men de återtogs vid Grensfortet. Serafina tog sedan hand om föremålen och reste hit på eget initiativ i hopp om att köpa tillbaka sin plats efter 10 års förvisning.\n\n## BETYDELSE\n- Sanari-alverna har möjligen de artefakter som höll demonen Urkhath fången\n- Deras motiv och planer är okända\n- Serafina agerade på eget initiativ, inte som deras agent\n\n## MYSTERIER\n- Var ligger riket?\n- Vad vill Sanari-alverna med artefakterna?\n- Vilken roll spelar de i kampanjen?\n\n## KOPPLINGAR\n- **NPCs:** Serafina Eldstav, Sanari-alverna (omnämnda)\n- **Artefakter:** Bindningsföremål från Tirakgraven\n- **Hot:** Demonen Urkhath",
+    "kapitel": null,
+    "bild": null,
+    "slug": "sanari-alvernas-rike"
+  },
+  {
+    "namn": "Sandens Sång",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# SANDENS SÅNG\n**Traditionell ökenoas**\n\n## GRUNDINFO\n- **Typ:** Traditionell ökentaverna\n- **Plats:** Jen, Muhad\n- **Ägare:** Amina bint-Khalid\n- **Tema:** Autentisk ökenoas\n\n## BESKRIVNING\nSandens Sång är en traditionell ökentaverna som är inredd som en oas med palmträd, fontäner och mjuka mattor. Gästerna sitter på kuddar runt låga bord och njuter av den avkopplande atmosfären.\n\n## ÄGARE\n**Amina bint-Khalid** är en varm och välkomnande kvinna som älskar att berätta historier om öknen och dess legender.\n\n## SPECIALITETER\n- **Falafel** - Krispiga och välkryddade\n- **Hummus** - Krämig och smakfull\n- **Kamelmjölk** - Traditionell ökendr yck\n- **Dadelvin** - Söt och läskande\n\n## ATMOSFÄR\nAvslappnad och inbjudande, ofta fylld med musik och dans. Ett ställe där man kan uppleva äkta ökenkult ur.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde njuta av autentisk ökenkultur, höra traditionella berättelser och kanske lära sig om öknens hemligheter.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Amina bint-Khalid\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "sandens-sang"
+  },
+  {
+    "namn": "Sanningens Ljus",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# SANNINGENS LJUS\n**Ljust och luftigt**\n\n## GRUNDINFO\n- **Typ:** Värdshus\n- **Plats:** Nära marknadsplatsen, Jen, Muhad\n- **Ägare:** Nadir\n- **Tema:** Ljus och kunskap\n\n## BESKRIVNING\nSanningens Ljus är ett värdshus som ligger nära stadens marknadsplats. Det är känt för sin ljusa och luftiga interiör med stora fönster som släpper in mycket dagsljus. Värdshuset är populärt bland köpmän och lärda som besöker Jen.\n\n## ÄGARE\n\n### Nadir\nEn pensionerad lärd man som älskar att dela med sig av sina historier och kunskaper. Hans passion för lärdom och sanning genomsyrar hela etablissemanget.\n\n## ATMOSFÄR\nEtt ställe för intellektuella samtal, diskussioner om filosofi och vetenskap. Dagsljuset och den öppna atmosfären skapar en känsla av ärlighet och transparens.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde möta lärda män och kvinnor, diskutera historiska händelser och kanske få värdefull kunskap om regionen och dess mysterier.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Nadir\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "sanningens-ljus"
+  },
+  {
+    "namn": "Silverskum",
+    "typ": "Fartyg",
+    "region": "Raunfloden/Drunok",
+    "beskrivning": "# SILVERSKUM\n**Fartyg på Raunfloden**\n\n## GRUNDINFO\n- **Typ:** Flodbåt\n- **Region:** Raunfloden/Drunok\n- **Första omnämnande:** Fas 5\n\n## BESKRIVNING\nSilverskum är ett fartyg som omnämnts i samband med färder på Raunfloden. Detaljerad information om fartygets kapten, besättning och specifika roll i kampanjen är begränsad.\n\n## BETYDELSE FÖR KAMPANJEN\nSilverskum verkar ha varit ett av de fartyg som trafikerade Raunfloden under kampanjens händelser, möjligen en del av det större nätverket av handels- och passagerarfartyg i regionen.\n\n## KOPPLINGAR\n- **Region:** Raunfloden\n- **Fas:** 5 (cirka)\n- **Relaterade fartyg:** Frostnymf, Spegelmåne, Månljuset, Rimfrosten, Strömjungfrun",
+    "kapitel": null,
+    "bild": null,
+    "slug": "silverskum"
+  },
+  {
+    "namn": "Skugglandet",
+    "typ": "Andeplan/Parallell dimension",
+    "region": "Utanför Mundana",
+    "beskrivning": "# SKUGGLANDET\n**Andeplan där Zentri hålls fången**\n\n## GRUNDINFO\n- **Typ:** Andeplan/Parallell dimension\n- **Härskare:** Lord Vinterglöd (nuvarande antagonist)\n- **Karaktär:** Mörk, kall, farlig dimension\n- **Tillträde:** Via portal bevakad av Älvakungen Yelgotha\n- **Betydelse:** Zentris fängelse, kampanjens nuvarande fokus\n\n## HISTORIA\nSkugglandet är den parallella dimension där Zentri Bredarsson hålls fångad. Rollpersonerna har tagit sig in i Skugglandet i Fas 11 för att rädda honom.\n\n## VIKTIGA HÄNDELSER\n**Fas 11: Skugglandet**\n- Rollpersonerna tog sig in via Älvakungen Yelgothas portal\n- Mötte Lord Vinterglöd och hans styrkor\n- Pågående konflikt för att rädda Zentri\n\n## VIKTIGA PLATSER I SKUGGLANDET\n- **Älvakungens sal:** Portal och mötesplats\n- **Åderbjörkslunden:** Viktig plats i Skugglandet\n- **Lord Vinterglöds domäner:** Fiendens territorium\n\n## VIKTIGA NPCS\n- **Lord Vinterglöd:** Nuvarande antagonist\n- **Älvakungen Yelgotha:** Portalväktare\n- **Vitfläck:** Talande snökatt, Kuberons budbärare (mötte rollpersonerna här)\n\n## KOPPLINGAR\n- **Relaterade platser:** Mithera (ingång), Älvakungens sal, Åderbjörkslunden\n- **Relaterade NPCs:** Zentri (fångad här), Lord Vinterglöd, Älvakungen Yelgotha",
+    "kapitel": null,
+    "bild": null,
+    "slug": "skugglandet"
+  },
+  {
+    "namn": "Skuggornas Viloplats",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# SKUGGORNAS VILOPLATS\n**Mörk och mystisk**\n\n## GRUNDINFO\n- **Typ:** Skum taverna\n- **Plats:** Stadens skuggiga kvarter, Jen, Muhad\n- **Ägare:** Nocturne\n- **Tema:** Hemlighet och mysterium\n\n## BESKRIVNING\nSkuggornas Viloplats ligger i stadens skuggiga kvarter och är känd för sin dämpade belysning och mystiska atmosfär. Interiören är dekorerad med mörka träslag och röda sammetstyger, och svaga ljus skapar en hemlighetsfull stämning.\n\n## ÄGARE\n**Nocturne** är en gåtfull figur som sällan visar sitt ansikte. Få vet vem som verkligen driver etablissemanget.\n\n## SPECIALITETER\n- **Mörka ales** - Starka och bittra\n- **Kryddiga rätter** - Med hemliga ingredienser\n- **Mystiska elixirer** - Med okända effekter\n\n## ATMOSFÄR\nDämpad och hemlighetsfull, idealisk för hemliga möten och skumma affärer. De som besöker denna plats söker diskretion.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde möta informanter från undre världen, smugglare och andra som opererar i skuggorna. Möjligen kopplat till Malik Al-Zahirs nätverk.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Nocturne\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "skuggornas-viloplats"
+  },
+  {
+    "namn": "Soldarn",
+    "typ": "Region",
+    "region": "Östra Mundana",
+    "beskrivning": "# SOLDARN\n**Region vid Asharien**\n\n## GRUNDINFO\n- **Typ:** Region\n- **Läge:** Östra Mundana\n- **Grannregioner:** Asharien\n\n## HISTORIA\nSoldarn är en region i östra Mundana, nära Asharien. Regionen har nämnts i samband med kampanjens geografiska kontext.\n\n## KOPPLINGAR\n- **Relaterade platser:** Asharien, Raunfloden",
+    "kapitel": null,
+    "bild": null,
+    "slug": "soldarn"
+  },
+  {
+    "namn": "Spegelmåne",
+    "typ": "Fartyg",
+    "region": "Havet",
+    "beskrivning": "Ombyggd vågridare för last + passagerare.\n\n**Kapten:** Jeorg Rask (asharier, fd. marinkåristakademi-lärare)\n\n**Rykte:** Billigt vrakliknande skepp upprustat med stor händighet. Aldrig fallit i piraternas händer trots många angrepp under Korsarkriget.\n\n**Besättning:** Malvono Järvik (styrman), Brigga Kyllo (Jeorgs högra hand), Dask Ymer (timmerman), Yvan Krell, Rikke Lorm, Jorn Halgon (sjömän).\n\n**Specialitet:** Kapten Rask väljer fd. soldater som vakter, expert på att försvara last och besättning.",
+    "kapitel": "Kapitel 3",
+    "bild": null,
+    "slug": "spegelmane"
+  },
+  {
+    "namn": "Spegelvända Fortet",
+    "typ": "Domän i Skugglandet",
+    "region": "Skugglandet",
+    "beskrivning": "# SPEGELVÄNDA FORTET\n**Lord Vinterglöds domän**\n\n## GRUNDINFO\n- **Typ:** Förvrängd version av Grensfortet\n- **Härskare:** Lord Vinterglöd (halvblod människa/skuggvarelse)\n- **Läge:** Skugglandet\n- **Betydelse:** Zentri hålls här fången\n\n## BESKRIVNING\nEn spegelvänd och förvrängd version av Grensfortet i Skugglandet. Perspektiv och geometri fungerar inte som i den vanliga världen.\n\n## LORD VINTERGLÖD\n**Tidigare:** Människa  \n**Tragedi:** Hans syster dog i De Varma Källorna  \n**Koppling:** Var Älvafurst Yelgothas page för länge sedan\n\n## NUVARANDE SITUATION\nGruppen söker Vinterglöds domän för att rädda Zentris tre delar:\n- **Kroppen** vinns genom styrka\n- **Själen** vinns genom list\n- **Minnet** vinns genom offer\n\n## ÄLVAFURSTENS RÅD\nFurst Yelgotha sa: *\"När ni möter Vinterglöd, säg att Yelgotha sände er. Han var min page en gång.\"*\n\n## KOPPLINGAR\n- **Relaterade NPCs:** Lord Vinterglöd, Zentri Bredarsson, Demonen Urkhath\n- **Relaterade platser:** Skugglandet, Grensfortet, Älvakungen Sal",
+    "kapitel": null,
+    "bild": null,
+    "slug": "spegelvanda-fortet"
+  },
+  {
+    "namn": "Strömjungfrun",
+    "typ": "Fartyg",
+    "region": "Vargnäset evakuering",
+    "beskrivning": "# STRÖMJUNGFRUN\n**Evakueringsfartyg från Vargnäset**\n\n## GRUNDINFO\n- **Typ:** Evakueringsfartyg\n- **Kapten:** Berta \"Flodkvinna\" Eriksdotter\n- **Besättning:** Kapten + Inga Bredaxel\n- **Passagerare:** 12 flyktingar från Vargnäset\n- **Första omnämnande:** Fas 7\n\n## BESKRIVNING\nStrömjungfrun var det andra av tre fartyg som användes för evakueringen från Vargnäset. Fartyget leddes av den kunniga kaptenen Berta \"Flodkvinna\" Eriksdotter.\n\n## KAPTEN & BESÄTTNING\n\n### Berta \"Flodkvinna\" Eriksdotter\nEn erfaren kvinnlig kapten med djup kunskap om flodernas rörelser och strömmar. Hennes smeknamn \"Flodkvinna\" speglar hennes exceptionella skicklighet i att navigera på älvar och floder.\n\n### Inga Bredaxel\nEn pålitlig besättningsmedlem som assisterade Berta under evakueringen. Hennes efternamn antyder en stark och kapabel person.\n\n## EVAKUERINGEN FRÅN VARGNÄSET\n\n### Passagerare\nStrömjungfrun tog ombord 12 av de 41 flyktingar som evakuerades från Vargnäset efter de katastrofala händelserna.\n\n### Destination\nFartyget transporterade flyktingarna till säkerhet, troligen till Grensfortet eller annan säker hamn.\n\n## BETYDELSE FÖR KAMPANJEN\nStrömjungfrun var en del av den livräddande evakueringsoperationen från Vargnäset i Fas 7. Tillsammans med Rimfrosten och Månljuset räddades 41 människor från farozonen.\n\n## KOPPLINGAR\n- **Kapten:** Berta \"Flodkvinna\" Eriksdotter\n- **Besättning:** Inga Bredaxel\n- **Passagerare:** 12 flyktingar från Vargnäset\n- **Relaterade fartyg:** Rimfrosten, Månljuset\n- **Händelse:** Evakuering från Vargnäset\n- **Fas:** 7",
+    "kapitel": null,
+    "bild": null,
+    "slug": "stromjungfrun"
+  },
+  {
+    "namn": "Tarkas",
+    "typ": "Dvärgruiner",
+    "region": "Khazimbergen",
+    "beskrivning": "# TARKAS\n**Övergivna dvärgruiner med forntida faror**\n\n## GRUNDINFO\n- **Typ:** Övergivna dvärgruiner\n- **Region:** Khazimbergen\n- **Status:** Farlig, delvis utforskad\n- **Karaktär:** Forntida dvärgstad med magiska försvar och monster\n\n## HISTORIA\nTarkas var en gång en mäktig dvärgstad i Khazimbergen. När rollpersonerna besökte ruinerna i Fas 6 mötte de både forntida magiska försvar och farliga varelser.\n\n## VIKTIGA HÄNDELSER\n**Fas 6: Tarkas**\n- Rollpersonerna utforskade de övergivna dvärgiska ruinerna\n- Mötte forntida faror och magiska försvar\n- Upptäckte ledtrådar om kampanjens större mysterier\n\n## KOPPLINGAR\n- **Relaterade platser:** Khazimbergen (bergskedja)",
+    "kapitel": null,
+    "bild": null,
+    "slug": "tarkas"
+  },
+  {
+    "namn": "Tirakgraven",
+    "typ": "Fornlämning/Grav",
+    "region": "Gränstrakterna mellan Cermira och Mithera",
+    "beskrivning": "# TIRAKGRAVEN\n**Demonens fängelse och kampanjens start**\n\n## GRUNDINFO\n- **Typ:** Urgammal grav och fängelse\n- **Läge:** Gränstrakterna mellan Cermira och Mithera\n- **Status:** Demonen Urkhath har vaknat och flytt\n- **Betydelse:** Kampanjens startpunkt\n\n## HISTORIA\nTirakgraven var fängelset där demonen Urkhath hölls inspärrad i tusentals år. När rollpersonerna anlände till platsen i Fas 1 vaknade demonen och bröt sig fri.\n\n## VIKTIGA HÄNDELSER\n**Fas 1: Tirakgraven och Demonens Väckande**\n- Rollpersonerna skickades hit av Migor Trollkunnig\n- Demonen Urkhath vaknade och flydde\n- Stålsvärds Kavalerister förlorade flera medlemmar här:\n  - Daela Häxmästare (antimagispecialist)\n  - Gavric (tungt bepansrad krigare)\n  - Isolde Eldkonstnär (eldmagiker)\n  - Jaela Härlig (vanar-krigare)\n\n## KOPPLINGAR\n- **NPCs som dog här:** Daela, Gavric, Isolde, Jaela\n- **NPCs som överlevde:** Dorn Stenbärare, Kaelar Stålsvärd, Serafina\n- **Relaterade platser:** Grensfortet (närmaste befästning)",
+    "kapitel": null,
+    "bild": null,
+    "slug": "tirakgraven"
+  },
+  {
+    "namn": "Tormunds Stuga",
+    "typ": "Eremitbostad",
+    "region": "Mithera-skogen (västra randen)",
+    "beskrivning": "# TORMUNDS STUGA\n**Den sista jägarstugan**\n\n## GRUNDINFO\n- **Typ:** Isolerad jägarstuga\n- **Läge:** Västra randen av Mithera-skogen\n- **Ägare:** Tormund Rimskägg (eremitjägare)\n- **Betydelse:** Första landmärket i Mithera\n\n## BESKRIVNING\nEn liten stuga som lutar sig mot en väldig gran, vars grenar bildat ett naturligt tak över torvtaket. Byggd av timmer så gammalt att det blivit nästan svart, täckt av is som får strukturen att glittra. Runt stugan hänger märkliga troféer: djurskallar, björnklor och en mystisk vinge.\n\n## TORMUND RIMSKÄGG\nEremitjägare som bott i skogen i 40 år. Varnade gruppen om Mitheras faror:\n- *\"Kartor ljuger - skogen byter plats på landmärken\"*\n- Sålde isspett för att upptäcka frusna vattendrag\n- Berättade om varma källor och silverfanfarer\n\n**Hemlighet:** Tormunds son försvann när kartorna ljög.\n\n## KOPPLINGAR\n- **NPCs:** Tormund Rimskägg\n- **Relaterade platser:** Mithera, De Varma Källorna",
+    "kapitel": null,
+    "bild": null,
+    "slug": "tormunds-stuga"
+  },
+  {
+    "namn": "Tredelningen",
+    "typ": "Vägkorsning/Landmärke",
+    "region": "Mithera-skogen",
+    "beskrivning": "# TREDELNINGEN\n**Det första stora valet i Mithera**\n\n## GRUNDINFO\n- **Typ:** Vägkorsning markerad av tre megaliter\n- **Läge:** Mithera-skogen\n- **Betydelse:** Avgörande vägval med olika konsekvenser\n\n## BESKRIVNING\nVid korsvägen mellan tre urgamla megaliter stod gruppen inför sitt första avgörande val i Mithera. Tre vägar ledde i olika riktningar, var och en med sina faror:\n\n## DE TRE VÄGARNA\n- **Vänster:** Mot Vixharzivas domän (drake-territorium)\n- **Mitten:** Kortaste vägen (istroll-marker)\n- **Höger:** Tålamodets stig (längre men okänd)\n\n## KOPPLINGAR\n- **Relaterade platser:** Mithera, De Varma Källorna\n- **Relaterad fas:** Fas 10 (Genom Mithera)",
+    "kapitel": null,
+    "bild": null,
+    "slug": "tredelningen"
+  },
+  {
+    "namn": "Tuzan Rim",
+    "typ": "Hamnstad",
+    "region": "Kusten",
+    "beskrivning": "# TUZAN RIM\n**Hamnstad där rollpersonerna passerade**\n\n## GRUNDINFO\n- **Typ:** Hamnstad\n- **Karaktär:** Livlig kuststad med handel och sjöfart\n- **Betydelse:** Viktig transitpunkt för rollpersonerna\n\n## HISTORIA\nTuzan Rim är en hamnstad där rollpersonerna passerade under sina resor. Staden har en levande hamn och aktiv handel.\n\n## VIKTIGA NPCS\nRollpersonerna mötte flera lokala invånare:\n- Bartol, Berak, Dorian, Eloise, Isla, Lia, Merek, Rorik, Sylva, Tobin\n\n## KOPPLINGAR\n- **Relaterade områden:** Kusten, sjöfartsvägar",
+    "kapitel": null,
+    "bild": null,
+    "slug": "tuzan-rim"
+  },
+  {
+    "namn": "Tysta Källan",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# TYSTA KÄLLAN\n**Tyst och meditativ**\n\n## GRUNDINFO\n- **Typ:** Fridfull vinstuga\n- **Plats:** Nära stadens tempel, Jen, Muhad\n- **Ägare:** Laila bint-Farid\n- **Tema:** Meditation och ro\n\n## BESKRIVNING\nTysta Källan är en lugn och fridfull vinstuga belägen nära stadens tempel. Här är interiören enkel men elegant, med lugnande färger och mjuka kuddar. En liten inomhusfontän ger en stilla bakgrundsmusik av rinnande vatten.\n\n## ÄGARE\n**Laila bint-Farid** är en vänlig och andlig kvinna med en lugnande närvaro som skapar en atmosfär av frid.\n\n## SPECIALITETER\n- **Vegetariska rätter** - Näringsrika och smakfulla\n- **Lokala viner** - Noggrant utvalda\n- **Örtteer** - Med läkande egenskaper\n\n## ATMOSFÄR\nStillhet och eftertanke, ofta besökt av lärda och de som söker andlig ro. Ett ställe för kontemplation och reflektion.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde finna frid efter intensiva äventyr, möta andliga vägledare och diskutera filosofiska frågor.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Laila bint-Farid\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "tysta-kallan"
+  },
+  {
+    "namn": "Vansnäs Gästgiveri",
+    "typ": "Värdshus",
+    "region": "Lundnäs, Muhad",
+    "beskrivning": "# VANSNÄS GÄSTGIVERI\n**Trivsamt värdshus i Lundnäs**\n\n## GRUNDINFO\n- **Typ:** Värdshus/gästgiveri\n- **Plats:** Lundnäs, Muhad\n- **Byggnad:** Timmerstockar med snedtak av halm, ett plan\n- **Karaktär:** Hemtrevlig och ombonad atmosfär\n\n## BESKRIVNING\nVansnäs Gästgiveri i Lundnäs är en trivsam byggnad byggd av timmerstockar med ett snedtak av halm. Hela byggnaden är i ett plan och innehåller en matsal och sovutrymmen.\n\n## MATSALEN\nMatsalen är upplyst av oljelampor som sitter på borden. Gobelänger pryder väggarna och uppstoppade djurhuvuden hänger över dörrarna. I matsalen finns flera långbord med tillhörande väggbänkar och i mitten står runda träbord omgivna av pallar. Längs med norra väggen dominerar en enorm öppen spis, vilket bidrar till en varm och välkomnande atmosfär, särskilt under regniga dagar.\n\n## SOVUTRYMMEN\nVärdshuset erbjuder olika sovutrymmen:\n- **1 dubbelrum** (upptaget av Zoriánriddaren Warg Spegelsköld och hans väpnare)\n- **2 små enkelrum**\n- **1 större sovsal**\n\nRummen är spartanskt inredda men hålls med god renlighet. Varje rum är utrustat med:\n- En oljelampa\n- En låg stol\n- En extra filt\n- Potta under sängen för nödfall\n\nSmå fönster med luckor skyddar mot det ständiga regnet. Det robusta halmtaket säkerställer att det inte finns några läckor trots det ihållande dåliga vädret. Det massiva trägolvet är välnött.\n\n## GÄSTER\n- **Zoriánriddare Warg Spegelsköld** och hans väpnare (dubbelrum)\n\n## KOPPLINGAR\n- **NPCs:** Warg Spegelsköld\n- **Region:** Lundnäs, Muhad\n- **Relaterat äventyr:** Regniga synden",
+    "kapitel": null,
+    "bild": null,
+    "slug": "vansnas-gastgiveri"
+  },
+  {
+    "namn": "Vargnäset",
+    "typ": "By",
+    "region": "Mellan Muhad och Cermira",
+    "beskrivning": "# VARGNÄSET\n**By som försvarades mot desertörer**\n\n## GRUNDINFO\n- **Typ:** By med palissad\n- **Region:** På resan hem från Muhad till Cermira\n- **Försvar:** Träpalissad, organiserat försvarsystem\n- **Karaktär:** Lantlig by som blev slagfält\n\n## HISTORIA\nVargnäset blev platsen för en avgörande strid när desertörer under ledning av Kald Silvermask, Valyra Nattöga och Halrik Kord anföll byn i syfte att fånga Zentri och silverringen.\n\n## VIKTIGA HÄNDELSER\n**Fas 7: Första besöket och försvaret**\n- Rollpersonerna anlände till byn\n- Tre vågor av desertörer anföll:\n  - Första vågen (Kald Silvermask): 5 bågskyttar med brandpilar\n  - Andra vågen (Valyra Nattöga): 8 skogslöpare, infiltration\n  - Tredje vågen (Halrik Kord): 7 disciplinerade krigare + \"spårhundar\" som sökte Zentri\n- Byn försvarades framgångsrikt av rollpersonerna och byinvånare\n- Flera byggnader brann under striden\n\n**Fas 8: Andra besöket**\n- Rollpersonerna återvände till Vargnäset\n\n**OCKUPATION AV ARVORNS HAMMARE (Kapitel 7):**\n\nByn ockuperades under 'magisk kontaminationsundersökning'. Arvorns Hammare systematiskt utrotade 160+ bybor.\n\n**Sankt Astrid-händelsen:** 12-årig flicka (Ragnars flickvän) korsfästes för att ha ljugit för att skydda gruppen. Hennes martyrskap gav Corvus Askhar en gudomlig uppenbarelse från Daak som krossade hans 23 års religiösa övertygelse.\n\n**EVAKUERINGEN (Kapitel 8):**\n\n- **Evakuerade:** 50 bybor evakuerades\n- **Överlevande:** 41 personer kom fram till säkerhet\n- **Döda under resan:** Gubben Torsten (dag 2), Helena Stenmark 2 år (dag 3), Gammal-Erik 74 år (dag 3), Tant Hildur 66 år (under revolt på Månljuset)\n\n**Ledare:** Eira Holm (fd. spejare, sammanbrott dag 3), Ingvild (värdshusvärdinnan/läkare), Tomas Järnhjälm (försvarsansvarig), Jonna Sköldbärare (fd. gränsvakt).\n\n**Pråmar:** Rimfrosten (Nils Järnhand Gromsson), Strömjungfrun (Berta Flodkvinna), Månljuset (Lars Silkeskägg - förrädarkapten dödad av Halvdan Kolare).\n\n**Viktiga händelser:**\n- Revolten på Månljuset när Halvdan Kolare dödade förrädaren Silkeskägg\n- Mötet vid Iskvarnsbryggan - Systrarna (Lady Isadora, Syster Moira) observerade\n- 41 överlevande anlände Vitterdal\n\n## FÖRSVARSSTRUKTUR\n**Stridszoner:**\n- Yttre palissaden (Gordons zon)\n- Taken och höjderna (Zentris zon)\n- Torget och centrum (Kazriks/Umnataks zon)\n\n**Nyckelbyggnader:**\n- Värdshuset (Ingvilds sjukstuga)\n- Smedjan (Brynjars verkstad)\n- Brunnen (vattenkälla för brandbekämpning)\n- Kapellet (symboler lika silverringen)\n\n## VIKTIGA NPCS\n**Försvarare:**\n- Brynjar (Smed)\n- Jossan (Bågskytt)\n- Eira (Koordinator)\n- Ingvild (Akutvård)\n- Tomas Järnhjälm (Försvarare)\n- Hunter (Jägare)\n\n**Angripare:**\n- Kald Silvermask (Desertörledare)\n- Valyra Nattöga (Desertörledare)\n- Halrik Kord (Desertörledare, anlitad av Systrarna)\n\n## KOPPLINGAR\n- **Fraktioner:** Systrarna (anlitade Halrik Kord), Arvorns Hammare\n- **Relaterade platser:** På resvägen mellan Muhad och Cermira",
+    "kapitel": null,
+    "bild": null,
+    "slug": "vargnaset"
+  },
+  {
+    "namn": "Vitterdal",
+    "typ": "Region/Område",
+    "region": "Cermira",
+    "beskrivning": "# VITTERDAL\n**Hagges och Lady Soffias hemtrakt**\n\n## GRUNDINFO\n- **Typ:** Dal/område i Cermira\n- **Betydelse:** Hem för Hagge av Vitterdal och Lady Soffia\n- **Relation:** Hagges son Talarra var döende, vilket ledde till uppdraget\n\n## HISTORIA\nVitterdal är den plats varifrån Hagge av Vitterdal och hans familj kommer. När Hagges äldste son Talarra blev döende skickade Lady Soffia (Hagges mor) efter hjälp, vilket blev orsaken till att rollpersonerna fick uppdraget att hitta Hagge i Muhad.\n\n## VIKTIGA PERSONER FRÅN VITTERDAL\n- **Hagge av Vitterdal:** Den nya jarlen\n- **Lady Soffia av Vitterdal:** Hagges mor\n- **Talarra av Vitterdal:** Hagges äldste son (var döende i Fas 3)\n\n## KOPPLINGAR\n- **NPCs:** Hagge, Lady Soffia, Talarra\n- **Region:** Cermira",
+    "kapitel": null,
+    "bild": null,
+    "slug": "vitterdal"
+  },
+  {
+    "namn": "Älvakungens sal",
+    "typ": "Magisk sal och portal",
+    "region": "Skugglandet",
+    "beskrivning": "# ÄLVAKUNGENS SAL\n**Portal mellan Mundana och Skugglandet**\n\n## GRUNDINFO\n- **Typ:** Magisk sal och portalplats\n- **Härskare:** Älvakungen Yelgotha\n- **Funktion:** Portal och passage mellan världarna\n- **Karaktär:** Magisk, alvisk, gränsen mellan dimensioner\n- **Betydelse:** Enda kända vägen in och ut ur Skugglandet\n\n## HISTORIA\nÄlvakungens sal är den mystiska plats där Älvakungen Yelgotha bevakar portalen mellan Mundana och Skugglandet. För att ta sig till Skugglandet och rädda Zentri måste rollpersonerna passera genom denna sal och förhandla med Älvakungen.\n\n## VIKTIGA HÄNDELSER\n**Fas 11:**\n- Rollpersonerna mötte Älvakungen Yelgotha här\n- Förhandlade om passage till Skugglandet\n- Tog sig igenom portalen\n\n## VIKTIGA NPCS\n- **Älvakungen Yelgotha:** Portalens väktare, kontrollerar passage\n\n## KOPPLINGAR\n- **Relaterade platser:** Skugglandet, Mithera\n- **Funktion:** Portal och övergång",
+    "kapitel": null,
+    "bild": null,
+    "slug": "alvakungens-sal"
+  },
+  {
+    "namn": "Åderbjörkslunden",
+    "typ": "Mystisk lund",
+    "region": "Skugglandet",
+    "beskrivning": "# ÅDERBJÖRKSLUNDEN\n**Mystisk lund i Skugglandet**\n\n## GRUNDINFO\n- **Typ:** Magisk björklund\n- **Region:** Skugglandet\n- **Karaktär:** Mystisk, magiskt laddad plats\n- **Betydelse:** Viktig plats i nuvarande äventyr\n\n## HISTORIA\nÅderbjörkslunden är en mystisk björklund i Skugglandet där viktiga händelser utspelar sig i rollpersonernas försök att rädda Zentri.\n\n## VIKTIGA HÄNDELSER\n**Fas 11:**\n- Plats för viktiga händelser i det pågående räddningsuppdraget\n- Detaljerad beskrivning finns i äventyrsmaterialet\n\n## KOPPLINGAR\n- **Relaterade platser:** Skugglandet, Älvakungens sal\n- **Pågående äventyr:** \"Rädda Zentri\"",
+    "kapitel": null,
+    "bild": null,
+    "slug": "aderbjorkslunden"
+  },
+  {
+    "namn": "Ödlefolkets ruiner",
+    "typ": "Uråldriga ruiner",
+    "region": "Tarkas",
+    "beskrivning": "# ÖDLEFOLKETS RUINER\n**Uråldrig ruin vid Tarkas kust**\n\n## GRUNDINFO\n- **Typ:** Uråldriga ruiner\n- **Plats:** Tarkas södra kust\n- **Ursprung:** Utdött ödlefolk\n- **Status:** Delvis kollapsad\n- **Kapitel:** Kapitel 3\n\n## UPPTÄCKTEN\nEfter vulkanutbrottet som krossade gruppens skepp och flera dagars vandring genom den askbeströdda ödemarken stötte gruppen på dessa ruiner - nyligen blottlagda av vulkanutbrottet.\n\n## ARKITEKTUREN\nRuinen avslöjade spår efter ett sedan länge **utdött ödlefolk** som en gång konstruerat massiva humanoida **golems** för okända syften.\n\n**Strukturen:**\n- Stora stenblock med främmande inskriptioner\n- Korridorer byggda för varelser större än människor\n- Väggmålningar föreställande reptilliknande humanoider\n- Massiva salar med högt i tak\n\n## GOLEMSEN\n\n### De Två Mindre Golemsen\nNär gruppen undersökte ruinen väckte de oavsiktligt två stenliknande golems - humanoida figurer av massiv sten som började röra sig med skrapande ljud. Gruppen lyckades med nöd och näppe **undvika** dem genom att smyga förbi medan golemsen patrullerade korridorerna.\n\n### Den Kolossala Golemen\nDjupare in i komplexet nådde gruppen en massiv sal där **den kolossala golemen** väntade - ödlefolkets mästerverk, en uråldrig vaktare byggd för att stå i evighet.\n\n**Beskrivning:**\n- Tre gånger en människas höjd\n- Kropp av massiv sten, ogenomtränglig för vanliga vapen\n- Rörde sig långsamt men med fruktansvärd kraft\n- Ögon som lyste med eld inifrån\n\n## DEN DRAMATISKA KONFRONTATIONEN\n\n### Zentris Skada\nUnder flykten från golemen började ruinen skaka. **Zentri** försökte använda magi för att skydda gruppen när en kollapsande pelare sprack ovanför honom.\n\nEn **stensplitter från den kollapsande pelaren** träffade honom i ansiktet och förstörde hans **vänstra öga**. Hans **mantel förstördes permanent** i samma sekvens.\n\n### Flykten\nGruppen insåg att direkt strid var hopplös. I desperationen upptäckte **Kazrik** en serie **antika spakar** längs ena väggen - troligen kontrollmekanismer för ruinens gamla system.\n\nGenom att dra spakarna i rätt ordning utlöste de en **kontrollerad kollaps**:\n- Pelarna började ge vika\n- Taket mullrade\n- Stenblock föll från väggarna\n\nMed nöd och näppe flydde gruppen medan det kolossala monstret begravdes under stenmassorna.\n\n## BETYDELSE\nRuinerna gav gruppen deras första direkta möte med de **uråldriga civilisationerna** som en gång härskade i Mundana. Ödlefolkets teknologi för att skapa golems var långt överlägsen allt de sett tidigare.\n\n**Priset var högt:** Zentri förlorade sitt vänstra öga och sin mantel - skador som skulle följa honom resten av kampanjen.\n\n## KOPPLINGAR\n- **Händelser:** Vulkanutbrottet vid Tarkas, Zentris skada\n- **NPCs:** Zentri (förlorade vänstra ögat), Kazrik (hittade spakarna)\n- **Kapitel:** Kapitel 3 (Tarkas-äventyret)",
+    "kapitel": "Kapitel 3",
+    "bild": null,
+    "slug": "odlefolkets-ruiner"
+  },
+  {
+    "namn": "Ökendyrets Ro",
+    "typ": "Värdshus",
+    "region": "Jen, Muhad",
+    "beskrivning": "# ÖKENDYRETS RO\n**Rustik ökentaverna**\n\n## GRUNDINFO\n- **Typ:** Rustik taverna\n- **Plats:** Utkanten av bostadsområdena, Jen, Muhad\n- **Ägare:** Fatima bint-Ali\n- **Tema:** Enkel och inbjudande\n\n## BESKRIVNING\nÖkendyrets Ro ligger i utkanten av bostadsområdena i Jen och har en enkel men inbjudande atmosfär. Väggarna är av grovt huggna stenar, och möblerna är robusta och slitstarka. Eldstaden sprakar och fyller rummet med värme, och doften av grillat kött ligger tung i luften.\n\n## ÄGARE\n**Fatima bint-Ali** är en barsk men rättvis kvinna med ett stort hjärta. Hon driver värdshuset med omsorg om sina gäster.\n\n## SPECIALITETER\n- **Grillade köttspett** - Välkryddade och perfekt grillad\n- **Hemlagad flatbröd** - Bakat färskt varje dag\n- **Starkt kryddat te** - En lokal specialitet\n\n## ATMOSFÄR\nFamiljär och gemytlig, ofta besökt av lokala arbetare och resande handelsmän. Ett ställe där man känner sig välkommen oavsett stånd.\n\n## BETYDELSE FÖR KAMPANJEN\nEn plats där gruppen kunde få en mer autentisk bild av vardagslivet i Jen och prata med vanligt folk snarare än eliten.\n\n## KOPPLINGAR\n- **Region:** Jen, Muhad\n- **Ägare:** Fatima bint-Ali\n- **Fas:** 3",
+    "kapitel": null,
+    "bild": null,
+    "slug": "okendyrets-ro"
+  }
+]

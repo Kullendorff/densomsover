@@ -1,86 +1,55 @@
 /**
  * Kapitel Auto-Link Script
  * Söker igenom prose-texten och gör NPCs, platser och fraktioner klickbara.
- * Länkarna öppnar modaler i dashboard.
+ * Länkarna öppnar detaljvyn på respektive registersida (#typ/slug).
  */
 
-// Vänta tills wiki_data och fraktioner_data är laddade
-document.addEventListener('DOMContentLoaded', function() {
-    // Vänta lite för att säkerställa att externa scripts har laddats
-    setTimeout(linkifyContent, 100);
+const REGISTER_FILE = { npc: 'npcer.html', plats: 'platser.html', fraktion: 'fraktioner.html' };
+
+// document.currentScript är bara giltig under skriptets EGEN synkrona körning — måste
+// sparas här, innan vi går in i den asynkrona DOMContentLoaded-callbacken där den blir null.
+// Sökväg räknas ut relativt till SKRIPTETS egen URL, inte den anropande sidans — fungerar
+// oavsett om det är kapitel/ eller fluff/ som laddar filen.
+const DATA_URL = new URL('../data/entities.json', document.currentScript.src).href;
+
+document.addEventListener('DOMContentLoaded', function () {
+    fetch(DATA_URL)
+        .then(r => r.json())
+        .then(entities => linkifyContent(entities))
+        .catch(err => console.warn('Kunde inte läsa data/entities.json - auto-länkning hoppad', err));
 });
 
-function linkifyContent() {
-    // Kontrollera att data finns
-    if (typeof wikiData === 'undefined') {
-        console.warn('wiki_data.js inte laddat - auto-länkning hoppad');
-        return;
-    }
-
-    // Samla alla namn att söka efter
-    const npcs = (wikiData.npcs || []).map(n => ({
-        namn: n.namn,
-        type: 'npc'
-    }));
-
-    const platser = (wikiData.platser || []).map(p => ({
-        namn: p.namn,
-        type: 'plats'
-    }));
-
-    let fraktioner = [];
-    if (typeof fraktionerData !== 'undefined') {
-        const allFraktioner = [
-            ...(fraktionerData.handelshus || []),
-            ...(fraktionerData.magihus || []),
-            ...(fraktionerData.militära || []),
-            ...(fraktionerData.kriminella || []),
-            ...(fraktionerData.övriga || [])
-        ];
-        fraktioner = allFraktioner.map(f => ({
-            namn: f.namn,
-            type: 'fraktion'
-        }));
-    }
-
-    // Kombinera alla och sortera efter längd (längst först för att undvika partiella matchningar)
-    const allEntities = [...npcs, ...platser, ...fraktioner]
+function linkifyContent(entities) {
+    const allEntities = entities
         .filter(e => e.namn && e.namn.length > 2) // Ignorera för korta namn
-        .sort((a, b) => b.namn.length - a.namn.length);
+        .sort((a, b) => b.namn.length - a.namn.length); // längst först, undviker partiella matchningar
 
-    // Skapa en uppslagstabell för snabbare sökning
     const entityMap = new Map();
     allEntities.forEach(e => {
-        entityMap.set(e.namn.toLowerCase(), e);
+        if (!entityMap.has(e.namn.toLowerCase())) entityMap.set(e.namn.toLowerCase(), e);
     });
 
-    // Hitta prose-elementet
     const prose = document.querySelector('.prose');
     if (!prose) {
         console.warn('Inget .prose element hittat');
         return;
     }
 
-    // Processa alla textnoder
     processNode(prose, entityMap);
-
     console.log(`Auto-länkning klar: ${entityMap.size} möjliga entiteter`);
 }
 
 function processNode(node, entityMap) {
-    // Ignorera script, style och redan länkade element
     if (node.nodeType === Node.ELEMENT_NODE) {
         const tagName = node.tagName.toLowerCase();
         if (tagName === 'script' || tagName === 'style' || tagName === 'a') {
             return;
         }
-        // Ignorera info-box-title och liknande
-        if (node.classList.contains('info-box-title')) {
+        if (node.classList.contains('box__label')) {
             return;
         }
     }
 
-    // Processa textnoder
     if (node.nodeType === Node.TEXT_NODE) {
         const text = node.textContent;
         if (!text.trim()) return;
@@ -98,12 +67,9 @@ function processNode(node, entityMap) {
 }
 
 function linkifyText(text, entityMap) {
-    // Hitta alla matchningar
     const matches = [];
 
-    for (const [namn, entity] of entityMap) {
-        // Använd word boundaries för att undvika partiella matchningar
-        // Escape specialtecken i namnet
+    for (const [, entity] of entityMap) {
         const escapedName = entity.namn.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`\\b${escapedName}\\b`, 'gi');
 
@@ -118,10 +84,8 @@ function linkifyText(text, entityMap) {
         }
     }
 
-    // Om inga matchningar, returnera null
     if (matches.length === 0) return null;
 
-    // Sortera matchningar efter position
     matches.sort((a, b) => a.start - b.start);
 
     // Ta bort överlappande matchningar (behåll den första/längsta)
@@ -134,28 +98,25 @@ function linkifyText(text, entityMap) {
         }
     }
 
-    // Bygg fragment med länkar
     const fragment = document.createDocumentFragment();
     let currentPos = 0;
 
     for (const match of filteredMatches) {
-        // Lägg till text före matchningen
         if (match.start > currentPos) {
             fragment.appendChild(document.createTextNode(text.slice(currentPos, match.start)));
         }
 
-        // Skapa länk
         const link = document.createElement('a');
-        link.href = `../index.html?modal=${match.entity.type}&name=${encodeURIComponent(match.entity.namn)}`;
+        const file = REGISTER_FILE[match.entity.typ];
+        link.href = `../register/${file}#${match.entity.typ}/${match.entity.slug}`;
         link.textContent = match.original;
-        link.className = 'entity-link entity-' + match.entity.type;
-        link.title = `Visa ${match.entity.type === 'npc' ? 'NPC' : match.entity.type === 'plats' ? 'plats' : 'fraktion'}: ${match.entity.namn}`;
+        link.className = 'entity-link entity-' + match.entity.typ;
+        link.title = `Visa ${match.entity.typ === 'npc' ? 'NPC' : match.entity.typ === 'plats' ? 'plats' : 'fraktion'}: ${match.entity.namn}`;
         fragment.appendChild(link);
 
         currentPos = match.end;
     }
 
-    // Lägg till resterande text
     if (currentPos < text.length) {
         fragment.appendChild(document.createTextNode(text.slice(currentPos)));
     }
