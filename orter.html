@@ -1,359 +1,72 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Örter & Droger - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        .header {
-            text-align: center;
-            padding: 3rem 2rem;
-            border-bottom: 1px solid var(--border);
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(10,10,10,0.9));
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .header p {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .stats-bar {
-            max-width: 1400px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-
-        .stat-box {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--flame-orange);
-            text-align: center;
-        }
-
-        .stat-box.purple { border-left-color: var(--mystic-purple); }
-        .stat-box.gold { border-left-color: var(--gold); }
-        .stat-box.red { border-left-color: var(--deep-red); }
-
-        .stat-box .number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .stat-box.purple .number {
-            background: linear-gradient(135deg, var(--mystic-purple), var(--shadow-purple));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .stat-box .label {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 0.5rem;
-        }
-
-        .controls {
-            max-width: 1400px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .search-box {
-            flex: 1;
-            min-width: 300px;
-            padding: 0.75rem 1rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            color: var(--text-primary);
-            font-size: 1rem;
-        }
-
-        .search-box:focus {
-            outline: none;
-            border-color: var(--flame-orange);
-        }
-
-        .filter-btn {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .filter-btn:hover,
-        .filter-btn.active {
-            background: var(--flame-orange);
-            color: white;
-            border-color: var(--flame-orange);
-        }
-
-        .content-container {
-            max-width: 1400px;
-            margin: 0 auto 4rem;
-            padding: 0 2rem;
-        }
-
-        .region-section {
-            margin-bottom: 3rem;
-        }
-
-        .region-header {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--flame-orange);
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .herb-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .herb-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: all 0.3s;
-            border-left: 4px solid var(--flame-orange);
-        }
-
-        .herb-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(255, 107, 74, 0.2);
-            border-left-color: var(--gold);
-        }
-
-        .herb-card.gift {
-            border-left-color: var(--deep-red);
-        }
-
-        .herb-card.kampanj {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .herb-name {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-            color: var(--flame-orange);
-        }
-
-        .herb-card.gift .herb-name {
-            color: var(--deep-red);
-        }
-
-        .herb-card.kampanj .herb-name {
-            color: var(--mystic-purple);
-        }
-
-        .herb-tag {
-            display: inline-block;
-            background: var(--bg-darker);
-            color: var(--gold);
-            padding: 0.25rem 0.75rem;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .herb-tag.gift {
-            background: var(--deep-red);
-            color: white;
-        }
-
-        .herb-tag.kampanj {
-            background: var(--mystic-purple);
-            color: white;
-        }
-
-        .herb-detail {
-            margin: 0.75rem 0;
-            font-size: 0.95rem;
-        }
-
-        .herb-detail strong {
-            color: var(--gold);
-            min-width: 100px;
-            display: inline-block;
-        }
-
-        .herb-effect {
-            background: var(--bg-darker);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-top: 1rem;
-            border-left: 3px solid var(--flame-orange);
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-
-            .herb-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-bar {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Örter, Droger & Gifter – Gravens Arv</title>
+<meta name="description" content="Komplett sammanställning av 123 medicinalväxter, droger och gifter i Mundanas värld, sökbart per region.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="nav-bar">
-        <div class="nav-title">🌿 Örter & Droger i Mundana</div>
-        <a href="index.html" class="back-btn">← Tillbaka till Dashboard</a>
-    </div>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="index.html#kampanjen">Kampanjen</a>
+      <a href="index.html#register" aria-current="page">Register</a>
+      <a href="index.html#eget">Eget material</a>
+      <a href="sessioner/index.html">SL</a>
+      <a href="fluff/index.html">Fluff</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Header -->
-    <div class="header">
-        <h1>Örter, Droger & Gifter</h1>
-        <p>En komplett sammanställning av alla kända medicinalväxter, droger och gifter i Mundanas värld</p>
-    </div>
+<div class="crumbs">
+  <div class="wrap"><a href="index.html">Start</a> / <a href="index.html#register">Register</a> / <span>Örter &amp; droger</span></div>
+</div>
 
-    <!-- Statistics -->
-    <div class="stats-bar">
-        <div class="stat-box">
-            <div class="number" id="total-count">123</div>
-            <div class="label">Totalt Antal</div>
-        </div>
-        <div class="stat-box purple">
-            <div class="number">11</div>
-            <div class="label">Regioner</div>
-        </div>
-        <div class="stat-box gold">
-            <div class="number">86</div>
-            <div class="label">Kampanjspecifika & Klassiska</div>
-        </div>
-        <div class="stat-box red">
-            <div class="number">13</div>
-            <div class="label">Gifter 🩸</div>
-        </div>
-    </div>
+<main class="wrap" style="padding-block: clamp(24px, 4vw, 44px) 72px;">
+  <p class="eyebrow">Register</p>
+  <h1 class="page-title">Örter, Droger &amp; Gifter</h1>
+  <p class="subtitle">En komplett sammanställning av alla kända medicinalväxter, droger och gifter i Mundanas värld</p>
 
-    <!-- Search and Filters -->
-    <div class="controls">
-        <input type="text" class="search-box" id="search" placeholder="🔍 Sök efter ört, effekt, region..." onkeyup="filterHerbs()">
-        <button class="filter-btn active" onclick="filterRegion('all')">Alla</button>
-        <button class="filter-btn" onclick="filterRegion('slätterna')">Stora Slätterna</button>
-        <button class="filter-btn" onclick="filterRegion('skogar')">🌲 Skogar</button>
-        <button class="filter-btn" onclick="filterRegion('tarkas')">Tarkas</button>
-        <button class="filter-btn" onclick="filterRegion('cermira')">Cermira/Mithera</button>
-        <button class="filter-btn" onclick="filterRegion('muhad')">Muhad/Öken</button>
-        <button class="filter-btn" onclick="filterRegion('jargien')">Jargien</button>
-        <button class="filter-btn" onclick="filterRegion('skugglandet')">Skugglandet</button>
-        <button class="filter-btn" onclick="filterRegion('hav')">Hav/Kust</button>
-        <button class="filter-btn" onclick="filterRegion('dvärg')">Dvärg/Underjord</button>
-        <button class="filter-btn" onclick="filterRegion('tirak')">Tirak</button>
-        <button class="filter-btn" onclick="filterRegion('alv')">Alv/Sunari</button>
-        <button class="filter-btn" onclick="filterRegion('gift')">🩸 Gifter</button>
-        <button class="filter-btn" onclick="filterRegion('kampanj')">⭐ Kampanjkopplade</button>
+  <div class="statusbar" style="margin: clamp(20px, 3vw, 32px) -2px 0; padding: 0 2px;">
+    <div class="statusbar__row" style="padding-block: 16px;">
+      <div class="stat"><span class="stat__label">Totalt antal</span><span class="stat__value" id="total-count">123</span></div>
+      <div class="stat"><span class="stat__label">Regioner</span><span class="stat__value">11</span></div>
+      <div class="stat"><span class="stat__label">Kampanjspecifika &amp; klassiska</span><span class="stat__value">86</span></div>
+      <div class="stat"><span class="stat__label">Gifter</span><span class="stat__value">13</span></div>
     </div>
+  </div>
 
-    <!-- Content Container -->
-    <div class="content-container" id="herbs-container">
-        <!-- JavaScript will populate this -->
-    </div>
+  <div class="search" style="margin-top: 24px;">
+    <input type="text" id="search" placeholder="Sök efter ört, effekt, region…" onkeyup="filterHerbs()">
+  </div>
+  <div class="filters">
+    <button class="chip active" onclick="filterRegion('all')">Alla</button>
+    <button class="chip" onclick="filterRegion('slätterna')">Stora Slätterna</button>
+    <button class="chip" onclick="filterRegion('skogar')">Skogar</button>
+    <button class="chip" onclick="filterRegion('tarkas')">Tarkas</button>
+    <button class="chip" onclick="filterRegion('cermira')">Cermira/Mithera</button>
+    <button class="chip" onclick="filterRegion('muhad')">Muhad/Öken</button>
+    <button class="chip" onclick="filterRegion('jargien')">Jargien</button>
+    <button class="chip" onclick="filterRegion('skugglandet')">Skugglandet</button>
+    <button class="chip" onclick="filterRegion('hav')">Hav/Kust</button>
+    <button class="chip" onclick="filterRegion('dvärg')">Dvärg/Underjord</button>
+    <button class="chip" onclick="filterRegion('tirak')">Tirak</button>
+    <button class="chip" onclick="filterRegion('alv')">Alv/Sunari</button>
+    <button class="chip" onclick="filterRegion('gift')">Gifter</button>
+    <button class="chip" onclick="filterRegion('kampanj')">Kampanjkopplade</button>
+  </div>
+
+  <div id="herbs-container">
+    <!-- JavaScript will populate this -->
+  </div>
 
     <script>
         const herbsData = {
@@ -1628,5 +1341,12 @@
         // Initialize on page load
         renderHerbs();
     </script>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
 </body>
 </html>

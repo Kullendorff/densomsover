@@ -185,3 +185,87 @@
     soffias-natverk.html).
   - **Nästa session:** Etapp 4 (övriga kärnsidor) eller EgetMaterial-dedup +
     konvertering, se planfilen `~/.claude/plans/titta-p-hur-du-federated-marble.md`.
+
+- **2026-09-06 (samma dag, fortsättning 3) — Etapp 4 nästan klar, två commits
+  pushade (`b425134`, `8bdd47c`), live på Pages.**
+  - **Del 1 (`b425134`):** `guider/vinterglod_guide.html`, `platser/jen.html`,
+    `soffias-natverk.html`, `sessioner/index.html` (redan konverterade innan en
+    context-kompaktering, committades nu tillsammans) + två nya:
+    `sessioner/frostspiran_final.html` (progress-bar/nav-bar → snabbnav-rad,
+    status-grid → modal-row, ritual-step → box med stegnumret i etiketten,
+    char-badge → `<strong>`) och `kontinuitet.html` (hade fortfarande ett litet
+    eget `<style>`-block kvar för `.score-bar`/`.stat-grid` trots att sidan
+    annars redan var konverterad — flyttat till `pages.css`).
+  - **Del 2 (`8bdd47c`):** `masterplot/masterplot.html` (1225 rader, störst
+    hittills i etapp 4). Sidebar-nav + scroll-spy-JS borttaget helt, ersatt av
+    en snabbnav-rad (samma mönster som frostspiran); `character-grid`/
+    `acts-grid`/`info-box` → staplade `.box`; ASCII-kosmologidiagrammen fick
+    behålla `<pre>` med ett nytt delat `.prose pre`-tema i `pages.css`.
+  - **Bugg i konverteringsverktyget (inte i slutresultatet):** de delade
+    `findBlocks`/`replaceBlocks`-hjälparna i `convert-fluff.js` matchar bara
+    `<div class="X">`/`<div class="X extra">` — de missar helt block som har
+    ett `id="..."`-attribut EFTER class (`<div class="timeline-item"
+    id="...">`). 6 block (2 timeline-items, 4 character-cards) blev tysta
+    hoppade-över i första körningen på masterplot.html. Upptäckt via
+    strukturell diff (räknade om `<li>`-innehåll orig vs konverterat), fixat
+    med en lokal `findBlocksWithId`-variant i det scriptet — INTE i den delade
+    `convert-fluff.js`, som andra redan klara sidor litar på oförändrad.
+    **Om nästa fil (t.ex. orter.html) har divs med id efter class-attributet,
+    kom ihåg detta.**
+  - Missad emoji-range upptäckt samma väg: `⏳` (U+23F3, hourglass) ligger i
+    Miscellaneous Technical-blocket (`\u{2300}-\u{23FF}`), inte i något av de
+    ranges som redan användes i tidigare filers `stripEmoji()`. Lade till
+    rangen i masterplot-scriptet. Övriga redan konverterade filer denna
+    kampanj hade inga hourglass-emojis så de påverkas inte, men värt att minnas
+    om fler dyker upp i orter.html.
+  - **Testmiljö-brus:** CDP-screenshots under scroll visade ibland stora tomma
+    ytor på sidan — verifierat med `getBoundingClientRect()`-diff mellan
+    article-barnen (`gaps: []`) att det INTE var ett riktigt layoutfel, bara en
+    mitt-i-scroll-rendering-artefakt. Vid osäkerhet: verifiera strukturellt via
+    `javascript_tool` istället för att lita på ett enda screenshot.
+  - **Kvar i Etapp 4:** bara `orter.html` (1632 rader). Planen flaggar den
+    redan som specialfall — egen filtreringslogik i JS, datakälla
+    (`dashboard/örter eon.md`) utanför `wiki/`. Läs den filen i sin helhet
+    innan konvertering påbörjas, inte bara `<style>`-blocket.
+  - **Nästa session:** `orter.html`, sedan är Etapp 4 (kärnsajten) klar. Efter
+    det återstår bara de uppskjutna posterna (EgetMaterial-dedup, bilder) —
+    se planfilens "Uppskjutet"-sektion för detaljer.
+
+- **2026-09-06 (samma dag, fortsättning 4) — `orter.html` reskinnad (INTE
+  fullmigrerad), Etapp 4 därmed klar. Johans explicita beslut: "vi tar en
+  reskin nu. men sen gör vi det på riktigt. som en enskild punkt på agendan."**
+  - orter.html skiljer sig från alla andra Etapp 4-filer: 123 örter ligger
+    hårdkodade som ett JS-objekt (`herbsData`) i sidans eget `<script>`, med
+    egen `renderHerbs()`/`filterRegion()`/`filterHerbs()`-logik som bygger
+    `.herb-card`-kort och filtrerar dem klientsidan. Exakt det mönster
+    (data-i-JS) resten av sajten redan migrerat bort ifrån.
+  - **Gjort nu:** bytte bara `<head>` (fonts/base/components/pages.css) och
+    all STATISK topp-markup (nav-bar/header/stats-bar/controls) mot
+    sajtens vanliga chrome-header/crumbs/statusbar/search/filters-mönster.
+    Rörde INTE en enda rad i `<script>`-blocket — `herbsData`, `renderHerbs`,
+    `filterRegion`, `filterHerbs` är byte-för-byte oförändrade. Nya CSS-regler
+    i `pages.css` för de JS-genererade klassnamnen (`.region-section`,
+    `.herb-card`, `.herb-tag` m.fl.) mappar dem mot designtokens utan att
+    döpa om något klassnamn (skulle ha krävt att ändra scriptet).
+  - **INTE gjort** (medvetet, väntar på "den riktiga" punkten på agendan):
+    örtdata flyttad till `wiki/` som egna noter, `bygg/`-generering av en
+    örtregistersida, borttagning av den klientsidiga JS-logiken. Se planfilens
+    "Uppskjutet"-sektion — lade till en rad där.
+  - **Kvarvarande kuriosa i själva JS-logiken (pre-existing, INTE introducerad
+    av reskinnen — verifierat mot `git show HEAD:orter.html` att
+    `filterRegion`s `event.target.classList.add('active')` är oförändrad):**
+    aktiv-highlighten på filterknapparna uppdaterades inte konsekvent i denna
+    testmiljö vare sig via riktig musklick (computer-verktyget) eller
+    `element.click()` via JS — men själva filtreringen (vilka kort/sektioner
+    som visas) fungerade korrekt i båda fallen, verifierat via
+    `getBoundingClientRect`-baserade JS-anrop. Det förstnämnda missade
+    troligen målet helt pga samma koordinatsystem-mismatch som redan
+    dokumenterats för `computer`-verktyget i den här Chrome-miljön (se
+    Etapp 1-posten ovan). Värt att kika på under den riktiga migreringen,
+    men inte en regression att jaga nu.
+  - **Etapp 4 (kärnsajten) är nu klar i sin helhet** — noll HTML-filer kvar
+    med eget `<style>`-block utanför EgetMaterial/, `Eon SL/hemsidan/` och
+    arkiv. Allt pushat, live på Pages.
+  - **Nästa session:** EgetMaterial-dedup + konvertering, ELLER börja på den
+    riktiga örter→wiki/-migreringen som Johan bad om ("en enskild punkt på
+    agendan") — fråga honom vilket han vill prioritera.
