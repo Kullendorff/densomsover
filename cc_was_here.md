@@ -104,3 +104,50 @@
     visuellt. Flagga om exakt mobilrendering behöver verifieras senare.
   - **Nästa session:** Etapp 1 (bygg om `index.html`, hash-routing, ta bort trasig
     `handleUrlParams()` och `showModal()`-referensen, fixa `npc-count`).
+
+- **2026-09-06 (samma dag, fortsättning) — Etapp 1+2 klara och pushade till main
+  (commit `b99ccdb`), live på Pages.** Johan bad om en avskalad Etapp 2 (register-sidor)
+  samtidigt som Etapp 1, för att undvika att nya startsidans Register-länkar 404:ar
+  under en övergångsperiod.
+  - **index.html helt ombyggd** enligt designspec §6.1: header/statusrad/Kampanjen
+    (kapitel som rader)/Rollpersoner/Registret/Eget material/SL & fluff. Gammalt
+    1755-raders SPA-dashboard med kort-rutnät för NPC/Platser/Fraktioner borta —
+    de flyttade till separata registersidor (nedan).
+  - **Ny `bygg/bygg-index.js`**: injicerar kapitellista, statusrad och
+    Rollpersoner-block (från `wiki/Rollpersoner/` — fanns redan från
+    Obsidian-migreringen men var ALDRIG kopplad till något byggskript förrän nu)
+    via `<!--BYGG:X-->`-markörer i annars handskriven `index.html`.
+  - **Ny `bygg/bygg-sidor.js`** genererar `register/{npcer,platser,fraktioner}.html`
+    + `data/*.json` ur samma `wiki/`-noter som `bygg-wiki-data.js`. Delad parsning
+    bruten ut till `bygg/lib/wiki-model.js` (ren refaktor, verifierad byte-identisk
+    output på `bygg-wiki-data.js` efteråt). Detaljvy via hash (`#typ/slug`) med
+    native `<dialog>`.
+  - **`kapitel-linkify.js` omskriven**: hämtar `data/entities.json` istället för att
+    lita på `wiki_data.js`/`fraktioner_data.js` (som 7 av 11 kapitelsidor laddade
+    från en sökväg som ALDRIG funnits — `../wiki_data.js`, riktiga filen ligger i
+    `master/`), och länkar till registersidorna istället för den borttagna
+    `handleUrlParams()`. Entitetslänkar från kapitel var alltså trasiga på två
+    oberoende sätt förut. Verifierad end-to-end: klick i kapitel-9 → öppnar rätt
+    NPC/plats-modal i registret.
+  - **Två riktiga buggar hittade och fixade under Chrome-verifiering** (inte bara
+    testmiljö-brus, se nedan för vad SOM var brus):
+    1. `document.currentScript` är `null` inuti en async event-callback
+       (DOMContentLoaded) — måste läsas synkront vid skriptets toppnivå. Kraschade
+       linkify.js på alla kapitelsidor tills fixat.
+    2. Overlay-klick i registrets modal stängde dialogen men rensade inte
+       `location.hash` konsekvent — flyttade hash-rensningen till `closeDetail()`
+       direkt istället för att bara lita på `dialog`s async `close`-event.
+  - **Betydande testmiljö-brus denna session, för nästa gång:** `computer`-verktygets
+    klick-koordinater och `window.innerWidth` är INTE i samma koordinatsystem i den
+    här Chrome-miljön (klick på beräknad "mitten av skärmen" missade ibland helt,
+    "Coordinate X is outside the coordinate frame" på andra). Direkt-navigering med
+    `#hash` i URL:en racear ibland mot sidans egna scripts (dialog verkar stängd
+    direkt efter navigate trots att den öppnas korrekt en sekund senare) — lägg
+    ALLTID in `wait` efter `navigate` innan du litar på ett `javascript_tool`-resultat.
+    `file://` är fortfarande blockerat av tillägget — kör lokal `python -m
+    http.server` och döda processen (`taskkill //PID … //F`, `netstat` för att hitta
+    den) när klart.
+  - Pre-commit-hooken utökad med steg 1c: `bygg-sidor.js --check` +
+    `bygg-index.js --check`, samma mönster som steg 1b för `bygg-wiki-data.js`.
+  - **Nästa session:** Etapp 3 (kapitel/fluff → läsvyn, 19 filer kvar av 11+8,
+    kapitel-9 är redan piloten/mallen). Se planen för fullständig lista.
