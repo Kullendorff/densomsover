@@ -1,136 +1,51 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resedagböcker - Gravens Arv</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --gold: #ffa500;
-            --bg-dark: #0a0a0a;
-            --bg-card: #1a1a1a;
-            --text-light: #e0e0e0;
-            --text-muted: #888;
-            --border: #333;
-        }
-        body {
-            background: linear-gradient(180deg, #0a0a0a 0%, #0d0818 50%, #0a0a0a 100%);
-            color: var(--text-light);
-            font-family: 'Georgia', serif;
-            line-height: 1.7;
-            padding: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            margin: -2rem -2rem 2rem -2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-title { font-size: 1.5rem; color: var(--flame-orange); }
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-        .back-btn:hover { background: var(--deep-red); }
-        h1 {
-            font-size: 2.5rem;
-            color: var(--flame-orange);
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-        .subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            font-style: italic;
-            margin-bottom: 2rem;
-        }
-        h2 {
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--flame-orange);
-            padding-bottom: 0.5rem;
-            margin: 2.5rem 0 1rem 0;
-        }
-        h3 {
-            color: var(--gold);
-            margin: 1.5rem 0 0.75rem 0;
-        }
-        .diary-intro {
-            background: var(--bg-card);
-            border-left: 4px solid var(--gold);
-            padding: 1.5rem;
-            margin: 1rem 0 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .entry {
-            background: var(--bg-card);
-            padding: 1.5rem;
-            margin: 1rem 0;
-            border-left: 3px solid var(--mystic-purple);
-            border-radius: 0 6px 6px 0;
-        }
-        .entry-header {
-            color: var(--mystic-purple);
-            font-weight: bold;
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-        .entry-text {
-            color: var(--text-light);
-            line-height: 1.8;
-        }
-        .entry-text em {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #333;
-            margin: 3rem 0;
-        }
-        .quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 1.5rem 0;
-            font-style: italic;
-            color: var(--text-muted);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resedagböcker & Korrespondens – Gravens Arv</title>
+<meta name="description" content="Skorda Bergsdotters resa, Xian-Lis spårning av Thrakka, och Margarets brev till Gordon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Fluff & Berättelser</div>
-        <button class="back-btn" onclick="window.location.href='index.html'">← Tillbaka till Fluff</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="index.html" aria-current="page">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <h1>Resedagböcker & Korrespondens</h1>
-    <p class="subtitle">Ögonvittnesskild från resan, striden och hemlängtan</p>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="index.html">Fluff</a> / <span>Resedagböcker & Korrespondens</span></div>
+</div>
 
-    <!-- SKORDA BERGSDOTTER -->
+<main class="wrap read-view">
+  <p class="eyebrow">Dagböcker, krönikor & brev</p>
+  <h1 class="page-title">Resedagböcker & Korrespondens</h1>
+  <p class="subtitle">Skorda Bergsdotters fullständiga resa, Xian-Lis kompletta spårning & Margarets brev till Gordon</p>
+
+  <article class="prose read-view__article">
+<!-- SKORDA BERGSDOTTER -->
     <h2>Resan till Grensfortet</h2>
-    <div class="diary-intro">
-        <strong>Skorda Bergsdotter berättar</strong><br>
-        Rå och direkt. Ingen romantik. Bara överlevnad.
-    </div>
+    <div class="box">
+  <span class="box__label">Skorda Bergsdotter berättar</span>
+  <p style="margin:0;">Rå och direkt. Ingen romantik. Bara överlevnad.</p>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">DAG 1 - VITTERDAL</div>
-        <div class="entry-text">
-11:e Tretoria. Helenio. Avgång från Vitterdal.<br><br>
+    <div class="box">
+  <span class="box__label">DAG 1 - VITTERDAL</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">11:e Tretoria. Helenio. Avgång från Vitterdal.<br><br>
 Sjutton i gruppen plus äventyrarna. Gordon ledde. Som alltid. Man följer den som vet vart han ska. Även om dit är helvetet.<br><br>
 Eira räknade oss. Igen. Och igen. Sjutton. Som om siffran kunde ändras om hon inte tittade. Kände henne från förr. Bra jägare en gång. Nu bara en kvinna med för mycket skuld. Skuld dödar folk långsammare än knivar men lika säkert.<br><br>
 Fyra oxkärror. Dain Stenyxa kollade lasten. Dvärgbyggare. Misstänksam typ. Bra. Misstänksamma överlever längre.<br><br>
@@ -140,14 +55,12 @@ Jossan Fallvind höll sig undan. Hatade att behöva vår hjälp. Stolthet. Dumt 
 Umnatak red flankskydd. Bra instinkter för en utlänning. Kazrik kollade listor. Alltid listor med dvärgar. Thrakka red fram med Gordon. Två meter tirak i rustning. Folk stirrade. Bra. Rädsla ger respekt. Respekt ger avstånd. Avstånd håller oss vid liv.<br><br>
 Vägen var lätt första dagen. Det oroade mig. Lätt betyder att det svåra väntar.<br><br>
 Kvällsbön när vi slog läger. Ungefär hälften deltog. Arcadius ledde. Händerna skakade på vissa ord. "Daaks rättvisa vilja" fastnade i halsen. Såg det. Han såg att jag såg. Vi nickade. Vi som gjort skit känner igen varandra.<br><br>
-Första natten gick lugnt. För lugnt. Storm kommer alltid efter stillhet.
-        </div>
-    </div>
+Första natten gick lugnt. För lugnt. Storm kommer alltid efter stillhet.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">DAG 2 - UPPFÖR BERGEN</div>
-        <div class="entry-text">
-12:e Tretoria. Selenio. Vägen blev brant.<br><br>
+    <div class="box">
+  <span class="box__label">DAG 2 - UPPFÖR BERGEN</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">12:e Tretoria. Selenio. Vägen blev brant.<br><br>
 Oxarna kämpade. Stannade var tionde minut. Magnus Hällström ledde dem. Hyfsat jägare. Inte lika bra som han trodde. Men såg farorna. Det räckte.<br><br>
 Ragnar följde Thrakka som en hundvalp. Tirakisk krigare. Något ur sagorna för pojken. Hon vände sig om. Visade tänderna. Pojken sprang. Smart. Hjältar dödar folk på nära håll.<br><br>
 Sten Knotbindare gick sist. Ensam. Från Drunok. Begått myteri. Dödsstraff om han fångas. Gjorde rätt sak. Lagen bryr sig inte om rätt. Bara om ordning. Såg honom titta på bäckar ibland. Övervägde att dränka sig kanske. Förstod honom.<br><br>
@@ -155,28 +68,24 @@ Spår i snön. Vargar för tre dagar sen. Gick inte österut. Aldrig österut mo
 Jossan vässade pilar hårdare än nödvändigt. Hat mot något. Eller allt. Spelar ingen roll. Hat ger energi.<br><br>
 Arcadius red med hunden. Ragnar stirrade förvirrat. Häxjägare ur sagorna också. Men såg bara ut som trött man med hemligheter. Vilket han var.<br><br>
 Kvällsläger. Eira satt långt från elden. Räknade inte längre. Bara stirrade. Dåligt tecken. Satte mig bredvid. Sa inget. Ibland räcker närvaro. Hon lutade sig mot min axel. Skakade. Lät henne.<br><br>
-Arcadius hund låg vid elden. Gula ögon. Reflekterade lågor. Mordmaskin som låtsades vara tam. Som alla vi.
-        </div>
-    </div>
+Arcadius hund låg vid elden. Gula ögon. Reflekterade lågor. Mordmaskin som låtsades vara tam. Som alla vi.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">DAG 3 - BERGSPASSEN</div>
-        <div class="entry-text">
-13:e Tretoria. Nekrio. Dimma. Tjock som gröt.<br><br>
+    <div class="box">
+  <span class="box__label">DAG 3 - BERGSPASSEN</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">13:e Tretoria. Nekrio. Dimma. Tjock som gröt.<br><br>
 Långsammare tempo. Stenig mark. Dain klättrade ner från vagnen. Mumlade på dvärgiska till oxarna. De lugnade sig. Dvärgmagi eller bara prat. Spelar ingen roll. Funkade.<br><br>
 Ragnar försökte prata med Kazrik istället. Dvärgar säkrare än tiraker. Kazrik svarade artigt. Pojkens blick drog tillbaka till Thrakka ändå. Farligt begär.<br><br>
 Sten gick fortfarande ensam. Myteri äter män inifrån. Även när det var rätt val.<br><br>
 Ingen gick österut. Vargar. Rävar. Människor. Alla undvek öster. Utom vi. Idioter eller modiga. Samma sak oftast.<br><br>
 Jossan höll koll på Gordon och Arcadius. Hat och respekt blandat. Komplicerat. Livet är komplicerat. Döden enkel.<br><br>
 Kvällsläger sent. Folk trötta. Lite prat. Mest tystnad. Bra. Prat slösar energi.<br><br>
-Arcadius försökte be. Färre kom. Orden lät falska nu. Alla hörde det. Ingen sa något.
-        </div>
-    </div>
+Arcadius försökte be. Färre kom. Orden lät falska nu. Alla hörde det. Ingen sa något.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">DAG 4 - BERGVIK</div>
-        <div class="entry-text">
-14:e Tretoria. Astrio. Sista stigen innan Bergvik.<br><br>
+    <div class="box">
+  <span class="box__label">DAG 4 - BERGVIK</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">14:e Tretoria. Astrio. Sista stigen innan Bergvik.<br><br>
 Kall vind. Oxarna vägrade först. Dain pratade med dem igen. Dvärgord. Urgamla. Funkade.<br><br>
 Bergvik syntes vid middag. Torkel Skogsson väntade. Stort leende. För stort. Desperat eller falsk. Troligen båda.<br><br>
 Varm mat. Färskt bröd. Folk log. Första gången på veckor. Barn stirrade på Umnatak och Kazrik. Undvek Thrakka. Smart av dem.<br><br>
@@ -188,14 +97,12 @@ Olav Murkross drog Arcadius åt sidan. Gamla soldater. Kände igen varandra. Lå
 Sten höll sig borta från barn. Skrämde bort dem. Bättre rädd än död.<br><br>
 Kvällsplanering. Gordon och Tomas om försvar. Dain ritade med stenbrytarna. Kazrik och Thrakka om logistik. Lät som folk med hopp. Farligt.<br><br>
 Eira vid elden igen. Stirrade in i lågor. Satte mig bredvid igen. Ingen pratade. Bra.<br><br>
-Arcadius hund nudgade hans hand. Även mördare behöver kärlek. Kanske särskilt mördare.
-        </div>
-    </div>
+Arcadius hund nudgade hans hand. Även mördare behöver kärlek. Kanske särskilt mördare.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">DAG 5 - FRISÄNKAN</div>
-        <div class="entry-text">
-15:e Tretoria. Jargio. Väg mot Frisänkan.<br><br>
+    <div class="box">
+  <span class="box__label">DAG 5 - FRISÄNKAN</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">15:e Tretoria. Jargio. Väg mot Frisänkan.<br><br>
 Märkte något mellan Bergvik och Frisänkan. Viltspår. Massor av dem. Hjort. Älg. Vildsvin. Rådjur. Till och med färska björnspår. Området fullt av liv. Jaktmarker som kunde föda hela bosättningar. Bra. Vi skulle inte svälta om vi spelade korten rätt.<br><br>
 Såg flera bra ställen för fällor. Memorerade dem. Skulle behövas senare.<br><br>
 Visste vad som väntade i byn. Samorisk präst. Annan gud. I Jargien dödsstraff för sånt. Här bara en by till.<br><br>
@@ -207,14 +114,12 @@ Halinor, byäldste. Rak: "Bevisa er värda först." Gillade henne. Ärlighet. S�
 Eira nickade. Förstod. Ord billiga. Handlingar dyra.<br><br>
 Ragnar gömde sig när han såg Benne. Grodman ur mardrömmar. Smart pojke.<br><br>
 Kvällsandakt i utkanten. Långt från samoriska templet. Några unga smög blickar mot templet ändå. Nyfikenhet. Farligt. Nödvändigt.<br><br>
-Arcadius satt mellan grupperna. Tillhörde ingen. Ensam. Förstod känslan.
-        </div>
-    </div>
+Arcadius satt mellan grupperna. Tillhörde ingen. Ensam. Förstod känslan.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">DAG 6 - STUGAN</div>
-        <div class="entry-text">
-16:e Tretoria. Bio. Avstickare innan fortet.<br><br>
+    <div class="box">
+  <span class="box__label">DAG 6 - STUGAN</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">16:e Tretoria. Bio. Avstickare innan fortet.<br><br>
 På vägen mot stugan såg jag fler spår. Vilt undvek stugan med vid marginal. Ingenting gick närmare än hundra meter. Smart av dem. Djur känner fel när de ser det.<br><br>
 Gordon ville bara ta halva gruppen. Smart. Färre vittnen om saker går fel.<br><br>
 Stugan låg i glänta. Träden för gamla. För tysta. Arcadius hund stannade vid trädranden. Morrade. Vägrade gå vidare. Hundar känner saker vi inte gör.<br><br>
@@ -226,14 +131,12 @@ Typisk häxsnack. Kunde inte bara skriva "Tillbaka om två veckor."<br><br>
 Dain hade tittat på böckerna. "Äldre än dvärgar. Hon är inte vad hon verkar."<br><br>
 Ingen av oss var det. Det var problemet.<br><br>
 Arcadius händer vilade på svärdet hela tiden efter det. Vad såg häxjägaren som skrämde honom?<br><br>
-Fortsatte mot fortet. Ingen pratade om stugan. Vissa saker bättre oförklarade.
-        </div>
-    </div>
+Fortsatte mot fortet. Ingen pratade om stugan. Vissa saker bättre oförklarade.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">DAG 6 - GRENSFORTET (senare samma dag)</div>
-        <div class="entry-text">
-Mellan stugan och fortet - mer viltspår. Tätt med dem. Men alla gick runt fortet. Stor båge. Som om något osynligt stängsel höll dem borta. Eller så visste de något vi inte visste. Troligen båda.<br><br>
+    <div class="box">
+  <span class="box__label">DAG 6 - GRENSFORTET (senare samma dag)</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Mellan stugan och fortet - mer viltspår. Tätt med dem. Men alla gick runt fortet. Stor båge. Som om något osynligt stängsel höll dem borta. Eller så visste de något vi inte visste. Troligen båda.<br><br>
 Kvällsljus när vi kom fram. Fortet reste sig mörkt. Höga torn. Eleganta. Flera trasiga. Kapelltorn utan symbol.<br><br>
 Österut: Mithera. Evig vinter. Fel sorts kyla. Onaturlig kyla. Kyla som bet genom allt.<br><br>
 Dain spottade. "Dvärggrund. Människodrömmar. Vackert. Komplicerat. Kommer falla."<br><br>
@@ -245,14 +148,12 @@ Ragnar stirrade upp. Stora ögon. För honom var det äventyr. För mig var det 
 Portarna stod öppna. Väntade. På oss eller vad som helst.<br><br>
 Bakom oss: ljus i Frisänkan och Bergvik. Framför oss: Grensfortet med alla hemligheter.<br><br>
 Oddsen? Usla. Men överlevt värre. Fast aldrig med sjutton andras liv att oroa sig för. Plus Eira som skakade värre varje dag.<br><br>
-Gick in.
-        </div>
-    </div>
+Gick in.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">FÖRSTA NATTEN</div>
-        <div class="entry-text">
-Försökte kvällsbön i matsalen. Ekade tomt. Fel. En tredjedel kom. Resten upptagna med att överleva.<br><br>
+    <div class="box">
+  <span class="box__label">FÖRSTA NATTEN</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Försökte kvällsbön i matsalen. Ekade tomt. Fel. En tredjedel kom. Resten upptagna med att överleva.<br><br>
 Eira kom senare. "Klarar vi detta, Skorda?"<br><br>
 Tittade mot Mithera genom fönstret. "Alternativet?"<br><br>
 "Finns inget."<br><br>
@@ -263,19 +164,15 @@ Morgonen efter var den borta. Ingen frågade. Alla visste.<br><br>
 Så började det. Grensfortet. Sjutton själar. Mot vintern. Mot Mithera. Mot sig själva.<br><br>
 Men med goda jaktmarker runt om. Det var något i alla fall. Hade överlevt på mindre.<br><br>
 Bygga något eller dö. Troligen båda. I den ordningen om vi hade tur.<br><br>
-Första natten överlevd. Många fler att gå.
-        </div>
-    </div>
+Första natten överlevd. Många fler att gå.</p></div>
+</div>
 
-    <div class="quote">
-        "Gordon: 'Nå. Nu får vi se vad fan vi gett oss in på.'<br>
-        Hade rätt. Som vanligt."
-    </div>
+    <blockquote class="box--quote">"Gordon: 'Nå. Nu får vi se vad fan vi gett oss in på.'<br>
+        Hade rätt. Som vanligt."</blockquote>
 
-    <div class="entry" style="background: rgba(168, 85, 168, 0.1); border-left-color: var(--mystic-purple);">
-        <div class="entry-header" style="color: var(--mystic-purple);">FLYKTINGARNA (18 personer)</div>
-        <div class="entry-text">
-<strong>Ursprungliga flyktingar från Vargnäset (14 personer):</strong><br><br>
+    <div class="box">
+  <span class="box__label">FLYKTINGARNA (18 personer)</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;"><strong>Ursprungliga flyktingar från Vargnäset (14 personer):</strong><br><br>
 <em>Ledare och specialister:</em><br>
 • Eira Holm (55) - Byäldste, alltmer skakig av skuld<br>
 • Tomas Järnhjälm (42) - Fd. infanterist, försvarsansvarig<br>
@@ -304,109 +201,83 @@ Första natten överlevd. Många fler att gå.
 • Lars - Stenbrytare, bror till Erik<br>
 • Erik - Stenbrytare, bror till Lars<br><br>
 <strong>Byggexperten (1 person):</strong><br>
-• Dain Stenyxa klan Ghor - Dvärgbyggare, pessimistisk realist
-        </div>
-    </div>
+• Dain Stenyxa klan Ghor - Dvärgbyggare, pessimistisk realist</p></div>
+</div>
 
     <hr>
 
     <!-- XIAN-LI -->
     <h2>I Järnhandens Spår</h2>
-    <div class="diary-intro">
-        <strong>Ur Xian-Lis resedagbok</strong><br>
-        Poetisk och precis. Sung-diplomaten som följer Thrakkas väg genom snö och blod.
-    </div>
-
-    <div class="entry">
-        <div class="entry-header">Första inskriften - Den femtonde dagen av Snöfallsmånaden</div>
-        <div class="entry-text">
-Vitterdals stora sal bär fortfarande ekot av fest, som en doft som dröjer sig kvar efter att blommorna vissnat. En tjänare med händer som darrar likt löv i höstvind delar med sig av sitt vittnesbörd:<br><br>
-<div class="quote">
-"Tiraken stod vid Jarl Hadrians högra sida. Orörlig som sten från mitt hemlands ökenbergs högsta toppar. Men när någon närmade sig jarlen med för rask rörelse... då vaknade stenen till liv. En enda rörelse räckte. Alla förstod."
+    <div class="box">
+  <span class="box__label">Ur Xian-Lis resedagbok</span>
+  <p style="margin:0;">Poetisk och precis. Sung-diplomaten som följer Thrakkas väg genom snö och blod.</p>
 </div>
+
+    <div class="box">
+  <span class="box__label">Första inskriften - Den femtonde dagen av Snöfallsmånaden</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Vitterdals stora sal bär fortfarande ekot av fest, som en doft som dröjer sig kvar efter att blommorna vissnat. En tjänare med händer som darrar likt löv i höstvind delar med sig av sitt vittnesbörd:<br><br>
+<blockquote class="box--quote">"Tiraken stod vid Jarl Hadrians högra sida. Orörlig som sten från mitt hemlands ökenbergs högsta toppar. Men när någon närmade sig jarlen med för rask rörelse... då vaknade stenen till liv. En enda rörelse räckte. Alla förstod."</blockquote>
 <br>
 Sju dagar och sju nätter har månen vandrat sedan hon lämnade dessa hallar. I mitt hemland säger vi att tiden är en flod - jag simmar alltid motströms, alltid en vecka efter hennes vågor.<br><br>
-De lämnade Vitterdal när morgonljuset var ungt. Nu jagar jag deras skuggor genom vinterlandskap.
-        </div>
-    </div>
+De lämnade Vitterdal när morgonljuset var ungt. Nu jagar jag deras skuggor genom vinterlandskap.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">Sjunde inskriften - Den tjugoandra dagen av Isfrostmånaden</div>
-        <div class="entry-text">
-Vargnäset vilar nu i tystnad, likt en övergiven helgedom.<br><br>
+    <div class="box">
+  <span class="box__label">Sjunde inskriften - Den tjugoandra dagen av Isfrostmånaden</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Vargnäset vilar nu i tystnad, likt en övergiven helgedom.<br><br>
 Tomheten talar högre än tusen röster. Vinden viskar genom gapande dörrar som munnar utan tungor. På torget: mörka blomster i snön som ingen vinterstorm kan sudda ut. En katt jämrar sig i ensamhet - den enda själ som valde att stanna.<br><br>
 Hundratals fotspår leder österut, mot Drunoks öppna vidder. En hel by blev till vandrare på en enda natt.<br><br>
-I den trampade snön: en docka av tyg och halm. Någon har lyft den från leran, placerat den på en sten som en liten helgedom. Mitt i flykten, mitt i rädslan - någon tog sig tid för ömhet.
-        </div>
-    </div>
+I den trampade snön: en docka av tyg och halm. Någon har lyft den från leran, placerat den på en sten som en liten helgedom. Mitt i flykten, mitt i rädslan - någon tog sig tid för ömhet.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">Tionde inskriften - Den tjugofemte dagen av Isfrostmånaden</div>
-        <div class="entry-text">
-En lägerplats i Drunoks vildmark.<br><br>
+    <div class="box">
+  <span class="box__label">Tionde inskriften - Den tjugofemte dagen av Isfrostmånaden</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">En lägerplats i Drunoks vildmark.<br><br>
 Askan viskar berättelser till den som kan läsa dess språk. Här: femtio själar sökte vila. Ordning mitt i kaoset - vakter posterade som pärler på en tråd, latriner grävda, ved samlad. Civilisation klamrar sig fast även i flykt.<br><br>
 En grav. Jorden fortfarande mjuk som en nyöppnad bok. Grankvistar lagda i kors - det universella tecknet för farväl. På näver, fastspikad i bark: "Gammel-Erik - hans fötter bar honom så långt de kunde."<br><br>
-Runt graven: en dans av fotspår. Varje vandrare stannade här. Varje själ tog avsked.
-        </div>
-    </div>
+Runt graven: en dans av fotspår. Varje vandrare stannade här. Varje själ tog avsked.</p></div>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">Fjortonde inskriften - Sista dagen av Isfrostmånaden</div>
-        <div class="entry-text">
-Vid det som en gång var Iskvarnsbryggan över Raunfloden.<br><br>
+    <div class="box">
+  <span class="box__label">Fjortonde inskriften - Sista dagen av Isfrostmånaden</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Vid det som en gång var Iskvarnsbryggan över Raunfloden.<br><br>
 Nu: brutna tänder av trä som sticker upp ur det forsande vattnet. Floden bär fortfarande minnet av blod - bruna strimmor i det isiga flödet, hundra meter nedströms.<br><br>
 En fiskare kryper fram ur sitt gömställe när han förstår att jag inte bär tempelriddarnas märke. Hans ord forsar fram på den grova dialekt som dessa flodbor talar:<br><br>
-<div class="quote">
-"Från min båt bland vassen såg jag allt. Två red mot sju - vansinne, rent vansinne!"
-</div>
+<blockquote class="box--quote">"Från min båt bland vassen såg jag allt. Två red mot sju - vansinne, rent vansinne!"</blockquote>
 <br>
 Hans ögon blir till fönster mot det förflutna. Han berättar, och jag översätter hans råa ord till min dagboks silkespapper:<br><br>
-<div class="quote">
-"Tiraken vrålade när hon kastade sig från hästen. Ett ljud som... som när isen brister om våren, fast från ett levande strupe."
-</div>
+<blockquote class="box--quote">"Tiraken vrålade när hon kastade sig från hästen. Ett ljud som... som när isen brister om våren, fast från ett levande strupe."</blockquote>
 <br>
 I mitt hemland Sung har vi hundra ord för olika sorters tystnad. För det ljud han beskriver har vi inget ord alls.<br><br>
-<div class="quote">
-"Hennes tirakyxa - den där krökta deras folk använder - den bet genom en riddares lår. Han skrek. Gud, hur han skrek."
-</div>
+<blockquote class="box--quote">"Hennes tirakyxa - den där krökta deras folk använder - den bet genom en riddares lår. Han skrek. Gud, hur han skrek."</blockquote>
 <br>
 Fiskaren dricker ur sin flaska. Hans händer darrar som asplöv i storm.<br><br>
-<div class="quote">
-"Sen drog hon hammaren också. Två vapen! Som en galen smed som glömt vad som är städ och vad som är hammare. Krossade hjälm, knä, sköld. Hon slogs som... som hennes förfäder måste ha gjort. Innan de blev som folk."
-</div>
+<blockquote class="box--quote">"Sen drog hon hammaren också. Två vapen! Som en galen smed som glömt vad som är städ och vad som är hammare. Krossade hjälm, knä, sköld. Hon slogs som... som hennes förfäder måste ha gjort. Innan de blev som folk."</blockquote>
 <br>
 Hans röst blir till viskning:<br><br>
-<div class="quote">
-"Pilen tog henne genom ögat. Rätt igenom. Borde dött på fläcken. Men hon bara... fortsatte. Blodet som en röd slöja över ansiktet. Tirakkroken föll från hennes hand men hammaren dansade vidare. Till och med på knä drog hon ner en riddare med sig."
-</div>
+<blockquote class="box--quote">"Pilen tog henne genom ögat. Rätt igenom. Borde dött på fläcken. Men hon bara... fortsatte. Blodet som en röd slöja över ansiktet. Tirakkroken föll från hennes hand men hammaren dansade vidare. Till och med på knä drog hon ner en riddare med sig."</blockquote>
 <br>
 En paus djup som natten i öknen.<br><br>
-<div class="quote">
-"Sedan kom de andra. Två kvinnor på hästar som nästan svävade. Lyfte en hand - och himlarna öppnade sig. Blixtar! Som Guds egen hand som slår ner syndare. Tempelriddarna föll. Rustningar rykande."
-</div>
+<blockquote class="box--quote">"Sedan kom de andra. Två kvinnor på hästar som nästan svävade. Lyfte en hand - och himlarna öppnade sig. Blixtar! Som Guds egen hand som slår ner syndare. Tempelriddarna föll. Rustningar rykande."</blockquote>
 <br>
 Han korsar sig tre gånger.<br><br>
-<div class="quote">
-"Mannen i tempelriddardräkt - han som red med tiraken - han föll på knä. Men inte av blixtarna. Av... något annat. Systrarna stannade framför honom. Sa något. Sen red de bara vidare. Norrut. Som om de inte just dödat Daaks heligaste krigare."
-</div>
+<blockquote class="box--quote">"Mannen i tempelriddardräkt - han som red med tiraken - han föll på knä. Men inte av blixtarna. Av... något annat. Systrarna stannade framför honom. Sa något. Sen red de bara vidare. Norrut. Som om de inte just dödat Daaks heligaste krigare."</blockquote>
 <br>
-Jag noterar allt. Varje ord. I Sung säger vi: Sanningen har tusen ansikten, men endast ett hjärta. Jag samlar ansiktena. Hjärtat kommer visa sig senare.
-        </div>
-    </div>
+Jag noterar allt. Varje ord. I Sung säger vi: Sanningen har tusen ansikten, men endast ett hjärta. Jag samlar ansiktena. Hjärtat kommer visa sig senare.</p></div>
+</div>
 
     <hr>
 
     <!-- MARGARET NAHRZEZIA -->
     <h2>Brev från Hemlandet</h2>
-    <div class="diary-intro">
-        <strong>Margaret Nahrzezia skriver till sin son Gordon</strong><br>
-        En mors stolthet, oro och längtan från familjegården i Vambolien.
-    </div>
+    <div class="box">
+  <span class="box__label">Margaret Nahrzezia skriver till sin son Gordon</span>
+  <p style="margin:0;">En mors stolthet, oro och längtan från familjegården i Vambolien.</p>
+</div>
 
-    <div class="entry">
-        <div class="entry-header">BREVET - Fas 9 (Precis innan resan till Vargnäset)</div>
-        <div class="entry-text">
-<em>Min kära Gordon,</em><br><br>
+    <div class="box">
+  <span class="box__label">BREVET - Fas 9 (Precis innan resan till Vargnäset)</span>
+  <div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;"><em>Min kära Gordon,</em><br><br>
 
 Otroliga berättelser når oss ända hit till Vambolien! Handelsresande talar om "Gordon Nahrzezia och hans kamrater" - hur ni kämpat mot gripar vid havet, besegrade ökendrakar i fjärran länder, och slog ner hundratals kidnappande banditer. Mitt hjärta svälls av stolthet över min son, men också av längtan. Det har varit så många år sedan vi sågs senast.<br><br>
 
@@ -421,15 +292,25 @@ Kan du ta reda på var Ethan är? Jag vet att du har kontakter överallt nu.<br>
 <em>Din stolta men oroliga mor,<br>
 Margaret</em><br><br>
 
-<em>PS. Kom hem, Gordon. Jag saknar dig så.</em>
-        </div>
-    </div>
+<em>PS. Kom hem, Gordon. Jag saknar dig så.</em></p></div>
+</div>
 
-    <div class="quote">
-        "En mors ord väger tyngre än järn. De följer dig längre än skuggor."<br>
-        - Vambolitiskt ordspråk
-    </div>
+    <blockquote class="box--quote">"En mors ord väger tyngre än järn. De följer dig längre än skuggor."<br>
+        - Vambolitiskt ordspråk</blockquote>
+  </article>
 
-    <script src="../kapitel/kapitel-linkify.js"></script>
+  <nav class="chapter-pager rows" aria-label="Fluff-navigering">
+    <a class="row row--simple" href="index.html">
+      <span class="row__meta">← Tillbaka</span>
+      <span class="row__title">Fluff &amp; Berättelser</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
 </body>
 </html>

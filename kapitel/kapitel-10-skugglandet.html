@@ -1,247 +1,41 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitel 10: Skugglandet och Titanens Fall - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        /* Navigation */
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        /* Content Container */
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        /* Chapter Header */
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .chapter-meta {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Prose Styling */
-        .prose {
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-
-        .prose h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .prose h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .prose h4 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--mystic-purple);
-        }
-
-        .prose p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .prose ul {
-            margin: 1rem 0 1.5rem 2rem;
-            list-style-type: disc;
-        }
-
-        .prose li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        .prose strong {
-            color: var(--flame-orange);
-            font-weight: 600;
-        }
-
-        .prose em {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .prose hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        /* Info Box */
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--flame-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.purple {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .info-box.gold {
-            border-left-color: var(--gold);
-        }
-
-        .info-box.red {
-            border-left-color: var(--deep-red);
-        }
-
-        .info-box-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: var(--flame-orange);
-        }
-
-        .purple .info-box-title {
-            color: var(--mystic-purple);
-        }
-
-        .gold .info-box-title {
-            color: var(--gold);
-        }
-
-        .red .info-box-title {
-            color: var(--deep-red);
-        }
-
-        /* Quote Box */
-        .quote {
-            background: var(--bg-darker);
-            border-left: 4px solid var(--gold);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-        }
-
-        .quote strong {
-            color: var(--gold);
-            font-style: normal;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .chapter-header h1 {
-                font-size: 2rem;
-            }
-            .prose h2 {
-                font-size: 1.5rem;
-            }
-            .content-container {
-                padding: 0 1rem 2rem;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 10: Skugglandet och Titanens Fall – Gravens Arv</title>
+<meta name="description" content="Skugglandet och Titanens Fall — ett kapitel i kampanjen Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Kampanjhistoria</div>
-        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <div class="content-container">
-        <header class="chapter-header">
-            <h1>Kapitel 10: Skugglandet och Titanens Fall</h1>
-            <div class="chapter-meta"><strong>Plats:</strong> Skugglandet - förvrängd verklighet bortom Mundana</div>
-            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Thrakka, Umnatak, Kazrik, Corvus/Arcadius</div>
-            <div class="chapter-meta"><strong>Huvudantagonist:</strong> Lord VinterGlöd (colonisk själssamlare)</div>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="../index.html#kampanjen">Kapitel</a> / <span>Kapitel 10 – Skugglandet och Titanens Fall</span></div>
+</div>
 
-        <article class="prose">
+<main class="wrap read-view">
+  <p class="eyebrow">Kapitel 10</p>
+  <h1 class="page-title">Skugglandet och Titanens Fall</h1>
+  <p class="subtitle">Skugglandet - förvrängd verklighet bortom Mundana · Gordon, Thrakka, Umnatak, Kazrik, Corvus/Arcadius · Lord VinterGlöd (colonisk själssamlare)</p>
 
+  <article class="prose prose--lead read-view__article">
 <h2>Bortom Världens Kant</h2>
 
 <p>Dimman var fel. Den kröp inte över marken som vanlig dimma gör - den <em>hängde</em>, som om gravitationen inte riktigt visste hur den skulle bete sig här. <strong>Gordon</strong> såg sin andedräkt kristallisera framför munnen och falla uppåt, små isflingor som flöt mot en himmel som såg ut att blöda silver.</p>
@@ -440,15 +234,13 @@
 
 <p>Sedan ingenting mer.</p>
 
-<div class="quote">
-<strong>Umnatak</strong> hade alltid talat med andarna. Nu <em>var</em> han en ande. Bunden i järn. Fängslad i en kniv som älskade blod.
+<blockquote class="box--quote"><strong>Umnatak</strong> hade alltid talat med andarna. Nu <em>var</em> han en ande. Bunden i järn. Fängslad i en kniv som älskade blod.
 <br><br>
 <strong>Ulzak</strong> var fri. Efter hundra års tortyr i mörkret. Men till vilket pris?
 <br><br>
 <strong>Thrakka</strong> låg med spräckt skalle och visste - visste - att det var <em>för henne</em> Umnatak offrat sig. För henne schamanen stannat kvar.
 <br><br>
-Skulden var tyngre än något hon burit i arenan.
-</div>
+Skulden var tyngre än något hon burit i arenan.</blockquote>
 
 <hr>
 
@@ -580,14 +372,14 @@ Skulden var tyngre än något hon burit i arenan.
 
 <p>De hade varit <em>mat</em> hela tiden.</p>
 
-<div class="info-box purple">
-<div class="info-box-title">Colonernas Arv</div>
-<p>Kolonerna - det uråldriga folk som existerat före människornas riken - byggde portaler mellan världarna. Men portaler kräver energi. Kraft. Något levande att hålla dem öppna.</p>
+<div class="box">
+        <span class="box__label">Colonernas Arv</span>
+        <p>Kolonerna - det uråldriga folk som existerat före människornas riken - byggde portaler mellan världarna. Men portaler kräver energi. Kraft. Något levande att hålla dem öppna.</p>
 <p>Sex själar bundna i sten. Bundna för evigt. Skriker tysta skrik ingen hör medan deras essens långsamt förtärs för att mata portalen.</p>
 <p><strong>VinterGlöd</strong> var ingen demon. Han var en <em>själssamlare</em>. Colonisk titel. Hans jobb var att hitta nya själar när de gamla förtärdes.</p>
 <p><strong>Älvakungen</strong> var hans redskap. Hans fälla. Hans samlare.</p>
 <p>Och gruppen hade dansat rakt in i fällan.</p>
-</div>
+      </div>
 
 <hr>
 
@@ -699,12 +491,12 @@ Skulden var tyngre än något hon burit i arenan.
 
 <p>Och nu hade offren kommit till honom.</p>
 
-<div class="info-box red">
-<div class="info-box-title">Vad De Inte Visste</div>
-<p><strong>Arcadius</strong> skuld var inte förstörd när tråden bröts. Den var <em>separerad</em>. Hälften fanns fortfarande i hålet. Hälften fanns bortom portalen.</p>
+<div class="box box--warning">
+        <span class="box__label">Vad De Inte Visste</span>
+        <p><strong>Arcadius</strong> skuld var inte förstörd när tråden bröts. Den var <em>separerad</em>. Hälften fanns fortfarande i hålet. Hälften fanns bortom portalen.</p>
 <p>När han gick genom portalen skulle de två halvorna försöka återförenas.</p>
 <p>Frågan var: vad skulle bli kvar av <strong>Corvus</strong> när det hände?</p>
-</div>
+      </div>
 
 <hr>
 
@@ -840,14 +632,14 @@ Skulden var tyngre än något hon burit i arenan.
 
 <p>Ingen såg sig tillbaka.</p>
 
-<div class="info-box purple">
-<div class="info-box-title">Vad De Inte Visste</div>
-<p><strong>VinterGlöd</strong> var inte deras fiende. Hade aldrig varit. Han var bunden av en ed gjord för tusen år sedan - till <strong>Prins Yelgotha</strong> (Älvakungen).</p>
+<div class="box">
+        <span class="box__label">Vad De Inte Visste</span>
+        <p><strong>VinterGlöd</strong> var inte deras fiende. Hade aldrig varit. Han var bunden av en ed gjord för tusen år sedan - till <strong>Prins Yelgotha</strong> (Älvakungen).</p>
 <p>Om gruppen nämnt Yolgothas namn. Om de sagt att <em>prinsen</em> skickat dem. Om de byggt en bro mellan forne herre och gammal tjänare...</p>
 <p>Kanske hade <strong>VinterGlöd</strong> blivit allierad.</p>
 <p>Men de visste inte. Och de nämnde aldrig namnet.</p>
 <p>Så själssamlaren förblev ensam. Som alltid.</p>
-</div>
+      </div>
 
 <hr>
 
@@ -1161,16 +953,15 @@ Skulden var tyngre än något hon burit i arenan.
 
 <p>"Nu går vi hem."</p>
 
-<div class="info-box gold">
-<div class="info-box-title">Kapitel 10 - Avslutat</div>
-<p><strong>Vad de vann:</strong> Zentri tillbaka, kropp och själ återförenade. Ringen borta från honom.</p>
+<div class="box">
+        <span class="box__label">Kapitel 10 - Avslutat</span>
+        <p><strong>Vad de vann:</strong> Zentri tillbaka, kropp och själ återförenade. Ringen borta från honom.</p>
 <p><strong>Vad de förlorade:</strong> Umnatak permanent fängslad i kniven. Ulzak permanent i Umnataks kropp. Månader förlorade i tidsförskjutning.</p>
 <p><strong>Vad de lämnade bakom sig:</strong> VinterGlöd fri men ensam. Urkhath tillfälligt neutraliserad men inte besegrad. Sex tusenåriga själar fortfarande fängslade under den coloniska korridoren.</p>
 <p><strong>Status:</strong> Gruppen står vid Grensfortet i högsommar. Bok 1 avslutad. Världen har fortsatt utan dem i månader. Vad som väntade i Vitterdal - det visste de inte än.</p>
-</div>
+      </div>
 
-<div class="quote">
-<strong>Kazrik</strong> skulle skriva om detta senare. I "Den Resandes Krönikor" - kapitel tio: <em>"Skugglandet och Priset."</em>
+<blockquote class="box--quote"><strong>Kazrik</strong> skulle skriva om detta senare. I "Den Resandes Krönikor" - kapitel tio: <em>"Skugglandet och Priset."</em>
 <br><br>
 Han skrev om titanen. Om kniven. Om <strong>Umnatak</strong>s offer.
 <br><br>
@@ -1190,18 +981,28 @@ Och i kniven - i mörkret mellan världarna - <strong>Umnatak</strong> höll rin
 <br><br>
 <strong>Vissa offer kan aldrig tas tillbaka.</strong>
 <br><br>
-Men de kan <em>betyda något</em>.
-</div>
+Men de kan <em>betyda något</em>.</blockquote>
 
 <hr>
 
-<p style="text-align: center; margin-top: 4rem; color: var(--flame-orange); font-size: 1.5rem; font-weight: bold;">
-    ~ Bok 1: Gravens Arv - Avslutad ~
-</p>
+<p class="chapter-close">~ Bok 1: Gravens Arv - Avslutad ~</p>
+  </article>
 
-        </article>
-    </div>
+  <nav class="chapter-pager rows" aria-label="Kapitelnavigering">
+    <a class="row row--simple" href="kapitel-9-mithera.html">
+      <span class="row__meta">← Föregående</span>
+      <span class="row__title">Kapitel 09 · Mithera</span>
+    </a>
 
-    <script src="kapitel-linkify.js"></script>
+  </nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
+
+<script src="kapitel-linkify.js"></script>
 </body>
 </html>

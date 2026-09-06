@@ -1,234 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitel 3: Skeppsbrottet och Tarkas - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .chapter-meta {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .prose {
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-
-        .prose h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .prose h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .prose h4 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--mystic-purple);
-        }
-
-        .prose p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .prose ul, .prose ol {
-            margin: 1rem 0 1.5rem 2rem;
-        }
-
-        .prose li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        .prose strong {
-            color: var(--flame-orange);
-            font-weight: 600;
-        }
-
-        .prose em {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .prose hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--flame-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.purple {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .info-box.gold {
-            border-left-color: var(--gold);
-        }
-
-        .info-box.red {
-            border-left-color: var(--deep-red);
-        }
-
-        .info-box-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: var(--flame-orange);
-        }
-
-        .purple .info-box-title {
-            color: var(--mystic-purple);
-        }
-
-        .gold .info-box-title {
-            color: var(--gold);
-        }
-
-        .red .info-box-title {
-            color: var(--deep-red);
-        }
-
-        .quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-        }
-
-        /* Entity Links - klickbara NPCs, platser, fraktioner */
-        .entity-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted currentColor;
-            transition: all 0.2s ease;
-        }
-        .entity-link:hover { border-bottom-style: solid; }
-        .entity-npc { color: var(--flame-orange); }
-        .entity-plats { color: var(--mystic-purple); }
-        .entity-fraktion { color: var(--gold); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 3: Skeppsbrottet och Tarkas – Gravens Arv</title>
+<meta name="description" content="Skeppsbrottet och Tarkas — ett kapitel i kampanjen Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Kampanjhistoria</div>
-        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <div class="content-container">
-        <header class="chapter-header">
-            <h1>Kapitel 3: Skeppsbrottet och Tarkas</h1>
-            <div class="chapter-meta"><strong>Plats:</strong> Tarkas södra kust och inlandet</div>
-            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik, Hagge</div>
-            <div class="chapter-meta"><strong>Tidsperiod:</strong> Omedelbart efter avfärden från Jen</div>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="../index.html#kampanjen">Kapitel</a> / <span>Kapitel 03 – Skeppsbrottet och Tarkas</span></div>
+</div>
 
-        <article class="prose">
-            <h2>Havet Tar</h2>
+<main class="wrap read-view">
+  <p class="eyebrow">Kapitel 03</p>
+  <h1 class="page-title">Skeppsbrottet och Tarkas</h1>
+  <p class="subtitle">Tarkas södra kust och inlandet · Gordon, Zentri, Umnatak, Kazrik, Hagge · Omedelbart efter avfärden från Jen</p>
+
+  <article class="prose prose--lead read-view__article">
+<h2>Havet Tar</h2>
 
             <p>Resan hem skulle bli kort, hade de sagt. Två veckor längs kusten, sedan vidare över bergen. Enkelt. Säkert.</p>
 
@@ -248,9 +56,7 @@
 
             <p><strong>Umnatak</strong> hade redan hunnit till livbåten när masten bröts. Träet splittrades som glas, och sedan var allt vatten och kaos och mörker.</p>
 
-            <div class="quote">
-                "Havet tar. Så har det alltid varit. Men ibland spottar det också ut det den tagit - trasigt, förändrat, men levande."
-            </div>
+            <blockquote class="box--quote">"Havet tar. Så har det alltid varit. Men ibland spottar det också ut det den tagit - trasigt, förändrat, men levande."</blockquote>
 
             <p><strong>Zentri</strong> vaknade först. Aska i munnen, salt i ögonen, kroppen halvbegravd i svart sand. Runt honom låg vrakrester utspridda som spillrorna av ett sönderslaget liv.</p>
 
@@ -270,16 +76,16 @@
 
             <p>Åtminstone inget som borde leva.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Överlevnad i Ödemarken</div>
-                <ul>
+            <div class="box box--warning">
+        <span class="box__label">Överlevnad i Ödemarken</span>
+        <ul>
                     <li><strong>Umnatak</strong> - Jagade och spårade, kämpade dagligen för att hitta vatten som inte var förgiftat</li>
                     <li><strong>Gordon</strong> - Höll gruppen samman, drev dem vidare när kroppen sa stopp</li>
                     <li><strong>Kazrik</strong> - Dokumenterade allt, trots att hans utrustning var förstörd</li>
                     <li><strong>Hagge</strong> - Militär disciplin, organiserade läger och vakthållning</li>
                     <li><strong>Zentri</strong> - Magiskt stöd när krafterna räckte</li>
                 </ul>
-            </div>
+      </div>
 
             <p>Dagarna smälte samman. Vandring i gryningen, sömn i skuggan under dagens hetaste timmar, fortsatt vandring tills mörkret tvingade dem stanna. <strong>Gordon</strong> räknade dagarna på fingrarna - sex, sju, åtta - innan han slutade räkna.</p>
 
@@ -297,9 +103,7 @@
 
             <p>Inskriptionerna på stenblocken var främmande. Inget språk någon av dem kände igen. Väggmålningar innanför föreställde varelser som var halvt människa, halvt ödla - reptilliknande humanoider med kalla ögon och verktyg i händerna.</p>
 
-            <div class="quote">
-                "De byggde detta. Ett folk som försvann innan människan ens fanns. Och de lämnade vakterna kvar."
-            </div>
+            <blockquote class="box--quote">"De byggde detta. Ett folk som försvann innan människan ens fanns. Och de lämnade vakterna kvar."</blockquote>
 
             <h3>Golemerna</h3>
 
@@ -329,10 +133,10 @@
 
             <p>Tre gånger en människas höjd. Kropp av massiv, ogenomtränglig sten. Ansiktet var tomt - inga ögon, inget uttryck - men ändå verkade det se dem.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Kolossen</div>
-                <p>Ödlefolkets mästerverk - en uråldrig konstruktion från tiden före tid. Dess kropp var ogenomtränglig för vanliga vapen, dess kraft bortom allt mänskligt. En vaktare byggd för att stå i evighet.</p>
-            </div>
+            <div class="box">
+        <span class="box__label">Kolossen</span>
+        <p>Ödlefolkets mästerverk - en uråldrig konstruktion från tiden före tid. Dess kropp var ogenomtränglig för vanliga vapen, dess kraft bortom allt mänskligt. En vaktare byggd för att stå i evighet.</p>
+      </div>
 
             <p>Ett mullrande från dess kärna. Armarna började röra sig.</p>
 
@@ -348,16 +152,16 @@
 
             <p>Splittret träffade honom i ansiktet.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Det Förlorade Ögat</div>
-                <p>En stensplitter från den kollapsande pelaren krossade <strong>Zentris</strong> vänstra öga. Blod rann nerför ansiktet, smärtan var bortom ord. I samma ögonblick slits hans <em>mantel</em> - det skyddande plagg han burit sedan resan började - i stycken av fallande sten.</p>
+            <div class="box box--warning">
+        <span class="box__label">Det Förlorade Ögat</span>
+        <p>En stensplitter från den kollapsande pelaren krossade <strong>Zentris</strong> vänstra öga. Blod rann nerför ansiktet, smärtan var bortom ord. I samma ögonblick slits hans <em>mantel</em> - det skyddande plagg han burit sedan resan började - i stycken av fallande sten.</p>
                 <p><strong>Permanenta konsekvenser:</strong></p>
                 <ul>
                     <li>Förlorat vänster öga - för alltid</li>
                     <li>Ärr över vänster ansiktshalva</li>
                     <li>Manteln förstörd permanent</li>
                 </ul>
-            </div>
+      </div>
 
             <p><strong>Hagge</strong> fångade honom innan han föll. Zentris skrik ekade genom salen, men kolossen rörde sig fortfarande, långsamt men orubbligt mot dem.</p>
 
@@ -375,9 +179,7 @@
 
             <p>En kontrollerad kollaps. Pelarna gav vika i sekvens, stenblock föll från väggarna i ett mönster som ledde... bort från utgången. Mot kolossen.</p>
 
-            <div class="quote">
-                "Ibland är det bästa vapnet inte stål eller magi - det är arkitektur."
-            </div>
+            <blockquote class="box--quote">"Ibland är det bästa vapnet inte stål eller magi - det är arkitektur."</blockquote>
 
             <p>De sprang. Bakom dem hörde de kolossens vrål - ett ljud som ingen sten borde kunna frambringa - när tonvis av berg begravde den. Ljudet följde dem genom korridorerna, ekande, klagande.</p>
 
@@ -423,9 +225,7 @@
 
             <p>Febern kom först - svett rann från pannan, ögonen var vilda och såg saker som inte fanns. Han muttrade om skuggor, om viskar från döda, om ansikten i mörkret.</p>
 
-            <div class="quote">
-                "De pratar med mig. De döda. De vill att jag ska följa med dem. De vill... de vill..."
-            </div>
+            <blockquote class="box--quote">"De pratar med mig. De döda. De vill att jag ska följa med dem. De vill... de vill..."</blockquote>
 
             <p><strong>Gordon</strong> höll honom nedsänkt medan anfallen kom. Umnataks kropp krampade, skummade, kämpade mot osynliga fiender. Zentri - halvblind och själv knappast frisk - kände efter med sina svaga magiska sinnen.</p>
 
@@ -439,14 +239,14 @@
 
             <p>Bakom dem låg nekromantikers läger.</p>
 
-            <div class="info-box gold">
-                <div class="info-box-title">Fynden i Lägret</div>
-                <ul>
+            <div class="box">
+        <span class="box__label">Fynden i Lägret</span>
+        <ul>
                     <li><strong>Förbjudna skrifter</strong> - Ritualer, besvärjelser, instruktioner för att binda själar till världen</li>
                     <li><strong>En mystisk amulett</strong> - Pulserande med mörk energi, ursprung okänt</li>
                     <li><strong>En ritualdolk</strong> - Inskriptioner längs bladet, vapen för blodsmagi</li>
                 </ul>
-            </div>
+      </div>
 
             <p>Nekromantikern själv var redan död - eller något värre än död. Hans kropp låg sammanfallen över ett altare, som om den energi som hållit honom vid liv plötsligt försvunnit.</p>
 
@@ -480,15 +280,15 @@
 
             <p>Dvärgarna tog emot dem med den misstänksamhet som bergfolk alltid visar främlingar - men när de hörde vad gruppen överlevt mjuknade deras ansikten något.</p>
 
-            <div class="info-box">
-                <div class="info-box-title">Dvärgfästet</div>
-                <ul>
+            <div class="box">
+        <span class="box__label">Dvärgfästet</span>
+        <ul>
                     <li><strong>Plats:</strong> Bergskedjan mellan Tarkas och Jargien</li>
                     <li><strong>Arkitektur:</strong> Inbyggd i berget självt, massiva stengrindar</li>
                     <li><strong>Befolkning:</strong> Hantverkare, smeder, karavanledare</li>
                     <li><strong>Funktion:</strong> Handelspost mellan öster och väster</li>
                 </ul>
-            </div>
+      </div>
 
             <h3>En Oväntad Berömmelse</h3>
 
@@ -502,9 +302,7 @@
 
             <p>Det visade sig att hans dagbok - den han skrivit under tidigare äventyr, inklusive tirakgraven och jakten på Ibran - hade fått ett eget liv. Hans lärlingar hade omarbetat hans anteckningar till två böcker. <strong>"Kazriks resor"</strong> hade blivit populära bland dvärgar och människor som drömde om äventyr utan att vilja uppleva det själva.</p>
 
-            <div class="quote">
-                "Ord reser längre än fötter. Och de behöver inte vila."
-            </div>
+            <blockquote class="box--quote">"Ord reser längre än fötter. Och de behöver inte vila."</blockquote>
 
             <p>Plötsligt var gruppen inte längre utarmade överlevare. De var gäster. Kvarteren blev bättre, maten rikligare, och viktigast av allt - de erbjöds plats i en handelskaravan genom Jargien.</p>
 
@@ -514,29 +312,29 @@
 
             <hr>
 
-            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
-                Tarkas hade tagit mycket från dem - ett öga, hälsa, oskuld.<br>
+            <p class="chapter-close">Tarkas hade tagit mycket från dem - ett öga, hälsa, oskuld.<br>
                 Men de levde. Och resan fortsatte.<br>
-                Mot hem. Mot det som väntade.
-            </p>
-        </article>
-    </div>
+                Mot hem. Mot det som väntade.</p>
+  </article>
 
-    <!-- Ladda data för auto-länkning -->
-    <script src="../wiki_data.js"></script>
-    <script src="../fraktioner_data.js"></script>
-    <script src="kapitel-linkify.js"></script>
+  <nav class="chapter-pager rows" aria-label="Kapitelnavigering">
+    <a class="row row--simple" href="kapitel-2-muhad.html">
+      <span class="row__meta">← Föregående</span>
+      <span class="row__title">Kapitel 02 · Muhad</span>
+    </a>
+    <a class="row row--simple" href="kapitel-4-jargien.html">
+      <span class="row__title">Kapitel 04 · Jargien</span>
+      <span class="row__meta">Nästa →</span>
+    </a>
+  </nav>
+</main>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
+
+<script src="kapitel-linkify.js"></script>
 </body>
 </html>

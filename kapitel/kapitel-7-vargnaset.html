@@ -1,263 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitel 7: Vargnäset - Ockupationen - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        /* Navigation */
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        /* Content Container */
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        /* Chapter Header */
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .chapter-meta {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Prose Styling */
-        .prose {
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-
-        .prose h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .prose h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .prose h4 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--mystic-purple);
-        }
-
-        .prose p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .prose ul {
-            margin: 1rem 0 1.5rem 2rem;
-            list-style-type: disc;
-        }
-
-        .prose li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        .prose strong {
-            color: var(--flame-orange);
-            font-weight: 600;
-        }
-
-        .prose em {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .prose hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        /* Info Box */
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--flame-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.purple {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .info-box.gold {
-            border-left-color: var(--gold);
-        }
-
-        .info-box.red {
-            border-left-color: var(--deep-red);
-        }
-
-        .info-box-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: var(--flame-orange);
-        }
-
-        .purple .info-box-title {
-            color: var(--mystic-purple);
-        }
-
-        .gold .info-box-title {
-            color: var(--gold);
-        }
-
-        .red .info-box-title {
-            color: var(--deep-red);
-        }
-
-        /* Image Styling */
-        .chapter-image {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 8px;
-            margin: 2rem auto;
-            display: block;
-            border: 2px solid var(--border);
-        }
-
-        .image-caption {
-            text-align: center;
-            font-style: italic;
-            color: var(--text-secondary);
-            margin-top: 0.5rem;
-            margin-bottom: 2rem;
-        }
-
-        /* Quote Styling */
-        .quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-        }
-
-        /* Entity Links - klickbara NPCs, platser, fraktioner */
-        .entity-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted currentColor;
-            transition: all 0.2s ease;
-        }
-        .entity-link:hover { border-bottom-style: solid; }
-        .entity-npc { color: var(--flame-orange); }
-        .entity-plats { color: var(--mystic-purple); }
-        .entity-fraktion { color: var(--gold); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 7: Vargnäset - Ockupationen – Gravens Arv</title>
+<meta name="description" content="Vargnäset - Ockupationen — ett kapitel i kampanjen Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Kampanjhistoria</div>
-        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Main Content -->
-    <div class="content-container">
-        <!-- Chapter Header -->
-        <header class="chapter-header">
-            <h1>Kapitel 7: Vargnäset - Ockupationen</h1>
-            <div class="chapter-meta"><strong>Plats:</strong> Vargnäset, nu ockuperat</div>
-            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Umnatak, Kazrik, Thrakka, Corvus (blir spelarkaraktär)</div>
-            <div class="chapter-meta"><strong>Tidsperiod:</strong> Återkomst till Vargnäset efter Vitterdal</div>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="../index.html#kampanjen">Kapitel</a> / <span>Kapitel 07 – Vargnäset</span></div>
+</div>
 
-        <!-- Prose Content -->
-        <article class="prose">
-            <h2>Återkomsten</h2>
+<main class="wrap read-view">
+  <p class="eyebrow">Kapitel 07</p>
+  <h1 class="page-title">Vargnäset - Ockupationen</h1>
+  <p class="subtitle">Vargnäset, nu ockuperat · Gordon, Umnatak, Kazrik, Thrakka, Corvus (blir spelarkaraktär) · Återkomst till Vargnäset efter Vitterdal</p>
+
+  <article class="prose prose--lead read-view__article">
+<h2>Återkomsten</h2>
 
             <p>Vägen tillbaka till Vargnäset låg kall och tom under deras fötter. Vitterdals belöning klirrade tungt i Gordons bälte - gott silver för goda tjänster - men pengarna smakade aska när han tänkte på varför de var här.</p>
 
@@ -321,16 +100,16 @@
 
             <p>Tomt. Ännu.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Ockupationen</div>
-                <ul>
+            <div class="box box--warning">
+        <span class="box__label">Ockupationen</span>
+        <ul>
                     <li>Arvorns Hammare hade tagit över byn "för att undersöka magisk kontamination"</li>
                     <li>Systematiska förhör av alla bybor om "magiska händelser"</li>
                     <li>Byborna terroriserade och rädda - ingen vågade tala öppet</li>
                     <li>Patrullerande häxjägare dag och natt</li>
                     <li>Eira Holm och några andra hade flytt till skogen</li>
                 </ul>
-            </div>
+      </div>
 
             <p>"Vi måste hitta Eira," sa Gordon. "Hon vet vad som hänt."</p>
 
@@ -372,14 +151,14 @@
 
             <p>Eiras ansikte blev mörkt. "Kommendören. Corvus Askhår. De kallar honom 'Den Rykande Hammaren'."</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Kommendör Corvus Askhår</div>
-                <p><strong>Ålder:</strong> 31 år</p>
+            <div class="box">
+        <span class="box__label">Kommendör Corvus Askhår</span>
+        <p><strong>Ålder:</strong> 31 år</p>
                 <p><strong>Bakgrund:</strong> Adelsfamilj från Soldarn, kidnappades som 8-åring under korstågen när hans familj dödades för att ha skyddat samoriska munkar</p>
                 <p><strong>Uppfostran:</strong> Arvorns Hammare tog in honom och formade honom till deras perfekta vapen</p>
                 <p><strong>Namn:</strong> "Den Rykande Hammaren" - känd för att aldrig lämna levande vittnen</p>
                 <p><strong>Tid som häxjägare:</strong> 23 år av fanatisk tjänst</p>
-            </div>
+      </div>
 
             <p>"Han är..." Eira sökte ord. "Fruktansvärd. Kall. Men inte grym för grymhetens skull. Han tror på det han gör. Tror att han räddar världen."</p>
 
@@ -435,13 +214,13 @@
 
             <p>Gordon drog sig tillbaka från springan, hjärtat dunkat så hårt han var säker på att häxjägarna måste höra det.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Protokoll Järnrening</div>
-                <p>Arvorns Hammares slutgiltiga lösning på demonisk kontamination.</p>
+            <div class="box box--warning">
+        <span class="box__label">Protokoll Järnrening</span>
+        <p>Arvorns Hammares slutgiltiga lösning på demonisk kontamination.</p>
                 <p>Alla invånare i ett komprometterat område avrättas.</p>
                 <p>Inga undantag. Inga överlevande. Ingen vittnen.</p>
                 <p>Total utplåning för att förhindra spridning.</p>
-            </div>
+      </div>
 
             <p>Kazrik såg på Gordon med döda ögon. "De kommer döda dem alla."</p>
 
@@ -533,9 +312,7 @@
 
             <p>Men det var inte hennes röst.</p>
 
-            <div class="quote">
-                "Corvus Askhår av Soldarn. Hur många barn har du dödat i Gudens namn?"
-            </div>
+            <blockquote class="box--quote">"Corvus Askhår av Soldarn. Hur många barn har du dödat i Gudens namn?"</blockquote>
 
             <p>Kommendörens ansikte blev asfalt.</p>
 
@@ -551,9 +328,7 @@
 
             <p>Astrid - eller vad som talade genom henne - log.</p>
 
-            <div class="quote">
-                "Tjugotre år av blod i mitt namn. Jag sanktionerade aldrig detta. Aldrig dig."
-            </div>
+            <blockquote class="box--quote">"Tjugotre år av blod i mitt namn. Jag sanktionerade aldrig detta. Aldrig dig."</blockquote>
 
             <p>"Daak..." Corvus röst bröts. "Herre Daak, jag har bara—"</p>
 
@@ -563,19 +338,17 @@
 
             <p>Hennes sista ord, med hennes egen röst, knappt hörbart:</p>
 
-            <div class="quote">
-                "Jag förlåter dig."
-            </div>
+            <blockquote class="box--quote">"Jag förlåter dig."</blockquote>
 
             <p>Och hennes blod fros äntligen. Kristallklart is mot träet.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Vad de inte visste</div>
-                <p>Astrid dog inte bara som ett offer.</p>
+            <div class="box">
+        <span class="box__label">Vad de inte visste</span>
+        <p>Astrid dog inte bara som ett offer.</p>
                 <p>Hon blev en martyr - ett verktyg för guden Daak att nå sin villfarnen krigare.</p>
                 <p>Hennes förlåtelse var inte svaghet. Det var den hårdaste domen Corvus någonsin fått.</p>
                 <p>Att förlåtas av den du dödat... det finns ingen tyngre börda.</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -625,9 +398,7 @@
 
             <p>Men när befälen lämnade tältet hörde Gordon något. En viskning från kommendören, så låg att knappt vinden borde höra den:</p>
 
-            <div class="quote">
-                "Förlåt mig."
-            </div>
+            <blockquote class="box--quote">"Förlåt mig."</blockquote>
 
             <p>Det var oklart vem han bad om förlåtelse. Guden. Flickan. Sig själv.</p>
 
@@ -707,14 +478,14 @@
 
             <p>"Nej. Men några följer order ändå. De andra..." Han mötte Gordons ögon. "Hjälp mig döda dem."</p>
 
-            <div class="info-box gold">
-                <div class="info-box-title">Corvus Vändning</div>
-                <p>I det ögonblicket valde Corvus Askhår vad han skulle vara.</p>
+            <div class="box">
+        <span class="box__label">Corvus Vändning</span>
+        <p>I det ögonblicket valde Corvus Askhår vad han skulle vara.</p>
                 <p>Inte en häxjägare. Inte en kommendör. Inte Den Rykande Hammaren.</p>
                 <p>Bara en man som försökte gottgöra tjugotre år av blod.</p>
                 <p>Han visste det inte skulle räcka. Visste att ingenting kunde gottgöra vad han gjort.</p>
                 <p>Men det var allt han hade kvar.</p>
-            </div>
+      </div>
 
             <h3>Striden vid Gryningen</h3>
 
@@ -772,20 +543,18 @@
 
             <p>Arvorns Hammare tar inga risker.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Den Fruktansvärda Sanningen</div>
-                <p>Gruppen insåg vad deras närvaro kostat byn:</p>
+            <div class="box box--warning">
+        <span class="box__label">Den Fruktansvärda Sanningen</span>
+        <p>Gruppen insåg vad deras närvaro kostat byn:</p>
                 <p>Inte bara Astrids död. Inte bara häxjägarnas ockupation.</p>
                 <p>Utan total utrotning - antingen genom Järnrening eller som vittnen som måste tystas.</p>
                 <p>Vargnäset kunde aldrig vara hem igen.</p>
                 <p>Alla måste fly eller dö.</p>
-            </div>
+      </div>
 
             <p>Corvus stod vid sidan, stirrade på sina händer. Blodet hade torkat till brunt. Han viskade något - ord ingen annan hörde - men Gordon läppläste:</p>
 
-            <div class="quote">
-                "Jag förtjänade aldrig hennes förlåtelse."
-            </div>
+            <blockquote class="box--quote">"Jag förtjänade aldrig hennes förlåtelse."</blockquote>
 
             <h3>Corvus Askhar Blir Spelarkaraktär</h3>
 
@@ -823,14 +592,14 @@
 
             <p>"Bra," sa Corvus. Och log för första gången - inte tomt, inte trasigt, bara trött. "Jag förtjänar det."</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Corvus "Arcadius" Askhar - Ny Spelarkaraktär</div>
-                <p><strong>Spelare:</strong> Daniel</p>
+            <div class="box">
+        <span class="box__label">Corvus "Arcadius" Askhar - Ny Spelarkaraktär</span>
+        <p><strong>Spelare:</strong> Daniel</p>
                 <p><strong>Identitet:</strong> Opererar under aliaset "Arcadius" för att dölja sin förflutna</p>
                 <p><strong>Status:</strong> Förrädare mot Arvorns Hammare, jagad som demon-korrupted</p>
                 <p><strong>Motivation:</strong> Gottgörelse för tjugotre års brott mot oskyldiga</p>
                 <p><strong>Börda:</strong> Astrids förlåtelse - den tyngsta gift han någonsin fått</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -868,32 +637,31 @@
 
             <hr>
 
-            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
-                Vargnäset brann inte den natten.<br>
+            <p class="chapter-close">Vargnäset brann inte den natten.<br>
                 Det skulle ha varit en nåd.<br>
                 Istället lämnades det tomt - spökhus och tomma gator och ett kors på torget.<br>
                 Ett monument över vad övertygelse kostar när den bygger på lögner.<br>
-                Och ett barns förlåtelse som vägde tyngre än alla synderna den förlät.
-            </p>
-        </article>
-    </div>
+                Och ett barns förlåtelse som vägde tyngre än alla synderna den förlät.</p>
+  </article>
 
-    <!-- Ladda data för auto-länkning -->
-    <script src="../wiki_data.js"></script>
-    <script src="../fraktioner_data.js"></script>
-    <script src="kapitel-linkify.js"></script>
+  <nav class="chapter-pager rows" aria-label="Kapitelnavigering">
+    <a class="row row--simple" href="kapitel-6-vitterdal.html">
+      <span class="row__meta">← Föregående</span>
+      <span class="row__title">Kapitel 06 · Vitterdal</span>
+    </a>
+    <a class="row row--simple" href="kapitel-8-evakueringen.html">
+      <span class="row__title">Kapitel 08 · Evakueringen</span>
+      <span class="row__meta">Nästa →</span>
+    </a>
+  </nav>
+</main>
 
-    <script>
-        // Smooth scroll for any future internal navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
+
+<script src="kapitel-linkify.js"></script>
 </body>
 </html>

@@ -1,263 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitel 6: Återkomst till Vitterdal - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        /* Navigation */
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        /* Content Container */
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        /* Chapter Header */
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .chapter-meta {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Prose Styling */
-        .prose {
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-
-        .prose h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .prose h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .prose h4 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--mystic-purple);
-        }
-
-        .prose p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .prose ul {
-            margin: 1rem 0 1.5rem 2rem;
-            list-style-type: disc;
-        }
-
-        .prose li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        .prose strong {
-            color: var(--flame-orange);
-            font-weight: 600;
-        }
-
-        .prose em {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .prose hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        /* Info Box */
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--flame-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.purple {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .info-box.gold {
-            border-left-color: var(--gold);
-        }
-
-        .info-box.red {
-            border-left-color: var(--deep-red);
-        }
-
-        .info-box-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: var(--flame-orange);
-        }
-
-        .purple .info-box-title {
-            color: var(--mystic-purple);
-        }
-
-        .gold .info-box-title {
-            color: var(--gold);
-        }
-
-        .red .info-box-title {
-            color: var(--deep-red);
-        }
-
-        /* Image Styling */
-        .chapter-image {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 8px;
-            margin: 2rem auto;
-            display: block;
-            border: 2px solid var(--border);
-        }
-
-        .image-caption {
-            text-align: center;
-            font-style: italic;
-            color: var(--text-secondary);
-            margin-top: 0.5rem;
-            margin-bottom: 2rem;
-        }
-
-        /* Quote Styling */
-        .quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-        }
-
-        /* Entity Links - klickbara NPCs, platser, fraktioner */
-        .entity-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted currentColor;
-            transition: all 0.2s ease;
-        }
-        .entity-link:hover { border-bottom-style: solid; }
-        .entity-npc { color: var(--flame-orange); }
-        .entity-plats { color: var(--mystic-purple); }
-        .entity-fraktion { color: var(--gold); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 6: Återkomst till Vitterdal – Gravens Arv</title>
+<meta name="description" content="Återkomst till Vitterdal — ett kapitel i kampanjen Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Kampanjhistoria</div>
-        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Main Content -->
-    <div class="content-container">
-        <!-- Chapter Header -->
-        <header class="chapter-header">
-            <h1>Kapitel 6: Återkomst till Vitterdal</h1>
-            <div class="chapter-meta"><strong>Plats:</strong> Från Vargnäset till Vitterdal via Raunfloden, Cermira</div>
-            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Umnatak, Kazrik, Thrakka, Hagge</div>
-            <div class="chapter-meta"><strong>Pris:</strong> Ylvas liv, jakten intensifieras</div>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="../index.html#kampanjen">Kapitel</a> / <span>Kapitel 06 – Återkomst till Vitterdal</span></div>
+</div>
 
-        <!-- Prose Content -->
-        <article class="prose">
-            <h2>Priset för att Följa Hjältar</h2>
+<main class="wrap read-view">
+  <p class="eyebrow">Kapitel 06</p>
+  <h1 class="page-title">Återkomst till Vitterdal</h1>
+  <p class="subtitle">Från Vargnäset till Vitterdal via Raunfloden, Cermira · Gordon, Umnatak, Kazrik, Thrakka, Hagge · Ylvas liv, jakten intensifieras</p>
+
+  <article class="prose prose--lead read-view__article">
+<h2>Priset för att Följa Hjältar</h2>
 
             <p>Vinterkylan bet genom kläder och hud när gruppen lämnade Vargnäset. Zentri var försvunnen - hämtad av någon eller något in i natten. I hans ställe red Thrakka, tiraken med järnhand och ögon som sett för mycket av arenans blod.</p>
 
@@ -309,10 +88,10 @@
 
             <p>Alla tjänade Lady Soffia, förstod Gordon. Frostnymfen var mer än transport - det var en del av Soffias nätverk, den tysta infrastruktur som höll hennes makt levande även när kungamakten ville krossa den.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Vad de inte visste</div>
-                <p>Selene "Silveröga" var inte bara underbefäl - hon var en av Lady Soffias mest värdefulla informanter längs Raunfloden, medlem i ett hemligt nätverk som hjälpte förföljda att fly från kungamaktens grepp. Det silverögat hade sett mer än de flesta kunde ana, och rapporterat allt till Vitterdal.</p>
-            </div>
+            <div class="box">
+        <span class="box__label">Vad de inte visste</span>
+        <p>Selene "Silveröga" var inte bara underbefäl - hon var en av Lady Soffias mest värdefulla informanter längs Raunfloden, medlem i ett hemligt nätverk som hjälpte förföljda att fly från kungamaktens grepp. Det silverögat hade sett mer än de flesta kunde ana, och rapporterat allt till Vitterdal.</p>
+      </div>
 
             <hr>
 
@@ -374,9 +153,7 @@
 
             <p>Kazrik genomsökte byggnaden medan de andra höll vakt. Han hittade dokument som berättade mer än vad de ville veta - order med tydliga instruktioner:</p>
 
-            <div class="quote">
-                "Arrestera den förrädiska tirakkvinnan och Vitterdals arvinge på flykt österifrån."
-            </div>
+            <blockquote class="box--quote">"Arrestera den förrädiska tirakkvinnan och Vitterdals arvinge på flykt österifrån."</blockquote>
 
             <p>Det fanns kartmaterial med rutter mot Vitterdal markerade. Tecken på våld - blod på golvet, ännu inte helt torkat.</p>
 
@@ -436,9 +213,7 @@
 
             <p>Gordon såg Kazriks händer - korta, starka dvärghänder - arbeta febrillt mot såret. Men dvärgögonen talade redan sanningen. Armborstslodet hade gått för djupt.</p>
 
-            <div class="quote">
-                "Jag försökte ta mig i skydd," viskade Ylva. Hennes ansikte plötsligt så mycket yngre i dödens närhet. "Trodde jag kunde vara till hjälp."
-            </div>
+            <blockquote class="box--quote">"Jag försökte ta mig i skydd," viskade Ylva. Hennes ansikte plötsligt så mycket yngre i dödens närhet. "Trodde jag kunde vara till hjälp."</blockquote>
 
             <p>Hagge ville säga något tröstande, något värdigt. Men orden fastnade. Vad säger man till ett barn som dör för att det råkade befinna sig i närheten av någon som andra vill döda?</p>
 
@@ -448,9 +223,7 @@
 
             <p>Ylvas hand grep tag i Hagges. Fingrarna så små och redan kalla. Hon hade berättat om skogarna runt hennes hem, om hur hon en gång följt en älg i tre dagar för att få mat till sin sjuka syster.</p>
 
-            <div class="quote">
-                "De vet... mer än de borde... om er alla..."
-            </div>
+            <blockquote class="box--quote">"De vet... mer än de borde... om er alla..."</blockquote>
 
             <p>Hennes hand slappnade av. Ljuset i hennes ögon slocknade.</p>
 
@@ -661,11 +434,26 @@
             <p>Men först - en natt till i varma sängar. En middag till vid eldstaden. Ett kort ögonblick av fred innan stormen.</p>
 
             <p>De hade tjänat åtminstone så mycket.</p>
-        </article>
-    </div>
+  </article>
 
-    <!-- Auto-link script -->
-    <script src="../wiki_data.js"></script>
-    <script src="kapitel-linkify.js"></script>
+  <nav class="chapter-pager rows" aria-label="Kapitelnavigering">
+    <a class="row row--simple" href="kapitel-5-vargnaset.html">
+      <span class="row__meta">← Föregående</span>
+      <span class="row__title">Kapitel 05 · Vargnäset</span>
+    </a>
+    <a class="row row--simple" href="kapitel-7-vargnaset.html">
+      <span class="row__title">Kapitel 07 · Vargnäset</span>
+      <span class="row__meta">Nästa →</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
+
+<script src="kapitel-linkify.js"></script>
 </body>
 </html>

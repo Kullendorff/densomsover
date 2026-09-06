@@ -1,263 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitel 5: Vargnäset - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        /* Navigation */
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        /* Content Container */
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        /* Chapter Header */
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .chapter-meta {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Prose Styling */
-        .prose {
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-
-        .prose h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .prose h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .prose h4 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--mystic-purple);
-        }
-
-        .prose p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .prose ul {
-            margin: 1rem 0 1.5rem 2rem;
-            list-style-type: disc;
-        }
-
-        .prose li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        .prose strong {
-            color: var(--flame-orange);
-            font-weight: 600;
-        }
-
-        .prose em {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .prose hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        /* Info Box */
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--flame-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.purple {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .info-box.gold {
-            border-left-color: var(--gold);
-        }
-
-        .info-box.red {
-            border-left-color: var(--deep-red);
-        }
-
-        .info-box-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: var(--flame-orange);
-        }
-
-        .purple .info-box-title {
-            color: var(--mystic-purple);
-        }
-
-        .gold .info-box-title {
-            color: var(--gold);
-        }
-
-        .red .info-box-title {
-            color: var(--deep-red);
-        }
-
-        /* Image Styling */
-        .chapter-image {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 8px;
-            margin: 2rem auto;
-            display: block;
-            border: 2px solid var(--border);
-        }
-
-        .image-caption {
-            text-align: center;
-            font-style: italic;
-            color: var(--text-secondary);
-            margin-top: 0.5rem;
-            margin-bottom: 2rem;
-        }
-
-        /* Quote Styling */
-        .quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-        }
-
-        /* Entity Links - klickbara NPCs, platser, fraktioner */
-        .entity-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted currentColor;
-            transition: all 0.2s ease;
-        }
-        .entity-link:hover { border-bottom-style: solid; }
-        .entity-npc { color: var(--flame-orange); }
-        .entity-plats { color: var(--mystic-purple); }
-        .entity-fraktion { color: var(--gold); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 5: Vargnäset – Gravens Arv</title>
+<meta name="description" content="Vargnäset - Blodet och Askan — ett kapitel i kampanjen Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Kampanjhistoria</div>
-        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Main Content -->
-    <div class="content-container">
-        <!-- Chapter Header -->
-        <header class="chapter-header">
-            <h1>Kapitel 5: Vargnäset - Blodet och Askan</h1>
-            <div class="chapter-meta"><strong>Plats:</strong> Vargnäset, vid foten av Korpklämman</div>
-            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik, Hagge</div>
-            <div class="chapter-meta"><strong>Avgörande händelse:</strong> Zentris försvinnande, Thrakkas ankomst</div>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="../index.html#kampanjen">Kapitel</a> / <span>Kapitel 05 – Vargnäset</span></div>
+</div>
 
-        <!-- Prose Content -->
-        <article class="prose">
-            <h2>Byn vid Passets Fot</h2>
+<main class="wrap read-view">
+  <p class="eyebrow">Kapitel 05</p>
+  <h1 class="page-title">Vargnäset - Blodet och Askan</h1>
+  <p class="subtitle">Vargnäset, vid foten av Korpklämman · Gordon, Zentri, Umnatak, Kazrik, Hagge · Zentris försvinnande, Thrakkas ankomst</p>
+
+  <article class="prose prose--lead read-view__article">
+<h2>Byn vid Passets Fot</h2>
 
             <p>Karavanen såg röken först - tunn, grå, stank av rädsla. Inte den tjocka, behagliga röken från spiseldar och bakning, utan desperat bränsle som brann för att hålla mörker och fiender borta.</p>
 
@@ -269,9 +48,7 @@
 
             <p>Karavanledaren - en fet man vars namn redan glömts av historien - ville inte stanna. <strong>Hagge</strong> höll med, adelsmannens självbevarelsedrift skarp som alltid. Men när <strong>Eira Holm</strong> kom till porten, byäldsten med händer som darrat i tjugo år av ålderdom men nu darrade värre av rädsla, fanns ingen valmöjlighet.</p>
 
-            <div class="quote">
-                "Desertörer," sa hon. Rösten tunn som vårisen på Svartenfloden. "Ledda av en före detta kapten. De kommer tillbaka ikväll eller imorgon. De har alltid kommit tillbaka."
-            </div>
+            <blockquote class="box--quote">"Desertörer," sa hon. Rösten tunn som vårisen på Svartenfloden. "Ledda av en före detta kapten. De kommer tillbaka ikväll eller imorgon. De har alltid kommit tillbaka."</blockquote>
 
             <p><strong>Zentri</strong> såg på Gordon. <strong>Umnatak</strong> såg på marken där andarnas viskning talade om blod ännu inte spillt men redan förutspått. Kazrik såg på sina händer som om de kunde räkna priset innan det betalats.</p>
 
@@ -303,11 +80,11 @@
 
             <p>Men ringen på Zentris finger brände svagare nu, som om den väntade. Som om den visste.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Vad Gordon inte visste</div>
-                <p><strong>Systrarnas spårhundar</strong> hade redan fått order. Inte att döda Zentri - att <em>fånga</em> honom. De hade silvernät vävda med besvärjelser, bindningar som skulle neutralisera hans magi. De hade följt honom sedan Jen, väntat på rätt tillfälle.</p>
+            <div class="box">
+        <span class="box__label">Vad Gordon inte visste</span>
+        <p><strong>Systrarnas spårhundar</strong> hade redan fått order. Inte att döda Zentri - att <em>fånga</em> honom. De hade silvernät vävda med besvärjelser, bindningar som skulle neutralisera hans magi. De hade följt honom sedan Jen, väntat på rätt tillfälle.</p>
                 <p><strong>Halrik Kord</strong> visste inte att hans attack skulle bli distraktion. Han trodde han plundrade en by. Han var bara verktyg.</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -371,9 +148,7 @@
 
             <p>Zentri kände ringen pulsera - inte smärta nu, utan <em>löfte</em>. Kraft. Makt. Överlevnad. Han hörde rösten, inte i öronen utan direkt i tankarnas kärna:</p>
 
-            <div class="quote">
-                <em>"De vill kedja dig. Förnedra dig. Bryta dig. Jag erbjuder frihet. Jag erbjuder makt. Allt jag kräver är... tillåtelse."</em>
-            </div>
+            <blockquote class="box--quote"><em>"De vill kedja dig. Förnedra dig. Bryta dig. Jag erbjuder frihet. Jag erbjuder makt. Allt jag kräver är... tillåtelse."</em></blockquote>
 
             <p>Silvernätet flög mot honom. Zentri såg det i slowmotion - trådarna som skulle snärja, binda, döva all magi. Han såg jägarnas ögon bakom maskerna - kalla, professionella, har fångat hundra magiker förut.</p>
 
@@ -439,9 +214,7 @@
 
             <p>Gordon reste sig. Axlarna raka. Rösten stadig trots att allt inom honom skrek.</p>
 
-            <div class="quote">
-                "Det var <em>deras</em> magi. Fienderna. De försökte besegra oss med demonkraft. Vi stoppade dem."
-            </div>
+            <blockquote class="box--quote">"Det var <em>deras</em> magi. Fienderna. De försökte besegra oss med demonkraft. Vi stoppade dem."</blockquote>
 
             <p>Lögnen var så smidig att den nästan trodde på sig själv.</p>
 
@@ -503,9 +276,7 @@
 
             <p>Och vänsterhanden - omsluten av en mekanisk järnhandske vars fingerleden rörde sig med olikt klickande.</p>
 
-            <div class="quote">
-                "Jag är <strong>Thrakka</strong>," sa hon. Rösten djup, accentuerad av tirak-tungans skärande konsonanter men grammatiken perfekt cirefalisk. "Lady Soffia skickar mig. Hon sa att ni behöver beskydd mot magijägare och hundar."
-            </div>
+            <blockquote class="box--quote">"Jag är <strong>Thrakka</strong>," sa hon. Rösten djup, accentuerad av tirak-tungans skärande konsonanter men grammatiken perfekt cirefalisk. "Lady Soffia skickar mig. Hon sa att ni behöver beskydd mot magijägare och hundar."</blockquote>
 
             <p>Paus. Thrakkas ögon scannate förbi Gordon, såg den brända cirkeln, den tomma platsen vid elden, bybornas traumatiserade ansikten.</p>
 
@@ -527,12 +298,10 @@
 
             <p>Gordon läste högt:</p>
 
-            <div class="quote">
-                <p><em>"Gordon Nahrzezia,</em></p>
+            <blockquote class="box--quote"><p><em>"Gordon Nahrzezia,</em></p>
                 <p><em>Denne är Thrakka, en som tjänat mig väl i fem års tid. Hon har överlevt arenornas brutality, Mahktahs kall, och värre saker än desertörer. Hon är ert beskydd på vägen hem - och längre, om ni behöver.</em></p>
                 <p><em>Lita på henne som ni litade på Zentri. Hon har färre demoner.</em></p>
-                <p><em>- Soffia"</em></p>
-            </div>
+                <p><em>- Soffia"</em></p></blockquote>
 
             <p>"Färre demoner," muttrade Kazrik. "Det är låg ribba just nu."</p>
 
@@ -560,9 +329,7 @@
 
             <p>Tystnad. Thrakka såg in i elden med ögon som sett andra eldar, värre eldar. När hon talade igen var rösten platare, som rapport snarare än berättelse:</p>
 
-            <div class="quote">
-                <p>"Jag föddes krigsslave i <strong>Arena Zhen Kar</strong>, Jargiens femte största. Föräldrar okända - ägdes som egendom från födsel. Vid tolv började träningen. Vid fjorton dödade jag min första motståndare för publikens nöje."</p>
-            </div>
+            <blockquote class="box--quote"><p>"Jag föddes krigsslave i <strong>Arena Zhen Kar</strong>, Jargiens femte största. Föräldrar okända - ägdes som egendom från födsel. Vid tolv började träningen. Vid fjorton dödade jag min första motståndare för publikens nöje."</p></blockquote>
 
             <p>Gordon stirrade. Inte chock - han hade sett slaveri förut - men den lugna presentationen av fakta vägrade någon slags reaktion. "Hur länge?"</p>
 
@@ -624,21 +391,36 @@
 
             <p>Vad det än kostade.</p>
 
-            <div class="info-box gold">
-                <div class="info-box-title">Kapitlets Pris</div>
-                <ul>
+            <div class="box">
+        <span class="box__label">Kapitlets Pris</span>
+        <ul>
                     <li><strong>Zentri Bredarsson:</strong> Försvunnen in i demonskens domän, dragits in i Skugglandet</li>
                     <li><strong>Systrarnas spårhundar:</strong> Fyra döda av blodsmagi, resten flydde i skräck</li>
                     <li><strong>Vargnäsets offer:</strong> Sju bybor dödade i försvaret</li>
                     <li><strong>Halrik Kords desertörer:</strong> Flydde efter att ha sett demonimagi</li>
                     <li><strong>Ny allierad:</strong> Thrakka "Järnhanden" ansluter sig till gruppen</li>
                 </ul>
-            </div>
+      </div>
+  </article>
 
-        </article>
-    </div>
+  <nav class="chapter-pager rows" aria-label="Kapitelnavigering">
+    <a class="row row--simple" href="kapitel-4-jargien.html">
+      <span class="row__meta">← Föregående</span>
+      <span class="row__title">Kapitel 04 · Jargien</span>
+    </a>
+    <a class="row row--simple" href="kapitel-6-vitterdal.html">
+      <span class="row__title">Kapitel 06 · Vitterdal</span>
+      <span class="row__meta">Nästa →</span>
+    </a>
+  </nav>
+</main>
 
-    <!-- Script for entity linking -->
-    <script src="kapitel-linkify.js"></script>
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
+
+<script src="kapitel-linkify.js"></script>
 </body>
 </html>

@@ -1,267 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitel 8: Evakueringen - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        /* Navigation */
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        /* Content Container */
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        /* Chapter Header */
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .chapter-meta {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Prose Styling */
-        .prose {
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-
-        .prose h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .prose h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .prose h4 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--mystic-purple);
-        }
-
-        .prose p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .prose ul, .prose ol {
-            margin: 1rem 0 1.5rem 2rem;
-            list-style-type: disc;
-        }
-
-        .prose ol {
-            list-style-type: decimal;
-        }
-
-        .prose li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        .prose strong {
-            color: var(--flame-orange);
-            font-weight: 600;
-        }
-
-        .prose em {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .prose hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        /* Info Box */
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--flame-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.purple {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .info-box.gold {
-            border-left-color: var(--gold);
-        }
-
-        .info-box.red {
-            border-left-color: var(--deep-red);
-        }
-
-        .info-box-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: var(--flame-orange);
-        }
-
-        .purple .info-box-title {
-            color: var(--mystic-purple);
-        }
-
-        .gold .info-box-title {
-            color: var(--gold);
-        }
-
-        .red .info-box-title {
-            color: var(--deep-red);
-        }
-
-        /* Image Styling */
-        .chapter-image {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 8px;
-            margin: 2rem auto;
-            display: block;
-            border: 2px solid var(--border);
-        }
-
-        .image-caption {
-            text-align: center;
-            font-style: italic;
-            color: var(--text-secondary);
-            margin-top: 0.5rem;
-            margin-bottom: 2rem;
-        }
-
-        /* Quote Styling */
-        .quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-        }
-
-        /* Entity Links - klickbara NPCs, platser, fraktioner */
-        .entity-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted currentColor;
-            transition: all 0.2s ease;
-        }
-        .entity-link:hover { border-bottom-style: solid; }
-        .entity-npc { color: var(--flame-orange); }
-        .entity-plats { color: var(--mystic-purple); }
-        .entity-fraktion { color: var(--gold); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 8: Evakueringen – Gravens Arv</title>
+<meta name="description" content="Evakueringen — ett kapitel i kampanjen Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Kampanjhistoria</div>
-        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <!-- Main Content -->
-    <div class="content-container">
-        <!-- Chapter Header -->
-        <header class="chapter-header">
-            <h1>Kapitel 8: Evakueringen</h1>
-            <div class="chapter-meta"><strong>Plats:</strong> Flykt från Vargnäset genom vinterlandskap till Raunfloden</div>
-            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Umnatak, Kazrik, Thrakka, Corvus + 41 överlevande bybor</div>
-            <div class="chapter-meta"><strong>Tidsperiod:</strong> 5 dagar genom helvetet (-15°C)</div>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="../index.html#kampanjen">Kapitel</a> / <span>Kapitel 08 – Evakueringen</span></div>
+</div>
 
-        <!-- Prose Content -->
-        <article class="prose">
-            <h2>Upptäckten</h2>
+<main class="wrap read-view">
+  <p class="eyebrow">Kapitel 08</p>
+  <h1 class="page-title">Evakueringen</h1>
+  <p class="subtitle">Flykt från Vargnäset genom vinterlandskap till Raunfloden · Gordon, Umnatak, Kazrik, Thrakka, Corvus + 41 överlevande bybor · 5 dagar genom helvetet (-15°C)</p>
+
+  <article class="prose prose--lead read-view__article">
+<h2>Upptäckten</h2>
 
             <p>De kunde se Vargnäset redan från skogslinjen. Dimman hade lättat över natten, och den tidiga morgonsolen kastade långa skuggor över byn. Men det var inte dimman som fick Gordon att stanna.</p>
 
@@ -285,12 +60,12 @@
 
             <p>Thrakka sa ingenting. Tiraken hade sett värre i arenan. Men detta var ingen arena. Det fanns ingen publik som jublade. Bara vind och snö och en död flicka vars enda brott var att skydda sina grannar.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Sankt Astrid - Martyren</div>
-                <p>Astrid hade ljugit för att skydda gruppen från häxjägarna. När Arvorns Hammare kom tillbaka till Vargnäset frågade de om "de farliga männen som kommit till byn."</p>
+            <div class="box box--warning">
+        <span class="box__label">Sankt Astrid - Martyren</span>
+        <p>Astrid hade ljugit för att skydda gruppen från häxjägarna. När Arvorns Hammare kom tillbaka till Vargnäset frågade de om "de farliga männen som kommit till byn."</p>
                 <p>Astrid sa att hon sett dem gå söderut. Hon visste att det var en lögn som kunde kosta. Hon gjorde det ändå.</p>
                 <p>Kommendör Corvus Askhar - fortfarande lojal mot ordens doktrin - korsfäste henne själv.</p>
-            </div>
+      </div>
 
             <h3>Corvus Uppenbarelse</h3>
 
@@ -356,14 +131,14 @@
 
             <p>"Jo," sa Corvus. "Jag gör det."</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">De 41 Överlevande</div>
-                <p><strong>Ledare och specialister (8):</strong> Eira Holm (byäldste), Ingvild (värdshusvärdinnan, läkare), Tomas Järnhjälm (fd. infanterist), Jonna Sköldbärare (fd. gränsvakt), Jossan Fallvind (scout), Skorda Bergsdotter (jägare), Tarek Halvhand (jägare), Faster Solveig (läskunnig)</p>
+            <div class="box">
+        <span class="box__label">De 41 Överlevande</span>
+        <p><strong>Ledare och specialister (8):</strong> Eira Holm (byäldste), Ingvild (värdshusvärdinnan, läkare), Tomas Järnhjälm (fd. infanterist), Jonna Sköldbärare (fd. gränsvakt), Jossan Fallvind (scout), Skorda Bergsdotter (jägare), Tarek Halvhand (jägare), Faster Solveig (läskunnig)</p>
                 <p><strong>Stridsdugliga vuxna (12):</strong> Dagne, Karn, Rolla, Torik, Ville, Halvdan, Stina, Krake, Nils, Gunnar, Olof, Magnus</p>
                 <p><strong>Ungdomar (8):</strong> Ragnar (16, Astrids pojkvän), Saga (19, naturmagi), Birger, Lovisa, Astrid Björkgren, Johan, Ylva Ekström, Embla</p>
                 <p><strong>Äldre (6):</strong> Morfar Ulf, Gammal-Erik, Mormor Astrid, Tant Hildur, Gumman Ragnhild, Farbror Noak</p>
                 <p><strong>Barn (7):</strong> Erik (13), Lilla-Maja (8), Margareta (9), Torkel (11), Sigrid (6), Klas (7), Gustav (4)</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -525,13 +300,13 @@
 
             <p>"Så det är sant. De har vänt dig." Hans hand gick till svärdet. "Synd. Du var en god officer."</p>
 
-            <div class="info-box gold">
-                <div class="info-box-title">De Närvarande Krafterna</div>
-                <p><strong>Flyktinggruppen:</strong> 5 rollpersoner + 39 civila</p>
+            <div class="box">
+        <span class="box__label">De Närvarande Krafterna</span>
+        <p><strong>Flyktinggruppen:</strong> 5 rollpersoner + 39 civila</p>
                 <p><strong>Arvorns Hammare:</strong> Kommendör Aldrich Järnkors + 6 tempelriddare</p>
                 <p><strong>Systrarna (Zorian-orden):</strong> Lady Isadora och Syster Moira observerade från skogskanten - osäkra på vilken sida de skulle välja</p>
                 <p><strong>Flodkaptenerna:</strong> 3 pråmar med besättning väntade nervöst på andra sidan floden</p>
-            </div>
+      </div>
 
             <h3>Över Isen</h3>
 
@@ -672,14 +447,14 @@
 
             <p>Sedan var hon borta.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Månljusets Nya Verklighet</div>
-                <p><strong>Kaptenen död.</strong> Styrman försvunnen. All navigationsexpertis borta.</p>
+            <div class="box box--warning">
+        <span class="box__label">Månljusets Nya Verklighet</span>
+        <p><strong>Kaptenen död.</strong> Styrman försvunnen. All navigationsexpertis borta.</p>
                 <p>Sten Knotbindare - hjälte men med begränsad kunskap - måste nu lära sig styra en flodpråm i vinterstorm.</p>
                 <p>Elva överlevande flyktingar (förlorade Tant Hildur).</p>
                 <p>Pråmen skadad, driver delvis okontrollerat.</p>
                 <p>De måste nå Grensfortet innan Arvorns Hammare hinner ikapp.</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -707,36 +482,33 @@
 
             <p>Och Corvus stod ensam vid rellingen, handen på bröstet, och kände efter hålet där skulden brukade vara. Hålet som allt detta inte lyckats fylla.</p>
 
-            <div class="quote">
-                "Vi räddade dem," sa Thrakka.<br>
+            <blockquote class="box--quote">"Vi räddade dem," sa Thrakka.<br>
                 "Inte alla," sa Gordon.<br>
-                "Ingen räddar alla," sa Thrakka. "Men vi räddade dem vi kunde."
-            </div>
+                "Ingen räddar alla," sa Thrakka. "Men vi räddade dem vi kunde."</blockquote>
 
-            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
-                Grensfortet väntade.<br>
+            <p class="chapter-close">Grensfortet väntade.<br>
                 Men även där fanns ingen verklig säkerhet.<br>
-                Inte längre.
-            </p>
-        </article>
-    </div>
+                Inte längre.</p>
+  </article>
 
-    <!-- Ladda data för auto-länkning -->
-    <script src="../wiki_data.js"></script>
-    <script src="../fraktioner_data.js"></script>
-    <script src="kapitel-linkify.js"></script>
+  <nav class="chapter-pager rows" aria-label="Kapitelnavigering">
+    <a class="row row--simple" href="kapitel-7-vargnaset.html">
+      <span class="row__meta">← Föregående</span>
+      <span class="row__title">Kapitel 07 · Vargnäset</span>
+    </a>
+    <a class="row row--simple" href="kapitel-9-mithera.html">
+      <span class="row__title">Kapitel 09 · Mithera</span>
+      <span class="row__meta">Nästa →</span>
+    </a>
+  </nav>
+</main>
 
-    <script>
-        // Smooth scroll for any future internal navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
+
+<script src="kapitel-linkify.js"></script>
 </body>
 </html>

@@ -1,238 +1,88 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fluff & Berättelser - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 2rem;
-        }
-
-        .back-link {
-            position: fixed;
-            top: 1rem;
-            left: 1rem;
-            background: var(--bg-card);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            text-decoration: none;
-            z-index: 100;
-            transition: all 0.3s ease;
-        }
-
-        .back-link:hover {
-            color: var(--flame-orange);
-            border-color: var(--flame-orange);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding-top: 3rem;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            margin-bottom: 3rem;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            color: var(--gold);
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .content-card {
-            background: linear-gradient(135deg, var(--bg-card), var(--bg-darker));
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: all 0.3s ease;
-            border-left: 4px solid var(--mystic-purple);
-        }
-
-        .content-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(255, 107, 74, 0.3);
-            border-left-color: var(--flame-orange);
-        }
-
-        .content-card h3 {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-            margin-bottom: 0.75rem;
-        }
-
-        .content-card .type {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            background: rgba(168, 85, 168, 0.2);
-            border: 1px solid var(--mystic-purple);
-            border-radius: 4px;
-            font-size: 0.85rem;
-            color: var(--mystic-purple);
-            margin-bottom: 1rem;
-        }
-
-        .content-card p {
-            color: var(--text-secondary);
-            line-height: 1.7;
-            margin-bottom: 0.5rem;
-        }
-
-        .content-card .excerpt {
-            font-style: italic;
-            color: var(--text-secondary);
-            border-left: 2px solid var(--border);
-            padding-left: 1rem;
-            margin-top: 1rem;
-            opacity: 0.8;
-        }
-
-        .category-songs { border-left-color: var(--gold); }
-        .category-songs .type { background: rgba(255, 165, 0, 0.2); border-color: var(--gold); color: var(--gold); }
-        .category-songs:hover { border-left-color: var(--gold); }
-
-        .category-fragments { border-left-color: var(--mystic-purple); }
-        .category-fragments .type { background: rgba(168, 85, 168, 0.2); border-color: var(--mystic-purple); color: var(--mystic-purple); }
-        .category-fragments:hover { border-left-color: var(--mystic-purple); }
-
-        .category-diaries { border-left-color: var(--flame-orange); }
-        .category-diaries .type { background: rgba(255, 107, 74, 0.2); border-color: var(--flame-orange); color: var(--flame-orange); }
-        .category-diaries:hover { border-left-color: var(--flame-orange); }
-
-        .category-poetry { border-left-color: var(--deep-red); }
-        .category-poetry .type { background: rgba(212, 83, 77, 0.2); border-color: var(--deep-red); color: var(--deep-red); }
-        .category-poetry:hover { border-left-color: var(--deep-red); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluff & Berättelser – Gravens Arv</title>
+<meta name="description" content="Sånger, fragment, dagböcker och recept från kampanjvärlden Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <a href="../index.html" class="back-link">← Tillbaka till Dashboard</a>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="index.html" aria-current="page">Fluff</a>
+    </nav>
+  </div>
+</header>
 
-    <div class="container">
-        <h1>Fluff & Berättelser</h1>
-        <p class="subtitle">Levande material från kampanjvärlden</p>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <span>Fluff</span></div>
+</div>
 
-        <section>
-            <h2>Tillgängligt Material</h2>
-            <div class="content-grid">
-                <!-- Sånger om Lera -->
-                <a href="lera-sånger.html" class="content-card category-songs">
-                    <h3>Sånger om Lera Skuggskeppare</h3>
-                    <span class="type">Sånger & Ballader</span>
-                    <p><strong>8 stycken</strong> - Piratkaptenen vars namn lever i sjömännens sånger</p>
-                    <p>Från de ashariska kuststäderna till de avlägsnaste tavernorna - hennes legend har många ansikten.</p>
-                    <div class="excerpt">"I Tuzan Rims gråa hamn en skugga föll, Lera, Skuggskepparen, rädslans troll..."</div>
-                </a>
+<main class="wrap read-view">
+  <p class="eyebrow">Fluff</p>
+  <h1 class="page-title">Fluff &amp; Berättelser</h1>
+  <p class="subtitle">Levande material från kampanjvärlden — sånger, fragment, dagböcker och recept.</p>
 
-                <!-- Mithera Fragment -->
-                <a href="mithera-fragment.html" class="content-card category-fragments">
-                    <h3>Fragment från Mithera & Skugglandet</h3>
-                    <span class="type">Fragment & Vittnesbörd</span>
-                    <p><strong>24 fragment</strong> - Barnramsor, brev, dagböcker och vittnesbörd</p>
-                    <p>Berättelser om det gråa riket där gränsen mellan världar är som tunnast.</p>
-                    <div class="excerpt">"Vandra inte nor om nor, där som dagen tappar spor..."</div>
-                </a>
+  <div class="section-head" style="margin-top: clamp(24px, 4vw, 44px);">
+    <h2>Tillgängligt material</h2>
+    <span class="meta">7 samlingar</span>
+  </div>
 
-                <!-- Resedagböcker & Korrespondens -->
-                <a href="resedagbocker.html" class="content-card category-diaries">
-                    <h3>Resedagböcker & Korrespondens</h3>
-                    <span class="type">Dagböcker, Krönikor & Brev</span>
-                    <p><strong>3 dokument</strong> - Skorda Bergsdotters fullständiga resa (8 dagboksanteckningar), Xian-Lis kompletta spårning (4 inskrifter) & Margarets brev till Gordon</p>
-                    <p>Skordas cynism. Xian-Lis poesi. Thrakkas episka strid vid Iskvarnsbryggan. Gammel-Eriks grav. Arcadius hund. Häxans stuga.</p>
-                    <div class="excerpt">"Pilen tog henne genom ögat. Rätt igenom. Men hon bara... fortsatte. Blodet som en röd slöja över ansiktet..."</div>
-                </a>
+  <ul class="rows" style="display: flex; flex-direction: column; gap: 20px; margin-top: 22px;">
+    <li><a href="lera-sånger.html" style="display: block;">
+      <span class="eyebrow">Sånger &amp; ballader · 8 stycken</span>
+      <span class="row__title" style="display: block; margin-top: 2px;">Sånger om Lera Skuggskeppare</span>
+      <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Piratkaptenen vars namn lever i sjömännens sånger — från de ashariska kuststäderna till de avlägsnaste tavernorna.</span>
+    </a></li>
+    <li><a href="thrakka-sånger.html" style="display: block;">
+      <span class="eyebrow">Sånger &amp; ballader · 8 sånger</span>
+      <span class="row__title" style="display: block; margin-top: 2px;">Sånger om Thrakka Järnhanden</span>
+      <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Tirak-gladiatorn vars namn ekar genom kontinenten — från cermirianska hjältesagor till Arvorns hatpredikan.</span>
+    </a></li>
+    <li><a href="mithera-fragment.html" style="display: block;">
+      <span class="eyebrow">Fragment &amp; vittnesbörd · 24 fragment</span>
+      <span class="row__title" style="display: block; margin-top: 2px;">Fragment från Mithera &amp; Skugglandet</span>
+      <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Barnramsor, brev, dagböcker och vittnesbörd om det gråa riket där gränsen mellan världar är som tunnast.</span>
+    </a></li>
+    <li><a href="resedagbocker.html" style="display: block;">
+      <span class="eyebrow">Dagböcker, krönikor &amp; brev · 3 dokument</span>
+      <span class="row__title" style="display: block; margin-top: 2px;">Resedagböcker &amp; Korrespondens</span>
+      <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Skorda Bergsdotters fullständiga resa, Xian-Lis spårning och Margarets brev till Gordon.</span>
+    </a></li>
+    <li><a href="silvius-sangbok.html" style="display: block;">
+      <span class="eyebrow">Dikt &amp; profetia · 1 dikt</span>
+      <span class="row__title" style="display: block; margin-top: 2px;">Silvius Strängrörares Sista Sångbok</span>
+      <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Bardens sista sång om Vitfläck snökatten och priset för kunskapen om andra sidan.</span>
+    </a></li>
+    <li><a href="stålsvärds-kavalerister.html" style="display: block;">
+      <span class="eyebrow">Soldatsånger, historier &amp; fältrapporter · 15+ stycken</span>
+      <span class="row__title" style="display: block; margin-top: 2px;">Stålsvärds Kavalerister: Lägerberättelser</span>
+      <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Runt lägereldar, på marschvägar och i messhallen — där Gordon, Thrakka och Umnatak jobbade innan äventyret började.</span>
+    </a></li>
+    <li><a href="kokbok.html" style="display: block;">
+      <span class="eyebrow">Recept &amp; minnen · 10 recept</span>
+      <span class="row__title" style="display: block; margin-top: 2px;">Kokbok från Mundana</span>
+      <span class="prose prose--secondary" style="display: block; margin-top: 3px; max-width: none;">Smaker och dofter från kampanjens platser — mat är minnen, och varje rätt bär en historia.</span>
+    </a></li>
+  </ul>
+</main>
 
-                <!-- Silvius Sångbok -->
-                <a href="silvius-sangbok.html" class="content-card category-poetry">
-                    <h3>Silvius Strängrörares Sista Sångbok</h3>
-                    <span class="type">Dikt & Profetia</span>
-                    <p><strong>1 dikt</strong> - Mötet vid Rimträdet</p>
-                    <p>Bardens sista sång om Vitfläck snökatten och priset för kunskapen om andra sidan.</p>
-                    <div class="excerpt">"Kan du sjunga om platser där snön faller uppåt?"</div>
-                </a>
-
-                <!-- Stålsvärds Kavalerister -->
-                <a href="stålsvärds-kavalerister.html" class="content-card category-diaries">
-                    <h3>Stålsvärds Kavalerister: Lägerberättelser</h3>
-                    <span class="type">Soldatsånger, Historier & Fältrapporter</span>
-                    <p><strong>15+ stycken</strong> - Sånger, skrönor och brev från soldatlivet</p>
-                    <p>Runt lägreldar, på marschvägar och i messhallen. Gordon, Thrakka och Umnatak jobbade här innan äventyret började. Cynism, kamratskap och sanningen om Tirakgraven.</p>
-                    <div class="excerpt">"Marsch, marsch, kompani av stål! Ett steg till, kamrat, bara ett steg till..."</div>
-                </a>
-
-                <!-- Thrakka Sånger -->
-                <a href="thrakka-sånger.html" class="content-card category-songs">
-                    <h3>Sånger om Thrakka Järnhanden</h3>
-                    <span class="type">Sånger & Ballader</span>
-                    <p><strong>8 sånger</strong> - Tirak-gladiatorn vars namn ekar genom kontinenten</p>
-                    <p>Från cermirians hjältesagor till arvorns hatpredikan - legenden om hon som fortsatte kämpa med en pil genom ögat.</p>
-                    <div class="excerpt">"Hon stod vid bryggan när mörkret kom, med axe i näven och blod som en ström..."</div>
-                </a>
-
-                <!-- Kokbok -->
-                <a href="kokbok.html" class="content-card category-diaries">
-                    <h3>Kokbok från Mundana</h3>
-                    <span class="type">Recept & Minnen</span>
-                    <p><strong>10 recept</strong> - Smaker och dofter från kampanjens platser</p>
-                    <p>Jens kryddade lamm. Vargnäsets viltgryta. Dvärgöl-brygd. Mat är minnen - och varje rätt bär en historia.</p>
-                    <div class="excerpt">"Detta recept fick jag av värdinnan på Gyllene Kamelens Oas. Hon sa att det brukade serveras vid vinterns högtider..."</div>
-                </a>
-            </div>
-        </section>
-    </div>
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
 </body>
 </html>

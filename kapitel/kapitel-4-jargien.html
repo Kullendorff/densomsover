@@ -1,234 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitel 4: Jargien - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .chapter-meta {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .prose {
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-
-        .prose h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .prose h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .prose h4 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--mystic-purple);
-        }
-
-        .prose p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .prose ul, .prose ol {
-            margin: 1rem 0 1.5rem 2rem;
-        }
-
-        .prose li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        .prose strong {
-            color: var(--flame-orange);
-            font-weight: 600;
-        }
-
-        .prose em {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .prose hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--flame-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.purple {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .info-box.gold {
-            border-left-color: var(--gold);
-        }
-
-        .info-box.red {
-            border-left-color: var(--deep-red);
-        }
-
-        .info-box-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: var(--flame-orange);
-        }
-
-        .purple .info-box-title {
-            color: var(--mystic-purple);
-        }
-
-        .gold .info-box-title {
-            color: var(--gold);
-        }
-
-        .red .info-box-title {
-            color: var(--deep-red);
-        }
-
-        .quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-        }
-
-        /* Entity Links - klickbara NPCs, platser, fraktioner */
-        .entity-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted currentColor;
-            transition: all 0.2s ease;
-        }
-        .entity-link:hover { border-bottom-style: solid; }
-        .entity-npc { color: var(--flame-orange); }
-        .entity-plats { color: var(--mystic-purple); }
-        .entity-fraktion { color: var(--gold); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 4: Jargien – Gravens Arv</title>
+<meta name="description" content="Jargien — ett kapitel i kampanjen Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Kampanjhistoria</div>
-        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <div class="content-container">
-        <header class="chapter-header">
-            <h1>Kapitel 4: Jargien</h1>
-            <div class="chapter-meta"><strong>Plats:</strong> Jargiska kejsardömet - från Abhan-hir-renk-Ghor till Vargnäset</div>
-            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik, Hagge</div>
-            <div class="chapter-meta"><strong>Tidsperiod:</strong> 15 dagar genom vinterlandskapet</div>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="../index.html#kampanjen">Kapitel</a> / <span>Kapitel 04 – Jargien</span></div>
+</div>
 
-        <article class="prose">
-            <p><em>En krönika om äventyrarna Gordon, Umnatak, Kazrik och Zentris resa genom Kejsardömet</em></p>
+<main class="wrap read-view">
+  <p class="eyebrow">Kapitel 04</p>
+  <h1 class="page-title">Jargien</h1>
+  <p class="subtitle">Jargiska kejsardömet - från Abhan-hir-renk-Ghor till Vargnäset · Gordon, Zentri, Umnatak, Kazrik, Hagge · 15 dagar genom vinterlandskapet</p>
+
+  <article class="prose prose--lead read-view__article">
+<p><em>En krönika om äventyrarna Gordon, Umnatak, Kazrik och Zentris resa genom Kejsardömet</em></p>
 
             <h2>I. Järnvägar genom snö</h2>
 
@@ -246,9 +54,7 @@
 
             <p><strong>Dorin Kallhammare</strong>, karavanens ledare, höjde sin röst över knarret från hjulen och hovarnas rytmiska slag mot den packade snön.</p>
 
-            <div class="quote">
-                "Vi följer Durikars handelslinje. Först håller vi oss till bergstrakterna, innan vi viker ner mot Korpklämman och Vargnäset. Kejsarvägen är relativt säker, men jag kommer inte att ljuga för er - vi är i rävsvin-terrängen. Soldater och prästmän är täta som svampar, och än värre - skatteindrivare. Håll era tungor i styr och era kappor dragna när vi passerar vaktposter. Låt mig sköta pratandet."
-            </div>
+            <blockquote class="box--quote">"Vi följer Durikars handelslinje. Först håller vi oss till bergstrakterna, innan vi viker ner mot Korpklämman och Vargnäset. Kejsarvägen är relativt säker, men jag kommer inte att ljuga för er - vi är i rävsvin-terrängen. Soldater och prästmän är täta som svampar, och än värre - skatteindrivare. Håll era tungor i styr och era kappor dragna när vi passerar vaktposter. Låt mig sköta pratandet."</blockquote>
 
             <p>Den erfarne dvärgen halade fram en läderpung fylld med silverkronor – en smörjgåva för svåra situationer. Han tillade med ett snett leende: "Och för era egna sakers skull, nämn inte ett ord om resan genom <strong>Tarkas</strong>. Cirefaliskas svartmagiker med ödlefolk-altare? Nej, den historien förblir mellan oss om ni inte vill stifta bekantskap med <strong>Daakkultens</strong> mer... entusiastiska förespråkare."</p>
 
@@ -296,17 +102,15 @@
 
             <p>Zentri svara inte, han håller bara amuletten hårt i sin hand. Den är varm, trots kylan, och känns märkligt bekant.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Amulettens syfte</div>
-                <p>Den blinda kvinnan var mer än en enkel marknadsgumma. Amuletten hon gav Zentri är ett skydd mot demonisk påverkan - ett försvar mot den röst som viskade i hans drömmar sedan graven.</p>
+            <div class="box">
+        <span class="box__label">Amulettens syfte</span>
+        <p>Den blinda kvinnan var mer än en enkel marknadsgumma. Amuletten hon gav Zentri är ett skydd mot demonisk påverkan - ett försvar mot den röst som viskade i hans drömmar sedan graven.</p>
                 <p>Zentri förstod det inte då, men gåvan skulle visa sig vara livsviktig i veckorna som kom.</p>
-            </div>
+      </div>
 
             <p>Samtidigt har Umnatak och Kazrik följt med Dorin till en smed i utkanten av marknaden. På vägen dit passerar de en utropare som högljutt läser upp kejserliga påbud, flankerad av två vakter i Jargiska kejsardömets uniformer.</p>
 
-            <div class="quote">
-                "...och vidare förkunnar Hans Kejserliga Majestät att alla rapporterade fall av häxeri och mörk magi ska omedelbart anmälas till närmaste Daak-tempel. Den som döljer kännedom om sådana aktiviteter ska anses medskyldig och möta samma straff..."
-            </div>
+            <blockquote class="box--quote">"...och vidare förkunnar Hans Kejserliga Majestät att alla rapporterade fall av häxeri och mörk magi ska omedelbart anmälas till närmaste Daak-tempel. Den som döljer kännedom om sådana aktiviteter ska anses medskyldig och möta samma straff..."</blockquote>
 
             <p>Kazrik suckar och mumlar: "Föga förvånande att detta rike är i nedgång. De bekämpar kunskapens ljus med vidskepelse."</p>
 
@@ -414,11 +218,11 @@
 
             <p>"De är fria nu," säger han, och i samma stund som Kazrik slutligen lyckas vrida loss den skulpterade stenen från brofästet slocknar det blå skenet. Umnatak lyckas vackla tillbaka till stranden innan hela bron, med ett dånande ljud, kollapsar ned i vattnet.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Colonisk blodsmagi</div>
-                <p>Colonerna offrade fångar och slavar när de byggde vissa konstruktioner, och band deras själar till stenverket för att förstärka det. En fasansfull praktik, men effektiv.</p>
+            <div class="box">
+        <span class="box__label">Colonisk blodsmagi</span>
+        <p>Colonerna offrade fångar och slavar när de byggde vissa konstruktioner, och band deras själar till stenverket för att förstärka det. En fasansfull praktik, men effektiv.</p>
                 <p>Umnataks shamanistiska förmågor och Kazriks kunskap om colonisk arkitektur räddade de bundna själarna - och möjligen Umnataks eget liv.</p>
-            </div>
+      </div>
 
             <p>Efteråt, när lägereldarna brinner lågt och de flesta sover, sitter Umnatak, Zentri och Kazrik tillsammans.</p>
 
@@ -496,17 +300,15 @@
 
             <p>Han sjunger på ausiska, ord som ingen av de andra förstår, men de känner kraften i dem. Zentri känner hur magin flödar genom marken under dem, gammalt och djupt. Kazrik ritar runor i snön, återställer de utplånade namnen så gott han kan.</p>
 
-            <div class="quote">
-                "Ni som förlorade era namn, hör oss nu. Vi minns er. Vi erkänner sviket. Vi släpper er fria."
-            </div>
+            <blockquote class="box--quote">"Ni som förlorade era namn, hör oss nu. Vi minns er. Vi erkänner sviket. Vi släpper er fria."</blockquote>
 
             <p>Umnataks röst når en klimax, och plötsligt känner de alla det - en vind som inte är naturlig, ett sus av röster som tackar dem och sedan tysnar. I gruvan under dem upplöses Rådslingan äntligen, själarna den bestod av befriade från sin förbannelse.</p>
 
-            <div class="info-box gold">
-                <div class="info-box-title">Umnataks genombrott</div>
-                <p>Detta var ögonblicket då Umnatak verkligen blev schaman. Inte bara genom Thogas initiering, utan genom att utöva kraften - att förmedla mellan världarna, att befria de bundna.</p>
+            <div class="box">
+        <span class="box__label">Umnataks genombrott</span>
+        <p>Detta var ögonblicket då Umnatak verkligen blev schaman. Inte bara genom Thogas initiering, utan genom att utöva kraften - att förmedla mellan världarna, att befria de bundna.</p>
                 <p>Från denna natt bar han inte bara titeln. Han levde den.</p>
-            </div>
+      </div>
 
             <p>När de återvänder till värdshuset är Grimdal Tungöga tyst länge. Slutligen häller han upp öl åt dem alla.</p>
 
@@ -620,9 +422,7 @@
 
             <p>Natten är orolig. Zentri drömmer intensivt om en kvinna som ropar på hjälp från andra sidan en flammande barriär. I drömmen bär kvinnan den blinda spåkvinnans ansikte, men när han kommer närmare förvandlas hon till någon annan - en yngre kvinna med mörkt hår som han aldrig sett förut.</p>
 
-            <div class="quote">
-                "Vaka över dem," viskar rösten i hans dröm. "De är dina att beskydda. Släpp in mig så kan jag ge dig makten."
-            </div>
+            <blockquote class="box--quote">"Vaka över dem," viskar rösten i hans dröm. "De är dina att beskydda. Släpp in mig så kan jag ge dig makten."</blockquote>
 
             <p>Zentri vaknar med ett ryck, kallsvettig trots kylan. På andra sidan lägerelden sitter Umnatak, vaken och tyst bevakande honom.</p>
 
@@ -642,9 +442,7 @@
 
             <p>Dorin pekar mot passet som skymtar bortom byn.</p>
 
-            <div class="quote">
-                "Där är Korpklämman. När vi väl tagit oss igenom den är vi på god väg mot Jarla och Asharien. Men först måste vi vila här och förbereda oss för passet."
-            </div>
+            <blockquote class="box--quote">"Där är Korpklämman. När vi väl tagit oss igenom den är vi på god väg mot Jarla och Asharien. Men först måste vi vila här och förbereda oss för passet."</blockquote>
 
             <p>När karavanen närmar sig portarna till Vargnäset märker de en ovanlig livlighet i byn. Folk rör sig snabbt mellan husen, och vakt har positionerat sig vid palissaden.</p>
 
@@ -678,12 +476,12 @@
 
             <p>När de passerar genom portarna till Vargnäset möts de av bybornas vaksamma men hoppfulla blickar. Längre bort, högt ovanför byn, markerar Korklämmans mörka silhuett både utmaning och löfte om fortsatt färd.</p>
 
-            <div class="info-box gold">
-                <div class="info-box-title">Kapitel 5 väntar</div>
-                <p>Framför dem ligger nu den lilla byn, inklämd mellan den skogbevuxna dalgången och bergets dramatiska profil. Det sista solljuset glimmar i snön på hustaken, och ljudet av hammarslag mot metall hörs från smedjan.</p>
+            <div class="box">
+        <span class="box__label">Kapitel 5 väntar</span>
+        <p>Framför dem ligger nu den lilla byn, inklämd mellan den skogbevuxna dalgången och bergets dramatiska profil. Det sista solljuset glimmar i snön på hustaken, och ljudet av hammarslag mot metall hörs från smedjan.</p>
                 <p>Men det är inte bara hotet från Halrik Kords rövare som hänger över Vargnäset. I skuggorna känner Umnatak andras närvaro, något som observerar och väntar. Zentri känner en närvaro igen, svagt men persistent, som en varning.</p>
                 <p>Denna gränsort, halvt jargisk och halvt vildmark, döljer sina egna hemligheter. Men först måste de hantera det omedelbara hotet.</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -694,9 +492,26 @@
             <p>Nu står de inför nästa prövning - att försvara en by mot en överlägsen styrka, och att säkra sin passage genom <strong>Korpklämman</strong>. Men i skuggorna väntar andra faror: <strong>Arvorns Hammares</strong> mystiska aktiviteter, den okända fången i deras vagn, den grå gestalten i skogen, och de hemligheter som Vargnäset självt verkar dölja.</p>
 
             <p>Resan genom Jargien är på många sätt slutet på en etapp, men början på nästa. När de blickar mot Korklämmans mörka siluett vet de att samma kalla stjärnor som vakat över deras väg genom det jargiska vinterlandskapet fortsätter lysa över de prövningar som väntar dem bortom passet.</p>
-        </article>
-    </div>
+  </article>
 
-    <script src="kapitel-linkify.js"></script>
+  <nav class="chapter-pager rows" aria-label="Kapitelnavigering">
+    <a class="row row--simple" href="kapitel-3-tarkas.html">
+      <span class="row__meta">← Föregående</span>
+      <span class="row__title">Kapitel 03 · Tarkas</span>
+    </a>
+    <a class="row row--simple" href="kapitel-5-vargnaset.html">
+      <span class="row__title">Kapitel 05 · Vargnäset</span>
+      <span class="row__meta">Nästa →</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
+
+<script src="kapitel-linkify.js"></script>
 </body>
 </html>

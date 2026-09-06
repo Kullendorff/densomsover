@@ -1,234 +1,42 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitel 2: Uppdraget att Hitta Hagge - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .chapter-meta {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .prose {
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-
-        .prose h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .prose h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .prose h4 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--mystic-purple);
-        }
-
-        .prose p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .prose ul, .prose ol {
-            margin: 1rem 0 1.5rem 2rem;
-        }
-
-        .prose li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        .prose strong {
-            color: var(--flame-orange);
-            font-weight: 600;
-        }
-
-        .prose em {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .prose hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--flame-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.purple {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .info-box.gold {
-            border-left-color: var(--gold);
-        }
-
-        .info-box.red {
-            border-left-color: var(--deep-red);
-        }
-
-        .info-box-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: var(--flame-orange);
-        }
-
-        .purple .info-box-title {
-            color: var(--mystic-purple);
-        }
-
-        .gold .info-box-title {
-            color: var(--gold);
-        }
-
-        .red .info-box-title {
-            color: var(--deep-red);
-        }
-
-        .quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-        }
-
-        /* Entity Links - klickbara NPCs, platser, fraktioner */
-        .entity-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted currentColor;
-            transition: all 0.2s ease;
-        }
-        .entity-link:hover { border-bottom-style: solid; }
-        .entity-npc { color: var(--flame-orange); }
-        .entity-plats { color: var(--mystic-purple); }
-        .entity-fraktion { color: var(--gold); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 2: Uppdraget att Hitta Hagge – Gravens Arv</title>
+<meta name="description" content="Uppdraget att Hitta Hagge — ett kapitel i kampanjen Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Kampanjhistoria</div>
-        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <div class="content-container">
-        <header class="chapter-header">
-            <h1>Kapitel 2: Uppdraget att Hitta Hagge</h1>
-            <div class="chapter-meta"><strong>Plats:</strong> Jarla → Spegelmåne → Tuzan Rim → Lundnäs → Jen</div>
-            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik</div>
-            <div class="chapter-meta"><strong>Tidsperiod:</strong> Tre månader efter Grensfortet</div>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="../index.html#kampanjen">Kapitel</a> / <span>Kapitel 02 – Uppdraget att Hitta Hagge</span></div>
+</div>
 
-        <article class="prose">
-            <h2>Mötet i Jarla</h2>
+<main class="wrap read-view">
+  <p class="eyebrow">Kapitel 02</p>
+  <h1 class="page-title">Uppdraget att Hitta Hagge</h1>
+  <p class="subtitle">Jarla → Spegelmåne → Tuzan Rim → Lundnäs → Jen · Gordon, Zentri, Umnatak, Kazrik · Tre månader efter Grensfortet</p>
+
+  <article class="prose prose--lead read-view__article">
+<h2>Mötet i Jarla</h2>
 
             <p>Tre månader är en lång tid att bära hemligheter.</p>
 
@@ -248,19 +56,17 @@
 
             <p>Hon satte sig utan att be om tillåtelse.</p>
 
-            <div class="quote">
-                "Min äldste son ligger döende. Min yngste son är försvunnen. Jag har inte tid för artigheter."
-            </div>
+            <blockquote class="box--quote">"Min äldste son ligger döende. Min yngste son är försvunnen. Jag har inte tid för artigheter."</blockquote>
 
-            <div class="info-box gold">
-                <div class="info-box-title">Uppdraget</div>
-                <ul>
+            <div class="box">
+        <span class="box__label">Uppdraget</span>
+        <ul>
                     <li><strong>Talarra</strong>, äldste sonen, döende av sjukdom ingen läkare kunde bota</li>
                     <li><strong>Hadrian "Hagge"</strong>, yngre sonen, måste återföras som arvinge</li>
                     <li>Hagge hade förvisats på <em>falska anklagelser</em> från sin bror Talarra</li>
                     <li>Sist rapporterades han ha rest till <strong>Tuzan Rim</strong> för att ansluta sig till legosoldatförbundet <strong>De Röda Vargarna</strong></li>
                 </ul>
-            </div>
+      </div>
 
             <p>Gordon såg på de andra. Kazrik nickade nästan omärkligt. Umnatak stirrade på något över Soffias axel - något ingen annan kunde se. Zentri gnuggade sin handled mot bordet, som om något sved där inne.</p>
 
@@ -294,9 +100,7 @@
 
             <p>Tafrandir stod mellan dem och resten av skeppet, petyan dansande i månskenet.</p>
 
-            <div class="quote">
-                "Kiryaalven som hör för bra för sitt eget bästa. Vi kommer för pojken. Du är bara... i vägen."
-            </div>
+            <blockquote class="box--quote">"Kiryaalven som hör för bra för sitt eget bästa. Vi kommer för pojken. Du är bara... i vägen."</blockquote>
 
             <p>Den ljushåriga systern hade mjölkvita ögon som lyste i natten. Den mörkhåriga var brutal, direkt, effektiv.</p>
 
@@ -308,9 +112,7 @@
 
             <p>Petyan föll.</p>
 
-            <div class="quote">
-                "NEJ! Inte min vackra petya!"
-            </div>
+            <blockquote class="box--quote">"NEJ! Inte min vackra petya!"</blockquote>
 
             <p>Tafrandirs sista ord på däck. Han kastade sig mot relingen, försökte nå sitt vapen, och den ljushåriga systern <em>knuffade</em>. Den mörkhåriga, som höll hans ben, följde med ner i det svarta vattnet.</p>
 
@@ -318,12 +120,12 @@
 
             <p>Sedan - tystnad.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Sanningen om Tafrandir</div>
-                <p>Kiryaalven överlevde. Sparkade sig fri från den mörkhåriga systern, simmade till land någonstans längs floden. Hans älskade petya ligger fortfarande på flodbottnen.</p>
+            <div class="box box--warning">
+        <span class="box__label">Sanningen om Tafrandir</span>
+        <p>Kiryaalven överlevde. Sparkade sig fri från den mörkhåriga systern, simmade till land någonstans längs floden. Hans älskade petya ligger fortfarande på flodbottnen.</p>
                 <p>Hans öde förblir okänt. Lever han? Söker han sitt vapen? Kiryaalver är seglivade - men tre hundra år betyder inget mot sorg.</p>
                 <p><em>Systrarna sökte Zentri för demonringen. De hade följt spåren sedan tirakgraven. Tafrandir offrade sig för passagerare som inte ens visste om faran.</em></p>
-            </div>
+      </div>
 
             <hr>
 
@@ -351,14 +153,14 @@
 
             <p>Sylva log. Det var inte ett vänligt leende. "Information kostar. Vad har ni att erbjuda?"</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Informanterna</div>
-                <ul>
+            <div class="box">
+        <span class="box__label">Informanterna</span>
+        <ul>
                     <li><strong>Zan Fjädertunga</strong> - Gatumusikant vid Hamnkvarteret. Hade hört en melodi kidnapparna nynnat. Melankolisk och skarp.</li>
                     <li><strong>Theda</strong> - F.d. medlem i kidnappningsgänget. Hade fått kalla fötter. Rädd och villig att prata.</li>
                     <li><strong>Rihal</strong> - Hamnkapten som sett kidnapparna och deras fånge lasta ombord på ett skepp.</li>
                 </ul>
-            </div>
+      </div>
 
             <h3>De Röda Vargarna</h3>
 
@@ -376,10 +178,10 @@
 
             <p>"Många är på väg hit." Berak ryckte på axlarna. "Få kommer fram."</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Upptäckten</div>
-                <p>Hagge hade <strong>aldrig</strong> nått De Röda Vargarna. Någonstans mellan Vitterdal och Tuzan Rim hade han försvunnit. Kidnappade. Såld.</p>
-            </div>
+            <div class="box box--warning">
+        <span class="box__label">Upptäckten</span>
+        <p>Hagge hade <strong>aldrig</strong> nått De Röda Vargarna. Någonstans mellan Vitterdal och Tuzan Rim hade han försvunnit. Kidnappade. Såld.</p>
+      </div>
 
             <hr>
 
@@ -397,15 +199,13 @@
 
             <p>Lera log. Det var ett leende som visste exakt vad det var värt.</p>
 
-            <div class="quote">
-                "Såld. Till Malik Al-Zahir i Jen. En köpman med... specifika smaker. Jag kan ge er namn. Adresser. Till och med en introduktion." Hon lutade sig framåt. "Men ingenting är gratis. Inte ens information om var era fienders fiender gömmer sig."
-            </div>
+            <blockquote class="box--quote">"Såld. Till Malik Al-Zahir i Jen. En köpman med... specifika smaker. Jag kan ge er namn. Adresser. Till och med en introduktion." Hon lutade sig framåt. "Men ingenting är gratis. Inte ens information om var era fienders fiender gömmer sig."</blockquote>
 
-            <div class="info-box gold">
-                <div class="info-box-title">Lera Skuggskeppare</div>
-                <p>Både älskad och fruktad. Komplex - kunde vara grymt rå eller rättvis och lojal. Hederskodex mot fångar som förtjänade respekt. Beskyddare av Ashariens folk mot kolonialmakter.</p>
+            <div class="box">
+        <span class="box__label">Lera Skuggskeppare</span>
+        <p>Både älskad och fruktad. Komplex - kunde vara grymt rå eller rättvis och lojal. Hederskodex mot fångar som förtjänade respekt. Beskyddare av Ashariens folk mot kolonialmakter.</p>
                 <p>Hon såg sig själv som väktare av balansen. Andra såg henne som pirat, mördare, slaver. Sanningen låg någonstans däremellan.</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -421,10 +221,10 @@
 
             <p>Pärlorna var nycklar till en portal för onda makter. Deras aura drev djur till galenskap och förstärkte allt mörkt i människors sinnen. <strong>Gripar</strong> hade dräpt byns präst, fader Rubiel. <strong>Riddar Warg Spegelsköld</strong>, en Zoriánriddare som kommit på Rubiels begäran, hade själv blivit farligt paranoid av en pärla han bar.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">De fyra pärlorna</div>
-                <p>Utspridda över byn och omgivningarna: en hos den paranoide <strong>Riddar Warg</strong>. En på botten av <strong>gravgårdsbrunnen</strong>. En borttappad i skogen av Wargs döde väpnare Oke, hittad av grottrollet <strong>Dhormel</strong>. Och den sista - hos griparna själva, tillsammans med fader Rubiels kvarlevor.</p>
-            </div>
+            <div class="box">
+        <span class="box__label">De fyra pärlorna</span>
+        <p>Utspridda över byn och omgivningarna: en hos den paranoide <strong>Riddar Warg</strong>. En på botten av <strong>gravgårdsbrunnen</strong>. En borttappad i skogen av Wargs döde väpnare Oke, hittad av grottrollet <strong>Dhormel</strong>. Och den sista - hos griparna själva, tillsammans med fader Rubiels kvarlevor.</p>
+      </div>
 
             <p>Gruppen samlade dem en efter en. <strong>Häxan Fredricca</strong> - en godmodig kvinna med katter och djup kunskap om mörka krafter - blev deras allierade. Jägaren <strong>Båg-Pieter</strong>, en av få som motstod pärlpåverkan, vägledde dem genom skogarna. Till och med grottrollet <strong>Dhormel</strong> hjälpte till, på sitt eget vis.</p>
 
@@ -432,11 +232,11 @@
 
             <p>Fyra svarta pärlor, förda långt ut till havs och sänkta i djupet. Regnet upphörde innan de nådde botten. Solen återvände till Lundnäs.</p>
 
-            <div class="info-box gold">
-                <div class="info-box-title">Hjältarna i Lundnäs</div>
-                <p>Byborna skrev en ballad om dem. Ragnar gav bort sin brännvin - <em>"för han behöver det inte längre"</em>. Gruppens rykte i regionen växte. De hade kommit som skeppsbrutna främlingar och lämnade som hjältar.</p>
+            <div class="box">
+        <span class="box__label">Hjältarna i Lundnäs</span>
+        <p>Byborna skrev en ballad om dem. Ragnar gav bort sin brännvin - <em>"för han behöver det inte längre"</em>. Gruppens rykte i regionen växte. De hade kommit som skeppsbrutna främlingar och lämnade som hjältar.</p>
                 <p><em>"I regnets skugga, i byn som gråter, fyra hjältar kom för att mota faror. Zentri med sin stav och Kazrik med sitt mod, Gordon den vise och Umnatak så god..."</em></p>
-            </div>
+      </div>
 
             <hr>
 
@@ -478,17 +278,15 @@
 
             <p>Laila log. Det var inget vänligt i det leendet.</p>
 
-            <div class="quote">
-                "Jag köpte honom. Lagligt, enligt pappren. Om ni vill ha honom... ger ni mig vad jag vill ha."
-            </div>
+            <blockquote class="box--quote">"Jag köpte honom. Lagligt, enligt pappren. Om ni vill ha honom... ger ni mig vad jag vill ha."</blockquote>
 
             <p>Det hon ville ha var enkelt och fruktansvärt: ett barn. Hagges barn.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Kazriks Bevis</div>
-                <p>Dvärgens bokföring - hans ändlösa anteckningar, hans spårning av papper och sigill - avslöjade sanningen. Hagge hade <strong>olagligt</strong> förslavats. Pappren var förfalskade. Köpet var en lögn.</p>
+            <div class="box box--warning">
+        <span class="box__label">Kazriks Bevis</span>
+        <p>Dvärgens bokföring - hans ändlösa anteckningar, hans spårning av papper och sigill - avslöjade sanningen. Hagge hade <strong>olagligt</strong> förslavats. Pappren var förfalskade. Köpet var en lögn.</p>
                 <p>Det räckte för att pressa Laila. Men inte för att stoppa henne helt.</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -514,11 +312,11 @@
 
             <p>Efteråt sa ingen något. Inte om magin. Inte om ögonen. Inte om vad det betydde.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Efterdyningarna</div>
-                <p>Hagge befriades. Laila fick sitt barn - ett barn han aldrig skulle känna, aldrig skulle se växa upp. Ett pris betalt i kött och blod och skuld.</p>
+            <div class="box">
+        <span class="box__label">Efterdyningarna</span>
+        <p>Hagge befriades. Laila fick sitt barn - ett barn han aldrig skulle känna, aldrig skulle se växa upp. Ett pris betalt i kött och blod och skuld.</p>
                 <p>Gruppen lämnade Jen i gryningen. Ingen såg tillbaka.</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -532,9 +330,7 @@
 
             <p>Hagge vände sig mot honom. Hans ansikte var uttryckslöst.</p>
 
-            <div class="quote">
-                "Är jag? Fri från Laila, kanske. Men jag lämnade ett barn där. Mitt barn. Och jag kommer aldrig veta om det är en son eller dotter, om det lever eller dör, om det växer upp och hatar mig för att jag gick."
-            </div>
+            <blockquote class="box--quote">"Är jag? Fri från Laila, kanske. Men jag lämnade ett barn där. Mitt barn. Och jag kommer aldrig veta om det är en son eller dotter, om det lever eller dör, om det växer upp och hatar mig för att jag gick."</blockquote>
 
             <p>Han vände sig tillbaka mot havet.</p>
 
@@ -546,28 +342,28 @@
 
             <hr>
 
-            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
-                Hagge var räddad. Priset var betalt.<br>
-                Men resan hem skulle visa sig vara längre än någon av dem anat.
-            </p>
-        </article>
-    </div>
+            <p class="chapter-close">Hagge var räddad. Priset var betalt.<br>
+                Men resan hem skulle visa sig vara längre än någon av dem anat.</p>
+  </article>
 
-    <!-- Ladda data för auto-länkning -->
-    <script src="../wiki_data.js"></script>
-    <script src="../fraktioner_data.js"></script>
-    <script src="kapitel-linkify.js"></script>
+  <nav class="chapter-pager rows" aria-label="Kapitelnavigering">
+    <a class="row row--simple" href="kapitel-1-jakten.html">
+      <span class="row__meta">← Föregående</span>
+      <span class="row__title">Kapitel 01 · Jakten</span>
+    </a>
+    <a class="row row--simple" href="kapitel-3-tarkas.html">
+      <span class="row__title">Kapitel 03 · Tarkas</span>
+      <span class="row__meta">Nästa →</span>
+    </a>
+  </nav>
+</main>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
+
+<script src="kapitel-linkify.js"></script>
 </body>
 </html>

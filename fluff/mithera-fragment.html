@@ -1,231 +1,120 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragment från Mithera & Skugglandet - Gravens Arv</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --gold: #ffa500;
-            --bg-dark: #0a0a0a;
-            --bg-card: #1a1a1a;
-            --text-light: #e0e0e0;
-            --text-muted: #888;
-            --border: #333;
-        }
-        body {
-            background: linear-gradient(180deg, #0a0a0a 0%, #0d0818 50%, #0a0a0a 100%);
-            color: var(--text-light);
-            font-family: 'Georgia', serif;
-            line-height: 1.7;
-            padding: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            margin: -2rem -2rem 2rem -2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-        .back-btn:hover { background: var(--deep-red); }
-        h1 {
-            font-size: 2.5rem;
-            color: var(--mystic-purple);
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-        .subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            font-style: italic;
-            margin-bottom: 2rem;
-        }
-        h2 {
-            color: var(--mystic-purple);
-            border-bottom: 2px solid var(--mystic-purple);
-            padding-bottom: 0.5rem;
-            margin: 2.5rem 0 1rem 0;
-        }
-        .fragment {
-            background: var(--bg-card);
-            border-left: 4px solid var(--mystic-purple);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .fragment-header {
-            color: var(--gold);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-            font-style: italic;
-        }
-        .fragment-type {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-        .fragment-text {
-            color: var(--text-light);
-            line-height: 1.8;
-        }
-        .fragment-text em {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-        .poem {
-            font-style: italic;
-            line-height: 2;
-            padding: 1rem;
-            border-left: 2px solid var(--gold);
-            margin: 1rem 0;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #333;
-            margin: 2rem 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fragment från Mithera & Skugglandet – Gravens Arv</title>
+<meta name="description" content="24 fragment — barnramsor, brev, dagböcker och vittnesbörd om det gråa riket.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Fluff & Berättelser</div>
-        <button class="back-btn" onclick="window.location.href='index.html'">← Tillbaka till Fluff</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="index.html" aria-current="page">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <h1>Fragment från Mithera & Skugglandet</h1>
-    <p class="subtitle">Berättelser om det gråa riket där gränsen mellan världar är som tunnast</p>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="index.html">Fluff</a> / <span>Fragment från Mithera & Skugglandet</span></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">1. Barnramsa från Cermiras gränsbygder</div>
-        <div class="fragment-type">Sjungs alltid före läggdags</div>
-        <div class="fragment-text poem">
-"Vandra inte nor om nor<br>
+<main class="wrap read-view">
+  <p class="eyebrow">Fragment & vittnesbörd</p>
+  <h1 class="page-title">Fragment från Mithera & Skugglandet</h1>
+  <p class="subtitle">Berättelser om det gråa riket där gränsen mellan världar är som tunnast</p>
+
+  <article class="prose read-view__article">
+<div class="box">
+  <span class="box__label">1. Barnramsa från Cermiras gränsbygder</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Sjungs alltid före läggdags</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Vandra inte nor om nor<br>
 Där som dagen tappar spor<br>
 Där som träden viskar namn<br>
 På de barn som aldrig kom hem<br>
 Lova, lova med din hand<br>
 Att du stannar i vårt land<br>
 För den som går till andra sidan<br>
-Kommer hem men är ej densamme"
-        </div>
-    </div>
+Kommer hem men är ej densamme"</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">2. Klotter på insidan av en fängelsecell i Jarla</div>
-        <div class="fragment-type">Ristat med naglar i stenen</div>
-        <div class="fragment-text">
-"Han kom tillbaka från andra sidan. Sa att han tjänat Månskenshovet i tusen nätter. Vi skrattade. Tills vi såg märket. Det lyste i månljuset. Som silver under huden.<br><br>
+    <div class="box">
+  <span class="box__label">2. Klotter på insidan av en fängelsecell i Jarla</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Ristat med naglar i stenen</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Han kom tillbaka från andra sidan. Sa att han tjänat Månskenshovet i tusen nätter. Vi skrattade. Tills vi såg märket. Det lyste i månljuset. Som silver under huden.<br><br>
 Värre var ögonen. De såg två världar samtidigt. När han tittade på dig såg han också din skugga. Din andra du. Den du som valde annorlunda.<br><br>
-De brände honom på torget. Men innan han dog sa han: 'Jag är redan där. Jag tittar på er nu. Från andra sidan.'"
-        </div>
-    </div>
+De brände honom på torget. Men innan han dog sa han: 'Jag är redan där. Jag tittar på er nu. Från andra sidan.'"</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">3. Ur handlaren Gorvek Stenbrynns resedagbok</div>
-        <div class="fragment-type">Prydlig handelsskrift, daterad för sju år sedan</div>
-        <div class="fragment-text">
-<strong>Dag 12, Norra handelsvägen mot Mithera</strong><br>
+    <div class="box">
+  <span class="box__label">3. Ur handlaren Gorvek Stenbrynns resedagbok</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Prydlig handelsskrift, daterad för sju år sedan</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;"><strong>Dag 12, Norra handelsvägen mot Mithera</strong><br>
 Karavanen stannade vid milstenen med det uthuggna ögat. Ingen ville säga varför. När jag frågade spottade köpman Harvik tre gånger och mumlade något om "De som vandrar mellan". Löjligt. Men jag noterar att vi reste två extra timmar i skymningen för att inte slå läger där.<br><br>
 <strong>Dag 13</strong><br>
-Hörde en av vakterna berätta för den andre att han sett någon stå vid milstenen när han tittade bakåt. "Stod helt stilla. Som om den väntade." När jag frågade vad han menade såg han på mig som om jag vore barn. "Vissa platser tillhör dem, herre. Bäst att inte dröja."
-        </div>
-    </div>
+Hörde en av vakterna berätta för den andre att han sett någon stå vid milstenen när han tittade bakåt. "Stod helt stilla. Som om den väntade." När jag frågade vad han menade såg han på mig som om jag vore barn. "Vissa platser tillhör dem, herre. Bäst att inte dröja."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">4. Sjömansberättelse från Ismarsken</div>
-        <div class="fragment-type">Berättad av Bosun Harrek, nedtecknad i Targus hamn</div>
-        <div class="fragment-text">
-"Vi seglade för nära Vinteröarna den gången. Dimman kom från ingenstans. Kall som döden själv.<br><br>
+    <div class="box">
+  <span class="box__label">4. Sjömansberättelse från Ismarsken</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Berättad av Bosun Harrek, nedtecknad i Targus hamn</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Vi seglade för nära Vinteröarna den gången. Dimman kom från ingenstans. Kall som döden själv.<br><br>
 Kaptenen beordrade ankare. Men när dimman lättade... havet var fel. Vattnet var svart som bläck men genomskinligt. Kunde se rakt ner i djupet. Och där nere... städer. Upp och nervända städer med torn som växte neråt.<br><br>
 Värst var spegelbilderna. Såg oss själva i vattnet. Men de rörde sig annorlunda. En av dem - min spegelbild - höll upp en skylt. På den stod: 'Vänd om innan skulden binder er.'<br><br>
-Vi rodde för våra liv. Men Yngve tittade för länge i vattnet. När vi kom tillbaka till Targus var han fortfarande med oss. Men ibland, när månen är ny, ser man honom stå vid relingen. Och pratar med någon som inte är där."
-        </div>
-    </div>
+Vi rodde för våra liv. Men Yngve tittade för länge i vattnet. När vi kom tillbaka till Targus var han fortfarande med oss. Men ibland, när månen är ny, ser man honom stå vid relingen. Och pratar med någon som inte är där."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">5. Fragment av brev, funnet i ruinerna av Västra Tornet</div>
-        <div class="fragment-type">Bläcket blekt, pappret skadat av fukt</div>
-        <div class="fragment-text">
-"...kan inte längre förneka vad mina egna ögon bevittnat. Korporal Jenniks försvinnande var ingen desertering. Jag såg honom själv gå in i skuggorna vid arsenalen. Men det var inte han som kom ut. Det bar hans ansikte, hans kläder, men ögonen... Gudarna hjälpe oss, ögonen var tomma som brunnar. Han gick förbi mig utan att..."<br>
-<em>[resten oläsligt]</em>
-        </div>
-    </div>
+    <div class="box">
+  <span class="box__label">5. Fragment av brev, funnet i ruinerna av Västra Tornet</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Bläcket blekt, pappret skadat av fukt</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"...kan inte längre förneka vad mina egna ögon bevittnat. Korporal Jenniks försvinnande var ingen desertering. Jag såg honom själv gå in i skuggorna vid arsenalen. Men det var inte han som kom ut. Det bar hans ansikte, hans kläder, men ögonen... Gudarna hjälpe oss, ögonen var tomma som brunnar. Han gick förbi mig utan att..."<br>
+<em>[resten oläsligt]</em></p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">6. Ur ett brev till Ärkebiskopen i Tibara</div>
-        <div class="fragment-type">Från Präst Mordecai, missionär i nordliga Cermira</div>
-        <div class="fragment-text">
-"Ers Helighet,<br><br>
+    <div class="box">
+  <span class="box__label">6. Ur ett brev till Ärkebiskopen i Tibara</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Från Präst Mordecai, missionär i nordliga Cermira</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Ers Helighet,<br><br>
 De hedningar jag försöker omvända här har en märklig sed. Vid varje nymåne barrikaderar de dörrarna och täcker alla speglar. De säger att 'skuggfolket' kommer då. Att de knackar på dörrar med knogar gjorda av is.<br><br>
 En gammal kvinna visade mig sitt 'bevis'. Hennes son försvann för tio år sedan. Men ibland, säger hon, kommer han tillbaka. Står utanför fönstret. Ler. Men munnen är full av snö.<br><br>
 Jag avfärdade detta som vidskepelse tills förra nymånen. Jag hörde knackningarna själv. Tre slag. Paus. Fyra slag. Paus. Sedan mitt namn. Viskat genom dörrspringan. Med min mors röst.<br><br>
-Min mor dog när jag var sju."
-        </div>
-    </div>
+Min mor dog när jag var sju."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">7. Kråkskrift på en krogservet</div>
-        <div class="fragment-type">Skrivet med darrande hand i ölspill</div>
-        <div class="fragment-text">
-"Såg dem igår. Tre stycken. Gick rätt genom väggen vid Gamla Tullhuset. Ingen tror mig. Men jag vet vad jag såg. De hade ögon som brann grönt."
-        </div>
-    </div>
+    <div class="box">
+  <span class="box__label">7. Kråkskrift på en krogservet</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Skrivet med darrande hand i ölspill</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Såg dem igår. Tre stycken. Gick rätt genom väggen vid Gamla Tullhuset. Ingen tror mig. Men jag vet vad jag såg. De hade ögon som brann grönt."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">8. Fragment ur "Theorier om Dimensionella Portar"</div>
-        <div class="fragment-type">Av Magus Kelvoran, försvunnen år 1247</div>
-        <div class="fragment-text">
-<strong>Kapitel IX: Om Ingångar till det Grå Riket</strong><br>
+    <div class="box">
+  <span class="box__label">8. Fragment ur "Theorier om Dimensionella Portar"</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Av Magus Kelvoran, försvunnen år 1247</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;"><strong>Kapitel IX: Om Ingångar till det Grå Riket</strong><br>
 Det förekommer persistenta rykten om vissa lokaliteter där gränsen mellan vår verld och "Skugglandet" (terminus vulgaris) är särskilt tunn. Mina undersökningar indikerar:<br>
 1. Temporala nexuspunkter: Nymåne, vintersolstånd, höstdagjämning<br>
 2. Spatiala anomalier: Där skuggor faller "fel", där eko kommer före rop<br>
 3. Emotionella katalysatorer: Platser av djup skuld eller förlust<br><br>
-<em>[Skrivet i marginalen med annan hand:] "Kelvoran hittades tre dagar senare. Kroppen var här. Men han pratade från tomma luften bredvid. Sa att han var fast mellan. Att han kunde se båda sidor men nå ingen."</em>
-        </div>
-    </div>
+<em>[Skrivet i marginalen med annan hand:] "Kelvoran hittades tre dagar senare. Kroppen var här. Men han pratade från tomma luften bredvid. Sa att han var fast mellan. Att han kunde se båda sidor men nå ingen."</em></p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">9. Ur pälsjägaren Harvik Treögons journal</div>
-        <div class="fragment-type">Skriven med militärisk precision, funnen hos hans änka</div>
-        <div class="fragment-text">
-<strong>15:e dagen, Rimfrostmånad</strong> Spårat björnen i två dagar. Oerhört stor. Spåren leder norrut, djupare än planerat.<br><br>
+    <div class="box">
+  <span class="box__label">9. Ur pälsjägaren Harvik Treögons journal</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Skriven med militärisk precision, funnen hos hans änka</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;"><strong>15:e dagen, Rimfrostmånad</strong> Spårat björnen i två dagar. Oerhört stor. Spåren leder norrut, djupare än planerat.<br><br>
 <strong>16:e dagen</strong> Förlorade spåret vid stenringen. Sju stenar, alla lutade inåt. Isak ville vända. Fegis.<br><br>
 <strong>17:e dagen</strong> Hittade spåret igen. Men nu går det UPPFÖR träden? Måste vara fel. Tar en sup och sover.<br><br>
 <strong>17:e dagen</strong> Vänta. Skrev jag inte redan 17:e dagen? Solen har inte gått ner än. Eller har den det?<br><br>
 <strong>18:e dagen? 20:e?</strong> Såg björnen idag. Den gick på två ben. Bar kläder. Gammal kvinnas kläder. Den vinkade.<br><br>
-<strong>Dag?</strong> Isak försvann inatt. Hans säng var tom men varm. På kudden låg en tand. För stor för att vara hans.
-        </div>
-    </div>
+<strong>Dag?</strong> Isak försvann inatt. Hans säng var tom men varm. På kudden låg en tand. För stor för att vara hans.</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">10. Barnlek från norra Mithera</div>
-        <div class="fragment-type">Leks endast i dagsljus, aldrig efter skymning</div>
-        <div class="fragment-text">
-Barnen står i ring, ett barn i mitten med bindel för ögonen:
-        <div class="poem">
-"Svarta hovet, vita hovet<br>
+    <div class="box">
+  <span class="box__label">10. Barnlek från norra Mithera</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Leks endast i dagsljus, aldrig efter skymning</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Barnen står i ring, ett barn i mitten med bindel för ögonen:
+        "Svarta hovet, vita hovet<br>
 Vilket hov ska ta dig?<br>
 Skulden leder, löftet binder<br>
 Vem ska komma och befria dig?<br>
@@ -233,136 +122,104 @@ Räkna skuggor - en, två, tre<br>
 Vilken skugga tillhör inte dig?<br>
 Den som pekar åt fel håll<br>
 Den är från det kalla håll!"
-        </div>
-<em>[Barnet i mitten ska peka ut vilket barn som har "fel skugga"]</em>
-        </div>
-    </div>
+<em>[Barnet i mitten ska peka ut vilket barn som har "fel skugga"]</em></p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">11. Trasigt brev i ett värdshusrum</div>
-        <div class="fragment-type">Funnet instoppat bakom en spegel, skrivet med darrig hand</div>
-        <div class="fragment-text">
-"Kära syster,<br><br>
+    <div class="box">
+  <span class="box__label">11. Trasigt brev i ett värdshusrum</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Funnet instoppat bakom en spegel, skrivet med darrig hand</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Kära syster,<br><br>
 Säg åt mor att jag inte kommer hem till vintersolståndet. Vi trodde vi kunde ta genvägen genom norra Mithera. Törne sa att han kände en stig som gick rakt igenom till Caserion på bara tre dagar.<br><br>
 Vi är fortfarande här. Det har gått sju dagar. Eller kanske en månad? Solen går upp i väster ibland. Träden växer baklänges. Vi går samma stig om och om igen men den leder olika platser varje gång.<br><br>
 Igår mötte vi några handelsmän. De sa att de varit på väg sedan förra vintern. De såg inte hungriga ut. De såg inte trötta ut. De log hela tiden.<br><br>
-Om detta når dig - stanna borta från skogen när månen är ny. Det är då gränsen är tunnast. Det är då de kommer över."
-        </div>
-    </div>
+Om detta når dig - stanna borta från skogen när månen är ny. Det är då gränsen är tunnast. Det är då de kommer över."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">12. Anteckning i en alkemists journal</div>
-        <div class="fragment-type">Funnen i ett övergivet laboratorium</div>
-        <div class="fragment-text">
-<strong>Experiment 234: Skugglandssubstans</strong><br>
+    <div class="box">
+  <span class="box__label">12. Anteckning i en alkemists journal</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Funnen i ett övergivet laboratorium</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;"><strong>Experiment 234: Skugglandssubstans</strong><br>
 Lyckades fånga droppe av 'vätska' från besökare som påstod sig komma från 'andra sidan'. Substansen beter sig märkligt:<br>
 • Fryser vid rumstemperatur men är flytande i kyla<br>
 • Väger olika beroende på månfas<br>
 • Reflekterar inte ljus - absorberar det och skickar det NÅGON ANNANSTANS<br>
 • När droppen placeras på papper, skriver den ord. Alltid samma: 'Skulden växer'<br><br>
-<em>Not: Vaknade inatt av att någon stod vid sängen. Ingen var där. Men droppens flaska var öppen. Och på golvet: fotspår av smält snö.</em>
-        </div>
-    </div>
+<em>Not: Vaknade inatt av att någon stod vid sängen. Ingen var där. Men droppens flaska var öppen. Och på golvet: fotspår av smält snö.</em></p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">13. Ur "Om Ockulta Fenomen", av Magister Elidus</div>
-        <div class="fragment-type">Akademisk ton, torr som damm</div>
-        <div class="fragment-text">
-<strong>Kapitel VII: Angående Dimensionella Anomalier</strong><br>
+    <div class="box">
+  <span class="box__label">13. Ur "Om Ockulta Fenomen", av Magister Elidus</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Akademisk ton, torr som damm</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;"><strong>Kapitel VII: Angående Dimensionella Anomalier</strong><br>
 Det finns ingen vetenskaplig grund för de påstådda "skuggvandringar" som okunnigt folk talar om. Ljusets brytning i vissa atmosfäriska förhållanden kan visserligen skapa optiska illusioner som för det otränade ögat kan te sig övernaturliga. Att människor "försvinner" har alltid naturliga förklaringar: desertering, rånmord, vilsekomst.<br><br>
 <em>[I marginalen, med annan handstil:]<br>
-"Elidus försvann själv tre dagar efter publicering. Hans rum var låst inifrån. Fönstret var stängt."</em>
-        </div>
-    </div>
+"Elidus försvann själv tre dagar efter publicering. Hans rum var låst inifrån. Fönstret var stängt."</em></p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">14. Vittnesbörd inför Kunglig Rätt</div>
-        <div class="fragment-type">Från rättegången mot "Häxan från Rimskogen"</div>
-        <div class="fragment-text">
-<strong>Domaren:</strong> "Beskriv vad ni såg."<br>
+    <div class="box">
+  <span class="box__label">14. Vittnesbörd inför Kunglig Rätt</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Från rättegången mot "Häxan från Rimskogen"</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;"><strong>Domaren:</strong> "Beskriv vad ni såg."<br>
 <strong>Vittnet:</strong> "Hon gick rätt in i trädet, ers nåd. Som om det var en dörr."<br>
 <strong>Domaren:</strong> "Omöjligt."<br>
 <strong>Vittnet:</strong> "Jag följde efter. Trädet... det var ihåligt. Men större inuti än utanpå. Och kallt. Så kallt. Såg henne gå på en stig som inte fanns. Mellan träd som växte upp och ner."<br>
 <strong>Domaren:</strong> "Och sedan?"<br>
 <strong>Vittnet:</strong> "Hon vände sig om. Sa: 'Du har följt mig hit. Nu är skulden delad. Du måste återkomma vid nästa nymåne eller så tar DE din plats här.' Sedan knuffade hon ut mig."<br>
 <strong>Domaren:</strong> "Och återvände ni?"<br>
-<strong>Vittnet:</strong> "Ja, ers nåd. Tre gånger nu. Varje gång stannar jag längre. Varje gång blir det svårare att komma tillbaka. Snart... snart tror jag inte jag kan."
-        </div>
-    </div>
+<strong>Vittnet:</strong> "Ja, ers nåd. Tre gånger nu. Varje gång stannar jag längre. Varje gång blir det svårare att komma tillbaka. Snart... snart tror jag inte jag kan."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">15. Handelsman Gorveks andra dagbok</div>
-        <div class="fragment-type">Funnen i en övergiven vagn vid södra Mithera, annorlunda handstil än tidigare</div>
-        <div class="fragment-text">
-Vi är Gorvek. Vi har alltid varit Gorvek. Vi säljer kryddor och tyg och leenden. Vår vara är fin, så fin. Köp av oss. Vi har varit på väg sedan igår. Eller förra året. Tiden är konstig här men det gör inget för vi är Gorvek och Gorvek glömmer aldrig.<br><br>
+    <div class="box">
+  <span class="box__label">15. Handelsman Gorveks andra dagbok</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Funnen i en övergiven vagn vid södra Mithera, annorlunda handstil än tidigare</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Vi är Gorvek. Vi har alltid varit Gorvek. Vi säljer kryddor och tyg och leenden. Vår vara är fin, så fin. Köp av oss. Vi har varit på väg sedan igår. Eller förra året. Tiden är konstig här men det gör inget för vi är Gorvek och Gorvek glömmer aldrig.<br><br>
 Vi träffade andra köpmän idag. De var också på väg. De log. Vi log. Alla ler här. Det är lättare så.<br><br>
 Skogen visade oss vägen. Den korta vägen. Den som går genom det som inte finns. Nu kan vi sälja överallt samtidigt. Vi är i Cermira. Vi är i Mithera. Vi är i det gråa landet däremellan.<br><br>
-Köp av oss. Vi har så fina varor. De luktar som minnen av hem.
-        </div>
-    </div>
+Köp av oss. Vi har så fina varor. De luktar som minnen av hem.</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">16. Sista sidan ur Kapten Järnankares privata logg</div>
-        <div class="fragment-type">Funnen på hans skrivbord, han själv försvunnen</div>
-        <div class="fragment-text">
-"De säger att jag varit borta i tre månader. För mig var det en natt.<br><br>
+    <div class="box">
+  <span class="box__label">16. Sista sidan ur Kapten Järnankares privata logg</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Funnen på hans skrivbord, han själv försvunnen</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"De säger att jag varit borta i tre månader. För mig var det en natt.<br><br>
 Gick genom spegeln i hytten. Ja, GENOM den. Som vatten. På andra sidan: mitt skepp. Men besättningen var skuggor. Bokstavliga skuggor som rörde sig utan kroppar.<br><br>
 Seglade på hav av mörker mot stjärnor som var för nära. Mötte skepp som seglade upp och ner. Handelsmän som sålde minnen. Köpte ett - minnet av min dotters första ord. Betalade med löftet att återvända.<br><br>
 Nu ser jag det överallt. Öppningarna. I skuggor som faller fel. I vinklar som inte stämmer. I speglar när månen är ny.<br><br>
 Löftet drar i mig. Som en krok i hjärtat.<br><br>
 Jag går tillbaka inatt. Denna gång tar jag inte med mig ankaret. Denna gång stannar j-"<br>
-<em>[Texten slutar mitt i bokstaven]</em>
-        </div>
-    </div>
+<em>[Texten slutar mitt i bokstaven]</em></p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">17. Samtal, nedtecknat av en spion i Silverörnen</div>
-        <div class="fragment-type">Hastigt nerklottrat</div>
-        <div class="fragment-text">
-"- Så du såg dem med egna ögon?<br>
+    <div class="box">
+  <span class="box__label">17. Samtal, nedtecknat av en spion i Silverörnen</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Hastigt nerklottrat</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"- Så du såg dem med egna ögon?<br>
 - Som jag ser dig nu. Tre stycken. Kanske fyra.<br>
 - Vad gjorde de?<br>
 - Stod bara. Mitt på torget. Folk gick förbi som om de inte fanns.<br>
 - Kunde ingen annan se dem?<br>
 - Jo, barnungen. Hon pekade och grät. Modern drog henne därifrån fort som fan.<br>
 - Vad hände sen?<br>
-- När klockan slog? De var bara... borta. Som rök."
-        </div>
-    </div>
+- När klockan slog? De var bara... borta. Som rök."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">18. Viskad varning funnen på död dvärgisk kurir</div>
-        <div class="fragment-type">På väg till Vitterdal, översatt från ylkiska av okänd hand</div>
-        <div class="fragment-text">
-"Två hov. Svart och vitt. Men sanningen? Det finns bara ett hov. Spegelvänt.<br>
+    <div class="box">
+  <span class="box__label">18. Viskad varning funnen på död dvärgisk kurir</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">På väg till Vitterdal, översatt från ylkiska av okänd hand</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Två hov. Svart och vitt. Men sanningen? Det finns bara ett hov. Spegelvänt.<br>
 Samma furstar. Olika masker.<br>
 Samma löften. Olika lögner.<br>
 Samma skuld. Alltid skulden.<br><br>
 Zentri? Ja, jag vet var Vinterglöd håller honom. Men priset för den kunskapen...<br><br>
 Lyssna: I Skugglandet kan du köpa allt. Sälja allt. Men det du betalar med är aldrig pengar. Det är alltid något du inte visste du kunde förlora.<br><br>
 Vinterglöd väntar i det Spegelvända Grensfortet. Men för att nå honom måste ni först förlora er. Och för att befria Zentri... någon måste ta hans plats.<br><br>
-Skugglandet släpper aldrig utan byte."
-        </div>
-    </div>
+Skugglandet släpper aldrig utan byte."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">19. Bikt nedtecknad av Daakprästen Moldus</div>
-        <div class="fragment-type">Från en döende skogshuggare</div>
-        <div class="fragment-text">
-"Fader, förlåt mig. Vi högg inte bara träd. Vi högg... annat.<br><br>
+    <div class="box">
+  <span class="box__label">19. Bikt nedtecknad av Daakprästen Moldus</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Från en döende skogshuggare</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Fader, förlåt mig. Vi högg inte bara träd. Vi högg... annat.<br><br>
 De stod så stilla. Som träd. Hade bark och löv. Men när yxan bet... de skrek. Gud, de skrek med röster som barn.<br><br>
 Förmannen sa att det var vinden. Men saven var röd. Och när vi lastade timmeret på flottarna, hörde vi dem viska. Hela natten. Viskade namn. Viskade hemligheter.<br><br>
 Köpmannen i Jarla betalade tredubbelt för det virket. Sa att det var 'speciellt'. Att folk i Drezin ville ha det för... experiment.<br><br>
-Vi gick tillbaka. För pengarna. Men platsen fanns inte. Bara en sjö. Mitt i sjön stod våra yxor, raka upp ur vattnet. Fortfarande blodiga."
-        </div>
-    </div>
+Vi gick tillbaka. För pengarna. Men platsen fanns inte. Bara en sjö. Mitt i sjön stod våra yxor, raka upp ur vattnet. Fortfarande blodiga."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">20. Runor på Stenringen i norra Mithera</div>
-        <div class="fragment-type">Urgammal ylkisk skrift, nyligen översatt</div>
-        <div class="fragment-text">
-        <div class="poem">
-"Här bands porten med blod av skuld<br>
+    <div class="box">
+  <span class="box__label">20. Runor på Stenringen i norra Mithera</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Urgammal ylkisk skrift, nyligen översatt</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Här bands porten med blod av skuld<br>
 Här öppnas porten med tårar av skuld<br>
 Sex måste komma som föll var själv<br>
 Men tillsammans är de den sjätte<br>
@@ -374,73 +231,70 @@ Vinterglöds torn syns i rimfrost<br>
 Månskenshovets spira i snö<br>
 Men akta er silverviskaren<br>
 Som fiskar själar ur tidens flod"
-        </div>
 <em>[Nedanför, ristat av annan hand:]<br>
-"Vi var fem. Nu är vi sex. Han som inte är här är mest här."</em>
-        </div>
-    </div>
+"Vi var fem. Nu är vi sex. Han som inte är här är mest här."</em></p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">21. Rimmad varning, ristad i bark</div>
-        <div class="fragment-type">På urgammal ek vid gamla handelsvägen</div>
-        <div class="fragment-text">
-        <div class="poem">
-"Här delar sig mer än vägen, vandrare<br>
+    <div class="box">
+  <span class="box__label">21. Rimmad varning, ristad i bark</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">På urgammal ek vid gamla handelsvägen</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Här delar sig mer än vägen, vandrare<br>
 Här möts det som är och det som var<br>
 Välj höger och du går mot hem och härd<br>
 Välj vänster och du når ett annat värld<br>
 Men väljer du att stå och tveka här<br>
 Där vägen delar sig i tre<br>
 Då tar den tredje vägen dig, min vän<br>
-Den väg som inga andra se"
-        </div>
-        </div>
-    </div>
+Den väg som inga andra se"</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">22. Ur en rapport till Vitterdals Lantråd</div>
-        <div class="fragment-type">Skriven av spanare Yurik, för tolv år sedan</div>
-        <div class="fragment-text">
-"Ers Högvälboren,<br><br>
+    <div class="box">
+  <span class="box__label">22. Ur en rapport till Vitterdals Lantråd</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Skriven av spanare Yurik, för tolv år sedan</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Ers Högvälboren,<br><br>
 Som befällt har jag undersökt ryktena om 'den andra sidan' i Mithera. Jag kan bekräfta följande:<br>
 1. Vid vissa tidpunkter (nymåne, solstånd, dagjämning) blir gränsen tunnare<br>
 2. Lokalborna undviker STRÄKT dessa platser: Stenringen, Den Viskande Gläntan, Trädet-Som-Går<br>
 3. Tre handelsmän försvann förra månaden. De kom tillbaka efter en vecka. Påstod att de bara varit borta en timme<br>
 4. De sålde märkliga varor: Flaskor med 'gårdagens väder', Spegelskärvor som visar 'det som kunde varit', Frön som växer baklänges<br><br>
-Rekommenderar STARKT att inte etablera handelsväg genom norra Mithera. Vissa vägar bör inte vandras."
-        </div>
-    </div>
+Rekommenderar STARKT att inte etablera handelsväg genom norra Mithera. Vissa vägar bör inte vandras."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">23. Samtal i Silverörnens bakrum</div>
-        <div class="fragment-type">Nedtecknat av någon som gömde sig bakom tunnan</div>
-        <div class="fragment-text">
-"- Så din bror kom tillbaka?<br>
+    <div class="box">
+  <span class="box__label">23. Samtal i Silverörnens bakrum</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Nedtecknat av någon som gömde sig bakom tunnan</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"- Så din bror kom tillbaka?<br>
 - Jo. Efter två år.<br>
 - Men... vi begravde honom. Jag var där.<br>
 - Jag vet. Han säger att han också var där. Tittade på sig själv i kistan.<br>
 - Vad i helvete...<br>
 - Han säger att han gick vilse i Mithera. Kom till en plats där allt hänt samtidigt. Såg sig själv dö. Såg sig själv födas. Såg sig själv som aldrig fötts.<br>
 - Vilket är han nu då?<br>
-- Alla, säger han. Eller ingen. Han äter inte längre. Säger att han redan ätit all mat som finns. I någon annan tid."
-        </div>
-    </div>
+- Alla, säger han. Eller ingen. Han äter inte längre. Säger att han redan ätit all mat som finns. I någon annan tid."</p></div>
+</div>
 
-    <div class="fragment">
-        <div class="fragment-header">24. Sista sidan ur okänd dagbok</div>
-        <div class="fragment-type">Bläcket färskt trots att boken är urgammal</div>
-        <div class="fragment-text">
-"De säger att jag varit borta i hundra år. Men för mig var det igår jag gick in i skogen.<br><br>
+    <div class="box">
+  <span class="box__label">24. Sista sidan ur okänd dagbok</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Bläcket färskt trots att boken är urgammal</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"De säger att jag varit borta i hundra år. Men för mig var det igår jag gick in i skogen.<br><br>
 Min hustru är gammal nu. Mina barn är döda. Mina barnbarn känner mig inte.<br><br>
 Men det värsta är inte tiden jag förlorat. Det värsta är det jag tog med mig tillbaka.<br><br>
 Ibland, när månen är rätt, ser jag genom saker. Genom väggar. Genom människor. Ser vad som finns på andra sidan. Det mörka landet. Skuggorna som väntar.<br><br>
 De följde med mig hem. De bor i mina ögon nu. Väntar på att månen ska bli ny igen. Då kommer de ut.<br><br>
 Bränn denna bok. Bränn huset. Fly härifrån.<br><br>
 De kommer. Jag hör dem viska mitt gamla namn. Namnet jag hade innan jag blev någon ann-"<br>
-<em>[Texten slutar mitt i ordet]</em>
-        </div>
-    </div>
+<em>[Texten slutar mitt i ordet]</em></p></div>
+</div>
+  </article>
 
-    <script src="../kapitel/kapitel-linkify.js"></script>
+  <nav class="chapter-pager rows" aria-label="Fluff-navigering">
+    <a class="row row--simple" href="index.html">
+      <span class="row__meta">← Tillbaka</span>
+      <span class="row__title">Fluff &amp; Berättelser</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
 </body>
 </html>

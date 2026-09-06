@@ -1,242 +1,48 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapitel 1: Jakten - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--flame-orange);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--flame-orange);
-        }
-
-        .back-btn {
-            background: var(--flame-orange);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-
-        .back-btn:hover {
-            background: var(--deep-red);
-        }
-
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--flame-orange), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .chapter-meta {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.5rem;
-        }
-
-        .prose {
-            font-size: 1.1rem;
-            line-height: 1.9;
-        }
-
-        .prose h2 {
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            color: var(--flame-orange);
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .prose h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-
-        .prose h4 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            color: var(--mystic-purple);
-        }
-
-        .prose p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .prose ul, .prose ol {
-            margin: 1rem 0 1.5rem 2rem;
-        }
-
-        .prose li {
-            margin-bottom: 0.5rem;
-            color: var(--text-secondary);
-        }
-
-        .prose strong {
-            color: var(--flame-orange);
-            font-weight: 600;
-        }
-
-        .prose em {
-            color: var(--gold);
-            font-style: italic;
-        }
-
-        .prose hr {
-            border: none;
-            border-top: 1px solid var(--border);
-            margin: 3rem 0;
-        }
-
-        .info-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--flame-orange);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .info-box.purple {
-            border-left-color: var(--mystic-purple);
-        }
-
-        .info-box.gold {
-            border-left-color: var(--gold);
-        }
-
-        .info-box.red {
-            border-left-color: var(--deep-red);
-        }
-
-        .info-box-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: var(--flame-orange);
-        }
-
-        .purple .info-box-title {
-            color: var(--mystic-purple);
-        }
-
-        .gold .info-box-title {
-            color: var(--gold);
-        }
-
-        .red .info-box-title {
-            color: var(--deep-red);
-        }
-
-        .quote {
-            border-left: 4px solid var(--gold);
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-            font-style: italic;
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-        }
-
-        /* Entity Links - klickbara NPCs, platser, fraktioner */
-        .entity-link {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px dotted currentColor;
-            transition: all 0.2s ease;
-        }
-        .entity-link:hover { border-bottom-style: solid; }
-        .entity-npc { color: var(--flame-orange); }
-        .entity-plats { color: var(--mystic-purple); }
-        .entity-fraktion { color: var(--gold); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapitel 1: Jakten – Gravens Arv</title>
+<meta name="description" content="Jakten — ett kapitel i kampanjen Gravens Arv.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="nav-title">Gravens Arv - Kampanjhistoria</div>
-        <button class="back-btn" onclick="window.location.href='../index.html'">← Tillbaka till Dashboard</button>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen" aria-current="page">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="../fluff/index.html">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <div class="content-container">
-        <header class="chapter-header">
-            <h1>Kapitel 1: Jakten</h1>
-            <div class="chapter-meta"><strong>Plats:</strong> Genom Cermiras skogar mot Grensfortet</div>
-            <div class="chapter-meta"><strong>Närvarande:</strong> Gordon, Zentri, Umnatak, Kazrik</div>
-            <div class="chapter-meta"><strong>Tidsperiod:</strong> Veckorna efter Tirakgraven</div>
-        </header>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="../index.html#kampanjen">Kapitel</a> / <span>Kapitel 01 – Jakten</span></div>
+</div>
 
-        <article class="prose">
-            <h2>Serafinas Order</h2>
+<main class="wrap read-view">
+  <p class="eyebrow">Kapitel 01</p>
+  <h1 class="page-title">Jakten</h1>
+  <p class="subtitle">Genom Cermiras skogar mot Grensfortet · Gordon, Zentri, Umnatak, Kazrik · Veckorna efter Tirakgraven</p>
+
+  <article class="prose prose--lead read-view__article">
+<h2>Serafinas Order</h2>
 
             <p>Morgonen efter massattacken stank av rök och blod. <strong>Gordon</strong> stod vid gravens kant och räknade de döda - kompanister han känt i månader, tiraker han dödat i nattens förvirring, och varelsen som inte borde finnas. Solen sken likgiltigt över alltsammans.</p>
 
             <p><strong>Serafina Eldstav</strong> kom till honom med steg som var för bestämda, ögon som var för kalla. Thismalven hade inte sovit - det syntes på hennes ansikte - men hennes röst var stadig som sten när hon talade.</p>
 
-            <div class="quote">
-                "Han flydde norrut. Tamron. Eller vad som nu bär hans kropp. Ni ska följa honom."
-            </div>
+            <blockquote class="box--quote">"Han flydde norrut. Tamron. Eller vad som nu bär hans kropp. Ni ska följa honom."</blockquote>
 
             <p>Det var inte en fråga. Gordon såg på henne, såg den kalla beslutsamheten i hennes ögon. Thismalven hade redan bestämt sig, det syntes.</p>
 
@@ -246,11 +52,11 @@
 
             <p><strong>Kazrik</strong> muttrade något på dvärgiska som Gordon inte förstod men vars ton var tydlig. <strong>Umnatak</strong> stirrade mot skogen med ögon som såg saker ingen annan kunde se. Och <strong>Zentri</strong> - Zentri gnuggade sin vänstra hand mot byxbenet, som om något där inne sved.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Serafinas hemliga agenda</div>
-                <p>Vad gruppen inte visste: Serafina hade egna planer. Föremålen hade Ibran/Tamron stulit, men hon hoppades kunna återta dem. Om hon kunde leverera bindningsartefakterna till <strong>Sanari-alverna</strong> kanske det kunde köpa tillbaka hennes plats efter 10 års förvisning - helt på eget initiativ, utan att alverna bett om det.</p>
+            <div class="box">
+        <span class="box__label">Serafinas hemliga agenda</span>
+        <p>Vad gruppen inte visste: Serafina hade egna planer. Föremålen hade Ibran/Tamron stulit, men hon hoppades kunna återta dem. Om hon kunde leverera bindningsartefakterna till <strong>Sanari-alverna</strong> kanske det kunde köpa tillbaka hennes plats efter 10 års förvisning - helt på eget initiativ, utan att alverna bett om det.</p>
                 <p>Att skicka iväg rollpersonerna efter Ibran/Tamron gav henne tid att agera. De var "utgångsbara" - verktyg att använda och sedan kassera.</p>
-            </div>
+      </div>
 
             <hr>
 
@@ -280,9 +86,7 @@
 
             <p><strong>Adisa</strong> log inte.</p>
 
-            <div class="quote">
-                "En pojke kom här för några dagar sedan. Mörk aura omkring honom. Jag kände ondskan på honom redan när han närmade sig stigen. Han bad om vatten och mat, men jag vägrade släppa in honom i mitt hem. Ont ska inte få passera min tröskel."
-            </div>
+            <blockquote class="box--quote">"En pojke kom här för några dagar sedan. Mörk aura omkring honom. Jag kände ondskan på honom redan när han närmade sig stigen. Han bad om vatten och mat, men jag vägrade släppa in honom i mitt hem. Ont ska inte få passera min tröskel."</blockquote>
 
             <p>Gordon kände lättnad - de var på rätt spår. Men det var något konstigt med hur häxan talade. Hennes blick vandrade förbi honom, förbi Kazrik och Umnatak, och stannade på Zentri.</p>
 
@@ -302,12 +106,12 @@
 
             <p>Adisa sa ingenting. Men hennes ögon - de ögonen som såg för mycket - följde Zentri med en intensitet som fick luften att kännas tjock.</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Sanningen som ingen förstod</div>
-                <p>Adisa hade känt <strong>demonessensen i Zentris ring</strong> - den lilla silverring han stulit från tirakgraven utan att berätta för någon. Häxan kände magin genast, samma mörka resonans som hon känt hos Ibran/Tamron.</p>
+            <div class="box box--warning">
+        <span class="box__label">Sanningen som ingen förstod</span>
+        <p>Adisa hade känt <strong>demonessensen i Zentris ring</strong> - den lilla silverring han stulit från tirakgraven utan att berätta för någon. Häxan kände magin genast, samma mörka resonans som hon känt hos Ibran/Tamron.</p>
                 <p><em>Ont ska inte passera hennes tröskel.</em></p>
                 <p>Detta var första gången något markerade att något var <strong>fel</strong> med Zentri. Första varningen. Inte den sista.</p>
-            </div>
+      </div>
 
             <p>Inne i stugan serverade Adisa het te och bröd. Hon berättade om shamanen som flytt norrut, om mörkret som följde honom, om byn Frisänkan där han troligen sökt proviant.</p>
 
@@ -325,9 +129,7 @@
 
             <p><strong>Kapten Benne Tok</strong> mötte dem vid vakten. Han var en liten man med ett ansikte som påminde om en padda, och hans andedräkt var så dålig att Gordon tog ett ofrivilligt steg bakåt. En rostig potthjälm satt snett på hans huvud, och hans händer darrade när han talade.</p>
 
-            <div class="quote">
-                "En främmande pojke kom igenom här för två dagar sedan. Konstig, skärrad. Han bad om vatten vid Pertil Fiskarens hus vid viken."
-            </div>
+            <blockquote class="box--quote">"En främmande pojke kom igenom här för två dagar sedan. Konstig, skärrad. Han bad om vatten vid Pertil Fiskarens hus vid viken."</blockquote>
 
             <p>Benne Toks röst sprack.</p>
 
@@ -345,10 +147,10 @@
 
             <p>Gordon hade inget svar. Ibran i Tamrons kropp var desperat, panikslagen. En shaman som vaktat graven i generationer, nu fångad i en pojkes kropp med stulen makt i händerna och hela världen som fiende.</p>
 
-            <div class="info-box">
-                <div class="info-box-title">Benne Toks varning</div>
-                <p>"Han gick mot bergen. Mot gamla <strong>Grensfortet</strong>. Ingen går dit längre. Det är förbannat, säger man. Saker... saker som inte borde röra sig, rör sig där."</p>
-            </div>
+            <div class="box">
+        <span class="box__label">Benne Toks varning</span>
+        <p>"Han gick mot bergen. Mot gamla <strong>Grensfortet</strong>. Ingen går dit längre. Det är förbannat, säger man. Saker... saker som inte borde röra sig, rör sig där."</p>
+      </div>
 
             <hr>
 
@@ -366,11 +168,11 @@
 
             <p>Kazrik svor på dvärgiska. Zentri sa ingenting - bara stirrade mot fortet med ett uttryck som Gordon inte kunde tyda.</p>
 
-            <div class="info-box purple">
-                <div class="info-box-title">Urkhaths manipulation</div>
-                <p>Ibrans enda tanke hade varit att fly med föremålen och säkra dem. Men Urkhath är en mäktig demon. Med bindningsartefakterna så nära lyckades demonen <strong>styra Tamron mot Grensfortet</strong> - en övergiven borg från Hadrians tid, på den tunnaste punkten mellan Mundana och Skugglandet.</p>
+            <div class="box">
+        <span class="box__label">Urkhaths manipulation</span>
+        <p>Ibrans enda tanke hade varit att fly med föremålen och säkra dem. Men Urkhath är en mäktig demon. Med bindningsartefakterna så nära lyckades demonen <strong>styra Tamron mot Grensfortet</strong> - en övergiven borg från Hadrians tid, på den tunnaste punkten mellan Mundana och Skugglandet.</p>
                 <p>Ibran hade aldrig valt att komma hit. Demonen hade fört honom.</p>
-            </div>
+      </div>
 
             <h3>Konfrontationen</h3>
 
@@ -384,9 +186,7 @@
 
             <p><strong>Urkhath</strong> hade manifesterat sig - en liten, svart form som trängde genom en reva i verkligheten. Inte stor. Inte hel. Men tillräcklig.</p>
 
-            <div class="quote">
-                "ÄNTLIGEN."
-            </div>
+            <blockquote class="box--quote">"ÄNTLIGEN."</blockquote>
 
             <p>Rösten kom från överallt och ingenstans. Den vibrerade i benen, i tänderna, i själva själen. Gordon kände hur hans grepp om svärdet blev slipprig av svett.</p>
 
@@ -416,9 +216,7 @@
 
             <p>Serafina reste sig.</p>
 
-            <div class="quote">
-                "Ni får INTE återvända till kompaniet. Ni får INTE tala om vad som hänt här. Föremålen är min sak att hantera."
-            </div>
+            <blockquote class="box--quote">"Ni får INTE återvända till kompaniet. Ni får INTE tala om vad som hänt här. Föremålen är min sak att hantera."</blockquote>
 
             <p>Gordon såg på henne. Såg hur hon redan samlat ihop de återtagna föremålen - bindningsartefakterna som de slitit ur demonens grepp. Föremål värda mer än hela kompaniets årslön, och Serafina hade redan bestämt att de var hennes att hantera.</p>
 
@@ -432,15 +230,15 @@
 
             <p>"Vem tror du kompaniet skulle tro på? Sin second-in-command, eller fyra legosoldater som knappt kan hålla sina historier raka?"</p>
 
-            <div class="info-box red">
-                <div class="info-box-title">Order</div>
-                <ul>
+            <div class="box box--warning">
+        <span class="box__label">Order</span>
+        <ul>
                     <li>Tre månaders <strong>permission med lön</strong></li>
                     <li>Möte i <strong>Jarla</strong> (stad i norra Vitterdal) efter denna tid</li>
                     <li>Absolut tystnad om föremålen och vad som hänt vid Grensfortet</li>
                 </ul>
                 <p>Generös permission - inte som belöning, utan för att hindra dem från att nå truppen och prata om demoner och föremål. Serafina behövde tid att sätta sin plan i verket. Och betald ledighet var svårt att klaga på.</p>
-            </div>
+      </div>
 
             <p>Gordon såg henne rida bort i gryningen, med föremålen säkrade i sina sadelväskor. Vart hon var på väg visste han inte - men han såg beslutsamheten i hennes rygg, hoppet om att dessa artefakter på något vis kunde köpa tillbaka det hon förlorat. Och gruppen? De fick tre månader av tystnad och en rendezvous i en stad de aldrig besökt.</p>
 
@@ -466,28 +264,28 @@
 
             <hr>
 
-            <p style="text-align: center; margin-top: 4rem; color: var(--text-secondary); font-style: italic;">
-                Tre månader av väntan väntade.<br>
-                Och i skuggorna vaknade något som aldrig skulle somna igen.
-            </p>
-        </article>
-    </div>
+            <p class="chapter-close">Tre månader av väntan väntade.<br>
+                Och i skuggorna vaknade något som aldrig skulle somna igen.</p>
+  </article>
 
-    <!-- Ladda data för auto-länkning -->
-    <script src="../wiki_data.js"></script>
-    <script src="../fraktioner_data.js"></script>
-    <script src="kapitel-linkify.js"></script>
+  <nav class="chapter-pager rows" aria-label="Kapitelnavigering">
+    <a class="row row--simple" href="prolog-tirakgraven.html">
+      <span class="row__meta">← Föregående</span>
+      <span class="row__title">Kapitel 00 · Tirakgraven</span>
+    </a>
+    <a class="row row--simple" href="kapitel-2-muhad.html">
+      <span class="row__title">Kapitel 02 · Muhad</span>
+      <span class="row__meta">Nästa →</span>
+    </a>
+  </nav>
+</main>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
+
+<script src="kapitel-linkify.js"></script>
 </body>
 </html>

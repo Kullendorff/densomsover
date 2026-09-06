@@ -1,260 +1,79 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stålsvärds Kavalerister - Lägerberättelser - Gravens Arv</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --flame-orange: #ff6b4a;
-            --deep-red: #d4534d;
-            --mystic-purple: #a855a8;
-            --shadow-purple: #8b4789;
-            --gold: #ffa500;
-            --dark-gold: #d4af37;
-            --bg-dark: #0a0a0a;
-            --bg-darker: #050505;
-            --bg-card: #1a1a1a;
-            --bg-hover: #2a2a2a;
-            --text-primary: #f5f5f5;
-            --text-secondary: #a0a0a0;
-            --border: #333;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-dark);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .nav-bar {
-            background: var(--bg-card);
-            border-bottom: 2px solid var(--deep-red);
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-title {
-            font-size: 1.5rem;
-            color: var(--deep-red);
-        }
-
-        .back-btn {
-            background: var(--deep-red);
-            color: white;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .back-btn:hover {
-            background: var(--flame-orange);
-        }
-
-        .content-container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem 4rem;
-        }
-
-        .chapter-header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .chapter-title {
-            font-size: 2.5rem;
-            color: var(--deep-red);
-            margin-bottom: 1rem;
-        }
-
-        .chapter-subtitle {
-            color: var(--text-secondary);
-            font-size: 1.2rem;
-            font-style: italic;
-        }
-
-        .section {
-            margin-bottom: 4rem;
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            color: var(--gold);
-            margin-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .entry {
-            background: linear-gradient(135deg, var(--bg-card), var(--bg-darker));
-            border-left: 4px solid var(--deep-red);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .entry-header {
-            font-size: 1.3rem;
-            color: var(--flame-orange);
-            margin-bottom: 1rem;
-            font-weight: bold;
-        }
-
-        .entry-meta {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-        }
-
-        .entry-text {
-            color: var(--text-primary);
-            line-height: 1.9;
-        }
-
-        .song {
-            background: linear-gradient(135deg, var(--bg-darker), var(--bg-card));
-            border-left: 4px solid var(--gold);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .song-title {
-            font-size: 1.4rem;
-            color: var(--gold);
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-
-        .song-meta {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-        }
-
-        .verse {
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
-            border-left: 2px solid var(--border);
-            color: var(--text-primary);
-            line-height: 2;
-        }
-
-        .chorus {
-            margin-bottom: 1.5rem;
-            padding-left: 1rem;
-            border-left: 3px solid var(--gold);
-            color: var(--gold);
-            font-style: italic;
-            line-height: 2;
-        }
-
-        .report {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-left: 4px solid var(--mystic-purple);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 0 8px 8px 0;
-            font-family: 'Courier New', monospace;
-        }
-
-        .report-header {
-            color: var(--mystic-purple);
-            font-weight: bold;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .report-body {
-            color: var(--text-secondary);
-            line-height: 1.7;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stålsvärds Kavalerister: Lägerberättelser – Gravens Arv</title>
+<meta name="description" content="Sånger, skrönor och brev från soldatlivet i Stålsvärds Kavalerister.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
 </head>
 <body>
-    <nav class="nav-bar">
-        <div class="nav-title">Stålsvärds Kavalerister: Lägerberättelser</div>
-        <a href="index.html" class="back-btn">← Tillbaka till Fluff</a>
+<header class="chrome">
+  <div class="wrap chrome__row">
+    <a class="wordmark" href="../index.html">Gravens&nbsp;Arv</a>
+    <nav class="nav">
+      <a href="../index.html#kampanjen">Kampanjen</a>
+      <a href="../index.html#register">Register</a>
+      <a href="../index.html#eget">Eget material</a>
+      <a href="../sessioner/index.html">SL</a>
+      <a href="index.html" aria-current="page">Fluff</a>
     </nav>
+  </div>
+</header>
 
-    <div class="content-container">
-        <div class="chapter-header">
-            <h1 class="chapter-title">STÅLSVÄRDS KAVALERISTER</h1>
-            <p class="chapter-subtitle">Lägerberättelser, Soldatsånger & Fältrapporter</p>
-            <p class="chapter-subtitle" style="margin-top: 1rem; font-size: 1rem;">
-                Från lägren, marscherna och slagfälten - orden från de som bar stålet
-            </p>
-        </div>
+<div class="crumbs">
+  <div class="wrap"><a href="../index.html">Start</a> / <a href="index.html">Fluff</a> / <span>Stålsvärds Kavalerister: Lägerberättelser</span></div>
+</div>
 
-        <!-- SOLDATSÅNGER -->
-        <section class="section">
-            <h2 class="section-title">Soldatsånger</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-style: italic;">
+<main class="wrap read-view">
+  <p class="eyebrow">Soldatsånger, historier & fältrapporter</p>
+  <h1 class="page-title">Stålsvärds Kavalerister: Lägerberättelser</h1>
+  <p class="subtitle">Sånger, skrönor och brev från soldatlivet</p>
+
+  <article class="prose read-view__article">
+<p>Från lägren, marscherna och slagfälten - orden från de som bar stålet</p>
+
+<!-- SOLDATSÅNGER -->
+        <section>
+            <h2>Soldatsånger</h2>
+            <p>
                 Sånger sjungna runt lägereldar, på marschvägar och i drickssalar. Orden varierar från kompani till kompani, men rytmen är alltid densamma - takten av stålklädda stövlar mot jord.
             </p>
 
-            <div class="song">
-                <div class="song-title">Marschen Hem</div>
-                <div class="song-meta">Traditionell marschtaktssång - Vers och kör alternerar med vänster-höger-takt</div>
-                <div class="verse">
-                    <em>Vänster, höger, stålet klirrar,<br>
+            <div class="box">
+  <span class="box__label">Marschen Hem</span>
+  <p class="prose--secondary" style="margin: 4px 0 10px; font-style: italic; max-width: none;">Traditionell marschtaktssång - Vers och kör alternerar med vänster-höger-takt</p>
+  <div class="prose prose--secondary" style="max-width:none;"><p><em>Vänster, höger, stålet klirrar,<br>
                     Vänster, höger, skorna irrar,<br>
                     Tre dagar sen vi såg en säng,<br>
                     Fem dagar sen vi hade bröd,<br>
                     Men hemma väntar varm soppa ännd,<br>
-                    Om vi inte först är döda och döda är döda</em>
-                </div>
-                <div class="chorus">
-                    <em>Så marsch, marsch, kompani av stål!<br>
+                    Om vi inte först är döda och döda är döda</em></p>
+                <p style="border-left: 2px solid var(--rule); padding-left: 12px;"><em>Så marsch, marsch, kompani av stål!<br>
                     Marsch, marsch, innan vintern tar oss all!<br>
                     Ett steg till, kamrat, bara ett steg till,<br>
-                    Sen är vi hemma - eller död vid vägens brädd</em>
-                </div>
-                <div class="verse">
-                    <em>Vänster, höger, regnet faller,<br>
+                    Sen är vi hemma - eller död vid vägens brädd</em></p>
+                <p><em>Vänster, höger, regnet faller,<br>
                     Vänster, höger, kaptenen skraller,<br>
                     Om ära och om plikt och skit,<br>
                     Men vi vet vad vi marscherar för,<br>
                     Tre koppar om dan och en sovplats natt,<br>
-                    Och kamratens axel när helvetet slår</em>
-                </div>
-                <div class="chorus">
-                    <em>Så marsch, marsch, kompani av stål!<br>
+                    Och kamratens axel när helvetet slår</em></p>
+                <p style="border-left: 2px solid var(--rule); padding-left: 12px;"><em>Så marsch, marsch, kompani av stål!<br>
                     Marsch, marsch, innan vintern tar oss all!<br>
                     Ett steg till, kamrat, bara ett steg till,<br>
-                    Sen är vi hemma - eller död vid vägens brädd</em>
-                </div>
-            </div>
+                    Sen är vi hemma - eller död vid vägens brädd</em></p></div>
+</div>
 
-            <div class="song">
-                <div class="song-title">Sylas Ballad</div>
-                <div class="song-meta">Om vaktmästaren Sylas "Eldvakten" - Sjungs med respekt och ironi i lika mått</div>
-                <div class="verse">
-                    <em>Sylas sitter vid sin eld,<br>
+            <div class="box">
+  <span class="box__label">Sylas Ballad</span>
+  <p class="prose--secondary" style="margin: 4px 0 10px; font-style: italic; max-width: none;">Om vaktmästaren Sylas "Eldvakten" - Sjungs med respekt och ironi i lika mått</p>
+  <div class="prose prose--secondary" style="max-width:none;"><p><em>Sylas sitter vid sin eld,<br>
                     Vaken medan alla sover,<br>
                     Sylas vaktar lägereldens sken,<br>
                     Med ögon som aldrig sluter sig<br>
@@ -262,10 +81,8 @@
                     "Vem där?" ropar han i natten,<br>
                     Till varje skugga, varje ljud,<br>
                     "Vem där?" - det är Beric som ska pissa,<br>
-                    För fjärde gången denna natt</em>
-                </div>
-                <div class="verse">
-                    <em>Men när fienden kom i gryningen,<br>
+                    För fjärde gången denna natt</em></p>
+                <p><em>Men när fienden kom i gryningen,<br>
                     Genom dimma tjock som vägg,<br>
                     Då var Sylas först med varningen,<br>
                     Hans "Vem där!" räddade oss alla<br>
@@ -273,15 +90,13 @@
                     Så jävlas inte med vaktmästarn,<br>
                     Låt honom skrika "Vem där!" hur mycket han vill,<br>
                     För den natten du verkligen behöver honom,<br>
-                    Kommer Sylas vara vaken fortfarande</em>
-                </div>
-            </div>
+                    Kommer Sylas vara vaken fortfarande</em></p></div>
+</div>
 
-            <div class="song">
-                <div class="song-title">Dricksvisan om Maten</div>
-                <div class="song-meta">Sjungs i messhallen - Alltid lika sann, aldrig lika rolig som första gången</div>
-                <div class="verse">
-                    <em>Vad är det för skit i grytan idag?<br>
+            <div class="box">
+  <span class="box__label">Dricksvisan om Maten</span>
+  <p class="prose--secondary" style="margin: 4px 0 10px; font-style: italic; max-width: none;">Sjungs i messhallen - Alltid lika sann, aldrig lika rolig som första gången</p>
+  <div class="prose prose--secondary" style="max-width:none;"><p><em>Vad är det för skit i grytan idag?<br>
                     Det ser ut som igår, fast grått istället för brunt,<br>
                     Kocken säger det är kött,<br>
                     Men jag svor att jag såg det röra på sig<br>
@@ -289,16 +104,12 @@
                     Brödet är hårt som en soldats hjärta,<br>
                     Ölet är varmt som kompanjens piss,<br>
                     Men vi äter ändå för vad är alternativet?<br>
-                    Att svälta är fan inte bättre</em>
-                </div>
-                <div class="chorus">
-                    <em>Så skål för kocken som förgiftar oss,<br>
+                    Att svälta är fan inte bättre</em></p>
+                <p style="border-left: 2px solid var(--rule); padding-left: 12px;"><em>Så skål för kocken som förgiftar oss,<br>
                     Skål för maten som dödar långsamt,<br>
                     Skål för ölet som smakar skit,<br>
-                    För imorgon kanske vi dör fort istället!</em>
-                </div>
-                <div class="verse">
-                    <em>Minns du den kött-grejen i Jarla?<br>
+                    För imorgon kanske vi dör fort istället!</em></p>
+                <p><em>Minns du den kött-grejen i Jarla?<br>
                     Den som låg i solen i tre dar?<br>
                     Darian åt den ändå, sa den smakade bra,<br>
                     Nu skiter han fortfarande en gång i timmen<br>
@@ -306,21 +117,17 @@
                     Elara försöker laga "riktiga" måltider,<br>
                     Med örter och sånt där elviskt skit,<br>
                     Men vi vet alla vad som händer,<br>
-                    Det slutar som grått slammer i grytan ändå</em>
-                </div>
-                <div class="chorus">
-                    <em>Så skål för kocken som förgiftar oss,<br>
+                    Det slutar som grått slammer i grytan ändå</em></p>
+                <p style="border-left: 2px solid var(--rule); padding-left: 12px;"><em>Så skål för kocken som förgiftar oss,<br>
                     Skål för maten som dödar långsamt,<br>
                     Skål för ölet som smakar skit,<br>
-                    För imorgon kanske vi dör fort istället!</em>
-                </div>
-            </div>
+                    För imorgon kanske vi dör fort istället!</em></p></div>
+</div>
 
-            <div class="song">
-                <div class="song-title">Beric Brorson Blues</div>
-                <div class="song-meta">Om scoutens eviga jobb att hitta vägen - Sjungs när man gått vilse (alltid)</div>
-                <div class="verse">
-                    <em>Beric säger han vet vägen,<br>
+            <div class="box">
+  <span class="box__label">Beric Brorson Blues</span>
+  <p class="prose--secondary" style="margin: 4px 0 10px; font-style: italic; max-width: none;">Om scoutens eviga jobb att hitta vägen - Sjungs när man gått vilse (alltid)</p>
+  <div class="prose prose--secondary" style="max-width:none;"><p><em>Beric säger han vet vägen,<br>
                     Beric säger det är rakt fram,<br>
                     Beric säger vi är nästan där,<br>
                     Beric är en jävla lögnare<br>
@@ -328,10 +135,8 @@
                     Vi har gått i cirklar i tre timmar,<br>
                     Passerat samma träd fyra gånger,<br>
                     Beric stirrar på sin karta som den är skriven på dvärgiask,<br>
-                    Beric har kartan upp och ner</em>
-                </div>
-                <div class="verse">
-                    <em>Men förra veckan i Mithera-skogen,<br>
+                    Beric har kartan upp och ner</em></p>
+                <p><em>Men förra veckan i Mithera-skogen,<br>
                     När dimman var tät och träden likadana,<br>
                     Då hittade Beric vägen hem,<br>
                     Genom instinkt eller ren jävla tur<br>
@@ -339,23 +144,20 @@
                     Så vi följer Beric fortfarande,<br>
                     Trots att han inte vet vad fan han gör,<br>
                     För det är bättre att gå vilse tillsammans,<br>
-                    Än hitta rätt helt ensam</em>
-                </div>
-            </div>
+                    Än hitta rätt helt ensam</em></p></div>
+</div>
         </section>
 
         <!-- LÄGERHISTORIER -->
-        <section class="section">
-            <h2 class="section-title">Lägerhistorier</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-style: italic;">
+        <section>
+            <h2>Lägerhistorier</h2>
+            <p>
                 Berättelser som cirkulerar runt lägreldar när vakterna är satta, maten är äten och ölet börjar verka. Vissa är sanna. Vissa är överdrifter. Alla är viktiga.
             </p>
 
-            <div class="entry">
-                <div class="entry-header">Den Natten med Gripen</div>
-                <div class="entry-meta">Berättad av Dorn Stenbärare - Varierar varje gång, men grunden är alltid densamma</div>
-                <div class="entry-text">
-                    "Så där stod vi, eller? Jag, Gordon, den där cirefaliska köpmansgrabben - Zentri hette han - och en handfull andra som hade inte tillräckligt vett att spring åt andra hållet. Och gripen, fan ta mig, den var stor som ett hus. Större kanske. Stor som två hus.<br><br>
+            <div class="box">
+  <span class="box__label">Den Natten med Gripen</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Berättad av Dorn Stenbärare - Varierar varje gång, men grunden är alltid densamma</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">"Så där stod vi, eller? Jag, Gordon, den där cirefaliska köpmansgrabben - Zentri hette han - och en handfull andra som hade inte tillräckligt vett att spring åt andra hållet. Och gripen, fan ta mig, den var stor som ett hus. Större kanske. Stor som två hus.<br><br>
 
                     Gordon sa nåt om taktik. Alltid med jävla taktiken, den killen. 'Omringa den,' sa han. 'Distrahera den,' sa han. Som om gripen skulle bara vänta artigt medan vi sprang runt som höns utan huvuden.<br><br>
 
@@ -371,15 +173,12 @@
 
                     Så... ja. Det var den natten med gripen. Var vi hjältar? Fuck nej. Vi var idioter som hade tur att inte dö. Men vi lever fortfarande. Gripen gör inte det.<br><br>
 
-                    Och det, kamrater, är skillnaden mellan oss och de döda: Vi är för envisa för att dö ordentligt."
-                </div>
-            </div>
+                    Och det, kamrater, är skillnaden mellan oss och de döda: Vi är för envisa för att dö ordentligt."</p></div>
+</div>
 
-            <div class="entry">
-                <div class="entry-header">Evelinas Första Strid</div>
-                <div class="entry-meta">Som berättad av Kaelthar Klerk - Alltid när nya rekryter frågar hur det "egentligen" är</div>
-                <div class="entry-text">
-                    Evelina? Nu Fältsyster Evelina? Fuck, den tjejen var rädd som fan första gången. Vi alla var det, men hon visade det. Skakade så man såg rustningen vibrera.<br><br>
+            <div class="box">
+  <span class="box__label">Evelinas Första Strid</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Som berättad av Kaelthar Klerk - Alltid när nya rekryter frågar hur det "egentligen" är</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Evelina? Nu Fältsyster Evelina? Fuck, den tjejen var rädd som fan första gången. Vi alla var det, men hon visade det. Skakade så man såg rustningen vibrera.<br><br>
 
                     Det var banditrövare utanför Jarla. Ingenting fancy. Tjugo-trettio as som trodde de kunde ta en karavaneskort. Vi var tjugo. De var trettiofem. Dåliga odds men vi hade sett värre.<br><br>
 
@@ -403,15 +202,12 @@
 
                     Så när ni nya ungar frågar hur det är första gången? Det är skit. Det är alltid skit. Men antingen slutar ni skaka eller så slutar ni andas. Evelina valde att sluta skaka.<br><br>
 
-                    Var smarta. Välj samma.
-                </div>
-            </div>
+                    Var smarta. Välj samma.</p></div>
+</div>
 
-            <div class="entry">
-                <div class="entry-header">Tirakgraven-Expeditionen: Vad Verkligen Hände</div>
-                <div class="entry-meta">Fragment sammanställda från olika versioner - Sanningen är någonstans i mitten</div>
-                <div class="entry-text">
-                    Ingen pratar om det direkt, eller? Tirakgraven. Men alla vet. Vi förlorade folk där. Inte i strid. Värre.<br><br>
+            <div class="box">
+  <span class="box__label">Tirakgraven-Expeditionen: Vad Verkligen Hände</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Fragment sammanställda från olika versioner - Sanningen är någonstans i mitten</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Ingen pratar om det direkt, eller? Tirakgraven. Men alla vet. Vi förlorade folk där. Inte i strid. Värre.<br><br>
 
                     <strong>[Från Beric Brorson, scout]</strong><br>
                     "Graven var... fel. Från början. Träden växte åt fel håll. Fåglarna sjöng bakåt. Och stenen, fan, stenen VET saker. Kan se det i hur den ligger, hur den väntar..."<br><br>
@@ -436,15 +232,12 @@
 
                     Ingen pratar om Tirakgraven nu. Men alla minns. Och när vi marscherar genom mörka skogar, när vi passerar gamla stenar, när vi hör ljud som inte borde finnas...<br><br>
 
-                    Vi alla minns vad som hände med dem som gick för djupt.
-                </div>
-            </div>
+                    Vi alla minns vad som hände med dem som gick för djupt.</p></div>
+</div>
 
-            <div class="entry">
-                <div class="entry-header">Darian och Ökendraken</div>
-                <div class="entry-meta">Berättad av Darian själv - Och ja, han kommer berätta den även om ingen frågade</div>
-                <div class="entry-text">
-                    Så ni har hört om gripen, ja? Stor fågel, farligt, blah blah. Men har ni hört om DRAKEN?<br><br>
+            <div class="box">
+  <span class="box__label">Darian och Ökendraken</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Berättad av Darian själv - Och ja, han kommer berätta den även om ingen frågade</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Så ni har hört om gripen, ja? Stor fågel, farligt, blah blah. Men har ni hört om DRAKEN?<br><br>
 
                     Det var i Muhad. Jarla-trakten. Hett som fan - hetare än helvetet. Vi eskortera en kara van genom öknen och plötsligt, från INGENSTANS, den där besten bara... dyker upp ur sanden.<br><br>
 
@@ -480,28 +273,24 @@
 
                     <em>[Kören av resten av lägret: "STRATEGISKT OMPOSITIONERING!"]</em><br><br>
 
-                    ...Fan ta er alla.
-                </div>
-            </div>
+                    ...Fan ta er alla.</p></div>
+</div>
         </section>
 
         <!-- FÄLTRAPPORTER OCH BREV -->
-        <section class="section">
-            <h2 class="section-title">Fältrapporter & Brev</h2>
-            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-style: italic;">
+        <section>
+            <h2>Fältrapporter & Brev</h2>
+            <p>
                 Officiella rapporter, personliga brev, och allt däremellan. Det som skrivs ner blir sanning - även när det är lögn.
             </p>
 
-            <div class="report">
-                <div class="report-header">
-                    FÄLTRAPPORT #247<br>
+            <div class="box">
+  <p style="font: 400 12px/1.6 var(--font-mono); letter-spacing: .02em; color: var(--ink-muted); margin: 0 0 14px; text-transform: uppercase;">FÄLTRAPPORT #247<br>
                     FRÅN: Kaptenen, Stålsvärds Kavalerister<br>
                     TILL: Regementschef Halverton<br>
                     DATUM: 15e Daag, Selenios Månad<br>
-                    RE: Tirakgraven Expedition - Slutrapport
-                </div>
-                <div class="report-body">
-                    Rapporten följande:<br><br>
+                    RE: Tirakgraven Expedition - Slutrapport</p>
+  <div class="prose prose--secondary" style="max-width:none;"><p>Rapporten följande:<br><br>
 
                     Expeditionen till Tirakgraven slutförd enligt kontrakt. Arkeologen Migor Trollkunnig och assistenter eskorterade till målplatsen, skyddade under utgrävning, eskorterade tillbaka. Noll förluster personlig. Uppdrag framgångsrikt.<br><br>
 
@@ -516,15 +305,12 @@
                     Slutsats: Uppdraget framgångsrikt enligt alla mätbara parametrar. Att viss personal upplevde "obehag" är irrelevant för kontraktsmål.<br><br>
 
                     Kaptenen<br>
-                    Stålsvärds Kavalerister
-                </div>
-            </div>
+                    Stålsvärds Kavalerister</p></div>
+</div>
 
-            <div class="entry">
-                <div class="entry-header">Brev Hem från Sylas till hans Mor</div>
-                <div class="entry-meta">Aldrig skickat - Hittat i hans packning efter han avgick</div>
-                <div class="entry-text">
-                    Mor,<br><br>
+            <div class="box">
+  <span class="box__label">Brev Hem från Sylas till hans Mor</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Aldrig skickat - Hittat i hans packning efter han avgick</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;">Mor,<br><br>
 
                     Jag vet att du oroar dig. Du frågade i ditt senaste brev när jag kommer hem. Sanningen? Jag vet inte.<br><br>
 
@@ -545,15 +331,12 @@
                     Din son,<br>
                     Sylas<br><br>
 
-                    PS: Om du får det här brevet från nån annan än mig, då vet du vad som hände. Spendera inte pengarna på nån jävla fin begravning. Använd dem på taket. Jag vill åtminstone ha gjort nåt användbart.
-                </div>
-            </div>
+                    PS: Om du får det här brevet från nån annan än mig, då vet du vad som hände. Spendera inte pengarna på nån jävla fin begravning. Använd dem på taket. Jag vill åtminstone ha gjort nåt användbart.</p></div>
+</div>
 
-            <div class="entry">
-                <div class="entry-header">Elara can De Medivas Medicinska Anteckningar</div>
-                <div class="entry-meta">Från hennes privata journal - Inte avsedd för andra ögon</div>
-                <div class="entry-text">
-                    <strong>Dag 47, Selenios Månad</strong><br><br>
+            <div class="box">
+  <span class="box__label">Elara can De Medivas Medicinska Anteckningar</span>
+  <p class="prose--secondary" style="margin: 0 0 10px; font-style: italic; max-width: none;">Från hennes privata journal - Inte avsedd för andra ögon</p><div class="prose prose--secondary" style="max-width: none;"><p style="white-space: normal;"><strong>Dag 47, Selenios Månad</strong><br><br>
 
                     Ytterligare tre skadade idag från "träningsökning." Vilket är ett fint ord för "slogs i messhallen efter för mycket öl." Brutna fingrar, sönderslagna näsor, en möjlig hjärnskakning.<br><br>
 
@@ -585,21 +368,28 @@
 
                     Men ibland, på nätterna när jag inte kan sova, minns jag Timrons ögon. Och jag vet: några historier borde inte berättas. Några sanningar borde stanna begravda.<br><br>
 
-                    Som det där i Tirakgraven.
-                </div>
-            </div>
+                    Som det där i Tirakgraven.</p></div>
+</div>
         </section>
 
-        <div style="text-align: center; padding: 3rem 0; border-top: 1px solid var(--border); margin-top: 4rem;">
-            <p style="color: var(--text-secondary); font-style: italic;">
-                "Vi marscherar. Vi kämpar. Vi överlever.<br>
+        <p class="chapter-close">"Vi marscherar. Vi kämpar. Vi överlever.<br>
                 Och när det är över berättar vi historier om hur det egentligen var.<br>
-                För det är allt som finns kvar av oss när stålet rostar."
-            </p>
-            <p style="color: var(--deep-red); margin-top: 1rem; font-weight: bold;">
-                - Stålsvärds Kavalerister
-            </p>
-        </div>
-    </div>
+                För det är allt som finns kvar av oss när stålet rostar."</p>
+<p class="chapter-close">- Stålsvärds Kavalerister</p>
+  </article>
+
+  <nav class="chapter-pager rows" aria-label="Fluff-navigering">
+    <a class="row row--simple" href="index.html">
+      <span class="row__meta">← Tillbaka</span>
+      <span class="row__title">Fluff &amp; Berättelser</span>
+    </a>
+  </nav>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <span>Gravens Arv · EON 4:e utgåvan</span>
+  </div>
+</footer>
 </body>
 </html>
