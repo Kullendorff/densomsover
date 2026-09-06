@@ -322,3 +322,33 @@
   - Alla tre `--check` gröna, allt committat och pushat till `main`, live.
   - **Nästa session:** EgetMaterial-dedup (design orörd, bara dubbletter bort)
     eller bilder — båda uppskjutna, se planfilens "Uppskjutet"-sektion.
+
+---
+
+## SAMMANFATTNING inför /clear (2026-09-06, slutet av sessionen)
+
+**Läget just nu:** Hela designmigreringen (etapp 0–4) OCH örter→wiki/-migreringen
+är klara, committade och pushade till `main` (senaste commit `60e6806`), live på
+`https://kullendorff.github.io/densomsover/`. Inget halvfärdigt ligger kvar på
+kärnsajten.
+
+**Vad som är kvar (båda uppskjutna, ingen brådska, inget blockerar):**
+1. **EgetMaterial-dedup** — 5 sidor dubbellagrade i `EgetMaterial/Klart/` och
+   `EgetMaterial/projekt/` med identiskt radantal. Johans beslut: INGEN reskin
+   till designsystemet, bara reda ut vilken version som är master och ta bort
+   den andra.
+2. **Bilder** — 353 filer över 400 kB, repot 4,6 GB. Eget spår, kräver egen plan
+   (komprimering/resize, ev. omskrivning av Git-historik för att faktiskt krympa
+   repot).
+
+**Var allt står dokumenterat:**
+- Full plan + statushistorik: `C:\Users\kulle\.claude\plans\titta-p-hur-du-federated-marble.md`
+  (Status-sektionen överst har en snabb ✅-lista per etapp; "Uppskjutet"-sektionen
+  har detaljer om EgetMaterial/bilder; egen rubrik "## Örter → wiki/-migrering" med
+  fullständig plan+facit för det arbetet)
+- Den här filen (`cc_was_here.md`) — kronologisk logg, senaste postens är mest
+  detaljerade om vad som just hände
+
+**Om nästa session ska fortsätta med EgetMaterial eller bilder:** läs planfilens
+"Uppskjutet"-sektion först, fråga Johan vilket han vill prioritera (ingen av dem
+är brådskande eller beroende av den andra).
